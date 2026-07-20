@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://leam.co.jp/sitemap.xml
