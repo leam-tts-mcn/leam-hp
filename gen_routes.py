@@ -82,6 +82,9 @@ def main():
     with open('robots.txt', 'w', encoding='utf-8') as f:
         f.write('User-agent: *\nAllow: /\n\nSitemap: %s/sitemap.xml\n' % BASE)
     print('generated sitemap.xml (%d urls) / robots.txt' % len(urls))
+    import shutil
+    shutil.copyfile('index.html', '404.html')  # GH Pages: 未知パスはSPAホームを返す
+    print('generated 404.html (copy of index.html)')
 
 
 if __name__ == '__main__':
