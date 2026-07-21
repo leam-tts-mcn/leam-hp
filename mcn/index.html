@@ -442,10 +442,15 @@
   .gglow{transform-box:fill-box; transform-origin:center}
   .gcap{display:none}
   @media(max-width:640px){
-    .gchart svg text{font-size:16px}
-    .gchart svg text[font-size="9.5"], .gchart svg .gftxt{display:none}
+    .gchart svg text{font-size:20px}
+    .gchart svg text[font-size="9.5"], .gchart svg .gftxt, .gchart .gproj text{display:none}
+    .gtag{display:none}
     .gcap{display:block; margin:10px 0 2px; text-align:center; font-size:12.5px; color:var(--mute)}
     .gcap b{color:var(--rouge)}
+  }
+  @media(max-width:759px){
+    .farr{transform:translateY(18px) rotate(90deg)}
+    .in .flow-in>.farr{transform:rotate(90deg)}
   }
   .in .gpp{animation:projmarch 1.1s linear infinite}
   @keyframes projmarch{to{stroke-dashoffset:-9.5}}
@@ -706,7 +711,7 @@
           <text x="520" y="228" text-anchor="end" font-size="11" fill="#FE2C55" font-weight="700" font-family="sans-serif">いま</text>
         </svg>
       </div>
-      <p class="gcap">2026年末の市場予測*：<b>年間1,283億円規模へ</b></p>
+      <p class="gcap">いま：<b>月間 約130億円*</b>（実測）→ 2026年末予測：<b>年間1,283億円規模</b></p>
       <div class="gstats">
         <div class="gs"><div class="ge">GLOBAL</div><div class="gnum">約<span class="cv" data-t="5">0</span>兆円</div><div class="gl">世界の年間流通額の規模</div></div>
         <div class="gs"><div class="ge">JAPAN</div><div class="gnum">約<span class="cv" data-t="130">0</span>億円</div><div class="gl">日本の主要カテゴリ月間売上*</div></div>
