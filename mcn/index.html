@@ -418,6 +418,8 @@
   .gbob{animation:gbob 4.2s ease-in-out infinite; transform-box:fill-box; transform-origin:center}
   @keyframes gbob{0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)}}
   .in .garea{animation:gbreathe 5.5s ease-in-out 2.4s infinite}
+  .gproj{opacity:0; transition:opacity .7s ease 2.5s}
+  .in .gproj{opacity:.65}
   @keyframes gbreathe{0%,100%{opacity:1} 50%{opacity:.55}}
   @media (prefers-reduced-motion:reduce){ .gflow{display:none} .gbob{animation:none} .garea{animation:none} }
   .gtag{opacity:0; transform:translateY(8px); transition:opacity .5s ease 2s, transform .5s cubic-bezier(.34,1.56,.64,1) 2s}
@@ -635,7 +637,7 @@
     </div>
     <div class="growth reveal">
       <div class="gchart" role="img" aria-label="TikTok Shop日本市場の成長イメージ。2025年6月の上陸から右肩上がりに伸び、現在は主要カテゴリの月間売上が約130億円">
-        <svg viewBox="0 0 560 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 620 250" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0" stop-color="#25F4EE"/>
@@ -655,11 +657,16 @@
           <path class="gflow" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="#fff" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="7 93"/>
           <g class="gdot gd1"><circle cx="40" cy="198" r="7" fill="#fff" stroke="#FE2C55" stroke-width="3"/></g>
           <g class="gdot gd2"><circle cx="330" cy="152" r="7" fill="#fff" stroke="#FE2C55" stroke-width="3"/></g>
+          <g class="gproj">
+            <path d="M520,50 C548,39 574,30 600,20" stroke="#FE2C55" stroke-width="3" stroke-linecap="round" stroke-dasharray="1.5 8"/>
+            <path d="M608,17 L599,26 L596,15 Z" fill="#FE2C55"/>
+            <text x="612" y="232" text-anchor="end" font-size="11" fill="#9A9AA5" font-family="sans-serif">この先の見立て</text>
+          </g>
           <g class="gdot gd3"><circle cx="520" cy="50" r="8" fill="#FE2C55" stroke="#fff" stroke-width="3"/><circle cx="520" cy="50" r="8" fill="none" stroke="#FE2C55" stroke-width="2" opacity=".5"><animate attributeName="r" values="8;16" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="1.6s" repeatCount="indefinite"/></circle></g>
-          <g class="gtag"><g transform="rotate(-2 443 25)"><g class="gbob">
+          <g class="gtag"><g class="gbob">
             <rect x="368" y="8" width="150" height="34" rx="17" fill="#16181D"/>
             <text x="443" y="30" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="sans-serif">月間 約130億円*</text>
-          </g></g></g>
+          </g></g>
           <text x="40" y="228" font-size="11" fill="#9A9AA5" font-family="sans-serif">2025.6 日本上陸</text>
           <text x="330" y="228" text-anchor="middle" font-size="11" fill="#9A9AA5" font-family="sans-serif">2026.2 半年で急拡大</text>
           <text x="520" y="228" text-anchor="end" font-size="11" fill="#FE2C55" font-weight="700" font-family="sans-serif">いま</text>
@@ -672,7 +679,7 @@
       </div>
       <p class="gbridge">そして、この成長を前線で動かしているのが——<mark class="mk"><b>TikTok Shopクリエイター</b></mark>です。</p>
     </div>
-    <p class="note">※ 世界流通額は2024年実績の規模感（公開情報）。*日本の月間売上は主要カテゴリ計・直近30日（2026年7月・当社調べ）。</p>
+    <p class="note">※ 世界流通額は2024年実績の規模感（公開情報）。*日本の月間売上は主要カテゴリ計・直近30日（2026年7月・当社調べ）。点線は今後の拡大イメージであり、数値を保証するものではありません。</p>
   </div>
 </section>
 
