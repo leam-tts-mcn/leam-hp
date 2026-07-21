@@ -420,6 +420,9 @@
   .gs:hover{transform:translateY(-4px); box-shadow:0 16px 36px rgba(22,24,35,.07)}
   .gnum{font-family:var(--serif); font-size:clamp(24px,3.2vw,32px); font-weight:800; color:var(--rouge); font-variant-numeric:tabular-nums}
   .gl{margin-top:5px; font-size:11.5px; color:var(--mute)}
+  .ge{font-size:10px; letter-spacing:.18em; font-weight:800; color:var(--rouge); opacity:.7; margin-bottom:6px}
+  .gs{position:relative; overflow:hidden}
+  .gs::after{content:""; position:absolute; right:-26px; top:-26px; width:88px; height:88px; border-radius:50%; background:radial-gradient(circle,rgba(254,44,85,.08),transparent 70%); pointer-events:none}
   .gbridge{margin-top:22px; text-align:center; font-size:15.5px; line-height:1.9}
   .gbridge b{color:var(--rouge-d)}
   @media (prefers-reduced-motion:reduce){
@@ -615,7 +618,7 @@
   </div>
 </section>
 
-<section id="growth">
+<section id="growth" style="padding-top:28px; background:linear-gradient(180deg,rgba(254,44,85,.035),transparent 55%)">
   <div class="wrap">
     <div class="sec-head reveal">
       <h2>なぜ、いま<em>TikTok Shop</em>なのか。</h2>
@@ -626,6 +629,11 @@
       <div class="gchart" role="img" aria-label="TikTok Shop日本市場の成長イメージ。2025年6月の上陸から右肩上がりに伸び、現在は主要カテゴリの月間売上が約130億円">
         <svg viewBox="0 0 560 250" fill="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
+            <linearGradient id="gl" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#25F4EE"/>
+              <stop offset=".55" stop-color="#FE2C55"/>
+              <stop offset="1" stop-color="#FE2C55"/>
+            </linearGradient>
             <linearGradient id="ga" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0" stop-color="#FE2C55" stop-opacity=".22"/>
               <stop offset="1" stop-color="#FE2C55" stop-opacity="0"/>
@@ -635,25 +643,25 @@
           <line x1="40" y1="130" x2="530" y2="130" stroke="#F1E9EC" stroke-dasharray="3 5"/>
           <line x1="40" y1="200" x2="530" y2="200" stroke="#EFE3E7"/>
           <path class="garea" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50 L520,200 L40,200 Z" fill="url(#ga)"/>
-          <path class="gpath" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="#FE2C55" stroke-width="3.5" stroke-linecap="round" pathLength="100"/>
+          <path class="gpath" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="url(#gl)" stroke-width="3.5" stroke-linecap="round" pathLength="100"/>
           <g class="gdot gd1"><circle cx="40" cy="198" r="7" fill="#fff" stroke="#FE2C55" stroke-width="3"/></g>
           <g class="gdot gd2"><circle cx="330" cy="152" r="7" fill="#fff" stroke="#FE2C55" stroke-width="3"/></g>
           <g class="gdot gd3"><circle cx="520" cy="50" r="8" fill="#FE2C55" stroke="#fff" stroke-width="3"/><circle cx="520" cy="50" r="8" fill="none" stroke="#FE2C55" stroke-width="2" opacity=".5"><animate attributeName="r" values="8;16" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="1.6s" repeatCount="indefinite"/></circle></g>
-          <g class="gtag">
+          <g class="gtag"><g transform="rotate(-2 443 25)">
             <rect x="368" y="8" width="150" height="34" rx="17" fill="#16181D"/>
             <text x="443" y="30" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="sans-serif">月間 約130億円*</text>
-          </g>
+          </g></g>
           <text x="40" y="228" font-size="11" fill="#9A9AA5" font-family="sans-serif">2025.6 日本上陸</text>
           <text x="330" y="228" text-anchor="middle" font-size="11" fill="#9A9AA5" font-family="sans-serif">2026.2 半年で急拡大</text>
           <text x="520" y="228" text-anchor="end" font-size="11" fill="#FE2C55" font-weight="700" font-family="sans-serif">いま</text>
         </svg>
       </div>
       <div class="gstats">
-        <div class="gs"><div class="gnum">約<span class="cv" data-t="5">0</span>兆円</div><div class="gl">世界の年間流通額の規模</div></div>
-        <div class="gs"><div class="gnum">約<span class="cv" data-t="130">0</span>億円</div><div class="gl">日本の主要カテゴリ月間売上*</div></div>
-        <div class="gs"><div class="gnum">まだ<span class="cv" data-t="1">0</span>年</div><div class="gl">日本上陸からの期間。いまなら第一世代</div></div>
+        <div class="gs"><div class="ge">GLOBAL</div><div class="gnum">約<span class="cv" data-t="5">0</span>兆円</div><div class="gl">世界の年間流通額の規模</div></div>
+        <div class="gs"><div class="ge">JAPAN</div><div class="gnum">約<span class="cv" data-t="130">0</span>億円</div><div class="gl">日本の主要カテゴリ月間売上*</div></div>
+        <div class="gs"><div class="ge">CHANCE</div><div class="gnum">まだ<span class="cv" data-t="1">0</span>年</div><div class="gl">日本上陸からの期間。いまなら第一世代</div></div>
       </div>
-      <p class="gbridge">そして、この成長を前線で動かしているのが——<b>TikTok Shopクリエイター</b>です。</p>
+      <p class="gbridge">そして、この成長を前線で動かしているのが——<mark class="mk"><b>TikTok Shopクリエイター</b></mark>です。</p>
     </div>
     <p class="note">※ 世界流通額は2024年実績の規模感（公開情報）。*日本の月間売上は主要カテゴリ計・直近30日（2026年7月・当社調べ）。</p>
   </div>
