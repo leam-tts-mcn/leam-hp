@@ -4197,7 +4197,7 @@
       });
       var m = META[h];
       if (m) {
-        var url = 'https://leam.co.jp' + (h === '/' ? '/' : h);
+        var url = 'https://leam.co.jp' + (h === '/' ? '/' : h + '/');
         document.title = m.t;
         var q = function (sel) { return document.querySelector(sel); };
         var set = function (sel, attr, v) { var el = q(sel); if (el) el.setAttribute(attr, v); };

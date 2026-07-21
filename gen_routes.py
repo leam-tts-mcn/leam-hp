@@ -42,7 +42,7 @@ def sub_once(html, pattern, repl, label):
 
 
 def stamp(src, path, meta):
-    url = BASE + path
+    url = BASE + path + '/'
     h = src
     h = sub_once(h, r'<title>.*?</title>', '<title>%s</title>' % meta['t'], path + ' title')
     h = sub_once(h, r'<meta name="description" content="[^"]*">',
@@ -71,7 +71,7 @@ def main():
         print('generated %s/index.html' % d)
 
     today = datetime.date.today().isoformat()
-    urls = [BASE + '/'] + [BASE + p for p in ROUTES]
+    urls = [BASE + '/'] + [BASE + p + '/' for p in ROUTES]
     items = '\n'.join(
         '  <url><loc>%s</loc><lastmod>%s</lastmod></url>' % (u, today) for u in urls
     )
