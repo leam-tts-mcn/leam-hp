@@ -438,8 +438,15 @@
   @keyframes burstloop{0%{opacity:.85; transform:scale(.4)} 13%{opacity:0; transform:scale(2.8)} 14%,100%{opacity:0; transform:scale(.4)}}
   .gglow{opacity:0}
   .in .gglow{animation:glowpulse 2.2s ease-in-out 1.9s infinite}
-  @keyframes glowpulse{0%,100%{opacity:.5; transform:scale(1)} 50%{opacity:1; transform:scale(1.25)}}
+  @keyframes glowpulse{0%,100%{opacity:.45; transform:scale(1)} 50%{opacity:.9; transform:scale(1.15)}}
   .gglow{transform-box:fill-box; transform-origin:center}
+  .gcap{display:none}
+  @media(max-width:640px){
+    .gchart svg text{font-size:16px}
+    .gchart svg text[font-size="9.5"], .gchart svg .gftxt{display:none}
+    .gcap{display:block; margin:10px 0 2px; text-align:center; font-size:12.5px; color:var(--mute)}
+    .gcap b{color:var(--rouge)}
+  }
   .in .gpp{animation:projmarch 1.1s linear infinite}
   @keyframes projmarch{to{stroke-dashoffset:-9.5}}
   .gftxt{transform-box:fill-box; transform-origin:center}
@@ -688,17 +695,18 @@
             <text class="gftxt" x="614" y="99" text-anchor="end" font-size="12.5" font-weight="800" fill="#FE2C55" font-family="sans-serif">年間1,283億円規模へ</text>
             <text x="612" y="232" text-anchor="end" font-size="11" fill="#9A9AA5" font-family="sans-serif">2026.12（予測）</text>
           </g>
-          <circle class="gglow" cx="520" cy="50" r="34" fill="url(#gg)"/>
+          <circle class="gglow" cx="520" cy="50" r="26" fill="url(#gg)"/>
           <g class="gdot gd3"><circle cx="520" cy="50" r="8" fill="#FE2C55" stroke="#fff" stroke-width="3"/><circle cx="520" cy="50" r="8" fill="none" stroke="#FE2C55" stroke-width="2" opacity=".5"><animate attributeName="r" values="8;16" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="1.6s" repeatCount="indefinite"/></circle></g>
           <g class="gtag"><g class="gbob">
-            <rect x="368" y="8" width="150" height="34" rx="17" fill="#16181D"/>
-            <text x="443" y="30" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="sans-serif">月間 約130億円*</text>
+            <rect x="330" y="8" width="150" height="34" rx="17" fill="#16181D"/>
+            <text x="405" y="30" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="sans-serif">月間 約130億円*</text>
           </g></g>
           <text x="40" y="228" font-size="11" fill="#9A9AA5" font-family="sans-serif">2025.6 日本上陸</text>
           <text x="330" y="228" text-anchor="middle" font-size="11" fill="#9A9AA5" font-family="sans-serif">2026.2 半年で急拡大</text>
           <text x="520" y="228" text-anchor="end" font-size="11" fill="#FE2C55" font-weight="700" font-family="sans-serif">いま</text>
         </svg>
       </div>
+      <p class="gcap">2026年末の市場予測*：<b>年間1,283億円規模へ</b></p>
       <div class="gstats">
         <div class="gs"><div class="ge">GLOBAL</div><div class="gnum">約<span class="cv" data-t="5">0</span>兆円</div><div class="gl">世界の年間流通額の規模</div></div>
         <div class="gs"><div class="ge">JAPAN</div><div class="gnum">約<span class="cv" data-t="130">0</span>億円</div><div class="gl">日本の主要カテゴリ月間売上*</div></div>
