@@ -16,7 +16,7 @@
     /* 美容の材質から引いた палitra：ミルク・オーベルジーヌ・ルージュ・翡翠 */
     --milk:#FFFFFF; --paper:#FFFFFF; --tint:#FFF1F5;
     --ink:#161823; --mute:#6E7075; --faint:#A6A8B0;
-    --rouge:#FE2C55; --rouge-d:#E11E46; --rouge-t:#FFE9EE;
+    --rouge:#FE2C55; --lgreen:#06C755; --lgreen-d:#05A94B; --rouge-d:#E11E46; --rouge-t:#FFE9EE;
     --jade:#00A5B5; --jade-t:#E3FAFB;
     --line:#EDEEF2; --line2:#DFE0E5;
     --maxw:1080px;
@@ -47,15 +47,15 @@
   .nav-links a{color:var(--mute); flex:none; font-weight:600}
   .nav-links a:hover{color:var(--ink)}
   @media(min-width:900px){ .nav-links{flex:none; gap:26px; font-size:13px; -webkit-mask-image:none; mask-image:none} }
-  .nav-cta{flex:none; background:var(--rouge); color:#fff; font-weight:700; font-size:12.5px; padding:9px 18px; border-radius:10px; letter-spacing:.02em}
-  .nav-cta:hover{background:var(--rouge-d)}
+  .nav-cta{flex:none; background:var(--lgreen); color:#fff; font-weight:700; font-size:12.5px; padding:9px 18px; border-radius:10px; letter-spacing:.02em}
+  .nav-cta:hover{background:var(--lgreen-d)}
 
   /* ── buttons ─────────────────────────── */
   .cta-row{display:flex; flex-wrap:wrap; gap:12px; margin-top:32px}
   .btn{display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:54px; padding:0 30px; border-radius:14px;
     font-weight:700; font-size:15px; letter-spacing:.02em; border:1.5px solid transparent; transition:transform .2s ease, box-shadow .2s ease, background .2s ease}
-  .btn-main{background:var(--rouge); color:#fff; box-shadow:0 10px 26px rgba(254,44,85,.22)}
-  .btn-main:hover{background:var(--rouge-d); transform:translateY(-2px); box-shadow:0 16px 34px rgba(254,44,85,.3)}
+  .btn-main{background:var(--lgreen); color:#fff; box-shadow:0 10px 26px rgba(6,199,85,.28)}
+  .btn-main:hover{background:var(--lgreen-d); transform:translateY(-2px); box-shadow:0 16px 34px rgba(6,199,85,.36)}
   .btn-ghost{border-color:var(--line2); color:var(--ink); background:var(--paper)}
   .btn-ghost:hover{border-color:var(--ink); transform:translateY(-2px)}
 
@@ -102,7 +102,7 @@
   .proof p{font-size:12px; color:var(--mute); line-height:1.7}
   .proof b{color:var(--ink)}
   .pulse{position:relative}
-  .pulse::after{content:""; position:absolute; inset:-4px; border-radius:18px; border:2px solid rgba(254,44,85,.5); animation:ping 2.2s ease-out infinite; pointer-events:none}
+  .pulse::after{content:""; position:absolute; inset:-4px; border-radius:18px; border:2px solid rgba(6,199,85,.55); animation:ping 2.2s ease-out infinite; pointer-events:none}
   @keyframes ping{0%{opacity:.8; transform:scale(1)} 70%,100%{opacity:0; transform:scale(1.1)}}
   @media (prefers-reduced-motion:reduce){ .pulse::after{display:none} }
   .prog{position:absolute; left:0; bottom:-1px; height:2px; width:0; background:linear-gradient(90deg,var(--rouge),#25F4EE); z-index:51}
@@ -356,11 +356,11 @@
   footer .legal{margin-top:16px}
 
   /* ── float cta ───────────────────────── */
-  .float{position:fixed; right:16px; bottom:16px; z-index:60; display:flex; align-items:center; gap:8px; background:var(--rouge); color:#fff;
+  .float{position:fixed; right:16px; bottom:16px; z-index:60; display:flex; align-items:center; gap:8px; background:var(--lgreen); color:#fff;
     font-weight:700; font-size:13px; padding:13px 22px; border-radius:14px; box-shadow:0 10px 30px rgba(254,44,85,.36);
     opacity:0; transform:translateY(14px); pointer-events:none; transition:opacity .3s ease, transform .3s ease}
   .float.on{opacity:1; transform:none; pointer-events:auto}
-  .float:hover{background:var(--rouge-d)}
+  .float:hover{background:var(--lgreen-d)}
   @media (prefers-reduced-motion:reduce){ .float{transition:opacity .3s} .float.on{transform:none} }
 
   /* ── reveal ──────────────────────────── */
