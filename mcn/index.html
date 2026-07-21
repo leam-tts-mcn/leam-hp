@@ -412,6 +412,14 @@
   .gdot{transform:scale(0); transform-origin:center; transform-box:fill-box; transition:transform .5s cubic-bezier(.34,1.56,.64,1)}
   .gd1{transition-delay:.35s} .gd2{transition-delay:1s} .gd3{transition-delay:1.8s}
   .in .gdot{transform:scale(1)}
+  .gflow{opacity:0; transition:opacity .6s ease 2s; animation:gflow 2.6s linear infinite}
+  .in .gflow{opacity:.85}
+  @keyframes gflow{from{stroke-dashoffset:100} to{stroke-dashoffset:-100}}
+  .gbob{animation:gbob 4.2s ease-in-out infinite; transform-box:fill-box; transform-origin:center}
+  @keyframes gbob{0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)}}
+  .in .garea{animation:gbreathe 5.5s ease-in-out 2.4s infinite}
+  @keyframes gbreathe{0%,100%{opacity:1} 50%{opacity:.55}}
+  @media (prefers-reduced-motion:reduce){ .gflow{display:none} .gbob{animation:none} .garea{animation:none} }
   .gtag{opacity:0; transform:translateY(8px); transition:opacity .5s ease 2s, transform .5s cubic-bezier(.34,1.56,.64,1) 2s}
   .in .gtag{opacity:1; transform:none}
   .gstats{display:grid; gap:12px; margin-top:16px}
@@ -644,13 +652,14 @@
           <line x1="40" y1="200" x2="530" y2="200" stroke="#EFE3E7"/>
           <path class="garea" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50 L520,200 L40,200 Z" fill="url(#ga)"/>
           <path class="gpath" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="url(#gl)" stroke-width="3.5" stroke-linecap="round" pathLength="100"/>
+          <path class="gflow" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="#fff" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="7 93"/>
           <g class="gdot gd1"><circle cx="40" cy="198" r="7" fill="#fff" stroke="#FE2C55" stroke-width="3"/></g>
           <g class="gdot gd2"><circle cx="330" cy="152" r="7" fill="#fff" stroke="#FE2C55" stroke-width="3"/></g>
           <g class="gdot gd3"><circle cx="520" cy="50" r="8" fill="#FE2C55" stroke="#fff" stroke-width="3"/><circle cx="520" cy="50" r="8" fill="none" stroke="#FE2C55" stroke-width="2" opacity=".5"><animate attributeName="r" values="8;16" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="1.6s" repeatCount="indefinite"/></circle></g>
-          <g class="gtag"><g transform="rotate(-2 443 25)">
+          <g class="gtag"><g transform="rotate(-2 443 25)"><g class="gbob">
             <rect x="368" y="8" width="150" height="34" rx="17" fill="#16181D"/>
             <text x="443" y="30" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="sans-serif">月間 約130億円*</text>
-          </g></g>
+          </g></g></g>
           <text x="40" y="228" font-size="11" fill="#9A9AA5" font-family="sans-serif">2025.6 日本上陸</text>
           <text x="330" y="228" text-anchor="middle" font-size="11" fill="#9A9AA5" font-family="sans-serif">2026.2 半年で急拡大</text>
           <text x="520" y="228" text-anchor="end" font-size="11" fill="#FE2C55" font-weight="700" font-family="sans-serif">いま</text>
