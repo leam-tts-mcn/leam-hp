@@ -428,20 +428,24 @@
   .gcomet{opacity:0}
   @supports (offset-path: path("M0 0")) {
     .gcomet{offset-path:path("M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50"); offset-distance:0%; offset-rotate:0deg}
-    .in .gcomet{animation:comet 1.75s cubic-bezier(.3,.7,.3,1) .25s forwards}
+    .in .gcomet{animation:comet 4.6s cubic-bezier(.45,.2,.35,.9) .25s infinite}
   }
-  @keyframes comet{0%{opacity:0; offset-distance:0%} 12%{opacity:1} 82%{opacity:1} 100%{opacity:0; offset-distance:100%}}
+  @keyframes comet{0%{opacity:0; offset-distance:0%} 5%{opacity:1} 38%{opacity:1; offset-distance:100%} 42%,100%{opacity:0; offset-distance:100%}}
   .burst{opacity:0; transform-box:fill-box; transform-origin:center}
-  .in .gd1 .burst{animation:burstan .7s ease-out .5s forwards}
-  .in .gd2 .burst{animation:burstan .7s ease-out 1.15s forwards}
-  .in .gd3 .burst{animation:burstan .8s ease-out 1.95s forwards}
-  @keyframes burstan{0%{opacity:.85; transform:scale(.4)} 100%{opacity:0; transform:scale(2.8)}}
+  .in .gd1 .burst{animation:burstloop 4.6s ease-out .35s infinite}
+  .in .gd2 .burst{animation:burstloop 4.6s ease-out 1.25s infinite}
+  .in .gd3 .burst{animation:burstloop 4.6s ease-out 2.05s infinite}
+  @keyframes burstloop{0%{opacity:.85; transform:scale(.4)} 13%{opacity:0; transform:scale(2.8)} 14%,100%{opacity:0; transform:scale(.4)}}
+  .gglow{opacity:0}
+  .in .gglow{animation:glowpulse 2.2s ease-in-out 1.9s infinite}
+  @keyframes glowpulse{0%,100%{opacity:.5; transform:scale(1)} 50%{opacity:1; transform:scale(1.25)}}
+  .gglow{transform-box:fill-box; transform-origin:center}
   .in .gpp{animation:projmarch 1.1s linear infinite}
   @keyframes projmarch{to{stroke-dashoffset:-9.5}}
   .gftxt{transform-box:fill-box; transform-origin:center}
   .in .gftxt{animation:ftpop .5s cubic-bezier(.34,1.56,.64,1) 2.7s both}
   @keyframes ftpop{0%{opacity:0; transform:scale(.7)} 100%{opacity:1; transform:scale(1)}}
-  @media (prefers-reduced-motion:reduce){ .gcomet{display:none} .in .gpp{animation:none} .in .gtag{animation:none; opacity:1} .burst{display:none} .in .gftxt{animation:none; opacity:1} }
+  @media (prefers-reduced-motion:reduce){ .gcomet{display:none} .in .gpp{animation:none} .in .gtag{animation:none; opacity:1} .burst{display:none} .in .gftxt{animation:none; opacity:1} .gglow{display:none} }
   .gstats{display:grid; gap:12px; margin-top:16px}
   @media(min-width:760px){ .gstats{grid-template-columns:repeat(3,1fr)} }
   .gs{background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:18px 16px; text-align:center; transition:transform .3s ease, box-shadow .3s ease}
@@ -662,6 +666,7 @@
               <stop offset=".55" stop-color="#FE2C55"/>
               <stop offset="1" stop-color="#FE2C55"/>
             </linearGradient>
+            <radialGradient id="gg"><stop offset="0" stop-color="#FE2C55" stop-opacity=".35"/><stop offset="1" stop-color="#FE2C55" stop-opacity="0"/></radialGradient>
             <linearGradient id="ga" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0" stop-color="#FE2C55" stop-opacity=".22"/>
               <stop offset="1" stop-color="#FE2C55" stop-opacity="0"/>
@@ -671,7 +676,7 @@
           <line x1="40" y1="130" x2="530" y2="130" stroke="#F1E9EC" stroke-dasharray="3 5"/>
           <line x1="40" y1="200" x2="530" y2="200" stroke="#EFE3E7"/>
           <path class="garea" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50 L520,200 L40,200 Z" fill="url(#ga)"/>
-          <path class="gpath" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="url(#gl)" stroke-width="3.5" stroke-linecap="round" pathLength="100"/>
+          <path class="gpath" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="url(#gl)" stroke-width="4" stroke-linecap="round" pathLength="100"/>
           <path class="gflow" d="M40,198 C180,192 300,168 400,118 C460,88 495,62 520,50" stroke="#fff" stroke-width="3.5" stroke-linecap="round" pathLength="100" stroke-dasharray="7 93"/>
           <g class="gcomet" aria-hidden="true"><circle r="11" fill="#FE2C55" opacity=".28"/><circle r="4.5" fill="#fff"/></g>
           <g class="gdot gd1"><circle cx="40" cy="198" r="7" fill="#fff" stroke="#FE2C55" stroke-width="3"/><circle class="burst" cx="40" cy="198" r="10" fill="none" stroke="#FE2C55" stroke-width="2"/></g>
@@ -683,6 +688,7 @@
             <text class="gftxt" x="614" y="99" text-anchor="end" font-size="12.5" font-weight="800" fill="#FE2C55" font-family="sans-serif">年間1,283億円規模へ</text>
             <text x="612" y="232" text-anchor="end" font-size="11" fill="#9A9AA5" font-family="sans-serif">2026.12（予測）</text>
           </g>
+          <circle class="gglow" cx="520" cy="50" r="34" fill="url(#gg)"/>
           <g class="gdot gd3"><circle cx="520" cy="50" r="8" fill="#FE2C55" stroke="#fff" stroke-width="3"/><circle cx="520" cy="50" r="8" fill="none" stroke="#FE2C55" stroke-width="2" opacity=".5"><animate attributeName="r" values="8;16" dur="1.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".5;0" dur="1.6s" repeatCount="indefinite"/></circle></g>
           <g class="gtag"><g class="gbob">
             <rect x="368" y="8" width="150" height="34" rx="17" fill="#16181D"/>
@@ -921,6 +927,14 @@
       if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
     }), { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  }
+  // 成長セクションは出入りのたびにアニメを再演
+  if ('IntersectionObserver' in window) {
+    const iog = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) e.target.classList.remove('in');
+      else e.target.classList.add('in');
+    }), { threshold: 0.2 });
+    document.querySelectorAll('#growth .reveal').forEach(el => iog.observe(el));
   }
   addEventListener('scroll', markIn, {passive: true});
   addEventListener('resize', markIn, {passive: true});
