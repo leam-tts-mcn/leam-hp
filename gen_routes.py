@@ -8,7 +8,8 @@ import sys
 import datetime
 
 BASE = 'https://leam.co.jp'
-RESERVED = ('', 'mcn', 'line')  # 実コンテンツ用ディレクトリ。ここへは絶対に出力しない
+RESERVED = ('', 'mcn', 'line', 'ecplus', 'ecplus-2', 'ecplus-3', 'fashion',
+            'present', 'mission', 'lineredirect', 'thanks-2')  # 実コンテンツ用ディレクトリ。ここへは絶対に出力しない
 
 ROUTES = {
     '/service': {
