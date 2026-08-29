@@ -14,6 +14,16 @@ RESERVED = ('', 'mcn', 'line', 'column', 'ecplus', 'ecplus-2', 'ecplus-3', 'fash
 # ROUTES外だがsitemapに載せる実コンテンツ（SPAではなく独立ページ）
 EXTRA_SITEMAP = ('/mcn',)
 
+
+# ルート別：そのページの主見出しだけ h2→h1 に昇格（見た目はCSS側で同一に調整済み）
+H1_SWAP = {
+    '/service': '<h2 class="ph-en">SERVICE</h2>',
+    '/member':  '<h2 class="ph-en">MEMBER</h2>',
+    '/company': '<h2 class="ph-en">COMPANY</h2>',
+    '/privacy': '<h2 class="ph-en">PRIVACY</h2>',
+    '/contact': '<h2 class="rv">EC・TikTok Shopのことなら、<br>お気軽にご相談ください。</h2>',
+}
+
 ROUTES = {
     '/service': {
         't': 'SERVICE｜TikTok Shopコンサルティング・MCN・SNSサービス｜株式会社LEAM',
@@ -59,6 +69,12 @@ def stamp(src, path, meta):
                  '<meta property="og:url" content="%s">' % url, path + ' og:url')
     h = sub_once(h, r'<link rel="canonical" href="[^"]*">',
                  '<link rel="canonical" href="%s">' % url, path + ' canonical')
+    tgt = H1_SWAP.get(path)
+    if tgt:
+        if tgt not in h:
+            sys.exit('gen_routes: h1スワップ対象が見つからない ' + path)
+        rep = tgt.replace('<h2 ', '<h1 ', 1).replace('</h2>', '</h1>')
+        h = h.replace(tgt, rep, 1)
     return h
 
 
