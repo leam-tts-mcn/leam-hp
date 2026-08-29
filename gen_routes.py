@@ -8,8 +8,11 @@ import sys
 import datetime
 
 BASE = 'https://leam.co.jp'
-RESERVED = ('', 'mcn', 'line', 'ecplus', 'ecplus-2', 'ecplus-3', 'fashion',
+RESERVED = ('', 'mcn', 'line', 'column', 'ecplus', 'ecplus-2', 'ecplus-3', 'fashion',
             'present', 'mission', 'lineredirect', 'thanks-2')  # 実コンテンツ用ディレクトリ。ここへは絶対に出力しない
+
+# ROUTES外だがsitemapに載せる実コンテンツ（SPAではなく独立ページ）
+EXTRA_SITEMAP = ('/mcn',)
 
 ROUTES = {
     '/service': {
@@ -72,7 +75,7 @@ def main():
         print('generated %s/index.html' % d)
 
     today = datetime.date.today().isoformat()
-    urls = [BASE + '/'] + [BASE + p + '/' for p in ROUTES]
+    urls = [BASE + '/'] + [BASE + p + '/' for p in ROUTES] + [BASE + p + '/' for p in EXTRA_SITEMAP]
     items = '\n'.join(
         '  <url><loc>%s</loc><lastmod>%s</lastmod></url>' % (u, today) for u in urls
     )
