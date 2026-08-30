@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのサンプル申請のやり方【クリエイター向け】</title>
+<meta name="description" content="TikTok Shopのサンプル申請のやり方を、クリエイター向けに手順から解説します。セラーの承認が通りやすくなるコツもまとめました。">
+<link rel="canonical" href="https://leam.co.jp/column/sample-request/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのサンプル申請のやり方【クリエイター向け】">
+<meta property="og:description" content="TikTok Shopのサンプル申請のやり方を、クリエイター向けに手順から解説します。セラーの承認が通りやすくなるコツもまとめました。">
+<meta property="og:url" content="https://leam.co.jp/column/sample-request/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのサンプル申請のやり方【クリエイター向け】">
+<meta name="twitter:description" content="TikTok Shopのサンプル申請のやり方を、クリエイター向けに手順から解説します。セラーの承認が通りやすくなるコツもまとめました。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのサンプル申請のやり方【クリエイター向け】", "description": "TikTok Shopのサンプル申請のやり方を、クリエイター向けに手順から解説します。セラーの承認が通りやすくなるコツもまとめました。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/sample-request/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのサンプル申請のやり方【クリエイター向け】", "item": "https://leam.co.jp/column/sample-request/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › サンプル申請のやり方</p>
+  <span class="cat">クリエイター向け</span>
+  <h1>TikTok Shopのサンプル申請のやり方【クリエイター向け】｜通りやすくなるコツ</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="サンプル申請：申請フォームを送って承認のチェックが付き、届いた赤いサンプル箱を手が受け取る様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v330c-88 30-180 40-272 26-106-16-192-48-300-46-110 2-192 42-300 54-116 13-230-4-328-42z" fill="#F6F7F9"/>
+  <ellipse cx="930" cy="300" rx="286" ry="226" fill="#EFF1F4"/>
+
+  <defs>
+    <g id="dots">
+      <circle cx="80" cy="74" r="5"/><circle cx="116" cy="74" r="5"/><circle cx="152" cy="74" r="5"/><circle cx="188" cy="74" r="5"/>
+      <circle cx="80" cy="110" r="5"/><circle cx="116" cy="110" r="5"/><circle cx="152" cy="110" r="5"/><circle cx="188" cy="110" r="5"/>
+      <circle cx="80" cy="146" r="5"/><circle cx="116" cy="146" r="5"/><circle cx="152" cy="146" r="5"/><circle cx="188" cy="146" r="5"/>
+    </g>
+  </defs>
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 540c150-30 274-16 398 8 128 24 236 32 352 12 112-20 222-44 450-28v98H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <use href="#dots" transform="translate(620 60)"/>
+    <use href="#dots" transform="translate(-50 478)"/>
+  </g>
+
+  <!-- ================= 受け取る手（手のひらと手首・箱の背面） ================= -->
+  <g>
+    <path d="M150 512h390c54 2 88 36 88 80 0 32-16 54-36 54H300c-68 0-132-36-150-134z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M236 548c20 38 50 62 92 72" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= 左：サンプル箱（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="130" y="188" width="470" height="336" rx="10" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+
+    <!-- 開いたフタ（左右） -->
+    <rect x="-116" y="-42" width="116" height="42" rx="10" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" transform="translate(138 198) rotate(38)"/>
+    <rect x="0" y="-42" width="116" height="42" rx="10" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" transform="translate(592 198) rotate(-38)"/>
+
+    <!-- 箱の内側（裏面＝赤の陰） -->
+    <rect x="130" y="188" width="470" height="44" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 中身のサンプル品 -->
+    <g>
+      <rect x="300" y="104" width="44" height="46" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="276" y="138" width="92" height="118" rx="18" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="396" y="160" width="84" height="96" rx="12" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M408 184h60" fill="none" stroke="#C9CBD0" stroke-width="6" stroke-linecap="round"/>
+    </g>
+
+    <!-- 箱の前面 -->
+    <path d="M130 232h470v282a10 10 0 0 1-10 10H140a10 10 0 0 1-10-10z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 箱をつかむ親指と指（前面） -->
+    <g fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round">
+      <rect x="-32" y="-58" width="64" height="116" rx="32" transform="translate(190 500) rotate(-8)"/>
+      <rect x="-28" y="-60" width="56" height="120" rx="28" transform="translate(470 500) rotate(-6)"/>
+      <rect x="-28" y="-60" width="56" height="120" rx="28" transform="translate(532 496) rotate(-2)"/>
+      <rect x="-28" y="-60" width="56" height="120" rx="28" transform="translate(594 502) rotate(3)"/>
+    </g>
+  </g>
+
+  <!-- ================= 承認のチェック（シアン） ================= -->
+  <g transform="translate(672 404)">
+    <circle cx="66" cy="66" r="66" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <circle cx="66" cy="66" r="66" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8"/>
+    <circle cx="66" cy="66" r="52" fill="#25F4EE"/>
+    <path d="M45 68l15 17 31-35" fill="none" stroke="#0B0C10" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 右：申請フォーム（シアン） ================= -->
+  <g>
+    <rect x="820" y="116" width="330" height="440" rx="16" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="820" y="116" width="330" height="440" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- フォームの見出し帯 -->
+    <path d="M820 132a16 16 0 0 1 16-16h298a16 16 0 0 1 16 16v134H820z" fill="#25F4EE"/>
+    <rect x="856" y="172" width="210" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="856" y="208" width="142" height="18" rx="9" fill="#FFFFFF"/>
+    <path d="M820 266h330" fill="none" stroke="#0B0C10" stroke-width="7"/>
+
+    <!-- 記入済みの項目 -->
+    <g>
+      <rect x="856" y="298" width="38" height="38" rx="10" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M866 317l8 9 15-18" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="912" y="308" width="176" height="18" rx="9" fill="#DFE0E2"/>
+
+      <rect x="856" y="352" width="38" height="38" rx="10" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M866 371l8 9 15-18" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="912" y="362" width="140" height="18" rx="9" fill="#DFE0E2"/>
+    </g>
+
+    <!-- 入力欄 -->
+    <rect x="856" y="406" width="258" height="52" rx="12" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+    <rect x="876" y="424" width="118" height="16" rx="8" fill="#DFE0E2"/>
+
+    <!-- 送信ボタン -->
+    <rect x="856" y="474" width="258" height="68" rx="16" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M962 508h44M990 494l16 14-16 14" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="86" cy="300" r="20" fill="#25F4EE"/>
+  <circle cx="752" cy="300" r="16" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopのサンプル申請は、アフィリエイトに参加するクリエイターが、紹介したい商品のサンプルをセラー（出品者）にリクエストできる仕組みです。</strong>ただし「申請すれば誰でも届く」わけではなく、セラー側の承認審査があり、受け取った後には<strong>期限内の動画投稿というタスク</strong>が待っています。この記事では、申請の手順・通りやすくなるプロフィールの整え方・承認後にやること・やってはいけないNG行動までを、セラー側と日常的にやり取りしているMCN（クリエイター事務所）の立場から解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>サンプル申請の手順と、無料型・返金型のお金の流れの違い</li>
+      <li>承認率を左右するプロフィールの整え方（セラーは何を見ているか）</li>
+      <li>承認後にやること・NG行動と、サンプル案件の先にあるブランド案件</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">サンプル案件の、その先へ</div>
+    <p>LEAMのMCNではブランド案件（固定報酬つき案件あり）をご案内しています。サンプル申請で実績を積んでいるクリエイターの方に、発信ジャンルの合う案件をマッチングします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/mcn/">MCNの案件案内を見る</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">相談してみる</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">サンプル申請とは：商品を「もらう」のではなく「投稿とセット」の仕組み</a></li>
+      <li><a href="#s2">サンプルは2種類：無料型と返金型でお金の流れが違う</a></li>
+      <li><a href="#s3">申請前の土台：アカウント条件とプロフィールで通過率の大半が決まる</a></li>
+      <li><a href="#s4">申請の手順は5ステップ：商品選び→条件確認→申請→承認待ち</a></li>
+      <li><a href="#s5">通りやすくなるコツ：セラーは「送ったら投稿してくれる人か」を見ている</a></li>
+      <li><a href="#s6">承認後にやること：期限内の投稿とPR表記までがサンプル申請</a></li>
+      <li><a href="#s7">NG行動を避ける：転売・放置・乱発は次の承認率を下げる</a></li>
+      <li><a href="#s8">実績が貯まると、固定報酬つきのブランド案件が視野に入る</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>サンプル申請とは：商品を「もらう」のではなく「投稿とセット」の仕組み</h2>
+  <p>サンプル申請とは、TikTok Shopのアフィリエイト（商品を動画やライブで紹介し、売上に応じて成果報酬＝コミッションを受け取る仕組み）に参加しているクリエイターが、<strong>紹介用の商品サンプルをセラーにリクエストできる制度</strong>です。承認されると商品が自宅に届き、実物を使ったレビュー動画を作れるようになります。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="サンプル提供の三者関係図：セラーがクリエイターへサンプルと成果報酬を提供し、クリエイターがレビュー動画で視聴者へ紹介、視聴者の購入がセラーの売上になる循環">
+      <rect x="20" y="105" width="175" height="90" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="107" y="143" text-anchor="middle" font-size="15" font-weight="800" fill="#17181C">セラー（出品者）</text>
+      <text x="107" y="168" text-anchor="middle" font-size="11" fill="#787D8A">サンプルの原価を負担</text>
+      <rect x="272" y="100" width="176" height="100" rx="12" fill="#17181C"/>
+      <text x="360" y="140" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">クリエイター</text>
+      <text x="360" y="165" text-anchor="middle" font-size="11" fill="#C9CBD4">実物を使って動画を作る</text>
+      <rect x="525" y="105" width="175" height="90" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="612" y="143" text-anchor="middle" font-size="15" font-weight="800" fill="#17181C">視聴者</text>
+      <text x="612" y="168" text-anchor="middle" font-size="11" fill="#787D8A">動画から購入する</text>
+      <path d="M195 125 H262" stroke="#E8324A" stroke-width="2"/>
+      <path d="M256 119 L266 125 L256 131 Z" fill="#E8324A"/>
+      <text x="230" y="112" text-anchor="middle" font-size="10.5" font-weight="700" fill="#C2203A">サンプル（承認制）</text>
+      <path d="M195 172 H262" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4"/>
+      <path d="M256 166 L266 172 L256 178 Z" fill="#0E8A5F"/>
+      <text x="230" y="196" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0E8A5F">成果報酬（売上連動）</text>
+      <path d="M448 150 H515" stroke="#787D8A" stroke-width="2"/>
+      <path d="M509 144 L519 150 L509 156 Z" fill="#787D8A"/>
+      <text x="482" y="138" text-anchor="middle" font-size="10.5" font-weight="700" fill="#454956">レビュー動画</text>
+      <path d="M612 195 V258 H107 V202" stroke="#787D8A" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M101 210 L107 198 L113 210 Z" fill="#787D8A"/>
+      <text x="360" y="248" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">購入代金（GMV）がセラーの売上になる</text>
+      <text x="360" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">サンプルは「投資」。だから審査がある</text>
+    </svg>
+    <figcaption>図1：サンプル提供の全体像。原価はセラー負担＝「投稿してくれる人」に送りたい（LEAM作成）</figcaption>
+  </figure>
+  <p>ここで押さえておきたいのは、<strong>サンプルの原価と送料はセラーが負担している</strong>という点です。セラーにとってサンプル提供は「動画を投稿してくれるクリエイターへの投資」であり、だからこそ申請には審査があります。逆に言えば、「この人に送れば動画になる」と思ってもらえる状態を先に作ることが、承認率を上げる最短ルートです。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>サンプルは「もらう」ものではなく<strong>「仕事の材料を預かる」もの</strong>です。この目線でプロフィールと申請先の選び方を整えるだけで、セラー側からの見え方が大きく変わります。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>サンプルは2種類：無料型と返金型でお金の流れが違う</h2>
+  <p>サンプルには大きく<strong>「無料サンプル」と、公式ヘルプで「返金可能なサンプル」と呼ばれている購入後返金型（本記事では以下「返金型サンプル」と表記します）の2種類</strong>があり、お金の流れが異なります。※呼び方や提供条件は更新されることがあるため、最新の表記は申請画面と公式ヘルプで確認してください。</p>
+  <h3>無料サンプル：受け取りは0円。ただし投稿タスクとセット</h3>
+  <p>受け取り自体に費用はかかりませんが、多くの場合<strong>「期限内にショッピング動画を投稿する」などのタスクが紐づいています</strong>。受け取って投稿しないと、その履歴はセラー側に残り、以後の申請が通りにくくなります。</p>
+  <h3>返金型サンプル：先に自分で購入し、条件を達成すると返金される</h3>
+  <p>いったん自分で商品を購入してコンテンツを投稿し、そのコンテンツ経由で指定された販売件数などの条件を達成すると代金が返金されるタイプです。セラー側から見ると「本気度の高いクリエイター」を選別できるため、人気商品で使われることがあります。<strong>条件を達成できなければ代金はそのまま自己負担</strong>になる点に注意してください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>無料サンプル</th><th>返金型サンプル</th></tr></thead>
+    <tbody>
+      <tr><td>受け取り時の支払い</td><td class="y">なし（0円）</td><td>先に自分で購入する</td></tr>
+      <tr><td>お金が戻る条件</td><td class="n">－（最初から無料）</td><td>投稿と、指定された販売件数などの達成で返金</td></tr>
+      <tr><td>紐づくタスク</td><td>期限内の動画投稿など</td><td>返金条件そのものがタスク</td></tr>
+      <tr><td>向いている場面</td><td class="y">初めての案件・実績づくり</td><td>本気で売りにいける得意ジャンルの商品</td></tr>
+      <tr><td>最大のリスク</td><td>投稿放置で信用が下がる</td><td>条件未達だと代金が自己負担になる</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 290" role="img" aria-label="無料サンプルと返金型サンプルのお金の流れの対比図：無料型は支払いゼロで投稿タスクが残り、返金型は先に購入して条件達成で返金される">
+      <rect x="20" y="20" width="330" height="250" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="50" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">無料サンプル</text>
+      <rect x="50" y="68" width="270" height="42" rx="9" fill="#fff" stroke="#E6E7EB"/>
+      <text x="185" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">申請 → セラーが承認</text>
+      <path d="M185 110 V128" stroke="#787D8A" stroke-width="2"/>
+      <rect x="50" y="130" width="270" height="42" rx="9" fill="#EAF6F1" stroke="#BFE3D4"/>
+      <text x="185" y="156" text-anchor="middle" font-size="12" font-weight="700" fill="#0E8A5F">商品が届く（支払い 0円）</text>
+      <path d="M185 172 V190" stroke="#787D8A" stroke-width="2"/>
+      <rect x="50" y="192" width="270" height="42" rx="9" fill="#17181C"/>
+      <text x="185" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">期限内に動画を投稿（タスク）</text>
+      <text x="185" y="256" text-anchor="middle" font-size="10.5" fill="#787D8A">放置すると以後の承認に響く</text>
+      <rect x="370" y="20" width="330" height="250" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="50" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">返金型サンプル</text>
+      <rect x="400" y="68" width="270" height="42" rx="9" fill="#FDEEF1"/>
+      <text x="535" y="94" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">自分で先に購入（−代金）</text>
+      <path d="M535 110 V128" stroke="#787D8A" stroke-width="2"/>
+      <rect x="400" y="130" width="270" height="42" rx="9" fill="#17181C"/>
+      <text x="535" y="156" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">投稿し、指定の販売件数を達成</text>
+      <path d="M535 172 V190" stroke="#787D8A" stroke-width="2"/>
+      <rect x="400" y="192" width="270" height="42" rx="9" fill="#EAF6F1" stroke="#BFE3D4"/>
+      <text x="535" y="218" text-anchor="middle" font-size="12" font-weight="700" fill="#0E8A5F">代金が返金される（実質 0円）</text>
+      <text x="535" y="256" text-anchor="middle" font-size="10.5" font-weight="700" fill="#C2203A">未達なら返金なし＝自己負担</text>
+    </svg>
+    <figcaption>図2：2種類のお金の流れ。返金型は条件未達だと自己負担になる（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 返金型は「条件・期限・返金方法」を申請前に読む</div>
+    <p>返金型は実質無料に見えますが、構造は「後払いの成果条件つき」です。<strong>達成できる見込みが立たない商品には手を出さない</strong>のが鉄則です。条件の詳細は案件ごとの表示と公式ヘルプで必ず確認してください。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>申請前の土台：アカウント条件とプロフィールで通過率の大半が決まる</h2>
+  <p>申請ボタンを押す前に、アカウント側の条件とプロフィールの土台を整えておくと、その後の承認率が大きく変わります。順に確認しましょう。</p>
+  <h3>アカウント条件：アフィリエイト参加には基準があり、その基準は変わる</h3>
+  <p>TikTok Shopのアフィリエイト機能を使うには、<strong>年齢・地域・フォロワー数・アカウントの健全性などの条件</strong>が設定されています。この基準は変更されることがあるため、具体的な数値はアプリ内の表示と公式ヘルプで確認してください。条件を満たしてアフィリエイトに参加すると、対象商品を探してサンプルを申請できるようになります。</p>
+  <h3>プロフィールの土台：セラーは「ジャンルの一致」と「直近の活動」を見る</h3>
+  <p>当社の運用実感として、セラー側の管理画面ではクリエイターをカテゴリーや活動状況で検索・絞り込みできるため、<strong>①発信ジャンルがはっきりしている ②直近も投稿が続いている ③商品を紹介した動画が過去にある</strong>——の3点が揃ったアカウントは選ばれやすくなります。フォロワー数の大小だけで決まるわけではありません。</p>
+  <div class="tw"><table>
+    <thead><tr><th>整えるもの</th><th>なぜ効くか</th><th>今日からできること</th></tr></thead>
+    <tbody>
+      <tr><td><b>発信ジャンルの一貫性</b></td><td>セラーはカテゴリーでクリエイターを探す</td><td>プロフィール文と直近の動画をひとつのジャンルに揃える</td></tr>
+      <tr><td><b>直近の投稿</b></td><td>「今も活動しているか」が最初に見られる</td><td>投稿が長く途切れている状態を作らない</td></tr>
+      <tr><td><b>商品紹介の実績</b></td><td>「送ったら動画になるか」の判断材料になる</td><td>手持ちの愛用品レビューを先に数本作っておく</td></tr>
+      <tr><td><b>配送先・表示設定</b></td><td>不備があると承認後の発送で止まる</td><td>住所とショップ関連の設定を先に整備する</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s4"><span class="no en">04</span>申請の手順は5ステップ：商品選び→条件確認→申請→承認待ち</h2>
+  <p>手順自体はシンプルです（※画面の名称・導線は更新されることがあります。最新の表記は公式ヘルプとアプリ内の表示をご確認ください）。</p>
+  <ol class="steps">
+    <li><b>アフィリエイト機能を有効化する</b><p>参加条件を満たしているかを確認し、クリエイター向けのショップ機能（アフィリエイト）を有効にします。ここが済んでいないと申請ボタン自体が表示されません。</p></li>
+    <li><b>紹介したい商品を探す</b><p>商品一覧から、自分の発信ジャンルに合う商品を選びます。「なんでも申請」ではなく、動画の絵が浮かぶ商品に絞るのがコツです。</p></li>
+    <li><b>サンプル条件を確認する</b><p>サンプルの種別（無料型か返金型か）・在庫の有無・成果報酬率・投稿タスクの内容を確認します。返金型は返金条件まで必ず読みます。</p></li>
+    <li><b>配送先を確認して申請する</b><p>サンプルリクエストから配送先住所を確認して送信します。申請時にコメントを添えられる場合は、「どんな動画を作るか」を一言書くと判断材料になります。</p></li>
+    <li><b>承認を待つ間に構成を考えておく</b><p>審査はセラー側が行います。待っている間に動画の構成案を作っておくと、到着後すぐ撮影に入れて期限に余裕が生まれます。</p></li>
+  </ol>
+  <figure>
+    <svg viewBox="0 0 720 230" role="img" aria-label="申請から投稿完了までのタイムライン図：申請、セラー審査、承認、到着・撮影、期限内投稿の5段階で、承認後は投稿期限を意識して動く">
+      <line x1="60" y1="90" x2="660" y2="90" stroke="#E6E7EB" stroke-width="3"/>
+      <circle cx="90" cy="90" r="9" fill="#17181C"/>
+      <circle cx="225" cy="90" r="9" fill="#17181C"/>
+      <circle cx="360" cy="90" r="9" fill="#E8324A"/>
+      <circle cx="495" cy="90" r="9" fill="#17181C"/>
+      <circle cx="630" cy="90" r="9" fill="#E8324A"/>
+      <text x="90" y="55" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">申請</text>
+      <text x="225" y="55" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">セラー審査</text>
+      <text x="360" y="55" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">承認</text>
+      <text x="495" y="55" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">到着・撮影</text>
+      <text x="630" y="55" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">期限内に投稿</text>
+      <text x="90" y="122" text-anchor="middle" font-size="10.5" fill="#787D8A">配送先を確認</text>
+      <text x="225" y="122" text-anchor="middle" font-size="10.5" fill="#787D8A">承認 or 見送り</text>
+      <text x="360" y="122" text-anchor="middle" font-size="10.5" fill="#787D8A">通知が届く</text>
+      <text x="495" y="122" text-anchor="middle" font-size="10.5" fill="#787D8A">すぐ撮って下書き</text>
+      <text x="630" y="122" text-anchor="middle" font-size="10.5" fill="#787D8A">タスク完了を確認</text>
+      <path d="M360 145 V168 M630 145 V168 M360 168 H630" stroke="#E8324A" stroke-width="1.5" fill="none"/>
+      <text x="495" y="192" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">投稿期限のカウントはこの区間（詳細は案件ごとの表示を確認）</text>
+      <text x="495" y="215" text-anchor="middle" font-size="10.5" fill="#787D8A">承認されてから構成を考え始めると、期限に追われやすい</text>
+    </svg>
+    <figcaption>図3：申請から投稿完了までの流れ。承認後は期限との勝負になる（LEAM作成）</figcaption>
+  </figure>
+
+  <h2 id="s5"><span class="no en">05</span>通りやすくなるコツ：セラーは「送ったら投稿してくれる人か」を見ている</h2>
+  <p>承認するかどうかを決めるのはセラーです。つまり通過率を上げる近道は、<strong>セラー側の画面に自分がどう映っているかを想像すること</strong>に尽きます。当社はMCNとしてセラー側とも日常的にやり取りしていますが、選定で最重要視されているのはフォロワー数の大小より「送ったら本当に投稿されるか」です。</p>
+  <figure>
+    <svg viewBox="0 0 720 310" role="img" aria-label="セラー側から見える判断材料の図：ジャンルの一致、直近の投稿頻度、商品紹介の実績、アカウント状態の4要素がセラーの承認判断に入り、承認または見送りが決まる">
+      <rect x="28" y="30" width="256" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="156" y="62" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">ジャンルの一致（カテゴリー検索）</text>
+      <rect x="28" y="98" width="256" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="156" y="130" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">直近も投稿が続いているか</text>
+      <rect x="28" y="166" width="256" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="156" y="198" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">商品紹介の動画・完了実績</text>
+      <rect x="28" y="234" width="256" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="156" y="266" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">アカウント状態・配送先の整備</text>
+      <path d="M284 56 H320 M284 124 H320 M284 192 H320 M284 260 H320" stroke="#787D8A" stroke-width="2"/>
+      <rect x="325" y="95" width="200" height="126" rx="14" fill="#17181C"/>
+      <text x="425" y="148" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">セラーの承認判断</text>
+      <text x="425" y="175" text-anchor="middle" font-size="10.5" fill="#C9CBD4">管理画面でクリエイターを</text>
+      <text x="425" y="192" text-anchor="middle" font-size="10.5" fill="#C9CBD4">検索・絞り込みできる</text>
+      <path d="M525 130 H565 M525 190 H565" stroke="#787D8A" stroke-width="2"/>
+      <path d="M559 124 L569 130 L559 136 Z" fill="#787D8A"/>
+      <path d="M559 184 L569 190 L559 196 Z" fill="#787D8A"/>
+      <rect x="572" y="104" width="120" height="52" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="632" y="136" text-anchor="middle" font-size="13.5" font-weight="800" fill="#0E8A5F">承認</text>
+      <rect x="572" y="164" width="120" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="632" y="196" text-anchor="middle" font-size="13.5" font-weight="800" fill="#787D8A">見送り</text>
+    </svg>
+    <figcaption>図4：セラー側から見えている判断材料。フォロワー数だけでは決まらない（LEAM作成）</figcaption>
+  </figure>
+  <h3>コツ1：申請は「自分のジャンルに合う商品」に絞る</h3>
+  <p>ジャンル外への乱発申請は通過率が下がるだけでなく、承認された分を投稿しきれず<strong>タスク未達の履歴が積み上がる</strong>という二重のダメージになります。プロフィールを見たセラーが「この人の視聴者はこの商品を買いそうだ」と思えるかどうかが基準です。</p>
+  <h3>コツ2：「商品を紹介した動画」を先に作っておく</h3>
+  <p>申請が来ると、セラーはあなたのプロフィールを見に来ます。そのときに商品紹介系の動画が1本もないと、判断材料がありません。<strong>手持ちの愛用品のレビュー動画でかまわないので、先に数本並べておく</strong>と「送ったら動画になる人」に見えます。</p>
+  <h3>コツ3：小さな完了実績を1件ずつ積む</h3>
+  <p>サンプル案件は履歴が資産です。承認→期限内投稿→タスク完了、というサイクルを1件確実に回すと、その実績が次の承認判断の材料になります。実績が貯まると、セラー側から指名で招待される<strong>ターゲットコラボ（指名案件）</strong>の対象にもなりやすくなります。</p>
+
+  <div class="ctabox">
+    <div class="ct">ジャンルの合う案件を、探す手間なく受け取る方法もあります</div>
+    <p>LEAMのMCNではブランド案件（固定報酬つき案件あり）をご案内しています。プロフィールの整え方や案件の選び方も、所属クリエイターの実績をもとにお伝えできます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/mcn/">MCNの案件案内を見る</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>承認後にやること：期限内の投稿とPR表記までがサンプル申請</h2>
+  <p>承認はゴールではなくスタートです。承認後の動き方が、次の案件の通りやすさをそのまま決めます。</p>
+  <h3>まず「期限」と「指定条件」を確認する</h3>
+  <p>承認の通知が来たら、案件の詳細画面で<strong>投稿期限・指定フォーマット・対象商品リンクの紐づけ方法</strong>を最初に確認します。実務的には「到着したらすぐ撮影→下書き保存→期限より前に投稿」の流れにしておくと、配送の遅れや撮り直しがあっても間に合います。</p>
+  <h3>PR表記（コンテンツの開示）を必ず入れる</h3>
+  <p>サンプル提供を受けて作った動画は、事業者から便益を受けた投稿です。<strong>プロモーション内容であることが視聴者に分かる表示（アプリのコンテンツ開示設定やPRである旨の記載）</strong>を必ず入れてください。日本では景品表示法のステルスマーケティング規制もあり、表示を省くリスクはクリエイター自身に返ってきます。表示方法の詳細は最新の公式ヘルプと消費者庁の公開資料で確認してください。</p>
+  <h3>動画は1本で終わらせない</h3>
+  <p>投稿本数の最低ラインは案件ごとの指定に従うのが大前提ですが、当社の運用実感では、<strong>1本で終わらせず切り口を変えて複数本</strong>（使用シーン別・ビフォーアフター・よくある質問への回答など）投稿するクリエイターの方が成果につながりやすい傾向があります。1本目の反応を見てから2本目の切り口を決める、という順番で無理なく増やしてください。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>投稿を終えたら、セラーへのメッセージで<strong>「投稿しました」と動画リンクを一言添えて報告</strong>しておくと、丁寧に対応するクリエイターとして覚えてもらえます。次の指名案件につながる、コストゼロの一手です。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>NG行動を避ける：転売・放置・乱発は次の承認率を下げる</h2>
+  <p>サンプル申請でつまずくパターンは、実はほぼ決まっています。以下は<strong>やってしまうと「次から通らなくなる」行動</strong>です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>NG行動</th><th>何が起きるか</th><th>代わりにどうするか</th></tr></thead>
+    <tbody>
+      <tr><td><b>サンプルの転売・譲渡</b></td><td>サンプルは紹介コンテンツを作るために提供されるもの。目的外の利用がどう扱われるかは、公式ヘルプと規約で必ず確認する</td><td>使い道のない商品はそもそも申請しない</td></tr>
+      <tr><td><b>承認後の投稿放置</b></td><td>未投稿の履歴が残り、以後の承認率が下がる</td><td>撮影時間が取れない時期は申請数を絞る</td></tr>
+      <tr><td><b>期限ぎりぎりの計画</b></td><td>配送の遅れや撮り直しで未達になる</td><td>到着後すぐ撮影し、下書きまで進めておく</td></tr>
+      <tr><td><b>効果の断定・誇大なレビュー</b></td><td>景品表示法や、コスメ・健康食品では薬機法に抵触するおそれ</td><td>使用感を事実の範囲で語る。断定表現を避ける</td></tr>
+      <tr><td><b>ジャンル外への乱発申請</b></td><td>通過率が下がり、プロフィールの一貫性も崩れる</td><td>自分の視聴者が買いそうな商品に絞る</td></tr>
+      <tr><td><b>セラーへの督促・過度な要求</b></td><td>関係が切れ、指名案件の芽がなくなる</td><td>連絡は要点だけ、丁寧に。報告はまめに</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ コスメ・健康食品ジャンルは表現の規制が厳しい</div>
+    <p>「治る」「痩せる」といった効果の断定は、商材によっては法令違反になります。サンプルをもらった手前、良く言いたくなる場面こそ<strong>「事実として言えることだけを言う」</strong>を徹底してください。迷ったら表現をやわらげる方に倒すのが安全です。</p>
+  </div>
+  <h3>申請ボタンが出ない・通らない時は、原因を上から順に切り分ける</h3>
+  <p>「そもそも申請ボタンが表示されない」「申請しても全然通らない」という相談も多いです。次の順で確認すると原因を特定しやすくなります。</p>
+  <figure>
+    <svg viewBox="0 0 720 440" role="img" aria-label="申請が通らない時の診断フローチャート：アフィリエイト機能の有効化、商品のサンプル枠と在庫、ジャンルの一致の順に確認し、揃っていれば実績を積んで再申請する">
+      <rect x="235" y="14" width="250" height="44" rx="22" fill="#17181C"/>
+      <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">申請ボタンが出ない・通らない</text>
+      <path d="M360 58 V84" stroke="#787D8A" stroke-width="2"/>
+      <rect x="205" y="86" width="310" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q1. アフィリエイト機能は有効化済み？</text>
+      <path d="M205 109 H120 V150" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="150" y="102" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="26" y="152" width="188" height="76" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="180" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">参加条件を確認する</text>
+      <text x="120" y="202" text-anchor="middle" font-size="10.5" fill="#454956">年齢・地域・フォロワー等。</text>
+      <text x="120" y="218" text-anchor="middle" font-size="10.5" fill="#454956">基準は変わる＝公式で確認</text>
+      <path d="M360 132 V160" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="154" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="205" y="162" width="310" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="191" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q2. その商品にサンプル枠・在庫はある？</text>
+      <path d="M515 185 H600 V226" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="545" y="178" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="506" y="228" width="188" height="76" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="600" y="256" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">商品を変える</text>
+      <text x="600" y="278" text-anchor="middle" font-size="10.5" fill="#454956">在庫や枠がない商品に</text>
+      <text x="600" y="294" text-anchor="middle" font-size="10.5" fill="#454956">粘っても通らない</text>
+      <path d="M360 208 V236" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="230" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="205" y="238" width="310" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="267" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q3. 自分の発信ジャンルと合っている？</text>
+      <path d="M205 261 H120 V302" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="150" y="254" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="26" y="304" width="188" height="76" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="332" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">申請先を絞り直す</text>
+      <text x="120" y="354" text-anchor="middle" font-size="10.5" fill="#454956">乱発をやめ、視聴者が</text>
+      <text x="120" y="370" text-anchor="middle" font-size="10.5" fill="#454956">買いそうな商品だけに</text>
+      <path d="M360 284 V330" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="324" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="235" y="332" width="250" height="76" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="360" y="362" text-anchor="middle" font-size="13" font-weight="800" fill="#0E8A5F">土台はOK</text>
+      <text x="360" y="386" text-anchor="middle" font-size="10.5" fill="#454956">完了実績を1件ずつ積んで再申請。履歴が次の承認を呼ぶ</text>
+    </svg>
+    <figcaption>図5：申請が通らない時の切り分け。上から順に確認する（LEAM作成）</figcaption>
+  </figure>
+
+  <h2 id="s8"><span class="no en">08</span>実績が貯まると、固定報酬つきのブランド案件が視野に入る</h2>
+  <p>サンプル申請＋成果報酬は、TikTok Shopで商品紹介を始める入口です。そして<strong>期限内投稿の完了実績と売上実績が貯まってくると、案件の受け方そのものが変わってきます</strong>。セラー側から指名で招待されるターゲットコラボや、MCN経由で受けるブランド案件では、条件面がサンプル案件と異なる場合があります（※報酬条件は案件ごとに異なります）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>サンプル案件（自分で申請）</th><th>指名コラボ（セラーから招待）</th><th>ブランド案件（MCN経由）</th></tr></thead>
+    <tbody>
+      <tr><td>商品との出会い方</td><td>自分で探して申請する</td><td>セラーから声がかかる</td><td>事務所がジャンルに合わせて案内</td></tr>
+      <tr><td>報酬のかたち</td><td>成果報酬（コミッション）中心</td><td>成果報酬中心。条件交渉の余地あり</td><td class="y">固定報酬つきの案件がある</td></tr>
+      <tr><td>求められるもの</td><td>これから実績を作る段階でOK</td><td>投稿の完了実績</td><td>ジャンルの実績と継続できる体制</td></tr>
+    </tbody>
+  </table></div>
+  <p>つまり、目の前のサンプル案件を「期限内にきちんと投稿し切る」ことが、そのまま次のステージへの営業活動になっています。1件ずつの完了実績を、資産として積み上げていきましょう。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>フォロワーが少なくてもサンプル申請はできますか？</summary><div class="a">アフィリエイト参加にはフォロワー数などの条件が設定されており、基準は変更されることがあるため最新はアプリ内の表示と公式ヘルプで確認してください。条件を満たしていれば、承認の場面ではフォロワー数の大小より発信ジャンルの一致や投稿実績が重視される、というのが当社の運用実感です。</div></details>
+    <details><summary>申請してから結果はどのくらいで分かりますか？</summary><div class="a">審査はセラー側が行うため、案件によって差があります。すぐに承認される場合もあれば時間がかかる場合もあるので、返事を待つ間に他の候補商品を探したり、動画の構成を考えたりして進めておくのが実務的です。</div></details>
+    <details><summary>無料サンプルは本当に無料ですか？</summary><div class="a">受け取り自体は無料ですが、多くの場合、期限内の動画投稿などのタスクが紐づいています。受け取って投稿しないと履歴がセラー側に残り、以後の申請が通りにくくなるため、「無料でもらえるもの」ではなく「投稿とセットの仕事」と考えるのが正確です。</div></details>
+    <details><summary>返金型サンプルとは何ですか？</summary><div class="a">いったん自分で商品を購入してコンテンツを投稿し、そのコンテンツ経由で指定された販売件数などの条件を達成すると代金が返金されるタイプのサンプルです。条件を達成できなければ代金は自己負担になるため、申請前に返金条件・期限を必ず確認してください。</div></details>
+    <details><summary>動画は何本投稿すればいいですか？</summary><div class="a">最低ラインは案件ごとに指定されるタスクに従ってください。そのうえで当社の運用実感としては、1本で終わらせず切り口を変えて複数本投稿する方が成果につながりやすい傾向があります。1本目の反応を見てから2本目の切り口を決めるのがおすすめです。</div></details>
+    <details><summary>申請が承認されません。何を見直すべきですか？</summary><div class="a">①アフィリエイト機能の有効化と参加条件、②その商品のサンプル枠・在庫、③発信ジャンルと商品の一致、の順で切り分けてください。土台に問題がなければ、愛用品レビューなど商品紹介の動画を増やし、完了実績を1件ずつ積むことが承認率の改善につながります。</div></details>
+    <details><summary>サンプルをもらった動画にPR表記は必要ですか？</summary><div class="a">必要です。サンプル提供を受けた投稿はプロモーションにあたるため、アプリのコンテンツ開示設定やPRである旨の表示を入れてください。日本では景品表示法のステルスマーケティング規制もあります。表示方法の詳細は最新の公式ヘルプと消費者庁の公開資料で確認してください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><a href="https://leam.co.jp/column/affiliate-guide/" style="text-decoration:none;color:inherit"><span class="rc">仕組み</span><b><a href="https://leam.co.jp/column/affiliate-guide/" style="color:inherit;text-decoration:none">アフィリエイトの仕組み</a></b><span>サンプル申請の前提になる、成果報酬の全体像</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/creator-commission/" style="text-decoration:none;color:inherit"><span class="rc">報酬</span><b><a href="https://leam.co.jp/column/creator-commission/" style="color:inherit;text-decoration:none">クリエイター報酬相場</a></b><span>コミッション率と案件条件の考え方</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/short-video-playbook/" style="text-decoration:none;color:inherit"><span class="rc">動画制作</span><b><a href="https://leam.co.jp/column/short-video-playbook/" style="color:inherit;text-decoration:none">売れるショート動画の作り方</a></b><span>サンプルが届いたら、次はこの1本</span></a></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopで活動するクリエイターの方へ</div>
+    <p>LEAMのMCNではブランド案件（固定報酬つき案件あり）をご案内しています。サンプル案件で実績づくり中の方も歓迎です。まずは活動ジャンルを教えてください。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/mcn/">MCNの案内を見る</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">問い合わせる</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・クリエイター向けの公式ヘルプ（サンプル提供・アフィリエイトの仕様、画面名称、参加条件は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。PR表記については消費者庁のステルスマーケティング規制に関する公開資料もあわせてご確認ください。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">サンプル申請とは</a></li>
+        <li><a href="#s2">無料型と返金型の違い</a></li>
+        <li><a href="#s3">申請前に整える土台</a></li>
+        <li><a href="#s4">申請の手順5ステップ</a></li>
+        <li><a href="#s5">通りやすくなるコツ</a></li>
+        <li><a href="#s6">承認後にやること</a></li>
+        <li><a href="#s7">NG行動と切り分け</a></li>
+        <li><a href="#s8">ブランド案件への道</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>ブランド案件のご案内</b>
+      <p>LEAMのMCNではブランド案件（固定報酬つき案件あり）をご案内しています。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/mcn/">MCNの案内を見る</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopのサンプル申請のやり方【クリエイター向け】｜通りやすくなるコツ",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "フォロワーが少なくてもサンプル申請はできますか？", "acceptedAnswer": {"@type": "Answer", "text": "アフィリエイト参加にはフォロワー数などの条件が設定されており、基準は変更されることがあるため最新はアプリ内の表示と公式ヘルプで確認してください。条件を満たしていれば、承認の場面ではフォロワー数の大小より発信ジャンルの一致や投稿実績が重視される、というのが当社の運用実感です。"}},
+        {"@type": "Question", "name": "申請してから結果はどのくらいで分かりますか？", "acceptedAnswer": {"@type": "Answer", "text": "審査はセラー側が行うため、案件によって差があります。すぐに承認される場合もあれば時間がかかる場合もあるので、返事を待つ間に他の候補商品を探したり、動画の構成を考えたりして進めておくのが実務的です。"}},
+        {"@type": "Question", "name": "無料サンプルは本当に無料ですか？", "acceptedAnswer": {"@type": "Answer", "text": "受け取り自体は無料ですが、多くの場合、期限内の動画投稿などのタスクが紐づいています。受け取って投稿しないと履歴がセラー側に残り、以後の申請が通りにくくなるため、「無料でもらえるもの」ではなく「投稿とセットの仕事」と考えるのが正確です。"}},
+        {"@type": "Question", "name": "返金型サンプルとは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "いったん自分で商品を購入してコンテンツを投稿し、そのコンテンツ経由で指定された販売件数などの条件を達成すると代金が返金されるタイプのサンプルです。条件を達成できなければ代金は自己負担になるため、申請前に返金条件・期限を必ず確認してください。"}},
+        {"@type": "Question", "name": "動画は何本投稿すればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "最低ラインは案件ごとに指定されるタスクに従ってください。そのうえで当社の運用実感としては、1本で終わらせず切り口を変えて複数本投稿する方が成果につながりやすい傾向があります。1本目の反応を見てから2本目の切り口を決めるのがおすすめです。"}},
+        {"@type": "Question", "name": "申請が承認されません。何を見直すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "①アフィリエイト機能の有効化と参加条件、②その商品のサンプル枠・在庫、③発信ジャンルと商品の一致、の順で切り分けてください。土台に問題がなければ、愛用品レビューなど商品紹介の動画を増やし、完了実績を1件ずつ積むことが承認率の改善につながります。"}},
+        {"@type": "Question", "name": "サンプルをもらった動画にPR表記は必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "必要です。サンプル提供を受けた投稿はプロモーションにあたるため、アプリのコンテンツ開示設定やPRである旨の表示を入れてください。日本では景品表示法のステルスマーケティング規制もあります。表示方法の詳細は最新の公式ヘルプと消費者庁の公開資料で確認してください。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

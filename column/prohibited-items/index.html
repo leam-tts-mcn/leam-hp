@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの禁止商品・制限商品ガイド</title>
+<meta name="description" content="TikTok Shopで出品できない商品と、条件つきで出せる商品を整理しました。出品前に確認するチェックリストつきです。">
+<link rel="canonical" href="https://leam.co.jp/column/prohibited-items/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの禁止商品・制限商品ガイド">
+<meta property="og:description" content="TikTok Shopで出品できない商品と、条件つきで出せる商品を整理しました。出品前に確認するチェックリストつきです。">
+<meta property="og:url" content="https://leam.co.jp/column/prohibited-items/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの禁止商品・制限商品ガイド">
+<meta name="twitter:description" content="TikTok Shopで出品できない商品と、条件つきで出せる商品を整理しました。出品前に確認するチェックリストつきです。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの禁止商品・制限商品ガイド", "description": "TikTok Shopで出品できない商品と、条件つきで出せる商品を整理しました。出品前に確認するチェックリストつきです。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/prohibited-items/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの禁止商品・制限商品ガイド", "item": "https://leam.co.jp/column/prohibited-items/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 禁止商品・制限商品ガイド</p>
+  <span class="cat">出品ルール</span>
+  <h1>TikTok Shopの禁止商品・制限商品ガイド｜出品前チェックリスト</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="出品できない商品を仕分ける様子：禁止マークの付いた赤い箱が仕分けアームでレーンから押し出され、確認済みの許可リストの看板の下でゲートを通れる商品だけが先へ進むことを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v336c-104 30-198 36-292 22-108-16-192-44-300-42-114 2-198 40-306 52-116 13-224-4-302-40z" fill="#F6F7F9"/>
+  <ellipse cx="716" cy="248" rx="326" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <circle cx="76" cy="30" r="5"/><circle cx="112" cy="30" r="5"/><circle cx="148" cy="30" r="5"/><circle cx="184" cy="30" r="5"/><circle cx="220" cy="30" r="5"/><circle cx="256" cy="30" r="5"/><circle cx="292" cy="30" r="5"/>
+    <circle cx="660" cy="30" r="5"/><circle cx="696" cy="30" r="5"/><circle cx="732" cy="30" r="5"/><circle cx="768" cy="30" r="5"/>
+    <circle cx="660" cy="62" r="5"/><circle cx="696" cy="62" r="5"/><circle cx="732" cy="62" r="5"/><circle cx="768" cy="62" r="5"/>
+    <circle cx="660" cy="94" r="5"/><circle cx="696" cy="94" r="5"/><circle cx="732" cy="94" r="5"/><circle cx="768" cy="94" r="5"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-30 280-14 420 10 138 24 246 30 362 12 116-18 230-44 418-28v134H0z" fill="#ECEEF1"/>
+
+  <!-- ================= レーンのローラー（帯の下からのぞく） ================= -->
+  <g fill="#FFFFFF" stroke="#0B0C10" stroke-width="6">
+    <circle cx="140" cy="576" r="24"/>
+    <circle cx="316" cy="576" r="24"/>
+    <circle cx="492" cy="576" r="24"/>
+    <circle cx="668" cy="576" r="24"/>
+    <circle cx="844" cy="576" r="24"/>
+    <circle cx="1020" cy="576" r="24"/>
+  </g>
+
+  <!-- ================= 中央右：検品ゲート（副題の物体） ================= -->
+  <g>
+    <!-- 影 -->
+    <g fill="#5E6064" opacity=".13" transform="translate(9 11)">
+      <rect x="624" y="228" width="44" height="290"/>
+      <rect x="832" y="228" width="44" height="290"/>
+      <rect x="600" y="166" width="312" height="70" rx="14"/>
+    </g>
+    <!-- 支柱 -->
+    <rect x="624" y="228" width="44" height="290" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="832" y="228" width="44" height="290" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 看板の支柱（帯にささる） -->
+  <rect x="1036" y="460" width="32" height="58" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- ゲートの梁（通ってよい合図＝シアン） -->
+  <g>
+    <rect x="600" y="166" width="312" height="70" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="618" y="176" width="276" height="50" rx="12" fill="#25F4EE"/>
+  </g>
+
+  <!-- ================= 仕分けレーン（帯・トレッド・進行のシアン矢印） ================= -->
+  <g>
+    <rect x="56" y="508" width="1088" height="48" rx="18" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <g fill="#C9CBD0">
+      <rect x="528" y="521" width="6" height="22" rx="3"/>
+      <rect x="570" y="521" width="6" height="22" rx="3"/>
+      <rect x="612" y="521" width="6" height="22" rx="3"/>
+      <rect x="654" y="521" width="6" height="22" rx="3"/>
+      <rect x="830" y="521" width="6" height="22" rx="3"/>
+      <rect x="872" y="521" width="6" height="22" rx="3"/>
+      <rect x="914" y="521" width="6" height="22" rx="3"/>
+    </g>
+    <!-- 通過していく向き -->
+    <rect x="952" y="521" width="110" height="22" rx="8" fill="#25F4EE"/>
+    <polygon points="1054,509 1112,532 1054,555" fill="#25F4EE"/>
+  </g>
+
+  <!-- ================= 左：禁止マークの箱（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="40" y="80" width="472" height="432" rx="16" fill="#5E6064" opacity=".15" transform="translate(12 14)"/>
+    <!-- 本体 -->
+    <rect x="40" y="80" width="472" height="432" rx="16" fill="#FE2C55"/>
+    <!-- 天面（赤の陰） -->
+    <path d="M40 96a16 16 0 0 1 16-16h440a16 16 0 0 1 16 16v40H40z" fill="#CE1730"/>
+    <!-- 禁止マーク -->
+    <circle cx="276" cy="324" r="112" fill="none" stroke="#0B0C10" stroke-width="20"/>
+    <path d="M197 403L355 245" fill="none" stroke="#0B0C10" stroke-width="20" stroke-linecap="round"/>
+    <!-- 輪郭・封の線 -->
+    <rect x="40" y="80" width="472" height="432" rx="16" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M40 136h472" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M276 80v56" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- ================= 仕分けアーム（レーンから押し出す） ================= -->
+  <g>
+    <g transform="translate(548 494) rotate(197.85)">
+      <rect x="-15" y="-8" width="30" height="136" rx="15" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+    <circle cx="548" cy="494" r="14" fill="#0B0C10"/>
+  </g>
+
+  <!-- ================= ゲートを通る商品（確認済み＝シアン） ================= -->
+  <g>
+    <rect x="692" y="396" width="116" height="116" rx="10" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+    <rect x="692" y="396" width="116" height="116" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M692 406a10 10 0 0 1 10-10h96a10 10 0 0 1 10 10v18H692z" fill="#DFE0E2"/>
+    <path d="M692 424h116" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <circle cx="750" cy="468" r="36" fill="#25F4EE"/>
+    <path d="M734 469l11 12 21-26" fill="none" stroke="#0B0C10" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 右：確認済みの許可リスト看板（副役・シアン） ================= -->
+  <g>
+    <rect x="940" y="88" width="224" height="382" rx="20" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="940" y="88" width="224" height="382" rx="20" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <g>
+      <rect x="966" y="146" width="172" height="28" rx="14" fill="#FFFFFF"/>
+      <path d="M978 160l7 8 13-16" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1014" y="155" width="106" height="10" rx="5" fill="#C9CBD0"/>
+    </g>
+    <g>
+      <rect x="966" y="208" width="172" height="28" rx="14" fill="#FFFFFF"/>
+      <path d="M978 222l7 8 13-16" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1014" y="217" width="84" height="10" rx="5" fill="#C9CBD0"/>
+    </g>
+    <g>
+      <rect x="966" y="270" width="172" height="28" rx="14" fill="#FFFFFF"/>
+      <path d="M978 284l7 8 13-16" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1014" y="279" width="100" height="10" rx="5" fill="#C9CBD0"/>
+    </g>
+    <g>
+      <rect x="966" y="332" width="172" height="28" rx="14" fill="#FFFFFF"/>
+      <path d="M978 346l7 8 13-16" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1014" y="341" width="72" height="10" rx="5" fill="#C9CBD0"/>
+    </g>
+    <g>
+      <rect x="966" y="394" width="172" height="28" rx="14" fill="#FFFFFF"/>
+      <path d="M978 408l7 8 13-16" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="1014" y="403" width="94" height="10" rx="5" fill="#C9CBD0"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="560" cy="132" r="16" fill="#DFE0E2"/>
+  <circle cx="920" cy="492" r="12" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの禁止商品は「出品してから気づく」が一番危険です。</strong>知らずに出品すると商品削除にとどまらず、違反を繰り返すとショップ閉鎖につながるおそれもあります。商品ルールは<strong>「禁止商品・対象外商品・制限付き商品」の3分類</strong>で整理でき、さらにプラットフォーム審査を通過しても、<strong>酒税法・古物営業法・薬機法など日本の法令の確認が別に必要</strong>です。この記事では、3分類の中身から法人限定・中古品のルール、違反時のペナルティ、出品前チェックの手順までを、実務で確認している順番のまま解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>禁止・対象外・制限付きの3分類と、自分の商品がどこに当てはまるかの判定方法</li>
+      <li>個人セラーがつまずきやすい「法人限定カテゴリー」と「中古品は招待制」のルール</li>
+      <li>プラットフォーム審査とは別に必要な、日本の法令（酒税法・古物営業法・薬機法・景品表示法）の確認先</li>
+      <li>違反時のペナルティの段階と、見落としを防ぐ出品前チェック4ステップ</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">「この商材、TikTok Shopで売れる？」を無料で診断します</div>
+    <p>出品可否の当たりづけから、必要な書類・許認可の洗い出し、出品後の売り方まで。商材を伺い、TikTok Shopに向いているかどうかを率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">出品可否は「禁止・対象外・制限付き」の3分類で判定できる</a></li>
+      <li><a href="#s2">禁止商品：どんな手続きを踏んでも出品できない</a></li>
+      <li><a href="#s3">対象外商品：日本で合法でも、TikTok Shopではまだ売れない</a></li>
+      <li><a href="#s4">制限付き商品：事前承認と書類提出をクリアすれば出品できる</a></li>
+      <li><a href="#s5">プラットフォーム審査を通過しても、日本の法令確認は別に必要</a></li>
+      <li><a href="#s6">商品ページとクリエイター起用の「表現」も審査対象になる</a></li>
+      <li><a href="#s7">違反時の措置は段階的に重くなり、繰り返すとショップ閉鎖に至る</a></li>
+      <li><a href="#s8">出品前チェックは4ステップに固定すると見落としがなくなる</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>出品可否は「禁止・対象外・制限付き」の3分類で判定できる</h2>
+  <p>TikTok Shopの商品ルールは一見複雑ですが、実務では<strong>「禁止商品」「対象外商品」「制限付き商品」の3分類</strong>に整理すると判定しやすくなります。どの分類にも当てはまらない商品は、通常の出品手続きで販売できます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>分類</th><th>意味</th><th>出品可否</th><th>代表例</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 禁止商品</b></td><td>法令違反・ポリシー違反で、そもそも取り扱えない</td><td class="n">✗ 出品不可（回避策なし）</td><td>違法薬物、武器・銃器類、偽造品、医薬品、たばこ・電子たばこ</td></tr>
+      <tr><td><b>② 対象外商品</b></td><td>日本では合法でも、TikTok Shopが現時点で対応していない</td><td class="n">✗ 現時点では出品不可（一部は将来対応予定）</td><td>アダルト商品、政治関連商品、OTC医薬品、SIMカード</td></tr>
+      <tr><td><b>③ 制限付き商品</b></td><td>事前承認・書類提出をクリアすれば取り扱える</td><td class="y">○ 条件付きで出品可</td><td>食品・サプリ、化粧品・医薬部外品、ベビー用品、医療機器、ペット用品、ジュエリー</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="3分類の判定マップ：商品を禁止・対象外・制限付き・通常の4パターンに振り分け、それぞれの出品可否を示す図">
+      <rect x="20" y="120" width="150" height="90" rx="12" fill="#17181C"/>
+      <text x="95" y="158" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">あなたの商品</text>
+      <text x="95" y="182" text-anchor="middle" font-size="10.5" fill="#C9CBD4">まず3分類に照らす</text>
+      <path d="M170 165 H210 M210 45 V285 M210 45 H240 M210 125 H240 M210 205 H240 M210 285 H240" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <rect x="245" y="22" width="215" height="46" rx="9" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="352" y="51" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">① 禁止商品に該当</text>
+      <path d="M460 45 H495" stroke="#787D8A" stroke-width="2"/>
+      <rect x="500" y="22" width="200" height="46" rx="9" fill="#E8324A"/>
+      <text x="600" y="51" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">✗ 出品不可（回避策なし）</text>
+      <rect x="245" y="102" width="215" height="46" rx="9" fill="#F6F6F8" stroke="#AEB2BE"/>
+      <text x="352" y="131" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">② 対象外商品に該当</text>
+      <path d="M460 125 H495" stroke="#787D8A" stroke-width="2"/>
+      <rect x="500" y="102" width="200" height="46" rx="9" fill="#787D8A"/>
+      <text x="600" y="124" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">✗ 現時点では出品不可</text>
+      <text x="600" y="140" text-anchor="middle" font-size="9.5" fill="#E6E7EB">一時的対象外は将来対応の可能性</text>
+      <rect x="245" y="182" width="215" height="46" rx="9" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="352" y="211" text-anchor="middle" font-size="12.5" font-weight="800" fill="#8A5A00">③ 制限付き商品に該当</text>
+      <path d="M460 205 H495" stroke="#787D8A" stroke-width="2"/>
+      <rect x="500" y="182" width="200" height="46" rx="9" fill="#fff" stroke="#0E8A5F" stroke-width="1.5"/>
+      <text x="600" y="204" text-anchor="middle" font-size="11.5" font-weight="800" fill="#0E8A5F">○ 事前承認＋書類で出品可</text>
+      <text x="600" y="220" text-anchor="middle" font-size="9.5" fill="#787D8A">証明書・ラベル画像などの提出</text>
+      <rect x="245" y="262" width="215" height="46" rx="9" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="352" y="291" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0E8A5F">いずれにも該当しない</text>
+      <path d="M460 285 H495" stroke="#787D8A" stroke-width="2"/>
+      <rect x="500" y="262" width="200" height="46" rx="9" fill="#0E8A5F"/>
+      <text x="600" y="291" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">○ 通常の手続きで出品可</text>
+    </svg>
+    <figcaption>図1：3分類の判定マップ。出品作業の前にどこに当てはまるかを先に確定させる（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-warn">
+    <div class="bt">⚠️ カテゴリー一覧は「変わる」前提で読んでください</div>
+    <p>本記事のカテゴリー分類・具体例は執筆時点の整理です。<strong>対象カテゴリーは順次変更・拡大されるため、出品前に必ずTikTok Shopセラーセンターの最新の公式リストで確認してください。</strong>実際に「対象外」だったカテゴリーが後から解禁された例もあります。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>禁止商品：どんな手続きを踏んでも出品できない</h2>
+  <p>禁止商品は、法令違反やプラットフォームポリシー違反にあたるため、<strong>申請や書類提出をしても出品できない</strong>カテゴリーです。代表的なものは次のとおりです。</p>
+  <ul>
+    <li><b>違法薬物・危険物</b>：規制薬物、爆発物・可燃物などの危険物</li>
+    <li><b>武器・銃器類</b>：銃器・弾薬・刃物類などの武器関連</li>
+    <li><b>偽造品・模倣品</b>：ブランドコピー品、正規品と誤認させる商品</li>
+    <li><b>医薬品</b>：処方薬をはじめとする医薬品（※一般用医薬品は後述の「対象外」扱い）</li>
+    <li><b>たばこ・電子たばこ</b>：紙巻き・加熱式・電子たばこと関連デバイス</li>
+    <li><b>その他ポリシーで禁じられる商品</b>：成人向けコンテンツ、絶滅危惧種・保護動物に関わる商品、通貨・金融商品 など</li>
+  </ul>
+  <p>実務で特に事故が起きやすいのは<strong>偽造品・模倣品</strong>です。「正規品と信じて仕入れた」場合でも違反は違反として扱われます。仕入れ先の実在確認と正規流通の証明ができない商品は、最初から扱わないのが安全です（ペナルティの重さは<a href="#s7">07章</a>で解説）。</p>
+
+  <h2 id="s3"><span class="no en">03</span>対象外商品：日本で合法でも、TikTok Shopではまだ売れない</h2>
+  <p>見落としやすいのがこの分類です。<strong>日本国内では合法的に販売できるのに、TikTok Shopがまだ対応していない</strong>商品があります。対象外商品はさらに2種類に分かれます。</p>
+  <h3>ポリシー上の対象外：プラットフォームの方針として扱わない</h3>
+  <p>アダルト商品、黒魔術・オカルト関連商品、政治関連商品などは、プラットフォームの方針として取り扱い対象外とされています。この系統は今後も解禁される見込みを前提にしない方がよいでしょう。</p>
+  <h3>一時的な対象外：将来的に対応予定とされるもの</h3>
+  <p>一方で、<strong>コンドームや潤滑剤などの性の健康関連商品、医薬品・サプリメント（一般用医薬品を含む）、一部区分の医療機器、SIMカード、デジタルアートなどのバーチャル商品</strong>は「一時的な対象外」とされており、将来的に出品できるようになる可能性があります。この系統の商材を主力にしたい場合は、いま無理に別商材へ寄せるのではなく、公式のカテゴリー更新を定期的にウォッチしておく価値があります。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>「日本で売れる＝TikTok Shopで売れる」ではありません。他モールで販売実績のある商品でも対象外のことがあり、<strong>他モール経験者ほどこの確認を飛ばしやすい</strong>ので注意してください。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>制限付き商品：事前承認と書類提出をクリアすれば出品できる</h2>
+  <p>制限付き商品は、<strong>必要な証明書や画像を提出して事前承認を得れば出品できる</strong>カテゴリーです。TikTok Shopで人気の高い商材（食品・コスメ・サプリなど）の多くがここに含まれるため、実務ではこの分類との付き合い方が最重要になります。</p>
+  <h3>制限付きカテゴリーと必要書類の例</h3>
+  <div class="tw"><table>
+    <thead><tr><th>カテゴリー</th><th>必要書類・提出物の例</th><th>実務メモ</th></tr></thead>
+    <tbody>
+      <tr><td>食品・飲料・栄養補助食品</td><td>ラベル画像、賞味期限、原材料などの情報提出</td><td>食品表示法上の表示が整っていることが前提</td></tr>
+      <tr><td>美容・パーソナルケア（化粧品・医薬部外品）</td><td>製造販売に関するライセンス、ラベル画像</td><td>OEM品は製造販売元の書類を先に確保する</td></tr>
+      <tr><td>ベビー・マタニティ商品</td><td>パッケージ・ラベル画像、該当する場合は化粧品・医薬部外品の製造販売ライセンス</td><td>安全性に関わるため審査は慎重になりやすい</td></tr>
+      <tr><td>医療用品・医療機器（対象区分のもの）</td><td>区分に応じた販売許可証、製品の承認・認証・届出番号、商品ラベル画像</td><td>区分によっては対象外、または法人セラー限定。該当区分を先に確認</td></tr>
+      <tr><td>ペット用品</td><td>商品ラベル画像、該当する場合は飼料事業に関する届出</td><td>フード系は食品に準じた情報整備を</td></tr>
+      <tr><td>ジュエリー（貴金属など）</td><td>販売証明書・試験レポートなどの証明書、商品とパッケージの写真</td><td>素材・品位の裏づけ資料を用意する</td></tr>
+    </tbody>
+  </table></div>
+  <p>※必要書類の内容・対象範囲は変更されることがあります。<strong>申請前に必ずセラーセンターの最新の要件を確認してください。</strong></p>
+  <h3>法人限定カテゴリー：個人セラーは出品できない</h3>
+  <p>制限付きの中でも、<strong>アルコール類、自動車・オートバイ商品（タイヤ・関連用品を含む）、生きた植物・生花・種子、物理データSIMカードなど</strong>はコーポレートセラー（法人セラー）限定とされています。個人事業主として出店している場合、書類を揃えてもこれらのカテゴリーは扱えません。該当商材が主力なら、<strong>出店形態（個人か法人か）の選択からさかのぼって設計</strong>してください（詳細は関連記事「TikTok Shopの出店条件と審査完全ガイド」へ）。</p>
+  <h3>中古品は「原則対象外・一部が招待制」</h3>
+  <p>中古品は原則として取り扱い対象外で、<strong>トレーディングカード・ラグジュアリー品・ファッションなどの区分に限り、事前承認つき（一部は招待制のパイロット運用）</strong>で対応しています。たとえば中古トレーディングカードでは、古物商許可証、商品の出所・仕入れ記録の証明、カード現物を表面・裏面・側面・拡大など複数アングルで撮影した鮮明な画像といった提出物が求められます（中古ファッションでは、これに加えて過去6か月以内に発行された購入証明書が求められます）。フリマアプリの感覚で中古商材を持ち込むと入口で止まります。招待の要件や対象範囲も変わりうるため、参入前に公式の最新情報を確認してください。</p>
+
+  <h2 id="s5"><span class="no en">05</span>プラットフォーム審査を通過しても、日本の法令確認は別に必要</h2>
+  <p>最大の落とし穴がここです。<strong>TikTok Shopのルールと日本の法令は別物</strong>で、プラットフォーム審査の通過は「法令上問題ない」ことを意味しません。逆に、許認可を持っていてもプラットフォーム側の承認は別に必要です。</p>
+  <figure>
+    <svg viewBox="0 0 720 270" role="img" aria-label="二重ゲートの図：出品にはTikTok Shopのルールという第1ゲートと、日本の法令という第2ゲートの両方の通過が必要">
+      <rect x="20" y="95" width="130" height="80" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="85" y="130" text-anchor="middle" font-size="13.5" font-weight="700" fill="#17181C">あなたの商品</text>
+      <text x="85" y="152" text-anchor="middle" font-size="10.5" fill="#787D8A">出品したい</text>
+      <path d="M150 135 H190 M184 129 L194 135 L184 141" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <rect x="198" y="45" width="180" height="180" rx="14" fill="#17181C"/>
+      <text x="288" y="80" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">ゲート1</text>
+      <text x="288" y="104" text-anchor="middle" font-size="12" font-weight="700" fill="#FF8DA0">TikTok Shopのルール</text>
+      <text x="288" y="136" text-anchor="middle" font-size="10.5" fill="#C9CBD4">・禁止／対象外に該当しない</text>
+      <text x="288" y="156" text-anchor="middle" font-size="10.5" fill="#C9CBD4">・制限付きは事前承認を取得</text>
+      <text x="288" y="176" text-anchor="middle" font-size="10.5" fill="#C9CBD4">・法人限定／招待制の条件</text>
+      <text x="288" y="208" text-anchor="middle" font-size="10" fill="#787D8A">確認先＝セラーセンター</text>
+      <path d="M378 135 H418 M412 129 L422 135 L412 141" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <rect x="426" y="45" width="180" height="180" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="516" y="80" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">ゲート2</text>
+      <text x="516" y="104" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">日本の法令</text>
+      <text x="516" y="136" text-anchor="middle" font-size="10.5" fill="#454956">・酒税法（通販の酒類免許）</text>
+      <text x="516" y="156" text-anchor="middle" font-size="10.5" fill="#454956">・古物営業法（古物商許可）</text>
+      <text x="516" y="176" text-anchor="middle" font-size="10.5" fill="#454956">・薬機法／景品表示法 など</text>
+      <text x="516" y="208" text-anchor="middle" font-size="10" fill="#787D8A">確認先＝行政窓口・専門家</text>
+      <path d="M606 135 H646 M640 129 L650 135 L640 141" stroke="#0E8A5F" stroke-width="2" fill="none"/>
+      <rect x="640" y="105" width="62" height="60" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="671" y="131" text-anchor="middle" font-size="11.5" font-weight="800" fill="#0E8A5F">出品</text>
+      <text x="671" y="149" text-anchor="middle" font-size="11.5" font-weight="800" fill="#0E8A5F">開始</text>
+      <text x="360" y="252" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">どちらか一方の通過では不十分。両方そろって初めて出品できる</text>
+    </svg>
+    <figcaption>図2：出品は「二重ゲート」構造。プラットフォーム審査と法令確認は別々に通す（LEAM作成）</figcaption>
+  </figure>
+  <p>商材ごとに関係しやすい法令と確認先の目安を整理します。<strong>本記事は法律上の助言ではありません。</strong>個別の判断は必ず所管の行政窓口や弁護士・行政書士などの専門家に確認してください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>商材</th><th>関係しやすい法令・許認可</th><th>確認先の目安</th></tr></thead>
+    <tbody>
+      <tr><td>酒類（法人限定カテゴリー）</td><td>酒税法：通信販売酒類小売業免許</td><td>所轄の税務署</td></tr>
+      <tr><td>中古品（トレカ・ラグジュアリー等）</td><td>古物営業法：古物商許可</td><td>営業所所在地の警察署（公安委員会）</td></tr>
+      <tr><td>化粧品・医薬部外品・サプリ・健康食品</td><td>薬機法（広告表現・製造販売の区分）、健康増進法</td><td>都道府県の薬務主管課、厚生労働省・消費者庁の公表資料、専門家</td></tr>
+      <tr><td>食品・飲料</td><td>食品衛生法（営業許可・届出）、食品表示法</td><td>管轄の保健所、消費者庁の食品表示関連資料</td></tr>
+      <tr><td>すべての商材</td><td>景品表示法（優良誤認・有利誤認、二重価格表示）、特定商取引法（表記義務）</td><td>消費者庁の公表資料、専門家</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 「プラットフォームが承認した＝合法」ではありません</div>
+    <p>出品審査は法令適合の保証ではなく、違反時の責任はセラー自身が負います。特に<strong>酒類の通販免許と古物商許可は「取得してから出品」が大前提</strong>です。取得には時間がかかるため、参入計画の初期に着手してください。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">商材の出品可否と参入設計、まとめて無料でご相談いただけます</div>
+    <p>「この商材は3分類のどれか」「必要な書類と許認可は何か」「そもそもTikTok Shopで戦える商材か」。LEAMは毎営業日蓄積している市場データをもとに、出品ルールの確認と売れる参入設計をセットでご提案します。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>商品ページとクリエイター起用の「表現」も審査対象になる</h2>
+  <p>商品そのものがルールを満たしていても、<strong>商品ページや紹介動画の「表現」で違反になる</strong>ことがあります。何を売るかだけでなく、どう見せるかまでがルールの対象です。</p>
+  <h3>商品情報の記載ルール：日本語で正確に、誇張しない</h3>
+  <p>商品タイトル・説明・画像は<strong>日本語で正確に記載し、誇張表現や誤解を招く情報は避ける</strong>のが基本です。虚偽の受賞歴や提携関係をうたうことも禁止されています。当社の運用実感として、審査や違反指摘で止まりやすいのは次のような表現です。なお<strong>審査基準は公開されておらず、変更されます</strong>。ここに挙げたのは当社が実際に止められた例で、網羅ではありません。最終判断は公式ポリシーと薬機法・景品表示法の一次情報でご確認ください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>止まりやすい表現の例</th><th>何が問題か</th><th>言い換えの考え方</th></tr></thead>
+    <tbody>
+      <tr><td>「治る」「シミが消える」など医療的効果の断定</td><td>化粧品・健康食品では薬機法上の効能表現の範囲を超えるおそれ</td><td>効果の断定ではなく、使用感・使い方・体験を具体的に描写する</td></tr>
+      <tr><td>「絶対痩せる」「誰でも必ず効果」</td><td>根拠のない断定・誇大表現</td><td>数値や条件を盛らず、商品の仕様と使用場面を事実で伝える</td></tr>
+      <tr><td>根拠のない「No.1」「公式」「〇〇認定」</td><td>優良誤認（景品表示法）や虚偽の提携表示のおそれ</td><td>裏づけ資料のある事実だけを、出典とともに記載する</td></tr>
+      <tr><td>通常価格の実態がない二重価格（「今だけ90%OFF」等）</td><td>有利誤認のおそれ</td><td>比較対照価格は実際の販売実績に基づくものだけ使う</td></tr>
+    </tbody>
+  </table></div>
+  <p>※表現の適法性の最終判断は、消費者庁・厚生労働省などの公表資料と専門家への確認で行ってください。</p>
+  <h3>クリエイター起用時の注意：セラー側がNG表現の資料を渡す</h3>
+  <p>TikTok Shopではクリエイターのアフィリエイト動画やライブが売上の起点になりますが、<strong>クリエイターの動画内の表現もセラーのリスク</strong>になります。たとえばアルコールの宣伝では、25歳未満（または25歳未満に見える人物）が登場することが禁止されています（TikTok Shopの制限付き商品のポリシーによるもので、条件は更新されるため最新は公式ヘルプでご確認ください）。当社では、商品を渡す前に<strong>NG表現と起用条件をまとめた資料をクリエイターに配布する</strong>ことを実質的な必須作業と位置づけています。「言った・言わない」を作らないことが、ショップアカウントを守る一番の近道です。</p>
+
+  <h2 id="s7"><span class="no en">07</span>違反時の措置は段階的に重くなり、繰り返すとショップ閉鎖に至る</h2>
+  <p>違反時のペナルティは一発でショップ閉鎖になるものばかりではなく、<strong>商品単位の措置から始まり、繰り返すほど重くなる</strong>のが基本構造です。ただし、知的財産の侵害（模倣品・著作権・商標）は特に重く扱われ、<strong>違反が一定回数を超えるとショップの閉鎖につながる</strong>とされています。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="ペナルティの段階図：商品の削除・非公開化から、機能の一時制限、違反の累積、アカウント停止・ショップ閉鎖へと段階的に重くなる">
+      <rect x="30" y="196" width="150" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="105" y="224" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">STEP 1</text>
+      <text x="105" y="246" text-anchor="middle" font-size="11" fill="#454956">商品の削除・非公開化</text>
+      <rect x="200" y="156" width="150" height="110" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="275" y="186" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">STEP 2</text>
+      <text x="275" y="210" text-anchor="middle" font-size="11" fill="#454956">出品・機能の</text>
+      <text x="275" y="228" text-anchor="middle" font-size="11" fill="#454956">一時制限</text>
+      <rect x="370" y="116" width="150" height="150" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="445" y="146" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">STEP 3</text>
+      <text x="445" y="170" text-anchor="middle" font-size="11" fill="#454956">違反の累積で</text>
+      <text x="445" y="188" text-anchor="middle" font-size="11" fill="#454956">より重い措置</text>
+      <rect x="540" y="66" width="150" height="200" rx="10" fill="#E8324A"/>
+      <text x="615" y="98" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">STEP 4</text>
+      <text x="615" y="122" text-anchor="middle" font-size="11" fill="#FDEEF1">アカウント停止</text>
+      <text x="615" y="140" text-anchor="middle" font-size="11" fill="#FDEEF1">ショップ閉鎖</text>
+      <path d="M105 180 C 200 80, 480 40, 610 52" stroke="#C2203A" stroke-width="2.5" stroke-dasharray="6 5" fill="none"/>
+      <path d="M600 44 L614 52 L599 60 Z" fill="#C2203A"/>
+      <text x="330" y="52" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">知財侵害・模倣品は段階を飛ばして重い措置に至るリスク</text>
+      <text x="360" y="290" text-anchor="middle" font-size="10.5" fill="#787D8A">※措置の内容・基準は変更されることがあります。最新はTikTok Shopの公式ポリシーで確認</text>
+    </svg>
+    <figcaption>図3：ペナルティの基本構造。違反を繰り返すほど重くなり、知財侵害は特に重い（LEAM作成）</figcaption>
+  </figure>
+  <p>対処はシンプルで、①<strong>疑わしい商品は最初から出さない</strong>、②誤って出品した場合や違反通知を受けた場合は、<strong>放置せず速やかに取り下げ・修正・申し立てを行う</strong>、の2点です。対応を後回しにすると違反状態が続き、措置は重くなる方向にしか働きません。なお、措置の具体的な内容・基準は更新されるため、最新はセラーセンターの公式ポリシーで確認してください。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>ペナルティ対策の本丸は「違反後の対応」ではなく「出品前の仕組み」です。担当者の記憶に頼らず、<strong>次章の4ステップをチェックリストとして固定し、新商品のたびに必ず通す</strong>運用にしてください。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>出品前チェックは4ステップに固定すると見落としがなくなる</h2>
+  <p>ここまでの内容を、実際の出品前に通す順番に並べ直します。当社が運用支援で使っている確認の流れと同じ順序です。</p>
+  <ol class="steps">
+    <li><b>禁止・対象外商品リストで確認する</b><p>セラーセンターの最新リストに照らし、禁止・対象外に該当しないかを最初に確認します。該当したらこの時点で見送り（一時的対象外なら解禁をウォッチ）。</p></li>
+    <li><b>制限付き・法人限定カテゴリーと必要書類を確認する</b><p>制限付きに該当するなら、必要な証明書・ラベル画像などを揃えて事前承認を申請します。法人限定・招待制の条件もここで確認します。</p></li>
+    <li><b>日本の法令上の許認可・表示義務を確認する</b><p>酒類免許・古物商許可などの許認可、食品表示・特定商取引法の表記などを確認します。判断に迷う場合は行政窓口・専門家へ。</p></li>
+    <li><b>商品ページとクリエイター訴求ルールの表現をチェックする</b><p>タイトル・説明・画像の表現を見直し、クリエイターにはNG表現と起用条件の資料を渡してから依頼します。</p></li>
+  </ol>
+  <figure>
+    <svg viewBox="0 0 720 560" role="img" aria-label="出品前チェックのフローチャート：禁止・対象外リストの確認、制限付き・法人限定の確認、日本の法令確認、表現チェックの4段階を経て出品OKに至る">
+      <rect x="250" y="14" width="220" height="44" rx="22" fill="#17181C"/>
+      <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">出品したい商品がある</text>
+      <path d="M360 58 V84" stroke="#787D8A" stroke-width="2"/>
+      <rect x="200" y="86" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">STEP1. 禁止・対象外リストに該当する？</text>
+      <path d="M200 109 H115 V150" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="145" y="102" font-size="11" font-weight="800" fill="#C2203A">該当</text>
+      <rect x="28" y="152" width="176" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="116" y="180" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">出品しない</text>
+      <text x="116" y="202" text-anchor="middle" font-size="10.5" fill="#454956">一時的対象外は解禁を待つ</text>
+      <path d="M360 132 V158" stroke="#787D8A" stroke-width="2"/>
+      <text x="378" y="152" font-size="11" font-weight="800" fill="#0E8A5F">非該当</text>
+      <rect x="200" y="160" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="189" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">STEP2. 制限付き・法人限定に該当する？</text>
+      <path d="M520 183 H605 V224" stroke="#8A5A00" stroke-width="2" fill="none"/>
+      <text x="548" y="176" font-size="11" font-weight="800" fill="#8A5A00">該当</text>
+      <rect x="516" y="226" width="176" height="72" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="604" y="254" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">必要書類を準備し</text>
+      <text x="604" y="276" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">事前承認を申請</text>
+      <path d="M604 298 V330 H360" stroke="#8A5A00" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M360 206 V232" stroke="#787D8A" stroke-width="2"/>
+      <text x="378" y="226" font-size="11" font-weight="800" fill="#0E8A5F">非該当</text>
+      <rect x="200" y="234" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="263" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">STEP3. 日本の法令上の許認可・表示は満たす？</text>
+      <path d="M200 257 H115 V298" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="140" y="250" font-size="11" font-weight="800" fill="#C2203A">不足</text>
+      <rect x="28" y="300" width="176" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="116" y="328" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">許認可・表示を整備</text>
+      <text x="116" y="350" text-anchor="middle" font-size="10.5" fill="#454956">行政窓口・専門家に確認</text>
+      <path d="M360 280 V336" stroke="#787D8A" stroke-width="2"/>
+      <text x="378" y="316" font-size="11" font-weight="800" fill="#0E8A5F">満たす</text>
+      <rect x="200" y="338" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="367" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">STEP4. ページと紹介動画の表現はルール内？</text>
+      <path d="M520 361 H605 V402" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="548" y="354" font-size="11" font-weight="800" fill="#C2203A">NG</text>
+      <rect x="516" y="404" width="176" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="604" y="432" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">表現を修正</text>
+      <text x="604" y="454" text-anchor="middle" font-size="10.5" fill="#454956">クリエイターへNG資料配布</text>
+      <path d="M360 384 V466" stroke="#787D8A" stroke-width="2"/>
+      <text x="378" y="440" font-size="11" font-weight="800" fill="#0E8A5F">OK</text>
+      <rect x="235" y="468" width="250" height="60" rx="14" fill="#EAF6F1" stroke="#0E8A5F" stroke-width="1.5"/>
+      <text x="360" y="494" text-anchor="middle" font-size="14" font-weight="800" fill="#0E8A5F">出品OK</text>
+      <text x="360" y="514" text-anchor="middle" font-size="10.5" fill="#454956">新商品のたびにSTEP1から通す</text>
+      <text x="360" y="550" text-anchor="middle" font-size="10.5" fill="#787D8A">※リスト・要件は更新されるため、毎回セラーセンターの最新情報で確認する</text>
+    </svg>
+    <figcaption>図4：出品前チェックの4ステップフロー。担当者の記憶ではなくフローで確認する（LEAM作成）</figcaption>
+  </figure>
+  <p><strong>カテゴリーの対象範囲や必要書類は更新される</strong>ため、「前回通ったから大丈夫」とせず、新商品の出品ごとにSTEP1から通してください。ルール確認の次の一手は、関連記事「TikTok Shopで売れる商品カテゴリーと参入ジャンルの選び方」へ。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>出品できるか分からない商品は、どこで確認すればよいですか？</summary><div class="a">TikTok Shopセラーセンターの禁止商品・対象外商品リストが一次情報です。カテゴリーの対象範囲は変更されるため、記事やブログのまとめではなく、出品のたびに公式の最新リストで確認してください。</div></details>
+    <details><summary>個人セラーでも制限付き商品を出品できますか？</summary><div class="a">カテゴリーによります。食品や化粧品などは必要書類を提出して承認されれば個人でも扱える一方、アルコール類・自動車やオートバイ商品・生きた植物・物理データSIMカードなどはコーポレートセラー（法人セラー）限定です。最新の条件はセラーセンターで確認してください。</div></details>
+    <details><summary>中古品は出品できますか？</summary><div class="a">中古品は原則対象外で、トレーディングカード・ラグジュアリー品・ファッションなどの区分に限り、事前承認つき（一部は招待制のパイロット運用）で対応しています。古物商許可証や購入証明書などの提出も求められるため、参入前に招待の要件と日本の古物営業法上の許可を両方確認してください。</div></details>
+    <details><summary>サプリメントや化粧品は禁止商品ですか？</summary><div class="a">化粧品・医薬部外品や食品・飲料・栄養補助食品は「制限付き商品」で、ラベル画像や製造販売に関するライセンスなどを提出し、事前承認を得れば出品できます。ただし公式リストでは「医薬品およびサプリメント」が禁止商品と一時的な対象外の両方に区分されているため、自社商品がどの区分に当たるかを出品前に必ず公式リストで確認してください。広告表現には薬機法上の注意も必要で、効果効能を断定する表現は避け、判断に迷う場合は行政窓口や専門家に確認してください。</div></details>
+    <details><summary>誤って禁止商品を出品してしまったらどうなりますか？</summary><div class="a">商品の削除・非公開化などの措置が取られ、違反を繰り返すとより重い措置につながります。気づいた時点で速やかに自ら商品を取り下げ、違反通知が来ている場合は放置せず対応してください。措置の具体的な基準は変更されることがあるため、最新は公式ポリシーで確認してください。</div></details>
+    <details><summary>禁止・制限のルールは今後変わりますか？</summary><div class="a">変わります。実際に、コンドームなどの性の健康関連商品・一般用医薬品・SIMカードなどは「一時的な対象外」とされ、将来的な対応が見込まれる位置づけです。主力にしたい商材が対象外の場合は、公式のカテゴリー更新を定期的に確認することをおすすめします。</div></details>
+    <details><summary>クリエイターに商品を紹介してもらう際、セラー側は何に気をつけるべきですか？</summary><div class="a">クリエイターの動画内の表現もセラーのリスクになります。効果効能の断定などのNG表現と起用条件をまとめた資料を、依頼前に必ず配布してください。たとえばアルコールの宣伝では25歳未満（または25歳未満に見える人物）の登場が禁止されるなど、商材固有のルールもあります。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-shinsa/" style="text-decoration:none;color:inherit"><span class="rc">出店・審査</span><b>TikTok Shopの出店条件と審査完全ガイド｜落ちる理由と対処法</b><span>個人と法人の違い・必要書類はこちら</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/best-categories/" style="text-decoration:none;color:inherit"><span class="rc">商品選定</span><b>TikTok Shopで売れる商品カテゴリーと参入ジャンルの選び方</b><span>ルール確認の次は「何を売るか」</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/" style="text-decoration:none;color:inherit"><span class="rc">手数料</span><b>TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</b><span>出品前に利益設計もセットで</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・出品ルールのご相談は無料です</div>
+    <p>商材とご状況を伺い、「そもそもTikTok Shopで扱えるか」「どう売るか」まで正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンターの禁止商品・対象外商品リストおよび公式ヘルプ、消費者庁・厚生労働省・国税庁の公表資料（カテゴリーの対象範囲・必要書類・措置の基準は更新されることがあります。本記事は2026年8月30日時点の情報です。最新は一次情報でご確認ください。本記事は法律上の助言ではありません）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">3分類で判定できる</a></li>
+        <li><a href="#s2">禁止商品</a></li>
+        <li><a href="#s3">対象外商品</a></li>
+        <li><a href="#s4">制限付き商品・法人限定・中古品</a></li>
+        <li><a href="#s5">日本の法令確認は別に必要</a></li>
+        <li><a href="#s6">表現ルールとクリエイター起用</a></li>
+        <li><a href="#s7">違反時のペナルティ</a></li>
+        <li><a href="#s8">出品前チェック4ステップ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>商材の出品可否、無料で診断</b>
+      <p>3分類の判定から必要書類・許認可の洗い出しまで、率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopの禁止商品・制限商品ガイド｜出品前チェックリスト",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "出品できるか分からない商品は、どこで確認すればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopセラーセンターの禁止商品・対象外商品リストが一次情報です。カテゴリーの対象範囲は変更されるため、記事やブログのまとめではなく、出品のたびに公式の最新リストで確認してください。"}},
+        {"@type": "Question", "name": "個人セラーでも制限付き商品を出品できますか？", "acceptedAnswer": {"@type": "Answer", "text": "カテゴリーによります。食品や化粧品などは必要書類を提出して承認されれば個人でも扱える一方、アルコール類・自動車やオートバイ商品・生きた植物・物理データSIMカードなどはコーポレートセラー（法人セラー）限定です。最新の条件はセラーセンターで確認してください。"}},
+        {"@type": "Question", "name": "中古品は出品できますか？", "acceptedAnswer": {"@type": "Answer", "text": "中古品は原則対象外で、トレーディングカード・ラグジュアリー品・ファッションなどの区分に限り、事前承認つき（一部は招待制のパイロット運用）で対応しています。古物商許可証や購入証明書などの提出も求められるため、参入前に招待の要件と日本の古物営業法上の許可を両方確認してください。"}},
+        {"@type": "Question", "name": "サプリメントや化粧品は禁止商品ですか？", "acceptedAnswer": {"@type": "Answer", "text": "化粧品・医薬部外品や食品・飲料・栄養補助食品は「制限付き商品」で、ラベル画像や製造販売に関するライセンスなどを提出し、事前承認を得れば出品できます。ただし公式リストでは「医薬品およびサプリメント」が禁止商品と一時的な対象外の両方に区分されているため、自社商品がどの区分に当たるかを出品前に必ず公式リストで確認してください。広告表現には薬機法上の注意も必要で、効果効能を断定する表現は避け、判断に迷う場合は行政窓口や専門家に確認してください。"}},
+        {"@type": "Question", "name": "誤って禁止商品を出品してしまったらどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "商品の削除・非公開化などの措置が取られ、違反を繰り返すとより重い措置につながります。気づいた時点で速やかに自ら商品を取り下げ、違反通知が来ている場合は放置せず対応してください。措置の具体的な基準は変更されることがあるため、最新は公式ポリシーで確認してください。"}},
+        {"@type": "Question", "name": "禁止・制限のルールは今後変わりますか？", "acceptedAnswer": {"@type": "Answer", "text": "変わります。実際に、コンドームなどの性の健康関連商品・一般用医薬品・SIMカードなどは「一時的な対象外」とされ、将来的な対応が見込まれる位置づけです。主力にしたい商材が対象外の場合は、公式のカテゴリー更新を定期的に確認することをおすすめします。"}},
+        {"@type": "Question", "name": "クリエイターに商品を紹介してもらう際、セラー側は何に気をつけるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "クリエイターの動画内の表現もセラーのリスクになります。効果効能の断定などのNG表現と起用条件をまとめた資料を、依頼前に必ず配布してください。たとえばアルコールの宣伝では25歳未満（または25歳未満に見える人物）の登場が禁止されるなど、商材固有のルールもあります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

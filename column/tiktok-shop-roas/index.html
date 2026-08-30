@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok ShopのROAS基準｜損益分岐の出し方</title>
+<meta name="description" content="TikTok Shopの必要ROASは相場ではなく粗利率から逆算します。損益分岐ROASの式と、GMV Maxの目標設定を計算表つきで解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/tiktok-shop-roas/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok ShopのROAS基準｜損益分岐の出し方">
+<meta property="og:description" content="TikTok Shopの必要ROASは相場ではなく粗利率から逆算します。損益分岐ROASの式と、GMV Maxの目標設定を計算表つきで解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/tiktok-shop-roas/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok ShopのROAS基準｜損益分岐の出し方">
+<meta name="twitter:description" content="TikTok Shopの必要ROASは相場ではなく粗利率から逆算します。損益分岐ROASの式と、GMV Maxの目標設定を計算表つきで解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok ShopのROAS基準｜損益分岐の出し方", "description": "TikTok Shopの必要ROASは相場ではなく粗利率から逆算します。損益分岐ROASの式と、GMV Maxの目標設定を計算表つきで解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-shop-roas/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok ShopのROAS基準｜損益分岐の出し方", "item": "https://leam.co.jp/column/tiktok-shop-roas/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok ShopのROAS基準は自分で計算する</p>
+  <span class="cat">広告運用</span>
+  <h1>TikTok ShopのROAS基準は自分で計算する｜損益分岐ROASの出し方とGMV Maxの目標設定</h1>
+  <div class="meta">
+    <time class="upd" datetime="2026-08-30">更新日：2026年8月30日</time><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px">
+    <svg viewBox="0 0 1200 630" role="img" aria-label="記事のアイキャッチ。損益分岐ROASの計算式と、貢献利益率から必要ROASを求める早見のイメージ" style="border-radius:14px">
+      <defs>
+        <linearGradient id="roasbg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#15161B"/><stop offset=".6" stop-color="#17181C"/><stop offset="1" stop-color="#2C0F17"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="630" fill="url(#roasbg)"/>
+      <g opacity=".14" stroke="#ffffff" stroke-width="1.5" fill="none">
+        <path d="M760 500 C860 500 880 380 940 320 C1000 260 1080 250 1150 200"/>
+        <path d="M760 540 C880 540 900 440 970 400 C1040 360 1100 350 1150 320"/>
+      </g>
+      <rect x="742" y="120" width="400" height="392" rx="26" fill="#0E0F13" stroke="#3A2029" stroke-width="2"/>
+      <text x="786" y="176" font-size="21" font-weight="700" fill="#8A909C">CONTRIBUTION MARGIN</text>
+      <rect x="786" y="200" width="312" height="34" rx="8" fill="#2A2C33"/>
+      <rect x="786" y="200" width="125" height="34" rx="8" fill="#E8324A"/>
+      <text x="786" y="266" font-size="30" font-weight="800" fill="#ffffff">貢献利益率 40%</text>
+      <line x1="786" y1="298" x2="1098" y2="298" stroke="#3A3F46" stroke-width="2"/>
+      <text x="786" y="348" font-size="24" font-weight="700" fill="#8A909C">1 ÷ 0.40 ＝</text>
+      <text x="786" y="424" font-size="72" font-weight="900" fill="#FF8DA0">2.50 倍</text>
+      <text x="786" y="470" font-size="22" font-weight="700" fill="#C9CBD4">これを下回ったら赤字</text>
+      <text x="80" y="150" font-size="25" font-weight="800" fill="#FF8DA0" letter-spacing="5">TIKTOK SHOP ─ ROAS</text>
+      <text x="76" y="262" font-size="86" font-weight="900" fill="#ffffff">ROASの基準は</text>
+      <text x="76" y="366" font-size="86" font-weight="900" fill="#ffffff">自分で計算する</text>
+      <text x="80" y="432" font-size="25" fill="#C9CBD4">損益分岐ROASの出し方とGMV MaxのROI目標</text>
+      <rect x="80" y="472" width="404" height="58" rx="29" fill="#E8324A"/>
+      <text x="282" y="510" text-anchor="middle" font-size="24" font-weight="800" fill="#ffffff">計算表7点・図解7枚</text>
+      <text x="80" y="586" font-size="20" font-weight="700" fill="#787D8A">LEAM ─ TikTok Shop 実践コラム</text>
+    </svg>
+  </figure>
+
+  <p class="lead">TikTok Shopの広告（GMV Max）は、<strong>ROI目標と日予算を設定する形式</strong>です。ここで最初に手が止まるのが「ROI目標をいくつに置くか」で、検索すると他社の目安値が並びます。ただし<strong>必要なROASは、業種・商品単価・原価率・カテゴリー別の販売手数料率・クリエイターへのコミッション率で変わります</strong>。同じ広告でも、必要ROASが1.7倍で足りる商品と、5.5倍ないと赤字になる商品が同時に存在します。この記事は、どの売り場で売るかを選ぶ段階の方ではなく、<strong>すでにTikTok Shopで広告を回している（これから回す）方が、自社の基準値を自分の数字で出すため</strong>のものです。売り場の選び方は<a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い</a>で扱っています。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>損益分岐ROASを1本の式で出す方法と、限界CPAとの換算</li>
+      <li>カテゴリー別販売手数料7〜12％・原価率・コミッション率を当てはめた必要ROASの実数表</li>
+      <li>GMV MaxのROI目標の置き方と、利益額が最大になる予算の見つけ方</li>
+      <li>広告ROAS・全体ROAS・増分ROASを、別々の閾値で判定する手順</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自社の損益分岐ROASを、一緒に計算するところから始められます</div>
+    <p>売価・原価・送料・手数料率・コミッション率をお預かりすれば、必要ROASと広告に使える上限額をその場で数字にできます。広告を止めるべき商品と、まだ伸ばせる商品の切り分けまでお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">相場を調べるのをやめて、自社の損益分岐ROASを先に出す</a></li>
+      <li><a href="#s2">損益分岐ROASは「1 ÷ 貢献利益率」の1本で計算できる</a></li>
+      <li><a href="#s3">カテゴリー別の販売手数料7〜12％は、必要ROASを0.3倍ぶん動かす</a></li>
+      <li><a href="#s4">原価率・手数料・コミッションのマトリクスで自社の値を読み取る</a></li>
+      <li><a href="#s5">送料は定額なので、単価が下がるほど必要ROASは跳ね上がる</a></li>
+      <li><a href="#s6">GMV MaxのROI目標は、損益分岐ROASに上乗せ倍率をかけて置く</a></li>
+      <li><a href="#s7">ROASを上げすぎると利益額は減るので、限界ROASで増額を止める</a></li>
+      <li><a href="#s8">広告ROAS・全体ROAS・増分ROASは、別々の閾値で判定する</a></li>
+      <li><a href="#s9">まとめ：3日でROAS基準を確定させる順番で動く</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>相場を調べるのをやめて、自社の損益分岐ROASを先に出す</h2>
+  <p>ROASは「広告経由の売上 ÷ 広告費」です。ROAS3.0倍なら、広告費10万円で売上30万円という意味になります。ここまでは共通ですが、<strong>「3.0倍が良い数字かどうか」は商品によって正反対の答えになります</strong>。売上30万円のうち、原価・販売手数料・クリエイターへのコミッション・送料を引いて手元に残る割合が、商品ごとにまったく違うからです。</p>
+  <p>この記事の後半で計算しますが、原価率30〜50％・販売手数料7〜12％・コミッション率5〜20％を組み合わせただけで、赤字にならないために必要なROASは<strong>1.72倍から5.56倍まで、3倍以上の幅で動きます</strong>。ここに送料を入れると、低単価商品では15倍という値も出てきます。つまり「何倍が目安か」という問いは、質問の形が間違っています。<span class="hl">必要なROASは調べるものではなく、自社の粗利構造から計算して出すもの</span>です。</p>
+  <p>先に、この記事全体を貫く1本の式を置いておきます。広告の損益は、次の式だけで判定できます。</p>
+  <div class="box box-point">
+    <div class="bt">💡 広告の損益を判定する式</div>
+    <p><strong>利益 ＝ 広告費 ×（実績ROAS ÷ 損益分岐ROAS − 1）</strong><br>例：損益分岐ROASが2.50倍の商品で、広告費30万円・実績ROAS3.00倍なら、30万円×（3.00÷2.50−1）＝<strong>＋6万円</strong>。実績ROASが2.00倍なら、30万円×（2.00÷2.50−1）＝<strong>−6万円</strong>です。</p>
+  </div>
+  <p>この式が使えるようになると、管理画面のROASを見た瞬間に金額の損得が言えるようになります。逆に言えば、<strong>損益分岐ROASを持っていない状態では、管理画面にどんな数字が出ていても意味を読み取れません</strong>。まずここを確定させます。なお、広告の世界で使うROI目標は一般に「売上 ÷ 広告費」を指し、会計で使うROI（利益 ÷ 投資額）とは分子が異なります。管理画面上の定義は更新されることがあるため、最新は公式ヘルプでご確認ください。</p>
+
+  <h2 id="s2"><span class="no en">02</span>損益分岐ROASは「1 ÷ 貢献利益率」の1本で計算できる</h2>
+  <p>損益分岐ROASは、次の2ステップで出します。難しい計算は一切ありません。</p>
+  <div class="box box-point">
+    <div class="bt">💡 計算式</div>
+    <p><strong>① 貢献利益率 ＝ 粗利率 − 販売手数料率 − コミッション率</strong><br><strong>② 損益分岐ROAS ＝ 1 ÷ 貢献利益率</strong><br>粗利率は「（売価 − 原価）÷ 売価」、つまり「1 − 原価率」です。</p>
+  </div>
+
+  <h3>売価3,000円の商品を分解して、貢献利益率を確かめる</h3>
+  <p>原価率40％・販売手数料10％・コミッション率10％の商品を、売価3,000円で見てみます。原価は1,200円、販売手数料は300円、コミッションは300円。合計1,800円が出ていくので、手元に残るのは1,200円です。売価に対する割合は40％で、これが貢献利益率です。損益分岐ROASは1 ÷ 0.40で<strong>2.50倍</strong>になります。</p>
+  <p>同じことをCPA（1件あたりの獲得コスト）で言い換えると、<strong>限界CPA ＝ 売価 × 貢献利益率</strong>なので、3,000円×40％＝1,200円です。1件売るのに広告費を1,200円まで使えるという意味で、ROASに直すと3,000円 ÷ 1,200円＝2.50倍。<span class="hl">ROASとCPAは、同じ1つの上限を別の単位で言っているだけ</span>です。日々の運用でCPAを見ている方は、この換算を1回やっておくと両方の管理画面を同じ物差しで読めます。</p>
+
+  <h3>貢献利益率が下がると、必要ROASは直線ではなく急カーブで上がる</h3>
+  <p>ここで注意したいのが、貢献利益率と必要ROASの関係が<strong>反比例</strong>だという点です。貢献利益率が50％から40％へ10ポイント下がると必要ROASは2.00倍から2.50倍へ0.50倍上がるだけですが、20％から10％へ同じ10ポイント下がると、5.00倍から10.00倍へ<strong>5.00倍も跳ね上がります</strong>。貢献利益率が薄い商品ほど、わずかなコスト増が広告の実現可能性を壊します。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="横軸に貢献利益率10％から60％、縦軸に損益分岐ROASを取った反比例の曲線グラフ。貢献利益率20％で5.00倍、30％で3.33倍、40％で2.50倍、50％で2.00倍の点が示されている">
+      <rect x="0" y="0" width="720" height="340" fill="#ffffff"/>
+      <g stroke="#E3E6EA" stroke-width="1">
+        <line x1="70" y1="250" x2="680" y2="250"/><line x1="70" y1="210" x2="680" y2="210"/>
+        <line x1="70" y1="170" x2="680" y2="170"/><line x1="70" y1="130" x2="680" y2="130"/>
+        <line x1="70" y1="90" x2="680" y2="90"/>
+      </g>
+      <g font-size="11" fill="#646C7A" text-anchor="end">
+        <text x="62" y="254">2.0</text><text x="62" y="214">4.0</text><text x="62" y="174">6.0</text>
+        <text x="62" y="134">8.0</text><text x="62" y="94">10.0</text>
+      </g>
+      <text x="70" y="46" font-size="12" font-weight="700" fill="#3A3F46">損益分岐ROAS（倍）</text>
+      <line x1="70" y1="290" x2="680" y2="290" stroke="#0B0C10" stroke-width="2"/>
+      <line x1="70" y1="60" x2="70" y2="290" stroke="#0B0C10" stroke-width="2"/>
+      <g font-size="11" fill="#646C7A" text-anchor="middle">
+        <text x="168" y="308">10%</text><text x="267" y="308">20%</text><text x="365" y="308">30%</text>
+        <text x="463" y="308">40%</text><text x="562" y="308">50%</text><text x="660" y="308">60%</text>
+      </g>
+      <text x="375" y="330" font-size="12" font-weight="700" fill="#3A3F46" text-anchor="middle">貢献利益率（粗利率 − 販売手数料率 − コミッション率）</text>
+      <polyline points="168,90 218,157 267,190 316,210 365,223 414,233 463,240 513,246 562,250 611,254 660,257"
+        fill="none" stroke="#B01D36" stroke-width="3.5" stroke-linejoin="round"/>
+      <g fill="#B01D36">
+        <circle cx="267" cy="190" r="6"/><circle cx="365" cy="223" r="6"/><circle cx="463" cy="240" r="6"/><circle cx="562" cy="250" r="6"/>
+      </g>
+      <rect x="228" y="152" width="86" height="26" rx="6" fill="#FFECF0"/>
+      <text x="271" y="170" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">5.00倍</text>
+      <rect x="326" y="185" width="86" height="26" rx="6" fill="#FFECF0"/>
+      <text x="369" y="203" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">3.33倍</text>
+      <rect x="424" y="202" width="86" height="26" rx="6" fill="#FFECF0"/>
+      <text x="467" y="220" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">2.50倍</text>
+      <rect x="523" y="212" width="86" height="26" rx="6" fill="#FFECF0"/>
+      <text x="566" y="230" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">2.00倍</text>
+      <path d="M168 100 L168 78" stroke="#8A5A00" stroke-width="1.5"/>
+      <text x="176" y="74" font-size="11.5" font-weight="700" fill="#8A5A00">貢献利益率10％なら10.00倍が必要</text>
+    </svg>
+    <figcaption>図1：貢献利益率と損益分岐ROASの反比例カーブ（LEAM編集部作成）</figcaption>
+  </figure>
+  <p>グラフの左側、貢献利益率が20％を切るあたりから曲線が垂直に立ち上がります。<strong>この領域に入った商品は、広告の設定を工夫して解決できる問題ではありません</strong>。単価・原価・コミッション率のどれかを動かすか、広告以外の入口で売るかの判断になります。値付けの見直しは<a href="https://leam.co.jp/column/pricing-strategy/">TikTok Shopの価格設定</a>で詳しく扱っています。</p>
+
+  <h2 id="s3"><span class="no en">03</span>カテゴリー別の販売手数料7〜12％は、必要ROASを0.3倍ぶん動かす</h2>
+  <p>式に入れる販売手数料率は、自社カテゴリーのものを使います。TikTok Shopの販売手数料は2026年5月11日の改定でカテゴリー別になり、<strong>7％・9％・10％・12％の4段階</strong>です。初期費用と月額固定費はなく、かかるのは販売手数料のみです（最新の料率は公式ヘルプでご確認ください）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>料率</th><th>主なカテゴリー</th><th>貢献利益率</th><th>損益分岐ROAS</th></tr></thead>
+    <tbody>
+      <tr><td><b>7％</b></td><td>車・バイク／パソコン・オフィス用品／食品・ドリンク／家電／スマホ・デジタル機器／家具／ホームセンター・リフォーム</td><td class="num">43％</td><td class="num"><b>2.33倍</b></td></tr>
+      <tr><td><b>9％</b></td><td>本・雑誌・オーディオ／コレクション／キッチン用品／ファブリック・インテリア雑貨／工具・金物</td><td class="num">41％</td><td class="num"><b>2.44倍</b></td></tr>
+      <tr><td><b>10％</b></td><td>ベビー・マタニティ／美容・パーソナルケア／健康／アクセサリー・ジュエリー／シューズ／スポーツ・アウトドア／おもちゃ・ホビー</td><td class="num">40％</td><td class="num"><b>2.50倍</b></td></tr>
+      <tr><td><b>12％</b></td><td>ファッション／ペット用品 など</td><td class="num">38％</td><td class="num"><b>2.63倍</b></td></tr>
+    </tbody>
+  </table></div>
+  <p class="src" style="border-top:none;padding-top:0;margin-top:-8px">※ 貢献利益率と損益分岐ROASは、原価率40％・コミッション率10％を固定した場合の計算値です。</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="販売手数料7％・9％・10％・12％の4段階について、原価率40％とコミッション率10％を固定したときの損益分岐ROASを長さで比べた横棒グラフ">
+      <rect x="0" y="0" width="720" height="250" fill="#ffffff"/>
+      <text x="16" y="32" font-size="12.5" font-weight="700" fill="#3A3F46">原価率40％・コミッション率10％を固定したときの損益分岐ROAS</text>
+      <g font-size="12.5" font-weight="700" fill="#0B0C10">
+        <text x="16" y="76">販売手数料 7％</text><text x="16" y="121">販売手数料 9％</text>
+        <text x="16" y="166">販売手数料 10％</text><text x="16" y="211">販売手数料 12％</text>
+      </g>
+      <g font-size="10.5" fill="#646C7A">
+        <text x="16" y="92">食品・家電など</text><text x="16" y="137">キッチン用品など</text>
+        <text x="16" y="182">美容・健康など</text><text x="16" y="227">ファッション・ペット</text>
+      </g>
+      <rect x="155" y="55" width="416" height="32" rx="5" fill="#F4C3CD"/>
+      <rect x="155" y="100" width="436" height="32" rx="5" fill="#F09DAE"/>
+      <rect x="155" y="145" width="446" height="32" rx="5" fill="#E0708A"/>
+      <rect x="155" y="190" width="470" height="32" rx="5" fill="#B01D36"/>
+      <g font-size="13.5" font-weight="800" fill="#0B0C10">
+        <text x="579" y="77">2.33倍</text><text x="599" y="122">2.44倍</text><text x="609" y="167">2.50倍</text>
+      </g>
+      <text x="633" y="212" font-size="13.5" font-weight="800" fill="#B01D36">2.63倍</text>
+      <line x1="155" y1="48" x2="155" y2="230" stroke="#0B0C10" stroke-width="1.5"/>
+    </svg>
+    <figcaption>図2：販売手数料の4段階が必要ROASに生む差（LEAM編集部作成）</figcaption>
+  </figure>
+
+  <h3>自社カテゴリーの料率を先に1つに確定させる</h3>
+  <p>計算に入る前に、自社商品がどの料率に該当するかを確定させてください。<strong>7％と12％では、必要ROASが2.33倍と2.63倍で0.30倍の差</strong>が出ます。手数料が5ポイント違えば貢献利益率も5ポイント違うので、広告費30万円・ROAS2.50倍（広告経由売上75万円）の月なら、利益の差は75万円×5％＝3.75万円です。小さくはありませんが、次に見る原価率の影響に比べると限定的です。手数料の内訳やクーポン・返金時の扱いは<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料</a>にまとめています。</p>
+
+  <h3>手数料の差より、原価率の差のほうが必要ROASを大きく動かす</h3>
+  <p>手数料が7％から12％へ5ポイント上がったときの必要ROASの変化は0.30倍でした。一方、<strong>原価率が40％から50％へ10ポイント上がると、必要ROASは2.50倍から3.33倍へ0.83倍</strong>動きます。1ポイントあたりで比べても、原価率のほうが影響が大きいことになります。「手数料が安いカテゴリーを選ぶ」という発想より、「原価率を下げられる商品を選ぶ」ほうが広告の余地は広がります。カテゴリー選定の考え方は<a href="https://leam.co.jp/column/best-categories/">TikTok Shopで売れやすいカテゴリー</a>もあわせてご覧ください。</p>
+
+  <h2 id="s4"><span class="no en">04</span>原価率・手数料・コミッションのマトリクスで自社の値を読み取る</h2>
+  <p>ここまでの式に、原価率3通り（30％・40％・50％）、販売手数料4通り（7％・9％・10％・12％）、コミッション率3通り（5％・10％・20％）を当てはめた36通りの計算結果を並べます。<strong>自社の3つの数字が交差するマスを読むだけで、損益分岐ROASが出ます</strong>。</p>
+  <div class="tw"><table>
+    <thead><tr><th>原価率</th><th>販売手数料</th><th>コミッション5％</th><th>コミッション10％</th><th>コミッション20％</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="4"><b>30％</b><br>（粗利率70％）</td><td>7％</td><td class="num">1.72倍</td><td class="num">1.89倍</td><td class="num">2.33倍</td></tr>
+      <tr><td>9％</td><td class="num">1.79倍</td><td class="num">1.96倍</td><td class="num">2.44倍</td></tr>
+      <tr><td>10％</td><td class="num">1.82倍</td><td class="num">2.00倍</td><td class="num">2.50倍</td></tr>
+      <tr><td>12％</td><td class="num">1.89倍</td><td class="num">2.08倍</td><td class="num">2.63倍</td></tr>
+      <tr><td rowspan="4"><b>40％</b><br>（粗利率60％）</td><td>7％</td><td class="num">2.08倍</td><td class="num">2.33倍</td><td class="num">3.03倍</td></tr>
+      <tr><td>9％</td><td class="num">2.17倍</td><td class="num">2.44倍</td><td class="num">3.23倍</td></tr>
+      <tr><td>10％</td><td class="num">2.22倍</td><td class="num">2.50倍</td><td class="num">3.33倍</td></tr>
+      <tr><td>12％</td><td class="num">2.33倍</td><td class="num">2.63倍</td><td class="num">3.57倍</td></tr>
+      <tr><td rowspan="4"><b>50％</b><br>（粗利率50％）</td><td>7％</td><td class="num">2.63倍</td><td class="num">3.03倍</td><td class="num">4.35倍</td></tr>
+      <tr><td>9％</td><td class="num">2.78倍</td><td class="num">3.23倍</td><td class="num">4.76倍</td></tr>
+      <tr><td>10％</td><td class="num">2.86倍</td><td class="num">3.33倍</td><td class="num">5.00倍</td></tr>
+      <tr><td>12％</td><td class="num">3.03倍</td><td class="num">3.57倍</td><td class="num">5.56倍</td></tr>
+    </tbody>
+  </table></div>
+  <p>最小値は原価率30％・手数料7％・コミッション5％の<strong>1.72倍</strong>、最大値は原価率50％・手数料12％・コミッション20％の<strong>5.56倍</strong>です。同じTikTok Shopの同じGMV Maxでも、この幅があります。冒頭で「相場を調べても使えない」と書いたのは、この表が理由です。</p>
+  <figure>
+    <svg viewBox="0 0 720 350" role="img" aria-label="販売手数料10％を固定し、原価率30・40・50％とコミッション率5・10・20％を掛け合わせた9通りの損益分岐ROASを、色の濃さで表した格子図">
+      <rect x="0" y="0" width="720" height="350" fill="#ffffff"/>
+      <text x="16" y="28" font-size="12.5" font-weight="700" fill="#3A3F46">販売手数料10％を固定した場合の損益分岐ROAS（色が濃いほど広告が回りにくい）</text>
+      <g font-size="12" font-weight="700" fill="#0B0C10" text-anchor="middle">
+        <text x="297" y="66">コミッション 5％</text><text x="447" y="66">コミッション 10％</text><text x="597" y="66">コミッション 20％</text>
+      </g>
+      <g font-size="12.5" font-weight="700" fill="#0B0C10" text-anchor="end">
+        <text x="212" y="110">原価率 30％</text><text x="212" y="180">原価率 40％</text><text x="212" y="250">原価率 50％</text>
+      </g>
+      <g font-size="10.5" fill="#646C7A" text-anchor="end">
+        <text x="212" y="128">粗利率70％</text><text x="212" y="198">粗利率60％</text><text x="212" y="268">粗利率50％</text>
+      </g>
+      <rect x="225" y="80" width="145" height="62" rx="6" fill="#FFECF0"/>
+      <text x="297" y="112" text-anchor="middle" font-size="18" font-weight="900" fill="#B01D36">1.82倍</text>
+      <text x="297" y="130" text-anchor="middle" font-size="10.5" fill="#646C7A">貢献利益率55％</text>
+      <rect x="375" y="80" width="145" height="62" rx="6" fill="#FFDCE4"/>
+      <text x="447" y="112" text-anchor="middle" font-size="18" font-weight="900" fill="#B01D36">2.00倍</text>
+      <text x="447" y="130" text-anchor="middle" font-size="10.5" fill="#646C7A">貢献利益率50％</text>
+      <rect x="525" y="80" width="145" height="62" rx="6" fill="#FBBECB"/>
+      <text x="597" y="112" text-anchor="middle" font-size="18" font-weight="900" fill="#8E1B2E">2.50倍</text>
+      <text x="597" y="130" text-anchor="middle" font-size="10.5" fill="#5C6270">貢献利益率40％</text>
+      <rect x="225" y="150" width="145" height="62" rx="6" fill="#FFDCE4"/>
+      <text x="297" y="182" text-anchor="middle" font-size="18" font-weight="900" fill="#B01D36">2.22倍</text>
+      <text x="297" y="200" text-anchor="middle" font-size="10.5" fill="#646C7A">貢献利益率45％</text>
+      <rect x="375" y="150" width="145" height="62" rx="6" fill="#FBBECB"/>
+      <text x="447" y="182" text-anchor="middle" font-size="18" font-weight="900" fill="#8E1B2E">2.50倍</text>
+      <text x="447" y="200" text-anchor="middle" font-size="10.5" fill="#5C6270">貢献利益率40％</text>
+      <rect x="525" y="150" width="145" height="62" rx="6" fill="#E0708A"/>
+      <text x="597" y="182" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">3.33倍</text>
+      <text x="597" y="200" text-anchor="middle" font-size="10.5" fill="#FFECF0">貢献利益率30％</text>
+      <rect x="225" y="220" width="145" height="62" rx="6" fill="#F4C3CD"/>
+      <text x="297" y="252" text-anchor="middle" font-size="18" font-weight="900" fill="#8E1B2E">2.86倍</text>
+      <text x="297" y="270" text-anchor="middle" font-size="10.5" fill="#5C6270">貢献利益率35％</text>
+      <rect x="375" y="220" width="145" height="62" rx="6" fill="#E0708A"/>
+      <text x="447" y="252" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">3.33倍</text>
+      <text x="447" y="270" text-anchor="middle" font-size="10.5" fill="#FFECF0">貢献利益率30％</text>
+      <rect x="525" y="220" width="145" height="62" rx="6" fill="#B01D36"/>
+      <text x="597" y="252" text-anchor="middle" font-size="18" font-weight="900" fill="#ffffff">5.00倍</text>
+      <text x="597" y="270" text-anchor="middle" font-size="10.5" fill="#FFD9E1">貢献利益率20％</text>
+      <rect x="225" y="300" width="445" height="32" rx="6" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="447" y="321" text-anchor="middle" font-size="12" font-weight="700" fill="#8A5A00">右下へ進むほど、広告だけで伸ばす設計は成り立ちにくくなります</text>
+    </svg>
+    <figcaption>図3：原価率とコミッション率で変わる必要ROASの分布（LEAM編集部作成）</figcaption>
+  </figure>
+
+  <h3>コミッション率を上げるなら、必要ROASの上がり幅を先に確認する</h3>
+  <p>表の中で見落とされやすいのがコミッション率の列です。原価率40％・手数料10％の行で見ると、コミッション5％なら2.22倍、10％なら2.50倍、<strong>20％なら3.33倍</strong>。5％から20％へ上げると、必要ROASは1.5倍になります。</p>
+  <p>ただし、これは「コミッションを下げれば得」という話ではありません。TikTok Shopでは提供開始から半年の時点で、流通総額の約70％がクリエイター投稿・セラーのコンテンツ・LIVEを起点にしていると公表されています（TikTok Newsroom・2026年2月3日）。<strong>コミッションはクリエイターの動画本数に直結する変数</strong>で、下げれば動画が集まらず、広告に渡せる素材そのものが減ります。当社の運用実感としても、コミッションを削って必要ROASを下げるより、<strong>セット構成で客単価を上げて貢献利益率を確保する</strong>ほうが結果が安定します。ここでいう単価を上げるとは、既存のお客様への値上げではなく、2点セットや初回向け構成に組み替えて1件あたりの粗利を厚くすることです。ただし客単価を上げると購入のハードルも上がるため、購入率の変化はセットで見てください。料率の決め方は<a href="https://leam.co.jp/column/creator-commission/">クリエイターのコミッション設計</a>と<a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopアフィリエイトの始め方</a>で扱っています。</p>
+
+  <h2 id="s5"><span class="no en">05</span>送料は定額なので、単価が下がるほど必要ROASは跳ね上がる</h2>
+  <p>ここまでの式は、原価・手数料・コミッションという「率」だけで組み立ててきました。実務ではもう1つ、<strong>送料と梱包資材という「定額」のコスト</strong>が乗ります。これが厄介なのは、金額が一定でも、売価に対する割合が単価によって大きく変わる点です。</p>
+  <p>送料と梱包で1件あたり500円かかるとします。売価1,500円の商品なら売価の33.3％ですが、売価10,000円の商品なら5.0％です。同じ500円が、貢献利益率を33ポイント削るか5ポイント削るかに分かれます。以下は、原価率40％・販売手数料10％・コミッション率10％（送料前の貢献利益率40％）で計算した単価別の必要ROASです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>商品単価</th><th>送料・梱包500円の売価比</th><th>送料込みの貢献利益率</th><th>損益分岐ROAS</th><th>限界CPA</th></tr></thead>
+    <tbody>
+      <tr><td>1,500円</td><td class="num">33.3％</td><td class="num">6.7％</td><td class="num"><b>15.00倍</b></td><td class="num">100円</td></tr>
+      <tr><td>2,000円</td><td class="num">25.0％</td><td class="num">15.0％</td><td class="num"><b>6.67倍</b></td><td class="num">300円</td></tr>
+      <tr><td>3,000円</td><td class="num">16.7％</td><td class="num">23.3％</td><td class="num"><b>4.29倍</b></td><td class="num">700円</td></tr>
+      <tr><td>5,000円</td><td class="num">10.0％</td><td class="num">30.0％</td><td class="num"><b>3.33倍</b></td><td class="num">1,500円</td></tr>
+      <tr><td>8,000円</td><td class="num">6.3％</td><td class="num">33.8％</td><td class="num"><b>2.96倍</b></td><td class="num">2,700円</td></tr>
+      <tr><td>10,000円</td><td class="num">5.0％</td><td class="num">35.0％</td><td class="num"><b>2.86倍</b></td><td class="num">3,500円</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 350" role="img" aria-label="商品単価1,500円から10,000円までを横軸に、送料込みの貢献利益率と損益分岐ROASの2本の折れ線を重ねたグラフ。単価が下がるほど2本が離れていく">
+      <rect x="0" y="0" width="720" height="350" fill="#ffffff"/>
+      <g stroke="#E3E6EA" stroke-width="1">
+        <line x1="70" y1="250" x2="680" y2="250"/><line x1="70" y1="200" x2="680" y2="200"/>
+        <line x1="70" y1="150" x2="680" y2="150"/><line x1="70" y1="100" x2="680" y2="100"/>
+      </g>
+      <line x1="70" y1="290" x2="680" y2="290" stroke="#0B0C10" stroke-width="2"/>
+      <g font-size="11" fill="#646C7A" text-anchor="middle">
+        <text x="110" y="310">1,500円</text><text x="216" y="310">2,000円</text><text x="322" y="310">3,000円</text>
+        <text x="428" y="310">5,000円</text><text x="534" y="310">8,000円</text><text x="640" y="310">10,000円</text>
+      </g>
+      <text x="375" y="334" font-size="12" font-weight="700" fill="#3A3F46" text-anchor="middle">商品単価（送料・梱包は1件500円で固定）</text>
+      <polyline points="110,250 216,200 322,150 428,110 534,87 640,80" fill="none" stroke="#0A6E68" stroke-width="3" stroke-dasharray="7 5"/>
+      <polyline points="110,65 216,190 322,226 428,240 534,246 640,247" fill="none" stroke="#B01D36" stroke-width="3.5"/>
+      <g fill="#B01D36">
+        <circle cx="110" cy="65" r="5.5"/><circle cx="216" cy="190" r="5.5"/><circle cx="322" cy="226" r="5.5"/>
+        <circle cx="428" cy="240" r="5.5"/><circle cx="534" cy="246" r="5.5"/><circle cx="640" cy="247" r="5.5"/>
+      </g>
+      <g fill="#0A6E68">
+        <circle cx="110" cy="250" r="4.5"/><circle cx="216" cy="200" r="4.5"/><circle cx="322" cy="150" r="4.5"/>
+        <circle cx="428" cy="110" r="4.5"/><circle cx="534" cy="87" r="4.5"/><circle cx="640" cy="80" r="4.5"/>
+      </g>
+      <text x="122" y="58" font-size="13" font-weight="800" fill="#B01D36">15.00倍</text>
+      <text x="228" y="184" font-size="12" font-weight="800" fill="#B01D36">6.67倍</text>
+      <text x="334" y="220" font-size="12" font-weight="800" fill="#B01D36">4.29倍</text>
+      <text x="440" y="234" font-size="12" font-weight="800" fill="#B01D36">3.33倍</text>
+      <text x="600" y="242" font-size="12" font-weight="800" fill="#B01D36">2.86倍</text>
+      <text x="440" y="102" font-size="12" font-weight="800" fill="#0A6E68">30.0％</text>
+      <text x="122" y="266" font-size="12" font-weight="800" fill="#0A6E68">6.7％</text>
+      <rect x="70" y="30" width="180" height="24" rx="5" fill="#FFECF0"/>
+      <line x1="82" y1="42" x2="106" y2="42" stroke="#B01D36" stroke-width="3.5"/>
+      <text x="114" y="47" font-size="11.5" font-weight="700" fill="#B01D36">損益分岐ROAS（左目盛）</text>
+      <rect x="262" y="30" width="196" height="24" rx="5" fill="#EDF6F5"/>
+      <line x1="274" y1="42" x2="298" y2="42" stroke="#0A6E68" stroke-width="3" stroke-dasharray="7 5"/>
+      <text x="306" y="47" font-size="11.5" font-weight="700" fill="#0A6E68">送料込みの貢献利益率（右目盛）</text>
+    </svg>
+    <figcaption>図4：商品単価が送料の売価比を通じて必要ROASを動かす関係（LEAM編集部作成）</figcaption>
+  </figure>
+  <p>単価1,500円の行は、必要ROASが15.00倍・限界CPAが100円です。1件100円で注文を取る前提の広告は現実的ではありません。<strong>低単価商品で広告が回らないのは、運用が下手だからではなく、構造的に無理があるから</strong>です。この場合の打ち手は広告設定ではなく、まとめ買いのセット化で単価を上げるか、送料条件を見直すかになります。送料の設計は<a href="https://leam.co.jp/column/shipping-rules/">TikTok Shopの配送ルール</a>を参照してください。</p>
+
+  <h3>送料無料ラインは、必要ROASの表を見てから決める</h3>
+  <p>送料を購入者負担にすれば貢献利益率は保てますが、購入前の離脱は増えます。逆に送料込み価格にすれば離脱は減りますが、上の表のとおり必要ROASが上がります。どちらが正しいかは商品単価によって変わるため、<strong>「送料込みにした場合の必要ROAS」と「送料別にした場合の想定転換率の低下」を同じ表に並べて比べる</strong>のが実務的な決め方です。商品ページ側の離脱要因は<a href="https://leam.co.jp/column/product-page-cvr/">商品ページの転換率改善</a>にまとめています。</p>
+
+  <h2 id="s6"><span class="no en">06</span>GMV MaxのROI目標は、損益分岐ROASに上乗せ倍率をかけて置く</h2>
+  <p>損益分岐ROASが出たら、次はGMV Maxに入力するROI目標を決めます。GMV Maxは2025年7月より日本で展開が始まり、2025年7月以降はTikTok Shop広告の唯一のキャンペーンタイプとなっています。設定するのは<strong>ROI目標と日予算</strong>です。</p>
+  <p>損益分岐ROASをそのままROI目標にすると、理論上の利益はゼロになります。ここに「貢献利益のうち何割を手元に残すか」を決めて上乗せします。<strong>目標ROAS ＝ 損益分岐ROAS ÷（1 − 残す割合）</strong>という式で計算できます。損益分岐ROASが2.50倍（貢献利益率40％）の商品で計算すると、次のようになります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>貢献利益のうち残す割合</th><th>目標ROAS</th><th>広告経由売上に対する利益率</th><th>広告費100万円のときの利益</th></tr></thead>
+    <tbody>
+      <tr><td>0％（損益分岐そのもの）</td><td class="num">2.50倍</td><td class="num">0.0％</td><td class="num">0円</td></tr>
+      <tr><td>20％</td><td class="num">3.13倍</td><td class="num">8.1％</td><td class="num">＋25.2万円</td></tr>
+      <tr><td>30％</td><td class="num">3.57倍</td><td class="num">12.0％</td><td class="num">＋42.8万円</td></tr>
+      <tr><td>40％</td><td class="num">4.17倍</td><td class="num">16.0％</td><td class="num">＋66.8万円</td></tr>
+      <tr><td>50％</td><td class="num">5.00倍</td><td class="num">20.0％</td><td class="num">＋100.0万円</td></tr>
+    </tbody>
+  </table></div>
+  <p class="src" style="border-top:none;padding-top:0;margin-top:-8px">※ 広告費を100万円で固定した場合の計算です。実際にはROI目標を上げると消化される広告費そのものが減るため、この点は次章で扱います。</p>
+
+  <h3>学習期は、許容する持ち出しの上限額を先に金額で決める</h3>
+  <p>配信を始めた直後は、まだデータが十分でない状態です。<strong>この期間に損益分岐ROASを割ることを「事故」と呼ぶか「先に決めた検証費用」と呼ぶかで、運用の落ち着きが変わります</strong>。おすすめは、ROI目標を損益分岐ROASの何％に置くかを決めたうえで、日予算と日数から持ち出しの上限額を金額で出しておく方法です。</p>
+  <p>日予算1万円で2週間（累計14万円）回すケースで計算すると、次のとおりです。損益分岐ROASは2.50倍とします。</p>
+  <div class="tw"><table>
+    <thead><tr><th>ROI目標の置き方</th><th>ROI目標の値</th><th>その水準で着地した場合の2週間の損益</th></tr></thead>
+    <tbody>
+      <tr><td>損益分岐ROASの100％</td><td class="num">2.50倍</td><td class="num">0円</td></tr>
+      <tr><td>損益分岐ROASの90％</td><td class="num">2.25倍</td><td class="num">−1.4万円</td></tr>
+      <tr><td>損益分岐ROASの80％</td><td class="num">2.00倍</td><td class="num">−2.8万円</td></tr>
+      <tr><td>損益分岐ROASの70％</td><td class="num">1.75倍</td><td class="num">−4.2万円</td></tr>
+      <tr><td>損益分岐ROASの60％</td><td class="num">1.50倍</td><td class="num">−5.6万円</td></tr>
+    </tbody>
+  </table></div>
+  <p>ROI目標を損益分岐の80％に置くなら、2週間の検証費用は最大2.8万円と先に言えます。<span class="hl">この金額を先に社内で合意しておくと、途中の数字に一喜一憂して設定をいじり続ける事態を防げます</span>。当社の運用実感では、学習期に設定を毎日触ってしまうのはよく見かける失敗で、その背景には「いくらまでの赤字を許容するか」を決めていないことが多くあります。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="ROAS1.5倍から5.5倍までの数直線上に、赤字帯・損益分岐点2.50倍・目標帯3.13倍から4.17倍・配信量が細りやすい帯を色分けして並べた図">
+      <rect x="0" y="0" width="720" height="260" fill="#ffffff"/>
+      <text x="16" y="30" font-size="12.5" font-weight="700" fill="#3A3F46">損益分岐ROAS2.50倍（貢献利益率40％）の商品でROI目標を置く位置</text>
+      <rect x="60" y="92" width="155" height="42" rx="4" fill="#EFF1F4"/>
+      <rect x="215" y="92" width="98" height="42" fill="#FBF3E2"/>
+      <rect x="313" y="92" width="163" height="42" fill="#EDF6F5"/>
+      <rect x="476" y="92" width="204" height="42" rx="4" fill="#F4F6F8"/>
+      <line x1="215" y1="80" x2="215" y2="146" stroke="#B01D36" stroke-width="3"/>
+      <text x="137" y="119" text-anchor="middle" font-size="12" font-weight="700" fill="#646C7A">赤字になる帯</text>
+      <text x="264" y="119" text-anchor="middle" font-size="11.5" font-weight="700" fill="#8A5A00">薄利の帯</text>
+      <text x="394" y="119" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0A6E68">目標に置く帯</text>
+      <text x="578" y="113" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">高すぎて配信量が</text>
+      <text x="578" y="130" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">細りやすい帯</text>
+      <line x1="60" y1="160" x2="680" y2="160" stroke="#0B0C10" stroke-width="1.5"/>
+      <g stroke="#0B0C10" stroke-width="1.5">
+        <line x1="137" y1="160" x2="137" y2="168"/><line x1="215" y1="160" x2="215" y2="170"/>
+        <line x1="313" y1="160" x2="313" y2="168"/><line x1="382" y1="160" x2="382" y2="168"/>
+        <line x1="476" y1="160" x2="476" y2="168"/><line x1="605" y1="160" x2="605" y2="168"/>
+      </g>
+      <g font-size="11.5" fill="#3A3F46" text-anchor="middle">
+        <text x="137" y="186">2.00</text><text x="313" y="186">3.13</text><text x="382" y="186">3.57</text>
+        <text x="476" y="186">4.17</text><text x="605" y="186">5.00</text>
+      </g>
+      <text x="215" y="186" text-anchor="middle" font-size="12.5" font-weight="900" fill="#B01D36">2.50</text>
+      <text x="215" y="204" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">損益分岐</text>
+      <path d="M137 74 L137 88" stroke="#8A5A00" stroke-width="2"/>
+      <path d="M131 80 L137 90 L143 80 Z" fill="#8A5A00"/>
+      <text x="137" y="68" text-anchor="middle" font-size="11" font-weight="700" fill="#8A5A00">学習期に置く例（損益分岐の80％）</text>
+      <text x="60" y="232" font-size="11.5" fill="#646C7A">← ROI目標を下げると配信量は出やすいが、1件あたりの利益は薄くなる</text>
+      <text x="680" y="232" font-size="11.5" fill="#646C7A" text-anchor="end">ROI目標を上げると利益率は高いが、消化額が伸びない →</text>
+    </svg>
+    <figcaption>図5：ROI目標を置く位置と、その前後にある4つの帯（LEAM編集部作成）</figcaption>
+  </figure>
+  <p>ROI目標を高く置くほど利益率は上がりますが、配信が絞られて広告費が消化されず、売上そのものが小さくなります。<strong>ROI目標は「率の最適化」と「量の確保」のトレードオフを決める設定</strong>だと理解しておくと、次章の話がつながります。キャンペーンの作成手順そのものは<a href="https://leam.co.jp/column/gmvmax/">GMV Max完全ガイド</a>に、管理画面の見方は<a href="https://leam.co.jp/column/seller-center-guide/">セラーセンターの使い方</a>にまとめています。</p>
+
+  <div class="ctabox">
+    <div class="ct">ROI目標と日予算の設計だけ、外部に任せる選択肢もあります</div>
+    <p>LEAMは市場データを毎営業日蓄積し、商品ごとの貢献利益率から必要ROASを算出したうえで、予算の増減判断まで伴走します。設定代行だけでなく、素材が供給される体制づくりから一緒に組み立てます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>ROASを上げすぎると利益額は減るので、限界ROASで増額を止める</h2>
+  <p>ここが、ROASという指標のいちばん誤解されやすい部分です。<strong>ROASは率の指標なので、高くすること自体を目的にすると、利益額が減っていきます</strong>。理由は単純で、ROASを上げるということは「確実に買う人にだけ配信する」ことであり、そこから外れた見込み客への配信を捨てることだからです。</p>
+  <p>貢献利益率40％（損益分岐ROAS2.50倍）の商品で、日予算を段階的に上げたときの計算例を置きます。広告は予算を増やすほど1円あたりの効率が落ちる前提で、数値は説明のための試算です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>日予算</th><th>広告経由売上</th><th>ROAS</th><th>貢献利益</th><th>日次の利益</th><th>限界ROAS</th></tr></thead>
+    <tbody>
+      <tr><td>10,000円</td><td class="num">60,000円</td><td class="num">6.00倍</td><td class="num">24,000円</td><td class="num">＋14,000円</td><td class="n">—</td></tr>
+      <tr><td>20,000円</td><td class="num">100,000円</td><td class="num">5.00倍</td><td class="num">40,000円</td><td class="num">＋20,000円</td><td class="num">4.00倍</td></tr>
+      <tr><td>30,000円</td><td class="num">135,000円</td><td class="num">4.50倍</td><td class="num">54,000円</td><td class="num">＋24,000円</td><td class="num">3.50倍</td></tr>
+      <tr><td>50,000円</td><td class="num">200,000円</td><td class="num">4.00倍</td><td class="num">80,000円</td><td class="num">＋30,000円</td><td class="num">3.25倍</td></tr>
+      <tr><td><b>80,000円</b></td><td class="num">280,000円</td><td class="num">3.50倍</td><td class="num">112,000円</td><td class="num"><b>＋32,000円</b></td><td class="num">2.67倍</td></tr>
+      <tr><td>100,000円</td><td class="num">320,000円</td><td class="num">3.20倍</td><td class="num">128,000円</td><td class="num">＋28,000円</td><td class="num">2.00倍</td></tr>
+      <tr><td>150,000円</td><td class="num">420,000円</td><td class="num">2.80倍</td><td class="num">168,000円</td><td class="num">＋18,000円</td><td class="num">2.00倍</td></tr>
+      <tr><td>200,000円</td><td class="num">500,000円</td><td class="num">2.50倍</td><td class="num">200,000円</td><td class="num">0円</td><td class="num">1.60倍</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 370" role="img" aria-label="日予算を1万円から20万円まで上げたときの日次利益を棒グラフで、ROASを折れ線で重ねた複合グラフ。利益は日予算8万円で最大になり、その後は減っていく">
+      <rect x="0" y="0" width="720" height="370" fill="#ffffff"/>
+      <text x="16" y="26" font-size="12.5" font-weight="700" fill="#3A3F46">棒＝日次の利益額（円）／折れ線＝ROAS（倍）</text>
+      <line x1="50" y1="300" x2="690" y2="300" stroke="#0B0C10" stroke-width="2"/>
+      <g fill="#D6D9DE">
+        <rect x="73" y="226" width="46" height="74" rx="3"/>
+        <rect x="151" y="194" width="46" height="106" rx="3"/>
+        <rect x="229" y="173" width="46" height="127" rx="3"/>
+        <rect x="307" y="141" width="46" height="159" rx="3"/>
+        <rect x="463" y="151" width="46" height="149" rx="3"/>
+        <rect x="541" y="204" width="46" height="96" rx="3"/>
+        <rect x="619" y="297" width="46" height="3" rx="1"/>
+      </g>
+      <rect x="385" y="130" width="46" height="170" rx="3" fill="#B01D36"/>
+      <g font-size="10.5" fill="#3A3F46" text-anchor="middle">
+        <text x="96" y="219">1.4万</text><text x="174" y="187">2.0万</text><text x="252" y="166">2.4万</text>
+        <text x="330" y="134">3.0万</text><text x="486" y="144">2.8万</text><text x="564" y="197">1.8万</text><text x="642" y="290">0円</text>
+      </g>
+      <text x="408" y="123" text-anchor="middle" font-size="12" font-weight="900" fill="#B01D36">3.2万</text>
+      <polyline points="96,87 174,120 252,136 330,153 408,169 486,179 564,192 642,202"
+        fill="none" stroke="#0B0C10" stroke-width="2.5"/>
+      <g fill="#0B0C10">
+        <circle cx="96" cy="87" r="4.5"/><circle cx="174" cy="120" r="4.5"/><circle cx="252" cy="136" r="4.5"/>
+        <circle cx="330" cy="153" r="4.5"/><circle cx="408" cy="169" r="4.5"/><circle cx="486" cy="179" r="4.5"/>
+        <circle cx="564" cy="192" r="4.5"/><circle cx="642" cy="202" r="4.5"/>
+      </g>
+      <g font-size="10.5" fill="#0B0C10" font-weight="700">
+        <text x="96" y="78" text-anchor="middle">6.00</text><text x="642" y="194" text-anchor="middle">2.50</text>
+      </g>
+      <line x1="50" y1="202" x2="690" y2="202" stroke="#B01D36" stroke-width="1.5" stroke-dasharray="6 5"/>
+      <text x="690" y="216" text-anchor="end" font-size="11" font-weight="700" fill="#B01D36">損益分岐ROAS 2.50倍</text>
+      <g font-size="11" fill="#646C7A" text-anchor="middle">
+        <text x="96" y="320">1万</text><text x="174" y="320">2万</text><text x="252" y="320">3万</text><text x="330" y="320">5万</text>
+        <text x="408" y="320">8万</text><text x="486" y="320">10万</text><text x="564" y="320">15万</text><text x="642" y="320">20万</text>
+      </g>
+      <text x="370" y="342" font-size="12" font-weight="700" fill="#3A3F46" text-anchor="middle">日予算（円）</text>
+      <path d="M408 108 L408 124" stroke="#B01D36" stroke-width="2"/>
+      <path d="M402 114 L408 126 L414 114 Z" fill="#B01D36"/>
+      <text x="408" y="102" text-anchor="middle" font-size="11.5" font-weight="800" fill="#B01D36">利益額が最大になる点（ROASは3.50倍）</text>
+    </svg>
+    <figcaption>図6：日予算の増加にともなう利益額の山とROASの低下（LEAM編集部作成）</figcaption>
+  </figure>
+  <p>ROASが最も高いのは日予算1万円のときの6.00倍ですが、そのときの利益は1日1.4万円です。一方、ROASが3.50倍まで落ちる日予算8万円のときの利益は<strong>1日3.2万円で、2倍以上</strong>あります。<span class="hl">ROASだけを見て予算を絞ると、利益額を自分から捨てることになります</span>。</p>
+
+  <h3>増額を止める判断は、平均ROASではなく限界ROASで行う</h3>
+  <p>では、どこで増額を止めるのか。使うのは<strong>限界ROAS ＝ 増えた売上 ÷ 増えた広告費</strong>です。表の最右列がそれで、日予算5万円から8万円へ3万円増やしたときは、売上が20万円から28万円へ8万円増えたので8万円 ÷ 3万円＝2.67倍。損益分岐ROASの2.50倍を上回っているので、この増額には価値があります。</p>
+  <p>次に8万円から10万円へ2万円増やすと、売上は28万円から32万円へ4万円増で、限界ROASは2.00倍。<strong>損益分岐の2.50倍を割ったので、この増額分は赤字です</strong>。利益額が最大になる点と、限界ROASが損益分岐を割る点が一致しています。運用上のルールは「限界ROASが損益分岐ROASを下回ったら、そこで増額を止める」の1行で足ります。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 率を追うと売上が縮む構造</div>
+    <p>ROI目標を上げる → 配信が絞られる → 広告費が消化されない → 売上が下がる → 相対的に固定費の負担が重くなる、という順番で進みます。<strong>ROASの改善報告と売上の減少が同時に起きているときは、率の最適化が行き過ぎているサイン</strong>です。月次のレビューでは、ROASと消化額と利益額の3つを必ず並べて確認してください。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>広告ROAS・全体ROAS・増分ROASは、別々の閾値で判定する</h2>
+  <p>最後に、ROASという1語で呼ばれている3つの別物を切り分けます。TikTok Shopは動画・LIVE・アフィリエイトからの購入が広告なしでも積み上がるため、<strong>この切り分けを省くと広告の貢献を大きく見誤ります</strong>。提供開始から半年の時点で流通総額の約70％がクリエイター投稿・セラーのコンテンツ・LIVEを起点にしていると公表されており（TikTok Newsroom・2026年2月3日）、広告を止めても残る売上が構造的に大きい売り場だからです。</p>
+  <p>月商500万円・広告費50万円のショップを例に、3つの数字を計算します。売上の内訳は広告経由200万円、アフィリエイト経由180万円、オーガニックの動画・検索経由120万円とします（説明のための試算です）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>指標</th><th>計算式</th><th>この例での値</th><th>比べる相手</th><th>判定</th></tr></thead>
+    <tbody>
+      <tr><td><b>広告ROAS</b></td><td>広告経由売上 ÷ 広告費<br>200万円 ÷ 50万円</td><td class="num">4.00倍</td><td>損益分岐ROAS 2.50倍</td><td class="y">＋30万円</td></tr>
+      <tr><td><b>全体ROAS</b></td><td>全体売上 ÷ 広告費<br>500万円 ÷ 50万円</td><td class="num">10.00倍</td><td>全体ROASの下限 4.17倍</td><td class="y">合格</td></tr>
+      <tr><td><b>増分ROAS</b></td><td>広告を止めたら消える売上 ÷ 広告費<br>80万円 ÷ 50万円</td><td class="num">1.60倍</td><td>損益分岐ROAS 2.50倍</td><td class="n">−18万円</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="月商500万円を広告経由・アフィリエイト経由・オーガニックの3ブロックに分けた帯と、広告ROAS・全体ROAS・増分ROASがそれぞれ帯のどの範囲を分子に取るかを示した図">
+      <rect x="0" y="0" width="720" height="330" fill="#ffffff"/>
+      <text x="16" y="28" font-size="12.5" font-weight="700" fill="#3A3F46">月商500万円の内訳と、3つのROASが分子に取る範囲（広告費50万円）</text>
+      <rect x="60" y="52" width="240" height="46" fill="#B01D36"/>
+      <rect x="300" y="52" width="216" height="46" fill="#8F94A3"/>
+      <rect x="516" y="52" width="144" height="46" fill="#D6D9DE"/>
+      <text x="180" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">広告経由</text>
+      <text x="180" y="90" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">200万円</text>
+      <text x="408" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">アフィリエイト経由</text>
+      <text x="408" y="90" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">180万円</text>
+      <text x="588" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3A3F46">オーガニック</text>
+      <text x="588" y="90" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0B0C10">120万円</text>
+      <path d="M60 122 V132 H300 V122" stroke="#B01D36" stroke-width="2" fill="none"/>
+      <text x="180" y="152" text-anchor="middle" font-size="12" font-weight="800" fill="#B01D36">広告ROAS ＝ 4.00倍</text>
+      <text x="316" y="152" font-size="11.5" fill="#646C7A">管理画面に出る数字。損益分岐2.50倍と比べて黒字に見える</text>
+      <path d="M60 176 V186 H660 V176" stroke="#0A6E68" stroke-width="2" fill="none"/>
+      <text x="180" y="206" text-anchor="middle" font-size="12" font-weight="800" fill="#0A6E68">全体ROAS ＝ 10.00倍</text>
+      <text x="316" y="206" font-size="11.5" fill="#646C7A">固定費まで回収できるかを見る。下限は4.17倍</text>
+      <rect x="60" y="232" width="96" height="30" rx="4" fill="none" stroke="#8A5A00" stroke-width="2" stroke-dasharray="6 4"/>
+      <text x="108" y="252" text-anchor="middle" font-size="11.5" font-weight="800" fill="#8A5A00">80万円</text>
+      <path d="M60 272 V282 H156 V272" stroke="#8A5A00" stroke-width="2" fill="none"/>
+      <text x="180" y="302" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">増分ROAS ＝ 1.60倍</text>
+      <text x="316" y="278" font-size="11.5" fill="#646C7A">広告を止めたら本当に消える売上だけを分子にする</text>
+      <text x="316" y="298" font-size="11.5" font-weight="700" fill="#B01D36">この基準だと2.50倍を割り、赤字と判定される</text>
+    </svg>
+    <figcaption>図7：3つのROASが分子に取る売上範囲の違い（LEAM編集部作成）</figcaption>
+  </figure>
+
+  <h3>広告ROASは管理画面の数字で、最も甘く出やすい</h3>
+  <p>管理画面に表示される広告ROASは、広告に紐づけて計測された売上を分子にしています。<strong>その中には「広告がなくても買っていた人」が含まれます</strong>。TikTok Shopのように、クリエイターの動画やLIVEから自然に購入が生まれる売り場では、この重なりが大きくなりやすい構造です。広告ROASは日々の運用の舵取りには使えますが、これ1本で継続・停止を決めるのは危険です。</p>
+
+  <h3>全体ROASは固定費まで含めた採算を見る指標として使う</h3>
+  <p>全体ROASは「全体売上 ÷ 広告費」で、社内ではMERと呼ばれることもあります。この指標の閾値は、固定費から逆算します。月商500万円・貢献利益率40％なら貢献利益は200万円。人件費・ツール・運用代行費などの固定費が80万円なら、広告費に回せる上限は120万円で、<strong>全体ROASの下限は500万円 ÷ 120万円＝4.17倍</strong>です。この例の10.00倍は十分に上回っています。外部委託を含めた固定費の相場観は<a href="https://leam.co.jp/column/unyodaiko-cost/">TikTok Shop運用代行の費用</a>を参考にしてください。</p>
+
+  <h3>増分ROASは、広告を止めた期間を作らないと測れない</h3>
+  <p>増分ROASは「広告を止めたら消える売上 ÷ 広告費」で、3つの中で最も厳しく、最も経営判断に近い数字です。測るには、<strong>意図的に広告を止める期間を作るか、予算を段階的に変えて売上の反応を見る</strong>しかありません。この例では、広告を止めた月の売上が420万円だったと仮定して、増分80万円 ÷ 広告費50万円＝1.60倍と計算しています。</p>
+  <p>広告ROAS4.00倍で見れば50万円×（4.00÷2.50−1）＝＋30万円の黒字ですが、増分ROAS1.60倍で見ると50万円×（1.60÷2.50−1）＝<strong>−18万円の赤字</strong>です。同じ広告費に対して、判定が正反対になります。当社の運用実感では、この増分ROASを測るために、月1回でも意図的に広告予算を落とす週をつくり、売上がどれだけ下がるかを見ておくと、翌月の予算配分の議論が具体的になります。落とした分だけ売上が減れば広告は効いており、ほとんど減らなければその広告費は自然に売れていた分に重なっていた、と判断できます。ただし季節要因やセール時期と重なると比較が崩れるため、比べる週の条件はそろえてください。素材側の伸ばし方は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方</a>と<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマースの始め方</a>で扱っています。</p>
+
+  <h2 id="s9"><span class="no en">09</span>まとめ：3日でROAS基準を確定させる順番で動く</h2>
+  <p>この記事の内容は、3日あれば自社の数字に落とせます。順番だけ間違えないようにしてください。</p>
+  <p><strong>1日目は、主力商品を1つだけ選んで数字を並べます。</strong>売価・原価・送料と梱包の実費・自社カテゴリーの販売手数料率・現在のクリエイターへのコミッション率の5項目を1枚に書き出し、貢献利益率と損益分岐ROASを出します。ここで複数商品を同時に扱わないのがコツです。1つ通せば残りは同じ手順の繰り返しになります。手数料率が不明なら、この日のうちにセラーセンターで確認してください。</p>
+  <p><strong>2日目は、ROI目標と検証費用の上限を決めます。</strong>貢献利益のうち何割を残すかを社内で決め、損益分岐ROAS ÷（1 − 残す割合）でROI目標を計算します。あわせて、学習期に許容する持ち出しの上限額を「日予算 × 日数 ×（1 − ROI目標 ÷ 損益分岐ROAS）」で金額にして、関係者に共有しておきます。この金額を先に決めておくことが、途中で設定をいじり回さないための唯一の防波堤になります。</p>
+  <p><strong>3日目は、週次で見る指標の取得方法と担当を決めます。</strong>広告ROAS・全体ROAS・増分ROASの3つについて、どの画面から誰がいつ取るかを書き出します。増分ROASだけは自動では出ないので、月に1回、予算を落とす週をカレンダーに先に入れてください。</p>
+  <p><strong>4日目以降は、限界ROASを見ながら予算を上げるだけです。</strong>日予算を段階的に増やし、増えた売上 ÷ 増えた広告費が損益分岐ROASを下回った時点で止めます。この1本のルールがあれば、ROASの数字に振り回されずに利益額を最大化できます。数字が動かないときに疑うべきは広告の設定ではなく、貢献利益率そのものか、素材の供給量です。</p>
+  <div class="box box-point">
+    <div class="bt">💡 迷ったときの優先順位</div>
+    <p>必要ROASが4.00倍を超えている商品は、広告の調整より先に<strong>単価・原価・コミッション率のどれかを動かす</strong>ほうが早く効きます。必要ROASが2.50倍前後に収まっている商品は、<strong>限界ROASを見ながら予算を上げる</strong>ほうが利益額に効きます。どちらの局面かは、この記事の表で自社の値を1回読めば判断できます。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>ROASとROI、CPAは何が違いますか？</summary><div class="a">ROASは売上÷広告費、CPAは広告費÷注文件数で、同じ関係を別の単位で表したものです。売価が決まっていれば、限界CPA＝売価×貢献利益率、損益分岐ROAS＝売価÷限界CPAで相互に変換できます。会計で使うROIは利益÷投資額なので分子が異なります。広告管理画面のROI目標がどの定義かは、最新は公式でご確認ください。</div></details>
+    <details><summary>返品やキャンセルが出た月は、ROASをどう計算し直しますか？</summary><div class="a">分子の売上から返品分を差し引いて再計算します。返品率が5％なら実質のROASは表示値の0.95倍になるため、損益分岐ROASが2.50倍の商品で表示ROASが2.60倍でも、実質は2.47倍となり赤字側に入ります。返品率は商品ごとに差が出るので、キャンペーン単位ではなく商品単位で確認してください。</div></details>
+    <details><summary>クーポンを出したとき、ROASの分子は割引前と割引後のどちらで見ますか？</summary><div class="a">利益判断に使うなら割引後でそろえます。クーポンの自社負担分は貢献利益率を直接下げるため、値引き率をコミッション率と同じように差し引いて損益分岐ROASを引き直すのが安全です。貢献利益率40％の商品に自社負担10％のクーポンを付けると貢献利益率は30％になり、損益分岐ROASは2.50倍から3.33倍へ上がります。</div></details>
+    <details><summary>損益分岐ROASは税込と税抜のどちらで計算しますか？</summary><div class="a">売価・原価・手数料・広告費のすべてを同じ基準にそろえることが重要で、実務では税抜でそろえるほうが計算が崩れません。税込の売価と税抜の原価を混ぜると貢献利益率が実際より高く出てしまい、必要ROASを低く見積もることになります。</div></details>
+    <details><summary>人件費や運用代行費のような固定費は、ROASの計算に入れますか？</summary><div class="a">商品単位の損益分岐ROASには入れません。固定費は販売件数に比例しないため、月単位で「貢献利益の合計−広告費−固定費」が黒字かどうかで見ます。月商300万円・貢献利益率35％・固定費50万円なら、広告費に使える上限は55万円で、全体ROASの下限は約5.5倍という形で算出できます。</div></details>
+    <details><summary>ROASの目標は商品ごとに変えるべきですか、ショップ全体で1つにすべきですか？</summary><div class="a">貢献利益率が商品ごとに違う以上、目標も商品ごとに変わります。貢献利益率50％の商品の損益分岐ROASは2.00倍、20％の商品は5.00倍なので、同じ目標値を当てるとどちらかが必ず間違った判断になります。ショップ全体で1つの数字を使うのは、全体ROASで月次の採算を見るときだけにしてください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算</a></b><span>式に入れる手数料率をここで確定させる</span></div>
+      <div class="relcard"><span class="rc">広告</span><b><a href="https://leam.co.jp/column/gmvmax/">GMV Maxとは？2種類の違い・費用・設定・改善の完全ガイド</a></b><span>ROI目標を入力する画面の手順はこちら</span></div>
+      <div class="relcard"><span class="rc">価格</span><b><a href="https://leam.co.jp/column/pricing-strategy/">TikTok Shopの価格設定｜単価とセット構成の決め方</a></b><span>必要ROASが高すぎるときの打ち手</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「広告を回す前に直すべきところ」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">本記事の必要ROAS・貢献利益率・限界CPA・限界ROASの数値は、すべて記事内に示した計算式から導いた試算値であり、実測値や相場を示すものではありません。販売手数料率は2026年5月11日改定のカテゴリー別料率（7％／9％／10％／12％）に基づいています。参考情報：TikTok Shop セラーセンターの公式ヘルプ（seller-jp.tiktok.com/university/essay）／TikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過」（2026年2月3日）。料率・広告管理画面の仕様・提供機能は更新されることがあるため、最新は公式でご確認ください（本記事は2026年8月30日時点の情報に基づいています）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">相場ではなく自社の基準を出す</a></li>
+        <li><a href="#s2">損益分岐ROASの計算式</a></li>
+        <li><a href="#s3">カテゴリー別手数料7〜12％</a></li>
+        <li><a href="#s4">必要ROASのマトリクス</a></li>
+        <li><a href="#s5">送料と単価で跳ね上がる必要ROAS</a></li>
+        <li><a href="#s6">GMV MaxのROI目標の置き方</a></li>
+        <li><a href="#s7">限界ROASで増額を止める</a></li>
+        <li><a href="#s8">3つのROASを分けて判定する</a></li>
+        <li><a href="#s9">まとめ：3日で確定させる順番</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>必要ROASを一緒に計算します</b>
+      <p>売価・原価・送料・手数料率をお預かりすれば、その場で基準値を出せます。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok ShopのROAS基準は自分で計算する｜損益分岐ROASの出し方とGMV Maxの目標設定",
+      "description": "TikTok Shopの必要ROASは粗利率・販売手数料・コミッション率から逆算できます。損益分岐ROASの式と原価率別の早見表、GMV MaxのROI目標の置き方を実数で解説します。",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "mainEntityOfPage": "https://leam.co.jp/column/tiktok-shop-roas/",
+      "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
+        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
+        {"@type": "ListItem", "position": 3, "name": "TikTok ShopのROAS基準は自分で計算する｜損益分岐ROASの出し方とGMV Maxの目標設定", "item": "https://leam.co.jp/column/tiktok-shop-roas/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "ROASとROI、CPAは何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "ROASは売上÷広告費、CPAは広告費÷注文件数で、同じ関係を別の単位で表したものです。売価が決まっていれば、限界CPA＝売価×貢献利益率、損益分岐ROAS＝売価÷限界CPAで相互に変換できます。会計で使うROIは利益÷投資額なので分子が異なります。広告管理画面のROI目標がどの定義かは、最新は公式でご確認ください。"}},
+        {"@type": "Question", "name": "返品やキャンセルが出た月は、ROASをどう計算し直しますか？", "acceptedAnswer": {"@type": "Answer", "text": "分子の売上から返品分を差し引いて再計算します。返品率が5％なら実質のROASは表示値の0.95倍になるため、損益分岐ROASが2.50倍の商品で表示ROASが2.60倍でも、実質は2.47倍となり赤字側に入ります。返品率は商品ごとに差が出るので、キャンペーン単位ではなく商品単位で確認してください。"}},
+        {"@type": "Question", "name": "クーポンを出したとき、ROASの分子は割引前と割引後のどちらで見ますか？", "acceptedAnswer": {"@type": "Answer", "text": "利益判断に使うなら割引後でそろえます。クーポンの自社負担分は貢献利益率を直接下げるため、値引き率をコミッション率と同じように差し引いて損益分岐ROASを引き直すのが安全です。貢献利益率40％の商品に自社負担10％のクーポンを付けると貢献利益率は30％になり、損益分岐ROASは2.50倍から3.33倍へ上がります。"}},
+        {"@type": "Question", "name": "損益分岐ROASは税込と税抜のどちらで計算しますか？", "acceptedAnswer": {"@type": "Answer", "text": "売価・原価・手数料・広告費のすべてを同じ基準にそろえることが重要で、実務では税抜でそろえるほうが計算が崩れません。税込の売価と税抜の原価を混ぜると貢献利益率が実際より高く出てしまい、必要ROASを低く見積もることになります。"}},
+        {"@type": "Question", "name": "人件費や運用代行費のような固定費は、ROASの計算に入れますか？", "acceptedAnswer": {"@type": "Answer", "text": "商品単位の損益分岐ROASには入れません。固定費は販売件数に比例しないため、月単位で「貢献利益の合計−広告費−固定費」が黒字かどうかで見ます。月商300万円・貢献利益率35％・固定費50万円なら、広告費に使える上限は55万円で、全体ROASの下限は約5.5倍という形で算出できます。"}},
+        {"@type": "Question", "name": "ROASの目標は商品ごとに変えるべきですか、ショップ全体で1つにすべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "貢献利益率が商品ごとに違う以上、目標も商品ごとに変わります。貢献利益率50％の商品の損益分岐ROASは2.00倍、20％の商品は5.00倍なので、同じ目標値を当てるとどちらかが必ず間違った判断になります。ショップ全体で1つの数字を使うのは、全体ROASで月次の採算を見るときだけにしてください。"}}
+      ]
+    },
+    {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+  ]
+}
+</script>
+</body>
+</html>

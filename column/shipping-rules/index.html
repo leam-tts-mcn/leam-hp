@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計</title>
+<meta name="description" content="TikTok Shopの発送ルールと2段階の出荷期限を整理し、遅延ペナルティを防ぐ出荷体制の作り方を解説します。少人数でも回る運用設計です。">
+<link rel="canonical" href="https://leam.co.jp/column/shipping-rules/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計">
+<meta property="og:description" content="TikTok Shopの発送ルールと2段階の出荷期限を整理し、遅延ペナルティを防ぐ出荷体制の作り方を解説します。少人数でも回る運用設計です。">
+<meta property="og:url" content="https://leam.co.jp/column/shipping-rules/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計">
+<meta name="twitter:description" content="TikTok Shopの発送ルールと2段階の出荷期限を整理し、遅延ペナルティを防ぐ出荷体制の作り方を解説します。少人数でも回る運用設計です。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff;text-decoration:none;color:inherit;display:block}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計", "description": "TikTok Shopの発送ルールと2段階の出荷期限を整理し、遅延ペナルティを防ぐ出荷体制の作り方を解説します。少人数でも回る運用設計です。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/shipping-rules/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計", "item": "https://leam.co.jp/column/shipping-rules/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 発送ルールと出荷体制</p>
+  <span class="cat">物流・出荷</span>
+  <h1>TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="出荷の期限：赤い配送用ダンボールがローラーのベルトコンベアで荷台を開けたトラックへ運ばれ、そばの砂時計と箱に貼られたチェック済みラベルが締め切りまでの残り時間を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v336c-108 28-206 34-300 20-106-16-192-46-298-42-112 4-196 42-302 52-114 11-208-8-300-44z" fill="#F6F7F9"/>
+  <ellipse cx="700" cy="250" rx="350" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="76" cy="36" r="5"/><circle cx="112" cy="36" r="5"/><circle cx="148" cy="36" r="5"/><circle cx="184" cy="36" r="5"/>
+      <circle cx="76" cy="70" r="5"/><circle cx="112" cy="70" r="5"/><circle cx="148" cy="70" r="5"/><circle cx="184" cy="70" r="5"/>
+      <circle cx="76" cy="104" r="5"/><circle cx="112" cy="104" r="5"/><circle cx="148" cy="104" r="5"/><circle cx="184" cy="104" r="5"/>
+    </g>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c170-32 300-14 430 10 130 24 244 30 360 12 118-18 220-42 410-26v122H0z" fill="#ECEEF1"/>
+  <use href="#dots" transform="translate(0 496)" fill="#D8DADE"/>
+
+  <!-- ================= 下：ローラーのベルトコンベア ================= -->
+  <g>
+    <!-- 脚 -->
+    <g fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round">
+      <rect x="250" y="512" width="28" height="86" rx="6"/>
+      <rect x="226" y="594" width="76" height="18" rx="9"/>
+      <rect x="706" y="512" width="28" height="86" rx="6"/>
+      <rect x="682" y="594" width="76" height="18" rx="9"/>
+    </g>
+    <!-- 本体 -->
+    <rect x="-40" y="464" width="920" height="48" rx="24" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7"/>
+    <!-- ローラー -->
+    <g fill="#FFFFFF" stroke="#0B0C10" stroke-width="5">
+      <circle cx="16" cy="488" r="13"/><circle cx="76" cy="488" r="13"/><circle cx="136" cy="488" r="13"/>
+      <circle cx="196" cy="488" r="13"/><circle cx="256" cy="488" r="13"/><circle cx="316" cy="488" r="13"/>
+      <circle cx="376" cy="488" r="13"/><circle cx="436" cy="488" r="13"/><circle cx="496" cy="488" r="13"/>
+      <circle cx="556" cy="488" r="13"/><circle cx="616" cy="488" r="13"/><circle cx="676" cy="488" r="13"/>
+      <circle cx="736" cy="488" r="13"/><circle cx="796" cy="488" r="13"/><circle cx="856" cy="488" r="13"/>
+    </g>
+  </g>
+
+  <!-- ================= 右：荷台を開けたトラックの後部 ================= -->
+  <g>
+    <!-- 影 -->
+    <g fill="#5E6064" opacity=".14" transform="translate(10 12)">
+      <rect x="836" y="172" width="326" height="316" rx="14"/>
+      <rect x="824" y="158" width="350" height="26" rx="10"/>
+    </g>
+    <!-- 開いた扉 -->
+    <path d="M1162 180l34-28v316l-34 14z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 車輪 -->
+    <g>
+      <circle cx="896" cy="506" r="46" fill="#0B0C10"/>
+      <circle cx="896" cy="506" r="17" fill="#DFE0E2"/>
+      <circle cx="1102" cy="506" r="46" fill="#0B0C10"/>
+      <circle cx="1102" cy="506" r="17" fill="#DFE0E2"/>
+    </g>
+    <!-- 乗り込み段 -->
+    <rect x="952" y="488" width="104" height="24" rx="8" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6"/>
+    <!-- 荷箱 -->
+    <rect x="836" y="172" width="326" height="316" rx="14" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7"/>
+    <rect x="824" y="158" width="350" height="26" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7"/>
+    <!-- 開口部 -->
+    <rect x="868" y="212" width="262" height="240" rx="8" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <!-- 荷台の床の罫 -->
+    <path d="M884 440h230" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round"/>
+    <!-- すでに積み終えた荷物 -->
+    <rect x="892" y="332" width="112" height="100" rx="6" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="1012" y="362" width="96" height="70" rx="6" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="898" y="244" width="90" height="84" rx="6" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 中央：砂時計（副役・シアン） ================= -->
+  <g>
+    <!-- 影 -->
+    <g fill="#5E6064" opacity=".14" transform="translate(9 11)">
+      <rect x="614" y="214" width="168" height="34" rx="10"/>
+      <rect x="614" y="432" width="168" height="34" rx="10"/>
+      <path d="M630 248h136l-68 92 68 92H630l68-92z"/>
+    </g>
+    <!-- ガラス -->
+    <path d="M630 248h136l-68 92 68 92H630l68-92z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <!-- 上に残っている砂 -->
+    <path d="M638 258h120l-60 82z" fill="#25F4EE"/>
+    <!-- 落ちている砂 -->
+    <path d="M698 340v46" fill="none" stroke="#25F4EE" stroke-width="9" stroke-linecap="round"/>
+    <!-- 下に積もった砂 -->
+    <path d="M630 432h136l-68-58z" fill="#25F4EE"/>
+    <!-- 枠（上下） -->
+    <rect x="614" y="214" width="168" height="34" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="614" y="432" width="168" height="34" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 左：配送ダンボール（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <path d="M48 468V176l74-46h452v292l-74 46z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <!-- 側面（赤の陰） -->
+    <path d="M500 176l74-46v292l-74 46z" fill="#CE1730"/>
+    <!-- 天面 -->
+    <path d="M48 176l74-46h452l-74 46z" fill="#FE2C55"/>
+    <!-- 前面 -->
+    <path d="M48 176h452v292H48z" fill="#FE2C55"/>
+    <!-- ふたを留めるテープ -->
+    <path d="M248 176h52l74-46h-52z" fill="#DFE0E2"/>
+    <rect x="248" y="176" width="52" height="30" fill="#DFE0E2"/>
+    <!-- 出荷ラベル（期限を確認済み＝シアン） -->
+    <g>
+      <rect x="158" y="228" width="232" height="188" rx="10" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M194 306l32 34 56-72" fill="none" stroke="#0B0C10" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="194" y="356" width="160" height="16" rx="8" fill="#FFFFFF"/>
+      <rect x="194" y="384" width="118" height="16" rx="8" fill="#FFFFFF"/>
+    </g>
+    <!-- 稜線 -->
+    <path d="M48 176h452v292" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M500 176l74-46" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M274 176l74-46" fill="none" stroke="#0B0C10" stroke-width="4"/>
+    <!-- 輪郭 -->
+    <path d="M48 468V176l74-46h452v292l-74 46z" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1128" cy="92" r="22" fill="#25F4EE"/>
+  <circle cx="596" cy="112" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの発送ルールは、「セラー自身が設定したリードタイムを、2段階の期限で守る」仕組みです。</strong>公式の配送ポリシーでは、注文日の翌営業日から起算して2営業日目の23:59までに「集荷待ち」ステータスへの更新、3営業日目の23:59までに配送業者への引き渡し完了が定められており、守れないと「発送遅延」として計測され、<strong>販売者パフォーマンスの評価が下がり、1日あたりの販売上限が引き下げられます</strong>。この記事では、2段階の期限とペナルティの関係、落とし穴になりやすい「営業日」の定義、配送業者・同梱物のルール、そして自社出荷・委託・ハイブリッドの出荷体制の使い分けまでを、運用設計の順番に沿って解説します。※期限の日数や基準値は変更されることがあります。数値はすべて執筆時点のもので、実際の運用前にセラーセンターの公式ヘルプで最新情報をご確認ください。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>2段階の発送期限と、遅延ペナルティが発生する仕組み（関係図つき）</li>
+      <li>「営業日」の定義・ステータス更新・同梱物ルールなど、悪気なく違反しやすいポイント</li>
+      <li>自社出荷／委託／ハイブリッドの比較と、繁忙期・クリエイター施策前の事前設計</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">いまの出荷体制で遅延ペナルティのリスクがないか、無料で診断します</div>
+    <p>受注から引き渡しまでの流れとリードタイム設定を伺い、期限超過が起きやすい箇所と、注文が増えたときに崩れる箇所を率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">発送期限は「2段階」：2営業日目でステータス更新、3営業日目で引き渡し</a></li>
+      <li><a href="#s2">ペナルティは1件ごとではなく「率」で判定される：見るべき指標は3つ</a></li>
+      <li><a href="#s3">「営業日」は月〜金、土日祝は非営業日：起算日を間違えると期限が2日ずれる</a></li>
+      <li><a href="#s4">発送作業は「ステータス更新と追跡番号登録」まで終えて完了になる</a></li>
+      <li><a href="#s5">配送業者・ラベル・同梱物は自由に選べない：指定と禁止事項がある</a></li>
+      <li><a href="#s6">返品・返金は「承認を待たずに進むケース」を前提に設計する</a></li>
+      <li><a href="#s7">出荷体制は自社・委託・ハイブリッドの3択：規模と商材で使い分ける</a></li>
+      <li><a href="#s8">繁忙期とクリエイター施策は「出荷キャパの事前設計」とセットで計画する</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>発送期限は「2段階」：2営業日目でステータス更新、3営業日目で引き渡し</h2>
+  <p>TikTok Shopの発送リードタイムは、モール側から一方的に与えられるものではなく、<strong>セラーが自分で設定し、その設定が購入者への「配送の約束」になる</strong>仕組みです。実現できない短いリードタイムを設定すると、約束を破り続けるショップとして評価が下がるため、自社の実際の出荷能力を基準に設定するのが第一歩です。</p>
+  <p>そのうえで、システム上の期限は次の2段階で管理されています。</p>
+  <div class="tw"><table>
+    <thead><tr><th>段階</th><th>期限（執筆時点）</th><th>やること</th><th>関わる指標</th></tr></thead>
+    <tbody>
+      <tr><td><b>第1段階</b></td><td>注文日の翌営業日から起算して<b>2営業日目の23:59</b>まで</td><td>「集荷待ち」（発送準備完了）ステータスへの更新</td><td>発送遅延率（LDR）の計測点</td></tr>
+      <tr><td><b>第2段階</b></td><td>注文日の翌営業日から起算して<b>3営業日目の23:59</b>まで</td><td>配送業者への引き渡し完了（「発送済み」への更新）</td><td>納期遵守率（OTDR）に影響</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 350" role="img" aria-label="出荷期限とペナルティの関係図：注文確定の翌営業日から起算して2営業日目23:59までに集荷待ちへ更新、3営業日目23:59までに配送業者へ引き渡す。超過すると発送遅延として計測され、基準を外れた状態が続くと1日あたりの販売上限が引き下げられる">
+      <line x1="70" y1="120" x2="670" y2="120" stroke="#E6E7EB" stroke-width="3"/>
+      <circle cx="100" cy="120" r="8" fill="#17181C"/>
+      <text x="100" y="150" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">注文確定</text>
+      <text x="100" y="168" text-anchor="middle" font-size="10.5" fill="#787D8A">受注日</text>
+      <circle cx="380" cy="120" r="8" fill="#E8324A"/>
+      <rect x="270" y="24" width="220" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="380" y="49" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">第1段階：2営業日目 23:59</text>
+      <text x="380" y="69" text-anchor="middle" font-size="11.5" fill="#454956">「集荷待ち」に更新</text>
+      <text x="380" y="87" text-anchor="middle" font-size="10" fill="#787D8A">発送遅延率（LDR）はここで計測</text>
+      <path d="M380 96 V108" stroke="#E8324A" stroke-width="2"/>
+      <circle cx="620" cy="120" r="8" fill="#17181C"/>
+      <rect x="520" y="150" width="190" height="60" rx="10" fill="#F6F6F8" stroke="#17181C"/>
+      <text x="615" y="175" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">第2段階：3営業日目 23:59</text>
+      <text x="615" y="196" text-anchor="middle" font-size="11" fill="#454956">配送業者への引き渡し完了</text>
+      <path d="M620 132 V146" stroke="#17181C" stroke-width="2"/>
+      <path d="M380 132 V226 " stroke="#C2203A" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="394" y="200" font-size="11" font-weight="800" fill="#C2203A">超過すると…</text>
+      <rect x="60" y="230" width="290" height="52" rx="10" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="205" y="252" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">「発送遅延」として計測</text>
+      <text x="205" y="271" text-anchor="middle" font-size="10.5" fill="#787D8A">発送遅延率（LDR）に加算される</text>
+      <path d="M350 256 H400" stroke="#787D8A" stroke-width="2"/>
+      <path d="M394 250 L404 256 L394 262 Z" fill="#787D8A"/>
+      <rect x="408" y="230" width="290" height="52" rx="10" fill="#17181C"/>
+      <text x="553" y="252" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">基準を外れた状態が続くと</text>
+      <text x="553" y="271" text-anchor="middle" font-size="10.5" fill="#FF8DA0">1日あたりの販売上限が引き下げられる</text>
+      <text x="360" y="322" text-anchor="middle" font-size="11" fill="#787D8A">※期限の日数・時刻は変更されることがあります。最新はセラーセンターの公式ヘルプで確認</text>
+    </svg>
+    <figcaption>図1：出荷期限とペナルティの関係。遅延判定は第1段階のステータス更新で始まる（LEAM作成）</figcaption>
+  </figure>
+
+  <h3>第1段階：発送遅延率は「ステータス更新」の時点で計測される</h3>
+  <p>見落とされがちなのは、遅延の計測点が「荷物を渡したか」ではなく<strong>「『集荷待ち』ステータスに更新したか」</strong>にあることです。倉庫では梱包が終わっているのに、管理画面の更新が翌日に回っていたためにシステム上は「遅延」になる——という事故は、物理的な出荷能力とは無関係に起こります。</p>
+  <h3>第2段階：引き渡しが遅れ、放置すると注文が自動キャンセルされる</h3>
+  <p>期限を超えても出荷が進まない注文は、システムによる<strong>自動キャンセルの対象になります</strong>。公式の配送ポリシーでは、<strong>注文日から7営業日を経過しても配送状況が「集荷待ち」に変わらない場合、注文は自動的にキャンセルされる</strong>と定められています。せっかく獲得した注文が売上にならないだけでなく、セラー起因のキャンセルとして評価にも響きます。※自動キャンセルの発動条件は公式ポリシーの最新版で確認してください。</p>
+
+  <h2 id="s2"><span class="no en">02</span>ペナルティは1件ごとではなく「率」で判定される：見るべき指標は3つ</h2>
+  <p>1件の遅延で即ペナルティになるわけではありません。評価は<strong>直近7暦日の注文に占める「率」</strong>で判定されます。押さえておくべき指標は次の3つで、<strong>公式に数値目標が示されているのは発送遅延率（LDR）だけ</strong>です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>指標</th><th>公式が示す水準（執筆時点）</th><th>定義</th></tr></thead>
+    <tbody>
+      <tr><td><b>納期遵守率（OTDR）</b></td><td class="num">数値目標の明示なし</td><td>直近7暦日の全注文のうち、指定の配送期限（5営業日）内に配達完了した注文の割合</td></tr>
+      <tr><td><b>発送遅延率（LDR）</b></td><td class="num">4%未満を推奨</td><td>直近7暦日の全注文のうち、期限内に「集荷待ち」へ更新できなかった注文の割合。7日で100件なら遅延許容は4件まで</td></tr>
+      <tr><td><b>セラー過失キャンセル率（SFCR）</b></td><td class="num">数値目標の明示なし</td><td>直近7暦日の全注文のうち、在庫切れなどセラー側の理由でキャンセルした注文の割合</td></tr>
+    </tbody>
+  </table></div>
+  <p>基準を外れると、<strong>1日あたりの販売上限が段階的に引き下げられます</strong>。公式の発送遅延率（LDR）の案内では、LDRが10〜30%で日次平均の90%、30〜50%で70%、50%以上で50%に販売が制限されるとされています。需要があっても売れる上限のほうが先に来る形になるため、遅延の放置はそのまま売上の天井になります。※措置の内容・段階は公式ポリシーで更新されるため、最新の規定を確認してください。</p>
+  <h3>「率」の管理は、分母が小さい立ち上げ期ほどシビアになる</h3>
+  <p>集計は直近7暦日単位です。1週間に100件の注文なら遅延許容は4件ですが、週20件しかない立ち上げ期は、<strong>1件の遅延で発送遅延率が5%になり、それだけで推奨水準を超えます</strong>。注文が少ない時期こそ「たまたまの1件」が許されない、という構造は最初に押さえておくべきポイントです。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：キャンセル率は「在庫管理」の指標でもある</div>
+    <p>セラー過失キャンセルの典型は在庫切れです。他モールと在庫を共有している場合、TikTok側で売れた瞬間に他モールの在庫を引き当てられず<strong>売り越し→キャンセル</strong>が起きます。発送のルールでありながら、実態は在庫の一元管理の問題です。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>「営業日」は月〜金、土日祝は非営業日：起算日を間違えると期限が2日ずれる</h2>
+  <p>公式の配送ポリシーでは、<strong>「営業日」とは月曜日から金曜日までを指し、土曜日・日曜日・日本の祝祭日は非営業日</strong>と定義されています。落とし穴は定義そのものではなく<strong>起算日</strong>にあり、期限は受注日からではなく<strong>「注文日の翌営業日から起算」</strong>して数えます。ここを取り違えると、同じ木曜受注でも期限日が2日ずれます。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="起算日の取り違えによる期限のズレの図：木曜受注の場合、受注日を1営業日目と数える誤りでは第1段階期限が金曜、公式どおり翌営業日から起算し土日を除くと月曜となり、2日ずれる">
+      <text x="60" y="40" font-size="13.5" font-weight="800" fill="#17181C">例：木曜に受注した場合の「2営業日目」はいつか</text>
+      <g font-size="12" font-weight="700">
+        <rect x="60" y="60" width="90" height="40" rx="6" fill="#17181C"/><text x="105" y="86" text-anchor="middle" fill="#fff">木・受注</text>
+        <rect x="156" y="60" width="90" height="40" rx="6" fill="#F6F6F8" stroke="#E6E7EB"/><text x="201" y="86" text-anchor="middle" fill="#454956">金</text>
+        <rect x="252" y="60" width="90" height="40" rx="6" fill="#F6F6F8" stroke="#E6E7EB"/><text x="297" y="86" text-anchor="middle" fill="#454956">土</text>
+        <rect x="348" y="60" width="90" height="40" rx="6" fill="#F6F6F8" stroke="#E6E7EB"/><text x="393" y="86" text-anchor="middle" fill="#454956">日</text>
+        <rect x="444" y="60" width="90" height="40" rx="6" fill="#F6F6F8" stroke="#E6E7EB"/><text x="489" y="86" text-anchor="middle" fill="#454956">月</text>
+        <rect x="540" y="60" width="90" height="40" rx="6" fill="#F6F6F8" stroke="#E6E7EB"/><text x="585" y="86" text-anchor="middle" fill="#454956">火</text>
+      </g>
+      <rect x="60" y="130" width="620" height="62" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="80" y="156" font-size="12.5" font-weight="800" fill="#C2203A">誤り：受注日を1営業日目として数える場合</text>
+      <text x="80" y="178" font-size="11.5" fill="#454956">木→金で2営業日 ＝ 第1段階の期限を<tspan font-weight="800">金曜 23:59</tspan>と誤解</text>
+      <path d="M201 104 V130" stroke="#E8324A" stroke-width="2" stroke-dasharray="4 3"/>
+      <rect x="60" y="204" width="620" height="62" rx="10" fill="#F6F6F8" stroke="#787D8A"/>
+      <text x="80" y="230" font-size="12.5" font-weight="800" fill="#454956">公式：翌営業日から起算し、土日祝を除く</text>
+      <text x="80" y="252" font-size="11.5" fill="#454956">金（1営業日目）→月（2営業日目）＝ 期限は<tspan font-weight="800">月曜 23:59</tspan></text>
+      <path d="M489 104 V204" stroke="#787D8A" stroke-width="2" stroke-dasharray="4 3"/>
+      <rect x="60" y="282" width="620" height="34" rx="8" fill="#17181C"/>
+      <text x="370" y="304" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">起算日を1日ずらすと期限が2日ずれる → 管理画面の実際の期限表示を「正」にする</text>
+    </svg>
+    <figcaption>図2：起算日の取り違えによる期限のズレ。週後半の受注ほど影響が大きい（LEAM作成）</figcaption>
+  </figure>
+  <h3>対策：管理画面の期限表示を正として「曜日別の出荷期限表」を作る</h3>
+  <p>実務での安全策はシンプルで、<strong>自分で数え直さず、注文ごとに管理画面へ表示される実際の期限を「正」とすること</strong>です。そのうえで、自社の受注実績から「何曜日の何時までの注文は、いつまでに出荷するか」を一覧化した<strong>曜日・時間帯別の出荷期限表</strong>を作り、出荷現場に貼っておくと、担当者ごとの解釈ブレがなくなります。週末や連休を挟む受注は、期限表の上で最初から「危険日」として色を付けておくのが当社の運用実感でも効果的です。</p>
+
+  <h2 id="s4"><span class="no en">04</span>発送作業は「ステータス更新と追跡番号登録」まで終えて完了になる</h2>
+  <p>§01のとおり、遅延判定はシステム上のステータスで行われます。つまり<strong>「荷物を発送した」ことと「システム上で発送が完了した」ことは別物</strong>で、後者までが発送作業です。物理出荷が終わっていても、追跡番号の登録とステータス更新が漏れていれば、評価上は未発送のまま期限を迎えます。</p>
+  <ol class="steps">
+    <li><b>受注内容の確認（住所・在庫・品質）</b><p>受注直後に在庫を引き当て、住所の不備がないかを確認します。ここで気づけば、キャンセルではなく購入者への確認で解決できます。</p></li>
+    <li><b>ピッキング・検品・梱包</b><p>同梱物のルール（§05）を守り、出荷前検品までをこの工程に含めます。</p></li>
+    <li><b>配送業者への引き渡し（集荷 or 持ち込み）</b><p>集荷の締め時間から逆算して、その日の出荷締め時刻を決めておきます。</p></li>
+    <li><b>追跡番号の登録とステータス更新</b><p>ここまでが発送作業です。出荷担当者の「作業完了」の定義を、物理出荷ではなくこの工程に置きます。</p></li>
+  </ol>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>出荷チェックリストの最終項目を「トラックに載せた」ではなく<strong>「ステータス更新と追跡番号登録を確認した」</strong>に変えるだけで、この種の遅延判定はほぼ防げます。件数が増えてきたら、受注管理システムや倉庫との自動連携で、この更新を人手から外していきます。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">「どこまで自動化すべきか」は、出荷件数と商材で答えが変わります</div>
+    <p>LEAMはTikTok Shopの運用支援の中で、受注から出荷までのフロー設計もあわせて伴走しています。いまの件数規模で過剰投資にならない自動化の範囲を、無料相談でお伝えします。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>配送業者・ラベル・同梱物は自由に選べない：指定と禁止事項がある</h2>
+  <p>発送に使える配送業者は、追跡情報がTikTok Shop側と連携できる<strong>指定の業者に限定されています</strong>。執筆時点で対応が案内されているのは、ヤマト運輸・佐川急便・日本郵便・西濃運輸・セイノースーパーエクスプレス・Amazon Logistics・日本通運・福山通運などです。※対象業者は更新されるため、契約前に管理画面の最新リストを確認してください。地域限定の運送会社や自社便を前提にしている場合は、出店前にここを確認しないと出荷方法そのものが成立しません。</p>
+  <h3>ラベルと同梱物：レビュー依頼カードや外部誘導は入れない</h3>
+  <p>配送ラベルには購入者情報・注文番号・販売者情報の正確な記載が求められます。また、他モールの感覚で入れがちな同梱物に禁止事項があり、<strong>悪気なくルール違反になりやすいポイント</strong>です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>OK</th><th>NG（違反リスク）</th></tr></thead>
+    <tbody>
+      <tr><td>配送ラベル</td><td class="y">購入者情報・注文番号・販売者情報を正確に記載</td><td class="n">記載不備・別注文のラベル流用</td></tr>
+      <tr><td>連絡先の記載</td><td class="y">注文に関する正規の販売者情報</td><td class="n">注文と無関係な連絡先・外部サイトへ誘導するQRコード</td></tr>
+      <tr><td>同梱物</td><td class="y">商品・明細など注文に必要なもの</td><td class="n">レビュー依頼カード・承諾を得ていない販促物</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意</div>
+    <p>「レビューを書いたら特典」カードは他モールでも問題視されてきた手法ですが、TikTok Shopでも同梱NGの代表例です。<strong>レビューは同梱物ではなく、商品と発送スピードそのもので集める</strong>前提で設計してください。同梱ルールの詳細は公式ガイドラインの最新版を確認のうえ運用に落とすのが安全です。</p>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>返品・返金は「承認を待たずに進むケース」を前提に設計する</h2>
+  <p>TikTok Shopの返品・返金は購入者保護が強く、<strong>セラーの承認を待たずに処理が進むケースがあります</strong>。代表例がスピード返金で、条件を満たす注文では<strong>商品がセラーへ返却される前に返金が完了します</strong>。「商品が戻ってきてから返金する」という他モールの感覚のままだと、返金と在庫戻りの時間差がキャッシュフローと在庫数の両方を狂わせます。</p>
+  <p>実務では、①返金が先行する前提で月次の資金繰りに返品分のバッファを織り込む、②返却された商品の検品・再在庫化のフローを決めておく、③返品理由を集計して商品ページの説明とのギャップを潰す——の3点をセットで設計します。返品は防ぐものであると同時に、<strong>商品ページ改善の一次データ</strong>でもあります。</p>
+
+  <h2 id="s7"><span class="no en">07</span>出荷体制は自社・委託・ハイブリッドの3択：規模と商材で使い分ける</h2>
+  <p>ここまでのルールを毎日守り続けるための「体制」の話です。出荷体制は大きく3パターンあり、<strong>1日の出荷件数と商材の特性（ギフト対応・検品の重さ・セット組みの有無）</strong>で使い分けます。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="出荷体制の3パターンの構造図：自社出荷は受注から出荷まで自社で完結、外部委託は受注データを自動連携して3PL倉庫が出荷、ハイブリッドは通常品を3PL、ギフトや要検品品を自社で出荷する">
+      <rect x="20" y="20" width="215" height="290" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="127" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">① 自社出荷</text>
+      <rect x="45" y="72" width="165" height="40" rx="8" fill="#fff" stroke="#787D8A"/>
+      <text x="127" y="97" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">受注</text>
+      <path d="M127 112 V132" stroke="#787D8A" stroke-width="2"/>
+      <rect x="45" y="134" width="165" height="52" rx="8" fill="#17181C"/>
+      <text x="127" y="156" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">自社（事務所・倉庫）</text>
+      <text x="127" y="175" text-anchor="middle" font-size="10.5" fill="#C9CBD4">梱包・検品・同梱まで直接管理</text>
+      <path d="M127 186 V206" stroke="#787D8A" stroke-width="2"/>
+      <rect x="45" y="208" width="165" height="40" rx="8" fill="#fff" stroke="#787D8A"/>
+      <text x="127" y="233" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">出荷・ステータス更新</text>
+      <text x="127" y="285" text-anchor="middle" font-size="11" font-weight="700" fill="#787D8A">目安：〜1日10件程度</text>
+      <rect x="252" y="20" width="215" height="290" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="359" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">② 外部委託（3PL）</text>
+      <rect x="277" y="72" width="165" height="40" rx="8" fill="#fff" stroke="#787D8A"/>
+      <text x="359" y="97" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">受注</text>
+      <rect x="277" y="126" width="165" height="34" rx="8" fill="#FDEEF1"/>
+      <text x="359" y="148" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">受注データを自動連携</text>
+      <path d="M359 112 V126 M359 160 V176" stroke="#E8324A" stroke-width="2"/>
+      <rect x="277" y="178" width="165" height="52" rx="8" fill="#17181C"/>
+      <text x="359" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">3PL倉庫</text>
+      <text x="359" y="219" text-anchor="middle" font-size="10.5" fill="#C9CBD4">土日祝も出荷・キャパ弾力</text>
+      <path d="M359 230 V248" stroke="#787D8A" stroke-width="2"/>
+      <rect x="277" y="250" width="165" height="34" rx="8" fill="#fff" stroke="#787D8A"/>
+      <text x="359" y="272" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">出荷・追跡番号 自動登録</text>
+      <text x="359" y="303" text-anchor="middle" font-size="11" font-weight="700" fill="#787D8A">目安：1日100件超</text>
+      <rect x="484" y="20" width="215" height="290" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="591" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">③ ハイブリッド</text>
+      <rect x="509" y="72" width="165" height="40" rx="8" fill="#fff" stroke="#787D8A"/>
+      <text x="591" y="97" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">受注 → 振り分け</text>
+      <path d="M560 112 V138 M622 112 V138" stroke="#787D8A" stroke-width="2"/>
+      <rect x="509" y="140" width="78" height="72" rx="8" fill="#17181C"/>
+      <text x="548" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">3PL</text>
+      <text x="548" y="185" text-anchor="middle" font-size="9.5" fill="#C9CBD4">通常品・</text>
+      <text x="548" y="200" text-anchor="middle" font-size="9.5" fill="#C9CBD4">量産出荷</text>
+      <rect x="596" y="140" width="78" height="72" rx="8" fill="#fff" stroke="#E8324A"/>
+      <text x="635" y="166" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">自社</text>
+      <text x="635" y="185" text-anchor="middle" font-size="9.5" fill="#454956">ギフト・</text>
+      <text x="635" y="200" text-anchor="middle" font-size="9.5" fill="#454956">要検品・限定品</text>
+      <path d="M548 212 V232 M635 212 V232" stroke="#787D8A" stroke-width="2"/>
+      <rect x="509" y="234" width="165" height="40" rx="8" fill="#fff" stroke="#787D8A"/>
+      <text x="591" y="259" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">出荷</text>
+      <text x="591" y="303" text-anchor="middle" font-size="11" font-weight="700" fill="#787D8A">目安：成長期〜（数十件/日）</text>
+    </svg>
+    <figcaption>図3：出荷体制の3パターン。委託は「受注データの自動連携」までがセット（LEAM作成）</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>① 自社出荷</th><th>② 外部委託（3PL）</th><th>③ ハイブリッド</th></tr></thead>
+    <tbody>
+      <tr><td>向く規模の目安</td><td>立ち上げ期（〜1日10件程度）</td><td>拡大期（1日100件超）</td><td>成長期（1日数十件〜）</td></tr>
+      <tr><td>コスト構造</td><td class="y">追加コストが小さい</td><td>固定費＋従量費。件数が伸びるほど単価が下がる</td><td>両方の中間。二重管理コストに注意</td></tr>
+      <tr><td>土日祝・繁忙期の対応</td><td class="n">担当者の稼働に依存。休業日に出荷が止まる</td><td class="y">倉庫の稼働日で吸収。キャパの弾力が大きい</td><td class="y">通常品は3PLで吸収できる</td></tr>
+      <tr><td>同梱・検品の統制</td><td class="y">直接管理できる。仕様変更も即日</td><td>指示書ベース。細かい変更にタイムラグ</td><td class="y">こだわる商品だけ自社に残せる</td></tr>
+      <tr><td>ステータス更新・追跡番号</td><td class="n">手作業になりがち。更新漏れが遅延判定の主因</td><td class="y">システム連携で自動化しやすい</td><td>経路ごとに仕組みが必要</td></tr>
+      <tr><td>主なリスク</td><td>属人化・キャパの頭打ち</td><td>受注連携が手動だと自社休業日に出荷停止</td><td>在庫の二重管理・運用の複雑化</td></tr>
+    </tbody>
+  </table></div>
+  <h3>自社出荷：立ち上げ期の標準。ただし「更新漏れ」と「休み」が弱点</h3>
+  <p>1日10件程度までは自社出荷で十分回ります。弱点は、ステータス更新が手作業で漏れやすいことと、担当者の休みがそのまま出荷停止になることです。<strong>週後半〜週末の受注をだれがいつ出すか</strong>を先に決めておきます。</p>
+  <h3>外部委託（3PL）：委託するなら「受注データの自動連携」までがセット</h3>
+  <p>倉庫に委託しても、受注データをメールや手動CSVで渡す運用だと、<strong>自社の休業日にデータが渡らず、倉庫が動けるのに出荷が止まる</strong>という本末転倒が起きます。委託の検討は、受注管理システム経由の自動連携（追跡番号の自動登録まで）と必ずセットで進めてください。選定時は、TikTok Shopとの連携実績・指定配送業者への対応・繁忙期のキャパを確認します。</p>
+  <h3>ハイブリッド：量は3PL、こだわりは自社に残す</h3>
+  <p>通常品の量産出荷は3PLに任せ、ギフトラッピングや出荷前検品が重い商品、ライブ限定セットだけを自社で組む形です。柔軟ですが在庫が2拠点に割れるため、<strong>どちらの在庫から引き当てるかのルールを決めていないと、§02のセラー過失キャンセルの温床になります</strong>。</p>
+  <div class="box box-point">
+    <div class="bt">💡 補足：Fulfilled by TikTok（FBT）は日本では案内されていない</div>
+    <p>英国やドイツなど海外の一部地域には、TikTok側が保管〜出荷を代行するフルフィルメントサービス（FBT）がありますが、<strong>日本では執筆時点（2026年8月）で提供が公式に案内されていません</strong>。当面は上記3パターンから自前で組む前提で計画してください。※提供状況は変わる可能性があるため、公式発表を確認してください。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>繁忙期とクリエイター施策は「出荷キャパの事前設計」とセットで計画する</h2>
+  <p>TikTok Shopの注文は、アフィリエイト動画がヒットしたときやライブ配信の当日に、<strong>予告なく・階段状に跳ねる</strong>のが特徴です。マーケティング側が意図的に注文を増やす施策（クリエイター起用・ライブ・セール参加）を打つなら、<strong>攻めの計画と出荷体制の準備を同じカレンダーで管理する</strong>のが原則です。売る力より出荷する力が先に天井を打つと、伸びた瞬間に遅延率とキャンセル率が悪化し、せっかくの成長がペナルティに変わります。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="繁忙期の事前設計の図：施策期間中の注文数が出荷キャパの線を超えた部分が遅延リスクになる。施策の2〜3週間前からキャパ確認、在庫・資材・人員の手配、プレパッキングを行い、キャパの線自体を引き上げる">
+      <line x1="60" y1="200" x2="680" y2="200" stroke="#E6E7EB" stroke-width="2"/>
+      <g fill="#C9CBD4">
+        <rect x="80" y="170" width="34" height="30"/>
+        <rect x="124" y="164" width="34" height="36"/>
+        <rect x="168" y="172" width="34" height="28"/>
+        <rect x="212" y="160" width="34" height="40"/>
+      </g>
+      <g fill="#E8324A">
+        <rect x="256" y="96" width="34" height="104"/>
+        <rect x="300" y="60" width="34" height="140"/>
+        <rect x="344" y="76" width="34" height="124"/>
+        <rect x="388" y="120" width="34" height="80"/>
+      </g>
+      <g fill="#C9CBD4">
+        <rect x="432" y="158" width="34" height="42"/>
+        <rect x="476" y="166" width="34" height="34"/>
+      </g>
+      <line x1="60" y1="130" x2="540" y2="130" stroke="#17181C" stroke-width="2.5" stroke-dasharray="7 5"/>
+      <text x="548" y="126" font-size="11.5" font-weight="800" fill="#17181C">現状の出荷キャパ</text>
+      <text x="548" y="143" font-size="10" fill="#787D8A">（1日に出せる件数）</text>
+      <rect x="256" y="34" width="166" height="20" rx="10" fill="#FDEEF1"/>
+      <text x="339" y="48" text-anchor="middle" font-size="10.5" font-weight="800" fill="#C2203A">施策期間（ライブ・アフィリエイト）</text>
+      <path d="M300 60 V130" stroke="#fff" stroke-width="0"/>
+      <text x="339" y="115" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">キャパ超過分＝遅延リスク</text>
+      <text x="80" y="222" font-size="10.5" fill="#787D8A">通常期</text>
+      <text x="256" y="222" font-size="10.5" fill="#787D8A">施策で注文が跳ねる</text>
+      <text x="432" y="222" font-size="10.5" fill="#787D8A">収束</text>
+      <rect x="60" y="244" width="620" height="66" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="80" y="268" font-size="11.5" font-weight="800" fill="#17181C">施策の2〜3週間前にやること（キャパの線を引き上げる）</text>
+      <text x="80" y="292" font-size="11" fill="#454956">☑ 想定注文数と出荷キャパの突合　☑ 在庫・梱包資材・人員の手配　☑ プレパッキング　☑ 配送業者・倉庫への事前連絡</text>
+    </svg>
+    <figcaption>図4：繁忙期の事前設計。施策で作る注文の山を、先にキャパ側で受け止める（LEAM作成）</figcaption>
+  </figure>
+  <h3>施策前チェック：想定注文数と出荷キャパを数字で突き合わせる</h3>
+  <p>「ライブで何件売るか」の目標があるなら、「その件数を期限内に出荷できるか」を同じ精度で確認します。具体的には、①施策の想定注文数、②1日に出荷できる上限件数、③超過した場合に誰が・どこで吸収するか——の3点です。売れ筋が読める施策なら、<strong>売れ筋SKUを事前に梱包まで済ませておくプレパッキング</strong>が最も効きます。当社の運用実感でも、ライブ当日の出荷が崩れるショップと崩れないショップの差は、当日の頑張りではなくこの事前準備で大きく変わります。</p>
+  <h3>年末・大型セール期は「配送業者側の混雑」も織り込む</h3>
+  <p>繁忙期は自社だけでなく配送業者側も混みます。集荷時間の前倒しや持ち込みへの切り替え、リードタイム設定の一時的な見直し（無理な約束をしない方向への調整）も、事前設計の一部です。※リードタイム設定の変更方法・反映タイミングは公式ヘルプで確認してください。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>発送期限は受注から何日ですか？</summary><div class="a">公式の配送ポリシーでは、注文日の翌営業日から起算して2営業日目の23:59までに「集荷待ち」へのステータス更新、3営業日目の23:59までに配送業者への引き渡し、という2段階が定められています。期限の日数・時刻は変更されることがあるため、最新はセラーセンターの公式ヘルプと注文ごとの期限表示で確認してください。</div></details>
+    <details><summary>土日や祝日も発送が必要ですか？</summary><div class="a">公式の配送ポリシーでは、営業日は月曜日から金曜日までで、土曜日・日曜日・日本の祝祭日は非営業日と定義されています。ただし期限は受注日からではなく「注文日の翌営業日から起算」して数えるため、起算日の取り違えが起きやすい点に注意してください。管理画面に表示される注文ごとの実際の期限を正として、週後半の受注を誰がいつ出荷するかを決めた曜日別の出荷期限表を用意することをおすすめします。</div></details>
+    <details><summary>1件でも発送が遅れるとすぐペナルティになりますか？</summary><div class="a">評価は1件ごとではなく、直近7暦日の注文に占める「率」で判定されます。公式に数値目標が示されているのは発送遅延率（LDR）で、4%未満に維持することが推奨されています。発送遅延率が10%を超えると、1日あたりの販売上限が段階的に引き下げられます。注文数が少ない時期は1件の遅延で率が大きく動く点に注意してください。基準値は変更されうるため最新は公式で確認を。</div></details>
+    <details><summary>使える配送業者は決まっていますか？</summary><div class="a">追跡情報を連携できる指定の配送業者に限定されています。執筆時点ではヤマト運輸・佐川急便・日本郵便・西濃運輸などが案内されていますが、対象業者は更新されるため、出荷方法を決める前に管理画面の最新リストを確認してください。</div></details>
+    <details><summary>発送代行（3PL）はどのタイミングで検討すべきですか？</summary><div class="a">当社の運用実感では、1日数十件の出荷が続き、手作業のステータス更新や土日の出荷対応が苦しくなり始めた段階が、発送代行（3PL）に切り替える検討の目安です。委託する場合は、受注データの自動連携と追跡番号の自動登録までをセットで構築しないと、自社休業日に出荷が止まる問題が残ります。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/"><span class="rc">手数料</span><b>TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</b><span>コラム</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-shinsa/"><span class="rc">出店準備</span><b>TikTok Shopの出店条件と審査完全ガイド｜落ちる理由と対処法</b><span>コラム</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/prohibited-items/"><span class="rc">出品ルール</span><b>TikTok Shopの禁止商品・制限商品ガイド|出品前チェックリスト</b><span>コラム</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。出荷体制の設計だけの壁打ちでも歓迎です。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンターの公式ヘルプ・配送ポリシー／株式会社LEAM note「TikTok Shopの発送ルールと出荷体制」（2026年8月26日公開）。期限日数・基準値・対象配送業者・特例制度などの仕様は更新されることがあります。本記事は2026年8月30日時点の情報です。最新は一次情報でご確認ください。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">発送期限は「2段階」</a></li>
+        <li><a href="#s2">ペナルティは「率」で判定</a></li>
+        <li><a href="#s3">「営業日」と起算日の落とし穴</a></li>
+        <li><a href="#s4">完了条件はステータス更新まで</a></li>
+        <li><a href="#s5">配送業者・同梱物のルール</a></li>
+        <li><a href="#s6">返品・返金の前提設計</a></li>
+        <li><a href="#s7">出荷体制の3パターン</a></li>
+        <li><a href="#s8">繁忙期・施策前の事前設計</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>出荷体制の無料診断</b>
+      <p>受注〜引き渡しの流れを伺い、遅延が起きやすい箇所をお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "発送期限は受注から何日ですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式の配送ポリシーでは、注文日の翌営業日から起算して2営業日目の23:59までに「集荷待ち」へのステータス更新、3営業日目の23:59までに配送業者への引き渡し、という2段階が定められています。期限の日数・時刻は変更されることがあるため、最新はセラーセンターの公式ヘルプと注文ごとの期限表示で確認してください。"}},
+        {"@type": "Question", "name": "土日や祝日も発送が必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式の配送ポリシーでは、営業日は月曜日から金曜日までで、土曜日・日曜日・日本の祝祭日は非営業日と定義されています。ただし期限は受注日からではなく「注文日の翌営業日から起算」して数えるため、起算日の取り違えが起きやすい点に注意してください。管理画面に表示される注文ごとの実際の期限を正として、週後半の受注を誰がいつ出荷するかを決めた曜日別の出荷期限表を用意することをおすすめします。"}},
+        {"@type": "Question", "name": "1件でも発送が遅れるとすぐペナルティになりますか？", "acceptedAnswer": {"@type": "Answer", "text": "評価は1件ごとではなく、直近7暦日の注文に占める「率」で判定されます。公式に数値目標が示されているのは発送遅延率（LDR）で、4%未満に維持することが推奨されています。発送遅延率が10%を超えると、1日あたりの販売上限が段階的に引き下げられます。注文数が少ない時期は1件の遅延で率が大きく動く点に注意してください。基準値は変更されうるため最新は公式で確認を。"}},
+        {"@type": "Question", "name": "使える配送業者は決まっていますか？", "acceptedAnswer": {"@type": "Answer", "text": "追跡情報を連携できる指定の配送業者に限定されています。執筆時点ではヤマト運輸・佐川急便・日本郵便・西濃運輸などが案内されていますが、対象業者は更新されるため、出荷方法を決める前に管理画面の最新リストを確認してください。"}},
+        {"@type": "Question", "name": "発送代行（3PL）はどのタイミングで検討すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "当社の運用実感では、1日数十件の出荷が続き、手作業のステータス更新や土日の出荷対応が苦しくなり始めた段階が、発送代行（3PL）に切り替える検討の目安です。委託する場合は、受注データの自動連携と追跡番号の自動登録までをセットで構築しないと、自社休業日に出荷が止まる問題が残ります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

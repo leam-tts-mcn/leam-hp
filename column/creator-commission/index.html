@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのコミッション相場は？報酬の決め方</title>
+<meta name="description" content="TikTok Shopでクリエイターに払うコミッションを、粗利からの逆算で決める方法を解説します。相場ではなく自社の数字から出します。">
+<link rel="canonical" href="https://leam.co.jp/column/creator-commission/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのコミッション相場は？報酬の決め方">
+<meta property="og:description" content="TikTok Shopでクリエイターに払うコミッションを、粗利からの逆算で決める方法を解説します。相場ではなく自社の数字から出します。">
+<meta property="og:url" content="https://leam.co.jp/column/creator-commission/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのコミッション相場は？報酬の決め方">
+<meta name="twitter:description" content="TikTok Shopでクリエイターに払うコミッションを、粗利からの逆算で決める方法を解説します。相場ではなく自社の数字から出します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのコミッション相場は？報酬の決め方", "description": "TikTok Shopでクリエイターに払うコミッションを、粗利からの逆算で決める方法を解説します。相場ではなく自社の数字から出します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creator-commission/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのコミッション相場は？報酬の決め方", "item": "https://leam.co.jp/column/creator-commission/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › クリエイター報酬の相場と決め方</p>
+  <span class="cat">クリエイター起用</span>
+  <h1>TikTok Shopのコミッション相場は？クリエイターへの報酬の決め方【セラー向け】</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="クリエイターの報酬率を決める様子：パーセントの目盛りが並んだ赤いスライダーのつまみを動かすと、右のメーターの針と手元に残るコインの量が変わることを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v336c-104 30-198 30-286 14-110-20-198-48-302-44-114 4-198 44-300 54-116 11-224-4-312-40z" fill="#F6F7F9"/>
+  <ellipse cx="896" cy="288" rx="308" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="72" cy="66" r="5"/><circle cx="108" cy="66" r="5"/><circle cx="144" cy="66" r="5"/><circle cx="180" cy="66" r="5"/>
+      <circle cx="72" cy="102" r="5"/><circle cx="108" cy="102" r="5"/><circle cx="144" cy="102" r="5"/><circle cx="180" cy="102" r="5"/>
+      <circle cx="72" cy="138" r="5"/><circle cx="108" cy="138" r="5"/><circle cx="144" cy="138" r="5"/><circle cx="180" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(944 384)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 528c170-36 296-14 428 10 130 24 236 30 352 12 114-18 224-44 420-28v108H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：手取り額のメーター（副役・シアン） ================= -->
+  <g transform="translate(900 292)">
+    <circle cx="0" cy="0" r="158" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <circle cx="0" cy="0" r="158" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8"/>
+
+    <!-- 目盛り（外周） -->
+    <g stroke-linecap="round">
+      <line x1="0" y1="-120" x2="0" y2="-142" stroke="#0B0C10" stroke-width="8" transform="rotate(-120)"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(-100)"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(-80)"/>
+      <line x1="0" y1="-120" x2="0" y2="-142" stroke="#0B0C10" stroke-width="8" transform="rotate(-60)"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(-40)"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(-20)"/>
+      <line x1="0" y1="-120" x2="0" y2="-142" stroke="#0B0C10" stroke-width="8"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(20)"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(40)"/>
+      <line x1="0" y1="-120" x2="0" y2="-142" stroke="#0B0C10" stroke-width="8" transform="rotate(60)"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(80)"/>
+      <line x1="0" y1="-126" x2="0" y2="-142" stroke="#C9CBD0" stroke-width="6" transform="rotate(100)"/>
+      <line x1="0" y1="-120" x2="0" y2="-142" stroke="#0B0C10" stroke-width="8" transform="rotate(120)"/>
+    </g>
+
+    <!-- 文字盤 -->
+    <circle cx="0" cy="0" r="112" fill="#DFE0E2"/>
+    <!-- 到達している量（シアン） -->
+    <path d="M0 0L-97 56A112 112 0 0 1 83.2 -74.9z" fill="#25F4EE"/>
+    <circle cx="0" cy="0" r="112" fill="none" stroke="#0B0C10" stroke-width="7"/>
+
+    <!-- 針 -->
+    <line x1="0" y1="26" x2="0" y2="-100" stroke="#0B0C10" stroke-width="14" stroke-linecap="round" transform="rotate(48)"/>
+    <circle cx="0" cy="0" r="22" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8"/>
+  </g>
+
+  <!-- ================= 中央下：手元に残るコイン ================= -->
+  <g>
+    <ellipse cx="681" cy="551" rx="64" ry="23" fill="#5E6064" opacity=".14"/>
+    <!-- 下段 -->
+    <path d="M608 528v20a64 23 0 0 0 128 0v-20z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <ellipse cx="672" cy="528" rx="64" ry="23" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <!-- 中段 -->
+    <path d="M608 498v20a64 23 0 0 0 128 0v-20z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <ellipse cx="672" cy="498" rx="64" ry="23" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <!-- 上段（確定した手取り＝シアン） -->
+    <path d="M608 468v20a64 23 0 0 0 128 0v-20z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <ellipse cx="672" cy="468" rx="64" ry="23" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+    <ellipse cx="672" cy="468" rx="34" ry="12" fill="none" stroke="#0B0C10" stroke-width="5"/>
+  </g>
+
+  <!-- ================= 左：報酬率のスライダー（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <path d="M110 168h394a14 14 0 0 1 14 14v42h-20v296a20 20 0 0 1-20 20H132a20 20 0 0 1-20-20V224H96v-42a14 14 0 0 1 14-14z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+
+    <!-- 天板（赤の陰） -->
+    <rect x="96" y="168" width="422" height="56" rx="14" fill="#CE1730"/>
+    <!-- 本体 -->
+    <rect x="112" y="204" width="386" height="336" rx="20" fill="#FE2C55"/>
+    <!-- 台座（赤の陰） -->
+    <path d="M112 468h386v52a20 20 0 0 1-20 20H132a20 20 0 0 1-20-20z" fill="#CE1730"/>
+
+    <!-- %の目盛り -->
+    <g stroke="#FFFFFF" stroke-linecap="round">
+      <line x1="152" y1="256" x2="152" y2="298" stroke-width="8"/>
+      <line x1="186" y1="270" x2="186" y2="298" stroke-width="7"/>
+      <line x1="220" y1="270" x2="220" y2="298" stroke-width="7"/>
+      <line x1="254" y1="256" x2="254" y2="298" stroke-width="8"/>
+      <line x1="288" y1="270" x2="288" y2="298" stroke-width="7"/>
+      <line x1="322" y1="270" x2="322" y2="298" stroke-width="7"/>
+      <line x1="356" y1="256" x2="356" y2="298" stroke-width="8"/>
+      <line x1="390" y1="270" x2="390" y2="298" stroke-width="7"/>
+      <line x1="424" y1="270" x2="424" y2="298" stroke-width="7"/>
+      <line x1="458" y1="256" x2="458" y2="298" stroke-width="8"/>
+    </g>
+
+    <!-- 溝 -->
+    <rect x="146" y="336" width="318" height="58" rx="29" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="152" y="342" width="188" height="46" rx="23" fill="#DFE0E2"/>
+
+    <!-- つまみ -->
+    <rect x="326" y="312" width="96" height="106" rx="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <g stroke="#0B0C10" stroke-width="7" stroke-linecap="round">
+      <line x1="356" y1="340" x2="356" y2="390"/>
+      <line x1="374" y1="340" x2="374" y2="390"/>
+      <line x1="392" y1="340" x2="392" y2="390"/>
+    </g>
+
+    <!-- 輪郭 -->
+    <path d="M110 168h394a14 14 0 0 1 14 14v42h-20v296a20 20 0 0 1-20 20H132a20 20 0 0 1-20-20V224H96v-42a14 14 0 0 1 14-14z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M112 224a20 20 0 0 1 20-20h346a20 20 0 0 1 20 20" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M112 468h386" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1124" cy="112" r="22" fill="#25F4EE"/>
+  <circle cx="596" cy="196" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopのコミッション（クリエイターへの成果報酬）に、全セラー共通の「正解の率」はありません。</strong>率はセラーが商品ごとに自由に設定でき、同じ商品でも粗利構造・競合の公開料率・起用したいクリエイターの層によって適正水準が変わるからです。とはいえ実務には出発点があります。当社が運用支援で採っているのは、<strong>「10%前後から始めて、売ってくれたクリエイターに個別で上乗せしていく」</strong>という進め方です（統計値ではなく、当社の運用実感です）。ただし、発売したばかりの商品や知名度の低い商品では、率を平均より高く設定してもクリエイターが集まらないことが少なくありません。率だけで解決しようとせず、制作の対価としての固定報酬の併用（§06）もあわせて検討してください。この記事では、コミッションの仕組み・相場の考え方・粗利からの逆算手順・固定報酬の併用・ライブ配信の報酬水準・運用での見直し方までを、セラー目線で順番に解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>コミッションの仕組みと、販売手数料・固定報酬・広告費との違い</li>
+      <li>赤字にならない率を粗利から逆算する手順（逆算表つき）</li>
+      <li>オープン／ターゲットコラボの率の使い分けと、固定報酬・ライブ報酬の考え方</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自社商品の「適正コミッション」を無料で一緒に試算します</div>
+    <p>商品の粗利構造と競合の公開料率を拝見し、いくらまで出せるか・どの層のクリエイターに届く水準かを具体的な数字でお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">結論：「10%前後で始めて、実績のあるクリエイターに上乗せ」が実務的</a></li>
+      <li><a href="#s2">仕組み：コミッションはセラーが商品ごとに設定し、確定した売上にだけ発生する</a></li>
+      <li><a href="#s3">相場の考え方：一律の正解はなく「単価×粗利×競合の公開料率」で変わる</a></li>
+      <li><a href="#s4">決め方：粗利からの逆算で「出せる上限」を先に確定させる</a></li>
+      <li><a href="#s5">使い分け：オープンコラボは標準率、ターゲットコラボは個別に上乗せ</a></li>
+      <li><a href="#s6">固定報酬は「制作の対価」、コミッションは「販売の対価」として併用を判断する</a></li>
+      <li><a href="#s7">ライブキャストの報酬は動画アフィリエイトとは別水準で設計する</a></li>
+      <li><a href="#s8">運用：率は決めて終わりではなく、実績データで見直し続ける</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>結論：「10%前後で始めて、実績のあるクリエイターに上乗せ」が実務的</h2>
+  <p>先に結論をまとめます。当社が運用支援の現場で採っている進め方は、次の3段構えです。<strong>これは市場統計ではなく、当社の運用実感に基づく実務の型</strong>である点をお断りしたうえで紹介します。</p>
+  <ol class="steps">
+    <li><b>まず全体（オープンコラボ）は10%前後の水準から始める</b><p>最初から高率で固定すると、後述のとおり下げる時に信頼を損ないます。粗利に収まる範囲で、競合商品の公開料率と見劣りしない水準を出発点にします。</p></li>
+    <li><b>売ってくれたクリエイターには、ターゲットコラボで個別に上乗せする</b><p>実績が数字で見えたクリエイターに対してだけ、個別レートで報いる。全体の率を上げるより費用対効果が明確です。</p></li>
+    <li><b>ライブ配信の依頼は、コミッション表とは別建てで設計する</b><p>ライブは拘束時間と準備が発生するため、動画アフィリエイトと同じ料率表では引き受けてもらえないのが実情です（§07）。</p></li>
+  </ol>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>コミッション設計の本質は「率を何%にするか」ではなく、<strong>「クリエイターが1本売った時に受け取る実額が、動く理由になっているか」</strong>です。率が高くても単価が低ければ実額は小さく、誰も動きません。この視点は§04で数字にします。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>仕組み：コミッションはセラーが商品ごとに設定し、確定した売上にだけ発生する</h2>
+  <p>TikTok Shopのコミッションは、アフィリエイト機能（コラボ）を通じてクリエイターが商品を紹介・販売した際に、<strong>セラーが設定した率×売上額</strong>で支払われる成果報酬です。売れなければ発生しない、完全成果連動のコストです。アフィリエイト機能の全体像は「<a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】</a>」で詳しく解説しているので、仕組みが初めての方はあわせてご覧ください。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="コミッションのお金の流れ図：購入者が支払った代金から、プラットフォームの販売手数料とクリエイターへのコミッションが差し引かれ、残りがセラーの手取りになる">
+      <rect x="30" y="30" width="150" height="60" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="105" y="56" text-anchor="middle" font-size="13.5" font-weight="700" fill="#17181C">購入者</text>
+      <text x="105" y="76" text-anchor="middle" font-size="11" fill="#787D8A">動画・ライブ経由で購入</text>
+      <path d="M185 60 H255" stroke="#787D8A" stroke-width="2"/>
+      <path d="M249 54 L259 60 L249 66 Z" fill="#787D8A"/>
+      <text x="222" y="48" text-anchor="middle" font-size="10.5" fill="#787D8A">代金</text>
+      <rect x="262" y="24" width="196" height="72" rx="12" fill="#17181C"/>
+      <text x="360" y="55" text-anchor="middle" font-size="14.5" font-weight="800" fill="#fff">TikTok Shop</text>
+      <text x="360" y="78" text-anchor="middle" font-size="10.5" fill="#C9CBD4">決済・注文管理</text>
+      <path d="M320 96 V150 H180" stroke="#E8324A" stroke-width="2" fill="none"/>
+      <path d="M186 144 L176 150 L186 156 Z" fill="#E8324A"/>
+      <rect x="30" y="122" width="150" height="60" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="105" y="148" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">クリエイター</text>
+      <text x="105" y="168" text-anchor="middle" font-size="10.5" fill="#454956">コミッション＝売上×設定率</text>
+      <path d="M400 96 V150 H540" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <path d="M534 144 L544 150 L534 156 Z" fill="#787D8A"/>
+      <rect x="545" y="122" width="150" height="60" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="620" y="148" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">プラットフォーム</text>
+      <text x="620" y="168" text-anchor="middle" font-size="10.5" fill="#787D8A">販売手数料（カテゴリ別）</text>
+      <path d="M360 96 V204" stroke="#0E8A5F" stroke-width="2"/>
+      <path d="M354 198 L360 208 L366 198 Z" fill="#0E8A5F"/>
+      <rect x="240" y="210" width="240" height="62" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="360" y="238" text-anchor="middle" font-size="13.5" font-weight="800" fill="#0E8A5F">セラーの手取り</text>
+      <text x="360" y="260" text-anchor="middle" font-size="10.5" fill="#454956">＝代金 −（販売手数料＋コミッション）</text>
+      <text x="360" y="300" text-anchor="middle" font-size="11" fill="#787D8A">※返品・キャンセル分には発生しない。手数料率は改定されるため最新は公式ヘルプで確認</text>
+    </svg>
+    <figcaption>図1：コミッションのお金の流れ。販売手数料とは別に、売上からもう1段引かれる（LEAM作成）</figcaption>
+  </figure>
+  <h3>支払いが発生するタイミング：注文確定＝返品対応期間を経てから</h3>
+  <p>コミッションは注文が入った瞬間ではなく、<strong>返品・キャンセルの対応期間を経て売上が確定してから</strong>クリエイター側に計上されます。セラーにとっては「返品された注文に報酬だけ払う」事態が起きにくい設計です。確定までの日数や細かい条件は変更されることがあるため、最新はセラーセンターの公式ヘルプで確認してください。</p>
+  <h3>設定の自由度：商品ごとに設定でき、広い範囲から選べる</h3>
+  <p>コミッション率は<strong>商品ごとにセラーが設定</strong>します。設定できる率にはかなり広い幅があり（設定可能な範囲は地域・時期によって異なるため、最新はセラーセンターの公式ヘルプで確認してください）、「何%にすべきか」はほぼ完全にセラーの設計に委ねられています。自由度が高いからこそ、次章以降の「決め方」が重要になります。</p>
+  <h3>コミッションは4つのコストの1つ：他のコストと混同しない</h3>
+  <p>クリエイター起用まわりのコストは、性質の違う4つに分かれます。ここを混同すると利益計算を誤ります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>コスト</th><th>誰に払う</th><th>いつ発生する</th><th>性質</th></tr></thead>
+    <tbody>
+      <tr><td><b>販売手数料</b></td><td>プラットフォーム</td><td>売れるたび</td><td class="n">率はカテゴリ別・改定あり。最新は公式で確認</td></tr>
+      <tr><td><b>コミッション（成果報酬）</b></td><td>クリエイター</td><td>売上が確定したら</td><td class="y">売れなければゼロ。本記事の主題</td></tr>
+      <tr><td><b>固定報酬（制作費・出演費）</b></td><td>クリエイター</td><td>契約時・納品時</td><td class="n">売れなくても発生する固定費（§06）</td></tr>
+      <tr><td><b>広告費</b></td><td>プラットフォーム</td><td>配信するたび</td><td class="n">GMV Max等。コミッションとは別枠で予算化</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s3"><span class="no en">03</span>相場の考え方：一律の正解はなく「単価×粗利×競合の公開料率」で変わる</h2>
+  <p>「相場は何%ですか」というご質問を商談で最もよくいただきますが、正確に答えるなら<strong>「あなたの商品の粗利と、競合が公開している率によって変わる」</strong>が答えです。次の3つの軸で自社の位置を確かめてください。</p>
+  <h3>軸①：商品単価 — 率よりも「1本あたりの実額」で見られている</h3>
+  <p>クリエイターは率ではなく<strong>「1本売れたらいくら入るか」</strong>で商品を選びます。単価1,000円の商品の20%（200円）より、単価8,000円の商品の8%（640円）の方が動く理由になる、ということです。低単価商品ほど高率が必要になり、高単価商品は低率でも成立します。</p>
+  <h3>軸②：粗利率 — 出せる上限は粗利構造が決める</h3>
+  <p>原価率の高い商品は、そもそも高いコミッションを出す余地がありません。逆に粗利の厚い商材（コスメ・自社製造品など）は率で勝負できます。<strong>「競合が15%出しているからうちも15%」ではなく、§04の逆算を先に通す</strong>のが鉄則です。</p>
+  <h3>軸③：競合の公開料率 — クリエイターは並べて見ている</h3>
+  <p>アフィリエイトセンター上では、同カテゴリ商品のコミッション率がクリエイター側から見えます。つまり自社の率は常に競合と並べて比較されています。同カテゴリの売れ筋より明確に低い率では、そもそもコラボの土俵に乗れません。競合の公開料率の確認は、率を決める前の必須工程です。</p>
+  <div class="box box-point">
+    <div class="bt">📊 カテゴリ別の公開料率は自分で確認できます</div>
+    <p>セラーセンターのアフィリエイトセンターで、同じカテゴリーの競合商品が公開している料率を一覧で確認できます。まずはそこで自社の位置を確かめてください。当社が毎営業日蓄積している市場データからの見立てが必要な方は、無料相談で個別にお伝えしています。</p>
+  </div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：「高くすれば有名クリエイターが動く」は誤解</div>
+    <p>率はコラボの入場券にすぎません。実績のあるクリエイターほど<strong>商品の売りやすさ（動画映え・価格の納得感・レビュー）とサンプル対応の速さ</strong>で案件を選びます。率だけ吊り上げて商品ページが弱いままでは、費用だけが上がります。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>決め方：粗利からの逆算で「出せる上限」を先に確定させる</h2>
+  <p>率を決める順番は「相場を見てから粗利を確認」ではなく、<strong>「粗利から上限を出してから、相場（競合の公開料率）と突き合わせる」</strong>です。販売価格3,980円の商品を例に、逆算表を作ってみます（数値は説明用の仮の例です）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>金額（例）</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格</td><td class="num">3,980円</td><td></td></tr>
+      <tr><td>原価</td><td class="num">−1,200円</td><td>仕入れ・製造</td></tr>
+      <tr><td>プラットフォーム販売手数料</td><td class="num">−α</td><td>カテゴリ別・改定あり。最新は公式で確認</td></tr>
+      <tr><td>送料・梱包・決済その他</td><td class="num">−600円</td><td>物流条件により変動</td></tr>
+      <tr><td><b>報酬に使える原資（限界ライン）</b></td><td class="num"><b>残りの全額</b></td><td>ここからコミッション・広告費・利益を配分</td></tr>
+      <tr><td>コミッション 10%の場合</td><td class="num">−398円</td><td>原資に収まるか／クリエイターが動く実額か</td></tr>
+      <tr><td>コミッション 15%の場合</td><td class="num">−597円</td><td>広告費と利益の残りが確保できるか</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 240" role="img" aria-label="販売価格の内訳図：原価・販売手数料・送料等を引いた残りが報酬原資となり、その中からコミッション・広告費・利益を配分する">
+      <text x="30" y="45" font-size="12.5" font-weight="700" fill="#454956">販売価格 3,980円（説明用の例）</text>
+      <rect x="30" y="60" width="660" height="52" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="200" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="230" y="60" width="100" height="52" fill="#AEB2BE"/>
+      <rect x="330" y="60" width="90" height="52" fill="#8F94A3"/>
+      <text x="130" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">原価</text>
+      <text x="280" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">販売手数料</text>
+      <text x="375" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">送料等</text>
+      <rect x="420" y="60" width="270" height="52" rx="8" fill="#17181C"/>
+      <text x="555" y="85" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">報酬に使える原資</text>
+      <text x="555" y="103" text-anchor="middle" font-size="10.5" fill="#C9CBD4">＝ここが配分の全体枠</text>
+      <path d="M420 122 V146 M690 122 V146 M420 146 H690" stroke="#787D8A" stroke-width="1.5" fill="none"/>
+      <path d="M555 146 V162" stroke="#787D8A" stroke-width="1.5"/>
+      <rect x="420" y="166" width="110" height="46" rx="8" fill="#E8324A"/>
+      <text x="475" y="188" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">コミッション</text>
+      <text x="475" y="204" text-anchor="middle" font-size="9.5" fill="#FDEEF1">成果に連動</text>
+      <rect x="536" y="166" width="80" height="46" rx="8" fill="#454956"/>
+      <text x="576" y="188" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">広告費</text>
+      <text x="576" y="204" text-anchor="middle" font-size="9.5" fill="#C9CBD4">GMV Max等</text>
+      <rect x="622" y="166" width="68" height="46" rx="8" fill="#0E8A5F"/>
+      <text x="656" y="188" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">利益</text>
+      <text x="656" y="204" text-anchor="middle" font-size="9.5" fill="#EAF6F1">必ず残す</text>
+      <text x="225" y="190" font-size="11.5" font-weight="700" fill="#C2203A">コミッションを上げるほど広告費と利益が細る</text>
+      <text x="225" y="208" font-size="11" fill="#787D8A">→ 3つの配分をセットで決めるのが逆算の本体</text>
+    </svg>
+    <figcaption>図2：粗利からの逆算構造。コミッションは報酬原資の「配分の一部」として決める（LEAM作成）</figcaption>
+  </figure>
+  <h3>逆算の3ステップ：上限→競合→実額の順で確定する</h3>
+  <ol class="steps">
+    <li><b>粗利から「出せる上限」を計算する</b><p>上の表のとおり、販売価格から原価・販売手数料・送料等を引き、コミッション・広告費・利益の配分枠を先に確定します。</p></li>
+    <li><b>競合の公開料率と突き合わせる</b><p>同カテゴリの売れ筋商品の率をアフィリエイトセンターで確認し、上限の範囲内で見劣りしない水準に置きます。上限が競合水準に届かないなら、率の勝負ではなく単価・セット構成の見直しが先です。</p></li>
+    <li><b>クリエイター視点の「1本あたり実額」で最終確認する</b><p>設定率×販売価格＝1本売れた時にクリエイターが受け取る額。この実額が動画を1本作る動機になるかを、相手の立場で確認して確定します。</p></li>
+  </ol>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：コミッションと広告費は同じ財布から出る</div>
+    <p>GMV Max等の広告もクリエイターのアフィリエイト動画を素材として使うため、<strong>コミッションを厚くして素材を増やすか、広告費で配信を増やすかはトレードオフ</strong>になります。立ち上げ期は素材（＝コミッション側）を優先するのが当社の運用実感です。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>使い分け：オープンコラボは標準率、ターゲットコラボは個別に上乗せ</h2>
+  <p>TikTok Shopのコラボ（アフィリエイト募集）には、誰でも参加できる<strong>オープンコラボ</strong>と、セラーが選んだクリエイターに個別条件を出す<strong>ターゲットコラボ</strong>があります。コミッション設計はこの2つで役割を分けるのが定石です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="オープンコラボとターゲットコラボの使い分け図：オープンコラボは標準率で広く募集して母数を作り、ターゲットコラボは実績のあるクリエイターに個別レートで上乗せする">
+      <rect x="25" y="20" width="330" height="255" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="190" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">オープンコラボ</text>
+      <rect x="60" y="70" width="260" height="34" rx="8" fill="#454956"/>
+      <text x="190" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">標準率（例：10%前後）で全員に公開</text>
+      <g fill="#C9CBD4">
+        <circle cx="100" cy="150" r="16"/><circle cx="145" cy="150" r="16"/><circle cx="190" cy="150" r="16"/><circle cx="235" cy="150" r="16"/><circle cx="280" cy="150" r="16"/>
+        <circle cx="122" cy="195" r="16"/><circle cx="167" cy="195" r="16"/><circle cx="212" cy="195" r="16"/><circle cx="257" cy="195" r="16"/>
+      </g>
+      <text x="190" y="245" text-anchor="middle" font-size="11.5" fill="#787D8A">広く薄く。参加の母数と動画の本数を作る</text>
+      <rect x="365" y="20" width="330" height="255" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="530" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">ターゲットコラボ</text>
+      <rect x="400" y="70" width="260" height="34" rx="8" fill="#E8324A"/>
+      <text x="530" y="92" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">実績者に個別レートで上乗せ（例：＋3〜5pt）</text>
+      <g>
+        <circle cx="460" cy="160" r="24" fill="#E8324A"/>
+        <text x="460" y="166" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">実績</text>
+        <circle cx="530" cy="160" r="24" fill="#E8324A"/>
+        <text x="530" y="166" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">実績</text>
+        <circle cx="600" cy="160" r="24" fill="#F3A7B5"/>
+        <text x="600" y="166" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">候補</text>
+      </g>
+      <text x="530" y="245" text-anchor="middle" font-size="11.5" fill="#787D8A">狭く厚く。売れる相手に集中して報いる</text>
+      <text x="360" y="292" text-anchor="middle" font-size="10.5" fill="#787D8A">※上乗せ幅の数値は説明用の例。粗利の逆算（§04）に収まる範囲で設計する</text>
+    </svg>
+    <figcaption>図3：2つのコラボ方式の役割分担。「広く薄く」と「狭く厚く」を同時に走らせる（LEAM作成）</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>オープンコラボ</th><th>ターゲットコラボ</th></tr></thead>
+    <tbody>
+      <tr><td>率の設計</td><td>標準率。粗利に収まる控えめな水準</td><td class="y">個別レート。実績に応じて上乗せ</td></tr>
+      <tr><td>目的</td><td>参加母数と動画本数の確保</td><td class="y">売れるクリエイターとの関係強化</td></tr>
+      <tr><td>セラーの手間</td><td>小さい（設定すれば自動で募集）</td><td>大きい（選定・打診・条件交渉）</td></tr>
+      <tr><td>立ち上げ期の位置づけ</td><td class="y">まずこちらで母数を作る</td><td>実績データが溜まってから本格化</td></tr>
+      <tr><td>ありがちな失敗</td><td>高率で固定し、後から下げて信頼を失う</td><td>フォロワー数だけで選び、販売実績を見ない</td></tr>
+    </tbody>
+  </table></div>
+  <p>順番としては、<strong>オープンコラボで参加の母数を作り、販売実績が数字で見えたクリエイターへターゲットコラボで上乗せする</strong>流れが実務的です。誰に上乗せするかの判断は「フォロワー数」ではなく「その商品ジャンルでの販売実績」で行います。ここを見誤ると、率だけ高くて売れないコラボが積み上がります。</p>
+
+  <div class="ctabox">
+    <div class="ct">「誰に・いくらで」打診するかを、データから組み立てます</div>
+    <p>LEAMは市場データを毎営業日蓄積し、実際に売れているクリエイターの方向性から起用戦略を逆算します。TikTok Shop特化MCNとして、率の設計とクリエイター打診をセットでご支援できます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>固定報酬は「制作の対価」、コミッションは「販売の対価」として併用を判断する</h2>
+  <p>コミッションと並ぶもう1つの選択肢が、動画制作費・出演費としての<strong>固定報酬</strong>です。「固定と成果、どちらがいいか」という二択で捉えると設計を誤ります。両者は<strong>払っている対価が違う</strong>からです。</p>
+  <h3>固定＋成果のハイブリッドが機能する場面</h3>
+  <p>固定報酬の併用が実務的に機能するのは、次のような場面です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>場面</th><th>構成の考え方</th><th>ねらい</th></tr></thead>
+    <tbody>
+      <tr><td>実績あるクリエイターへの初回依頼</td><td>小さめの固定＋標準コミッション</td><td>初回の制作リスクをセラーが一部負担し、着手のハードルを下げる</td></tr>
+      <tr><td>新商品・無名ブランドの立ち上げ</td><td>固定＋コミッション</td><td>売れるか未知数の段階では成果報酬だけだと誰も動きにくい</td></tr>
+      <tr><td>作り込みが必要な企画動画</td><td>制作費として固定を厚めに</td><td>撮影・編集の工数に対価を払う。売上はコミッションで別途</td></tr>
+      <tr><td>既に売れている定番商品</td><td class="y">コミッションのみで成立しやすい</td><td>売れる見込みが立つ商品は成果報酬だけで動いてもらいやすい</td></tr>
+    </tbody>
+  </table></div>
+  <h3>固定報酬「だけ」にしない理由：売る動機が消える</h3>
+  <p>逆に、固定報酬のみでコミッションを付けない依頼はおすすめしません。動画を納品した時点でクリエイターの仕事が完了してしまい、<strong>「売れる動画にする」動機が構造的に消える</strong>からです。TikTok Shopは投稿後の売れ行きがクリエイター自身の収益になる仕組みが強みなので、成果連動部分は必ず残すのが当社の運用実感です。</p>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="報酬構成の比較図：固定のみは制作止まりの動機、成果のみは着手されにくい、固定＋成果は着手と販売の両方に動機が働く">
+      <text x="120" y="40" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">固定のみ</text>
+      <rect x="55" y="60" width="130" height="120" rx="10" fill="#C9CBD4"/>
+      <text x="120" y="115" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">固定報酬</text>
+      <text x="120" y="135" text-anchor="middle" font-size="10" fill="#454956">制作の対価</text>
+      <text x="120" y="215" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">△ 納品がゴールになり</text>
+      <text x="120" y="234" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">売る動機が消える</text>
+      <text x="360" y="40" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">成果のみ</text>
+      <rect x="295" y="120" width="130" height="60" rx="10" fill="#E8324A"/>
+      <text x="360" y="146" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">コミッション</text>
+      <text x="360" y="166" text-anchor="middle" font-size="10" fill="#FDEEF1">販売の対価</text>
+      <text x="360" y="215" text-anchor="middle" font-size="11" font-weight="700" fill="#8A5A00">△ 未知数の商品だと</text>
+      <text x="360" y="234" text-anchor="middle" font-size="11" font-weight="700" fill="#8A5A00">着手されにくい</text>
+      <text x="600" y="40" text-anchor="middle" font-size="13" font-weight="800" fill="#0E8A5F">固定＋成果（併用）</text>
+      <rect x="535" y="60" width="130" height="55" rx="10" fill="#C9CBD4"/>
+      <text x="600" y="93" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">固定＝着手の動機</text>
+      <rect x="535" y="120" width="130" height="60" rx="10" fill="#E8324A"/>
+      <text x="600" y="155" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">成果＝売る動機</text>
+      <rect x="520" y="198" width="160" height="52" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="600" y="220" text-anchor="middle" font-size="11" font-weight="800" fill="#0E8A5F">◎ 両方に動機が働く</text>
+      <text x="600" y="240" text-anchor="middle" font-size="10" fill="#454956">立ち上げ期・初回依頼で有効</text>
+    </svg>
+    <figcaption>図4：報酬構成3パターンの動機構造。成果連動部分は必ず残す（LEAM作成）</figcaption>
+  </figure>
+
+  <h2 id="s7"><span class="no en">07</span>ライブキャストの報酬は動画アフィリエイトとは別水準で設計する</h2>
+  <p>見落とされがちな重要ポイントです。ライブコマースの配信者（ライブキャスト）への報酬は、<strong>ショート動画のアフィリエイトと同じコミッション表では設計できません</strong>。動画は一度作れば資産として売り続けますが、ライブは配信時間そのものを拘束し、事前の商品理解・台本準備・リハーサルも発生するからです。</p>
+  <h3>ライブ報酬の基本構成：時間の対価＋成果の対価</h3>
+  <p>当社の運用実感では、ライブキャストへの報酬は<strong>「配信時間に対する固定報酬」＋「配信中の売上に対する成果報酬」の2階建て</strong>が基本形です。固定部分の水準はキャストの経験・実績によって大きく開きがあり、動画アフィリエイトの相場感をそのまま流用すると、打診の段階で断られやすくなります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>ショート動画アフィリエイト</th><th>ライブキャスト</th></tr></thead>
+    <tbody>
+      <tr><td>報酬の基本形</td><td>コミッション（成果報酬）中心</td><td class="y">時間拘束への固定＋成果の2階建て</td></tr>
+      <tr><td>クリエイター側の負担</td><td>制作1回。投稿後は資産化</td><td>配信ごとに時間拘束・準備が発生</td></tr>
+      <tr><td>成果の性質</td><td>投稿後もロングテールで売れ続ける</td><td>配信中に集中して売れる</td></tr>
+      <tr><td>水準の決まり方</td><td>競合の公開料率と粗利の逆算</td><td class="y">キャストの実績・拘束時間・個別交渉</td></tr>
+      <tr><td>依頼の入口</td><td>オープン／ターゲットコラボ</td><td>個別打診・MCN経由が中心</td></tr>
+    </tbody>
+  </table></div>
+  <p>ライブに乗せる商品構成や配信の作り方は「<a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門｜売れる配信の作り方と準備</a>」で扱っているため、ライブ起用を検討している方はそちらもご覧ください。なお、ライブキャストの固定報酬の具体的な水準は実績・時間帯・商材で大きく変わるため、本記事では一律の金額を示しません。個別のご相談で、条件に応じた設計をお伝えしています。</p>
+
+  <h2 id="s8"><span class="no en">08</span>運用：率は決めて終わりではなく、実績データで見直し続ける</h2>
+  <p>コミッションは一度設定したら終わりの数字ではありません。売れたクリエイター・売れた動画の実績が溜まるほど、「誰に・いくら配分すべきか」の精度が上がります。見直しのきっかけは時期ではなく<strong>実績の量</strong>で決めるのが実務的です。当社では、その商品でクリエイター投稿が20〜30本たまった時点、または月1回のどちらか早いほうを目安にしています。なお<strong>率を下げるときは、すでに投稿してくれているクリエイターへ適用日を事前に伝えてください</strong>。予告なく下げると、次の依頼が通らなくなります。当社では次のサイクルで見直しています。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="コミッション運用の見直しサイクル図：標準率で運用し、実績データを確認し、売れたクリエイターに上乗せし、率と対象を調整するループ">
+      <rect x="30" y="90" width="150" height="70" rx="12" fill="#17181C"/>
+      <text x="105" y="120" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">標準率で運用</text>
+      <text x="105" y="142" text-anchor="middle" font-size="10.5" fill="#C9CBD4">オープンコラボで母数作り</text>
+      <path d="M185 125 H235" stroke="#787D8A" stroke-width="2"/>
+      <path d="M229 119 L239 125 L229 131 Z" fill="#787D8A"/>
+      <rect x="242" y="90" width="150" height="70" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="317" y="120" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">実績データ確認</text>
+      <text x="317" y="142" text-anchor="middle" font-size="10.5" fill="#787D8A">誰の動画が売ったかを特定</text>
+      <path d="M397 125 H447" stroke="#787D8A" stroke-width="2"/>
+      <path d="M441 119 L451 125 L441 131 Z" fill="#787D8A"/>
+      <rect x="454" y="90" width="150" height="70" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="529" y="120" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">実績者に上乗せ</text>
+      <text x="529" y="142" text-anchor="middle" font-size="10.5" fill="#454956">ターゲットコラボで個別条件</text>
+      <path d="M604 125 H645 V210 H317 V196" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M311 203 L317 191 L323 203 Z" fill="#0E8A5F"/>
+      <rect x="242" y="170" width="150" height="26" rx="8" fill="#EAF6F1"/>
+      <text x="317" y="188" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0E8A5F">率・対象・サンプル配布を調整</text>
+      <text x="360" y="243" text-anchor="middle" font-size="11" fill="#787D8A">サイクルの目安＝1〜1.5ヶ月ごと。急な引き下げは避け、変更は次の期から予告して行う</text>
+    </svg>
+    <figcaption>図5：コミッション運用の見直しサイクル。実績が見えるほど配分の精度が上がる（LEAM作成）</figcaption>
+  </figure>
+  <h3>引き下げは慎重に：急に下げると参加中のクリエイターが離れる</h3>
+  <p>率の引き上げは歓迎されますが、<strong>引き下げは参加中のクリエイターとの信頼に直結</strong>します。既に動画を投稿してくれているクリエイターから見れば、後出しの引き下げは「はしごを外された」体験です。下げる場合は影響範囲と反映タイミングを公式ヘルプで確認したうえで、告知してから段階的に行ってください。最初に高すぎる率を付けないことが、結局いちばんの防御になります。</p>
+  <h3>率以外のレバー：サンプル・素材・返信速度が参加率を変える</h3>
+  <p>コミッション率が同水準なら、クリエイターは<strong>「やり取りが速く、サンプルがすぐ届き、商品情報が揃っているセラー」</strong>を選びます。率を1pt上げる前に、①サンプル提供の即応、②商品の訴求ポイントをまとめた素材（規制上言えない表現の共有を含む）、③コラボ申請への返信速度——この3つを整える方が費用対効果が高い、というのが当社の運用実感です。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：PR表記・景品表示法への対応はセラー側でも管理する</div>
+    <p>クリエイターへの報酬提供を伴う投稿は、いわゆるステルスマーケティング規制（景品表示法）の対象になり得ます。<strong>PR表記の実施をクリエイター任せにせず、依頼時に条件として明示・確認する</strong>運用にしてください。詳細な要件は消費者庁の公表資料など一次情報で確認してください。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>結局、コミッション率は何%に設定すればいいですか？</summary><div class="a">全商品共通の正解はありません。当社の運用実感では、粗利の逆算に収まる範囲で10%前後から始め、販売実績のあるクリエイターにターゲットコラボで個別に上乗せしていく形が実務的です。低単価商品は高め、高単価商品は低めでも成立します。</div></details>
+    <details><summary>コミッション率は後から変更できますか？</summary><div class="a">変更は可能ですが、参加中のコラボへの反映条件やタイミングは仕様が変わることがあるため、最新はセラーセンターの公式ヘルプで確認してください。特に引き下げは参加中のクリエイターの信頼に関わるため、告知のうえ段階的に行うことをおすすめします。</div></details>
+    <details><summary>販売手数料とコミッションは別に引かれるのですか？</summary><div class="a">別です。プラットフォームへの販売手数料と、クリエイターへのコミッションは両方売上から差し引かれます。手数料率はカテゴリ別で改定されることがあるため、利益計算の際は最新の公式情報で確認してください。</div></details>
+    <details><summary>率を高くすれば有名なクリエイターに紹介してもらえますか？</summary><div class="a">率だけで決まるわけではありません。実績のあるクリエイターほど、1本売れた時の実額・商品の売りやすさ・サンプル対応の速さ・商品ページの質で案件を選びます。率は粗利に収まる範囲に留め、それ以外の条件を整える方が費用対効果が高いというのが当社の運用実感です。</div></details>
+    <details><summary>固定報酬とコミッションはどちらを選ぶべきですか？</summary><div class="a">二択ではなく役割の違いです。固定は「制作・出演の対価」、コミッションは「販売の対価」で、新商品の立ち上げや初回依頼では併用が機能します。ただし固定のみにすると売る動機が構造的に消えるため、成果連動部分は必ず残すことをおすすめします。</div></details>
+    <details><summary>ライブ配信者への報酬も動画と同じ率でいいですか？</summary><div class="a">別水準で設計してください。ライブは配信時間の拘束と準備が発生するため、配信時間への固定報酬＋配信中売上への成果報酬の2階建てが基本形です。水準はキャストの実績や商材によって大きく変わるため、個別に設計します。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/affiliate-guide/" style="color:inherit;text-decoration:none">TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】</a></b><span>コラボ機能の全体像はこちら</span></div>
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="color:inherit;text-decoration:none">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</a></b><span>逆算表の「−α」を埋める1本</span></div>
+      <div class="relcard"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-commerce-guide/" style="color:inherit;text-decoration:none">TikTok Shopライブコマース入門｜売れる配信の作り方と準備</a></b><span>ライブ起用を検討中の方へ</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">コミッション設計とクリエイター起用、まとめてご相談ください</div>
+    <p>商材とご状況を伺い、「いくらで・誰に・どの方式で」打診すべきかを具体的にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ、消費者庁「景品表示法とステルスマーケティング」関連公表資料（仕様・料率・提供機能は更新されることがあります。本記事は2026年8月30日時点の情報です。仕様・料率は更新されるため、最新は一次情報でご確認ください。本文中の「当社の運用実感」と記した内容は市場統計ではなく、当社支援案件での実務経験に基づく見解です）。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">結論：10%前後＋実績で上乗せ</a></li>
+        <li><a href="#s2">コミッションの仕組み</a></li>
+        <li><a href="#s3">相場の考え方（3つの軸）</a></li>
+        <li><a href="#s4">粗利からの逆算手順</a></li>
+        <li><a href="#s5">オープン／ターゲットの使い分け</a></li>
+        <li><a href="#s6">固定報酬の併用判断</a></li>
+        <li><a href="#s7">ライブキャストは別水準</a></li>
+        <li><a href="#s8">運用での見直し方</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>適正コミッションの無料試算</b>
+      <p>粗利構造と競合の公開料率から、出せる上限と打診水準をお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopのコミッション相場は？クリエイターへの報酬の決め方【セラー向け】",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "結局、コミッション率は何%に設定すればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "全商品共通の正解はありません。当社の運用実感では、粗利の逆算に収まる範囲で10%前後から始め、販売実績のあるクリエイターにターゲットコラボで個別に上乗せしていく形が実務的です。低単価商品は高め、高単価商品は低めでも成立します。"}},
+        {"@type": "Question", "name": "コミッション率は後から変更できますか？", "acceptedAnswer": {"@type": "Answer", "text": "変更は可能ですが、参加中のコラボへの反映条件やタイミングは仕様が変わることがあるため、最新はセラーセンターの公式ヘルプで確認してください。特に引き下げは参加中のクリエイターの信頼に関わるため、告知のうえ段階的に行うことをおすすめします。"}},
+        {"@type": "Question", "name": "販売手数料とコミッションは別に引かれるのですか？", "acceptedAnswer": {"@type": "Answer", "text": "別です。プラットフォームへの販売手数料と、クリエイターへのコミッションは両方売上から差し引かれます。手数料率はカテゴリ別で改定されることがあるため、利益計算の際は最新の公式情報で確認してください。"}},
+        {"@type": "Question", "name": "率を高くすれば有名なクリエイターに紹介してもらえますか？", "acceptedAnswer": {"@type": "Answer", "text": "率だけでは動きません。実績のあるクリエイターほど、1本売れた時の実額・商品の売りやすさ・サンプル対応の速さ・商品ページの質で案件を選びます。率は粗利に収まる範囲に留め、それ以外の条件を整える方が費用対効果が高いというのが当社の運用実感です。"}},
+        {"@type": "Question", "name": "固定報酬とコミッションはどちらを選ぶべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "二択ではなく役割の違いです。固定は「制作・出演の対価」、コミッションは「販売の対価」で、新商品の立ち上げや初回依頼では併用が機能します。ただし固定のみにすると売る動機が構造的に消えるため、成果連動部分は必ず残すことをおすすめします。"}},
+        {"@type": "Question", "name": "ライブ配信者への報酬も動画と同じ率でいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "別水準で設計してください。ライブは配信時間の拘束と準備が発生するため、配信時間への固定報酬＋配信中売上への成果報酬の2階建てが基本形です。水準はキャストの実績や商材によって大きく変わるため、個別に設計します。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopで売れない時に見る10のチェックリスト</title>
+<meta name="description" content="TikTok Shopで売れない時に見る10のチェックリストです。原因がどこにあるかの見つけ方と、直す順番まで解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/not-selling-checklist/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopで売れない時に見る10のチェックリスト">
+<meta property="og:description" content="TikTok Shopで売れない時に見る10のチェックリストです。原因がどこにあるかの見つけ方と、直す順番まで解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/not-selling-checklist/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopで売れない時に見る10のチェックリスト">
+<meta name="twitter:description" content="TikTok Shopで売れない時に見る10のチェックリストです。原因がどこにあるかの見つけ方と、直す順番まで解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopで売れない時に見る10のチェックリスト", "description": "TikTok Shopで売れない時に見る10のチェックリストです。原因がどこにあるかの見つけ方と、直す順番まで解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/not-selling-checklist/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopで売れない時に見る10のチェックリスト", "item": "https://leam.co.jp/column/not-selling-checklist/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 売れない時の10のチェックリスト</p>
+  <span class="cat">売上改善</span>
+  <h1>TikTok Shopで売れない時に見る10のチェックリスト｜原因の見つけ方と直す順番</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="売れない原因を絞り込む様子：たくさん投入しても詰まって少ししか落ちない赤い漏斗と、原因を1つずつ確認するチェックリストを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v300c-110 34-212 42-318 22-112-21-200-58-312-50-110 8-190 52-300 60-104 8-190-8-270-44z" fill="#F6F7F9"/>
+  <ellipse cx="880" cy="250" rx="300" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="24" cy="34" r="5"/><circle cx="60" cy="34" r="5"/><circle cx="96" cy="34" r="5"/><circle cx="132" cy="34" r="5"/>
+      <circle cx="24" cy="70" r="5"/><circle cx="60" cy="70" r="5"/><circle cx="96" cy="70" r="5"/><circle cx="132" cy="70" r="5"/>
+      <circle cx="24" cy="106" r="5"/><circle cx="60" cy="106" r="5"/><circle cx="96" cy="106" r="5"/><circle cx="132" cy="106" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(500 400)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 508c150-30 286-14 420 8 130 22 246 30 362 12 114-18 224-42 418-26v128H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：原因のチェックリスト（シアン） ================= -->
+  <g>
+    <rect x="700" y="100" width="404" height="440" rx="22" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <!-- 台紙 -->
+    <rect x="700" y="100" width="404" height="440" rx="22" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 用紙 -->
+    <rect x="730" y="140" width="344" height="372" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+    <!-- 10項目 -->
+    <g fill="#DFE0E2">
+      <rect x="794" y="180" width="214" height="10" rx="5"/>
+      <rect x="794" y="214" width="178" height="10" rx="5"/>
+      <rect x="794" y="248" width="236" height="10" rx="5"/>
+      <rect x="794" y="282" width="192" height="10" rx="5"/>
+      <rect x="794" y="316" width="220" height="10" rx="5"/>
+      <rect x="794" y="350" width="168" height="10" rx="5"/>
+      <rect x="794" y="384" width="228" height="10" rx="5"/>
+      <rect x="794" y="418" width="186" height="10" rx="5"/>
+      <rect x="794" y="452" width="210" height="10" rx="5"/>
+      <rect x="794" y="486" width="174" height="10" rx="5"/>
+    </g>
+
+    <g fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4">
+      <rect x="752" y="172" width="26" height="26" rx="7"/>
+      <rect x="752" y="206" width="26" height="26" rx="7"/>
+      <rect x="752" y="240" width="26" height="26" rx="7"/>
+      <rect x="752" y="274" width="26" height="26" rx="7"/>
+      <rect x="752" y="308" width="26" height="26" rx="7"/>
+      <rect x="752" y="342" width="26" height="26" rx="7"/>
+      <rect x="752" y="376" width="26" height="26" rx="7"/>
+      <rect x="752" y="410" width="26" height="26" rx="7"/>
+      <rect x="752" y="444" width="26" height="26" rx="7"/>
+      <rect x="752" y="478" width="26" height="26" rx="7"/>
+    </g>
+
+    <!-- 確認済みの項目 -->
+    <g fill="none" stroke="#25F4EE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M758 185l6 7 11.5-13"/>
+      <path d="M758 219l6 7 11.5-13"/>
+      <path d="M758 287l6 7 11.5-13"/>
+      <path d="M758 321l6 7 11.5-13"/>
+      <path d="M758 389l6 7 11.5-13"/>
+      <path d="M758 457l6 7 11.5-13"/>
+    </g>
+
+    <!-- 留め具 -->
+    <rect x="880" y="54" width="44" height="34" rx="10" fill="#0B0C10"/>
+    <rect x="852" y="76" width="100" height="54" rx="14" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 上：投入されるもの（たくさん入る） ================= -->
+  <g fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round">
+    <rect x="170" y="42" width="54" height="54" rx="12" transform="rotate(-13 197 69)"/>
+    <rect x="296" y="26" width="54" height="54" rx="12" transform="rotate(9 323 53)"/>
+    <rect x="424" y="44" width="54" height="54" rx="12" transform="rotate(-6 451 71)"/>
+  </g>
+
+  <!-- ================= 左：詰まった漏斗（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <path d="M70 170a250 52 0 0 1 500 0L354 400v68h-68v-68z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+
+    <!-- 内側（裏面） -->
+    <ellipse cx="320" cy="170" rx="250" ry="52" fill="#CE1730"/>
+    <!-- 本体 -->
+    <path d="M70 170L286 400v68h68v-68L570 170a250 52 0 0 1-500 0z" fill="#FE2C55"/>
+
+    <!-- 詰まっている塊 -->
+    <g fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round">
+      <rect x="214" y="252" width="76" height="60" rx="12" transform="rotate(-14 252 282)"/>
+      <rect x="316" y="272" width="80" height="62" rx="12" transform="rotate(11 356 303)"/>
+      <rect x="278" y="320" width="88" height="62" rx="12" transform="rotate(-7 322 351)"/>
+      <circle cx="320" cy="426" r="26"/>
+    </g>
+
+    <!-- 輪郭 -->
+    <path d="M70 170a250 52 0 0 1 500 0L354 400v68h-68v-68z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <ellipse cx="320" cy="170" rx="250" ry="52" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- ================= 下：少ししか落ちない ================= -->
+  <g fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round">
+    <path d="M322 484q14 16 14 24a14 14 0 0 1-28 0q0-8 14-24z"/>
+    <path d="M300 532q14 16 14 24a14 14 0 0 1-28 0q0-8 14-24z"/>
+    <ellipse cx="322" cy="590" rx="72" ry="16"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="636" cy="232" r="22" fill="#25F4EE"/>
+  <circle cx="628" cy="318" r="14" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopで売れない原因の多くは、商品そのものではなく「体制と順序」にあります。</strong>動画の再生と購買が連動して初めて売れる売場なので、素材の供給・商品ページ・価格・ライブ・広告・運用ルールのどこか1つが欠けるだけで数字は止まります。この記事では、当社が運用のご相談で実際に確認している<strong>10項目のチェックリスト</strong>と、原因を特定するための診断フロー、直す順番をまとめました。上から順に照合すれば、「何から手を付けるべきか」を今日決められます。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>売れない原因を特定する10項目のチェックリスト（一覧表・関連記事つき）</li>
+      <li>どの数字をどの順で見れば原因にたどり着けるか（診断フロー図）</li>
+      <li>直す順番と、効果を判断するまでの期間の目安</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">この10項目をそのまま記入できる「診断チェックシート」を無料でお送りします</div>
+    <p>本記事のチェックリストを自社ショップに当てはめて書き込める資料をご用意しています。現状を埋めるだけで「どこから直すか」が整理でき、そのまま無料相談にもお使いいただけます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">資料を請求する（無料）</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">売れない原因の多くは「商品」ではなく「体制と順序」にある</a></li>
+      <li><a href="#s2">チェックリストは「土台→素材→販売→運用→計測」の順に見る</a></li>
+      <li><a href="#s3">【①〜③ 土台編】商材・価格・商品ページに穴があると何をしても売れない</a></li>
+      <li><a href="#s4">【④⑤ 素材編】公式アカウント依存と素材不足が、相談で最も多い原因</a></li>
+      <li><a href="#s5">【⑥⑦ 販売編】ライブと広告は「体制ができてから」乗せると機能する</a></li>
+      <li><a href="#s6">【⑧⑨ 運用編】ルール違反と発送遅延は、気づかないうちに配信を止める</a></li>
+      <li><a href="#s7">【⑩ 計測編】数字は「配信状態→再生→クリック→購入→利益」の順に見る</a></li>
+      <li><a href="#s8">改善は「1回に1項目」を週単位で回すと、何が効いたか分かる</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>売れない原因の多くは「商品」ではなく「体制と順序」にある</h2>
+  <p>「出店して商品も登録した。動画も投稿している。それでも売れない」——ご相談の入口は、ほとんどこの形です。原因を探す前に押さえておきたいのは、TikTok Shopが<strong>検索して買いに来る売場ではなく、動画を見ているうちに欲しくなる「発見型」の売場</strong>だということです（仕組みの全体像は<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方の完全ガイド</a>で解説しています）。</p>
+  <p>検索型のECなら「商品力と価格」でおおむね説明できる不振が、発見型の売場では<strong>「動画は再生されているのに買われない」「そもそも再生されない」</strong>という形で現れます。つまり原因の候補は商品だけでなく、素材の供給・商品ページ・価格・ライブ・広告・運用ルールにまで広がります。だからこそ、思いついた施策を場当たりで打つ前に、全体をひととおり点検する必要があります。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="売れない原因の全体構造図：商材・価格・商品ページの土台の上に、素材、販売（ライブ・広告）が積み上がり、売上につながる。ルール・発送・計測の運用が全体を支える">
+      <rect x="190" y="58" width="280" height="56" rx="12" fill="#E8324A"/>
+      <text x="330" y="93" text-anchor="middle" font-size="16" font-weight="900" fill="#fff">売上（GMV）</text>
+      <path d="M330 118 V132 M322 124 L330 134 L338 124" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <rect x="100" y="138" width="460" height="48" rx="9" fill="#17181C"/>
+      <text x="330" y="168" text-anchor="middle" font-size="13.5" font-weight="700" fill="#fff">⑥⑦ 販売：ライブ・広告</text>
+      <rect x="70" y="194" width="520" height="48" rx="9" fill="#454956"/>
+      <text x="330" y="224" text-anchor="middle" font-size="13.5" font-weight="700" fill="#fff">④⑤ 素材：公式アカウント＋クリエイター動画の供給</text>
+      <rect x="40" y="250" width="580" height="48" rx="9" fill="#787D8A"/>
+      <text x="330" y="280" text-anchor="middle" font-size="13.5" font-weight="700" fill="#fff">①②③ 土台：商材適性・価格と利益・商品ページ</text>
+      <rect x="638" y="58" width="56" height="240" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="666" y="88" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">
+        <tspan x="666" dy="0">⑧</tspan><tspan x="666" dy="24">⑨</tspan><tspan x="666" dy="24">⑩</tspan>
+        <tspan x="666" dy="30">運</tspan><tspan x="666" dy="22">用</tspan><tspan x="666" dy="22">・</tspan><tspan x="666" dy="22">計</tspan><tspan x="666" dy="22">測</tspan>
+      </text>
+      <path d="M638 178 H600" stroke="#E8324A" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="330" y="36" text-anchor="middle" font-size="12" fill="#787D8A">下の層に穴があるまま、上の層だけ強化しても費用が先行する</text>
+    </svg>
+    <figcaption>図1：売れない原因の全体構造。チェックは下の層（土台）から順に行う（LEAM作成）</figcaption>
+  </figure>
+  <p>本記事のチェックリストは、この構造に沿って<strong>「土台→素材→販売→運用→計測」の順</strong>に並べています。下の層に穴があるまま上の層（ライブ・広告）だけを強化しても費用が先行するだけ——これが当社の運用実感です。</p>
+
+  <h2 id="s2"><span class="no en">02</span>チェックリストは「土台→素材→販売→運用→計測」の順に見る</h2>
+  <p>次の10項目を、上から順に照合してください。番号が小さいほど土台に近く、直したときの効果が全体に波及します。各項目の詳しい対処は、それぞれの関連記事にまとめています。</p>
+  <div class="tw"><table>
+    <thead><tr><th>No</th><th>チェック項目</th><th>こんな症状なら該当</th><th>詳しい対処</th></tr></thead>
+    <tbody>
+      <tr><td class="num">①</td><td><b>商材とカテゴリの適性</b></td><td>商品の良さが10〜30秒の動画で伝わらない／語れるネタが1種類しかない</td><td><a href="https://leam.co.jp/column/best-categories/">売れる商品カテゴリーと参入ジャンルの選び方</a></td></tr>
+      <tr><td class="num">②</td><td><b>価格と利益設計</b></td><td>その場で買える価格になっていない／手数料・報酬・送料込みで利益が残らない</td><td><a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料と利益計算の完全ガイド</a></td></tr>
+      <tr><td class="num">③</td><td><b>商品ページ</b></td><td>他モールのLPを流用している／動画の訴求とページの内容が合っていない</td><td><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組みの完全ガイド</a></td></tr>
+      <tr><td class="num">④</td><td><b>公式アカウント依存</b></td><td>自社投稿だけで売ろうとしている／クリエイター起用がゼロ〜数人</td><td><a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み完全ガイド</a></td></tr>
+      <tr><td class="num">⑤</td><td><b>素材の量と訴求</b></td><td>動画本数が毎週増えていない／訴求パターンを1種類しか試していない</td><td><a href="https://leam.co.jp/column/creator-commission/">クリエイター報酬の相場と決め方</a></td></tr>
+      <tr><td class="num">⑥</td><td><b>ライブコマース</b></td><td>やっていない／単発・不定期で終わっている</td><td><a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>・<a href="https://leam.co.jp/column/live-audience/">売れる時間帯</a></td></tr>
+      <tr><td class="num">⑦</td><td><b>広告の我流運用</b></td><td>損益ラインを決めずに回している／素材不足のまま広告だけ増額している</td><td><a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場と選び方</a></td></tr>
+      <tr><td class="num">⑧</td><td><b>ルール違反・出品制限</b></td><td>制限対象の商品・表現に気づいていない／動画や商品が止められたことがある</td><td><a href="https://leam.co.jp/column/prohibited-items/">禁止商品・制限商品ガイド</a></td></tr>
+      <tr><td class="num">⑨</td><td><b>発送・出荷体制</b></td><td>出荷が遅れがち／レビューで配送への不満が目立つ</td><td><a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷体制の運用設計</a></td></tr>
+      <tr><td class="num">⑩</td><td><b>検証サイクル</b></td><td>どの数字をどの順で見るか決まっていない／感覚で施策を選んでいる</td><td>本記事 <a href="#s7">§07の診断フロー</a></td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 使い方</div>
+    <p>該当が複数あっても、<strong>直すのは番号の小さいものから1つずつ</strong>。一度に全部変えると、翌週数字が動いたときに何が効いたのか分からなくなります（<a href="#s8">§08</a>で詳述）。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>【①〜③ 土台編】商材・価格・商品ページに穴があると何をしても売れない</h2>
+  <p>最初に確認するのは「そもそも売れる前提が揃っているか」です。ここに穴があると、素材や広告をどれだけ積んでも回収できません。</p>
+  <h3>① 商材とカテゴリの適性：短い動画で価値が伝わるかで決まる</h3>
+  <p>10〜30秒の動画で商品の良さを伝え切れるか。使用前後の変化が映像に映る、使っている場面が絵になる、開発の経緯やお客様の声など語れるネタが複数ある——こうした条件を満たすほど、TikTok Shopでは売りやすくなります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>観点</th><th>動画で売りやすい商材</th><th>苦戦しやすい商材</th></tr></thead>
+    <tbody>
+      <tr><td>価値の伝わり方</td><td class="y">使用前後の変化や使用シーンを映像で見せられる</td><td class="n">効果が映像に映らず、説明が長くなる</td></tr>
+      <tr><td>価格</td><td class="y">その場で決められる価格帯</td><td class="n">高額で比較検討が長い</td></tr>
+      <tr><td>語れるネタ</td><td class="y">開発の経緯・使用シーン・お客様の声など複数ある</td><td class="n">スペックの説明しかない</td></tr>
+      <tr><td>購入の決め方</td><td class="y">勢いで買っても失敗が小さい</td><td class="n">採寸・試着・現物確認が前提</td></tr>
+    </tbody>
+  </table></div>
+  <p>伝わりにくい商材だと分かった場合も、すぐ諦める必要はありません。商品を変えるのではなく「見せ方の型」を変えると動き出すケースがあります。ジャンル選びの考え方は<a href="https://leam.co.jp/column/best-categories/">売れる商品カテゴリーと参入ジャンルの選び方</a>で詳しく解説しています。</p>
+  <div class="box box-point">
+    <div class="bt">📊 市場データ</div>
+    <p>実際に売れている価格帯・商品タイプの傾向は、<strong>当社が毎営業日蓄積している市場データ</strong>で確認しています。一般論ではなく直近の実データに基づいてジャンル診断を行っています。</p>
+  </div>
+  <h3>② 価格と利益設計：「その場で買える価格」と「手数料込みの黒字」を両立させる</h3>
+  <p>発見型の売場では、比較検討を挟まずその場で決められる価格設計が有利です。同時に、<strong>販売手数料・クリエイターへの報酬・送料・広告費を引いても利益が残るか</strong>を、売れる前に計算しておく必要があります。「売れているのに赤字」は、売れないことよりも気づきにくい失敗です。計算の型は<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料と利益計算の完全ガイド</a>にまとめています（料率は改定されることがあるため、最新は必ず公式情報で確認してください）。</p>
+  <h3>③ 商品ページ：他モールのLP流用が、動画経由のお客様を逃す</h3>
+  <p>Amazonや楽天向けに作った長い説明ページをそのまま流用しているケースは要注意です。動画の勢いのまま来た人に必要なのは、<strong>動画と同じ言葉・同じ順番で、短く背中を押すページ</strong>です。あわせて、レビューの状態、配送日数の明記、サイズや素材など不安要素への先回りの回答も確認します。動画はクリックされているのに買われない場合、原因はほぼこの層にあります。</p>
+
+  <h2 id="s4"><span class="no en">04</span>【④⑤ 素材編】公式アカウント依存と素材不足が、相談で最も多い原因</h2>
+  <p>土台に問題がなければ、次は素材です。当社に寄せられる「売れない」相談で最も多いのが、この2項目です。</p>
+  <h3>④ 公式アカウント依存：自社投稿だけでは届く範囲に限界がある</h3>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="公式アカウントだけで販売する場合と、クリエイターを起用する場合の対比図：公式のみは動画が少なく届く範囲が狭いが、クリエイター起用ありは動画が多く、各クリエイターのフォロワーとおすすめ面に広く届く">
+      <rect x="20" y="20" width="330" height="240" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">公式アカウントだけ</text>
+      <circle cx="90" cy="140" r="24" fill="#454956"/>
+      <text x="90" y="146" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">公式</text>
+      <path d="M120 140 H155" stroke="#AEB2BE" stroke-width="2"/>
+      <rect x="160" y="96" width="44" height="30" rx="5" fill="#AEB2BE"/>
+      <rect x="160" y="132" width="44" height="30" rx="5" fill="#AEB2BE"/>
+      <rect x="160" y="168" width="44" height="30" rx="5" fill="#AEB2BE"/>
+      <path d="M210 140 H245" stroke="#AEB2BE" stroke-width="2"/>
+      <g fill="#AEB2BE">
+        <circle cx="266" cy="120" r="6"/><circle cx="290" cy="140" r="6"/><circle cx="266" cy="160" r="6"/><circle cx="290" cy="180" r="6"/><circle cx="314" cy="158" r="6"/>
+      </g>
+      <text x="185" y="238" text-anchor="middle" font-size="11" fill="#787D8A">届く範囲＝自社フォロワーの周辺まで</text>
+      <rect x="370" y="20" width="330" height="240" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">公式＋クリエイター起用</text>
+      <circle cx="430" cy="92" r="18" fill="#454956"/>
+      <text x="430" y="97" text-anchor="middle" font-size="9.5" font-weight="800" fill="#fff">公式</text>
+      <circle cx="430" cy="138" r="14" fill="#F3A7B5"/>
+      <circle cx="430" cy="174" r="14" fill="#F3A7B5"/>
+      <circle cx="430" cy="210" r="14" fill="#F3A7B5"/>
+      <text x="430" y="245" text-anchor="middle" font-size="10" fill="#787D8A">クリエイター</text>
+      <path d="M452 92 H488 M448 138 H488 M448 174 H488 M448 210 H488" stroke="#F3A7B5" stroke-width="2"/>
+      <g fill="#E8324A">
+        <rect x="492" y="72" width="40" height="26" rx="5"/>
+        <rect x="492" y="104" width="40" height="26" rx="5" opacity=".85"/>
+        <rect x="492" y="136" width="40" height="26" rx="5" opacity=".7"/>
+        <rect x="492" y="168" width="40" height="26" rx="5" opacity=".85"/>
+        <rect x="492" y="200" width="40" height="26" rx="5"/>
+      </g>
+      <path d="M538 140 H572" stroke="#E8324A" stroke-width="2"/>
+      <path d="M566 134 L576 140 L566 146 Z" fill="#E8324A"/>
+      <g fill="#F3A7B5">
+        <circle cx="596" cy="90" r="6"/><circle cx="620" cy="76" r="6"/><circle cx="646" cy="94" r="6"/><circle cx="668" cy="112" r="6"/>
+        <circle cx="600" cy="126" r="6"/><circle cx="626" cy="112" r="6"/><circle cx="652" cy="130" r="6"/><circle cx="672" cy="150" r="6"/>
+        <circle cx="600" cy="162" r="6"/><circle cx="628" cy="150" r="6"/><circle cx="652" cy="168" r="6"/><circle cx="600" cy="198" r="6"/>
+        <circle cx="628" cy="186" r="6"/><circle cx="654" cy="202" r="6"/><circle cx="674" cy="186" r="6"/>
+      </g>
+      <text x="535" y="238" text-anchor="middle" font-size="11" fill="#787D8A">届く範囲＝各クリエイターのフォロワー＋おすすめ面</text>
+    </svg>
+    <figcaption>図2：公式アカウント依存とクリエイター起用の違い。動画の本数と届く範囲が変わる（LEAM作成）</figcaption>
+  </figure>
+  <p>公式アカウントの数本の動画だけで売ろうとしていないでしょうか。TikTok Shopでは、<strong>クリエイターがアフィリエイトで商品を紹介する動画が、購入の主要な入口</strong>になります。当社の運用実感でも、伸びているショップほどクリエイター経由の売上比率が高い傾向があります。ただしこれは<strong>逆向きにも働きます</strong>。売れ始めるとクリエイターが自然に集まるため、比率の高さは原因であると同時に結果でもあります。だからこそ、実績がまだ無い立ち上げ期は、待つのではなく自分から声をかけにいく必要があります。仕組みと始め方は<a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み完全ガイド</a>をご覧ください。</p>
+  <p>逆の偏りにも注意が必要です。<strong>クリエイター任せで自社の発信がゼロ</strong>だと、公式アカウントが止まっているショップに見え、クリエイター側も紹介しづらくなります。公式の発信とクリエイター起用は両輪です。</p>
+  <h3>⑤ 素材の量と訴求パターン：「1種類の訴求を数本」では検証になっていない</h3>
+  <p>動画の本数が毎週増えていない、訴求が1パターンだけ——この状態では、当たりを引くための試行回数が絶対的に足りません。悩み提示型・ビフォーアフター型・レビュー型・比較型など、<strong>複数の訴求を並行して検証</strong>し、冒頭の数秒で結果やビフォーアフターを先に見せる構成に寄せていきます。クリエイターに動画を作り続けてもらうには報酬設計が要になるため、<a href="https://leam.co.jp/column/creator-commission/">クリエイター報酬の相場と決め方</a>もあわせてご覧ください。</p>
+
+  <div class="ctabox">
+    <div class="ct">素材が増え続ける体制を、クリエイター側からつくります</div>
+    <p>LEAMはTikTok Shop特化MCNとして、商品と相性のよいクリエイターの起用・報酬設計・動画の型づくりまで伴走します。まずは現状の体制を拝見し、診断チェックシート（資料）とあわせて率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">資料請求・無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>【⑥⑦ 販売編】ライブと広告は「体制ができてから」乗せると機能する</h2>
+  <p>ライブと広告は売上を大きく動かせる手段ですが、順番を間違えると費用だけが先行します。「乗せる前の条件」を先に確認してください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>施策</th><th>乗せる前に満たしたい条件</th><th>条件を満たさず始めると</th></tr></thead>
+    <tbody>
+      <tr><td><b>⑥ ライブ配信</b></td><td>曜日・時間帯を固定して継続できる体制と話し手がいる</td><td>単発では視聴者もデータも積み上がらず、毎回ゼロから</td></tr>
+      <tr><td><b>⑦ 広告</b></td><td>損益ライン（許容ROI）を数字で決めてある／動画素材が毎週増える体制がある</td><td>費用が先行し、「売れても赤字」に気づけない</td></tr>
+    </tbody>
+  </table></div>
+  <h3>⑥ ライブコマース：単発・不定期では積み上がらない</h3>
+  <p>ライブをやっていない、または単発で終わっている場合、認知と購入の大きな入口を1つ使えていない状態です。ただし効かせ方には条件があり、<strong>曜日と時間帯を固定して継続する</strong>ことで、視聴者と配信データが蓄積されていきます。配信の作り方は<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>、狙うべき時間帯と視聴者層は<a href="https://leam.co.jp/column/live-audience/">ライブは誰が見ている？視聴者層と売れる時間帯</a>で解説しています。</p>
+  <h3>⑦ 広告の我流運用：損益ラインなしの増額は「売れても赤字」を招く</h3>
+  <p>素材が足りないまま広告費だけを増やしていないか、許容ROIを決めずに回していないか。広告は「素材と土台が整ったショップの売上を増幅する」道具であって、土台の穴を埋める道具ではありません。自社での運用が難しいと感じたら、外部パートナーの見極め方を<a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場と失敗しない選び方</a>にまとめています。</p>
+
+  <h2 id="s6"><span class="no en">06</span>【⑧⑨ 運用編】ルール違反と発送遅延は、気づかないうちに配信を止める</h2>
+  <p>見落とされがちですが、実は<strong>診断では最初に確認すべき項目</strong>です。ルール違反と発送の問題は、セラーが気づかないうちに商品や動画の露出を止めてしまうため、他の施策がすべて空回りします。</p>
+  <h3>⑧ ルール違反・出品制限：「知らなかった」でも配信は止まる</h3>
+  <p>カテゴリごとの禁止・制限商品や、効能の断定などの表現ルールに触れていないかを確認します。違反が積み重なるとペナルティの対象になり得ます（判定基準やポイント制度は更新されるため、最新は必ず公式のポリシーで確認してください）。出品前・出品中の確認手順は<a href="https://leam.co.jp/column/prohibited-items/">禁止商品・制限商品ガイド</a>にまとめています。過去に動画や商品が止められた通知が来ていないか、セラーセンターの通知欄も見直してください。</p>
+  <h3>⑨ 発送・出荷体制：遅延はペナルティとレビュー悪化の二重打撃になる</h3>
+  <p>出荷期限に遅れると、ペナルティの対象になり得ることに加えて、配送レビューの悪化がその後の売れゆきに響きます（期限や基準の具体値は変更されるため、最新は公式で確認してください）。注文が急に増えたときに破綻しない出荷体制の組み方は、<a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷体制の運用設計</a>で解説しています。</p>
+
+  <h2 id="s7"><span class="no en">07</span>【⑩ 計測編】数字は「配信状態→再生→クリック→購入→利益」の順に見る</h2>
+  <p>最後の項目は、数字の見方そのものです。どの数字をどの順で見るかを決めていないと、施策の選択が感覚頼みになります。順序は次の通りです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>順序</th><th>見る場所</th><th>数字が悪いときに疑う項目</th></tr></thead>
+    <tbody>
+      <tr><td class="num">0</td><td>配信状態（商品・動画・アカウントの制限や停止の通知）</td><td>⑧ ルール違反・⑨ 発送</td></tr>
+      <tr><td class="num">1</td><td>動画の再生数・視聴維持</td><td>⑤ 素材の量と訴求（④ 供給体制）</td></tr>
+      <tr><td class="num">2</td><td>動画→商品ページへの遷移（クリック）</td><td>① 商材の訴求・③ 商品カードとページの接続</td></tr>
+      <tr><td class="num">3</td><td>ページ閲覧→購入の率</td><td>③ 商品ページ・② 価格・レビュー</td></tr>
+      <tr><td class="num">4</td><td>手数料・報酬・送料・広告費込みの手残り</td><td>② 利益設計・⑦ 広告の損益ライン</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 560" role="img" aria-label="売れない時の診断フローチャート：配信が止まっていないか、動画は再生されているか、商品ページは開かれているか、購入まで進んでいるか、利益は出ているかを順に確認し、該当するチェック項目に振り分ける">
+      <rect x="250" y="14" width="220" height="44" rx="22" fill="#17181C"/>
+      <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">売れない・売上が止まった</text>
+      <path d="M360 58 V84" stroke="#787D8A" stroke-width="2"/>
+      <rect x="215" y="86" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q0. 配信は止まっていない？（制限・停止）</text>
+      <path d="M215 109 H120 V150" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="138" y="102" font-size="11" font-weight="800" fill="#C2203A">停止あり</text>
+      <rect x="30" y="152" width="180" height="60" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="177" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">⑧⑨ を最優先で解消</text>
+      <text x="120" y="197" text-anchor="middle" font-size="11" fill="#454956">違反・発送を先に直す</text>
+      <path d="M360 132 V158" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="152" font-size="11" font-weight="800" fill="#0E8A5F">正常</text>
+      <rect x="215" y="160" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="189" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q1. 動画は再生されている？</text>
+      <path d="M505 183 H600 V224" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="540" y="176" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="510" y="226" width="180" height="60" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="600" y="251" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">④⑤ 素材の量と訴求</text>
+      <text x="600" y="271" text-anchor="middle" font-size="11" fill="#454956">本数とパターンを増やす</text>
+      <path d="M360 206 V232" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="226" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="215" y="234" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="263" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q2. 商品ページは開かれている？</text>
+      <path d="M215 257 H120 V298" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="150" y="250" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="30" y="300" width="180" height="60" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="325" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">①③ 訴求と商品の接続</text>
+      <text x="120" y="345" text-anchor="middle" font-size="11" fill="#454956">動画と商品カードの整合</text>
+      <path d="M360 280 V306" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="300" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="215" y="308" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="337" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q3. 購入まで進んでいる？</text>
+      <path d="M505 331 H600 V372" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="540" y="324" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="510" y="374" width="180" height="60" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="600" y="399" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">②③ 価格・商品ページ</text>
+      <text x="600" y="419" text-anchor="middle" font-size="11" fill="#454956">不安要素とレビューを点検</text>
+      <path d="M360 354 V380" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="374" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="215" y="382" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="411" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q4. 利益は出ている？</text>
+      <path d="M215 405 H120 V446" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="150" y="398" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="30" y="448" width="180" height="60" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="473" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">②⑦ 損益ライン・広告</text>
+      <text x="120" y="493" text-anchor="middle" font-size="11" fill="#454956">客単価と許容ROIを見直す</text>
+      <path d="M360 428 V466" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="452" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="245" y="468" width="230" height="66" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="360" y="495" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0E8A5F">土台はOK：規模の問題</text>
+      <text x="360" y="516" text-anchor="middle" font-size="11" fill="#454956">⑥ライブ・⑦広告で拡大へ</text>
+    </svg>
+    <figcaption>図3：売れない時の診断フロー。週1回、同じ順序で回すと原因の特定が機械的にできる（LEAM作成）</figcaption>
+  </figure>
+  <p>このフローを週1回、同じ曜日に回すだけで、「今週どの項目を直すか」が感覚ではなく数字で決まるようになります。</p>
+
+  <h2 id="s8"><span class="no en">08</span>改善は「1回に1項目」を週単位で回すと、何が効いたか分かる</h2>
+  <p>該当項目が複数見つかっても、一度に全部は直さないでください。同時に複数を変えると、数字が動いたときにどれが効いたのか切り分けられなくなります。<strong>番号の小さい項目から1つ選び、1週間おいて再計測する</strong>——この繰り返しが、遠回りに見えて最短です。当社では約1〜1.2ヶ月を1サイクルとして「検証→当たった型に寄せる」を繰り返しています。</p>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="週次の改善サイクル図：数字を確認し、直す項目を1つ選び、1項目だけ変更し、1週間おいて再計測する、を循環させる">
+      <rect x="60" y="40" width="240" height="70" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="180" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">① 数字を確認する</text>
+      <text x="180" y="92" text-anchor="middle" font-size="11" fill="#787D8A">§07の順序で毎週同じ曜日に</text>
+      <rect x="420" y="40" width="240" height="70" rx="12" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="540" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">② 直す項目を1つ選ぶ</text>
+      <text x="540" y="92" text-anchor="middle" font-size="11" fill="#787D8A">番号の小さい項目を優先</text>
+      <rect x="420" y="170" width="240" height="70" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="540" y="200" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">③ 1項目だけ変更する</text>
+      <text x="540" y="222" text-anchor="middle" font-size="11" fill="#787D8A">同時に複数を変えない</text>
+      <rect x="60" y="170" width="240" height="70" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="180" y="200" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">④ 1週間おいて再計測</text>
+      <text x="180" y="222" text-anchor="middle" font-size="11" fill="#787D8A">数日の上下で判断しない</text>
+      <path d="M306 75 H412" stroke="#787D8A" stroke-width="2"/><path d="M406 69 L416 75 L406 81 Z" fill="#787D8A"/>
+      <path d="M540 116 V162" stroke="#787D8A" stroke-width="2"/><path d="M534 156 L540 166 L546 156 Z" fill="#787D8A"/>
+      <path d="M414 205 H308" stroke="#787D8A" stroke-width="2"/><path d="M314 199 L304 205 L314 211 Z" fill="#787D8A"/>
+      <path d="M180 164 V118" stroke="#787D8A" stroke-width="2"/><path d="M174 124 L180 114 L186 124 Z" fill="#787D8A"/>
+      <text x="360" y="146" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">週次で回す（評価は約1〜1.2ヶ月を1サイクル）</text>
+    </svg>
+    <figcaption>図4：改善サイクル。1回に直すのは1項目だけにすると、効いた施策が特定できる（LEAM作成）</figcaption>
+  </figure>
+  <h3>数日で「効かない」と判断しない：素材もデータも蓄積型</h3>
+  <p>動画・ライブ・広告のいずれも、蓄積が効いてくるまでに時間差があります。始めて数日の上下で施策を戻してしまうのが、実務で最ももったいない動きです。週単位で見て、サイクル単位で評価してください。</p>
+  <h3>10項目すべて健全なのに動かないなら、①に戻って「売る型」を変える</h3>
+  <p>すべて点検して問題がないのに数字が動かない場合は、①の商材適性に戻り、訴求する相手と見せ方の型を変えてみてください。同じ商品でも、狙う悩み・使うシーン・紹介するクリエイターのタイプを変えると動き出すことがあります。ここの判断は市場の実データがあると精度が大きく変わるため、迷ったらご相談ください。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>どのくらいの期間で改善の効果を判断できますか？</summary><div class="a">数日では判断しません。週単位で数字を見て、当社では約1〜1.2ヶ月を1サイクルとして評価しています。動画素材も配信データも蓄積型のため、短期の上下で施策を戻さないことが重要です。</div></details>
+    <details><summary>商品を変えるのと運用を直すの、どちらが先ですか？</summary><div class="a">先にチェックリストの②〜⑩を点検してください。運用側に明確な穴がある状態で商品を変えても、次の商品で同じ壁に当たります。10項目すべて健全なのに動かない場合に、①商材適性と売る型を見直します。</div></details>
+    <details><summary>公式アカウントのフォロワーが少なくても売れますか？</summary><div class="a">売れる可能性はあります。TikTok Shopはおすすめ面とクリエイターの紹介動画が購入の入口になるため、自社フォロワー数だけでは決まりません。公式アカウントは、まず「発信が止まっていないこと」が重要です。</div></details>
+    <details><summary>広告費を増やせば売れるようになりますか？</summary><div class="a">素材や商品ページに穴がある状態での増額は、費用の先行になりがちです。チェックリストの①〜⑤を整えたうえで、損益ライン（許容ROI）を決めてから広告を乗せる順番をおすすめします。</div></details>
+    <details><summary>ライブ配信は必須ですか？</summary><div class="a">必須ではありませんが、有効な販売手段です。始めるなら単発ではなく、曜日・時間帯を固定して継続できる体制を先に作ってください。単発の配信では視聴者もデータも積み上がりません。</div></details>
+    <details><summary>自社だけで改善が難しい場合、何から相談すればいいですか？</summary><div class="a">現状の数字（再生・クリック・購入）と、この記事のチェックリストで該当した項目をお知らせください。どこから直すべきかを無料相談でお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/affiliate-guide/" style="text-decoration:none;color:inherit"><span class="rc">クリエイター</span><b>TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】</b><span>プラン設計と選ばれる条件</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/" style="text-decoration:none;color:inherit"><span class="rc">手数料</span><b>TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</b><span>カテゴリー別の料率と利益計算</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/unyodaiko-cost/" style="text-decoration:none;color:inherit"><span class="rc">運用</span><b>TikTok Shop運用代行の費用相場と失敗しない選び方</b><span>費用の内訳と選び方</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">「うちの場合はどこが原因か」を、資料と無料相談で特定できます</div>
+    <p>10項目の診断チェックシート（資料）を無料でお送りしています。記入いただいた内容と市場の実データを突き合わせ、直す順番まで落とし込んでお返しします。商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">資料を請求する（無料）</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ（出品ポリシー・発送基準・手数料等の仕様は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">原因は「体制と順序」にある</a></li>
+        <li><a href="#s2">10項目チェックリスト一覧</a></li>
+        <li><a href="#s3">①〜③ 土台編</a></li>
+        <li><a href="#s4">④⑤ 素材編</a></li>
+        <li><a href="#s5">⑥⑦ 販売編</a></li>
+        <li><a href="#s6">⑧⑨ 運用編</a></li>
+        <li><a href="#s7">⑩ 計測編＋診断フロー</a></li>
+        <li><a href="#s8">改善は1回に1項目</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>診断チェックシートを無料配布中</b>
+      <p>10項目を書き込むだけで、直す順番が整理できます。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">資料を請求する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopで売れない時に見る10のチェックリスト｜原因の見つけ方と直す順番",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "どのくらいの期間で改善の効果を判断できますか？", "acceptedAnswer": {"@type": "Answer", "text": "数日では判断しません。週単位で数字を見て、当社では約1〜1.2ヶ月を1サイクルとして評価しています。動画素材も配信データも蓄積型のため、短期の上下で施策を戻さないことが重要です。"}},
+        {"@type": "Question", "name": "商品を変えるのと運用を直すの、どちらが先ですか？", "acceptedAnswer": {"@type": "Answer", "text": "先にチェックリストの②〜⑩を点検してください。運用側に明確な穴がある状態で商品を変えても、次の商品で同じ壁に当たります。10項目すべて健全なのに動かない場合に、①商材適性と売る型を見直します。"}},
+        {"@type": "Question", "name": "公式アカウントのフォロワーが少なくても売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "売れる可能性はあります。TikTok Shopはおすすめ面とクリエイターの紹介動画が購入の入口になるため、自社フォロワー数だけでは決まりません。公式アカウントは、まず「発信が止まっていないこと」が重要です。"}},
+        {"@type": "Question", "name": "広告費を増やせば売れるようになりますか？", "acceptedAnswer": {"@type": "Answer", "text": "素材や商品ページに穴がある状態での増額は、費用の先行になりがちです。チェックリストの①〜⑤を整えたうえで、損益ライン（許容ROI）を決めてから広告を乗せる順番をおすすめします。"}},
+        {"@type": "Question", "name": "ライブ配信は必須ですか？", "acceptedAnswer": {"@type": "Answer", "text": "必須ではありませんが、有効な販売手段です。始めるなら単発ではなく、曜日・時間帯を固定して継続できる体制を先に作ってください。単発の配信では視聴者もデータも積み上がりません。"}},
+        {"@type": "Question", "name": "自社だけで改善が難しい場合、何から相談すればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "現状の数字（再生・クリック・購入）と、この記事のチェックリストで該当した項目をお知らせください。どこから直すべきかを無料相談でお伝えします。クリエイター起用だけを小さく試す形からでも始められます。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

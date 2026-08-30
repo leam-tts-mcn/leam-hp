@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>楽天セラー向けTikTok Shop入門｜店舗運営との違い</title>
+<meta name="description" content="楽天市場に出店している事業者向けに、店舗運営との違い、持ち込める強み、ポイント原資の考え方の置き換えを解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/rakuten-seller-tiktok-shop/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="楽天セラー向けTikTok Shop入門｜店舗運営との違い">
+<meta property="og:description" content="楽天市場に出店している事業者向けに、店舗運営との違い、持ち込める強み、ポイント原資の考え方の置き換えを解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/rakuten-seller-tiktok-shop/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="楽天セラー向けTikTok Shop入門｜店舗運営との違い">
+<meta name="twitter:description" content="楽天市場に出店している事業者向けに、店舗運営との違い、持ち込める強み、ポイント原資の考え方の置き換えを解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    article .toc-inline a,article .toc-side a,article .crumb a,aside .toc-side a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "楽天セラー向けTikTok Shop入門｜店舗運営との違い", "description": "楽天市場に出店している事業者向けに、店舗運営との違い、持ち込める強み、ポイント原資の考え方の置き換えを解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/rakuten-seller-tiktok-shop/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "楽天セラー向けTikTok Shop入門｜店舗運営との違い", "item": "https://leam.co.jp/column/rakuten-seller-tiktok-shop/"}]}</script>
+</head>
+<body>
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 楽天市場のセラーがTikTok Shopを始める意味</p>
+  <span class="cat">他モールからの参入</span>
+  <h1>楽天市場のセラーがTikTok Shopを始める意味｜店舗運営との違いと持ち込めるもの</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px">
+    <svg viewBox="0 0 1200 630" role="img" aria-label="アイキャッチ画像：楽天市場のセラーがTikTok Shopを始めるときに変わるものと持ち込めるもの" style="border-radius:14px">
+      <defs>
+        <linearGradient id="rkbg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#181A20"/><stop offset=".6" stop-color="#16171B"/><stop offset="1" stop-color="#2C0F17"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="630" fill="url(#rkbg)"/>
+      <text x="80" y="128" font-size="24" font-weight="800" fill="#FF8DA0" letter-spacing="6">FOR RAKUTEN ICHIBA SELLERS</text>
+      <text x="76" y="228" font-size="72" font-weight="900" fill="#ffffff">楽天セラーの</text>
+      <text x="76" y="322" font-size="72" font-weight="900" fill="#ffffff">TikTok Shop 入門</text>
+      <text x="80" y="392" font-size="25" fill="#C9CBD0">店舗運営との違いと、そのまま持ち込めるもの</text>
+      <rect x="80" y="432" width="470" height="60" rx="30" fill="#FE2C55"/>
+      <text x="315" y="471" text-anchor="middle" font-size="23" font-weight="800" fill="#fff">固定費 396,000円/年 → 0円</text>
+      <text x="80" y="566" font-size="20" font-weight="700" fill="#646C7A">LEAM ─ TikTok Shop 実践コラム</text>
+      <g opacity=".95">
+        <text x="700" y="112" font-size="19" font-weight="700" fill="#9AA0AC">初年度に確定する固定費</text>
+        <rect x="710" y="140" width="130" height="330" rx="10" fill="#5B6069"/>
+        <rect x="710" y="140" width="130" height="60" rx="10" fill="#7E838D"/>
+        <text x="775" y="178" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">初期 60,000</text>
+        <text x="775" y="330" text-anchor="middle" font-size="19" font-weight="800" fill="#fff">月額出店料</text>
+        <text x="775" y="360" text-anchor="middle" font-size="19" font-weight="800" fill="#fff">300,000</text>
+        <text x="775" y="500" text-anchor="middle" font-size="18" font-weight="700" fill="#C9CBD0">楽天市場</text>
+        <text x="775" y="526" text-anchor="middle" font-size="15" fill="#646C7A">がんばれ！プラン</text>
+        <rect x="920" y="440" width="130" height="30" rx="10" fill="#FE2C55"/>
+        <text x="985" y="462" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">0円</text>
+        <text x="985" y="500" text-anchor="middle" font-size="18" font-weight="700" fill="#C9CBD0">TikTok Shop</text>
+        <text x="985" y="526" text-anchor="middle" font-size="15" fill="#646C7A">販売手数料 7〜12%のみ</text>
+        <line x1="690" y1="472" x2="1080" y2="472" stroke="#3A3F46" stroke-width="2"/>
+      </g>
+    </svg>
+  </figure>
+
+  <p class="lead"><strong>楽天市場ですでに売っている事業者がTikTok Shopを始めるとき、最初に必要なのは「どちらが得か」の比較ではなく、「楽天で身につけた運用のうち、どれがそのまま効いて、どれが使えなくなるか」の仕分けです。</strong>結論から言えば、商品・原価・出荷・接客はそのまま持ち込めます。一方で、RMSの中で完結していた集客の手順（検索対策・RPP広告・イベントエントリー・メルマガ）は、同じ形では移植できません。この記事では、費用・販促・イベント・ポイント原資・在庫・運営単位の6点に分けて、何が変わるのかを公開されている実数で整理します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>楽天の初年度固定費（がんばれ！プランで396,000円）と多層の料率が、TikTok Shopではどう変わるか</li>
+      <li>R-Mail・RPP広告・お買い物マラソンが、TikTok Shopで何に置き換わり、何が置き換わらないか</li>
+      <li>ポイント原資1.0%をコミッションに読み替える考え方と、同一SKUの在庫の持ち方3通り</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">楽天の実効負担率を出したうえで、2つ目の売り場の採算を一緒に計算します</div>
+    <p>いまRMSに払っている費用の合計と、TikTok Shopのカテゴリ料率を突き合わせれば、どの商品なら粗利が残るかは机上で判断できます。現状の商品構成を拝見して、率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">結論：積み上げたものの半分は持ち込め、集客の仕組みは作り直しになります</a></li>
+      <li><a href="#s2">費用は「先に払う固定費」から「売れた分だけの販売手数料」に変わります</a></li>
+      <li><a href="#s3">RMSの販促運用は、同じ形では移植できません</a></li>
+      <li><a href="#s4">モール主導のイベントはなく、売上の山はコンテンツが作ります</a></li>
+      <li><a href="#s5">ポイント原資1.0%は、クリエイターへのコミッションに置き換えて考えます</a></li>
+      <li><a href="#s6">在庫は「同じSKUを2つの売り場に出す」前提で決めごとを作ります</a></li>
+      <li><a href="#s7">運営の単位が「店舗」から「商品とコンテンツ」に変わります</a></li>
+      <li><a href="#s8">楽天で積んだもののうち、5つはそのまま効きます</a></li>
+      <li><a href="#s9">まとめ：明日からこの順番で進めます</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>結論：積み上げたものの半分は持ち込め、集客の仕組みは作り直しになります</h2>
+  <p>楽天市場で店舗を回してきた方がTikTok Shopの管理画面を開くと、たいてい同じところで手が止まります。「どこを触れば売上が動くのか分からない」という感覚です。楽天であれば、RMSにログインして商品を登録し、イベントにエントリーし、メルマガを打ち、RPP広告の予算を積めば、やった分が数字に返ってきました。TikTok Shopでは、その手順の大半が空振りします。理由は単純で、<strong>楽天の売上はモールの中で完結する導線から生まれ、TikTok Shopの売上は売り場の外にあるコンテンツから生まれる</strong>からです。</p>
+  <p>とはいえ、楽天で積み上げたものが全部むだになるわけではありません。商品を仕入れて値付けし、在庫を持ち、注文を受けて出荷し、問い合わせに答える。この事業の本体は、売り場が変わっても同じです。作り直しが必要なのは、人を連れてくる部分だけです。まず、楽天でやっている作業を一覧にして、移せるものと移せないものを分けます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>楽天でやっていること</th><th>TikTok Shopでの扱い</th><th>楽天側でかかっている費用（税別・2026年8月時点）</th></tr></thead>
+    <tbody>
+      <tr><td>商品の仕入れ・原価管理・値付け</td><td class="y">そのまま持ち込める</td><td>─</td></tr>
+      <tr><td>受注処理・出荷・配送品質の管理</td><td class="y">そのまま持ち込める</td><td>─</td></tr>
+      <tr><td>問い合わせ対応</td><td class="y">セラーセンターのメッセージ運用へ移せる</td><td>R-Messe 3,000円／月（がんばれ！）・5,000円／月（スタンダード／メガショップ）※現在は無料期間中</td></tr>
+      <tr><td>商品ページの作り込み</td><td>作り直しが必要（動画から来る前提に変わる）</td><td>R-Cabinet容量追加 1GB 5,000円／月・10GB 10,000円／月</td></tr>
+      <tr><td>検索対策・RPP広告での露出確保</td><td>作り直しが必要（GMV Maxへ）</td><td>クリック課金型。金額は公開ページに掲載なし</td></tr>
+      <tr><td>R-Mailでのメルマガ配信</td><td class="n">相当するものがない</td><td>基本料無料＋1通1円／楽天提供リストなら週1回無料</td></tr>
+      <tr><td>お買い物マラソン等へのエントリー</td><td class="n">相当するものがない</td><td>参加費の記載なし（企画ページ広告は別途費用）</td></tr>
+      <tr><td>楽天ポイント原資の負担</td><td>コミッション設計に置き換わる</td><td>税抜売上×約1.0%（全プラン必須）</td></tr>
+    </tbody>
+  </table></div>
+  <p>表のとおり、<strong>変わらないのは「モノと約束を守る力」、変わるのは「人を連れてくる方法」</strong>です。ここを取り違えて楽天と同じ順番（まず全商品を登録し、次に広告予算を積む）で始めると、費用だけが先行します。以降の章では、変わる側の6点を順に見ていきます。</p>
+  <p>なお、「楽天とAmazonとTikTok Shopのどれをやるべきか」をこれから決める段階の方には、<a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略</a>のほうが向いています。この記事は、すでに楽天という売り場を1つ回している方が、2つ目を始めるときに何が変わるかに絞っています。</p>
+
+  <h2 id="s2"><span class="no en">02</span>費用は「先に払う固定費」から「売れた分だけの販売手数料」に変わります</h2>
+  <p>楽天市場の費用でいちばん重いのは、売上がゼロでも発生する固定費です。初期登録費用が60,000円（税別・全プラン共通で1回のみ）、月額出店料はがんばれ！プランで25,000円（年間一括払で年額300,000円）、スタンダードプランで65,000円（390,000円×2回の半年払で年額780,000円）、メガショッププランで130,000円（780,000円×2回で年額1,560,000円）です。いずれも契約期間は1年で、月ごとに止める前提の契約ではありません。さらに、利用の有無にかかわらず発生するR-Messeの月額固定費が全プランに乗ります（がんばれ！プラン3,000円、スタンダード・メガショップ5,000円。ただし現在は無料期間中で、終了時期は公表されていません）。</p>
+  <p>初年度に確定する固定費だけを足すと、次の額になります。売上がいくらであっても、この金額は動きません。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目（税別）</th><th>がんばれ！プラン</th><th>スタンダードプラン</th><th>メガショッププラン</th><th>TikTok Shop</th></tr></thead>
+    <tbody>
+      <tr><td>初期登録費用</td><td class="num">60,000円</td><td class="num">60,000円</td><td class="num">60,000円</td><td class="num">0円</td></tr>
+      <tr><td>月額出店料</td><td class="num">25,000円／月</td><td class="num">65,000円／月</td><td class="num">130,000円／月</td><td class="num">0円</td></tr>
+      <tr><td>年額と支払方法</td><td>300,000円（年間一括払）</td><td>780,000円（390,000円×2回）</td><td>1,560,000円（780,000円×2回）</td><td>0円</td></tr>
+      <tr><td>R-Messe（必須）</td><td class="num">3,000円／月</td><td class="num">5,000円／月</td><td class="num">5,000円／月</td><td>─</td></tr>
+      <tr><td><b>初年度の固定費合計</b></td><td class="num"><b>396,000円</b></td><td class="num"><b>900,000円</b></td><td class="num"><b>1,680,000円</b></td><td class="num"><b>0円</b></td></tr>
+      <tr><td>登録できる商品数</td><td>10,000商品</td><td>50,000商品</td><td>無制限（初期値200,000商品）</td><td>─</td></tr>
+      <tr><td>画像容量</td><td>1.5GB</td><td>100GB</td><td>無制限（初期値100GB）</td><td>─</td></tr>
+    </tbody>
+  </table></div>
+  <p>※初年度の固定費合計は、R-Messeの無料期間を考慮しない場合の額です。無料期間中であれば、その分は差し引いて計算してください。</p>
+  <p>一方でTikTok Shopは、初期費用も月額固定費もありません。<strong>プラットフォームに必ず払う費用は販売手数料だけ</strong>で、料率はカテゴリ別に7%・9%・10%・12%です（2026年5月11日改定）。売れなければ費用は発生しない代わりに、売れた分にはそのつど手数料がかかります。費目の全体像は<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくらか</a>にまとめています。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="初年度に出ていく固定費のタイミング比較図。楽天市場は契約時に初期登録費用60,000円と年間一括の月額出店料300,000円を合わせた360,000円が確定し、以降11か月は前払い済みになる。TikTok Shopは固定費が0円で、売れた月にだけ販売手数料が発生する。">
+      <text x="20" y="34" font-size="13" font-weight="800" fill="#454956">楽天市場（がんばれ！プラン・税別）</text>
+      <line x1="20" y1="150" x2="700" y2="150" stroke="#C9CBD4" stroke-width="1.5"/>
+      <rect x="30" y="52" width="46" height="98" fill="#B01D36" rx="3"/>
+      <text x="53" y="168" text-anchor="middle" font-size="10" fill="#787D8A">契約時</text>
+      <text x="94" y="74" font-size="12.5" font-weight="800" fill="#0B0C10">初期登録 60,000円 ＋ 年間一括 300,000円</text>
+      <text x="94" y="96" font-size="12.5" font-weight="800" fill="#B01D36">＝ 360,000円が先に確定</text>
+      <text x="94" y="122" font-size="11.5" fill="#646C7A">売上が0円でも、この金額は動きません</text>
+      <g stroke="#C9CBD4" stroke-width="1" stroke-dasharray="3 4">
+        <line x1="140" y1="140" x2="140" y2="150"/><line x1="190" y1="140" x2="190" y2="150"/>
+        <line x1="240" y1="140" x2="240" y2="150"/><line x1="290" y1="140" x2="290" y2="150"/>
+        <line x1="340" y1="140" x2="340" y2="150"/><line x1="390" y1="140" x2="390" y2="150"/>
+        <line x1="440" y1="140" x2="440" y2="150"/><line x1="490" y1="140" x2="490" y2="150"/>
+        <line x1="540" y1="140" x2="540" y2="150"/><line x1="590" y1="140" x2="590" y2="150"/>
+        <line x1="640" y1="140" x2="640" y2="150"/>
+      </g>
+      <text x="390" y="168" text-anchor="middle" font-size="10.5" fill="#787D8A">2か月目〜12か月目：出店料は前払い済み（追加の固定費は発生しない）</text>
+      <text x="20" y="212" font-size="13" font-weight="800" fill="#454956">TikTok Shop</text>
+      <line x1="20" y1="296" x2="700" y2="296" stroke="#C9CBD4" stroke-width="1.5"/>
+      <text x="30" y="290" font-size="11" font-weight="800" fill="#646C7A">0円</text>
+      <g fill="#FE2C55">
+        <rect x="118" y="286" width="44" height="10" rx="2"/>
+        <rect x="168" y="278" width="44" height="18" rx="2"/>
+        <rect x="218" y="282" width="44" height="14" rx="2"/>
+        <rect x="268" y="268" width="44" height="28" rx="2"/>
+        <rect x="318" y="272" width="44" height="24" rx="2"/>
+        <rect x="368" y="258" width="44" height="38" rx="2"/>
+        <rect x="418" y="262" width="44" height="34" rx="2"/>
+        <rect x="468" y="248" width="44" height="48" rx="2"/>
+        <rect x="518" y="252" width="44" height="44" rx="2"/>
+        <rect x="568" y="240" width="44" height="56" rx="2"/>
+        <rect x="618" y="244" width="44" height="52" rx="2"/>
+      </g>
+      <text x="94" y="232" font-size="12.5" font-weight="800" fill="#0B0C10">契約時 0円（初期費用・月額固定費なし）</text>
+      <text x="94" y="254" font-size="11.5" fill="#646C7A">棒の高さ＝その月の販売手数料（売れた分の7〜12%）</text>
+    </svg>
+    <figcaption>図1：固定費が出ていくタイミングの差（金額は税別・がんばれ！プランの例／LEAM作成）</figcaption>
+  </figure>
+  <h3>比べるべきは「率」ではなく、必須で乗る層の数です</h3>
+  <p>「率だけを見るとTikTok Shopのほうが高い」と感じる方が多いのですが、楽天の負担は1本の料率ではありません。必須のものだけで、①システム利用料（がんばれ！プランはPC経由3.5〜6.5%／モバイル経由4.0〜7.0%、スタンダード・メガショッププランはPC経由2.0〜4.0%／モバイル経由2.5〜4.5%）、②モールにおける取引の安全性・利便性向上のためのシステム利用料0.1%、③楽天ポイント原資（税抜売上の約1.0%）、④楽天ペイ（楽天市場決済）利用料2.5〜3.5%、の4層が同時に乗ります。しかもシステム利用料はPC経由とモバイル経由で別建てで、楽天自身の試算前提はモバイル79.5%／PC20.5%です。実務上は<strong>モバイル側の料率がほぼそのまま効く</strong>と読んでおくのが安全です。</p>
+  <p>月商50万円（税抜）で、すべてモバイル経由だったと仮定して並べると、次のようになります。がんばれ！プランのシステム利用料は月商50万円までの帯が7.0%（モバイル経由）なので、この規模なら階段の解釈で数字が動きません。</p>
+  <div class="tw"><table>
+    <thead><tr><th>費目</th><th>楽天市場（がんばれ！プラン）</th><th>TikTok Shop</th></tr></thead>
+    <tbody>
+      <tr><td>月額出店料</td><td class="num">25,000円</td><td class="num">0円</td></tr>
+      <tr><td>システム利用料（モバイル経由・50万円までの帯）</td><td class="num">7.0%＝35,000円</td><td>─</td></tr>
+      <tr><td>安全性・利便性向上のためのシステム利用料</td><td class="num">0.1%＝500円</td><td>─</td></tr>
+      <tr><td>楽天ポイント原資</td><td class="num">1.0%＝5,000円</td><td>─</td></tr>
+      <tr><td>楽天ペイ利用料</td><td class="num">2.5〜3.5%＝12,500〜17,500円</td><td>─</td></tr>
+      <tr><td>販売手数料</td><td>─</td><td class="num">7%＝35,000円（食品・家電など）<br>12%＝60,000円（ファッション・ペット用品）</td></tr>
+      <tr><td><b>月あたりの合計</b></td><td class="num"><b>78,000〜83,000円</b></td><td class="num"><b>35,000〜60,000円</b></td></tr>
+      <tr><td>初期登録費用（初年度のみ）</td><td class="num">60,000円</td><td class="num">0円</td></tr>
+    </tbody>
+  </table></div>
+  <p>この表を読むときの注意が2つあります。ひとつは、費目ごとに課税ベースが違うことです。ポイント原資は税抜売上が基準、楽天ペイ利用料は送料や消費税を含む決済高が基準なので、単純な足し算はあくまで概算になります。もうひとつは、楽天ペイ利用料もシステム利用料も階段式（超過分だけ低い料率）で設計されているため、<strong>レンジの下限を売上全体に掛けると過小評価になる</strong>ことです。楽天が公開している例では、月間決済高1,000万円・平均決済単価3万円のときの楽天ペイ利用料は314,000円で、実効は約3.14%になります。自店の実効率は、必ずRMSの実際の請求明細から出してください。</p>
+  <figure>
+    <svg viewBox="0 0 720 360" role="img" aria-label="必須費用の積み上げ比較図。楽天市場はシステム利用料7.0パーセント、楽天ペイ利用料3.0パーセント前後、ポイント原資1.0パーセント、安全性向上のシステム利用料0.1パーセントの4層が重なり、さらに月額出店料が別に加わる。TikTok Shopは販売手数料7から12パーセントの1層のみ。">
+      <g stroke="#E3E6EA" stroke-width="1">
+        <line x1="70" y1="300" x2="690" y2="300"/><line x1="70" y1="210" x2="690" y2="210"/>
+        <line x1="70" y1="120" x2="690" y2="120"/><line x1="70" y1="30" x2="690" y2="30"/>
+      </g>
+      <text x="60" y="304" text-anchor="end" font-size="11" fill="#787D8A">0%</text>
+      <text x="60" y="214" text-anchor="end" font-size="11" fill="#787D8A">5%</text>
+      <text x="60" y="124" text-anchor="end" font-size="11" fill="#787D8A">10%</text>
+      <text x="60" y="34" text-anchor="end" font-size="11" fill="#787D8A">15%</text>
+      <rect x="150" y="174" width="120" height="126" fill="#5B6069"/>
+      <rect x="150" y="120" width="120" height="54" fill="#7E838D"/>
+      <rect x="150" y="102" width="120" height="18" fill="#A3A8B2"/>
+      <rect x="150" y="96" width="120" height="6" fill="#C9CBD4"/>
+      <text x="210" y="244" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">システム利用料 7.0%</text>
+      <text x="210" y="152" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">楽天ペイ 2.5〜3.5%</text>
+      <text x="292" y="116" font-size="11" fill="#3A3F46">ポイント原資 1.0%</text>
+      <text x="292" y="98" font-size="11" fill="#3A3F46">安全性向上 0.1%</text>
+      <text x="210" y="84" text-anchor="middle" font-size="13" font-weight="900" fill="#B01D36">合計 約10.6〜11.6%</text>
+      <text x="210" y="322" text-anchor="middle" font-size="12" font-weight="700" fill="#3A3F46">楽天市場</text>
+      <text x="210" y="342" text-anchor="middle" font-size="11" fill="#787D8A">＋ 月額出店料 25,000円／月・初期 60,000円</text>
+      <rect x="470" y="174" width="120" height="126" fill="#FE2C55"/>
+      <rect x="470" y="84" width="120" height="90" fill="none" stroke="#B01D36" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="530" y="248" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">販売手数料 7%</text>
+      <text x="530" y="136" text-anchor="middle" font-size="11.5" font-weight="700" fill="#B01D36">カテゴリにより</text>
+      <text x="530" y="156" text-anchor="middle" font-size="11.5" font-weight="700" fill="#B01D36">最大 12% まで</text>
+      <text x="530" y="322" text-anchor="middle" font-size="12" font-weight="700" fill="#3A3F46">TikTok Shop</text>
+      <text x="530" y="342" text-anchor="middle" font-size="11" fill="#787D8A">＋ 固定費 0円（必須は販売手数料のみ）</text>
+    </svg>
+    <figcaption>図2：必須で乗る料率の層の数（月商50万円・すべてモバイル経由と仮定した概算／LEAM作成）</figcaption>
+  </figure>
+  <p>逆に、売上規模が大きくなるほど楽天の条件は改善します。料率の帯が下がり、固定費の重みも薄まるためです。楽天自身も「目標月商が約178万円以上の事業者様におすすめ」としてスタンダードプランを案内しています。<strong>楽天は規模が乗るほど有利になり、TikTok Shopは規模が小さいうちから始められる</strong>——費用構造の違いは、この一文にほぼ集約されます。だからこそ、楽天で売れている店ほど「楽天をやめてTikTok Shopへ移る」ではなく「楽天を残したまま2つ目を足す」判断になります。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 初年度の分割払いを、2年目の前提にしないでください</div>
+    <p>楽天では一部のプランについて、初年度のみ月額出店料を10回分割にできるケースがあります（がんばれ！プラン28,000円／月、スタンダードプラン70,000円／月・いずれも税別）。ただし10回分割は初年度限りで、2年目以降は半年ごとの2回分割払に戻ります。分割払い前提でキャッシュフローを組んだまま2年目の請求を迎えないよう、契約時に支払方法の切り替わりを確認してください。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>RMSの販促運用は、同じ形では移植できません</h2>
+  <p>楽天の運用がうまい店舗ほど、RMSの中に手順が最適化されています。R-Mailでメルマガを打ち、RPP広告で検索面を買い、R-Messeで問い合わせを捌き、CSVで商品を一括更新する。この一式は、TikTok Shopにはそのままの形では存在しません。まず、対応関係を整理します。</p>
+  <div class="tw"><table>
+    <thead><tr><th>楽天の販促・運用機能</th><th>楽天側の費用（税別）</th><th>TikTok Shop側の対応物</th></tr></thead>
+    <tbody>
+      <tr><td>R-Mail（メルマガ配信）</td><td>基本料無料＋1通1円。楽天提供リストなら週1回無料</td><td class="n">相当するものがない。外部サイト・LINEへの誘導は規約違反</td></tr>
+      <tr><td>RPP広告（検索連動・クリック課金）</td><td>金額は公開ページに掲載なし</td><td>GMV Max（2025年7月より日本展開）。ROI目標と日予算を設定</td></tr>
+      <tr><td>楽天スーパーアフィリエイト</td><td>経由売上の2.6〜5.2%（成果報酬2.0〜4.0%＋その15〜30%）</td><td>クリエイターのアフィリエイト（参加条件は18歳以上・フォロワー1,000人以上）</td></tr>
+      <tr><td>お買い物マラソン等のモール主導イベント</td><td>参加費の記載なし。企画ページ広告は別途費用</td><td class="n">同じ形のものはない</td></tr>
+      <tr><td>R-SNS（LINE公式・Instagram等の連携）</td><td>3,000円／月</td><td class="n">外部サービスへの誘導は規約違反</td></tr>
+      <tr><td>RMS商品一括編集（CSV／FTP一括登録）</td><td>10,000円／月</td><td>セラーセンターから登録</td></tr>
+      <tr><td>定期購入・頒布会</td><td>各プランのシステム利用料＋2.0%</td><td>最新は公式ヘルプでご確認ください</td></tr>
+      <tr><td>楽天ペイ チャージバック補償の拡充</td><td>ベーシック0円（上限15万円／月）・スタンダード10,000円／月（50万円）・プレミアム16,000円／月（100万円）</td><td>最新は公式ヘルプでご確認ください</td></tr>
+    </tbody>
+  </table></div>
+  <h3>いちばん重いのは、メルマガに相当するものがないことです</h3>
+  <p>楽天ではR-Mailが基本料無料＋1通1円で使え、楽天が提供する送信リストを使えば週1回まで無料で配信できます。「週末に売上が落ちるのをメルマガで防ぐ」という運用は、楽天では公式に推奨されているやり方です。つまり楽天セラーは、<strong>買ってくれた人にもう一度直接届ける経路を持っています</strong>。TikTok Shopでは、外部サイトやLINEへ誘導すること自体が規約違反にあたるため、購入者リストを自社側に引き取って直接プッシュするという設計が使えません。</p>
+  <figure>
+    <svg viewBox="0 0 720 350" role="img" aria-label="購入者にもう一度届けるまでの経路の比較図。楽天市場は自店からR-Mailで購入者へ直接届く1本の線があり、TikTok Shopは動画とおすすめ面を経由する多段の経路しかなく、外部サイトやLINEへの直接誘導は規約違反で遮断される。">
+      <text x="20" y="34" font-size="13" font-weight="800" fill="#454956">楽天市場：直通の経路がある</text>
+      <rect x="30" y="56" width="120" height="52" rx="10" fill="#0B0C10"/>
+      <text x="90" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">自店</text>
+      <line x1="150" y1="82" x2="356" y2="82" stroke="#0A6E68" stroke-width="3"/>
+      <path d="M350 76 L362 82 L350 88 Z" fill="#0A6E68"/>
+      <text x="253" y="70" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0A6E68">R-Mail（1通1円・週1回は無料枠あり）</text>
+      <rect x="366" y="56" width="130" height="52" rx="10" fill="#EDF6F5" stroke="#0A6E68"/>
+      <text x="431" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#0A6E68">購入した人</text>
+      <text x="512" y="78" font-size="11" fill="#646C7A">配信先は自店で選べる</text>
+      <text x="512" y="98" font-size="11" fill="#646C7A">（アドレスはマスク化）</text>
+      <line x1="20" y1="140" x2="700" y2="140" stroke="#E3E6EA" stroke-width="1"/>
+      <text x="20" y="176" font-size="13" font-weight="800" fill="#454956">TikTok Shop：経路が増え、直通線は引けない</text>
+      <rect x="30" y="200" width="104" height="50" rx="10" fill="#0B0C10"/>
+      <text x="82" y="231" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">自店</text>
+      <path d="M134 225 H172" stroke="#787D8A" stroke-width="2"/><path d="M166 219 L178 225 L166 231 Z" fill="#787D8A"/>
+      <rect x="182" y="200" width="124" height="50" rx="10" fill="#FFECF0" stroke="#FE2C55"/>
+      <text x="244" y="223" text-anchor="middle" font-size="12" font-weight="700" fill="#B01D36">動画・LIVE</text>
+      <text x="244" y="241" text-anchor="middle" font-size="10.5" fill="#646C7A">自社＋クリエイター</text>
+      <path d="M306 225 H344" stroke="#787D8A" stroke-width="2"/><path d="M338 219 L350 225 L338 231 Z" fill="#787D8A"/>
+      <rect x="354" y="200" width="112" height="50" rx="10" fill="#F4F6F8" stroke="#C9CBD4"/>
+      <text x="410" y="231" text-anchor="middle" font-size="12" font-weight="700" fill="#3A3F46">おすすめ面</text>
+      <path d="M466 225 H504" stroke="#787D8A" stroke-width="2"/><path d="M498 219 L510 225 L498 231 Z" fill="#787D8A"/>
+      <rect x="514" y="200" width="112" height="50" rx="10" fill="#EDF6F5" stroke="#0A6E68"/>
+      <text x="570" y="231" text-anchor="middle" font-size="12" font-weight="700" fill="#0A6E68">視聴者・購入者</text>
+      <path d="M82 250 V300 H392" stroke="#B01D36" stroke-width="2" stroke-dasharray="6 5" fill="none"/>
+      <rect x="402" y="278" width="230" height="44" rx="10" fill="#fff" stroke="#B01D36" stroke-dasharray="6 5"/>
+      <text x="517" y="306" text-anchor="middle" font-size="12" font-weight="700" fill="#B01D36">外部サイト・LINEへの誘導</text>
+      <g stroke="#B01D36" stroke-width="3.5"><line x1="228" y1="288" x2="252" y2="312"/><line x1="252" y1="288" x2="228" y2="312"/></g>
+      <text x="240" y="338" text-anchor="middle" font-size="11.5" font-weight="800" fill="#B01D36">規約違反</text>
+    </svg>
+    <figcaption>図3：購入者にもう一度届けるまでの経路の本数（LEAM作成）</figcaption>
+  </figure>
+  <p>代わりに再接触を担うのは、動画とライブの露出、そしてクリエイターです。TikTok Shopは日本での提供開始（2025年6月30日）から半年で、流通総額の約70%がクリエイター投稿・セラーのコンテンツ・LIVEを起点とした購入だったと発表されています（TikTok Newsroom・2026年2月3日）。<strong>「配信リストを持つ」を「配信してくれる人を増やす」に読み替える</strong>のが、楽天セラーにとって一番近い理解です。クリエイター起用の全体像は<a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopのアフィリエイト活用ガイド</a>にまとめています。</p>
+  <h3>広告は、クリック単位の入札から素材の供給に主戦場が移ります</h3>
+  <p>楽天のRPP広告はクリック課金型で、RMSに登録済みの全商品が自動的に掲載対象になり、入稿や原稿編集が不要という設計です。規約に同意して有効に設定すると24時間以内に配信が始まり、停止も任意のタイミングでできます（最低CPCや予算下限といった具体的な金額は公開ページに掲載がないため、RMSの管理画面か新規出店コンサルタントで確認してください）。TikTok Shopの広告はGMV Maxで、2025年7月に日本展開が始まって以降、TikTok Shop広告の唯一のキャンペーンタイプになっています。ショート動画向けのProduct GMV Maxとライブ向けのLIVE GMV Maxの2種類があり、ROI目標と日予算を設定する形式です。日次で入札を触る運用ではなく、素材を供給し続ける運用になります。詳細は<a href="https://leam.co.jp/column/gmvmax/">GMV Max完全ガイド</a>を参照してください。</p>
+  <div class="box box-point">
+    <div class="bt">💡 オプション費用は、別の科目に付け替わります</div>
+    <p>R-Cabinetの容量追加（1GB 5,000円／10GB 10,000円・月額税別）やRMS商品一括編集（10,000円／月）に払っていた費用は、TikTok Shopでは動画の撮影・編集とクリエイターへの報酬に置き換わります。<strong>当社の運用実感</strong>としては、楽天から移ってきた事業者ほど画像とページの作り込みに予算を寄せがちで、動画の本数が足りないまま広告に進んで立ち上がらないケースが目立ちます。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>モール主導のイベントはなく、売上の山はコンテンツが作ります</h2>
+  <p>お買い物マラソンやスーパーSALEに合わせて在庫と人員を寄せる、という運用は楽天の中核です。楽天は「イベントの対象商材じゃないから関係ない、という考えは正しくない」として全店舗の参加を促しており、キャンペーンで付与されるポイントは楽天負担のものがほとんどとされています（企画ページへの広告掲載は別途費用です）。つまり楽天市場は、<strong>売上の山をモールが日付付きで作ってくれる</strong>売り場です。エントリー漏れが即座に機会損失になるのも、山の位置が全店共通だからです。</p>
+  <p>TikTok Shopには、これと同じ形の全店一律イベントはありません。山は立ちますが、立つ日を事前に予定表へ書けません。1本の動画が伸びた翌日に注文が集中し、数日かけて落ちていく、という形になります。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="売上の山の立ち方の波形比較。楽天市場はモール主導のイベント日に規則的な山ができ、日付を事前に予定表へ書ける。TikTok Shopは動画が伸びた翌日に不規則な山ができ、数日かけて減衰する。">
+      <text x="20" y="30" font-size="13" font-weight="800" fill="#454956">楽天市場：山の日付が事前に分かる</text>
+      <line x1="30" y1="146" x2="700" y2="146" stroke="#C9CBD4" stroke-width="1.5"/>
+      <g stroke="#B01D36" stroke-width="1" stroke-dasharray="4 4" opacity=".55">
+        <line x1="150" y1="52" x2="150" y2="146"/><line x1="288" y1="52" x2="288" y2="146"/>
+        <line x1="426" y1="52" x2="426" y2="146"/><line x1="564" y1="52" x2="564" y2="146"/>
+      </g>
+      <polyline points="30,138 70,136 110,134 150,66 190,128 230,132 250,130 288,58 326,126 366,130 406,128 426,72 466,124 506,128 546,126 564,62 604,122 644,126 684,124"
+        fill="none" stroke="#0B0C10" stroke-width="2.5"/>
+      <g fill="#B01D36" font-size="10" font-weight="800" text-anchor="middle">
+        <text x="150" y="46">イベント</text><text x="288" y="46">イベント</text><text x="426" y="46">イベント</text><text x="564" y="46">イベント</text>
+      </g>
+      <text x="365" y="166" text-anchor="middle" font-size="11" fill="#646C7A">在庫も人員も、日付から逆算して積める</text>
+      <line x1="20" y1="188" x2="700" y2="188" stroke="#E3E6EA" stroke-width="1"/>
+      <text x="20" y="216" font-size="13" font-weight="800" fill="#454956">TikTok Shop：山の日付が事前に分からない</text>
+      <line x1="30" y1="300" x2="700" y2="300" stroke="#C9CBD4" stroke-width="1.5"/>
+      <polyline points="30,294 70,292 110,290 150,262 190,290 230,288 270,232 310,248 350,276 390,288 430,286 450,238 470,284 510,232 550,252 590,268 630,282 660,286 684,288"
+        fill="none" stroke="#FE2C55" stroke-width="2.5"/>
+      <circle cx="510" cy="232" r="5" fill="#B01D36"/>
+      <text x="510" y="222" text-anchor="middle" font-size="10.5" font-weight="800" fill="#B01D36">動画が伸びた翌日</text>
+      <text x="365" y="314" text-anchor="middle" font-size="11" fill="#646C7A">山は数日かけて落ちる。逆算ではなく即応の体制が要る</text>
+    </svg>
+    <figcaption>図4：予定表に書ける山と、書けない山（LEAM作成）</figcaption>
+  </figure>
+  <p>この違いは、実務では3か所に効きます。ひとつめは<strong>在庫の積み方</strong>です。楽天ではイベント日から逆算して仕入れますが、TikTok Shopでは「いつ来るか分からない山」に耐える持ち方が要ります。ふたつめは<strong>人の配置</strong>で、イベント前夜に人を厚くする組み方ではなく、当たった日に即応できる形にします。みっつめは<strong>評価のタイミング</strong>です。日次で一喜一憂すると素材の良し悪しを取り違えるので、週単位で見るほうが安定します。</p>
+  <p>なお、季節需要そのものが消えるわけではありません。母の日やクリスマスの需要は、どの売り場にもあります。変わるのは「モールが決めた日」か「自分たちが仕掛けた日」かという点だけで、楽天でイベント運用を回してきた経験は、<strong>企画・在庫・告知を同時に走らせる段取り力</strong>としてそのまま活きます。むしろ、その段取り力を持っている事業者のほうが、ライブ配信の企画には向いています。ライブの組み立て方は<a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopのライブコマース入門</a>にまとめています。</p>
+
+  <h2 id="s5"><span class="no en">05</span>ポイント原資1.0%は、クリエイターへのコミッションに置き換えて考えます</h2>
+  <p>楽天のコストの中で、他の売り場に同じ費目が見当たらないのが楽天ポイント原資です。楽天会員の購入について、1商品ごとに税抜100円につき1ポイント（＝1円）が付与され、その原資は店舗が負担します。実質、税抜売上の約1.0%です。送料や代引手数料を商品価格に「込」で設定している場合は、その送料・代引手数料にも付与率が課金されます（「別」設定なら課金されません）。</p>
+  <p>この1.0%は、単なる事務手数料ではありません。<strong>ユーザーが「楽天で買う理由」を作るための費用</strong>を、出店者が直接払っている構造です。そして配られる先は、すでに購入を決めた人です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="販促原資の流れ図。楽天市場ではポイント原資が楽天を経由して購入した人へ還元され、購入の直後に効く。TikTok Shopではコミッションが商品を広めるクリエイターへ支払われ、購入の前段階に効く。">
+      <text x="20" y="32" font-size="13" font-weight="800" fill="#454956">楽天市場：原資は「買った人」に向かう</text>
+      <rect x="30" y="52" width="128" height="54" rx="10" fill="#0B0C10"/>
+      <text x="94" y="85" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">自店</text>
+      <path d="M158 79 H244" stroke="#787D8A" stroke-width="2.5"/><path d="M238 73 L250 79 L238 85 Z" fill="#787D8A"/>
+      <text x="201" y="68" text-anchor="middle" font-size="10.5" font-weight="800" fill="#3A3F46">税抜売上×1.0%</text>
+      <rect x="254" y="52" width="150" height="54" rx="10" fill="#F4F6F8" stroke="#C9CBD4"/>
+      <text x="329" y="85" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3A3F46">楽天ポイント</text>
+      <path d="M404 79 H490" stroke="#787D8A" stroke-width="2.5"/><path d="M484 73 L496 79 L484 85 Z" fill="#787D8A"/>
+      <rect x="500" y="52" width="170" height="54" rx="10" fill="#F4F6F8" stroke="#C9CBD4"/>
+      <text x="585" y="78" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3A3F46">購入を決めた人</text>
+      <text x="585" y="96" text-anchor="middle" font-size="10.5" fill="#646C7A">次の買い物に使える</text>
+      <text x="365" y="130" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">効くのは「買った後」。全プラン共通の必須負担</text>
+      <line x1="20" y1="156" x2="700" y2="156" stroke="#E3E6EA" stroke-width="1"/>
+      <text x="20" y="188" font-size="13" font-weight="800" fill="#454956">TikTok Shop：原資は「広める人」に向かう</text>
+      <rect x="30" y="208" width="128" height="54" rx="10" fill="#0B0C10"/>
+      <text x="94" y="241" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">自店</text>
+      <path d="M158 235 H244" stroke="#B01D36" stroke-width="2.5"/><path d="M238 229 L250 235 L238 241 Z" fill="#B01D36"/>
+      <text x="201" y="224" text-anchor="middle" font-size="10.5" font-weight="800" fill="#B01D36">コミッション</text>
+      <rect x="254" y="208" width="150" height="54" rx="10" fill="#FFECF0" stroke="#FE2C55"/>
+      <text x="329" y="234" text-anchor="middle" font-size="12.5" font-weight="700" fill="#B01D36">クリエイター</text>
+      <text x="329" y="252" text-anchor="middle" font-size="10.5" fill="#646C7A">18歳以上・1,000人以上</text>
+      <path d="M404 235 H490" stroke="#B01D36" stroke-width="2.5"/><path d="M484 229 L496 235 L484 241 Z" fill="#B01D36"/>
+      <rect x="500" y="208" width="170" height="54" rx="10" fill="#EDF6F5" stroke="#0A6E68"/>
+      <text x="585" y="234" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0A6E68">まだ知らない人</text>
+      <text x="585" y="252" text-anchor="middle" font-size="10.5" fill="#646C7A">動画で商品に出会う</text>
+      <text x="365" y="288" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">効くのは「買う前」。率も相手も自分で設計する</text>
+    </svg>
+    <figcaption>図5：同じ役割のお金が向かう先の違い（LEAM作成）</figcaption>
+  </figure>
+  <p>TikTok Shopには、これに相当する全店一律の販促原資はありません（必ず発生するのは販売手数料だけです）。その代わり、同じ役割のお金を自分で設計する場所があります。クリエイターへのアフィリエイト報酬です。日本ではクリエイター側の参加条件が18歳以上・フォロワー1,000人以上とされており、条件を満たすクリエイターが商品を紹介し、売れたら報酬を受け取ります。提供開始から半年で参加クリエイターは20万人を超えたと発表されています。</p>
+  <p>楽天スーパーアフィリエイトと比べると、性質の違いがはっきりします。楽天では成果報酬の料率がジャンル別に楽天側で決められており（2.0〜4.0%）、報酬の上限は1商品1個の売上につき1,000円、さらに成果報酬合計の15〜30%がシステム利用料として乗ります。プラン一覧ページの表記では、アフィリエイト経由売上の2.6〜5.2%が負担になります。<strong>料率テーブルが外から与えられるのか、自分で設計するのか</strong>——ここが、楽天セラーがいちばん考え方を切り替える必要のある点です。</p>
+  <h3>ジャンルの有利不利が、楽天とTikTok Shopでは一致しません</h3>
+  <p>もうひとつ確認しておきたいのが、ジャンルごとの順位が入れ替わることです。楽天のアフィリエイト料率とTikTok Shopの販売手数料を並べると、楽天で相対的に軽かったジャンルがTikTok Shopでは軽く、重かったジャンルが重いとは限りません。</p>
+  <div class="tw"><table>
+    <thead><tr><th>商材</th><th>楽天スーパーアフィリエイト 成果報酬（ジャンル別）</th><th>TikTok Shop 販売手数料（2026年5月11日改定）</th></tr></thead>
+    <tbody>
+      <tr><td>レディース／メンズファッション</td><td class="num">4%</td><td class="num">12%（ファッション）</td></tr>
+      <tr><td>ペット用品</td><td class="num">4%</td><td class="num">12%（ペット用品）</td></tr>
+      <tr><td>靴・シューズ</td><td class="num">4%</td><td class="num">10%（シューズ）</td></tr>
+      <tr><td>美容・コスメ</td><td class="num">4%</td><td class="num">10%（美容・パーソナルケア）</td></tr>
+      <tr><td>キッズ・ベビー</td><td class="num">4%</td><td class="num">10%（ベビー・マタニティ）</td></tr>
+      <tr><td>スポーツ</td><td class="num">4%</td><td class="num">10%（スポーツ・アウトドア）</td></tr>
+      <tr><td>キッチン・日用品雑貨・インテリア</td><td class="num">3%</td><td class="num">9%（キッチン用品／ファブリック・インテリア雑貨）</td></tr>
+      <tr><td>ホビー・おもちゃ</td><td class="num">3%</td><td class="num">10%（おもちゃ・ホビー）</td></tr>
+      <tr><td>食品・スイーツ</td><td class="num">4%</td><td class="num">7%（食品・ドリンク）</td></tr>
+      <tr><td>家電・パソコン・スマホ・腕時計</td><td class="num">2%</td><td class="num">7%（家電／パソコン・オフィス用品／スマホ・デジタル機器）</td></tr>
+    </tbody>
+  </table></div>
+  <p>楽天でアフィリエイト料率が最も低い2%だった家電・パソコン・スマホは、TikTok Shopでは販売手数料が最も低い7%の側に入ります。逆に、楽天で4%だったファッションとペット用品は、TikTok Shopでは最も高い12%です。<strong>「楽天で軽かったから、こちらでも軽い」は成り立ちません。</strong>主力商品がどの帯に入るかは、出店を決める前に確認してください。カテゴリごとの向き不向きは<a href="https://leam.co.jp/column/best-categories/">TikTok Shopで売れやすいカテゴリ</a>にまとめています。</p>
+  <p>実務上のおすすめは、<strong>ポイント原資に払っていた1.0%を、そのままコミッションの下限として持ち込まないこと</strong>です。1.0%で動くクリエイターはほとんどいません。ポイント原資とRPP広告費を合算して「集客に使っていた総額」を先に出し、その総額をコミッションと広告へ配分し直すという組み替えのほうが実態に合います。報酬水準の考え方は<a href="https://leam.co.jp/column/creator-commission/">アフィリエイトのコミッション相場と決め方</a>、価格全体の設計は<a href="https://leam.co.jp/column/pricing-strategy/">TikTok Shopの価格設計</a>を参照してください。</p>
+
+  <div class="ctabox">
+    <div class="ct">主力3商品だけで、コミッションと広告の配分を試算します</div>
+    <p>楽天のポイント原資・アフィリエイト負担・RPP広告費の合計を出し、それをTikTok Shop側のコミッションと広告にどう割り振ると粗利が残るかを、商品単位で計算してお渡しします。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>在庫は「同じSKUを2つの売り場に出す」前提で決めごとを作ります</h2>
+  <p>併売する以上、在庫の持ち方を先に決める必要があります。ここを曖昧にしたまま始めると、動画が当たった日に限って在庫が足りず、楽天側の注文をキャンセルするという最悪の形になります。楽天ではイベント日が分かっているぶん在庫を寄せる判断がしやすいのですが、TikTok Shop側の山は予告なく来ます。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="在庫100個の配分パターン図。完全共有、数量割当として楽天70とTikTok Shop30に分ける方式、TikTok Shop専用SKUを別に用意する方式の3通りと、それぞれの前提とリスク。">
+      <rect x="266" y="16" width="188" height="46" rx="10" fill="#0B0C10"/>
+      <text x="360" y="45" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">同一SKU 在庫100個</text>
+      <path d="M360 62 V80 M120 80 H600 M120 80 V102 M360 80 V102 M600 80 V102" stroke="#C9CBD4" stroke-width="2" fill="none"/>
+      <rect x="20" y="104" width="200" height="196" rx="12" fill="#F4F6F8" stroke="#C9CBD4"/>
+      <text x="120" y="130" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0B0C10">A 完全共有</text>
+      <text x="120" y="154" text-anchor="middle" font-size="11.5" fill="#3A3F46">楽天 100 ／ TikTok 100</text>
+      <g fill="#7E838D">
+        <rect x="44" y="170" width="14" height="14" rx="2"/><rect x="62" y="170" width="14" height="14" rx="2"/><rect x="80" y="170" width="14" height="14" rx="2"/><rect x="98" y="170" width="14" height="14" rx="2"/><rect x="116" y="170" width="14" height="14" rx="2"/><rect x="134" y="170" width="14" height="14" rx="2"/><rect x="152" y="170" width="14" height="14" rx="2"/><rect x="170" y="170" width="14" height="14" rx="2"/><rect x="188" y="170" width="14" height="14" rx="2"/>
+      </g>
+      <text x="120" y="212" text-anchor="middle" font-size="11" fill="#646C7A">在庫を分けずに両方へ出す</text>
+      <text x="120" y="246" text-anchor="middle" font-size="11" font-weight="700" fill="#0A6E68">機会損失が出ない</text>
+      <text x="120" y="272" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">同時に売れると二重販売</text>
+      <text x="120" y="290" text-anchor="middle" font-size="10.5" fill="#646C7A">リアルタイム同期が前提</text>
+      <rect x="260" y="104" width="200" height="196" rx="12" fill="#FFECF0" stroke="#FE2C55"/>
+      <text x="360" y="130" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">B 数量割当</text>
+      <text x="360" y="154" text-anchor="middle" font-size="11.5" fill="#3A3F46">楽天 70 ／ TikTok 30</text>
+      <g><rect x="284" y="170" width="112" height="14" rx="3" fill="#7E838D"/><rect x="400" y="170" width="48" height="14" rx="3" fill="#FE2C55"/></g>
+      <text x="340" y="200" text-anchor="middle" font-size="10.5" fill="#646C7A">70</text>
+      <text x="424" y="200" text-anchor="middle" font-size="10.5" fill="#B01D36">30</text>
+      <text x="360" y="222" text-anchor="middle" font-size="11" fill="#646C7A">数量を分けて別々に持つ</text>
+      <text x="360" y="250" text-anchor="middle" font-size="11" font-weight="700" fill="#0A6E68">二重販売の事故が起きない</text>
+      <text x="360" y="274" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">当たると即欠品</text>
+      <text x="360" y="292" text-anchor="middle" font-size="10.5" fill="#646C7A">週次で配分を見直す</text>
+      <rect x="500" y="104" width="200" height="196" rx="12" fill="#F4F6F8" stroke="#C9CBD4"/>
+      <text x="600" y="130" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0B0C10">C 専用SKU</text>
+      <text x="600" y="154" text-anchor="middle" font-size="11.5" fill="#3A3F46">楽天 100 ／ 専用 30</text>
+      <g><rect x="524" y="170" width="70" height="14" rx="3" fill="#7E838D"/><rect x="606" y="164" width="70" height="26" rx="3" fill="#0B0C10"/></g>
+      <text x="641" y="182" text-anchor="middle" font-size="9.5" font-weight="700" fill="#fff">セット品</text>
+      <text x="600" y="212" text-anchor="middle" font-size="11" fill="#646C7A">別在庫の限定色・セットを作る</text>
+      <text x="600" y="246" text-anchor="middle" font-size="11" font-weight="700" fill="#0A6E68">価格の見え方を分けられる</text>
+      <text x="600" y="272" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">SKUと原価管理が増える</text>
+      <text x="600" y="290" text-anchor="middle" font-size="10.5" fill="#646C7A">生産ロットの確保が要る</text>
+    </svg>
+    <figcaption>図6：同一SKUを2つの売り場に出すときの3通り（LEAM作成）</figcaption>
+  </figure>
+  <p><strong>当社の運用実感</strong>としては、立ち上げの最初の1〜2か月は（B）の数量割当が扱いやすく、動画の当たり方が読めるようになってから（A）か（C）へ寄せる流れが安定します。（A）は連携の仕組みが先に必要で、（C）はロットの確保が要るため、どちらも初月から始めると準備で時間を使い切ってしまうためです。</p>
+  <p>もうひとつ注意したいのが、価格に内包している送料の扱いです。楽天では単品または合計注文金額が3,980円（税込）以上で送料無料表示が強制され（沖縄・離島宛は9,800円税込以上）、別途送料としてユーザーに課金できません。送料を価格へ内包すると、その送料分にもポイント原資と成果報酬が乗る建て付けになっています。<strong>楽天の価格をそのままTikTok Shopへ持ち込むと、内包した送料の分だけ粗利の見え方がずれます。</strong>いったん送料を分解してから、TikTok Shop側の料率で計算し直してください。送料設計の考え方は<a href="https://leam.co.jp/column/shipping-rules/">TikTok Shopの送料と配送ルール</a>にまとめています。</p>
+  <p>入金サイクルも別物です。楽天は10日締めが月末振込、25日締めが15日振込の月2回で、楽天への請求額は10日締めの振込額から相殺され、相殺後の金額が毎月20日頃に開示されます。広告費や手数料が膨らんだ月は、振込ではなく請求になることがあります。TikTok Shop側の入金サイクルは公式ヘルプでご確認ください。いずれにせよ、<strong>2つの売り場で入金日が違うことを、資金繰り表へ先に書いておく</strong>のが実務です。出店の前提条件も並べておきます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>楽天市場</th><th>TikTok Shop</th></tr></thead>
+    <tbody>
+      <tr><td>審査</td><td>全事業者に出店審査あり。中古品・ブランド品・役務付帯販売はさらに事前の商材審査</td><td>通常1〜5営業日</td></tr>
+      <tr><td>申込に必要なもの</td><td>固定電話番号または050のIP電話番号。個人は開業届を出した個人事業主であれば可</td><td>最新の要件は公式でご確認ください</td></tr>
+      <tr><td>契約期間</td><td>全プラン1年</td><td>初期費用・月額固定費はありません</td></tr>
+      <tr><td>持てる店舗数</td><td>─</td><td>個人セラーは1店、法人は最大5店</td></tr>
+      <tr><td>初回の支払い</td><td>契約開始日から20日以内に振込。2回目以降は楽天銀行の自動振替</td><td>─</td></tr>
+      <tr><td>入金</td><td>10日締め→月末振込／25日締め→15日振込。請求は10日締めの振込額から相殺</td><td>最新は公式ヘルプでご確認ください</td></tr>
+    </tbody>
+  </table></div>
+  <p>審査の準備物や落ちやすい箇所は<a href="https://leam.co.jp/column/tiktok-shop-shinsa/">TikTok Shopの出店審査</a>にまとめています。固定費がかからないので、<strong>迷っている段階でも申請だけ先に出しておく</strong>判断が取りやすいのは、楽天と大きく違うところです。</p>
+
+  <h2 id="s7"><span class="no en">07</span>運営の単位が「店舗」から「商品とコンテンツ」に変わります</h2>
+  <p>最後が、いちばん抽象的で、いちばん効く違いです。楽天市場は「店舗」を借りて運営する構造で、ユーザーは店舗トップページからカテゴリを辿って商品ページに着きます。だから店舗の作り込み、カテゴリ設計、店舗全体の評価が売上に効きます。プランごとに登録できる商品数（10,000／50,000／無制限）や画像容量（1.5GB／100GB／無制限）が決められているのも、店舗という器を借りているからです。TikTok Shopでは、ユーザーは店舗トップページを経由しません。おすすめ面に流れてきた動画やライブを見て、その中の商品へ直接入ります。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="導線の構造比較図。楽天市場は店舗トップからカテゴリを経て商品に至る階層構造で、TikTok Shopは商品を中心に自社動画・クリエイター動画・ライブが放射状に紐づくネットワーク構造になる。">
+      <text x="20" y="30" font-size="13" font-weight="800" fill="#454956">楽天市場：階層をたどる</text>
+      <rect x="90" y="54" width="150" height="38" rx="8" fill="#0B0C10"/>
+      <text x="165" y="79" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">店舗トップページ</text>
+      <path d="M165 92 V112 M55 112 H275 M55 112 V132 M165 112 V132 M275 112 V132" stroke="#C9CBD4" stroke-width="1.5" fill="none"/>
+      <g fill="#F4F6F8" stroke="#C9CBD4">
+        <rect x="20" y="132" width="70" height="32" rx="6"/><rect x="130" y="132" width="70" height="32" rx="6"/><rect x="240" y="132" width="70" height="32" rx="6"/>
+      </g>
+      <g font-size="11" fill="#3A3F46" text-anchor="middle">
+        <text x="55" y="153">カテゴリ</text><text x="165" y="153">カテゴリ</text><text x="275" y="153">カテゴリ</text>
+      </g>
+      <path d="M55 164 V180 M36 180 H74 M36 180 V196 M74 180 V196 M165 164 V180 M146 180 H184 M146 180 V196 M184 180 V196 M275 164 V180 M256 180 H294 M256 180 V196 M294 180 V196" stroke="#C9CBD4" stroke-width="1.5" fill="none"/>
+      <g fill="#7E838D">
+        <rect x="22" y="196" width="28" height="28" rx="4"/><rect x="60" y="196" width="28" height="28" rx="4"/>
+        <rect x="132" y="196" width="28" height="28" rx="4"/><rect x="170" y="196" width="28" height="28" rx="4"/>
+        <rect x="242" y="196" width="28" height="28" rx="4"/><rect x="280" y="196" width="28" height="28" rx="4"/>
+      </g>
+      <text x="165" y="250" text-anchor="middle" font-size="11" fill="#646C7A">店を良くすると、全商品が底上げされる</text>
+      <text x="165" y="272" text-anchor="middle" font-size="11" fill="#646C7A">品揃えの広さが、そのまま検索の間口になる</text>
+      <line x1="352" y1="20" x2="352" y2="320" stroke="#E3E6EA" stroke-width="1"/>
+      <text x="382" y="30" font-size="13" font-weight="800" fill="#454956">TikTok Shop：コンテンツから直接入る</text>
+      <circle cx="536" cy="150" r="48" fill="#0B0C10"/>
+      <text x="536" y="147" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">商品</text>
+      <text x="536" y="167" text-anchor="middle" font-size="10" fill="#C9CBD4">1点</text>
+      <g stroke="#FE2C55" stroke-width="2">
+        <line x1="536" y1="102" x2="536" y2="76"/><line x1="578" y1="126" x2="632" y2="98"/>
+        <line x1="578" y1="174" x2="632" y2="202"/><line x1="494" y1="174" x2="440" y2="202"/>
+        <line x1="494" y1="126" x2="440" y2="98"/>
+      </g>
+      <g fill="#FFECF0" stroke="#FE2C55">
+        <circle cx="536" cy="62" r="26"/><circle cx="650" cy="90" r="26"/><circle cx="650" cy="212" r="26"/><circle cx="422" cy="212" r="26"/><circle cx="422" cy="90" r="26"/>
+      </g>
+      <g font-size="10" font-weight="700" fill="#B01D36" text-anchor="middle">
+        <text x="536" y="60">自社</text><text x="536" y="72">動画</text>
+        <text x="650" y="88">CR</text><text x="650" y="100">動画</text>
+        <text x="650" y="210">CR</text><text x="650" y="222">動画</text>
+        <text x="422" y="210">CR</text><text x="422" y="222">動画</text>
+        <text x="422" y="94">LIVE</text>
+      </g>
+      <text x="536" y="272" text-anchor="middle" font-size="11" fill="#646C7A">商品1点に何本の動画が紐づくかが効く</text>
+      <text x="536" y="294" text-anchor="middle" font-size="11" fill="#646C7A">品揃えの広さは、そのままでは露出にならない</text>
+    </svg>
+    <figcaption>図7：階層でたどる売り場と、コンテンツから直接入る売り場（LEAM作成）</figcaption>
+  </figure>
+  <p>この構造の違いから、実務では3つが変わります。ひとつめは<strong>商品数の意味</strong>です。楽天では品揃えの広さが検索の間口になりますが、TikTok Shopで効くのは「商品1点にどれだけの動画が紐づいているか」です。10,000商品を登録しても、動画が0本なら露出は生まれません。ふたつめは<strong>商品ページの読ませ方</strong>です。検索から来た人は比較検討モードで来ますが、動画から来た人は「さっき見たあれ」を確認しに来ます。同じページ構成では受け止められません（<a href="https://leam.co.jp/column/product-page-cvr/">TikTok Shopの商品登録と売れる商品ページの作り方</a>）。みっつめは<strong>評価の単位</strong>で、店舗単位のKPIではなく、商品×コンテンツ単位で見る必要があります。</p>
+  <p>この転換を一文にすると、<strong>楽天は「店を良くすれば全商品が上がる」、TikTok Shopは「商品ごとにコンテンツを積まないと上がらない」</strong>です。楽天で全商品を一括更新して底上げしてきた運用感覚のままだと、どの商品に何本の動画を集めるかという配分の判断が抜け落ちます。最初は主力3商品に絞り、そこへ素材を集中させるのが確実です。動画の作り方は<a href="https://leam.co.jp/column/short-video-playbook/">TikTok Shopで売れるショート動画の作り方</a>、管理画面の使い方は<a href="https://leam.co.jp/column/seller-center-guide/">セラーセンターの使い方</a>を参照してください。</p>
+
+  <h2 id="s8"><span class="no en">08</span>楽天で積んだもののうち、5つはそのまま効きます</h2>
+  <p>ここまでは変わる話でした。逆に、楽天で積んだもののうち、TikTok Shopでそのまま効くものを5つ挙げます。ゼロから始める事業者に対して、楽天セラーが持っている優位はここに集中しています。</p>
+  <ol class="steps">
+    <li><b>商品そのものと、原価の把握</b><p>売れる商品を仕入れ、原価と粗利を数字で握っている。この一点だけで、出店直後に「どの商品なら12%の手数料でも残るか」を即答できます。多くの新規セラーは、ここで止まります。</p></li>
+    <li><b>問い合わせ対応とレビュー対応の型</b><p>R-Messeで問い合わせを捌いてきた経験は、セラーセンターのメッセージ運用にそのまま移せます。返答のテンプレートと、クレームを事故にしないエスカレーションの線引きは、売り場が変わっても同じです。</p></li>
+    <li><b>出荷オペレーションと配送品質</b><p>発送遅延や欠品の管理は、どの売り場でも評価に直結します。楽天で回してきた出荷体制は、そのまま流用できる数少ない資産です。</p></li>
+    <li><b>季節・イベント商戦の段取り力</b><p>企画・在庫・告知を同時に走らせる力は、ライブ配信の企画にそのまま使えます。山の位置を自分で決める側に回るだけで、段取りの中身は変わりません。</p></li>
+    <li><b>数字を毎週見る習慣</b><p>R-Karteで数値を見てきた癖は、そのまま週次の改善サイクルに使えます。日次で判断せず週次で見る、という進め方は両方の売り場で共通です。</p></li>
+  </ol>
+  <p>逆に、持ち込まないほうがよいものも2つあります。ひとつは<strong>「まず全商品を登録する」という初動</strong>です。楽天では品揃えが間口になりますが、TikTok Shopでは動画のない商品は棚に並んでいないのと同じです。もうひとつは<strong>「広告予算を積めば露出が買える」という前提</strong>です。露出のもとになるのは動画とライブの本数と質で、広告はそれを増幅する装置です。素材がないまま予算だけ積むと、費用だけが先行します。自社で回すか外部に任せるかの判断材料は<a href="https://leam.co.jp/column/unyodaiko-cost/">TikTok Shop運用代行の費用相場</a>にまとめています。</p>
+
+  <h2 id="s9"><span class="no en">09</span>まとめ：明日からこの順番で進めます</h2>
+  <p>楽天セラーがTikTok Shopを始めるときは、商品を登録するより先にやるべきことが2つあります。自店の実効負担率を出すことと、主力商品がどの料率の帯に入るかを確かめることです。この順番で進めてください。</p>
+  <ol class="steps">
+    <li><b>今日：RMSの請求明細を1か月分開いて、自店の実効負担率を出す</b><p>月額出店料・システム利用料（PC分とモバイル分の両方）・ポイント原資・安全性向上のシステム利用料0.1%・楽天ペイ利用料を合計し、その月の売上で割ります。ここが分からないと、TikTok Shopの7〜12%が高いのか安いのか判断できません。</p></li>
+    <li><b>今日中：主力10商品を、TikTok Shopのカテゴリ料率に当てはめる</b><p>ファッションとペット用品は12%、美容・健康・シューズ・ベビー・スポーツ・おもちゃ等は10%、キッチン用品・ファブリック等は9%、食品・家電・スマホ・パソコン等は7%です。この料率で粗利が残る商品を3つ選びます。</p></li>
+    <li><b>今週中：出店申請を出す（審査は通常1〜5営業日）</b><p>初期費用も月額固定費もかからないので、判断が固まる前に申請だけ通しておいても損はありません。個人セラーは1店、法人は最大5店まで持てます。</p></li>
+    <li><b>来週の前半：在庫の持ち方をA・B・Cから選ぶ</b><p>立ち上げ期は数量割当（例：楽天70／TikTok Shop 30）が扱いやすい配分です。あわせて、楽天で送料込みにしている価格を分解し、TikTok Shop側の粗利を計算し直します。</p></li>
+    <li><b>来週の後半：選んだ3商品の商品ページを作る</b><p>楽天のページをそのまま流用せず、動画から来た人が「さっき見たあれ」を確認できる構成にします。比較検討向けの長い説明は、この売り場では読まれません。</p></li>
+    <li><b>2〜4週目：自社のショート動画を週3本と、クリエイター招待を始める</b><p>クリエイター側の参加条件は18歳以上・フォロワー1,000人以上です。ポイント原資1.0%とRPP広告費に使っていた総額を、コミッションへ配分し直します。</p></li>
+    <li><b>5週目以降：GMV Maxを載せる</b><p>素材が毎週増える状態を作ってから広告へ進みます。順番を逆にすると、学習の材料がないまま予算だけが消えます。</p></li>
+  </ol>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="出店から広告開始までの12週間の配置表。審査、商品ページ制作、自社動画の投稿、クリエイター招待、GMV Maxの開始時期を週単位で並べたもの。">
+      <g stroke="#E3E6EA" stroke-width="1">
+        <line x1="196" y1="46" x2="196" y2="284"/><line x1="280" y1="46" x2="280" y2="284"/>
+        <line x1="364" y1="46" x2="364" y2="284"/><line x1="448" y1="46" x2="448" y2="284"/>
+        <line x1="532" y1="46" x2="532" y2="284"/><line x1="616" y1="46" x2="616" y2="284"/>
+        <line x1="700" y1="46" x2="700" y2="284"/>
+      </g>
+      <g font-size="10.5" fill="#787D8A" text-anchor="middle">
+        <text x="196" y="38">0週</text><text x="280" y="38">2週</text><text x="364" y="38">4週</text>
+        <text x="448" y="38">6週</text><text x="532" y="38">8週</text><text x="616" y="38">10週</text><text x="700" y="38">12週</text>
+      </g>
+      <g font-size="11.5" fill="#3A3F46">
+        <text x="20" y="72">出店審査（1〜5営業日）</text>
+        <text x="20" y="112">主力3商品のページ制作</text>
+        <text x="20" y="152">自社ショート動画 週3本</text>
+        <text x="20" y="192">クリエイター招待</text>
+        <text x="20" y="232">GMV Max（Product）</text>
+        <text x="20" y="272">週次の数値レビュー</text>
+      </g>
+      <rect x="196" y="58" width="34" height="20" rx="5" fill="#0B0C10"/>
+      <rect x="196" y="98" width="126" height="20" rx="5" fill="#5B6069"/>
+      <rect x="238" y="138" width="462" height="20" rx="5" fill="#FE2C55"/>
+      <rect x="280" y="178" width="420" height="20" rx="5" fill="#B01D36"/>
+      <rect x="406" y="218" width="294" height="20" rx="5" fill="#0A6E68"/>
+      <rect x="238" y="258" width="462" height="20" rx="5" fill="#C9CBD4"/>
+      <text x="470" y="153" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">止めない（学習の材料になる）</text>
+      <text x="490" y="193" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">18歳以上・フォロワー1,000人以上</text>
+      <text x="553" y="233" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">素材が毎週増えてから開始</text>
+    </svg>
+    <figcaption>図8：2つ目の売り場を立ち上げる12週間の配置（LEAM作成）</figcaption>
+  </figure>
+  <p>楽天の固定費は、来年も同じ額が先に出ます。TikTok Shopの販売手数料は、売れなければ発生しません。<strong>2つ目の売り場を試すコストが、金額ではなく時間だけで済む</strong>——楽天セラーにとってのTikTok Shopの実務的な意味は、ここに尽きます。逆に言えば、時間を割けないなら固定費ゼロでも成果は出ません。誰が動画とクリエイターを担当するかを、申請より先に決めてください。</p>
+
+  <h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>楽天市場に出店したまま、TikTok Shopにも出店できますか？</summary><div class="a">併売している事業者は多くあります。楽天が公開している料金・プランのページには、他モールへの出店を制限する記載はありません。契約上の扱いは出店規約でご確認ください。TikTok Shop側は、個人セラーが1店、法人が最大5店までとされています。</div></details>
+    <details><summary>楽天の商品CSVを、そのままTikTok Shopに使えますか？</summary><div class="a">項目の設計が違うため、そのままでは使えません。楽天側からCSVを出力するにはRMS商品一括編集機能（10,000円／月・税別）が必要です。移す際は、送料込みで組んでいた価格をいったん分解し、TikTok Shop側の料率で粗利を計算し直してください。</div></details>
+    <details><summary>商品説明や動画で「楽天でも買えます」と案内してよいですか？</summary><div class="a">TikTok Shopでは外部サイトやLINEへの誘導が規約違反にあたります。他モールの店舗へ送客する案内は避けてください。両方の売り場に出すことと、TikTok Shopの中から他所へ誘導することは別の話です。</div></details>
+    <details><summary>楽天のレビューや店舗評価は引き継げますか？</summary><div class="a">引き継げません。レビューは売り場ごとに独立して積み上がります。楽天で高評価を得ている商品でも、TikTok Shop側ではゼロから始まると考えて、最初のレビューが付くまでの導線を別に設計してください。</div></details>
+    <details><summary>楽天の3,980円の送料無料ラインは、TikTok Shopにもありますか？</summary><div class="a">単品または合計注文金額が3,980円（税込）以上で送料無料表示が強制されるのは楽天市場の規約です（沖縄・離島宛は9,800円税込以上）。TikTok Shop側の送料の条件は異なりますので、最新は公式ヘルプでご確認ください。</div></details>
+    <details><summary>楽天の新規出店コンサルタントにあたる窓口はありますか？</summary><div class="a">楽天では広告やオプションの相談を新規出店コンサルタントにできます。TikTok Shopで同等の伴走を求める場合は、社内に担当を置くか、運用代行を使うかの判断になります。動画とクリエイターを誰が担当するかを決めることが、最初の分かれ目です。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。他モールからの参入では、既存の売り場を止めずに2つ目を立ち上げる設計を得意としています。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/marketplace-comparison/"><span class="rc">関連記事</span><b>TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略</b><span>詳しく読む</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/"><span class="rc">関連記事</span><b>TikTok Shopの手数料はいくらか｜利益設計まで</b><span>詳しく読む</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/creator-commission/"><span class="rc">関連記事</span><b>アフィリエイトのコミッション相場と決め方</b><span>詳しく読む</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">楽天を止めずに、2つ目の売り場を立ち上げます</div>
+    <p>既存の楽天運用に手を入れずに、主力3商品だけでTikTok Shopを試す形からご支援できます。動画素材とクリエイター起用のどこを外部に出すかも含めて、率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：楽天市場「出店プラン・費用」「費用詳細」「料金表（必須サービス／楽天ペイ）」「よくあるご質問」の各公開ページ（2026年8月30日時点）。TikTok Shop側は、TikTok Shop セラーセンター・TikTok for Businessの公式ヘルプ（TikTok Shopアカデミー）およびTikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過」（2026年2月3日）。料率・仕様・画面は改定されることがあります。楽天の公式ページ間では、ポイント原資の課税ベースが税抜基準（必須サービス料金表）と税込基準（決済基本規約に基づく料金表）で記載が分かれているため、本記事は必須サービス料金表の税抜基準を採用しています。実際の請求条件は、必ず各社の最新の一次情報でご確認ください。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">結論：半分は持ち込める</a></li>
+        <li><a href="#s2">固定費から販売手数料へ</a></li>
+        <li><a href="#s3">RMS販促は移植できない</a></li>
+        <li><a href="#s4">山を作るのはコンテンツ</a></li>
+        <li><a href="#s5">ポイント原資とコミッション</a></li>
+        <li><a href="#s6">在庫・送料・入金の決めごと</a></li>
+        <li><a href="#s7">店舗から商品とコンテンツへ</a></li>
+        <li><a href="#s8">そのまま効く5つ</a></li>
+        <li><a href="#s9">まとめ：明日からの順番</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>楽天の実効負担率から試算</b>
+      <p>RMSの請求明細と主力商品を拝見し、TikTok Shopで残る粗利を計算します。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "楽天市場のセラーがTikTok Shopを始める意味｜店舗運営との違いと持ち込めるもの",
+      "description": "楽天のセラーがTikTok Shopを始めるとき何が変わるかを整理。固定費と多層手数料、RMS販促の移植可否、ポイント原資とコミッションの置き換えを実数で解説します。",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "mainEntityOfPage": "https://leam.co.jp/column/rakuten-seller-tiktok-shop/",
+      "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
+        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
+        {"@type": "ListItem", "position": 3, "name": "楽天市場のセラーがTikTok Shopを始める意味", "item": "https://leam.co.jp/column/rakuten-seller-tiktok-shop/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "楽天市場に出店したまま、TikTok Shopにも出店できますか？", "acceptedAnswer": {"@type": "Answer", "text": "併売している事業者は多くあります。楽天が公開している料金・プランのページには、他モールへの出店を制限する記載はありません。契約上の扱いは出店規約でご確認ください。TikTok Shop側は、個人セラーが1店、法人が最大5店までとされています。"}},
+        {"@type": "Question", "name": "楽天の商品CSVを、そのままTikTok Shopに使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "項目の設計が違うため、そのままでは使えません。楽天側からCSVを出力するにはRMS商品一括編集機能（10,000円／月・税別）が必要です。移す際は、送料込みで組んでいた価格をいったん分解し、TikTok Shop側の料率で粗利を計算し直してください。"}},
+        {"@type": "Question", "name": "商品説明や動画で「楽天でも買えます」と案内してよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopでは外部サイトやLINEへの誘導が規約違反にあたります。他モールの店舗へ送客する案内は避けてください。両方の売り場に出すことと、TikTok Shopの中から他所へ誘導することは別の話です。"}},
+        {"@type": "Question", "name": "楽天のレビューや店舗評価は引き継げますか？", "acceptedAnswer": {"@type": "Answer", "text": "引き継げません。レビューは売り場ごとに独立して積み上がります。楽天で高評価を得ている商品でも、TikTok Shop側ではゼロから始まると考えて、最初のレビューが付くまでの導線を別に設計してください。"}},
+        {"@type": "Question", "name": "楽天の3,980円の送料無料ラインは、TikTok Shopにもありますか？", "acceptedAnswer": {"@type": "Answer", "text": "単品または合計注文金額が3,980円（税込）以上で送料無料表示が強制されるのは楽天市場の規約です（沖縄・離島宛は9,800円税込以上）。TikTok Shop側の送料の条件は異なりますので、最新は公式ヘルプでご確認ください。"}},
+        {"@type": "Question", "name": "楽天の新規出店コンサルタントにあたる窓口はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "楽天では広告やオプションの相談を新規出店コンサルタントにできます。TikTok Shopで同等の伴走を求める場合は、社内に担当を置くか、運用代行を使うかの判断になります。動画とクリエイターを誰が担当するかを決めることが、最初の分かれ目です。"}}
+      ]
+    },
+    {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+  ]
+}
+</script>
+</body>
+</html>

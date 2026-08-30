@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</title>
+<meta name="description" content="TikTok Shopとは何かを、仕組み・始め方・売れる理由から解説します。出店を検討している方が最初に読む記事です。">
+<link rel="canonical" href="https://leam.co.jp/column/what-is-tiktok-shop/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド">
+<meta property="og:description" content="TikTok Shopとは何かを、仕組み・始め方・売れる理由から解説します。出店を検討している方が最初に読む記事です。">
+<meta property="og:url" content="https://leam.co.jp/column/what-is-tiktok-shop/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド">
+<meta name="twitter:description" content="TikTok Shopとは何かを、仕組み・始め方・売れる理由から解説します。出店を検討している方が最初に読む記事です。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+  a.relcard{text-decoration:none;color:inherit}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド", "description": "TikTok Shopとは何かを、仕組み・始め方・売れる理由から解説します。出店を検討している方が最初に読む記事です。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/what-is-tiktok-shop/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド", "item": "https://leam.co.jp/column/what-is-tiktok-shop/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopとは</p>
+  <span class="cat">基礎知識</span>
+  <h1>TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="TikTok Shopのしくみ：スマートフォンの動画で商品を見つけ、動画の下の商品カードからそのまま買い物かごに入れて購入する流れを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v336c-104 30-198 36-292 22-118-18-214-52-330-46-110 6-192 46-300 58-104 12-196-4-278-40z" fill="#F6F7F9"/>
+  <ellipse cx="880" cy="250" rx="300" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="996" cy="96" r="5"/><circle cx="1032" cy="96" r="5"/><circle cx="1068" cy="96" r="5"/><circle cx="1104" cy="96" r="5"/>
+      <circle cx="996" cy="132" r="5"/><circle cx="1032" cy="132" r="5"/><circle cx="1068" cy="132" r="5"/><circle cx="1104" cy="132" r="5"/>
+      <circle cx="996" cy="168" r="5"/><circle cx="1032" cy="168" r="5"/><circle cx="1068" cy="168" r="5"/><circle cx="1104" cy="168" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(-452 432)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 528c150-30 286-10 420 14 128 23 246 26 366 6 118-20 234-42 414-24v106H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：買い物かご（副役） ================= -->
+  <g>
+    <!-- かごに入っている商品（かごの背面） -->
+    <rect x="792" y="300" width="78" height="58" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="884" y="282" width="64" height="76" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="902" y="304" width="28" height="34" rx="7" fill="#DFE0E2"/>
+
+    <!-- 影 -->
+    <path d="M756 352h268l-34 118H790z" fill="#5E6064" opacity=".14" transform="translate(10 12)"/>
+
+    <!-- かごの本体 -->
+    <path d="M756 352h268l-34 118H790z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M845 352l11 118" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M935 352l-11 118" fill="none" stroke="#0B0C10" stroke-width="6"/>
+
+    <!-- 取っ手 -->
+    <path d="M672 288h56l28 64" fill="none" stroke="#0B0C10" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 脚と車輪 -->
+    <path d="M800 470l26 26" fill="none" stroke="#0B0C10" stroke-width="10" stroke-linecap="round"/>
+    <path d="M980 470l-22 26" fill="none" stroke="#0B0C10" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="826" cy="516" r="24" fill="#0B0C10"/>
+    <circle cx="958" cy="516" r="24" fill="#0B0C10"/>
+
+    <!-- かごのバッジ（シアン） -->
+    <circle cx="1032" cy="320" r="44" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <circle cx="1032" cy="320" r="44" fill="#25F4EE" stroke="#0B0C10" stroke-width="8"/>
+    <rect x="1010" y="315" width="44" height="11" rx="5.5" fill="#FFFFFF"/>
+    <rect x="1026.5" y="298" width="11" height="44" rx="5.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= 動画からかごへ（シアンの矢印） ================= -->
+  <g>
+    <path d="M540 498c66-32 122-34 156-20" fill="none" stroke="#25F4EE" stroke-width="16" stroke-linecap="round"/>
+    <path d="M686 452l38 26-38 26z" fill="#25F4EE"/>
+  </g>
+
+  <!-- ================= 左：スマートフォン本体（主役・赤） ================= -->
+  <g transform="rotate(-6 306 303)">
+    <!-- 影 -->
+    <rect x="124" y="48" width="364" height="510" rx="46" fill="#5E6064" opacity=".15" transform="translate(12 14)"/>
+
+    <!-- 側面のボタン -->
+    <rect x="480" y="200" width="16" height="66" rx="8" fill="#CE1730" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+    <!-- 本体 -->
+    <rect x="124" y="48" width="364" height="510" rx="46" fill="#FE2C55" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- スピーカーとホームバー -->
+    <rect x="256" y="58" width="100" height="12" rx="6" fill="#0B0C10"/>
+    <rect x="256" y="534" width="100" height="10" rx="5" fill="#0B0C10"/>
+
+    <!-- 動画に映っている人 -->
+    <circle cx="250" cy="170" r="38" fill="#DFE0E2"/>
+    <path d="M194 250a56 56 0 0 1 112 0z" fill="#DFE0E2"/>
+    <rect x="299" y="191" width="26" height="54" rx="13" fill="#DFE0E2" transform="rotate(42 312 218)"/>
+    <rect x="313" y="155" width="46" height="46" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="328" y="166" width="16" height="24" rx="5" fill="#DFE0E2"/>
+
+    <!-- 再生ボタン（シアン） -->
+    <circle cx="372" cy="310" r="56" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8"/>
+    <circle cx="372" cy="310" r="40" fill="#25F4EE"/>
+    <path d="M358 288l40 22-40 22z" fill="#0B0C10"/>
+
+    <!-- 画面下：商品カードの段（赤の陰） -->
+    <path d="M154 386h304v112a28 28 0 0 1-28 28H182a28 28 0 0 1-28-28z" fill="#CE1730"/>
+
+    <!-- 商品カード -->
+    <rect x="176" y="402" width="260" height="106" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="192" y="416" width="78" height="78" rx="10" fill="#DFE0E2" stroke="#C9CBD0" stroke-width="4"/>
+    <rect x="218" y="432" width="26" height="46" rx="9" fill="#C9CBD0"/>
+    <g fill="#DFE0E2">
+      <rect x="288" y="422" width="118" height="12" rx="6"/>
+      <rect x="288" y="446" width="80" height="12" rx="6"/>
+    </g>
+    <rect x="288" y="468" width="106" height="28" rx="14" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/>
+
+    <!-- 画面の枠 -->
+    <rect x="154" y="80" width="304" height="446" rx="28" fill="none" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="592" cy="146" r="19" fill="#25F4EE"/>
+  <circle cx="648" cy="212" r="12" fill="#DFE0E2"/>
+  <circle cx="1128" cy="452" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopとは、TikTokのアプリの中で「商品との出会い」から「購入」までが完結するEC機能です。</strong>ショート動画・ライブ配信・ショーケース（プロフィール内の商品一覧）という3つの売り場を持ち、クリエイターが自分の動画で商品を紹介して報酬を得るアフィリエイトの仕組みが最初から組み込まれています。検索して買う従来のECと違い、<strong>「探していなかった人」に商品が届くため、フォロワーや広告予算が少なくても売れる可能性がある</strong>のが最大の特徴です。この記事では、仕組み・従来ECとの違い・売れる理由・出店条件と始め方・向き不向きの見極めまで、初めての方向けに一通り解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>TikTok Shopの仕組みと、動画・ライブ・ショーケースという3つの売り場の役割</li>
+      <li>従来のEC（モール・自社EC）との違いと、「売れる理由」の構造</li>
+      <li>出店条件・始め方の5ステップと、自社が向いているかの診断ポイント</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">「うちの商材はTikTok Shopに向いているか」を無料で診断します</div>
+    <p>商材とご状況を伺い、向き不向き・始める順番・クリエイター起用の設計まで、実データに基づいて率直にお伝えします。出店前のご相談も歓迎です。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">TikTok Shopとは：TikTokの中で発見から購入まで完結するEC機能</a></li>
+      <li><a href="#s2">従来ECとの最大の違いは、買い物が「検索」ではなく「出会い」から始まること</a></li>
+      <li><a href="#s3">売り場は3つ：ショート動画・ライブ配信・ショーケースを組み合わせて売る</a></li>
+      <li><a href="#s4">売れる理由は「レコメンド×アプリ内完結×クリエイター」の掛け算にある</a></li>
+      <li><a href="#s5">出店条件：法人・個人事業主のどちらでも、審査を通過すれば出店できる</a></li>
+      <li><a href="#s6">始め方は5ステップ：書類の準備から初売上までの流れ</a></li>
+      <li><a href="#s7">向き不向きは「商材」と「体制」で決まる：出店前の自己診断表</a></li>
+      <li><a href="#s8">始める前に、手数料・禁止商品・発送ルールの3つを必ず確認する</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>TikTok Shopとは：TikTokの中で発見から購入まで完結するEC機能</h2>
+  <p>TikTok Shopは、ショート動画アプリ「TikTok」の中に組み込まれたEC（ネット販売）機能です。セラー（販売者）が商品を登録すると、<strong>ショート動画やライブ配信に「商品カード」を付けて紹介でき、視聴者はアプリを離れずにそのまま決済まで完了</strong>できます。商品の管理・注文処理・売上分析は「セラーセンター」と呼ばれる管理画面で行います。</p>
+  <p>ポイントは、TikTok Shopが単なる「ECサイトへのリンク集」ではないことです。動画を見て興味を持った瞬間に、外部サイトへ移動することなくその場で買える。この<strong>「発見→興味→購入」が1つのアプリの中で閉じている構造</strong>が、海外で「ディスカバリー（発見型）コマース」と呼ばれる所以です。</p>
+  <h3>日本では2025年に始まった、まだ新しい販売チャネル</h3>
+  <p>TikTok Shopは東南アジア・米国・英国などで先行して展開され、<strong>日本では2025年6月30日に提供が始まりました</strong>。参入企業は増えていますが、検索型ECのように「上位の座が埋まっている」市場ではまだありません。ただし<strong>カテゴリーによって競争の濃さは大きく違います</strong>。美容・食品のように先行セラーが厚い領域もあれば、まだ手薄な領域もあります。早く始めれば必ず有利になるわけではなく、自社の商材がどちらに当たるかを先に見極めるのが現実的です。そのうえで、実績とノウハウを積み上げやすい時期ではある、というのが当社の運用実感です。一方で機能やルールの更新頻度が高いチャネルでもあるため、<strong>仕様に関わる情報は必ず公式の最新情報とあわせて確認する</strong>ことをおすすめします。</p>
+
+  <h2 id="s2"><span class="no en">02</span>従来ECとの最大の違いは、買い物が「検索」ではなく「出会い」から始まること</h2>
+  <p>楽天市場・Amazonなどのモールや自社ECでは、買い物は「欲しいものを検索する」ところから始まります。TikTok Shopは逆で、<strong>ユーザーがレコメンド（おすすめ表示）で流れてきた動画を見て「欲しくなる」ところから購入が始まります</strong>。この起点の違いが、必要な準備・運用のやり方・向いている商材のすべてを変えます。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="検索型ECと発見型ECの購入導線の比較図：従来ECは欲しい→検索→比較→購入と進むが、TikTok Shopは動画を見る→欲しくなる→その場で購入と短い">
+      <text x="30" y="42" font-size="14" font-weight="800" fill="#454956">従来のEC（検索型）</text>
+      <rect x="30" y="58" width="140" height="46" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="100" y="87" text-anchor="middle" font-size="12.5" font-weight="700" fill="#454956">欲しいものがある</text>
+      <path d="M172 81 H196" stroke="#787D8A" stroke-width="2"/><path d="M192 75 L200 81 L192 87 Z" fill="#787D8A"/>
+      <rect x="202" y="58" width="120" height="46" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="262" y="87" text-anchor="middle" font-size="12.5" font-weight="700" fill="#454956">検索する</text>
+      <path d="M324 81 H348" stroke="#787D8A" stroke-width="2"/><path d="M344 75 L352 81 L344 87 Z" fill="#787D8A"/>
+      <rect x="354" y="58" width="150" height="46" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="429" y="87" text-anchor="middle" font-size="12.5" font-weight="700" fill="#454956">比較・レビュー確認</text>
+      <path d="M506 81 H530" stroke="#787D8A" stroke-width="2"/><path d="M526 75 L534 81 L526 87 Z" fill="#787D8A"/>
+      <rect x="536" y="58" width="150" height="46" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="611" y="87" text-anchor="middle" font-size="12.5" font-weight="700" fill="#454956">ECサイトで購入</text>
+      <text x="30" y="140" font-size="11.5" fill="#787D8A">検索されないと存在しないのと同じ。SEO・広告・レビューの蓄積が勝負を決める</text>
+      <text x="30" y="192" font-size="14" font-weight="800" fill="#C2203A">TikTok Shop（発見型）</text>
+      <rect x="30" y="208" width="190" height="46" rx="10" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="125" y="237" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2203A">動画・ライブが流れてくる</text>
+      <path d="M222 231 H250" stroke="#E8324A" stroke-width="2"/><path d="M246 225 L254 231 L246 237 Z" fill="#E8324A"/>
+      <rect x="256" y="208" width="150" height="46" rx="10" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="331" y="237" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2203A">見て、欲しくなる</text>
+      <path d="M408 231 H436" stroke="#E8324A" stroke-width="2"/><path d="M432 225 L440 231 L432 237 Z" fill="#E8324A"/>
+      <rect x="442" y="208" width="244" height="46" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="564" y="230" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">アプリ内でそのまま購入</text>
+      <text x="564" y="247" text-anchor="middle" font-size="10.5" fill="#787D8A">外部サイトへの移動なし</text>
+      <text x="30" y="286" font-size="11.5" fill="#787D8A">「探していない人」に届く。フォロワー数や検索順位の蓄積がなくても勝負できる</text>
+    </svg>
+    <figcaption>図1：検索型と発見型の購入導線の違い。起点が変わると準備も運用も変わる（LEAM作成）</figcaption>
+  </figure>
+  <p>違いを一覧で整理すると次のとおりです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>TikTok Shop</th><th>従来のEC（モール・自社EC）</th></tr></thead>
+    <tbody>
+      <tr><td>買い物の起点</td><td class="y">レコメンドで流れてくる動画・ライブとの「出会い」</td><td class="n">欲しいものの「検索」</td></tr>
+      <tr><td>購入までの導線</td><td class="y">アプリ内で完結（動画→商品カード→決済）</td><td class="n">検索→比較→カート→決済とステップが多い</td></tr>
+      <tr><td>集客の資産</td><td class="y">動画コンテンツとクリエイターとの提携</td><td class="n">SEO・広告・レビューの蓄積</td></tr>
+      <tr><td>フォロワー・知名度</td><td class="y">少なくても動画単位で伸びうる</td><td class="n">知名度・検索順位の影響が大きい</td></tr>
+      <tr><td>主な購買動機</td><td>「見て欲しくなった」（衝動・共感型）</td><td>「必要だから探した」（目的型）</td></tr>
+      <tr><td>販売を担う人</td><td class="y">自社＋提携クリエイター（アフィリエイト）</td><td class="n">基本的に自社のみ</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>TikTok Shopは既存ECの「置き換え」ではなく、<strong>検索では出会えなかった新しい顧客との接点を追加するチャネル</strong>です。楽天・Amazon・自社ECとの併売は可能で、実務的にはむしろ併用が前提になります。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>売り場は3つ：ショート動画・ライブ配信・ショーケースを組み合わせて売る</h2>
+  <p>TikTok Shopの「売り場」は大きく3つあります。それぞれ役割が違うため、<strong>どれか1つではなく、段階に応じて組み合わせて使う</strong>のが基本です。</p>
+  <figure>
+    <svg viewBox="0 0 720 350" role="img" aria-label="TikTok Shopの3つの売り場のイラスト：ショート動画は動画に商品カードが付き、ライブ配信はリアルタイムで紹介しながら売り、ショーケースはプロフィール内の商品一覧が常設の売り場になる">
+      <rect x="45" y="16" width="150" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="120" y="34" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">① ショート動画</text>
+      <rect x="55" y="54" width="130" height="240" rx="18" fill="#0B0C10"/>
+      <rect x="62" y="61" width="116" height="226" rx="12" fill="#3E2A63"/>
+      <circle cx="120" cy="130" r="26" fill="rgba(255,255,255,.2)"/>
+      <path d="M111 116 L135 130 L111 144 Z" fill="#fff"/>
+      <text x="72" y="90" font-size="9" fill="#fff" opacity=".85">@creator の紹介動画</text>
+      <rect x="70" y="232" width="100" height="44" rx="8" fill="#fff"/>
+      <rect x="76" y="238" width="30" height="30" rx="6" fill="#F3A7B5"/>
+      <text x="112" y="250" font-size="8" font-weight="700" fill="#17181C">商品カード</text>
+      <text x="112" y="263" font-size="9" font-weight="800" fill="#E8324A">¥2,980</text>
+      <rect x="138" y="252" width="26" height="14" rx="4" fill="#E8324A"/>
+      <text x="151" y="262" text-anchor="middle" font-size="7" font-weight="800" fill="#fff">カート</text>
+      <text x="120" y="316" text-anchor="middle" font-size="10.5" fill="#787D8A">動画にカートが付く</text>
+      <text x="120" y="334" text-anchor="middle" font-size="10.5" fill="#787D8A">最初の主力になる売り場</text>
+      <rect x="285" y="16" width="150" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="360" y="34" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">② ライブ配信</text>
+      <rect x="295" y="54" width="130" height="240" rx="18" fill="#0B0C10"/>
+      <rect x="302" y="61" width="116" height="226" rx="12" fill="#14324A"/>
+      <rect x="310" y="70" width="32" height="15" rx="4" fill="#E8324A"/>
+      <text x="326" y="81" text-anchor="middle" font-size="8.5" font-weight="800" fill="#fff">LIVE</text>
+      <rect x="348" y="70" width="48" height="15" rx="4" fill="rgba(0,0,0,.45)"/>
+      <text x="372" y="81" text-anchor="middle" font-size="8" fill="#fff">👤 視聴中</text>
+      <circle cx="360" cy="150" r="30" fill="rgba(255,255,255,.14)"/>
+      <circle cx="360" cy="141" r="11" fill="rgba(255,255,255,.55)"/>
+      <path d="M340 173 Q360 157 380 173 L380 180 Q360 168 340 180 Z" fill="rgba(255,255,255,.55)"/>
+      <path d="M402 128 c0-5 8-5 8 0 c0 5-8 9-8 9 s-8-4-8-9 c0-5 8-5 8 0" fill="#FF8DA0"/>
+      <rect x="310" y="240" width="100" height="36" rx="8" fill="#fff"/>
+      <text x="360" y="256" text-anchor="middle" font-size="8" font-weight="700" fill="#17181C">配信中の限定セット</text>
+      <text x="360" y="269" text-anchor="middle" font-size="9" font-weight="800" fill="#E8324A">いまだけ ¥1,980</text>
+      <text x="360" y="316" text-anchor="middle" font-size="10.5" fill="#787D8A">質問に答えながら売る</text>
+      <text x="360" y="334" text-anchor="middle" font-size="10.5" fill="#787D8A">体制ができてから本格化</text>
+      <rect x="525" y="16" width="150" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="600" y="34" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">③ ショーケース</text>
+      <rect x="535" y="54" width="130" height="240" rx="18" fill="#0B0C10"/>
+      <rect x="542" y="61" width="116" height="226" rx="12" fill="#F6F6F8"/>
+      <circle cx="600" cy="95" r="18" fill="#C9CBD4"/>
+      <rect x="566" y="120" width="68" height="9" rx="4" fill="#C9CBD4"/>
+      <rect x="552" y="142" width="46" height="52" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="558" y="148" width="34" height="26" rx="4" fill="#F3A7B5"/>
+      <text x="575" y="186" text-anchor="middle" font-size="7.5" font-weight="800" fill="#E8324A">¥2,980</text>
+      <rect x="602" y="142" width="46" height="52" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="608" y="148" width="34" height="26" rx="4" fill="#A7C9E8"/>
+      <text x="625" y="186" text-anchor="middle" font-size="7.5" font-weight="800" fill="#E8324A">¥3,480</text>
+      <rect x="552" y="200" width="46" height="52" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="558" y="206" width="34" height="26" rx="4" fill="#B8E0C8"/>
+      <text x="575" y="244" text-anchor="middle" font-size="7.5" font-weight="800" fill="#E8324A">¥1,780</text>
+      <rect x="602" y="200" width="46" height="52" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="608" y="206" width="34" height="26" rx="4" fill="#EAD9A8"/>
+      <text x="625" y="244" text-anchor="middle" font-size="7.5" font-weight="800" fill="#E8324A">¥2,480</text>
+      <text x="600" y="316" text-anchor="middle" font-size="10.5" fill="#787D8A">プロフィールが売り場に</text>
+      <text x="600" y="334" text-anchor="middle" font-size="10.5" fill="#787D8A">興味を持った人の受け皿</text>
+    </svg>
+    <figcaption>図2：TikTok Shopの3つの売り場。役割が違うので組み合わせて使う（LEAM作成）</figcaption>
+  </figure>
+  <h3>① ショート動画：商品カード付きの動画で売る「最初の主力」</h3>
+  <p>自社アカウントの投稿や、提携クリエイターのアフィリエイト動画に商品カードを付け、視聴者がタップするとそのまま購入画面へ進めます。レコメンドに乗れば、フォロワー数に関係なく多くの人に届きます。<strong>出店直後はまずここが主戦場</strong>です。</p>
+  <h3>② ライブ配信：リアルタイムで疑問に答えながら売る</h3>
+  <p>ライブコマースと呼ばれる売り方で、配信中に商品を実演し、コメントの質問にその場で答えながら販売します。使用感や質感が伝わりやすく、限定セットとの相性も良い売り場ですが、継続できる体制づくりが先です。詳しくは<a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門｜売れる配信の作り方と準備</a>で解説しています。</p>
+  <h3>③ ショーケース：プロフィール内の商品一覧が「常設の店」になる</h3>
+  <p>アカウントのプロフィールに商品一覧（ショーケース）が表示され、動画やライブで興味を持った人が後からまとめて商品を見に来られます。<strong>動画が「集客」、ショーケースが「受け皿」</strong>という関係です。なお、アプリ内でショップを横断的に探せるタブ等の機能は地域・時期によって提供状況が変わるため、最新の提供機能は公式情報で確認してください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>売り場</th><th>どこに出るか</th><th>向いている場面</th><th>準備するもの</th></tr></thead>
+    <tbody>
+      <tr><td><b>ショート動画</b></td><td>おすすめフィード・検索結果</td><td class="y">出店直後からの集客・新規顧客との出会い</td><td>商品に紐づく動画（自社＋クリエイター）</td></tr>
+      <tr><td><b>ライブ配信</b></td><td>ライブ面・フォロワーへの通知</td><td>実演で価値が伝わる商材・ファンとの関係構築</td><td>定期配信できる人員と時間帯の固定</td></tr>
+      <tr><td><b>ショーケース</b></td><td>アカウントのプロフィール</td><td>動画で興味を持った人の受け皿・まとめ買い</td><td>商品登録と画像・説明文の整備</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s4"><span class="no en">04</span>売れる理由は「レコメンド×アプリ内完結×クリエイター」の掛け算にある</h2>
+  <p>「なぜTikTok Shopだと売れるのか」を分解すると、3つの構造に行き着きます。逆に言えば、この3つを活かせない運用（動画を数本置いて待つだけ等）では売れません。</p>
+  <h3>理由1：レコメンドが「探していない人」に商品を届ける</h3>
+  <p>TikTokのフィードはフォローの有無より「その動画が面白いか」で表示が決まります。つまり<strong>開設したばかりのアカウントの動画でも、内容が良ければ大量の人に届く</strong>可能性があります。検索型ECで新規参入者が苦しむ「検索順位が上がるまで存在しないのと同じ」という壁が、構造的に存在しません。</p>
+  <h3>理由2：発見から購入までアプリ内で完結し、離脱ポイントが少ない</h3>
+  <p>従来のSNS販促では「動画→プロフィール→外部EC→会員登録→決済」と進むたびに人が離脱していました。TikTok Shopは動画の商品カードから決済までがアプリ内で閉じているため、<strong>「欲しい」と思った熱量が冷める前に購入が完了します</strong>。</p>
+  <h3>理由3：アフィリエイトで、クリエイターが「販売パートナー」になる</h3>
+  <p>セラーが商品と報酬率（コミッション）を設定しておくと、クリエイターが自分の判断でその商品を動画やライブで紹介し、売れた分だけ報酬を受け取れます。<strong>自社アカウントで作れる動画の本数を超えて、多数のクリエイターが同時に紹介してくれる状態</strong>を作れるのがTikTok Shop最大の武器で、当社の運用実感でも、売上の多くはクリエイター経由の動画・ライブから生まれます。動画とライブのどちらが中心になるかは商材によって変わり、スマホ周辺機器や車まわりの用品は動画経由が中心になりやすく、食品やおもちゃ・ホビーはライブ経由が伸びやすい傾向があります。まず始めるならショート動画から、というのが当社の基本の順番です。ただし商品を登録しただけで紹介が生まれるわけではありません。声かけ・サンプル提供・報酬設計と、公式アカウント側の発信が前提になります。仕組みの詳細は<a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】</a>、報酬率の決め方は<a href="https://leam.co.jp/column/creator-commission/">クリエイターへの報酬相場と決め方【TikTok Shopセラー向け】</a>で解説しています。</p>
+  <figure>
+    <svg viewBox="0 0 720 310" role="img" aria-label="TikTok Shopで売れる構造のループ図：セラーが商品と報酬率を設定し、クリエイターが動画・ライブで紹介、レコメンドで探していない人に届き、アプリ内で購入される。売れた実績がさらに多くのクリエイターを呼び込む循環">
+      <rect x="30" y="40" width="200" height="70" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="130" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">セラー（自社）</text>
+      <text x="130" y="92" text-anchor="middle" font-size="11" fill="#787D8A">商品＋報酬率を設定する</text>
+      <path d="M232 75 H278" stroke="#787D8A" stroke-width="2"/><path d="M274 69 L282 75 L274 81 Z" fill="#787D8A"/>
+      <rect x="286" y="40" width="200" height="70" rx="12" fill="#17181C"/>
+      <text x="386" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">クリエイター</text>
+      <text x="386" y="92" text-anchor="middle" font-size="11" fill="#C9CBD4">動画・ライブで商品を紹介</text>
+      <path d="M488 75 H534" stroke="#787D8A" stroke-width="2"/><path d="M530 69 L538 75 L530 81 Z" fill="#787D8A"/>
+      <rect x="542" y="40" width="150" height="70" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="617" y="70" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">レコメンド</text>
+      <text x="617" y="92" text-anchor="middle" font-size="10.5" fill="#787D8A">探していない人に届く</text>
+      <path d="M617 112 V158" stroke="#E8324A" stroke-width="2"/><path d="M611 152 L617 162 L623 152 Z" fill="#E8324A"/>
+      <rect x="482" y="164" width="210" height="70" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="587" y="194" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">アプリ内で購入</text>
+      <text x="587" y="216" text-anchor="middle" font-size="10.5" fill="#787D8A">離脱ポイントが少ない</text>
+      <path d="M480 199 H136 V114" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M130 121 L136 109 L142 121 Z" fill="#0E8A5F"/>
+      <text x="300" y="190" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">売れた実績・報酬が、さらに多くの</text>
+      <text x="300" y="210" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">クリエイターを呼び込む（好循環）</text>
+      <text x="360" y="282" text-anchor="middle" font-size="11" fill="#787D8A">このループが回り始めると、自社の投稿量に依存せず売上が積み上がっていく</text>
+    </svg>
+    <figcaption>図3：売れる構造のループ。クリエイターが増えるほど売り場が増える（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">📊 日本市場のデータについて</div>
+    <p>「いまどのカテゴリーが伸びているか」「どんな商品が売れているか」といった日本市場の具体的なデータは、<strong>当社が毎営業日蓄積している市場データ</strong>で確認しています。自社の商材に当てはめた見立てが必要な方は、無料相談で個別にお伝えしています。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">クリエイターに「売ってもらう」体制づくりから、一緒に設計します</div>
+    <p>LEAMはTikTok Shop特化MCNとして、商品と相性の良いクリエイターの選定・報酬設計・動画の型づくりまでを一次データに基づいて支援しています。まずは現状を伺うところから。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>出店条件：法人・個人事業主のどちらでも、審査を通過すれば出店できる</h2>
+  <p>TikTok Shopへの出店は、<strong>法人だけでなく個人事業主にも開かれています</strong>。ただし誰でも無条件に出店できるわけではなく、本人確認・住所証明（法人はこれに登記関係の書類が加わります）を提出し、審査を通過する必要があります。初期費用や月額の出店料は不要で、コストは売れたときの手数料が中心です（詳細は次章と<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料の記事</a>参照）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>事業形態</th><th>主に求められるもの（例）</th><th>ポイント</th></tr></thead>
+    <tbody>
+      <tr><td><b>法人</b><br>（コーポレートセラー）</td><td>登記事項証明書または印鑑証明書、代表者の本人確認書類・住所証明書類、銀行口座情報　など</td><td>登録情報と書類の記載（社名・住所等）のズレが審査落ちの典型原因</td></tr>
+      <tr><td><b>個人・個人事業主</b><br>（個人セラー）</td><td>本人確認書類（パスポート・運転免許証・在留カードのいずれか）、住所証明書類、銀行口座情報　など</td><td>開業届の提出は前提条件ではない。販売予定の商材が出品可能カテゴリーかを先に確認しておく</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：必要書類・審査要件は更新されます</div>
+    <p>求められる書類や条件はプラットフォーム側の運用によって変わります。<strong>申請前に必ずセラーセンターの公式案内で最新の要件を確認してください。</strong>審査に落ちる典型パターンと対処法は<a href="https://leam.co.jp/column/tiktok-shop-shinsa/">TikTok Shopの出店条件と審査完全ガイド｜落ちる理由と対処法</a>にまとめています。</p>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>始め方は5ステップ：書類の準備から初売上までの流れ</h2>
+  <p>出店から販売開始までの大まかな流れは次の5ステップです（※画面の名称・手順は更新されることがあります。最新の表記は公式ヘルプをご確認ください）。</p>
+  <ol class="steps">
+    <li><b>セラーセンターでアカウントを登録する</b><p>TikTok Shop Seller Center（セラーセンター）にアクセスし、出店地域として日本を選択、事業形態（法人／個人事業主）を選んで基本情報を入力します。</p></li>
+    <li><b>必要書類を提出し、審査を受ける</b><p>本人確認・事業確認の書類をアップロードします。審査には一定の日数がかかる場合があるため、販売開始日から逆算して早めに申請するのが安全です。</p></li>
+    <li><b>商品を登録し、配送・決済まわりを設定する</b><p>商品名・画像・説明文・価格・在庫を登録します。このとき、扱う商材が禁止・制限カテゴリーに該当しないかを必ず確認してください（<a href="https://leam.co.jp/column/prohibited-items/">禁止商品ガイド</a>）。</p></li>
+    <li><b>アフィリエイト設定でクリエイターとつながる準備をする</b><p>商品ごとに報酬率を設定し、クリエイターが紹介できる状態にします。売れる理由の中核はここです。最初の報酬設計は売上の立ち上がりを大きく左右します。</p></li>
+    <li><b>動画・ライブで販売を開始する</b><p>最初から全商品を売ろうとせず、<strong>主力商品を絞って動画を集中させる</strong>のが定石です。伸びなかったときの見直し順序は<a href="https://leam.co.jp/column/not-selling-checklist/">TikTok Shopで売れない時に見る10のチェックリスト</a>を参照してください。</p></li>
+  </ol>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>「出店＝ゴール」ではなく、<strong>出店はクリエイターに売ってもらうループ（図3）を回し始めるためのスタートライン</strong>です。商品登録と同時に、報酬設計とクリエイター開拓の計画まで用意しておくと立ち上がりが速くなります。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>向き不向きは「商材」と「体制」で決まる：出店前の自己診断表</h2>
+  <p>TikTok Shopはすべての事業者に向いているわけではありません。判断軸は大きく2つ、<strong>「商材の魅力が動画で伝わるか」と「売れたときに対応できる体制があるか」</strong>です。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="向き不向きの2軸マップ：縦軸が動画で魅力が伝わる度、横軸が在庫・発送体制の強さ。両方が高い右上が今すぐ向く領域で、片方が欠ける場合はそちらの整備が先">
+      <line x1="360" y1="30" x2="360" y2="300" stroke="#E6E7EB" stroke-width="2"/>
+      <line x1="60" y1="165" x2="660" y2="165" stroke="#E6E7EB" stroke-width="2"/>
+      <path d="M360 30 L354 42 H366 Z" fill="#787D8A"/>
+      <path d="M660 165 L648 159 V171 Z" fill="#787D8A"/>
+      <text x="360" y="20" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">動画で魅力が伝わる ↑</text>
+      <text x="660" y="190" text-anchor="end" font-size="11.5" font-weight="700" fill="#454956">在庫・発送体制が強い →</text>
+      <rect x="380" y="45" width="260" height="100" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="510" y="82" text-anchor="middle" font-size="14" font-weight="900" fill="#C2203A">今すぐ向く</text>
+      <text x="510" y="106" text-anchor="middle" font-size="11" fill="#454956">使用感が見せられる商材＋出荷体制あり</text>
+      <text x="510" y="126" text-anchor="middle" font-size="11" fill="#454956">例：コスメ・雑貨・食品・アパレルなど</text>
+      <rect x="80" y="45" width="260" height="100" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="210" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">体制づくりが先</text>
+      <text x="210" y="106" text-anchor="middle" font-size="11" fill="#787D8A">動画映えはするが、急な注文増に</text>
+      <text x="210" y="126" text-anchor="middle" font-size="11" fill="#787D8A">在庫・出荷が耐えられない状態</text>
+      <rect x="380" y="185" width="260" height="100" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="510" y="222" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">見せ方の設計が先</text>
+      <text x="510" y="246" text-anchor="middle" font-size="11" fill="#787D8A">体制はあるが「動画でどう欲しくさせるか」</text>
+      <text x="510" y="266" text-anchor="middle" font-size="11" fill="#787D8A">の企画・クリエイター起用の設計が必要</text>
+      <rect x="80" y="185" width="260" height="100" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="210" y="222" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">他チャネルも含めて検討</text>
+      <text x="210" y="246" text-anchor="middle" font-size="11" fill="#787D8A">無理に始めるより、商材選定や</text>
+      <text x="210" y="266" text-anchor="middle" font-size="11" fill="#787D8A">販売チャネルの見直しから</text>
+      <text x="360" y="326" text-anchor="middle" font-size="11" fill="#787D8A">右上以外は「向いていない」ではなく「先に整えるものがある」状態</text>
+    </svg>
+    <figcaption>図4：向き不向きの2軸マップ。欠けている側を先に整えれば右上に移動できる（LEAM作成）</figcaption>
+  </figure>
+  <p>より具体的には、次の診断表でチェックしてみてください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>チェック項目</th><th>向いているサイン</th><th>立ち止まるサイン</th></tr></thead>
+    <tbody>
+      <tr><td><b>商材の見せ方</b></td><td class="y">使用前後の変化・質感・実演が動画で伝わる</td><td class="n">スペック表を読まないと価値が分からない</td></tr>
+      <tr><td><b>価格帯</b></td><td class="y">動画を見た勢いで「試してみよう」と決めやすい</td><td class="n">長い比較検討が前提の高額・高関与商材</td></tr>
+      <tr><td><b>在庫・発送</b></td><td class="y">注文が急に増えても期日内に出荷できる体制がある</td><td class="n">受注生産のみ・出荷が属人化している</td></tr>
+      <tr><td><b>コンテンツ体制</b></td><td class="y">自社制作またはクリエイター起用の予算・意思がある</td><td class="n">動画は作れず、外部と組む予定もない</td></tr>
+      <tr><td><b>既存チャネルの状況</b></td><td class="y">新規顧客との接点を増やしたい</td><td class="n">既存ECの運用すら手一杯で人が割けない</td></tr>
+    </tbody>
+  </table></div>
+  <p>「立ち止まるサイン」が付いた項目は、出店をやめる理由ではなく<strong>先に整えるべき課題のリスト</strong>です。どのカテゴリーで参入するかの考え方は<a href="https://leam.co.jp/column/best-categories/">TikTok Shopで売れる商品カテゴリーと参入ジャンルの選び方</a>で詳しく解説しています。</p>
+
+  <h2 id="s8"><span class="no en">08</span>始める前に、手数料・禁止商品・発送ルールの3つを必ず確認する</h2>
+  <p>出店してから「知らなかった」で困りやすいのがこの3つです。いずれも詳細記事を用意しているので、出店前に一度目を通しておくことをおすすめします。</p>
+  <h3>① 手数料：売れたときに販売手数料がかかる</h3>
+  <p>出店料や月額費用は不要ですが、商品が売れた際に販売手数料が発生します。<strong>料率はカテゴリーや時期によって異なり、改定されることもある</strong>ため、必ず最新の公式情報で確認してください。カテゴリー別の考え方と利益計算の手順は<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</a>にまとめています。</p>
+  <h3>② 禁止商品・制限商品：出品できない商材が明確に決められている</h3>
+  <p>医薬品をはじめ、出品が禁止・制限されているカテゴリーがあります。知らずに出品すると、商品削除やアカウントへのペナルティにつながりかねません。出品前に<a href="https://leam.co.jp/column/prohibited-items/">TikTok Shopの禁止商品・制限商品ガイド|出品前チェックリスト</a>で確認してください。</p>
+  <h3>③ 発送ルール：出荷期限を守れない運用はペナルティの対象になる</h3>
+  <p>TikTok Shopでは注文後の出荷スピードが重視され、遅延が続くとショップの評価やペナルティに影響します。動画がヒットして注文が急増したときこそ体制が試されるため、<strong>出店前に出荷フローを設計しておく</strong>ことが重要です。詳しくは<a href="https://leam.co.jp/column/shipping-rules/">TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計</a>を参照してください。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意</div>
+    <p>本記事で触れた出店条件・手数料・各種ルールなどの仕様は、プラットフォーム側の更新で変わる可能性があります。<strong>実際の申請・出品の前に、必ずセラーセンター等の公式一次情報で最新の内容を確認してください。</strong></p>
+  </div>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>個人でも出店できますか？</summary><div class="a">個人事業主でも「個人セラー」として出店できます。必要書類は本人確認書類（パスポート・運転免許証・在留カードのいずれか）と住所証明書類が基本で、開業届の提出は前提条件ではありません。ただし出店には審査があるため、最新の条件は公式のセラーセンターで確認してください。</div></details>
+    <details><summary>出店や販売に費用はかかりますか？</summary><div class="a">初期費用や月額の出店料は不要で、商品が売れたときに販売手数料がかかる仕組みです。料率はカテゴリーや時期により異なり改定されることもあるため、最新の料率は必ず公式情報で確認してください。</div></details>
+    <details><summary>フォロワーが少なくても売れますか？</summary><div class="a">売れる可能性はあります。TikTokのレコメンドはフォローの有無より動画の内容で表示が決まるため、開設直後のアカウントでも動画単位で多くの人に届きます。さらにアフィリエイトで提携クリエイターに紹介してもらえば、自社のフォロワー数に依存しない販売経路を作れます。</div></details>
+    <details><summary>何を売るのが向いていますか？</summary><div class="a">使用感・変化・実演が動画で伝わる商材（コスメ・雑貨・食品・アパレルなど）と相性が良い傾向です。逆に、スペック比較が前提の高関与商材は工夫が必要です。また、禁止・制限カテゴリーに該当しないかを出品前に必ず確認してください。</div></details>
+    <details><summary>楽天やAmazon、自社ECと併売できますか？</summary><div class="a">併売できます。TikTok Shopは検索型ECの置き換えではなく「新規顧客との接点を追加するチャネル」なので、実務的には併用が基本です。ただし在庫の引き当てと出荷体制はチャネル横断で設計しておく必要があります。</div></details>
+    <details><summary>出店までどのくらいかかりますか？</summary><div class="a">書類が揃っていれば申請自体は短時間で完了します。その後の審査は公式の案内で通常1〜5日とされていますが、書類の差し戻しや承認後の初期設定を含めると、販売開始までにはもう少し余裕を見ておくのが現実的です。所要日数は状況により変動するため、販売開始日から逆算して早めに申請し、最新の目安は公式情報で確認してください。</div></details>
+    <details><summary>自社で動画を作れなくても大丈夫ですか？</summary><div class="a">大丈夫です。アフィリエイトで報酬率を設定し、クリエイターに紹介してもらう形が実務では主流です。自社制作とクリエイター起用を組み合わせるほど、売り場（動画の本数）が増えて有利になります。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-shinsa/"><span class="rc">出店・審査</span><b>TikTok Shopの出店条件と審査完全ガイド｜落ちる理由と対処法</b><span>審査に落ちる典型パターンと対処法</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/"><span class="rc">手数料</span><b>TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</b><span>利益が残る値付けの考え方</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/affiliate-guide/"><span class="rc">クリエイター</span><b>TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】</b><span>「売ってもらう」体制のつくり方</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ（仕様・画面・提供機能は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">TikTok Shopとは</a></li>
+        <li><a href="#s2">従来ECとの違い</a></li>
+        <li><a href="#s3">3つの売り場</a></li>
+        <li><a href="#s4">売れる理由の構造</a></li>
+        <li><a href="#s5">出店条件</a></li>
+        <li><a href="#s6">始め方5ステップ</a></li>
+        <li><a href="#s7">向き不向きの自己診断</a></li>
+        <li><a href="#s8">出店前に確認する3つ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>出店前の無料診断</b>
+      <p>商材の向き不向きと始める順番を、実データに基づいてお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "個人でも出店できますか？", "acceptedAnswer": {"@type": "Answer", "text": "個人事業主でも「個人セラー」として出店できます。必要書類は本人確認書類（パスポート・運転免許証・在留カードのいずれか）と住所証明書類が基本で、開業届の提出は前提条件ではありません。ただし出店には審査があるため、最新の条件は公式のセラーセンターで確認してください。"}},
+        {"@type": "Question", "name": "出店や販売に費用はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "初期費用や月額の出店料は不要で、商品が売れたときに販売手数料がかかる仕組みです。料率はカテゴリーや時期により異なり改定されることもあるため、最新の料率は必ず公式情報で確認してください。"}},
+        {"@type": "Question", "name": "フォロワーが少なくても売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "売れる可能性はあります。TikTokのレコメンドはフォローの有無より動画の内容で表示が決まるため、開設直後のアカウントでも動画単位で多くの人に届きます。さらにアフィリエイトで提携クリエイターに紹介してもらえば、自社のフォロワー数に依存しない販売経路を作れます。"}},
+        {"@type": "Question", "name": "何を売るのが向いていますか？", "acceptedAnswer": {"@type": "Answer", "text": "使用感・変化・実演が動画で伝わる商材（コスメ・雑貨・食品・アパレルなど）と相性が良い傾向です。逆に、スペック比較が前提の高関与商材は工夫が必要です。また、禁止・制限カテゴリーに該当しないかを出品前に必ず確認してください。"}},
+        {"@type": "Question", "name": "楽天やAmazon、自社ECと併売できますか？", "acceptedAnswer": {"@type": "Answer", "text": "併売できます。TikTok Shopは検索型ECの置き換えではなく「新規顧客との接点を追加するチャネル」なので、実務的には併用が基本です。ただし在庫の引き当てと出荷体制はチャネル横断で設計しておく必要があります。"}},
+        {"@type": "Question", "name": "出店までどのくらいかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "書類が揃っていれば申請自体は短時間で完了します。その後の審査は公式の案内で通常1〜5日とされていますが、書類の差し戻しや承認後の初期設定を含めると、販売開始までにはもう少し余裕を見ておくのが現実的です。所要日数は状況により変動するため、販売開始日から逆算して早めに申請し、最新の目安は公式情報で確認してください。"}},
+        {"@type": "Question", "name": "自社で動画を作れなくても大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "大丈夫です。アフィリエイトで報酬率を設定し、クリエイターに紹介してもらう形が実務では主流です。自社制作とクリエイター起用を組み合わせるほど、売り場（動画の本数）が増えて有利になります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

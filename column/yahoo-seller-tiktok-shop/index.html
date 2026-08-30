@@ -1,0 +1,736 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>Yahoo!ショッピングのセラー向けTikTok Shop入門</title>
+<meta name="description" content="Yahoo!ショッピングに出店している事業者向けに、低単価・薄利の商品設計がTikTok Shopの手数料構造と噛み合うかを計算表で検算します。">
+<link rel="canonical" href="https://leam.co.jp/column/yahoo-seller-tiktok-shop/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="Yahoo!ショッピングのセラー向けTikTok Shop入門">
+<meta property="og:description" content="Yahoo!ショッピングに出店している事業者向けに、低単価・薄利の商品設計がTikTok Shopの手数料構造と噛み合うかを計算表で検算します。">
+<meta property="og:url" content="https://leam.co.jp/column/yahoo-seller-tiktok-shop/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yahoo!ショッピングのセラー向けTikTok Shop入門">
+<meta name="twitter:description" content="Yahoo!ショッピングに出店している事業者向けに、低単価・薄利の商品設計がTikTok Shopの手数料構造と噛み合うかを計算表で検算します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Yahoo!ショッピングのセラー向けTikTok Shop入門", "description": "Yahoo!ショッピングに出店している事業者向けに、低単価・薄利の商品設計がTikTok Shopの手数料構造と噛み合うかを計算表で検算します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/yahoo-seller-tiktok-shop/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "Yahoo!ショッピングのセラー向けTikTok Shop入門", "item": "https://leam.co.jp/column/yahoo-seller-tiktok-shop/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › Yahoo!ショッピングのセラーがTikTok Shopを始める意味</p>
+  <span class="cat">モール比較</span>
+  <h1>Yahoo!ショッピングのセラーがTikTok Shopを始める意味｜低単価商品で成立するかを手数料で検算する</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px">
+    <svg viewBox="0 0 1200 630" role="img" aria-label="アイキャッチ画像：Yahoo!ショッピングの必須費用6.5から8.0パーセントと月額1万円、TikTok Shopのカテゴリ別7から12パーセントを並べた費用構造の比較" style="border-radius:14px">
+      <defs>
+        <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#191A20"/><stop offset=".55" stop-color="#16171B"/><stop offset="1" stop-color="#2B0F17"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="630" fill="url(#hbg)"/>
+      <g opacity=".10" stroke="#fff" stroke-width="1.5" fill="none">
+        <line x1="0" y1="160" x2="1200" y2="160"/><line x1="0" y1="300" x2="1200" y2="300"/><line x1="0" y1="440" x2="1200" y2="440"/>
+      </g>
+      <text x="76" y="120" font-size="24" font-weight="800" fill="#FF8DA0" letter-spacing="5">MARKETPLACE COST CHECK</text>
+      <text x="72" y="222" font-size="66" font-weight="900" fill="#ffffff">Yahoo!セラーの</text>
+      <text x="72" y="308" font-size="66" font-weight="900" fill="#ffffff">TikTok Shop検算</text>
+      <text x="76" y="372" font-size="25" fill="#C9CBD0">低単価・薄利で成立するかを、料率と件単価で確かめる</text>
+      <rect x="76" y="416" width="252" height="56" rx="28" fill="#FE2C55"/>
+      <text x="202" y="453" text-anchor="middle" font-size="23" font-weight="800" fill="#fff">分岐点を実数で計算</text>
+      <text x="76" y="562" font-size="19" font-weight="700" fill="#646C7A">LEAM ─ TikTok Shop 実践コラム</text>
+      <rect x="700" y="150" width="200" height="330" rx="16" fill="#23242B"/>
+      <text x="800" y="188" text-anchor="middle" font-size="19" font-weight="800" fill="#C9CBD0">Yahoo!ショッピング</text>
+      <text x="800" y="196" text-anchor="middle" font-size="13" fill="#646C7A">2026年9月〜</text>
+      <text x="800" y="272" text-anchor="middle" font-size="52" font-weight="900" fill="#fff">6.5–8.0%</text>
+      <text x="800" y="308" text-anchor="middle" font-size="17" fill="#9AA0AC">全注文の必須変動費</text>
+      <rect x="726" y="336" width="148" height="76" rx="10" fill="#3A2029"/>
+      <text x="800" y="366" text-anchor="middle" font-size="16" fill="#FF8DA0">＋ 固定費</text>
+      <text x="800" y="396" text-anchor="middle" font-size="26" font-weight="900" fill="#fff">10,000円/月</text>
+      <text x="800" y="450" text-anchor="middle" font-size="15" fill="#646C7A">売上ゼロでも発生</text>
+      <text x="940" y="322" text-anchor="middle" font-size="34" font-weight="900" fill="#646C7A">vs</text>
+      <rect x="980" y="150" width="200" height="330" rx="16" fill="#23242B"/>
+      <text x="1080" y="188" text-anchor="middle" font-size="19" font-weight="800" fill="#C9CBD0">TikTok Shop</text>
+      <text x="1080" y="196" text-anchor="middle" font-size="13" fill="#646C7A">2026年5月11日改定</text>
+      <text x="1080" y="272" text-anchor="middle" font-size="52" font-weight="900" fill="#fff">7–12%</text>
+      <text x="1080" y="308" text-anchor="middle" font-size="17" fill="#9AA0AC">カテゴリ別の販売手数料</text>
+      <rect x="1006" y="336" width="148" height="76" rx="10" fill="#14332C"/>
+      <text x="1080" y="366" text-anchor="middle" font-size="16" fill="#7FD6BE">固定費</text>
+      <text x="1080" y="396" text-anchor="middle" font-size="26" font-weight="900" fill="#fff">0円</text>
+      <text x="1080" y="450" text-anchor="middle" font-size="15" fill="#646C7A">初期費用・月額なし</text>
+    </svg>
+  </figure>
+
+  <p class="lead"><strong>すでにYahoo!ショッピングで売っている方にとっての論点は「どのモールを選ぶか」ではなく、「いま出している商品の粗利で、もう一つの手数料構造を背負えるか」です。</strong>Yahoo!ショッピングは2026年9月1日から月額システム利用料10,000円（税抜）と売上ロイヤリティ2.5%が新設され、費用が「変動費だけ」から「変動費＋固定費」の二層になります。一方のTikTok Shopは固定費がなく、カテゴリ別7〜12%の販売手数料が中心です。どちらが安いかは単価と月商で逆転します。この記事では、その分岐点を公開されている料率だけを使って実数で計算します。まだどのモールをやるか決めていない段階なら、先に<a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い</a>をお読みください。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>2026年9月1日にYahoo!の必須費用が5.5〜7.0%から6.5〜8.0%＋月額1万円へ変わること</li>
+      <li>TikTok Shopの7〜12%とどちらが安いかが逆転する月商の分岐点（18.2万円〜200万円）</li>
+      <li>低単価商品でコンビニ決済200〜350円／件が効いてくる境目（販売価格8,333円）</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自店の数字で「持ち込めるか」を一緒に検算します</div>
+    <p>単価・粗利・決済構成比を伺えば、TikTok Shopで手残りが残る商品と残らない商品を切り分けてお伝えします。出さないほうがよい場合はその理由もお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">2026年9月1日を境に費用が「変動費＋固定費」になる</a></li>
+      <li><a href="#s2">「月額0円」でも全注文に5.5〜8.0%かかっている</a></li>
+      <li><a href="#s3">TikTok Shopは固定費ゼロ・カテゴリ別7〜12%</a></li>
+      <li><a href="#s4">分岐点は月商18.2万円〜200万円に散らばる</a></li>
+      <li><a href="#s5">低単価は「1件あたりの固定額」で沈む</a></li>
+      <li><a href="#s6">需要の作られ方が逆なのでまとめ売りに組み替える</a></li>
+      <li><a href="#s7">持ち込める資産と作り直す資産の仕分け</a></li>
+      <li><a href="#s8">まとめ：明日から7日でやる順番</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>2026年9月1日を境に、Yahoo!ショッピングの費用は「変動費だけ」から「変動費＋固定費」に変わります</h2>
+  <p>比較を始める前に、時期を確認してください。Yahoo!ショッピングは2013年の「eコマース革命」以降、初期費用・月額システム利用料・売上ロイヤリティをいずれも無料としてきました。この形が2026年8月末で終わり、<strong>2026年9月1日（火）からは月額システム利用料10,000円（税抜）と売上ロイヤリティ2.5%が新設されます</strong>。公式FAQには「2026年9月以降、ストアを『開店』いただいた当月から月額システム利用料をご請求させていただきます。※開店した月の月額システム利用料は日割り計算いたします」と明記されています。同時に、これまで必須だったキャンペーン原資1.5%は廃止されます。</p>
+  <p>この記事を公開している2026年8月30日（日）時点では、まだ旧プランが動いています。つまり<strong>2日後には前提が入れ替わります</strong>。手数料の比較記事を読むときも、自分で試算するときも、どちらのプランで計算されているのかを必ず確認してください。旧プランの数字のままTikTok Shopと比べると、Yahoo!側を1.0ポイントほど安く見積もることになります。</p>
+  <p>変わるのは料率だけではありません。より本質的なのは<strong>費用の「層」が増えること</strong>です。旧プランのYahoo!ショッピングは、売上がゼロなら支払いもゼロでした。だからこそ「とりあえず出しておく」「季節商品のときだけ動かす」という置き方が成立していました。2026年9月以降は、1件も売れなかった月でも10,000円（税抜）が出ていきます。年間では120,000円（税抜）です。テスト出品や在庫リスクのない並行出店という使い方は、ここで一度考え直す必要があります。</p>
+  <p>この固定費は、月商が小さいストアほど重くのしかかります。月商10万円のストアにとって月額1万円は売上の10.0%に相当し、月商50万円なら2.0%、月商200万円なら0.5%です。<strong>同じ1万円が、月商によって10.0ポイントにも0.5ポイントにもなります。</strong>料率だけを横に並べた比較表では、この差は絶対に見えません。TikTok Shopと比べる際に最初にやるべきなのは、料率の比較ではなく「自店の月商で固定費が何ポイントに化けるか」の計算です。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>費用項目</th><th>〜2026年8月</th><th>2026年9月〜</th><th>差分</th></tr></thead>
+    <tbody>
+      <tr><td>初期費用</td><td class="num">0円</td><td class="num">0円</td><td class="n">変更なし</td></tr>
+      <tr><td>月額システム利用料</td><td class="num">0円</td><td class="num">10,000円／月（税抜）</td><td><b>＋10,000円／月</b></td></tr>
+      <tr><td>売上ロイヤリティ</td><td class="num">0%</td><td class="num">2.5%</td><td><b>＋2.5pt</b></td></tr>
+      <tr><td>キャンペーン原資</td><td class="num">1.5%（必須）</td><td class="num">廃止</td><td class="y">−1.5pt</td></tr>
+      <tr><td>ストアポイント原資</td><td class="num">1%〜15%（1%必須）</td><td class="num">1%〜15%（1%必須）</td><td class="n">変更なし</td></tr>
+      <tr><td>決済手数料（PayPay系）</td><td class="num">3.0%</td><td class="num">3.0%</td><td class="n">変更なし</td></tr>
+      <tr><td><b>必須変動費の合計</b></td><td class="num"><b>5.5〜7.0%</b></td><td class="num"><b>6.5〜8.0%</b></td><td><b>＋1.0pt</b></td></tr>
+      <tr><td>LINEショッピングタブ経由掲載料金</td><td class="num">なし</td><td class="num">2027年1月〜 2%〜4%</td><td>新設（経路限定）</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:var(--ink3);margin-top:-8px">※必須変動費の合計は、公式ページ記載の各項目をLEAMが合算した試算です。幅は決済手段の構成比（PayPay系3.0%〜キャリア決済4.48%）によります。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="必須変動費の積み上げ棒グラフ。2026年8月までは決済3.0パーセント、キャンペーン原資1.5パーセント、ストアポイント原資1パーセントで合計5.5パーセント。2026年9月以降は決済3.0パーセント、ストアポイント原資1パーセント、売上ロイヤリティ2.5パーセントで合計6.5パーセント。右側に新設される月額1万円の固定費を併記">
+      <line x1="92" y1="270" x2="470" y2="270" stroke="#C9CBD4" stroke-width="1.5"/>
+      <g stroke="#EDEEF1" stroke-width="1">
+        <line x1="92" y1="220" x2="470" y2="220"/><line x1="92" y1="170" x2="470" y2="170"/>
+        <line x1="92" y1="120" x2="470" y2="120"/><line x1="92" y1="70" x2="470" y2="70"/>
+      </g>
+      <g font-size="10.5" fill="#787D8A" text-anchor="end">
+        <text x="86" y="274">0%</text><text x="86" y="224">2%</text><text x="86" y="174">4%</text><text x="86" y="124">6%</text><text x="86" y="74">8%</text>
+      </g>
+      <rect x="140" y="195" width="110" height="75" fill="#787D8A"/>
+      <rect x="140" y="157.5" width="110" height="37.5" fill="#AEB2BE"/>
+      <rect x="140" y="132.5" width="110" height="25" fill="#C9CBD4"/>
+      <text x="195" y="238" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">決済 3.0%</text>
+      <text x="195" y="180" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17181C">キャンペーン 1.5%</text>
+      <text x="195" y="149" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17181C">ポイント 1%</text>
+      <text x="195" y="122" text-anchor="middle" font-size="14" font-weight="900" fill="#454956">合計 5.5%</text>
+      <text x="195" y="292" text-anchor="middle" font-size="12.5" font-weight="700" fill="#454956">〜2026年8月</text>
+      <text x="195" y="310" text-anchor="middle" font-size="11" fill="#787D8A">固定費なし</text>
+      <rect x="320" y="195" width="110" height="75" fill="#787D8A"/>
+      <rect x="320" y="170" width="110" height="25" fill="#C9CBD4"/>
+      <rect x="320" y="107.5" width="110" height="62.5" fill="#E8324A"/>
+      <text x="375" y="238" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">決済 3.0%</text>
+      <text x="375" y="187" text-anchor="middle" font-size="10.5" font-weight="700" fill="#17181C">ポイント 1%</text>
+      <text x="375" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">ロイヤリティ 2.5%</text>
+      <text x="375" y="97" text-anchor="middle" font-size="14" font-weight="900" fill="#B01D36">合計 6.5%</text>
+      <text x="375" y="292" text-anchor="middle" font-size="12.5" font-weight="700" fill="#454956">2026年9月〜</text>
+      <text x="375" y="310" text-anchor="middle" font-size="11" fill="#B01D36" font-weight="700">＋ 固定費が新設</text>
+      <rect x="500" y="86" width="196" height="186" rx="12" fill="#FFECF0" stroke="#E8324A"/>
+      <text x="598" y="114" text-anchor="middle" font-size="12" font-weight="800" fill="#B01D36">新設される固定費</text>
+      <text x="598" y="152" text-anchor="middle" font-size="24" font-weight="900" fill="#17181C">10,000円</text>
+      <text x="598" y="172" text-anchor="middle" font-size="11.5" fill="#454956">／月（税抜・開店月は日割り）</text>
+      <line x1="524" y1="188" x2="672" y2="188" stroke="#E8324A" stroke-dasharray="4 3"/>
+      <text x="598" y="210" text-anchor="middle" font-size="11.5" fill="#454956">月商50万円 → ＋2.0pt相当</text>
+      <text x="598" y="232" text-anchor="middle" font-size="11.5" fill="#454956">月商20万円 → ＋5.0pt相当</text>
+      <text x="598" y="254" text-anchor="middle" font-size="11.5" font-weight="700" fill="#B01D36">月商10万円 → ＋10.0pt相当</text>
+      <text x="360" y="330" text-anchor="middle" font-size="10.5" fill="#787D8A">決済はPayPay系3.0%で作図。キャリア決済4.48%なら合計は7.0%／8.0%になります</text>
+    </svg>
+    <figcaption>図1：改定前後の必須変動費と新設固定費の対比（公式料率をもとにLEAM作図）</figcaption>
+  </figure>
+
+  <p>なお、売上ロイヤリティ2.5%の算定基礎——商品代金だけにかかるのか送料を含むのか、税抜か税込か——は、公開されている公式ページからは確認できませんでした。手残りを厳密に詰めるなら、送料込み・税込ベースで課金される最も重いケースを置いて幅で見るのが安全です。正確な条件は公式の資料請求や問い合わせでご確認ください。</p>
+
+  <h2 id="s2"><span class="no en">02</span>「初期費用0円・月額0円」でも、全注文には必ず5.5〜8.0%がかかっています</h2>
+  <p>TikTok Shopの販売手数料7〜12%という数字を見て「Yahoo!は無料なのに」と感じるとしたら、比較の土俵がずれています。Yahoo!ショッピングで無料なのは<strong>入口（初期費用・月額）だけ</strong>で、出口では旧プランでも全注文に必ず5.5〜7.0%がかかっていました。TikTok Shopと突き合わせるべきなのは「無料」という言葉ではなく、この必須変動費の合計です。</p>
+  <p>内訳は3つあります。1つ目が<strong>ストアポイント原資1%〜15%</strong>で、うち1%は必須です。これはPayPayポイント還元の原資を出店者が負担する仕組みで、2026年9月以降も1%必須のまま継続します。2つ目が<strong>キャンペーン原資1.5%（必須）</strong>で、Yahoo!ショッピング側が実施する販促キャンペーンの原資を出店者が持つものです。こちらは2026年9月以降に廃止され、売上ロイヤリティ2.5%へ置き換わります。3つ目が<strong>決済手数料</strong>で、PayPay残高・PayPayクレジット・Yahoo!ショッピング商品券が3.0%（税別）、PayPayカード発行のカードが3.0%（非課税）、一般のクレジットカードが3.24%（非課税）、ゆっくり払いが3.24%（税別）、モバイル支払い（キャリア決済）が4.48%（税別）です。</p>
+  <p>つまり<strong>広告もアフィリエイトも一切使わない最も安い状態で、旧プラン5.5〜7.0%、新プラン6.5〜8.0%</strong>ということになります。この幅は決済手段の構成比で動きます。キャリア決済の比率が高いストアは、同じ売上でも手残りが1.5ポイント近く削られる計算です。自店の決済構成比を見たことがないなら、TikTok Shopの検討より先にそこを確認してください。</p>
+  <h3>条件付きで乗る費用が3つある</h3>
+  <p>1つ目が<strong>アフィリエイトパートナー報酬原資2%〜50%</strong>です。うち2%〜4%は商品カテゴリごとの必須料率で、さらに<strong>その報酬額の30%がヤフー側の手数料として上乗せ</strong>されます。報酬2%なら実質2.6%、4%なら5.2%——報酬額の1.3倍が実負担です。ただしこれはアフィリエイト経由で購入された注文にのみ発生するため、全注文コストに単純加算すると過大評価になります。逆に、アフィリエイト経由の比率が高いストアでは、必須変動費と合わせて9.1〜13.2%まで伸びます。ここがTikTok Shopの上限帯と重なる領域です。</p>
+  <p>2つ目が<strong>入金サイクルオプション手数料</strong>です。基本の月1回は無料ですが、月2回で0.1%、月3回で0.2%、月6回で0.4%、月8回で0.6%が売上に対して課金されます。資金繰りのために入金回数を増やしている場合、その分だけ実効料率が上がっている点は見落とされがちです。3つ目が<strong>LINEショッピングタブ経由掲載料金</strong>で、公式FAQによれば2026年末までは発生せず、2027年1月からLINEショッピングタブのカート経由で購入された全注文に対し、商品販売価格（税抜）の2%〜4%が請求されます。同じ商品でも、どの経路から売れたかで手数料が変わる多層構造へ進んでいる、ということです。</p>
+  <p>広告については、アイテムマッチ（クリック課金型・最低入札25円／1クリック）とPRオプション（成果報酬型で料率が検索順位に影響するとされる）で検索順位に介入する設計だと解説されています。ただし<strong>これらの公式料金表は公開領域では確認できず、EC支援会社の解説記事に依拠した情報</strong>です。税抜・税込の別も、PRオプションの料率レンジも確認できませんでした。実額を計算に入れる際は、ストアクリエイターProの管理画面か最新の公式情報でご確認ください。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>費用項目</th><th>金額</th><th>発生条件</th></tr></thead>
+    <tbody>
+      <tr><td>初期費用</td><td class="num">0円</td><td>新旧プランとも無料</td></tr>
+      <tr><td>月額システム利用料</td><td class="num">0円 →（9月〜）10,000円／月（税抜）</td><td>開店した当月から。開店月は日割り</td></tr>
+      <tr><td>売上ロイヤリティ</td><td class="num">0% →（9月〜）2.5%</td><td>全注文。算定基礎は未確認</td></tr>
+      <tr><td>ストアポイント原資</td><td class="num">1%〜15%（1%必須）</td><td>全注文。販売価格（税抜）が基準</td></tr>
+      <tr><td>キャンペーン原資</td><td class="num">1.5%（必須）</td><td>全注文。2026年9月に廃止</td></tr>
+      <tr><td>決済：PayPay残高・クレジット・商品券</td><td class="num">3.0%（税別）</td><td>最も使われる導線</td></tr>
+      <tr><td>決済：PayPayカード発行カード</td><td class="num">3.0%（非課税）</td><td>他社カードより0.24pt低い</td></tr>
+      <tr><td>決済：一般クレジットカード</td><td class="num">3.24%（非課税）</td><td>—</td></tr>
+      <tr><td>決済：ゆっくり払い</td><td class="num">3.24%（税別）</td><td>後払い系</td></tr>
+      <tr><td>決済：モバイル支払い（キャリア）</td><td class="num">4.48%（税別）</td><td>最も高い料率</td></tr>
+      <tr><td>決済：コンビニ</td><td class="num">200円〜350円／件（税別）</td><td><b>率ではなく件単価</b></td></tr>
+      <tr><td>決済：銀行振込（ペイジー）</td><td class="num">150円／件（税別）</td><td>件単価</td></tr>
+      <tr><td>アフィリエイト報酬原資</td><td class="num">2%〜50%（必須2%〜4%）</td><td>アフィリエイト経由注文のみ</td></tr>
+      <tr><td>アフィリエイト手数料</td><td class="num">報酬額の30%</td><td>同上。報酬2%なら実質2.6%</td></tr>
+      <tr><td>入金サイクルオプション</td><td class="num">月1回0%／月2回0.1%／月3回0.2%／月6回0.4%／月8回0.6%</td><td>入金回数を増やした場合</td></tr>
+      <tr><td>LINEショッピングタブ経由掲載料金</td><td class="num">2%〜4%（税抜販売価格）</td><td>2027年1月〜。同タブのカート経由</td></tr>
+      <tr><td>アイテムマッチ</td><td class="num">最低入札25円／クリック</td><td>クリック時課金（公式料金表は未確認）</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s3"><span class="no en">03</span>TikTok Shopは固定費ゼロで、カテゴリ別7〜12%の一層構造です</h2>
+  <p>TikTok Shopは2025年6月30日に日本での提供を開始しました。費用構造はYahoo!より単純で、<strong>初期費用も月額固定費もなく、販売手数料のみ</strong>です。販売手数料は2026年5月11日の改定でカテゴリ別に7%・9%・10%・12%の4段階になりました。手数料の詳しい扱いは<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料</a>で解説しています。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>販売手数料</th><th>主なカテゴリ</th><th>Yahoo!新プラン6.5%との差</th></tr></thead>
+    <tbody>
+      <tr><td class="num"><b>7%</b></td><td>車・バイク／パソコン・オフィス用品／食品・ドリンク／家電／スマホ・デジタル機器／家具／ホームセンター・リフォーム</td><td class="num">＋0.5pt</td></tr>
+      <tr><td class="num"><b>9%</b></td><td>本・雑誌・オーディオ／コレクション／キッチン用品／ファブリック・インテリア雑貨／工具・金物</td><td class="num">＋2.5pt</td></tr>
+      <tr><td class="num"><b>10%</b></td><td>ベビー・マタニティ／美容・パーソナルケア／健康／アクセサリー・ジュエリー／シューズ／スポーツ・アウトドア／おもちゃ・ホビー</td><td class="num">＋3.5pt</td></tr>
+      <tr><td class="num"><b>12%</b></td><td>ファッション／ペット用品 など</td><td class="num">＋5.5pt</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>自社の主力商材がどこに入るかで、Yahoo!との比較結果は大きく変わります。<strong>7%と12%では5ポイントの開きがあり、これはYahoo!の必須変動費の増加分（＋1.0ポイント）の5倍</strong>です。食品や家電を扱っているセラーと、ファッションやペット用品を扱っているセラーでは、同じ「TikTok Shopの手数料」でも意味がまったく違います。カテゴリごとの動きやすさは<a href="https://leam.co.jp/column/best-categories/">売れやすいカテゴリ</a>もあわせてご覧ください。</p>
+  <p>出店のハードルも整理しておきます。審査は通常1〜5営業日です。出店数は個人セラーが1店、法人が最大5店と決まっています。Yahoo!ショッピングと違い「複数ストアを並べて検証する」やり方は取りにくいので、最初にどの商材で出すかの選定が重要になります。審査で用意するものや落ちやすい点は<a href="https://leam.co.jp/column/tiktok-shop-shinsa/">TikTok Shopの審査</a>にまとめています。</p>
+  <p>費用面でYahoo!と決定的に違うのが、<strong>アフィリエイト（クリエイターへのコミッション）の位置づけ</strong>です。Yahoo!では商品カテゴリごとに2%〜4%の必須報酬料率が制度として定められ、さらに報酬額の30%が上乗せされます。つまり下限が制度で固定されています。TikTok Shopでは、クリエイターに何%を払うかはセラー側の設計事項です。クリエイター側の参加条件は18歳以上・フォロワー1,000人以上と公開されています。何%が妥当かは<a href="https://leam.co.jp/column/creator-commission/">コミッション相場と決め方</a>、運用の流れは<a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの始め方</a>で扱っています。この記事の試算では、説明用に10%と仮置きします。</p>
+  <p>広告は、2025年7月から日本展開されているGMV Maxが、2025年7月以降のTikTok Shop広告における唯一のキャンペーンタイプです。ショート動画を対象とするProduct GMV Maxと、ライブ配信を対象とするLIVE GMV Maxの2種類があり、ROI目標と日予算を設定する形式になっています。Yahoo!のアイテムマッチのようにキーワード単位で入札する設計ではないため、運用の作法自体が変わります。詳細は<a href="https://leam.co.jp/column/gmvmax/">GMV Maxの解説</a>をご覧ください。</p>
+  <p>市場の立ち上がり方も、Yahoo!とは性質が違います。提供開始から半年（2025年6月30日〜12月末）で登録セラーは5万店を超え、参加クリエイターは20万人を超えました。そして<strong>流通総額の約70%が、クリエイター投稿・セラーのコンテンツ・LIVEを起点としている</strong>と発表されています（出典：TikTok Newsroom・2026年2月3日）。検索順位ではなくコンテンツが売上の大半を作っている、という数字です。</p>
+
+  <h2 id="s4"><span class="no en">04</span>どちらが安いかは月商で逆転し、分岐点は月商18.2万円〜200万円に散らばります</h2>
+  <p>ここからが本題の検算です。比較を成立させるために、条件を固定します。Yahoo!ショッピングは2026年9月以降の新プランで、決済がPayPay系（3.0%）中心のケース。必須変動費は売上ロイヤリティ2.5%＋ストアポイント原資1%＋決済3.0%＝<strong>6.5%</strong>で、これに月額10,000円（税抜）が乗ります。TikTok Shopはカテゴリ別の販売手数料のみです。どちらもアフィリエイト報酬と広告費は含めません（あとで足します）。</p>
+  <p>2つの合計コストが一致する月商は、次の式で求まります。固定費を、料率の差で割るだけです。</p>
+  <div class="box box-point">
+    <div class="bt">💡 分岐点の計算式</div>
+    <p><strong>分岐点の月商 ＝ 10,000円 ÷（TikTok Shopの販売手数料 − Yahoo!の必須変動費）</strong>　例：ファッション12%なら 10,000円 ÷（12% − 6.5%）＝ 10,000円 ÷ 0.055 ＝ 約181,818円</p>
+  </div>
+
+  <div class="tw"><table>
+    <thead><tr><th>TikTok Shopの<br>販売手数料</th><th>Yahoo!変動費6.5%<br>（PayPay系決済）との差</th><th>分岐点の月商</th><th>Yahoo!変動費8.0%<br>（キャリア決済中心）との差</th><th>分岐点の月商</th></tr></thead>
+    <tbody>
+      <tr><td class="num">7%</td><td class="num">＋0.5pt</td><td class="num">200.0万円</td><td class="num">−1.0pt</td><td class="y">月商を問わずTikTok Shopが安い</td></tr>
+      <tr><td class="num">9%</td><td class="num">＋2.5pt</td><td class="num">40.0万円</td><td class="num">＋1.0pt</td><td class="num">100.0万円</td></tr>
+      <tr><td class="num">10%</td><td class="num">＋3.5pt</td><td class="num">約28.6万円</td><td class="num">＋2.0pt</td><td class="num">50.0万円</td></tr>
+      <tr><td class="num">12%</td><td class="num">＋5.5pt</td><td class="num">約18.2万円</td><td class="num">＋4.0pt</td><td class="num">25.0万円</td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:var(--ink3);margin-top:-8px">※LEAM試算。アフィリエイト報酬・広告費・入金サイクルオプションを含みません。Yahoo!側は2026年9月以降の新プラン前提です。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="カテゴリ手数料別の損益分岐月商を示した横棒グラフ。ファッション12パーセントは18.2万円、美容・健康10パーセントは28.6万円、キッチン用品9パーセントは40.0万円、食品・家電7パーセントは200.0万円">
+      <text x="24" y="30" font-size="12.5" font-weight="800" fill="#454956">月額10,000円 ÷（TikTok手数料 − Yahoo!変動費6.5%）＝ 分岐点の月商</text>
+      <line x1="150" y1="52" x2="150" y2="278" stroke="#C9CBD4" stroke-width="1.5"/>
+      <rect x="150" y="60" width="49" height="34" rx="4" fill="#E8324A"/>
+      <text x="144" y="76" text-anchor="end" font-size="11.5" font-weight="800" fill="#17181C">12%</text>
+      <text x="144" y="90" text-anchor="end" font-size="10" fill="#787D8A">ファッション</text>
+      <text x="209" y="83" font-size="13" font-weight="800" fill="#B01D36">月商 18.2万円</text>
+      <rect x="150" y="115" width="77" height="34" rx="4" fill="#E8546C"/>
+      <text x="144" y="131" text-anchor="end" font-size="11.5" font-weight="800" fill="#17181C">10%</text>
+      <text x="144" y="145" text-anchor="end" font-size="10" fill="#787D8A">美容・健康</text>
+      <text x="237" y="138" font-size="13" font-weight="800" fill="#B01D36">月商 28.6万円</text>
+      <rect x="150" y="170" width="108" height="34" rx="4" fill="#AEB2BE"/>
+      <text x="144" y="186" text-anchor="end" font-size="11.5" font-weight="800" fill="#17181C">9%</text>
+      <text x="144" y="200" text-anchor="end" font-size="10" fill="#787D8A">キッチン用品</text>
+      <text x="268" y="193" font-size="13" font-weight="800" fill="#454956">月商 40.0万円</text>
+      <rect x="150" y="225" width="540" height="34" rx="4" fill="#787D8A"/>
+      <text x="144" y="241" text-anchor="end" font-size="11.5" font-weight="800" fill="#17181C">7%</text>
+      <text x="144" y="255" text-anchor="end" font-size="10" fill="#787D8A">食品・家電</text>
+      <text x="676" y="248" text-anchor="end" font-size="13" font-weight="800" fill="#fff">月商 200.0万円</text>
+      <text x="150" y="292" font-size="10.5" fill="#787D8A">0</text>
+      <text x="420" y="292" text-anchor="middle" font-size="10.5" fill="#787D8A">100万円</text>
+      <text x="690" y="292" text-anchor="end" font-size="10.5" fill="#787D8A">200万円</text>
+      <text x="24" y="312" font-size="11" fill="#787D8A">バーの内側＝TikTok Shopのほうが安い月商帯／バーを超えるとYahoo!のほうが安くなります</text>
+    </svg>
+    <figcaption>図2：カテゴリ手数料別に見た損益分岐月商（月額1万円と変動費差から算出・LEAM試算）</figcaption>
+  </figure>
+
+  <p>読み方はこうです。<strong>分岐点より月商が小さいうちは、固定費のないTikTok Shopのほうが安い。分岐点を超えるとYahoo!のほうが安くなります。</strong>ファッション（12%）なら月商18.2万円、美容・健康（10%）なら28.6万円、キッチン用品（9%）なら40.0万円が境目です。一方で食品・家電（7%）はYahoo!との差がわずか0.5ポイントしかないため、分岐点は月商200万円まで跳ね上がります。7%カテゴリのセラーにとって、TikTok Shopの手数料はほぼYahoo!と同じ水準だと考えて構いません。</p>
+  <p>決済構成でも結論は動きます。キャリア決済（4.48%）の比率が高く、Yahoo!側の必須変動費が8.0%になるストアでは、差が縮まって分岐点は下がります。9%カテゴリで月商100万円、10%で50万円、12%で25万円です。<strong>7%カテゴリに至っては、TikTok Shopの手数料のほうがYahoo!の必須変動費より1.0ポイント低くなり、月商がいくつでもTikTok Shopのほうが安い</strong>という結果になります。</p>
+  <p>固定費が実質何ポイントに化けるかも、あわせて表にしておきます。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>月商（Yahoo!ショッピング）</th><th>月額10,000円の売上比</th><th>必須変動費6.5%と合算した実質負担</th></tr></thead>
+    <tbody>
+      <tr><td class="num">10万円</td><td class="num">10.0%</td><td class="num">16.5%</td></tr>
+      <tr><td class="num">20万円</td><td class="num">5.0%</td><td class="num">11.5%</td></tr>
+      <tr><td class="num">30万円</td><td class="num">3.3%</td><td class="num">9.8%</td></tr>
+      <tr><td class="num">50万円</td><td class="num">2.0%</td><td class="num">8.5%</td></tr>
+      <tr><td class="num">100万円</td><td class="num">1.0%</td><td class="num">7.5%</td></tr>
+      <tr><td class="num">200万円</td><td class="num">0.5%</td><td class="num">7.0%</td></tr>
+      <tr><td class="num">500万円</td><td class="num">0.2%</td><td class="num">6.7%</td></tr>
+    </tbody>
+  </table></div>
+  <p>月商20万円のストアでは、Yahoo!の実質負担は11.5%です。これはTikTok Shopの最上位料率12%とほぼ同じ水準になります。<strong>「Yahoo!は無料だからTikTok Shopより安い」という前提は、2026年9月以降、月商が小さいストアでは成り立ちません。</strong></p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ この分岐点は結論ではなく出発点です</div>
+    <p>ここまでの計算は「プラットフォームに払う額」だけの比較です。実際にはTikTok Shopではコミッション（仮に10%）が乗り、Yahoo!ではアフィリエイト経由注文に2.6〜5.2%が乗ります。集客の方法も違うため、広告費まで含めれば結論は変わり得ます。どちらに寄せるかを決めるための第一歩として使ってください。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">分岐点の計算を、自店の決済構成比と単価で置き換えます</div>
+    <p>LEAMは市場データを毎営業日蓄積し、カテゴリ手数料・コミッション設計・想定単価から手残りを組み立てています。「出すべきでない商品」も含めて率直にお伝えします。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>低単価商品は率ではなく「1件あたりの固定額」で沈みます</h2>
+  <p>Yahoo!ショッピングのセラーがTikTok Shopを検討するとき、最も見落とされやすいのがここです。<strong>低単価商品の手残りを壊すのは料率ではなく、件あたりで課金される固定額</strong>です。</p>
+  <p>Yahoo!ショッピングの決済手数料のうち、<strong>コンビニ決済は200円〜350円／件（税別）、銀行振込決済（ペイジー）は150円／件（税別）</strong>で、率ではありません。販売価格1,000円の商品がコンビニ決済で買われると、250円と仮定しても<strong>25.0%相当</strong>が飛びます。350円なら35.0%です。低価格帯の商品が多いモールでありながら、決済手段の構成比次第で手残りが大きく崩れる構造になっています。</p>
+  <p>件単価と料率が入れ替わる境目も計算できます。コンビニ決済250円がPayPay系決済3.0%と同じ負担になるのは、販売価格が8,333円のときです。200円なら6,667円、350円なら11,667円。<strong>販売価格がおおむね6,700円〜11,700円を下回るゾーンでは、コンビニ決済のほうが率換算で高くつきます。</strong>ペイジーの150円は5,000円が境目です。低単価帯を主戦場にしているストアは、ほぼ全商品がこのゾーンに入ります。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="コンビニ決済250円を率に換算した曲線と、PayPay系決済3.0パーセントの水平線を重ねたグラフ。販売価格1000円で25.0パーセント、3000円で8.3パーセント、5000円で5.0パーセント、8333円で3.0パーセントとなり水平線と交差する">
+      <line x1="80" y1="270" x2="680" y2="270" stroke="#C9CBD4" stroke-width="1.5"/>
+      <line x1="80" y1="270" x2="80" y2="46" stroke="#C9CBD4" stroke-width="1.5"/>
+      <g stroke="#EDEEF1" stroke-width="1">
+        <line x1="80" y1="196.7" x2="660" y2="196.7"/><line x1="80" y1="123.3" x2="660" y2="123.3"/><line x1="80" y1="50" x2="660" y2="50"/>
+      </g>
+      <g font-size="10.5" fill="#787D8A" text-anchor="end">
+        <text x="74" y="274">0%</text><text x="74" y="200">10%</text><text x="74" y="127">20%</text><text x="74" y="54">30%</text>
+      </g>
+      <line x1="80" y1="248" x2="660" y2="248" stroke="#0A6E68" stroke-width="2.5"/>
+      <text x="658" y="238" text-anchor="end" font-size="11.5" font-weight="800" fill="#0A6E68">PayPay系決済 3.0%（定率）</text>
+      <polyline points="80,86.7 106,147.8 133,178.3 186,208.9 238,224.2 291,233.3 344,239.4 449,247.1 467,248 555,251.7 660,254.7"
+        fill="none" stroke="#E8324A" stroke-width="2.8"/>
+      <circle cx="80" cy="86.7" r="4.5" fill="#E8324A"/>
+      <circle cx="186" cy="208.9" r="4.5" fill="#E8324A"/>
+      <circle cx="291" cy="233.3" r="4.5" fill="#E8324A"/>
+      <circle cx="467" cy="248" r="7" fill="#fff" stroke="#17181C" stroke-width="2.5"/>
+      <text x="92" y="80" font-size="12" font-weight="800" fill="#B01D36">1,000円 → 25.0%</text>
+      <text x="196" y="203" font-size="11.5" font-weight="700" fill="#B01D36">3,000円 → 8.3%</text>
+      <text x="301" y="228" font-size="11.5" font-weight="700" fill="#B01D36">5,000円 → 5.0%</text>
+      <text x="330" y="130" font-size="12" font-weight="800" fill="#B01D36">コンビニ決済 250円／件を率換算</text>
+      <line x1="467" y1="248" x2="530" y2="180" stroke="#17181C" stroke-width="1.2"/>
+      <rect x="470" y="146" width="200" height="36" rx="8" fill="#17181C"/>
+      <text x="570" y="169" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">8,333円で3.0%と一致</text>
+      <g font-size="10.5" fill="#787D8A" text-anchor="middle">
+        <text x="80" y="288">1,000円</text><text x="186" y="288">3,000円</text><text x="291" y="288">5,000円</text><text x="467" y="288">8,333円</text><text x="655" y="288">12,000円</text>
+      </g>
+      <text x="370" y="312" text-anchor="middle" font-size="11" fill="#787D8A">曲線が水平線より上にある価格帯＝コンビニ決済のほうが負担が重い領域（販売価格・税別）</text>
+    </svg>
+    <figcaption>図3：件単価の決済手数料が率に化けるカーブと、定率3.0%との交点（公式料率をもとにLEAM作図）</figcaption>
+  </figure>
+
+  <p>この視点で、単価別にプラットフォームへ払う額を並べると、料率だけの比較とはまったく違う絵になります。次の表は、Yahoo!の2026年9月以降の新プラン（売上ロイヤリティ2.5%＋ストアポイント原資1%＝3.5%に、決済分を加算）と、TikTok Shopのカテゴリ手数料を、1件あたりの円で並べたものです。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>販売価格</th><th>Yahoo!新プラン<br>PayPay系決済（計6.5%）</th><th>Yahoo!新プラン<br>コンビニ決済250円想定</th><th>TikTok Shop<br>7%</th><th>TikTok Shop<br>10%</th><th>TikTok Shop<br>12%</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1,000円</td><td class="num">65円</td><td class="num"><b>285円</b></td><td class="num">70円</td><td class="num">100円</td><td class="num">120円</td></tr>
+      <tr><td class="num">2,000円</td><td class="num">130円</td><td class="num">320円</td><td class="num">140円</td><td class="num">200円</td><td class="num">240円</td></tr>
+      <tr><td class="num">3,000円</td><td class="num">195円</td><td class="num">355円</td><td class="num">210円</td><td class="num">300円</td><td class="num">360円</td></tr>
+      <tr><td class="num">5,000円</td><td class="num">325円</td><td class="num">425円</td><td class="num">350円</td><td class="num">500円</td><td class="num">600円</td></tr>
+      <tr><td class="num">10,000円</td><td class="num">650円</td><td class="num">600円</td><td class="num">700円</td><td class="num">1,000円</td><td class="num"><b>1,200円</b></td></tr>
+    </tbody>
+  </table></div>
+  <p style="font-size:13px;color:var(--ink3);margin-top:-8px">※LEAM試算。Yahoo!のコンビニ決済列は「250円＋販売価格×3.5%」で計算。いずれも月額10,000円（税抜）は含みません。</p>
+
+  <p>1,000円の商品では、Yahoo!でコンビニ決済が選ばれた1件（285円）が、TikTok Shopの12%（120円）の2倍以上のコストになります。一方で10,000円の商品では逆転し、TikTok Shopの12%（1,200円）がYahoo!のコンビニ決済ケース（600円）の2倍です。<strong>単価が上がるほどTikTok Shopの料率が効き、単価が下がるほどYahoo!の件単価が効きます。</strong>低単価セラーが最初に押さえるべきなのは、この交差です。</p>
+  <h3>1件の中身を割ると、どちらも「利益が出た」とは言えない水準になる</h3>
+  <p>販売価格1,000円、原価400円、送料・梱包300円という説明用の前提で、1件の手残りを比べます。Yahoo!側はコンビニ決済（250円＋3.5%＝285円）、TikTok Shop側は12%カテゴリでコミッション10%を設定したケースです。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 310" role="img" aria-label="販売価格1000円1件の内訳を積み上げ帯で比較した図。Yahooはコンビニ決済ケースで原価400円、送料梱包300円、プラットフォーム285円、手残り15円。TikTok Shopは原価400円、送料梱包300円、販売手数料120円、コミッション100円、手残り80円">
+      <text x="70" y="34" font-size="12.5" font-weight="800" fill="#454956">販売価格 1,000円・原価400円・送料梱包300円と置いた場合の1件あたり内訳</text>
+      <text x="70" y="72" font-size="12" font-weight="700" fill="#17181C">Yahoo!ショッピング（2026年9月〜・コンビニ決済250円）</text>
+      <rect x="70" y="82" width="240" height="52" fill="#C9CBD4"/>
+      <rect x="310" y="82" width="180" height="52" fill="#AEB2BE"/>
+      <rect x="490" y="82" width="171" height="52" fill="#787D8A"/>
+      <rect x="661" y="82" width="9" height="52" fill="#0A6E68"/>
+      <text x="190" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">原価 400円</text>
+      <text x="400" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">送料・梱包 300円</text>
+      <text x="575" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">プラットフォーム 285円</text>
+      <line x1="666" y1="140" x2="690" y2="164" stroke="#0A6E68" stroke-width="1.5"/>
+      <text x="694" y="170" text-anchor="end" font-size="13" font-weight="900" fill="#0A6E68">手残り 15円</text>
+      <text x="70" y="204" font-size="12" font-weight="700" fill="#17181C">TikTok Shop（ファッション12%＋コミッション10%と仮定）</text>
+      <rect x="70" y="214" width="240" height="52" fill="#C9CBD4"/>
+      <rect x="310" y="214" width="180" height="52" fill="#AEB2BE"/>
+      <rect x="490" y="214" width="72" height="52" fill="#E8324A"/>
+      <rect x="562" y="214" width="60" height="52" fill="#F19AAA"/>
+      <rect x="622" y="214" width="48" height="52" fill="#0A6E68"/>
+      <text x="190" y="246" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">原価 400円</text>
+      <text x="400" y="246" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">送料・梱包 300円</text>
+      <text x="526" y="240" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">手数料</text>
+      <text x="526" y="254" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">120円</text>
+      <text x="592" y="240" text-anchor="middle" font-size="10" font-weight="700" fill="#17181C">報酬</text>
+      <text x="592" y="254" text-anchor="middle" font-size="10.5" font-weight="800" fill="#17181C">100円</text>
+      <text x="646" y="246" text-anchor="middle" font-size="11" font-weight="900" fill="#fff">80円</text>
+      <text x="694" y="290" text-anchor="end" font-size="13" font-weight="900" fill="#0A6E68">手残り 80円</text>
+      <text x="70" y="290" font-size="10.5" fill="#787D8A">帯の全長＝販売価格1,000円。Yahoo!側は月額10,000円を含みません</text>
+    </svg>
+    <figcaption>図4：低単価1件の手残り内訳の比較（説明用の仮定にもとづくLEAM試算）</figcaption>
+  </figure>
+
+  <p>Yahoo!（コンビニ決済）で15円、TikTok Shop（12%＋コミッション10%）で80円。<strong>どちらも「利益が出ている」とは言えない水準</strong>です。低単価の単品をそのまま横に並べても、プラットフォームを変えただけでは解決しません。単価1,000円の商品を月100件売って、手残りは1,500円と8,000円。ここに人件費も広告費も入っていません。送料の設計は<a href="https://leam.co.jp/column/shipping-rules/">送料・配送ルール</a>で扱っています。</p>
+  <p>なお、TikTok Shopの費用については「初期費用・月額固定費なし、販売手数料のみ」と案内されています。決済まわりを含む個別の条件と、最新の料率は公式ヘルプでご確認ください。</p>
+
+  <h2 id="s6"><span class="no en">06</span>需要の作られ方が逆なので、低単価は「単品」ではなく「まとめ売り」に組み替えます</h2>
+  <p>費用構造の次に効くのが、<strong>需要がどこで生まれるか</strong>の違いです。ここを踏まえないと、単価を上げる判断ができません。</p>
+  <p>Yahoo!ショッピングは、すでに検索しているユーザーの前に出るモールです。アイテムマッチは検索結果・カテゴリページの[PR]枠にクリック課金で表示し、PRオプションは成果報酬型で料率が検索順位に影響するとされています（いずれも公式の料金表は公開領域で確認できず、解説記事に依拠した情報です）。この構造では<strong>需要は最初から存在していて、競争するのは「順位」</strong>になります。だから価格比較が効き、1円差が効きます。</p>
+  <p>ここで低単価商品が苦しくなる理由を数字にします。仮にアイテムマッチの最低入札25円／クリックで露出したとして、販売価格1,000円・粗利400円の商品なら、<strong>16クリックで粗利が丸ごと消えます</strong>。損益分岐となる転換率は6.25%です。実際の入札単価は競合状況で最低額より上がりますから、低単価・薄利の単品でクリック課金の土俵に乗るのは、条件の厳しい戦い方になります。</p>
+  <p>TikTok Shopは逆側から入ります。ユーザーは商品を探していない状態でフィードを見ていて、動画やライブを見て「欲しい」と気づきます。日本での提供開始から半年の時点で、流通総額の約70%がクリエイター投稿・セラーのコンテンツ・LIVE起点だったのは、この構造の反映です。<strong>順位を買うのではなく、需要そのものを作る</strong>のがTikTok Shopの導線です。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="需要が生まれる場所の対比図。左は検索結果のPR枠をクリック課金で買うYahoo!ショッピングの導線、右はおすすめフィードの動画から商品カードへ進むTikTok Shopの導線">
+      <rect x="16" y="16" width="330" height="308" rx="14" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="181" y="46" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">Yahoo!：顕在需要に入札する</text>
+      <rect x="46" y="62" width="270" height="32" rx="8" fill="#fff" stroke="#D8DAE0"/>
+      <text x="60" y="83" font-size="12" fill="#646C7A">🔍　スチームアイロン　最安　送料無料</text>
+      <rect x="46" y="106" width="270" height="30" rx="5" fill="#fff" stroke="#E3E6EA"/>
+      <rect x="54" y="113" width="26" height="16" rx="3" fill="#B01D36"/>
+      <text x="67" y="125" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">PR</text>
+      <text x="88" y="126" font-size="11" fill="#3A3F46">入札で1位を取ったストア</text>
+      <rect x="46" y="142" width="270" height="30" rx="5" fill="#fff" stroke="#E3E6EA"/>
+      <rect x="54" y="149" width="26" height="16" rx="3" fill="#B01D36"/>
+      <text x="67" y="161" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">PR</text>
+      <text x="88" y="162" font-size="11" fill="#3A3F46">入札で2位を取ったストア</text>
+      <rect x="46" y="178" width="270" height="30" rx="5" fill="#fff" stroke="#E3E6EA"/>
+      <text x="60" y="198" font-size="11" fill="#646C7A">自然順位のストア（3位以下）</text>
+      <path d="M181 214 V236 M173 228 L181 238 L189 228" stroke="#B01D36" stroke-width="2" fill="none"/>
+      <text x="181" y="258" text-anchor="middle" font-size="11.5" font-weight="800" fill="#B01D36">アイテムマッチ 最低25円／クリック</text>
+      <text x="181" y="280" text-anchor="middle" font-size="11" fill="#3A3F46">単価1,000円・粗利400円なら</text>
+      <text x="181" y="298" text-anchor="middle" font-size="11" fill="#3A3F46">16クリックで粗利が消える</text>
+      <text x="181" y="316" text-anchor="middle" font-size="11.5" font-weight="800" fill="#17181C">＝ 転換率6.25%が損益分岐</text>
+      <rect x="374" y="16" width="330" height="308" rx="14" fill="#fff" stroke="#FE2C55" stroke-width="1.5"/>
+      <text x="539" y="46" text-anchor="middle" font-size="13" font-weight="800" fill="#B01D36">TikTok Shop：需要そのものを作る</text>
+      <rect x="474" y="62" width="130" height="196" rx="18" fill="#0B0C10"/>
+      <rect x="480" y="68" width="118" height="184" rx="13" fill="#3E2A63"/>
+      <circle cx="539" cy="132" r="26" fill="rgba(255,255,255,.16)"/>
+      <path d="M530 118 L554 132 L530 146 Z" fill="#fff"/>
+      <text x="490" y="92" font-size="9.5" fill="#fff" opacity=".85">@creator の使用動画</text>
+      <rect x="488" y="196" width="102" height="46" rx="8" fill="#fff"/>
+      <rect x="494" y="203" width="32" height="32" rx="6" fill="#F3A7B5"/>
+      <text x="532" y="216" font-size="8.5" font-weight="700" fill="#17181C">3点まとめ買い</text>
+      <text x="532" y="230" font-size="9.5" font-weight="800" fill="#B01D36">¥4,980</text>
+      <text x="539" y="280" text-anchor="middle" font-size="11.5" font-weight="700" fill="#3A3F46">おすすめフィード → 商品カード → 購入</text>
+      <text x="539" y="302" text-anchor="middle" font-size="11" fill="#3A3F46">流通総額の約70%がコンテンツ起点</text>
+      <text x="539" y="318" text-anchor="middle" font-size="10" fill="#646C7A">（TikTok Newsroom・2026年2月3日発表）</text>
+    </svg>
+    <figcaption>図5：需要が生まれる場所の違いと、それぞれの入口で必要になるもの（LEAM作図）</figcaption>
+  </figure>
+
+  <p>この違いから、低単価セラーが取るべき組み替えは明確です。<strong>1点1,000円の単品ではなく、客単価を上げたセット・まとめ売りに設計し直すことです。</strong>数字で確認します。単価1,000円・12%カテゴリの販売手数料は120円ですが、5点セット5,000円にすれば手数料は600円になる一方で、送料・梱包と発送作業は1回のままです。原価2,000円・手数料600円・コミッション500円・送料梱包400円と置くと、1件の手残りは1,500円になります。単品を5件売った場合の手残り（80円×5＝400円）と比べて<strong>3.75倍</strong>です。同じ5点でも、まとめて1件にするだけで結果が変わります。</p>
+  <p>この組み替えは、Yahoo!ショッピング側でも効きます。コンビニ決済250円という固定額は、5,000円の注文なら5.0%相当まで下がるためです。<strong>低単価・薄利の設計は、どちらのモールでも同じ方向に不利</strong>だと考えたほうが実態に合います。</p>
+  <p>動画で伝えるうえでも、まとめ売りのほうが相性が良いというのが当社の運用実感です。1点だけを映す動画より、使うシーンや組み合わせを見せられるほうが尺を使えるためです。ただし単品をすべて畳む必要はありません。<strong>まとめ売りに寄せるのは、単価が低すぎて1件あたりの手残りが出ない商品</strong>で、お試しの入口として単品を残す設計とは両立します（<a href="https://leam.co.jp/column/pricing-strategy/">価格設定戦略</a>の3段構成を参照）。価格の組み立て方は<a href="https://leam.co.jp/column/pricing-strategy/">価格設定戦略</a>、動画の作り方は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の型</a>にまとめています。</p>
+
+  <h2 id="s7"><span class="no en">07</span>Yahoo!の運用資産は、そのまま持ち込めるものと作り直しが必要なものに分かれます</h2>
+  <p>並行出店を検討するとき、「今あるものがどれだけ使えるか」で初期の負担が決まります。Yahoo!ショッピングで積み上げてきた資産を仕分けると、次のようになります。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>Yahoo!で持っている資産</th><th>TikTok Shopでの扱い</th><th>理由・注意点</th></tr></thead>
+    <tbody>
+      <tr><td>商品在庫・仕入れ先</td><td class="y">そのまま使える</td><td>出店数は個人1店・法人最大5店。同じ在庫を併売できるが、在庫連携の仕組みは自前で用意する</td></tr>
+      <tr><td>配送業者・梱包資材</td><td class="y">そのまま使える</td><td>1件あたり送料・梱包300円という前提は変わらない。ただし単品・小口の比率は動く</td></tr>
+      <tr><td>商品画像（白背景・スペック文字入り）</td><td>作り直しが必要</td><td>流通総額の約70%が動画・LIVE起点。検索結果で比較される前提の静止画とは温度感が合わない</td></tr>
+      <tr><td>商品名（検索キーワード詰め込み）</td><td>作り直しが必要</td><td>最低25円／クリックの入札で順位を取る設計から、動画レコメンド起点へ変わる</td></tr>
+      <tr><td>ストア評価・レビュー</td><td class="n">引き継げない</td><td>プラットフォームが違うため0件から積み直す</td></tr>
+      <tr><td>アイテムマッチの入札ノウハウ</td><td class="n">使えない</td><td>TikTok Shop広告は2025年7月以降、GMV Maxが唯一のキャンペーンタイプ</td></tr>
+      <tr><td>顧客リスト・メルマガ導線</td><td class="n">使えない</td><td>外部サイト・LINE等への誘導は規約違反にあたる</td></tr>
+      <tr><td>価格設定</td><td>再設計が必要</td><td>必須6.5%＋月額10,000円から、カテゴリ別7〜12%＋コミッションへ前提が入れ替わる</td></tr>
+    </tbody>
+  </table></div>
+
+  <p>特に注意が必要なのが3つあります。1つ目は<strong>商品画像</strong>です。Yahoo!向けに作った白背景＋スペック文字入りの画像は、検索結果の一覧で他店と並べて比較されることを前提にした設計です。TikTok Shopでは動画やライブを見た人が商品ページに着地するため、求められる情報の順番が変わります。商品ページの整え方は<a href="https://leam.co.jp/column/product-page-cvr/">商品ページのCVR改善</a>で扱っています。</p>
+  <p>2つ目は<strong>商品名の作り方</strong>です。Yahoo!の検索対策としてキーワードを詰め込んだ商品名は、検索入札の土俵では機能しますが、動画レコメンドが起点のTikTok Shopではそのまま持ち込む意味が薄くなります。むしろ動画で語られている言葉と商品名が一致しているかのほうが重要になります。</p>
+  <p>3つ目が<strong>外部誘導</strong>です。TikTok Shopでは外部サイトやLINE等への誘導は規約違反にあたります。Yahoo!の店舗やメルマガへ送客する導線を前提に設計すると、アカウントのリスクになります。「TikTok Shopを集客の入口にして、利益率の高い自社サイトへ流す」という設計は取れない、と最初に確定させておいてください。管理画面の使い方は<a href="https://leam.co.jp/column/seller-center-guide/">セラーセンターの使い方</a>にまとめています。</p>
+  <p>在庫については、同じ商品を複数モールに出すこと自体は一般的な運用です。ただし在庫連携の仕組みは自分で用意する必要があり、動画が伸びたときの瞬間的な注文集中に耐えられるかは、Yahoo!での平常運転とはまったく別の問題になります。<strong>最初から全SKUを移さず、1商品で実測してから広げる</strong>のが安全です。</p>
+
+  <h2 id="s8"><span class="no en">08</span>まとめ：明日から7日で、この数字を自店のものに置き換えてください</h2>
+  <p>ここまでの計算は、決済構成比・単価・カテゴリという3つの変数で動きます。一般論のままでは判断できないので、自店の数字に置き換える必要があります。<strong>2026年9月1日（火）から新プランが始まりますから、9月分の請求が確定する前に、見るべき順番だけ決めておくと動きやすくなります。</strong>次の順で進めてください。</p>
+
+  <ol class="steps">
+    <li><b>1日目：直近3ヶ月の決済手段構成比を出す</b><p>コンビニ決済とペイジーの「件数比率」を確認します。低単価帯でこの比率が20%を超えているなら、コストの主因は料率ではなく件単価です。</p></li>
+    <li><b>2日目：単価帯別に「1件あたりの粗利額」を円で出す</b><p>粗利率（%）ではなく円で出すのが重要です。250円の決済手数料は率では表せません。1,000円未満・1,000〜3,000円・3,000円以上の3帯に分けるだけで十分です。</p></li>
+    <li><b>3日目：月額10,000円が自店の月商の何ポイントに当たるか計算する</b><p>10,000円 ÷ 月商です。月商50万円なら2.0ポイント、20万円なら5.0ポイント。ここが9月からの実質的な値上げ幅になります。</p></li>
+    <li><b>4日目：主力商材のTikTok Shopカテゴリ手数料を7・9・10・12%のどれか確定させる</b><p>ここを間違えると分岐点が10倍変わります。ファッションとペット用品は12%、食品・家電は7%です。</p></li>
+    <li><b>5日目：分岐点の月商を計算し、いまの月商と比べる</b><p>10,000円 ÷（カテゴリ手数料 − 自店のYahoo!必須変動費）です。下回っていればTikTok Shopのほうがコストは軽く、上回っていればYahoo!のほうが軽い、というのが出発点になります。</p></li>
+    <li><b>6日目：コミッション率を仮置きして再計算する</b><p>10%で置いて手残りが残らないなら、単品ではなくセット構成に組み替える判断になります。5点セットにするだけで1件の手残りが3.75倍になる例は§06で計算しました。</p></li>
+    <li><b>7日目：出すと決めたら1SKUだけで審査に出す</b><p>審査は通常1〜5営業日です。個人セラーは1店、法人は最大5店なので、店舗を増やして試す形は取れません。全商品を移す前に、1つの商品で手残りと発送オペレーションを実測してください。</p></li>
+  </ol>
+
+  <p>この7日間で出るのは「やるかやらないか」の答えではなく、<strong>どの商品なら手残りが残るかというリスト</strong>です。単価1,000円の単品しか持っていないストアなら、まず作るべきなのはTikTok Shopのアカウントではなく、セット商品のSKUだ、という結論になることもあります。</p>
+  <p>Yahoo!ショッピングをやめる話ではありません。<strong>2026年9月以降のYahoo!は「固定費を払って回すモール」になったので、固定費を回収できる月商を維持する商品と、固定費のない場所で試す商品を分けられるようになった</strong>——と捉えるのが実務的です。月商が固定費に対して小さいうちは、TikTok Shop側のほうがコストの絶対額は軽くなります。TikTok Shopの手数料の詳細は<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料</a>、複数モールの使い分けの全体像は<a href="https://leam.co.jp/column/marketplace-comparison/">モール比較</a>をあわせてご覧ください。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>Yahoo!ショッピングとTikTok Shopに同じ商品を同時に出品してもよいですか？</summary><div class="a">同じ商品を複数のモールに出すこと自体は一般的な運用です。ただし在庫連携の仕組みは自分で用意する必要があり、価格を揃えるかどうかは手数料構造が異なるため別途の判断になります。各モールの最新の規約はそれぞれの公式情報でご確認ください。</div></details>
+    <details><summary>Yahoo!ショッピングで開店した月の月額システム利用料は満額かかりますか？</summary><div class="a">公式FAQには「開店した月の月額システム利用料は日割り計算いたします」と記載されています。請求は開店した当月から始まります。</div></details>
+    <details><summary>TikTok Shopの審査にはどのくらいかかりますか？</summary><div class="a">通常1〜5営業日です。必要書類や落ちやすい点は審査の解説記事で扱っています。</div></details>
+    <details><summary>TikTok Shopは1社で何店舗まで開けますか？</summary><div class="a">個人セラーは1店、法人は最大5店です。Yahoo!ショッピングのようにストアを増やして検証する進め方は取りにくくなります。</div></details>
+    <details><summary>TikTok Shopの商品ページからYahoo!ショッピングの店舗へ誘導してもよいですか？</summary><div class="a">外部サイトやLINE等への誘導は規約違反にあたります。他モールや自社サイトへの送客を前提にした設計は避けてください。</div></details>
+    <details><summary>Yahoo!ショッピングの売上ロイヤリティ2.5%は送料にもかかりますか？</summary><div class="a">算定基礎が商品代金のみか送料を含むか、税抜か税込かは、公開されている公式ページからは確認できませんでした。手残りの計算に使う場合は、公式の資料請求や問い合わせで確認してください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">モール比較</span><b><a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い</a></b><span>使い分けと併売戦略</span></div>
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？</a></b><span>カテゴリ別料率と利益設計</span></div>
+      <div class="relcard"><span class="rc">価格</span><b><a href="https://leam.co.jp/column/pricing-strategy/">TikTok Shopの価格設定戦略</a></b><span>値付けとセット設計</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：Yahoo!ショッピング出店案内（費用・決済手数料・よくあるご質問の各ページ）／TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ／TikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過」（2026年2月3日）／アイテムマッチ・PRオプションの料金に関する記述はEC支援会社の解説記事に依拠しており、公式料金表は公開領域で確認できていません。【試算】と記した数値は公式各項目をLEAMが合算したもので、決済手段の構成比とアフィリエイト経由比率により振れます。料率・プランは改定されるため、本記事は2026年8月30日時点の情報にもとづき、最新は各公式情報でご確認ください。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">2026年9月1日で費用が二層になる</a></li>
+        <li><a href="#s2">全注文にかかる5.5〜8.0%</a></li>
+        <li><a href="#s3">TikTok Shopは固定費ゼロ・7〜12%</a></li>
+        <li><a href="#s4">分岐点は18.2万円〜200万円</a></li>
+        <li><a href="#s5">低単価は件単価で沈む</a></li>
+        <li><a href="#s6">まとめ売りへの組み替え</a></li>
+        <li><a href="#s7">持ち込める資産の仕分け</a></li>
+        <li><a href="#s8">まとめ：7日でやる順番</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>手残りの検算を無料で</b>
+      <p>単価・粗利・決済構成比から、手残りが残る商品を切り分けます。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Yahoo!ショッピングのセラーがTikTok Shopを始める意味｜低単価商品で成立するかを手数料で検算する","description":"Yahoo!ショッピングのセラー向けに、2026年9月改定後の必須費用6.5〜8.0%＋月額1万円とTikTok Shop7〜12%の分岐点を実数で検算します。","datePublished":"2026-08-30","dateModified":"2026-08-30","mainEntityOfPage":"https://leam.co.jp/column/yahoo-seller-tiktok-shop/","author":{"@type":"Organization","name":"株式会社LEAM","url":"https://leam.co.jp/"},"publisher":{"@type":"Organization","name":"株式会社LEAM","url":"https://leam.co.jp/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"TOP","item":"https://leam.co.jp/"},{"@type":"ListItem","position":2,"name":"コラム","item":"https://leam.co.jp/column/"},{"@type":"ListItem","position":3,"name":"Yahoo!ショッピングのセラーがTikTok Shopを始める意味｜低単価商品で成立するかを手数料で検算する","item":"https://leam.co.jp/column/yahoo-seller-tiktok-shop/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Yahoo!ショッピングとTikTok Shopに同じ商品を同時に出品してもよいですか？","acceptedAnswer":{"@type":"Answer","text":"同じ商品を複数のモールに出すこと自体は一般的な運用です。ただし在庫連携の仕組みは自分で用意する必要があり、価格を揃えるかどうかは手数料構造が異なるため別途の判断になります。各モールの最新の規約はそれぞれの公式情報でご確認ください。"}},{"@type":"Question","name":"Yahoo!ショッピングで開店した月の月額システム利用料は満額かかりますか？","acceptedAnswer":{"@type":"Answer","text":"公式FAQには「開店した月の月額システム利用料は日割り計算いたします」と記載されています。請求は開店した当月から始まります。"}},{"@type":"Question","name":"TikTok Shopの審査にはどのくらいかかりますか？","acceptedAnswer":{"@type":"Answer","text":"通常1〜5営業日です。必要書類や落ちやすい点は審査の解説記事で扱っています。"}},{"@type":"Question","name":"TikTok Shopは1社で何店舗まで開けますか？","acceptedAnswer":{"@type":"Answer","text":"個人セラーは1店、法人は最大5店です。Yahoo!ショッピングのようにストアを増やして検証する進め方は取りにくくなります。"}},{"@type":"Question","name":"TikTok Shopの商品ページからYahoo!ショッピングの店舗へ誘導してもよいですか？","acceptedAnswer":{"@type":"Answer","text":"外部サイトやLINE等への誘導は規約違反にあたります。他モールや自社サイトへの送客を前提にした設計は避けてください。"}},{"@type":"Question","name":"Yahoo!ショッピングの売上ロイヤリティ2.5%は送料にもかかりますか？","acceptedAnswer":{"@type":"Answer","text":"算定基礎が商品代金のみか送料を含むか、税抜か税込かは、公開されている公式ページからは確認できませんでした。手残りの計算に使う場合は、公式の資料請求や問い合わせで確認してください。"}}]},{"@type":"Organization","name":"株式会社LEAM","url":"https://leam.co.jp/"}]}</script>
+</body>
+</html>

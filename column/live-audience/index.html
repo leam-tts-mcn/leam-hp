@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのライブは誰が見ている？視聴者層</title>
+<meta name="description" content="TikTok Shopのライブを実際に見て買っているのは誰かを、視聴者層と売れる時間帯から整理します。狙う時間帯の決め方も解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/live-audience/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのライブは誰が見ている？視聴者層">
+<meta property="og:description" content="TikTok Shopのライブを実際に見て買っているのは誰かを、視聴者層と売れる時間帯から整理します。狙う時間帯の決め方も解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/live-audience/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのライブは誰が見ている？視聴者層">
+<meta name="twitter:description" content="TikTok Shopのライブを実際に見て買っているのは誰かを、視聴者層と売れる時間帯から整理します。狙う時間帯の決め方も解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのライブは誰が見ている？視聴者層", "description": "TikTok Shopのライブを実際に見て買っているのは誰かを、視聴者層と売れる時間帯から整理します。狙う時間帯の決め方も解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/live-audience/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのライブは誰が見ている？視聴者層", "item": "https://leam.co.jp/column/live-audience/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › ライブの視聴者層と売れる時間帯</p>
+  <span class="cat">ライブコマース</span>
+  <h1>TikTok Shopのライブは誰が見ている？視聴者層と売れる時間帯</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="24時間の時計ダイヤルに時間帯ごとの視聴量の山が立ち、針が夜のピークを指し、その下に視聴者を表す人のアイコンが帯状に並ぶイラスト">
+  <defs>
+    <g id="dial">
+      <circle cx="366" cy="310" r="118"/>
+      <path d="M468.4 251.4L511.9 226.6A168 168 0 0 1 527.3 263L479.3 277A118 118 0 0 0 468.4 251.4Z"/>
+      <path d="M480.1 280L512 271.6A151 151 0 0 1 517 306.7L484 307.4A118 118 0 0 0 480.1 280Z"/>
+      <path d="M484 310.5L505 310.6A139 139 0 0 1 501 343L480.6 338A118 118 0 0 0 484 310.5Z"/>
+      <path d="M479.8 341L492.4 344.5A131 131 0 0 1 480.9 373L469.5 366.8A118 118 0 0 0 479.8 341Z"/>
+      <path d="M467.9 369.4L476.6 374.5A128 128 0 0 1 458.5 398.5L451.2 391.6A118 118 0 0 0 467.9 369.4Z"/>
+      <path d="M449.1 393.8L458.2 403A131 131 0 0 1 434 422L427.2 410.9A118 118 0 0 0 449.1 393.8Z"/>
+      <path d="M424.6 412.4L435 430.7A139 139 0 0 1 404.9 443.4L399 423.3A118 118 0 0 0 424.6 412.4Z"/>
+      <path d="M396 424.1L404.7 457A152 152 0 0 1 369.3 462L368.6 428A118 118 0 0 0 396 424.1Z"/>
+      <path d="M365.5 428L365.3 472A162 162 0 0 1 327.5 467.4L338 424.6A118 118 0 0 0 365.5 428Z"/>
+      <path d="M335 423.8L325 460.5A156 156 0 0 1 291 446.8L309.2 413.5A118 118 0 0 0 335 423.8Z"/>
+      <path d="M306.6 411.9L289.9 440.4A151 151 0 0 1 261.6 419.1L284.4 395.2A118 118 0 0 0 306.6 411.9Z"/>
+      <path d="M282.2 393.1L253.8 421.2A158 158 0 0 1 230.9 392L265.1 371.2A118 118 0 0 0 282.2 393.1Z"/>
+      <path d="M263.6 368.6L214.1 396.8A175 175 0 0 1 198 359L252.7 343A118 118 0 0 0 263.6 368.6Z"/>
+      <path d="M251.9 340L205.5 352.3A166 166 0 0 1 200 313.6L248 312.6A118 118 0 0 0 251.9 340Z"/>
+      <path d="M248 309.5L212 309.3A154 154 0 0 1 216.4 273.4L251.4 282A118 118 0 0 0 248 309.5Z"/>
+      <path d="M252.2 279L219.4 270A152 152 0 0 1 232.7 236.9L262.5 253.2A118 118 0 0 0 252.2 279Z"/>
+      <path d="M264.1 250.6L227.8 229.4A160 160 0 0 1 250.4 199.4L280.8 228.4A118 118 0 0 0 264.1 250.6Z"/>
+      <path d="M282.9 226.2L244.2 187.1A173 173 0 0 1 276.3 162.1L304.8 209.1A118 118 0 0 0 282.9 226.2Z"/>
+      <path d="M307.4 207.6L270.7 143.3A192 192 0 0 1 312.3 125.7L333 196.7A118 118 0 0 0 307.4 207.6Z"/>
+      <path d="M336 195.9L311.8 104A213 213 0 0 1 361.4 97.1L363.4 192A118 118 0 0 0 336 195.9Z"/>
+      <path d="M366.5 192L367 79A231 231 0 0 1 420.9 85.6L394 195.4A118 118 0 0 0 366.5 192Z"/>
+      <path d="M397 196.2L429.1 78.5A240 240 0 0 1 481.4 99.6L422.8 206.5A118 118 0 0 0 397 196.2Z"/>
+      <path d="M425.4 208.1L478.8 116.5A224 224 0 0 1 520.9 148.2L447.6 224.8A118 118 0 0 0 425.4 208.1Z"/>
+      <path d="M449.8 226.9L503.8 173.4A194 194 0 0 1 531.9 209.4L466.9 248.8A118 118 0 0 0 449.8 226.9Z"/>
+    </g>
+    <g id="dots">
+      <circle cx="80" cy="74" r="5"/><circle cx="116" cy="74" r="5"/><circle cx="152" cy="74" r="5"/><circle cx="188" cy="74" r="5"/>
+      <circle cx="80" cy="110" r="5"/><circle cx="116" cy="110" r="5"/><circle cx="152" cy="110" r="5"/><circle cx="188" cy="110" r="5"/>
+      <circle cx="80" cy="146" r="5"/><circle cx="116" cy="146" r="5"/><circle cx="152" cy="146" r="5"/><circle cx="188" cy="146" r="5"/>
+    </g>
+  </defs>
+
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0H1200V300C1090 342 986 352 872 334 754 315 666 276 552 276 448 276 366 310 268 324 170 338 78 330 0 302Z" fill="#F6F7F9"/>
+  <ellipse cx="866" cy="252" rx="302" ry="212" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <use href="#dots"/>
+    <use href="#dots" transform="translate(886 262)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c152-40 288-18 422 8 134 26 248 32 368 10 118-22 230-52 410-26v126H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右上：夜の時間帯を示す月 ================= -->
+  <g>
+    <path d="M985 83A92 92 0 0 0 985 267A130 130 0 0 1 985 83Z" fill="#5E6064" opacity=".14" transform="translate(9 11) rotate(-16 985 175)"/>
+    <path d="M985 83A92 92 0 0 0 985 267A130 130 0 0 1 985 83Z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" transform="rotate(-16 985 175)"/>
+  </g>
+  <path d="M1116 102Q1120.4 117.6 1136 122Q1120.4 126.4 1116 142Q1111.6 126.4 1096 122Q1111.6 117.6 1116 102Z" fill="#DFE0E2"/>
+  <path d="M842 114Q845.08 124.92 856 128Q845.08 131.08 842 142Q838.92 131.08 828 128Q838.92 124.92 842 114Z" fill="#C9CBD0"/>
+  <path d="M1108 269Q1111.74 282.26 1125 286Q1111.74 289.74 1108 303Q1104.26 289.74 1091 286Q1104.26 282.26 1108 269Z" fill="#25F4EE"/>
+  <circle cx="640" cy="176" r="14" fill="#DFE0E2"/>
+
+  <!-- ================= 左：24時間ダイヤル（主役・赤） ================= -->
+  <!-- 外周の24時間リング -->
+  <circle cx="366" cy="310" r="250" fill="none" stroke="#C9CBD0" stroke-width="4"/>
+  <g fill="#C9CBD0">
+      <circle cx="596.1" cy="212.3" r="4.5"/>
+      <circle cx="613.6" cy="275.2" r="4.5"/>
+      <circle cx="614.1" cy="340.5" r="4.5"/>
+      <circle cx="597.8" cy="403.7" r="4.5"/>
+      <circle cx="565.7" cy="460.5" r="4.5"/>
+      <circle cx="519.9" cy="507.0" r="4.5"/>
+      <circle cx="463.7" cy="540.1" r="4.5"/>
+      <circle cx="400.8" cy="557.6" r="4.5"/>
+      <circle cx="335.5" cy="558.1" r="4.5"/>
+      <circle cx="272.3" cy="541.8" r="4.5"/>
+      <circle cx="215.5" cy="509.7" r="4.5"/>
+      <circle cx="169.0" cy="463.9" r="4.5"/>
+      <circle cx="135.9" cy="407.7" r="4.5"/>
+      <circle cx="118.4" cy="344.8" r="4.5"/>
+      <circle cx="117.9" cy="279.5" r="4.5"/>
+      <circle cx="134.2" cy="216.3" r="4.5"/>
+      <circle cx="166.3" cy="159.5" r="4.5"/>
+      <circle cx="212.1" cy="113.0" r="4.5"/>
+      <circle cx="268.3" cy="79.9" r="4.5"/>
+      <circle cx="331.2" cy="62.4" r="4.5"/>
+      <circle cx="396.5" cy="61.9" r="4.5"/>
+      <circle cx="459.7" cy="78.2" r="4.5"/>
+      <circle cx="516.5" cy="110.3" r="4.5"/>
+      <circle cx="563.0" cy="156.1" r="4.5"/>
+  </g>
+  <g fill="none" stroke="#0B0C10" stroke-width="5" stroke-linecap="round">
+      <path d="M586.9 216.2L610.9 206.1"/>
+      <path d="M459.8 530.9L469.9 554.9"/>
+      <path d="M145.1 403.8L121.1 413.9"/>
+      <path d="M272.2 89.1L262.1 65.1"/>
+  </g>
+
+  <!-- 影 -->
+  <use href="#dial" fill="#5E6064" opacity=".14" transform="translate(10 12)"/>
+  <!-- 本体 -->
+  <use href="#dial" fill="#FE2C55" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- 文字盤（赤の陰） -->
+  <circle cx="366" cy="310" r="94" fill="none" stroke="#CE1730" stroke-width="6"/>
+  <g fill="#CE1730">
+      <circle cx="366.0" cy="214.0" r="4.5"/>
+      <circle cx="414.0" cy="226.9" r="4.5"/>
+      <circle cx="449.1" cy="262.0" r="4.5"/>
+      <circle cx="462.0" cy="310.0" r="4.5"/>
+      <circle cx="449.1" cy="358.0" r="4.5"/>
+      <circle cx="414.0" cy="393.1" r="4.5"/>
+      <circle cx="366.0" cy="406.0" r="4.5"/>
+      <circle cx="318.0" cy="393.1" r="4.5"/>
+      <circle cx="282.9" cy="358.0" r="4.5"/>
+      <circle cx="270.0" cy="310.0" r="4.5"/>
+      <circle cx="282.9" cy="262.0" r="4.5"/>
+      <circle cx="318.0" cy="226.9" r="4.5"/>
+  </g>
+
+  <!-- 針 -->
+  <path d="M354.0 339.7L350.6 305.6L403.8 216.4L380.1 317.5Z" fill="#0B0C10" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="366" cy="310" r="15" fill="#0B0C10"/>
+  <circle cx="366" cy="310" r="5.5" fill="#FFFFFF"/>
+
+  <!-- ================= 下：視聴者の帯（シアン） ================= -->
+  <g>
+    <rect x="560" y="440" width="588" height="132" rx="66" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="560" y="440" width="588" height="132" rx="66" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <g fill="#0B0C10">
+      <circle cx="630" cy="486" r="18"/><path d="M603 534a27 27 0 0 1 54 0z"/>
+      <circle cx="706" cy="486" r="18"/><path d="M679 534a27 27 0 0 1 54 0z"/>
+      <circle cx="782" cy="486" r="18"/><path d="M755 534a27 27 0 0 1 54 0z"/>
+      <circle cx="858" cy="486" r="18"/><path d="M831 534a27 27 0 0 1 54 0z"/>
+      <circle cx="934" cy="486" r="18"/><path d="M907 534a27 27 0 0 1 54 0z"/>
+      <circle cx="1010" cy="486" r="18"/><path d="M983 534a27 27 0 0 1 54 0z"/>
+      <circle cx="1086" cy="486" r="18"/><path d="M1059 534a27 27 0 0 1 54 0z"/>
+    </g>
+  </g>
+
+  <!-- 帯の下の時間目盛り -->
+  <g fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round">
+    <path d="M604 596v14"/><path d="M680 596v14"/><path d="M756 596v14"/><path d="M832 596v14"/><path d="M908 596v14"/><path d="M984 596v14"/><path d="M1060 596v14"/><path d="M1136 596v14"/>
+  </g>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopのライブで実際に買っている中心層は、当社の運用実感では「35〜54歳の女性」です。</strong>「TikTok＝若者のアプリ」というイメージのまま夜のゴールデンタイムだけに絞ると、視聴者は集まるのに売上がついてこない、ということが起こります。夜が悪いという話ではありません。当社が配信を計測してきた範囲では、<strong>家事がひと段落した平日の昼にも、コメントと購入が活発に動く山がある</strong>というだけのことです。この記事では、ライブの視聴者層の実像、時間帯ごとに「誰が見ているか」が入れ替わる構造、商材との相性で配信時間を決める判断表、そして自社データで確かめて上書きする手順までを解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>TikTok Shopのライブを「見ている人」と「買っている人」の違い（当社の運用実感）</li>
+      <li>時間帯ごとに視聴者層が入れ替わる構造と、売れる時間帯の見つけ方</li>
+      <li>自社の商材がどの時間帯・どの視聴者層と相性が良いかの判断表</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自社の商材は「誰に・何時に」売るべきか、無料で診断します</div>
+    <p>ライブの成果は、配信テクニックより先に「視聴者層と時間帯の設計」で決まります。商材を伺い、狙うべき視聴者層と配信時間の仮説を率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">ライブの中心は「35〜54歳の女性」：“若者のアプリ”と購買層は別物</a></li>
+      <li><a href="#s2">売れる時間帯の第一候補は「平日の昼」：夜のゴールデンタイムだけが正解ではない</a></li>
+      <li><a href="#s3">「視聴者が多い時間」と「売れる時間」は一致しない：買う人がいる時間を選ぶ</a></li>
+      <li><a href="#s4">商材との相性で時間帯を決める：判断表に自社商材を当てはめる</a></li>
+      <li><a href="#s5">最後は自社の実測データで上書きする：ダッシュボードとコメント欄が一次情報</a></li>
+      <li><a href="#s6">時間帯は「固定して継続」が最優先：単発の当たりより積み上げが効く</a></li>
+      <li><a href="#s7">35〜54歳の女性に売る配信は「安心感」で作る：テンションより具体性</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>ライブの中心は「35〜54歳の女性」：“若者のアプリ”と購買層は別物</h2>
+  <p>最初に結論からお伝えします。当社がTikTok Shopのライブ運用を支援するなかでの実感として、<strong>ライブで実際に商品を買っている中心層は35〜54歳の女性</strong>です。商談の場でこの話をすると驚かれることが多いのですが、コメント欄の言葉づかい、質問の内容（サイズ感・素材・使い方・家族向けかどうか）、購入までの検討の丁寧さを見ると、テレビ通販に親しんできた世代の買い方に近い行動が観察できます。</p>
+  <p>ここで大事なのは、<strong>「TikTokというアプリを日常的に使っている層」と「TikTok Shopで実際に買っている層」を分けて見る</strong>ことです。アプリ全体の利用者は若年層が厚いのが実際ですが、購買層はそれと同じではありません。TikTokの公式発表では、TikTok Shopの購入者は<strong>18〜34歳のユーザーと35歳以上のユーザーがそれぞれ全体の約半数</strong>を占めるとされており（TikTok Newsroom・2026年2月3日発表）、購入者の年代は若者に偏っていないことが公開情報からも読み取れます。外部の市場調査でも、TikTok Shopの利用者はTikTok全体のユーザー層に比べて<strong>35〜54歳</strong>の比率が高く、日中のライブ配信を通じた購買行動が活発だと報告されています（studio15「TikTok Shop日本市場白書2025」2026年2月発表・集計期間2025年7〜12月。年齢別の構成比は公開されていません）。</p>
+  <p>そのうえで当社の運用実感を重ねると、<strong>ライブという購入形式に限れば、財布のひもを実際に緩めるのは35〜54歳の女性の比重が大きい</strong>、というのが現場の見え方です。なお性別の内訳は公開データには存在せず、これは当社が支援している配信での観測です。</p>
+
+  <h3>「動画を見ている人」と「ライブで買う人」は別の集団と考える</h3>
+  <p>ショート動画のフィードを高速でスクロールしている層と、ライブに長く滞在してコメントしながら買う層は、行動がまったく違います。前者はスキマ時間の暇つぶし、後者は<strong>「納得してから買う」ための情報収集</strong>です。この違いを整理したのが次の表です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>ショート動画の視聴層</th><th>ライブの購買層（当社の運用実感）</th></tr></thead>
+    <tbody>
+      <tr><td>中心のイメージ</td><td class="n">10〜20代が厚い</td><td class="y">35〜54歳の女性が中心</td></tr>
+      <tr><td>見方</td><td>スキマ時間に高速スクロール</td><td>家事の合間・自分の時間に長く滞在</td></tr>
+      <tr><td>行動</td><td>いいね・保存で終わることが多い</td><td>コメントで質問し、納得してから購入</td></tr>
+      <tr><td>刺さる訴求</td><td>テンポ・意外性・トレンド</td><td>安心感・具体性・実演</td></tr>
+      <tr><td>活発な時間</td><td>通学通勤・夜</td><td>昼と夜の2つの山（商材による）</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>なぜ35〜54歳の女性が中心になるのか：可処分時間と購買決定権</h3>
+  <p>理由は大きく2つあると考えています。1つ目は<strong>可処分時間の形</strong>です。ライブは1本の動画と違い、視聴に数十分単位の時間を使います。平日の昼に「ながら見」できるまとまった時間を持ちやすいのは、家事や在宅ワークの合間にスマホを開く層です。2つ目は<strong>家庭の購買決定権</strong>です。食品・日用品・美容・家族のものまで、日常の買い物の意思決定を担っていることが多く、ライブで紹介される商材との接点がそもそも広いのです。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="動画視聴層とライブ購買層の対比図：左はスキマ時間に高速スクロールする若年層、右は昼の家事の合間にじっくり視聴しコメントで質問して購入する35〜54歳の女性">
+      <rect x="20" y="20" width="330" height="290" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">動画を「眺める」層</text>
+      <circle cx="120" cy="120" r="30" fill="#C9CBD4"/>
+      <circle cx="120" cy="110" r="11" fill="#fff"/>
+      <path d="M100 138 Q120 122 140 138 L140 146 Q120 132 100 146 Z" fill="#fff"/>
+      <g stroke="#AEB2BE" stroke-width="3" fill="none">
+        <path d="M200 95 V150 M192 140 L200 152 L208 140"/>
+      </g>
+      <text x="245" y="120" font-size="11" fill="#787D8A">高速スクロール</text>
+      <rect x="55" y="180" width="260" height="34" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <text x="185" y="202" text-anchor="middle" font-size="11.5" fill="#454956">スキマ時間の暇つぶしが中心</text>
+      <rect x="55" y="224" width="260" height="34" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <text x="185" y="246" text-anchor="middle" font-size="11.5" fill="#454956">いいね・保存で終わりやすい</text>
+      <text x="185" y="292" text-anchor="middle" font-size="10.5" fill="#787D8A">＝ここだけ見ると「若者のアプリ」に見える</text>
+      <rect x="370" y="20" width="330" height="290" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">ライブで「買う」層（当社の運用実感）</text>
+      <circle cx="465" cy="120" r="30" fill="#F3A7B5"/>
+      <circle cx="465" cy="110" r="11" fill="#fff"/>
+      <path d="M445 138 Q465 122 485 138 L485 146 Q465 132 445 146 Z" fill="#fff"/>
+      <rect x="510" y="92" width="160" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="590" y="110" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">35〜54歳の女性が中心</text>
+      <rect x="510" y="126" width="160" height="24" rx="12" fill="#F6F6F8"/>
+      <text x="590" y="143" text-anchor="middle" font-size="10.5" fill="#454956">昼の家事の合間にじっくり視聴</text>
+      <rect x="405" y="180" width="260" height="34" rx="8" fill="#F6F6F8"/>
+      <text x="535" y="202" text-anchor="middle" font-size="11.5" fill="#454956">💬「サイズ感は？」「素材は？」と質問</text>
+      <rect x="405" y="224" width="260" height="34" rx="8" fill="#FDEEF1"/>
+      <text x="535" y="246" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">🛒 納得してから購入する</text>
+      <text x="535" y="292" text-anchor="middle" font-size="10.5" fill="#787D8A">テレビ通販に親しんだ世代の買い方に近い</text>
+    </svg>
+    <figcaption>図1：「眺める層」と「買う層」の違いのイメージ。ライブの設計は右側に合わせる（概念図・LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>ここで挙げた視聴者層の傾向は、公的な統計ではなく<strong>当社の支援案件での観察にもとづく見解</strong>です。商材やアカウントによって実像は変わるため、§05で解説する「自社の実測データでの上書き」までをセットで行ってください。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>売れる時間帯の第一候補は「平日の昼」：夜のゴールデンタイムだけが正解ではない</h2>
+  <p>ライブ配信のノウハウ記事では「20〜22時のゴールデンタイムに配信しましょう」とよく言われます。夜に視聴者が最も多く集まること自体はその通りなのですが、<strong>視聴者が多い時間は、競合の配信も最も多い時間</strong>です。これから始めるショップが夜の枠に飛び込むと、大手や有名クリエイターの配信と同じ土俵で視聴者を奪い合うことになります。</p>
+  <p>当社の運用実感では、§01の視聴者層（35〜54歳の女性）が活発に動くのは、むしろ<strong>家事がひと段落した平日の昼の時間帯</strong>です。昼はライブの本数自体が少ないため埋もれにくく、視聴者は時間に余裕をもって見ているのでコメントのやり取りが成立しやすい。「視聴者の絶対数」では夜に劣っても、「買う人に届く濃さ」では昼が勝つ、という構図です。</p>
+  <figure>
+    <svg viewBox="0 0 720 350" role="img" aria-label="時間帯ごとの視聴者層イメージ図：朝は通勤層が短く視聴、昼11時から14時は家事がひと段落した35〜54歳の女性が活発でライブ本数は少ない、夕方は移動中の層、夜20時から22時は全年代が集まり視聴者最多だが競合配信も最多、深夜はニッチな常連層">
+      <text x="24" y="34" font-size="13" font-weight="800" fill="#454956">1日の中で「誰が見ているか」が入れ替わる（当社の運用実感によるイメージ）</text>
+      <line x1="40" y1="250" x2="690" y2="250" stroke="#17181C" stroke-width="2"/>
+      <g font-size="11" fill="#787D8A" text-anchor="middle">
+        <text x="70" y="272">6時</text><text x="180" y="272">9時</text><text x="300" y="272">12時</text>
+        <text x="420" y="272">17時</text><text x="530" y="272">20時</text><text x="640" y="272">23時</text>
+      </g>
+      <rect x="95" y="200" width="80" height="50" fill="#C9CBD4"/>
+      <rect x="245" y="120" width="115" height="130" fill="#E8324A"/>
+      <rect x="400" y="185" width="85" height="65" fill="#AEB2BE"/>
+      <rect x="500" y="95" width="100" height="155" fill="#454956"/>
+      <rect x="615" y="205" width="60" height="45" fill="#C9CBD4"/>
+      <text x="135" y="190" text-anchor="middle" font-size="10.5" fill="#787D8A">朝：通勤・家事の</text>
+      <text x="135" y="176" text-anchor="middle" font-size="10.5" fill="#787D8A">立ち上がりで短時間</text>
+      <rect x="215" y="52" width="175" height="42" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="302" y="70" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">昼 11〜14時ごろ：狙い目</text>
+      <text x="302" y="87" text-anchor="middle" font-size="10" fill="#454956">家事がひと段落した35〜54歳の女性</text>
+      <path d="M302 94 V116" stroke="#E8324A" stroke-width="2"/>
+      <text x="442" y="172" text-anchor="middle" font-size="10.5" fill="#787D8A">夕方：移動・夕食準備で</text>
+      <text x="442" y="158" text-anchor="middle" font-size="10.5" fill="#787D8A">離脱が早い</text>
+      <rect x="465" y="30" width="170" height="42" rx="10" fill="#F6F6F8" stroke="#454956"/>
+      <text x="550" y="48" text-anchor="middle" font-size="11.5" font-weight="800" fill="#17181C">夜 20〜22時：視聴者最多</text>
+      <text x="550" y="65" text-anchor="middle" font-size="10" fill="#787D8A">ただし競合の配信も最多＝埋もれやすい</text>
+      <path d="M550 72 V91" stroke="#454956" stroke-width="2"/>
+      <text x="645" y="195" text-anchor="middle" font-size="10.5" fill="#787D8A">深夜：ニッチだが</text>
+      <text x="645" y="181" text-anchor="middle" font-size="10.5" fill="#787D8A">常連化しやすい</text>
+      <rect x="40" y="300" width="14" height="14" fill="#E8324A"/>
+      <text x="62" y="312" font-size="11" fill="#454956">買う人に届きやすい時間（実感）</text>
+      <rect x="270" y="300" width="14" height="14" fill="#454956"/>
+      <text x="292" y="312" font-size="11" fill="#454956">視聴者は多いが競合も多い時間</text>
+      <rect x="500" y="300" width="14" height="14" fill="#C9CBD4"/>
+      <text x="522" y="312" font-size="11" fill="#454956">補助的な時間帯</text>
+    </svg>
+    <figcaption>図2：時間帯×視聴者層のイメージ。棒の高さは「買う人への届きやすさ」の実感値（LEAM作成）</figcaption>
+  </figure>
+
+  <h3>昼（11〜14時ごろ）：家事の合間にじっくり見る層が集まる</h3>
+  <p>昼食の前後、家事がひと区切りつくこの時間帯は、<strong>コメントが会話として成立しやすい</strong>のが最大の特徴です。「それ、洗濯機で洗えますか？」といった生活に根ざした質問が飛び、その場で答えると購入につながる。テレビ通販の昼の枠と同じ構造が、TikTok Shopのライブでも成立している、というのが当社の見立てです。</p>
+
+  <h3>夜（20〜22時ごろ）：視聴者は最多だが、競合との奪い合いになる</h3>
+  <p>夜はすべての年代が集まるピークタイムで、ファンが付いてからの「勝負枠」としては有力です。一方で配信本数も最も多く、始めたばかりのアカウントは埋もれやすい時間帯です。<strong>最初から夜に張るのではなく、昼で常連と勝ち筋を作ってから夜へ広げる</strong>順番を当社では推奨しています。</p>
+
+  <h3>朝・夕方・深夜：メインではなく「補助枠」として使う</h3>
+  <p>朝と夕方は視聴が短くなりがちで、販売のメイン枠には向きません。当日のライブ予告や新商品のお披露目など短い接点づくりに使います。深夜は視聴者こそ少ないものの趣味性の強い商材で常連が付きやすく、ニッチ戦略の選択肢になります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>時間帯</th><th>主な視聴者イメージ（当社の運用実感）</th><th>特徴</th><th>向く使い方</th></tr></thead>
+    <tbody>
+      <tr><td>朝（7〜9時ごろ）</td><td>通勤・通学、家事の立ち上がり</td><td class="n">視聴は短くスキマ的</td><td>当日ライブの予告・短い接点づくり</td></tr>
+      <tr><td><b>昼（11〜14時ごろ）</b></td><td class="y">家事がひと段落した35〜54歳の女性</td><td class="y">じっくり視聴・コメント活発・競合が少ない</td><td><b>実演・説明型の販売配信（第一候補）</b></td></tr>
+      <tr><td>夕方（17〜19時ごろ）</td><td>移動中・夕食準備の前後</td><td class="n">流入は増えるが離脱も早い</td><td>新商品のお披露目・告知</td></tr>
+      <tr><td>夜（20〜22時ごろ）</td><td>全年代が集まるピーク</td><td>視聴者最多・競合の配信も最多</td><td>常連が付いた後の勝負枠</td></tr>
+      <tr><td>深夜（23時以降）</td><td>若年層・趣味性の強い層</td><td>母数は少ないが常連化しやすい</td><td>趣味特化・語り系の配信</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：時間帯の傾向は「平均」であって「自社の正解」ではない</div>
+    <p>ここに挙げた時間帯の傾向は、当社の運用実感にもとづく出発点の仮説です。商材・フォロワー構成・地域によって最適な時間は変わります。<strong>この表で仮説を立て、§05の手順で自社データに置き換える</strong>ところまでが1セットです。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>「視聴者が多い時間」と「売れる時間」は一致しない：買う人がいる時間を選ぶ</h2>
+  <p>配信時間を決めるときに最も多い間違いが、<strong>「同時視聴者数が最大になる時間＝売れる時間」だと考えてしまうこと</strong>です。夜のピークタイムは確かに人が多いのですが、その多くは目的なくフィードを流している層で、購入までの距離が遠い。逆に昼は母数こそ少なくても、「買い物モード」で滞在している視聴者の割合が高い、というのが当社の運用実感です。</p>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="視聴者数と購入の関係の概念図：夜のピークタイムは視聴者が多いが購入につながる割合が低く、昼は視聴者が少なくても購入につながる割合が高いことがある">
+      <text x="24" y="34" font-size="13" font-weight="800" fill="#454956">「視聴の山」と「購入の山」はずれることがある（概念図・実数ではありません）</text>
+      <rect x="60" y="60" width="280" height="180" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="200" y="88" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">夜のピークタイム</text>
+      <rect x="95" y="110" width="60" height="100" rx="6" fill="#C9CBD4"/>
+      <text x="125" y="228" text-anchor="middle" font-size="11" fill="#787D8A">視聴者数</text>
+      <rect x="215" y="180" width="60" height="30" rx="6" fill="#787D8A"/>
+      <text x="245" y="228" text-anchor="middle" font-size="11" fill="#787D8A">購入する人</text>
+      <text x="200" y="130" text-anchor="middle" font-size="10.5" fill="#787D8A">多くは“流し見”</text>
+      <rect x="380" y="60" width="280" height="180" rx="12" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="520" y="88" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">昼の時間帯</text>
+      <rect x="415" y="150" width="60" height="60" rx="6" fill="#F3A7B5"/>
+      <text x="445" y="228" text-anchor="middle" font-size="11" fill="#787D8A">視聴者数</text>
+      <rect x="535" y="160" width="60" height="50" rx="6" fill="#E8324A"/>
+      <text x="565" y="228" text-anchor="middle" font-size="11" fill="#787D8A">購入する人</text>
+      <text x="520" y="130" text-anchor="middle" font-size="10.5" font-weight="700" fill="#C2203A">“買い物モード”の割合が高い</text>
+      <text x="360" y="264" text-anchor="middle" font-size="11" fill="#787D8A">見るべき指標は「同時視聴者数」ではなく「配信あたりの注文」</text>
+    </svg>
+    <figcaption>図3：視聴者数と購入の関係（概念図）。母数の大小と売上は比例しない（LEAM作成）</figcaption>
+  </figure>
+  <p>したがって、配信時間の評価軸は同時視聴者数ではなく、<strong>「その配信から何件の注文が生まれたか」</strong>に置きます。視聴者数が3分の1でも注文が同じなら、その時間帯のほうが効率は上です。ライブ配信の基本的な組み立て方は、姉妹記事「<a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門｜売れる配信の作り方と準備</a>」で詳しく解説しているので、これから始める方はあわせてお読みください。</p>
+
+  <h2 id="s4"><span class="no en">04</span>商材との相性で時間帯を決める：判断表に自社商材を当てはめる</h2>
+  <p>「昼が狙い目」はあくまで当社が多く扱う商材群（食品・日用品・美容など、35〜54歳の女性が決定権を持つ商材）での実感です。<strong>商材が変われば、最適な時間帯は逆転します</strong>。ガジェットや趣味用品のように夜〜深夜に視聴が伸びる商材では、夜の枠が第一候補になります。夜が売れないという話ではなく、自社の商材がどちらに寄るかを先に見極めてください。<strong>自社の商材を次の表に当てはめて、配信時間の仮説を立ててください。</strong></p>
+  <div class="tw"><table>
+    <thead><tr><th>商材タイプ</th><th>相性の良い時間帯（仮説の出発点）</th><th>誰が見ているか</th><th>訴求のコツ</th></tr></thead>
+    <tbody>
+      <tr><td>食品・日用品・キッチン用品</td><td class="y">平日の昼</td><td>家事の合間の35〜54歳の女性</td><td>実演・時短・家族の反応を語る</td></tr>
+      <tr><td>美容・スキンケア（悩み解決型）</td><td class="y">平日の昼〜夕方</td><td>自分の時間に悩みをじっくり聞ける層</td><td>使用感の実演・肌悩みへの共感</td></tr>
+      <tr><td>トレンドコスメ・ファッション</td><td>夜（20〜22時ごろ）</td><td>仕事・学校を終えた20〜30代</td><td>トレンド感・限定感・着回し提案</td></tr>
+      <tr><td>健康食品・インナーケア</td><td>昼＋夜の2部制</td><td>昼は主婦層、夜は仕事帰りの層</td><td>悩みへの共感→仕組みの説明の順</td></tr>
+      <tr><td>ガジェット・趣味用品</td><td>夜〜深夜</td><td>男性比率が上がる時間帯</td><td>スペック比較・実機デモ</td></tr>
+      <tr><td>ベビー・キッズ用品</td><td class="y">昼（子どもの昼寝時間帯）</td><td>育児中の母親</td><td>安全性・先輩ユーザーの声</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>この表は「正解表」ではなく<strong>初回配信の時間帯を決めるための仮説表</strong>です。同じ商材でも、価格帯や訴求の切り口で刺さる層は変わります。2〜4週間の実測とセットで使ってください。</p>
+  </div>
+  <div class="box box-warn">
+    <div class="bt">📊 カテゴリ別のライブ動向について</div>
+    <p>当社は市場データを毎営業日蓄積しており、カテゴリ別のライブコマース動向（伸びているカテゴリ、動画とライブどちらで売れているか）を確認しています。自社の商材についての見立てが必要な方は、無料相談でお問い合わせください。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">「うちの商材は昼と夜どちらか」を、データと運用実績からお答えします</div>
+    <p>LEAMは市場データを毎営業日蓄積し、商材カテゴリごとの動向とライブ運用の実績を突き合わせて配信設計を組み立てます。時間帯の仮説づくりから検証の回し方まで、無料相談で整理できます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>最後は自社の実測データで上書きする：ダッシュボードとコメント欄が一次情報</h2>
+  <p>ここまでの視聴者層と時間帯の話は、あくまで出発点の仮説です。<strong>あなたのショップの正解は、あなたのアカウントのデータの中にしかありません。</strong>TikTok Shopのセラー向け管理画面やライブ配信の分析画面（LIVEダッシュボードなど。名称・画面構成は更新されることがあるため、最新は公式ヘルプで確認してください）では、配信ごとの視聴・購入データを確認できます。</p>
+
+  <h3>見るべきは「視聴者の属性」と「配信あたりの注文」の2つ</h3>
+  <p>分析画面で最初に見るべきは、①視聴者の年齢・性別の構成、②配信ごとの注文数・売上の2つです。①で「誰が見に来ているか」を確かめ、②で「どの時間帯の配信が実際に売れたか」を比べます。同時視聴者数やいいね数は気分が上がる数字ですが、時間帯の意思決定には使いません。</p>
+
+  <h3>コメント欄は無料の顧客調査：語彙で年齢層が推定できる</h3>
+  <p>数字とあわせて、コメント欄の言葉づかいを観察してください。絵文字やスラング中心なのか、「〜でしょうか」と丁寧に質問されるのか。<strong>質問の内容（家族向けか、自分用か、価格への反応）から、買っている層の生活像がかなり具体的に見えてきます。</strong>当社が「35〜54歳の女性が中心」という実感を持ったのも、もとはコメント欄の観察からでした。</p>
+  <ol class="steps">
+    <li><b>仮説を立てる：§04の判断表で初回の時間帯を決める</b><p>商材タイプから「昼型か夜型か」の仮説を選びます。迷ったら競合の少ない昼から始めます。</p></li>
+    <li><b>同じ時間帯で2〜4週間、週2回以上配信する</b><p>1回の結果で判断せず、同条件で回数を重ねます。単発の数字は曜日やおすすめ表示の偶然に左右されます。</p></li>
+    <li><b>「配信あたりの注文」で時間帯を比較する</b><p>視聴者数ではなく注文数で評価します。あわせて視聴者属性とコメントの語彙も記録します。</p></li>
+    <li><b>勝った時間帯に固定し、別の時間帯を追加で検証する</b><p>主戦場を固定したうえで、2部制（昼＋夜など）の検証へ広げていきます。</p></li>
+  </ol>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="仮説・実測・固定のループ図：判断表で仮説を立て、2〜4週間の配信で実測し、勝った時間帯に固定して積み上げる循環">
+      <rect x="30" y="70" width="190" height="110" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="125" y="105" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">① 仮説</text>
+      <text x="125" y="130" text-anchor="middle" font-size="11" fill="#787D8A">商材相性の判断表で</text>
+      <text x="125" y="148" text-anchor="middle" font-size="11" fill="#787D8A">時間帯を決める</text>
+      <path d="M225 125 H258" stroke="#787D8A" stroke-width="2"/>
+      <path d="M252 119 L262 125 L252 131 Z" fill="#787D8A"/>
+      <rect x="265" y="70" width="190" height="110" rx="14" fill="#17181C"/>
+      <text x="360" y="105" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">② 実測</text>
+      <text x="360" y="130" text-anchor="middle" font-size="11" fill="#C9CBD4">同じ時間帯で2〜4週間</text>
+      <text x="360" y="148" text-anchor="middle" font-size="11" fill="#C9CBD4">「配信あたりの注文」で比較</text>
+      <path d="M460 125 H493" stroke="#787D8A" stroke-width="2"/>
+      <path d="M487 119 L497 125 L487 131 Z" fill="#787D8A"/>
+      <rect x="500" y="70" width="190" height="110" rx="14" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="595" y="105" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">③ 固定</text>
+      <text x="595" y="130" text-anchor="middle" font-size="11" fill="#454956">勝った時間帯を主戦場に</text>
+      <text x="595" y="148" text-anchor="middle" font-size="11" fill="#454956">常連と学習を積み上げる</text>
+      <path d="M595 185 V218 H125 V190" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M119 197 L125 185 L131 197 Z" fill="#0E8A5F"/>
+      <text x="360" y="212" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">別の時間帯・2部制の検証へ（次の仮説）</text>
+    </svg>
+    <figcaption>図4：仮説→実測→固定のループ。一般論はあくまで①の材料にする（LEAM作成）</figcaption>
+  </figure>
+
+  <h2 id="s6"><span class="no en">06</span>時間帯は「固定して継続」が最優先：単発の当たりより積み上げが効く</h2>
+  <p>時間帯選びと同じくらい重要なのが、<strong>決めた曜日・時間を動かさないこと</strong>です。理由は2つあります。1つ目は視聴者側の習慣です。テレビ番組と同じで、「この時間に開けばやっている」という予測可能性が常連を育てます。時間がバラバラな配信は、どれだけ内容が良くても習慣になりません。2つ目はプラットフォーム側の学習です。定時・定期の配信は視聴データが同条件で蓄積されるため、おすすめ表示の精度検証もしやすくなります。</p>
+  <p>実務的には、<strong>「週2〜3回・同じ曜日・同じ時間」を最低ラインとして2〜3ヶ月続ける</strong>ことを推奨しています。初回から売れることはまれで、常連のコメントが増え始めるのが数週間後、売上が目に見えて動くのはその後というのが当社の運用実感です。単発で夜の枠に挑戦して「売れなかったからライブは向いていない」と判断してしまうのが、最ももったいない撤退パターンです。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：時間帯を頻繁に変えると、検証自体が壊れる</div>
+    <p>売れないからといって毎週時間帯を変えると、「時間帯が悪いのか、内容が悪いのか」を切り分けられなくなります。<strong>変える変数は一度に1つ</strong>。時間帯を固定した状態で商品構成やトークを検証し、時間帯そのものの変更は2〜4週間単位で判断してください。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>35〜54歳の女性に売る配信は「安心感」で作る：テンションより具体性</h2>
+  <p>視聴者層が分かれば、配信の作り方も変わります。若年層向けのノリの良い配信をそのまま昼の枠に持ち込むと、中心視聴者との温度差が生まれます。35〜54歳の女性が中心の枠で効くのは、<strong>ハイテンションな煽りではなく、落ち着いた実演と具体的な説明</strong>です。</p>
+
+  <h3>質問には名前を呼んで答える：テレビ通販にない双方向性が武器になる</h3>
+  <p>この層はコメントで丁寧に質問し、答えを聞いてから買います。「〇〇さん、ご質問ありがとうございます。サイズは3展開で…」と名前を呼んで答えるだけで、視聴者との距離が一気に縮まります。ライブコマースがテレビ通販より強いのはこの双方向性で、<strong>質問への回答がそのまま次の視聴者への説明にもなる</strong>ため、答えるほど配信の情報密度が上がっていきます。</p>
+
+  <h3>生活の文脈で語る：スペックではなく「使っている場面」を見せる</h3>
+  <p>商品説明は仕様の読み上げではなく、生活の場面に置き換えます。「容量1.2リットル」ではなく「お味噌汁なら4人分作れます」。「速乾素材」ではなく「夜洗って朝には乾いています」。<strong>買った後の生活が想像できた瞬間に、購入ボタンは押されます。</strong>この訴求の作り方や配信当日の進行は、入門記事「<a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門｜売れる配信の作り方と準備</a>」で手順化しています。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>配信者のキャスティングも視聴者層に合わせます。中心視聴者と<strong>生活感覚が近いクリエイター</strong>（同世代・同じ悩みを持つ人）は、それだけで「私に向けた配信だ」という信頼を生みます。フォロワー数の多さより、層との一致を優先してください。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>結局、何時に配信するのが一番売れますか？</summary><div class="a">商材と視聴者層によって変わるため一律の正解はありません。夜が伸びる商材もあれば、昼が伸びる商材もあります。当社の運用実感では、35〜54歳の女性が決定権を持つ商材（食品・日用品・美容など）は、夜だけでなく平日の昼も有力な候補になります。昼と夜の両方を2〜4週間ずつ実測して、自社の正解に上書きしてください。</div></details>
+    <details><summary>夜のゴールデンタイムに配信できません。昼だけでも売れますか？</summary><div class="a">昼だけでも成立します。ただし売れるかどうかは商材と配信を続けられるかで決まります。昼は視聴者の絶対数こそ夜より少ないものの、競合の配信が少なく、家事の合間にじっくり見る層に届きやすい時間帯です。当社の運用実感では、立ち上げ期は昼を主戦場にして常連を育てるほうが向いていると感じています。</div></details>
+    <details><summary>視聴者数が少なくても売れますか？</summary><div class="a">視聴者数と売上は必ずしも比例しません。買い物モードの視聴者が集まっていれば、少人数でも注文は生まれます。評価指標は同時視聴者数ではなく「配信あたりの注文数」に置いてください。</div></details>
+    <details><summary>自社のライブの視聴者層はどこで確認できますか？</summary><div class="a">TikTok Shopのセラー向け管理画面やライブ配信の分析画面で、視聴者の属性や配信ごとの成果を確認できます。画面の名称・構成は更新されることがあるため、最新は公式ヘルプでご確認ください。あわせてコメント欄の言葉づかいの観察も有効です。</div></details>
+    <details><summary>男性向けの商材でもライブは有効ですか？</summary><div class="a">有効ですが、時間帯と訴求を変える必要があります。当社の運用実感では、ガジェットや趣味用品は夜〜深夜に男性の視聴が増える傾向があり、スペック比較や実機デモが刺さりやすくなります。こちらも実測での検証を前提にしてください。</div></details>
+    <details><summary>どのくらいの頻度・期間で配信を続けるべきですか？</summary><div class="a">週2〜3回・同じ曜日・同じ時間帯を最低ラインとして、2〜3ヶ月の継続を推奨しています。常連視聴者の習慣化とデータの蓄積はどちらも積み上げ式で、単発の配信では判断材料が揃いません。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/live-commerce-guide/" style="text-decoration:none;color:inherit"><span class="rc">ライブ配信</span><b>TikTok Shopライブコマース入門｜売れる配信の作り方と準備</b><span>やり方と準備はこちら</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/best-categories/" style="text-decoration:none;color:inherit"><span class="rc">商品選定</span><b>TikTok Shopで売れる商品カテゴリーと参入ジャンルの選び方</b><span>何を売るかの決め方</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/creator-commission/" style="text-decoration:none;color:inherit"><span class="rc">クリエイター</span><b>クリエイターへの報酬相場と決め方【TikTok Shopセラー向け】</b><span>粗利から逆算する報酬設計</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">ライブの立ち上げ・視聴者層の設計のご相談は無料です</div>
+    <p>商材とご状況を伺い、「誰に・何時に・誰が売るか」の設計から正直にお伝えします。クリエイターのキャスティングだけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ／TikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過。流通総額の約70％が動画やLIVE配信等のコンテンツ起点と判明。」（2026年2月3日発表）。この発表から引用しているのは<strong>購入者の年代構成（18〜34歳と35歳以上が約半数ずつ）だけ</strong>です。性別の内訳・時間帯ごとの売れ方・ライブ視聴者の構成は同発表に含まれておらず、本文中のそれらの記述は当社の運用実感にもとづく見解で、公的統計ではありません。仕様・画面・提供機能は更新されることがあります。本記事は2026年8月30日時点の情報です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">中心は「35〜54歳の女性」</a></li>
+        <li><a href="#s2">第一候補は「平日の昼」</a></li>
+        <li><a href="#s3">視聴の多さ≠売れる時間</a></li>
+        <li><a href="#s4">商材×時間帯の判断表</a></li>
+        <li><a href="#s5">実測データで上書きする</a></li>
+        <li><a href="#s6">固定して継続が最優先</a></li>
+        <li><a href="#s7">35〜54歳に売る配信の作り方</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>視聴者層×時間帯の無料診断</b>
+      <p>商材を伺い、狙うべき層と配信時間の仮説を率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopのライブは誰が見ている？視聴者層と売れる時間帯",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "結局、何時に配信するのが一番売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "商材と視聴者層によって変わるため一律の正解はありません。夜が伸びる商材もあれば、昼が伸びる商材もあります。当社の運用実感では、35〜54歳の女性が決定権を持つ商材（食品・日用品・美容など）は、夜だけでなく平日の昼も有力な候補になります。昼と夜の両方を2〜4週間ずつ実測して、自社の正解に上書きしてください。"}},
+        {"@type": "Question", "name": "夜のゴールデンタイムに配信できません。昼だけでも売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "昼だけでも成立します。ただし売れるかどうかは商材と配信を続けられるかで決まります。昼は視聴者の絶対数こそ夜より少ないものの、競合の配信が少なく、家事の合間にじっくり見る層に届きやすい時間帯です。当社の運用実感では、立ち上げ期は昼を主戦場にして常連を育てるほうが向いていると感じています。"}},
+        {"@type": "Question", "name": "視聴者数が少なくても売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "視聴者数と売上は必ずしも比例しません。買い物モードの視聴者が集まっていれば、少人数でも注文は生まれます。評価指標は同時視聴者数ではなく「配信あたりの注文数」に置いてください。"}},
+        {"@type": "Question", "name": "自社のライブの視聴者層はどこで確認できますか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopのセラー向け管理画面やライブ配信の分析画面で、視聴者の属性や配信ごとの成果を確認できます。画面の名称・構成は更新されることがあるため、最新は公式ヘルプでご確認ください。あわせてコメント欄の言葉づかいの観察も有効です。"}},
+        {"@type": "Question", "name": "男性向けの商材でもライブは有効ですか？", "acceptedAnswer": {"@type": "Answer", "text": "有効ですが、時間帯と訴求を変える必要があります。当社の運用実感では、ガジェットや趣味用品は夜〜深夜に男性の視聴が増える傾向があり、スペック比較や実機デモが刺さりやすくなります。こちらも実測での検証を前提にしてください。"}},
+        {"@type": "Question", "name": "どのくらいの頻度・期間で配信を続けるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "週2〜3回・同じ曜日・同じ時間帯を最低ラインとして、2〜3ヶ月の継続を推奨しています。常連視聴者の習慣化とデータの蓄積はどちらも積み上げ式で、単発の配信では判断材料が揃いません。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのレビューの集め方と低評価への対応</title>
+<meta name="description" content="TikTok Shopのレビューの集め方と、低評価がついた時の対応を解説します。購入率を落とさないためのレビュー運用の設計です。">
+<link rel="canonical" href="https://leam.co.jp/column/review-management/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのレビューの集め方と低評価への対応">
+<meta property="og:description" content="TikTok Shopのレビューの集め方と、低評価がついた時の対応を解説します。購入率を落とさないためのレビュー運用の設計です。">
+<meta property="og:url" content="https://leam.co.jp/column/review-management/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのレビューの集め方と低評価への対応">
+<meta name="twitter:description" content="TikTok Shopのレビューの集め方と、低評価がついた時の対応を解説します。購入率を落とさないためのレビュー運用の設計です。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+  .relcard a{color:inherit;text-decoration:none}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのレビューの集め方と低評価への対応", "description": "TikTok Shopのレビューの集め方と、低評価がついた時の対応を解説します。購入率を落とさないためのレビュー運用の設計です。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/review-management/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのレビューの集め方と低評価への対応", "item": "https://leam.co.jp/column/review-management/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › レビューの集め方と低評価対応</p>
+  <span class="cat">ショップ運営</span>
+  <h1>TikTok Shopのレビューの集め方と低評価への対応｜購入率を守るレビュー運用ガイド</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="レビュー管理：赤い低評価レビューが1件届き、星の分布バーで全体の評価を見ながら、その1件に返信の吹き出しで応対する様子を表したイラスト">
+  <defs>
+    <path id="st" d="M0 -20L4.94 -6.8L19.02 -6.18L7.99 2.6L11.76 16.18L0 8.4L-11.76 16.18L-7.99 2.6L-19.02 -6.18L-4.94 -6.8Z"/>
+  </defs>
+
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-110 34-214 40-320 24-118-18-206-54-320-52-104 2-186 44-292 56-98 11-190 2-268-26z" fill="#F6F7F9"/>
+  <ellipse cx="890" cy="236" rx="302" ry="198" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c152-32 286-16 418 8 130 24 246 30 362 12 118-18 232-40 420-22V630H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="48" cy="58" r="5"/><circle cx="84" cy="58" r="5"/><circle cx="120" cy="58" r="5"/><circle cx="156" cy="58" r="5"/>
+      <circle cx="48" cy="94" r="5"/><circle cx="84" cy="94" r="5"/><circle cx="120" cy="94" r="5"/><circle cx="156" cy="94" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(1000 486)"/>
+  </g>
+
+
+  <!-- ================= 右：星の分布パネル（副題） ================= -->
+  <g>
+    <rect x="660" y="96" width="460" height="300" rx="16" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="660" y="96" width="460" height="300" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 総合評価の見出し -->
+    <use href="#st" transform="translate(704 140) scale(1.35)" fill="#25F4EE" stroke="#0B0C10" stroke-width="5.2" stroke-linejoin="round"/>
+    <rect x="748" y="122" width="152" height="18" rx="9" fill="#DFE0E2"/>
+    <rect x="748" y="150" width="104" height="13" rx="6.5" fill="#DFE0E2"/>
+    <rect x="684" y="176" width="412" height="4" rx="2" fill="#C9CBD0"/>
+
+    <!-- 5段階の分布バー -->
+    <g stroke="#0B0C10" stroke-width="9" stroke-linejoin="round" fill="#25F4EE">
+      <use href="#st" transform="translate(700 214) scale(.48)"/><use href="#st" transform="translate(723 214) scale(.48)"/><use href="#st" transform="translate(746 214) scale(.48)"/><use href="#st" transform="translate(769 214) scale(.48)"/><use href="#st" transform="translate(792 214) scale(.48)"/>
+      <use href="#st" transform="translate(700 250) scale(.48)"/><use href="#st" transform="translate(723 250) scale(.48)"/><use href="#st" transform="translate(746 250) scale(.48)"/><use href="#st" transform="translate(769 250) scale(.48)"/>
+      <use href="#st" transform="translate(700 286) scale(.48)"/><use href="#st" transform="translate(723 286) scale(.48)"/><use href="#st" transform="translate(746 286) scale(.48)"/>
+      <use href="#st" transform="translate(700 322) scale(.48)"/><use href="#st" transform="translate(723 322) scale(.48)"/>
+      <use href="#st" transform="translate(700 358) scale(.48)"/>
+    </g>
+    <g fill="#DFE0E2">
+      <rect x="822" y="202" width="270" height="24" rx="12"/>
+      <rect x="822" y="238" width="270" height="24" rx="12"/>
+      <rect x="822" y="274" width="270" height="24" rx="12"/>
+      <rect x="822" y="310" width="270" height="24" rx="12"/>
+      <rect x="822" y="346" width="270" height="24" rx="12"/>
+    </g>
+    <g fill="#25F4EE">
+      <rect x="822" y="202" width="252" height="24" rx="12"/>
+      <rect x="822" y="238" width="180" height="24" rx="12"/>
+      <rect x="822" y="274" width="104" height="24" rx="12"/>
+      <rect x="822" y="310" width="62" height="24" rx="12"/>
+      <rect x="822" y="346" width="36" height="24" rx="12"/>
+    </g>
+  </g>
+
+  <!-- 集まっていく星（シアン） -->
+  <use href="#st" transform="translate(606 128) scale(.85)" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <use href="#st" transform="translate(624 222) scale(.6)" fill="#25F4EE" stroke="#0B0C10" stroke-width="10" stroke-linejoin="round"/>
+
+  <!-- ================= 返信の吹き出し（シアン） ================= -->
+  <g>
+    <path d="M610 430h382a20 20 0 0 1 20 20v142a20 20 0 0 1-20 20H610a20 20 0 0 1-20-20v-30l-36-16 36-28V450a20 20 0 0 1 20-20z" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <path d="M610 430h382a20 20 0 0 1 20 20v142a20 20 0 0 1-20 20H610a20 20 0 0 1-20-20v-30l-36-16 36-28V450a20 20 0 0 1 20-20z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <g fill="#FFFFFF">
+      <rect x="626" y="474" width="300" height="15" rx="7.5"/>
+      <rect x="626" y="514" width="250" height="15" rx="7.5"/>
+      <rect x="626" y="554" width="272" height="15" rx="7.5"/>
+    </g>
+  </g>
+
+  <!-- ================= 左：低評価レビュー1件（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <path d="M102 150h438a22 22 0 0 1 22 22v334a22 22 0 0 1-22 22H232l-54 56v-56h-76a22 22 0 0 1-22-22V172a22 22 0 0 1 22-22z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <!-- 背面に重なるレビュー -->
+    <rect x="110" y="132" width="466" height="364" rx="22" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" transform="rotate(4 343 314)"/>
+    <!-- 前面 -->
+    <path d="M102 150h438a22 22 0 0 1 22 22v334a22 22 0 0 1-22 22H232l-54 56v-56h-76a22 22 0 0 1-22-22V172a22 22 0 0 1 22-22z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 投稿者 -->
+    <circle cx="150" cy="240" r="30" fill="#FFFFFF"/>
+    <path d="M114 292a36 36 0 0 1 72 0z" fill="#FFFFFF"/>
+
+    <!-- 星は5つのうち1つだけ（低評価） -->
+    <g stroke="#0B0C10" stroke-width="5" stroke-linejoin="round">
+      <use href="#st" transform="translate(236 240) scale(.95)" fill="#FFFFFF"/>
+      <use href="#st" transform="translate(300 240) scale(.95)" fill="none"/>
+      <use href="#st" transform="translate(364 240) scale(.95)" fill="none"/>
+      <use href="#st" transform="translate(428 240) scale(.95)" fill="none"/>
+      <use href="#st" transform="translate(492 240) scale(.95)" fill="none"/>
+    </g>
+
+    <!-- 本文行 -->
+    <g fill="#FFFFFF">
+      <rect x="124" y="330" width="360" height="16" rx="8"/>
+      <rect x="124" y="372" width="290" height="16" rx="8"/>
+      <rect x="124" y="414" width="320" height="16" rx="8"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1136" cy="450" r="28" fill="#25F4EE"/>
+  <circle cx="1030" cy="440" r="14" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopのレビューは、動画で「欲しい」と思った人が購入を確定する直前に見る、最後の判断材料です。</strong>動画やライブでどれだけ集客しても、商品ページのレビューが薄い・荒れている状態では、見込み客はそこで静かに離脱します。一方でレビューは「お願いすれば増える」ものではなく、<strong>依頼カードの同梱やサクラのような近道は規約違反・ステマ規制違反のリスク</strong>を伴います。この記事では、レビューが購入率に効く理由、自然に増える導線の設計、低評価がついた時の初動、やってはいけない施策の線引きまでを、実際の運用相談で多いつまずきに沿って解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>レビューが購入率と広告効率の両方に効く構造と、損益への接続</li>
+      <li>依頼に頼らず自然にレビューが増える「導線」の作り方4ヶ所</li>
+      <li>低評価がついた時の対応5ステップと、原因4分類ごとの直し方</li>
+      <li>規約違反・景品表示法ステマ規制に触れるNG行為の具体例と確認先</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">レビューが増えない原因、商品ページと運用体制から無料で診断します</div>
+    <p>レビューの問題は、多くの場合レビューそのものではなく「商品ページのギャップ」「出荷体制」「クリエイター起用の量」に原因があります。現状のショップを拝見し、どこから直すべきかを率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">レビューは「最後のひと押し」：購入率と広告効率の両方に効く</a></li>
+      <li><a href="#s2">仕組みを先に押さえる：レビューは購入者が書き、動画経由の目線で読まれる</a></li>
+      <li><a href="#s3">レビューは「お願い」より「導線」で増やす：設計する場所は4つ</a></li>
+      <li><a href="#s4">低評価対応はスピードで決まる：24時間以内の初動5ステップ</a></li>
+      <li><a href="#s5">低評価の原因は4つに切り分ける：商品・説明・配送・期待値</a></li>
+      <li><a href="#s6">やってはいけないレビュー施策：見返り・サクラは規約とステマ規制に触れる</a></li>
+      <li><a href="#s7">低評価は消すより薄める：クリエイター起用でレビューの母数を増やす</a></li>
+      <li><a href="#s8">レビュー運用は週次の数字にする：見る指標と損益への接続</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>レビューは「最後のひと押し」：購入率と広告効率の両方に効く</h2>
+  <p>TikTok Shopの購買は、検索して比較する従来のECと違い、<strong>動画やライブで「衝動的に欲しくなった人」が、そのまま商品ページへ進む</strong>流れが中心です。衝動で来た人ほど、購入ボタンを押す直前に一度冷静になり、「本当に大丈夫か」をレビューで確かめます。ここでレビューが少ない・星が低い・配送トラブルの報告が並んでいる、という状態だと、動画で高まった熱はページ上で消えます。</p>
+  <p>これは体感の話にとどまりません。広告やクリエイター起用でページに人を連れてくるコストは同じでも、<strong>レビューの状態が悪ければ成約する割合が下がり、1件の注文を取るための実質コストが上がります</strong>。つまりレビューは、動画・ライブ・広告という「攻め」の成果を受け止める器であり、器に穴が空いたまま集客を強化しても、費用だけが先行します。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="レビューが購入率に効く構造図：動画やライブで興味を持ったユーザーが商品ページに進み、レビューを確認してから購入する。レビューが良ければ購入に進み、悪ければ離脱して広告費が無駄になる">
+      <rect x="20" y="40" width="150" height="70" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="95" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">動画・ライブ・広告</text>
+      <text x="95" y="92" text-anchor="middle" font-size="11" fill="#787D8A">「欲しい」が生まれる</text>
+      <path d="M175 75 H220" stroke="#787D8A" stroke-width="2"/>
+      <path d="M214 69 L224 75 L214 81 Z" fill="#787D8A"/>
+      <rect x="228" y="40" width="150" height="70" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="303" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">商品ページ</text>
+      <text x="303" y="92" text-anchor="middle" font-size="11" fill="#787D8A">価格・画像・説明</text>
+      <path d="M383 75 H428" stroke="#787D8A" stroke-width="2"/>
+      <path d="M422 69 L432 75 L422 81 Z" fill="#787D8A"/>
+      <rect x="436" y="34" width="170" height="82" rx="12" fill="#17181C"/>
+      <text x="521" y="66" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">レビュー確認</text>
+      <text x="521" y="90" text-anchor="middle" font-size="11" fill="#C9CBD4">最後のひと押し／最後の関門</text>
+      <path d="M606 60 H648 V50" stroke="#0E8A5F" stroke-width="2" fill="none"/>
+      <path d="M642 56 L648 44 L654 56 Z" fill="#0E8A5F"/>
+      <rect x="560" y="140" width="140" height="64" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="630" y="167" text-anchor="middle" font-size="13" font-weight="800" fill="#0E8A5F">購入</text>
+      <text x="630" y="189" text-anchor="middle" font-size="10.5" fill="#454956">星が高く件数も十分</text>
+      <path d="M540 116 V140" stroke="#0E8A5F" stroke-width="2"/>
+      <path d="M534 134 L540 144 L546 134 Z" fill="#0E8A5F"/>
+      <text x="503" y="134" font-size="11" font-weight="800" fill="#0E8A5F">良い</text>
+      <rect x="350" y="140" width="150" height="64" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="425" y="167" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">離脱</text>
+      <text x="425" y="189" text-anchor="middle" font-size="10.5" fill="#454956">少ない・荒れている</text>
+      <path d="M470 116 L450 140" stroke="#C2203A" stroke-width="2"/>
+      <path d="M444 132 L447 145 L456 138 Z" fill="#C2203A"/>
+      <text x="440" y="130" font-size="11" font-weight="800" fill="#C2203A">悪い</text>
+      <path d="M425 204 V236" stroke="#C2203A" stroke-width="2" stroke-dasharray="5 4"/>
+      <rect x="290" y="240" width="270" height="44" rx="10" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="425" y="268" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2203A">集客コストは同じまま、成約だけが減る</text>
+      <text x="95" y="180" font-size="11.5" fill="#787D8A">レビューは「攻め」の成果を</text>
+      <text x="95" y="200" font-size="11.5" fill="#787D8A">受け止める器。器に穴があると</text>
+      <text x="95" y="220" font-size="11.5" fill="#787D8A">集客を強化するほど損が増える</text>
+    </svg>
+    <figcaption>図1：レビューが購入率に効く構造。悪いまま集客を強化すると損が増える（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>当社の運用実感では、レビューが荒れているショップの相談は「広告が効かない」という形で持ち込まれることが多いです。原因が広告ではなくレビューと商品ページにある場合、<strong>レビューの原因を直さないまま予算だけ増やしても、回収しにくくなります</strong>。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>仕組みを先に押さえる：レビューは購入者が書き、動画経由の目線で読まれる</h2>
+  <p>施策の前に、TikTok Shopのレビューの基本仕様を整理します。ここを誤解したまま「レビューを増やしたい」と動くと、打てない施策を検討して時間を失います。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>基本の仕組み</th><th>実務上の意味</th></tr></thead>
+    <tbody>
+      <tr><td>書ける人</td><td>実際にその商品を購入した人</td><td>サクラ的な水増しは構造的にやりにくく、やれば規約・法令違反（§06）</td></tr>
+      <tr><td>書ける期間</td><td>配送完了後の一定期間内（海外版の公式ヘルプでは配送完了から60日以内と案内されています）</td><td>到着直後〜数日が投稿の山。ここに導線を集中させる（§03）</td></tr>
+      <tr><td>内容</td><td>星評価＋テキスト、写真・動画つきの投稿も可能</td><td>写真つきレビューは次の購入者への説得力が段違いに高い</td></tr>
+      <tr><td>表示される場所</td><td>商品ページのレビュー欄、ショップの評価</td><td>動画から来た人が購入直前に必ず通る位置に出る</td></tr>
+      <tr><td>セラー側の管理</td><td>セラーセンターでレビューの確認・管理を行う</td><td>週次で新着レビューを確認する運用に組み込む（§08）</td></tr>
+    </tbody>
+  </table></div>
+  <p>※レビューの投稿条件・投稿可能期間・管理画面の機能は更新されることがあります。最新の仕様は必ずセラーセンターの公式ヘルプで確認してください。</p>
+  <h3>読み手は「動画とのギャップ」を探しに来ている</h3>
+  <p>TikTok Shopのレビューの読まれ方には特徴があります。読み手は動画で商品の良い面をすでに見ているため、レビューでは<strong>「動画のとおりか」「悪い話が隠れていないか」というギャップの検証</strong>をしに来ます。だからこそ「動画のとおりでした」「思ったより良かった」という一言が、他のECサイト以上に強く効きます。逆に「動画と違う」という一言は、星の数以上のダメージになります。</p>
+  <h3>低評価は「消す」操作ができない前提で設計する</h3>
+  <p>購入者が書いたレビューを、セラーの判断で削除することはできません。誹謗中傷や商品と無関係な内容など規約に違反するレビューをプラットフォームへ報告し、審査を受ける経路はありますが、<strong>「気に入らない低評価を消す」手段は存在しない前提</strong>で、後述の「初動対応」と「薄める」戦略を組み立てるのが実務です。</p>
+
+  <h2 id="s3"><span class="no en">03</span>レビューは「お願い」より「導線」で増やす：設計する場所は4つ</h2>
+  <p>レビューを増やそうとすると「どうお願いするか」から考えがちですが、順番が逆です。<strong>人がレビューを書くのは、体験に山があった時</strong>です。お願いの文面より先に、体験の山が生まれる場所を4つ設計します。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="レビューが自然に増える導線の循環図：ギャップゼロの商品ページ、届いた瞬間の体験、購入後のフォロー、クリエイター動画の4つの設計が購入者の満足を生み、レビューが次の購入者の後押しになる循環">
+      <circle cx="360" cy="165" r="74" fill="#17181C"/>
+      <text x="360" y="158" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">レビューが</text>
+      <text x="360" y="182" text-anchor="middle" font-size="14" font-weight="800" fill="#FF8DA0">自然に増える循環</text>
+      <rect x="30" y="30" width="240" height="66" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="150" y="57" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">① ギャップゼロの商品ページ</text>
+      <text x="150" y="79" text-anchor="middle" font-size="11" fill="#787D8A">動画と届く物の差をなくす＝不満の予防</text>
+      <rect x="450" y="30" width="240" height="66" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="570" y="57" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">② 届いた瞬間の体験</text>
+      <text x="570" y="79" text-anchor="middle" font-size="11" fill="#787D8A">早い発送・丁寧な梱包＝体験の山を作る</text>
+      <rect x="30" y="234" width="240" height="66" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="150" y="261" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">④ クリエイター動画（UGC）</text>
+      <text x="150" y="283" text-anchor="middle" font-size="11" fill="#787D8A">第三者の声がレビューの空白を埋める</text>
+      <rect x="450" y="234" width="240" height="66" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="570" y="261" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">③ 購入後のフォロー</text>
+      <text x="570" y="283" text-anchor="middle" font-size="11" fill="#787D8A">使い方案内・不具合の先回り対応</text>
+      <g stroke="#E8324A" stroke-width="2" fill="none">
+        <path d="M275 78 Q330 100 348 128"/>
+        <path d="M445 78 Q390 100 372 128"/>
+        <path d="M275 252 Q330 230 348 202"/>
+        <path d="M445 252 Q390 230 372 202"/>
+      </g>
+      <g fill="#E8324A">
+        <path d="M342 122 L352 132 L338 134 Z"/>
+        <path d="M378 122 L368 132 L382 134 Z"/>
+        <path d="M342 208 L352 198 L338 196 Z"/>
+        <path d="M378 208 L368 198 L382 196 Z"/>
+      </g>
+      <text x="360" y="318" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">増えたレビューが次の購入者の背中を押し、購入がまたレビューを生む</text>
+    </svg>
+    <figcaption>図2：レビューが自然に増える4つの導線。お願いの文面より先に体験を設計する（LEAM作成）</figcaption>
+  </figure>
+  <h3>導線①：動画・商品ページと「届く物」のギャップをなくす</h3>
+  <p>低評価の予防が、良いレビューを増やす最大の施策です。動画で盛った訴求は短期のクリックを稼ぎますが、届いた瞬間に失望へ変わり、低評価として商品ページに固定されます。<strong>動画・画像・説明文は「届いた箱を開けた人が答え合わせをする」前提</strong>で作ります。サイズ感・質感・色は、誇張よりも正確さを優先してください。</p>
+  <h3>導線②：発送の速さと梱包で「届いた瞬間」に山を作る</h3>
+  <p>レビューが書かれるのは到着直後〜数日に集中します。つまり<strong>到着の瞬間の体験が、レビューの内容をほぼ決めます</strong>。予定より早く届く、梱包が丁寧、開けた時に気持ちがいい——この3つは地味ですが、ポジティブレビューの定番の話題です。逆に、発送遅延は低評価の最大の火種です（詳しくは姉妹記事「発送ルールと出荷体制」で扱います）。</p>
+  <h3>導線③：購入後のフォローは「レビュー依頼」ではなく「不満の先回り」</h3>
+  <p>購入後のやり取りで効くのは、レビューのお願いを送ることではなく、<strong>不満が低評価になる前に窓口へ吸い上げる</strong>ことです。使い方の案内、初期不良時の連絡先の明示、問い合わせへの素早い返信。「困ったらレビュー欄ではなく、まずここに言えばすぐ解決する」と伝わっていれば、怒りの行き先がレビュー欄から窓口へ変わります。なお、レビュー投稿への見返り提供を伴う依頼は規約違反のリスクがあります（§06）。</p>
+  <h3>導線④：クリエイターのアフィリエイト動画が「第三者の声」を先に積む</h3>
+  <p>立ち上げ直後はレビューがゼロで、最初の購入者ほど不安な状態で買うことになります。この空白を埋められるのが、<strong>クリエイターによるアフィリエイト動画</strong>です。商品ページに紐づく第三者の紹介動画は、レビューと同じ「自分以外の誰かが使っている証拠」として機能し、レビューが積み上がるまでの橋渡しになります。仕組みは姉妹記事「アフィリエイトの仕組み」を参照してください。</p>
+
+  <div class="ctabox">
+    <div class="ct">レビューの空白期間を、クリエイター起用で埋めませんか</div>
+    <p>LEAMはTikTok Shop特化MCNとして、商品に合うクリエイターの選定からアフィリエイト動画の量産体制づくりまで支援しています。レビューが積み上がる前の立ち上げ期こそ、第三者の声の設計が効きます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>低評価対応はスピードで決まる：24時間以内の初動5ステップ</h2>
+  <p>低評価は必ずつきます。問題は「つくかどうか」ではなく「ついた後の初動」です。当社の運用実感では、対応が遅れるほど同じ原因の低評価が連鎖し、逆に初動が早ければ1件で止まります。実務的には、<strong>低評価に気づいてから24時間以内</strong>に次の5ステップを回すことを標準にしています。</p>
+  <ol class="steps">
+    <li><b>事実確認：注文・配送・在庫の記録を突き合わせる</b><p>レビューの内容（遅延・破損・説明と違う等）を、注文履歴・配送状況・ロットの記録と照合します。謝る前に、何が起きたかを確定させます。</p></li>
+    <li><b>顧客対応：解決策を添えて連絡する</b><p>該当の購入者に、謝罪だけでなく「交換・返金・使い方の案内」など具体的な解決策を提示します。プラットフォームの購入者保護の枠組みに沿って、返品・返金の申請には素早く対応します。</p></li>
+    <li><b>連鎖の確認：同じ原因の注文が他にないか調べる</b><p>配送遅延や不良ロットが原因なら、同じ条件の注文が他にも出荷されています。低評価が「これから増えるのか」をここで見積もり、先回りの連絡を検討します。</p></li>
+    <li><b>原因の分類：4分類のどれかを記録する</b><p>商品・説明・配送・期待値のどれが原因かを分類して記録します（§05）。この記録が週次運用の材料になります。</p></li>
+    <li><b>再発防止：商品ページかオペレーションを直す</b><p>説明起因ならページと動画の訴求を修正、配送起因なら出荷体制を修正。<strong>直すのはレビュー欄ではなく、その上流</strong>です。</p></li>
+  </ol>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="低評価対応のタイムライン図：低評価の発生から24時間以内に事実確認・顧客対応・連鎖確認を行い、その後に原因分類と再発防止につなげる。放置すると同じ原因の低評価が連鎖する">
+      <line x1="50" y1="120" x2="680" y2="120" stroke="#E6E7EB" stroke-width="3"/>
+      <circle cx="80" cy="120" r="9" fill="#E8324A"/>
+      <text x="80" y="98" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">低評価が発生</text>
+      <rect x="120" y="130" width="250" height="30" rx="15" fill="#FDEEF1"/>
+      <text x="245" y="150" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">← 24時間以内（初動）→</text>
+      <circle cx="180" cy="120" r="7" fill="#17181C"/>
+      <text x="180" y="98" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">① 事実確認</text>
+      <circle cx="280" cy="120" r="7" fill="#17181C"/>
+      <text x="280" y="98" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">② 顧客対応</text>
+      <circle cx="380" cy="120" r="7" fill="#17181C"/>
+      <text x="380" y="98" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">③ 連鎖の確認</text>
+      <circle cx="500" cy="120" r="7" fill="#454956"/>
+      <text x="500" y="98" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">④ 原因の分類</text>
+      <circle cx="620" cy="120" r="7" fill="#0E8A5F"/>
+      <text x="620" y="98" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">⑤ 再発防止</text>
+      <rect x="430" y="170" width="260" height="52" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="560" y="192" text-anchor="middle" font-size="11.5" font-weight="800" fill="#0E8A5F">直すのは上流（ページ・出荷体制）</text>
+      <text x="560" y="212" text-anchor="middle" font-size="10.5" fill="#454956">レビュー欄そのものは操作できない</text>
+      <rect x="60" y="170" width="310" height="52" rx="10" fill="#fff" stroke="#E8324A" stroke-width="1.5" stroke-dasharray="6 4"/>
+      <text x="215" y="192" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">放置した場合</text>
+      <text x="215" y="212" text-anchor="middle" font-size="10.5" fill="#454956">同じ原因の注文が出荷され続け、低評価が連鎖する</text>
+    </svg>
+    <figcaption>図3：低評価対応のタイムライン。初動の3ステップを24時間以内に回す（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：セール・バズ直後は低評価の危険水域</div>
+    <p>動画がバズった直後やセール期は、注文が急増して出荷が詰まり、<strong>「売れた喜び」と「配送遅延の低評価連鎖」が同時に起きやすい</strong>タイミングです。販促を強める前に、出荷キャパシティの上限を必ず確認してください。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>低評価の原因は4つに切り分ける：商品・説明・配送・期待値</h2>
+  <p>低評価対応が上手いセラーは、レビューを「感情」ではなく「分類」で読みます。原因はほぼ次の4つに収まり、それぞれ直す場所が違います。</p>
+  <div class="tw"><table>
+    <thead><tr><th>原因の分類</th><th>レビューの典型的な文言</th><th>直す場所</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 商品起因</b><br>品質・不良</td><td>「すぐ壊れた」「縫製が雑」「初期不良」</td><td>仕入れ・検品基準。改善できないなら商品の入れ替えを検討</td></tr>
+      <tr><td><b>② 説明起因</b><br>動画・ページとの差</td><td>「動画と色が違う」「思ったより小さい」</td><td>動画の訴求・商品画像・サイズ表記。誇張を削り正確に</td></tr>
+      <tr><td><b>③ 配送起因</b><br>遅延・梱包</td><td>「届くのが遅い」「箱が潰れていた」</td><td>出荷体制・梱包資材・発送リードタイムの表記</td></tr>
+      <tr><td><b>④ 期待値起因</b><br>価格とのバランス</td><td>「値段の割には…」「こんなものか」</td><td>価格設定・セット構成、またはターゲットの再設定</td></tr>
+    </tbody>
+  </table></div>
+  <h3>立ち上げ期に多いのは「説明起因」と「配送起因」</h3>
+  <p>当社の運用実感では、立ち上げ期のショップの低評価は②と③に集中しやすいです。②は動画の熱量を優先して訴求を盛った反動、③は初めての注文急増に出荷が追いつかない構造で、<strong>どちらも商品そのものを変えずに直せます</strong>。逆に言えば、①商品起因が多数を占める場合は、運用ではなく商品選定まで戻る判断が必要です。</p>
+  <h3>「期待値起因」は値付けの問題として扱う</h3>
+  <p>④は見落とされがちですが、商品にも説明にも嘘がないのに星が伸びない場合、価格と体験のバランスが原因です。値下げだけが答えではなく、<strong>セット化や付属品で「届いた時の納得感」を価格に見合う水準へ引き上げる</strong>方向も検討します。</p>
+
+  <h2 id="s6"><span class="no en">06</span>やってはいけないレビュー施策：見返り・サクラは規約とステマ規制に触れる</h2>
+  <p>レビューを増やしたい気持ちが強いほど、他のECモールで見聞きした「裏技」に手が伸びやすくなります。しかしその多くは、TikTok Shopの規約違反、または景品表示法のステルスマーケティング規制（ステマ規制）違反にあたるおそれがある行為です。<strong>アカウント停止や行政処分のリスクは、レビュー数十件の価値とは比較になりません</strong>。</p>
+  <div class="tw"><table>
+    <thead><tr><th>NG行為</th><th>何に触れるか</th><th>想定されるリスク</th></tr></thead>
+    <tbody>
+      <tr><td>「★5レビューでギフト進呈」などのレビュー依頼カードを商品に同梱する</td><td>レビュー操作を禁じるプラットフォーム規約に抵触するおそれ</td><td>レビュー削除・ショップへのペナルティ・アカウント停止</td></tr>
+      <tr><td>高評価と引き換えのクーポン・返金・ギフト（見返り提供）</td><td>同上。加えて表示の信頼性を損なう行為として問題化しやすい</td><td>同上</td></tr>
+      <tr><td>サクラ・自作自演・業者へのレビュー購入</td><td>規約違反に加え、<b>景品表示法のステマ規制違反</b>となるおそれ</td><td>消費者庁による措置命令等の行政処分・社名公表</td></tr>
+      <tr><td>広告であることを隠したクリエイター投稿（PR表記なしの依頼投稿）</td><td>ステマ規制違反のおそれ（責任を問われるのは広告主＝セラー側）</td><td>同上</td></tr>
+      <tr><td>低評価を書いた購入者への執拗な削除依頼・圧力</td><td>ハラスメント的行為として規約・炎上の両面でリスク</td><td>さらなる低評価・スクリーンショット拡散による炎上</td></tr>
+    </tbody>
+  </table></div>
+  <h3>同梱カードは「見返りを条件にしない・★数を指定しない」が分かれ目</h3>
+  <p>レビュー依頼カードの同梱そのものは、<strong>対価や特典を条件にせず、★の数や書く内容を指定しないのであれば、それだけでステルスマーケティング規制（景品表示法）の対象になるわけではありません</strong>。規制がかかるのは「事業者の表示であることを一般消費者が判別できない表示」です。問題になるのは、高評価と引き換えにクーポンや返金を出す、好意的に書いてくれそうな人だけを選んで依頼する、といった<strong>見返り型・選別型の運用</strong>で、かつて一部のECモールで広く行われていた手法をそのまま持ち込むと危険です。なお、同梱物そのものの可否はプラットフォームの規約側で別途定められている場合があるため、実施前に最新の規約・ポリシーを公式で確認してください。</p>
+  <h3>サクラ・やらせは景品表示法のステマ規制違反になる</h3>
+  <p>2023年10月1日に施行されたステマ規制（景品表示法第5条第3号の指定告示）により、<strong>事業者が広告であることを隠して行う表示（やらせレビュー・PR表記のない依頼投稿など）は、景品表示法上の不当表示</strong>として規制対象になりました。重要なのは、責任を問われるのは投稿者ではなく<strong>広告主である事業者（セラー）側</strong>だという点です。違反には措置命令等の行政処分があり、事業者名も公表されます。具体的な線引きは、消費者庁が公表している「『一般消費者が事業者の表示であることを判別することが困難である表示』の運用基準」で必ず確認してください。</p>
+  <h3>クリエイター起用は「関係性の明示」をセットで運用する</h3>
+  <p>アフィリエイトやギフティング（商品提供）でクリエイターに紹介してもらうこと自体は、正当なマーケティング手法です。ただし、<strong>報酬や商品提供の関係があるのに、それが分からない形で「純粋な口コミ」を装うとステマ規制の問題</strong>になります。タイアップ表記など関係性が伝わる形で運用することを、クリエイターへの依頼条件に最初から組み込んでください。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：規制・規約は更新されます</div>
+    <p>プラットフォームのレビュー関連ポリシーと、ステマ規制の運用基準はいずれも更新されることがあります。この記事の記載を根拠に判断せず、<strong>施策の実行前に必ずセラーセンターの公式ヘルプと消費者庁の最新資料を確認</strong>してください。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>低評価は消すより薄める：クリエイター起用でレビューの母数を増やす</h2>
+  <p>ついてしまった低評価への現実的な戦略は、削除ではなく<strong>「良いレビューの総数を増やして、低評価の存在感を薄める」</strong>ことです。低評価1件の重みは、レビューが10件のショップと300件のショップではまったく違います。前者では致命傷になり得ますが、後者では「よくある1件」として読み流されます。</p>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="低評価を薄める考え方の比較図：レビュー10件中1件の低評価は目立つが、レビュー総数を増やしていくと同じ低評価1件の存在感が下がる。母数を増やすエンジンはクリエイター起用による販売量">
+      <text x="180" y="36" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">レビュー10件のショップ</text>
+      <g>
+        <rect x="60" y="52" width="240" height="26" rx="6" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="60" y="84" width="240" height="26" rx="6" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="60" y="116" width="240" height="26" rx="6" fill="#E8324A"/>
+        <text x="180" y="134" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">★2「届くのが遅い」</text>
+        <rect x="60" y="148" width="240" height="26" rx="6" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="60" y="180" width="240" height="26" rx="6" fill="#EAF6F1" stroke="#BFE3D4"/>
+      </g>
+      <text x="180" y="234" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">1件が全体の印象を支配する</text>
+      <text x="540" y="36" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">レビュー300件のショップ</text>
+      <g>
+        <rect x="420" y="52" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="420" y="69" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="420" y="86" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="420" y="103" width="240" height="13" rx="4" fill="#E8324A"/>
+        <rect x="420" y="120" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="420" y="137" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="420" y="154" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="420" y="171" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+        <rect x="420" y="188" width="240" height="13" rx="4" fill="#EAF6F1" stroke="#BFE3D4"/>
+      </g>
+      <text x="540" y="234" text-anchor="middle" font-size="12" font-weight="700" fill="#0E8A5F">同じ1件が「よくある1件」になる</text>
+      <path d="M320 130 H400" stroke="#787D8A" stroke-width="2"/>
+      <path d="M394 124 L404 130 L394 136 Z" fill="#787D8A"/>
+      <text x="360" y="118" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">母数を増やす</text>
+      <rect x="120" y="248" width="480" height="0" fill="none"/>
+      <text x="360" y="264" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">母数を増やすエンジン＝クリエイター動画による販売量。レビューだけを増やす近道はない</text>
+    </svg>
+    <figcaption>図4：「消す」より「薄める」。低評価1件の存在感は母数で決まる（LEAM作成）</figcaption>
+  </figure>
+  <p>ここで重要なのは、レビューの母数は販売量からしか生まれない、という当たり前の構造です。つまり「レビューを増やす施策」の本体は、<strong>クリエイターのアフィリエイト動画を継続的に増やし、販売量そのものを積み上げる</strong>ことになります。動画が増える→売れる→レビューが増える→商品ページが強くなる→動画がさらに売れる、という循環に入れば、低評価は自然に薄まっていきます。§03の導線①〜③で低評価の発生率を抑えながら、④のクリエイター起用で母数を積む。この2つを同時に回すのが、レビュー運用の全体像です。</p>
+
+  <h2 id="s8"><span class="no en">08</span>レビュー運用は週次の数字にする：見る指標と損益への接続</h2>
+  <p>レビューは「気づいた時に見る」ものではなく、週次で数字として追うものです。実務的には、次の4つを週1回の定例で確認する形に落とし込みます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>週次で見る指標</th><th>見るポイント</th><th>動いた時のアクション</th></tr></thead>
+    <tbody>
+      <tr><td>新規レビュー件数</td><td>販売数に対してレビューが積み上がっているか</td><td>少なければ§03の導線②③（到着体験・フォロー）を点検</td></tr>
+      <tr><td>平均の星評価</td><td>直近1週間分だけで見る（累計は変化が遅れて見える）</td><td>下がり始めたら§04の初動フローを即起動</td></tr>
+      <tr><td>低評価の原因内訳</td><td>§05の4分類のどこに偏っているか</td><td>偏った分類の「直す場所」に修正を集中</td></tr>
+      <tr><td>返品・返金の件数</td><td>レビューに出る前の不満の先行指標</td><td>増加はレビュー悪化の予兆。原因を先に潰す</td></tr>
+    </tbody>
+  </table></div>
+  <h3>低評価のコストは損益計算に織り込む</h3>
+  <p>低評価対応には、交換・返金・再送のコストがかかります。これを「たまの臨時支出」として扱うと、利益計画が毎回狂います。<strong>1件あたりの損益を計算する際に、返品・交換の発生を最初から原価側に見込んでおく</strong>と、低評価対応を「損切り」ではなく「計画内のコスト」として迷わず実行できます。手数料を含めた利益設計の全体は、姉妹記事「手数料と利益計算」で詳しく解説しています。</p>
+  <h3>レビューは広告投資の前提条件として扱う</h3>
+  <p>§01の構造から、広告予算を増やす判断の前には必ずレビューの状態を確認します。実務的には、<strong>星が崩れている商品への広告追加は「穴の空いたバケツに水を注ぐ」判断</strong>になりやすく、先にレビューの原因を直してから広告を戻す方が、同じ予算で得られる注文数は大きくなります。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>レビューは購入者以外でも書けますか？</summary><div class="a">原則として、実際にその商品を購入した人だけが書けます。だからこそレビューは信頼の材料になり、逆に購入を装った投稿はサクラとして規約・法令違反のリスクを負います。</div></details>
+    <details><summary>低評価レビューをセラー側で削除できますか？</summary><div class="a">できません。誹謗中傷や商品と無関係な内容など規約に違反するレビューは、プラットフォームへ報告して審査を受ける経路がありますが、内容が気に入らないという理由での削除はできない前提で、初動対応と「良いレビューで薄める」運用を組み立ててください。</div></details>
+    <details><summary>レビューを書いてくれた人にクーポンを配っても良いですか？</summary><div class="a">高評価と引き換えの見返り提供や、レビュー投稿を条件にした特典は、レビュー操作として規約違反にあたるおそれが高い行為です。実施を検討する場合は、必ず事前に最新の規約を公式で確認し、迷う場合は見送るのが安全です。</div></details>
+    <details><summary>クリエイターに商品を提供して紹介してもらうのはステマになりますか？</summary><div class="a">報酬や商品提供の関係が視聴者に分かる形（タイアップ表記など）で運用すれば、正当なマーケティング手法です。関係を隠して純粋な口コミを装うと、景品表示法のステマ規制違反となるおそれがあり、責任は広告主であるセラー側が問われます。線引きは消費者庁の公表資料で確認してください。</div></details>
+    <details><summary>低評価がついたら広告は止めるべきですか？</summary><div class="a">原因によります。配送起因や不良ロットなど「これから同じ低評価が連鎖する」原因なら、広告を一時的に絞って上流を直すのが先です。単発の期待値ギャップ程度なら、対応と並行して広告を継続する判断もあります。</div></details>
+    <details><summary>レビューはいつまで書いてもらえますか？</summary><div class="a">配送完了後の一定期間内に書ける仕組みで、海外版の公式ヘルプでは配送完了から60日以内と案内されています。期間の正確な仕様は変わる可能性があるため、最新はセラーセンターの公式ヘルプで確認してください。実務上は、投稿が集中する到着直後〜数日の体験づくりが重要です。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">出荷体制</span><b><a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷体制</a></b><span>低評価の最大の火種、配送遅延を防ぐ</span></div>
+      <div class="relcard"><span class="rc">商品ページ</span><b><a href="https://leam.co.jp/column/product-page-cvr/">商品登録と売れる商品ページ</a></b><span>レビューを受け止めるページの作り方</span></div>
+      <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み</a></b><span>第三者の声を積み上げる起用の基本</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンターの公式ヘルプ、消費者庁「『一般消費者が事業者の表示であることを判別することが困難である表示』の運用基準」（仕様・規約・運用基準は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">レビューが購入率に効く構造</a></li>
+        <li><a href="#s2">レビューの基本の仕組み</a></li>
+        <li><a href="#s3">自然に増える導線4ヶ所</a></li>
+        <li><a href="#s4">低評価の初動5ステップ</a></li>
+        <li><a href="#s5">原因は4つに切り分ける</a></li>
+        <li><a href="#s6">NG行為とステマ規制</a></li>
+        <li><a href="#s7">消すより薄める戦略</a></li>
+        <li><a href="#s8">週次の指標と損益接続</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>レビューが増えない原因、無料診断</b>
+      <p>商品ページ・出荷体制・クリエイター起用の量を拝見し、率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopのレビューの集め方と低評価への対応｜購入率を守るレビュー運用ガイド",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "レビューは購入者以外でも書けますか？", "acceptedAnswer": {"@type": "Answer", "text": "原則として、実際にその商品を購入した人だけが書けます。だからこそレビューは信頼の材料になり、逆に購入を装った投稿はサクラとして規約・法令違反のリスクを負います。"}},
+        {"@type": "Question", "name": "低評価レビューをセラー側で削除できますか？", "acceptedAnswer": {"@type": "Answer", "text": "できません。誹謗中傷や商品と無関係な内容など規約に違反するレビューは、プラットフォームへ報告して審査を受ける経路がありますが、内容が気に入らないという理由での削除はできない前提で、初動対応と「良いレビューで薄める」運用を組み立ててください。"}},
+        {"@type": "Question", "name": "レビューを書いてくれた人にクーポンを配っても良いですか？", "acceptedAnswer": {"@type": "Answer", "text": "高評価と引き換えの見返り提供や、レビュー投稿を条件にした特典は、レビュー操作として規約違反にあたるおそれが高い行為です。実施を検討する場合は、必ず事前に最新の規約を公式で確認し、迷う場合は見送るのが安全です。"}},
+        {"@type": "Question", "name": "クリエイターに商品を提供して紹介してもらうのはステマになりますか？", "acceptedAnswer": {"@type": "Answer", "text": "報酬や商品提供の関係が視聴者に分かる形（タイアップ表記など）で運用すれば、正当なマーケティング手法です。関係を隠して純粋な口コミを装うと、景品表示法のステマ規制違反となるおそれがあり、責任は広告主であるセラー側が問われます。線引きは消費者庁の公表資料で確認してください。"}},
+        {"@type": "Question", "name": "低評価がついたら広告は止めるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "原因によります。配送起因や不良ロットなど「これから同じ低評価が連鎖する」原因なら、広告を一時的に絞って上流を直すのが先です。単発の期待値ギャップ程度なら、対応と並行して広告を継続する判断もあります。"}},
+        {"@type": "Question", "name": "レビューはいつまで書いてもらえますか？", "acceptedAnswer": {"@type": "Answer", "text": "配送完了後の一定期間内に書ける仕組みで、海外版の公式ヘルプでは配送完了から60日以内と案内されています。期間の正確な仕様は変わる可能性があるため、最新はセラーセンターの公式ヘルプで確認してください。実務上は、投稿が集中する到着直後〜数日の体験づくりが重要です。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

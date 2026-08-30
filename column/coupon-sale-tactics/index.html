@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのクーポン・セール活用術</title>
+<meta name="description" content="TikTok Shopのクーポンとセールを、利益を残したまま使うための設計を解説します。値引き分をどこまで許容するかの考え方つきです。">
+<link rel="canonical" href="https://leam.co.jp/column/coupon-sale-tactics/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのクーポン・セール活用術">
+<meta property="og:description" content="TikTok Shopのクーポンとセールを、利益を残したまま使うための設計を解説します。値引き分をどこまで許容するかの考え方つきです。">
+<meta property="og:url" content="https://leam.co.jp/column/coupon-sale-tactics/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのクーポン・セール活用術">
+<meta name="twitter:description" content="TikTok Shopのクーポンとセールを、利益を残したまま使うための設計を解説します。値引き分をどこまで許容するかの考え方つきです。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのクーポン・セール活用術", "description": "TikTok Shopのクーポンとセールを、利益を残したまま使うための設計を解説します。値引き分をどこまで許容するかの考え方つきです。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/coupon-sale-tactics/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのクーポン・セール活用術", "item": "https://leam.co.jp/column/coupon-sale-tactics/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › クーポン・セール活用術</p>
+  <span class="cat">販促・セール</span>
+  <h1>TikTok Shopのクーポン・セール活用術｜値引きで利益を溶かさない設計</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="クーポンと利益の関係：赤いギザギザのクーポン券をはさみで切り離すと、右の利益のバーから値引きぶんが削り取られて外れ、残った手元の利益だけがシアンで残ることを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v340c-90 30-180 38-272 26-108-14-192-48-300-48-114 0-198 42-310 54-120 13-230-4-318-42z" fill="#F6F7F9"/>
+  <ellipse cx="920" cy="250" rx="270" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(700 -6)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-30 268-16 396 6 128 22 246 30 372 10 124-20 240-44 432-26v128H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：利益のバー（副役・シアン＝手元に残る利益） ================= -->
+  <g>
+    <!-- 基準の床線 -->
+    <path d="M676 498h488" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- 値引きぶんの切り取り線 -->
+    <g fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round" stroke-dasharray="11 10">
+      <path d="M690 303h144"/>
+      <path d="M848 257h144"/>
+      <path d="M1006 207h144"/>
+    </g>
+
+    <!-- 削り取られて外れた値引きぶん（グレーの板が滑り落ちる） -->
+    <g transform="translate(16 -4) rotate(-6 762 260)">
+      <rect x="700" y="238" width="124" height="44" rx="8" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+      <rect x="700" y="238" width="124" height="44" rx="8" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(20 -6) rotate(-8 920 210)">
+      <rect x="858" y="183" width="124" height="54" rx="8" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+      <rect x="858" y="183" width="124" height="54" rx="8" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+    <g transform="translate(26 -8) rotate(-10 1078 152)">
+      <rect x="1016" y="120" width="124" height="64" rx="8" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+      <rect x="1016" y="120" width="124" height="64" rx="8" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 残った利益（シアン） -->
+    <g>
+      <rect x="700" y="312" width="124" height="186" rx="8" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+      <rect x="858" y="266" width="124" height="232" rx="8" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+      <rect x="1016" y="216" width="124" height="282" rx="8" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+
+      <rect x="700" y="312" width="124" height="186" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="858" y="266" width="124" height="232" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="1016" y="216" width="124" height="282" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- ================= 左：クーポン券（主役・赤） ================= -->
+  <g transform="translate(353 374) scale(1.05) translate(-353 -374) rotate(-3 353 374)">
+    <!-- 影 -->
+    <path d="M66 192H528A20 20 0 0 0 568 192H640L626 205L640 218L626 231L640 244L626 257L640 270L626 283L640 296L626 309L640 322L626 335L640 348L626 361L640 374L626 387L640 400L626 413L640 426L626 439L640 452L626 465L640 478L626 491L640 504L626 517L640 530L626 543L640 556H568A20 20 0 0 0 528 556H66L80 543L66 530L80 517L66 504L80 491L66 478L80 465L66 452L80 439L66 426L80 413L66 400L80 387L66 374L80 361L66 348L80 335L66 322L80 309L66 296L80 283L66 270L80 257L66 244L80 231L66 218L80 205Z" fill="#5E6064" opacity=".15" transform="translate(12 14)"/>
+
+    <!-- 本体（赤） -->
+    <path d="M66 192H528A20 20 0 0 0 568 192H640L626 205L640 218L626 231L640 244L626 257L640 270L626 283L640 296L626 309L640 322L626 335L640 348L626 361L640 374L626 387L640 400L626 413L640 426L626 439L640 452L626 465L640 478L626 491L640 504L626 517L640 530L626 543L640 556H568A20 20 0 0 0 528 556H66L80 543L66 530L80 517L66 504L80 491L66 478L80 465L66 452L80 439L66 426L80 413L66 400L80 387L66 374L80 361L66 348L80 335L66 322L80 309L66 296L80 283L66 270L80 257L66 244L80 231L66 218L80 205Z" fill="#FE2C55"/>
+
+    <!-- 切り離すミミ（赤の陰） -->
+    <path d="M548 212A20 20 0 0 0 568 192H640L626 205L640 218L626 231L640 244L626 257L640 270L626 283L640 296L626 309L640 322L626 335L640 348L626 361L640 374L626 387L640 400L626 413L640 426L626 439L640 452L626 465L640 478L626 491L640 504L626 517L640 530L626 543L640 556H568A20 20 0 0 0 548 536Z" fill="#CE1730"/>
+
+    <!-- 券面（値引きを表す下向きの矢） -->
+    <g fill="#FFFFFF">
+      <rect x="118" y="340" width="210" height="22" rx="11"/>
+      <rect x="118" y="386" width="158" height="22" rx="11"/>
+      <path d="M430 316h44v56h34l-56 58-56-58h34z"/>
+    </g>
+
+    <!-- ミミの穴 -->
+    <circle cx="596" cy="470" r="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+
+    <!-- ミシン目 -->
+    <path d="M548 214v320" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-dasharray="14 13"/>
+
+    <!-- 輪郭 -->
+    <path d="M66 192H528A20 20 0 0 0 568 192H640L626 205L640 218L626 231L640 244L626 257L640 270L626 283L640 296L626 309L640 322L626 335L640 348L626 361L640 374L626 387L640 400L626 413L640 426L626 439L640 452L626 465L640 478L626 491L640 504L626 517L640 530L626 543L640 556H568A20 20 0 0 0 528 556H66L80 543L66 530L80 517L66 504L80 491L66 478L80 465L66 452L80 439L66 426L80 413L66 400L80 387L66 374L80 361L66 348L80 335L66 322L80 309L66 296L80 283L66 270L80 257L66 244L80 231L66 218L80 205Z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- ================= はさみ（ミシン目を切る） ================= -->
+    <g transform="translate(548 296) scale(1.18)">
+      <!-- 手元 -->
+      <g fill="none" stroke="#0B0C10" stroke-linecap="round">
+        <path d="M0 0L28-74" stroke-width="16"/>
+        <path d="M0 0L-28-74" stroke-width="16"/>
+        <circle cx="34" cy="-92" r="24" stroke-width="13"/>
+        <circle cx="-34" cy="-92" r="24" stroke-width="13"/>
+      </g>
+      <!-- 刃 -->
+      <path d="M-11 2H11L7 98Q0 110-7 98Z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round" transform="rotate(9)"/>
+      <path d="M-11 2H11L7 98Q0 110-7 98Z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round" transform="rotate(-9)"/>
+      <!-- 留め具 -->
+      <circle cx="0" cy="2" r="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="676" cy="114" r="20" fill="#25F4EE"/>
+  <circle cx="900" cy="572" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopのクーポン・セールは、「新規のお客様の最初の1個」と「既存のお客様の2個目」を同時に後押しできる販促機能です。</strong>ただし、値引きの原資は粗利から直接出ていくため、設計しないまま配ると<strong>「売れているのに利益が残らない」状態に一直線</strong>です。この記事では、クーポンの種類と使い分け・損益ラインから値引き原資を逆算する手順・年間カレンダーでのセール設計・ライブ配信との組み合わせ方・陥りやすい失敗まで、値引きで利益を溶かさないための実務を順番に解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>クーポンの主要タイプ一覧と、「配る相手×受け取る場所」での使い分け</li>
+      <li>値引き原資を損益ラインから逆算する手順（試算例つき）</li>
+      <li>年間セールカレンダーの作り方と、最も反応が出やすいライブ×クーポンの実践手順</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">値引きの前に「利益が残る売り方」かどうか、無料で診断します</div>
+    <p>クーポンやセールの成果は、割引率の深さではなく「誰に・いつ・何の理由で配るか」の設計で決まります。現状の商品構成と価格設定を拝見し、値引きに頼らず売るための打ち手も含めて率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">クーポン・セールは「値引き」ではなく、購入の一歩手前を押す装置として使う</a></li>
+      <li><a href="#s2">クーポンの種類は「配る相手」と「受け取る場所」で選ぶ</a></li>
+      <li><a href="#s3">値引き原資は損益ラインから逆算する：先に「1個あたり使える額」を決める</a></li>
+      <li><a href="#s4">セールは単発で打たず、年間カレンダーで前倒しに設計する</a></li>
+      <li><a href="#s5">ライブ×クーポンが最も効く：「この場だけ」の理由を作る</a></li>
+      <li><a href="#s6">運用は5ステップ：「配って終わり」を仕組みで防ぐ</a></li>
+      <li><a href="#s7">失敗は4パターンに集約される：割引率・配布対象・重複適用・リピート断絶</a></li>
+      <li><a href="#s8">値引きだけでは伸びない：クーポンはクリエイター起用と併走させる</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>クーポン・セールは「値引き」ではなく、購入の一歩手前を押す装置として使う</h2>
+  <p>クーポンと聞くと「安くして買ってもらう仕組み」と捉えがちですが、実務での役割はもう少し限定的です。<strong>買おうか迷っている人の、最後のためらいを1つ消す装置</strong>——これがクーポンの本体です。値引きは「欲しいと思っていない人」を動かす力はほとんど持っていません。</p>
+  <p>この性質は、TikTok Shopでは特に重要になります。TikTok Shopは検索して買いに来る場ではなく、<strong>動画やライブで商品に「出会って」買う発見型のEC</strong>です。興味が最高潮になる瞬間は動画の数十秒・ライブの数分の間に訪れて、すぐ過ぎ去ります。この短い窓の中で「あとで買おう」を「いま買おう」に変えるスイッチとして、クーポンは他のどのECモールよりも効きやすい構造にあります。</p>
+  <p>実務で効く場面は、次の3つに整理できます。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="クーポンが効く3つの場面の図：新規の最初の1個を後押しする、既存客を呼び戻す、ライブ・動画の反応を加速させる。いずれも購入をためらう理由を1つ消す装置として働く">
+      <rect x="30" y="26" width="200" height="140" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <circle cx="130" cy="62" r="20" fill="#FDEEF1"/>
+      <text x="130" y="69" text-anchor="middle" font-size="16" font-weight="800" fill="#C2203A">1</text>
+      <text x="130" y="106" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">新規の「最初の1個」</text>
+      <text x="130" y="130" text-anchor="middle" font-size="11" fill="#787D8A">初めてのショップで買う</text>
+      <text x="130" y="148" text-anchor="middle" font-size="11" fill="#787D8A">不安を値引きで相殺する</text>
+      <rect x="260" y="26" width="200" height="140" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <circle cx="360" cy="62" r="20" fill="#FDEEF1"/>
+      <text x="360" y="69" text-anchor="middle" font-size="16" font-weight="800" fill="#C2203A">2</text>
+      <text x="360" y="106" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">既存客の呼び戻し</text>
+      <text x="360" y="130" text-anchor="middle" font-size="11" fill="#787D8A">「2回目を買う理由」を</text>
+      <text x="360" y="148" text-anchor="middle" font-size="11" fill="#787D8A">こちらから手渡す</text>
+      <rect x="490" y="26" width="200" height="140" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <circle cx="590" cy="62" r="20" fill="#FDEEF1"/>
+      <text x="590" y="69" text-anchor="middle" font-size="16" font-weight="800" fill="#C2203A">3</text>
+      <text x="590" y="106" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">ライブ・動画の加速</text>
+      <text x="590" y="130" text-anchor="middle" font-size="11" fill="#787D8A">「この場だけ」の限定で</text>
+      <text x="590" y="148" text-anchor="middle" font-size="11" fill="#787D8A">反応を一点に集中させる</text>
+      <path d="M130 166 V190 M360 166 V190 M590 166 V190" stroke="#787D8A" stroke-width="2"/>
+      <rect x="30" y="196" width="660" height="42" rx="10" fill="#17181C"/>
+      <text x="360" y="223" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">共通の本質 ＝ 購入をためらう理由を「1つ」消す装置</text>
+    </svg>
+    <figcaption>図1：クーポンが効く3つの場面。「欲しくない人を動かす道具」ではない（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>値引き幅の大小を考える前に、<strong>「誰の・どの行動を変えたいのか」を1つに絞る</strong>ことが先です。ここが決まると、後述するクーポンの種類・期間・原資の設計がすべて自動的に決まっていきます。逆にここが曖昧なまま配ると、定価でも買ったはずの人に値引きするだけで終わります。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>クーポンの種類は「配る相手」と「受け取る場所」で選ぶ</h2>
+  <p>TikTok Shopのクーポンはセラーセンターから発行でき、割引の形は大きく<strong>「定額（○円OFF）」と「定率（○%OFF）」</strong>の2つです。そのうえで、「誰に配るか」「どこで受け取ってもらうか」によって、実務上は次のようなタイプに分かれます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>タイプ</th><th>内容</th><th>向いている目的</th></tr></thead>
+    <tbody>
+      <tr><td><b>ショップ全体クーポン</b></td><td>ショップ内の購入全体に適用される</td><td>新規獲得・立ち上げ期の認知づくり</td></tr>
+      <tr><td><b>商品限定クーポン</b></td><td>対象商品を指定して適用する</td><td>主力商品の押し上げ・在庫の調整</td></tr>
+      <tr><td><b>条件付き（○円以上）クーポン</b></td><td>最低購入金額などの利用条件を設定する</td><td>客単価アップ・まとめ買いの誘導</td></tr>
+      <tr><td><b>新規顧客・フォロワー向けクーポン</b></td><td>配布対象をお客様の属性で絞る</td><td>初回購入の後押し・フォロー導線の強化</td></tr>
+      <tr><td><b>ライブ・動画限定クーポン</b></td><td>配信や動画の視聴者がその場で受け取る</td><td>ライブ中の即決・視聴の維持</td></tr>
+      <tr><td><b>チャット・個別配布クーポン</b></td><td>問い合わせ客やカート落ち客へ個別に渡す</td><td>迷っているお客様の取りこぼし回収</td></tr>
+    </tbody>
+  </table></div>
+  <h3>定額と定率の使い分けは、客単価と原資の読みやすさで決める</h3>
+  <p>定率（%OFF）は高単価商品ほど値引きの見た目インパクトが大きくなる一方、<strong>1件あたりの持ち出し額も購入金額に比例して膨らみます</strong>。定額（円OFF）は持ち出しの上限が読みやすく、「○円以上で500円OFF」のように条件と組み合わせて客単価を引き上げる設計に向きます。迷ったら、原資管理のしやすい定額×条件付きから始めるのが実務的です。</p>
+  <h3>「受け取る場所」を設計できるのがTikTok Shopらしさ</h3>
+  <p>他のECモールとの最大の違いは、<strong>動画やライブという「感情が動いている場」でクーポンを渡せる</strong>ことです。バナーで配るクーポンは「安いから見る」人を集めますが、ライブ中に受け取るクーポンは「欲しくなった人の背中を押す」働きをします。同じ割引額でも意味がまったく違うため、この組み合わせは§05で詳しく扱います。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：機能の名称・条件は更新され続けています</div>
+    <p>クーポンの正式名称・提供メニュー・割引率の上限・重複適用の可否などは、プラットフォーム側の更新で変わることがあります。この表は機能を「役割」で分類したものです。<strong>実際の設定項目と条件は、必ずセラーセンターの画面と公式ヘルプで最新情報を確認してください。</strong></p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>値引き原資は損益ラインから逆算する：先に「1個あたり使える額」を決める</h2>
+  <p>クーポン設計で最も多い失敗は、割引率を「競合がこのくらい引いているから」で決めることです。値引きの原資は粗利から出ていきます。だから最初に決めるべきは割引率ではなく、<strong>「1個売るとき、販促に最大いくらまで使えるか」という上限額</strong>です。</p>
+  <h3>試算例：販売価格3,000円の商品で「販促原資」を出す</h3>
+  <p>例として、販売価格3,000円の商品で考えます（数値は説明用の仮の例です）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>金額（例）</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格</td><td class="num">3,000円</td><td></td></tr>
+      <tr><td>原価</td><td class="num">−900円</td><td>仕入れ・製造</td></tr>
+      <tr><td>プラットフォーム手数料</td><td class="num">−α</td><td>料率は改定されるため最新の公式情報で確認</td></tr>
+      <tr><td>クリエイターへのコミッション</td><td class="num">−300円</td><td>10%で設定した場合</td></tr>
+      <tr><td>送料・梱包・その他</td><td class="num">−400円</td><td></td></tr>
+      <tr><td><b>販促原資（値引き＋広告の上限）</b></td><td class="num"><b>残りの全額</b></td><td>ここを超えたら「売れても赤字」</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 210" role="img" aria-label="販売価格の内訳図：原価・手数料・報酬・送料を引いた残りが販促原資となり、クーポン・セール・広告はすべてこの範囲内で配分する">
+      <rect x="30" y="60" width="660" height="52" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="200" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="230" y="60" width="90" height="52" fill="#AEB2BE"/>
+      <rect x="320" y="60" width="80" height="52" fill="#8F94A3"/>
+      <rect x="400" y="60" width="90" height="52" fill="#787D8A"/>
+      <rect x="490" y="60" width="200" height="52" rx="8" fill="#E8324A"/>
+      <text x="130" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">原価</text>
+      <text x="275" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">手数料</text>
+      <text x="360" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">報酬</text>
+      <text x="445" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">送料等</text>
+      <text x="590" y="85" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">販促原資</text>
+      <text x="590" y="103" text-anchor="middle" font-size="11" fill="#FDEEF1">＝値引き＋広告の上限</text>
+      <text x="30" y="45" font-size="12.5" font-weight="700" fill="#454956">販売価格 3,000円（説明用の例）</text>
+      <path d="M490 125 V150 M690 125 V150 M490 150 H690" stroke="#E8324A" stroke-width="1.5" fill="none"/>
+      <text x="590" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">クーポンもセール値下げも広告も、この範囲で配分する</text>
+    </svg>
+    <figcaption>図2：値引き原資の逆算構造。割引率ではなく「使える額」から決める（LEAM作成）</figcaption>
+  </figure>
+  <p>この「販促原資」を、クーポン・セール値下げ・広告費で分け合う——という捉え方が実務の核心です。たとえば20%OFFクーポンは、3,000円の商品なら1件600円の持ち出しです。<strong>原資が500円しか無ければ、その瞬間に「売れるほど赤字」が確定します</strong>。逆に、原資さえ確定していれば「10%OFFなら広告にいくら残るか」まで一気に決められます。</p>
+  <h3>値引き・広告・クリエイター報酬は「同じ財布」から出る</h3>
+  <p>見落とされやすいのがここです。セール値下げの期間中にクーポンが重なり、さらにその注文がアフィリエイト経由ならクリエイター報酬も発生する——<strong>それぞれ単体では黒字の設計でも、重なった瞬間に赤字になる</strong>ことがあります。値引きを設計するときは、「全部が重なった最悪ケース」で1回試算してから配ってください（§07で失敗例として詳述します）。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p><strong>「割引率から考えない。原資から考える」</strong>——これだけで、クーポン運用の失敗の大半は防げます。手数料を含めた損益設計の全体像は、姉妹記事「TikTok Shopの手数料完全ガイド」で詳しく扱っています（下部の関連記事参照）。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>セールは単発で打たず、年間カレンダーで前倒しに設計する</h2>
+  <p>セールを「売上が落ちてきたから打つ」という運用にすると、在庫の手配・動画素材・クリエイター起用の準備が間に合わず、<strong>値引きだけが先行して利益を削る</strong>結果になりがちです。セール企画は年間カレンダーに落とし、逆算で準備するのが定石です。</p>
+  <p>カレンダーは3つの層で考えます。<strong>①プラットフォーム公式のセール企画</strong>（セラーセンターのキャンペーンカレンダーで募集や参加条件を確認できます）、<strong>②季節の商戦</strong>（新生活・夏・ブラックフライデー・年末年始など）、<strong>③自社都合の企画</strong>（新商品発売・周年・在庫調整）です。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="年間セールカレンダーの図：公式セール枠・季節商戦・自社企画の3層を12ヶ月のタイムラインに配置し、開催の1〜2ヶ月前から逆算して準備する">
+      <g font-size="10.5" fill="#787D8A" text-anchor="middle">
+        <text x="95" y="34">1月</text><text x="146" y="34">2月</text><text x="197" y="34">3月</text><text x="248" y="34">4月</text>
+        <text x="299" y="34">5月</text><text x="350" y="34">6月</text><text x="401" y="34">7月</text><text x="452" y="34">8月</text>
+        <text x="503" y="34">9月</text><text x="554" y="34">10月</text><text x="605" y="34">11月</text><text x="656" y="34">12月</text>
+      </g>
+      <line x1="70" y1="42" x2="682" y2="42" stroke="#E6E7EB" stroke-width="2"/>
+      <text x="70" y="66" font-size="11.5" font-weight="800" fill="#C2203A">① 公式セール企画（募集・条件はキャンペーンカレンダーで確認）</text>
+      <rect x="305" y="74" width="90" height="26" rx="6" fill="#E8324A"/>
+      <text x="350" y="92" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">例：夏セール</text>
+      <rect x="560" y="74" width="96" height="26" rx="6" fill="#E8324A"/>
+      <text x="608" y="92" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">例：年末商戦</text>
+      <text x="70" y="130" font-size="11.5" font-weight="800" fill="#17181C">② 季節の商戦</text>
+      <rect x="172" y="138" width="102" height="26" rx="6" fill="#17181C"/>
+      <text x="223" y="156" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">新生活（3〜4月）</text>
+      <rect x="376" y="138" width="102" height="26" rx="6" fill="#17181C"/>
+      <text x="427" y="156" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">夏商戦（7〜8月）</text>
+      <rect x="580" y="138" width="102" height="26" rx="6" fill="#17181C"/>
+      <text x="631" y="156" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">BF・年末年始</text>
+      <text x="70" y="194" font-size="11.5" font-weight="800" fill="#454956">③ 自社の企画（例）</text>
+      <rect x="254" y="202" width="90" height="26" rx="6" fill="#787D8A"/>
+      <text x="299" y="220" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">新商品発売</text>
+      <rect x="407" y="202" width="90" height="26" rx="6" fill="#787D8A"/>
+      <text x="452" y="220" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">在庫調整</text>
+      <rect x="520" y="202" width="90" height="26" rx="6" fill="#787D8A"/>
+      <text x="565" y="220" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">周年企画</text>
+      <path d="M503 258 H568" stroke="#E8324A" stroke-width="2" stroke-dasharray="5 4"/>
+      <path d="M562 252 L572 258 L562 264 Z" fill="#E8324A"/>
+      <line x1="503" y1="240" x2="503" y2="258" stroke="#E8324A" stroke-width="1.5"/>
+      <line x1="580" y1="232" x2="580" y2="258" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="360" y="292" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">開催の1〜2ヶ月前：商品・在庫・素材・クリエイター起用を確定（例：11月セールなら9月に着手）</text>
+      <text x="360" y="314" text-anchor="middle" font-size="10.5" fill="#787D8A">「思いついたら打つ」ではなく、準備の締切から逆算してカレンダーに置く</text>
+    </svg>
+    <figcaption>図3：年間カレンダーの3層構造。時期はイメージで、公式企画の実施有無・時期は毎年変わる（LEAM作成）</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <thead><tr><th>時期</th><th>商戦の例</th><th>前倒しで準備しておくこと</th></tr></thead>
+    <tbody>
+      <tr><td><b>1〜3月</b></td><td>新春・新生活準備</td><td>年間販促計画の確定。春商材の在庫と動画素材の手配</td></tr>
+      <tr><td><b>4〜6月</b></td><td>新生活・母の日・初夏</td><td>ギフト文脈の動画制作。上半期の在庫消化企画の設計</td></tr>
+      <tr><td><b>7〜9月</b></td><td>夏商戦・季節の変わり目</td><td>夏物の売り切りセール。年末商戦のクリエイター起用に着手</td></tr>
+      <tr><td><b>10〜12月</b></td><td>ブラックフライデー・年末年始</td><td>年間最大の商戦期。在庫と配送体制を最優先で確保</td></tr>
+    </tbody>
+  </table></div>
+  <h3>公式セールと自社セールは役割が違う</h3>
+  <p>公式のセール企画は、プラットフォーム側が集客する「露出の波」に乗れるのが最大の利点です。ただし<strong>値引き率や参加条件が指定される場合があるため、参加を決める前に§03の損益ラインと必ず照合してください</strong>。利益の出ない商品で無理に参加する必要はありません。一方、自社セールは対象・条件・期間を完全にコントロールできるので、新商品の立ち上げや在庫調整のような「自社都合」はこちらで消化します。</p>
+  <p>当社の運用実感では、まとまった規模のセールは、商戦期のチャンスをしっかり取りにいくためにも、<strong>開催の1〜2ヶ月前に商品・在庫・素材・クリエイター起用まで固めておいた</strong>ほうが安全です。クリエイターへの打診から動画公開までにリードタイムがあるためで、ここが後ろ倒しになると「値引きはあるが動画がない」＝集客装置のないセールになりがちです。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意</div>
+    <p>公式セール企画の名称・開催時期・参加条件は年によって変わります。図表中の時期はあくまで一般的な商戦イメージです。<strong>実際の募集はセラーセンターのキャンペーンカレンダーで最新情報を確認してください。</strong></p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>ライブ×クーポンが最も効く：「この場だけ」の理由を作る</h2>
+  <p>クーポンの配り方の中で、当社の運用実感として最も反応が出やすいのが<strong>ライブ配信との組み合わせ</strong>です。理由はシンプルで、ライブは「今この場で決める理由」を最も作りやすい場だからです。設計は配信前・配信中・配信後の3フェーズに分けます。</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="ライブとクーポンを組み合わせる3フェーズの図：配信前に限定クーポンを予告して集客し、配信中に山場へ合わせて配布し、配信後は未購入者へ短い期限のクーポンで再訴求する">
+      <rect x="25" y="46" width="200" height="140" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="125" y="76" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">配信前（〜3日前）</text>
+      <text x="125" y="106" text-anchor="middle" font-size="11" fill="#454956">予告動画で「配信限定</text>
+      <text x="125" y="124" text-anchor="middle" font-size="11" fill="#454956">クーポンあり」を告知し、</text>
+      <text x="125" y="142" text-anchor="middle" font-size="11" fill="#454956">クーポン自体を</text>
+      <text x="125" y="160" text-anchor="middle" font-size="11" fill="#454956">集客装置にする</text>
+      <path d="M228 116 H255" stroke="#787D8A" stroke-width="2"/>
+      <path d="M250 110 L260 116 L250 122 Z" fill="#787D8A"/>
+      <rect x="262" y="46" width="200" height="140" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="362" y="76" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">配信中</text>
+      <text x="362" y="106" text-anchor="middle" font-size="11" fill="#454956">目玉商品の紹介直後に配布。</text>
+      <text x="362" y="124" text-anchor="middle" font-size="11" fill="#454956">期限・枚数は正確に伝え、</text>
+      <text x="362" y="142" text-anchor="middle" font-size="11" fill="#454956">受け取り方法を</text>
+      <text x="362" y="160" text-anchor="middle" font-size="11" fill="#454956">画面と口頭でガイドする</text>
+      <path d="M465 116 H492" stroke="#787D8A" stroke-width="2"/>
+      <path d="M487 110 L497 116 L487 122 Z" fill="#787D8A"/>
+      <rect x="499" y="46" width="200" height="140" rx="12" fill="#17181C"/>
+      <text x="599" y="76" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">配信後（〜72時間）</text>
+      <text x="599" y="106" text-anchor="middle" font-size="11" fill="#C9CBD4">見たが買わなかった層へ、</text>
+      <text x="599" y="124" text-anchor="middle" font-size="11" fill="#C9CBD4">期限の短いクーポンと</text>
+      <text x="599" y="142" text-anchor="middle" font-size="11" fill="#C9CBD4">切り抜き動画をセットで</text>
+      <text x="599" y="160" text-anchor="middle" font-size="11" fill="#C9CBD4">追いかける</text>
+      <text x="360" y="222" text-anchor="middle" font-size="11.5" fill="#787D8A">3フェーズを1本の設計にすると、同じクーポンが「集客→即決→回収」の3役をこなす</text>
+    </svg>
+    <figcaption>図4：ライブ×クーポンの3フェーズ設計。「配信中に配るだけ」ではもったいない（LEAM作成）</figcaption>
+  </figure>
+  <h3>配信前：クーポンの存在を予告して「見に来る理由」にする</h3>
+  <p>ライブ限定クーポンは、配ってから効くのではなく<strong>予告した瞬間から効き始めます</strong>。予告動画やショップのフォロワー向け告知で「配信中だけ受け取れるクーポンがある」と伝えれば、クーポンはライブの集客装置を兼ねます。</p>
+  <h3>配信中：山場に合わせて出し、受け取り方を必ずガイドする</h3>
+  <p>配布のタイミングは、目玉商品の紹介直後など<strong>視聴者の温度が最も高い山場に合わせます</strong>。「残り○枚」「○時まで」といった限定の演出は強力ですが、<strong>枚数や期限は実際の設定と正確に一致させてください</strong>。事実と異なる煽りは、プラットフォーム規約の観点でも景品表示法の観点でも避けるべき領域です。また、受け取り操作に迷った視聴者はそのまま離脱するので、受け取り方法を画面と口頭の両方で案内します。</p>
+  <h3>配信後：期限の短いフォローで「見たけど買わなかった人」を回収する</h3>
+  <p>ライブの視聴者のうち、その場で買う人は一部です。配信を見たが購入しなかった層へ、<strong>期限の短いクーポンと切り抜き動画をセットで届ける</strong>と、「あとで考えよう」で消えた需要を回収できます。期限を長くすると「いつでも買える」に変わってしまい、クーポンの意味が薄れる点に注意してください。ライブ運営の基本は姉妹記事「ライブコマース入門」で詳しく解説しています。</p>
+
+  <div class="ctabox">
+    <div class="ct">セール企画とクーポン設計、一次データから組み立てます</div>
+    <p>LEAMは市場データを毎営業日蓄積し、「どの時期に・どの商品で・どんな企画を当てるか」を一次データから設計します。ライブ配信とクリエイター起用まで含めた年間販促計画の壁打ちからでもご相談いただけます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>運用は5ステップ：「配って終わり」を仕組みで防ぐ</h2>
+  <p>クーポンは設定して配るだけなら数分で終わります。しかし成果が出るかどうかは、配る前後の設計で決まります。運用の流れを5ステップに固定しておきましょう（※管理画面の名称・画面構成は更新されることがあります。最新の表記は公式ヘルプをご確認ください）。</p>
+  <ol class="steps">
+    <li><b>目的とKPIを1つに絞る</b><p>「新規獲得なら初回購入件数」のように、狙いを1つに決めます。全部を狙うと、割引率も配布対象も決められなくなります。</p></li>
+    <li><b>損益ラインから割引率と上限を決める</b><p>§03の販促原資の範囲で割引額を設定し、予算上限・配布枚数の上限を必ず入れます。上限のない配布は「想定以上に使われた」事故の温床です。</p></li>
+    <li><b>セラーセンターで設定する</b><p>種類・期間・対象商品・利用条件を設定します。1回の購入で併用できる範囲を規約と管理画面で確認したうえで、既に走っているセール値下げやアフィリエイト報酬との重なりをここで点検します。</p></li>
+    <li><b>動画・ライブで発信する</b><p>配って終わりが最多の失敗です。クーポンは発信とセットで初めて使われます。存在・使いどころ・受け取り方を動画とライブで具体的に案内します。</p></li>
+    <li><b>計測して次回に反映する</b><p>利用率・クーポン経由の売上・リピート率・平均購買単価を見ます。数字を取りっぱなしにせず、「次はどの条件を変えるか」を1つ決めて終えるのがコツです。</p></li>
+  </ol>
+
+  <h2 id="s7"><span class="no en">07</span>失敗は4パターンに集約される：割引率・配布対象・重複適用・リピート断絶</h2>
+  <p>クーポン施策の失敗は、突き詰めると次の4つに集約されます。運用のご相談で拝見するつまずきも、ほぼこのどれかです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>失敗パターン</th><th>何が起きるか</th><th>対策</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 割引率が深すぎる</b></td><td>売れるほど赤字が膨らむ</td><td>競合の見た目に合わせず、§03の販促原資から逆算する</td></tr>
+      <tr><td><b>② 配布対象が広すぎる</b></td><td>定価でも買った人にまで値引きしてしまう</td><td>目的を1つに絞り、新規限定・条件付きなどで対象を絞る</td></tr>
+      <tr><td><b>③ 重複適用の見落とし</b></td><td>クーポン×セール×報酬が同じ粗利に重なり赤字化</td><td>値下げ・クーポン・報酬が重なった最悪ケースで事前に試算する（クーポン同士は1回の購入では併用不可）</td></tr>
+      <tr><td><b>④ リピートにつながらない</b></td><td>値引き目当ての1回きりで関係が終わる</td><td>フォロー導線と「2回目の理由」まで含めて1つの施策として設計する</td></tr>
+    </tbody>
+  </table></div>
+  <h3>最も見落とされるのは「重複適用」——単体黒字でも重なれば赤字</h3>
+  <p>①②④は競合記事でもよく語られますが、実際の損益で致命傷になりやすいのは③です。セール値下げ・クーポン・アフィリエイト報酬は、それぞれ別の画面で設定するため、<strong>「全部が同じ注文に重なった状態」を誰も見ていない</strong>ことが起きます。構造を図にすると次の通りです。</p>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="重複値引きの構造図：値引きが1つなら利益が残るが、セール値下げ・クーポン・アフィリエイト報酬が同じ注文に重なると販売価格の枠をはみ出し、はみ出した分が赤字になる">
+      <text x="170" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">値引きが1つなら</text>
+      <line x1="60" y1="60" x2="280" y2="60" stroke="#787D8A" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="286" y="64" font-size="10.5" fill="#787D8A">販売価格</text>
+      <rect x="100" y="60" width="140" height="60" fill="#EAF6F1" stroke="#BFE3D4"/>
+      <text x="170" y="96" text-anchor="middle" font-size="11.5" font-weight="800" fill="#0E8A5F">利益が残る</text>
+      <rect x="100" y="120" width="140" height="36" fill="#F3A7B5"/>
+      <text x="170" y="143" text-anchor="middle" font-size="11" font-weight="700" fill="#7A1024">クーポン</text>
+      <rect x="100" y="156" width="140" height="84" fill="#C9CBD4"/>
+      <text x="170" y="202" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">原価・手数料・送料</text>
+      <text x="530" y="34" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">三重に重なると</text>
+      <line x1="420" y1="60" x2="640" y2="60" stroke="#787D8A" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <text x="646" y="64" font-size="10.5" fill="#787D8A">販売価格</text>
+      <rect x="460" y="24" width="140" height="36" fill="#E8324A"/>
+      <text x="530" y="47" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">はみ出した分＝赤字</text>
+      <rect x="460" y="60" width="140" height="32" fill="#F3A7B5"/>
+      <text x="530" y="81" text-anchor="middle" font-size="10.5" font-weight="700" fill="#7A1024">アフィリエイト報酬</text>
+      <rect x="460" y="92" width="140" height="32" fill="#F5C1CB"/>
+      <text x="530" y="113" text-anchor="middle" font-size="10.5" font-weight="700" fill="#7A1024">クーポン</text>
+      <rect x="460" y="124" width="140" height="32" fill="#FBDEE4"/>
+      <text x="530" y="145" text-anchor="middle" font-size="10.5" font-weight="700" fill="#7A1024">セール値下げ</text>
+      <rect x="460" y="156" width="140" height="84" fill="#C9CBD4"/>
+      <text x="530" y="202" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">原価・手数料・送料</text>
+      <text x="360" y="268" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">それぞれ単体では黒字でも、同じ注文に重なった瞬間に赤字化する</text>
+    </svg>
+    <figcaption>図5：重複値引きの構造。「全部重なった最悪ケース」で試算してから配る（LEAM作成）</figcaption>
+  </figure>
+  <p>④のリピート断絶にも一言添えます。クーポンで来た新規のお客様は、放置すればそのまま離脱します。<strong>初回購入の直後にフォロー導線を用意し、「2回目を買う理由」（2回目限定クーポンや定期的なライブ）まで手渡すところまでが、1つの施策</strong>です。初回の値引きは「2回目以降で回収する投資」と捉えると、原資設計の考え方も変わります。</p>
+
+  <h2 id="s8"><span class="no en">08</span>値引きだけでは伸びない：クーポンはクリエイター起用と併走させる</h2>
+  <p>最後に、この記事全体の前提になる話です。クーポンやセールは<strong>「成約率を上げる装置」であって、「露出を作る装置」ではありません</strong>。見てくれる人がいない状態でどれだけ値引きしても、誰も気づかないままクーポンの期限が切れるだけです。TikTok Shopで露出を作るのは、クリエイターの動画・ライブと広告です。当社の運用でも、売上の多くはクリエイター経由の動画・ライブから生まれ、クーポンはその成約率を引き上げる形で効いています。</p>
+  <p>だからこそ、販促原資の使い方には選択肢があります。<strong>原資をすべて値引きに使うのではなく、「クリエイター報酬・広告・値引き」の3つに配分する</strong>発想を持ってください。深い値引きで1回買ってもらうより、報酬を厚くしてクリエイターの動画本数を増やす方が、公開後も売り続けてくれる資産（動画）が残る分、翌月以降に効き続けます。どちらに寄せるべきかは商材の粗利構造とフェーズによりますが、「値引き一本槍になっていないか」は定期的に点検する価値があります。</p>
+  <p>クリエイター起用の実務（報酬設計・打診・動画ディレクション）は姉妹記事で扱っているほか、LEAMはTikTok Shop特化MCNとしてクリエイターのネットワークを運営しています。クーポン設計とクリエイター起用を一体で組み立てたい方はご相談ください。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>クーポンとセール（値下げ）はどう使い分ければいいですか？</summary><div class="a">クーポンは配布対象や利用条件を絞れるため、「誰の行動を変えたいか」が明確な施策に向きます。セールは価格そのものを変えるため広く効きますが、全員への値引きになります。日常運用はクーポン中心、商戦期はセールとクーポンの併用が実務的です。</div></details>
+    <details><summary>割引率はどのくらいに設定すべきですか？</summary><div class="a">一律の正解はありません。競合の見た目に合わせるのではなく、原価・手数料・報酬・送料を引いた「販促原資」の範囲内で決めます。原資を超える割引率は、売れるほど赤字になります。</div></details>
+    <details><summary>クーポンは複数を同時に配布してもいいですか？</summary><div class="a">複数のクーポンを並行して走らせること自体は可能です。ただしTikTok Shopのクーポン利用規約では、1回の購入において複数のTikTok Shopクーポンを併用することはできないと定められています（送料を割り引く配送クーポンは例外として併用可）。一方で、セール値下げやアフィリエイト報酬は同じ粗利から出ていくため、「値下げ・クーポン・報酬が同じ注文に重なった最悪ケース」で試算してから配るのが安全です。</div></details>
+    <details><summary>ライブ配信をしていなくてもクーポンは効果がありますか？</summary><div class="a">商品ページや動画経由でも効果はあります。ただし「この場だけ」の理由を作れるライブとの組み合わせが最も反応が出やすいというのが当社の運用実感です。まずは動画×クーポンから始め、ライブ体制ができたら組み合わせるのがおすすめです。</div></details>
+    <details><summary>公式の大型セールには毎回参加すべきですか？</summary><div class="a">露出が増える利点は大きい一方、値引き率や参加条件が指定される場合があります。損益ラインと照合し、利益の出ない商品で無理に参加しないでください。募集と条件はセラーセンターのキャンペーンカレンダーで確認できます。</div></details>
+    <details><summary>値引きを続けるとブランドが安売りのイメージになりませんか？</summary><div class="a">常時配布を避け、「理由のある値引き」（新規限定・イベント連動・ライブ限定など）に絞ることで防げます。定価で買う理由が残る設計にすることが、長く売り続けるための条件です。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="text-decoration:none;color:inherit"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="color:inherit;text-decoration:none">TikTok Shopの手数料完全ガイド</a></b><span>カテゴリー別の料率と利益計算</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/live-commerce-guide/" style="text-decoration:none;color:inherit"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-commerce-guide/" style="color:inherit;text-decoration:none">ライブコマース入門</a></b><span>やり方と準備はこちら</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/gmvmax/" style="text-decoration:none;color:inherit"><span class="rc">広告運用</span><b><a href="https://leam.co.jp/column/gmvmax/" style="color:inherit;text-decoration:none">GMV Max完全ガイド</a></b><span>仕組みと始め方</span></a></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クーポン設計の壁打ちや、クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ（クーポン・セール機能の名称、割引率の上限、公式セール企画の実施有無・参加条件などの仕様は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">値引きではなく「背中を押す装置」</a></li>
+        <li><a href="#s2">クーポンの種類と使い分け</a></li>
+        <li><a href="#s3">値引き原資は損益ラインから逆算</a></li>
+        <li><a href="#s4">セールは年間カレンダーで設計</a></li>
+        <li><a href="#s5">ライブ×クーポンの3フェーズ</a></li>
+        <li><a href="#s6">運用5ステップ</a></li>
+        <li><a href="#s7">失敗4パターンと重複値引き</a></li>
+        <li><a href="#s8">クリエイター起用と併走させる</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>値引き設計の前に、無料診断</b>
+      <p>商品構成・価格設定・販促原資の配分を拝見し、率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopのクーポン・セール活用術｜値引きで利益を溶かさない設計",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "クーポンとセール（値下げ）はどう使い分ければいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "クーポンは配布対象や利用条件を絞れるため、「誰の行動を変えたいか」が明確な施策に向きます。セールは価格そのものを変えるため広く効きますが、全員への値引きになります。日常運用はクーポン中心、商戦期はセールとクーポンの併用が実務的です。"}},
+        {"@type": "Question", "name": "割引率はどのくらいに設定すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "一律の正解はありません。競合の見た目に合わせるのではなく、原価・手数料・報酬・送料を引いた「販促原資」の範囲内で決めます。原資を超える割引率は、売れるほど赤字になります。"}},
+        {"@type": "Question", "name": "クーポンは複数を同時に配布してもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "複数のクーポンを並行して走らせること自体は可能です。ただしTikTok Shopのクーポン利用規約では、1回の購入において複数のTikTok Shopクーポンを併用することはできないと定められています（送料を割り引く配送クーポンは例外として併用可）。一方で、セール値下げやアフィリエイト報酬は同じ粗利から出ていくため、「値下げ・クーポン・報酬が同じ注文に重なった最悪ケース」で試算してから配るのが安全です。"}},
+        {"@type": "Question", "name": "ライブ配信をしていなくてもクーポンは効果がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "商品ページや動画経由でも効果はあります。ただし「この場だけ」の理由を作れるライブとの組み合わせが最も反応が出やすいというのが当社の運用実感です。まずは動画×クーポンから始め、ライブ体制ができたら組み合わせるのがおすすめです。"}},
+        {"@type": "Question", "name": "公式の大型セールには毎回参加すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "露出が増える利点は大きい一方、値引き率や参加条件が指定される場合があります。損益ラインと照合し、利益の出ない商品で無理に参加しないでください。募集と条件はセラーセンターのキャンペーンカレンダーで確認できます。"}},
+        {"@type": "Question", "name": "値引きを続けるとブランドが安売りのイメージになりませんか？", "acceptedAnswer": {"@type": "Answer", "text": "常時配布を避け、「理由のある値引き」（新規限定・イベント連動・ライブ限定など）に絞ることで防げます。定価で買う理由が残る設計にすることが、長く売り続けるための条件です。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

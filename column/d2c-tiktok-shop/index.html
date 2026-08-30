@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>D2Cブランド向けTikTok Shop入門｜自社ECとの分担</title>
+<meta name="description" content="自社ECを持つD2Cブランド向けに、TikTok Shopを新規獲得チャネルとして設計する方法と、自社ECとの役割分担を解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/d2c-tiktok-shop/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="D2Cブランド向けTikTok Shop入門｜自社ECとの分担">
+<meta property="og:description" content="自社ECを持つD2Cブランド向けに、TikTok Shopを新規獲得チャネルとして設計する方法と、自社ECとの役割分担を解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/d2c-tiktok-shop/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="D2Cブランド向けTikTok Shop入門｜自社ECとの分担">
+<meta name="twitter:description" content="自社ECを持つD2Cブランド向けに、TikTok Shopを新規獲得チャネルとして設計する方法と、自社ECとの役割分担を解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "D2Cブランド向けTikTok Shop入門｜自社ECとの分担", "description": "自社ECを持つD2Cブランド向けに、TikTok Shopを新規獲得チャネルとして設計する方法と、自社ECとの役割分担を解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/d2c-tiktok-shop/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "D2Cブランド向けTikTok Shop入門｜自社ECとの分担", "item": "https://leam.co.jp/column/d2c-tiktok-shop/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › D2CブランドがTikTok Shopを始める意味</p>
+  <span class="cat">チャネル設計</span>
+  <h1>D2CブランドがTikTok Shopを始める意味｜自社ECとの役割分担と新規獲得の設計</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px">
+    <svg viewBox="0 0 1200 630" role="img" aria-label="アイキャッチ画像：自社ECとTikTok Shopの役割分担" style="border-radius:14px">
+      <defs>
+        <linearGradient id="eyebg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#191A20"/><stop offset=".5" stop-color="#16171B"/><stop offset="1" stop-color="#2B0F17"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="630" fill="url(#eyebg)"/>
+      <g opacity=".9">
+        <circle cx="985" cy="300" r="215" fill="none" stroke="#FE2C55" stroke-width="3" stroke-dasharray="10 8"/>
+        <text x="985" y="118" text-anchor="middle" font-size="21" font-weight="700" fill="#FF8DA0">まだ知らない人</text>
+        <circle cx="985" cy="345" r="112" fill="rgba(255,255,255,.10)" stroke="#fff" stroke-width="2"/>
+        <text x="985" y="330" text-anchor="middle" font-size="19" font-weight="700" fill="#fff">すでに知っている人</text>
+        <text x="985" y="360" text-anchor="middle" font-size="15" fill="#C9CBD0">＝自社ECの顧客リスト</text>
+        <rect x="852" y="472" width="266" height="40" rx="20" fill="#FE2C55"/>
+        <text x="985" y="499" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">外へ会いに行くのがTikTok Shop</text>
+      </g>
+      <text x="80" y="140" font-size="24" font-weight="800" fill="#FF8DA0" letter-spacing="5">FOR D2C BRANDS</text>
+      <text x="76" y="248" font-size="76" font-weight="900" fill="#ffffff">自社EC ＋</text>
+      <text x="76" y="336" font-size="76" font-weight="900" fill="#ffffff">TikTok Shop</text>
+      <text x="80" y="404" font-size="25" fill="#C9CBD0">顧客は「移す」のではなく「増やす」</text>
+      <rect x="80" y="452" width="368" height="56" rx="28" fill="#fff"/>
+      <text x="264" y="489" text-anchor="middle" font-size="22" font-weight="800" fill="#0B0C10">図解7枚・実数つきで解説</text>
+      <text x="80" y="578" font-size="20" font-weight="700" fill="#646C7A">LEAM ─ TikTok Shop 実践コラム</text>
+    </svg>
+  </figure>
+
+  <p class="lead">すでに自社ECを運営しているD2Cブランドにとって、TikTok Shopは<strong>「自社ECのお客様を連れて行く場所」ではありません</strong>。TikTok Shopは外部サイトへの誘導を規約で禁じているため、そもそも連れて行けませんし、仮に連れて行けたとしても、手数料を払って自社の顧客に他社の場所で買ってもらうだけになります。TikTok Shopが担うのは<strong>まだブランドを知らない人に会う「新規獲得」</strong>、自社ECが担うのは<strong>すでに知っている人が戻ってくる「LTV」</strong>で、役割はほとんど重なりません。この記事では、両方を持つ前提で、役割分担・費用の考え方・クリエイターへの任せ方・価格と在庫の整合を、実数と図解で整理します。なお「どの売り場に出すかをまだ決めていない」段階の方は、先に<a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い</a>をご覧ください。<strong>この記事は、すでに1つ（自社EC）を運営している方が、TikTok Shopを足すと何が変わるかを知るためのもの</strong>です。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>自社ECとTikTok Shopの役割分担（顧客を移すのではなく、会う相手を増やす）</li>
+      <li>カート費用と販売手数料を同じ土俵に載せるための「実効コスト」の作り方</li>
+      <li>ブランドの世界観を保ったまま、クリエイターに任せる範囲と任せない範囲の線引き</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自社ECをお持ちの状態から、TikTok Shopを足す設計をご相談いただけます</div>
+    <p>いまの商材・価格帯・在庫体制を伺ったうえで、「TikTok Shopで新規が取れる商材か」「どのカテゴリの手数料になるか」から率直にお伝えします。既存の自社ECを止める必要はありません。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">TikTok Shopは顧客を移す場所ではなく、知らない人に会う場所です</a></li>
+      <li><a href="#s2">費用の出るタイミングが逆で、カートは売れる前から、TikTok Shopは売れてから発生します</a></li>
+      <li><a href="#s3">率だけを並べても比較になりません。集客費を足した実効コストで見ます</a></li>
+      <li><a href="#s4">新規獲得の実体は、クリエイターの口から語られる初回接点です</a></li>
+      <li><a href="#s5">ブランドの世界観は「決める側」を先に線引きすると守れます</a></li>
+      <li><a href="#s6">価格と在庫は、手残りの差を理解したうえで揃えます</a></li>
+      <li><a href="#s7">自社ECへ戻す導線は、規約の外側にだけ置きます</a></li>
+      <li><a href="#s8">まとめ：明日からの30日でやる順番</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>TikTok Shopは顧客を移す場所ではなく、知らない人に会う場所です</h2>
+  <p>D2Cブランドの方からいただくご相談で最初に整理が必要になるのが、「自社ECのお客様をTikTok Shopに誘導したい」「TikTokで集めた人を自社ECで買わせたい」という発想です。どちらも成立しません。順に理由を確認します。</p>
+
+  <h3>外部誘導が規約で禁じられているため、そもそも移動させられません</h3>
+  <p>TikTok Shopは、動画・プロフィール欄・コメント・DMを問わず、<strong>外部サイトへの購入誘導を規約で禁じています</strong>。「詳しくは公式サイトで」「プロフィールのリンクから」といった、自社ECやLINEへ送る導線は違反になります。つまり「TikTokで安く集客して、自社ECで買ってもらう」という、多くのD2Cブランドが最初に思いつく設計は、TikTok Shopの上では実行できません。ここを曖昧にしたまま運用を始めると、動画の企画そのものが規約違反を前提にしたものになり、あとから作り直しになります。どこまでが誘導にあたるかの線引きは運用の中で判断が分かれる部分もあるため、最新の禁止事項は公式ヘルプでご確認ください。</p>
+
+  <h3>逆方向、つまり自社の顧客をTikTok Shopに移す動機もありません</h3>
+  <p>では逆に、自社ECのメルマガ会員をTikTok Shopで買わせればよいかというと、これも経済的に損をするだけです。自社ECであれば決済まわりの手数料は3〜6.6%程度で済みますが、TikTok Shopでは<strong>カテゴリ別に7%・9%・10%・12%の販売手数料</strong>がかかります（2026年5月11日改定）。すでに自社ブランドを知っていて、放っておいても自社ECで買ってくれる人に、わざわざ高い手数料を払って別の場所で買ってもらう理由はありません。しかも購買データはプラットフォーム側に残るため、自社の顧客リストとしては薄くなります。<strong>移すのではなく、増やす</strong>。これがD2CブランドがTikTok Shopを持つときの唯一の目的です。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="母集団のベン図：TikTokの利用者という大きな円の内側に自社を知っている人の小さな円があり、自社ECは内側を、TikTok Shopは外側のリングを担当する構造">
+      <circle cx="300" cy="160" r="132" fill="#FFECF0" stroke="#E8324A" stroke-width="2" stroke-dasharray="9 7"/>
+      <circle cx="300" cy="185" r="66" fill="#17181C"/>
+      <text x="300" y="180" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">すでに知っている人</text>
+      <text x="300" y="200" text-anchor="middle" font-size="10.5" fill="#C9CBD4">＝自社ECの顧客リスト</text>
+      <text x="300" y="70" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">まだブランドを知らない人</text>
+      <text x="300" y="90" text-anchor="middle" font-size="10.5" fill="#787D8A">おすすめフィードで偶然すれ違う層</text>
+      <path d="M300 251 L300 292" stroke="#AEB2BE" stroke-width="2"/>
+      <path d="M300 119 L300 96" stroke="#AEB2BE" stroke-width="2" stroke-dasharray="4 4"/>
+      <rect x="470" y="42" width="230" height="72" rx="11" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="585" y="70" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">TikTok Shop の担当範囲</text>
+      <text x="585" y="92" text-anchor="middle" font-size="11" fill="#454956">外側のリング＝新規獲得</text>
+      <path d="M468 78 L438 96" stroke="#E8324A" stroke-width="2"/>
+      <rect x="470" y="196" width="230" height="72" rx="11" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="585" y="224" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">自社EC の担当範囲</text>
+      <text x="585" y="246" text-anchor="middle" font-size="11" fill="#454956">内側の円＝再購入とLTV</text>
+      <path d="M468 232 L372 208" stroke="#17181C" stroke-width="2"/>
+      <g>
+        <path d="M120 210 Q60 160 120 112" stroke="#AEB2BE" stroke-width="2.5" fill="none" stroke-dasharray="7 6"/>
+        <circle cx="86" cy="161" r="17" fill="#fff" stroke="#C2203A" stroke-width="2"/>
+        <path d="M79 154 L93 168 M93 154 L79 168" stroke="#C2203A" stroke-width="2.5"/>
+        <text x="86" y="200" text-anchor="middle" font-size="10.5" font-weight="700" fill="#C2203A">顧客の付け替えは</text>
+        <text x="86" y="216" text-anchor="middle" font-size="10.5" font-weight="700" fill="#C2203A">規約上も損益上も不可</text>
+      </g>
+      <text x="300" y="308" text-anchor="middle" font-size="11" fill="#787D8A">2つの円は入れ替えるものではなく、外側を広げて内側に流し込むもの</text>
+    </svg>
+    <figcaption>図1：新規獲得と再購入の担当範囲の切り分け。外側のリングを広げる役がTikTok Shop（LEAM作成）</figcaption>
+  </figure>
+
+  <h3>役割が重ならないため、置き換えではなく足し算として設計します</h3>
+  <p>自社ECとTikTok Shopは、会う相手も、出会いのきっかけも、費用の出方も違います。同じ「EC」という言葉でくくると混乱するので、最初に次の表で切り分けておくことをおすすめします。数字は本記事の後半で根拠つきに分解しますが、まず<strong>「固定費の有無」「集客費が料金に含まれるか」「顧客リストが誰のものか」の3点が正反対</strong>である点を押さえてください。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>自社EC（カート）</th><th>TikTok Shop</th></tr></thead>
+    <tbody>
+      <tr><td>会う相手</td><td>すでにブランドを知っている人</td><td class="y">まだブランドを知らない人</td></tr>
+      <tr><td>出会いのきっかけ</td><td>指名検索・広告・メール／LINE・同梱物</td><td>おすすめフィードの動画・ライブ</td></tr>
+      <tr><td>固定費</td><td>月額0円（BASE スタンダード）〜27,000円（futureshop Standard・税抜）</td><td class="y">初期費用・月額固定費ともになし</td></tr>
+      <tr><td>変動費</td><td>決済手数料＋サービス利用料 2.9〜6.6%（＋40円/件）</td><td>販売手数料 7％・9％・10％・12%（カテゴリ別）</td></tr>
+      <tr><td>集客費の扱い</td><td class="n">料金表の外側（広告費・SNS運用費が別途）</td><td class="y">手数料の中に「発見される場所」が含まれる</td></tr>
+      <tr><td>顧客リスト</td><td class="y">メールアドレス・配送先・購買履歴が自社に残る</td><td class="n">購買の場と顧客の所有権はプラットフォーム側</td></tr>
+      <tr><td>立ち上げにかかる時間</td><td>サイト制作・決済申込などブランドにより幅がある</td><td>出店審査は通常1〜5営業日</td></tr>
+      <tr><td>出店できる数</td><td>制限なし（ブランドごとに開設可）</td><td>個人セラーは1店、法人は最大5店</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>D2Cブランドが持っている資産は、ブランド・LTV・顧客リストの3つです。<strong>このうちTikTok Shopに持ち込めるのは「ブランド」だけ</strong>で、LTVと顧客リストは自社EC側に残ります。だからこそ、TikTok Shopには「新規獲得の指標」だけを持たせ、既存顧客のリピート指標を混ぜないことが、評価をゆがめないコツです。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>費用の出るタイミングが逆で、カートは売れる前から、TikTok Shopは売れてから発生します</h2>
+  <p>役割の次に整理したいのが費用です。自社ECのカートとTikTok Shopは、金額の大小よりも<strong>「いつ払うか」が正反対</strong>で、ここを理解しないと社内の稟議も採算計算も噛み合いません。まず主要カートの費用構造を、公式料金ページの実数で並べます。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>サービス／プラン</th><th>初期費用</th><th>月額</th><th>決済手数料</th><th>売上に対する課金</th></tr></thead>
+    <tbody>
+      <tr><td>Shopify Basic</td><td class="num">—</td><td class="num">3,650円/月（年払い）<br>4,850円/月（月払い）</td><td>3.55%＋0円<br>（Shopify ペイメント）</td><td>2%（外部決済を使う場合のみ）</td></tr>
+      <tr><td>Shopify Grow</td><td class="num">—</td><td class="num">10,100円/月（年払い）</td><td>3.4%</td><td>1%（外部決済を使う場合のみ）</td></tr>
+      <tr><td>Shopify Advanced</td><td class="num">—</td><td class="num">44,000円/月（年払い）</td><td>3.25%</td><td>0.6%（外部決済を使う場合のみ）</td></tr>
+      <tr><td>BASE スタンダード</td><td class="num">0円</td><td class="num">0円</td><td>3.6%＋40円（税込表記）</td><td class="n">3%（合算で実質6.6%＋40円/件）</td></tr>
+      <tr><td>BASE グロース</td><td class="num">0円</td><td class="num">16,580円/月（年払い・税込）<br>19,980円/月（月払い・税込）</td><td>2.9%</td><td class="y">0%</td></tr>
+      <tr><td>STORES スタンダード</td><td class="num">—</td><td class="num">3,300円/月（税込・年間契約）<br>3,960円/月（税込・月額契約）</td><td>3.6%〜</td><td class="y">なし（料金ページに記載なし）</td></tr>
+      <tr><td>futureshop Standard</td><td class="num">22,000円〜（税抜）</td><td class="num">27,000円〜（税抜）</td><td>3.2%（Visa・Mastercard）※SBPS月額1,500円＋3円/件が別途</td><td class="y">0円（売上手数料なし）</td></tr>
+      <tr><td><b>TikTok Shop</b></td><td class="num"><b>なし</b></td><td class="num"><b>なし</b></td><td colspan="2"><b>販売手数料 7％・9％・10％・12%（カテゴリ別・2026年5月11日改定）</b></td></tr>
+    </tbody>
+  </table></div>
+  <p>この表で目を引くのは、futureshop Standardの月額27,000円（税抜）や、Shopify Advancedの44,000円/月といった<strong>「1円も売れていなくても発生する費用」</strong>です。これは自社ECが悪いという話ではなく、器を借りている以上あたりまえのコストです。ただし新しい売り場を足すかどうかを判断するときには、この違いが効いてきます。TikTok Shopには初期費用も月額固定費もないため、<strong>試すこと自体のコストは、審査に通る手間と、商品を登録して素材を用意する社内工数に集約される</strong>からです。</p>
+
+  <h3>月商が小さいうちは、固定費型のカートのほうが実効率は高くつきます</h3>
+  <p>固定費型と率課金型は、月商によって有利不利が入れ替わります。客単価5,000円と仮定して、費用が月商の何％にあたるかを計算すると、その入れ替わりがはっきり見えます。次の図は、月商0〜300万円の範囲で各サービスの月間コストを直線で引いたものです。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 346" role="img" aria-label="月商別の月間コスト折れ線グラフ：固定費型のfutureshopと率課金型のBASEスタンダードが月商69万円付近で逆転し、TikTok Shopの12%は最も傾きが急">
+      <line x1="90" y1="285" x2="604" y2="285" stroke="#454956" stroke-width="1.5"/>
+      <line x1="90" y1="285" x2="90" y2="48" stroke="#454956" stroke-width="1.5"/>
+      <g stroke="#EDEFF2" stroke-width="1">
+        <line x1="90" y1="221" x2="600" y2="221"/><line x1="90" y1="157" x2="600" y2="157"/><line x1="90" y1="93" x2="600" y2="93"/>
+      </g>
+      <g font-size="10.5" fill="#787D8A" text-anchor="end">
+        <text x="82" y="289">0</text><text x="82" y="225">10万</text><text x="82" y="161">20万</text><text x="82" y="97">30万</text>
+      </g>
+      <text x="26" y="60" font-size="10.5" font-weight="700" fill="#454956">月間コスト（円）</text>
+      <g font-size="10.5" fill="#787D8A" text-anchor="middle">
+        <text x="90" y="303">月商0</text><text x="260" y="303">100万</text><text x="430" y="303">200万</text><text x="600" y="303">300万</text>
+      </g>
+      <line x1="90" y1="285" x2="600" y2="55" stroke="#E8324A" stroke-width="3"/>
+      <line x1="90" y1="285" x2="600" y2="143" stroke="#8A5A00" stroke-width="2.5"/>
+      <line x1="90" y1="267" x2="600" y2="204" stroke="#0A6E68" stroke-width="2.5"/>
+      <line x1="90" y1="283" x2="600" y2="215" stroke="#454956" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <g>
+        <circle cx="260" cy="208" r="4" fill="#E8324A"/><circle cx="260" cy="238" r="4" fill="#8A5A00"/>
+        <circle cx="260" cy="246" r="4" fill="#0A6E68"/><circle cx="260" cy="260" r="4" fill="#454956"/>
+      </g>
+      <circle cx="207" cy="253" r="6" fill="none" stroke="#0B0C10" stroke-width="2"/>
+      <path d="M207 247 L207 176" stroke="#0B0C10" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <rect x="126" y="150" width="196" height="30" rx="7" fill="#0B0C10"/>
+      <text x="224" y="170" text-anchor="middle" font-size="10.5" font-weight="700" fill="#fff">月商69万円あたりで逆転</text>
+      <g font-size="10.5" font-weight="700">
+        <text x="608" y="58" fill="#C2203A">TikTok Shop 12%</text>
+        <text x="608" y="146" fill="#8A5A00">BASE スタンダード</text>
+        <text x="608" y="201" fill="#0A6E68">futureshop</text>
+        <text x="608" y="220" fill="#454956">Shopify Basic</text>
+      </g>
+      <text x="90" y="322" font-size="10" fill="#787D8A">※客単価5,000円と仮定。futureshopはSBPS月額1,500円＋3円/件を含む（税抜）。</text>
+      <text x="90" y="336" font-size="10" fill="#787D8A">　TikTok Shopはファッション12%の場合。</text>
+    </svg>
+    <figcaption>図2：月商別に見た月間コストの伸び方。原点から出る線と、切片を持つ線の交差（LEAM作成）</figcaption>
+  </figure>
+
+  <p>グラフの読み方は単純です。<strong>原点から出ている線（BASE スタンダード、TikTok Shop）は率課金型、左端が浮いている線（futureshop、Shopify）は固定費型</strong>です。客単価5,000円という前提のもとでは、BASE スタンダードとfutureshop Standardは月商69万円あたりで逆転します。それより小さい月商ではBASEのほうが安く、それより大きくなるとfutureshopのほうが安くなります。新しい売り場を1つ増やして「まず月商30万円を目指す」という規模感で考えるなら、<strong>初期費用も月額固定費もないTikTok Shopは、立ち上げ期の費用構造としてはかなり軽い</strong>ということになります。</p>
+
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：この図は「売り場を維持する費用」だけを描いています</div>
+    <p>ここには広告費もクリエイターへのコミッションも入っていません。両方を足したうえで比較しないと判断を誤ります。その足し算を次の章で行います。なお料金は改定されます（futureshopは2026年8月1日に基本料金を改定しています）。最新の金額は各社の公式料金ページでご確認ください。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>率だけを並べても比較になりません。集客費を足した実効コストで見ます</h2>
+  <p>「自社ECは3.55%なのに、TikTok Shopは12%も取られる」という比較を、社内でされたことがあるかもしれません。この比較は成立しません。理由は1つで、<strong>カートの料金表には集客が一切含まれていない</strong>からです。Shopify・BASE・STORES・futureshopのいずれの料金ページにも、集客や送客の項目はありません。費用の中身は「器（サイト）＋決済」だけです。つまり自社ECの3.55%という数字は、<strong>「すでに自社を知っている人が、自分から来てくれた場合の決済コスト」</strong>にすぎません。</p>
+
+  <h3>まず素の費用を月商別に並べ、そのうえで広告費を足します</h3>
+  <p>客単価5,000円として、月商30万円・100万円・300万円のときの費用を計算すると次のようになります。金額はすべて上の公式料金から機械的に計算したもので、税の扱いは各社の表記に従っています（futureshopは税抜、STORESとBASEは税込、Shopifyは公式料金ページに税表記が見当たりません）。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>サービス／プラン</th><th>月商30万円<br>（60件）</th><th>月商100万円<br>（200件）</th><th>月商300万円<br>（600件）</th></tr></thead>
+    <tbody>
+      <tr><td>BASE スタンダード</td><td class="num">22,200円<br>（7.40%）</td><td class="num">74,000円<br>（7.40%）</td><td class="num">222,000円<br>（7.40%）</td></tr>
+      <tr><td>BASE グロース</td><td class="num">25,280円<br>（8.43%）</td><td class="num">45,580円<br>（4.56%）</td><td class="num">103,580円<br>（3.45%）</td></tr>
+      <tr><td>Shopify Basic（年払い）</td><td class="num">14,300円<br>（4.77%）</td><td class="num">39,150円<br>（3.91%）</td><td class="num">110,150円<br>（3.67%）</td></tr>
+      <tr><td>futureshop Standard（税抜）</td><td class="num">38,280円<br>（12.76%）</td><td class="num">61,100円<br>（6.11%）</td><td class="num">126,300円<br>（4.21%）</td></tr>
+      <tr><td>TikTok Shop（ファッション12%）</td><td class="num">36,000円<br>（12.00%）</td><td class="num">120,000円<br>（12.00%）</td><td class="num">360,000円<br>（12.00%）</td></tr>
+      <tr><td>TikTok Shop（食品・家電など7%）</td><td class="num">21,000円<br>（7.00%）</td><td class="num">70,000円<br>（7.00%）</td><td class="num">210,000円<br>（7.00%）</td></tr>
+    </tbody>
+  </table></div>
+  <p>ここで注目していただきたいのは、<strong>月商30万円の段階では、futureshop Standardの実効率12.76%がTikTok Shopのファッション12%を上回っている</strong>点です。固定費型のカートは、月商が小さいうちは率換算するとかなり重くなります。逆に月商300万円まで伸びると4.21%まで下がります。「カートは安く、TikTok Shopは高い」という感覚は、月商が十分に育った状態の数字だけを見ているために生まれます。</p>
+
+  <h3>広告費を足すと、率の順位はひっくり返ります</h3>
+  <p>次に、料金表に載っていない費用を足します。仮にCPA（新規1件あたりの獲得単価）を2,000円とし、月商100万円のうち半分の100件が新規獲得だとします。この場合の広告費は20万円です。ShopifyBasicの39,150円に20万円を足すと239,150円で、月商に対する実効コストは<strong>23.9%</strong>になります。一方TikTok Shopは、販売手数料12%の12万円に、クリエイターへのコミッションを10%と設定した場合の10万円を足して22万円、実効コストは<strong>22.0%</strong>です。<span class="hl">率だけを見れば3.9%対12%ですが、実効では23.9%対22.0%とほぼ並びます。</span></p>
+
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="月商100万円における実効コストの横棒比較：料金表だけの3.9%、広告費を足した23.9%、TikTok Shopの販売手数料とコミッション合計22.0%の3本">
+      <text x="20" y="34" font-size="12" font-weight="700" fill="#454956">月商100万円・客単価5,000円・新規100件／CPA2,000円と仮定した場合</text>
+      <text x="20" y="82" font-size="11.5" font-weight="700" fill="#17181C">① 自社EC</text>
+      <text x="20" y="98" font-size="10.5" fill="#787D8A">料金表の数字だけ</text>
+      <rect x="200" y="62" width="78" height="44" rx="5" fill="#454956"/>
+      <text x="239" y="90" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">3.9%</text>
+      <text x="292" y="90" font-size="11.5" font-weight="700" fill="#454956">39,150円</text>
+      <text x="20" y="152" font-size="11.5" font-weight="700" fill="#17181C">② 自社EC</text>
+      <text x="20" y="168" font-size="10.5" fill="#787D8A">＋新規獲得の広告費</text>
+      <rect x="200" y="132" width="78" height="44" rx="5" fill="#454956"/>
+      <rect x="278" y="132" width="400" height="44" rx="5" fill="#8A5A00"/>
+      <text x="239" y="160" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">3.9%</text>
+      <text x="478" y="160" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">広告費 200,000円（20.0%）</text>
+      <text x="200" y="196" font-size="11.5" font-weight="800" fill="#8A5A00">合計 239,150円 ＝ 実効 23.9%</text>
+      <text x="20" y="238" font-size="11.5" font-weight="700" fill="#17181C">③ TikTok Shop</text>
+      <text x="20" y="254" font-size="10.5" fill="#787D8A">手数料＋コミッション</text>
+      <rect x="200" y="218" width="240" height="44" rx="5" fill="#E8324A"/>
+      <rect x="440" y="218" width="200" height="44" rx="5" fill="#B01D36"/>
+      <text x="320" y="246" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">販売手数料 120,000円（12%）</text>
+      <text x="540" y="246" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">報酬 100,000円（10%）</text>
+      <text x="200" y="282" font-size="11.5" font-weight="800" fill="#C2203A">合計 220,000円 ＝ 実効 22.0%</text>
+      <line x1="640" y1="212" x2="640" y2="268" stroke="#0B0C10" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <line x1="678" y1="126" x2="678" y2="182" stroke="#0B0C10" stroke-width="1.5" stroke-dasharray="4 3"/>
+    </svg>
+    <figcaption>図3：料金表に載る費用と載らない費用の分解。実効で並べると差はほぼ消える（LEAM作成）</figcaption>
+  </figure>
+
+  <p>この試算のCPA2,000円・新規比率50%・コミッション10%は、説明のための仮定です。実際の数値はブランドごとに違いますし、自社ECのリピート購入には広告費がかからないため、②の20万円は新規獲得分にだけ乗る費用です。それでも、<strong>「率の比較は無意味で、実効コストで並べないと判断できない」という構造そのものは、どのブランドでも変わりません</strong>。手数料の内訳と考え方は<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料</a>で詳しく分解しています。</p>
+
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>TikTok Shopの手数料に「発見される場所」が含まれているのは事実ですが、<strong>広告費がゼロになるという意味ではありません</strong>。日本では2025年7月からGMV Maxが導入され、2025年7月以降はこれがTikTok Shop広告の唯一のキャンペーンタイプになっています。広告を使うなら、その分は実効コストに上乗せして計算してください（<a href="https://leam.co.jp/column/gmvmax/">GMV Maxの解説</a>）。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>新規獲得の実体は、クリエイターの口から語られる初回接点です</h2>
+  <p>TikTok Shopが新規獲得チャネルだとして、では実際に誰が新規顧客に会っているのかというと、多くの場合それはブランドの公式アカウントではなくクリエイターです。TikTok Newsroomが2026年2月3日に公表した数字では、日本での提供開始（2025年6月30日）から半年で<strong>登録セラーは5万店超、参加クリエイターは20万人超、そして流通総額の約70%がクリエイター投稿・セラーのコンテンツ・LIVEを起点としたもの</strong>だとされています。商品ページに人が集まって買っていくのではなく、誰かが話している場面に商品が紛れ込むことで買われている、という構造です。</p>
+
+  <h3>自社ECとは、購入に至るまでの順路そのものが違います</h3>
+  <p>自社ECの購入は、ほとんどの場合「探している人」から始まります。指名検索でたどり着く、広告をクリックする、メールやLINEのお知らせから戻ってくる。いずれも<strong>買う意思が先にあり、その意思の受け皿としてサイトがある</strong>形です。一方TikTok Shopの購入は、買う意思がない人のフィードに商品が現れるところから始まります。この違いは、用意すべきものの違いに直結します。自社ECで効くのは商品ページの完成度ですが、TikTok Shopで効くのは<strong>「誰の口から、どんな場面で語られるか」</strong>です。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="購入までの順路の並列比較：自社ECは買う意思から始まり、TikTok Shopは意思のない視聴から始まって同じ購入に着地する">
+      <rect x="24" y="16" width="310" height="28" rx="14" fill="#EDEFF2"/>
+      <text x="179" y="35" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">自社ECの順路（意思が先）</text>
+      <rect x="386" y="16" width="310" height="28" rx="14" fill="#FFECF0"/>
+      <text x="541" y="35" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">TikTok Shopの順路（出会いが先）</text>
+      <g font-size="12" fill="#17181C">
+        <rect x="44" y="62" width="270" height="42" rx="8" fill="#fff" stroke="#CDD1D8"/><text x="179" y="88" text-anchor="middle" font-weight="700">「あのブランドで買おう」と思う</text>
+        <rect x="44" y="122" width="270" height="42" rx="8" fill="#fff" stroke="#CDD1D8"/><text x="179" y="148" text-anchor="middle" font-weight="700">指名検索・広告・メール／LINE</text>
+        <rect x="44" y="182" width="270" height="42" rx="8" fill="#fff" stroke="#CDD1D8"/><text x="179" y="208" text-anchor="middle" font-weight="700">商品ページで比較・納得</text>
+        <rect x="44" y="242" width="270" height="42" rx="8" fill="#17181C"/><text x="179" y="268" text-anchor="middle" font-weight="800" fill="#fff">購入</text>
+      </g>
+      <g font-size="12" fill="#17181C">
+        <rect x="406" y="62" width="270" height="42" rx="8" fill="#fff" stroke="#F3A7B5"/><text x="541" y="88" text-anchor="middle" font-weight="700">買う気なくフィードを眺める</text>
+        <rect x="406" y="122" width="270" height="42" rx="8" fill="#fff" stroke="#F3A7B5"/><text x="541" y="148" text-anchor="middle" font-weight="700">クリエイターが使っている場面を見る</text>
+        <rect x="406" y="182" width="270" height="42" rx="8" fill="#fff" stroke="#F3A7B5"/><text x="541" y="208" text-anchor="middle" font-weight="700">商品カードを開く（数十秒）</text>
+        <rect x="406" y="242" width="270" height="42" rx="8" fill="#E8324A"/><text x="541" y="268" text-anchor="middle" font-weight="800" fill="#fff">購入</text>
+      </g>
+      <g stroke="#AEB2BE" stroke-width="2" fill="none">
+        <path d="M179 104 V118"/><path d="M179 164 V178"/><path d="M179 224 V238"/>
+        <path d="M541 104 V118"/><path d="M541 164 V178"/><path d="M541 224 V238"/>
+      </g>
+      <text x="360" y="150" text-anchor="middle" font-size="26" font-weight="900" fill="#CDD1D8">≠</text>
+      <text x="360" y="316" text-anchor="middle" font-size="11" fill="#787D8A">同じ「購入」でも、手前の3段が丸ごと入れ替わる。だから用意する素材も入れ替わる</text>
+    </svg>
+    <figcaption>図4：購入に至る手前3段の入れ替わり。意思の受け皿づくりと、出会いの量産の違い（LEAM作成）</figcaption>
+  </figure>
+
+  <h3>クリエイターに動いてもらうために、D2C側が用意するものは決まっています</h3>
+  <p>アフィリエイトに参加できる日本のクリエイターの条件は、<strong>18歳以上・フォロワー1,000人以上</strong>です（2026年8月時点。条件は変更されることがあるため、最新はアプリ内の表示と公式ヘルプでご確認ください）。つまり母数は非常に大きく、「誰に声をかけるか」と「なぜその人が動くか」を設計しないと、参加者が集まっても投稿は生まれません。当社の運用実感では、クリエイターが動くかどうかを分けるのは、報酬率の高さそのものよりも、<strong>サンプルが届く速さと、その商品を自分のフォロワーに紹介する理由が明確かどうか</strong>です。次の順で準備すると、立ち上がりの空白期間が短くなります。</p>
+
+  <p>誰に声をかけるかについては、フォロワー数を基準にしないことをおすすめします。当社の運用実感では、フォロワー数が多い人ほど1本あたりの反応が良いという関係は安定して観測できません。見るべきは、<strong>その人がふだん扱っている題材と、自社の商品が並んだときに不自然でないか</strong>です。ふだんコスメを触っていない人にコスメを持たせても、フォロワーは「いつもと違う」と受け取ります。逆に、同じジャンルの他社商品をすでに紹介している人であれば、紹介そのものが自然な文脈に乗ります。最初の数名は、この「文脈が合う人」から始めて、投稿の反応を見ながら広げてください。</p>
+
+  <ol class="steps">
+    <li><b>コミッション率を先に決めてから募集する</b><p>後から下げると既存の協力者との関係が壊れます。カテゴリ別の販売手数料（7〜12%）を引いたうえで、手残りが成立する率を決めます。相場の考え方は<a href="https://leam.co.jp/column/creator-commission/">コミッション率の決め方</a>で整理しています。</p></li>
+    <li><b>サンプル送付の運用を先に立ち上げる</b><p>依頼から発送までの担当者と在庫の置き場所を決めておきます。ここが詰まると、興味を持ってくれたクリエイターが離れます。</p></li>
+    <li><b>ブリーフ（依頼書）を1枚にまとめる</b><p>当社がクリエイター連携で使っているブリーフは15項目で構成しています。訴求したい悩み・使ってほしい場面・言ってはいけない表現・価格の表示方法などを、事前に文書で渡します。</p></li>
+    <li><b>最初の投稿が出たら、素材として再利用する</b><p>反応がよかった動画の構成は、次のクリエイターへのブリーフに反映します。当たった型を横に広げるのが最短です（<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の型</a>）。</p></li>
+    <li><b>ライブは体制ができてから足す</b><p>単発では視聴も学習も積み上がりません。曜日と時間帯を固定できるようになってから着手します（<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマースの始め方</a>）。</p></li>
+  </ol>
+
+  <div class="ctabox">
+    <div class="ct">クリエイター起用だけを、小さく試す形から始められます</div>
+    <p>LEAMはTikTok Shop特化のMCN（クリエイター事務所）を自社で運営し、市場データを毎営業日蓄積しています。ブランドの世界観に合うクリエイターの選定と、最初のブリーフづくりからご一緒できます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>ブランドの世界観は「決める側」を先に線引きすると守れます</h2>
+  <p>D2Cブランドの方が最も懸念されるのが、ここです。長い時間をかけて作ってきたトーンやビジュアルの基準を、面識のないクリエイターに預けてよいのか。結論から言えば、<strong>預けてよい範囲と、絶対に預けてはいけない範囲を先に文書で分けておけば成立します</strong>。うまくいかないのは、線引きをせずに「ブランドらしくお願いします」とだけ伝えたときです。</p>
+
+  <h3>ブランド側が決めるのは「事実と表現の下限」、クリエイターに任せるのは「伝え方」です</h3>
+  <p>分け方の基準はシンプルで、<strong>間違えると取り返しがつかないものはブランドが決め、間違えても撮り直せるものは任せる</strong>という切り方です。価格や成分、法令にふれる表現は前者です。撮影場所や小物、話し方のテンポは後者です。ここを逆にすると、細かい演出に口を出す一方で、薬機法にふれる言い回しが野放しになる、という最も危険な状態になります。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>決める側</th><th>理由・関連する数字</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格・セット内容・送料条件</td><td class="n">ブランドが決める</td><td>TikTok Shop上の表示価格はセラー側の設定。販売手数料7〜12%は表示価格に対してかかるため、勝手な値引き訴求は手残りを直接削る</td></tr>
+      <tr><td>薬機法・景品表示法にふれる表現</td><td class="n">ブランドが決める</td><td>言い換え可能なNG表現の一覧を、当社のブリーフ15項目のうち1項目として毎回添付する</td></tr>
+      <tr><td>ブランド名の読み方・ロゴの映り方</td><td class="n">ブランドが決める</td><td>参加クリエイターは20万人超（2025年12月末時点）。誰が読んでも同じ発音になる表記を渡す</td></tr>
+      <tr><td>訴求する悩み・使用シーン</td><td>すり合わせる</td><td>当社が使うクリエイター向けブリーフは15項目で、この欄を最も丁寧に書く</td></tr>
+      <tr><td>冒頭のフック・話し方・尺</td><td class="y">クリエイターに任せる</td><td>流通総額の約70%がコンテンツ起点。伝え方の裁量がそのまま売上に効くため指定しない</td></tr>
+      <tr><td>撮影場所・小物・服装・編集のテンポ</td><td class="y">クリエイターに任せる</td><td>参加条件は18歳以上・フォロワー1,000人以上と幅広く、生活の文脈は一人ずつ違う</td></tr>
+    </tbody>
+  </table></div>
+
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="裁量のグラデーション帯：左端をブランド決定、右端をクリエイター裁量として、価格や法令表現から撮影の演出までを一直線上に配置した図">
+      <defs>
+        <linearGradient id="ctrlband" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#17181C"/><stop offset=".48" stop-color="#8F94A3"/><stop offset="1" stop-color="#FFC2CE"/>
+        </linearGradient>
+      </defs>
+      <rect x="70" y="130" width="590" height="38" rx="19" fill="url(#ctrlband)"/>
+      <text x="70" y="192" font-size="11.5" font-weight="800" fill="#17181C">◀ ブランドが決める</text>
+      <text x="660" y="192" text-anchor="end" font-size="11.5" font-weight="800" fill="#C2203A">クリエイターに任せる ▶</text>
+      <g stroke="#454956" stroke-width="1.2">
+        <line x1="120" y1="130" x2="120" y2="112"/><line x1="280" y1="130" x2="280" y2="112"/><line x1="500" y1="130" x2="500" y2="112"/>
+        <line x1="195" y1="168" x2="195" y2="212"/><line x1="390" y1="168" x2="390" y2="230"/><line x1="605" y1="168" x2="605" y2="212"/>
+      </g>
+      <g font-size="11" font-weight="700" fill="#17181C" text-anchor="middle">
+        <text x="120" y="104">販売価格・セット内容</text>
+        <text x="280" y="104">ブランド名・ロゴの見せ方</text>
+        <text x="500" y="104">冒頭のフックと話し方</text>
+      </g>
+      <g font-size="11" font-weight="700" fill="#17181C" text-anchor="middle">
+        <text x="195" y="228">薬機法・景表法にふれる表現</text>
+        <text x="390" y="246">訴求する悩み・使用シーン</text>
+        <text x="605" y="228">撮影場所・小物・編集テンポ</text>
+      </g>
+      <text x="390" y="264" text-anchor="middle" font-size="10.5" fill="#787D8A">（唯一「すり合わせる」欄。ここだけは往復してよい）</text>
+      <text x="365" y="40" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">1本の線の上で、項目ごとに置き場所を決めておく</text>
+      <text x="365" y="62" text-anchor="middle" font-size="11" fill="#787D8A">「ブランドらしく」という一言で丸投げすると、この線が引かれないまま撮影が始まる</text>
+    </svg>
+    <figcaption>図5：項目ごとの裁量の置き場所。左端と右端を先に決めるのが世界観を守る条件（LEAM作成）</figcaption>
+  </figure>
+
+  <p>もう一点、D2Cブランドの方に最初にお伝えしているのが、<strong>「公式アカウントの世界観」と「クリエイター経由の見え方」は別物として設計してよい</strong>という点です。公式アカウントは、ブランドサイトと同じトーンで統一して構いません。しかし新規獲得を担うのはクリエイターの投稿で、そこには生活の雑多さが必要です。整いすぎた画は広告として受け取られやすく、スワイプされる原因になりやすいです。当社の運用実感では、<strong>世界観の一貫性は「公式が保つ」もの</strong>で、クリエイター投稿に求めるのは一貫性ではありません。ただし<strong>任せてよいのは「伝え方」であって「言ってよいことの範囲」ではありません</strong>。最低ラインとして守ってもらうのは、①薬機法・景品表示法にふれる表現を使わないこと、②PR表記など関係性の明示、③ブランド名が正しく発音されること、④商品の使い方が正しく伝わること、の4点です。とくに化粧品・健康食品を扱うブランドでは、①と②を口頭ではなく文書で渡してください。</p>
+
+  <h2 id="s6"><span class="no en">06</span>価格と在庫は、手残りの差を理解したうえで揃えます</h2>
+  <p>自社ECとTikTok Shopの両方で同じ商品を売るとき、必ず論点になるのが価格です。結論から言えば、<strong>表示価格は揃えるのが原則</strong>です。そのうえで、手残りが場所によって違うことを理解し、その差をどこで吸収するかを決めます。</p>
+
+  <h3>カテゴリによって、販売手数料は自社ECより安くも高くもなります</h3>
+  <p>TikTok Shopの販売手数料はカテゴリ別に7%・9%・10%・12%です（2026年5月11日改定）。ここで見落とされがちなのが、<strong>低いカテゴリでは自社ECのカート費用より安くなる場合がある</strong>ことです。BASE スタンダードの実質6.6%＋40円/件を基準に、5,000円の商品1点で比較すると次のようになります。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>料率</th><th>主なカテゴリ</th><th>5,000円のときの手数料</th><th>BASE スタンダード（370円）との差</th></tr></thead>
+    <tbody>
+      <tr><td class="num">7%</td><td>食品・ドリンク／家電／家具／スマホ・デジタル機器／パソコン・オフィス用品／ホームセンター・リフォーム／車・バイク</td><td class="num">350円</td><td class="y">−20円（TikTok Shopのほうが安い）</td></tr>
+      <tr><td class="num">9%</td><td>キッチン用品／ファブリック・インテリア雑貨／本・雑誌・オーディオ／コレクション／工具・金物</td><td class="num">450円</td><td>＋80円</td></tr>
+      <tr><td class="num">10%</td><td>美容・パーソナルケア／健康／ベビー・マタニティ／アクセサリー・ジュエリー／シューズ／スポーツ・アウトドア／おもちゃ・ホビー</td><td class="num">500円</td><td>＋130円</td></tr>
+      <tr><td class="num">12%</td><td>ファッション／ペット用品 など</td><td class="num">600円</td><td class="n">＋230円</td></tr>
+    </tbody>
+  </table></div>
+  <p>単価によっても関係は動きます。BASE スタンダードは40円の固定分があるため、単価が下がるほど率換算では重くなります。単価3,000円ならBASEは238円（7.93%）に対しTikTok Shopの7%カテゴリは210円、単価10,000円ならBASEは700円（7.00%）でTikTok Shopの7%カテゴリも700円と同額です。<strong>食品や家電を扱うD2Cブランドにとって、TikTok Shopの販売手数料は「自社ECと同程度」の水準</strong>だと理解しておくと、社内の議論が進みます。自社商材がどの区分に入るかは<a href="https://leam.co.jp/column/best-categories/">売れやすいカテゴリの整理</a>もあわせてご確認ください。</p>
+
+  <h3>クリエイターへの報酬を含めると、1点あたりの手残りは明確に減ります</h3>
+  <p>ただし販売手数料だけで判断すると足をすくわれます。新規獲得の主役はクリエイターなので、コミッションが乗ります。5,000円のファッション商品（12%カテゴリ）で、コミッション10%を設定した場合の1点あたりの手残りを、自社ECと並べます。原価1,500円・送料と梱包600円は説明のための仮定です。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>内訳</th><th>自社EC（BASE スタンダード）</th><th>TikTok Shop（12%＋コミッション10%）</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格</td><td class="num">5,000円</td><td class="num">5,000円</td></tr>
+      <tr><td>原価（仮定）</td><td class="num">−1,500円</td><td class="num">−1,500円</td></tr>
+      <tr><td>決済手数料＋サービス利用料</td><td class="num">−370円</td><td class="num">—</td></tr>
+      <tr><td>販売手数料</td><td class="num">—</td><td class="num">−600円</td></tr>
+      <tr><td>クリエイターへのコミッション</td><td class="num">—</td><td class="num">−500円</td></tr>
+      <tr><td>送料・梱包（仮定）</td><td class="num">−600円</td><td class="num">−600円</td></tr>
+      <tr><td><b>1点あたりの手残り</b></td><td class="num"><b>2,530円</b></td><td class="num"><b>1,800円</b></td></tr>
+      <tr><td>差</td><td class="num" colspan="2"><b>730円（販売価格の14.6%）</b></td></tr>
+    </tbody>
+  </table></div>
+
+  <figure>
+    <svg viewBox="0 0 720 352" role="img" aria-label="1点あたりの手残りの積み上げ比較：5,000円のファッション商品で自社EC2,530円、TikTok Shop1,800円になる内訳">
+      <text x="225" y="52" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">自社EC（BASE スタンダード）</text>
+      <text x="495" y="52" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">TikTok Shop（12%＋報酬10%）</text>
+      <rect x="150" y="70" width="150" height="60" fill="#CDD1D8"/>
+      <rect x="150" y="130" width="150" height="14.8" fill="#8F94A3"/>
+      <rect x="150" y="144.8" width="150" height="24" fill="#646C7A"/>
+      <rect x="150" y="168.8" width="150" height="101.2" fill="#0A6E68"/>
+      <text x="225" y="106" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">原価 1,500円</text>
+      <text x="225" y="225" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">手残り 2,530円</text>
+      <g font-size="10.5" fill="#454956" text-anchor="end">
+        <text x="144" y="141">決済等 370円</text>
+        <text x="144" y="161">送料・梱包 600円</text>
+      </g>
+      <rect x="420" y="70" width="150" height="60" fill="#CDD1D8"/>
+      <rect x="420" y="130" width="150" height="24" fill="#E8324A"/>
+      <rect x="420" y="154" width="150" height="20" fill="#B01D36"/>
+      <rect x="420" y="174" width="150" height="24" fill="#646C7A"/>
+      <rect x="420" y="198" width="150" height="72" fill="#0A6E68"/>
+      <text x="495" y="106" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">原価 1,500円</text>
+      <text x="495" y="240" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">手残り 1,800円</text>
+      <g font-size="10.5" fill="#454956">
+        <text x="578" y="146">販売手数料 600円</text>
+        <text x="578" y="168">コミッション 500円</text>
+        <text x="578" y="190">送料・梱包 600円</text>
+      </g>
+      <line x1="306" y1="168.8" x2="414" y2="168.8" stroke="#0B0C10" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <line x1="306" y1="198" x2="414" y2="198" stroke="#0B0C10" stroke-width="1.2" stroke-dasharray="4 3"/>
+      <path d="M360 168.8 V198" stroke="#0B0C10" stroke-width="2"/>
+      <rect x="316" y="286" width="88" height="24" rx="6" fill="#0B0C10"/>
+      <text x="360" y="303" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">差 730円</text>
+      <path d="M360 198 V282" stroke="#0B0C10" stroke-width="1" stroke-dasharray="3 3"/>
+      <text x="360" y="338" text-anchor="middle" font-size="10.5" fill="#787D8A">販売価格5,000円・原価1,500円・送料梱包600円は説明用の仮定</text>
+    </svg>
+    <figcaption>図6：1点あたりの手残りの積み上げ比較。730円の差をどこで吸収するかが設計課題（LEAM作成）</figcaption>
+  </figure>
+
+  <p>この730円をどう扱うかが、価格設計の本題です。自社ECの価格を上げて揃えるのは、既存のお客様に対する値上げになるので現実的ではありません。当社の運用実感では、次の2つのどちらかに落ち着くことが多いです。1つは、<strong>TikTok Shop向けにセット構成を変えて客単価を上げる</strong>方法です。同じ単品を並べるのではなく、2点セットや初回向けの構成にすれば、送料・梱包・決済といった1点あたりの固定費の負担が下がります。ただし販売手数料とコミッションは率で効くため、客単価が上がれば絶対額も増えます。セット化で薄まるのは固定費の部分で、率の差そのものが消えるわけではありません。もう1つは、<strong>730円の差を新規獲得コストとして認め、CPAの一部だと考える</strong>方法です。図3で見たとおり、自社ECの新規獲得にも広告費はかかっているので、社内の採算判断としては筋が通ります（管理会計上の整理です。実際の会計・税務処理は顧問税理士にご確認ください）。値付けの考え方は<a href="https://leam.co.jp/column/pricing-strategy/">価格設定戦略</a>で詳しく扱っています。</p>
+
+  <div class="box box-warn">
+    <div class="bt">⚠️ 表示価格を場所によって変えると、両方が傷みます</div>
+    <p>TikTok Shopのほうを安くすると、既存のお客様がそちらへ移り、高い手数料を払って自社の顧客に買ってもらう構造になります。逆に自社ECのほうを安くすると、動画を見て興味を持った人が価格を調べたときに不信につながります。<strong>表示価格は揃え、差はセット構成と送料条件で調整する</strong>のが安全です。送料設計の考え方は<a href="https://leam.co.jp/column/shipping-rules/">送料と配送のルール</a>をご覧ください。</p>
+  </div>
+
+  <h3>在庫は「引き当てを分けるか、共有するか」を先に決めます</h3>
+  <p>在庫については、クリエイターの投稿が伸びたときに一気に注文が入る可能性がある、という点が自社ECとの最大の違いです。自社ECは需要が読みやすく、メール配信やセールのタイミングで山が来ます。TikTok Shopは、こちらが何もしていない日に1本の動画が伸びて売れることがあります。<strong>両方で同じ在庫を共有すると、伸びた日に自社ECが欠品する</strong>という事故が起きます。立ち上げ期は数量を区切って引き当てを分け、動きが読めるようになってから共有に寄せるのが安全です。運用の全体像は<a href="https://leam.co.jp/column/seller-center-guide/">セラーセンターの使い方</a>もあわせてご確認ください。</p>
+
+  <h2 id="s7"><span class="no en">07</span>自社ECへ戻す導線は、規約の外側にだけ置きます</h2>
+  <p>ここまでの整理で、TikTok Shopは新規獲得、自社ECはLTVという役割分担が見えました。すると当然、<strong>「TikTok Shopで初めて買ってくれた人に、2回目は自社ECで買ってほしい」</strong>という発想が出てきます。この願望自体は健全ですが、実現の手段を間違えると規約違反になります。</p>
+
+  <h3>TikTokの中では、外へ送る導線を一切つくれません</h3>
+  <p>動画のテロップ、プロフィール欄、コメント欄、DM。どこであっても、外部サイトでの購入へ誘導することは規約違反です。「公式サイトで限定色を販売中」といった言い回しも、購入導線として機能する以上は同じ扱いになると考えるべきです。<strong>アカウントの停止や商品の削除といった措置は、積み上げてきたレビューと素材を一度に失う</strong>ことを意味します。新規獲得チャネルとして育ててきたものを、短期的な自社EC送客のために失うのは割に合いません。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>導線の置き場所</th><th>可否</th><th>その導線で買われたときの手数料</th></tr></thead>
+    <tbody>
+      <tr><td>動画内のテロップで自社ECのURLを出す</td><td class="n">規約違反</td><td>—（そもそも実行しない）</td></tr>
+      <tr><td>プロフィール欄に自社ECの購入リンクを置く</td><td class="n">規約違反</td><td>—</td></tr>
+      <tr><td>コメント欄・DMで「公式サイトで買えます」と案内する</td><td class="n">規約違反</td><td>—</td></tr>
+      <tr><td>TikTok Shopの商品カード・カートで購入してもらう</td><td class="y">正規の導線</td><td>販売手数料 7〜12%＋設定したコミッション</td></tr>
+      <tr><td>商品に同梱したカード・納品書でブランドを伝える</td><td class="y">TikTokの外側の行為</td><td>後日の自社EC購入は自社カートの費用（BASE スタンダードなら6.6%＋40円）</td></tr>
+      <tr><td>商品そのものの使用体験で覚えてもらい、指名検索される</td><td class="y">TikTokの外側の行為</td><td>同上</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>使える経路は、商品が手元に届いたあとの体験だけです</h3>
+  <p>TikTok Shopで購入された商品は、こちらが梱包して発送します。つまり<strong>箱の中身は、ブランドが自由に設計できる唯一の面</strong>です。同梱するカードにブランドの背景を書く、正しい使い方の説明を入れる、次回の購入を検討するときに思い出してもらえる状態をつくる。これらはTikTokのプラットフォーム上の行為ではないため、規約の対象外です。効果は即効性のあるものではありませんが、<strong>時間差で指名検索が増える</strong>という形で自社ECに返ってきます。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 306" role="img" aria-label="購買データの所在を示す2つの箱と、その間を橋渡しする同梱物・商品体験の経路図">
+      <rect x="30" y="52" width="270" height="186" rx="12" fill="#17181C"/>
+      <text x="165" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">プラットフォーム側に残るもの</text>
+      <g font-size="11.5" fill="#C9CBD4">
+        <text x="56" y="116">・購入者の連絡先と配送先</text>
+        <text x="56" y="144">・注文履歴と決済情報</text>
+        <text x="56" y="172">・視聴と購買の行動データ</text>
+        <text x="56" y="200">・商品につくレビュー</text>
+      </g>
+      <text x="165" y="226" text-anchor="middle" font-size="10.5" fill="#8F94A3">ここは自社の資産にはならない</text>
+      <rect x="420" y="52" width="270" height="186" rx="12" fill="#fff" stroke="#0A6E68" stroke-width="2"/>
+      <text x="555" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#0A6E68">自社側に残せるもの</text>
+      <g font-size="11.5" fill="#3A3F46">
+        <text x="446" y="116">・ブランド名が記憶されること</text>
+        <text x="446" y="144">・商品そのものの使用体験</text>
+        <text x="446" y="172">・同梱物で伝えた情報</text>
+        <text x="446" y="200">・後日の指名検索と再訪</text>
+      </g>
+      <text x="555" y="226" text-anchor="middle" font-size="10.5" fill="#787D8A">時間差で自社ECの売上になる</text>
+      <path d="M300 132 H420" stroke="#0A6E68" stroke-width="10" stroke-linecap="round"/>
+      <text x="360" y="118" text-anchor="middle" font-size="11" font-weight="800" fill="#0A6E68">同梱物・商品体験</text>
+      <text x="360" y="156" text-anchor="middle" font-size="10.5" fill="#787D8A">（規約の外側）</text>
+      <g>
+        <path d="M300 196 H420" stroke="#C2203A" stroke-width="3" stroke-dasharray="8 6"/>
+        <circle cx="360" cy="196" r="15" fill="#fff" stroke="#C2203A" stroke-width="2"/>
+        <path d="M354 190 L366 202 M366 190 L354 202" stroke="#C2203A" stroke-width="2.5"/>
+      </g>
+      <text x="360" y="264" text-anchor="middle" font-size="10.5" font-weight="700" fill="#C2203A">データの直接移送・外部誘導は不可</text>
+      <text x="360" y="292" text-anchor="middle" font-size="11" fill="#787D8A">橋は1本しかない。だから箱の中身（同梱物）の設計が、自社ECへの唯一の投資になる</text>
+    </svg>
+    <figcaption>図7：購買データの所在と、唯一通行できる経路。橋にあたるのは発送物だけ（LEAM作成）</figcaption>
+  </figure>
+
+  <p>もう1つ、忘れられがちな戻り方があります。<strong>クリエイターの動画を見た人が、その場では買わずにブランド名で検索する</strong>ケースです。この検索はTikTokの外でも起きるため、自社ECにたどり着きます。だからこそ、クリエイターにブランド名を正しく発音してもらうこと、商品名が聞き取れる形で伝わることが、地味ですが最も効く投資になります。図5で「ブランド名の読み方はブランドが決める」に分類した理由がここにあります。商品ページ側の受け止め方は<a href="https://leam.co.jp/column/product-page-cvr/">商品ページの改善</a>で扱っています。</p>
+
+  <h2 id="s8"><span class="no en">08</span>まとめ：明日からの30日でやる順番</h2>
+  <p>ここまでの内容を、着手順に並べ替えます。冒頭のポイントの再掲ではなく、<strong>明日の朝に何から手をつけるか</strong>という順番です。自社ECを止める作業は1つもありません。すべて追加の作業で、既存の売上には触りません。</p>
+  <p>最初にやることは、出店申請でも商品登録でもなく、<strong>自社商材がどの料率区分に入るかを確認して、手残りを計算し直すこと</strong>です。7%区分なら自社ECとほぼ同等、12%区分ならコミッションを含めて1点あたり730円前後（5,000円の商品の場合）減ると分かった時点で、社内で議論すべき論点が「やるかどうか」から「どのセット構成で出すか」に変わります。ここを飛ばして出店から始めると、投稿が出てから採算の話になり、価格の後出し変更でクリエイターとの関係を壊します。</p>
+  <p>次に、審査の待ち時間を使って価格と送料の条件を確定させます。審査は通常1〜5営業日なので、この数日で「自社ECと同じ表示価格にする」「送料無料ラインは手残りから逆算して置く」という2点を決めておけば、審査通過と同時に商品登録に入れます。審査の準備物は<a href="https://leam.co.jp/column/tiktok-shop-shinsa/">出店審査の解説</a>にまとめています。</p>
+  <p>商品が並んだら、コミッション率を決めてアフィリエイトを開けます。ここで大事なのは、<strong>率を先に決めてから募集する</strong>ことです。後から下げると、最初に協力してくれたクリエイターとの関係が壊れます。同時に、サンプル発送の担当と在庫の置き場所を決めます。この社内オペレーションが詰まると、興味を持ってくれた相手が離れていきます。アフィリエイトの設定手順は<a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの始め方</a>を参照してください。</p>
+  <p>最後が広告です。投稿が数本たまるまでは、広告に予算を入れないことをおすすめします。GMV Maxは配信結果を学習して精度を上げる仕組みなので、素材が少ない状態で回しても本来の性能が出ません。<strong>広告は「素材が増える体制」ができてから足すもの</strong>で、順番を逆にすると費用だけが先行します。</p>
+
+  <div class="tw"><table>
+    <thead><tr><th>時期</th><th>やること</th><th>担当の目安</th><th>所要の目安（当社の運用実感）</th></tr></thead>
+    <tbody>
+      <tr><td>1日目</td><td>自社商材の料率区分（7／9／10／12%）を確認し、1点あたりの手残りを再計算する</td><td>EC責任者・経理</td><td>半日</td></tr>
+      <tr><td>1日目</td><td>出店を申請する（審査は通常1〜5営業日）</td><td>EC責任者</td><td>1〜2時間</td></tr>
+      <tr><td>2〜5日目<br>（審査待ち）</td><td>表示価格を自社ECと揃え、送料無料ラインを手残りから逆算して決める</td><td>EC担当</td><td>1日</td></tr>
+      <tr><td>6〜10日目</td><td>商品を登録する。1商品目は主力に絞り、全点は入れない</td><td>EC担当</td><td>商品数による</td></tr>
+      <tr><td>8〜12日目</td><td>コミッション率を確定し、アフィリエイトを設定する</td><td>EC責任者</td><td>半日</td></tr>
+      <tr><td>10〜20日目</td><td>クリエイターへ打診し、サンプルを発送する。15項目のブリーフを添付する</td><td>EC・広報</td><td>継続</td></tr>
+      <tr><td>15〜25日目</td><td>最初の投稿が出る。商品ページでの離脱と在庫の減り方を確認する</td><td>EC担当</td><td>継続</td></tr>
+      <tr><td>25〜30日目</td><td>投稿が数本たまってからGMV Maxの検討に入る</td><td>EC責任者</td><td>—</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="box box-point">
+    <div class="bt">💡 30日を終えた時点で見る数字</div>
+    <p>見るべきは売上そのものではなく、<strong>「投稿してくれたクリエイターの人数」と「その投稿から発生した注文数」</strong>です。この2つが増えていれば、新規獲得チャネルとして機能し始めています。自社ECの月商と比べて一喜一憂すると、育つ前に判断を誤ります。運用体制をどう組むかは<a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場</a>もご参照ください。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>TikTok Shopに出すと、自社ECの売上が食われませんか？</summary><div class="a">会っている相手が違うため、基本的には食い合いになりにくい関係です。自社ECは指名検索やメール・LINEから戻ってくる既存のお客様が中心で、TikTok Shopはブランドを知らない人がフィードで偶然出会う場所です。ただし同じ商品に大きな価格差をつけると、既存のお客様が安いほうへ移るため食い合いが起きます。価格と送料の条件を揃えておくことが前提になります。</div></details>
+    <details><summary>ブランドを複数持っている場合、TikTok Shopのショップは分けたほうがよいですか？</summary><div class="a">法人は最大5店まで出店できるため、ブランドごとに分けることは可能です。ただしショップを分けると、レビュー・素材・クリエイターとの関係もそれぞれ別に育てることになります。運営できる体制があるかを先に確認し、迷う場合は1店から始めて、世界観や価格帯が明確に違うブランドが出てきた段階で分けるほうが現実的です。</div></details>
+    <details><summary>TikTok Shopの売上は、自社ECと分けて会計処理したほうがよいですか？</summary><div class="a">入金の経路も差し引かれる費用の性質も異なるため、売上と費用の区分を分けて管理するほうが実務的です。新規獲得チャネルとして機能しているかを判断するには、自社ECと合算せず、チャネル別に手残りを見られる状態にしておく必要があります。精算の仕組みや明細の見方は公式ヘルプ、勘定科目の扱いは顧問税理士にご確認ください。</div></details>
+    <details><summary>TikTok Shopのショップ名は、自社ECと同じブランド名にすべきですか？</summary><div class="a">同じ表記に揃えることをおすすめします。動画を見た人がその場では買わず、あとからブランド名で検索するという戻り方があるためです。ショップ名と自社ECの表記が違うと、この検索が自社サイトにたどり着きません。英字とカタカナの使い分け、スペースや記号の有無まで揃えておくと、検索での取りこぼしが減ります。</div></details>
+    <details><summary>自社ECで回しているMeta広告と、TikTok Shopの広告は何が違いますか？</summary><div class="a">TikTok Shopの広告は、2025年7月に日本展開が始まったGMV Maxが、2025年7月以降唯一のキャンペーンタイプになっています。細かいターゲティングを組むのではなく、ROI目標と日予算を設定する形式で、ショート動画向けのProduct GMV Maxとライブ向けのLIVE GMV Maxの2種類があります。自社サイトへ送客する広告とは、着地先も評価指標も異なります。</div></details>
+    <details><summary>送料の設定は自社ECと同じでよいですか？</summary><div class="a">そのままコピーすると手残りが変わります。自社ECでは決済まわりの手数料が3〜6.6%程度ですが、TikTok Shopではカテゴリ別に7〜12%の販売手数料がかかり、そこにクリエイターへのコミッションが乗ります。送料無料ラインを自社ECと同じ金額に置くと、TikTok Shop側だけ赤字になることがあるため、手残りを計算してから決めてください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。自社ECを持つD2Cブランドの新規獲得チャネル設計から、クリエイター連携の実務までご相談いただけます。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">比較</span><b><a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略</a></b><span>まだ売り場を決めていない方へ</span></div>
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？利益設計まで</a></b><span>カテゴリ別の料率と手残り</span></div>
+      <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-commission/">アフィリエイトのコミッション相場と決め方</a></b><span>率を決めてから募集する</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自社ECをお持ちのD2Cブランド向けに、TikTok Shopの立ち上げをご支援します</div>
+    <p>料率区分の確認と手残りの再計算から、クリエイターの選定・ブリーフ作成・投稿の型づくりまで。既存の自社ECには一切手を入れずに、新規獲得の一本を足す形でご一緒できます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：<a href="https://www.shopify.com/jp/pricing">Shopify 料金プラン</a>／<a href="https://thebase.com/price/">BASE 料金</a>／<a href="https://stores.fun/ec/pricing">STORES ネットショップ 料金</a>／<a href="https://www.future-shop.jp/price">futureshop 料金</a>・<a href="https://www.future-shop.jp/plan/sbps.html">同 SBPS決済オプション</a>（いずれも2026年8月30日時点。futureshopは2026年8月1日に基本料金を改定済み。税の表記は各社で異なり、futureshopは税抜、STORESとBASEの料金ページは税込、Shopifyの公式料金ページには税の注記が見当たりません）／TikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過」（2026年2月3日）／TikTok Shop セラーセンターの公式ヘルプ。販売手数料の料率区分は2026年5月11日改定時点のものです。仕様・料金・規約は更新されることがあるため、最新の内容は各公式ページでご確認ください。本記事中の原価・送料・CPA・コミッション率は、断りのある箇所を除き説明のための仮定値です。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">顧客は移せない・移す意味もない</a></li>
+        <li><a href="#s2">費用が発生するタイミングが逆</a></li>
+        <li><a href="#s3">実効コストで並べ直す</a></li>
+        <li><a href="#s4">クリエイター経由の初回接点</a></li>
+        <li><a href="#s5">世界観と裁量の線引き</a></li>
+        <li><a href="#s6">価格・在庫と手残りの差</a></li>
+        <li><a href="#s7">自社ECへ戻す唯一の経路</a></li>
+        <li><a href="#s8">まとめ：30日でやる順番</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>料率区分と手残りを一緒に計算します</b>
+      <p>自社商材が7〜12%のどこに入るかを確認し、セット構成まで含めてご提案します。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "D2CブランドがTikTok Shopを始める意味｜自社ECとの役割分担と新規獲得の設計",
+      "description": "自社ECを運営するD2CブランドがTikTok Shopを新規獲得に使う設計。役割分担・実効コスト比較・クリエイターへの任せ方・価格の整合を図解します。",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "inLanguage": "ja",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/d2c-tiktok-shop/"},
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
+        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
+        {"@type": "ListItem", "position": 3, "name": "D2CブランドがTikTok Shopを始める意味", "item": "https://leam.co.jp/column/d2c-tiktok-shop/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "TikTok Shopに出すと、自社ECの売上が食われませんか？", "acceptedAnswer": {"@type": "Answer", "text": "会っている相手が違うため、基本的には食い合いになりにくい関係です。自社ECは指名検索やメール・LINEから戻ってくる既存のお客様が中心で、TikTok Shopはブランドを知らない人がフィードで偶然出会う場所です。ただし同じ商品に大きな価格差をつけると、既存のお客様が安いほうへ移るため食い合いが起きます。価格と送料の条件を揃えておくことが前提になります。"}},
+        {"@type": "Question", "name": "ブランドを複数持っている場合、TikTok Shopのショップは分けたほうがよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "法人は最大5店まで出店できるため、ブランドごとに分けることは可能です。ただしショップを分けると、レビュー・素材・クリエイターとの関係もそれぞれ別に育てることになります。運営できる体制があるかを先に確認し、迷う場合は1店から始めて、世界観や価格帯が明確に違うブランドが出てきた段階で分けるほうが現実的です。"}},
+        {"@type": "Question", "name": "TikTok Shopの売上は、自社ECと分けて会計処理したほうがよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "入金の経路も差し引かれる費用の性質も異なるため、売上と費用の区分を分けて管理するほうが実務的です。新規獲得チャネルとして機能しているかを判断するには、自社ECと合算せず、チャネル別に手残りを見られる状態にしておく必要があります。精算の仕組みや明細の見方は公式ヘルプ、勘定科目の扱いは顧問税理士にご確認ください。"}},
+        {"@type": "Question", "name": "TikTok Shopのショップ名は、自社ECと同じブランド名にすべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "同じ表記に揃えることをおすすめします。動画を見た人がその場では買わず、あとからブランド名で検索するという戻り方があるためです。ショップ名と自社ECの表記が違うと、この検索が自社サイトにたどり着きません。英字とカタカナの使い分け、スペースや記号の有無まで揃えておくと、検索での取りこぼしが減ります。"}},
+        {"@type": "Question", "name": "自社ECで回しているMeta広告と、TikTok Shopの広告は何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopの広告は、2025年7月に日本展開が始まったGMV Maxが、2025年7月以降唯一のキャンペーンタイプになっています。細かいターゲティングを組むのではなく、ROI目標と日予算を設定する形式で、ショート動画向けのProduct GMV Maxとライブ向けのLIVE GMV Maxの2種類があります。自社サイトへ送客する広告とは、着地先も評価指標も異なります。"}},
+        {"@type": "Question", "name": "送料の設定は自社ECと同じでよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "そのままコピーすると手残りが変わります。自社ECでは決済まわりの手数料が3〜6.6%程度ですが、TikTok Shopではカテゴリ別に7〜12%の販売手数料がかかり、そこにクリエイターへのコミッションが乗ります。送料無料ラインを自社ECと同じ金額に置くと、TikTok Shop側だけ赤字になることがあるため、手残りを計算してから決めてください。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

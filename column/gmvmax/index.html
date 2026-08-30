@@ -1,0 +1,837 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>GMV Maxとは？TikTok Shop広告の仕組みと始め方</title>
+<meta name="description" content="TikTok Shopの広告GMV Maxを、Product／LIVEの違い、費用の考え方、始める前の準備、設定の流れ、伸びない時の直し方まで解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/gmvmax/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="GMV Maxとは？TikTok Shop広告の仕組みと始め方">
+<meta property="og:description" content="TikTok Shopの広告GMV Maxを、Product／LIVEの違い、費用の考え方、始める前の準備、設定の流れ、伸びない時の直し方まで解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/gmvmax/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GMV Maxとは？TikTok Shop広告の仕組みと始め方">
+<meta name="twitter:description" content="TikTok Shopの広告GMV Maxを、Product／LIVEの違い、費用の考え方、始める前の準備、設定の流れ、伸びない時の直し方まで解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "GMV Maxとは？TikTok Shop広告の仕組みと始め方", "description": "TikTok Shopの広告GMV Maxを、Product／LIVEの違い、費用の考え方、始める前の準備、設定の流れ、伸びない時の直し方まで解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/gmvmax/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "GMV Maxとは？TikTok Shop広告の仕組みと始め方", "item": "https://leam.co.jp/column/gmvmax/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › GMV Max完全ガイド</p>
+  <span class="cat">広告運用</span>
+  <h1>GMV Maxとは？2種類の違い・費用・設定・改善までTikTok Shop広告の完全ガイド</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="広告の自動最適化：スマートフォンで再生された動画のデータが線でつながり、右上がりに伸びる赤い棒グラフと、自動で回るシアンのダイヤルと歯車が配信を調整していく様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v306c-104 34-208 52-318 40-118-13-206-58-322-58-108 0-190 44-302 58-96 12-190 2-258-24z" fill="#F6F7F9"/>
+  <ellipse cx="812" cy="262" rx="316" ry="214" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="64" cy="62" r="5"/><circle cx="100" cy="62" r="5"/><circle cx="136" cy="62" r="5"/><circle cx="172" cy="62" r="5"/>
+      <circle cx="64" cy="98" r="5"/><circle cx="100" cy="98" r="5"/><circle cx="136" cy="98" r="5"/><circle cx="172" cy="98" r="5"/>
+      <circle cx="64" cy="134" r="5"/><circle cx="100" cy="134" r="5"/><circle cx="136" cy="134" r="5"/><circle cx="172" cy="134" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(626 120)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 508c168-32 302-16 432 8 130 24 242 30 358 12 112-17 220-40 410-24v126H0z" fill="#ECEEF1"/>
+
+  <!-- ================= グラフの罫と横軸 ================= -->
+  <g stroke="#C9CBD0" stroke-width="4" stroke-linecap="round">
+    <path d="M56 460H664"/>
+    <path d="M56 380H664"/>
+    <path d="M56 300H664"/>
+    <path d="M56 220H664"/>
+    <path d="M56 140H664"/>
+  </g>
+  <path d="M56 540H664" stroke="#0B0C10" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- ================= 動画からグラフへ伸びる線（データ＝シアン） ================= -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M871 202C802 144 700 88 596 90" stroke="#0B0C10" stroke-width="16"/>
+    <path d="M871 202C802 144 700 88 596 90" stroke="#25F4EE" stroke-width="8"/>
+  </g>
+
+  <!-- ================= 右：動画が流れているスマートフォン（副役） ================= -->
+  <g transform="translate(18 0) rotate(-4 974 241)">
+    <!-- 影 -->
+    <rect x="856" y="52" width="236" height="378" rx="30" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <!-- 本体 -->
+    <rect x="856" y="52" width="236" height="378" rx="30" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <!-- スピーカー -->
+    <rect x="942" y="70" width="64" height="12" rx="6" fill="#C9CBD0"/>
+    <!-- 画面 -->
+    <rect x="874" y="96" width="200" height="296" rx="14" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <!-- 映っている人 -->
+    <circle cx="974" cy="176" r="33" fill="#0B0C10"/>
+    <path d="M932 252a42 42 0 0 1 84 0z" fill="#0B0C10"/>
+    <!-- 再生ボタン -->
+    <circle cx="974" cy="312" r="29" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M966 299l23 13-23 13z" fill="#0B0C10"/>
+    <!-- 再生バー（進んだぶん＝シアン） -->
+    <rect x="894" y="362" width="160" height="12" rx="6" fill="#C9CBD0"/>
+    <rect x="894" y="362" width="104" height="12" rx="6" fill="#25F4EE"/>
+    <!-- ホームバー -->
+    <rect x="934" y="406" width="80" height="10" rx="5" fill="#C9CBD0"/>
+  </g>
+
+  <!-- ================= 中央：自動で回るダイヤル（シアン） ================= -->
+  <g>
+    <!-- 回転を表す矢印 -->
+    <g fill="#25F4EE">
+      <path d="M652.9 357A114 114 0 0 1 817 297.3" fill="none" stroke="#25F4EE" stroke-width="14" stroke-linecap="round"/>
+      <path d="M839.5 310.3L809 311.2L825 283.4z"/>
+      <path d="M847.3 469.3A114 114 0 0 1 679.4 476.6" fill="none" stroke="#25F4EE" stroke-width="14" stroke-linecap="round"/>
+      <path d="M661 458.2L690.7 465.3L668.1 487.9z"/>
+    </g>
+    <!-- つまみ本体 -->
+    <circle cx="760" cy="396" r="92" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <circle cx="760" cy="396" r="92" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8"/>
+    <circle cx="760" cy="396" r="68" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M781.9 369.9L797.3 351.6" fill="none" stroke="#0B0C10" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="760" cy="396" r="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- ================= 右下：かみ合って回る歯車（シアン） ================= -->
+  <g transform="translate(908 528)">
+    <circle r="70" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <g fill="#0B0C10">
+      <rect x="-16" y="-70" width="32" height="32" rx="8"/>
+      <rect x="-16" y="-70" width="32" height="32" rx="8" transform="rotate(45)"/>
+      <rect x="-16" y="-70" width="32" height="32" rx="8" transform="rotate(90)"/>
+      <rect x="-16" y="-70" width="32" height="32" rx="8" transform="rotate(135)"/>
+      <rect x="-16" y="-70" width="32" height="32" rx="8" transform="rotate(180)"/>
+      <rect x="-16" y="-70" width="32" height="32" rx="8" transform="rotate(225)"/>
+      <rect x="-16" y="-70" width="32" height="32" rx="8" transform="rotate(270)"/>
+      <rect x="-16" y="-70" width="32" height="32" rx="8" transform="rotate(315)"/>
+    </g>
+    <circle r="54" fill="#0B0C10"/>
+    <g fill="#25F4EE">
+      <rect x="-10" y="-64" width="20" height="30" rx="5"/>
+      <rect x="-10" y="-64" width="20" height="30" rx="5" transform="rotate(45)"/>
+      <rect x="-10" y="-64" width="20" height="30" rx="5" transform="rotate(90)"/>
+      <rect x="-10" y="-64" width="20" height="30" rx="5" transform="rotate(135)"/>
+      <rect x="-10" y="-64" width="20" height="30" rx="5" transform="rotate(180)"/>
+      <rect x="-10" y="-64" width="20" height="30" rx="5" transform="rotate(225)"/>
+      <rect x="-10" y="-64" width="20" height="30" rx="5" transform="rotate(270)"/>
+      <rect x="-10" y="-64" width="20" height="30" rx="5" transform="rotate(315)"/>
+    </g>
+    <circle r="48" fill="#25F4EE"/>
+    <circle r="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <g transform="translate(1000 566) rotate(22.5)">
+    <circle r="52" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <g fill="#0B0C10">
+      <rect x="-13" y="-52" width="26" height="28" rx="7"/>
+      <rect x="-13" y="-52" width="26" height="28" rx="7" transform="rotate(45)"/>
+      <rect x="-13" y="-52" width="26" height="28" rx="7" transform="rotate(90)"/>
+      <rect x="-13" y="-52" width="26" height="28" rx="7" transform="rotate(135)"/>
+      <rect x="-13" y="-52" width="26" height="28" rx="7" transform="rotate(180)"/>
+      <rect x="-13" y="-52" width="26" height="28" rx="7" transform="rotate(225)"/>
+      <rect x="-13" y="-52" width="26" height="28" rx="7" transform="rotate(270)"/>
+      <rect x="-13" y="-52" width="26" height="28" rx="7" transform="rotate(315)"/>
+    </g>
+    <circle r="34" fill="#0B0C10"/>
+    <g fill="#25F4EE">
+      <rect x="-7" y="-46" width="14" height="26" rx="4"/>
+      <rect x="-7" y="-46" width="14" height="26" rx="4" transform="rotate(45)"/>
+      <rect x="-7" y="-46" width="14" height="26" rx="4" transform="rotate(90)"/>
+      <rect x="-7" y="-46" width="14" height="26" rx="4" transform="rotate(135)"/>
+      <rect x="-7" y="-46" width="14" height="26" rx="4" transform="rotate(180)"/>
+      <rect x="-7" y="-46" width="14" height="26" rx="4" transform="rotate(225)"/>
+      <rect x="-7" y="-46" width="14" height="26" rx="4" transform="rotate(270)"/>
+      <rect x="-7" y="-46" width="14" height="26" rx="4" transform="rotate(315)"/>
+    </g>
+    <circle r="28" fill="#25F4EE"/>
+    <circle r="11" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- ================= 左：右上がりの棒グラフ（主役・赤） ================= -->
+  <g>
+    <!-- 1本目 -->
+    <rect x="89" y="411" width="100" height="140" rx="10" fill="#5E6064" opacity=".14"/>
+    <rect x="80" y="400" width="100" height="140" rx="10" fill="#FE2C55"/>
+    <path d="M80 426V410a10 10 0 0 1 10-10h80a10 10 0 0 1 10 10v16z" fill="#CE1730"/>
+    <path d="M80 426H180" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="80" y="400" width="100" height="140" rx="10" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 2本目 -->
+    <rect x="201" y="349" width="100" height="202" rx="10" fill="#5E6064" opacity=".14"/>
+    <rect x="192" y="338" width="100" height="202" rx="10" fill="#FE2C55"/>
+    <path d="M192 364V348a10 10 0 0 1 10-10h80a10 10 0 0 1 10 10v16z" fill="#CE1730"/>
+    <path d="M192 364H292" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="192" y="338" width="100" height="202" rx="10" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 3本目 -->
+    <rect x="313" y="279" width="100" height="272" rx="10" fill="#5E6064" opacity=".14"/>
+    <rect x="304" y="268" width="100" height="272" rx="10" fill="#FE2C55"/>
+    <path d="M304 294V278a10 10 0 0 1 10-10h80a10 10 0 0 1 10 10v16z" fill="#CE1730"/>
+    <path d="M304 294H404" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="304" y="268" width="100" height="272" rx="10" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 4本目 -->
+    <rect x="425" y="201" width="100" height="350" rx="10" fill="#5E6064" opacity=".14"/>
+    <rect x="416" y="190" width="100" height="350" rx="10" fill="#FE2C55"/>
+    <path d="M416 216V200a10 10 0 0 1 10-10h80a10 10 0 0 1 10 10v16z" fill="#CE1730"/>
+    <path d="M416 216H516" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="416" y="190" width="100" height="350" rx="10" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 5本目 -->
+    <rect x="537" y="123" width="100" height="428" rx="10" fill="#5E6064" opacity=".14"/>
+    <rect x="528" y="112" width="100" height="428" rx="10" fill="#FE2C55"/>
+    <path d="M528 138V122a10 10 0 0 1 10-10h80a10 10 0 0 1 10 10v16z" fill="#CE1730"/>
+    <path d="M528 138H628" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="528" y="112" width="100" height="428" rx="10" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 線がグラフに着地する点 -->
+  <circle cx="578" cy="90" r="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+  <circle cx="578" cy="90" r="8" fill="#25F4EE"/>
+
+  <!-- 小さな装飾 -->
+  <circle cx="222" cy="96" r="20" fill="#25F4EE"/>
+  <circle cx="400" cy="100" r="14" fill="#DFE0E2"/>
+  <circle cx="1140" cy="476" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>GMV Maxは、TikTok Shopの売上（GMV）が最大になるように、TikTokが配信を自動で最適化してくれる広告です。</strong>商品を売るための「Product GMV Max」と、ライブ配信を伸ばす「LIVE GMV Max」の2種類があり、細かいターゲティング設定が不要になる一方で、<strong>素材とショップの土台が整っていないまま回すと費用だけが先行する</strong>広告でもあります。この記事では、2種類の違い・費用の仕組み・始める前の準備・設定の流れ・伸びない時の改善手順までを、実際の運用相談で多いつまずきに沿って解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>GMV Maxの仕組みと、Product／LIVEの2種類の使い分け</li>
+      <li>費用の仕組みと、赤字にならないための損益ラインの作り方（試算例つき）</li>
+      <li>成果が出ない時に、どの順番で原因を疑うべきか</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">広告の前に「売れる土台」ができているか、無料で診断します</div>
+    <p>GMV Maxの成果は、商品ページ・動画素材・クリエイター起用の土台で決まります。現状のショップを拝見し、広告を回す前にやるべきことを率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">GMV Maxとは：売上最大化に自動最適化するTikTok Shop専用広告</a></li>
+      <li><a href="#s2">種類は2つ：商品を売るProductと、配信を伸ばすLIVE</a></li>
+      <li><a href="#s3">仕組み：商品・動画・ライブを束ねてTikTokが配信先を学習する</a></li>
+      <li><a href="#s4">費用は「予算×成果」で決まる：先に損益ラインを作る</a></li>
+      <li><a href="#s5">始める前に整える3つの土台で、成果の大半が決まる</a></li>
+      <li><a href="#s6">設定の流れは5ステップ：切り替え時の注意も確認</a></li>
+      <li><a href="#s7">成果が出ない時は「素材の量と質」から順に疑う</a></li>
+      <li><a href="#s8">手動運用との使い分け：立ち上げ期はGMV Maxに寄せる</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>GMV Maxとは：売上最大化に自動最適化するTikTok Shop専用広告</h2>
+  <p>GMV Maxは、TikTok ShopのセラーがGMV（流通取引総額＝売上）を最大化するために使う、<strong>TikTok Shop専用の自動最適化広告</strong>です。従来の広告のように配信面・オーディエンス・入札を細かく設定するのではなく、商品と動画素材を渡すと、TikTok側が「誰に・どの素材を・いくらで」見せるかを自動で判断します。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="従来の手動運用とGMV Maxの対比図：手動は入札・配信面・ターゲティングなど多数の設定を人が操作するが、GMV Maxは予算とROI目標を決めるだけで残りは自動最適化される">
+      <rect x="20" y="20" width="330" height="220" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">従来の手動運用</text>
+      <g stroke="#AEB2BE" stroke-width="2">
+        <line x1="60" y1="90" x2="160" y2="90"/><circle cx="130" cy="90" r="7" fill="#787D8A" stroke="none"/>
+        <line x1="60" y1="120" x2="160" y2="120"/><circle cx="85" cy="120" r="7" fill="#787D8A" stroke="none"/>
+        <line x1="60" y1="150" x2="160" y2="150"/><circle cx="145" cy="150" r="7" fill="#787D8A" stroke="none"/>
+        <line x1="60" y1="180" x2="160" y2="180"/><circle cx="105" cy="180" r="7" fill="#787D8A" stroke="none"/>
+      </g>
+      <text x="185" y="94" font-size="11" fill="#787D8A">入札</text>
+      <text x="185" y="124" font-size="11" fill="#787D8A">配信面</text>
+      <text x="185" y="154" font-size="11" fill="#787D8A">ターゲティング</text>
+      <text x="185" y="184" font-size="11" fill="#787D8A">クリエイティブ差し替え</text>
+      <circle cx="295" cy="120" r="16" fill="none" stroke="#787D8A" stroke-width="2"/>
+      <path d="M295 136 V168 M279 150 H311 M295 168 L283 194 M295 168 L307 194" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <text x="295" y="218" text-anchor="middle" font-size="10.5" fill="#787D8A">毎日の手作業</text>
+      <rect x="370" y="20" width="330" height="220" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">GMV Max</text>
+      <rect x="400" y="76" width="270" height="44" rx="9" fill="#FDEEF1"/>
+      <text x="535" y="103" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2203A">人が決めるのは商品・予算・ROI目標だけ</text>
+      <rect x="400" y="134" width="270" height="72" rx="9" fill="#17181C"/>
+      <text x="535" y="163" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">入札・配信先・素材の組み合わせは</text>
+      <text x="535" y="186" text-anchor="middle" font-size="12" font-weight="700" fill="#FF8DA0">TikTokが自動で最適化</text>
+      <text x="535" y="228" text-anchor="middle" font-size="10.5" fill="#787D8A">人の仕事は「素材の供給」に集中できる</text>
+    </svg>
+    <figcaption>図1：手動運用との違い。管理の手間が減る分、素材づくりに集中できる（LEAM作成）</figcaption>
+  </figure>
+  <p>手動運用との違いを整理すると、次のようになります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>GMV Max</th><th>従来の手動運用</th></tr></thead>
+    <tbody>
+      <tr><td>最適化の目標</td><td class="y">GMV（売上）に直結</td><td class="n">クリック・CV等を個別に設計</td></tr>
+      <tr><td>ターゲティング</td><td class="y">自動（学習に任せる）</td><td class="n">手動で細かく設定</td></tr>
+      <tr><td>使う素材</td><td class="y">自社動画＋提携クリエイターの動画・ライブをまとめて活用</td><td class="n">キャンペーンごとに指定</td></tr>
+      <tr><td>運用者の仕事</td><td class="y">素材の供給と、予算・ROI目標の調整</td><td class="n">入札・配信面・クリエイティブの細かな管理</td></tr>
+      <tr><td>向いている局面</td><td class="y">立ち上げ期〜拡大期の主力運用</td><td class="n">特定商品・特定面の細かい検証</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>「設定がラク」なのは事実ですが、正確には<strong>運用者の仕事が「管理画面の操作」から「素材とショップの土台づくり」に移る</strong>広告です。ここを誤解したまま回し始めるのが、最も多い失敗パターンです。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>種類は2つ：商品を売るProductと、配信を伸ばすLIVE</h2>
+  <p>GMV Maxには<strong>「Product GMV Max」と「LIVE GMV Max」の2種類</strong>があります。どちらを使うかで準備する素材が変わるため、最初に区別しておきましょう。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="2種類のGMV Maxのイラスト：Product GMV Maxはショート動画と商品カードで商品を売り、LIVE GMV Maxはライブ配信への流入と配信中の購入を伸ばす">
+      <rect x="45" y="18" width="290" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="190" y="36" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">Product GMV Max</text>
+      <rect x="120" y="58" width="140" height="248" rx="20" fill="#0B0C10"/>
+      <rect x="127" y="65" width="126" height="234" rx="14" fill="#3E2A63"/>
+      <rect x="127" y="65" width="126" height="234" rx="14" fill="url(#g1)" opacity="0"/>
+      <circle cx="238" cy="120" r="10" fill="rgba(255,255,255,.25)"/><path d="M234 114 L246 120 L234 126 Z" fill="#fff"/>
+      <text x="138" y="100" font-size="10" fill="#fff" opacity=".85">@creator の紹介動画</text>
+      <rect x="135" y="240" width="110" height="48" rx="8" fill="#fff"/>
+      <rect x="141" y="247" width="34" height="34" rx="6" fill="#F3A7B5"/>
+      <text x="182" y="262" font-size="8.5" font-weight="700" fill="#17181C">スチームアイロン</text>
+      <text x="182" y="275" font-size="9.5" font-weight="800" fill="#E8324A">¥12,800</text>
+      <rect x="212" y="266" width="30" height="15" rx="4" fill="#E8324A"/>
+      <text x="227" y="277" text-anchor="middle" font-size="7.5" font-weight="800" fill="#fff">カート</text>
+      <text x="190" y="322" text-anchor="middle" font-size="11" fill="#787D8A">ショート動画＋商品カードで売る</text>
+      <rect x="385" y="18" width="290" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="530" y="36" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">LIVE GMV Max</text>
+      <rect x="460" y="58" width="140" height="248" rx="20" fill="#0B0C10"/>
+      <rect x="467" y="65" width="126" height="234" rx="14" fill="#14324A"/>
+      <rect x="475" y="74" width="34" height="16" rx="4" fill="#E8324A"/>
+      <text x="492" y="86" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">LIVE</text>
+      <rect x="513" y="74" width="52" height="16" rx="4" fill="rgba(0,0,0,.45)"/>
+      <text x="539" y="86" text-anchor="middle" font-size="8.5" fill="#fff">👤 12,438</text>
+      <circle cx="530" cy="170" r="34" fill="rgba(255,255,255,.14)"/>
+      <circle cx="530" cy="160" r="12" fill="rgba(255,255,255,.55)"/>
+      <path d="M508 196 Q530 178 552 196 L552 204 Q530 190 508 204 Z" fill="rgba(255,255,255,.55)"/>
+      <path d="M578 150 c0-5 8-5 8 0 c0 5-8 9-8 9 s-8-4-8-9 c0-5 8-5 8 0" fill="#FF8DA0"/>
+      <path d="M585 190 c0-4 7-4 7 0 c0 4-7 8-7 8 s-7-4-7-8 c0-4 7-4 7 0" fill="#FF8DA0" opacity=".7"/>
+      <rect x="475" y="252" width="110" height="36" rx="8" fill="#fff"/>
+      <text x="530" y="268" text-anchor="middle" font-size="8.5" font-weight="700" fill="#17181C">配信中の限定セット</text>
+      <text x="530" y="281" text-anchor="middle" font-size="9.5" font-weight="800" fill="#E8324A">いまだけ ¥2,980</text>
+      <text x="530" y="322" text-anchor="middle" font-size="11" fill="#787D8A">配信への流入と配信中の購入を伸ばす</text>
+    </svg>
+    <figcaption>図2：2種類のGMV Max。物販の立ち上げ期はProductが主力（LEAM作成）</figcaption>
+  </figure>
+  <h3>Product GMV Max：ショート動画と商品カードで「商品」を売る</h3>
+  <p>対象商品に紐づくショート動画（自社投稿＋クリエイターのアフィリエイト動画）や商品カードを束ねて、購入につながりやすいユーザーへ自動配信します。<strong>物販の立ち上げ期は、まずこちらが主力</strong>になります。</p>
+  <h3>LIVE GMV Max：ライブ配信への流入と配信中の購入を伸ばす</h3>
+  <p>ライブ配信を広告の対象にして、配信への視聴流入と配信中の購入を最大化します。ライブを定期開催できる体制ができてから乗せるのが実務的な順番です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>Product GMV Max</th><th>LIVE GMV Max</th></tr></thead>
+    <tbody>
+      <tr><td>売る場面</td><td>ショート動画・商品カード経由の購入</td><td>ライブ配信中の購入</td></tr>
+      <tr><td>必要な素材</td><td>商品に紐づく動画（多いほど有利）</td><td>定期的なライブ配信の体制</td></tr>
+      <tr><td>始めるタイミング</td><td class="y">出店直後からOK。最初の主力</td><td>ライブを週数回・同じ時間帯に回せるようになってから</td></tr>
+      <tr><td>成果の出方</td><td>学習が進むにつれ徐々に伸びる</td><td>配信の質・頻度に連動して動く</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 迷ったら</div>
+    <p><strong>Product GMV Maxから始めてください。</strong>ライブは「継続できる体制」が先で、広告はその後です。単発のライブに広告を乗せても学習が蓄積されず、費用対効果が安定しません。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>仕組み：商品・動画・ライブを束ねてTikTokが配信先を学習する</h2>
+  <p>GMV Maxは、対象の商品に紐づく<strong>動画素材やライブ配信をまとめて広告在庫として扱い</strong>、購入につながりやすいユーザーへ自動配信します。配信結果は学習データとして蓄積され、回すほど「どんな人がこの商品を買うか」の精度が上がっていきます。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="GMV Maxの学習ループ図：商品情報と動画素材をGMV Maxが束ね、自動配信し、購入データを学習して配信精度を高める循環">
+      <rect x="20" y="30" width="170" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="105" y="57" text-anchor="middle" font-size="14" font-weight="700" fill="#17181C">商品情報</text>
+      <text x="105" y="78" text-anchor="middle" font-size="11" fill="#787D8A">価格・在庫・商品ページ</text>
+      <rect x="20" y="120" width="170" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="105" y="147" text-anchor="middle" font-size="14" font-weight="700" fill="#17181C">動画・ライブ素材</text>
+      <text x="105" y="168" text-anchor="middle" font-size="11" fill="#787D8A">自社＋クリエイター動画</text>
+      <rect x="20" y="210" width="170" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="105" y="237" text-anchor="middle" font-size="14" font-weight="700" fill="#17181C">予算・ROI目標</text>
+      <text x="105" y="258" text-anchor="middle" font-size="11" fill="#787D8A">日予算と目標値</text>
+      <path d="M195 62 H240 M195 152 H240 M195 242 H240" stroke="#787D8A" stroke-width="2"/>
+      <rect x="245" y="90" width="180" height="120" rx="14" fill="#17181C"/>
+      <text x="335" y="140" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">GMV Max</text>
+      <text x="335" y="165" text-anchor="middle" font-size="11.5" fill="#C9CBD4">組み合わせと配信先を</text>
+      <text x="335" y="182" text-anchor="middle" font-size="11.5" fill="#C9CBD4">自動で最適化</text>
+      <path d="M430 150 H478" stroke="#787D8A" stroke-width="2"/>
+      <path d="M472 144 L482 150 L472 156 Z" fill="#787D8A"/>
+      <rect x="485" y="112" width="215" height="76" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="592" y="143" text-anchor="middle" font-size="14.5" font-weight="800" fill="#C2203A">購入（GMV）</text>
+      <text x="592" y="166" text-anchor="middle" font-size="11" fill="#787D8A">おすすめ面・検索・ショップ面へ配信</text>
+      <path d="M592 195 V240 H335 V215" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M329 222 L335 210 L341 222 Z" fill="#0E8A5F"/>
+      <text x="463" y="232" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">購入データを学習して配信精度が向上</text>
+    </svg>
+    <figcaption>図3：GMV Maxの学習ループ。素材を供給し続けるほど学習が進む構造（LEAM作成）</figcaption>
+  </figure>
+  <p>この構造から導かれる実務上の結論はシンプルです。<strong>学習の材料になる動画素材が少ないショップでは、GMV Maxは本来の性能を出せません。</strong>クリエイターのアフィリエイト動画が継続的に増えていく状態を先に作ることが、広告成果の前提条件になります。クリエイター起用の進め方は<a href="https://leam.co.jp/service/">サービス紹介</a>でも解説しています。</p>
+
+  <h2 id="s4"><span class="no en">04</span>費用は「予算×成果」で決まる：先に損益ラインを作る</h2>
+  <p>GMV Maxに固定料金はなく、<strong>設定した予算の範囲でオークション配信され、成果（GMV）に応じて消化される</strong>仕組みです。だからこそ重要なのは「いくら使うか」ではなく、<strong>「ROIがいくらを下回ったら赤字か」を先に数字にしておくこと</strong>です。</p>
+  <h3>損益ラインの試算例：広告に使える余地を先に計算する</h3>
+  <p>例として、販売価格3,000円の商品で考えます（数値は説明用の仮の例です）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>金額（例）</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格</td><td class="num">3,000円</td><td></td></tr>
+      <tr><td>原価</td><td class="num">−900円</td><td>仕入れ・製造</td></tr>
+      <tr><td>プラットフォーム手数料</td><td class="num">−α</td><td>料率は改定されるため最新の公式情報で確認</td></tr>
+      <tr><td>クリエイターへのコミッション</td><td class="num">−300円</td><td>10%で設定した場合</td></tr>
+      <tr><td>送料・梱包・その他</td><td class="num">−400円</td><td></td></tr>
+      <tr><td><b>広告に使える上限（限界CPA）</b></td><td class="num"><b>残りの全額</b></td><td>ここを超えたら「売れても赤字」</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 210" role="img" aria-label="販売価格の内訳図：原価・手数料・コミッション・送料を引いた残りが広告に使える上限になる">
+      <rect x="30" y="60" width="660" height="52" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="200" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="230" y="60" width="90" height="52" fill="#AEB2BE"/>
+      <rect x="320" y="60" width="80" height="52" fill="#8F94A3"/>
+      <rect x="400" y="60" width="90" height="52" fill="#787D8A"/>
+      <rect x="490" y="60" width="200" height="52" rx="8" fill="#E8324A"/>
+      <text x="130" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">原価</text>
+      <text x="275" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">手数料</text>
+      <text x="360" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">報酬</text>
+      <text x="445" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">送料等</text>
+      <text x="590" y="85" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">広告に使える余地</text>
+      <text x="590" y="103" text-anchor="middle" font-size="11" fill="#FDEEF1">＝限界CPA</text>
+      <text x="30" y="45" font-size="12.5" font-weight="700" fill="#454956">販売価格 3,000円（説明用の例）</text>
+      <path d="M490 125 V150 M690 125 V150 M490 150 H690" stroke="#E8324A" stroke-width="1.5" fill="none"/>
+      <text x="590" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">この範囲に収まるROI目標を設定する</text>
+    </svg>
+    <figcaption>図4：損益ラインの構造。広告設定の前に「使える余地」を確定させる（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：「最大配信」系の設定はROIが不安定になりやすい</div>
+    <p>ROI目標を置かず配信量を優先するモードは、立ち上げ直後に学習を早める用途では有効ですが、<strong>損益ラインを決めないまま使うと「売れているのに赤字」に気づけません</strong>。まずROI目標つきで回し、意図を持って一時的に使い分けるのが安全です。※ROIを一定条件で保護する仕組みの提供状況はアカウント・時期により異なるため、管理画面と公式ヘルプで確認してください。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>始める前に整える3つの土台で、成果の大半が決まる</h2>
+  <p>運用のご相談で「GMV Maxを回したが費用ばかりかかった」というケースを拝見すると、原因のほとんどは広告の設定ではなく、回す前の土台にあります。着手前に次の3点を確認してください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>土台</th><th>確認すること</th><th>目安</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 商品ページ</b></td><td>画像・説明文・価格が「動画を見て来た人」の温度感に合っているか。レビューが極端に悪くないか</td><td>広告の着地先として第三者に見てもらい違和感がないこと</td></tr>
+      <tr><td><b>② 動画素材の供給</b></td><td>自社動画だけでなく、クリエイターのアフィリエイト動画が継続的に生まれる体制があるか</td><td>学習の材料が毎週増えていく状態</td></tr>
+      <tr><td><b>③ 計測と損益ライン</b></td><td>§04の試算を済ませ、許容ROIを数字で決めてあるか</td><td>「ROIいくらまでなら黒字か」を即答できること</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="3つの土台の図：商品ページ・素材供給・損益ラインの3層の土台の上にGMV Maxが載る構造">
+      <rect x="150" y="40" width="420" height="58" rx="12" fill="#E8324A"/>
+      <text x="360" y="76" text-anchor="middle" font-size="17" font-weight="900" fill="#fff">GMV Max（広告）</text>
+      <path d="M360 104 V126 M352 118 L360 128 L368 118" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <rect x="110" y="136" width="500" height="46" rx="9" fill="#17181C"/>
+      <text x="360" y="165" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">③ 損益ライン（許容ROIを数字で決める）</text>
+      <rect x="80" y="190" width="560" height="46" rx="9" fill="#454956"/>
+      <text x="360" y="219" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">② 動画素材の供給（クリエイター起用が毎週回る体制）</text>
+      <rect x="50" y="244" width="620" height="46" rx="9" fill="#787D8A"/>
+      <text x="360" y="273" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">① 商品ページ（動画経由の目線で違和感がない）</text>
+    </svg>
+    <figcaption>図5：3つの土台の上に広告が載る。下の層が薄いほど広告費は空回りする（LEAM作成）</figcaption>
+  </figure>
+  <p>なお、GMV Maxは大企業専用の仕組みではなく、<strong>TikTok Shopに出店しているセラーであれば規模を問わず利用できます</strong>（利用条件は公式ヘルプで確認してください）。規模より「素材が供給され続ける体制があるか」の方が成果を左右します。</p>
+
+  <h2 id="s6"><span class="no en">06</span>設定の流れは5ステップ：切り替え時の注意も確認</h2>
+  <p>設定自体は難しくありません。大まかな流れは次の通りです（※管理画面の名称・画面構成は更新されることがあります。最新の表記は公式ヘルプをご確認ください）。</p>
+  <ol class="steps">
+    <li><b>広告アカウントとTikTok Shopを接続する</b><p>セラーセンターと広告マネージャーの連携を確認します。既に出店済みなら数分で終わります。</p></li>
+    <li><b>GMV Maxキャンペーンを作成し、種類（Product／LIVE）と対象商品を選ぶ</b><p>最初は全商品ではなく、売れる見込みが最も高い主力商品に絞るのが定石です。</p></li>
+    <li><b>使用する素材（動画・ライブ）の範囲を確認する</b><p>自社動画に加え、提携クリエイターの動画が対象に含まれているかを確認します。</p></li>
+    <li><b>日予算とROI目標を設定する</b><p>§04の損益ラインから逆算して設定します。最初から攻めすぎず、学習が回る予算を数週間維持する前提で組みます。</p></li>
+    <li><b>配信開始後は「素材の追加」を止めない</b><p>配信オンにして終わりではなく、新しい動画素材を供給し続けることが運用の本体です。</p></li>
+  </ol>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 既存の広告キャンペーンから切り替える場合</div>
+    <p>同じ商品を対象にした既存のショップ広告とは配信が重複・競合する場合があり、<strong>切り替え時に既存キャンペーンの扱い（停止・併走）を決めてから移行する</strong>必要があります。移行のタイミングで数値が一時的に動くことも織り込んでおきましょう。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">主力商品の選定とROI設計だけ、プロに任せる方法もあります</div>
+    <p>LEAMは市場データを毎営業日蓄積し、「どの商品に・どのクリエイターを・いくらの設計で」を一次データから組み立てます。設定代行だけでなく、成果の前提になる土台づくりから伴走します。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>成果が出ない時は「素材の量と質」から順に疑う</h2>
+  <p>「回しているのに伸びない」時、管理画面の数値をいじる前に、次の順番で原因を切り分けます。上から順に、実際の相談で多い原因です。</p>
+  <figure>
+    <svg viewBox="0 0 720 520" role="img" aria-label="伸びない時の診断フローチャート：素材が毎週増えているか、クリックされているのに買われていないか、売れているのに赤字か、ライブが定時開催かの順に確認する">
+      <rect x="250" y="14" width="220" height="44" rx="22" fill="#17181C"/>
+      <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">回しているのに伸びない</text>
+      <path d="M360 58 V84" stroke="#787D8A" stroke-width="2"/>
+      <rect x="215" y="86" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q1. 動画素材は毎週増えている？</text>
+      <path d="M215 109 H120 V150" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="150" y="102" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="30" y="152" width="180" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="180" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">原因1：素材不足</text>
+      <text x="120" y="202" text-anchor="middle" font-size="11" fill="#454956">クリエイター起用を強化</text>
+      <path d="M360 132 V158" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="152" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="215" y="160" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="189" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q2. クリックはあるのに買われない？</text>
+      <path d="M505 183 H600 V224" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="540" y="176" font-size="11" font-weight="800" fill="#C2203A">YES</text>
+      <rect x="510" y="226" width="180" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="600" y="254" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">原因2：商品ページ</text>
+      <text x="600" y="276" text-anchor="middle" font-size="11" fill="#454956">価格・画像・レビュー見直し</text>
+      <path d="M360 206 V232" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="226" font-size="11" font-weight="800" fill="#0E8A5F">NO</text>
+      <rect x="215" y="234" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="263" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q3. 売れてはいるが利益が出ない？</text>
+      <path d="M215 257 H120 V298" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="150" y="250" font-size="11" font-weight="800" fill="#C2203A">YES</text>
+      <rect x="30" y="300" width="180" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="328" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">原因3：損益ライン超過</text>
+      <text x="120" y="350" text-anchor="middle" font-size="11" fill="#454956">ROI目標と客単価を見直し</text>
+      <path d="M360 280 V306" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="300" font-size="11" font-weight="800" fill="#0E8A5F">NO</text>
+      <rect x="215" y="308" width="290" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="337" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q4.（LIVE）配信は定時・定期？</text>
+      <path d="M215 331 H120 V376" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="150" y="324" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="30" y="378" width="180" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="120" y="406" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">原因4：配信が不定期</text>
+      <text x="120" y="428" text-anchor="middle" font-size="11" fill="#454956">曜日・時間帯を固定して継続</text>
+      <path d="M360 354 V400" stroke="#787D8A" stroke-width="2"/>
+      <rect x="245" y="402" width="230" height="66" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="360" y="429" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0E8A5F">土台はOK</text>
+      <text x="360" y="450" text-anchor="middle" font-size="11" fill="#454956">週次でROI目標と素材の当たりを微調整</text>
+    </svg>
+    <figcaption>図6：伸びない時の診断フロー。管理画面より先に、この順で切り分ける（LEAM作成）</figcaption>
+  </figure>
+  <h3>原因1：学習に足りる動画素材が供給されていない</h3>
+  <p>公式アカウントの動画数本だけで回しているケースです。GMV Maxの学習材料が足りず、配信が広がりません。<strong>対処は広告設定ではなくクリエイター起用の強化</strong>で、アフィリエイト動画の本数を増やすことが先決です。TikTok Shopは流通総額の約70%が動画やライブなどのコンテンツを起点とした購入とされており（TikTok Newsroom・2026年2月3日発表）、素材の供給が細いと広告だけでは埋められません。</p>
+  <h3>原因2：商品ページで離脱している</h3>
+  <p>動画はクリックされているのに購入に至らない場合、着地先の商品ページに原因があります。価格の納得感・画像の質・レビューを、動画経由の目線で見直します。</p>
+  <h3>原因3：獲得単価が損益ラインを超えている</h3>
+  <p>売れてはいるが利益が出ない状態です。ROI目標の調整とあわせて、<strong>そもそもの商品単価・セット構成（客単価）を見直す</strong>方が効くことが多いです。広告の中だけで解決しようとしないのがコツです。</p>
+  <h3>原因4：ライブの頻度・時間帯がバラバラで学習が積み上がらない</h3>
+  <p>LIVE GMV Maxの場合に多いつまずきです。単発・不定期の配信では視聴者も学習も蓄積されません。<strong>曜日と時間帯を固定して継続する</strong>体制を作ってから広告を乗せ直します。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>この切り分けを毎週の定例で回すのが、TikTok Shop運用の実務です。LEAMでは約1.2〜1.5ヶ月を1サイクルとして「検証→当たった型に寄せる」を繰り返します。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>手動運用との使い分け：立ち上げ期はGMV Maxに寄せる</h2>
+  <p>結論として、<strong>立ち上げ期〜拡大期の主力はGMV Maxに寄せ、特定の検証をしたい時だけ手動キャンペーンを併用する</strong>のが現在の実務的な使い分けです。手動運用が向くのは、特定の動画1本の反応を厳密に測りたい場合や、新商品のテスト配信など、目的が明確に絞られている場合です。迷ったらGMV Maxから始めて、学習が回る状態を作ることを優先してください。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 220" role="img" aria-label="フェーズ別の使い分け図：立ち上げ期から拡大期まではGMV Maxが主力で、手動キャンペーンは特定の検証にスポットで使う">
+      <line x1="60" y1="60" x2="680" y2="60" stroke="#E6E7EB" stroke-width="2"/>
+      <text x="120" y="40" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">立ち上げ期</text>
+      <text x="360" y="40" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">拡大期</text>
+      <text x="600" y="40" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">安定期</text>
+      <circle cx="120" cy="60" r="5" fill="#787D8A"/><circle cx="360" cy="60" r="5" fill="#787D8A"/><circle cx="600" cy="60" r="5" fill="#787D8A"/>
+      <rect x="60" y="86" width="620" height="44" rx="22" fill="#E8324A"/>
+      <text x="370" y="114" text-anchor="middle" font-size="14.5" font-weight="900" fill="#fff">GMV Max ＝ 常に主力（学習を切らさない）</text>
+      <rect x="250" y="148" width="120" height="36" rx="18" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="310" y="171" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">手動：新商品テスト</text>
+      <rect x="470" y="148" width="150" height="36" rx="18" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="545" y="171" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">手動：特定動画の厳密検証</text>
+      <text x="360" y="208" text-anchor="middle" font-size="11" fill="#787D8A">手動キャンペーンは「目的が明確な時だけ」スポットで併用する</text>
+    </svg>
+    <figcaption>図7：フェーズ別の使い分け。主力は常にGMV Max、手動は検証用途に限定（LEAM作成）</figcaption>
+  </figure>
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>予算はいくらから始めるべきですか？</summary><div class="a">商材の粗利構造と許容ROIによるため、一律の正解額はありません。重要なのは金額の大小より「学習が回る予算を数週間維持できるか」です。損益ラインの設計から無料相談で一緒に整理できます。</div></details>
+    <details><summary>ProductとLIVE、どちらから始めるべきですか？</summary><div class="a">物販の立ち上げ期はProduct GMV Maxからが実務的です。LIVE GMV Maxは、ライブを定期開催できる体制ができてから乗せると費用対効果が安定します。</div></details>
+    <details><summary>個人事業主・小規模セラーでも使えますか？</summary><div class="a">使えます。規模よりも「動画素材が継続供給される体制」の方が成果を左右します。</div></details>
+    <details><summary>クリエイターの動画がまだ無くても回せますか？</summary><div class="a">技術的には回せますが、学習材料が不足しがちで本来の性能が出にくい状態です。先にアフィリエイトでクリエイター動画が増える体制を作ることをおすすめします。</div></details>
+    <details><summary>どのくらいで結果が判断できますか？</summary><div class="a">学習期間を考慮し、数日で判断せず週単位で見ます。LEAMでは約1.2〜1.5ヶ月を1サイクルとして評価・改善しています。</div></details>
+    <details><summary>既存のショップ広告と併用できますか？</summary><div class="a">併用は可能ですが、同じ商品を対象にすると配信が重複・競合する場合があります。切り替え時は既存キャンペーンの扱いを決めてから移行してください。</div></details>
+    <details><summary>広告だけ任せることはできますか？</summary><div class="a">可能ですが、成果の前提は素材供給と商品ページの土台にあるため、クリエイター起用とセットでのご支援が結果につながりやすいです。範囲はご相談ください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="color:inherit;text-decoration:none">TikTok Shopの手数料はいくら？他モールとの比較と利益設計</a></b><span>カテゴリー別の料率と利益計算</span></div>
+      
+      <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/affiliate-guide/" style="color:inherit;text-decoration:none">アフィリエイトのコミッション相場と決め方</a></b><span>プラン設計と選ばれる条件</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ（「TikTok広告マネージャーのGMV最大値キャンペーンについて」「About Product GMV Max」「About LIVE GMV Max」等）／TikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過」（2026年2月3日）。仕様・画面・提供機能は更新されることがあります（本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">GMV Maxとは</a></li>
+        <li><a href="#s2">種類は2つ（Product／LIVE）</a></li>
+        <li><a href="#s3">仕組み：束ねて学習する</a></li>
+        <li><a href="#s4">費用と損益ラインの作り方</a></li>
+        <li><a href="#s5">始める前の3つの土台</a></li>
+        <li><a href="#s6">設定5ステップと切り替え注意</a></li>
+        <li><a href="#s7">伸びない時の切り分け</a></li>
+        <li><a href="#s8">手動運用との使い分け</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>広告の前に、土台の無料診断</b>
+      <p>商品ページ・素材供給・損益ラインを拝見し、率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "GMV Maxとは？2種類の違い・費用・設定・改善までTikTok Shop広告の完全ガイド",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "予算はいくらから始めるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "商材の粗利構造と許容ROIによるため、一律の正解額はありません。重要なのは金額の大小より「学習が回る予算を数週間維持できるか」です。"}},
+        {"@type": "Question", "name": "ProductとLIVE、どちらから始めるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "物販の立ち上げ期はProduct GMV Maxからが実務的です。LIVE GMV Maxは、ライブを定期開催できる体制ができてから乗せると費用対効果が安定します。"}},
+        {"@type": "Question", "name": "個人事業主・小規模セラーでも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "使えます。規模よりも「動画素材が継続供給される体制」の方が成果を左右します。"}},
+        {"@type": "Question", "name": "クリエイターの動画がまだ無くても回せますか？", "acceptedAnswer": {"@type": "Answer", "text": "技術的には回せますが、学習材料が不足しがちで本来の性能が出にくい状態です。先にアフィリエイトでクリエイター動画が増える体制を作ることをおすすめします。"}},
+        {"@type": "Question", "name": "どのくらいで結果が判断できますか？", "acceptedAnswer": {"@type": "Answer", "text": "学習期間を考慮し、数日で判断せず週単位で見ます。LEAMでは約1.2〜1.5ヶ月を1サイクルとして評価・改善しています。"}},
+        {"@type": "Question", "name": "既存のショップ広告と併用できますか？", "acceptedAnswer": {"@type": "Answer", "text": "併用は可能ですが、同じ商品を対象にすると配信が重複・競合する場合があります。切り替え時は既存キャンペーンの扱いを決めてから移行してください。"}},
+        {"@type": "Question", "name": "広告だけ任せることはできますか？", "acceptedAnswer": {"@type": "Answer", "text": "可能ですが、成果の前提は素材供給と商品ページの土台にあるため、クリエイター起用とセットでのご支援が結果につながりやすいです。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

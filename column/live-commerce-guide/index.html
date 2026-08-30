@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopライブコマース入門｜やり方と準備</title>
+<meta name="description" content="TikTok Shopのライブコマースを始める前に決めることから、配信の組み立て、売れる導線の作り方までを順番に解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/live-commerce-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopライブコマース入門｜やり方と準備">
+<meta property="og:description" content="TikTok Shopのライブコマースを始める前に決めることから、配信の組み立て、売れる導線の作り方までを順番に解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/live-commerce-guide/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopライブコマース入門｜やり方と準備">
+<meta name="twitter:description" content="TikTok Shopのライブコマースを始める前に決めることから、配信の組み立て、売れる導線の作り方までを順番に解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopライブコマース入門｜やり方と準備", "description": "TikTok Shopのライブコマースを始める前に決めることから、配信の組み立て、売れる導線の作り方までを順番に解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/live-commerce-guide/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopライブコマース入門｜やり方と準備", "item": "https://leam.co.jp/column/live-commerce-guide/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › ライブコマース入門</p>
+  <span class="cat">ライブコマース</span>
+  <h1>TikTok Shopライブコマース入門｜やり方・売れる配信の作り方と始める前の準備</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="ライブ配信で売る様子：赤いリングライトで照らしながら三脚に立てたスマートフォンで配信し、コメントの吹き出しと視聴者数のバーが伸びていくことを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v300c-86 44-190 60-288 42-118-22-206-74-320-62-116 12-186 76-302 82-96 5-196-14-290-50z" fill="#F6F7F9"/>
+  <ellipse cx="430" cy="252" rx="336" ry="224" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="1036" cy="430" r="5"/><circle cx="1072" cy="430" r="5"/><circle cx="1108" cy="430" r="5"/><circle cx="1144" cy="430" r="5"/>
+      <circle cx="1036" cy="466" r="5"/><circle cx="1072" cy="466" r="5"/><circle cx="1108" cy="466" r="5"/><circle cx="1144" cy="466" r="5"/>
+      <circle cx="1036" cy="502" r="5"/><circle cx="1072" cy="502" r="5"/><circle cx="1108" cy="502" r="5"/><circle cx="1144" cy="502" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(-976 40)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 528c150-30 286-14 424 8 136 22 248 26 364 6 114-20 226-46 412-28v116H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：三脚に立てたスマートフォン ================= -->
+  <g transform="translate(36 0)">
+    <!-- 三脚の脚 -->
+    <g fill="none" stroke="#0B0C10" stroke-width="16" stroke-linecap="round">
+      <path d="M902 352l30 192"/>
+      <path d="M900 352L800 566"/>
+      <path d="M900 352l100 214"/>
+    </g>
+    <!-- 雲台 -->
+    <rect x="878" y="326" width="44" height="32" rx="9" fill="#0B0C10"/>
+
+    <!-- 本体の影 -->
+    <rect x="826" y="88" width="152" height="252" rx="22" fill="#5E6064" opacity=".14" transform="translate(10 12)"/>
+    <!-- 本体 -->
+    <rect x="826" y="88" width="152" height="252" rx="22" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 受話口 -->
+    <rect x="886" y="99" width="32" height="7" rx="3.5" fill="#DFE0E2"/>
+    <!-- 画面 -->
+    <rect x="842" y="118" width="120" height="206" rx="10" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+    <!-- 画面のなか：話し手 -->
+    <circle cx="902" cy="192" r="24" fill="#DFE0E2"/>
+    <path d="M868 246a34 34 0 0 1 68 0z" fill="#DFE0E2"/>
+    <g fill="#DFE0E2">
+      <rect x="858" y="268" width="86" height="11" rx="5.5"/>
+      <rect x="858" y="290" width="58" height="11" rx="5.5"/>
+    </g>
+  </g>
+
+  <!-- ================= 反応のハート（シアン） ================= -->
+  <g transform="translate(30 0)">
+    <path d="M1046 178c-30-22-46-38-46-58 0-16 13-26 26-26 9 0 16 4 20 11 4-7 11-11 20-11 13 0 26 10 26 26 0 20-16 36-46 58z" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 中央：コメントの吹き出し（シアン） ================= -->
+  <g>
+    <!-- 大 -->
+    <rect x="516" y="36" width="214" height="90" rx="28" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <path d="M672 122l28 28-54-28z" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="516" y="36" width="214" height="90" rx="28" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <g fill="#FFFFFF">
+      <rect x="548" y="63" width="142" height="13" rx="6.5"/>
+      <rect x="548" y="91" width="104" height="13" rx="6.5"/>
+    </g>
+
+    <!-- 中 -->
+    <rect x="594" y="134" width="176" height="78" rx="26" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M716 208l26 26-50-26z" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="594" y="134" width="176" height="78" rx="26" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <g fill="#FFFFFF">
+      <rect x="622" y="158" width="116" height="12" rx="6"/>
+      <rect x="622" y="182" width="80" height="12" rx="6"/>
+    </g>
+
+    <!-- 小 -->
+    <path d="M786 286l44 34-64-34z" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="696" y="228" width="124" height="62" rx="22" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <g fill="#FFFFFF">
+      <rect x="722" y="245" width="74" height="11" rx="5.5"/>
+      <rect x="722" y="266" width="50" height="11" rx="5.5"/>
+    </g>
+  </g>
+
+  <!-- ================= 下：視聴者数のバー（シアン） ================= -->
+  <g>
+    <g fill="#5E6064" opacity=".14" transform="translate(9 11)">
+      <rect x="540" y="472" width="54" height="84" rx="10"/>
+      <rect x="608" y="428" width="54" height="128" rx="10"/>
+      <rect x="676" y="384" width="54" height="172" rx="10"/>
+      <rect x="744" y="338" width="54" height="218" rx="10"/>
+    </g>
+    <g fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round">
+      <rect x="540" y="472" width="54" height="84" rx="10"/>
+      <rect x="608" y="428" width="54" height="128" rx="10"/>
+      <rect x="676" y="384" width="54" height="172" rx="10"/>
+      <rect x="744" y="338" width="54" height="218" rx="10"/>
+    </g>
+    <path d="M522 559h278" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- ================= 左：リングライト（主役・赤） ================= -->
+  <g>
+    <!-- 接地の影 -->
+    <ellipse cx="312" cy="580" rx="112" ry="26" fill="#5E6064" opacity=".14"/>
+    <!-- 支柱 -->
+    <rect x="282" y="400" width="36" height="180" rx="8" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 台座 -->
+    <ellipse cx="300" cy="572" rx="92" ry="22" fill="#0B0C10"/>
+
+    <!-- 灯体の影 -->
+    <circle cx="300" cy="272" r="248" fill="#5E6064" opacity=".14" transform="translate(11 13)"/>
+    <!-- 灯体 -->
+    <circle cx="300" cy="272" r="248" fill="#FE2C55"/>
+    <circle cx="300" cy="272" r="120" fill="#CE1730"/>
+    <circle cx="300" cy="272" r="108" fill="#FFFFFF"/>
+    <circle cx="300" cy="272" r="248" fill="none" stroke="#0B0C10" stroke-width="8"/>
+    <circle cx="300" cy="272" r="108" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="300" cy="272" r="80" fill="none" stroke="#C9CBD0" stroke-width="5"/>
+
+    <!-- 光の筋 -->
+    <g fill="none" stroke="#0B0C10" stroke-width="9" stroke-linecap="round">
+      <path d="M169 45L158 26"/>
+      <path d="M73 141L54 130"/>
+      <path d="M38 272H16"/>
+      <path d="M73 403L54 414"/>
+      <path d="M169 499l-11 19"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1132" cy="236" r="22" fill="#25F4EE"/>
+  <circle cx="782" cy="118" r="14" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopのライブコマースは、専用スタジオも著名なタレントも、数千人規模のフォロワーも必要ありません。</strong>スマホと三脚と簡単な照明、そしてフォロワー50人から始められます。ただし「始められる」と「売れる」は別の話です。成果を分けるのはアドリブの上手さでも準備の完成度でもなく、<strong>配信の回数と時間を積み、1回ごとに直していく運用の設計</strong>です。この記事では、TikTok Shopのライブコマースのやり方を、仕組み・配信の条件・始める5ステップ・配信前チェックリスト・台本の型・定時定期の運用・外部キャスト起用の判断まで、実際の運用でつまずきやすい順に解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>ライブコマースの仕組みと、配信を始めるための条件（フォロワー50人からでOK）</li>
+      <li>配信前チェックリストと、売れる配信の台本の型（60分の基本構成）</li>
+      <li>単発でなく「定時定期」で学習を積む運用の考え方と、内製／外部キャストの選び方</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">初めてのライブ配信、「何から準備すべきか」を無料で整理します</div>
+    <p>商材とご状況を伺い、台本・オファー・送客まで含めた配信の設計図を一緒に作ります。ライブに向いている商材かどうかも率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">仕組み：商品をピン留めすると、視聴者はワンタップでそのまま購入できる</a></li>
+      <li><a href="#s2">配信の条件：セラー自身の販売配信は「18歳以上＋フォロワー50人」から</a></li>
+      <li><a href="#s3">やり方は5ステップ：出店登録から配信・数値分析までの流れ</a></li>
+      <li><a href="#s4">効くのは準備の完成度より回数：最低限を揃えたら、まず配信を積む</a></li>
+      <li><a href="#s5">台本は「オープニング→実演→質疑応答→クロージング」の型で作る</a></li>
+      <li><a href="#s6">売れる配信の実践は5つ：実演・名前呼び・盛り上げ・価値宣言・送客</a></li>
+      <li><a href="#s7">単発で判断しない：定時定期の枠で学習を積むほどライブは伸びる</a></li>
+      <li><a href="#s8">配信人材がいなければ外部キャストも選べる：内製と比較して決める</a></li>
+      <li><a href="#s9">伸びない時は「送客→滞在→購入」の順で切り分ける</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>仕組み：商品をピン留めすると、視聴者はワンタップでそのまま購入できる</h2>
+  <p>TikTok Shopのライブコマースは、ライブ配信中に紹介したい商品を画面に<strong>「ピン留め」して固定表示し、視聴者がワンタップで購入まで進める</strong>販売手法です。視聴者はアプリを離れることなく、配信を見ながら価格や商品画像を確認し、そのまま決済まで完了できます。配信・商品カード・カート・決済がTikTokアプリ内で完結するため、「気になったのに買い方が分からず離脱する」を構造的に減らせるのが特長です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="ライブコマースの仕組み図：配信者が商品をピン留めし、視聴者がワンタップで購入。コメントによる双方向のやりとりが購入前の疑問をその場で解消する">
+      <rect x="30" y="30" width="150" height="240" rx="18" fill="#0B0C10"/>
+      <rect x="38" y="38" width="134" height="224" rx="12" fill="#3E2A63"/>
+      <rect x="46" y="48" width="38" height="17" rx="4" fill="#E8324A"/>
+      <text x="65" y="61" text-anchor="middle" font-size="9.5" font-weight="800" fill="#fff">LIVE</text>
+      <circle cx="105" cy="120" r="26" fill="rgba(255,255,255,.16)"/>
+      <circle cx="105" cy="112" r="10" fill="rgba(255,255,255,.55)"/>
+      <path d="M88 140 Q105 128 122 140 L122 147 Q105 137 88 147 Z" fill="rgba(255,255,255,.55)"/>
+      <rect x="46" y="196" width="118" height="56" rx="8" fill="#fff"/>
+      <rect x="52" y="203" width="34" height="34" rx="6" fill="#F3A7B5"/>
+      <text x="93" y="217" font-size="8.5" font-weight="700" fill="#17181C">ピン留め商品</text>
+      <text x="93" y="232" font-size="10" font-weight="800" fill="#E8324A">¥2,980</text>
+      <rect x="128" y="222" width="30" height="16" rx="4" fill="#E8324A"/>
+      <text x="143" y="234" text-anchor="middle" font-size="8" font-weight="800" fill="#fff">カート</text>
+      <text x="105" y="290" text-anchor="middle" font-size="11" fill="#787D8A">① 配信中に商品をピン留め</text>
+      <path d="M195 145 H260" stroke="#787D8A" stroke-width="2"/>
+      <path d="M254 139 L264 145 L254 151 Z" fill="#787D8A"/>
+      <rect x="275" y="95" width="170" height="100" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="360" y="130" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">視聴者がワンタップ</text>
+      <text x="360" y="155" text-anchor="middle" font-size="11" fill="#787D8A">配信を見ながら</text>
+      <text x="360" y="173" text-anchor="middle" font-size="11" fill="#787D8A">価格・画像を確認</text>
+      <text x="360" y="245" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">💬 コメントで質問 ⇄ その場で回答</text>
+      <path d="M105 268 M360 210 V228" stroke="#0E8A5F" stroke-width="0"/>
+      <path d="M300 226 Q200 250 140 220" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M147 214 L136 218 L144 227 Z" fill="#0E8A5F"/>
+      <path d="M460 145 H525" stroke="#787D8A" stroke-width="2"/>
+      <path d="M519 139 L529 145 L519 151 Z" fill="#787D8A"/>
+      <rect x="540" y="95" width="160" height="100" rx="14" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="620" y="133" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">アプリ内で購入完了</text>
+      <text x="620" y="160" text-anchor="middle" font-size="11" fill="#787D8A">配信を離れずに</text>
+      <text x="620" y="178" text-anchor="middle" font-size="11" fill="#787D8A">そのまま決済</text>
+    </svg>
+    <figcaption>図1：ライブコマースの仕組み。購入までがアプリ内で完結し、コメントで疑問をその場で解消できる（LEAM作成）</figcaption>
+  </figure>
+  <h3>テレビショッピングとの違いは「双方向性」にある</h3>
+  <p>一方向に紹介するテレビショッピングと違い、ライブコマースでは<strong>視聴者がコメントでリアルタイムに質問し、配信者がその場で答えられます</strong>。「サイズ感は？」「敏感肌でも使える？」といった購入前の疑問がその場で解消されるため、迷いが購入の手前で消えていきます。この双方向のやりとりこそが、ライブコマースの売る力の中心です。</p>
+  <h3>おすすめフィードから、フォロワー以外の視聴者も流れ込む</h3>
+  <p>TikTokのライブはフォロワーだけに届くものではなく、おすすめフィード経由で新規の視聴者にも露出します。実務的には、<strong>フォロワー数よりも「配信の中身が視聴者を引き留めているか」が露出を左右する</strong>と当社では見ています。引き留められているかは、配信後のデータで確かめられます。見るのは<strong>平均視聴時間・コメント数・開始5分の離脱率</strong>の3つで、この3つが前回より伸びていれば、配信の中身は改善しています。スマホ1台でも始められますが、照明と進行設計の質が売上を左右するのはこのためです。</p>
+
+  <h2 id="s2"><span class="no en">02</span>配信の条件：セラー自身の販売配信は「18歳以上＋フォロワー50人」から始められる</h2>
+  <p>「ライブは大きなアカウントでないと無理」という誤解が最初のハードルになりがちですが、<strong>セラーが自社商品を販売するライブ配信は、18歳以上かつフォロワー50人以上から始められます</strong>。あわせて、コミュニティガイドライン違反やアカウント停止の履歴がないなど、アカウントの健全性も前提になります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>配信の立場</th><th>主な条件</th><th>補足</th></tr></thead>
+    <tbody>
+      <tr><td><b>セラー（自社商品を販売）</b></td><td class="y">18歳以上＋フォロワー50人以上</td><td>ガイドライン違反・停止履歴がないことも前提</td></tr>
+      <tr><td><b>クリエイター（アフィリエイトで他社商品を紹介）</b></td><td>18歳以上＋フォロワー1,000人以上</td><td>セラーの条件と混同しやすいので注意</td></tr>
+      <tr><td><b>PC配信（TikTok LIVE Studio）</b></td><td>スマホ配信より要件が厳しい</td><td>フォロワー数などの追加条件があるため、最新の要件はTikTok公式ヘルプで確認</td></tr>
+    </tbody>
+  </table></div>
+  <h3>混同しやすいのは「自社販売は50人・アフィリエイト参加は1,000人」の区別</h3>
+  <p>よくある混乱がここです。<strong>セラーとして自社商品を売る配信はフォロワー50人以上でOK</strong>ですが、<strong>クリエイターとしてアフィリエイトに参加して他社商品を紹介するにはフォロワー1,000人以上</strong>が必要です。「1,000人ないからライブ販売できない」と諦めていたセラーが、実は50人で始められた、というケースは珍しくありません。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：条件・料率は変わることがあります</div>
+    <p>フォロワー数などの利用条件や、出店・販売にかかる手数料の料率は改定されることがあります。本記事は2026年8月30日時点の情報に基づいています。実際に始める前に、<strong>必ずTikTok Shopセラーセンター・公式ヘルプの最新情報を確認してください</strong>。出店は無料で、販売時にカテゴリー別の手数料がかかる仕組みです（詳細は手数料の解説記事をご覧ください）。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>やり方は5ステップ：出店登録から配信・数値分析までの流れ</h2>
+  <p>TikTok Shopでライブコマースを始める手順自体はシンプルです。全体の流れを押さえてから、次章以降の「準備」に時間を使ってください。</p>
+  <ol class="steps">
+    <li><b>TikTok Shopセラーセンターで出店登録する</b><p>出店自体は無料です。審査の要件や落ちやすいポイントは、出店条件と審査の解説記事で詳しく扱っています。</p></li>
+    <li><b>商品を登録する</b><p>商品画像・説明文・価格・在庫を整えます。ライブから来た視聴者の着地先になるため、商品ページの質はここで作り込んでおきます。</p></li>
+    <li><b>TikTokアカウントと連携する</b><p>配信に使うアカウントとショップを紐づけます。これでライブ中に商品をピン留めできるようになります。</p></li>
+    <li><b>配信を企画し、事前に告知する</b><p>日時・紹介商品・限定オファーを決め、ショート動画やプロフィールで予告して送客します。告知なしの「いきなり配信」は視聴者が集まりません。</p></li>
+    <li><b>配信本番→商品をピン留め→終了後に数値を振り返る</b><p>配信中は台本に沿って進行し、終了後は視聴者数・滞在時間・購入数を確認して次回の台本に反映します。</p></li>
+  </ol>
+  <h3>配信を支える機能もあわせて把握しておく</h3>
+  <p>TikTok Shopには、ライブ販売を支援する機能が用意されています。台本を作る段階で「どのタイミングでどの機能を使うか」まで決めておくと、本番で迷いません。</p>
+  <div class="tw"><table>
+    <thead><tr><th>機能</th><th>できること</th><th>台本への組み込み方</th></tr></thead>
+    <tbody>
+      <tr><td><b>商品ピン留め</b></td><td>紹介中の商品を画面に固定表示する</td><td>実演パートの開始と同時にピン留めを切り替える</td></tr>
+      <tr><td><b>ライブ限定クーポン</b></td><td>配信中だけ使えるクーポンを発行する</td><td>「今買う理由」として告知タイミングを台本に書き込む</td></tr>
+      <tr><td><b>配信ダッシュボード</b></td><td>視聴者数・滞在・売上などの数値を確認する</td><td>配信後の振り返りと次回台本の改善に使う</td></tr>
+    </tbody>
+  </table></div>
+  <p>※機能の名称・提供状況は更新されることがあります。最新はセラーセンターの管理画面と公式ヘルプで確認してください。</p>
+
+  <h2 id="s4"><span class="no en">04</span>効くのは準備の完成度より回数：最低限を揃えたら、まず配信を積む</h2>
+  <p>当社の運用実感では、<strong>ライブの成果を最も大きく左右するのは、準備の完成度ではなく配信の回数と累計の配信時間</strong>です。回数を重ねるほど視聴者は増えていきます。準備が100点になるまで初回を先延ばしにするより、最低限を揃えて始め、1回ごとに直すほうが結果的に早く伸びます。次のチェックリストは「完璧な準備」の一覧ではなく、<strong>これだけ埋めれば始められる</strong>という最低ラインです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>準備項目</th><th>確認すること</th><th>目安</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 台本・進行表</b></td><td>オープニング→商品紹介→質疑応答→クロージングの流れを書き出したか</td><td>分単位のタイムテーブルにする（§05の型を使う）</td></tr>
+      <tr><td><b>② 訴求ポイント</b></td><td>「誰の・どんな悩みを・どう解決するか」を一言で言えるか</td><td>商品ごとに1行で言語化しておく</td></tr>
+      <tr><td><b>③ 限定オファー</b></td><td>ライブ限定クーポンやセット割など「今買う理由」があるか</td><td>配信内で告知するタイミングまで決めておく</td></tr>
+      <tr><td><b>④ 機材</b></td><td>スマホ＋三脚＋リングライトの最小構成が揃っているか。音声は聞き取りやすいか</td><td>マイクへの投資を優先的に推奨</td></tr>
+      <tr><td><b>⑤ コメント対応体制</b></td><td>配信者と裏方の役割分担、または読み上げの時間を決めたか</td><td>1人配信なら「◯分ごとにコメントを読む」を台本に組み込む</td></tr>
+      <tr><td><b>⑥ 告知・送客</b></td><td>ショート動画・プロフィールで配信を予告したか</td><td>前日＋当日の2回が実務的な最低ライン</td></tr>
+    </tbody>
+  </table></div>
+  <h3>機材は「スマホ・三脚・リングライト」の最小構成で足りる</h3>
+  <p>初回から高価な機材は不要です。最小構成で始めて、<strong>最初に投資するならマイク</strong>をおすすめします。映像の多少の粗より、音声の聞き取りにくさの方が視聴者の離脱に直結するためです。照明はリングライト1灯でも、商品の色味と表情の見え方が大きく変わります。</p>
+  <h3>限定オファーは「今買う理由になっているか」で判断する</h3>
+  <p>ライブ中の購入を後押しするのは、「あとで買おう」を「今買おう」に変える仕掛けです。ライブ限定クーポン・数量限定のセット割など、<strong>その配信の中でしか得られない理由</strong>を必ず1つ用意してください。オファーのない配信は、どれだけ盛り上がっても「検討して離脱」で終わりがちです。</p>
+
+    <h3>1回ごとに振り返り、次の配信に1つだけ反映する</h3>
+  <p>配信が終わったら、視聴者数・滞在時間・コメント数・購入数を記録し、<strong>次の配信で直す点を1つだけ決めてください</strong>。同時に何項目も変えると、何が効いたのか分からなくなります。回数を積むこと自体が最大の改善で、その1回ごとに小さく直していくのが、当社の運用実感でいちばん確実な伸ばし方です。配信の枠を定期化して学習を積む考え方は<a href="#s7">§07</a>で扱います。</p>
+
+  <h2 id="s5"><span class="no en">05</span>台本は「オープニング→実演→質疑応答→クロージング」の型で作る</h2>
+  <p>台本づくりに迷ったら、まずは次の型に当てはめてください。週1回60分の配信を想定した基本構成です。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="60分配信の台本の型：オープニング5分、商品1の実演15分、質疑応答とクーポン告知10分、商品2の実演15分、質疑応答と限定オファー10分、クロージング5分。10〜15分ごとに配信の価値をひと言で繰り返す">
+      <text x="30" y="40" font-size="14" font-weight="800" fill="#17181C">60分配信の基本構成（台本の型）</text>
+      <text x="196" y="88" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">▼ 価値宣言</text>
+      <text x="361" y="88" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">▼ 価値宣言</text>
+      <text x="526" y="88" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">▼ 価値宣言</text>
+      <rect x="31" y="100" width="55" height="56" rx="6" fill="#17181C"/>
+      <rect x="86" y="100" width="165" height="56" fill="#E8324A"/>
+      <rect x="251" y="100" width="110" height="56" fill="#454956"/>
+      <rect x="361" y="100" width="165" height="56" fill="#E8324A"/>
+      <rect x="526" y="100" width="110" height="56" fill="#454956"/>
+      <rect x="636" y="100" width="55" height="56" rx="6" fill="#17181C"/>
+      <text x="168" y="127" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">商品①の実演</text>
+      <text x="168" y="145" text-anchor="middle" font-size="10" fill="#FDEEF1">使う場面を見せる</text>
+      <text x="306" y="127" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">質疑応答</text>
+      <text x="306" y="145" text-anchor="middle" font-size="10" fill="#C9CBD4">＋クーポン告知</text>
+      <text x="443" y="127" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">商品②の実演</text>
+      <text x="443" y="145" text-anchor="middle" font-size="10" fill="#FDEEF1">使う場面を見せる</text>
+      <text x="581" y="127" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">質疑応答</text>
+      <text x="581" y="145" text-anchor="middle" font-size="10" fill="#C9CBD4">＋限定オファー</text>
+      <path d="M58 165 V190 M663 165 V190" stroke="#787D8A" stroke-width="1.5"/>
+      <text x="58" y="208" text-anchor="middle" font-size="10.5" font-weight="700" fill="#454956">オープニング</text>
+      <text x="58" y="223" text-anchor="middle" font-size="9.5" fill="#787D8A">今日の価値宣言</text>
+      <text x="663" y="208" text-anchor="middle" font-size="10.5" font-weight="700" fill="#454956">クロージング</text>
+      <text x="663" y="223" text-anchor="middle" font-size="9.5" fill="#787D8A">次回予告</text>
+      <g font-size="10.5" fill="#787D8A" text-anchor="middle" font-family="Inter,sans-serif">
+        <text x="31" y="176">0分</text><text x="196" y="176">15分</text><text x="361" y="176">30分</text><text x="526" y="176">45分</text><text x="691" y="176">60分</text>
+      </g>
+      <line x1="31" y1="158" x2="691" y2="158" stroke="#E6E7EB" stroke-width="1"/>
+      <rect x="120" y="248" width="480" height="46" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="360" y="269" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">10〜15分ごとに「この配信で得られること」をひと言で繰り返す</text>
+      <text x="360" y="286" text-anchor="middle" font-size="10.5" fill="#454956">＝途中から入ってきた視聴者を置き去りにしないための仕掛け</text>
+    </svg>
+    <figcaption>図2：60分配信の台本の型。実演と質疑応答を交互に置き、価値宣言を定期的に繰り返す（LEAM作成）</figcaption>
+  </figure>
+  <h3>途中から入る視聴者のために、10〜15分ごとに配信の価値を繰り返す</h3>
+  <p>ライブの視聴者は、最初からずっと見ている人よりも<strong>途中で流入してくる人の方が多い</strong>のが前提です。だからこそ、冒頭で「この配信を見ると何が得られるか」を宣言するだけでなく、<strong>10〜15分ごとに同じ内容を繰り返し伝えます</strong>。「今日は◯◯を実際に使いながら紹介しています。ライブ限定のクーポンもあります」——この1文を型として台本に埋め込んでおくと、途中流入の視聴者を取りこぼしません。</p>
+
+  <div class="ctabox">
+    <div class="ct">台本・オファー・送客の設計から、プロと一緒に組み立てる方法もあります</div>
+    <p>LEAMは市場データを毎営業日蓄積し、商材に合わせた配信設計とクリエイター起用を一次データに基づいて支援しています。初回配信の設計から伴走します。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>売れる配信の実践は5つ：実演・名前呼び・盛り上げ・価値宣言・送客</h2>
+  <p>台本の型ができたら、配信中の振る舞いを5つのポイントで磨きます。いずれも特別な話術ではなく、<strong>準備しておけば誰でも実行できる型</strong>です。</p>
+  <h3>① 冒頭で「この配信を見る価値」を宣言する</h3>
+  <p>配信開始の第一声で、今日の配信で何が得られるかを言い切ります。§05のとおり、これは冒頭だけでなく10〜15分ごとに繰り返すのが実務のポイントです。</p>
+  <h3>② 商品は「使っている場面」を実演で見せる</h3>
+  <p>商品を手に持って説明するだけでは、ショート動画との差が出ません。<strong>使う・塗る・着る・食べる——実際に使用している場面</strong>を映してください。ショート動画で反応が良かった訴求をライブで再現するのも有効です。実演の効きやすさは商材によって差があり、当社の運用実感では化粧品・食品・アパレルのように使用場面が想像しやすい商材ほどライブ向きです。</p>
+  <h3>③ コメントには名前を添えて返す</h3>
+  <p>「◯◯さん、ご質問ありがとうございます」と<strong>名前を呼んでから答える</strong>だけで、視聴者の当事者感が変わります。コメントが増え、滞在時間が伸びる配信は、実務的にはおすすめ経由の露出も伸びやすいと当社では見ています。</p>
+  <h3>④ 購入の瞬間をその場で拾って盛り上げる</h3>
+  <p>「今、ご購入ありがとうございます！」と購入をリアルタイムで拾って読み上げます。<strong>「みんな買っている」という空気</strong>が、迷っている視聴者の背中を押します。嘘の演出は不要で、実際の購入を丁寧に拾うだけで十分です。</p>
+  <h3>⑤ ショート動画と連携して送客する</h3>
+  <p>ライブ単体で視聴者を集めるのではなく、<strong>ショート動画で予告・切り抜きを流してライブへ送客する</strong>のが王道の組み合わせです。配信前の告知だけでなく、配信後に見どころを切り抜いて次回への導線にする、という循環まで作れると理想的です。</p>
+
+  <h2 id="s7"><span class="no en">07</span>単発で判断しない：定時定期の枠で学習を積むほどライブは伸びる</h2>
+  <p>初回の配信で売上が小さくても、それだけで「ライブは効かない」と判断しないでください。ライブコマースは<strong>「毎週◯曜21時」のように枠を固定して繰り返すことで、視聴者の習慣・配信側の練度・数値の学習が積み上がっていく</strong>施策です。単発の配信は、条件がバラバラなため数値を比較できず、次に何を直せばいいかも分かりません。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="単発配信と定時定期配信の対比図：単発は毎回ゼロからで学習がリセットされるが、定時定期は配信・振り返り・台本改善・次回配信のループが回り、視聴者の習慣化と数値の比較が可能になる">
+      <rect x="20" y="20" width="330" height="280" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">単発・不定期の配信</text>
+      <g fill="#AEB2BE">
+        <circle cx="80" cy="100" r="9"/><circle cx="220" cy="130" r="9"/><circle cx="140" cy="180" r="9"/><circle cx="280" cy="90" r="9"/>
+      </g>
+      <text x="98" y="105" font-size="9.5" fill="#787D8A">火22時</text><text x="238" y="135" font-size="9.5" fill="#787D8A">土14時</text>
+      <text x="158" y="185" font-size="9.5" fill="#787D8A">木19時</text><text x="298" y="95" font-size="9.5" fill="#787D8A">日11時</text>
+      <text x="185" y="235" text-anchor="middle" font-size="11.5" fill="#787D8A">視聴者は次がいつか分からない</text>
+      <text x="185" y="258" text-anchor="middle" font-size="11.5" fill="#787D8A">条件がバラバラで数値を比較できない</text>
+      <text x="185" y="281" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">＝ 毎回ゼロからのやり直し</text>
+      <rect x="370" y="20" width="330" height="280" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">定時・定期の配信（例：毎週金曜21時）</text>
+      <rect x="400" y="72" width="120" height="44" rx="9" fill="#17181C"/>
+      <text x="460" y="99" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">配信する</text>
+      <rect x="550" y="72" width="120" height="44" rx="9" fill="#17181C"/>
+      <text x="610" y="99" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">数値を振り返る</text>
+      <rect x="550" y="150" width="120" height="44" rx="9" fill="#17181C"/>
+      <text x="610" y="177" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">台本を改善する</text>
+      <rect x="400" y="150" width="120" height="44" rx="9" fill="#17181C"/>
+      <text x="460" y="177" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">次回も同じ枠で</text>
+      <g stroke="#E8324A" stroke-width="2" fill="none">
+        <path d="M525 94 H545"/><path d="M610 121 V145"/><path d="M545 172 H525"/><path d="M460 145 V121"/>
+      </g>
+      <g fill="#E8324A">
+        <path d="M541 88 L550 94 L541 100 Z"/><path d="M604 141 L610 150 L616 141 Z"/>
+        <path d="M529 166 L520 172 L529 178 Z"/><path d="M454 125 L460 116 L466 125 Z"/>
+      </g>
+      <text x="535" y="235" text-anchor="middle" font-size="11.5" fill="#454956">視聴者が「金曜21時はこの配信」と習慣化する</text>
+      <text x="535" y="258" text-anchor="middle" font-size="11.5" fill="#454956">同じ条件の数値が溜まり、改善点が見える</text>
+      <text x="535" y="281" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">＝ 回を追うごとに学習が積み上がる</text>
+    </svg>
+    <figcaption>図3：単発と定時定期の違い。枠を固定するほど習慣化と学習が積み上がる（LEAM作成）</figcaption>
+  </figure>
+  <p>まずは<strong>週1回60分の定時配信</strong>から始めて、同じ枠で数回続けた上で数値を比較してください。曜日・時間帯を決める際は、自社の商材を誰が・いつ見ているかが判断材料になります。詳しくは「<a href="https://leam.co.jp/column/live-audience/">TikTok Shopのライブは誰が見ている？視聴者層と売れる時間帯</a>」で解説しています。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>枠を固定するもう一つの利点は、<strong>台本・オファー・進行の「どこを変えたら数値がどう動いたか」を検証できる</strong>ことです。毎回条件を変えてしまうと、うまくいっても失敗しても理由が特定できません。変えるのは1回につき1〜2箇所に絞るのが実務のコツです。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>配信人材がいなければ外部キャストも選べる：内製と比較して決める</h2>
+  <p>「社内に配信できる人がいない」は、ライブコマースを諦める理由にはなりません。<strong>クリエイターに配信を委託する（外部キャスト）という選択肢</strong>があり、実務では内製と併用するケースも多くあります。それぞれの特性を比較して決めてください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>内製（自社スタッフが配信）</th><th>外部キャスト（クリエイターに委託）</th></tr></thead>
+    <tbody>
+      <tr><td>立ち上がりの速さ</td><td class="n">配信スキルの習得に時間がかかる</td><td class="y">経験者に任せればすぐ形になる</td></tr>
+      <tr><td>商品知識の深さ</td><td class="y">開発背景まで語れる</td><td class="n">事前のインプットが必要</td></tr>
+      <tr><td>ノウハウの蓄積</td><td class="y">台本・数値の学習が社内に残る</td><td class="n">委託先に依存しやすい</td></tr>
+      <tr><td>費用の構造</td><td>人件費（固定）</td><td>委託費（固定）＋成果報酬。固定をゼロにはできないが、成果報酬を厚くして固定を下げる配分は組める</td></tr>
+      <tr><td>継続のしやすさ</td><td class="n">担当者の負担・離職リスク</td><td class="y">複数キャストで枠を維持しやすい</td></tr>
+      <tr><td>向いているケース</td><td>商品説明の専門性が重要な商材</td><td>使用感の実演が効く商材（化粧品・食品・アパレルなど）</td></tr>
+    </tbody>
+  </table></div>
+  <h3>成果報酬（アフィリエイト）と組み合わせ、固定と成果の配分を決める</h3>
+  <p>外部キャストを起用する場合、固定の委託費だけで組むのではなく、<strong>TikTok Shopのアフィリエイト（成果報酬）と組み合わせる</strong>ことで初期の固定費を抑えられます。当社の運用実感では、使用場面の実演が売りになる商材ほど、経験のあるクリエイターに任せる効果が出やすい領域です。報酬の設計は「クリエイターへの報酬相場と決め方」の記事で詳しく解説しています。</p>
+
+  <h2 id="s9"><span class="no en">09</span>伸びない時は「送客→滞在→購入」の順で切り分ける</h2>
+  <p>数回続けても数値が動かない時は、感覚で台本をいじる前に、<strong>どの段階で詰まっているか</strong>を順番に切り分けます。原因の場所によって、打ち手はまったく別物です。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="伸びない時の切り分け図：送客（視聴者が来るか）、滞在（残って見ているか）、購入（買われているか）の3段階ごとに、主な原因と打ち手を対応させたファネル図">
+      <path d="M40 40 H400 L370 120 H70 Z" fill="#787D8A"/>
+      <path d="M70 130 H370 L340 210 H100 Z" fill="#454956"/>
+      <path d="M100 220 H340 L310 300 H130 Z" fill="#E8324A"/>
+      <text x="220" y="75" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">① 送客：視聴者が来ているか</text>
+      <text x="220" y="100" text-anchor="middle" font-size="10.5" fill="#E6E7EB">指標：視聴者数</text>
+      <text x="220" y="165" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">② 滞在：残って見ているか</text>
+      <text x="220" y="190" text-anchor="middle" font-size="10.5" fill="#E6E7EB">指標：平均視聴時間・コメント数</text>
+      <text x="220" y="255" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">③ 購入：買われているか</text>
+      <text x="220" y="280" text-anchor="middle" font-size="10.5" fill="#FDEEF1">指標：注文数・カート追加</text>
+      <g stroke="#787D8A" stroke-width="1.5">
+        <path d="M405 80 H435"/><path d="M375 170 H435"/><path d="M345 260 H435"/>
+      </g>
+      <rect x="440" y="48" width="260" height="66" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="456" y="74" font-size="11.5" font-weight="800" fill="#17181C">原因：告知不足・時間帯のミスマッチ</text>
+      <text x="456" y="96" font-size="11" fill="#454956">→ ショート動画で予告・枠の見直し</text>
+      <rect x="440" y="138" width="260" height="66" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="456" y="164" font-size="11.5" font-weight="800" fill="#17181C">原因：価値宣言なし・進行の間延び</text>
+      <text x="456" y="186" font-size="11" fill="#454956">→ 台本の型（§05）に戻して立て直す</text>
+      <rect x="440" y="228" width="260" height="66" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="456" y="254" font-size="11.5" font-weight="800" fill="#C2203A">原因：「今買う理由」がない・商品ページ</text>
+      <text x="456" y="276" font-size="11" fill="#454956">→ 限定オファーと着地ページを見直す</text>
+    </svg>
+    <figcaption>図4：伸びない時の切り分け。上の段から順に確認すると原因を特定しやすい（LEAM作成）</figcaption>
+  </figure>
+  <h3>視聴者が来ない：告知・送客と時間帯を疑う</h3>
+  <p>そもそも視聴者数が少ないなら、配信の中身より先に<strong>入口</strong>の問題です。ショート動画での予告・切り抜きによる送客を増やし、配信の時間帯が商材の視聴者層と合っているかを見直します。視聴者層と時間帯の考え方は前述の視聴者層の記事が参考になります。</p>
+  <h3>残らない：冒頭の価値宣言と進行を疑う</h3>
+  <p>視聴者は来ているのに平均視聴時間が短いなら、<strong>配信の冒頭と進行</strong>の問題です。価値宣言が抜けていないか、実演までの前置きが長すぎないか、コメントを拾えているかを台本の型に照らして確認します。</p>
+  <h3>買われない：「今買う理由」と商品ページを疑う</h3>
+  <p>滞在は取れているのに購入されないなら、<strong>オファーと着地先</strong>の問題です。ライブ限定クーポンなどの「今買う理由」が用意されているか、ピン留めした商品のページ（画像・説明・価格の納得感）が配信の熱量に見合っているかを確認してください。</p>
+
+  <h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>フォロワーが50人未満でも配信できますか？</summary><div class="a">セラーの販売配信には18歳以上・フォロワー50人以上などの条件があるため、まずはショート動画の投稿でフォロワーを増やすのが近道です。条件は変更されることがあるため、最新はTikTok公式の情報をご確認ください。</div></details>
+    <details><summary>個人事業主でもTikTok Shopに出店してライブ販売できますか？</summary><div class="a">出店できます。法人・個人事業主のどちらでも出店可能で、出店自体は無料です。審査の要件は変更されることがあるため、最新はセラーセンターの公式情報をご確認ください。</div></details>
+    <details><summary>配信の時間と頻度はどのくらいが目安ですか？</summary><div class="a">週1回60分の定時配信から始めるのが実務的です。単発の結果で判断せず、同じ曜日・時間帯で数回続けて数値を比較してください。</div></details>
+    <details><summary>機材は何を揃えればいいですか？</summary><div class="a">スマホ・三脚・リングライトの最小構成で始められます。音声は購入判断に直結するため、追加投資はマイクを優先することをおすすめします。</div></details>
+    <details><summary>どの時間帯に配信すべきですか？</summary><div class="a">商材の視聴者層によって最適な時間帯は変わります。まずは枠を固定して定時配信を続け、ダッシュボードの数値で自社の当たり枠を見つけるのが実務的です。</div></details>
+    <details><summary>ライブコマースに向いている商材はありますか？</summary><div class="a">使う・塗る・着る・食べるといった「使用場面の実演」が映える商材ほど向いています。当社の運用実感では、化粧品・食品・アパレルなどで特に効果を発揮しやすい手法です。逆に向きにくいのは、じっくり比較して決める高額品、サイズや色の失敗が返品につながりやすい商材、説明に資格や規制が絡む商材です。ただし化粧品・健康食品は、配信中の口頭の発言も薬機法の広告規制の対象になります。効能効果の言い切りは避け、言える表現の範囲を配信前に整理しておいてください（<a href="https://leam.co.jp/column/prohibited-items/">禁止商品・制限商品ガイド</a>）。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><a href="https://leam.co.jp/column/live-audience/" style="text-decoration:none;color:inherit"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-audience/" style="color:inherit;text-decoration:none">TikTok Shopのライブは誰が見ている？視聴者層と売れる時間帯</a></b><span>視聴者層から配信枠を決める</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/creator-commission/" style="text-decoration:none;color:inherit"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-commission/" style="color:inherit;text-decoration:none">クリエイターへの報酬相場と決め方【TikTok Shopセラー向け】</a></b><span>外部キャストの報酬設計に</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="text-decoration:none;color:inherit"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="color:inherit;text-decoration:none">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</a></b><span>ライブ販売の利益設計に</span></a></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopのライブコマース、始め方のご相談は無料です</div>
+    <p>商材とご状況を伺い、「ライブに向いているか」「内製と外部キャストのどちらが合うか」から正直にお伝えします。週1回の定時配信を小さく始める形からでもご支援できます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shopアカデミー（日本）「クリエイター申請方法」（アフィリエイト参加条件＝18歳以上・フォロワー1,000人以上）／TikTok Shop セラーセンター・TikTok LIVE の公式ヘルプ（利用条件・機能・手数料などの仕様は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">仕組み：ピン留め→ワンタップ購入</a></li>
+        <li><a href="#s2">条件：フォロワー50人から</a></li>
+        <li><a href="#s3">やり方は5ステップ</a></li>
+        <li><a href="#s4">配信前チェックリスト</a></li>
+        <li><a href="#s5">台本の型（60分構成）</a></li>
+        <li><a href="#s6">売れる配信の5ポイント</a></li>
+        <li><a href="#s7">定時定期で学習を積む</a></li>
+        <li><a href="#s8">内製vs外部キャスト</a></li>
+        <li><a href="#s9">伸びない時の切り分け</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>初回配信の設計を、無料で相談</b>
+      <p>台本・オファー・送客まで、商材に合わせた配信の設計図を一緒に作ります。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopライブコマース入門｜やり方・売れる配信の作り方と始める前の準備",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "フォロワーが50人未満でも配信できますか？", "acceptedAnswer": {"@type": "Answer", "text": "セラーの販売配信には18歳以上・フォロワー50人以上などの条件があるため、まずはショート動画の投稿でフォロワーを増やすのが近道です。条件は変更されることがあるため、最新はTikTok公式の情報をご確認ください。"}},
+        {"@type": "Question", "name": "個人事業主でもTikTok Shopに出店してライブ販売できますか？", "acceptedAnswer": {"@type": "Answer", "text": "出店できます。法人・個人事業主のどちらでも出店可能で、出店自体は無料です。審査の要件は変更されることがあるため、最新はセラーセンターの公式情報をご確認ください。"}},
+        {"@type": "Question", "name": "配信の時間と頻度はどのくらいが目安ですか？", "acceptedAnswer": {"@type": "Answer", "text": "週1回60分の定時配信から始めるのが実務的です。単発の結果で判断せず、同じ曜日・時間帯で数回続けて数値を比較してください。"}},
+        {"@type": "Question", "name": "機材は何を揃えればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "スマホ・三脚・リングライトの最小構成で始められます。音声は購入判断に直結するため、追加投資はマイクを優先することをおすすめします。"}},
+        {"@type": "Question", "name": "どの時間帯に配信すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "商材の視聴者層によって最適な時間帯は変わります。まずは枠を固定して定時配信を続け、ダッシュボードの数値で自社の当たり枠を見つけるのが実務的です。"}},
+        {"@type": "Question", "name": "ライブコマースに向いている商材はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "使う・塗る・着る・食べるといった「使用場面の実演」が映える商材ほど向いています。当社の運用実感では、化粧品・食品・アパレルなどで特に効果を発揮しやすい手法です。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

@@ -11,8 +11,44 @@ BASE = 'https://leam.co.jp'
 RESERVED = ('', 'mcn', 'line', 'column', 'ecplus', 'ecplus-2', 'ecplus-3', 'fashion',
             'present', 'mission', 'lineredirect', 'thanks-2')  # 実コンテンツ用ディレクトリ。ここへは絶対に出力しない
 
+# /column/ の記事（build_column.py が生成。追加したらここにも足す）
+COLUMN_SLUGS = (
+    'account-suspension',
+    'affiliate-guide',
+    'amazon-seller-tiktok-shop',
+    'best-categories',
+    'coupon-sale-tactics',
+    'creator-commission',
+    'creator-invite',
+    'd2c-tiktok-shop',
+    'gmvmax',
+    'is-tiktok-shop-safe',
+    'live-audience',
+    'live-commerce-guide',
+    'market-outlook',
+    'marketplace-comparison',
+    'not-selling-checklist',
+    'pricing-strategy',
+    'product-page-cvr',
+    'prohibited-items',
+    'rakuten-seller-tiktok-shop',
+    'returns-refunds',
+    'review-management',
+    'sample-request',
+    'seasonal-campaign',
+    'seller-center-guide',
+    'shipping-rules',
+    'short-video-playbook',
+    'tiktok-shop-fees',
+    'tiktok-shop-roas',
+    'tiktok-shop-shinsa',
+    'unyodaiko-cost',
+    'what-is-tiktok-shop',
+    'yahoo-seller-tiktok-shop',
+)
+
 # ROUTES外だがsitemapに載せる実コンテンツ（SPAではなく独立ページ）
-EXTRA_SITEMAP = ('/mcn',)
+EXTRA_SITEMAP = ('/mcn', '/column') + tuple('/column/%s' % s for s in COLUMN_SLUGS)
 
 
 # ルート別：そのページの主見出しだけ h2→h1 に昇格（見た目はCSS側で同一に調整済み）

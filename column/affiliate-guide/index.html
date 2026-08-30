@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopアフィリエイトの仕組み【セラー向け】</title>
+<meta name="description" content="TikTok Shopのアフィリエイトの仕組みを、セラー側の視点でプラン設計からクリエイターに選ばれる条件まで解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/affiliate-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopアフィリエイトの仕組み【セラー向け】">
+<meta property="og:description" content="TikTok Shopのアフィリエイトの仕組みを、セラー側の視点でプラン設計からクリエイターに選ばれる条件まで解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/affiliate-guide/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopアフィリエイトの仕組み【セラー向け】">
+<meta name="twitter:description" content="TikTok Shopのアフィリエイトの仕組みを、セラー側の視点でプラン設計からクリエイターに選ばれる条件まで解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff;display:block;text-decoration:none;color:inherit}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopアフィリエイトの仕組み【セラー向け】", "description": "TikTok Shopのアフィリエイトの仕組みを、セラー側の視点でプラン設計からクリエイターに選ばれる条件まで解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/affiliate-guide/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopアフィリエイトの仕組み【セラー向け】", "item": "https://leam.co.jp/column/affiliate-guide/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopアフィリエイトの仕組み</p>
+  <span class="cat">クリエイター連携</span>
+  <h1>TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】｜プラン設計から「選ばれる条件」まで</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="セラーの商品の箱とクリエイターのスマートフォンが鎖のリンクでつながり、成果報酬のコインが生まれるアフィリエイトの仕組みを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v300c-98 34-196 46-296 34-116-14-206-54-320-52-110 2-190 42-288 58-92 15-192 6-296-26z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="252" rx="280" ry="212" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="80" cy="74" r="5"/><circle cx="116" cy="74" r="5"/><circle cx="152" cy="74" r="5"/><circle cx="188" cy="74" r="5"/>
+      <circle cx="80" cy="110" r="5"/><circle cx="116" cy="110" r="5"/><circle cx="152" cy="110" r="5"/><circle cx="188" cy="110" r="5"/>
+      <circle cx="80" cy="146" r="5"/><circle cx="116" cy="146" r="5"/><circle cx="152" cy="146" r="5"/><circle cx="188" cy="146" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(880 454)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150 34 286 20 420-6 126-24 232-38 350-18 118 20 240 56 430 26v116H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：クリエイターのスマートフォン ================= -->
+  <g>
+    <rect x="900" y="136" width="246" height="356" rx="34" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="900" y="136" width="246" height="356" rx="34" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <rect x="922" y="176" width="202" height="282" rx="14" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+    <rect x="986" y="150" width="74" height="14" rx="7" fill="#DFE0E2"/>
+
+    <!-- 画面のなかのクリエイター -->
+    <circle cx="1023" cy="268" r="36" fill="#DFE0E2"/>
+    <path d="M971 356a52 52 0 0 1 104 0z" fill="#DFE0E2"/>
+    <rect x="962" y="386" width="122" height="12" rx="6" fill="#DFE0E2"/>
+    <rect x="986" y="412" width="74" height="12" rx="6" fill="#DFE0E2"/>
+
+    <rect x="983" y="468" width="80" height="8" rx="4" fill="#DFE0E2"/>
+  </g>
+
+  <!-- ================= 左：商品の箱（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="84" y="244" width="516" height="350" rx="18" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <!-- 上フラップ（裏面＝赤の陰） -->
+    <path d="M84 262a18 18 0 0 1 18-18h480a18 18 0 0 1 18 18v44H84z" fill="#CE1730"/>
+    <!-- 前面 -->
+    <path d="M84 306h516v270a18 18 0 0 1-18 18H102a18 18 0 0 1-18-18z" fill="#FE2C55"/>
+    <!-- 輪郭 -->
+    <rect x="84" y="244" width="516" height="350" rx="18" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M84 306h516" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M342 244v62" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <!-- 封をしたテープ -->
+    <rect x="288" y="286" width="108" height="40" rx="8" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- 送り状ラベル（バーコード） -->
+    <rect x="140" y="430" width="150" height="100" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <g fill="#0B0C10">
+      <rect x="160" y="452" width="8" height="56"/>
+      <rect x="174" y="452" width="5" height="56"/>
+      <rect x="185" y="452" width="10" height="56"/>
+      <rect x="201" y="452" width="6" height="56"/>
+      <rect x="213" y="452" width="8" height="56"/>
+      <rect x="228" y="452" width="11" height="56"/>
+      <rect x="246" y="452" width="5" height="56"/>
+      <rect x="257" y="452" width="8" height="56"/>
+      <rect x="271" y="452" width="6" height="56"/>
+    </g>
+  </g>
+
+  <!-- ================= 中央：鎖のリンク（シアン） ================= -->
+  <defs>
+    <path id="lnk" d="M39 0h72a39 39 0 0 1 0 78H39A39 39 0 0 1 39 0zM48 24h54a15 15 0 0 1 0 30H48a15 15 0 0 1 0-30z"/>
+    <clipPath id="cross1"><rect x="84" y="-18" width="86" height="57"/></clipPath>
+    <clipPath id="cross2"><rect x="172" y="-18" width="86" height="57"/></clipPath>
+  </defs>
+  <g transform="translate(748 230) rotate(-14) scale(.82) translate(-163 -39)">
+    <g fill="#5E6064" opacity=".14" transform="translate(9 11)">
+      <use href="#lnk" fill-rule="evenodd"/>
+      <use href="#lnk" fill-rule="evenodd" transform="translate(88 0)"/>
+      <use href="#lnk" fill-rule="evenodd" transform="translate(176 0)"/>
+    </g>
+    <use href="#lnk" fill="#25F4EE" fill-rule="evenodd" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <use href="#lnk" fill="#25F4EE" fill-rule="evenodd" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round" transform="translate(88 0)"/>
+    <use href="#lnk" fill="#25F4EE" fill-rule="evenodd" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round" transform="translate(176 0)"/>
+    <!-- 上側の交差だけ手前に描いて噛み合わせる -->
+    <g clip-path="url(#cross1)">
+      <use href="#lnk" fill="#25F4EE" fill-rule="evenodd" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    </g>
+    <g clip-path="url(#cross2)">
+      <use href="#lnk" fill="#25F4EE" fill-rule="evenodd" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round" transform="translate(88 0)"/>
+    </g>
+  </g>
+
+  <!-- ================= 下：成果報酬のコイン（シアン） ================= -->
+  <g fill="#5E6064" opacity=".14" transform="translate(9 11)">
+    <circle cx="678" cy="540" r="58"/>
+    <circle cx="876" cy="542" r="56"/>
+    <circle cx="774" cy="486" r="84"/>
+    <circle cx="652" cy="404" r="26"/>
+    <circle cx="712" cy="358" r="18"/>
+    <circle cx="830" cy="342" r="22"/>
+  </g>
+  <g>
+    <circle cx="678" cy="540" r="58" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="678" cy="540" r="36" fill="none" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="876" cy="542" r="56" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="876" cy="542" r="34" fill="none" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="774" cy="486" r="84" fill="#25F4EE" stroke="#0B0C10" stroke-width="8"/>
+    <circle cx="774" cy="486" r="52" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <circle cx="652" cy="404" r="26" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+    <circle cx="712" cy="358" r="18" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="830" cy="342" r="22" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="252" cy="132" r="25" fill="#25F4EE"/>
+  <circle cx="556" cy="152" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopアフィリエイトは、商品ごとにコミッション（成果報酬）を設定し、クリエイターに動画やライブで商品を紹介してもらう仕組みです。</strong>売れるまで費用が発生しない完全成果報酬型で、セラーにとってはリスクの小さい集客手段です。ただし「プランを公開すれば紹介してもらえる」わけではありません。クリエイター側から見れば無数のプランが並んでおり、<strong>セラーは選ぶ側であると同時に「選ばれる側」</strong>です。この記事では、仕組みとお金の流れ、2種類のプランの使い分け、コミッション率の決め方、クリエイターから選ばれる条件、サンプル提供の実務までを、実際の運用でつまずきやすい順に解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>アフィリエイトの仕組みとコミッションの流れ（誰がいつ・いくら払うのか）</li>
+      <li>オープンコラボ／ターゲットコラボの違いと使い分け・料率の決め方</li>
+      <li>クリエイターから選ばれるための条件と、サンプル提供の実務手順</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">アフィリエイト設計とクリエイター起用、無料で相談できます</div>
+    <p>LEAMはTikTok Shop特化のMCN（クリエイター事務所）を運営しています。商材を伺い、コミッション設計から起用すべきクリエイターの方向性まで、率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">仕組み：完全成果報酬でクリエイターに「売ってもらう」</a></li>
+      <li><a href="#s2">プランは2種類：全員に開くオープンと、個別に口説くターゲット</a></li>
+      <li><a href="#s3">コミッション率は「下限＝動く水準、上限＝利益が残る水準」で決める</a></li>
+      <li><a href="#s4">セラーは選ぶ側であると同時に「選ばれる側」になる</a></li>
+      <li><a href="#s5">サンプル提供は「選定→承認→資料同梱」までがワンセット</a></li>
+      <li><a href="#s6">始め方は5ステップ：プラン公開そのものは難しくない</a></li>
+      <li><a href="#s7">成果は「1人のヒット」ではなく「本数の積み上げ」で伸ばす</a></li>
+      <li><a href="#s8">まとめ：アフィリエイト設計がTikTok Shopの勝敗を分ける</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>仕組み：完全成果報酬でクリエイターに「売ってもらう」のがアフィリエイトの本質</h2>
+  <p>TikTok Shopアフィリエイトは、セラーが商品の紹介をクリエイターに委ね、<strong>売れた分だけコミッション（成果報酬）を支払う</strong>仕組みです。流れは次の3ステップです。</p>
+  <p>①セラーが商品ごとにコミッション率を設定してアフィリエイトプランを公開する → ②クリエイターが紹介したい商品を選び、ショート動画やライブ配信に商品リンクを付けて紹介する → ③そのリンク経由の売上に応じて、コミッションがクリエイターに支払われる——という循環です。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="コミッションの流れ図：セラーが料率を設定してプランを公開し、クリエイターが動画・ライブで紹介、視聴者がリンク経由で購入すると、TikTok Shopが売上とコミッションを自動精算する">
+      <rect x="20" y="36" width="200" height="80" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="120" y="66" text-anchor="middle" font-size="14.5" font-weight="800" fill="#17181C">セラー</text>
+      <text x="120" y="88" text-anchor="middle" font-size="10.5" fill="#787D8A">商品ごとにコミッション率を</text>
+      <text x="120" y="103" text-anchor="middle" font-size="10.5" fill="#787D8A">設定してプラン公開</text>
+      <path d="M222 76 H256" stroke="#787D8A" stroke-width="2"/><path d="M252 70 L262 76 L252 82 Z" fill="#787D8A"/>
+      <text x="241" y="62" text-anchor="middle" font-size="10" font-weight="800" fill="#C2203A">①公開</text>
+      <rect x="264" y="36" width="200" height="80" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="364" y="66" text-anchor="middle" font-size="14.5" font-weight="800" fill="#C2203A">クリエイター</text>
+      <text x="364" y="88" text-anchor="middle" font-size="10.5" fill="#454956">商品を選び、動画・ライブに</text>
+      <text x="364" y="103" text-anchor="middle" font-size="10.5" fill="#454956">商品リンクを付けて紹介</text>
+      <path d="M466 76 H500" stroke="#787D8A" stroke-width="2"/><path d="M496 70 L506 76 L496 82 Z" fill="#787D8A"/>
+      <text x="485" y="62" text-anchor="middle" font-size="10" font-weight="800" fill="#C2203A">②紹介</text>
+      <rect x="508" y="36" width="192" height="80" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="604" y="66" text-anchor="middle" font-size="14.5" font-weight="800" fill="#17181C">視聴者</text>
+      <text x="604" y="88" text-anchor="middle" font-size="10.5" fill="#787D8A">動画内の商品リンクから</text>
+      <text x="604" y="103" text-anchor="middle" font-size="10.5" fill="#787D8A">そのまま購入</text>
+      <rect x="200" y="212" width="320" height="72" rx="14" fill="#17181C"/>
+      <text x="360" y="242" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">TikTok Shopが自動精算</text>
+      <text x="360" y="265" text-anchor="middle" font-size="10.5" fill="#C9CBD4">セラーの売上からコミッション分を差し引いて支払い</text>
+      <path d="M604 120 V248 H526" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M532 242 L522 248 L532 254 Z" fill="#0E8A5F"/>
+      <text x="612" y="178" font-size="10.5" font-weight="700" fill="#0E8A5F">③購入代金</text>
+      <path d="M364 208 V124" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M358 132 L364 120 L370 132 Z" fill="#0E8A5F"/>
+      <text x="428" y="172" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0E8A5F">④コミッション</text>
+      <path d="M196 248 H120 V124" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M114 132 L120 120 L126 132 Z" fill="#0E8A5F"/>
+      <text x="118" y="178" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0E8A5F">⑤売上（差引後）</text>
+    </svg>
+    <figcaption>図1：コミッションの流れ。売れた時だけ、売上から自動で差し引かれる（LEAM作成）</figcaption>
+  </figure>
+  <p>ポイントは2つあります。1つは<strong>完全成果報酬型である</strong>こと。広告のような先払いの費用がなく、売れるまで1円も発生しません。もう1つは、コミッションの精算がTikTok Shopのシステムを通じて自動で行われることです。セラーがクリエイターへ個別に振り込む必要はなく、売上からコミッション分が差し引かれる形で処理されます（精算サイクル等の詳細は公式ヘルプで最新情報をご確認ください）。</p>
+  <p>なお、クリエイター側がアフィリエイトに参加するには<strong>「18歳以上・フォロワー1,000人以上・コミュニティガイドラインの遵守」</strong>が基本条件です（※参加条件は変更されることがあるため、最新は公式で確認してください）。フォロワー1,000人というハードルは高くないため、参加クリエイターの母数は大きく、その分プラン側の競争も起きています。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>TikTok Shopは「良い商品を並べれば売れる」プラットフォームではなく、<strong>「クリエイターに動いてもらう仕組みを作れたセラー」が勝つ</strong>プラットフォームです。アフィリエイト設計は数ある施策の1つではなく、攻略の中心に置くべきテーマです。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>プランは2種類：全員に開く「オープンコラボ」と、個別に口説く「ターゲットコラボ」</h2>
+  <p>アフィリエイトプランの出し方には<strong>「オープンコラボ（公開プラン）」と「ターゲットコラボ（指名オファー）」の2種類</strong>があります。性質がまったく違うため、最初に区別しておきましょう。</p>
+  <figure>
+    <svg viewBox="0 0 720 310" role="img" aria-label="2種類のプランの対比図：オープンコラボは条件を満たす全クリエイターにプランを公開して自発的な紹介を待ち、ターゲットコラボは特定のクリエイターに個別条件とサンプルをセットでオファーする">
+      <rect x="20" y="20" width="330" height="270" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="60" y="38" width="250" height="26" rx="13" fill="#fff" stroke="#E6E7EB"/>
+      <text x="185" y="56" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">オープンコラボ（公開プラン）</text>
+      <rect x="140" y="86" width="90" height="40" rx="8" fill="#17181C"/>
+      <text x="185" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">プラン公開</text>
+      <g stroke="#AEB2BE" stroke-width="1.5">
+        <line x1="185" y1="128" x2="80" y2="170"/><line x1="185" y1="128" x2="132" y2="176"/>
+        <line x1="185" y1="128" x2="185" y2="180"/><line x1="185" y1="128" x2="238" y2="176"/>
+        <line x1="185" y1="128" x2="290" y2="170"/>
+      </g>
+      <g fill="#C9CBD4">
+        <circle cx="80" cy="186" r="15"/><circle cx="132" cy="192" r="15"/><circle cx="185" cy="196" r="15"/>
+        <circle cx="238" cy="192" r="15"/><circle cx="290" cy="186" r="15"/>
+      </g>
+      <circle cx="185" cy="196" r="15" fill="#E8324A"/>
+      <text x="185" y="238" text-anchor="middle" font-size="11" fill="#787D8A">条件を満たす全クリエイターに公開</text>
+      <text x="185" y="266" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">自発的な紹介を待つ ＝ 本数を広げる</text>
+      <rect x="370" y="20" width="330" height="270" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <rect x="410" y="38" width="250" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="535" y="56" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">ターゲットコラボ（指名オファー）</text>
+      <rect x="490" y="86" width="90" height="40" rx="8" fill="#17181C"/>
+      <text x="535" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">個別オファー</text>
+      <path d="M535 128 V162" stroke="#E8324A" stroke-width="2"/><path d="M529 156 L535 166 L541 156 Z" fill="#E8324A"/>
+      <circle cx="535" cy="196" r="24" fill="#E8324A"/>
+      <circle cx="535" cy="189" r="8" fill="rgba(255,255,255,.7)"/>
+      <path d="M519 212 Q535 200 551 212 L551 217 Q535 207 519 217 Z" fill="rgba(255,255,255,.7)"/>
+      <rect x="424" y="176" width="76" height="40" rx="8" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="462" y="193" text-anchor="middle" font-size="9.5" font-weight="700" fill="#C2203A">料率アップ</text>
+      <text x="462" y="208" text-anchor="middle" font-size="9.5" font-weight="700" fill="#C2203A">＋サンプル</text>
+      <rect x="570" y="176" width="76" height="40" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="608" y="193" text-anchor="middle" font-size="9.5" font-weight="700" fill="#454956">オリエン資料</text>
+      <text x="608" y="208" text-anchor="middle" font-size="9.5" font-weight="700" fill="#454956">を同梱</text>
+      <text x="535" y="238" text-anchor="middle" font-size="11" fill="#787D8A">特定のクリエイターに個別条件でオファー</text>
+      <text x="535" y="266" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">個別に口説く ＝ 売上への影響が大きい</text>
+    </svg>
+    <figcaption>図2：2種類のプラン。役割が違うので「どちらか」ではなく併用が前提（LEAM作成）</figcaption>
+  </figure>
+  <h3>オープンコラボ：全クリエイターに公開して、自発的な紹介の「面」を作る</h3>
+  <p>特定の商品にコミッション率を設定し、条件を満たす全クリエイターへプランを公開する方式です。魅力的な料率を付けておけば、クリエイターが自発的に商品を見つけて紹介してくれるため、<strong>紹介本数の「面」を広げる役割</strong>を担います。手間がかからない一方、誰が取り上げるかはコントロールできません。</p>
+  <h3>ターゲットコラボ：特定クリエイターへ個別条件でオファーし、売上の「柱」を作る</h3>
+  <p>売ってほしいクリエイターを指名し、個別にオファーを送る方式です。オープンより高いコミッション率や無料サンプルの提供をセットにして打診するのが一般的で、<strong>売上への影響が大きいのはこちら</strong>です。アフィリエイトセンター上ではクリエイターをカテゴリーや実績で検索でき、複数名への一括招待にも対応しています（招待の上限数など画面仕様は更新されるため、最新は公式で確認してください）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>オープンコラボ（公開プラン）</th><th>ターゲットコラボ（指名オファー）</th></tr></thead>
+    <tbody>
+      <tr><td>公開範囲</td><td>条件を満たす全クリエイター</td><td>指名した特定クリエイターのみ</td></tr>
+      <tr><td>コミッション率</td><td>標準の料率を一律で設定</td><td class="y">個別に高めの料率を提示できる</td></tr>
+      <tr><td>サンプル提供</td><td>リクエストが来てから判断</td><td class="y">オファーとセットで送りやすい</td></tr>
+      <tr><td>役割</td><td>紹介本数の「面」を広げる</td><td class="y">売上の「柱」になるヒットを作る</td></tr>
+      <tr><td>セラーの工数</td><td class="y">小さい（設定して待つ）</td><td>大きい（選定・打診・フォロー）</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 実務的な順番</div>
+    <p>まず<strong>ターゲットコラボで相性の良いクリエイターと「売れる型」を作り、オープンコラボで本数を広げる</strong>のが定石です。オープンだけで待っていても、実績のない新規ショップの商品は選ばれにくいのが実情です。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>コミッション率は「下限＝クリエイターが動く水準、上限＝利益が残る水準」の間で決める</h2>
+  <p>アフィリエイト設計で最初に悩むのがコミッション率です。実務では<strong>10〜15%前後を起点</strong>に、商品の粗利構造と競合の設定率を見て調整します。人気クリエイターを指名する場合は15%以上を設定するケースもあります。決め方は「下限」「上限」「競合」の3方向から挟み込むと迷いません。</p>
+  <figure>
+    <svg viewBox="0 0 720 240" role="img" aria-label="コミッション率の決め方の帯グラフ：10%未満は取り上げられにくいゾーン、10〜15%が起点ゾーン、15%以上は指名オファー用の攻めの水準。上限は手数料・原価・物流費を引いて利益が残る水準で商品ごとに決まる">
+      <text x="40" y="42" font-size="13" font-weight="800" fill="#454956">コミッション率の考え方</text>
+      <rect x="40" y="70" width="256" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="296" y="70" width="128" height="52" fill="#E8324A"/>
+      <rect x="424" y="70" width="216" height="52" rx="8" fill="#17181C"/>
+      <text x="168" y="93" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">10%未満</text>
+      <text x="168" y="111" text-anchor="middle" font-size="10.5" fill="#454956">取り上げられにくい</text>
+      <text x="360" y="93" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">10〜15%</text>
+      <text x="360" y="111" text-anchor="middle" font-size="10.5" fill="#FDEEF1">起点ゾーン</text>
+      <text x="532" y="93" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">15%以上</text>
+      <text x="532" y="111" text-anchor="middle" font-size="10.5" fill="#C9CBD4">人気クリエイターの指名用</text>
+      <g font-size="11" fill="#787D8A" font-family="Inter,sans-serif">
+        <text x="40" y="146">0%</text><text x="284" y="146">10%</text><text x="412" y="146">15%</text>
+      </g>
+      <path d="M640 70 V52 H424 V70" stroke="#C2203A" stroke-width="1.5" fill="none" opacity="0"/>
+      <path d="M40 168 H640" stroke="#E6E7EB" stroke-width="1"/>
+      <text x="40" y="196" font-size="11.5" font-weight="700" fill="#C2203A">上限：販売手数料・原価・物流費を引いて利益が残る水準（商品ごとに計算）</text>
+      <text x="40" y="218" font-size="11" fill="#787D8A">下限：クリエイターのモチベーションが保てる水準（実務では10%が目安）</text>
+    </svg>
+    <figcaption>図3：コミッション率の下限と上限。この間で競合と比較して置く（LEAM作成）</figcaption>
+  </figure>
+  <h3>下限：10%を切ると取り上げられにくくなる</h3>
+  <p>下限を決めるのはクリエイターのモチベーションです。当社の運用実感でも、<strong>10%未満のプランは選ばれにくくなる傾向</strong>があります。クリエイターは紹介する商品を自分で選べるため、同ジャンルにより条件の良いプランがあれば、そちらへ流れるのが自然です。</p>
+  <h3>上限：販売手数料・原価・物流費を引いて「利益が残る水準」が天井</h3>
+  <p>上限は感覚ではなく計算で決めます。TikTok Shopではコミッションとは別に、カテゴリー別の販売手数料（目安7〜12%。<strong>料率は改定されるため最新は公式で確認</strong>してください）がかかります。たとえば美容・パーソナルケアの商品でコミッション15%＋販売手数料10%とすると、<strong>売上の25%がプラットフォーム関連コスト</strong>になります。ここに原価・物流費を足しても利益が残る率が、設定できる天井です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>金額（例）</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格</td><td class="num">3,000円</td><td>説明用の仮の例</td></tr>
+      <tr><td>コミッション（15%）</td><td class="num">−450円</td><td>クリエイターへの成果報酬</td></tr>
+      <tr><td>販売手数料（10%と仮定）</td><td class="num">−300円</td><td>カテゴリー別。最新は公式で確認</td></tr>
+      <tr><td>原価・物流費など</td><td class="num">−α</td><td>商品ごとに実額を入れる</td></tr>
+      <tr><td><b>残る利益</b></td><td class="num"><b>ここがプラスになる率が上限</b></td><td>売れるほど赤字になる設定を防ぐ</td></tr>
+    </tbody>
+  </table></div>
+  <h3>競合比較：同カテゴリーの設定率を確認してから置く</h3>
+  <p>最後に、同カテゴリーの競合商品がどの程度の料率を設定しているかを確認します。クリエイターはプラン一覧を見比べて商品を選ぶので、<strong>競合より明確に低い料率は、それだけで候補から外れます</strong>。カテゴリー別のコミッション実勢は、セラーセンターのアフィリエイトセンターで競合商品の公開料率を見れば確認できます。より詳しい料率の決め方と相場観は、<a href="./creator-commission.html">クリエイターへの報酬相場と決め方【TikTok Shopセラー向け】</a>で解説しています。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 料率の引き下げには時間差がある</div>
+    <p>コミッション率は後から変更できますが、<strong>引き下げは既存の提携クリエイターへ即時反映されず、一定の猶予期間を置いてから適用される仕様</strong>が案内されています。猶予期間の長さはコラボの種類や地域によって異なります。「一時的に高くして後で下げる」戦術はすぐには効かない前提で設計してください（※仕様は更新されるため、変更前にセラーセンターの最新の案内を確認してください）。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>セラーは選ぶ側であると同時に、クリエイターから「選ばれる側」になる</h2>
+  <p>アフィリエイトが機能しない典型は、「プランを公開したのに誰も紹介してくれない」状態です。原因はシンプルで、クリエイター側の画面には無数のプランが並んでおり、<strong>セラーは常に他社と見比べられている</strong>からです。クリエイターの目線でプランがどう評価されるかを押さえましょう。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="クリエイターがプランを選ぶ目線の図：料率だけ高く単価が低い・サンプルなしのA社プランはスルーされ、1本あたりの実額が見えてサンプルと資料が付くB社プランが選ばれる">
+      <circle cx="360" cy="52" r="26" fill="#17181C"/>
+      <circle cx="360" cy="45" r="9" fill="rgba(255,255,255,.7)"/>
+      <path d="M342 70 Q360 56 378 70 L378 76 Q360 64 342 76 Z" fill="rgba(255,255,255,.7)"/>
+      <text x="360" y="102" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">クリエイター「どの案件を紹介しよう？」</text>
+      <rect x="55" y="126" width="270" height="164" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="190" y="154" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">A社のプラン</text>
+      <text x="80" y="182" font-size="11.5" fill="#454956">料率 20%・商品単価 980円</text>
+      <text x="80" y="204" font-size="11.5" font-weight="700" fill="#787D8A">→ 1本売れて 196円</text>
+      <text x="80" y="226" font-size="11.5" fill="#787D8A">サンプル提供の記載なし</text>
+      <text x="80" y="248" font-size="11.5" fill="#787D8A">商品ページが未整備</text>
+      <rect x="180" y="260" width="120" height="22" rx="11" fill="#C9CBD4"/>
+      <text x="240" y="276" text-anchor="middle" font-size="10.5" font-weight="800" fill="#454956">スルーされがち</text>
+      <rect x="395" y="126" width="270" height="164" rx="12" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="530" y="154" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">B社のプラン</text>
+      <text x="420" y="182" font-size="11.5" fill="#454956">料率 15%・商品単価 3,000円</text>
+      <text x="420" y="204" font-size="11.5" font-weight="800" fill="#C2203A">→ 1本売れて 450円</text>
+      <text x="420" y="226" font-size="11.5" fill="#454956">サンプル＋オリエン資料つき</text>
+      <text x="420" y="248" font-size="11.5" fill="#454956">商品ページ・発送体制も整備</text>
+      <rect x="545" y="260" width="100" height="22" rx="11" fill="#E8324A"/>
+      <text x="595" y="276" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">選ばれる</text>
+      <text x="360" y="318" text-anchor="middle" font-size="11" fill="#787D8A">料率の「%」より、実額と売りやすさで比較される（数値は説明用の例）</text>
+    </svg>
+    <figcaption>図4：クリエイターの選定目線。%の高さだけでは選ばれない（LEAM作成）</figcaption>
+  </figure>
+  <p>当社がMCNとしてクリエイター側の相談を受ける中で、選ばれるプランに共通する条件は次の5つに集約されます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>選ばれる条件</th><th>クリエイター側の本音</th><th>セラーがやること</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 1本売れた時の実額</b></td><td>「%」より「1本でいくら入るか」で見る</td><td>料率×商品単価の実額が魅力的かを確認する</td></tr>
+      <tr><td><b>② サンプル提供の有無と速さ</b></td><td>現物がないと動画が作れない</td><td>リクエストへの承認・発送を早くする</td></tr>
+      <tr><td><b>③ 商品ページの質</b></td><td>紹介しても着地で離脱すると報酬にならない</td><td>画像・説明文・レビューを整えてから公開する</td></tr>
+      <tr><td><b>④ 紹介のしやすさ</b></td><td>何を言えばいいか調べる手間は掛けたくない</td><td>訴求ポイント・NG表現をまとめた資料を渡す</td></tr>
+      <tr><td><b>⑤ ショップの信頼性</b></td><td>発送遅延や悪評は自分の信用に跳ねる</td><td>発送・カスタマー対応の体制を整える</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>①の「実額」は見落とされがちです。単価980円の商品に20%を付けても1本196円。単価3,000円に15%なら450円です。<strong>低単価商品は料率を上げるだけでは魅力が出にくい</strong>ため、セット販売などで客単価側を動かす発想も持ってください。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>サンプル提供は「選定→承認→資料同梱→フォロー」までがワンセット</h2>
+  <p>ターゲットコラボの武器になるのがサンプル提供です。ただし「希望者全員に送る」「送って終わり」にすると、コストだけ膨らんで動画は増えません。実務は次の4ステップで回します。</p>
+  <ol class="steps">
+    <li><b>送る相手を「販売実績×ジャンル親和性」で選ぶ</b><p>フォロワー数ではなく、過去にどれだけ売ったかで選びます。分析ツールでジャンルごとの販売実績を確認してから打診すると精度が上がります。</p></li>
+    <li><b>サンプルリクエストは基準を決めて素早く承認する</b><p>承認が遅いだけで熱量は下がります。「実績◯件以上は即承認」など自社基準を先に決めておき、判断で止めない運用にします。</p></li>
+    <li><b>オリエン資料を必ずセットにする</b><p>訴求ポイント・使用シーン・NG表現をまとめた簡単な資料を添えます。作り込む必要はなく、1〜2枚で「何を言ってほしいか／言ってはいけないか」が伝われば十分です。</p></li>
+    <li><b>投稿を確認してお礼と継続オファーにつなげる</b><p>投稿されたら必ず見て反応を伝え、売れたクリエイターには料率アップや新商品の先行案内で関係を続けます。単発で終わらせないことが次のヒットの近道です。</p></li>
+  </ol>
+  <h3>オリエン資料の中身：訴求ポイントと「NG表現」を1枚で伝える</h3>
+  <p>資料に入れるのは、①商品の訴求ポイント（どこが刺さるか）、②想定する使用シーン、③NG表現の3点です。特に③は法令対応として必須です。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 薬機法・景品表示法・ステマ規制への対応はセラーの責任範囲</div>
+    <p>クリエイターの投稿でも、<strong>パッケージや承認された範囲にない効果効能を語らせない</strong>のが原則です。薬機法・景品表示法・ステルスマーケティング規制の対象になり得るため、NG表現リストの事前共有と投稿の確認をセットで運用してください（規制の詳細は消費者庁等の一次情報をご確認ください）。</p>
+  </div>
+  <h3>無料サンプルのコストは「選定」で管理する</h3>
+  <p>サンプルは本数を配るほど動画が増える一方、コストも比例します。実務的には、<strong>実績のあるクリエイターへ優先的に配り、成果を見て対象を広げる</strong>順番が安全です。リクエストが多く来ること自体は良い兆候なので、承認基準を明文化して機械的にさばける状態を作りましょう。</p>
+
+  <div class="ctabox">
+    <div class="ct">「誰に打診するか」の選定、一次データからお手伝いします</div>
+    <p>LEAMは市場データを毎営業日蓄積し、商品ジャンルごとに「現に売れているクリエイター」を実績ベースで特定できます。打診リストの設計からサンプル運用まで、実務単位でご相談ください。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>始め方は5ステップ：プラン公開そのものは難しくない</h2>
+  <p>設定自体はシンプルで、迷うのは「率と相手」だけです。大まかな流れは次の通りです（※管理画面の名称・画面構成は更新されることがあります。最新の表記は公式ヘルプをご確認ください）。</p>
+  <ol class="steps">
+    <li><b>TikTok Shopに出店し、商品を登録する</b><p>出店・商品登録が済んでいることが前提です。審査や出店条件は変わることがあるため、最新は公式で確認してください。</p></li>
+    <li><b>アフィリエイトセンターでプランを作成する</b><p>商品ごとにコミッション率を設定し、まずオープンコラボのプランを公開します。率は§03の考え方で決めます。</p></li>
+    <li><b>ターゲットコラボで初期のクリエイターに打診する</b><p>ジャンル親和性と販売実績で候補を絞り、個別条件でオファーを送ります。最初から大人数に送るより、確度の高い相手に丁寧に打診する方が返答率は上がります。</p></li>
+    <li><b>サンプルとオリエン資料を送る</b><p>§05の実務どおり、現物と「何を言ってほしいか」をセットで渡します。</p></li>
+    <li><b>成果を見て、料率と打診先を調整する</b><p>アフィリエイトの管理画面では売上・注文数・クリック数・コミッション支払額などの成果が確認できます。週次で見て、当たった商品×クリエイターの組み合わせに寄せていきます。</p></li>
+  </ol>
+
+  <h2 id="s7"><span class="no en">07</span>成果は「1人のヒット」ではなく「本数の積み上げ」で伸ばす</h2>
+  <p>TikTokのアルゴリズム上、<strong>どの動画が跳ねるかは事前に予測できません</strong>。有名クリエイター1人に賭けるより、中小クリエイターを含めて紹介動画の総本数を増やす方が、ヒットの出る確率を構造的に上げられます。再現性を求めるなら「本数」です。</p>
+  <h3>見るべき指標：売上より先に「動画本数」を追う</h3>
+  <p>週次で見るのは、①紹介動画の本数（先行指標）、②リンク経由の売上と注文数、③コミッション支払額と利益の残り方、の3層です。売上は動画本数の結果として遅れて出てくるため、<strong>本数が増えていない週は、翌週以降の売上も伸びない</strong>と考えて手を打ちます。</p>
+  <h3>当たった型は、別のクリエイターへ横展開する</h3>
+  <p>売れた動画が出たら、その訴求・構成を「型」として整理し、オリエン資料に反映して他のクリエイターにも展開します。1本のヒットを「1回の幸運」で終わらせず、<strong>型×人数で再現していく</strong>のがアフィリエイト運用の本体です。どの型が当たっているかの判断は感覚ではなく、動画ごとの成果データで裏を取ってから広げます。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>本数を積む設計は、料率を0.5%刻みで悩むより成果に効きます。<strong>「多くのクリエイターが参加しやすいプランか」を先に整え、料率の微調整は後から</strong>で構いません。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>まとめ：アフィリエイト設計がTikTok Shopの勝敗を分ける</h2>
+  <p>最後に要点を整理します。TikTok Shopのアフィリエイトは完全成果報酬型で、セラー側のリスクは小さい一方、<strong>プランは常にクリエイターから比較・選別されています</strong>。①コミッション率の設計（下限10%目安・上限は利益計算・競合比較）、②クリエイター選定（フォロワー数でなく販売実績）、③紹介しやすい環境づくり（サンプル・オリエン資料・商品ページ）——この3点をセットで整えることが、売上を伸ばす最短ルートです。逆に、どれか1つでも欠けると「プランはあるのに誰も動かない」状態に陥ります。まずは主力商品1つで、この3点が揃っているかを確認するところから始めてください。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>コミッション率は何%に設定すればいいですか？</summary><div class="a">実務では10〜15%前後を起点に、商品の粗利構造と競合の設定率を見て調整します。10%を下回ると取り上げられにくくなる傾向があり、人気クリエイターを指名する場合は15%以上を設定するケースもあります。</div></details>
+    <details><summary>クリエイター側の参加条件はありますか？</summary><div class="a">18歳以上・フォロワー1,000人以上・コミュニティガイドラインの遵守が基本条件です。条件は変更されることがあるため、最新はTikTok Shop公式ヘルプで確認してください。</div></details>
+    <details><summary>コミッション率は後から変更できますか？</summary><div class="a">変更できます。ただし引き下げの場合、既存の提携クリエイターへ即時反映されず、一定の猶予期間を置いてから適用される仕様が案内されています。猶予期間の長さはコラボの種類や地域によって異なり、仕様も更新されることがあるため、変更前にセラーセンターの最新の案内を確認してください。</div></details>
+    <details><summary>サンプルは希望者全員に送るべきですか？</summary><div class="a">全員には送らず、販売実績と商品ジャンルの親和性で対象を選ぶのが実務的です。無料サンプルはコストが膨らみやすいため、「誰に送るか」の選定が費用対効果を左右します。</div></details>
+    <details><summary>フォロワーの多いクリエイターに頼めば売れますか？</summary><div class="a">フォロワー数と販売力は別物です。過去にどれだけ売ったかという販売実績で選ぶ方が再現性が高く、分析ツールで商品ジャンルごとの実績を確認してから打診することをおすすめします。</div></details>
+    <details><summary>自社で動画を作らず、アフィリエイトだけで売ることはできますか？</summary><div class="a">アフィリエイト経由の販売を主軸にする設計は可能ですが、クリエイターが紹介した後の受け皿となる商品ページや発送体制が整っていないと成果につながりません。土台とセットで設計してください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="./creator-commission.html"><span class="rc">クリエイター</span><b>クリエイターへの報酬相場と決め方【TikTok Shopセラー向け】</b><span>コミッション設計の各論はこちら</span></a>
+      <a class="relcard" href="./tiktok-shop-fees.html"><span class="rc">手数料</span><b>TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</b><span>上限計算の前提になる料率</span></a>
+      <a class="relcard" href="./what-is-tiktok-shop.html"><span class="rc">基礎</span><b>TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</b><span>これから出店する方はまず</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・アフィリエイト設計のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・アフィリエイトセンターの公式ヘルプ（コミッション・販売手数料の料率、参加条件、画面仕様は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">仕組み：成果報酬で売ってもらう</a></li>
+        <li><a href="#s2">プランは2種類（オープン／ターゲット）</a></li>
+        <li><a href="#s3">コミッション率の決め方</a></li>
+        <li><a href="#s4">クリエイターから選ばれる条件</a></li>
+        <li><a href="#s5">サンプル提供の実務</a></li>
+        <li><a href="#s6">始め方5ステップ</a></li>
+        <li><a href="#s7">本数の積み上げで伸ばす</a></li>
+        <li><a href="#s8">まとめ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>アフィリエイト設計の無料相談</b>
+      <p>コミッション設計・打診リスト・サンプル運用まで、実務単位で相談できます。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】｜プラン設計から「選ばれる条件」まで",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "コミッション率は何%に設定すればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "実務では10〜15%前後を起点に、商品の粗利構造と競合の設定率を見て調整します。10%を下回ると取り上げられにくくなる傾向があり、人気クリエイターを指名する場合は15%以上を設定するケースもあります。"}},
+        {"@type": "Question", "name": "クリエイター側の参加条件はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "18歳以上・フォロワー1,000人以上・コミュニティガイドラインの遵守が基本条件です。条件は変更されることがあるため、最新はTikTok Shop公式ヘルプで確認してください。"}},
+        {"@type": "Question", "name": "コミッション率は後から変更できますか？", "acceptedAnswer": {"@type": "Answer", "text": "変更できます。ただし引き下げの場合、既存の提携クリエイターへ即時反映されず、一定の猶予期間を置いてから適用される仕様が案内されています。猶予期間の長さはコラボの種類や地域によって異なり、仕様も更新されることがあるため、変更前にセラーセンターの最新の案内を確認してください。"}},
+        {"@type": "Question", "name": "サンプルは希望者全員に送るべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "全員には送らず、販売実績と商品ジャンルの親和性で対象を選ぶのが実務的です。無料サンプルはコストが膨らみやすいため、「誰に送るか」の選定が費用対効果を左右します。"}},
+        {"@type": "Question", "name": "フォロワーの多いクリエイターに頼めば売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "フォロワー数と販売力は別物です。過去にどれだけ売ったかという販売実績で選ぶ方が再現性が高く、分析ツールで商品ジャンルごとの実績を確認してから打診することをおすすめします。"}},
+        {"@type": "Question", "name": "自社で動画を作らず、アフィリエイトだけで売ることはできますか？", "acceptedAnswer": {"@type": "Answer", "text": "アフィリエイト経由の販売を主軸にする設計は可能ですが、クリエイターが紹介した後の受け皿となる商品ページや発送体制が整っていないと成果につながりません。土台とセットで設計してください。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

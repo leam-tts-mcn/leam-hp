@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの商品登録と売れる商品ページの作り方</title>
+<meta name="description" content="TikTok Shopの商品登録の手順と、購入率を落とさない商品ページの作り方を、画像・説明文・バリエーションの設計から解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/product-page-cvr/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの商品登録と売れる商品ページの作り方">
+<meta property="og:description" content="TikTok Shopの商品登録の手順と、購入率を落とさない商品ページの作り方を、画像・説明文・バリエーションの設計から解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/product-page-cvr/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの商品登録と売れる商品ページの作り方">
+<meta name="twitter:description" content="TikTok Shopの商品登録の手順と、購入率を落とさない商品ページの作り方を、画像・説明文・バリエーションの設計から解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの商品登録と売れる商品ページの作り方", "description": "TikTok Shopの商品登録の手順と、購入率を落とさない商品ページの作り方を、画像・説明文・バリエーションの設計から解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/product-page-cvr/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの商品登録と売れる商品ページの作り方", "item": "https://leam.co.jp/column/product-page-cvr/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 商品登録と売れる商品ページの作り方</p>
+  <span class="cat">出店・商品登録</span>
+  <h1>TikTok Shopの商品登録と売れる商品ページの作り方｜CVRを落とさない設計</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="商品ページの作り込み：左に赤いメイン画像の枠、右にサムネイル・商品名・レビューの星・価格が縦に積まれた商品ページ、その下に大きなシアンの購入ボタンを置いたイラスト">
+  <defs>
+    <path id="st" d="M0 -28 6.33 -8.71 26.63 -8.65 10.24 3.33 16.46 22.65 0 10.77 -16.46 22.65 -10.24 3.33 -26.63 -8.65 -6.33 -8.71Z"/>
+  </defs>
+
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v306c-104 40-198 52-296 34-112-20-198-58-314-56-118 2-208 46-322 56-104 9-192-4-268-34z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="250" rx="292" ry="202" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="944" cy="24" r="5"/><circle cx="980" cy="24" r="5"/><circle cx="1016" cy="24" r="5"/><circle cx="1052" cy="24" r="5"/>
+      <circle cx="944" cy="58" r="5"/><circle cx="980" cy="58" r="5"/><circle cx="1016" cy="58" r="5"/><circle cx="1052" cy="58" r="5"/>
+      <circle cx="944" cy="92" r="5"/><circle cx="980" cy="92" r="5"/><circle cx="1016" cy="92" r="5"/><circle cx="1052" cy="92" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(-908 472)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 536c150-34 288-20 418 4 126 23 240 30 360 8 122-22 238-50 422-30v112H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：縦に積まれた商品ページ ================= -->
+  <g>
+    <rect x="712" y="108" width="396" height="424" rx="20" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="712" y="108" width="396" height="424" rx="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- ① サムネイル列（先頭が選択中） -->
+    <rect x="744" y="146" width="68" height="68" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="832" y="146" width="68" height="68" rx="9" fill="#DFE0E2" stroke="#C9CBD0" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="920" y="146" width="68" height="68" rx="9" fill="#DFE0E2" stroke="#C9CBD0" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="1008" y="146" width="68" height="68" rx="9" fill="#DFE0E2" stroke="#C9CBD0" stroke-width="4" stroke-linejoin="round"/>
+
+    <!-- ② 商品名 -->
+    <g fill="#DFE0E2">
+      <rect x="744" y="250" width="300" height="14" rx="7"/>
+      <rect x="744" y="280" width="226" height="14" rx="7"/>
+    </g>
+
+    <!-- ③ レビューの星（シアン） -->
+    <g stroke="#0B0C10" stroke-width="6.5" stroke-linejoin="round" fill="#25F4EE">
+      <use href="#st" transform="translate(778 344) scale(0.92)"/>
+      <use href="#st" transform="translate(841 344) scale(0.92)"/>
+      <use href="#st" transform="translate(904 344) scale(0.92)"/>
+      <use href="#st" transform="translate(967 344) scale(0.92)"/>
+      <use href="#st" transform="translate(1030 344) scale(0.92)"/>
+    </g>
+
+    <!-- ④ 価格 -->
+    <rect x="744" y="394" width="176" height="26" rx="13" fill="#DFE0E2"/>
+    <rect x="944" y="400" width="86" height="14" rx="7" fill="#C9CBD0"/>
+
+    <!-- 仕切り -->
+    <rect x="744" y="448" width="332" height="4" rx="2" fill="#C9CBD0"/>
+
+    <!-- ⑤ 説明・配送 -->
+    <g fill="#DFE0E2">
+      <rect x="744" y="478" width="210" height="14" rx="7"/>
+      <rect x="744" y="504" width="150" height="14" rx="7"/>
+    </g>
+
+    <!-- スクロールバー（縦に長いページ） -->
+    <rect x="1086" y="140" width="9" height="364" rx="4.5" fill="#DFE0E2"/>
+    <rect x="1086" y="140" width="9" height="132" rx="4.5" fill="#0B0C10"/>
+  </g>
+
+  <!-- ================= 左：メイン画像の枠（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="72" y="112" width="496" height="358" rx="18" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <!-- 裏面（重なった画像） -->
+    <rect x="104" y="86" width="496" height="358" rx="18" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 前面 -->
+    <rect x="72" y="112" width="496" height="358" rx="18" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 商品のシルエット -->
+    <g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round">
+      <path d="M302 214h36v26c22 8 40 28 40 52v96a22 22 0 0 1-22 22h-72a22 22 0 0 1-22-22v-96c0-24 18-44 40-52z" fill="#DFE0E2"/>
+      <rect x="294" y="184" width="52" height="34" rx="9" fill="#FFFFFF"/>
+    </g>
+    <rect x="282" y="306" width="76" height="56" rx="9" fill="#FFFFFF"/>
+
+    <!-- 枠のハンドル（メイン画像の枠であることを示す） -->
+    <g fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round">
+      <rect x="62" y="102" width="20" height="20" rx="4"/>
+      <rect x="310" y="102" width="20" height="20" rx="4"/>
+      <rect x="558" y="102" width="20" height="20" rx="4"/>
+      <rect x="62" y="281" width="20" height="20" rx="4"/>
+      <rect x="558" y="281" width="20" height="20" rx="4"/>
+      <rect x="62" y="460" width="20" height="20" rx="4"/>
+      <rect x="310" y="460" width="20" height="20" rx="4"/>
+      <rect x="558" y="460" width="20" height="20" rx="4"/>
+    </g>
+  </g>
+
+  <!-- ================= 下：購入ボタン（シアン） ================= -->
+  <g>
+    <rect x="164" y="490" width="512" height="116" rx="58" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="164" y="490" width="512" height="116" rx="58" fill="#25F4EE" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- 買い物袋 -->
+    <path d="M238 535v-8a19 19 0 0 1 38 0v8" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+    <path d="M226 533h62l-5 46a13 13 0 0 1-13 10h-26a13 13 0 0 1-13-10z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- ボタンのラベル面 -->
+    <rect x="330" y="536" width="180" height="24" rx="12" fill="#FFFFFF"/>
+
+    <!-- カーソル -->
+    <g transform="translate(578 514) scale(1.3)">
+      <path d="M0 0 0 46 12 34 20 52 32 46 24 29 40 27Z" fill="#0B0C10" stroke="#FFFFFF" stroke-width="6" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 押した合図 -->
+    <g fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round">
+      <path d="M640 530a22 22 0 0 1 0 30"/>
+      <path d="M654 520a32 32 0 0 1 0 48"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1152" cy="62" r="22" fill="#25F4EE"/>
+  <circle cx="656" cy="180" r="16" fill="#DFE0E2"/>
+  <circle cx="648" cy="268" r="11" fill="#25F4EE"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの商品登録そのものは、Seller Center（セラー管理画面）から進めるシンプルな入力作業です。</strong>ただし、登録項目を「埋めただけ」の商品ページは、動画で「欲しい」と思って飛んできたユーザーの熱をページ上で冷ましてしまいます。TikTok Shopの商品ページは検索の受け皿ではなく<strong>「動画の続き」</strong>です。この記事では、商品登録の具体的な手順に加えて、動画経由のユーザーを離脱させない商品ページの設計（画像の枚数と順番・説明文の型・レビュー運用）、登録前に潰しておくべきNG表現までをまとめて解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>Seller Centerでの商品登録6ステップと、登録前にそろえる素材の一覧</li>
+      <li>「動画を見て来た人」を離脱させない画像・説明文・価格の設計</li>
+      <li>審査差し戻しやショップ評価の低下につながるNG表現と、公開後のレビュー運用</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">商品ページが「売れる設計」になっているか、無料で診断します</div>
+    <p>商品登録は入口にすぎません。LEAMは画像構成・説明文・レビュー運用まで、動画経由のCVR目線で現状のページを拝見し、直すべき順番を率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">商品登録の前に：商品ページは「検索の受け皿」ではなく「動画の続き」</a></li>
+      <li><a href="#s2">登録前の準備で7割決まる：素材と情報を一式そろえてから管理画面を開く</a></li>
+      <li><a href="#s3">商品登録の手順は6ステップ：迷いどころはカテゴリ・価格・配送の3つ</a></li>
+      <li><a href="#s4">商品名と説明文は「動画を見て来た人」の語彙で書く</a></li>
+      <li><a href="#s5">画像は枚数より「順番」で設計する：1枚目は動画の続きにする</a></li>
+      <li><a href="#s6">NG表現は登録前に潰す：誇張はショップ全体のリスクになる</a></li>
+      <li><a href="#s7">登録後が本番：レビュー運用とクリエイター起用でページを育てる</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>商品登録の前に：商品ページは「検索の受け皿」ではなく「動画の続き」</h2>
+  <p>楽天市場やAmazonのようなモール型ECでは、ユーザーは欲しいものを<strong>検索して</strong>やって来ます。商品ページの仕事は、検索結果に並ぶ競合と比較された上で選ばれることです。一方TikTok Shopのユーザーは、おすすめフィードで動画を見て「なにこれ、欲しい」と温度が上がった状態のまま商品ページに着地します。<strong>比較検討のためではなく、確認のために来ている</strong>のが最大の違いです。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="モール型ECとTikTok Shopの購買動線の対比図：モール型は検索して比較してから購入するが、TikTok Shopは動画で欲しくなった状態で商品ページに来て購入する">
+      <rect x="20" y="20" width="330" height="250" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="50" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">モール型EC（検索型）</text>
+      <rect x="95" y="66" width="180" height="30" rx="15" fill="#fff" stroke="#AEB2BE"/>
+      <circle cx="115" cy="81" r="7" fill="none" stroke="#787D8A" stroke-width="2"/>
+      <line x1="120" y1="86" x2="126" y2="92" stroke="#787D8A" stroke-width="2"/>
+      <text x="138" y="86" font-size="11.5" fill="#787D8A">キーワードで検索</text>
+      <path d="M185 96 V112" stroke="#787D8A" stroke-width="2"/>
+      <rect x="70" y="116" width="66" height="58" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="152" y="116" width="66" height="58" rx="8" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <rect x="234" y="116" width="66" height="58" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <text x="185" y="196" text-anchor="middle" font-size="11.5" fill="#787D8A">並べて比較してから選ぶ</text>
+      <path d="M185 202 V216" stroke="#787D8A" stroke-width="2"/>
+      <rect x="130" y="220" width="110" height="32" rx="16" fill="#17181C"/>
+      <text x="185" y="241" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">購入</text>
+      <text x="185" y="296" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">ページの仕事＝「比較で勝つ」</text>
+      <rect x="370" y="20" width="330" height="250" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="50" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">TikTok Shop（発見型）</text>
+      <rect x="400" y="66" width="92" height="150" rx="10" fill="#3E2A63"/>
+      <circle cx="446" cy="126" r="20" fill="rgba(255,255,255,.25)"/>
+      <path d="M439 115 L458 126 L439 137 Z" fill="#fff"/>
+      <text x="446" y="200" text-anchor="middle" font-size="10" fill="#fff" opacity=".85">おすすめ動画</text>
+      <path d="M498 140 H520" stroke="#E8324A" stroke-width="2"/>
+      <path d="M514 134 L524 140 L514 146 Z" fill="#E8324A"/>
+      <rect x="530" y="76" width="146" height="130" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <rect x="542" y="88" width="52" height="52" rx="6" fill="#F3A7B5"/>
+      <rect x="602" y="92" width="64" height="9" rx="4" fill="#C9CBD4"/>
+      <rect x="602" y="108" width="46" height="9" rx="4" fill="#E6E7EB"/>
+      <text x="602" y="136" font-size="13" font-weight="800" fill="#E8324A">¥3,980</text>
+      <text x="542" y="164" font-size="10.5" fill="#8A5A00">★★★★★</text>
+      <rect x="542" y="172" width="120" height="22" rx="6" fill="#E8324A"/>
+      <text x="602" y="187" text-anchor="middle" font-size="10" font-weight="800" fill="#fff">カートに入れる</text>
+      <text x="603" y="226" text-anchor="middle" font-size="10.5" fill="#787D8A">商品ページ＝動画の続き</text>
+      <path d="M603 232 V240" stroke="#787D8A" stroke-width="2"/>
+      <rect x="548" y="242" width="110" height="24" rx="12" fill="#17181C"/>
+      <text x="603" y="259" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">そのまま購入</text>
+      <text x="535" y="296" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">ページの仕事＝「温度を下げない」</text>
+    </svg>
+    <figcaption>図1：購買動線の違い。TikTok Shopの商品ページは比較の場ではなく「動画の続き」（LEAM作成）</figcaption>
+  </figure>
+  <p>この違いは、商品ページの作り方を根本から変えます。検索型のページで重視される「スペックの網羅」や「比較優位の主張」よりも先に、TikTok Shopでは<strong>動画で見た内容とページの内容が一致していること、購入をためらわせる不安をその場で消すこと</strong>が優先されます。動画とページの印象がズレた瞬間、ユーザーはフィードに戻り、多くの場合は二度と帰ってきません。</p>
+  <div class="box box-point">
+    <div class="bt">💡 CVR（購入率）とは</div>
+    <p>商品ページに来た人のうち、実際に購入した人の割合です。広告やアフィリエイトで流入を増やすほど、<strong>CVRの差がそのまま広告効率の差</strong>になります。商品登録は単なる入力作業ではなく、この分母をつくる工程だと捉えてください。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>登録前の準備で7割決まる：素材と情報を一式そろえてから管理画面を開く</h2>
+  <p>管理画面を開いてから素材を探し始めると、入力が中断されるだけでなく「とりあえず埋める」品質のまま公開してしまいがちです。先に次の一式をそろえてから登録に入ってください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>準備する項目</th><th>内容</th><th>ポイント</th></tr></thead>
+    <tbody>
+      <tr><td><b>商品名の候補</b></td><td>先頭に魅力、後半に検索語を置いた案を2〜3本</td><td>文字数の上限は管理画面で確認（§04で型を解説）</td></tr>
+      <tr><td><b>商品画像</b></td><td>メイン1枚＋役割を決めたサブ画像一式</td><td>上限枚数・サイズ・形式の要件は公式ヘルプで確認（§05で設計）</td></tr>
+      <tr><td><b>商品動画</b></td><td>ページに掲載する短尺の実写動画</td><td>ブランドムービーより「実際に使っている映像」</td></tr>
+      <tr><td><b>説明文の下書き</b></td><td>5ブロックの型で作成（§04）</td><td>サイズ・素材などスペックの漏れは低評価レビューの温床</td></tr>
+      <tr><td><b>価格・在庫</b></td><td>手数料と報酬を引いた「手残り」から逆算</td><td>桁間違い・在庫0のまま公開が定番ミス</td></tr>
+      <tr><td><b>配送・返品の条件</b></td><td>発送リードタイム・送料・返品対応</td><td>発送遅延はショップ評価に直結する</td></tr>
+      <tr><td><b>法令・権利の確認</b></td><td>薬機法等の規制対象か、商標・真正性の裏付け</td><td>迷う場合は公的資料・専門家に確認（§06）</td></tr>
+    </tbody>
+  </table></div>
+  <h3>価格は「手残り」から逆算する：手数料とクリエイター報酬を先に引く</h3>
+  <p>価格設定の解説は「相場と送料を考えて決める」で終わりがちですが、TikTok Shopではさらに2つ引くものがあります。<strong>販売手数料と、アフィリエイトでクリエイターに支払うコミッション</strong>です。ここを引き忘れた価格で登録すると、売れてから「出るはずの利益が出ない」ことに気づくことになります。</p>
+  <figure>
+    <svg viewBox="0 0 720 210" role="img" aria-label="販売価格の内訳図：原価・販売手数料・クリエイター報酬・送料等を引いた残りが利益と広告に使える余地になる">
+      <text x="30" y="45" font-size="12.5" font-weight="700" fill="#454956">販売価格 3,980円（説明用の例）</text>
+      <rect x="30" y="60" width="660" height="52" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="190" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="220" y="60" width="95" height="52" fill="#AEB2BE"/>
+      <rect x="315" y="60" width="95" height="52" fill="#8F94A3"/>
+      <rect x="410" y="60" width="90" height="52" fill="#787D8A"/>
+      <rect x="500" y="60" width="190" height="52" rx="8" fill="#E8324A"/>
+      <text x="125" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">原価</text>
+      <text x="267" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">販売手数料</text>
+      <text x="362" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">CR報酬</text>
+      <text x="455" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">送料等</text>
+      <text x="595" y="85" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">利益＋広告の余地</text>
+      <text x="595" y="103" text-anchor="middle" font-size="11" fill="#FDEEF1">＝ここから逆算して価格を決める</text>
+      <path d="M500 125 V150 M690 125 V150 M500 150 H690" stroke="#E8324A" stroke-width="1.5" fill="none"/>
+      <text x="595" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">この帯が薄い価格は、登録した時点で苦しい</text>
+    </svg>
+    <figcaption>図2：価格は登録前に「手残り」から逆算する。手数料とクリエイター報酬を引き忘れない（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 手数料の料率は必ず最新の公式情報で確認</div>
+    <p>販売手数料の料率や優遇施策は改定されることがあります。試算はSeller Centerの最新のヘルプ・告知で確認してください。手数料の全体像は姉妹記事「TikTok Shopの手数料完全ガイド」で詳しく解説しています。</p>
+  </div>
+  <h3>在庫は「確実に出荷できる数」で入れる：発送遅延はページより先にショップを傷つける</h3>
+  <p>在庫を多めに登録して受注後に慌てるより、確実に出荷できる数で始めるのが安全です。TikTok Shopでは発送のリードタイムがショップの評価に反映されるため、発送遅延は商品単体ではなく<strong>ショップ全体の露出と信頼に響きます</strong>。出荷体制の組み方は姉妹記事「発送ルールと出荷体制」も参考にしてください。</p>
+
+  <h2 id="s3"><span class="no en">03</span>商品登録の手順は6ステップ：迷いどころはカテゴリ・価格・配送の3つ</h2>
+  <p>出店審査を通過してSeller Centerが使える状態になっていれば、商品登録の流れは次の6ステップです（※管理画面の名称・構成は更新されることがあります。最新の表記は公式ヘルプで確認してください。出店がまだの方は姉妹記事「出店条件と審査完全ガイド」からどうぞ）。</p>
+  <ol class="steps">
+    <li><b>Seller Centerにログインし、商品管理から新規登録を開く</b><p>出品用の入力画面に入ります。下書き保存ができるとはいえ、§02の素材一式を先にそろえておくと一気に進められます。</p></li>
+    <li><b>カテゴリを選ぶ</b><p>誤ったカテゴリは検索・露出の両方に響き、審査差し戻しの原因にもなります。迷ったら、同じ商材が実際にどのカテゴリで売られているかを先に確認してから選びます。</p></li>
+    <li><b>商品名と説明文を入力する</b><p>§04の型で作った下書きを流し込みます。管理画面上でゼロから書き始めないのがコツです。</p></li>
+    <li><b>画像・動画をアップロードする</b><p>§05で設計した順番どおりに並べます。形式やサイズではじかれた場合は、公式ヘルプの規定を確認して作り直します。</p></li>
+    <li><b>価格・在庫・バリエーションを設定する</b><p>桁の確認はもちろん、色・サイズなどバリエーションごとの価格と在庫の「入れ違い」が定番ミスです。公開前に一覧で見直します。</p></li>
+    <li><b>配送設定を確認して提出する</b><p>発送元・リードタイム・送料を確認して提出します。提出後は審査があり、通過すると公開されます。</p></li>
+  </ol>
+  <h3>審査で差し戻される原因の多くは「表現」と「画像」</h3>
+  <p>商品自体は販売できるのに、説明文の誇張表現や、画像内の文字・ロゴ・比較表現が原因で差し戻されるケースは珍しくありません。§06のNG表現を提出前にチェックしてください。そもそも出品に制限があるカテゴリに該当していないかは、姉妹記事「禁止商品・制限商品ガイド」と公式ポリシーで確認できます。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 審査基準・所要時間は変わる</div>
+    <p>審査の基準や所要時間は、商材・時期によって変わります。「何営業日で通る」と決め打ちせず、販売開始日から逆算して余裕を持って提出してください。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>商品名と説明文は「動画を見て来た人」の語彙で書く</h2>
+  <p>商品名と説明文は、検索エンジン向けに書く癖が抜けないままだと空回りします。読み手は「検索してきた人」ではなく「動画を見て興味を持った人」。使う言葉も情報の順番も、そちらに合わせます。</p>
+  <h3>商品名の型：先頭に「動画で刺さった魅力」、後半に検索語</h3>
+  <p>商品名の先頭は、カートや注文一覧で最初に目に入る部分です。「【公式】」や型番から始めるのではなく、動画で反応が取れている訴求（軽い・時短・大容量など）を先頭に置き、ブランド名・型番・検索語は後半にまとめます。検索経由の流入も一定あるため検索語を捨てる必要はありませんが、<strong>詰め込みで先頭が濁るくらいなら削る</strong>のが実務的な判断です。</p>
+  <h3>説明文は5ブロックの型で書く：上から「結論→シーン→スペック→不安解消→案内」</h3>
+  <div class="tw"><table>
+    <thead><tr><th>ブロック</th><th>書くこと</th><th>書き方のポイント</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 結論</b></td><td>この商品が何を解決するかを1〜2行で</td><td>流入元の動画のフックと同じ言葉を使う</td></tr>
+      <tr><td><b>② 使用シーン</b></td><td>誰が・いつ使うと・何が変わるか</td><td>動画に出てきたシーンを文字でも再現する</td></tr>
+      <tr><td><b>③ スペック</b></td><td>サイズ・素材・容量・内容物・対応環境</td><td>箇条書きで漏れなく。ここの漏れが低評価の温床</td></tr>
+      <tr><td><b>④ 不安解消</b></td><td>返品・保証・よくある質問への先回り</td><td>問い合わせとレビューから逆算して追記していく</td></tr>
+      <tr><td><b>⑤ 案内</b></td><td>発送目安・同梱物・セット買いの提案</td><td>客単価を上げる導線もここに置く</td></tr>
+    </tbody>
+  </table></div>
+  <p>特に③のスペック漏れは、購入前の離脱だけでなく<strong>購入後の「思っていたのと違う」レビュー</strong>に直結します。低評価レビューはその後のCVRを下げ続けるため、スペックの網羅は守りの投資です。</p>
+  <div class="box box-point">
+    <div class="bt">💡 説明文は公開してからも育てる</div>
+    <p>問い合わせと低評価レビューは「説明文に足りなかった情報」のリストです。週次でページに反映すれば、商品ページは売るほど強くなります。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>画像は枚数より「順番」で設計する：1枚目は動画の続きにする</h2>
+  <p>画像で最初に決めるのは、加工の質ではなく「何枚目に何を置くか」です。当社が運用で使っている基本形は次の通りです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>位置</th><th>役割</th><th>置くもの</th></tr></thead>
+    <tbody>
+      <tr><td><b>1枚目（メイン）</b></td><td class="y">動画の続き</td><td>動画と同じ使用シーン・同じトーン。白背景の物撮りより「動画の記憶」との一致を優先</td></tr>
+      <tr><td><b>2〜3枚目</b></td><td>欲しい理由の補強</td><td>ベネフィットが一目で分かるシーンカット</td></tr>
+      <tr><td><b>4〜5枚目</b></td><td>不安つぶし</td><td>サイズ感の比較・素材のアップ・使い方の手順</td></tr>
+      <tr><td><b>6〜7枚目</b></td><td>選ばせる</td><td>色・サイズのバリエーション一覧、セット内容</td></tr>
+      <tr><td><b>それ以降</b></td><td>背中押し</td><td>保証・同梱物・ブランドの信頼要素</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="商品画像カルーセルの設計図：1枚目は動画の続き、2〜3枚目で欲しい理由を補強、4〜5枚目で不安を消し、6枚目以降で選ばせて背中を押す">
+      <text x="360" y="28" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">カルーセルの並び順 ＝「不安が消えていく順」</text>
+      <rect x="30" y="46" width="150" height="120" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <circle cx="52" cy="68" r="13" fill="#E8324A"/><text x="52" y="73" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+      <text x="105" y="105" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">メイン</text>
+      <text x="105" y="126" text-anchor="middle" font-size="11" fill="#454956">動画と同じシーン</text>
+      <text x="105" y="144" text-anchor="middle" font-size="11" fill="#454956">「動画の続き」にする</text>
+      <rect x="205" y="46" width="150" height="120" rx="12" fill="#fff" stroke="#E6E7EB"/>
+      <circle cx="227" cy="68" r="13" fill="#17181C"/><text x="227" y="73" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+      <text x="280" y="105" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">使用シーン</text>
+      <text x="280" y="126" text-anchor="middle" font-size="11" fill="#787D8A">誰がいつ使うか</text>
+      <rect x="380" y="46" width="150" height="120" rx="12" fill="#fff" stroke="#E6E7EB"/>
+      <circle cx="402" cy="68" r="13" fill="#17181C"/><text x="402" y="73" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
+      <text x="455" y="105" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">ベネフィット</text>
+      <text x="455" y="126" text-anchor="middle" font-size="11" fill="#787D8A">何が変わるか</text>
+      <rect x="555" y="46" width="150" height="120" rx="12" fill="#fff" stroke="#E6E7EB"/>
+      <circle cx="577" cy="68" r="13" fill="#17181C"/><text x="577" y="73" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">4</text>
+      <text x="630" y="105" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">サイズ感</text>
+      <text x="630" y="126" text-anchor="middle" font-size="11" fill="#787D8A">手・身体との比較</text>
+      <rect x="30" y="186" width="150" height="120" rx="12" fill="#fff" stroke="#E6E7EB"/>
+      <circle cx="52" cy="208" r="13" fill="#17181C"/><text x="52" y="213" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">5</text>
+      <text x="105" y="245" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">素材・使い方</text>
+      <text x="105" y="266" text-anchor="middle" font-size="11" fill="#787D8A">アップと手順</text>
+      <rect x="205" y="186" width="150" height="120" rx="12" fill="#fff" stroke="#E6E7EB"/>
+      <circle cx="227" cy="208" r="13" fill="#17181C"/><text x="227" y="213" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">6</text>
+      <text x="280" y="245" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">バリエーション</text>
+      <text x="280" y="266" text-anchor="middle" font-size="11" fill="#787D8A">色・サイズ一覧</text>
+      <rect x="380" y="186" width="150" height="120" rx="12" fill="#fff" stroke="#E6E7EB"/>
+      <circle cx="402" cy="208" r="13" fill="#17181C"/><text x="402" y="213" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">7</text>
+      <text x="455" y="245" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">セット内容</text>
+      <text x="455" y="266" text-anchor="middle" font-size="11" fill="#787D8A">同梱物を並べる</text>
+      <rect x="555" y="186" width="150" height="120" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <circle cx="577" cy="208" r="13" fill="#0E8A5F"/><text x="577" y="213" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">8</text>
+      <text x="630" y="245" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0E8A5F">保証・信頼</text>
+      <text x="630" y="266" text-anchor="middle" font-size="11" fill="#454956">最後の背中押し</text>
+      <text x="360" y="330" text-anchor="middle" font-size="11.5" fill="#787D8A">前半＝温度を保つ ／ 中盤＝不安を消す ／ 後半＝背中を押す（上限枚数は管理画面で確認）</text>
+    </svg>
+    <figcaption>図3：画像カルーセルの設計。枚数を埋めるのではなく、役割を決めて並べる（LEAM作成）</figcaption>
+  </figure>
+  <p>モール型ECで定番の「白背景・商品単体のメイン画像」は、TikTok Shopでは必ずしも正解ではありません。動画で見た商品と1枚目の印象がつながらないと、ユーザーは「これじゃない」と感じてフィードに戻ってしまいます。<strong>1枚目は物撮りではなく、動画のサムネイルに近い発想で作る</strong>のが当社の運用実感です。</p>
+  <h3>動画枠には「実際に使っている映像」を置く</h3>
+  <p>商品ページには動画も掲載できます。ここに置くべきはブランドムービーではなく、使用感が伝わる実写です。アフィリエイトでクリエイターの動画が増えてきたら、反応の良かった動画の構成をページ用に作り直すと、流入動画とページの一貫性がさらに高まります。</p>
+
+  <div class="ctabox">
+    <div class="ct">画像構成と説明文の「型」、自社商品への当てはめまで支援します</div>
+    <p>LEAMはTikTok Shop特化のMCNとして、売れている商品ページとクリエイター動画の型を日々観測しています。商品登録の代行だけでなく、CVRを決める設計から伴走します。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>NG表現は登録前に潰す：誇張はショップ全体のリスクになる</h2>
+  <p>表現のNGは「審査に落ちるかどうか」だけの問題ではありません。TikTok Shopでは違反が積み重なるとショップ全体の評価や出品に影響が及ぶ仕組みがあるため、<strong>1商品の攻めた表現がショップ全体を止めるリスク</strong>になります。代表的なNGの型と言い換えの方向を押さえておきましょう。</p>
+  <div class="tw"><table>
+    <thead><tr><th>NGの型</th><th>例</th><th>言い換えの方向</th></tr></thead>
+    <tbody>
+      <tr><td><b>効果の断定</b></td><td>「絶対に痩せる」「必ず治る」</td><td>使用感や、サイズ・成分量など数値化できる事実に置き換える</td></tr>
+      <tr><td><b>最上級・No.1表現</b></td><td>「業界最安」「日本一売れている」</td><td>出典を示せないなら使わない</td></tr>
+      <tr><td><b>虚偽の希少性</b></td><td>「本日限り」を常時表示</td><td>実際のセール期間だけ表記する</td></tr>
+      <tr><td><b>効果を保証する比較</b></td><td>ビフォーアフターで結果を約束する</td><td>使用シーンの提示に留める</td></tr>
+      <tr><td><b>他社を貶める比較</b></td><td>競合名を挙げた優劣の主張</td><td>自社商品の事実だけを語る</td></tr>
+    </tbody>
+  </table></div>
+  <h3>化粧品・健康食品・美容家電は、薬機法の確認を登録より先に</h3>
+  <p>化粧品・健康食品・美容家電などは、薬機法（医薬品医療機器等法）や景品表示法の広告規制の対象になり得ます。「効能があると誤解させる表現」の線引きは商材ごとに異なるため、この記事では個別の可否判断はしません。<strong>登録前に消費者庁・厚生労働省の公表資料を確認し、迷う表現は薬事に詳しい専門家に相談する</strong>ことをおすすめします。判断を保留にしたまま公開しないことが重要です。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ そもそも出品できない商品もある</div>
+    <p>酒類・医薬品をはじめ、出品自体が禁止・制限されているカテゴリがあります。該当の有無は姉妹記事「禁止商品・制限商品ガイド」と、最新の公式ポリシーで必ず確認してください。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>登録後が本番：レビュー運用とクリエイター起用でページを育てる</h2>
+  <p>商品登録は公開がゴールではなく、そこからページを育てる運用が始まります。TikTok Shopの商品ページで時間とともに効いてくるのは、レビューと販売実績です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="商品ページの好循環ループ図：正直な表記と発送品質がレビューを積み上げ、レビューがCVRを上げ、CVRが広告とアフィリエイトの効率を上げ、流入が増えてさらにレビューが貯まる">
+      <rect x="255" y="20" width="210" height="60" rx="12" fill="#17181C"/>
+      <text x="360" y="46" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">正直な表記＋発送品質</text>
+      <text x="360" y="66" text-anchor="middle" font-size="10.5" fill="#C9CBD4">「思っていたのと違う」を作らない</text>
+      <rect x="490" y="120" width="200" height="60" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="590" y="146" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">レビューが積み上がる</text>
+      <text x="590" y="166" text-anchor="middle" font-size="10.5" fill="#787D8A">最後のひと押しが強くなる</text>
+      <rect x="255" y="220" width="210" height="60" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="360" y="246" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">CVRが上がる</text>
+      <text x="360" y="266" text-anchor="middle" font-size="10.5" fill="#787D8A">同じ流入でも売上が増える</text>
+      <rect x="30" y="120" width="200" height="60" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="130" y="146" text-anchor="middle" font-size="13" font-weight="800" fill="#0E8A5F">広告・アフィリの効率UP</text>
+      <text x="130" y="166" text-anchor="middle" font-size="10.5" fill="#454956">流入と露出がさらに増える</text>
+      <path d="M470 60 Q590 70 590 115" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <path d="M584 105 L590 118 L596 105 Z" fill="#787D8A"/>
+      <path d="M590 185 Q590 240 470 250" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <path d="M478 244 L465 250 L478 256 Z" fill="#787D8A"/>
+      <path d="M255 250 Q130 240 130 185" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <path d="M124 195 L130 182 L136 195 Z" fill="#787D8A"/>
+      <path d="M130 115 Q130 70 250 60" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <path d="M242 54 L255 60 L242 66 Z" fill="#787D8A"/>
+      <text x="360" y="158" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">商品ページの複利</text>
+    </svg>
+    <figcaption>図4：商品ページの好循環。起点は広告ではなく「正直な表記と発送品質」（LEAM作成）</figcaption>
+  </figure>
+  <h3>最初のレビューは「設計」して取りに行く</h3>
+  <p>レビュー0件のページは、動画でどれだけ温度を作っても最後のひと押しが弱くなります。ただし、金品と引き換えにレビューを依頼するような行為は規約違反のリスクがあるため行いません。①発送を早く正確にする、②スペックを正直に書いて「思っていたのと違う」を防ぐ、③同梱物やメッセージで丁寧にお願いする——この地道な設計で初期レビューを積み上げます。</p>
+  <h3>低評価レビューは「ページの改善指示書」として使う</h3>
+  <p>低評価の内容は、説明文や画像に足りなかった情報そのものです。個別の返信対応と並行して、指摘された点をページに反映します。当社の運用でも、レビュー反映を回しているページとそうでないページでは、時間が経つほど数字の差が開いていく実感があります。</p>
+  <h3>クリエイターのアフィリエイト動画が「来る人の質」を決める</h3>
+  <p>ページのCVRは、ページ単体では決まりません。どんな動画を見て来たかで、着地時の温度が変わるからです。誇張気味の動画で集めた流入は、CVRが伸びないだけでなくレビューも荒れがちです。<strong>商品の実力に沿った動画を作れるクリエイターと組むこと</strong>が、結局はページの数字を守ります。仕組みの全体像は姉妹記事「アフィリエイトの仕組み」で解説しています。</p>
+  <p>ここまで整えても売れない場合は、ページではなく流入・価格・商品力のどこかに原因があります。切り分けの手順は姉妹記事「売れない時の10チェックリスト」を参照してください。</p>
+
+  <h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>商品登録に費用はかかりますか？</summary><div class="a">TikTok Shopで発生する費用の中心は、商品が売れたときの販売手数料です。販売手数料はカテゴリー別に設定されており、料率や優遇施策は改定されることがあるため、費用の扱いも含めて最新はSeller Centerの公式情報で確認してください。</div></details>
+    <details><summary>個人事業主でも商品登録できますか？</summary><div class="a">出店審査を通過していれば可能です。出店の条件や必要書類は変わることがあるため、公式の最新要件を確認してください。</div></details>
+    <details><summary>審査にはどのくらい時間がかかりますか？</summary><div class="a">商材や時期によって変わるため、一律には言えません。差し戻しの多くは表現と画像が原因のため、NG表現を先に潰しておくと再提出の往復を減らせます。</div></details>
+    <details><summary>画像は何枚登録すべきですか？</summary><div class="a">上限枚数の仕様は変わることがあるため管理画面で確認しつつ、使える枠は役割を決めて使い切るのが基本です。枚数より「1枚目が動画の続きになっているか」が先です。</div></details>
+    <details><summary>楽天やAmazonのページ素材をそのまま流用してもいいですか？</summary><div class="a">スペック表記などは流用できますが、1枚目の画像と説明文の冒頭は動画経由のユーザー向けに作り直すことをおすすめします。検索経由前提の構成のままでは、動画で来たユーザーの温度に合いません。</div></details>
+    <details><summary>商品名には検索キーワードを入れるべきですか？</summary><div class="a">入れて構いませんが、先頭は検索語ではなく「動画で刺さった魅力」に使ってください。詰め込みで先頭が読みにくくなるくらいなら削るのが実務的です。</div></details>
+    <details><summary>レビューがまだ無い商品でも売れますか？</summary><div class="a">売れないわけではありませんが、最後のひと押しが弱くなります。発送品質と正直なスペック表記で初期レビューを積む設計を、公開直後から回してください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/" style="text-decoration:none;color:inherit"><span class="rc">手数料</span><b>TikTok Shopの手数料完全ガイド</b><span>カテゴリー別の料率と利益計算</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/prohibited-items/" style="text-decoration:none;color:inherit"><span class="rc">出品ルール</span><b>禁止商品・制限商品ガイド</b><span>出品前のチェックリスト</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/not-selling-checklist/" style="text-decoration:none;color:inherit"><span class="rc">改善</span><b>売れない時の10チェックリスト</b><span>原因の見つけ方と直す順番</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・商品登録のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。商品ページの診断だけの小さなご相談からでも構いません。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンターの公式ヘルプ、消費者庁・厚生労働省の公表資料（仕様・審査基準・広告規制の運用は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">商品ページは「動画の続き」</a></li>
+        <li><a href="#s2">登録前にそろえる一式</a></li>
+        <li><a href="#s3">商品登録の6ステップ</a></li>
+        <li><a href="#s4">商品名と説明文の型</a></li>
+        <li><a href="#s5">画像は順番で設計する</a></li>
+        <li><a href="#s6">NG表現と薬機法の確認</a></li>
+        <li><a href="#s7">レビュー運用でページを育てる</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>商品ページの無料診断</b>
+      <p>画像構成・説明文・レビュー運用を、動画経由のCVR目線で拝見します。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopの商品登録と売れる商品ページの作り方｜CVRを落とさない設計",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "商品登録に費用はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopで発生する費用の中心は、商品が売れたときの販売手数料です。販売手数料はカテゴリー別に設定されており、料率や優遇施策は改定されることがあるため、費用の扱いも含めて最新はSeller Centerの公式情報で確認してください。"}},
+        {"@type": "Question", "name": "個人事業主でも商品登録できますか？", "acceptedAnswer": {"@type": "Answer", "text": "出店審査を通過していれば可能です。出店の条件や必要書類は変わることがあるため、公式の最新要件を確認してください。"}},
+        {"@type": "Question", "name": "審査にはどのくらい時間がかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "商材や時期によって変わるため、一律には言えません。差し戻しの多くは表現と画像が原因のため、NG表現を先に潰しておくと再提出の往復を減らせます。"}},
+        {"@type": "Question", "name": "画像は何枚登録すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "上限枚数の仕様は変わることがあるため管理画面で確認しつつ、使える枠は役割を決めて使い切るのが基本です。枚数より「1枚目が動画の続きになっているか」が先です。"}},
+        {"@type": "Question", "name": "楽天やAmazonのページ素材をそのまま流用してもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "スペック表記などは流用できますが、1枚目の画像と説明文の冒頭は動画経由のユーザー向けに作り直すことをおすすめします。検索経由前提の構成のままでは、動画で来たユーザーの温度に合いません。"}},
+        {"@type": "Question", "name": "商品名には検索キーワードを入れるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "入れて構いませんが、先頭は検索語ではなく「動画で刺さった魅力」に使ってください。詰め込みで先頭が読みにくくなるくらいなら削るのが実務的です。"}},
+        {"@type": "Question", "name": "レビューがまだ無い商品でも売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "売れないわけではありませんが、最後のひと押しが弱くなります。発送品質と正直なスペック表記で初期レビューを積む設計を、公開直後から回してください。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

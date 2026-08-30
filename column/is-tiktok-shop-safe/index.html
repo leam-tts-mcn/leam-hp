@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方</title>
+<meta name="description" content="TikTok Shopは怪しいのかという疑問に、運営元と購入者保護の仕組みから答えます。偽ショップ・詐欺の見分け方もまとめました。">
+<link rel="canonical" href="https://leam.co.jp/column/is-tiktok-shop-safe/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方">
+<meta property="og:description" content="TikTok Shopは怪しいのかという疑問に、運営元と購入者保護の仕組みから答えます。偽ショップ・詐欺の見分け方もまとめました。">
+<meta property="og:url" content="https://leam.co.jp/column/is-tiktok-shop-safe/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方">
+<meta name="twitter:description" content="TikTok Shopは怪しいのかという疑問に、運営元と購入者保護の仕組みから答えます。偽ショップ・詐欺の見分け方もまとめました。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方", "description": "TikTok Shopは怪しいのかという疑問に、運営元と購入者保護の仕組みから答えます。偽ショップ・詐欺の見分け方もまとめました。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/is-tiktok-shop-safe/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方", "item": "https://leam.co.jp/column/is-tiktok-shop-safe/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopは怪しい？安全性と見分け方</p>
+  <span class="cat">基礎知識</span>
+  <h1>TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="TikTok Shopは安全か：認証バッジのない偽ショップのカードと、認証バッジが付いた本物のショップのカードを並べ、あいだに守りの盾を置いて見分け方を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v300c-120 44-232 52-352 30-118-22-206-58-322-52-110 6-196 52-306 60-84 6-160-4-220-28z" fill="#F6F7F9"/>
+  <ellipse cx="560" cy="236" rx="350" ry="206" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <circle cx="1006" cy="76" r="5"/><circle cx="1042" cy="76" r="5"/><circle cx="1078" cy="76" r="5"/><circle cx="1114" cy="76" r="5"/>
+    <circle cx="1006" cy="112" r="5"/><circle cx="1042" cy="112" r="5"/><circle cx="1078" cy="112" r="5"/><circle cx="1114" cy="112" r="5"/>
+    <circle cx="1006" cy="148" r="5"/><circle cx="1042" cy="148" r="5"/><circle cx="1078" cy="148" r="5"/><circle cx="1114" cy="148" r="5"/>
+    <circle cx="40" cy="470" r="5"/><circle cx="76" cy="470" r="5"/><circle cx="112" cy="470" r="5"/>
+    <circle cx="40" cy="506" r="5"/><circle cx="76" cy="506" r="5"/><circle cx="112" cy="506" r="5"/>
+    <circle cx="40" cy="542" r="5"/><circle cx="76" cy="542" r="5"/><circle cx="112" cy="542" r="5"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150 30 300 26 452 2 140-22 258-40 388-24 118 14 232 44 360 34v106H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：本物のショップのカード ================= -->
+  <g>
+    <rect x="770" y="160" width="300" height="390" rx="18" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="770" y="160" width="300" height="390" rx="18" fill="#FFFFFF"/>
+
+    <!-- ヘッダー帯 -->
+    <path d="M770 178a18 18 0 0 1 18-18h264a18 18 0 0 1 18 18v78H770z" fill="#DFE0E2"/>
+    <circle cx="818" cy="208" r="26" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="856" y="190" width="120" height="14" rx="7" fill="#FFFFFF"/>
+    <rect x="856" y="214" width="84" height="14" rx="7" fill="#FFFFFF"/>
+
+    <!-- 商品が並んでいる（＝実体がある） -->
+    <g fill="#DFE0E2">
+      <rect x="796" y="288" width="72" height="72" rx="10"/>
+      <rect x="884" y="288" width="72" height="72" rx="10"/>
+      <rect x="972" y="288" width="72" height="72" rx="10"/>
+      <rect x="796" y="372" width="72" height="72" rx="10"/>
+      <rect x="884" y="372" width="72" height="72" rx="10"/>
+      <rect x="972" y="372" width="72" height="72" rx="10"/>
+    </g>
+    <path d="M796 462h248" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- 確認済みの行（シアン） -->
+    <rect x="796" y="484" width="150" height="14" rx="7" fill="#DFE0E2"/>
+    <path d="M986 491l11 12 22-26" fill="none" stroke="#25F4EE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="796" y="514" width="110" height="14" rx="7" fill="#DFE0E2"/>
+    <path d="M986 521l11 12 22-26" fill="none" stroke="#25F4EE" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 輪郭 -->
+    <rect x="770" y="160" width="300" height="390" rx="18" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M770 256h300" fill="none" stroke="#0B0C10" stroke-width="6"/>
+
+    <!-- 認証バッジ（シアン） -->
+    <g>
+      <circle cx="1058" cy="176" r="44" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+      <circle cx="1058" cy="176" r="44" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+      <circle cx="1058" cy="176" r="30" fill="#25F4EE"/>
+      <path d="M1044 177l10 11 20-24" fill="none" stroke="#0B0C10" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+  </g>
+
+  <!-- ================= 左：疑わしいショップのカード（主役・赤） ================= -->
+  <g transform="rotate(-4 335 345)">
+    <rect x="130" y="120" width="410" height="450" rx="20" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <rect x="130" y="120" width="410" height="450" rx="20" fill="#FE2C55"/>
+
+    <!-- ヘッダー帯（赤の陰） -->
+    <path d="M130 140a20 20 0 0 1 20-20h370a20 20 0 0 1 20 20v104H130z" fill="#CE1730"/>
+    <circle cx="196" cy="182" r="30" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="246" y="160" width="152" height="16" rx="8" fill="#FFFFFF"/>
+    <rect x="246" y="190" width="106" height="16" rx="8" fill="#DFE0E2"/>
+
+    <!-- 認証されていない印（バツ） -->
+    <circle cx="486" cy="182" r="30" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M474 170l24 24M498 170l-24 24" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- 商品が2つだけ・3つ目は空（＝中身が薄い） -->
+    <g>
+      <rect x="156" y="290" width="96" height="96" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+      <circle cx="178" cy="316" r="11" fill="#DFE0E2"/>
+      <path d="M162 372l28-34 20 24 12-13 26 23z" fill="#DFE0E2"/>
+
+      <rect x="287" y="290" width="96" height="96" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+      <circle cx="309" cy="316" r="11" fill="#DFE0E2"/>
+      <path d="M293 372l28-34 20 24 12-13 26 23z" fill="#DFE0E2"/>
+
+      <rect x="418" y="290" width="96" height="96" rx="12" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-dasharray="14 12" stroke-linecap="round"/>
+    </g>
+
+    <rect x="156" y="424" width="190" height="16" rx="8" fill="#DFE0E2"/>
+    <rect x="156" y="458" width="132" height="16" rx="8" fill="#DFE0E2"/>
+
+    <!-- 輪郭 -->
+    <rect x="130" y="120" width="410" height="450" rx="20" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M130 244h410" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- ================= 中央：守りの盾（シアン） ================= -->
+  <g>
+    <path d="M654 278L556 314v96c0 63 46 99 98 116 52-17 98-53 98-116v-96z" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <path d="M654 278L556 314v96c0 63 46 99 98 116 52-17 98-53 98-116v-96z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M654 300L576 329v78c0 52 37 82 78 97 41-15 78-45 78-97v-78z" fill="#25F4EE"/>
+    <circle cx="654" cy="385" r="20" fill="#0B0C10"/>
+    <path d="M645 398h18l8 46h-34z" fill="#0B0C10"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="712" cy="120" r="26" fill="#25F4EE"/>
+  <circle cx="1132" cy="470" r="18" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>結論から言うと、TikTok Shop自体は「怪しいサービス」ではありません。</strong>TikTokアプリに組み込まれた公式のショッピング機能で、出店には審査があり、購入者保護の仕組みも用意されています。一方で、<strong>TikTok Shopの知名度を利用した偽サイトや、アプリの外へ誘導する詐欺的な手口が存在するのも事実</strong>です。この記事では「プラットフォームとしての安全性」と「個別の怪しい取引」を切り分けたうえで、購入者・セラー双方の注意点と、偽ショップを見分ける具体的なチェックリストを事実ベースで整理します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>TikTok Shopが「怪しくない」と言える仕組み上の根拠（運営元・出店審査・購入者保護）</li>
+      <li>本当に警戒すべき詐欺の3つの型と、偽ショップ・怪しい出品の見分けチェックリスト</li>
+      <li>購入者・セラーそれぞれの注意点と、トラブルに遭ったときの対処手順</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの疑問、無料相談で率直にお答えします</div>
+    <p>「安全に出店できるのか」「自社の商材は向いているのか」。LEAMは市場データを毎営業日蓄積しながらTikTok Shopの運用を支援しています。判断材料を事実ベースでお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">結論：TikTok Shop自体は怪しくない。「個別のショップ」と切り分けて考える</a></li>
+      <li><a href="#s2">「怪しい」と感じる3つの理由は、仕組みを知れば説明がつく</a></li>
+      <li><a href="#s3">安全性は「出店審査・購入者保護・違反措置」の3段構えで担保されている</a></li>
+      <li><a href="#s4">本当に警戒すべきは「TikTok Shopの外」で起きる詐欺の3つの型</a></li>
+      <li><a href="#s5">偽ショップ・怪しい出品は8項目のチェックリストで見分けられる</a></li>
+      <li><a href="#s6">購入者とセラー、立場別の注意点を一覧表で押さえる</a></li>
+      <li><a href="#s7">セラー側は「怪しく見られない店づくり」が最大の安全対策になる</a></li>
+      <li><a href="#s8">トラブルに遭ったら「アプリ内で記録を残しながら」4ステップで対処する</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>結論：TikTok Shop自体は怪しくない。「個別のショップ」と切り分けて考える</h2>
+  <p>TikTok Shopは、TikTokを運営するByteDance系列の企業が提供する、<strong>アプリに組み込まれた公式のショッピング機能</strong>です。日本では2025年6月30日に提供が始まりました。動画・ライブ配信・検索から商品ページへ進み、<strong>決済までがTikTokアプリの中で完結</strong>します。どこかの業者が勝手に作った非公式の仕組みではなく、構造としてはAmazonや楽天市場と同じ「モール型EC」に、動画コマースの入口が組み合わさったものです。</p>
+  <p>そのうえで押さえておきたいのは、<strong>「プラットフォームが安全であること」と「そこに出店する個々のショップがすべて信頼できること」は別問題</strong>だという点です。大手ECモールにも質の低い出品者が紛れ込むことがあるのと同じで、TikTok Shopでも個別のショップの良し悪しは自分の目で確かめる必要があります。さらに、TikTok Shopの知名度をかたって<strong>アプリの外で行われる詐欺</strong>は、そもそもTikTok Shopとは別物です。この記事では次の3つのレイヤーに分けて考えます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>レイヤー</th><th>実態</th><th>取るべき態度</th></tr></thead>
+    <tbody>
+      <tr><td><b>① プラットフォーム自体</b></td><td class="y">公式機能。出店審査・購入者保護・違反措置の仕組みがある</td><td>過度に恐れる必要はない</td></tr>
+      <tr><td><b>② 個別のショップ・出品</b></td><td>大半は通常の事業者だが、品質に差はある</td><td>チェックリストで見分ける（<a href="#s5">§05</a>）</td></tr>
+      <tr><td><b>③ TikTok Shopをかたる外部</b></td><td class="n">偽サイト・出店勧誘・外部決済への誘導など。公式とは無関係</td><td>関わらない。型を知って回避する（<a href="#s4">§04</a>）</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="TikTok Shopの構造図：商品発見から決済・配送追跡までがTikTokアプリ内で完結し購入者保護の対象になる。アプリの外の偽サイトやDM取引は保護の対象外">
+      <rect x="20" y="20" width="680" height="180" rx="14" fill="#EAF6F1" stroke="#0E8A5F" stroke-width="1.5"/>
+      <text x="40" y="50" font-size="13.5" font-weight="800" fill="#0E8A5F">TikTokアプリ内（＝TikTok Shopの取引）</text>
+      <rect x="40" y="70" width="140" height="64" rx="10" fill="#fff" stroke="#E6E7EB"/>
+      <text x="110" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">商品と出会う</text>
+      <text x="110" y="118" text-anchor="middle" font-size="10.5" fill="#787D8A">動画・ライブ・検索</text>
+      <path d="M185 102 H215" stroke="#787D8A" stroke-width="2"/><path d="M209 96 L219 102 L209 108 Z" fill="#787D8A"/>
+      <rect x="222" y="70" width="140" height="64" rx="10" fill="#fff" stroke="#E6E7EB"/>
+      <text x="292" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">商品ページ</text>
+      <text x="292" y="118" text-anchor="middle" font-size="10.5" fill="#787D8A">レビュー・販売実績</text>
+      <path d="M367 102 H397" stroke="#787D8A" stroke-width="2"/><path d="M391 96 L401 102 L391 108 Z" fill="#787D8A"/>
+      <rect x="404" y="70" width="140" height="64" rx="10" fill="#fff" stroke="#E6E7EB"/>
+      <text x="474" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">アプリ内決済</text>
+      <text x="474" y="118" text-anchor="middle" font-size="10.5" fill="#787D8A">注文履歴が残る</text>
+      <path d="M549 102 H579" stroke="#787D8A" stroke-width="2"/><path d="M573 96 L583 102 L573 108 Z" fill="#787D8A"/>
+      <rect x="20" y="20" width="0" height="0" fill="none"/>
+      <rect x="586" y="70" width="96" height="64" rx="10" fill="#fff" stroke="#E6E7EB"/>
+      <text x="634" y="97" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">配送追跡</text>
+      <text x="634" y="118" text-anchor="middle" font-size="10.5" fill="#787D8A">返品・返金申請</text>
+      <text x="360" y="178" text-anchor="middle" font-size="12" font-weight="700" fill="#0E8A5F">この範囲で完結する取引が、購入者保護の対象になる</text>
+      <rect x="20" y="222" width="680" height="60" rx="14" fill="#F6F6F8" stroke="#C9CBD4" stroke-dasharray="6 4"/>
+      <text x="40" y="248" font-size="13" font-weight="800" fill="#C2203A">アプリの外</text>
+      <text x="40" y="270" font-size="11.5" fill="#454956">偽サイト・DMでの直接取引・銀行振込への誘導 → TikTok Shopの取引ではなく、保護の対象外</text>
+    </svg>
+    <figcaption>図1：TikTok Shopの取引はアプリ内で完結する。外に出た取引は別物（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>「TikTok Shopは怪しいか？」という問いは、実は3つの別の問いが混ざっています。<strong>①は心配不要、②は見分け方の問題、③は最初から関わらないのが正解</strong>。この切り分けができるだけで、判断はぐっと簡単になります。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>「怪しい」と感じる3つの理由は、仕組みを知れば説明がつく</h2>
+  <p>不安の正体を分解すると、多くの場合は次の3つに行き着きます。それぞれ、仕組みを知れば「怪しさ」ではなく「特徴」として理解できます。</p>
+  <h3>理由1：価格が安すぎて逆に不安になる</h3>
+  <p>立ち上げ期のECプラットフォームでは、新規ユーザーの獲得を目的に<strong>クーポンや送料の補助などの販促が積極的に行われる傾向</strong>があります。また、セラー側にも「最初のレビューと販売実績を作るために、意図的に利益を薄くして売る」という立ち上げ戦略があります。つまり<strong>「安い＝偽物」とは限らず、プラットフォームとセラー双方の投資で安くなっている</strong>ケースが相当数あります。ただし、相場から極端に乖離した価格は後述のチェックリストで必ず確認してください。</p>
+  <h3>理由2：日本では始まったばかりで情報が少ない</h3>
+  <p>新しいサービスに「よく知らないから不安」という感覚を持つのは自然なことです。ただ、TikTok Shop自体は<strong>米国や東南アジアなど海外で先行して運営されてきた仕組み</strong>で、日本はその後発市場にあたります。出店審査や購入者保護といった基本の枠組みは、日本での提供にも用意されています。</p>
+  <h3>理由3：SNSの延長で買い物をすることへの心理的抵抗</h3>
+  <p>「SNSで買う＝個人間のDM取引のようで怖い」というイメージも根強くあります。しかしTikTok Shopの購入は、DMで個人とやり取りする取引ではなく、<strong>注文・決済・配送追跡・返品申請までがECの仕組みとして管理される取引</strong>です。むしろ警戒すべきは、この管理された流れの外へ誘導しようとする相手です（§04）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>「怪しい」と感じる理由</th><th>背景にある仕組み</th><th>残る注意点</th></tr></thead>
+    <tbody>
+      <tr><td>安すぎる</td><td>立ち上げ期の販促と、セラーの実績づくりの値下げ</td><td>相場から極端に乖離した出品は個別に確認</td></tr>
+      <tr><td>新しくて情報がない</td><td>海外で先行運営された仕組みの日本展開</td><td>仕様は更新されるため一次情報で確認</td></tr>
+      <tr><td>SNSで買うのが不安</td><td>実態はアプリ内で完結する管理されたEC取引</td><td>アプリの外へ誘導する相手にだけ警戒</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s3"><span class="no en">03</span>安全性は「出店審査・購入者保護・違反措置」の3段構えで担保されている</h2>
+  <p>プラットフォームとしての安全性を支えているのは、時系列で並べると3つの仕組みです。<strong>出店の前・取引の最中・問題が起きた後</strong>のそれぞれに関門が置かれています。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="安全性の3段構えの図：出店前のセラー審査、取引中の購入者保護と監視、違反時の段階的な措置が時系列で並ぶ">
+      <line x1="40" y1="52" x2="680" y2="52" stroke="#E6E7EB" stroke-width="2"/>
+      <circle cx="130" cy="52" r="6" fill="#17181C"/><circle cx="360" cy="52" r="6" fill="#17181C"/><circle cx="590" cy="52" r="6" fill="#17181C"/>
+      <text x="130" y="32" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">出店の前</text>
+      <text x="360" y="32" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">取引の最中</text>
+      <text x="590" y="32" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">問題が起きた後</text>
+      <rect x="30" y="76" width="200" height="150" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="130" y="106" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">① セラー審査</text>
+      <text x="130" y="134" text-anchor="middle" font-size="11.5" fill="#454956">事業者情報・本人確認</text>
+      <text x="130" y="156" text-anchor="middle" font-size="11.5" fill="#454956">書類の提出が必要</text>
+      <text x="130" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#0E8A5F">匿名の誰かは出店できない</text>
+      <rect x="260" y="76" width="200" height="150" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="360" y="106" text-anchor="middle" font-size="14" font-weight="800" fill="#0E8A5F">② 購入者保護</text>
+      <text x="360" y="134" text-anchor="middle" font-size="11.5" fill="#454956">返品・返金ポリシー</text>
+      <text x="360" y="156" text-anchor="middle" font-size="11.5" fill="#454956">配送追跡・注文履歴</text>
+      <text x="360" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#0E8A5F">「届かない」に打つ手がある</text>
+      <rect x="490" y="76" width="200" height="150" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="590" y="106" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">③ 違反への措置</text>
+      <text x="590" y="134" text-anchor="middle" font-size="11.5" fill="#454956">規約違反への警告から</text>
+      <text x="590" y="156" text-anchor="middle" font-size="11.5" fill="#454956">出品削除・アカウント停止まで</text>
+      <text x="590" y="198" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">悪質なセラーは退場する</text>
+    </svg>
+    <figcaption>図2：安全性の3段構え。出店前・取引中・違反時のそれぞれに関門がある（LEAM作成）</figcaption>
+  </figure>
+  <h3>出店の前：審査を通らないと売り手になれない</h3>
+  <p>TikTok Shopに出店するには、事業者情報や本人確認書類の提出を含む<strong>審査を通過する必要</strong>があります。つまり「完全に匿名の誰か」が売り手になることはできません。審査の具体的な要件は変わることがあるため、詳しくは姉妹記事「出店条件と審査完全ガイド」と公式の最新情報をあわせて確認してください。</p>
+  <h3>取引の最中：購入者保護と注文管理の仕組みがある</h3>
+  <p>アプリ内で完結した注文には履歴が残り、配送は追跡でき、商品が届かない・説明と大きく異なるといった場合には<strong>返品・返金を申請する流れ</strong>が用意されています。適用条件や期限は変更されることがあるため、最新の内容は公式ヘルプで確認してください。</p>
+  <h3>問題が起きた後：違反セラーには段階的な措置がある</h3>
+  <p>規約や商品ルールに違反したセラーには、警告や出品の削除、悪質な場合はアカウント停止といった<strong>段階的な措置</strong>が定められています。売ってはいけない商品も明確にルール化されています（詳細は姉妹記事「禁止商品・制限商品ガイド」参照）。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：仕組みの存在は「トラブルゼロ」を意味しない</div>
+    <p>審査や保護の仕組みがあることと、個別のトラブルが一切起きないことは別です。大手ECモールでも粗悪な出品が紛れ込むように、<strong>最後は購入者側のチェックが品質のばらつきを埋めます</strong>。次章から、その具体的な方法を見ていきます。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>本当に警戒すべきは「TikTok Shopの外」で起きる詐欺の3つの型</h2>
+  <p>「TikTok Shopで騙された」と語られるトラブルを整理すると、その多くは<strong>TikTok Shopの中の取引ではなく、TikTok Shopの知名度を借りてアプリの外へ連れ出す手口</strong>です。共通構造は1つで、「公式の信用を借りて、保護の仕組みが働かない場所へ誘導する」こと。代表的な型を3つ知っておけば、大半は入口で回避できます。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="詐欺の3つの型の図：中央の保護されたTikTok Shopから、偽サイト・稼げる系勧誘・外部決済誘導の3方向へ連れ出す矢印にバツ印が付いている">
+      <rect x="235" y="110" width="250" height="110" rx="14" fill="#EAF6F1" stroke="#0E8A5F" stroke-width="1.5"/>
+      <path d="M360 128 l-26 11 v22 c0 20 12 33 26 40 c14-7 26-20 26-40 v-22 Z" fill="#0E8A5F" opacity=".18"/>
+      <path d="M349 163 l8 8 l16-18" stroke="#0E8A5F" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="360" y="203" text-anchor="middle" font-size="13.5" font-weight="800" fill="#0E8A5F">TikTok Shop（アプリ内・保護あり）</text>
+      <path d="M235 150 H130" stroke="#C2203A" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <path d="M138 144 L126 150 L138 156 Z" fill="#C2203A"/>
+      <g stroke="#C2203A" stroke-width="3" stroke-linecap="round"><line x1="172" y1="140" x2="192" y2="160"/><line x1="192" y1="140" x2="172" y2="160"/></g>
+      <rect x="16" y="34" width="200" height="88" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="116" y="62" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">型1：偽サイト・なりすまし</text>
+      <text x="116" y="84" text-anchor="middle" font-size="10.5" fill="#454956">公式風のデザインの外部サイトへ</text>
+      <text x="116" y="103" text-anchor="middle" font-size="10.5" fill="#454956">誘導し決済情報を入力させる</text>
+      <path d="M485 150 H590" stroke="#C2203A" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <path d="M582 144 L594 150 L582 156 Z" fill="#C2203A"/>
+      <g stroke="#C2203A" stroke-width="3" stroke-linecap="round"><line x1="528" y1="140" x2="548" y2="160"/><line x1="548" y1="140" x2="528" y2="160"/></g>
+      <rect x="504" y="34" width="200" height="88" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="604" y="62" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">型2：「稼げる」勧誘</text>
+      <text x="604" y="84" text-anchor="middle" font-size="10.5" fill="#454956">DM等で出店サポートや儲け話を</text>
+      <text x="604" y="103" text-anchor="middle" font-size="10.5" fill="#454956">持ちかけ高額な費用を請求する</text>
+      <path d="M360 220 V282" stroke="#C2203A" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <path d="M354 274 L360 286 L366 274 Z" fill="#C2203A"/>
+      <g stroke="#C2203A" stroke-width="3" stroke-linecap="round"><line x1="330" y1="240" x2="350" y2="260"/><line x1="350" y1="240" x2="330" y2="260"/></g>
+      <rect x="240" y="288" width="240" height="34" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="360" y="310" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">型3：外部決済への誘導（振込・別チャット）</text>
+      <text x="360" y="262" text-anchor="middle" font-size="0" fill="#454956"> </text>
+    </svg>
+    <figcaption>図3：詐欺の共通構造は「保護の外への連れ出し」。外へ出る矢印は全部断ってよい（LEAM作成）</figcaption>
+  </figure>
+  <h3>型1：偽サイト・なりすまし型</h3>
+  <p>TikTok Shop風のロゴやデザインをまねた外部サイトへSNSやメッセージから誘導し、そこで決済情報や個人情報を入力させる手口です。<strong>本物のTikTok Shopの買い物はアプリの外に出ません</strong>。「TikTok Shop」と名乗っていても、ブラウザで開く見知らぬ販売サイトは別物として扱ってください。</p>
+  <h3>型2：出店勧誘・「稼げる」型</h3>
+  <p>「TikTok Shopで簡単に稼げる」「代わりに運用して利益を分配する」といった話をDMやSNS広告で持ちかけ、高額な情報商材やサポート契約、出資を求める手口です。<strong>公式の出店手続きに紹介者は必要なく、出店自体に高額な仲介料もかかりません</strong>。うまい話の入口に「TikTok Shop」という言葉が使われているだけで、プラットフォームとは無関係です。</p>
+  <h3>型3：外部決済誘導型</h3>
+  <p>アプリ内の取引のように見せかけながら、「在庫の都合」「特別割引」などの理由をつけて銀行振込や外部チャットアプリでの決済に誘導する手口です。<strong>アプリの外で支払った時点で、注文履歴も購入者保護も働きません</strong>。決済をアプリの外に持ち出そうとする相手とは、その時点で取引をやめるのが正解です。</p>
+
+  <h2 id="s5"><span class="no en">05</span>偽ショップ・怪しい出品は8項目のチェックリストで見分けられる</h2>
+  <p>個別のショップ・出品を確かめるときは、次の8項目を見ます。上から順に重要です。すべてを満たす必要はありませんが、<strong>複数の危険サインが重なったら見送る</strong>のが安全です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>チェック項目</th><th>見るポイント</th><th>危険サイン</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 決済の場所</b></td><td>注文から支払いまでアプリ内で完結するか</td><td class="n">外部サイト・振込・別アプリへの誘導</td></tr>
+      <tr><td><b>② レビュー</b></td><td>件数と内容。具体的な使用感が書かれているか</td><td class="n">レビューゼロ／商品と無関係な絶賛だけ</td></tr>
+      <tr><td><b>③ 販売実績</b></td><td>商品ページの販売数の表示</td><td class="n">高額商品なのに実績表示が不自然</td></tr>
+      <tr><td><b>④ 価格</b></td><td>他モールの相場との差。クーポン適用後か</td><td class="n">相場の数分の一など極端な乖離</td></tr>
+      <tr><td><b>⑤ 商品説明</b></td><td>素材・サイズ・仕様が具体的に書かれているか</td><td class="n">説明が曖昧／日本語が極端に不自然</td></tr>
+      <tr><td><b>⑥ ショップ情報</b></td><td>事業者情報・運営歴・他の出品の一貫性</td><td class="n">情報が確認できない／出品が雑多すぎる</td></tr>
+      <tr><td><b>⑦ 公式・ブランドの認証表示</b></td><td>公式アカウントやブランドとしての認証表示があるか（表示の名称・条件は変わることがあります）</td><td class="n">有名ブランド品なのに認証がない</td></tr>
+      <tr><td><b>⑧ ブランド品の扱い</b></td><td>正規の取扱いか。極端に安いブランド品は要注意</td><td class="n">人気ブランドの大幅値引きの乱発</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 いちばん強いシグナルは「外に出そうとするか」</div>
+    <p>8項目のうち最優先は①です。<strong>アプリの外へ誘導された時点で、その取引はTikTok Shopの保護の外</strong>に出ます。逆に、アプリ内で完結している限り、注文履歴と返品・返金の申請という打ち手が残ります。</p>
+  </div>
+  <p>なお、こうした認証表示（⑦）は信頼の目印のひとつですが（表示の名称・付与条件は変更されることがあるため、最新は公式ヘルプで確認してください）、<strong>「バッジがない＝危険」ではありません</strong>。日本では始まったばかりのため、バッジのない新規の優良ショップも多くあります。バッジ単体で判断せず、レビュー・実績・事業者情報とあわせて見るのが実務的です。</p>
+  <figure>
+    <svg viewBox="0 0 720 440" role="img" aria-label="購入判断のフローチャート：アプリ内で決済まで完結するかを最初に確認し、NOなら買わない。YESなら価格の乖離、レビューと事業者情報の順に確認して判断する">
+      <rect x="250" y="14" width="220" height="44" rx="22" fill="#17181C"/>
+      <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">この商品、買っても大丈夫？</text>
+      <path d="M360 58 V84" stroke="#787D8A" stroke-width="2"/>
+      <rect x="200" y="86" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q1. 決済までアプリ内で完結する？</text>
+      <path d="M200 109 H110 V150" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="140" y="102" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="25" y="152" width="170" height="66" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="110" y="180" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">買わない</text>
+      <text x="110" y="201" text-anchor="middle" font-size="10.5" fill="#454956">外部誘導は保護の対象外</text>
+      <path d="M360 132 V158" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="152" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="200" y="160" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="189" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q2. 価格が相場から極端に安すぎる？</text>
+      <path d="M520 183 H610 V224" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="548" y="176" font-size="11" font-weight="800" fill="#C2203A">YES</text>
+      <rect x="525" y="226" width="170" height="66" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="610" y="254" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">慎重に確認</text>
+      <text x="610" y="275" text-anchor="middle" font-size="10.5" fill="#454956">クーポンか、偽ブランドか</text>
+      <path d="M360 206 V232" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="226" font-size="11" font-weight="800" fill="#0E8A5F">NO</text>
+      <rect x="200" y="234" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="263" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">Q3. レビュー・実績・事業者情報はある？</text>
+      <path d="M200 257 H110 V298" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="140" y="250" font-size="11" font-weight="800" fill="#C2203A">NO</text>
+      <rect x="25" y="300" width="170" height="66" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="110" y="328" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">見送りが無難</text>
+      <text x="110" y="349" text-anchor="middle" font-size="10.5" fill="#454956">危険サインの重なりを数える</text>
+      <path d="M360 280 V326" stroke="#787D8A" stroke-width="2"/>
+      <text x="374" y="316" font-size="11" font-weight="800" fill="#0E8A5F">YES</text>
+      <rect x="245" y="328" width="230" height="66" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="360" y="356" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0E8A5F">通常の取引としてOK</text>
+      <text x="360" y="377" text-anchor="middle" font-size="10.5" fill="#454956">アプリ内なら返品・返金の打ち手も残る</text>
+      <text x="360" y="424" text-anchor="middle" font-size="11" fill="#787D8A">迷ったら「危険サインが2つ以上重なったら見送る」を目安にする</text>
+    </svg>
+    <figcaption>図4：購入判断のフロー。最初に見るのは価格でもレビューでもなく「決済の場所」（LEAM作成）</figcaption>
+  </figure>
+
+  <h2 id="s6"><span class="no en">06</span>購入者とセラー、立場別の注意点を一覧表で押さえる</h2>
+  <p>安全性の話は購入者目線で語られがちですが、<strong>セラー側にも固有のリスク</strong>があります。立場別に、場面ごとの注意点を一覧にまとめます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>場面</th><th>購入者の注意点</th><th>セラーの注意点</th></tr></thead>
+    <tbody>
+      <tr><td><b>取引の前</b></td><td>§05の8項目チェック。特に決済がアプリ内で完結するかを確認</td><td>「代理出店」「アカウント売買」「高額な出店サポート」の勧誘に乗らない。出店は公式手続きで直接行う</td></tr>
+      <tr><td><b>取引の最中</b></td><td>決済情報を外部サイトに入力しない。DMでの直接取引に応じない</td><td>公式を装うフィッシング（「アカウントに問題があります」等のメッセージ）からログイン情報を守る</td></tr>
+      <tr><td><b>取引の後</b></td><td>届かない・説明と違う場合は注文履歴から申請（§08）</td><td>規約・禁止商品ルールを順守する。違反は出品削除やアカウント停止に直結する</td></tr>
+      <tr><td><b>継続的に</b></td><td>レビューを残して次の購入者の判断材料をつくる</td><td>レビュー・実績・情報開示を積み上げ、「怪しく見えない店」を育てる（§07）</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ セラーが最も狙われやすいのは「アカウント」</div>
+    <p>販売実績のあるセラーアカウントは、それ自体が乗っ取りの標的になります。公式を装ったメッセージのリンクからログイン情報を抜く手口が典型です。<strong>ログインは必ず正規のアプリ・正規の管理画面から行い、メッセージ内のリンクからは行わない</strong>。これだけで大半は防げます。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>セラー側は「怪しく見られない店づくり」が最大の安全対策になる</h2>
+  <p>ここまでは「怪しいものを見分ける」話でしたが、セラーにとっては裏返しの論点があります。<strong>買い手から見て怪しく見えないことが、そのまま売上の土台になる</strong>ということです。購入者が§05のチェックリストで店を見る以上、そのチェックリストを全部クリアする店をつくることが、最も確実な対策になります。</p>
+  <h3>レビュー・実績・情報開示の積み上げが「信頼の在庫」になる</h3>
+  <p>開店直後のショップは、どんなに誠実でもレビューゼロ・実績ゼロから始まります。当社の運用実感では、この時期に価格や広告だけで押し切ろうとするより、<strong>最初の販売実績とレビューを丁寧に積むことを優先したショップのほうが、その後の伸びが安定しやすい</strong>と感じています。商品説明の具体性や事業者情報の開示も含め、「§05のチェックリストで減点されない状態」を先に作るのが実務的な順番です。レビューは見返りで集めれば規約違反になりますが、<strong>規制に触れずにできること</strong>は残っています。出荷を早める、梱包を丁寧にする、初期は数量を絞って不良を出さない、届いた後のメッセージで困りごとだけ拾う——この4つは、いずれもレビュー内容への働きかけを伴いません。</p>
+  <h3>クリエイターの紹介動画が「実在の証明」として働く</h3>
+  <p>TikTok Shopならではの信頼の作り方が、クリエイター起用です。第三者であるクリエイターが実物を手に取り、使って見せる動画は、購入者にとって<strong>「この商品と店は実在していて、実際に届く」ことの証明</strong>として働きます。レビューがまだ少ない立ち上げ期ほど、この効果は大きくなります。誰に紹介してもらうかの設計は、姉妹記事のクリエイター関連ガイドでも扱っています。</p>
+  <p>損益の面でも、信頼づくりは回り道ではありません。<strong>不安が残る商品ページは、広告費をかけて人を集めても購入に至らず、費用だけが先行します</strong>。「怪しく見えない状態を作ってから集客に投資する」という順番が、結果的に最も安上がりです。</p>
+
+  <div class="ctabox">
+    <div class="ct">「怪しく見えない店」の作り方から、一緒に設計します</div>
+    <p>LEAMはTikTok Shopのコンサルティングと特化MCNを運営し、商品ページの整備からクリエイター起用まで、信頼づくりの実務を支援しています。立ち上げ前の相談も歓迎です。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>トラブルに遭ったら「アプリ内で記録を残しながら」4ステップで対処する</h2>
+  <p>万一トラブルに遭っても、アプリ内で完結した取引なら打ち手が残っています。慌てて外部でやり取りせず、記録が残る場所で順に進めます。</p>
+  <ol class="steps">
+    <li><b>注文履歴で状況を確認する</b><p>配送ステータスと追跡情報をまず確認します。「届かない」の相当数は配送遅延で、数日で解消することもあります。</p></li>
+    <li><b>セラーにアプリ内メッセージで連絡する</b><p>連絡は必ずアプリ内で行います。やり取りの記録が残ることが、次のステップの材料になります。外部チャットへの移動を提案されても応じないでください。</p></li>
+    <li><b>解決しなければ返品・返金を申請する</b><p>注文履歴から返品・返金の申請に進みます。申請できる条件や期限は変わることがあるため、公式ヘルプで最新の手順を確認してください。</p></li>
+    <li><b>アプリ外の被害は、決済会社と公的窓口へ</b><p>偽サイトでのカード入力や振込など、アプリの外で被害に遭った場合は、カード会社・銀行への連絡と利用停止の手続きを最優先に。あわせて消費者ホットライン（188。お近くの消費生活センター等の窓口を案内してもらえます）や警察の相談窓口に相談してください。</p></li>
+  </ol>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>ステップ1〜3が使えるのは、取引がアプリ内で完結しているからです。<strong>「記録が残る場所で取引を終える」ことは、トラブルを防ぐ対策であると同時に、起きた後の解決手段を確保する対策</strong>でもあります。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>TikTok Shop自体は安全なサービスですか？</summary><div class="a">TikTokアプリに組み込まれた公式のショッピング機能で、出店審査や購入者保護の仕組みが用意されています。プラットフォーム自体が詐欺というわけではありません。ただし個別のショップの品質には差があるため、レビューや販売実績の確認は必要です。</div></details>
+    <details><summary>商品が異常に安いのは偽物だからですか？</summary><div class="a">一概には言えません。立ち上げ期のプラットフォームではクーポン等の販促が積極的に行われ、セラー側も初期のレビュー獲得のため戦略的に値下げすることがあります。ただし相場から極端に乖離した価格で、レビューや事業者情報も確認できない場合は避けるのが安全です。</div></details>
+    <details><summary>商品が届かない・説明と違う場合はどうすればいいですか？</summary><div class="a">まずアプリ内の注文履歴で配送状況を確認し、セラーにアプリ内メッセージで連絡します。解決しない場合は返品・返金の申請に進みます。アプリ内で完結した取引は記録が残るため対処しやすいのが利点です。申請の条件や期限は公式ヘルプで最新の情報を確認してください。</div></details>
+    <details><summary>認証バッジがないショップは危険ですか？</summary><div class="a">バッジは信頼の目印のひとつですが、無いことが即危険を意味するわけではありません。日本では提供が始まったばかりで、バッジのない新規の優良ショップも多くあります。レビュー・販売実績・事業者情報・アプリ内決済の4点をあわせて確認してください。</div></details>
+    <details><summary>「TikTok Shopで稼げる」というDMの勧誘は信用できますか？</summary><div class="a">公式の出店手続きに紹介者や高額なサポート契約は必要ありません。DMで届く「簡単に稼げる」「代わりに運用する」といった勧誘は、公式とは無関係の第三者によるものと考え、返信しないことをおすすめします。</div></details>
+    <details><summary>セラーとして出店したいのですが、審査は厳しいですか？</summary><div class="a">出店には事業者情報や本人確認書類の提出が必要で、審査があります。裏を返せば、この審査があることが購入者からの信頼の土台になっています。要件の詳細は変わることがあるため、公式の最新情報とあわせて確認してください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/" style="text-decoration:none;color:inherit"><span class="rc">基礎</span><b>TikTok Shopとは？完全ガイド</b><span>仕組み・始め方の全体像</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-shinsa/" style="text-decoration:none;color:inherit"><span class="rc">出店</span><b>出店条件と審査完全ガイド</b><span>必要書類と審査の流れ</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/prohibited-items/" style="text-decoration:none;color:inherit"><span class="rc">ルール</span><b>禁止商品・制限商品ガイド</b><span>売ってはいけないもの一覧</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok公式ヘルプ・消費者庁「消費者ホットライン（188）」の公表案内（仕様・制度・提供機能は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">結論：切り分けて考える</a></li>
+        <li><a href="#s2">「怪しい」と感じる3つの理由</a></li>
+        <li><a href="#s3">安全性の3段構え</a></li>
+        <li><a href="#s4">警戒すべき詐欺の3つの型</a></li>
+        <li><a href="#s5">見分けチェックリスト8項目</a></li>
+        <li><a href="#s6">購入者・セラー別の注意点</a></li>
+        <li><a href="#s7">怪しく見られない店づくり</a></li>
+        <li><a href="#s8">トラブル時の対処4ステップ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>出店・運用の疑問に、無料で回答</b>
+      <p>商材の向き不向きから、信頼される店づくりの手順まで率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "TikTok Shop自体は安全なサービスですか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTokアプリに組み込まれた公式のショッピング機能で、出店審査や購入者保護の仕組みが用意されています。プラットフォーム自体が詐欺というわけではありません。ただし個別のショップの品質には差があるため、レビューや販売実績の確認は必要です。"}},
+        {"@type": "Question", "name": "商品が異常に安いのは偽物だからですか？", "acceptedAnswer": {"@type": "Answer", "text": "一概には言えません。立ち上げ期のプラットフォームではクーポン等の販促が積極的に行われ、セラー側も初期のレビュー獲得のため戦略的に値下げすることがあります。ただし相場から極端に乖離した価格で、レビューや事業者情報も確認できない場合は避けるのが安全です。"}},
+        {"@type": "Question", "name": "商品が届かない・説明と違う場合はどうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "まずアプリ内の注文履歴で配送状況を確認し、セラーにアプリ内メッセージで連絡します。解決しない場合は返品・返金の申請に進みます。アプリ内で完結した取引は記録が残るため対処しやすいのが利点です。申請の条件や期限は公式ヘルプで最新の情報を確認してください。"}},
+        {"@type": "Question", "name": "認証バッジがないショップは危険ですか？", "acceptedAnswer": {"@type": "Answer", "text": "バッジは信頼の目印のひとつですが、無いことが即危険を意味するわけではありません。日本では提供が始まったばかりで、バッジのない新規の優良ショップも多くあります。レビュー・販売実績・事業者情報・アプリ内決済の4点をあわせて確認してください。"}},
+        {"@type": "Question", "name": "「TikTok Shopで稼げる」というDMの勧誘は信用できますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式の出店手続きに紹介者や高額なサポート契約は必要ありません。DMで届く「簡単に稼げる」「代わりに運用する」といった勧誘は、公式とは無関係の第三者によるものと考え、返信しないことをおすすめします。"}},
+        {"@type": "Question", "name": "セラーとして出店したいのですが、審査は厳しいですか？", "acceptedAnswer": {"@type": "Answer", "text": "出店には事業者情報や本人確認書類の提出が必要で、審査があります。裏を返せば、この審査があることが購入者からの信頼の土台になっています。要件の詳細は変わることがあるため、公式の最新情報とあわせて確認してください。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

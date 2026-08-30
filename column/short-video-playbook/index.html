@@ -1,0 +1,694 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方</title>
+<meta name="description" content="TikTok Shopで売れるショート動画の構成の型を、冒頭2秒のフックからCTAまで分解します。投稿後に何を見てどう直すかも解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/short-video-playbook/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方">
+<meta property="og:description" content="TikTok Shopで売れるショート動画の構成の型を、冒頭2秒のフックからCTAまで分解します。投稿後に何を見てどう直すかも解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/short-video-playbook/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方">
+<meta name="twitter:description" content="TikTok Shopで売れるショート動画の構成の型を、冒頭2秒のフックからCTAまで分解します。投稿後に何を見てどう直すかも解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方", "description": "TikTok Shopで売れるショート動画の構成の型を、冒頭2秒のフックからCTAまで分解します。投稿後に何を見てどう直すかも解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/short-video-playbook/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方", "item": "https://leam.co.jp/column/short-video-playbook/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 売れるショート動画の作り方</p>
+  <span class="cat">動画制作・運用</span>
+  <h1>TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="ショート動画の構成：縦型の再生フレームと、冒頭・中盤・締めの3ブロック、そして秒数の目盛りを並べて台本の組み立て方を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v336c-104 30-198 38-292 24-110-16-198-50-306-48-110 2-192 44-298 56-104 12-206-4-304-42z" fill="#F6F7F9"/>
+  <ellipse cx="790" cy="250" rx="320" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="1024" cy="60" r="5"/><circle cx="1060" cy="60" r="5"/><circle cx="1096" cy="60" r="5"/><circle cx="1132" cy="60" r="5"/>
+      <circle cx="1024" cy="96" r="5"/><circle cx="1060" cy="96" r="5"/><circle cx="1096" cy="96" r="5"/><circle cx="1132" cy="96" r="5"/>
+      <circle cx="1024" cy="132" r="5"/><circle cx="1060" cy="132" r="5"/><circle cx="1096" cy="132" r="5"/><circle cx="1132" cy="132" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(-976 332)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-32 286-16 420 8 130 24 244 30 360 12 118-18 230-44 420-28V630H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 中央：展開のブラケット（細い罫） ================= -->
+  <g fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round">
+    <path d="M492 282H566"/>
+    <path d="M566 155V391"/>
+    <path d="M566 155H628"/>
+    <path d="M566 273H628"/>
+    <path d="M566 391H628"/>
+  </g>
+
+  <!-- ================= 右：冒頭・中盤・締めの3ブロック（シアン） ================= -->
+  <!-- 冒頭 -->
+  <g>
+    <rect x="628" y="108" width="340" height="94" rx="16" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="628" y="108" width="340" height="94" rx="16" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="650" y="133" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/>
+    <circle cx="672" cy="155" r="4.5" fill="#0B0C10"/>
+    <rect x="712" y="140" width="196" height="11" rx="5.5" fill="#FFFFFF"/>
+    <rect x="712" y="162" width="136" height="11" rx="5.5" fill="#FFFFFF"/>
+  </g>
+  <!-- 中盤 -->
+  <g>
+    <rect x="628" y="226" width="340" height="94" rx="16" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="628" y="226" width="340" height="94" rx="16" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="650" y="251" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/>
+    <circle cx="664" cy="273" r="4.5" fill="#0B0C10"/>
+    <circle cx="680" cy="273" r="4.5" fill="#0B0C10"/>
+    <rect x="712" y="258" width="172" height="11" rx="5.5" fill="#FFFFFF"/>
+    <rect x="712" y="280" width="112" height="11" rx="5.5" fill="#FFFFFF"/>
+  </g>
+  <!-- 締め -->
+  <g>
+    <rect x="628" y="344" width="340" height="94" rx="16" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="628" y="344" width="340" height="94" rx="16" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="650" y="369" width="44" height="44" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/>
+    <circle cx="660" cy="391" r="4.5" fill="#0B0C10"/>
+    <circle cx="674" cy="391" r="4.5" fill="#0B0C10"/>
+    <circle cx="688" cy="391" r="4.5" fill="#0B0C10"/>
+    <rect x="712" y="376" width="208" height="11" rx="5.5" fill="#FFFFFF"/>
+    <rect x="712" y="398" width="96" height="11" rx="5.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= 左：縦型の再生フレーム（主役・赤） ================= -->
+  <g transform="translate(0 -12)">
+    <!-- 影 -->
+    <rect x="134" y="74" width="344" height="440" rx="30" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <!-- 背面（赤の陰） -->
+    <rect x="152" y="56" width="344" height="440" rx="30" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 前面 -->
+    <rect x="134" y="74" width="344" height="440" rx="30" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 画角のコーナー（白） -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M168 172V138a12 12 0 0 1 12-12h34"/>
+      <path d="M444 172V138a12 12 0 0 0-12-12h-34"/>
+      <path d="M168 406v34a12 12 0 0 0 12 12h34"/>
+      <path d="M444 406v34a12 12 0 0 1-12 12h-34"/>
+    </g>
+
+    <!-- 再生ボタン -->
+    <circle cx="306" cy="272" r="62" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8"/>
+    <path d="M292 242l52 30-52 30z" fill="#0B0C10" stroke="#0B0C10" stroke-width="10" stroke-linejoin="round"/>
+
+    <!-- 再生位置のバー（シアン） -->
+    <rect x="174" y="476" width="228" height="12" rx="6" fill="#FFFFFF"/>
+    <rect x="174" y="476" width="86" height="12" rx="6" fill="#25F4EE"/>
+  </g>
+
+  <!-- ================= 下：秒数の目盛り ================= -->
+  <g>
+    <!-- 再生ヘッド -->
+    <path d="M330 518h24l-12 24z" fill="#0B0C10" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M342 544v14" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+    <!-- 目盛りの軸 -->
+    <path d="M152 560H1064" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+    <!-- 大目盛り（区切り） -->
+    <g fill="#25F4EE">
+      <rect x="148" y="524" width="9" height="34" rx="4.5"/>
+      <rect x="452" y="524" width="9" height="34" rx="4.5"/>
+      <rect x="756" y="524" width="9" height="34" rx="4.5"/>
+      <rect x="1060" y="524" width="9" height="34" rx="4.5"/>
+    </g>
+    <!-- 小目盛り -->
+    <g fill="#25F4EE">
+      <rect x="225" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="301" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="377" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="529" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="605" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="681" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="833" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="909" y="540" width="7" height="18" rx="3.5"/>
+      <rect x="985" y="540" width="7" height="18" rx="3.5"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1114" cy="498" r="22" fill="#25F4EE"/>
+  <circle cx="556" cy="84" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopで商品が売れる場所は、検索結果ではなくショート動画のフィードです。</strong>そして売れる動画には、「冒頭2秒のフック→使用シーン→価格納得→CTA」という、実務で使い回されている構成の型があります。この記事では、TikTok Shopの動画の作り方をこの型に沿って解説し、NG例との違い、<strong>自社投稿とクリエイター動画の役割分担、投稿後にどの数字を見て改善するか</strong>まで、運用支援の現場で多いつまずきに沿って整理します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>売れるショート動画の構成の型（フック→使用シーン→価格納得→CTA）と、NG動画との具体的な違い</li>
+      <li>「自社投稿よりクリエイター動画が主戦場」という運用の大原則と、依頼時の指定のしかた</li>
+      <li>1本に賭けず本数で検証する回し方と、動画がバズっても赤字にならない損益の考え方</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">動画の前に「売れる設計」ができているか、無料で診断します</div>
+    <p>ショート動画の成果は、商品・価格・クリエイター起用の設計でほぼ決まります。現状の商品と動画体制を拝見し、何から手を付けるべきかを率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">ショート動画がTikTok Shopの主戦場：購入は「検索」でなく「出会い」から生まれる</a></li>
+      <li><a href="#s2">売れる動画には型がある：冒頭2秒のフック→使用シーン→価格納得→CTA</a></li>
+      <li><a href="#s3">売れない動画は「商品説明」、売れる動画は「視聴体験」：NG例との対比で覚える</a></li>
+      <li><a href="#s4">主戦場は自社投稿ではなくクリエイター動画：「上手く作る」より「多く集める」</a></li>
+      <li><a href="#s5">1本に賭けない：本数で検証し、当たった型に寄せるのが改善の正攻法</a></li>
+      <li><a href="#s6">撮影・編集はスマホで足りる：時間をかけるのは冒頭2秒とテロップ</a></li>
+      <li><a href="#s7">投稿後の数字は3段で切り分ける：視聴された→クリックされた→買われた</a></li>
+      <li><a href="#s8">動画がバズっても赤字は起きる：損益ラインを決めてから本数を踏む</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>ショート動画がTikTok Shopの主戦場：購入は「検索」でなく「出会い」から生まれる</h2>
+  <p>TikTok Shopの売り場は大きく3つ——<strong>ショート動画・ライブ配信・ショップページ（ショップタブ）</strong>です。このうち、日々の売上をつくる主戦場がショート動画です。ライブは瞬発力が大きい一方で準備と体制が必要で、ショップページは指名買い・比較検討の受け皿。まずショート動画で商品との出会いをつくり、ライブとページで受け止める、というのが全体の構造です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>売り場</th><th>役割</th><th>向いている局面</th><th>必要な体制</th></tr></thead>
+    <tbody>
+      <tr><td><b>ショート動画</b></td><td class="y">商品との「出会い」をつくる。日々の売上の主戦場</td><td>出店直後から常時</td><td>動画が継続的に増える体制</td></tr>
+      <tr><td>ライブ配信</td><td>まとめ買い・高単価の刈り取り</td><td>視聴者と在庫が揃ってから</td><td>定期配信を続ける体制</td></tr>
+      <tr><td>ショップページ</td><td>指名買い・比較検討の受け皿</td><td>常時（動画からの着地先）</td><td>商品画像・説明・レビューの整備</td></tr>
+    </tbody>
+  </table></div>
+  <h3>従来のECと違い、「買う気のなかった人」が見ているうちに欲しくなる</h3>
+  <p>検索型のECは「欲しい人が探しに来る」場所ですが、TikTok Shopは「欲しいと思っていなかった人が、動画を見ているうちに欲しくなる」場所です。この違いが、動画の作り方を根本から変えます。検索型の売り場で有効な「スペックを網羅した説明」は、フィードでは数秒でスワイプされて終わりです。求められているのは説明ではなく、<strong>自分ごと化できる視聴体験</strong>です。</p>
+  <h3>フォロワーが少なくても勝ち筋がある</h3>
+  <p>おすすめフィードへの配信は、アカウントの規模よりも<strong>動画単体の反応（視聴の完了・いいね・シェア・コメントなど）をもとに広がっていく</strong>仕組みです。フォロワーが少なくても、動画が良ければ届く範囲は広がります。逆に言えば「フォロワーを貯めてから売る」という順番を待つ必要はありません。伸びた動画は投稿から時間が経っても再生され続けることがあり、他の販路への波及も含めて資産として積み上がります。</p>
+
+  <h2 id="s2"><span class="no en">02</span>売れる動画には型がある：冒頭2秒のフック→使用シーン→価格納得→CTA</h2>
+  <p>当社が動画の企画・分析で使っている基本の型がこれです。効果を保証する魔法の公式ではありませんが、<strong>実務的にはこの型から始めるのが定石</strong>で、商材に合わせて崩していきます。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="売れるショート動画の構成の型：再生時間に沿って、0〜2秒のフック、使用シーン、価格納得、CTAの4パートで組み立てる">
+      <text x="30" y="40" font-size="13" font-weight="800" fill="#454956">再生時間 →</text>
+      <line x1="30" y1="60" x2="690" y2="60" stroke="#E6E7EB" stroke-width="2"/>
+      <text x="30" y="52" font-size="11" fill="#787D8A">0秒</text>
+      <text x="100" y="52" font-size="11" fill="#787D8A">2秒</text>
+      <text x="672" y="52" font-size="11" fill="#787D8A">終盤</text>
+      <rect x="30" y="76" width="70" height="56" rx="8" fill="#E8324A"/>
+      <text x="65" y="110" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">フック</text>
+      <rect x="104" y="76" width="276" height="56" rx="8" fill="#17181C"/>
+      <text x="242" y="110" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">使用シーン（実演・体験）</text>
+      <rect x="384" y="76" width="176" height="56" rx="8" fill="#454956"/>
+      <text x="472" y="110" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">価格納得</text>
+      <rect x="564" y="76" width="126" height="56" rx="8" fill="#0E8A5F"/>
+      <text x="627" y="110" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">CTA</text>
+      <text x="65" y="164" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">スワイプの手を</text>
+      <text x="65" y="182" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">止める</text>
+      <text x="242" y="164" text-anchor="middle" font-size="11" fill="#454956">「使っている自分」を</text>
+      <text x="242" y="182" text-anchor="middle" font-size="11" fill="#454956">想像させる</text>
+      <text x="472" y="164" text-anchor="middle" font-size="11" fill="#454956">「今日買う理由」を</text>
+      <text x="472" y="182" text-anchor="middle" font-size="11" fill="#454956">作る</text>
+      <text x="627" y="164" text-anchor="middle" font-size="11" fill="#0E8A5F">買い方を</text>
+      <text x="627" y="182" text-anchor="middle" font-size="11" fill="#0E8A5F">指差す</text>
+      <rect x="30" y="206" width="660" height="36" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="360" y="230" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">フックが無ければ以降は見られず、CTAが無ければ見られて終わる</text>
+    </svg>
+    <figcaption>図1：売れるショート動画の構成の型。4パートの「順番」に意味がある（LEAM作成）</figcaption>
+  </figure>
+  <h3>① フック（0〜2秒）：スワイプの手を止める「引っかかり」を最初に置く</h3>
+  <p>最初の2秒で「自分に関係がある」と思わせられなければ、その先は存在しないのと同じです。定番の切り口は、<strong>悩みの言語化</strong>（「毛玉だらけのニット、捨てる前に見て」）、<strong>結果の先出し</strong>（ビフォーアフターの「アフター」から見せる）、<strong>疑問形</strong>（「これ、何に使うか分かる？」）など。商品名とブランド紹介から入るのは典型的なNGです。</p>
+  <h3>② 使用シーン：スペックではなく「使っている自分」を想像させる</h3>
+  <p>フックで止めた視聴者に、商品が使われている場面を見せます。実演・ビフォーアフター・生活の中での使われ方など、「説明」ではなく<strong>体験の追体験</strong>に寄せるのがポイントです。なお、効果の誇張や事実と異なる演出は、コメント欄で指摘されて逆効果になるうえ、規約や法令の問題にもなります。盛らずに見せて売れる商品を選ぶことが先です。</p>
+  <h3>③ 価格納得：「買わない理由」を先回りして潰す</h3>
+  <p>欲しくなった視聴者が最後に立ち止まるのは価格です。「この内容でこの価格」と思える材料——内容量、使い回しの幅、他の選択肢との違い——をここで見せます。クーポンやタイムセールと組み合わせて<strong>「今日買う理由」</strong>まで作れると、購入までの距離が一気に縮まります。</p>
+  <h3>④ CTA：買い方を具体的に指差す</h3>
+  <p>「画面下の商品カードをタップ」「黄色いカートから見てね」のように、購入の動線を具体的に案内して締めます。良い動画でも、導線の案内がなければ「良い動画を見た」で終わってしまいます。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>この型は「順番」に意味があります。売れない動画の多くは、②③の材料を持っているのに、<strong>①フックがないために見られず、④CTAがないために買われていません</strong>。撮り直さなくても、手元の素材を並べ替えるだけで改善することがよくあります。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>売れない動画は「商品説明」、売れる動画は「視聴体験」：NG例との対比で覚える</h2>
+  <p>型を知っていても、仕上がりが「広告」に寄ると数字は出ません。ありがちなNGと売れる動画の違いを、パートごとに対比で押さえておきましょう。</p>
+  <div class="tw"><table>
+    <thead><tr><th>パート</th><th>ありがちなNG</th><th>売れる動画</th></tr></thead>
+    <tbody>
+      <tr><td>冒頭</td><td class="n">商品名とブランド紹介から始まる</td><td class="y">悩み・結果の先出し・疑問形で「自分ごと化」させる</td></tr>
+      <tr><td>中盤</td><td class="n">スペック・機能の読み上げ</td><td class="y">実演やビフォーアフターで「使う場面」を見せる</td></tr>
+      <tr><td>価格</td><td class="n">価格に触れない／最後に唐突に出す</td><td class="y">納得材料とセットで見せ、「今日買う理由」を作る</td></tr>
+      <tr><td>締め</td><td class="n">「詳細はプロフィールへ」で終わる</td><td class="y">「下の商品カードをタップ」と動線を指差す</td></tr>
+      <tr><td>商品数</td><td class="n">1本に複数商品を詰め込む</td><td class="y">1動画1商品に絞って迷わせない</td></tr>
+      <tr><td>トーン</td><td class="n">台本を読んでいる広告口調</td><td class="y">投稿者自身の言葉で話すオリジナル感</td></tr>
+    </tbody>
+  </table></div>
+  <p>通底するのは<strong>「広告を作らない」</strong>ことです。フィードに流れてくるのは友人の投稿と同じ体裁のコンテンツで、広告の型に寄るほどスワイプされます。視聴者が見たいのは「売り文句」ではなく「使ってみた人のリアル」です。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：完成度の追求は「見やすさ」まで</div>
+    <p>画質・音声・テロップの読みやすさは整えるべきですが、テレビCMのような演出に投資しても、その分売れるわけではありません。当社の運用実感でも、<strong>スマホ撮影の等身大な動画が、作り込んだ動画を上回ることは珍しくありません</strong>。かけるべきは制作費ではなく検証の本数です。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>主戦場は自社投稿ではなくクリエイター動画：「上手く作る」より「多く集める」</h2>
+  <p>ここがこの記事で最も伝えたい原則です。TikTok Shopの実務では、売上の中心は自社アカウントの投稿ではなく、<strong>アフィリエイトで提携したクリエイターが投稿する紹介動画</strong>になることが多くあります（当社の支援先でも、クリエイター動画経由が売上の過半を占めるケースが多く見られます）。ただし商材によって差があり、ライブ経由の比率が動画を上回るジャンルもあります。まず着手するならショート動画で素材と実績を作り、そこからライブへ広げる順番が組み立てやすい、というのが当社の運用実感です。理由は3つ——①自社1アカウントで作れる本数には限界がある、②視聴者は売り手の宣伝より第三者の使用実感を信頼する、③クリエイターごとにフォロワー層が違うため、届く面がかけ算で広がる。</p>
+  <figure>
+    <svg viewBox="0 0 720 310" role="img" aria-label="自社投稿とクリエイター動画の供給構造の比較：自社投稿は1アカウントから週数本の細い供給、クリエイター動画は提携数に比例して太くなる供給で、どちらもおすすめフィードに流れ込む">
+      <rect x="20" y="20" width="320" height="170" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="180" y="50" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">自社投稿</text>
+      <circle cx="180" cy="98" r="26" fill="#787D8A"/>
+      <circle cx="180" cy="90" r="9" fill="#fff" opacity=".85"/>
+      <path d="M162 116 Q180 102 198 116 L198 122 Q180 110 162 122 Z" fill="#fff" opacity=".85"/>
+      <text x="180" y="152" text-anchor="middle" font-size="11" fill="#787D8A">1アカウント＝週数本が上限</text>
+      <path d="M180 190 V240" stroke="#787D8A" stroke-width="3"/>
+      <path d="M174 232 L180 244 L186 232 Z" fill="#787D8A"/>
+      <rect x="380" y="20" width="320" height="170" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="540" y="50" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">クリエイター動画（アフィリエイト）</text>
+      <g>
+        <circle cx="440" cy="98" r="20" fill="#E8324A"/><circle cx="440" cy="92" r="7" fill="#fff" opacity=".9"/><path d="M427 112 Q440 102 453 112 L453 116 Q440 108 427 116 Z" fill="#fff" opacity=".9"/>
+        <circle cx="507" cy="98" r="20" fill="#E8324A" opacity=".85"/><circle cx="507" cy="92" r="7" fill="#fff" opacity=".9"/><path d="M494 112 Q507 102 520 112 L520 116 Q507 108 494 116 Z" fill="#fff" opacity=".9"/>
+        <circle cx="574" cy="98" r="20" fill="#E8324A" opacity=".7"/><circle cx="574" cy="92" r="7" fill="#fff" opacity=".9"/><path d="M561 112 Q574 102 587 112 L587 116 Q574 108 561 116 Z" fill="#fff" opacity=".9"/>
+        <circle cx="641" cy="98" r="20" fill="#E8324A" opacity=".55"/><circle cx="641" cy="92" r="7" fill="#fff" opacity=".9"/><path d="M628 112 Q641 102 654 112 L654 116 Q641 108 628 116 Z" fill="#fff" opacity=".9"/>
+      </g>
+      <text x="540" y="152" text-anchor="middle" font-size="11" fill="#787D8A">提携数に比例して本数もフォロワー面も増える</text>
+      <path d="M470 190 Q470 220 500 232" stroke="#E8324A" stroke-width="6" fill="none" opacity=".8"/>
+      <path d="M540 190 V236" stroke="#E8324A" stroke-width="6" opacity=".8"/>
+      <path d="M610 190 Q610 220 580 232" stroke="#E8324A" stroke-width="6" fill="none" opacity=".8"/>
+      <path d="M532 232 L540 246 L548 232 Z" fill="#E8324A"/>
+      <rect x="20" y="248" width="680" height="44" rx="10" fill="#17181C"/>
+      <text x="360" y="276" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">おすすめフィード ＝ 商品との出会いが生まれる場所</text>
+    </svg>
+    <figcaption>図2：供給構造の違い。自社投稿だけでは供給が細く、当たりを探す検証が回らない（LEAM作成）</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>自社投稿</th><th>クリエイター動画</th></tr></thead>
+    <tbody>
+      <tr><td>役割</td><td>型の検証・見本づくり・ブランドの顔</td><td class="y">売上の主戦場。量と多様性で当たりを探す</td></tr>
+      <tr><td>出せる本数</td><td class="n">1アカウント分（週数本が現実的）</td><td class="y">提携クリエイター数に比例して増やせる</td></tr>
+      <tr><td>視聴者からの見え方</td><td class="n">売り手の言葉</td><td class="y">第三者の使用実感</td></tr>
+      <tr><td>費用の性質</td><td>制作の内製コスト（固定的）</td><td>成果報酬のコミッションが中心</td></tr>
+    </tbody>
+  </table></div>
+  <h3>自社投稿の役割は「見本と検証」</h3>
+  <p>自社投稿が無意味という話ではありません。構成の型を小さく検証し、当たった企画を見つけ、クリエイターに渡す見本を作る場として重要です。<strong>自社で当てた型をクリエイターに横展開する</strong>と、依頼の精度も再現性も上がります。</p>
+  <h3>クリエイターに台本を渡さない：指定は「NGと要点」だけ</h3>
+  <p>細かく台本を指定するほどオリジナル感が失われ、そのクリエイターのフォロワーには「いつもと違う宣伝」に見えてしまいます。渡すのは、<strong>言ってはいけないこと</strong>（法令に触れる表現・誤った仕様の説明）と、<strong>外せない要点</strong>（価格訴求・使い方の勘所）の最小限にとどめ、表現はクリエイター自身の言葉に委ねるのが定石です。</p>
+
+  <div class="ctabox">
+    <div class="ct">クリエイター動画の「供給網」づくりは、LEAMの本業です</div>
+    <p>LEAMはTikTok Shop特化MCNとしてクリエイターのネットワークを持ち、市場データと突き合わせて商品との相性から起用を設計します。自社に動画制作の体制がなくても始められます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>1本に賭けない：本数で検証し、当たった型に寄せるのが改善の正攻法</h2>
+  <p>「渾身の1本」を作り込む発想は、TikTok Shopでは分が悪い戦い方です。どの動画が当たるかは投稿前には分かりません。だからこそ実務は、<strong>本数を出す→数字で当たりを見つける→当たった型に寄せて増産する</strong>の繰り返しになります。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="週次の検証ループ図：週の本数を決めて変数を散らして投稿し、数字で評価し、当たり要素を特定し、当たりに寄せて増産する循環を毎週回す">
+      <rect x="40" y="30" width="280" height="72" rx="12" fill="#17181C"/>
+      <text x="180" y="60" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">① 週の本数を決めて投稿</text>
+      <text x="180" y="84" text-anchor="middle" font-size="11" fill="#C9CBD4">フック・演者・シーンの変数を散らす</text>
+      <rect x="400" y="30" width="280" height="72" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="540" y="60" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">② 数字で評価する</text>
+      <text x="540" y="84" text-anchor="middle" font-size="11" fill="#787D8A">再生数でなく 視聴維持・クリック・購入</text>
+      <rect x="400" y="190" width="280" height="72" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="540" y="220" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">③ 当たり要素を特定する</text>
+      <text x="540" y="244" text-anchor="middle" font-size="11" fill="#787D8A">どのパートが効いたかまで言語化</text>
+      <rect x="40" y="190" width="280" height="72" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="180" y="220" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">④ 当たりに寄せて増産</text>
+      <text x="180" y="244" text-anchor="middle" font-size="11" fill="#454956">新しい変数は1つだけ足す</text>
+      <path d="M324 66 H392" stroke="#787D8A" stroke-width="2"/><path d="M386 60 L396 66 L386 72 Z" fill="#787D8A"/>
+      <path d="M540 106 V182" stroke="#787D8A" stroke-width="2"/><path d="M534 176 L540 186 L546 176 Z" fill="#787D8A"/>
+      <path d="M396 226 H328" stroke="#787D8A" stroke-width="2"/><path d="M334 220 L324 226 L334 232 Z" fill="#787D8A"/>
+      <path d="M180 186 V110" stroke="#E8324A" stroke-width="2.5"/><path d="M174 116 L180 106 L186 116 Z" fill="#E8324A"/>
+      <text x="360" y="156" text-anchor="middle" font-size="13" font-weight="900" fill="#E8324A">週次で回す</text>
+    </svg>
+    <figcaption>図3：週次の検証ループ。1本の完成度より、ループが回っているかを問う（LEAM作成）</figcaption>
+  </figure>
+  <ol class="steps">
+    <li><b>週の本数を先に決める</b><p>クオリティ基準ではなく本数基準で計画します。自社投稿＋クリエイター動画の合計で考えるのがコツです。</p></li>
+    <li><b>型の中で変数を散らす</b><p>構成の型は守りつつ、フックの切り口・演者・使用シーンを意図的に変えて投稿します。全部同じでは検証になりません。</p></li>
+    <li><b>数字で「当たり」を特定する</b><p>再生数だけで判断せず、視聴維持・商品クリック・購入まで見ます（見方は§07）。</p></li>
+    <li><b>当たった理由をパート単位で言語化する</b><p>「なぜ伸びたか」を、フック／使用シーン／価格納得／CTAのどのパートが効いたのかまで分解します。</p></li>
+    <li><b>翌週は当たりに寄せて増産する</b><p>当たり型を軸に、新しい変数を1つだけ足して回し続けます。過去に伸びた動画の冒頭差し替えや演者替えなどの「再構築」も、新規企画より打率の高い立派な1本です。</p></li>
+  </ol>
+
+  <h2 id="s6"><span class="no en">06</span>撮影・編集はスマホで足りる：時間をかけるのは冒頭2秒とテロップ</h2>
+  <p>機材で悩む必要はありません。スマホと自然光、商品を実際に使える場所があれば十分です。編集で優先すべきは2つ——<strong>冒頭2秒の作り込み</strong>（最初のカットと、画面に大きく出す一言テロップ）と、<strong>無音でも伝わるテロップ</strong>です。フィードは音を出さずに見られることも多く、テロップだけで話が追える動画は取りこぼしが減ります。</p>
+  <h3>長さは「維持率が保てる範囲で短く」が基本</h3>
+  <p>実演やレビューが必要な商材ほど長めになりますが、最適な長さは商材と構成によって変わり、一律の目安はありません。「言いたいことを全部入れて長くする」のではなく、<strong>視聴維持率が落ちる手前まで削る</strong>方向で考えてください。動画の長さの要件や推奨値は更新されるため、最新はセラーセンターの公式ヘルプで確認を。</p>
+  <h3>AI動画作成ツールは「量産の補助輪」として使う</h3>
+  <p>セラー向けには、商品情報や画像からAIが動画素材を生成する機能も提供されています。ゼロから作る負荷を下げ、検証の本数を稼ぐ用途では有用です。ただし生成された動画は「型を検証する叩き台」であり、そのまま当たりが出る魔法ではありません。<strong>提供状況・生成回数などの仕様は変わるため、最新は公式の管理画面とヘルプで確認してください。</strong></p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>制作に凝るほど1本あたりの心理的コストが上がり、本数が出なくなります。<strong>「軽く作って多く出す」体制のほうが、結果的に質も上がる</strong>——当たりの型が数字で見つかるからです。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>投稿後の数字は3段で切り分ける：視聴された→クリックされた→買われた</h2>
+  <p>「伸びない」には3種類あります。どの段で落ちているかによって打ち手が全く違うため、感覚で作り直す前に、順番に切り分けます。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="投稿後の3段の切り分け図：視聴される、商品カードがクリックされる、購入されるの3段のどこで落ちているかで、フック、使用シーンとCTA、商品ページと価格納得のどれを直すかが決まる">
+      <rect x="40" y="24" width="400" height="56" rx="10" fill="#17181C"/>
+      <text x="240" y="59" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">① 視聴される（冒頭2秒で残る）</text>
+      <path d="M240 80 V104" stroke="#787D8A" stroke-width="2"/><path d="M234 98 L240 108 L246 98 Z" fill="#787D8A"/>
+      <rect x="70" y="110" width="340" height="56" rx="10" fill="#454956"/>
+      <text x="240" y="145" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">② 商品カードがクリックされる</text>
+      <path d="M240 166 V190 M234 184 L240 194 L246 184" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <rect x="100" y="196" width="280" height="56" rx="10" fill="#E8324A"/>
+      <text x="240" y="231" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">③ 購入される</text>
+      <rect x="470" y="24" width="230" height="56" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="585" y="47" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">①で落ちる</text>
+      <text x="585" y="67" text-anchor="middle" font-size="11" fill="#454956">→ フック（冒頭2秒）を差し替え</text>
+      <rect x="470" y="110" width="230" height="56" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="585" y="133" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">②で落ちる</text>
+      <text x="585" y="153" text-anchor="middle" font-size="11" fill="#454956">→ 使用シーンとCTAを見直す</text>
+      <rect x="470" y="196" width="230" height="56" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="585" y="219" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">③で落ちる</text>
+      <text x="585" y="239" text-anchor="middle" font-size="11" fill="#454956">→ 商品ページと価格納得を見直す</text>
+      <line x1="440" y1="52" x2="470" y2="52" stroke="#E8324A" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <line x1="410" y1="138" x2="470" y2="138" stroke="#E8324A" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <line x1="380" y1="224" x2="470" y2="224" stroke="#E8324A" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <rect x="40" y="276" width="660" height="40" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="370" y="302" text-anchor="middle" font-size="12" font-weight="700" fill="#8A5A00">③の先で「売れているのに利益が出ない」なら、動画ではなく損益ライン（§08）の問題</text>
+    </svg>
+    <figcaption>図4：投稿後の3段切り分け。どの段で落ちたかが、次に作る動画を決める（LEAM作成）</figcaption>
+  </figure>
+  <div class="tw"><table>
+    <thead><tr><th>症状</th><th>落ちている段</th><th>疑う場所と打ち手</th></tr></thead>
+    <tbody>
+      <tr><td>再生が回らない・すぐスワイプされる</td><td>視聴</td><td>フック（冒頭2秒）を差し替える。冒頭以外は同じ素材でも改善余地あり</td></tr>
+      <tr><td>視聴されるが商品がクリックされない</td><td>クリック</td><td>使用シーンとCTA。「欲しくなる場面」があるか、動線を指差しているか</td></tr>
+      <tr><td>クリックされるが買われない</td><td>購入</td><td>商品ページと価格納得。画像・説明・レビュー・価格の納得材料を見直す</td></tr>
+      <tr><td>売れているのに利益が出ない</td><td>損益</td><td>動画ではなく§08の損益ライン。コミッション率と価格設計を見直す</td></tr>
+    </tbody>
+  </table></div>
+  <p>この切り分けを週次で回すのが、ショート動画運用の実務です。1本ごとに一喜一憂するのではなく、<strong>「今週はどの段で落ちた動画が多かったか」</strong>を見ると、来週作るべき動画がひとりでに決まります。</p>
+
+  <h2 id="s8"><span class="no en">08</span>動画がバズっても赤字は起きる：損益ラインを決めてから本数を踏む</h2>
+  <p>最後に、動画の話に見えて動画の外にある落とし穴を1つ。再生数と売上が伸びても、利益が出るかは別問題です。販売価格から、原価・プラットフォーム手数料・クリエイターへのコミッション・送料などを引いた残りが、クーポンや値引き、広告に使える余地のすべてです（手数料の料率は改定されることがあるため、最新は公式情報で確認してください）。</p>
+  <p>ショート動画運用と特に関係が深いのが<strong>コミッション率</strong>です。率を上げるほどクリエイターに取り上げられやすくなり、動画の本数は増えます。しかし1件あたりの手残りは減るため、<strong>「本数を踏むためにコミッションを上げる→売れるほど赤字」という構造は実際に起こります</strong>。許容できる率の上限を先に数字で決めてから、クリエイター起用を広げてください。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：「バズ＝成功」と数えない</div>
+    <p>見るべきは再生数ではなく、<strong>注文件数と1件あたりの手残り</strong>です。動画の評価軸を「再生」から「利益の出る注文」に置き直すだけで、作るべき動画も、上げるべきコミッションも変わります。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>動画の長さはどのくらいが最適ですか？</summary><div class="a">一律の目安はなく、最適な長さは商材と構成によって変わります。実演が必要な商材ほど長めになりますが、「視聴維持率が落ちる手前まで削る」方向で調整し、動画の長さの要件や推奨値の最新はセラーセンターの公式ヘルプで確認してください。</div></details>
+    <details><summary>フォロワーが少なくても売れますか？</summary><div class="a">おすすめフィードへの配信は動画単体の反応をもとに広がる仕組みのため、フォロワーが少なくても売れる動画は届く範囲が広がります。フォロワーを増やしてから販売を始める、という順番を待つ必要はありません。</div></details>
+    <details><summary>自社で動画を作る体制がなくても始められますか？</summary><div class="a">始められます。実務ではクリエイターのアフィリエイト動画が主戦場になるため、自社制作より先に、クリエイター起用の体制づくりから着手する方法があります。</div></details>
+    <details><summary>何本くらい投稿すれば良いですか？</summary><div class="a">一律の正解本数はありません。重要なのは、1本に賭けず週単位で本数を決めて検証を回すことです。自社投稿とクリエイター動画の合計で本数を設計してください。</div></details>
+    <details><summary>再生は伸びたのに売れないのはなぜですか？</summary><div class="a">「視聴→クリック→購入」のどこで落ちているかを切り分けてください。クリックされていなければ使用シーンとCTA、クリックされて買われていなければ商品ページと価格納得の問題であることが多いです。</div></details>
+    <details><summary>クリエイターにはどこまで指示すべきですか？</summary><div class="a">NG表現（法令に触れる表現・誤った仕様の説明）と外せない要点だけを渡し、表現はクリエイター自身の言葉に委ねるのが定石です。台本を細かく指定するほど「いつもと違う宣伝」に見え、反応が落ちやすくなります。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><a href="https://leam.co.jp/column/creator-commission/" style="color:inherit;text-decoration:none"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-commission/" style="color:inherit;text-decoration:none">クリエイター報酬相場</a></b><span>粗利から逆算する報酬設計</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/gmvmax/" style="color:inherit;text-decoration:none"><span class="rc">広告運用</span><b><a href="https://leam.co.jp/column/gmvmax/" style="color:inherit;text-decoration:none">GMV Max完全ガイド</a></b><span>仕組みと始め方</span></a></div>
+      <div class="relcard"><a href="https://leam.co.jp/column/not-selling-checklist/" style="color:inherit;text-decoration:none"><span class="rc">運用改善</span><b><a href="https://leam.co.jp/column/not-selling-checklist/" style="color:inherit;text-decoration:none">売れない時の10チェックリスト</a></b><span>原因の見つけ方と直す順番</span></a></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ（動画仕様・提供機能・手数料等は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">ショート動画が主戦場</a></li>
+        <li><a href="#s2">売れる構成の型（4パート）</a></li>
+        <li><a href="#s3">NG例との対比</a></li>
+        <li><a href="#s4">主戦場はクリエイター動画</a></li>
+        <li><a href="#s5">本数で検証する回し方</a></li>
+        <li><a href="#s6">撮影・編集はスマホで足りる</a></li>
+        <li><a href="#s7">数字の3段切り分け</a></li>
+        <li><a href="#s8">バズっても赤字は起きる</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>動画の前に、売れる設計の無料診断</b>
+      <p>商品・価格・クリエイター起用の設計を拝見し、率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "動画の長さはどのくらいが最適ですか？", "acceptedAnswer": {"@type": "Answer", "text": "一律の目安はなく、最適な長さは商材と構成によって変わります。実演が必要な商材ほど長めになりますが、「視聴維持率が落ちる手前まで削る」方向で調整し、動画の長さの要件や推奨値の最新はセラーセンターの公式ヘルプで確認してください。"}},
+        {"@type": "Question", "name": "フォロワーが少なくても売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "おすすめフィードへの配信は動画単体の反応をもとに広がる仕組みのため、フォロワーが少なくても売れる動画は届く範囲が広がります。フォロワーを増やしてから販売を始める、という順番を待つ必要はありません。"}},
+        {"@type": "Question", "name": "自社で動画を作る体制がなくても始められますか？", "acceptedAnswer": {"@type": "Answer", "text": "始められます。実務ではクリエイターのアフィリエイト動画が主戦場になるため、自社制作より先に、クリエイター起用の体制づくりから着手する方法があります。"}},
+        {"@type": "Question", "name": "何本くらい投稿すれば良いですか？", "acceptedAnswer": {"@type": "Answer", "text": "一律の正解本数はありません。重要なのは、1本に賭けず週単位で本数を決めて検証を回すことです。自社投稿とクリエイター動画の合計で本数を設計してください。"}},
+        {"@type": "Question", "name": "再生は伸びたのに売れないのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "「視聴→クリック→購入」のどこで落ちているかを切り分けてください。クリックされていなければ使用シーンとCTA、クリックされて買われていなければ商品ページと価格納得の問題であることが多いです。"}},
+        {"@type": "Question", "name": "クリエイターにはどこまで指示すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "NG表現（法令に触れる表現・誤った仕様の説明）と外せない要点だけを渡し、表現はクリエイター自身の言葉に委ねるのが定石です。台本を細かく指定するほど「いつもと違う宣伝」に見え、反応が落ちやすくなります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

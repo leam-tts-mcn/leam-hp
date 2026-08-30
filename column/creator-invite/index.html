@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのクリエイター招待とは？コラボの仕組み</title>
+<meta name="description" content="TikTok Shopでセラーから届くクリエイター招待とコラボの仕組み、承諾の判断基準、報酬の受け取り方までをクリエイター向けに解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/creator-invite/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのクリエイター招待とは？コラボの仕組み">
+<meta property="og:description" content="TikTok Shopでセラーから届くクリエイター招待とコラボの仕組み、承諾の判断基準、報酬の受け取り方までをクリエイター向けに解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/creator-invite/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのクリエイター招待とは？コラボの仕組み">
+<meta name="twitter:description" content="TikTok Shopでセラーから届くクリエイター招待とコラボの仕組み、承諾の判断基準、報酬の受け取り方までをクリエイター向けに解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+  a.relcard{color:inherit;text-decoration:none}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのクリエイター招待とは？コラボの仕組み", "description": "TikTok Shopでセラーから届くクリエイター招待とコラボの仕組み、承諾の判断基準、報酬の受け取り方までをクリエイター向けに解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creator-invite/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのクリエイター招待とは？コラボの仕組み", "item": "https://leam.co.jp/column/creator-invite/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › クリエイター招待・コラボの仕組み</p>
+  <span class="cat">クリエイター向け</span>
+  <h1>TikTok Shopのクリエイター招待とは？コラボの仕組み・報酬の受け取り方【クリエイター向け】</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="クリエイターの招待：招待状の封筒を送り、3枚の候補者カードから起用する相手を選んでチェックを付ける様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v298c-104 30-198 24-306 2-108-22-198-56-312-50-114 6-200 52-312 62-96 9-190-2-270-30z" fill="#F6F7F9"/>
+  <ellipse cx="760" cy="240" rx="330" ry="220" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="74" cy="68" r="5"/><circle cx="110" cy="68" r="5"/><circle cx="146" cy="68" r="5"/><circle cx="182" cy="68" r="5"/>
+      <circle cx="74" cy="104" r="5"/><circle cx="110" cy="104" r="5"/><circle cx="146" cy="104" r="5"/><circle cx="182" cy="104" r="5"/>
+      <circle cx="74" cy="140" r="5"/><circle cx="110" cy="140" r="5"/><circle cx="146" cy="140" r="5"/><circle cx="182" cy="140" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(566 476)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-30 276-14 408 10 130 24 246 30 366 10 118-20 234-44 426-26v124H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：候補者カードの台（シアン） ================= -->
+  <g>
+    <rect x="724" y="110" width="384" height="410" rx="24" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="724" y="110" width="384" height="410" rx="24" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 候補者カード 1 -->
+    <g>
+      <rect x="756" y="124" width="320" height="104" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+      <circle cx="810" cy="164" r="20" fill="#DFE0E2"/>
+      <path d="M782 206a28 28 0 0 1 56 0z" fill="#DFE0E2"/>
+      <rect x="864" y="150" width="112" height="13" rx="6.5" fill="#DFE0E2"/>
+      <rect x="864" y="178" width="76" height="12" rx="6" fill="#25F4EE"/>
+      <rect x="1012" y="159" width="34" height="34" rx="9" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+      <path d="M1020 176l7.5 8.5 13-15.5" fill="none" stroke="#25F4EE" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 候補者カード 2（選ばれた1人・少し大きい） -->
+    <g>
+      <rect x="740" y="252" width="352" height="126" rx="16" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+      <rect x="740" y="252" width="352" height="126" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <circle cx="804" cy="302" r="24" fill="#DFE0E2"/>
+      <path d="M774 352a30 30 0 0 1 60 0z" fill="#DFE0E2"/>
+      <rect x="866" y="282" width="132" height="14" rx="7" fill="#DFE0E2"/>
+      <rect x="866" y="314" width="90" height="13" rx="6.5" fill="#25F4EE"/>
+      <circle cx="1038" cy="315" r="27" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+      <path d="M1026 316l8 9 16-19" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 候補者カード 3（未選択） -->
+    <g>
+      <rect x="756" y="402" width="320" height="104" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+      <circle cx="810" cy="442" r="20" fill="#DFE0E2"/>
+      <path d="M782 484a28 28 0 0 1 56 0z" fill="#DFE0E2"/>
+      <rect x="864" y="428" width="98" height="13" rx="6.5" fill="#DFE0E2"/>
+      <rect x="864" y="456" width="66" height="12" rx="6" fill="#25F4EE"/>
+      <rect x="1012" y="437" width="34" height="34" rx="9" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- ================= 左：招待状の封筒（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <path d="M136 286h446a18 18 0 0 1 18 18v256a18 18 0 0 1-18 18H136a18 18 0 0 1-18-18V304a18 18 0 0 1 18-18z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+
+    <!-- 封筒の背面（赤の陰） -->
+    <path d="M136 286h446a18 18 0 0 1 18 18v256a18 18 0 0 1-18 18H136a18 18 0 0 1-18-18V304a18 18 0 0 1 18-18z" fill="#CE1730"/>
+
+    <!-- 中から出ている招待状 -->
+    <g transform="rotate(-5 350 300)">
+      <rect x="210" y="140" width="280" height="360" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="410" y="180" width="56" height="58" rx="9" fill="#DFE0E2" stroke="#C9CBD0" stroke-width="4"/>
+      <g fill="#DFE0E2">
+        <rect x="246" y="192" width="150" height="14" rx="7"/>
+        <rect x="246" y="228" width="150" height="12" rx="6"/>
+        <rect x="246" y="260" width="196" height="12" rx="6"/>
+        <rect x="246" y="292" width="182" height="12" rx="6"/>
+        <rect x="246" y="324" width="120" height="12" rx="6"/>
+      </g>
+    </g>
+
+    <!-- 封筒の前面 -->
+    <path d="M118 310L359 476 600 310V560a18 18 0 0 1-18 18H136a18 18 0 0 1-18-18z" fill="#FE2C55"/>
+
+    <!-- 輪郭 -->
+    <path d="M136 286h446a18 18 0 0 1 18 18v256a18 18 0 0 1-18 18H136a18 18 0 0 1-18-18V304a18 18 0 0 1 18-18z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M118 310L359 476 600 310" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- 封蝋 -->
+    <circle cx="359" cy="476" r="32" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="359" cy="476" r="18" fill="#FE2C55"/>
+  </g>
+
+  <!-- ================= 招待が届く矢印（シアン） ================= -->
+  <g>
+    <path d="M611 481C650 478 680 460 687 408L674 394 706 356 726 402 709 411C700 462 660 496 613 503Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M611 481C650 478 680 460 687 408L674 394 706 356 726 402 709 411C700 462 660 496 613 503Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1140" cy="88" r="20" fill="#25F4EE"/>
+  <circle cx="664" cy="204" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの「クリエイター招待」とは、セラー（出店者）からクリエイターに届く「この商品をあなたのコンテンツで紹介してほしい」という公式の依頼です。</strong>承諾して動画やLIVEで商品を紹介し、視聴者の購入につながると、成果に応じたコミッション（紹介報酬）を受け取れます。この記事では、招待が届く仕組み、オープンコラボとターゲットコラボの違い、報酬が銀行口座に入るまでの流れ、そして<strong>招待が来やすいクリエイターになる方法</strong>までを、クリエイター目線で解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>クリエイター招待が届く仕組みと、オープン／ターゲットコラボの違い</li>
+      <li>報酬が確定して銀行口座に入るまでの流れと注意点</li>
+      <li>案件が来やすくなるプロフィール・実績の作り方（MCN活用を含む）</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">「案件を待つ」から「案件が集まる」へ。LEAMは所属クリエイターを募集しています</div>
+    <p>TikTok Shop特化MCNのLEAMでは、案件のご紹介から条件の確認、売れている商品・動画の型の共有まで、クリエイターの収益化を伴走サポートします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/mcn/">MCNの詳細を見る</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">相談してみる</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">クリエイター招待は、セラーから届く「紹介してほしい」という公式の依頼</a></li>
+      <li><a href="#s2">参加には条件がある：フォロワー数などの基準は「最新を公式で確認」が鉄則</a></li>
+      <li><a href="#s3">コラボは2種類：誰でも参加できる「オープン」と、指名で届く「ターゲット」</a></li>
+      <li><a href="#s4">報酬は成果報酬型：確定のタイミングと受け取りの流れを先に押さえる</a></li>
+      <li><a href="#s5">無料サンプルは2種類：受け取る前に「条件」を必ず確認する</a></li>
+      <li><a href="#s6">招待を受けるかは「報酬率×価格×売れやすさ」で判断する</a></li>
+      <li><a href="#s7">案件が来やすいクリエイターには共通点がある：セラーの検索画面から逆算する</a></li>
+      <li><a href="#s8">MCN（事務所）に所属すると、案件獲得と条件面のサポートが受けられる</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>クリエイター招待は、セラーから届く「紹介してほしい」という公式の依頼</h2>
+  <p>TikTok Shopには、セラーが自社商品の紹介をクリエイターへ依頼する「アフィリエイト（コラボ）」の仕組みが用意されています。クリエイター側から見ると入口は2つで、ひとつはセラーから指名で届く<strong>招待（ターゲットコラボ）</strong>、もうひとつは公開されている商品一覧から<strong>自分で選んで参加するオープンコラボ</strong>です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="クリエイター招待の全体像：セラーが商品と報酬率を設定して招待を送り、クリエイターが動画やLIVEで紹介し、視聴者が購入すると、TikTok Shop経由でコミッションが支払われる流れ">
+      <rect x="20" y="70" width="170" height="90" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="105" y="103" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">セラー（出店者）</text>
+      <text x="105" y="127" text-anchor="middle" font-size="11" fill="#787D8A">商品・報酬率・</text>
+      <text x="105" y="145" text-anchor="middle" font-size="11" fill="#787D8A">サンプル条件を設定</text>
+      <path d="M190 115 H248" stroke="#787D8A" stroke-width="2"/>
+      <path d="M242 109 L252 115 L242 121 Z" fill="#787D8A"/>
+      <text x="221" y="98" text-anchor="middle" font-size="10.5" font-weight="700" fill="#454956">① 招待・公開</text>
+      <rect x="255" y="60" width="190" height="110" rx="12" fill="#17181C"/>
+      <text x="350" y="95" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">クリエイター（あなた）</text>
+      <text x="350" y="121" text-anchor="middle" font-size="11" fill="#C9CBD4">② 条件を確認して承諾し</text>
+      <text x="350" y="139" text-anchor="middle" font-size="11" fill="#C9CBD4">動画・LIVEで紹介</text>
+      <path d="M445 115 H503" stroke="#787D8A" stroke-width="2"/>
+      <path d="M497 109 L507 115 L497 121 Z" fill="#787D8A"/>
+      <text x="476" y="98" text-anchor="middle" font-size="10.5" font-weight="700" fill="#454956">③ 商品カード</text>
+      <rect x="510" y="70" width="190" height="90" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="605" y="103" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">視聴者が購入</text>
+      <text x="605" y="127" text-anchor="middle" font-size="11" fill="#787D8A">動画・LIVE内の</text>
+      <text x="605" y="145" text-anchor="middle" font-size="11" fill="#787D8A">商品カード経由</text>
+      <path d="M605 160 V230 H350 V175" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M344 182 L350 170 L356 182 Z" fill="#0E8A5F"/>
+      <text x="478" y="222" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">④ 成果分のコミッションがTikTok Shop経由で支払われる</text>
+      <text x="360" y="272" text-anchor="middle" font-size="10.5" fill="#787D8A">報酬の計測・支払いはプラットフォームが仲介するため、個人間PR案件より未払いリスクが構造的に小さい</text>
+    </svg>
+    <figcaption>図1：クリエイター招待の全体像。報酬はTikTok Shopのシステム経由で支払われる（LEAM作成）</figcaption>
+  </figure>
+  <p>どちらの入口でも、その先の流れは同じです。商品を選ぶ（または招待を承諾する）→動画・LIVE・商品ショーケースで紹介する→視聴者が動画内の商品カードから購入する→成果に応じてコミッションが支払われる、という成果報酬型です。<strong>報酬はセラーから直接ではなく、TikTok Shopのシステムを通じて計測・支払いされる</strong>ため、個人間のPR案件で起きがちな「報酬の未払い」「成果の水増し・過少報告」が構造的に起きにくいのが特徴です。</p>
+  <h3>招待はアプリ内のクリエイター向け画面に届く</h3>
+  <p>セラーはSeller Center（セラー向け管理画面）でクリエイターを検索し、個別または一括で招待を送ります。招待には対象商品・コミッション率・コラボ期間などの条件が含まれ、クリエイター側はアプリ内のクリエイター向け画面やメッセージで受け取り、内容を確認して<strong>承諾・辞退を選べます</strong>。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>招待は「必ず受けるべき指示」ではなく、<strong>承諾するかどうかを選べる依頼</strong>です。条件を確認してから判断すればよく、すべて受ける必要はありません（判断基準は§06、断り方はFAQで解説します）。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>参加には条件がある：フォロワー数などの基準は「最新を公式で確認」が鉄則</h2>
+  <p>クリエイターとしてコラボに参加するには、まずTikTok Shopのクリエイター機能（アフィリエイトプログラム）への参加申請が必要です。一般に、年齢の下限、対象地域のアカウントであること、コミュニティガイドラインを遵守していること、そして<strong>一定のフォロワー数</strong>などが基準になります。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：数値基準は変わります</div>
+    <p>フォロワー数などの数値基準は、地域や時期によって変更されることがあります。本記事では特定の数値を断定しません。<strong>必ずアプリ内の参加申請画面と公式ヘルプで、最新の条件を確認してください。</strong>「昔の記事に書いてあった数字」を根拠に諦めるのが、いちばんもったいないパターンです。</p>
+  </div>
+  <h3>参加までの流れは4ステップ</h3>
+  <ol class="steps">
+    <li><b>アプリから参加申請する</b><p>TikTokアプリのクリエイター向けメニューから「TikTok Shopクリエイター」への参加を申請します。申請自体はアプリ内で完結します（審査の所要時間は状況によって変わります）。</p></li>
+    <li><b>本人情報と受け取り口座を登録する</b><p>本人確認と、報酬を受け取る銀行口座の登録を行います。ここが未登録だと、成果が出ても出金できません。</p></li>
+    <li><b>紹介する商品を決める</b><p>オープンコラボの商品一覧から自分で選ぶか、届いた招待（ターゲットコラボ）の条件を確認して承諾します。</p></li>
+    <li><b>商品カードを付けて動画・LIVEで紹介する</b><p>商品カード（リンク）が付いていない投稿は成果が計測されません。投稿前に必ずカードの紐づけを確認します。</p></li>
+  </ol>
+
+  <h2 id="s3"><span class="no en">03</span>コラボは2種類：誰でも参加できる「オープン」と、指名で届く「ターゲット」</h2>
+  <p>コラボには<strong>「オープンコラボ」と「ターゲットコラボ」の2種類</strong>があります。クリエイターのキャリアは通常、オープンで実績を作り、ターゲットの指名が増えていく順で進みます。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="オープンコラボとターゲットコラボの対比図：オープンは公開された商品一覧から自分で選んで参加し、ターゲットはセラーから個別条件つきの招待が指名で届く">
+      <rect x="20" y="20" width="330" height="270" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="75" y="36" width="220" height="26" rx="13" fill="#fff" stroke="#E6E7EB"/>
+      <text x="185" y="54" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">オープンコラボ</text>
+      <rect x="55" y="80" width="260" height="44" rx="9" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="64" y="88" width="28" height="28" rx="6" fill="#F3A7B5"/>
+      <text x="102" y="100" font-size="10.5" font-weight="700" fill="#17181C">商品A　コミッション率を公開</text>
+      <text x="102" y="116" font-size="10" fill="#787D8A">誰でも参加OK</text>
+      <rect x="55" y="132" width="260" height="44" rx="9" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="64" y="140" width="28" height="28" rx="6" fill="#AECBEB"/>
+      <text x="102" y="152" font-size="10.5" font-weight="700" fill="#17181C">商品B　コミッション率を公開</text>
+      <text x="102" y="168" font-size="10" fill="#787D8A">誰でも参加OK</text>
+      <rect x="55" y="184" width="260" height="44" rx="9" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <rect x="64" y="192" width="28" height="28" rx="6" fill="#BFE3D4"/>
+      <text x="102" y="204" font-size="10.5" font-weight="700" fill="#17181C">商品C　自分の視聴者と相性◎</text>
+      <text x="102" y="220" font-size="10" font-weight="700" fill="#C2203A">→ 自分で選んで参加</text>
+      <path d="M330 206 l14 10 l-6 3 l5 10 l-6 3 l-5 -10 l-6 4 Z" fill="#17181C"/>
+      <text x="185" y="266" text-anchor="middle" font-size="11" fill="#787D8A">公開された商品一覧から「自分で選ぶ」</text>
+      <rect x="370" y="20" width="330" height="270" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <rect x="425" y="36" width="220" height="26" rx="13" fill="#FDEEF1"/>
+      <text x="535" y="54" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">ターゲットコラボ</text>
+      <rect x="410" y="80" width="250" height="150" rx="12" fill="#fff" stroke="#E6E7EB"/>
+      <rect x="410" y="80" width="250" height="34" rx="12" fill="#17181C"/>
+      <text x="535" y="103" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">📩 コラボ招待が届きました</text>
+      <text x="428" y="140" font-size="11.5" fill="#454956">対象商品：スチームアイロン</text>
+      <text x="428" y="162" font-size="11.5" fill="#454956">コミッション率：個別に提示</text>
+      <text x="428" y="184" font-size="11.5" fill="#454956">期間・サンプル・依頼内容つき</text>
+      <rect x="428" y="196" width="100" height="24" rx="6" fill="#E8324A"/>
+      <text x="478" y="213" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">承諾する</text>
+      <rect x="540" y="196" width="100" height="24" rx="6" fill="#F6F6F8"/>
+      <text x="590" y="213" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">辞退する</text>
+      <text x="535" y="266" text-anchor="middle" font-size="11" fill="#787D8A">セラーがあなたを指名して「招待が届く」</text>
+    </svg>
+    <figcaption>図2：2種類のコラボ。オープンで実績を作り、ターゲットの指名を増やすのが王道（LEAM作成）</figcaption>
+  </figure>
+  <h3>オープンコラボ：公開された商品から自分で選んで始める</h3>
+  <p>セラーが「誰でも紹介OK」として公開している商品に、クリエイター側から参加する方式です。実績がなくても始められるため、<strong>最初の1件はここから作るのが定石</strong>です。ただし多くのクリエイターが同じ商品を扱えるため、条件は共通の標準的な水準になります。</p>
+  <h3>ターゲットコラボ：セラーから指名で届く招待</h3>
+  <p>セラーがクリエイターを指名し、個別に条件を提示する方式です。オープンより<strong>条件（報酬率・サンプル・期間など）が個別に設計される</strong>ことが多く、動画かLIVEかといったコンテンツの種類がリクエストされる場合もあります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>オープンコラボ</th><th>ターゲットコラボ</th></tr></thead>
+    <tbody>
+      <tr><td>始め方</td><td>公開商品の一覧から自分で選ぶ</td><td>セラーからの招待を承諾する</td></tr>
+      <tr><td>参加のハードル</td><td class="y">実績ゼロでも参加しやすい</td><td>実績・ジャンル適合を見て指名される</td></tr>
+      <tr><td>条件の決まり方</td><td>セラーが公開した共通条件</td><td class="y">個別に提示（率・期間・サンプル等）</td></tr>
+      <tr><td>競合</td><td class="n">同じ商品を多数のクリエイターが扱う</td><td>指名のため競合が限定的</td></tr>
+      <tr><td>位置づけ</td><td>実績づくり・数を打つ段階</td><td>本命案件・セラーとの継続的な関係</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 迷ったら</div>
+    <p><strong>まずオープンコラボで「売れた実績」を1件作ってください。</strong>ターゲットコラボの招待は、セラーが管理画面であなたの実績とジャンルを見て送るものだからです（詳しくは§07）。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>報酬は成果報酬型：確定のタイミングと受け取りの流れを先に押さえる</h2>
+  <p>コミッションは、紹介した商品が<strong>実際に購入されて初めて発生する成果報酬</strong>です。投稿しただけ・再生されただけでは発生しません。受け取りまでの流れを図で押さえましょう。</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="報酬の受け取りの流れ図：紹介動画やLIVEからの購入、注文完了と成果の計測、返品・キャンセル期間の経過、コミッション確定、残高への反映と銀行口座への出金という5段階">
+      <line x1="80" y1="80" x2="640" y2="80" stroke="#E6E7EB" stroke-width="3"/>
+      <circle cx="80" cy="80" r="22" fill="#17181C"/>
+      <text x="80" y="86" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Inter">1</text>
+      <circle cx="220" cy="80" r="22" fill="#17181C"/>
+      <text x="220" y="86" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Inter">2</text>
+      <circle cx="360" cy="80" r="22" fill="#17181C"/>
+      <text x="360" y="86" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Inter">3</text>
+      <circle cx="500" cy="80" r="22" fill="#E8324A"/>
+      <text x="500" y="86" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Inter">4</text>
+      <circle cx="640" cy="80" r="22" fill="#0E8A5F"/>
+      <text x="640" y="86" text-anchor="middle" font-size="14" font-weight="800" fill="#fff" font-family="Inter">5</text>
+      <text x="80" y="126" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">紹介動画・LIVE</text>
+      <text x="80" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">から購入</text>
+      <text x="220" y="126" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">注文完了・</text>
+      <text x="220" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">成果を計測</text>
+      <text x="360" y="126" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">返品・キャンセル</text>
+      <text x="360" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">期間の経過</text>
+      <text x="500" y="126" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">コミッション</text>
+      <text x="500" y="144" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">確定</text>
+      <text x="640" y="126" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">残高へ反映・</text>
+      <text x="640" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">口座に出金</text>
+      <path d="M80 40 Q290 12 500 40" stroke="#787D8A" stroke-width="1.5" stroke-dasharray="4 4" fill="none"/>
+      <text x="290" y="30" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">購入 → 確定 まではタイムラグがある</text>
+      <text x="360" y="196" text-anchor="middle" font-size="10.5" fill="#787D8A">※確定までの日数・締め日・出金スケジュールは変更されることがあります。</text>
+      <text x="360" y="216" text-anchor="middle" font-size="10.5" fill="#787D8A">最新はアプリ内の表示と公式ヘルプで確認してください。</text>
+    </svg>
+    <figcaption>図3：報酬の受け取りの流れ。購入から確定・出金まではタイムラグがある（LEAM作成）</figcaption>
+  </figure>
+  <p>重要なのは、<strong>購入の瞬間には報酬が確定しない</strong>ことです。返品・キャンセルの可能性がある期間を経て注文が確定し、その後にコミッションが確定・反映されます。「今月売れた金額」と「今月受け取れる金額」はずれる前提でスケジュールを考えておくと、慌てずに済みます。</p>
+  <h3>報酬率は「どの経路の購入か」で変わることがある</h3>
+  <p>同じ商品でも、適用される報酬率は1種類とは限りません。代表的な区分を整理します。</p>
+  <div class="tw"><table>
+    <thead><tr><th>報酬率の種類</th><th>適用される場面</th></tr></thead>
+    <tbody>
+      <tr><td>標準の報酬率（オープン）</td><td>オープンコラボ経由の通常の購入</td></tr>
+      <tr><td>標準の報酬率（ターゲット）</td><td>招待に記載された、あなた向けの個別条件による購入</td></tr>
+      <tr><td>広告用の報酬率</td><td>あなたの動画がセラーの広告として配信され、広告経由で購入された場合。標準とは別の率が設定されていることがある</td></tr>
+    </tbody>
+  </table></div>
+  <p>※同じ購入に複数の率が該当しうる場合の優先順位や、率の名称・区分は仕様変更されることがあります。承諾前に招待画面の表示を、迷ったら公式ヘルプを確認してください。</p>
+  <h3>報酬率の引き下げには猶予のルールがある</h3>
+  <p>セラーは商品の報酬率を変更できますが、公式ヘルプでは、<strong>引き下げは既に提携しているクリエイターへ即時適用されず、一定の猶予期間を経て適用される</strong>とされています（適用ルールの最新は公式で確認してください）。提携中に率が突然下がって過去分の報酬が消える、という構造にはなっていません。</p>
+
+  <h2 id="s5"><span class="no en">05</span>無料サンプルは2種類：受け取る前に「条件」を必ず確認する</h2>
+  <p>ターゲットコラボの招待には、商品サンプルの提供が付くことがあります。サンプルには大きく2種類あり、<strong>受け取る前に条件を確認する</strong>のがトラブル回避の基本です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>種類</th><th>仕組み</th><th>クリエイター側の注意点</th></tr></thead>
+    <tbody>
+      <tr><td><b>無料サンプル</b></td><td>セラーが商品を無償で提供する</td><td>受け取りに投稿などの条件が紐づくことがある。本数・納期・内容の指定を承諾前に確認する</td></tr>
+      <tr><td><b>返金型サンプル</b>（公式ヘルプでは「返金可能なサンプル」）</td><td>一度自分で購入してコンテンツを投稿し、指定された販売件数などの条件を満たすと代金が返金される</td><td>条件未達なら自己負担になる。達成できる見込みがあるかを受ける前に判断する</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 「サンプルだけ受け取って投稿しない」は自分の首を絞める</div>
+    <p>公式ヘルプによれば、セラー側にはサンプル対応の実績（受け取ったサンプルに対して実際にコンテンツを投稿した比率）をもとに信頼できるクリエイターへ絞り込む機能があり、クリエイター側もサンプルの対応率が基準を下回ると新たな申請が制限されることがあるとされています。<strong>受け取って放置する行為は記録に残り、以後の招待が来にくくなる要因になります。</strong>迷う案件は、受け取る前に辞退するほうが長期的には得です。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">どの案件を受けるべきか、ひとりで悩んでいませんか</div>
+    <p>LEAMのMCNでは、招待された案件の条件確認や、あなたのジャンル・視聴者に合う商品選びを一緒に考えます。まずは現状のアカウントを見せていただくところからで構いません。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/mcn/">クリエイター募集ページへ</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">相談してみる</a>
+    </div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>招待を受けるかは「報酬率×価格×売れやすさ」で判断する</h2>
+  <p>招待が届いたとき、報酬率の高さだけで判断すると失敗します。クリエイター側の実質的な手取りは<strong>「報酬率 × 商品価格 × 売れる件数」</strong>で決まるからです。率が高くても売れない商品なら収入はゼロ、標準的な率でも自分の視聴者に刺さる商品なら大きくなります。</p>
+  <h3>時給換算で考える：制作時間に見合うか</h3>
+  <p>実務的には、動画1本の制作にかかる時間と、「1件あたり報酬（率×価格）×現実的な販売見込み」を比べることをおすすめします。当社の運用実感では、<strong>視聴者との相性が悪い高率案件より、相性の良い標準率案件のほうが結果的に手取りが大きくなる</strong>ケースが目立ちます。相性は感覚ではなく、承諾前に次の3つで確かめられます。①その商品ページのレビュー件数と評価（少なすぎると売りにくい）②同じ商品の既存アフィリエイト動画が伸びているか ③自分の過去動画で、同じジャンルの視聴完了率が高かったか。</p>
+  <div class="tw"><table>
+    <thead><tr><th>承諾前の確認項目</th><th>見るポイント</th></tr></thead>
+    <tbody>
+      <tr><td>1件あたりの報酬額</td><td>率だけでなく「率×商品価格」を円で計算する。率20%でも500円の商品なら1件100円</td></tr>
+      <tr><td>商品の売れやすさ</td><td>その商品や同種の商品が、TikTok Shopで既に売れているか</td></tr>
+      <tr><td>視聴者との相性</td><td>自分の視聴者層が買う商品か。ジャンル外は再生も購入も伸びにくい</td></tr>
+      <tr><td>サンプル条件</td><td>無料か返金型か。投稿本数・納期などの条件が付いていないか</td></tr>
+      <tr><td>期間・依頼内容</td><td>コラボ期間、リクエストされるコンテンツの種類（動画・LIVE）</td></tr>
+    </tbody>
+  </table></div>
+  <p>条件が合わない招待は、遠慮なく辞退して構いません。むしろ<strong>承諾して放置するほうが、前述のとおり信頼性の面で不利に働きます</strong>。断るときは短くても返信し、対応の速さを積み重ねるほうが次につながります。</p>
+
+  <h2 id="s7"><span class="no en">07</span>案件が来やすいクリエイターには共通点がある：セラーの検索画面から逆算する</h2>
+  <p>ターゲットコラボの招待は偶然には届きません。セラーはSeller Centerのクリエイター検索であなたを見つけ、プロフィールと実績を見て招待を送っています。つまり、<strong>「セラーの検索画面に自分がどう映るか」から逆算する</strong>のが近道です。</p>
+  <h3>セラーが招待前に見ているもの</h3>
+  <p>公式ヘルプで案内されているセラー側の絞り込み条件には、カテゴリー、フォロワー、動画の平均再生数、LIVEの平均視聴者数、そして<strong>直近30日間の紹介経由の販売実績（GMV）</strong>などがあります（表示項目・指標は変わることがあります）。サンプル対応の実績で絞り込む機能もあるため、実績とジャンルの見え方がそのまま招待の届きやすさにつながります。</p>
+  <ol class="steps">
+    <li><b>ジャンルを1つに絞って発信する</b><p>カテゴリ検索で見つけてもらうため、プロフィールと直近動画のジャンルを揃えます。「何でも紹介する人」は指名の理由が作れず、選ばれにくくなります。</p></li>
+    <li><b>オープンコラボで「売れた実績」を作る</b><p>少額でも販売実績が付くと、セラーから見えるあなたのプロフィールが変わります。最初は自分の視聴者が買いやすい価格帯の商品が向きます。</p></li>
+    <li><b>招待やメッセージには早めに返信する</b><p>サンプル付きの招待は、放置すると期限切れで自動的に処理されることがあります。辞退する場合も含めて、早めに意思表示するのを習慣にします。</p></li>
+  </ol>
+
+  <h2 id="s8"><span class="no en">08</span>MCN（事務所）に所属すると、案件獲得と条件面のサポートが受けられる</h2>
+  <p>TikTok Shopには、MCN（クリエイター事務所）がセラーとクリエイターの間に入り、案件をまとめて扱う仕組みがあります。個人での活動と比べたとき、所属のメリットは次の3点に整理できます。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="個人で活動する場合とMCNに所属する場合の対比図：個人は案件探し・条件交渉・成果分析をすべて自分で行うが、MCN所属では事務所が案件集約・条件確認・ノウハウ共有を担い、クリエイターは制作に集中できる">
+      <rect x="20" y="20" width="330" height="290" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">個人で活動する場合</text>
+      <circle cx="185" cy="150" r="34" fill="#fff" stroke="#787D8A" stroke-width="2"/>
+      <circle cx="185" cy="140" r="11" fill="#787D8A"/>
+      <path d="M165 172 Q185 156 205 172 L205 178 Q185 166 165 178 Z" fill="#787D8A"/>
+      <rect x="110" y="72" width="150" height="30" rx="8" fill="#fff" stroke="#AEB2BE"/>
+      <text x="185" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">案件を探す</text>
+      <rect x="35" y="200" width="140" height="30" rx="8" fill="#fff" stroke="#AEB2BE"/>
+      <text x="105" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">条件を確認・交渉</text>
+      <rect x="195" y="200" width="140" height="30" rx="8" fill="#fff" stroke="#AEB2BE"/>
+      <text x="265" y="220" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">成果を分析</text>
+      <path d="M185 102 V114 M140 195 L165 172 M230 195 L205 172" stroke="#AEB2BE" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="185" y="278" text-anchor="middle" font-size="11" fill="#787D8A">制作以外の仕事も、すべて自分で行う</text>
+      <rect x="370" y="20" width="330" height="290" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">MCNに所属する場合</text>
+      <rect x="395" y="70" width="86" height="30" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="438" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">セラーA</text>
+      <rect x="492" y="70" width="86" height="30" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="535" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">セラーB</text>
+      <rect x="589" y="70" width="86" height="30" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="632" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#454956">セラーC</text>
+      <path d="M438 100 V116 M535 100 V116 M632 100 V116" stroke="#787D8A" stroke-width="2"/>
+      <rect x="395" y="120" width="280" height="66" rx="10" fill="#17181C"/>
+      <text x="535" y="147" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">MCN（事務所）</text>
+      <text x="535" y="170" text-anchor="middle" font-size="10.5" fill="#C9CBD4">案件の集約・条件の確認交渉・ノウハウ共有</text>
+      <path d="M535 186 V206" stroke="#787D8A" stroke-width="2"/>
+      <path d="M529 200 L535 210 L541 200 Z" fill="#787D8A"/>
+      <rect x="395" y="212" width="280" height="52" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="535" y="235" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">クリエイター（あなた）</text>
+      <text x="535" y="255" text-anchor="middle" font-size="10.5" fill="#454956">動画・LIVEの制作に集中できる</text>
+      <text x="535" y="292" text-anchor="middle" font-size="11" fill="#787D8A">セラーとの窓口・調整をMCNが担う</text>
+    </svg>
+    <figcaption>図4：個人とMCN所属の違い。制作以外の仕事を事務所側が担う構造（LEAM作成）</figcaption>
+  </figure>
+  <p><b>① 案件の窓口ができる。</b>セラーとの接点をMCNが持つため、個人のアカウントには届かないターゲットコラボの打診が回ってきやすくなります。</p>
+  <p><b>② 条件の確認・交渉を任せられる。</b>報酬率やサンプル条件の確認・調整を事務所側が行うため、言い出しにくい条件面のやり取りを自分で抱えずに済みます。</p>
+  <p><b>③ 売れている商品・動画の型の情報が入る。</b>「いま何がどう売れているか」という事務所内に蓄積された知見を、自分の商品選びと動画づくりに使えます。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 所属＝売上の保証ではありません</div>
+    <p>MCNに入っても、売れるかどうかは商品との相性と制作の継続で決まります。また、<strong>契約形態（専属かどうか・条件）はMCNごとに異なる</strong>ため、契約前に必ず内容を確認してください。</p>
+  </div>
+  <p>LEAMはTikTok Shop特化のMCNとして、市場データを毎営業日蓄積し、商品選定・動画の型・案件のマッチングをデータに基づいて支援しています。詳しくは<a href="https://leam.co.jp/mcn/">クリエイター募集ページ</a>をご覧ください。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>フォロワーが少なくても招待は届きますか？</summary><div class="a">参加条件を満たしていれば、フォロワー数が多くなくても、ジャンルの一貫性や販売実績を見て招待されることはあります。まずはオープンコラボで「売れた実績」を作るのが近道です。</div></details>
+    <details><summary>招待を辞退すると不利になりますか？</summary><div class="a">辞退自体がペナルティになる仕組みは公表されていません。条件が合わない案件は辞退して問題ありません。むしろ承諾してから放置するほうが、サンプル対応などの信頼性の面で不利に働きます。</div></details>
+    <details><summary>無料サンプルだけ受け取って投稿しないとどうなりますか？</summary><div class="a">コラボの条件違反となる場合があるほか、セラー側にはサンプル対応の信頼性が見える仕組みがあり、以後の招待が減る要因になります。迷う案件は受け取る前に辞退しましょう。</div></details>
+    <details><summary>報酬はいつ受け取れますか？</summary><div class="a">購入の直後ではなく、返品・キャンセル期間を経て注文が確定した後にコミッションが確定し、残高への反映・出金が可能になります。具体的な日数や出金スケジュールは変更されることがあるため、アプリ内の表示と公式ヘルプで確認してください。</div></details>
+    <details><summary>顔出しなしでも案件は受けられますか？</summary><div class="a">受けられます。商品を主役にしたデモや手元だけの撮影で売れているジャンルもあります。ただし商品との相性があるため、自分の形式で売れている商品を選ぶことが重要です。</div></details>
+    <details><summary>MCNに所属するとどんなサポートが受けられますか？</summary><div class="a">一般に、案件の紹介、条件の確認・交渉、売れている商品や動画の型の情報共有などです。契約形態や条件はMCNごとに異なるため、契約前に必ず確認してください。LEAMの所属についてはクリエイター募集ページから個別にご案内しています。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/affiliate-guide/"><span class="rc">アフィリエイト</span><b>アフィリエイトの仕組み</b><span>プラン設計と選ばれる条件</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/creator-commission/"><span class="rc">報酬</span><b>クリエイター報酬相場</b><span>粗利から逆算する報酬設計</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/short-video-playbook/"><span class="rc">動画制作</span><b>売れるショート動画の作り方</b><span>構成の型と改善の回し方</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopで収益化したいクリエイターの方へ</div>
+    <p>LEAMのMCNは、案件のご紹介・条件の確認・売れる型の共有まで、データに基づいてクリエイターを伴走支援します。所属のご相談は無料です。アカウントの現状を見せていただくところから始めましょう。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/mcn/">クリエイター募集ページへ</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok Shopアカデミー等の公式ヘルプ（参加条件・報酬の仕組み・画面や機能は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">クリエイター招待とは</a></li>
+        <li><a href="#s2">参加条件（最新は公式で確認）</a></li>
+        <li><a href="#s3">オープン／ターゲットの違い</a></li>
+        <li><a href="#s4">報酬の確定と受け取りの流れ</a></li>
+        <li><a href="#s5">サンプルの2種類と注意点</a></li>
+        <li><a href="#s6">招待を受けるかの判断基準</a></li>
+        <li><a href="#s7">案件が来やすくなる方法</a></li>
+        <li><a href="#s8">MCN所属のメリット</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>LEAMは所属クリエイターを募集しています</b>
+      <p>案件紹介・条件確認・売れる型の共有まで、データに基づいて伴走します。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/mcn/">MCNの詳細を見る</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopのクリエイター招待とは？コラボの仕組み・報酬の受け取り方【クリエイター向け】",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "フォロワーが少なくても招待は届きますか？", "acceptedAnswer": {"@type": "Answer", "text": "参加条件を満たしていれば、フォロワー数が多くなくても、ジャンルの一貫性や販売実績を見て招待されることはあります。まずはオープンコラボで「売れた実績」を作るのが近道です。"}},
+        {"@type": "Question", "name": "招待を辞退すると不利になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "辞退自体がペナルティになる仕組みは公表されていません。条件が合わない案件は辞退して問題ありません。むしろ承諾してから放置するほうが、サンプル対応などの信頼性の面で不利に働きます。"}},
+        {"@type": "Question", "name": "無料サンプルだけ受け取って投稿しないとどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "コラボの条件違反となる場合があるほか、セラー側にはサンプル対応の信頼性が見える仕組みがあり、以後の招待が減る要因になります。迷う案件は受け取る前に辞退しましょう。"}},
+        {"@type": "Question", "name": "報酬はいつ受け取れますか？", "acceptedAnswer": {"@type": "Answer", "text": "購入の直後ではなく、返品・キャンセル期間を経て注文が確定した後にコミッションが確定し、残高への反映・出金が可能になります。具体的な日数や出金スケジュールは変更されることがあるため、アプリ内の表示と公式ヘルプで確認してください。"}},
+        {"@type": "Question", "name": "顔出しなしでも案件は受けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "受けられます。商品を主役にしたデモや手元だけの撮影で売れているジャンルもあります。ただし商品との相性があるため、自分の形式で売れている商品を選ぶことが重要です。"}},
+        {"@type": "Question", "name": "MCNに所属するとどんなサポートが受けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "一般に、案件の紹介、条件の確認・交渉、売れている商品や動画の型の情報共有などです。契約形態や条件はMCNごとに異なるため、契約前に必ず確認してください。LEAMの所属についてはクリエイター募集ページから個別にご案内しています。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

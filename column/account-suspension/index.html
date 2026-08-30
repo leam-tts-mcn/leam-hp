@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのアカウント停止・違反ポイント完全ガイド</title>
+<meta name="description" content="TikTok Shopのアカウント停止がなぜ起きるかを、違反ポイントの仕組み・予防チェックリスト・復旧手順から解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/account-suspension/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのアカウント停止・違反ポイント完全ガイド">
+<meta property="og:description" content="TikTok Shopのアカウント停止がなぜ起きるかを、違反ポイントの仕組み・予防チェックリスト・復旧手順から解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/account-suspension/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのアカウント停止・違反ポイント完全ガイド">
+<meta name="twitter:description" content="TikTok Shopのアカウント停止がなぜ起きるかを、違反ポイントの仕組み・予防チェックリスト・復旧手順から解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのアカウント停止・違反ポイント完全ガイド", "description": "TikTok Shopのアカウント停止がなぜ起きるかを、違反ポイントの仕組み・予防チェックリスト・復旧手順から解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/account-suspension/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのアカウント停止・違反ポイント完全ガイド", "item": "https://leam.co.jp/column/account-suspension/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › アカウント停止・違反ポイント</p>
+  <span class="cat">規約・リスク対策</span>
+  <h1>TikTok Shopのアカウント停止はなぜ起きる？違反ポイントの仕組み・予防チェックリスト・復旧手順の完全ガイド</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="アカウント停止：違反を示す大きな警告の三角マークと、残りポイントを示すゲージ、上から停止・警告・正常の3段になった信号機を並べたイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 26-296 8-112-20-198-52-312-44-110 8-190 48-300 56-104 8-200-8-292-48z" fill="#F6F7F9"/>
+  <ellipse cx="892" cy="248" rx="286" ry="200" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="76" cy="86" r="5"/><circle cx="112" cy="86" r="5"/><circle cx="148" cy="86" r="5"/><circle cx="184" cy="86" r="5"/>
+      <circle cx="76" cy="122" r="5"/><circle cx="112" cy="122" r="5"/><circle cx="148" cy="122" r="5"/><circle cx="184" cy="122" r="5"/>
+      <circle cx="76" cy="158" r="5"/><circle cx="112" cy="158" r="5"/><circle cx="148" cy="158" r="5"/><circle cx="184" cy="158" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(982 -22)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 540c150-40 286-22 420 4 130 25 244 34 366 14 120-20 232-48 414-32V630H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：3段の信号機（停止／警告／正常） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="838" y="96" width="170" height="390" rx="32" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+
+    <!-- 支柱と台座 -->
+    <rect x="910" y="470" width="26" height="92" fill="#0B0C10"/>
+    <rect x="876" y="552" width="94" height="20" rx="10" fill="#0B0C10"/>
+
+    <!-- 屋根 -->
+    <rect x="824" y="72" width="198" height="28" rx="14" fill="#0B0C10"/>
+
+    <!-- 筐体 -->
+    <rect x="838" y="96" width="170" height="390" rx="32" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- 段の仕切り -->
+    <path d="M858 240h130M858 344h130" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- 上段＝停止（消灯・禁止の横棒） -->
+    <circle cx="923" cy="180" r="42" fill="#0B0C10"/>
+    <rect x="899" y="172" width="48" height="16" rx="8" fill="#FFFFFF"/>
+
+    <!-- 中段＝警告（消灯） -->
+    <circle cx="923" cy="292" r="42" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6"/>
+
+    <!-- 下段＝正常（シアンで点灯） -->
+    <circle cx="923" cy="404" r="42" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- ================= 左：警告の三角（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <path d="M378 83L609 474Q624 500 594 500L126 500Q96 500 111 474L342 83Q360 52 378 83Z" fill="#5E6064" opacity=".15" transform="translate(26 24)"/>
+    <!-- 厚み（裏面） -->
+    <path d="M378 83L609 474Q624 500 594 500L126 500Q96 500 111 474L342 83Q360 52 378 83Z" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" transform="translate(16 12)"/>
+    <!-- 前面 -->
+    <path d="M378 83L609 474Q624 500 594 500L126 500Q96 500 111 474L342 83Q360 52 378 83Z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 感嘆符（白抜き） -->
+    <rect x="338" y="190" width="44" height="176" rx="22" fill="#FFFFFF"/>
+    <circle cx="360" cy="428" r="27" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= 下：残りポイントのゲージ（シアン） ================= -->
+  <g>
+    <rect x="105" y="552" width="510" height="66" rx="33" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+    <rect x="105" y="552" width="510" height="66" rx="33" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <!-- 残っているぶん -->
+    <g fill="#25F4EE">
+      <rect x="117" y="564" width="73" height="42" rx="21"/>
+      <rect x="199" y="564" width="73" height="42" rx="21"/>
+      <rect x="281" y="564" width="73" height="42" rx="21"/>
+      <rect x="363" y="564" width="73" height="42" rx="21"/>
+    </g>
+    <!-- 失ったぶん -->
+    <g fill="#DFE0E2" stroke="#C9CBD0" stroke-width="4">
+      <rect x="445" y="564" width="73" height="42" rx="21"/>
+      <rect x="527" y="564" width="73" height="42" rx="21"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1116" cy="516" r="22" fill="#25F4EE"/>
+  <circle cx="88" cy="296" r="14" fill="#DFE0E2"/>
+  <circle cx="742" cy="150" r="16" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopのアカウント停止は、ある日突然起きるように見えて、実際は違反ポイントの蓄積や物流指標の悪化が段階的に進んだ結果であることがほとんどです。</strong>つまり、仕組みを知って予兆を数字で見ていれば大半は防げますし、万一停止されても、正しい手順で異議申し立てをすれば復旧できるケースがあります。この記事では、停止に至る仕組み・違反原因の分類・週次の予防チェックリスト・停止通知が来た時の初動・異議申し立てのフローと書き方までを、実際の運用相談で多いつまずきに沿って解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>アカウント停止に至る違反ポイント制度の仕組みと、措置が重くなる段階</li>
+      <li>よくある違反原因の5分類と、気づかないうちに違反しやすい盲点</li>
+      <li>停止通知が来た時の初動と、異議申し立てのフロー・書き方</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">いまのショップに停止リスクの芽がないか、無料で確認できます</div>
+    <p>出品中の商品・表現・物流体制・クリエイター起用の運用を拝見し、規約面で先に直すべきところを率直にお伝えします。停止されてからではなく、される前のご相談が最も安く済みます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">アカウント停止は突然ではなく、違反ポイントの蓄積で段階的に起きる</a></li>
+      <li><a href="#s2">停止原因は5つに分類できる：商品・表現・知的財産・物流・不正行為</a></li>
+      <li><a href="#s3">物流・サービス指標の悪化は「違反」と同じ扱いになる：数字で毎週見る</a></li>
+      <li><a href="#s4">予防は「人の注意」ではなく週次の仕組みにする：チェックリスト</a></li>
+      <li><a href="#s5">停止通知が来たら、最初の24時間の初動で復旧の成否が大きく変わる</a></li>
+      <li><a href="#s6">復旧の本線は異議申し立て：事実ベースで簡潔に書く</a></li>
+      <li><a href="#s7">クリエイター起用の違反はセラー側に波及しうる：投稿ルールを先に配る</a></li>
+      <li><a href="#s8">停止リスクは損益設計に織り込む：売上ゼロでも費用は続く</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>アカウント停止は突然ではなく、違反ポイントの蓄積で段階的に起きる</h2>
+  <p>TikTok Shopには、セラーの規約順守の状態を点数で管理する仕組み（<strong>アカウントの健全性評価</strong>）があります。ポリシー違反や物流上の問題が起きるたびに違反ポイントが加算（持ち点方式なら減点）され、<strong>一定の水準を超えるごとに措置が段階的に重くなる</strong>のが基本設計です。「昨日まで普通に売れていたのに」という体感とは裏腹に、セラーセンターの健全性画面には多くの場合、その前から予兆が表示されています。</p>
+  <h3>違反ポイント制度：積み上がるほど措置が重くなる</h3>
+  <p>ポイントは違反の重さに応じて付与され、警告だけで済む段階から、機能の制限、出品の制限、アカウントの一時停止、そして最も重い永久停止へと進みます。逆に言えば、<strong>軽い段階で原因を特定して是正すれば、停止まで進ませずに止められる</strong>ということです。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 点数・閾値・失効期間は「変わる前提」で扱う</div>
+    <p>付与されるポイント数、措置が発動する閾値、ポイントが失効するまでの期間などの具体的な数値は、<strong>プラットフォーム側の改定で変更されうるため、本記事では断定しません</strong>。必ずセラーセンターの「アカウントの健全性」画面と公式ポリシーの最新版で確認してください。数値を記憶で運用するのが、最も危険なパターンです。</p>
+  </div>
+  <h3>措置は「機能・商品・ショップ」の3つのレイヤーで来る</h3>
+  <p>ひとくちに「停止」と言っても、実際にはアフィリエイト機能など<strong>機能単位の制限</strong>、特定商品の削除・出品不可という<strong>商品単位の措置</strong>、そしてショップ全体の<strong>アカウント停止</strong>の3レイヤーがあります。どのレイヤーの措置かで初動が変わるため、通知を受けたらまず対象範囲を特定します。</p>
+  <div class="tw"><table>
+    <thead><tr><th>段階</th><th>何が起きるか</th><th>この段階でやること</th></tr></thead>
+    <tbody>
+      <tr><td><b>警告</b></td><td>通知のみ。販売は継続できる</td><td class="y">原因を特定して即是正。「売れているから」と放置しない</td></tr>
+      <tr><td><b>機能・商品の制限</b></td><td>アフィリエイト機能の制限、対象商品の削除・出品不可など</td><td>対象範囲を特定し、該当商品の修正・必要書類の提出</td></tr>
+      <tr><td><b>アカウントの一時停止</b></td><td>新規の販売が止まる</td><td>異議申し立て（<a href="#s6">§06</a>）。既存注文の扱いを通知文面で確認</td></tr>
+      <tr><td><b>永久停止</b></td><td>復旧の道が事実上閉ざされる</td><td class="n">ここに至る前の予防が唯一の対策。作り直しは規約違反のリスク</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 270" role="img" aria-label="違反ポイント蓄積と措置のエスカレーション図：違反のたびにポイントが積み上がり、警告、機能・商品の制限、一時停止、永久停止へと段階的に措置が重くなる">
+      <text x="30" y="36" font-size="13" font-weight="800" fill="#454956">違反ポイントの蓄積</text>
+      <rect x="30" y="50" width="660" height="16" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="50" width="165" height="16" rx="8" fill="#C9CBD4"/>
+      <rect x="195" y="50" width="165" height="16" fill="#8F94A3"/>
+      <rect x="360" y="50" width="165" height="16" fill="#E8324A" opacity=".6"/>
+      <rect x="525" y="50" width="165" height="16" fill="#C2203A"/>
+      <g stroke="#787D8A" stroke-width="1.5"><line x1="195" y1="46" x2="195" y2="70"/><line x1="360" y1="46" x2="360" y2="70"/><line x1="525" y1="46" x2="525" y2="70"/></g>
+      <text x="360" y="90" text-anchor="middle" font-size="11" fill="#787D8A">違反のたびに加算 → 一定水準を超えるごとに措置が重くなる（具体的な点数・閾値は公式で最新を確認）</text>
+      <path d="M112 104 V126 M277 104 V126 M442 104 V126 M607 104 V126" stroke="#787D8A" stroke-width="2"/>
+      <rect x="40" y="128" width="145" height="76" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="112" y="160" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">警告</text>
+      <text x="112" y="184" text-anchor="middle" font-size="10.5" fill="#787D8A">販売は継続できる</text>
+      <rect x="205" y="128" width="145" height="76" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="277" y="160" text-anchor="middle" font-size="13.5" font-weight="800" fill="#8A5A00">機能・商品の制限</text>
+      <text x="277" y="184" text-anchor="middle" font-size="10.5" fill="#787D8A">アフィリエイト制限など</text>
+      <rect x="370" y="128" width="145" height="76" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="442" y="160" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">一時停止</text>
+      <text x="442" y="184" text-anchor="middle" font-size="10.5" fill="#787D8A">新規の販売が止まる</text>
+      <rect x="535" y="128" width="145" height="76" rx="10" fill="#17181C"/>
+      <text x="607" y="160" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">永久停止</text>
+      <text x="607" y="184" text-anchor="middle" font-size="10.5" fill="#C9CBD4">事実上、復旧不能</text>
+      <path d="M185 166 H203 M350 166 H368 M515 166 H533" stroke="#787D8A" stroke-width="2"/>
+      <path d="M198 160 L206 166 L198 172 Z M363 160 L371 166 L363 172 Z M528 160 L536 166 L528 172 Z" fill="#787D8A"/>
+      <rect x="40" y="222" width="475" height="34" rx="8" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="277" y="244" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">← この範囲で気づいて是正すれば、停止まで進ませずに止められる</text>
+    </svg>
+    <figcaption>図1：違反ポイントと措置のエスカレーション。左の段階で止めるのが予防の目的（LEAM作成）</figcaption>
+  </figure>
+
+  <h2 id="s2"><span class="no en">02</span>停止原因は5つに分類できる：商品・表現・知的財産・物流・不正行為</h2>
+  <p>運用のご相談で見てきた違反の事例は、ほぼ次の5分類に収まります。<strong>自分のショップがどの分類のリスクを持っているか</strong>を先に把握しておくと、予防チェック（<a href="#s4">§04</a>）の優先順位が決まります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>分類</th><th>典型例</th><th>気づきにくい落とし穴</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 商品<br>（何を売るか）</b></td><td>禁止商品・許可が必要な制限商品の出品</td><td>カテゴリによって必要な書類・許可が異なる。仕入れ先の変更で成分・仕様が変わり、気づかず該当することがある</td></tr>
+      <tr><td><b>② 表現<br>（どう売るか）</b></td><td>誇大広告・効果の言い切り・レビュー操作</td><td>「治る」「痩せる」等の言い切りは、商品ページだけでなく動画・ライブのトークも対象になる</td></tr>
+      <tr><td><b>③ 知的財産</b></td><td>偽ブランド品・画像や音源の無断使用</td><td>仕入れ品の真贋、メーカー画像の転載、動画のBGMの権利。悪意がなくても成立する</td></tr>
+      <tr><td><b>④ 物流・顧客対応</b></td><td>発送遅延・セラーの過失によるキャンセル・追跡番号の不備</td><td>連休・セール時の物流逼迫。無在庫販売（ドロップシッピング）は仕入れ遅延がそのまま違反になりやすい</td></tr>
+      <tr><td><b>⑤ 不正行為</b></td><td>外部ツールへの誘導・虚偽書類・注文の水増し</td><td>LINEやSNSへの誘導は「顧客対応のつもり」でも違反になりうる</td></tr>
+    </tbody>
+  </table></div>
+  <h3>気づかないうちに違反しやすいのは「表現」「外部誘導」「無在庫」の3つ</h3>
+  <p>当社の運用実感では、意図的な違反よりも「知らずにやっていた」違反の方が圧倒的に多く、特に多いのがこの3つです。<strong>①健康・美容系の言い切り表現</strong>は、コピーを書いた本人に悪気がないまま商品ページと動画の両方に残りがちです。<strong>②外部誘導</strong>は、問い合わせ対応を丁寧にやろうとしてLINEに誘導してしまうケース。<strong>③無在庫販売の発送遅延</strong>は、ビジネスモデル自体が発送期限と相性が悪く、構造的に違反が積み上がります。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>禁止・制限カテゴリの具体的なリストは変更されうるため、出品前に必ず公式ポリシーの最新版を確認してください。カテゴリごとの詳細は関連記事「禁止商品・制限商品ガイド」でも解説しています。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>物流・サービス指標の悪化は「違反」と同じ扱いになる：数字で毎週見る</h2>
+  <p>見落とされがちですが、アカウント停止の引き金はポリシー違反だけではありません。<strong>発送や顧客対応のパフォーマンス指標が基準を下回り続けることも、措置の対象になります</strong>。つまり「規約は守っているのに停止された」ように見えるケースの多くは、物流の数字が原因です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>指標（例）</th><th>何を測るか</th><th>悪化させる典型原因</th></tr></thead>
+    <tbody>
+      <tr><td><b>発送遅延率（LDR）</b></td><td>期限までに発送準備・配送業者への引き渡しができなかった注文の割合</td><td>在庫切れ・連休の見落とし・無在庫販売の仕入れ遅延</td></tr>
+      <tr><td><b>納期遵守率（OTDR）</b></td><td>定められた配送期限内に配達が完了した注文の割合</td><td>配送業者の選定ミス・遠隔地への配送日数の読み違い</td></tr>
+      <tr><td><b>セラーの過失によるキャンセル率（SFCR）</b></td><td>セラーによって、またはセラーの責任によりキャンセルされた注文の割合</td><td>在庫管理の不備・価格設定ミスの取り消し</td></tr>
+      <tr><td><b>有効追跡率（VTR）</b></td><td>認定配送業者の追跡可能な配送方法で発送された荷物の割合</td><td>追跡番号の入力漏れ・誤登録</td></tr>
+    </tbody>
+  </table></div>
+  <p>※指標の名称・集計方法・基準値はプラットフォームの改定で変更されうるため、<strong>セラーセンターに実際に表示されている定義と数値を正</strong>としてください。発送期限（注文から何営業日以内に発送準備・引き渡しか）も同様に、最新の公式ルールで確認が必要です。実務的には、<strong>連休前に「休業モード」を設定して注文自体を制御する</strong>のが、指標悪化のいちばん確実な予防になります。出荷体制の組み方は関連記事「発送ルールと出荷体制」で詳しく扱っています。</p>
+
+  <h2 id="s4"><span class="no en">04</span>予防は「人の注意」ではなく週次の仕組みにする：チェックリスト</h2>
+  <p>予防策を「気をつける」で終わらせると、忙しくなった瞬間に必ず抜けます。<strong>タイミングを決めて機械的に回すチェックリスト</strong>にしておくのが実務的な答えです。当社で運用している型を簡略化したものを載せます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>タイミング</th><th>チェック項目</th><th>やること・見る場所</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="2"><b>出品前<br>（毎回）</b></td><td>禁止・制限カテゴリに該当しないか。必要な書類・許可はあるか</td><td>公式ポリシー最新版と、出品画面で要求される書類</td></tr>
+      <tr><td>商品名・説明文・画像に言い切り表現や他者の権利物がないか</td><td>第三者の目でチェック。動画・ライブの台本も同じ基準で</td></tr>
+      <tr><td rowspan="2"><b>週次</b></td><td>健全性画面の違反ポイントの増減と、新しい通知</td><td>セラーセンター「アカウントの健全性」を定例で開く</td></tr>
+      <tr><td>物流指標（§03）の数値と悪化傾向</td><td>悪化が2週続いたら、原因を特定して是正するまで追う</td></tr>
+      <tr><td rowspan="2"><b>月次</b></td><td>ポリシー更新・規約変更の告知の見落とし</td><td>公式のお知らせを確認。連休前は休業モードを設定</td></tr>
+      <tr><td>起用中クリエイターの動画の表現</td><td>投稿をサンプリングして確認（詳細は<a href="#s7">§07</a>）</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="予防サイクルの図：出品前チェック、週次の健全性・指標確認、月次の規約更新確認、是正・改善の4つを循環させる">
+      <rect x="60" y="40" width="260" height="80" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="190" y="74" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">出品前チェック</text>
+      <text x="190" y="100" text-anchor="middle" font-size="11" fill="#787D8A">カテゴリ・表現・権利を毎回リント</text>
+      <rect x="400" y="40" width="260" height="80" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="530" y="74" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">週次：健全性・指標の確認</text>
+      <text x="530" y="100" text-anchor="middle" font-size="11" fill="#787D8A">違反ポイントと物流指標を定例で見る</text>
+      <rect x="400" y="180" width="260" height="80" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="530" y="214" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">月次：規約更新・CR動画の確認</text>
+      <text x="530" y="240" text-anchor="middle" font-size="11" fill="#787D8A">ポリシー改定と起用動画をサンプリング</text>
+      <rect x="60" y="180" width="260" height="80" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="190" y="214" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">是正・改善</text>
+      <text x="190" y="240" text-anchor="middle" font-size="11" fill="#454956">見つけた芽はその週のうちに潰す</text>
+      <path d="M320 80 H396" stroke="#787D8A" stroke-width="2"/><path d="M391 74 L400 80 L391 86 Z" fill="#787D8A"/>
+      <path d="M530 120 V176" stroke="#787D8A" stroke-width="2"/><path d="M524 171 L530 180 L536 171 Z" fill="#787D8A"/>
+      <path d="M400 220 H324" stroke="#787D8A" stroke-width="2"/><path d="M329 214 L320 220 L329 226 Z" fill="#787D8A"/>
+      <path d="M190 180 V124" stroke="#0E8A5F" stroke-width="2" stroke-dasharray="5 4"/><path d="M184 129 L190 120 L196 129 Z" fill="#0E8A5F"/>
+      <text x="360" y="160" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">回し続けることで「軽い段階」で必ず気づける</text>
+    </svg>
+    <figcaption>図2：予防サイクル。人の注意ではなく、タイミングを決めた定例で回す（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>このチェックは1回あたり数十分で終わります。<strong>停止からの復旧に費やす時間と失う売上に比べれば、圧倒的に安い保険</strong>です。週次の定例に組み込んで、担当者を決めてください。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>停止通知が来たら、最初の24時間の初動で復旧の成否が大きく変わる</h2>
+  <p>それでも停止・制限の通知が来てしまったら、慌てて申し立てボタンを押す前に、初動を固めます。<strong>異議申し立ては回数に限りがあるため、準備不足の1回目が最も高くつく</strong>からです。</p>
+  <ol class="steps">
+    <li><b>通知を正確に読む：理由・対象範囲・期限の3点を特定する</b><p>どの違反類型か、措置の対象は機能・商品・ショップのどれか、申し立ての期限はいつか。この3点をメモに書き出します。</p></li>
+    <li><b>証拠を時系列で保全する</b><p>仕入れの証憑・発送記録・顧客とのやり取り・該当ページのスクリーンショットなど、事実を示せる資料を日付つきで揃えます。</p></li>
+    <li><b>既存注文への対応を確認する</b><p>受注済みの注文をどう扱うべきかは通知の内容によります。放置すると指標がさらに悪化し、状況が重くなります。</p></li>
+    <li><b>「やってはいけないこと」を確認する</b><p>最たるものが新規アカウントの作り直しです。規約違反としてより重い措置につながるリスクがあります（FAQ参照）。</p></li>
+  </ol>
+  <h3>通知の「理由」を自分の言葉で説明できるまで読み込む</h3>
+  <p>申し立て文の質は、理由の理解の深さで決まります。理由コードや文面が抽象的な場合も、<strong>「自分のどの行為・どの商品が、どのポリシーに触れたと判定されたのか」</strong>を仮説として言語化してから次に進みます。ここが曖昧なまま書いた申し立ては、的外れな弁明になりがちです。</p>
+  <h3>焦って新規アカウントを作らない</h3>
+  <p>停止直後に最も多い誤りです。事業情報・銀行口座・端末などの関連付けから検知されうるうえ、発覚すれば復旧の道を自分で断つことになります。<strong>復旧の本線はあくまで異議申し立て</strong>です。</p>
+
+  <div class="ctabox">
+    <div class="ct">停止・制限の通知が来てお困りの方も、状況の整理からご相談いただけます</div>
+    <p>通知の読み解き・証拠の揃え方・申し立て文の構成など、初動で押さえるべき点を一緒に整理します。予防体制づくりのご相談も同じ窓口です。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>復旧の本線は異議申し立て：事実ベースで簡潔に書く</h2>
+  <p>異議申し立ては、セラーセンターの健全性画面から行うのが基本です。全体の流れを図にすると次のようになります。</p>
+  <figure>
+    <svg viewBox="0 0 720 560" role="img" aria-label="異議申し立てのフローチャート：停止・制限の通知を受け、理由・対象・期限を確認し、証拠を収集し、セラーセンターから申し立て、承認なら措置解除、却下なら期限内に再申し立てし、最終判断に至る">
+      <rect x="250" y="14" width="220" height="44" rx="22" fill="#17181C"/>
+      <text x="360" y="42" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">停止・制限の通知が届く</text>
+      <path d="M360 58 V84" stroke="#787D8A" stroke-width="2"/>
+      <rect x="200" y="86" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="115" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">通知内容の確認（理由・対象範囲・期限）</text>
+      <path d="M360 132 V158" stroke="#787D8A" stroke-width="2"/>
+      <rect x="200" y="160" width="320" height="46" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="360" y="189" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">証拠の収集（証憑・記録を時系列で）</text>
+      <path d="M360 206 V232" stroke="#787D8A" stroke-width="2"/>
+      <rect x="200" y="234" width="320" height="46" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="360" y="263" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">セラーセンターから異議申し立てを提出</text>
+      <path d="M360 280 V306" stroke="#787D8A" stroke-width="2"/>
+      <rect x="270" y="308" width="180" height="44" rx="22" fill="#fff" stroke="#787D8A" stroke-width="1.5"/>
+      <text x="360" y="336" text-anchor="middle" font-size="13" font-weight="700" fill="#454956">プラットフォームの審査</text>
+      <path d="M270 330 H150 V376" stroke="#0E8A5F" stroke-width="2" fill="none"/>
+      <text x="196" y="322" font-size="11" font-weight="800" fill="#0E8A5F">承認</text>
+      <rect x="55" y="378" width="190" height="76" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="150" y="408" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0E8A5F">措置の解除・復旧</text>
+      <text x="150" y="432" text-anchor="middle" font-size="10.5" fill="#454956">関連する違反ポイントも取消</text>
+      <path d="M450 330 H570 V376" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="510" y="322" font-size="11" font-weight="800" fill="#C2203A">却下</text>
+      <rect x="475" y="378" width="190" height="76" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="570" y="408" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">期限内なら再申し立て</text>
+      <text x="570" y="432" text-anchor="middle" font-size="10.5" fill="#454956">新しい証拠・是正内容を追加</text>
+      <path d="M570 454 V492" stroke="#787D8A" stroke-width="2"/><path d="M564 487 L570 496 L576 487 Z" fill="#787D8A"/>
+      <rect x="475" y="498" width="190" height="44" rx="10" fill="#17181C"/>
+      <text x="570" y="526" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">最終判断（覆らない）</text>
+      <rect x="55" y="478" width="190" height="64" rx="10" fill="#fff" stroke="#E6E7EB"/>
+      <text x="150" y="504" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">復旧後：再発防止策を実行し</text>
+      <text x="150" y="526" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">週次チェック（§04）に組み込む</text>
+      <path d="M150 454 V474" stroke="#0E8A5F" stroke-width="2"/><path d="M144 469 L150 478 L156 469 Z" fill="#0E8A5F"/>
+    </svg>
+    <figcaption>図3：異議申し立てのフロー。回数に限りがあるため1回目の質がすべて（LEAM作成）</figcaption>
+  </figure>
+  <h3>申し立て文に入れる4要素：事実・原因・是正・再発防止</h3>
+  <p>審査するのは人とシステムであり、感情的な訴えや長文の弁明は通りません。<strong>①何が起きたかの事実確認、②なぜ起きたかの原因、③すでに実施した是正内容、④今後の再発防止策</strong>の4要素を、証拠を添えて簡潔に書きます。誤検知だと考える場合も、「違反していない」の一点張りではなく、そう判断できる客観的な証拠（仕入れ証憑・発送記録など）を軸に組み立てます。</p>
+  <h3>期限と回数には上限がある：1回目に全力を出す前提で準備する</h3>
+  <p>異議申し立てには提出期限と回数の上限があります。本記事執筆時点では、1回目は通知から30日以内・却下後の再申し立てはさらに短い期限、回数は最大2回までとされていますが、<strong>これらの数値は変更されうるため、必ず届いた通知の文面と公式ヘルプの最新情報で確認してください</strong>。実務上の結論はシンプルで、「2回目がある」と思わず、<strong>1回目に証拠と是正内容を出し切る</strong>ことです。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：申し立て中にやりがちな悪手</div>
+    <p>審査中に同じ違反を続ける（該当商品を売り続ける・表現を直さない）、既存注文を放置する、別アカウントで販売を続ける——はいずれも状況を悪化させます。<strong>申し立ての内容と実際の行動が一致していること</strong>が、審査で最も見られる点だと考えて行動してください。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>クリエイター起用の違反はセラー側に波及しうる：投稿ルールを先に配る</h2>
+  <p>TikTok Shopの売上はアフィリエイトのクリエイター動画に支えられますが、これはリスク管理の観点では<strong>「自分の商品の売り方が、自分の管理外で量産される」</strong>ことを意味します。クリエイターが動画で効果を言い切ったり、権利のある音源・映像を使ったりした場合、その措置が商品やショップ側に及ぶ可能性があります。起用が広がるほど、この管理は「起きてから注意する」方式では回りません。</p>
+  <p>実務的な対策は、<strong>起用の入口で「投稿ルール」を配ること</strong>です。当社では、商品説明・訴求ポイントとあわせて、NG表現（言い切り・ビフォーアフター等）とOKな言い換え例、使用禁止素材を1枚のブリーフにまとめてクリエイターに渡しています。あわせて§04のとおり、起用中クリエイターの投稿を月次でサンプリング確認する運用にすると、表現の逸脱に早く気づけます。禁止表現を「ダメ」とだけ伝えるのではなく、<strong>売れる言い換えをセットで渡す</strong>のが、クリエイターとの関係を壊さないコツです。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>クリエイター側から見ても、違反リスクの管理はアカウントを守る死活問題です。LEAMのMCNでは所属クリエイター向けに表現ガイドラインの整備を進めています。クリエイターの方は<a href="https://leam.co.jp/mcn/">こちら</a>をご覧ください。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>停止リスクは損益設計に織り込む：売上ゼロでも費用は続く</h2>
+  <p>最後に、停止を「規約の話」ではなく「損益の話」として捉え直します。アカウントが止まっている間、<strong>売上はゼロになりますが、在庫・保管費・人件費・ツール代などの費用は止まりません</strong>。さらに見落とされがちなのが、復旧後もすぐには元に戻らないことです。広告（GMV Max等）の学習やアカウントの勢いは停止中に途切れるため、当社の運用実感では、復旧後に売上が戻るまでには相応の再立ち上げ期間がかかります。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="停止期間中の損益構造の図：停止中は売上がゼロになる一方で費用は続き、復旧後も売上が元の水準に戻るまでタイムラグがある">
+      <line x1="60" y1="200" x2="690" y2="200" stroke="#E6E7EB" stroke-width="2"/>
+      <rect x="270" y="40" width="180" height="160" fill="#FDEEF1"/>
+      <text x="360" y="30" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">停止期間</text>
+      <path d="M60 90 H270 L272 200 M450 200 C500 190 560 120 690 100" stroke="#17181C" stroke-width="3" fill="none"/>
+      <text x="130" y="78" font-size="11.5" font-weight="700" fill="#17181C">売上</text>
+      <text x="360" y="188" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">売上ゼロ</text>
+      <text x="562" y="150" font-size="11" font-weight="700" fill="#454956">復旧後も学習が戻るまでラグ</text>
+      <path d="M60 130 H690" stroke="#E8324A" stroke-width="3" stroke-dasharray="7 5"/>
+      <text x="130" y="122" font-size="11.5" font-weight="700" fill="#C2203A">費用（在庫・保管・人件費・ツール）は続く</text>
+      <rect x="270" y="212" width="180" height="34" rx="8" fill="#17181C"/>
+      <text x="360" y="234" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">この面積が停止の実コスト</text>
+    </svg>
+    <figcaption>図4：停止中の損益構造。失うのは停止期間の売上だけではない（LEAM作成）</figcaption>
+  </figure>
+  <p>ここから導かれる実務の結論は3つです。<strong>①予防チェックの工数は保険料として最初から運用計画に入れる。②主力商品や販売チャネルを1点に依存させすぎない。③停止期間を耐えられるキャッシュの余裕を見ておく。</strong>停止リスクをゼロにはできない以上、「起きても倒れない設計」までがリスク対策です。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>何もしていないのにアカウントが停止されることはありますか？</summary><div class="a">システムによる誤検知や、悪意のない見落とし（表現・権利・物流指標の悪化など）が原因のケースがあります。「心当たりがない」場合こそ通知の理由を正確に読み、事実を示す証拠を揃えて異議申し立てで説明することが復旧への道です。</div></details>
+    <details><summary>違反ポイントは時間が経てば消えますか？</summary><div class="a">一定期間の経過で失効する仕組みが用意されていますが、具体的な期間や条件は変更されうるため、セラーセンターの健全性画面と公式ポリシーの最新情報で確認してください。失効を待つのではなく、原因を是正して新たな加算を止めることが先です。</div></details>
+    <details><summary>異議申し立ては何回でもできますか？</summary><div class="a">回数と提出期限には上限があります。本記事執筆時点では最大2回・1回目は通知から30日以内とされていますが、変更されうるため通知文面と公式ヘルプで必ず確認を。実務的には「1回目に証拠と是正内容を出し切る」前提で準備することをおすすめします。</div></details>
+    <details><summary>停止中、受注済みの注文はどうすればいいですか？</summary><div class="a">扱いは措置の内容によって異なるため、通知文面とセラーセンターの案内を最優先で確認してください。対応を放置すると指標がさらに悪化し、状況が重くなる可能性があります。</div></details>
+    <details><summary>新しいアカウントを作り直せば再開できますか？</summary><div class="a">おすすめしません。事業情報や口座・端末などの関連付けから検知されうるうえ、規約違反としてより重い措置につながるリスクがあります。復旧の本線は異議申し立てです。</div></details>
+    <details><summary>クリエイターの動画が原因で、自分のショップが違反になることはありますか？</summary><div class="a">クリエイターの投稿内容の措置が商品やショップに波及する可能性はあります。起用時にNG表現と言い換え例をまとめた投稿ルールを配り、起用中の動画を定期的にサンプリング確認する運用が実務的な予防策です。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">商品</span><b><a href="https://leam.co.jp/column/prohibited-items/" style="color:inherit;text-decoration:none">禁止商品・制限商品ガイド</a></b><span>出品前のチェックリスト</span></div>
+      <div class="relcard"><span class="rc">物流</span><b><a href="https://leam.co.jp/column/shipping-rules/" style="color:inherit;text-decoration:none">発送ルールと出荷体制</a></b><span>出荷期限とペナルティの防ぎ方</span></div>
+      <div class="relcard"><span class="rc">出店</span><b><a href="https://leam.co.jp/column/tiktok-shop-shinsa/" style="color:inherit;text-decoration:none">出店条件と審査完全ガイド</a></b><span>必要書類と落ちる理由</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、規約リスクの確認も含めて「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok Shop アカデミー・公式ポリシー各種（違反ポイントの点数・閾値・失効期間、異議申し立ての期限・回数、発送期限、指標の名称・基準値などの仕様は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">違反ポイントで段階的に起きる</a></li>
+        <li><a href="#s2">停止原因の5分類</a></li>
+        <li><a href="#s3">物流指標も「違反」と同じ扱い</a></li>
+        <li><a href="#s4">週次の予防チェックリスト</a></li>
+        <li><a href="#s5">停止通知が来た時の初動</a></li>
+        <li><a href="#s6">異議申し立てのフローと書き方</a></li>
+        <li><a href="#s7">クリエイター起用のリスク管理</a></li>
+        <li><a href="#s8">停止リスクと損益設計</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>停止される前の無料チェック</b>
+      <p>商品・表現・物流体制を拝見し、規約面のリスクを率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopのアカウント停止はなぜ起きる？違反ポイントの仕組み・予防チェックリスト・復旧手順の完全ガイド",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "何もしていないのにアカウントが停止されることはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "システムによる誤検知や、悪意のない見落とし（表現・権利・物流指標の悪化など）が原因のケースがあります。「心当たりがない」場合こそ通知の理由を正確に読み、事実を示す証拠を揃えて異議申し立てで説明することが復旧への道です。"}},
+        {"@type": "Question", "name": "違反ポイントは時間が経てば消えますか？", "acceptedAnswer": {"@type": "Answer", "text": "一定期間の経過で失効する仕組みが用意されていますが、具体的な期間や条件は変更されうるため、セラーセンターの健全性画面と公式ポリシーの最新情報で確認してください。失効を待つのではなく、原因を是正して新たな加算を止めることが先です。"}},
+        {"@type": "Question", "name": "異議申し立ては何回でもできますか？", "acceptedAnswer": {"@type": "Answer", "text": "回数と提出期限には上限があります。本記事執筆時点では最大2回・1回目は通知から30日以内とされていますが、変更されうるため通知文面と公式ヘルプで必ず確認を。実務的には「1回目に証拠と是正内容を出し切る」前提で準備することをおすすめします。"}},
+        {"@type": "Question", "name": "停止中、受注済みの注文はどうすればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "扱いは措置の内容によって異なるため、通知文面とセラーセンターの案内を最優先で確認してください。対応を放置すると指標がさらに悪化し、状況が重くなる可能性があります。"}},
+        {"@type": "Question", "name": "新しいアカウントを作り直せば再開できますか？", "acceptedAnswer": {"@type": "Answer", "text": "おすすめしません。事業情報や口座・端末などの関連付けから検知されうるうえ、規約違反としてより重い措置につながるリスクがあります。復旧の本線は異議申し立てです。"}},
+        {"@type": "Question", "name": "クリエイターの動画が原因で、自分のショップが違反になることはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "クリエイターの投稿内容の措置が商品やショップに波及する可能性はあります。起用時にNG表現と言い換え例をまとめた投稿ルールを配り、起用中の動画を定期的にサンプリング確認する運用が実務的な予防策です。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

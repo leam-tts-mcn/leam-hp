@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopセラーセンターの使い方｜最初の設定</title>
+<meta name="description" content="TikTok Shopセラーセンターで最初に設定する項目と、日々見る画面を絞って解説します。毎日の確認を短くする運用設計です。">
+<link rel="canonical" href="https://leam.co.jp/column/seller-center-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopセラーセンターの使い方｜最初の設定">
+<meta property="og:description" content="TikTok Shopセラーセンターで最初に設定する項目と、日々見る画面を絞って解説します。毎日の確認を短くする運用設計です。">
+<meta property="og:url" content="https://leam.co.jp/column/seller-center-guide/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopセラーセンターの使い方｜最初の設定">
+<meta name="twitter:description" content="TikTok Shopセラーセンターで最初に設定する項目と、日々見る画面を絞って解説します。毎日の確認を短くする運用設計です。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopセラーセンターの使い方｜最初の設定", "description": "TikTok Shopセラーセンターで最初に設定する項目と、日々見る画面を絞って解説します。毎日の確認を短くする運用設計です。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/seller-center-guide/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopセラーセンターの使い方｜最初の設定", "item": "https://leam.co.jp/column/seller-center-guide/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › セラーセンターの使い方</p>
+  <span class="cat">運用の基本</span>
+  <h1>TikTok Shopセラーセンターの使い方｜最初に設定すべき項目と日々の運用画面</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="セラーセンターの管理画面：ブラウザの窓の左にサイドメニューが並び、選択中の項目が赤く手前に浮き出て、右側には売上のカードと棒グラフのダッシュボードが表示されているイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v330c-110 34-214 40-318 24-116-18-206-58-322-54-118 4-204 52-312 66-102 13-186 2-248-26z" fill="#F6F7F9"/>
+  <ellipse cx="380" cy="300" rx="320" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="80" cy="74" r="5"/><circle cx="116" cy="74" r="5"/><circle cx="152" cy="74" r="5"/><circle cx="188" cy="74" r="5"/>
+      <circle cx="80" cy="110" r="5"/><circle cx="116" cy="110" r="5"/><circle cx="152" cy="110" r="5"/><circle cx="188" cy="110" r="5"/>
+      <circle cx="80" cy="146" r="5"/><circle cx="116" cy="146" r="5"/><circle cx="152" cy="146" r="5"/><circle cx="188" cy="146" r="5"/>
+    </g>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-30 268-14 400 8 130 22 240 30 356 12 120-18 240-46 444-30v128H0z" fill="#ECEEF1"/>
+  <g fill="#D8DADE"><use href="#dots" transform="translate(920 466)"/></g>
+
+  <!-- ================= 右：ブラウザの窓（副題） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="306" y="96" width="828" height="420" rx="18" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+
+    <!-- 窓の面 -->
+    <rect x="306" y="96" width="828" height="420" rx="18" fill="#FFFFFF"/>
+
+    <!-- サイドメニューの帯 -->
+    <path d="M306 154h240v362H324a18 18 0 0 1-18-18z" fill="#EFF1F4"/>
+
+    <!-- 上のバー -->
+    <path d="M306 114a18 18 0 0 1 18-18h792a18 18 0 0 1 18 18v40H306z" fill="#DFE0E2"/>
+    <circle cx="342" cy="125" r="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/>
+    <circle cx="372" cy="125" r="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/>
+    <circle cx="402" cy="125" r="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/>
+    <rect x="440" y="110" width="520" height="30" rx="15" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+
+    <!-- ダッシュボードの数値カード（シアン） -->
+    <g>
+      <rect x="574" y="176" width="160" height="116" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+      <rect x="594" y="204" width="62" height="12" rx="6" fill="#FFFFFF"/>
+      <rect x="594" y="234" width="96" height="26" rx="13" fill="#FFFFFF"/>
+
+      <rect x="756" y="176" width="160" height="116" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+      <rect x="776" y="204" width="62" height="12" rx="6" fill="#FFFFFF"/>
+      <rect x="776" y="234" width="76" height="26" rx="13" fill="#FFFFFF"/>
+
+      <rect x="938" y="176" width="160" height="116" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+      <rect x="958" y="204" width="62" height="12" rx="6" fill="#FFFFFF"/>
+      <rect x="958" y="234" width="108" height="26" rx="13" fill="#FFFFFF"/>
+    </g>
+
+    <!-- ダッシュボードの棒グラフ（シアン） -->
+    <g>
+      <rect x="574" y="320" width="524" height="168" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+      <rect x="598" y="340" width="90" height="14" rx="7" fill="#DFE0E2"/>
+      <path d="M598 460h476" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round"/>
+      <g fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round">
+        <rect x="615" y="416" width="52" height="44" rx="6"/>
+        <rect x="693" y="398" width="52" height="62" rx="6"/>
+        <rect x="771" y="404" width="52" height="56" rx="6"/>
+        <rect x="849" y="378" width="52" height="82" rx="6"/>
+        <rect x="927" y="364" width="52" height="96" rx="6"/>
+        <rect x="1005" y="344" width="52" height="116" rx="6"/>
+      </g>
+    </g>
+
+    <!-- サイドメニューの他の項目 -->
+    <g fill="#DFE0E2">
+      <rect x="336" y="178" width="30" height="30" rx="8"/>
+      <rect x="380" y="187" width="108" height="13" rx="6.5"/>
+      <rect x="336" y="226" width="30" height="30" rx="8"/>
+      <rect x="380" y="235" width="108" height="13" rx="6.5"/>
+      <rect x="336" y="474" width="30" height="30" rx="8"/>
+      <rect x="380" y="483" width="108" height="13" rx="6.5"/>
+    </g>
+
+    <!-- 内側の仕切り -->
+    <path d="M306 154h828" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M546 154v362" fill="none" stroke="#0B0C10" stroke-width="7"/>
+
+    <!-- 窓の輪郭 -->
+    <rect x="306" y="96" width="828" height="420" rx="18" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 左：選択中のメニュー項目（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="128" y="272" width="418" height="186" rx="20" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <!-- 裏面 -->
+    <rect x="128" y="272" width="418" height="186" rx="20" fill="#CE1730"/>
+    <!-- 前面 -->
+    <rect x="128" y="272" width="418" height="168" rx="20" fill="#FE2C55"/>
+    <!-- 項目のアイコン -->
+    <rect x="170" y="324" width="64" height="64" rx="14" fill="#FFFFFF"/>
+    <g fill="#FE2C55">
+      <rect x="184" y="338" width="14" height="14" rx="3"/>
+      <rect x="206" y="338" width="14" height="14" rx="3"/>
+      <rect x="184" y="360" width="14" height="14" rx="3"/>
+      <rect x="206" y="360" width="14" height="14" rx="3"/>
+    </g>
+    <!-- 項目の見出し -->
+    <g fill="#FFFFFF">
+      <rect x="258" y="330" width="228" height="18" rx="9"/>
+      <rect x="258" y="364" width="160" height="18" rx="9"/>
+    </g>
+    <!-- 輪郭と面の境目 -->
+    <rect x="128" y="272" width="418" height="186" rx="20" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M132 440h410" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- ================= 選んでいるカーソル ================= -->
+  <path d="M458 358v62l15-14 11 24 14-7-11-24 19-1z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- 小さな装飾 -->
+  <circle cx="196" cy="546" r="26" fill="#25F4EE"/>
+  <circle cx="252" cy="196" r="16" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>セラーセンター（Seller Center）は、TikTok Shopの出品・注文・発送・販促・クリエイター連携・入金確認までを一括管理する、セラー専用の管理画面です。</strong>メニューが多く最初は必ず迷いますが、実務で毎日触るのはごく一部です。<strong>「最初に済ませる設定」と「日々見る画面」を切り分ければ、運用は一気にシンプルになります。</strong>この記事では、主要メニューの役割一覧、開設直後にやるべき初期設定チェックリスト、毎日・毎週どの画面のどの数字を見るかまでを、運用の現場目線で解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>セラーセンター主要メニューの役割と、実務で触る頻度の目安</li>
+      <li>開設直後に済ませるべき初期設定10項目（チェックリスト付き）</li>
+      <li>毎日・毎週どの画面のどの数字を見て、何を判断するか</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">開設したものの、どこから触ればいいか分からない方へ</div>
+    <p>LEAMはTikTok Shop専門のコンサルティングと特化MCNを運営しています。初期設定から商品登録・クリエイター起用まで、いまのご状況に合わせて「次にやること」を無料相談で整理できます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">セラーセンターは店舗運営の司令塔：出品から入金確認まで完結する</a></li>
+      <li><a href="#s2">初期設定は「お金と発送」を最優先に：開設直後の10項目チェックリスト</a></li>
+      <li><a href="#s3">商品登録は「動画で売る前提」で作り込む：登録から審査までの5ステップ</a></li>
+      <li><a href="#s4">注文管理とカスタマーサービスは毎日開く：出荷期限と未返信を残さない</a></li>
+      <li><a href="#s5">日々の運用は「毎日4画面・毎週4画面」に絞ると回る</a></li>
+      <li><a href="#s6">売上を伸ばす操作は3つのメニューに集約される：販促・アフィリエイト・広告</a></li>
+      <li><a href="#s7">ファイナンス画面で「売上と手残りのズレ」を毎週確認する</a></li>
+      <li><a href="#s8">よくあるつまずきは4つ：原因はセラーセンターの外にあることが多い</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>セラーセンターは店舗運営の司令塔：出品から入金確認まで完結する</h2>
+  <p>セラーセンターは、TikTok Shopに出店したセラーが使う専用の管理画面です。楽天市場のRMS、Amazonのセラーセントラルにあたるものと考えると分かりやすく、<strong>商品登録から注文処理、販促、クリエイター連携、売上金の入金確認まで、店舗運営の操作がすべてここに集約されています</strong>。まずは全体像として、主要メニューの役割と実務で触る頻度の目安を一覧にしました。</p>
+  <div class="tw"><table>
+    <thead><tr><th>メニュー</th><th>主な役割</th><th>触る頻度の目安</th></tr></thead>
+    <tbody>
+      <tr><td><b>ホーム</b></td><td>ショップ全体の状態、お知らせ、対応が必要なタスクの通知</td><td class="y">毎日</td></tr>
+      <tr><td><b>商品管理</b></td><td>商品の登録・編集、在庫、出品審査の状況確認</td><td>週数回</td></tr>
+      <tr><td><b>注文管理</b></td><td>注文の確認、発送処理、キャンセル・返品への対応</td><td class="y">毎日</td></tr>
+      <tr><td><b>マーケティング</b></td><td>クーポン・期間限定セールなどの販促設定</td><td>週1回〜</td></tr>
+      <tr><td><b>アフィリエイト</b></td><td>クリエイターへのコミッション設定、提携・サンプル対応</td><td>週数回</td></tr>
+      <tr><td><b>広告</b></td><td>GMV Maxなどの広告作成と予算管理</td><td>運用時は毎日</td></tr>
+      <tr><td><b>ファイナンス</b></td><td>売上・手数料・精算・入金の確認</td><td>週1回</td></tr>
+      <tr><td><b>分析（データ系メニュー）</b></td><td>売上・アクセス・流入元・商品別実績の分析</td><td class="y">毎日〜週1</td></tr>
+      <tr><td><b>ショップ設定</b></td><td>事業者情報、配送・返品ポリシー、権限管理</td><td class="n">初期＋随時</td></tr>
+      <tr><td><b>カスタマーサービス</b></td><td>購入者からの問い合わせ・チャット対応</td><td class="y">毎日</td></tr>
+    </tbody>
+  </table></div>
+  <p>※メニュー名・画面構成・表記は更新されることがあります（英語表記に切り替わる場合もあります）。本記事の画面名は2026年8月30日時点の整理で、細部は実際の管理画面と公式ヘルプをご確認ください。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="セラーセンターの全体像：セラーセンターの下に、売る準備（商品管理）・日々の対応（注文管理・カスタマーサービス）・売上を伸ばす（マーケティング・アフィリエイト・広告）・お金（ファイナンス）・振り返り（分析）の5つの仕事領域がぶら下がる構造図">
+      <rect x="210" y="14" width="300" height="48" rx="12" fill="#17181C"/>
+      <text x="360" y="45" text-anchor="middle" font-size="17" font-weight="800" fill="#fff">セラーセンター</text>
+      <path d="M360 62 V86 M80 86 H648 M80 86 V108 M222 86 V108 M364 86 V108 M506 86 V108 M648 86 V108" stroke="#787D8A" stroke-width="2" fill="none"/>
+      <!-- 1 売る準備 -->
+      <rect x="16" y="110" width="128" height="196" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="80" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">売る準備</text>
+      <rect x="28" y="152" width="104" height="30" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <text x="80" y="172" text-anchor="middle" font-size="11" fill="#454956">商品管理</text>
+      <rect x="28" y="190" width="104" height="30" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <text x="80" y="210" text-anchor="middle" font-size="11" fill="#454956">ショップ設定</text>
+      <!-- 2 日々の対応 -->
+      <rect x="158" y="110" width="128" height="196" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="222" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">日々の対応</text>
+      <rect x="170" y="152" width="104" height="30" rx="6" fill="#fff" stroke="#F3A7B5"/>
+      <text x="222" y="172" text-anchor="middle" font-size="11" fill="#454956">注文管理</text>
+      <rect x="170" y="190" width="104" height="30" rx="6" fill="#fff" stroke="#F3A7B5"/>
+      <text x="222" y="210" text-anchor="middle" font-size="10" fill="#454956">カスタマーサービス</text>
+      <rect x="186" y="258" width="72" height="24" rx="12" fill="#E8324A"/>
+      <text x="222" y="275" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">毎日見る</text>
+      <!-- 3 売上を伸ばす -->
+      <rect x="300" y="110" width="128" height="196" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="364" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">売上を伸ばす</text>
+      <rect x="312" y="152" width="104" height="30" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <text x="364" y="172" text-anchor="middle" font-size="10" fill="#454956">マーケティング</text>
+      <rect x="312" y="190" width="104" height="30" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <text x="364" y="210" text-anchor="middle" font-size="10" fill="#454956">アフィリエイト</text>
+      <rect x="312" y="228" width="104" height="30" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <text x="364" y="248" text-anchor="middle" font-size="11" fill="#454956">広告</text>
+      <!-- 4 お金 -->
+      <rect x="442" y="110" width="128" height="196" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="506" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">お金</text>
+      <rect x="454" y="152" width="104" height="30" rx="6" fill="#fff" stroke="#E6E7EB"/>
+      <text x="506" y="172" text-anchor="middle" font-size="11" fill="#454956">ファイナンス</text>
+      <rect x="470" y="258" width="72" height="24" rx="12" fill="#787D8A"/>
+      <text x="506" y="275" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">週1回</text>
+      <!-- 5 振り返り -->
+      <rect x="584" y="110" width="128" height="196" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="648" y="138" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">振り返り</text>
+      <rect x="596" y="152" width="104" height="30" rx="6" fill="#fff" stroke="#F3A7B5"/>
+      <text x="648" y="172" text-anchor="middle" font-size="11" fill="#454956">分析</text>
+      <rect x="612" y="258" width="72" height="24" rx="12" fill="#E8324A"/>
+      <text x="648" y="275" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">毎日見る</text>
+    </svg>
+    <figcaption>図1：セラーセンターの全体像。5つの仕事領域に分けると迷わない（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>メニューは10前後ありますが、<strong>毎日触るのは「ホーム・注文管理・カスタマーサービス・分析」の4つだけ</strong>です。残りは初期設定と週次の見直しで十分に回ります。この切り分けが本記事の骨組みです。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>初期設定は「お金と発送」を最優先に：開設直後の10項目チェックリスト</h2>
+  <p>出店審査に通ったら、商品を登録する前に初期設定を済ませます。多くの項目はあとから直せますが、<strong>入金口座と発送・返品まわりだけは「売れてから慌てる」と実害が出ます</strong>。次の10項目をチェックリストとして上から順に進めてください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>#</th><th>設定項目</th><th>場所の目安</th><th>先にやる理由</th></tr></thead>
+    <tbody>
+      <tr><td class="num">1</td><td><b>入金口座（銀行口座）の登録</b></td><td>ファイナンス系</td><td>未登録だと売れても入金されない</td></tr>
+      <tr><td class="num">2</td><td><b>発送元・返送先住所の登録</b></td><td>ショップ設定</td><td>返品時の混乱を防ぐ</td></tr>
+      <tr><td class="num">3</td><td><b>配送方法・出荷期限の確認</b></td><td>ショップ設定</td><td>出荷遅延はショップ評価の減点に直結</td></tr>
+      <tr><td class="num">4</td><td>返品・返金ポリシーの確認</td><td>ショップ設定</td><td>対応基準を先に決めておく</td></tr>
+      <tr><td class="num">5</td><td>事業者情報・表示内容の確認</td><td>ショップ設定</td><td>不備は信頼と違反通知に直結</td></tr>
+      <tr><td class="num">6</td><td>カスタマーサービスの通知・応答体制</td><td>カスタマーサービス</td><td>返信の遅れが評価に響く</td></tr>
+      <tr><td class="num">7</td><td>販売カテゴリに必要な書類・資格の確認</td><td>商品管理</td><td>カテゴリによって追加書類が要る</td></tr>
+      <tr><td class="num">8</td><td><b>アフィリエイトプラン（コミッション率）の設計</b></td><td>アフィリエイト</td><td>クリエイター経由の売上の前提になる</td></tr>
+      <tr><td class="num">9</td><td>スタッフ権限の設定（複数人運用の場合）</td><td>ショップ設定</td><td>誤操作・属人化を防ぐ</td></tr>
+      <tr><td class="num">10</td><td>初回注文フローの通し確認</td><td>注文管理</td><td>受注→出荷の動線を1回通しておく</td></tr>
+    </tbody>
+  </table></div>
+  <h3>最優先は「入金口座」と「発送・返品」の3点セット</h3>
+  <p>売上金の振込先が未登録のままでは、商品が売れても手元にお金が入りません。発送まわりは、発送元・返送先住所、利用する配送方法、出荷までの期限の3つを確認します。<strong>出荷期限の超過はショップ評価の減点につながる</strong>ため、無理のない出荷体制を先に固めてから売り始めるのが鉄則です（期限の日数や評価制度の詳細は変わることがあるため、最新は公式ヘルプで確認してください）。</p>
+  <h3>アフィリエイトプランは「初期設定」に含めて決めておく</h3>
+  <p>TikTok Shopでは、クリエイターが動画やライブで商品を紹介し、売れたら報酬（コミッション）を受け取るアフィリエイトの仕組みが売上の大きな柱になります。コミッション率は売れ始めてから考えるのではなく、<strong>商品登録と同じタイミングで設計しておく</strong>のが実務的です。率はあとから調整できます。仕組みの全体像は関連記事「アフィリエイトの仕組み」で解説しています。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：ポリシー違反の通知は必ず読む</div>
+    <p>事業者情報や商品情報の不備は、購入者からの信頼低下だけでなく、違反ポイント（ペナルティ）の対象になる場合があります。<strong>ホーム画面に届く違反・警告の通知は後回しにせず、その日のうちに内容を確認してください。</strong>制度の内容は更新されることがあります。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>商品登録は「動画で売る前提」で作り込む：登録から審査までの5ステップ</h2>
+  <p>初期設定が済んだら、商品管理メニューから商品を登録します。流れは次の5ステップです（画面の項目名は更新されることがあります）。</p>
+  <ol class="steps">
+    <li><b>商品名・カテゴリ・属性を入力する</b><p>カテゴリの選択を誤ると審査や露出に影響します。類似商品がどのカテゴリで売られているかを先に確認します。</p></li>
+    <li><b>画像と説明文を入れる</b><p>1枚目の画像は「動画を見て来た人」が最初に見る場所です。動画の訴求と一致させます。</p></li>
+    <li><b>価格・在庫・SKU（色・サイズ等）を設定する</b><p>セット販売や色違いはSKUで分けます。在庫数は実在庫と必ず一致させます。</p></li>
+    <li><b>配送設定を紐づける</b><p>初期設定で決めた配送方法・出荷期限をこの商品に適用します。</p></li>
+    <li><b>審査に出し、審査状況を確認する</b><p>登録した商品はTikTok側の審査を経て公開されます。審査落ちの場合は理由が表示されるので、修正して再申請します。</p></li>
+  </ol>
+  <h3>画像と説明文は「動画の続き」として作る</h3>
+  <p>TikTok Shopの購入者の多くは、検索ではなく動画やライブを見て商品ページに来ます。だから商品ページの役割は「探してもらうこと」ではなく、<strong>動画で高まった購入意欲を裏切らず、最後のひと押しをすること</strong>です。商品名の先頭に要点を置く、1枚目の画像を動画の訴求と揃える、説明文の冒頭で「動画で見たあの機能」を確認できるようにする——この3点だけで、同じアクセス数でも成果が変わります。なお、出品できない商品・制限のある商品があるため、扱う商材が該当しないかは事前に公式のポリシーで確認してください。</p>
+
+  <h2 id="s4"><span class="no en">04</span>注文管理とカスタマーサービスは毎日開く：出荷期限と未返信を残さない</h2>
+  <p>売れ始めてから毎日必ず開くのが、注文管理とカスタマーサービスの2つです。注文から入金までの流れは次の図の通りで、<strong>この間のセラーの仕事は「期限内に出荷する」「問い合わせに返信する」の2つに集約されます</strong>。</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="注文から入金までの流れ：注文が入る、注文管理で確認、期限内に出荷、配送・受け取り、注文確定、精算・入金の6ステップ。確認と出荷がセラーの仕事で、出荷期限の超過は評価減点、入金額は手数料等が差し引かれた額になる">
+      <g font-size="11.5" font-weight="700" fill="#17181C">
+        <rect x="16" y="70" width="100" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="66" y="98" text-anchor="middle">注文が入る</text>
+        <rect x="134" y="70" width="100" height="64" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+        <text x="184" y="92" text-anchor="middle" fill="#C2203A">注文管理で</text>
+        <text x="184" y="110" text-anchor="middle" fill="#C2203A">確認</text>
+        <rect x="252" y="70" width="100" height="64" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+        <text x="302" y="92" text-anchor="middle" fill="#C2203A">期限内に</text>
+        <text x="302" y="110" text-anchor="middle" fill="#C2203A">出荷</text>
+        <rect x="370" y="70" width="100" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="420" y="92" text-anchor="middle">配送・</text>
+        <text x="420" y="110" text-anchor="middle">受け取り</text>
+        <rect x="488" y="70" width="100" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="538" y="98" text-anchor="middle">注文確定</text>
+        <rect x="606" y="70" width="100" height="64" rx="10" fill="#17181C"/>
+        <text x="656" y="92" text-anchor="middle" fill="#fff">精算・入金</text>
+        <text x="656" y="112" text-anchor="middle" font-size="9.5" fill="#C9CBD4">ファイナンス</text>
+      </g>
+      <g stroke="#787D8A" stroke-width="2">
+        <line x1="116" y1="102" x2="132" y2="102"/><line x1="234" y1="102" x2="250" y2="102"/>
+        <line x1="352" y1="102" x2="368" y2="102"/><line x1="470" y1="102" x2="486" y2="102"/>
+        <line x1="588" y1="102" x2="604" y2="102"/>
+      </g>
+      <path d="M134 48 H352 M134 48 V60 M352 48 V60" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <text x="243" y="36" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">セラーの仕事はここ（毎日確認）</text>
+      <path d="M302 138 V158" stroke="#8A5A00" stroke-width="2"/>
+      <rect x="192" y="160" width="220" height="30" rx="8" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="302" y="180" text-anchor="middle" font-size="11" font-weight="700" fill="#8A5A00">出荷期限の超過は評価減点につながる</text>
+      <path d="M656 138 V158" stroke="#787D8A" stroke-width="2"/>
+      <rect x="504" y="160" width="204" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="606" y="178" text-anchor="middle" font-size="11" fill="#454956">入金額＝販売額から手数料・</text>
+      <text x="606" y="195" text-anchor="middle" font-size="11" fill="#454956">コミッション等を引いた額</text>
+      <text x="360" y="234" text-anchor="middle" font-size="11" fill="#787D8A">※精算・入金の条件やサイクルは変わることがあります。最新は公式ヘルプで確認</text>
+    </svg>
+    <figcaption>図2：注文から入金までの流れ。セラーの仕事は「確認」と「期限内出荷」に集約される（LEAM作成）</figcaption>
+  </figure>
+  <h3>返品・キャンセル依頼は放置しない</h3>
+  <p>返品・返金・キャンセルの依頼にも対応期限があります。期限内に対応しないと購入者有利に処理される場合があり、対応の遅れ自体がショップ評価に響きます。<strong>注文管理を開いたら、新規注文と発送期限だけでなく、返品・返金の依頼欄まで毎日セットで確認する</strong>習慣にしてください。カスタマーサービスの問い合わせも同様で、返信の速さは購入者の安心感とショップの評価の両方に効きます。</p>
+
+  <h2 id="s5"><span class="no en">05</span>日々の運用は「毎日4画面・毎週4画面」に絞ると回る</h2>
+  <p>セラーセンターの全メニューを毎日見る必要はありません。当社の運用実感では、<strong>毎日見るのは4画面、週1回まとめて見るのは4画面</strong>に絞ると、1日10〜15分のルーティンでショップの状態を把握できます。見るべき数字と、そこで判断することを一覧にしました。</p>
+  <div class="tw"><table>
+    <thead><tr><th>頻度</th><th>画面</th><th>見る数字・項目</th><th>判断すること</th></tr></thead>
+    <tbody>
+      <tr><td class="y">毎日</td><td><b>ホーム</b></td><td>対応が必要なタスク、違反・警告の通知</td><td>その日のToDoを決める</td></tr>
+      <tr><td class="y">毎日</td><td><b>注文管理</b></td><td>新規注文、発送期限が近い注文、返品依頼</td><td>出荷指示と返品対応</td></tr>
+      <tr><td class="y">毎日</td><td><b>カスタマーサービス</b></td><td>未返信の問い合わせ</td><td>返信して未読ゼロにする</td></tr>
+      <tr><td class="y">毎日</td><td><b>分析</b></td><td>前日の売上、流入元（動画／ライブ／おすすめ）</td><td>どの動画が売ったかを特定する</td></tr>
+      <tr><td>毎週</td><td><b>アフィリエイト</b></td><td>提携クリエイター数、紹介動画の本数、サンプル申請</td><td>起用の打ち手を決める</td></tr>
+      <tr><td>毎週</td><td><b>ファイナンス</b></td><td>精算額、控除の内訳、入金予定</td><td>手残りを確認する</td></tr>
+      <tr><td>毎週</td><td><b>商品管理</b></td><td>在庫数、審査に落ちた商品</td><td>補充と修正</td></tr>
+      <tr><td>毎週</td><td><b>マーケティング／広告</b></td><td>クーポンの利用状況、広告の費用対効果</td><td>販促と予算の調整</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="運用ルーティンの図：毎日10〜15分でホーム・注文管理・カスタマーサービス・分析の4画面を見て、毎週30分でアフィリエイト・ファイナンス・商品管理・販促と広告の4画面を見る">
+      <rect x="20" y="20" width="330" height="260" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <rect x="40" y="40" width="150" height="30" rx="15" fill="#E8324A"/>
+      <text x="115" y="61" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">毎日（10〜15分）</text>
+      <g font-size="13" font-weight="700" fill="#17181C">
+        <rect x="40" y="88" width="10" height="10" rx="2" fill="#E8324A"/><text x="60" y="98">ホーム</text>
+        <rect x="40" y="132" width="10" height="10" rx="2" fill="#E8324A"/><text x="60" y="142">注文管理</text>
+        <rect x="40" y="176" width="10" height="10" rx="2" fill="#E8324A"/><text x="60" y="186">カスタマーサービス</text>
+        <rect x="40" y="220" width="10" height="10" rx="2" fill="#E8324A"/><text x="60" y="230">分析</text>
+      </g>
+      <g font-size="11" fill="#787D8A">
+        <text x="60" y="116">通知と要対応タスク</text>
+        <text x="60" y="160">発送期限・返品依頼</text>
+        <text x="60" y="204">未返信をゼロにする</text>
+        <text x="60" y="248">前日の売上と流入元</text>
+      </g>
+      <rect x="370" y="20" width="330" height="260" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="390" y="40" width="130" height="30" rx="15" fill="#17181C"/>
+      <text x="455" y="61" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">毎週（30分）</text>
+      <g font-size="13" font-weight="700" fill="#17181C">
+        <rect x="390" y="88" width="10" height="10" rx="2" fill="#787D8A"/><text x="410" y="98">アフィリエイト</text>
+        <rect x="390" y="132" width="10" height="10" rx="2" fill="#787D8A"/><text x="410" y="142">ファイナンス</text>
+        <rect x="390" y="176" width="10" height="10" rx="2" fill="#787D8A"/><text x="410" y="186">商品管理</text>
+        <rect x="390" y="220" width="10" height="10" rx="2" fill="#787D8A"/><text x="410" y="230">マーケティング／広告</text>
+      </g>
+      <g font-size="11" fill="#787D8A">
+        <text x="410" y="116">提携数と紹介動画の本数</text>
+        <text x="410" y="160">精算・控除の内訳・入金予定</text>
+        <text x="410" y="204">在庫と審査落ちの修正</text>
+        <text x="410" y="248">クーポン利用状況と広告ROI</text>
+      </g>
+    </svg>
+    <figcaption>図3：日々の運用ルーティン。この8画面以外は必要な時だけ開けばよい（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 分析画面で見るのは「いくら売れたか」より「何が売ったか」</div>
+    <p>前日の売上額そのものより、<strong>どの動画・どのライブ・どのクリエイター経由で売れたか</strong>を毎日確認します。伸びた動画が特定できれば、「同じ型の動画を増やす」「その動画に広告を乗せる」という次の打ち手に直結するからです。</p>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>売上を伸ばす操作は3つのメニューに集約される：販促・アフィリエイト・広告</h2>
+  <p>守りの運用（注文・CS・発送）が回り始めたら、次は攻めです。TikTok Shopの売上は「自社の動画・ライブ」「クリエイターの紹介動画」「広告」の3つの流入から生まれ、セラーセンター側の操作はそれぞれ<strong>マーケティング・アフィリエイト・広告の3メニューに対応</strong>しています。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="売上をつくる3つの流入とメニューの対応図：自社のショート動画・ライブはマーケティングで後押し、クリエイターの紹介動画はアフィリエイトで設計、広告配信は広告メニューで設定し、3つとも商品ページを経て購入につながる">
+      <g font-size="12.5" font-weight="700" fill="#17181C">
+        <rect x="20" y="30" width="230" height="58" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="135" y="54" text-anchor="middle">① 自社のショート動画・ライブ</text>
+        <text x="135" y="76" text-anchor="middle" font-size="11" font-weight="400" fill="#787D8A">投稿・配信はTikTokアプリ側</text>
+        <rect x="20" y="120" width="230" height="58" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+        <text x="135" y="144" text-anchor="middle" fill="#C2203A">② クリエイターの紹介動画</text>
+        <text x="135" y="166" text-anchor="middle" font-size="11" font-weight="400" fill="#787D8A">アフィリエイトで報酬を設計</text>
+        <rect x="20" y="210" width="230" height="58" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="135" y="234" text-anchor="middle">③ 広告配信（GMV Max等）</text>
+        <text x="135" y="256" text-anchor="middle" font-size="11" font-weight="400" fill="#787D8A">広告メニューで予算と目標を設定</text>
+      </g>
+      <g stroke="#787D8A" stroke-width="2" fill="none">
+        <path d="M250 59 H300 Q330 59 340 110 T370 149"/>
+        <path d="M250 149 H368"/>
+        <path d="M250 239 H300 Q330 239 340 190 T370 151"/>
+      </g>
+      <rect x="380" y="115" width="150" height="68" rx="12" fill="#17181C"/>
+      <text x="455" y="143" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">商品ページ</text>
+      <text x="455" y="166" text-anchor="middle" font-size="10.5" fill="#C9CBD4">動画の続きとして作る</text>
+      <path d="M530 149 H566 M560 143 L570 149 L560 155 Z" stroke="#787D8A" stroke-width="2" fill="#787D8A"/>
+      <rect x="574" y="115" width="126" height="68" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="637" y="143" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">購入（GMV）</text>
+      <text x="637" y="166" text-anchor="middle" font-size="10.5" fill="#787D8A">クーポンで最後の一押し</text>
+      <text x="360" y="290" text-anchor="middle" font-size="11" fill="#787D8A">3つの流入すべてが商品ページを通る。ページの質が全流入の成果を左右する</text>
+    </svg>
+    <figcaption>図4：売上をつくる3つの流入と、対応するセラーセンターのメニュー（LEAM作成）</figcaption>
+  </figure>
+  <h3>マーケティング：クーポンとセールで「最後の一押し」を作る</h3>
+  <p>クーポンや期間限定セールなどの販促をここで設定します。効果的なのは、動画やライブの企画と連動させた期間限定の値引きです。逆に、常時値引きは利益率を削るだけになりやすく、<strong>「いつ・何のために値引くか」を決めてから使う</strong>のが実務的です。</p>
+  <h3>アフィリエイト：クリエイター起用はセラーセンター上で完結する</h3>
+  <p>コミッション率を設定した商品をプランとして公開すると、クリエイターが商品を選んで動画やライブで紹介してくれます。広くクリエイター全体に開放するプランと、特定のクリエイターに個別条件を提示するプランがあり（プラン名称や仕組みの詳細は更新されることがあります）、サンプル提供の申請対応もこの画面で行います。<strong>TikTok Shopではクリエイター経由の売上の比重が大きく、実務ではこのメニューが「攻めの本丸」になります</strong>。</p>
+  <h3>広告：GMV Maxは土台ができてから乗せる</h3>
+  <p>広告メニューからは、売上（GMV）の最大化に自動最適化するGMV Maxなどの広告が使えます。ただし広告は商品ページと動画素材の質を増幅する仕組みなので、<strong>土台が整う前に予算を投じても空回りします</strong>。順番としては、商品ページ→アフィリエイトで動画素材→広告、が定石です。詳しくは関連記事「GMV Max完全ガイド」で解説しています。</p>
+
+  <div class="ctabox">
+    <div class="ct">クリエイター起用の設計から、プロに任せる方法もあります</div>
+    <p>LEAMはTikTok Shop特化MCNを運営し、市場データを毎営業日蓄積しています。コミッション設計・クリエイター選定・サンプル運用まで、一次データに基づいて「誰に・何を・どう紹介してもらうか」を組み立てます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>ファイナンス画面で「売上と手残りのズレ」を毎週確認する</h2>
+  <p>見落とされがちですが重要なのがここです。<strong>分析画面の売上と、実際に入金される金額は一致しません。</strong>販売額からは各種手数料やクリエイターへのコミッションなどが差し引かれ、購入者の受け取り後に注文が確定してから精算・入金という流れをたどるため、金額にもタイミングにもズレが生じます。</p>
+  <p>「売れているのに手残りがない」を防ぐには、<strong>週1回ファイナンス画面で精算額と控除の内訳を確認し、月1回は主力商品について「販売価格−手数料−コミッション−原価−送料−広告費」を検算する</strong>運用をおすすめします。この検算を続けると、値付けやコミッション率の調整判断が数字でできるようになります。手数料の料率や精算のサイクルは改定されることがあるため、具体的な数値は必ず最新の公式情報で確認してください。全体像は関連記事「TikTok Shopの手数料完全ガイド」で整理しています。</p>
+
+  <h2 id="s8"><span class="no en">08</span>よくあるつまずきは4つ：原因はセラーセンターの外にあることが多い</h2>
+  <p>運用のご相談で多いつまずきを4つに整理しました。共通するのは、<strong>原因の多くが管理画面の操作ミスではなく、動画・ライブという「セラーセンターの外」の供給が細ること</strong>にある、という点です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>つまずき</th><th>典型的な症状</th><th>対策</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 出品して更新が止まる</b></td><td>アクセスも売上も伸びない</td><td>売上を作るのは動画・ライブの供給。出品はスタート地点と捉え、自社投稿とクリエイター起用を止めない</td></tr>
+      <tr><td><b>② 商品ページが動画と不一致</b></td><td>クリックはあるのに買われない</td><td>1枚目の画像と説明文の冒頭を、動画の訴求と揃える（§03）</td></tr>
+      <tr><td><b>③ 出荷遅延・未返信の放置</b></td><td>ショップ評価が下がり露出が減る</td><td>毎日の注文管理・カスタマーサービス確認をルーティン化する（§05）</td></tr>
+      <tr><td><b>④ 数字を見ずに感覚で判断</b></td><td>何が効いたのか分からないまま続く</td><td>分析画面で流入元と動画単位の実績を見て、当たった型に寄せる</td></tr>
+    </tbody>
+  </table></div>
+  <p>セラーセンターは「売る場所」ではなく「販売を支える場所」です。管理画面を完璧に整えることが目的化すると本末転倒で、<strong>ルーティンを最小化して浮いた時間を動画・ライブ・クリエイター起用に回す</strong>ことが、結果的にいちばんの売上改善になります。伸び悩んだときの原因の切り分けは、関連記事「売れない時の10チェックリスト」も参考にしてください。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>セラーセンターはスマホでも使えますか？</summary><div class="a">セラー向けのスマホアプリも提供されており、注文の確認や問い合わせへの返信など日々の対応には便利です。ただし商品登録や販促・広告の設定は項目数が多いため、PCのブラウザ版のほうが作業しやすくなります（アプリの提供状況・機能範囲は変わることがあります）。</div></details>
+    <details><summary>開設して最初に設定すべき項目はどれですか？</summary><div class="a">入金口座、発送元・返送先住所と配送設定、返品ポリシーの3系統が最優先です。本文の初期設定チェックリスト10項目を上から順に進めてください。</div></details>
+    <details><summary>メニューが英語表記になっていて分かりません。</summary><div class="a">表示言語や画面名は更新・変更されることがあります。名称が変わっても「商品・注文・販促・クリエイター・お金・分析」という役割の骨組みは変わらないため、本文の役割一覧表から該当するメニューを探すのが早道です。</div></details>
+    <details><summary>毎日どのくらいの時間がかかりますか？</summary><div class="a">当社の運用実感では、毎日のルーティン（ホーム・注文管理・カスタマーサービス・分析）は10〜15分程度、週次の見直しを合わせても週2時間前後に収まるケースが多いです。商品数や注文量によって変わります。</div></details>
+    <details><summary>アフィリエイトのコミッション率はいつ決めればいいですか？</summary><div class="a">商品登録と同じタイミングで決めるのが実務的です。クリエイターに紹介してもらえる条件が整ってはじめて動画素材が増え始めるためです。率はあとから調整できます。</div></details>
+    <details><summary>売上の数字はどの画面で見られますか？</summary><div class="a">分析系メニューで、売上・アクセス・流入元（動画／ライブ／おすすめ面）・商品別の実績を確認できます。ファイナンス画面の精算額とは集計の性質が異なるため、「売上は分析、手残りはファイナンス」と使い分けてください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">出店準備</span><b><a href="https://leam.co.jp/column/tiktok-shop-shinsa/" style="color:inherit;text-decoration:none">出店条件と審査完全ガイド</a></b><span>必要書類と落ちる理由</span></div>
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="color:inherit;text-decoration:none">TikTok Shopの手数料完全ガイド</a></b><span>カテゴリー別の料率と利益計算</span></div>
+      <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/affiliate-guide/" style="color:inherit;text-decoration:none">アフィリエイトの仕組み</a></b><span>プラン設計と選ばれる条件</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。初期設定の整備や、クリエイター起用を小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンターおよびTikTok Shopの公式ヘルプ・公式ポリシー（メニュー名・画面構成・手数料率・精算サイクル・評価制度などの仕様は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">セラーセンターの全体像</a></li>
+        <li><a href="#s2">初期設定10項目チェックリスト</a></li>
+        <li><a href="#s3">商品登録の5ステップ</a></li>
+        <li><a href="#s4">注文・CSは毎日開く</a></li>
+        <li><a href="#s5">毎日4画面・毎週4画面</a></li>
+        <li><a href="#s6">販促・アフィリエイト・広告</a></li>
+        <li><a href="#s7">ファイナンスで手残り確認</a></li>
+        <li><a href="#s8">よくあるつまずき4つ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>初期設定から伴走する無料相談</b>
+      <p>現状のショップを拝見し、「次にやること」を率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopセラーセンターの使い方｜最初に設定すべき項目と日々の運用画面",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "セラーセンターはスマホでも使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "セラー向けのスマホアプリも提供されており、注文の確認や問い合わせへの返信など日々の対応には便利です。ただし商品登録や販促・広告の設定は項目数が多いため、PCのブラウザ版のほうが作業しやすくなります（アプリの提供状況・機能範囲は変わることがあります）。"}},
+        {"@type": "Question", "name": "開設して最初に設定すべき項目はどれですか？", "acceptedAnswer": {"@type": "Answer", "text": "入金口座、発送元・返送先住所と配送設定、返品ポリシーの3系統が最優先です。本文の初期設定チェックリスト10項目を上から順に進めてください。"}},
+        {"@type": "Question", "name": "メニューが英語表記になっていて分かりません。", "acceptedAnswer": {"@type": "Answer", "text": "表示言語や画面名は更新・変更されることがあります。名称が変わっても「商品・注文・販促・クリエイター・お金・分析」という役割の骨組みは変わらないため、本文の役割一覧表から該当するメニューを探すのが早道です。"}},
+        {"@type": "Question", "name": "毎日どのくらいの時間がかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "当社の運用実感では、毎日のルーティン（ホーム・注文管理・カスタマーサービス・分析）は10〜15分程度、週次の見直しを合わせても週2時間前後に収まるケースが多いです。商品数や注文量によって変わります。"}},
+        {"@type": "Question", "name": "アフィリエイトのコミッション率はいつ決めればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "商品登録と同じタイミングで決めるのが実務的です。クリエイターに紹介してもらえる条件が整ってはじめて動画素材が増え始めるためです。率はあとから調整できます。"}},
+        {"@type": "Question", "name": "売上の数字はどの画面で見られますか？", "acceptedAnswer": {"@type": "Answer", "text": "分析系メニューで、売上・アクセス・流入元（動画／ライブ／おすすめ面）・商品別の実績を確認できます。ファイナンス画面の精算額とは集計の性質が異なるため、「売上は分析、手残りはファイナンス」と使い分けてください。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

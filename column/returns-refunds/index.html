@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの返品・返金ルールと対応フロー</title>
+<meta name="description" content="TikTok Shopの返品・返金ルールと対応フローを整理し、セラーが損をしないための備えを解説します。対応期限の考え方つきです。">
+<link rel="canonical" href="https://leam.co.jp/column/returns-refunds/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの返品・返金ルールと対応フロー">
+<meta property="og:description" content="TikTok Shopの返品・返金ルールと対応フローを整理し、セラーが損をしないための備えを解説します。対応期限の考え方つきです。">
+<meta property="og:url" content="https://leam.co.jp/column/returns-refunds/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの返品・返金ルールと対応フロー">
+<meta name="twitter:description" content="TikTok Shopの返品・返金ルールと対応フローを整理し、セラーが損をしないための備えを解説します。対応期限の考え方つきです。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの返品・返金ルールと対応フロー", "description": "TikTok Shopの返品・返金ルールと対応フローを整理し、セラーが損をしないための備えを解説します。対応期限の考え方つきです。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/returns-refunds/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの返品・返金ルールと対応フロー", "item": "https://leam.co.jp/column/returns-refunds/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 返品・返金ルールと対応フロー</p>
+  <span class="cat">ショップ運営</span>
+  <h1>TikTok Shopの返品・返金ルールと対応フロー｜セラーが損しない備え</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="返品された商品が箱で戻り、受付票が処理済みになって返金へつながる往復の流れを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 40-198 44-306 26-118-20-212-56-330-46C258 306 176 340 92 356 60 362 30 364 0 362z" fill="#F6F7F9"/>
+  <ellipse cx="560" cy="205" rx="350" ry="195" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="62" cy="80" r="5"/><circle cx="98" cy="80" r="5"/><circle cx="134" cy="80" r="5"/><circle cx="170" cy="80" r="5"/>
+      <circle cx="62" cy="116" r="5"/><circle cx="98" cy="116" r="5"/><circle cx="134" cy="116" r="5"/><circle cx="170" cy="116" r="5"/>
+      <circle cx="62" cy="152" r="5"/><circle cx="98" cy="152" r="5"/><circle cx="134" cy="152" r="5"/><circle cx="170" cy="152" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(498 460)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 508c150-28 268-12 402 12 130 22 246 28 360 10 112-18 232-40 438-24v122H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 中央：往復の矢印が輪になる ================= -->
+  <g>
+    <!-- 影 -->
+    <g fill="#5E6064" opacity=".14" transform="translate(10 12)">
+      <path d="M809.6 329.6A110 110 0 0 0 604.7 265L587.4 255L606.2 313.4L649.8 291L632.5 281A78 78 0 0 1 777.7 326.8Z"/>
+      <path d="M591.7 339.1A110 110 0 0 0 770.7 404.3L783.6 419.6L784.5 361.2L737.3 364.4L750.1 379.8A78 78 0 0 1 623.2 333.5Z"/>
+    </g>
+    <!-- 返金の処理が進む向き（白） -->
+    <path d="M591.7 339.1A110 110 0 0 0 770.7 404.3L783.6 419.6L784.5 361.2L737.3 364.4L750.1 379.8A78 78 0 0 1 623.2 333.5Z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 商品が戻る向き（赤・主役の矢印） -->
+    <path d="M809.6 329.6A110 110 0 0 0 604.7 265L587.4 255L606.2 313.4L649.8 291L632.5 281A78 78 0 0 1 777.7 326.8Z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 右：受付票と受付トレイ（シアン） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="888" y="190" width="216" height="314" rx="10" fill="#5E6064" opacity=".13" transform="translate(10 12)"/>
+
+    <!-- 分類タブ -->
+    <rect x="1092" y="250" width="48" height="66" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 受付票（上辺はミシン目） -->
+    <path d="M888 196l18-18 18 18 18-18 18 18 18-18 18 18 18-18 18 18 18-18 18 18 18-18 18 18V504H888Z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 見出し帯（受付済み） -->
+    <rect x="914" y="222" width="164" height="38" rx="10" fill="#25F4EE"/>
+
+    <!-- 記入行 -->
+    <g fill="#DFE0E2">
+      <rect x="914" y="282" width="164" height="12" rx="6"/>
+      <rect x="914" y="308" width="132" height="12" rx="6"/>
+      <rect x="914" y="334" width="150" height="12" rx="6"/>
+    </g>
+
+    <!-- 処理済みの印 -->
+    <g transform="rotate(-12 996 410)">
+      <circle cx="996" cy="410" r="52" fill="#25F4EE" stroke="#0B0C10" stroke-width="8"/>
+      <circle cx="996" cy="410" r="34" fill="none" stroke="#0B0C10" stroke-width="5"/>
+    </g>
+
+    <!-- 受付トレイの影 -->
+    <path d="M812 470h340v34l-14 66a14 14 0 0 1-14 12H854a14 14 0 0 1-14-12l-14-66z" fill="#5E6064" opacity=".14" transform="translate(10 12)"/>
+    <!-- 受付トレイ -->
+    <path d="M826 504h312l-14 66a14 14 0 0 1-14 12H854a14 14 0 0 1-14-12z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="812" y="470" width="340" height="34" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 左：戻ってきた箱（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="72" y="286" width="438" height="280" rx="14" fill="#5E6064" opacity=".15" transform="translate(12 14)"/>
+
+    <!-- 開いたフタ（裏面） -->
+    <path d="M72 300h128l-54-86H18z" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M382 300h128l46-86H428z" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 返品された商品 -->
+    <rect x="236" y="196" width="118" height="160" rx="16" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="236" y="266" width="118" height="12" fill="#C9CBD0"/>
+
+    <!-- 箱の内側 -->
+    <path d="M86 286h410a14 14 0 0 1 14 14v38H72v-38a14 14 0 0 1 14-14z" fill="#CE1730"/>
+    <!-- 箱の前面 -->
+    <path d="M72 338h438v214a14 14 0 0 1-14 14H86a14 14 0 0 1-14-14z" fill="#FE2C55"/>
+
+    <!-- 伝票 -->
+    <rect x="232" y="430" width="118" height="70" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <g fill="#DFE0E2">
+      <rect x="250" y="450" width="82" height="10" rx="5"/>
+      <rect x="250" y="468" width="58" height="10" rx="5"/>
+    </g>
+    <rect x="250" y="484" width="70" height="8" rx="4" fill="#C9CBD0"/>
+
+    <!-- 輪郭 -->
+    <path d="M72 338h438" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M86 286h410a14 14 0 0 1 14 14v252a14 14 0 0 1-14 14H86a14 14 0 0 1-14-14V300a14 14 0 0 1 14-14z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1144" cy="112" r="24" fill="#25F4EE"/>
+  <circle cx="548" cy="462" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの返品・返金は、セラーと購入者が直接交渉するのではなく、プラットフォームが間に入って進む「仲介型」です。</strong>購入者がアプリから返品をリクエストし、セラーには対応期限が設けられ、<strong>期限内に対応しないとリクエストは自動的に承認されます</strong>。つまりセラー側は「揉めたらどうするか」より先に、「期限内に何をするか」を決めておく必要があります。この記事では、返品リクエストの流れ・場面別の対応期限とやるべきこと・拒否と異議申し立ての進め方に加えて、競合記事ではほとんど扱われない<strong>返品1件の損益インパクトと、返品率そのものを下げる商品ページ・動画の工夫</strong>までを解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>返品リクエストが届いてから返金までの流れと、場面別の対応期限</li>
+      <li>返品を拒否できるケースと、異議申し立て・証拠の揃え方</li>
+      <li>返品1件で消えるコストの構造と、返品率を下げる商品ページ・動画・クリエイター起用の工夫</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">返品対応も含めた「運用の型」を、無料で一緒に整理します</div>
+    <p>返品は起きてから慌てるものではなく、商品ページと動画の作り方で事前に減らせるものです。現状のショップを拝見し、返品・レビュー・リピートまで含めた運用設計を率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">全体像：TikTok Shopの返品は「プラットフォーム仲介型」で進む</a></li>
+      <li><a href="#s2">期限がすべての起点：購入者は配達後30日・セラーは2営業日が基本線</a></li>
+      <li><a href="#s3">対応フローは6ステップ：期限から逆算して「先に」動く</a></li>
+      <li><a href="#s4">拒否と異議申し立ては「証拠が先」：感情の応酬にしない</a></li>
+      <li><a href="#s5">返品の本当の痛手は売上消滅ではなく「積み上がる実費と工数」</a></li>
+      <li><a href="#s6">返品率を下げる最大の対策は商品ページと動画の「期待値調整」</a></li>
+      <li><a href="#s7">実務の切り分け：セラーが判断する場面と仕組みに任せる場面を分ける</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>全体像：TikTok Shopの返品は「プラットフォーム仲介型」で進む</h2>
+  <p>TikTok Shopの返品・返金は、購入者がセラーに直接連絡して交渉する形ではなく、<strong>アプリ内の返品リクエストを起点に、TikTok Shopのシステム上で進行します</strong>。購入者が注文履歴から返品・返金を申請すると、セラーセンターにリクエストが届き、セラーは公式ポリシー上「承認」または「拒否」を選びます（一部返金の提案など、実際に選べる操作は管理画面の仕様によって異なります）。承認後は購入者が商品を返送し、セラーが検品したうえで返金が実行される、というのが基本の流れです。</p>
+  <p>ここでセラーが最初に理解しておくべきことは2つあります。1つ目は、<strong>この一連の流れには段階ごとに期限が設定されており、セラーが期限を守らない場合はプラットフォームが購入者側に有利な形で自動処理する</strong>ということ。2つ目は、返品理由によって送料負担やセラー側の裁量が変わるため、<strong>「なぜ返品したいのか」を最初に確認することが対応の分岐点になる</strong>ということです。なお日数や期限は変更されることがあるため、<strong>管理画面に表示される注文ごとの実際の期限を正として運用してください</strong>。</p>
+  <figure>
+    <svg viewBox="0 0 720 470" role="img" aria-label="返品リクエストの流れ図：購入者が配達後30日以内にリクエスト、セラーが2営業日以内に対応、承認なら返送・検品・返金へ、拒否なら購入者は再申請または異議申し立てができる">
+      <rect x="235" y="16" width="250" height="52" rx="12" fill="#17181C"/>
+      <text x="360" y="38" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">購入者が返品・返金をリクエスト</text>
+      <text x="360" y="57" text-anchor="middle" font-size="10.5" fill="#C9CBD4">原則：商品の配達後30日以内（アプリの注文履歴から）</text>
+      <path d="M360 68 V92" stroke="#787D8A" stroke-width="2"/>
+      <path d="M354 86 L360 96 L366 86 Z" fill="#787D8A"/>
+      <rect x="215" y="98" width="290" height="56" rx="12" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="360" y="122" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">セラーが2営業日以内に対応</text>
+      <text x="360" y="142" text-anchor="middle" font-size="10.5" fill="#454956">承認／拒否を選ぶ　※無応答は自動承認</text>
+      <path d="M215 126 H110 V180" stroke="#0E8A5F" stroke-width="2" fill="none"/>
+      <path d="M104 174 L110 184 L116 174 Z" fill="#0E8A5F"/>
+      <text x="140" y="119" font-size="11" font-weight="800" fill="#0E8A5F">承認</text>
+      <path d="M505 126 H610 V180" stroke="#C2203A" stroke-width="2" fill="none"/>
+      <path d="M604 174 L610 184 L616 174 Z" fill="#C2203A"/>
+      <text x="548" y="119" font-size="11" font-weight="800" fill="#C2203A">拒否</text>
+      <rect x="20" y="186" width="180" height="58" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="110" y="210" text-anchor="middle" font-size="12" font-weight="800" fill="#0E8A5F">購入者が商品を返送</text>
+      <text x="110" y="230" text-anchor="middle" font-size="10" fill="#454956">返送用の情報が発行される</text>
+      <rect x="520" y="186" width="180" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="610" y="208" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">購入者側の対抗手段</text>
+      <text x="610" y="228" text-anchor="middle" font-size="10" fill="#454956">・リクエストを修正して再送信</text>
+      <text x="610" y="246" text-anchor="middle" font-size="10" fill="#454956">・プラットフォームへ異議申し立て</text>
+      <path d="M110 244 V280" stroke="#0E8A5F" stroke-width="2"/>
+      <path d="M104 274 L110 284 L116 274 Z" fill="#0E8A5F"/>
+      <rect x="20" y="286" width="180" height="58" rx="10" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="110" y="310" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">セラーが受領・検品</text>
+      <text x="110" y="330" text-anchor="middle" font-size="10" fill="#454956">状態・数量・すり替えを確認</text>
+      <path d="M110 344 V380" stroke="#0E8A5F" stroke-width="2"/>
+      <path d="M104 374 L110 384 L116 374 Z" fill="#0E8A5F"/>
+      <rect x="20" y="386" width="180" height="58" rx="10" fill="#0E8A5F"/>
+      <text x="110" y="410" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">返金が実行される</text>
+      <text x="110" y="430" text-anchor="middle" font-size="10" fill="#EAF6F1">元の支払い方法へ</text>
+      <path d="M610 258 V330 H360 V380" stroke="#787D8A" stroke-width="2" stroke-dasharray="5 4" fill="none"/>
+      <path d="M354 374 L360 384 L366 374 Z" fill="#787D8A"/>
+      <rect x="255" y="386" width="210" height="58" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="360" y="410" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">プラットフォームが裁定</text>
+      <text x="360" y="430" text-anchor="middle" font-size="10" fill="#787D8A">証拠に基づき返金の要否を判断</text>
+      <rect x="480" y="30" width="220" height="44" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="590" y="48" text-anchor="middle" font-size="10.5" font-weight="800" fill="#8A5A00">⚠ 期限は変更されうる仕様値</text>
+      <text x="590" y="65" text-anchor="middle" font-size="9.5" fill="#8A5A00">最新はセラーセンターの公式ポリシーで確認</text>
+    </svg>
+    <figcaption>図1：返品リクエストの流れ。セラーの無応答は「自動承認」に倒れる（LEAM作成）</figcaption>
+  </figure>
+  <h3>役割分担：セラー・購入者・プラットフォームの三者で進む</h3>
+  <p>セラーの役割はリクエストへの期限内対応と検品・返金の起点づくり、購入者の役割は期限内の申請と返送、プラットフォームの役割は期限管理と、揉めた場合の裁定です。<strong>「当事者同士で解決できなければプラットフォームが証拠を見て決める」構造</strong>なので、後述するとおり、セラー側は日頃から証拠（発送時の記録・商品写真）を残しておくことがそのまま防御力になります。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>返品対応は「接客」であると同時に「期限管理の事務」です。感情や交渉術より先に、<strong>自分のショップに今どんな期限のリクエストが溜まっているかを毎営業日確認する運用</strong>を固めることが、損失防止の第一歩です。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>期限がすべての起点：購入者は配達後30日・セラーは2営業日が基本線</h2>
+  <p>2026年8月時点の日本向け公式ポリシーでは、返品・返金に関わる主な期限は次のように整理できます。<strong>この期限の一覧こそが、返品対応マニュアルの背骨</strong>になります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>場面</th><th>期限（2026年8月時点）</th><th>期限を過ぎるとどうなるか</th></tr></thead>
+    <tbody>
+      <tr><td>購入者の返品・返金リクエスト</td><td>商品の配達後<b>30暦日</b>以内</td><td>原則リクエスト不可（下記の保護プログラムを除く）</td></tr>
+      <tr><td>破損・欠陥・説明と異なる場合の購入者保護</td><td>受け取りから<b>90暦日</b>以内</td><td>30日を過ぎてもプラットフォームに申し立てできる枠組み</td></tr>
+      <tr><td>セラーのリクエスト対応</td><td>リクエスト送信から<b>2営業日</b>以内</td><td class="y">無応答は自動的に承認される</td></tr>
+      <tr><td>購入者の返送（物流情報の登録）</td><td>返品リクエストの承認から<b>14暦日</b>、または配達から<b>30暦日</b>の<b>いずれか長い方</b></td><td>返送されなければリクエストは進まない</td></tr>
+      <tr><td>拒否されたリクエストの再送信</td><td>拒否から<b>48時間</b>以内</td><td>購入者は理由や証拠を修正して再申請できる</td></tr>
+      <tr><td>拒否への異議申し立て</td><td>拒否から<b>7暦日</b>以内</td><td>プラットフォームが証拠を見て裁定する</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 期限・条件は変更されうる仕様値です</div>
+    <p>上記はいずれも2026年8月時点の公式ポリシーに基づく整理です。<strong>日数・条件・対象カテゴリは今後変更される可能性があるため、実際の対応前に必ずセラーセンターの最新のポリシー原文を確認してください。</strong>本記事は「構造の理解」に使い、数値の最終確認は一次情報で行う、という使い分けをおすすめします。</p>
+  </div>
+  <h3>「30日」と「90日」は別のルール：混同するとレビュー対応を誤る</h3>
+  <p>通常の返品期間（配達後30日）と、破損・欠陥・説明と異なる商品に対する購入者保護（90日）は、<strong>別の制度</strong>です。30日を過ぎた連絡だからといって門前払いの姿勢を取ると、購入者は保護プログラム経由でプラットフォームに直接申し立てる選択肢を持っています。「期間外です」で終わらせず、理由を確認してから案内するのが安全です。</p>
+  <h3>スピード返金：商品が返ってくる前に返金が実行される場合がある</h3>
+  <p>一定の条件を満たす購入者には、返送品が集荷・持ち込み時点でスキャンされた段階で、<strong>セラーの検品を待たずに即時返金が実行される仕組み（いわゆるスピード返金）</strong>があります。つまり「検品してから返金するかどうか決めればよい」という前提は常には成り立ちません。返ってきた商品に問題があった場合は、受領後に定められた期間内で異議申し立てを行う流れになるため、<strong>受領時の開封・検品を記録（写真・動画）する習慣</strong>が実務上の生命線になります。</p>
+
+  <h2 id="s3"><span class="no en">03</span>対応フローは6ステップ：期限から逆算して「先に」動く</h2>
+  <p>リクエストが届いてからの実務は、次の6ステップで標準化できます。ポイントは、各ステップを「来たら考える」のではなく、<strong>期限から逆算してテンプレートと判断基準をあらかじめ用意しておく</strong>ことです。</p>
+  <ol class="steps">
+    <li><b>リクエストの内容と理由を確認する（当日中）</b><p>返品理由・商品の状態・購入者のコメントと写真を確認します。理由が「イメージ違い」なのか「不良・誤配送」なのかで、送料負担も対応方針も変わります。</p></li>
+    <li><b>注文情報と発送記録を突き合わせる</b><p>発送した商品・数量・出荷時の状態記録（梱包前の写真など）と、購入者の主張を照合します。ここで矛盾があれば、拒否や異議申し立ての証拠になります。</p></li>
+    <li><b>2営業日以内に「承認」か「拒否」を判断して実行する</b><p>迷って放置するのが最悪の選択です。無応答は自動承認となり、判断の余地そのものを失います。グレーなケースの判断基準（金額の閾値など）を先に決めておきます。</p></li>
+    <li><b>返送品を受領したら、開封から検品までを記録する</b><p>開封の様子を写真・動画で残し、商品・付属品・状態を確認します。すり替えや破損があった場合、この記録がないと異議申し立ては通りにくくなります。</p></li>
+    <li><b>返金の完了を確認し、購入者への一言を添える</b><p>返金はシステム側で処理されますが、完了の確認まで見届けます。丁寧なクロージングの一言は、低評価レビューの抑止としても機能します。</p></li>
+    <li><b>返品理由を記録し、週次で商品ページ・動画に反映する</b><p>ここが競合セラーと差がつくステップです。返品理由を集計し、商品ページの説明や動画の訴求を直す。返品対応を「損失処理」で終わらせず「改善データの入手」に変えます。</p></li>
+  </ol>
+  <p>場面別に「いつまでに・何を」を一覧にすると次のとおりです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>タイミング</th><th>やるべきこと</th><th>用意しておくもの</th></tr></thead>
+    <tbody>
+      <tr><td>リクエスト受信〜当日</td><td>理由の確認・発送記録との照合</td><td>出荷時の状態写真、注文情報の控え</td></tr>
+      <tr><td>受信〜2営業日</td><td>承認／拒否の判断と実行</td><td>判断基準（理由別・金額別）、返信テンプレート</td></tr>
+      <tr><td>返送品の到着時</td><td>開封の記録→検品→問題があれば期限内に異議申し立て</td><td>開封動画の撮影手順、検品チェックリスト</td></tr>
+      <tr><td>返金完了後〜週次</td><td>理由の記録・集計、商品ページと動画への反映</td><td>返品理由の記録シート、改善の定例枠</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>当社の運用実感では、返品対応の巧拙は「文章力」ではなく<strong>「初動の速さ」と「記録の有無」でほぼ決まります</strong>。テンプレートと撮影手順を先に作っておけば、担当者が誰でも同じ品質で回せます。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>拒否と異議申し立ては「証拠が先」：感情の応酬にしない</h2>
+  <p>返品リクエストは、すべて受け入れる必要はありません。ただし拒否は、購入者側に再送信や異議申し立ての手段が残っている以上、<strong>「主張」ではなく「証拠」で組み立てる</strong>必要があります。</p>
+  <h3>拒否を検討できる典型例と、通すために必要な証拠</h3>
+  <p>実務で拒否を検討するのは、①使用済み・購入者都合による状態悪化が明らかな場合、②返送された商品が発送したものと異なる（すり替え）場合、③申請理由と商品の実態が食い違う場合、などです。いずれも<strong>出荷時の状態を示す記録と、受領時の開封記録の「両側の証拠」が揃ってはじめて主張が成立します</strong>。片側しかない場合、裁定は購入者有利に倒れやすいと考えて備えるべきです。</p>
+  <h3>すり替え・破損への備え：出荷時と受領時の「2点撮影」を仕組みにする</h3>
+  <p>高単価商品や偽装リスクのあるカテゴリでは、出荷時に商品・シリアル・梱包の写真を残し、返送品の受領時には開封を動画で記録する「2点撮影」を標準作業にします。毎回の手間は数十秒ですが、<strong>1件の不正返品を防げれば十分に元が取れる保険</strong>です。</p>
+  <h3>部分返金という第3の選択肢：全額か拒否かの二択にしない</h3>
+  <p>「商品自体は使えるが一部に難がある」ようなケースでは、返品なしの一部返金で合意できることがあります。往復送料と検品工数が消え、購入者の満足も保ちやすいため、<strong>低単価商品では全額返品より損失が小さくなることが多い</strong>のが実務感覚です。提案の目安額を商品別に決めておくと判断が速くなります。なお、公式ポリシーがセラーの対応として定めているのは「承認」と「拒否」で、<strong>一部返金の提案が管理画面の操作として用意されているかは、セラーセンターの最新の仕様で確認してください</strong>。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 拒否の乱発は逆効果になりうる</div>
+    <p>正当な理由のない拒否は、異議申し立てで覆るだけでなく、低評価レビューや通報につながり、ショップの評価指標にも響きかねません。<strong>拒否は「証拠で勝てる場面」に限定し、グレーな案件は部分返金や承認で早期に収束させる</strong>のが、トータルでは安く済みます。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>返品の本当の痛手は売上消滅ではなく「積み上がる実費と工数」</h2>
+  <p>返品率の話をするとき、多くのセラーは「売上が消える」ことだけを見ています。しかし実際には、<strong>返品1件で消えるのは売上だけではありません</strong>。往路の送料・梱包資材は戻らず、理由によっては復路の送料も負担し、検品・再梱包の人件費がかかり、開封済みで再販できなければ商品原価も丸ごと損失になります。</p>
+  <figure>
+    <svg viewBox="0 0 720 240" role="img" aria-label="返品1件のコスト構造図：売上の取り消しに加えて、往路送料・梱包資材・復路送料・検品工数・再販不能ロスが積み上がることを示す横棒図">
+      <text x="30" y="40" font-size="13" font-weight="800" fill="#454956">返品1件で起きること（金額は商品により異なる・構造の例）</text>
+      <rect x="30" y="58" width="300" height="40" rx="8" fill="#C9CBD4"/>
+      <text x="180" y="83" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">売上の取り消し（返金）</text>
+      <text x="345" y="83" font-size="11" fill="#787D8A">← ここだけ見て「±0」と思いがち</text>
+      <rect x="30" y="112" width="120" height="34" rx="7" fill="#8F94A3"/>
+      <text x="90" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">往路送料・資材</text>
+      <rect x="154" y="112" width="120" height="34" rx="7" fill="#787D8A"/>
+      <text x="214" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">復路送料※理由次第</text>
+      <rect x="278" y="112" width="120" height="34" rx="7" fill="#454956"/>
+      <text x="338" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">検品・再梱包の工数</text>
+      <rect x="402" y="112" width="150" height="34" rx="7" fill="#E8324A"/>
+      <text x="477" y="134" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">再販不能なら原価も損失</text>
+      <path d="M30 160 H552" stroke="#E8324A" stroke-width="1.5"/>
+      <path d="M30 154 V166 M552 154 V166" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="291" y="185" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">売上ゼロに戻るのではなく、マイナスが積み上がる</text>
+      <text x="291" y="212" text-anchor="middle" font-size="11" fill="#787D8A">→ 返品は「対応」より「予防」のほうが投資対効果が大きい</text>
+    </svg>
+    <figcaption>図2：返品1件のコスト構造。「売れなかったことになる」のではなく実費と工数が残る（LEAM作成）</figcaption>
+  </figure>
+  <p>この構造を踏まえると、返品対応の上手さで守れる金額より、<strong>返品率そのものを下げることで守れる金額のほうが大きい</strong>ことが分かります。加えて、返品・返金にまつわるトラブルの多さは低評価レビューやショップの健全性指標にも波及しうるため、広告やクリエイター起用で集めた流入の効率まで下げてしまいます。次章の「予防」が本丸である理由はここにあります。</p>
+
+  <div class="ctabox">
+    <div class="ct">返品率・レビュー・リピートまで含めた損益設計を無料相談で</div>
+    <p>LEAMはTikTok Shop特化のコンサルティングとMCNを運営し、商品選定からクリエイター起用・運用改善までを一次データに基づいて支援しています。返品が利益を削っている構造の特定からお手伝いします。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>返品率を下げる最大の対策は商品ページと動画の「期待値調整」</h2>
+  <p>TikTok Shopは動画やライブの勢いで購入される「衝動買い」の比率が高いプラットフォームです。だからこそ、<strong>動画で膨らんだ期待と、届いた実物のギャップがそのまま返品理由になります</strong>。予防の要点は「盛り上げないこと」ではなく、「盛り上げつつ、誤解の芽を先に摘むこと」です。</p>
+  <figure>
+    <svg viewBox="0 0 720 270" role="img" aria-label="期待値ギャップの対比図：誇張した動画は期待値が実物を上回り返品につながる。デメリットまで見せる動画は期待値と実物が一致し返品されにくい">
+      <rect x="20" y="20" width="330" height="230" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="50" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">誇張で売る動画</text>
+      <rect x="55" y="70" width="110" height="110" rx="10" fill="#fff" stroke="#E6E7EB"/>
+      <path d="M75 145 L100 110 L120 130 L145 90" stroke="#C2203A" stroke-width="3" fill="none"/>
+      <text x="110" y="165" text-anchor="middle" font-size="10.5" fill="#787D8A">期待値だけ上がる</text>
+      <path d="M175 125 H205" stroke="#787D8A" stroke-width="2"/>
+      <path d="M199 119 L209 125 L199 131 Z" fill="#787D8A"/>
+      <rect x="215" y="70" width="110" height="110" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="270" y="115" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">実物とのギャップ</text>
+      <text x="270" y="140" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">＝返品・低評価</text>
+      <text x="185" y="225" text-anchor="middle" font-size="11" fill="#787D8A">売れるほど返品も増える悪循環</text>
+      <rect x="370" y="20" width="330" height="230" rx="14" fill="#fff" stroke="#0E8A5F" stroke-width="1.5"/>
+      <text x="535" y="50" text-anchor="middle" font-size="13.5" font-weight="800" fill="#0E8A5F">期待値を調整する動画</text>
+      <rect x="405" y="70" width="110" height="110" rx="10" fill="#EAF6F1"/>
+      <text x="460" y="105" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0E8A5F">魅力＋弱点も開示</text>
+      <text x="460" y="128" text-anchor="middle" font-size="10" fill="#454956">サイズ感・質感</text>
+      <text x="460" y="148" text-anchor="middle" font-size="10" fill="#454956">「向かない人」も言う</text>
+      <path d="M525 125 H555" stroke="#787D8A" stroke-width="2"/>
+      <path d="M549 119 L559 125 L549 131 Z" fill="#787D8A"/>
+      <rect x="565" y="70" width="110" height="110" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="620" y="115" text-anchor="middle" font-size="11" font-weight="800" fill="#0E8A5F">期待＝実物</text>
+      <text x="620" y="140" text-anchor="middle" font-size="11" font-weight="800" fill="#0E8A5F">納得の購入</text>
+      <text x="535" y="225" text-anchor="middle" font-size="11" fill="#787D8A">返品が減り、レビューが次の販売を助ける好循環</text>
+    </svg>
+    <figcaption>図3：期待値ギャップの構造。返品は物流の問題である前に「伝え方」の問題（LEAM作成）</figcaption>
+  </figure>
+  <p>返品理由の典型と、打ち手の対応関係を整理します。</p>
+  <div class="tw"><table>
+    <thead><tr><th>典型的な返品理由</th><th>商品ページでの予防策</th><th>動画・ライブでの予防策</th></tr></thead>
+    <tbody>
+      <tr><td>サイズ・寸法が合わない</td><td>実寸表＋比較対象と並べた写真。モデルの身長・着用サイズを明記</td><td>手に持つ・身につけるカットで大きさを体感させる</td></tr>
+      <tr><td>色・質感がイメージと違う</td><td>自然光・室内光など複数条件の写真。素材アップの画像</td><td>照明を盛りすぎない実物カットを必ず入れる</td></tr>
+      <tr><td>機能・効果への期待外れ</td><td>できること・できないことを明記。使用条件を具体化</td><td>ビフォーアフターの誇張を避け、使用の実演を見せる</td></tr>
+      <tr><td>不良・破損・誤配送</td><td>—（ページでは防げない）</td><td>—（出荷検品・梱包強化・ピッキングの二重確認で防ぐ）</td></tr>
+    </tbody>
+  </table></div>
+  <h3>商品ページ：動画を見て来た人の「最後の確認場所」として作る</h3>
+  <p>TikTok Shopの商品ページは、検索から来る人ではなく<strong>動画で温まった人が「本当に買って大丈夫か」を確かめに来る場所</strong>です。だからこそ、動画では伝えきれないサイズ・素材・注意事項を先回りして置いておくと、購入のブレーキではなく返品のブレーキとして機能します。</p>
+  <h3>動画：デメリットの開示は売上を下げず、返品を下げる</h3>
+  <p>当社の運用実感では、「向かない人」を動画内で正直に伝える構成でも、コンバージョンは大きく落ちないまま返品・低評価が減ったケースが多くあります。誇張で獲得した1件は返品・低評価つきで戻ってくることがあり、<strong>短期の売上と引き換えにアカウントの資産を削る取引</strong>になりがちです。</p>
+  <h3>クリエイター起用時：ブリーフで「言ってよいこと・悪いこと」を渡す</h3>
+  <p>アフィリエイトでクリエイターに紹介してもらう場合、訴求はクリエイターの表現に委ねられますが、<strong>効果の断定や誤解を招く表現が返品とクレームの火種になる</strong>ことがあります。商品の強み・弱み・言ってはいけない表現（効果の断定など）をまとめたブリーフを渡すことは、クリエイターを縛るためではなく、返品率とレビューを守るための共同作業です。LEAMのMCNでも、ブリーフの整備は案件開始時の標準工程にしています。</p>
+
+  <h2 id="s7"><span class="no en">07</span>実務の切り分け：セラーが判断する場面と仕組みに任せる場面を分ける</h2>
+  <p>返品対応の負荷を下げるコツは、すべてのリクエストに同じ熱量で向き合わないことです。<strong>「セラーの判断が結果を変える場面」と「仕組みが処理する場面」を切り分け、前者にだけ時間を使います</strong>。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="実務の切り分け図：セラーが判断すべき場面（グレー案件の承認可否、部分返金の提案、証拠を揃えた異議申し立て、返品理由の改善反映）と、仕組みに任せる場面（明白な承認の即時処理、返金処理の実行、スピード返金、裁定）の対比">
+      <rect x="20" y="20" width="330" height="260" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">セラーの判断で結果が変わる場面</text>
+      <rect x="45" y="72" width="280" height="40" rx="8" fill="#FDEEF1"/>
+      <text x="185" y="97" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">グレー案件の承認／拒否の見極め</text>
+      <rect x="45" y="122" width="280" height="40" rx="8" fill="#FDEEF1"/>
+      <text x="185" y="147" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">部分返金の提案（二択にしない）</text>
+      <rect x="45" y="172" width="280" height="40" rx="8" fill="#FDEEF1"/>
+      <text x="185" y="197" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">証拠を揃えた異議申し立て</text>
+      <rect x="45" y="222" width="280" height="40" rx="8" fill="#17181C"/>
+      <text x="185" y="247" text-anchor="middle" font-size="11.5" font-weight="700" fill="#fff">返品理由の集計→ページ・動画の改善</text>
+      <rect x="370" y="20" width="330" height="260" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">仕組み・ルールに任せる場面</text>
+      <rect x="395" y="72" width="280" height="40" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <text x="535" y="97" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">明白な返品理由の即時承認（悩まない）</text>
+      <rect x="395" y="122" width="280" height="40" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <text x="535" y="147" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">返金処理の実行（システム側で進む）</text>
+      <rect x="395" y="172" width="280" height="40" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <text x="535" y="197" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">スピード返金（承認を待たず実行される）</text>
+      <rect x="395" y="222" width="280" height="40" rx="8" fill="#fff" stroke="#E6E7EB"/>
+      <text x="535" y="247" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">揉めた案件の裁定（証拠を出して委ねる）</text>
+    </svg>
+    <figcaption>図4：実務の切り分け。左に時間を使い、右は手順どおり流す（LEAM作成）</figcaption>
+  </figure>
+  <p>低単価で理由も明白なリクエストは、悩む時間そのものがコストです。テンプレートで即承認して流し、<strong>浮いた時間を「グレー案件の見極め」と「返品理由の改善反映」に集中させる</strong>。これが少人数でショップを回すときの現実解です。返品対応を外注・代行する場合も、この切り分け表をそのまま業務範囲の定義に使えます。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>週次で「返品率・返品理由の内訳・対応期限の遵守率」の3つだけをモニタリングすれば、返品まわりの異常には十分早く気づけます。ダッシュボードを作り込む前に、まずこの3指標のメモから始めてください。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>購入者はいつまで返品をリクエストできますか？</summary><div class="a">2026年8月時点の公式ポリシーでは、原則として商品の配達後30暦日以内です。ただし破損・欠陥・説明と異なる商品については、受け取りから90暦日以内を対象とする購入者保護の枠組みが別にあります。期限は変更されうるため、最新はセラーセンターの公式ポリシーで確認してください。</div></details>
+    <details><summary>返品リクエストを放置するとどうなりますか？</summary><div class="a">セラーの対応期限（2026年8月時点で2営業日）を過ぎると、リクエストは自動的に承認されます。拒否という判断の余地がなくなるため、内容にかかわらず期限内に何らかの対応をすることが大前提です。</div></details>
+    <details><summary>返品送料はセラーと購入者のどちらが負担しますか？</summary><div class="a">返品理由によって変わります。不良品・誤配送などセラー起因の場合はセラー負担、購入者都合（不要になった等）の場合は原則購入者負担が基本の考え方です。負担区分の詳細や例外は変更されうるため、最新の公式ポリシーで確認してください。</div></details>
+    <details><summary>商品が返ってくる前に返金されることはありますか？</summary><div class="a">あります。一定の条件を満たす購入者には、返送品が集荷・持ち込み時にスキャンされた時点で返金が実行される仕組み（スピード返金）があります。返送品に問題があった場合は受領後に異議申し立てを行う流れになるため、開封・検品の記録を残すことが重要です。</div></details>
+    <details><summary>返品リクエストを拒否することはできますか？</summary><div class="a">できます。ただし購入者にはリクエストの再送信や、プラットフォームへの異議申し立ての手段が残ります。拒否が認められるためには、出荷時の状態記録と受領時の開封記録など、証拠の裏づけが実務上不可欠です。グレーな案件は部分返金や承認で早期に収束させるほうが、トータルの損失は小さくなりがちです。</div></details>
+    <details><summary>返品率が高いと、返金以外にどんな影響がありますか？</summary><div class="a">返金額そのものに加えて、往復送料・梱包資材・検品工数・再販不能ロスが積み上がります。さらに返品やクレームの多さは低評価レビューにつながりやすく、ショップの評価やその後の販売効率にも波及しかねません。対応の改善と並行して、商品ページと動画の期待値調整による予防が本質的な対策になります。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/shipping-rules/" style="text-decoration:none;color:inherit"><span class="rc">物流</span><b>発送ルールと出荷体制</b><span>出荷期限とペナルティの防ぎ方</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/" style="text-decoration:none;color:inherit"><span class="rc">手数料</span><b>TikTok Shopの手数料完全ガイド</b><span>カテゴリー別の料率と利益計算</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/prohibited-items/" style="text-decoration:none;color:inherit"><span class="rc">出品ルール</span><b>禁止商品・制限商品ガイド</b><span>出品前のチェックリスト</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター「顧客注文のキャンセル、返品及び返金に関するポリシー」ほか公式ヘルプ（期限・条件・対象カテゴリ等の仕様は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">全体像：プラットフォーム仲介型</a></li>
+        <li><a href="#s2">期限一覧（30日・2営業日ほか）</a></li>
+        <li><a href="#s3">対応フロー6ステップ</a></li>
+        <li><a href="#s4">拒否・異議申し立ては証拠が先</a></li>
+        <li><a href="#s5">返品1件のコスト構造</a></li>
+        <li><a href="#s6">返品率を下げる期待値調整</a></li>
+        <li><a href="#s7">実務の切り分け</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>返品対応まで含めた運用設計を無料診断</b>
+      <p>商品ページ・動画・対応フローを拝見し、率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopの返品・返金ルールと対応フロー｜セラーが損しない備え",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "購入者はいつまで返品をリクエストできますか？", "acceptedAnswer": {"@type": "Answer", "text": "2026年8月時点の公式ポリシーでは、原則として商品の配達後30暦日以内です。ただし破損・欠陥・説明と異なる商品については、受け取りから90暦日以内を対象とする購入者保護の枠組みが別にあります。期限は変更されうるため、最新はセラーセンターの公式ポリシーで確認してください。"}},
+        {"@type": "Question", "name": "返品リクエストを放置するとどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "セラーの対応期限（2026年8月時点で2営業日）を過ぎると、リクエストは自動的に承認されます。拒否という判断の余地がなくなるため、内容にかかわらず期限内に何らかの対応をすることが大前提です。"}},
+        {"@type": "Question", "name": "返品送料はセラーと購入者のどちらが負担しますか？", "acceptedAnswer": {"@type": "Answer", "text": "返品理由によって変わります。不良品・誤配送などセラー起因の場合はセラー負担、購入者都合（不要になった等）の場合は原則購入者負担が基本の考え方です。負担区分の詳細や例外は変更されうるため、最新の公式ポリシーで確認してください。"}},
+        {"@type": "Question", "name": "商品が返ってくる前に返金されることはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "あります。一定の条件を満たす購入者には、返送品が集荷・持ち込み時にスキャンされた時点で返金が実行される仕組み（スピード返金）があります。返送品に問題があった場合は受領後に異議申し立てを行う流れになるため、開封・検品の記録を残すことが重要です。"}},
+        {"@type": "Question", "name": "返品リクエストを拒否することはできますか？", "acceptedAnswer": {"@type": "Answer", "text": "できます。ただし購入者にはリクエストの再送信や、プラットフォームへの異議申し立ての手段が残ります。拒否が認められるためには、出荷時の状態記録と受領時の開封記録など、証拠の裏づけが実務上不可欠です。グレーな案件は部分返金や承認で早期に収束させるほうが、トータルの損失は小さくなりがちです。"}},
+        {"@type": "Question", "name": "返品率が高いと、返金以外にどんな影響がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "返金額そのものに加えて、往復送料・梱包資材・検品工数・再販不能ロスが積み上がります。さらに返品やクレームの多さは低評価レビューにつながりやすく、ショップの評価やその後の販売効率にも波及しかねません。対応の改善と並行して、商品ページと動画の期待値調整による予防が本質的な対策になります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

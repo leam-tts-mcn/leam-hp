@@ -1,0 +1,706 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの手数料はいくら？カテゴリー別の料率</title>
+<meta name="description" content="TikTok Shopの販売手数料をカテゴリー別に整理し、手残りの計算方法まで解説します。2026年9月1日の改定にも触れています。">
+<link rel="canonical" href="https://leam.co.jp/column/tiktok-shop-fees/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの手数料はいくら？カテゴリー別の料率">
+<meta property="og:description" content="TikTok Shopの販売手数料をカテゴリー別に整理し、手残りの計算方法まで解説します。2026年9月1日の改定にも触れています。">
+<meta property="og:url" content="https://leam.co.jp/column/tiktok-shop-fees/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの手数料はいくら？カテゴリー別の料率">
+<meta name="twitter:description" content="TikTok Shopの販売手数料をカテゴリー別に整理し、手残りの計算方法まで解説します。2026年9月1日の改定にも触れています。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの手数料はいくら？カテゴリー別の料率", "description": "TikTok Shopの販売手数料をカテゴリー別に整理し、手残りの計算方法まで解説します。2026年9月1日の改定にも触れています。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-shop-fees/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの手数料はいくら？カテゴリー別の料率", "item": "https://leam.co.jp/column/tiktok-shop-fees/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの手数料</p>
+  <span class="cat">費用・手数料</span>
+  <h1>TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="TikTok Shopの手数料の内訳：商品価格の値札から各種手数料が段階的に差し引かれ、最後に手元へ残る金額になるまでを、値札と電卓と段になった積み木で表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v338c-104 30-198 30-292 14-106-18-188-52-298-50-114 2-198 46-306 58-116 13-226-4-304-42z" fill="#F6F7F9"/>
+  <ellipse cx="712" cy="246" rx="330" ry="206" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="596" cy="108" r="5"/><circle cx="632" cy="108" r="5"/><circle cx="668" cy="108" r="5"/><circle cx="704" cy="108" r="5"/>
+      <circle cx="596" cy="144" r="5"/><circle cx="632" cy="144" r="5"/><circle cx="668" cy="144" r="5"/><circle cx="704" cy="144" r="5"/>
+      <circle cx="596" cy="180" r="5"/><circle cx="632" cy="180" r="5"/><circle cx="668" cy="180" r="5"/><circle cx="704" cy="180" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(-480 -56)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 520c164-34 292-18 424 6 132 24 240 32 358 14 116-18 226-46 418-30v120H0z" fill="#ECEEF1"/>
+
+  <!-- 元の価格の基準線（積み木の頭を揃える） -->
+  <path d="M530 290h360" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ================= 右：電卓（副役・シアンのキーと結果欄） ================= -->
+  <g>
+    <rect x="895" y="105" width="250" height="370" rx="24" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="895" y="105" width="250" height="370" rx="24" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 結果欄 -->
+    <rect x="921" y="129" width="198" height="100" rx="14" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <g fill="#FFFFFF">
+      <rect x="1042" y="150" width="60" height="14" rx="7"/>
+      <rect x="968" y="178" width="134" height="24" rx="12"/>
+    </g>
+
+    <!-- キー -->
+    <g fill="#DFE0E2">
+      <rect x="921" y="252" width="42" height="44" rx="11"/><rect x="973" y="252" width="42" height="44" rx="11"/><rect x="1025" y="252" width="42" height="44" rx="11"/>
+      <rect x="921" y="304" width="42" height="44" rx="11"/><rect x="973" y="304" width="42" height="44" rx="11"/><rect x="1025" y="304" width="42" height="44" rx="11"/>
+      <rect x="921" y="356" width="42" height="44" rx="11"/><rect x="973" y="356" width="42" height="44" rx="11"/><rect x="1025" y="356" width="42" height="44" rx="11"/>
+      <rect x="921" y="408" width="42" height="44" rx="11"/><rect x="973" y="408" width="42" height="44" rx="11"/><rect x="1025" y="408" width="42" height="44" rx="11"/>
+    </g>
+    <g fill="#25F4EE">
+      <rect x="1077" y="252" width="42" height="44" rx="11"/>
+      <rect x="1077" y="304" width="42" height="44" rx="11"/>
+      <rect x="1077" y="356" width="42" height="44" rx="11"/>
+      <rect x="1077" y="408" width="42" height="44" rx="11"/>
+    </g>
+  </g>
+
+  <!-- ================= 中央：差し引かれていく積み木の段 ================= -->
+  <g>
+    <!-- 影 -->
+    <g fill="#5E6064" opacity=".14" transform="translate(9 11)">
+      <rect x="556" y="290" width="68" height="244" rx="9"/>
+      <rect x="636" y="338" width="68" height="196" rx="9"/>
+      <rect x="716" y="384" width="68" height="150" rx="9"/>
+      <rect x="796" y="426" width="68" height="108" rx="9"/>
+    </g>
+
+    <!-- ① 元の価格（満段） -->
+    <rect x="556" y="290" width="68" height="244" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- ② 手数料が1段抜ける -->
+    <rect x="636" y="290" width="68" height="244" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="636" y="338" width="68" height="196" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="657" y="310" width="26" height="8" rx="4" fill="#0B0C10"/>
+
+    <!-- ③ さらに抜ける -->
+    <rect x="716" y="290" width="68" height="244" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="716" y="384" width="68" height="150" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="737" y="333" width="26" height="8" rx="4" fill="#0B0C10"/>
+
+    <!-- ④ 手残り（シアン） -->
+    <rect x="796" y="290" width="68" height="244" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="796" y="426" width="68" height="108" rx="9" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="817" y="354" width="26" height="8" rx="4" fill="#0B0C10"/>
+  </g>
+
+  <!-- ================= 左：値札（主役・赤） ================= -->
+  <g transform="translate(74 150) rotate(-4 210 192)">
+    <!-- 影 -->
+    <path d="M145 0h253a22 22 0 0 1 22 22v341a22 22 0 0 1-22 22H22a22 22 0 0 1-22-22V145z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+
+    <!-- 裏の値札（重なり） -->
+    <g transform="translate(28 -22)">
+      <path d="M145 0h253a22 22 0 0 1 22 22v341a22 22 0 0 1-22 22H22a22 22 0 0 1-22-22V145z" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 本体 -->
+    <path d="M145 0h253a22 22 0 0 1 22 22v341a22 22 0 0 1-22 22H22a22 22 0 0 1-22-22V145z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- ひも -->
+    <path d="M102 102C46 96 6 62-26-30" fill="none" stroke="#0B0C10" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- 穴 -->
+    <circle cx="102" cy="102" r="25" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+
+    <!-- 金額の面 -->
+    <g fill="#FFFFFF">
+      <rect x="72" y="212" width="238" height="36" rx="18"/>
+      <rect x="72" y="270" width="152" height="26" rx="13"/>
+    </g>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1096" cy="546" r="28" fill="#25F4EE"/>
+  <circle cx="528" cy="92" r="16" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの手数料は、初期費用・月額固定費が0円で、商品が売れたときだけ「販売手数料」がかかる成果連動型です。</strong>料率は2026年5月11日の改定で「一律7%」から「カテゴリー別7〜12%」に変わりました。さらに実務では、販売手数料に<strong>アフィリエイト報酬・広告費まで含めた「実質手数料」</strong>で利益を計算しないと、売れているのに手元にお金が残りません。この記事では、カテゴリー別の料率表・計算式・利益試算から、Amazon・楽天との比較、利益を残す設計までを一気に解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>2026年5月改定後のカテゴリー別料率（4段階）と、自社カテゴリーの調べ方</li>
+      <li>クーポン・返金がある場合の手数料計算式と、「実質手数料」での利益試算の手順</li>
+      <li>Amazon・楽天との手数料比較と、利益を残すための4つの設計の打ち手</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">その商品、手数料を引いても利益が残る設計ですか？無料で診断します</div>
+    <p>TikTok Shopの利益は「販売手数料＋アフィリエイト報酬＋広告費」のトータル設計で決まります。商材と価格を伺い、損益ラインの引き方から率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">結論：初期費用・月額は0円。かかるのは売れたときの販売手数料7〜12%</a></li>
+      <li><a href="#s2">2026年5月11日の改定で「一律7%」から「カテゴリー別」に変わった</a></li>
+      <li><a href="#s3">カテゴリー別料率は4段階：まず自社カテゴリーの料率を確認する</a></li>
+      <li><a href="#s4">計算式はシンプルだが、クーポンと返金の扱いに注意する</a></li>
+      <li><a href="#s5">利益は「実質手数料」で計算する：試算表で手元に残る額を出す</a></li>
+      <li><a href="#s6">Amazon・楽天との比較：固定費ゼロで始めやすいが実質コストで比べる</a></li>
+      <li><a href="#s7">手数料は「削る」より「設計する」：利益を残す4つの打ち手</a></li>
+      <li><a href="#s8">料率は変わる前提で、毎月の定点確認をルーティンにする</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>結論：初期費用・月額は0円。かかるのは売れたときの販売手数料7〜12%</h2>
+  <p>まず全体像です。TikTok Shopは<strong>出店時の初期費用・月額固定費がともに0円</strong>で、商品が売れたときにだけ販売手数料が発生する、完全な成果連動型の料金体系です。</p>
+  <p>もうひとつ大事な点として、<strong>決済手数料は販売手数料の料率に含まれています</strong>。カードやコンビニ決済の手数料が別途上乗せされることはなく、「売れた金額 × 販売手数料率」がプラットフォームに払う費用のほぼすべてです。そのうえで実務では、アフィリエイト報酬や広告費など「自分で設定するコスト」が加わります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>費用項目</th><th>金額・料率</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td><b>初期費用</b></td><td class="y">0円</td><td>出店・審査に費用はかからない</td></tr>
+      <tr><td><b>月額固定費</b></td><td class="y">0円</td><td>売上ゼロの月の支払いもゼロ</td></tr>
+      <tr><td><b>販売手数料</b></td><td>カテゴリー別 7〜12%</td><td>2026年5月11日改定。売れたときだけ発生</td></tr>
+      <tr><td><b>決済手数料</b></td><td class="y">販売手数料に含まれる</td><td>カード・コンビニ決済等の別途請求はない</td></tr>
+      <tr><td>アフィリエイト報酬</td><td>任意設定（セラーが商品ごとに設定）</td><td>クリエイターに紹介してもらう場合</td></tr>
+      <tr><td>広告費</td><td>任意</td><td>GMV Max等を使う場合</td></tr>
+      <tr><td>配送費・梱包資材・返品対応</td><td>実費</td><td>返品時の往復送料などは自己負担</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 料率・仕様は改定されることがあります</div>
+    <p>本記事の料率・仕様は2026年8月30日時点の情報です。なお公式ヘルプでは、<strong>2026年9月1日から中古品と食品・ドリンク（ビール・ワイン・スピリッツを除く）の料率を7%とする改定</strong>が案内されています。手数料は今後も改定される可能性があるため、<strong>最新の料率は必ずTikTok Shopセラーセンター（公式）で確認してください</strong>。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>2026年5月11日の改定で「一律7%」から「カテゴリー別7〜12%」に変わった</h2>
+  <p>TikTok Shopは2025年6月30日に日本でサービスが始まりました。開始当初の販売手数料は<strong>全カテゴリー一律7%</strong>とされていましたが、<strong>2026年5月11日の改定で「カテゴリー別料率（おおむね7〜12%）」へ移行</strong>しています。食品や家電などは7%のまま据え置かれた一方、ファッションやペット用品は12%となりました。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="手数料改定の前後比較図：2026年5月10日までは全カテゴリー一律7%だったが、5月11日以降は7%・9%・10%・12%の4段階のカテゴリー別料率になった">
+      <rect x="20" y="20" width="300" height="260" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="170" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">改定前（〜2026年5月10日）</text>
+      <circle cx="170" cy="150" r="62" fill="#fff" stroke="#787D8A" stroke-width="2"/>
+      <text x="170" y="145" text-anchor="middle" font-size="30" font-weight="900" fill="#454956">7%</text>
+      <text x="170" y="172" text-anchor="middle" font-size="11.5" fill="#787D8A">全カテゴリー一律</text>
+      <text x="170" y="255" text-anchor="middle" font-size="11" fill="#787D8A">何を売っても料率は同じ</text>
+      <path d="M330 150 H382" stroke="#787D8A" stroke-width="2.5"/>
+      <path d="M376 142 L388 150 L376 158 Z" fill="#787D8A"/>
+      <rect x="400" y="20" width="300" height="260" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="550" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">改定後（2026年5月11日〜）</text>
+      <g font-size="11.5" font-weight="700">
+        <rect x="430" y="196" width="52" height="56" rx="6" fill="#C9CBD4"/>
+        <text x="456" y="188" text-anchor="middle" fill="#454956">7%</text>
+        <rect x="494" y="180" width="52" height="72" rx="6" fill="#AEB2BE"/>
+        <text x="520" y="172" text-anchor="middle" fill="#454956">9%</text>
+        <rect x="558" y="172" width="52" height="80" rx="6" fill="#8F94A3"/>
+        <text x="584" y="164" text-anchor="middle" fill="#454956">10%</text>
+        <rect x="622" y="156" width="52" height="96" rx="6" fill="#E8324A"/>
+        <text x="648" y="148" text-anchor="middle" fill="#C2203A">12%</text>
+      </g>
+      <g font-size="9.5" fill="#787D8A">
+        <text x="456" y="268" text-anchor="middle">食品・家電等</text>
+        <text x="520" y="268" text-anchor="middle">日用雑貨等</text>
+        <text x="584" y="268" text-anchor="middle">美容・健康等</text>
+        <text x="648" y="268" text-anchor="middle">ファッション等</text>
+      </g>
+      <text x="550" y="98" text-anchor="middle" font-size="11" fill="#787D8A">カテゴリーで負担が最大5ポイント変わる</text>
+    </svg>
+    <figcaption>図1：2026年5月11日改定の前後比較。一律7%から4段階のカテゴリー別料率へ（LEAM作成）</figcaption>
+  </figure>
+  <p><strong>「TikTok Shopの手数料は7%」という古い情報のまま利益計算をしていると、カテゴリーによっては5ポイントぶん利益を読み違えます</strong>。特に12%になったファッション系は、粗利設計の前提から見直しが必要です。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>一度改定されたということは、今後も改定されうるということです。手数料を「一度調べたら終わりの固定値」ではなく、<strong>「定期的に確認する変動値」として扱う</strong>のが、改定後の実務の前提です。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>カテゴリー別料率は4段階：まず自社カテゴリーの料率を確認する</h2>
+  <p>改定後の販売手数料は、大きく<strong>7%・9%・10%・12%の4段階</strong>に分かれています。主要カテゴリーの区分は次のとおりです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>料率</th><th>主なカテゴリー</th><th>傾向</th></tr></thead>
+    <tbody>
+      <tr><td class="num"><b>7%</b></td><td>食品・ドリンク／家電／スマホ・デジタル機器／パソコン・オフィス用品／家具／車・バイク／ホームセンター</td><td>単価が高い、または粗利が薄い型番商品が中心</td></tr>
+      <tr><td class="num"><b>9%</b></td><td>キッチン用品／日用雑貨／本・雑誌／インテリア雑貨／工具</td><td>生活まわりの消耗品・雑貨</td></tr>
+      <tr><td class="num"><b>10%</b></td><td>美容・パーソナルケア／ベビー・マタニティ／健康／シューズ／アクセサリー／スポーツ・アウトドア／おもちゃ・ホビー</td><td>TikTokで動画映えしやすい主力ジャンル</td></tr>
+      <tr><td class="num"><b>12%</b></td><td>レディース・メンズファッション／ファッション小物／バッグ／ペット用品</td><td>最も高い料率帯。粗利設計の見直しが必須</td></tr>
+    </tbody>
+  </table></div>
+  <p>同じ3,000円の商品でも、料率によって手数料額はこれだけ変わります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>販売価格</th><th>7%</th><th>9%</th><th>10%</th><th>12%</th></tr></thead>
+    <tbody>
+      <tr><td class="num">3,000円</td><td class="num">210円</td><td class="num">270円</td><td class="num">300円</td><td class="num">360円</td></tr>
+      <tr><td class="num">5,000円</td><td class="num">350円</td><td class="num">450円</td><td class="num">500円</td><td class="num">600円</td></tr>
+      <tr><td class="num">10,000円</td><td class="num">700円</td><td class="num">900円</td><td class="num">1,000円</td><td class="num">1,200円</td></tr>
+    </tbody>
+  </table></div>
+  <h3>一部のサブカテゴリーには優遇料率が設定されている</h3>
+  <p>カテゴリーのベース料率がすべてではありません。一部のサブカテゴリーには、<strong>ベース料率より低い優遇料率が設定されている例</strong>が知られています。たとえば美容家電（ベース10%の美容・パーソナルケア内）、乳児用・成長期用粉ミルク（ベース10%のベビー・マタニティ内）、ペット用フード・トイレ（ベース12%のペット用品内）などが7%で案内されています。逆に、ビール・ワイン・スピリッツのように、ベース料率より高い料率が設定されている例もあります。自社商品が例外料率の対象かどうかで利益率が数ポイント変わるため、<strong>出品前に必ずセラーセンターの最新の料率表で、サブカテゴリー単位まで確認してください</strong>。</p>
+  <h3>手数料率だけで参入カテゴリーを決めない</h3>
+  <p>「12%は高いからファッションはやめよう」という判断は早計です。手数料が5ポイント高くても、動画で衝動買いが起きやすいジャンルは売上の絶対額が伸びやすく、トータルの利益で勝ることが珍しくない、というのが当社の運用実感です。比べるべきは料率そのものではなく、<strong>「1件あたりの貢献利益 × 見込み件数」</strong>です。なおファッションを検討する場合は、料率と一緒に<strong>返品率</strong>も必ず計算に入れてください。サイズ・色の失敗が返品につながりやすく、料率以上に手残りを削ることがあります。料率は<strong>参入判断の材料のひとつ</strong>であって、それだけで決めるものではありません。</p>
+
+  <h2 id="s4"><span class="no en">04</span>計算式はシンプルだが、クーポンと返金の扱いに注意する</h2>
+  <p>販売手数料の計算式は公式に次のように定義されています。</p>
+  <div class="box box-point">
+    <div class="bt">📐 販売手数料の計算式</div>
+    <p><strong>販売手数料 ＝ 手数料率 ×（顧客支払額 ＋ プラットフォーム割引額 − 返金額 − 割引返金額）</strong></p>
+  </div>
+  <figure>
+    <svg viewBox="0 0 720 290" role="img" aria-label="販売手数料の計算式の図解：顧客支払額にプラットフォーム割引額を足し、返金額と割引返金額を引いた金額に手数料率を掛ける。TikTok負担のクーポンは割引前の金額に手数料がかかる">
+      <g font-size="12" font-weight="700">
+        <rect x="24" y="40" width="130" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="89" y="68" text-anchor="middle" fill="#17181C">顧客支払額</text>
+        <text x="89" y="90" text-anchor="middle" font-size="10" font-weight="400" fill="#787D8A">実際に払った金額</text>
+        <text x="171" y="80" text-anchor="middle" font-size="20" font-weight="900" fill="#454956">＋</text>
+        <rect x="188" y="40" width="150" height="64" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+        <text x="263" y="68" text-anchor="middle" fill="#C2203A">プラットフォーム割引額</text>
+        <text x="263" y="90" text-anchor="middle" font-size="10" font-weight="400" fill="#787D8A">TikTok負担のクーポン等</text>
+        <text x="355" y="80" text-anchor="middle" font-size="20" font-weight="900" fill="#454956">−</text>
+        <rect x="372" y="40" width="120" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="432" y="68" text-anchor="middle" fill="#17181C">返金額</text>
+        <text x="432" y="90" text-anchor="middle" font-size="10" font-weight="400" fill="#787D8A">返品・キャンセル分</text>
+        <text x="509" y="80" text-anchor="middle" font-size="20" font-weight="900" fill="#454956">−</text>
+        <rect x="526" y="40" width="130" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB"/>
+        <text x="591" y="68" text-anchor="middle" fill="#17181C">割引返金額</text>
+        <text x="591" y="90" text-anchor="middle" font-size="10" font-weight="400" fill="#787D8A">割引分の戻し</text>
+      </g>
+      <path d="M340 118 V146" stroke="#787D8A" stroke-width="2"/>
+      <path d="M334 140 L340 152 L346 140 Z" fill="#787D8A"/>
+      <rect x="210" y="156" width="260" height="50" rx="10" fill="#17181C"/>
+      <text x="340" y="188" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">× カテゴリー別の手数料率（7〜12%）</text>
+      <path d="M340 214 V240" stroke="#787D8A" stroke-width="2"/>
+      <path d="M334 234 L340 246 L346 234 Z" fill="#787D8A"/>
+      <rect x="250" y="248" width="180" height="34" rx="17" fill="#E8324A"/>
+      <text x="340" y="271" text-anchor="middle" font-size="13.5" font-weight="900" fill="#fff">販売手数料</text>
+      <text x="580" y="255" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">クーポンで安く売れても</text>
+      <text x="580" y="273" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">手数料は「割引前」ベース</text>
+    </svg>
+    <figcaption>図2：販売手数料の計算構造。TikTok負担の割引は手数料の計算対象に含まれる（LEAM作成）</figcaption>
+  </figure>
+  <h3>TikTok負担のクーポンは「割引前」の金額に手数料がかかる</h3>
+  <p>見落としやすいのがこの点です。TikTok側が負担するクーポンやキャンペーン割引で商品が安く売れた場合でも、<strong>手数料は割引前の金額に対して計算されます</strong>。たとえば3,000円の商品がTikTok負担の500円クーポンで2,500円で売れた場合、顧客支払額2,500円＋プラットフォーム割引額500円＝3,000円がベースになります。キャンペーン期の損益予測では、手数料を少なく読み違えないよう注意してください。</p>
+  <h3>返品時は販売手数料も返金される。ただし送料などの実費は残る</h3>
+  <p>返品・返金が成立した注文については、<strong>該当分の販売手数料も返金されます</strong>。ただし、往復の送料や梱包資材といった実費は戻らないため、返品率が高くなりやすい商材（サイズのあるアパレル・シューズなど）では、返品コストを1件あたりの経費として最初から織り込んでおくのが実務的です。</p>
+
+  <h2 id="s5"><span class="no en">05</span>利益は「実質手数料」で計算する：試算表で手元に残る額を出す</h2>
+  <p>TikTok Shopの利益計算で最も多い失敗は、販売手数料だけを見て「7〜12%なら余裕がある」と判断してしまうことです。TikTok Shopではクリエイターのアフィリエイト動画が売上の主要な起点になるため、実務では<strong>販売手数料にアフィリエイト報酬（セラーが商品ごとに任意で設定）を足した「実質手数料」</strong>で考える必要があります。</p>
+  <p>美容・パーソナルケア（販売手数料10%）の3,000円の商品で、アフィリエイト報酬を15%に設定した場合の試算です。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>金額</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格</td><td class="num">3,000円</td><td></td></tr>
+      <tr><td>販売手数料（10%）</td><td class="num">−300円</td><td>決済手数料込み</td></tr>
+      <tr><td>アフィリエイト報酬（15%）</td><td class="num">−450円</td><td>クリエイター経由で売れた場合</td></tr>
+      <tr><td><b>実質手数料 合計（25%）</b></td><td class="num"><b>−750円</b></td><td>手元に残る売上は2,250円</td></tr>
+      <tr><td>原価（仮に30%）</td><td class="num">−900円</td><td>仕入れ・製造 ※説明用の仮の数値</td></tr>
+      <tr><td>配送費・梱包資材（仮）</td><td class="num">−400円</td><td>※説明用の仮の数値</td></tr>
+      <tr><td><b>1個あたりの残り</b></td><td class="num"><b>950円</b></td><td>ここから広告費・返品対応費を賄う</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 230" role="img" aria-label="販売価格3,000円の内訳図：原価900円、販売手数料300円、アフィリエイト報酬450円、配送費等400円を引くと、広告費に使える残りは950円になる">
+      <text x="30" y="42" font-size="12.5" font-weight="700" fill="#454956">販売価格 3,000円の内訳（美容カテゴリー・説明用の例）</text>
+      <rect x="30" y="60" width="660" height="52" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="198" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="228" y="60" width="66" height="52" fill="#8F94A3"/>
+      <rect x="294" y="60" width="99" height="52" fill="#787D8A"/>
+      <rect x="393" y="60" width="88" height="52" fill="#AEB2BE"/>
+      <rect x="481" y="60" width="209" height="52" rx="8" fill="#E8324A"/>
+      <text x="129" y="85" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">原価</text>
+      <text x="129" y="103" text-anchor="middle" font-size="10.5" fill="#454956">900円</text>
+      <text x="261" y="85" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">手数料</text>
+      <text x="261" y="103" text-anchor="middle" font-size="10" fill="#fff">300円</text>
+      <text x="343" y="85" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">アフィリ報酬</text>
+      <text x="343" y="103" text-anchor="middle" font-size="10" fill="#fff">450円</text>
+      <text x="437" y="85" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">配送等</text>
+      <text x="437" y="103" text-anchor="middle" font-size="10" fill="#fff">400円</text>
+      <text x="585" y="82" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">残り 950円</text>
+      <text x="585" y="101" text-anchor="middle" font-size="10.5" fill="#FDEEF1">＝広告費に使える上限</text>
+      <path d="M481 126 V150 M690 126 V150 M481 150 H690" stroke="#E8324A" stroke-width="1.5" fill="none"/>
+      <text x="585" y="176" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">この範囲を超えて広告を使うと「売れても赤字」</text>
+      <text x="30" y="212" font-size="10.5" fill="#787D8A">※原価・配送費は説明用の仮の数値。実質手数料25%（販売10%＋アフィリ15%）はnote版と同じ試算例</text>
+    </svg>
+    <figcaption>図3：販売価格の内訳。手数料を引いた「残り」が広告と利益の原資になる（LEAM作成）</figcaption>
+  </figure>
+  <p>販売手数料10%の商品でも、アフィリエイト報酬を15%に設定すれば<strong>実質手数料は25%</strong>です。そこから原価と配送費を引いた「残り」を超えて広告を使えば、売れているのに赤字になります。広告を回す前に、この試算表を自社の数字で必ず作ってください。</p>
+  <h3>アフィリエイト報酬は「取られるコスト」ではなく「動画が増える投資」</h3>
+  <p>アフィリエイト報酬を単なるコストとして最小化しようとすると、クリエイターに選ばれず動画が増えない、という逆効果になりがちです。TikTok Shopではクリエイターの紹介動画が売上と広告学習の両方の材料になるため、<strong>報酬率は「粗利の範囲で、クリエイターが動く水準」に設計する</strong>のが実務的な考え方です。報酬率の決め方は姉妹記事「クリエイターへの報酬相場と決め方」で詳しく扱っています。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 試算の数値は説明用の例です</div>
+    <p>原価率・配送費・報酬率は商材によって大きく変わります。上の表の構造（販売価格から実質手数料・原価・配送費を引いて広告原資を出す）を流用し、<strong>数値は必ず自社の実数で置き換えて</strong>ください。</p>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自社商品の「実質手数料」と損益ライン、一緒に計算します</div>
+    <p>カテゴリー料率の確認からアフィリエイト報酬率の設計、広告に使える上限額の算出まで。商材の情報をいただければ、この記事の試算表をあなたの商品の実数で作ってお返しします。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>Amazon・楽天との比較：固定費ゼロで始めやすいが、実質コストで比べる</h2>
+  <p>他モールと比べたときのTikTok Shopの特徴は、<strong>固定費が一切かからない</strong>ことです。主要モールと料金構造を並べます（各社の料率・プランは変更されることがあるため、最新は各公式サイトで確認してください）。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>TikTok Shop</th><th>Amazon</th><th>楽天市場</th></tr></thead>
+    <tbody>
+      <tr><td>初期費用</td><td class="y">0円</td><td class="y">0円</td><td class="n">初期登録費用あり</td></tr>
+      <tr><td>月額固定費</td><td class="y">0円</td><td>大口出品は月額4,900円（税抜）<br>小口は成約ごとの基本成約料</td><td class="n">出店プランに応じた月額出店料</td></tr>
+      <tr><td>販売手数料</td><td>カテゴリー別 7〜12%</td><td>カテゴリー別（多くのカテゴリーで5〜15.4%）</td><td class="n">システム利用料＋決済手数料等を合算</td></tr>
+      <tr><td>決済手数料</td><td class="y">販売手数料に含む</td><td class="y">販売手数料に含む</td><td class="n">別途発生</td></tr>
+      <tr><td>売上ゼロの月の支払い</td><td class="y">0円</td><td class="n">大口は月額費用が発生</td><td class="n">月額出店料が発生</td></tr>
+      <tr><td>集客の起点</td><td>おすすめフィードの動画・ライブ</td><td>検索・広告</td><td>検索・広告・イベント</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="固定費型と成果連動型のコスト比較グラフ：横軸が月の売上、縦軸が支払うコスト。固定費型のモールは売上ゼロでも費用が発生するが、TikTok Shopは売れた分にだけ手数料がかかる">
+      <line x1="70" y1="220" x2="680" y2="220" stroke="#454956" stroke-width="2"/>
+      <line x1="70" y1="220" x2="70" y2="30" stroke="#454956" stroke-width="2"/>
+      <text x="680" y="244" text-anchor="end" font-size="11.5" fill="#787D8A">月の売上 →</text>
+      <text x="36" y="40" font-size="11.5" fill="#787D8A" transform="rotate(-90 36 40)" text-anchor="end">支払うコスト →</text>
+      <path d="M70 150 L660 70" stroke="#787D8A" stroke-width="3" fill="none" stroke-dasharray="7 5"/>
+      <path d="M70 220 L660 96" stroke="#E8324A" stroke-width="3.5" fill="none"/>
+      <circle cx="70" cy="150" r="6" fill="#787D8A"/>
+      <circle cx="70" cy="220" r="6" fill="#E8324A"/>
+      <rect x="88" y="118" width="196" height="26" rx="13" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="186" y="136" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">固定費型：売上ゼロでも費用が出る</text>
+      <rect x="96" y="182" width="230" height="26" rx="13" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="211" y="200" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">TikTok Shop：売れたときだけ7〜12%</text>
+      <text x="520" y="52" text-anchor="middle" font-size="11.5" font-weight="700" fill="#454956">固定費のあるモール（月額型）</text>
+      <text x="560" y="130" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">TikTok Shop（成果連動型）</text>
+      <text x="375" y="266" text-anchor="middle" font-size="10.5" fill="#787D8A">※比較のための概念図。実際の料率・費用は各社の最新の公式情報で確認してください</text>
+    </svg>
+    <figcaption>図4：固定費型と成果連動型の違い。TikTok Shopは「試して撤退」のリスクが小さい（LEAM作成）</figcaption>
+  </figure>
+  <h3>併売するなら「モールごとの実質手数料」を同じ物差しで比べる</h3>
+  <p>既存モールと併売する場合は、表面の料率ではなく<strong>「販売手数料＋販促コスト＋固定費の按分」まで含めた実質手数料</strong>を、モールごとに同じ物差しで並べてください。TikTok Shopは固定費ゼロ・決済手数料込みの構造のため、<strong>売上が読めない立ち上げ期のリスクが小さい</strong>のが特徴です。逆に、検索経由で安定して売れる型番商品は既存モールのほうが効率的な場合もあり、商材と販売フェーズで使い分けるのが実務的な結論です。</p>
+
+  <h2 id="s7"><span class="no en">07</span>手数料は「削る」より「設計する」：利益を残す4つの打ち手</h2>
+  <p>手数料そのものは自分では下げられません。コントロールできるのは、手数料が掛かる「前提」のほうです。当社が運用で使っている打ち手を4つ紹介します。</p>
+  <ol class="steps">
+    <li><b>優遇料率のサブカテゴリーに該当しないか確認する</b><p>同じ商品でも、登録するサブカテゴリーによって料率が変わる場合があります。出品前にセラーセンターの料率表をサブカテゴリー単位まで確認し、正しく該当するものの中で最も有利な区分で登録します。</p></li>
+    <li><b>セット販売・同梱で客単価を上げる</b><p>手数料は率で決まるため、1注文あたりの売上（客単価）が上がれば、配送費など「固定額のコスト」の比率が下がり、手元に残る額が増えます。単品3,000円より2個セット5,400円のほうが利益構造は良くなる、という設計です。</p></li>
+    <li><b>アフィリエイト報酬率を商品ごとに設計する</b><p>全商品一律ではなく、粗利に余裕のある主力商品は報酬を厚くしてクリエイターを集め、粗利の薄い商品は控えめにする。報酬率は「動画の生まれやすさ」を買う投資として商品ごとに配分します。</p></li>
+    <li><b>オーガニック（広告費ゼロ）の売上比率を育てる</b><p>自社アカウントの投稿やクリエイターの動画が広告なしで売上を作る状態を育てるほど、売上全体に占める広告費の比率が下がり、実質手数料が軽くなります。即効性はありませんが、最も効く恒常的な打ち手です。</p></li>
+  </ol>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>4つに共通するのは、手数料を「請求書が来てから眺める数字」ではなく、<strong>価格・カテゴリー登録・報酬率を決める段階で織り込む設計変数</strong>として扱うことです。売る前の設計で、手元に残る額の大半が決まります。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>料率は変わる前提で、毎月の定点確認をルーティンにする</h2>
+  <p>2026年5月の改定が示したとおり、手数料は固定の仕様ではなく、今後も料率やカテゴリー区分が見直される可能性があります。</p>
+  <h3>確認するのは「自社カテゴリーの料率」と「キャンペーン・優遇の条件」の2点</h3>
+  <p>月に一度、セラーセンターで①自社商品が属するカテゴリー／サブカテゴリーの最新料率、②適用中のキャンペーンや優遇料率の条件と期限、の2点を確認します。所要は数分ですが、改定を知らずに旧料率で値付けし続ける事故を防げます。</p>
+  <h3>料率が変わったら、損益ラインと価格を同じ日に引き直す</h3>
+  <p>料率の変化に気づくだけでは不十分で、<strong>§05の試算表を新しい料率で作り直し、必要なら価格・セット構成・広告の上限額まで同じタイミングで更新する</strong>ところまでがワンセットです。「料率は変わったが試算表は古いまま」という状態が、じわじわ利益を削る典型パターンです。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>TikTok Shopの出店に初期費用や月額費用はかかりますか？</summary><div class="a">かかりません。初期費用・月額固定費はともに0円で、商品が売れたときにカテゴリー別の販売手数料（7〜12%）が発生する成果連動型です。※最新の条件は公式セラーセンターでご確認ください。</div></details>
+    <details><summary>決済手数料は販売手数料とは別にかかりますか？</summary><div class="a">かかりません。クレジットカードやコンビニ決済などの決済手数料は販売手数料の料率に含まれており、別途請求されない仕組みです。</div></details>
+    <details><summary>販売手数料が一番低いのはどのカテゴリーですか？</summary><div class="a">2026年5月改定後の体系では、食品・家電・パソコン・家具などが7%の最低料率帯です。また一部のサブカテゴリー（美容家電・粉ミルク・ペットフードなど）にはベース料率より低い優遇料率の例があります。最新の区分はセラーセンターの料率表で確認してください。</div></details>
+    <details><summary>商品が返品されたら、支払った手数料はどうなりますか？</summary><div class="a">返品・返金が成立した注文については、該当分の販売手数料も返金されます。ただし往復の送料や梱包資材などの実費は戻らないため、返品率が高い商材では返品コストを経費として織り込んでおくのが実務的です。</div></details>
+    <details><summary>アフィリエイト報酬は何%に設定すればいいですか？</summary><div class="a">一律の正解はありません。報酬率はセラーが商品ごとに設定する項目で、正解値は粗利構造によって変わります。販売手数料と合算した「実質手数料」を計算し、粗利の範囲内でクリエイターが動く水準に商品ごとに設計するのが実務的です。設定できる率の範囲は、セラーセンターの公式ヘルプで確認してください。</div></details>
+    <details><summary>Amazonや楽天と比べて手数料は高いですか？安いですか？</summary><div class="a">販売手数料の料率帯（7〜12%）はAmazonのカテゴリー別販売手数料（多くのカテゴリーで5〜15.4%）と重なる水準ですが、TikTok Shopは初期費用・月額固定費が0円で決済手数料も料率に含まれるため、売上が読めない立ち上げ期の固定リスクが小さいのが特徴です。比較は固定費の按分まで含めた実質手数料で行ってください。</div></details>
+    <details><summary>手数料の最新情報はどこで確認できますか？</summary><div class="a">TikTok Shopセラーセンター（出店者向け管理画面）の公式ヘルプ・料率表が一次情報です。料率は改定されることがあるため、本記事の内容も含め、出品や値付けの前に必ず最新の公式情報を確認してください。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/best-categories/" style="text-decoration:none;color:inherit"><span class="rc">カテゴリー</span><b>TikTok Shopで売れる商品カテゴリーと参入ジャンルの選び方</b><span>手数料と売れやすさの両面から参入ジャンルを選ぶ</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/creator-commission/" style="text-decoration:none;color:inherit"><span class="rc">クリエイター</span><b>クリエイターへの報酬相場と決め方【TikTok Shopセラー向け】</b><span>実質手数料を決めるもう半分＝報酬率の設計</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-shinsa/" style="text-decoration:none;color:inherit"><span class="rc">出店</span><b>TikTok Shopの出店条件と審査完全ガイド｜落ちる理由と対処法</b><span>費用を確認したら、次は出店の準備へ</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、手数料を引いた損益設計から「TikTok Shopに向いているか」まで正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・公式ヘルプ（料率・仕様・提供条件は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。Amazon・楽天市場の料金は各社公式サイトの公開情報を参照しています。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">結論：かかるのは販売手数料7〜12%</a></li>
+        <li><a href="#s2">2026年5月11日の改定内容</a></li>
+        <li><a href="#s3">カテゴリー別料率表（4段階）</a></li>
+        <li><a href="#s4">計算式とクーポン・返金の扱い</a></li>
+        <li><a href="#s5">「実質手数料」での利益試算</a></li>
+        <li><a href="#s6">Amazon・楽天との比較</a></li>
+        <li><a href="#s7">利益を残す4つの打ち手</a></li>
+        <li><a href="#s8">料率改定の定点確認</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>手数料込みの損益設計、無料で診断</b>
+      <p>カテゴリー料率・報酬率・広告上限まで、自社の実数で一緒に計算します。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の完全ガイド",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "TikTok Shopの出店に初期費用や月額費用はかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "かかりません。初期費用・月額固定費はともに0円で、商品が売れたときにカテゴリー別の販売手数料（7〜12%）が発生する成果連動型です。最新の条件は公式セラーセンターでご確認ください。"}},
+        {"@type": "Question", "name": "決済手数料は販売手数料とは別にかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "かかりません。クレジットカードやコンビニ決済などの決済手数料は販売手数料の料率に含まれており、別途請求されない仕組みです。"}},
+        {"@type": "Question", "name": "販売手数料が一番低いのはどのカテゴリーですか？", "acceptedAnswer": {"@type": "Answer", "text": "2026年5月改定後の体系では、食品・家電・パソコン・家具などが7%の最低料率帯です。また一部のサブカテゴリー（美容家電・粉ミルク・ペットフードなど）にはベース料率より低い優遇料率の例があります。最新の区分はセラーセンターの料率表で確認してください。"}},
+        {"@type": "Question", "name": "商品が返品されたら、支払った手数料はどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "返品・返金が成立した注文については、該当分の販売手数料も返金されます。ただし往復の送料や梱包資材などの実費は戻らないため、返品率が高い商材では返品コストを経費として織り込んでおくのが実務的です。"}},
+        {"@type": "Question", "name": "アフィリエイト報酬は何%に設定すればいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "一律の正解はありません。報酬率はセラーが商品ごとに設定する項目で、正解値は粗利構造によって変わります。販売手数料と合算した「実質手数料」を計算し、粗利の範囲内でクリエイターが動く水準に商品ごとに設計するのが実務的です。設定できる率の範囲は、セラーセンターの公式ヘルプで確認してください。"}},
+        {"@type": "Question", "name": "Amazonや楽天と比べて手数料は高いですか？安いですか？", "acceptedAnswer": {"@type": "Answer", "text": "販売手数料の料率帯（7〜12%）はAmazonのカテゴリー別販売手数料（多くのカテゴリーで5〜15.4%）と重なる水準ですが、TikTok Shopは初期費用・月額固定費が0円で決済手数料も料率に含まれるため、売上が読めない立ち上げ期の固定リスクが小さいのが特徴です。比較は固定費の按分まで含めた実質手数料で行ってください。"}},
+        {"@type": "Question", "name": "手数料の最新情報はどこで確認できますか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopセラーセンター（出店者向け管理画面）の公式ヘルプ・料率表が一次情報です。料率は改定されることがあるため、出品や値付けの前に必ず最新の公式情報を確認してください。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

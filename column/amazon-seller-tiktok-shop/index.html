@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>Amazonセラー向けTikTok Shop入門｜何が変わるか</title>
+<meta name="description" content="Amazonで売っている事業者向けに、相乗りがないこと、商品ページの作法の違い、FBAとの併用など固有の論点を解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/amazon-seller-tiktok-shop/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="Amazonセラー向けTikTok Shop入門｜何が変わるか">
+<meta property="og:description" content="Amazonで売っている事業者向けに、相乗りがないこと、商品ページの作法の違い、FBAとの併用など固有の論点を解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/amazon-seller-tiktok-shop/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amazonセラー向けTikTok Shop入門｜何が変わるか">
+<meta name="twitter:description" content="Amazonで売っている事業者向けに、相乗りがないこと、商品ページの作法の違い、FBAとの併用など固有の論点を解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Amazonセラー向けTikTok Shop入門｜何が変わるか", "description": "Amazonで売っている事業者向けに、相乗りがないこと、商品ページの作法の違い、FBAとの併用など固有の論点を解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/amazon-seller-tiktok-shop/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "Amazonセラー向けTikTok Shop入門｜何が変わるか", "item": "https://leam.co.jp/column/amazon-seller-tiktok-shop/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › Amazonセラーが TikTok Shop を始める意味</p>
+  <span class="cat">出店・立ち上げ</span>
+  <h1>AmazonセラーがTikTok Shopを始める意味｜何が変わり、何が使えるか</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px">
+    <svg viewBox="0 0 1200 630" role="img" aria-label="アイキャッチ画像：Amazon出品者から見たTikTok Shopの違い" style="border-radius:14px">
+      <defs>
+        <linearGradient id="eyebg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#14161B"/><stop offset=".55" stop-color="#0B0C10"/><stop offset="1" stop-color="#1C0910"/>
+        </linearGradient>
+        <linearGradient id="eyeph" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#123038"/><stop offset="1" stop-color="#0A6E68"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="630" fill="url(#eyebg)"/>
+      <g opacity=".2">
+        <rect x="812" y="120" width="280" height="150" rx="10" fill="none" stroke="#fff" stroke-width="3"/>
+        <line x1="812" y1="176" x2="1092" y2="176" stroke="#fff" stroke-width="3"/>
+        <line x1="840" y1="206" x2="1064" y2="206" stroke="#fff" stroke-width="6"/>
+        <line x1="840" y1="234" x2="1000" y2="234" stroke="#fff" stroke-width="6"/>
+        <text x="828" y="164" font-size="22" font-weight="800" fill="#fff">CART</text>
+      </g>
+      <path d="M900 300 L900 356 M876 336 L900 362 L924 336" stroke="#646C7A" stroke-width="6" fill="none"/>
+      <rect x="835" y="378" width="230" height="200" rx="26" fill="#0B0C10"/>
+      <rect x="847" y="390" width="206" height="176" rx="18" fill="url(#eyeph)"/>
+      <circle cx="950" cy="452" r="34" fill="rgba(255,255,255,.18)"/>
+      <path d="M938 434 L968 452 L938 470 Z" fill="#fff"/>
+      <rect x="863" y="500" width="174" height="52" rx="10" fill="#fff"/>
+      <rect x="872" y="508" width="36" height="36" rx="7" fill="#F3A7B5"/>
+      <text x="918" y="524" font-size="13" font-weight="700" fill="#0B0C10">同じ商品</text>
+      <text x="918" y="544" font-size="15" font-weight="800" fill="#FE2C55">売り方は別物</text>
+      <text x="80" y="140" font-size="24" font-weight="800" fill="#FF8DA0" letter-spacing="5">FOR AMAZON SELLERS</text>
+      <text x="76" y="248" font-size="80" font-weight="900" fill="#ffffff">何が変わり、</text>
+      <text x="76" y="344" font-size="80" font-weight="900" fill="#ffffff">何が使えるか</text>
+      <text x="80" y="410" font-size="24" fill="#C9CBD0">相乗り・レビュー・JAN・FBA・広告の扱い</text>
+      <rect x="80" y="452" width="360" height="58" rx="29" fill="#FE2C55"/>
+      <text x="260" y="490" text-anchor="middle" font-size="23" font-weight="800" fill="#fff">図解7枚・実数表6点</text>
+      <text x="80" y="568" font-size="20" font-weight="700" fill="#646C7A">LEAM ─ TikTok Shop 実践コラム</text>
+    </svg>
+  </figure>
+
+  <p class="lead">この記事は「TikTok Shopをやるべきかどうか」を比較検討するためのものではありません。<strong>すでにAmazonで売っていて、商品・在庫・物流・原価表を持っている方が、TikTok Shopを始めたときに実務の何が変わるのか</strong>を書いています。どの売り場を選ぶかから考えたい場合は<a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略</a>を先にお読みください。TikTok Shopの日本での提供開始は2025年6月30日で、<strong>Amazonで通用してきた仕事のうち、そのまま持ち込めるものと、いったん置いていくものがはっきり分かれます</strong>。その線引きを実数と図で整理します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>Amazonで積み上げた資産のうち、TikTok Shopへ持ち込めるもの・持ち込めないものの仕分け</li>
+      <li>相乗り・カート獲得・レビュー・JAN・FBA・検索広告が、それぞれどう変わるか</li>
+      <li>販売手数料と固定費を実数で並べた、手残り計算のやり直し方</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">Amazonの実績データをお持ちなら、勝ち筋の見立ては早くできます</div>
+    <p>すでに売れている商品のデータがあると、TikTok Shopで最初に出すべき1商品とクリエイターの当たりを絞り込めます。現状を拝見して、向き不向きから率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">結論：Amazonの資産は「そのまま使えるもの」と「置いていくもの」に割れる</a></li>
+      <li><a href="#s2">相乗りとカート獲得が無くなり、守る仕事が消えて見つけてもらう仕事が増える</a></li>
+      <li><a href="#s3">商品ページの作法が逆になり、スペックを並べる場所ではなくなる</a></li>
+      <li><a href="#s4">レビューは持ち込めないので、初速の作り方を別に設計する</a></li>
+      <li><a href="#s5">JANはカタログを束ねる軸ではなくなり、社内管理コードに戻る</a></li>
+      <li><a href="#s6">FBAは持ち込めないので、注文の流れと在庫の分け方を決め直す</a></li>
+      <li><a href="#s7">キーワード入札の運用力はそのまま効かず、渡す変数が変わる</a></li>
+      <li><a href="#s8">手数料は率だけでなく課金ベースと固定費で組み直す</a></li>
+      <li><a href="#s9">明日からの順番：最初の2週間で片づける5つ</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>結論：Amazonの資産は「そのまま使えるもの」と「置いていくもの」に割れる</h2>
+  <p>Amazonで売っている事業者がTikTok Shopを始めるとき、最初にやるべきなのは出店手続きではありません。<strong>手元にある資産を、持ち込めるものと持ち込めないものに仕分けること</strong>です。ここを曖昧にしたまま始めると、Amazonで効いた打ち手をそのまま持ち込んで空振りし、逆に本当に持ち込めるものを使わないまま新規事業扱いで一からやり直してしまいます。</p>
+  <p>持ち込めるものははっきりしています。商品そのもの、在庫、仕入れルート、原価表、そして「1件売れたときにいくら残るか」を計算する型です。特に原価表と損益計算の型は、手数料の項目を差し替えるだけでそのまま流用できます。Amazonで粗利を1円単位で管理してきた事業者は、この点で新規参入組より明確に速く立ち上がります。</p>
+  <p>一方で、置いていくものも同じくらいはっきりしています。商品ページに溜めたレビュー、カートボックス（おすすめ出品）を取り続けるための立ち回り、スポンサープロダクトのキーワード設計と入札の勘、そしてFBAという物流の前提です。これらはTikTok Shop側に対応する仕組みが無いか、あっても効き方がまったく違います。</p>
+  <figure>
+    <svg viewBox="0 0 720 350" role="img" aria-label="Amazonで積み上げた8つの資産を、そのまま使えるものと置いていくものの2つのレーンへ振り分けた仕分け図">
+      <rect x="18" y="46" width="196" height="266" rx="12" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="116" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#0B0C10">Amazonで積み上げたもの</text>
+      <g font-size="11.5" fill="#3A3F46">
+        <text x="38" y="102">・商品と在庫</text>
+        <text x="38" y="128">・仕入れルート</text>
+        <text x="38" y="154">・原価表と損益の型</text>
+        <text x="38" y="180">・JAN／GTIN</text>
+        <text x="38" y="206">・白背景のスペック画像</text>
+        <text x="38" y="232">・レビューの星</text>
+        <text x="38" y="258">・カート獲得の立ち回り</text>
+        <text x="38" y="284">・キーワード入札の勘</text>
+      </g>
+      <path d="M220 180 H262" stroke="#646C7A" stroke-width="2"/>
+      <polygon points="300,120 340,180 300,240 260,180" fill="#0B0C10"/>
+      <text x="300" y="177" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">仕分け</text>
+      <text x="300" y="193" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">ゲート</text>
+      <path d="M340 160 H388 V96" stroke="#0A6E68" stroke-width="2" fill="none"/>
+      <polygon points="382,102 388,90 394,102" fill="#0A6E68"/>
+      <path d="M340 200 H388 V270" stroke="#B01D36" stroke-width="2" fill="none"/>
+      <polygon points="382,264 388,276 394,264" fill="#B01D36"/>
+      <rect x="398" y="34" width="304" height="128" rx="12" fill="#EDF6F5" stroke="#BFE3D4"/>
+      <text x="418" y="60" font-size="13" font-weight="800" fill="#0A6E68">そのまま持ち込める</text>
+      <g font-size="11.5" fill="#3A3F46">
+        <text x="418" y="86">商品・在庫・仕入れルート</text>
+        <text x="418" y="110">原価表と損益計算の型（項目差し替えのみ）</text>
+        <text x="418" y="134">売れ筋の判断力・季節の読み</text>
+      </g>
+      <rect x="398" y="188" width="304" height="128" rx="12" fill="#FFECF0" stroke="#F5C3CE"/>
+      <text x="418" y="214" font-size="13" font-weight="800" fill="#B01D36">いったん置いていく</text>
+      <g font-size="11.5" fill="#3A3F46">
+        <text x="418" y="240">レビューの星・カート獲得の立ち回り</text>
+        <text x="418" y="264">キーワード入札の設計と勘</text>
+        <text x="418" y="288">FBA前提の在庫オペレーション</text>
+      </g>
+      <text x="360" y="338" text-anchor="middle" font-size="11" fill="#646C7A">仕分けを先にやると、新規事業として一からやり直す必要がなくなる</text>
+    </svg>
+    <figcaption>図1：出店前の資産棚卸し。持ち込める側の3つが立ち上がりの速さを決める（LEAM作成）</figcaption>
+  </figure>
+  <p>言い方を変えると、TikTok Shopで新しく身につける必要があるのは<strong>「商品を良く見せる力」ではなく「まだ欲しいと思っていない人に見つけてもらう力」</strong>です。Amazonは検索されている商品を取りに行く場で、TikTok Shopは需要そのものを作る場です。TikTok Shop日本の提供開始から半年（2025年6月30日〜2025年12月末）の実績では、流通総額の約70%がクリエイターの投稿、セラー自身のコンテンツ、LIVEを起点とした購入だったとされています（出典：TikTok Newsroom・2026年2月3日）。同じ期間に登録セラーは5万店を超え、参加クリエイターは20万人を超えました。</p>
+  <div class="tw"><table>
+    <thead><tr><th>Amazonで持っているもの</th><th>TikTok Shopでの扱い</th><th>実務上どうするか</th></tr></thead>
+    <tbody>
+      <tr><td>商品・在庫・仕入れルート</td><td class="y">そのまま使える</td><td>在庫の引き当てルールだけ決める（法人は最大5店まで分割可）</td></tr>
+      <tr><td>原価表・損益計算の型</td><td class="y">そのまま使える</td><td>手数料と物流費の行を差し替える。月額4,900円（税抜）の行は消える</td></tr>
+      <tr><td>JAN／GTIN</td><td>意味が変わる</td><td>カタログ同一性の軸ではなくなり、社内の在庫コードに戻る（§05）</td></tr>
+      <tr><td>白背景のスペック訴求画像</td><td>作り直しが要る</td><td>1枚目を動画のカットに差し替え、確認事項は3点までに絞る（§03）</td></tr>
+      <tr><td>商品ページのレビュー</td><td class="n">持ち込めない</td><td>★0件から積み直す。審査1〜5営業日の間に初速の手を用意する（§04）</td></tr>
+      <tr><td>カート獲得（おすすめ出品）の立ち回り</td><td class="n">対応する概念がない</td><td>相乗り監視と価格追随の工数がそのまま浮く（§02）</td></tr>
+      <tr><td>スポンサープロダクトのKW設計・入札</td><td class="n">そのまま効かない</td><td>渡す変数がROI目標と日予算の2つだけに変わる（§07）</td></tr>
+      <tr><td>FBAによる配送・返品・CS</td><td class="n">持ち込めない</td><td>標準サイズ318〜532円／点（税込）が消え、送料・梱包・人件費の実費に置き換わる（§06）</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 id="s2"><span class="no en">02</span>相乗りとカート獲得が無くなり、守る仕事が消えて見つけてもらう仕事が増える</h2>
+  <p>Amazon出品者にとって、日々の運用時間の相当部分は「守り」に使われています。相乗り出品者の監視、価格の追随、カートボックスを取り返すための調整。これらはAmazonの構造から必然的に生まれる仕事です。</p>
+  <p>Amazonの公式説明では、同社は「1つの商品に対して、商品詳細ページが1つというカタログ形式のECサイト」とされています。すでにカタログがある商品に後から出品する<strong>相乗り出品は、制度として正規に用意されている売り方</strong>です。そして同じページの中で、購入者が「カートに入れる」「今すぐ買う」を押したときに誰の商品が入るかを決めるのが、おすすめ出品（カートボックス）の枠です。複数出品者がいる場合、この位置を獲得するための戦略が必要になる、と公式にも書かれています。</p>
+  <p>つまり<strong>同じ商品を売っていても、カートを取れなければ実質的に売れない</strong>という勝者総取りの構造がある、ということです。ここが、Amazon出品者の運用感覚を最も強く規定しています。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="Amazonの1商品1ページに複数出品者が乗りカート枠を1社が取る構造と、TikTok Shopで出店者ごとに商品ページが独立する構造の対比図">
+      <text x="176" y="26" text-anchor="middle" font-size="13" font-weight="800" fill="#0B0C10">Amazon：1商品＝1ページ</text>
+      <rect x="30" y="40" width="292" height="276" rx="12" fill="#fff" stroke="#0B0C10" stroke-width="1.5"/>
+      <rect x="46" y="56" width="80" height="80" rx="8" fill="#E3E6EA"/>
+      <text x="86" y="102" text-anchor="middle" font-size="11" fill="#646C7A">商品画像</text>
+      <text x="140" y="76" font-size="12" font-weight="700" fill="#0B0C10">同じASINの商品ページ</text>
+      <text x="140" y="98" font-size="11" fill="#646C7A">★レビューもここに溜まる</text>
+      <rect x="140" y="110" width="120" height="26" rx="6" fill="#B01D36"/>
+      <text x="200" y="128" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">カートに入れる</text>
+      <text x="46" y="166" font-size="11.5" font-weight="700" fill="#3A3F46">この商品の出品者</text>
+      <rect x="46" y="176" width="256" height="30" rx="6" fill="#FFECF0" stroke="#B01D36"/>
+      <text x="60" y="196" font-size="11.5" font-weight="800" fill="#B01D36">セラーA　←　いまカートを取っている1社</text>
+      <rect x="46" y="212" width="256" height="28" rx="6" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="60" y="231" font-size="11.5" fill="#646C7A">セラーB（あなた）　他の出品者を見る</text>
+      <rect x="46" y="246" width="256" height="28" rx="6" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="60" y="265" font-size="11.5" fill="#646C7A">セラーC　　　　　他の出品者を見る</text>
+      <text x="176" y="298" text-anchor="middle" font-size="11" fill="#646C7A">監視・価格追随・カート奪還が日々の仕事になる</text>
+      <line x1="360" y1="40" x2="360" y2="316" stroke="#E3E6EA" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="540" y="26" text-anchor="middle" font-size="13" font-weight="800" fill="#0B0C10">TikTok Shop：ショップごとに独立</text>
+      <rect x="398" y="40" width="132" height="128" rx="10" fill="#fff" stroke="#FE2C55" stroke-width="1.5"/>
+      <text x="464" y="62" text-anchor="middle" font-size="11.5" font-weight="800" fill="#B01D36">あなたのショップ</text>
+      <rect x="414" y="72" width="100" height="42" rx="6" fill="#E3E6EA"/>
+      <rect x="414" y="122" width="100" height="24" rx="6" fill="#B01D36"/>
+      <text x="464" y="139" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">購入する</text>
+      <rect x="550" y="40" width="132" height="128" rx="10" fill="#fff" stroke="#E3E6EA" stroke-width="1.5"/>
+      <text x="616" y="62" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">他社のショップ</text>
+      <rect x="566" y="72" width="100" height="42" rx="6" fill="#F4F6F8"/>
+      <rect x="566" y="122" width="100" height="24" rx="6" fill="#C9CBD4"/>
+      <text x="616" y="139" text-anchor="middle" font-size="10.5" font-weight="800" fill="#fff">購入する</text>
+      <rect x="398" y="182" width="284" height="76" rx="10" fill="#EDF6F5" stroke="#BFE3D4"/>
+      <text x="540" y="206" text-anchor="middle" font-size="12" font-weight="800" fill="#0A6E68">他社が同じページに乗ってくることがない</text>
+      <text x="540" y="228" text-anchor="middle" font-size="11" fill="#3A3F46">＝カートを奪われる／奪い返すという概念がない</text>
+      <text x="540" y="248" text-anchor="middle" font-size="11" fill="#3A3F46">価格を1円下げて追随する必要もない</text>
+      <rect x="398" y="270" width="284" height="46" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="540" y="290" text-anchor="middle" font-size="11.5" font-weight="800" fill="#8A5A00">代わりに増える仕事</text>
+      <text x="540" y="308" text-anchor="middle" font-size="11" fill="#3A3F46">見つけてもらうための動画とクリエイター起用</text>
+    </svg>
+    <figcaption>図2：ページの持ち主が誰かという違い。相乗り防衛の時間がまるごと空く（LEAM作成）</figcaption>
+  </figure>
+  <p>TikTok Shopでは、出店者ごとに自分の商品ページを持ちます。<strong>他社が同じページに乗ってくることがないため、カートボックスにあたる奪い合いも発生しません。</strong>この違いは、単に「楽になる」という話ではありません。日々の運用の中身が入れ替わるという話です。</p>
+  <p>相乗り監視と価格追随に使っていた時間が空きます。その空いた時間を何に使うかが、そのまま成果を決めます。当社の運用実感では、ここで浮いた時間は「動画の企画とクリエイターへの声かけ」に振り替えるのが効率的です。逆に、空いた時間をそのまま価格の見直しや商品ページの微調整に使ってしまうと、Amazonでの習慣を持ち込んだだけになり、露出が増えにくくなります。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>Amazonでは「ページは自分のものではない」ため、守りが必要でした。TikTok Shopでは<strong>ページは自分のものである代わりに、誰も勝手には来ません</strong>。守る仕事がゼロになる分、連れてくる仕事が100%になると考えてください。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>商品ページの作法が逆になり、スペックを並べる場所ではなくなる</h2>
+  <p>Amazonの商品ページは、検索して来た人がスペックを比較検討するための場所です。だから箇条書きの仕様、寸法、対応機種、素材、容量といった情報を漏れなく並べることに意味があります。検索キーワードとの一致も効くため、書き込む情報量そのものが武器になります。</p>
+  <p>TikTok Shopでは、購入者の来かたが逆になります。動画やライブで商品を見て、その場で「良さそう」と思った人が商品ページに来ます。<strong>説得はページの前にほぼ終わっていて、ページに来る時点で買う気は既にある</strong>という前提です。ここで長いスペック表を最初に置くと、温まった状態を冷ましてしまいます。</p>
+  <figure>
+    <svg viewBox="0 0 720 400" role="img" aria-label="検索から来た人が上から読み下ろすページ構成と、動画を見てから確認だけしに来る人向けのページ構成を、スマートフォン2台で対比した図">
+      <text x="180" y="24" text-anchor="middle" font-size="13" font-weight="800" fill="#0B0C10">検索から来た人（Amazon的）</text>
+      <rect x="110" y="38" width="140" height="300" rx="18" fill="#0B0C10"/>
+      <rect x="118" y="46" width="124" height="284" rx="12" fill="#fff"/>
+      <text x="128" y="66" font-size="8.5" font-weight="700" fill="#0B0C10">〇〇スチーマー 380ml</text>
+      <g stroke="#C9CBD4" stroke-width="4">
+        <line x1="128" y1="84" x2="222" y2="84"/><line x1="128" y1="96" x2="214" y2="96"/>
+        <line x1="128" y1="108" x2="222" y2="108"/><line x1="128" y1="120" x2="200" y2="120"/>
+        <line x1="128" y1="132" x2="218" y2="132"/>
+      </g>
+      <text x="128" y="152" font-size="8" fill="#646C7A">箇条書きの仕様が最初</text>
+      <rect x="128" y="162" width="94" height="62" rx="6" fill="#E3E6EA"/>
+      <text x="175" y="197" text-anchor="middle" font-size="8.5" fill="#646C7A">静止画</text>
+      <g stroke="#E3E6EA" stroke-width="3">
+        <line x1="128" y1="240" x2="222" y2="240"/><line x1="128" y1="250" x2="210" y2="250"/>
+        <line x1="128" y1="260" x2="222" y2="260"/>
+      </g>
+      <text x="128" y="280" font-size="8" fill="#646C7A">レビューを読み込む</text>
+      <rect x="128" y="292" width="94" height="22" rx="5" fill="#B01D36"/>
+      <text x="175" y="307" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">カートに入れる</text>
+      <path d="M272 60 V318" stroke="#646C7A" stroke-width="2"/>
+      <polygon points="266,312 272,326 278,312" fill="#646C7A"/>
+      <text x="286" y="186" font-size="11" font-weight="700" fill="#3A3F46">上から</text>
+      <text x="286" y="204" font-size="11" font-weight="700" fill="#3A3F46">読み下ろす</text>
+      <text x="286" y="222" font-size="10.5" fill="#646C7A">情報量が武器</text>
+      <line x1="368" y1="34" x2="368" y2="366" stroke="#E3E6EA" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="546" y="24" text-anchor="middle" font-size="13" font-weight="800" fill="#0B0C10">動画から来た人（TikTok Shop）</text>
+      <rect x="476" y="38" width="140" height="300" rx="18" fill="#0B0C10"/>
+      <rect x="484" y="46" width="124" height="284" rx="12" fill="#fff"/>
+      <rect x="484" y="46" width="124" height="118" rx="12" fill="#3E1F63"/>
+      <circle cx="546" cy="104" r="20" fill="rgba(255,255,255,.22)"/>
+      <path d="M539 94 L557 104 L539 114 Z" fill="#fff"/>
+      <text x="494" y="158" font-size="8" fill="#fff" opacity=".85">動画で説得は終わっている</text>
+      <rect x="494" y="176" width="104" height="34" rx="6" fill="#FFECF0"/>
+      <text x="546" y="190" text-anchor="middle" font-size="8.5" font-weight="700" fill="#B01D36">動画で見たのはこれ</text>
+      <text x="546" y="203" text-anchor="middle" font-size="9.5" font-weight="800" fill="#B01D36">¥3,480</text>
+      <text x="494" y="228" font-size="8.5" font-weight="700" fill="#0B0C10">確認したい3点だけ</text>
+      <g stroke="#C9CBD4" stroke-width="4">
+        <line x1="494" y1="242" x2="586" y2="242"/><line x1="494" y1="254" x2="570" y2="254"/>
+        <line x1="494" y1="266" x2="586" y2="266"/>
+      </g>
+      <text x="494" y="286" font-size="8" fill="#646C7A">サイズ／届く日／返品</text>
+      <rect x="494" y="294" width="104" height="24" rx="5" fill="#B01D36"/>
+      <text x="546" y="310" text-anchor="middle" font-size="9" font-weight="800" fill="#fff">購入する</text>
+      <path d="M646 318 V64" stroke="#B01D36" stroke-width="2"/>
+      <polygon points="640,70 646,56 652,70" fill="#B01D36"/>
+      <text x="656" y="176" font-size="10.5" font-weight="700" fill="#B01D36">迷いを</text>
+      <text x="656" y="192" font-size="10.5" font-weight="700" fill="#B01D36">消すだけ</text>
+      <text x="360" y="386" text-anchor="middle" font-size="11" fill="#646C7A">同じ商品でも、置く順番と削る量が正反対になる</text>
+    </svg>
+    <figcaption>図3：情報の並べ方の反転。片方は足し算、もう片方は引き算で作る（LEAM作成）</figcaption>
+  </figure>
+  <p>実務的には、TikTok Shop側の商品ページは<strong>「動画で見たものと同じだと確認できること」と「買わない理由を3つ以内で潰すこと」</strong>の2つに絞ります。動画で映っていたカットを1枚目に置き、サイズ・到着までの日数・返品の条件のように、動画では伝えきれない確認事項だけを短く置きます。Amazonで作った白背景のスペック訴求画像は、そのままでは「動画で見た商品」と一致して見えないため、ほとんどの場合で撮り直しか組み替えが必要になります。</p>
+  <p>もうひとつ、Amazon出品者が戸惑いやすいのが、商品ページ単体では成果が動かないという点です。Amazonでは商品ページの改善が検索順位とCVRの両方に効きますが、TikTok Shopでは<strong>ページの前段にある動画の量と質が先に効く</strong>ため、ページだけ磨いても数字は動きません。ページの作り込み方は<a href="https://leam.co.jp/column/product-page-cvr/">商品ページのCVR改善</a>、動画側の型は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の型</a>で個別に解説しています。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：Amazonの説明文をそのまま貼らない</div>
+    <p>Amazonの商品説明はキーワードを拾わせる目的の記述が混ざっています。それをそのまま持ち込むと、動画から来た人には読みにくく、かつ<strong>商品の見た目と文章の温度が合わない</strong>ページになります。転記ではなく、動画のセリフから起こし直すほうが早く仕上がります。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>レビューは持ち込めないので、初速の作り方を別に設計する</h2>
+  <p>Amazon出品者が最も過小評価しやすいのが、レビューの扱いです。Amazonではレビューは出品者ではなく商品ページ側に紐づきます。公式の説明でも、バリエーションを統合すると「レビューも1つにまとまるため、検索順位の向上にも寄与する可能性があります」とされており、レビューがページの資産であることが前提になっています。</p>
+  <p>この設計には両面があります。自分が育てたレビューの上に後から相乗りした出品者も乗れてしまう一方で、既にレビューが付いているカタログに乗れば、初日から星のある状態で売り始められるということでもあります。<strong>Amazonでの「レビューがある状態からスタートできる」という感覚は、この設計に支えられています。</strong></p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="レビューが商品ページ側に紐づくAmazonの構造と、ゼロから積み直すTikTok Shopの立ち上がり方を並べた図">
+      <text x="176" y="24" text-anchor="middle" font-size="13" font-weight="800" fill="#0B0C10">Amazon：★は商品ページに溜まる</text>
+      <rect x="96" y="120" width="160" height="86" rx="12" fill="#0B0C10"/>
+      <text x="176" y="150" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">商品ページ（ASIN）</text>
+      <text x="176" y="176" text-anchor="middle" font-size="15" fill="#FFD34D">★★★★☆</text>
+      <text x="176" y="196" text-anchor="middle" font-size="10.5" fill="#C9CBD4">レビューはここに集まる</text>
+      <rect x="26" y="46" width="92" height="28" rx="6" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="72" y="65" text-anchor="middle" font-size="11" fill="#3A3F46">セラーA</text>
+      <rect x="130" y="46" width="92" height="28" rx="6" fill="#FFECF0" stroke="#B01D36"/>
+      <text x="176" y="65" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">あなた</text>
+      <rect x="234" y="46" width="92" height="28" rx="6" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="280" y="65" text-anchor="middle" font-size="11" fill="#3A3F46">セラーC</text>
+      <path d="M72 76 V104 H150 V116" stroke="#646C7A" stroke-width="1.5" fill="none"/>
+      <path d="M176 76 V116" stroke="#B01D36" stroke-width="1.5"/>
+      <path d="M280 76 V104 H202 V116" stroke="#646C7A" stroke-width="1.5" fill="none"/>
+      <text x="176" y="234" text-anchor="middle" font-size="10.5" fill="#646C7A">後から乗った出品者も、この★の上で売れる</text>
+      <text x="176" y="254" text-anchor="middle" font-size="10.5" fill="#646C7A">＝自分が育てた★も他社に使われる</text>
+      <line x1="368" y1="34" x2="368" y2="290" stroke="#E3E6EA" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="546" y="24" text-anchor="middle" font-size="13" font-weight="800" fill="#0B0C10">TikTok Shop：ゼロから積み直す</text>
+      <line x1="418" y1="220" x2="686" y2="220" stroke="#C9CBD4" stroke-width="1.5"/>
+      <line x1="418" y1="60" x2="418" y2="220" stroke="#C9CBD4" stroke-width="1.5"/>
+      <text x="410" y="66" text-anchor="end" font-size="9.5" fill="#646C7A">評価</text>
+      <text x="418" y="238" font-size="9.5" fill="#646C7A">出店日</text>
+      <text x="686" y="238" text-anchor="end" font-size="9.5" fill="#646C7A">数週間後</text>
+      <path d="M418 220 C500 218 540 200 580 168 C620 136 650 108 686 92" stroke="#B01D36" stroke-width="2.5" fill="none"/>
+      <circle cx="418" cy="220" r="5" fill="#B01D36"/>
+      <text x="424" y="212" font-size="10" font-weight="800" fill="#B01D36">★0件から</text>
+      <rect x="470" y="76" width="216" height="52" rx="8" fill="#EDF6F5" stroke="#BFE3D4"/>
+      <text x="578" y="96" text-anchor="middle" font-size="11" font-weight="800" fill="#0A6E68">初速を作る2手</text>
+      <text x="578" y="116" text-anchor="middle" font-size="10.5" fill="#3A3F46">サンプル提供とクリエイター起用</text>
+      <text x="546" y="272" text-anchor="middle" font-size="10.5" fill="#646C7A">星がない期間をどう埋めるかを、出店前に決めておく</text>
+    </svg>
+    <figcaption>図4：評価の帰属先の違い。ゼロ期間の設計が立ち上がりの明暗を分ける（LEAM作成）</figcaption>
+  </figure>
+  <p>TikTok Shopでは、この前提が使えません。Amazonで何千件のレビューを持っていても、そこから1件も持ち込めないところから始まります。したがって<strong>「星がゼロの期間をどう埋めるか」を出店前に決めておくこと</strong>が、実質的な準備作業になります。</p>
+  <p>現実的な手は2つです。ひとつはクリエイターへのサンプル提供で、購入前の第三者評価を動画側で担保すること。もうひとつは、初期の購入者への同梱物や発送品質を、Amazon以上に丁寧に設計することです。日本のクリエイターがアフィリエイトに参加する条件は18歳以上かつフォロワー1,000人以上とされており、フォロワー数が極端に多くないクリエイターにも協力を依頼できます。進め方は<a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの始め方</a>にまとめています。</p>
+  <p>なお、TikTok Shopの購入者をAmazonのレビュー投稿へ誘導する、といった発想は取れません。<strong>TikTok Shopでは外部サイトやLINE等への誘導が規約違反にあたります。</strong>Amazonで培った「購入後フォローで評価を集める」導線は、そのままの形では持ち込めないと考えてください。</p>
+
+  <h2 id="s5"><span class="no en">05</span>JANはカタログを束ねる軸ではなくなり、社内管理コードに戻る</h2>
+  <p>Amazonでは、JANをはじめとする製品コードがカタログの同一性を担保しています。公式の説明では「ほとんどの場合、商品には、UPC、ISBN、EAN、JANなどの製品コード（GTIN）が必要です」とされ、さらに「ASINは、複数の出品者様が同一の商品を出品する場合、同じものを使用できます」と明記されています。<strong>同じJANを付けた瞬間に、同じページへ束ねられる設計</strong>です。</p>
+  <p>だからAmazonでは、自社ブランド商品に独自のコードを振るかどうかが、相乗りを受けるかどうかの分岐点になってきました。メーカー既製品と同じJANを使えば相乗りが前提になり、独自に振れば自分のページとして守りやすくなる。この判断は、Amazon特有の構造から生まれたものです。</p>
+  <p>TikTok Shopでは、商品ページが出店者ごとに独立するため、<strong>JANが他社と自分を束ねる働きをしません。</strong>結果として、JANは在庫管理や卸との連携に使う社内コードという、本来の役割に戻ります。Amazonで相乗り対策としてコード体系を工夫してきた事業者ほど、この点は拍子抜けするはずです。</p>
+  <p>ただし、意味が薄れるからといって管理を雑にするのは別問題です。Amazon・自社EC・TikTok Shopで在庫を共有するなら、どの売り場でも同じJANで引き当てられる状態を保つ必要があります。ここは§06の在庫設計と直結します。<strong>「相乗り防衛のためのコード設計」は不要になり、「複数売り場の在庫を突き合わせるためのコード管理」は残る</strong>、という整理が実務に近いです。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>ショップの数え方もAmazonと違います。TikTok Shopは<strong>個人セラーは1店、法人は最大5店</strong>まで持てます。ブランドごとに世界観を分けたい場合、Amazonのようにストアフロントを1つにまとめる必要はなく、ショップ自体を分ける選択肢があります。</p>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>FBAは持ち込めないので、注文の流れと在庫の分け方を決め直す</h2>
+  <p>Amazonにおいて、FBAは単なる物流サービスではありません。FBAに入れると自動的にプライム対象になるなど、<strong>購買体験そのものに組み込まれている</strong>ため、入れるかどうかが売れ方の条件になります。ピッキング・梱包・配送・カスタマーサービス・返品対応まで含めて、1点あたりの配送代行手数料に含まれる建て付けです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>FBA配送代行手数料（税込・1点あたり）</th><th class="num">商品価格1,000円超</th><th class="num">商品価格1,000円以下</th><th>サイズ・重量の条件</th></tr></thead>
+    <tbody>
+      <tr><td>小型</td><td class="num">288円</td><td class="num">222円</td><td>25cm×18cm×2.0cm以下・250g以下</td></tr>
+      <tr><td>標準サイズ</td><td class="num">318〜532円</td><td class="num">252〜466円</td><td>20cm以下・2kg以下 〜 100cm以下・9kg以下</td></tr>
+      <tr><td>大型サイズ</td><td class="num">589〜1,756円</td><td class="num">523〜1,690円</td><td>60cm以下・2kg以下 〜 200cm以下・40kg以下</td></tr>
+      <tr><td>特大型サイズ</td><td class="num">2,755〜5,625円</td><td class="num">2,689〜5,559円</td><td>200cm以下・50kg以下 〜 260cm以下・50kg以下</td></tr>
+    </tbody>
+  </table></div>
+  <p>あわせて在庫保管手数料が体積と日数の従量でかかります。ここには季節性があり、<strong>10〜12月は単価が跳ね上がります</strong>。アパレル2カテゴリーはサイズ区分を問わず一律で、標準サイズの一般カテゴリーより単価が低く設定されています。</p>
+  <div class="tw"><table>
+    <thead><tr><th>FBA在庫保管手数料（税込）</th><th class="num">1〜9月</th><th class="num">10〜12月</th><th>計算式</th></tr></thead>
+    <tbody>
+      <tr><td>小型・標準（ファッション以外）</td><td class="num">5.676円</td><td class="num">10.087円</td><td>単価 ×（商品サイズcm³ ÷ 1,000）×（保管日数 ÷ 当月の日数）</td></tr>
+      <tr><td>大型・特大型（ファッション以外）</td><td class="num">3.278円</td><td class="num">6.984円</td><td>同上</td></tr>
+      <tr><td>服&amp;ファッション小物／シューズ&amp;バッグ</td><td class="num">3.10円</td><td class="num">5.50円</td><td>同上（サイズ区分を問わず一律）</td></tr>
+    </tbody>
+  </table></div>
+  <p>さらに、フルフィルメントセンターでの保管期間が365日を超えた在庫には長期在庫保管手数料が追加で発生します（金額は公式の料金ページには記載がないため、セラーセントラル側の手数料ページでご確認ください）。</p>
+  <p>TikTok Shopでは、この一式を自社で持つ前提になります。注文が入ってから購入者の手元に届き、返品や問い合わせに答えるまでの全工程が自社側に移ります。<strong>手数料表の数字が消える代わりに、人手と実費が発生する</strong>という置き換えです。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="注文から配送・返品対応までの工程を、Amazon FBAが担う範囲と自社出荷で担う範囲に分けて並べたパイプライン図">
+      <text x="24" y="34" font-size="13" font-weight="800" fill="#0B0C10">Amazon＋FBA：工程がまとめて外に出る</text>
+      <rect x="24" y="46" width="96" height="52" rx="8" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="72" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#0B0C10">注文</text>
+      <text x="72" y="88" text-anchor="middle" font-size="10" fill="#646C7A">自社</text>
+      <path d="M124 72 H150" stroke="#646C7A" stroke-width="2"/><polygon points="146,66 158,72 146,78" fill="#646C7A"/>
+      <rect x="162" y="46" width="500" height="52" rx="8" fill="#0B0C10"/>
+      <line x1="328" y1="52" x2="328" y2="92" stroke="#3A3F46"/>
+      <line x1="494" y1="52" x2="494" y2="92" stroke="#3A3F46"/>
+      <text x="245" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ピッキング・梱包</text>
+      <text x="411" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">配送（プライム対象）</text>
+      <text x="578" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">CS・返品対応</text>
+      <text x="411" y="88" text-anchor="middle" font-size="10" fill="#C9CBD4">配送代行手数料に含まれる範囲</text>
+      <text x="662" y="118" text-anchor="end" font-size="10.5" font-weight="700" fill="#B01D36">標準サイズ 318〜532円／点（税込・1,000円超）＋ 保管 5.676円ベース</text>
+      <line x1="24" y1="140" x2="696" y2="140" stroke="#E3E6EA" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="24" y="172" font-size="13" font-weight="800" fill="#0B0C10">TikTok Shop：工程が手元に戻る</text>
+      <rect x="24" y="184" width="96" height="52" rx="8" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="72" y="208" text-anchor="middle" font-size="11" font-weight="700" fill="#0B0C10">注文</text>
+      <text x="72" y="226" text-anchor="middle" font-size="10" fill="#646C7A">自社</text>
+      <path d="M124 210 H150" stroke="#646C7A" stroke-width="2"/><polygon points="146,204 158,210 146,216" fill="#646C7A"/>
+      <rect x="162" y="184" width="158" height="52" rx="8" fill="#FFECF0" stroke="#FE2C55"/>
+      <text x="241" y="208" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">自社倉庫で梱包</text>
+      <text x="241" y="226" text-anchor="middle" font-size="10" fill="#3A3F46">人手が要る</text>
+      <path d="M324 210 H344" stroke="#646C7A" stroke-width="2"/><polygon points="340,204 352,210 340,216" fill="#646C7A"/>
+      <rect x="356" y="184" width="150" height="52" rx="8" fill="#FFECF0" stroke="#FE2C55"/>
+      <text x="431" y="208" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">配送業者へ引き渡し</text>
+      <text x="431" y="226" text-anchor="middle" font-size="10" fill="#3A3F46">送料は実費</text>
+      <path d="M510 210 H530" stroke="#646C7A" stroke-width="2"/><polygon points="526,204 538,210 526,216" fill="#646C7A"/>
+      <rect x="542" y="184" width="120" height="52" rx="8" fill="#FFECF0" stroke="#FE2C55"/>
+      <text x="602" y="208" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">CS・返品対応</text>
+      <text x="602" y="226" text-anchor="middle" font-size="10" fill="#3A3F46">自社で受ける</text>
+      <text x="360" y="266" text-anchor="middle" font-size="11" fill="#646C7A">FBAの手数料が消える代わりに、3工程ぶんの人手と実費が戻ってくる</text>
+      <text x="360" y="286" text-anchor="middle" font-size="11" font-weight="700" fill="#8A5A00">＝出店前に「誰が何時までに梱包するか」を決めておく必要がある</text>
+    </svg>
+    <figcaption>図5：担い手の移動。手数料の削減ではなく、工程の内製化として見る（LEAM作成）</figcaption>
+  </figure>
+  <p>Amazon（FBA）側とTikTok Shop側で在庫をどう分けるかは、当社の運用実感では次の順で決めるとまとまりやすいです。まずは<strong>TikTok Shop用の在庫を物理的に分けて、少量から始める</strong>こと。FBAに預けた在庫を引き出すには時間と費用がかかるため、動画が当たったときの急な出荷にはそもそも向きません。次に、動画やライブで当たりが出た商品だけ、自社出荷の在庫を厚くしていきます。Amazon側とTikTok Shop側で在庫を完全共有するのは、日次で数量を突き合わせる仕組みが整ってからで十分です。</p>
+  <p>配送料と配送日数の設定は購入体験に直結します。TikTok Shop側の配送ルールの考え方は<a href="https://leam.co.jp/column/shipping-rules/">配送・送料設定のルール</a>にまとめました。なお、TikTok Shopで利用できる物流オプションは変わることがあるため、最新は公式ヘルプでご確認ください。</p>
+
+  <h2 id="s7"><span class="no en">07</span>キーワード入札の運用力はそのまま効かず、渡す変数が変わる</h2>
+  <p>Amazon広告の主力であるスポンサープロダクトは、クリック課金（CPC）です。公式にも「スポンサープロダクト広告、スポンサーブランド広告、およびスポンサーディスプレイ広告は基本クリック課金制（CPC）です」と明記されており、広告主は上限クリック単価を入札してオークションで掲載が決まります。月額料や前払い料金はなく、1日の予算を自分で設定します。利用できるのは大口出品者などで、<strong>小口出品プラン（100円／商品・税抜）では広告が打てません</strong>。</p>
+  <p>ここで身につくのは、検索キーワードごとに需要を見積もり、上限単価を刻み、除外キーワードを積み上げていく技能です。<strong>この技能はAmazonの構造と一体で、TikTok Shopにそのままの形では持ち込めません。</strong></p>
+  <p>TikTok Shopの広告は、2025年7月より日本展開されたGMV Maxが、2025年7月以降のTikTok Shop広告の唯一のキャンペーンタイプとされています。ショート動画向けのProduct GMV Maxとライブ向けのLIVE GMV Maxの2種類があり、<strong>設定するのはROI目標と日予算</strong>です。キーワードを選ぶ、上限単価を刻む、除外を積む、という工程がありません。詳細は<a href="https://leam.co.jp/column/gmvmax/">GMV Maxの完全ガイド</a>で解説しています。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="クリック課金で先に費用が出る流れと、売れてから成果報酬が出る流れを時間軸で比較したキャッシュフロー図">
+      <text x="24" y="26" font-size="12.5" font-weight="800" fill="#0B0C10">Amazon スポンサープロダクト（CPC）：クリックのたびに先に出ていく</text>
+      <line x1="40" y1="96" x2="690" y2="96" stroke="#C9CBD4" stroke-width="1.5"/>
+      <g fill="#B01D36">
+        <rect x="80" y="96" width="14" height="28" rx="2"/><rect x="128" y="96" width="14" height="34" rx="2"/>
+        <rect x="176" y="96" width="14" height="26" rx="2"/><rect x="224" y="96" width="14" height="32" rx="2"/>
+        <rect x="272" y="96" width="14" height="30" rx="2"/><rect x="320" y="96" width="14" height="28" rx="2"/>
+        <rect x="368" y="96" width="14" height="34" rx="2"/><rect x="416" y="96" width="14" height="26" rx="2"/>
+      </g>
+      <text x="60" y="150" font-size="10.5" fill="#B01D36">クリックのたびに支出（売れなくても発生）</text>
+      <rect x="470" y="58" width="60" height="38" rx="3" fill="#0A6E68"/>
+      <rect x="596" y="46" width="60" height="50" rx="3" fill="#0A6E68"/>
+      <text x="470" y="42" font-size="10.5" font-weight="700" fill="#0A6E68">売上（一部のクリックだけが購入になる）</text>
+      <text x="700" y="112" text-anchor="end" font-size="10" fill="#646C7A">時間 →</text>
+      <line x1="24" y1="176" x2="696" y2="176" stroke="#E3E6EA" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="24" y="204" font-size="12.5" font-weight="800" fill="#0B0C10">TikTok Shop アフィリエイト：売れてから報酬が出る</text>
+      <line x1="40" y1="272" x2="690" y2="272" stroke="#C9CBD4" stroke-width="1.5"/>
+      <rect x="150" y="234" width="60" height="38" rx="3" fill="#0A6E68"/>
+      <rect x="300" y="222" width="60" height="50" rx="3" fill="#0A6E68"/>
+      <rect x="470" y="216" width="60" height="56" rx="3" fill="#0A6E68"/>
+      <rect x="600" y="228" width="60" height="44" rx="3" fill="#0A6E68"/>
+      <rect x="150" y="272" width="60" height="12" rx="2" fill="#B01D36"/>
+      <rect x="300" y="272" width="60" height="15" rx="2" fill="#B01D36"/>
+      <rect x="470" y="272" width="60" height="17" rx="2" fill="#B01D36"/>
+      <rect x="600" y="272" width="60" height="13" rx="2" fill="#B01D36"/>
+      <text x="60" y="248" font-size="10.5" fill="#0A6E68">売上</text>
+      <text x="60" y="298" font-size="10.5" fill="#B01D36">成果報酬</text>
+      <text x="700" y="288" text-anchor="end" font-size="10" fill="#646C7A">時間 →</text>
+      <rect x="150" y="300" width="516" height="24" rx="6" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="408" y="316" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8A5A00">GMV Maxを併用する場合は日予算の分が先に出るので、資金繰りは2本立てで見る</text>
+    </svg>
+    <figcaption>図6：支出が発生する順番の違い。運転資金の必要量が変わる（LEAM作成）</figcaption>
+  </figure>
+  <p>キャッシュフローの向きも違います。CPC広告は<strong>売れなくてもクリックされた分だけ費用が出ていく実質的な前払いの集客費</strong>ですが、アフィリエイトは売れてからクリエイターに成果報酬を払う後払いです。Amazonで広告費を月次固定のように扱ってきた事業者は、この違いを資金繰り表に反映しておくと、初月の見え方でつまずきません。コミッション率の決め方は<a href="https://leam.co.jp/column/creator-commission/">コミッション相場と決め方</a>にまとめています。</p>
+  <p>では、Amazonで培った広告の技能は無駄になるのか。当社の運用実感では、<strong>「損益ラインを数字で持っている」という習慣だけはそのまま使えます。</strong>限界CPAを即答できる事業者は、GMV MaxのROI目標を根拠を持って置けます。キーワードの勘は持ち込めませんが、採算の勘は持ち込めます。</p>
+  <div class="ctabox">
+    <div class="ct">最初の1商品と、起用するクリエイターの方向性だけ相談できます</div>
+    <p>LEAMは市場データを毎営業日蓄積し、「どの商品を・どのクリエイターに・いくらの設計で」を一次データから組み立てます。Amazonの販売実績があれば、絞り込みはさらに早くなります。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>手数料は率だけでなく課金ベースと固定費で組み直す</h2>
+  <p>手残り計算をやり直すとき、率だけを見比べるとほぼ確実にずれます。<strong>課金ベース・税表示の建て付け・固定費の3つを揃えてから比べる</strong>必要があります。</p>
+  <h3>課金ベースは「購入者が払った合計金額」で、送料を別建てにしても逃げられない</h3>
+  <p>Amazonの販売手数料は、公式の表現では「売上の合計（商品の価格、配送料、ギフト包装料を含む購入者によって支払われた合計金額）に基づいて算出された、適用される販売手数料率または商品ごとの最低販売手数料のいずれか多い方が差し引かれます」とされています。<strong>商品代金だけでなく、購入者が支払った配送料やギフト包装料も手数料の対象</strong>です。最低販売手数料は30円（税抜）／税込33円で、メディア（本・DVD・ミュージック・PCソフト・ビデオ）以外のほぼ全カテゴリーに設定されています。</p>
+  <p>ここから実務的な結論が出ます。売り場をまたいで比べるときは、<strong>送料を別建てにした価格ではなく、購入者の支払総額を揃えて比べる</strong>ということです。以下の比較も、支払総額ベースで並べています。</p>
+  <h3>カテゴリー別の率を並べると、差が大きい商材と小さい商材に分かれる</h3>
+  <p>Amazon側は750円以下の部分が5%になる低単価優遇の刻みが多くのカテゴリーにあるため、下表は750円を超える価格帯の率で揃えました。</p>
+  <div class="tw"><table>
+    <thead><tr><th>商材</th><th>Amazonの区分と率（750円超・税抜表示）</th><th>TikTok Shopの区分と率</th><th class="num">差</th></tr></thead>
+    <tbody>
+      <tr><td>キッチン用品</td><td>ホーム&amp;キッチン 15.4%</td><td>キッチン用品 9%</td><td class="num">−6.4pt</td></tr>
+      <tr><td>本・雑誌</td><td>メディア 15.4%（一律・最低手数料なし）</td><td>本・雑誌・オーディオ 9%</td><td class="num">−6.4pt</td></tr>
+      <tr><td>ペット用品（1,500円超）</td><td>ペット用品 15.4%</td><td>ペット用品 12%</td><td class="num">−3.4pt</td></tr>
+      <tr><td>生活家電</td><td>大型家電（生活家電）10.4%</td><td>家電 7%</td><td class="num">−3.4pt</td></tr>
+      <tr><td>食品・飲料（1,500円超）</td><td>食品&amp;飲料 10.4%</td><td>食品・ドリンク 7%</td><td class="num">−3.4pt</td></tr>
+      <tr><td>シューズ（7,500円以下）</td><td>シューズ&amp;バッグ 12.4%</td><td>シューズ 10%</td><td class="num">−2.4pt</td></tr>
+      <tr><td>PC周辺機器</td><td>パソコン・周辺機器 8.4%</td><td>パソコン・オフィス用品 7%</td><td class="num">−1.4pt</td></tr>
+      <tr><td>美容・スキンケア（1,500円超）</td><td>ビューティー 10.4%</td><td>美容・パーソナルケア 10%</td><td class="num">−0.4pt</td></tr>
+      <tr><td>スポーツ・アウトドア</td><td>スポーツ&amp;アウトドア 10.4%</td><td>スポーツ・アウトドア 10%</td><td class="num">−0.4pt</td></tr>
+      <tr><td>おもちゃ・ホビー</td><td>おもちゃ&amp;ホビー 10.4%</td><td>おもちゃ・ホビー 10%</td><td class="num">−0.4pt</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 上表を自社の損益に入れる前に</div>
+    <p>Amazon側の率は公式の料金ページ（2026年8月30日時点）の表示で、注記により<strong>すべて税抜表示</strong>です。実際に差し引かれる額は表示率に税が上乗せされます。TikTok Shop側の料率（2026年5月11日改定の7%／9%／10%／12%）については、税抜・税込のどちらの建て付けか、また課金ベースに送料が含まれるかを本記事では確認していません。<strong>手残り計算に入れる前に、必ず公式でご確認ください。</strong>また、服&amp;ファッション小物の段階設定は公式マーケティングサイトの表記から読み取ると不自然な箇所があるため、アパレルで試算する場合はセラーセントラルの正式な手数料表で再確認が必要です。</p>
+  </div>
+  <h3>価格帯で率が入れ替わる：ペット用品は1,500円が境目になる</h3>
+  <p>率の階段構造があるため、<strong>同じ商材でも価格帯によって有利な売り場が入れ替わります</strong>。ペット用品を例に取ると、Amazonは750円超〜1,500円が8.4%、1,500円超が15.4%です。TikTok Shopのペット用品は12%です。表示率のまま並べると、1,500円を境に上下が入れ替わります。</p>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="ペット用品の販売価格と販売手数料率の関係を、Amazonの階段状の料率とTikTok Shopの一定料率で重ねた折れ線グラフ">
+      <text x="24" y="24" font-size="12.5" font-weight="800" fill="#0B0C10">ペット用品：販売価格と手数料率（表示率ベース）</text>
+      <line x1="70" y1="40" x2="70" y2="260" stroke="#C9CBD4" stroke-width="1.5"/>
+      <line x1="70" y1="260" x2="660" y2="260" stroke="#C9CBD4" stroke-width="1.5"/>
+      <g stroke="#E3E6EA" stroke-width="1">
+        <line x1="70" y1="72" x2="660" y2="72"/><line x1="70" y1="113" x2="660" y2="113"/>
+        <line x1="70" y1="157" x2="660" y2="157"/><line x1="70" y1="199" x2="660" y2="199"/>
+      </g>
+      <g font-size="10" fill="#646C7A" text-anchor="end">
+        <text x="62" y="76">15.4%</text><text x="62" y="117">12%</text>
+        <text x="62" y="161">8.4%</text><text x="62" y="203">5%</text>
+      </g>
+      <g font-size="10" fill="#646C7A" text-anchor="middle">
+        <text x="70" y="278">0円</text><text x="217" y="278">750円</text>
+        <text x="365" y="278">1,500円</text><text x="660" y="278">3,000円</text>
+      </g>
+      <line x1="365" y1="52" x2="365" y2="260" stroke="#8A5A00" stroke-width="1.5" stroke-dasharray="5 4"/>
+      <polyline points="70,199 217,199 217,157 365,157 365,72 660,72" fill="none" stroke="#B01D36" stroke-width="3"/>
+      <line x1="70" y1="113" x2="660" y2="113" stroke="#0A6E68" stroke-width="3"/>
+      <text x="120" y="192" font-size="10.5" font-weight="700" fill="#B01D36">5%</text>
+      <text x="280" y="150" font-size="10.5" font-weight="700" fill="#B01D36">8.4%</text>
+      <text x="520" y="64" font-size="11" font-weight="800" fill="#B01D36">Amazon 15.4%（1,500円超）</text>
+      <text x="520" y="106" font-size="11" font-weight="800" fill="#0A6E68">TikTok Shop 12%（一定）</text>
+      <rect x="230" y="292" width="270" height="22" rx="6" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="365" y="307" text-anchor="middle" font-size="10.5" font-weight="700" fill="#8A5A00">1,500円を境に、率の上下が入れ替わる</text>
+      <text x="365" y="44" text-anchor="middle" font-size="10" fill="#8A5A00">境目 1,500円</text>
+    </svg>
+    <figcaption>図7：料率の階段と定率の交差。単価帯によって有利な売り場が反転する（LEAM作成）</figcaption>
+  </figure>
+  <p>低単価品を数多く扱ってきた事業者ほど、この構造は無視できません。<strong>1,500円未満の商材は率だけで見ればAmazonが有利で、それ以上ではTikTok Shop側の率が下回ります。</strong>ただし率は判断材料の一部で、固定費と物流費を足して初めて手残りが決まります。単価の組み替えについては<a href="https://leam.co.jp/column/pricing-strategy/">価格設定戦略</a>、カテゴリー選びは<a href="https://leam.co.jp/column/best-categories/">売れているカテゴリー</a>を参照してください。</p>
+  <h3>固定費の構造：先に払うか、売れた分だけ払うか</h3>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>Amazon（大口出品）</th><th>Amazon（小口出品）</th><th>TikTok Shop</th></tr></thead>
+    <tbody>
+      <tr><td>初期費用</td><td>料金ページに記載なし</td><td>料金ページに記載なし</td><td class="y">なし</td></tr>
+      <tr><td>月額固定費</td><td class="num">4,900円（税抜）／税込5,390円</td><td class="num">なし</td><td class="num">なし</td></tr>
+      <tr><td>売れた1点あたりの固定額</td><td>─</td><td class="num">100円（税抜）／税込110円</td><td>─</td></tr>
+      <tr><td>最低販売手数料</td><td class="num">30円（税抜）／税込33円</td><td class="num">30円（税抜）／税込33円</td><td>本記事では未確認</td></tr>
+      <tr><td>広告の利用</td><td class="y">利用可（CPC）</td><td class="n">利用不可</td><td class="y">GMV Max（ROI目標＋日予算）</td></tr>
+      <tr><td>開設までの目安</td><td>─</td><td>─</td><td>審査 通常1〜5営業日</td></tr>
+      <tr><td>持てる店舗数</td><td>─</td><td>─</td><td>個人1店／法人 最大5店</td></tr>
+      <tr><td>税表示の建て付け</td><td colspan="2">プラン料・販売手数料は税抜／FBA手数料は税込</td><td>本記事では未確認</td></tr>
+    </tbody>
+  </table></div>
+  <p>Amazonの大口出品は、月額4,900円（税抜）を先に払ったうえで販売手数料がかかる固定費型です。しかも広告・一括出品・API・独自配送料設定・複数ユーザーはすべて大口限定で、小口では出品はできても集客手段が手に入りません。TikTok Shopは初期費用も月額固定費もなく販売手数料のみとされているため、<strong>売れない月のコスト構造がまったく違います</strong>。手数料の全体像は<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料</a>で整理しています。</p>
+
+  <h2 id="s9"><span class="no en">09</span>明日からの順番：最初の2週間で片づける5つ</h2>
+  <p>ここまでの内容を、着手順に置き換えます。Amazonの運用を止めずに並行で進める前提で、最初の2週間の割り当てです。</p>
+  <ol class="steps">
+    <li><b>1〜2日目：手残り表の行を差し替える</b><p>いま使っているAmazonの原価表をコピーし、販売手数料の行を§08の率に、FBA手数料の行を自社出荷の実費（送料・梱包資材・人件費）に差し替えます。この時点で、TikTok Shopに出す価値がある商材とない商材が分かれます。判断は率だけでなく、月額4,900円（税抜）が無くなる分と、1,500円という境目の両方で見てください。</p></li>
+    <li><b>3〜5日目：出す1商品を決めて、動画で見せられるかを確認する</b><p>売上順ではなく「30秒の動画で違いが伝わるか」で選びます。性能の数値や対応機種の広さといったスペック表で優位を説明してきた商品は、30秒の動画では違いが伝わりにくく、TikTok Shopでは苦戦しやすいというのが当社の運用実感です。決めたら、その商品の在庫をAmazonのFBA在庫とは別に確保します。</p></li>
+    <li><b>6日目：出店申請を出す</b><p>審査は通常1〜5営業日とされています。ここは待ち時間なので、書類を揃えたら先に出して、審査中に次の工程を進めます。必要書類とつまずきやすい点は<a href="https://leam.co.jp/column/tiktok-shop-shinsa/">出店審査の解説</a>にまとめています。</p></li>
+    <li><b>審査中：商品ページと出荷体制を並行で作る</b><p>ページは§03のとおり、動画で見せるカットを1枚目にして、確認事項を3つに絞ります。同時に「誰が何時までに梱包して、当日発送の締めを何時にするか」を決めます。ここを決めずに販売を開始すると、最初の注文で必ず詰まります。管理画面の触り方は<a href="https://leam.co.jp/column/seller-center-guide/">セラーセンターの使い方</a>を参照してください。</p></li>
+    <li><b>2週目：クリエイターへの声かけを始める</b><p>審査が通ったら、レビューがゼロの期間を埋める作業に入ります。サンプル提供とコミッション設計を用意して、まず数名に打診します。ここで動画が出始めると、ようやく§07の広告が機能する前提が整います。広告は最後です。</p></li>
+  </ol>
+  <p>この順番の狙いは1つで、<strong>Amazonで身についた「ページを整えてから広告を回す」順番を、意図的に崩すこと</strong>にあります。TikTok Shopでは動画とクリエイターが先で、ページと広告は後です。順番を守れば、Amazonの資産を持っている事業者は、新規参入組よりかなり有利な位置から始められます。</p>
+  <p>もし2週間で全部は無理だという場合、削る順番も決まっています。<strong>削っていいのは商品ページの作り込みと広告で、削ってはいけないのは出荷体制とクリエイターへの声かけです。</strong>ライブまで含めた展開は、動画で当たりが出てからで間に合います（<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマースの始め方</a>）。</p>
+
+  <h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>AmazonとTikTok Shopで販売価格を変えてもいいですか？</summary><div class="a">価格を揃えるか変えるかは事業者の判断ですが、手数料と物流費の構造が違うため、同じ価格にすると手残りが揃いません。Amazonは購入者が払った配送料やギフト包装料も販売手数料の対象になるため、比較するときは送料込みの支払総額で揃えて計算してください。なお、購入者から見て同一商品の価格差が説明できる状態にしておくと、問い合わせ対応が楽になります。</div></details>
+    <details><summary>Amazonの商品画像や説明文をそのままTikTok Shopに転用していいですか？</summary><div class="a">自社で権利を持っている素材であれば転用自体は可能ですが、実務的にはおすすめしません。白背景でスペックを訴求する画像は、動画を見て来た人には「動画で見た商品と同じもの」だと認識されにくいためです。動画に映っているカットを1枚目に据え、説明文は動画のセリフから起こし直すほうが結果につながりやすくなります。撮影者やモデルとの契約で使用範囲が限定されている素材は、範囲を確認してから使ってください。</div></details>
+    <details><summary>TikTok Shopの出店審査にはどのくらいかかりますか？</summary><div class="a">通常1〜5営業日とされています。Amazonの出品開始と比べると待ち時間が発生するため、書類が揃った時点で先に申請を出し、審査中に商品ページの準備と出荷体制の整備を並行して進めるのが効率的です。</div></details>
+    <details><summary>ブランドを複数持っている場合、TikTok Shopのショップは分けられますか？</summary><div class="a">分けられます。個人セラーは1店、法人は最大5店まで持てるとされています。Amazonのように1つのストアフロントへ集約する必要はないため、ターゲットが大きく異なるブランドは、ショップ自体を分けて世界観を作る選択肢があります。ただし店舗を分けると運用工数も分かれるため、動画とクリエイターを供給し続けられる範囲で判断してください。</div></details>
+    <details><summary>TikTok Shopで買ってくれた人を、自社のメルマガやLINEに誘導してもいいですか？</summary><div class="a">できません。TikTok Shopでは外部サイトやLINE等への誘導が規約違反にあたります。Amazonでも同梱物での外部誘導には制限があるため感覚は近いのですが、TikTok Shop側の運用ではより明確に禁止されていると考えてください。リピートを作りたい場合は、ショップのフォローと動画の継続投稿で接点を維持する形になります。</div></details>
+    <details><summary>Amazonで売れている商品が、そのままTikTok Shopでも売れますか？</summary><div class="a">売れるとは限りません。Amazonで売れている商品は「すでに検索されている＝需要が顕在化している」商品で、TikTok Shopで伸びるのは「動画で見せると欲しくなる」商品だからです。判断基準としては、30秒の動画で使用前後の違いや意外性が伝わるかを見てください。スペック表の優位で選ばれてきた商品は、動画にすると差が見えにくく、苦戦しやすい傾向があります。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">比較</span><b><a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略</a></b><span>どの売り場から始めるか迷っている方へ</span></div>
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？</a></b><span>カテゴリ別の率と手残りの計算</span></div>
+      <div class="relcard"><span class="rc">出店</span><b><a href="https://leam.co.jp/column/tiktok-shop-shinsa/">TikTok Shopの出店審査</a></b><span>必要書類と落ちる理由</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>Amazonでの販売実績を拝見して、TikTok Shopで最初に出すべき1商品と、その商品に合うクリエイターの方向性からお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：Amazon出品サービス 料金プラン（sell.amazon.co.jp/pricing／sell.amazon.co.jp/en/pricing・2026年8月30日時点の表示）、Amazon出品サービス「広告」（sell.amazon.co.jp/grow/advertising）、Amazon Ads「スポンサープロダクト」（advertising.amazon.com/ja-jp）、Amazon出品サービス「商品を出品する」「はじめてガイド」（sell.amazon.co.jp/learn/）／TikTok Shop セラーセンターの公式ヘルプ（seller-jp.tiktok.com/university/）、TikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過」（2026年2月3日）。手数料・仕様・画面は改定されることがあります。本記事のAmazonの料率は公式マーケティングサイトの料金ページからの読み取りであり、正式なカテゴリー別手数料表はセラーセントラルでご確認ください。TikTok Shop側の料率の税基準・課金ベースは本記事では未確認です。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">持ち込めるもの／置いていくもの</a></li>
+        <li><a href="#s2">相乗りとカート獲得が無くなる</a></li>
+        <li><a href="#s3">商品ページの作法が逆になる</a></li>
+        <li><a href="#s4">レビューは持ち込めない</a></li>
+        <li><a href="#s5">JANの役割が変わる</a></li>
+        <li><a href="#s6">FBAと自社出荷の組み直し</a></li>
+        <li><a href="#s7">キーワード入札は効かない</a></li>
+        <li><a href="#s8">手数料と固定費の実数比較</a></li>
+        <li><a href="#s9">最初の2週間でやる5つ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>Amazonの実績から逆算します</b>
+      <p>売れている商品のデータがあれば、最初の1商品はすぐ絞り込めます。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Amazonセラーが TikTok Shop を始める意味｜何が変わり、何が使えるか",
+      "description": "Amazonで売っている方向けに、TikTok Shopで何が変わるかを整理。相乗りとカート獲得、商品ページの作法、レビュー、JAN、FBAの扱いを実数で比べます。",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/amazon-seller-tiktok-shop/"},
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
+        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
+        {"@type": "ListItem", "position": 3, "name": "Amazonセラーが TikTok Shop を始める意味", "item": "https://leam.co.jp/column/amazon-seller-tiktok-shop/"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "AmazonとTikTok Shopで販売価格を変えてもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "価格を揃えるか変えるかは事業者の判断ですが、手数料と物流費の構造が違うため、同じ価格にすると手残りが揃いません。Amazonは購入者が払った配送料やギフト包装料も販売手数料の対象になるため、比較するときは送料込みの支払総額で揃えて計算してください。なお、購入者から見て同一商品の価格差が説明できる状態にしておくと、問い合わせ対応が楽になります。"}},
+        {"@type": "Question", "name": "Amazonの商品画像や説明文をそのままTikTok Shopに転用していいですか？", "acceptedAnswer": {"@type": "Answer", "text": "自社で権利を持っている素材であれば転用自体は可能ですが、実務的にはおすすめしません。白背景でスペックを訴求する画像は、動画を見て来た人には「動画で見た商品と同じもの」だと認識されにくいためです。動画に映っているカットを1枚目に据え、説明文は動画のセリフから起こし直すほうが結果につながりやすくなります。撮影者やモデルとの契約で使用範囲が限定されている素材は、範囲を確認してから使ってください。"}},
+        {"@type": "Question", "name": "TikTok Shopの出店審査にはどのくらいかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "通常1〜5営業日とされています。Amazonの出品開始と比べると待ち時間が発生するため、書類が揃った時点で先に申請を出し、審査中に商品ページの準備と出荷体制の整備を並行して進めるのが効率的です。"}},
+        {"@type": "Question", "name": "ブランドを複数持っている場合、TikTok Shopのショップは分けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "分けられます。個人セラーは1店、法人は最大5店まで持てるとされています。Amazonのように1つのストアフロントへ集約する必要はないため、ターゲットが大きく異なるブランドは、ショップ自体を分けて世界観を作る選択肢があります。ただし店舗を分けると運用工数も分かれるため、動画とクリエイターを供給し続けられる範囲で判断してください。"}},
+        {"@type": "Question", "name": "TikTok Shopで買ってくれた人を、自社のメルマガやLINEに誘導してもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "できません。TikTok Shopでは外部サイトやLINE等への誘導が規約違反にあたります。Amazonでも同梱物での外部誘導には制限があるため感覚は近いのですが、TikTok Shop側の運用ではより明確に禁止されていると考えてください。リピートを作りたい場合は、ショップのフォローと動画の継続投稿で接点を維持する形になります。"}},
+        {"@type": "Question", "name": "Amazonで売れている商品が、そのままTikTok Shopでも売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "売れるとは限りません。Amazonで売れている商品は「すでに検索されている＝需要が顕在化している」商品で、TikTok Shopで伸びるのは「動画で見せると欲しくなる」商品だからです。判断基準としては、30秒の動画で使用前後の違いや意外性が伝わるかを見てください。スペック表の優位で選ばれてきた商品は、動画にすると差が見えにくく、苦戦しやすい傾向があります。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

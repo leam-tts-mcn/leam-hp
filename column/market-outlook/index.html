@@ -1,0 +1,682 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか</title>
+<meta name="description" content="TikTok Shopの市場規模と今後の見通しを、公表されている一次情報にもとづいて整理します。日本市場がどこまで伸びるかを考えます。">
+<link rel="canonical" href="https://leam.co.jp/column/market-outlook/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか">
+<meta property="og:description" content="TikTok Shopの市場規模と今後の見通しを、公表されている一次情報にもとづいて整理します。日本市場がどこまで伸びるかを考えます。">
+<meta property="og:url" content="https://leam.co.jp/column/market-outlook/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか">
+<meta name="twitter:description" content="TikTok Shopの市場規模と今後の見通しを、公表されている一次情報にもとづいて整理します。日本市場がどこまで伸びるかを考えます。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+  a.relcard{text-decoration:none;color:inherit}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか", "description": "TikTok Shopの市場規模と今後の見通しを、公表されている一次情報にもとづいて整理します。日本市場がどこまで伸びるかを考えます。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/market-outlook/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか", "item": "https://leam.co.jp/column/market-outlook/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの市場規模と今後</p>
+  <span class="cat">市場動向</span>
+  <h1>TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="市場が右上へ伸びていく面グラフと、年ごとの目盛り・到達点を示す点、そしてその先を見る望遠鏡を描いたイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v320c-104 30-196 36-292 20-112-19-198-54-304-52-102 2-182 38-284 52-92 13-188 6-320-30z" fill="#F6F7F9"/>
+  <ellipse cx="560" cy="270" rx="350" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="48" cy="56" r="5"/><circle cx="84" cy="56" r="5"/><circle cx="120" cy="56" r="5"/>
+      <circle cx="48" cy="92" r="5"/><circle cx="84" cy="92" r="5"/><circle cx="120" cy="92" r="5"/>
+      <circle cx="48" cy="128" r="5"/><circle cx="84" cy="128" r="5"/><circle cx="120" cy="128" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(880 490)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 520c150-28 280-14 420 10 140 24 250 28 372 10 120-18 232-40 408-24v122H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：望遠鏡（見通す＝副役） ================= -->
+  <g>
+    <!-- 影 -->
+    <ellipse cx="1000" cy="524" rx="112" ry="18" fill="#5E6064" opacity=".14"/>
+
+    <!-- 三脚 -->
+    <g stroke="#0B0C10" stroke-linecap="round" fill="none">
+      <path d="M1000 372L1004 508" stroke-width="13"/>
+      <path d="M1000 372L932 516" stroke-width="13"/>
+      <path d="M1000 372L1068 516" stroke-width="13"/>
+      <path d="M962 448h76" stroke-width="10"/>
+    </g>
+
+    <!-- 鏡筒 -->
+    <g transform="translate(1000 358) rotate(-32)">
+      <path d="M-92 -22h46v44h-46a12 12 0 0 1-12-12v-20a12 12 0 0 1 12-12z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M-56 -30L150 -42v84L-56 30z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M18 -37v74" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+      <path d="M62 -39v78" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+      <ellipse cx="150" cy="0" rx="13" ry="42" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    </g>
+
+    <!-- 雲台 -->
+    <circle cx="1000" cy="372" r="18" fill="#0B0C10"/>
+  </g>
+
+  <!-- ================= 左〜中央：面グラフ（主役・赤） ================= -->
+  <!-- 目盛りの罫（面の背面） -->
+  <g stroke="#C9CBD0" stroke-width="4" stroke-linecap="round">
+    <path d="M140 190h740"/>
+    <path d="M140 262h740"/>
+    <path d="M140 334h740"/>
+    <path d="M140 406h740"/>
+  </g>
+
+  <!-- 影（本体を複製してずらす／地面より下には出さない） -->
+  <path d="M152 504V462c120-8 180-38 256-72 74-34 114-74 170-122 80-68 174-86 284-130V504z" fill="#5E6064" opacity=".14"/>
+
+  <!-- 下の帯＝既存の市場（赤の陰） -->
+  <path d="M140 504V480C280 474 400 465 540 450 660 437 760 424 850 410v94z" fill="#CE1730"/>
+
+  <!-- 上の帯＝伸びしろ（赤） -->
+  <path d="M140 452C260 444 320 414 396 380 470 346 510 306 566 258 646 190 740 172 850 128v282C760 424 660 437 540 450 400 465 280 474 140 480z" fill="#FE2C55"/>
+
+  <!-- 輪郭 -->
+  <path d="M140 452C260 444 320 414 396 380 470 346 510 306 566 258 646 190 740 172 850 128" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M140 480C280 474 400 465 540 450 660 437 760 424 850 410" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round"/>
+  <path d="M850 128v376" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- 軸 -->
+  <g stroke="#0B0C10" stroke-width="8" stroke-linecap="round" fill="none">
+    <path d="M140 140v364"/>
+    <path d="M140 504h740"/>
+  </g>
+
+  <!-- ================= シアン：年の目盛り ================= -->
+  <g fill="#25F4EE">
+    <rect x="134" y="512" width="12" height="26" rx="6"/>
+    <rect x="311" y="512" width="12" height="26" rx="6"/>
+    <rect x="488" y="512" width="12" height="26" rx="6"/>
+    <rect x="665" y="512" width="12" height="26" rx="6"/>
+    <rect x="842" y="512" width="12" height="26" rx="6"/>
+  </g>
+
+  <!-- ================= シアン：途中の実績点 ================= -->
+  <circle cx="396" cy="380" r="13" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+  <circle cx="566" cy="258" r="13" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+
+  <!-- ================= シアン：到達点 ================= -->
+  <g>
+    <circle cx="850" cy="128" r="32" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <circle cx="850" cy="128" r="32" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8"/>
+    <circle cx="850" cy="128" r="17" fill="#25F4EE"/>
+    <path d="M875 85A50 50 0 0 1 897 145" fill="none" stroke="#25F4EE" stroke-width="8" stroke-linecap="round"/>
+    <path d="M885 67A70 70 0 0 1 916 152" fill="none" stroke="#25F4EE" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1118" cy="118" r="18" fill="#25F4EE"/>
+  <circle cx="700" cy="96" r="14" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの世界の流通総額（GMV）は2024年に約332億ドルへとほぼ倍増し（Momentum Works推計）、日本でも2025年6月30日の提供開始から半年で「流通総額の約70%がコンテンツ起点」という公式データが出ています。</strong>一方で、日本市場の規模を金額で示す公式データはまだ存在せず、根拠の曖昧な数字が独り歩きしやすいテーマでもあります。この記事では、<strong>TikTok公式発表・公的統計・大手調査会社の公開データだけ</strong>を出典つきで整理し、日本市場がどこまで伸びるのか、そして「市場が伸びる中で自社はどう動くべきか」を実務の目線で解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>日本と世界のTikTok Shop市場規模について「出典つきで言える数字」と「まだ言えない数字」</li>
+      <li>中国・東南アジア・米国の先行事例から読む、日本市場の成長シナリオ</li>
+      <li>市場の伸びに乗るための参入判断を、損益とクリエイター起用から組み立てる手順</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">「自社はTikTok Shopに向いているか」を無料で診断します</div>
+    <p>LEAMは市場データを毎営業日蓄積し、商材ごとの向き・不向きを一次データから判断しています。参入すべきか迷っている段階のご相談も歓迎です。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">日本は開始1年強で「売れる土台」が整った：公式数値で現在地を掴む</a></li>
+      <li><a href="#s2">世界の市場規模は2024年に約332億ドルへほぼ倍増：米国と東南アジアが牽引</a></li>
+      <li><a href="#s3">先行市場に共通する成長の型は「コンテンツ起点」：原型は中国Douyin</a></li>
+      <li><a href="#s4">日本の伸びしろはEC化率9.78%の先にある：26.1兆円市場から逆算する</a></li>
+      <li><a href="#s5">市場が伸びても自社が儲かるとは限らない：参入判断は損益から逆算する</a></li>
+      <li><a href="#s6">成長の中心はクリエイター経由：「誰が売るか」が市場の伸びを決める</a></li>
+      <li><a href="#s7">今後を金額で断定できる公開データはまだ無い：追うべきは3つの指標</a></li>
+      <li><a href="#s8">実務の結論は「様子見」より「小さく検証」：立場別の動き方</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>日本は開始1年強で「売れる土台」が整った：公式数値で現在地を掴む</h2>
+  <p>TikTok Shopの日本での提供開始は<strong>2025年6月30日</strong>です。まだ1年強の若い市場ですが、TikTokが2026年2月に公表した提供開始から半年間（2025年6月30日〜12月末）のデータは、単なる「話題先行」ではなく購買の場として機能し始めていることを示しています。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="日本のTikTok Shopの半年間の公式数値：コンテンツ起点の流通総額約70%、登録セラー約5万店、クリエイター約20万人、商品購入利用者数20倍以上">
+      <rect x="30" y="24" width="660" height="34" rx="17" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <circle cx="70" cy="41" r="6" fill="#E8324A"/>
+      <text x="86" y="47" font-size="12.5" font-weight="700" fill="#454956">2025年6月30日 提供開始</text>
+      <line x1="290" y1="41" x2="480" y2="41" stroke="#AEB2BE" stroke-width="2" stroke-dasharray="4 4"/>
+      <circle cx="500" cy="41" r="6" fill="#17181C"/>
+      <text x="516" y="47" font-size="12.5" font-weight="700" fill="#454956">2025年12月末（公式集計）</text>
+      <rect x="30" y="82" width="315" height="92" rx="12" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="187" y="122" text-anchor="middle" font-size="30" font-weight="900" fill="#C2203A">約70%</text>
+      <text x="187" y="150" text-anchor="middle" font-size="12" fill="#454956">流通総額のうち動画・LIVE等の</text>
+      <text x="187" y="167" text-anchor="middle" font-size="12" fill="#454956">コンテンツ起点の購入が占める比率</text>
+      <rect x="375" y="82" width="315" height="92" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="532" y="122" text-anchor="middle" font-size="30" font-weight="900" fill="#17181C">約5万店</text>
+      <text x="532" y="150" text-anchor="middle" font-size="12" fill="#454956">登録セラー企業数</text>
+      <text x="532" y="167" text-anchor="middle" font-size="12" fill="#454956">（提供開始時の約3倍）</text>
+      <rect x="30" y="190" width="315" height="92" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="187" y="230" text-anchor="middle" font-size="30" font-weight="900" fill="#17181C">約20万人</text>
+      <text x="187" y="258" text-anchor="middle" font-size="12" fill="#454956">商品を紹介する</text>
+      <text x="187" y="275" text-anchor="middle" font-size="12" fill="#454956">TikTok Shopクリエイター数</text>
+      <rect x="375" y="190" width="315" height="92" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="532" y="230" text-anchor="middle" font-size="30" font-weight="900" fill="#17181C">20倍超</text>
+      <text x="532" y="258" text-anchor="middle" font-size="12" fill="#454956">商品購入利用者数の伸び</text>
+      <text x="532" y="275" text-anchor="middle" font-size="12" fill="#454956">（提供開始時との比較）</text>
+    </svg>
+    <figcaption>図1：日本ローンチ半年間の公式数値。出典：TikTok Newsroom（2026年2月3日発表）（LEAM作成）</figcaption>
+  </figure>
+  <p>公式発表で確認できる主な数値を整理します。</p>
+  <div class="tw"><table>
+    <thead><tr><th>指標</th><th>公表値</th><th>補足</th></tr></thead>
+    <tbody>
+      <tr><td>コンテンツ起点の流通総額比率</td><td class="num">約70%</td><td>動画・LIVE配信等を起点とした購入。2025年6月30日〜12月末</td></tr>
+      <tr><td>登録セラー企業数</td><td class="num">約5万店</td><td>提供開始時の約3倍に増加</td></tr>
+      <tr><td>TikTok Shopクリエイター数</td><td class="num">約20万人</td><td>商品を紹介・販売するクリエイター</td></tr>
+      <tr><td>商品購入利用者数</td><td class="num">20倍以上に増加</td><td>提供開始時との比較</td></tr>
+      <tr><td>購入者の年代構成</td><td>18〜34歳が約半数／35歳以上が約半数</td><td>「若者だけの市場」ではない</td></tr>
+    </tbody>
+  </table></div>
+  <p>注目すべきは2点です。第一に、<strong>流通総額の約70%が動画やLIVE配信などのコンテンツを起点にしている</strong>こと。検索して買う既存ECと構造が根本的に異なり、「発見から購入まで」がコンテンツの中で完結する「ディスカバリーEコマース」が日本でも成立し始めたことを意味します。第二に、<strong>購入者の約半数が35歳以上</strong>であること。「TikTok＝若者向け」という前提で参入を見送っている事業者にとって、この年代構成は判断材料になるはずです。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：日本のGMV「金額」は公表されていません</div>
+    <p>2026年8月時点で、日本国内のTikTok ShopのGMVを金額で示す公式データはありません。ネット上には具体的な金額を断定する記事もありますが、<strong>出典が確認できない数字は参考程度に留める</strong>ことをおすすめします。本記事では出典を確認できた数値のみを扱います。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>世界の市場規模は2024年に約332億ドルへほぼ倍増：米国と東南アジアが牽引</h2>
+  <p>日本の今後を考える前に、世界のTikTok Shopがどの規模にあるかを確認します。調査会社Momentum Worksらの推計によれば、<strong>TikTok Shopのグローバル流通総額（GMV）は2024年に約332億ドルに達し、前年からほぼ倍増</strong>しました。1ドル150円換算で約5兆円規模です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="TikTok ShopのGMV推計の棒グラフ：東南アジアは2022年44億ドルから2023年163億ドルへ約4倍、米国は2024年に90億ドル超、世界全体は2024年に約332億ドル">
+      <text x="30" y="40" font-size="14" font-weight="800" fill="#17181C">TikTok ShopのGMV（調査会社推計・億ドル）</text>
+      <g font-size="12" fill="#454956">
+        <text x="205" y="90" text-anchor="end">東南アジア 2022年</text>
+        <text x="205" y="140" text-anchor="end">東南アジア 2023年</text>
+        <text x="205" y="190" text-anchor="end">米国 2024年</text>
+        <text x="205" y="240" text-anchor="end" font-weight="800">世界全体 2024年</text>
+      </g>
+      <g>
+        <rect x="220" y="72" width="60" height="26" rx="5" fill="#C9CBD4"/>
+        <rect x="220" y="122" width="222" height="26" rx="5" fill="#787D8A"/>
+        <rect x="220" y="172" width="123" height="26" rx="5" fill="#454956"/>
+        <rect x="220" y="222" width="452" height="26" rx="5" fill="#E8324A"/>
+      </g>
+      <g font-size="12.5" font-weight="800" fill="#17181C">
+        <text x="290" y="90">44</text>
+        <text x="452" y="140">163（約4倍に成長）</text>
+        <text x="353" y="190">90超（前年比650%成長）</text>
+      </g>
+      <text x="600" y="240" font-size="14" font-weight="900" fill="#C2203A">約332</text>
+      <text x="30" y="282" font-size="10.5" fill="#787D8A">出典：Momentum Works「Ecommerce in Southeast Asia」／Momentum Works × Tabcut（2025年1月発表）。推計値のため幅を持って見る</text>
+    </svg>
+    <figcaption>図2：世界のTikTok Shop GMV推計。東南アジアの拡大に米国の急成長が加わった（LEAM作成）</figcaption>
+  </figure>
+  <h3>米国：開始から16ヶ月でGMV90億ドル超に到達した</h3>
+  <p>米国のTikTok Shopは2023年9月の本格開始からわずか16ヶ月で、<strong>2024年のGMVが90億ドルを超え、前年比650%成長</strong>を記録しました（Momentum Works発表）。米国はTikTok Shopにとって最大の市場となっており、「先進国・成熟EC市場では通用しないのでは」という参入前の懸念に対する、最も強い反証になっています。</p>
+  <h3>東南アジア：2年で約4倍、既存モールと並ぶ存在になった</h3>
+  <p>先行して立ち上がった東南アジアでは、TikTok ShopのGMVがMomentum Worksの推計で<strong>2022年の44億ドルから2023年には163億ドルへと約4倍</strong>に拡大しました。競合記事ではベトナムの市場規模が金額で語られることもありますが、当社が出典を確認できたのはこの地域全体の推計値です。国別の金額を断定するより、「既存ECモールが強い市場でも、コンテンツ起点のECが数年で主要プレイヤーになった」という構造を掴む方が、日本の今後を読む上では役立ちます。</p>
+  <p>さらにMomentum Worksは、<strong>2026年上半期のグローバルGMVを503億ドル（前年同期比92%増）と公表し、通年で初の1,000億ドル超え</strong>を見込んでいます。世界のTikTok Shopは減速どころか加速局面にあり、日本はその中で立ち上がったばかりの市場という位置づけです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>地域・指標</th><th>数値</th><th>出典</th></tr></thead>
+    <tbody>
+      <tr><td>世界全体GMV（2024年）</td><td class="num">約332億ドル（前年からほぼ倍増）</td><td>Momentum Works × Tabcut（2025年1月）</td></tr>
+      <tr><td>米国GMV（2024年）</td><td class="num">90億ドル超（前年比650%成長）</td><td>Momentum Works（2025年1月）</td></tr>
+      <tr><td>東南アジアGMV（2022→2023年）</td><td class="num">44億ドル → 163億ドル（約4倍）</td><td>Momentum Works「Ecommerce in Southeast Asia」</td></tr>
+      <tr><td>世界GMV（2026年上半期）</td><td class="num">503億ドル（前年同期比92%増）</td><td>Momentum Works（2026年発表）</td></tr>
+      <tr><td>日本：コンテンツ起点比率（2025年下期）</td><td class="num">約70%</td><td>TikTok Newsroom（2026年2月）</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>いずれも調査会社の推計値であり、TikTok自身は国別GMVを公表していません。<strong>絶対額は「規模感を掴む目安」、成長率は「トレンドの向き」として読む</strong>のが、実務で数字を扱う際の正しい距離感です。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>先行市場に共通する成長の型は「コンテンツ起点」：原型は中国Douyin</h2>
+  <p>TikTok Shopの成長を先取りして見せてくれたのが、中国版TikTokである<strong>Douyin（抖音）</strong>です。数値の詳細は公表されていませんが、Douyinでは動画やライブ配信を起点に商品を購入する行動が広く定着し、EC機能が数年で中国EC市場の主要チャネルの一角へ成長したことが各国のメディアで報じられています。</p>
+  <h3>Douyinが示した「探す買い物」から「出会う買い物」への転換</h3>
+  <p>既存ECは「欲しいものを検索して買う」場所でした。Douyinが確立したのは、<strong>「欲しいと思っていなかったものに、コンテンツの中で出会って買う」</strong>という購買行動です。ライブ配信が「番組」として視聴習慣に組み込まれ、信頼するクリエイターの紹介が購入の決め手になる。この型が東南アジアへ、米国へ、そして日本へと輸出されているのがTikTok Shopの正体です。</p>
+  <h3>各市場に共通する4つの成長段階</h3>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="先行市場に共通する4つの成長段階の階段図：ステージ1が提供開始とセラー集積、ステージ2がクリエイター動画の量産、ステージ3がライブコマースの定着、ステージ4が主要ECチャネル化。日本は現在ステージ2にある">
+      <rect x="30" y="216" width="160" height="54" rx="9" fill="#C9CBD4"/>
+      <text x="110" y="239" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">STAGE 1</text>
+      <text x="110" y="257" text-anchor="middle" font-size="11" fill="#454956">提供開始・セラー集積</text>
+      <rect x="200" y="162" width="160" height="108" rx="9" fill="#787D8A"/>
+      <text x="280" y="187" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">STAGE 2</text>
+      <text x="280" y="205" text-anchor="middle" font-size="11" fill="#fff">クリエイター動画の量産</text>
+      <rect x="370" y="108" width="160" height="162" rx="9" fill="#454956"/>
+      <text x="450" y="133" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">STAGE 3</text>
+      <text x="450" y="151" text-anchor="middle" font-size="11" fill="#fff">ライブコマースの定着</text>
+      <rect x="540" y="54" width="160" height="216" rx="9" fill="#E8324A"/>
+      <text x="620" y="79" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">STAGE 4</text>
+      <text x="620" y="97" text-anchor="middle" font-size="11" fill="#fff">主要ECチャネル化</text>
+      <text x="620" y="118" text-anchor="middle" font-size="10" fill="#FDEEF1">（中国Douyin・東南アジア）</text>
+      <path d="M280 128 L280 100" stroke="#C2203A" stroke-width="2"/>
+      <rect x="196" y="60" width="168" height="40" rx="20" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="280" y="85" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">日本はいまここ</text>
+    </svg>
+    <figcaption>図3：先行市場に共通する成長段階。日本はクリエイター動画が積み上がるステージ2（LEAM作成）</figcaption>
+  </figure>
+  <p>先行市場の歩みを整理すると、①出店者と商品が揃う→②クリエイターの紹介動画が量産される→③ライブコマースが視聴習慣として定着する→④主要ECチャネルの一角になる、という順で市場が立ち上がっています。日本は公式数値（クリエイター約20万人・コンテンツ起点70%）から見て、<strong>ステージ2が急速に進行している段階</strong>と読めます。逆に言えば、ライブコマースの定着はこれからの検証領域であり、ここが日本市場の今後を左右する最大の分岐点です。</p>
+
+  <h2 id="s4"><span class="no en">04</span>日本の伸びしろはEC化率9.78%の先にある：26.1兆円市場から逆算する</h2>
+  <p>日本市場の潜在的な大きさは、公的統計から逆算できます。経済産業省「令和6年度電子商取引に関する市場調査」（2025年8月公表）によれば、<strong>2024年の日本のBtoC-EC市場は26.1兆円（前年比5.1%増）、うち物販系は15兆2,194億円（同3.7%増）、物販のEC化率は9.78%</strong>でした。</p>
+  <div class="tw"><table>
+    <thead><tr><th>指標（2024年）</th><th>数値</th><th>前年比</th></tr></thead>
+    <tbody>
+      <tr><td>BtoC-EC市場規模（全体）</td><td class="num">26.1兆円</td><td class="num">+5.1%</td></tr>
+      <tr><td>うち物販系分野</td><td class="num">15兆2,194億円</td><td class="num">+3.7%</td></tr>
+      <tr><td>物販系のEC化率</td><td class="num">9.78%</td><td class="num">上昇傾向が継続</td></tr>
+      <tr><td>食品・飲料・酒類のEC市場</td><td class="num">3兆1,163億円</td><td class="num">+6.4%</td></tr>
+      <tr><td>衣類・服装雑貨等のEC市場</td><td class="num">2兆7,980億円</td><td class="num">+4.7%</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 320" role="img" aria-label="日本の物販市場の構造図：物販分野の商取引全体は単純計算で約155兆円規模で、EC化されているのは15.2兆円（9.78%）のみ。EC化率1ポイントの上昇は約1.5兆円の市場移動に相当する">
+      <text x="30" y="40" font-size="14" font-weight="800" fill="#17181C">日本の物販市場の構造（2024年・経済産業省データより）</text>
+      <rect x="30" y="60" width="660" height="140" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="66" height="140" rx="12" fill="#E8324A"/>
+      <text x="63" y="120" text-anchor="middle" font-size="12" font-weight="800" fill="#fff" transform="rotate(-90 63 130)"> </text>
+      <text x="120" y="105" font-size="13" font-weight="800" fill="#C2203A">EC：15.2兆円（EC化率9.78%）</text>
+      <text x="120" y="130" font-size="12" fill="#454956">楽天・Amazon・自社EC等の既存チャネルに、</text>
+      <text x="120" y="150" font-size="12" fill="#454956">コンテンツ起点のTikTok Shopが新レイヤーとして加わった</text>
+      <text x="420" y="185" font-size="12" fill="#787D8A">残り約9割＝店頭などオフライン購買</text>
+      <path d="M96 230 H180" stroke="#C2203A" stroke-width="2"/>
+      <path d="M174 224 L184 230 L174 236 Z" fill="#C2203A"/>
+      <rect x="196" y="212" width="494" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="216" y="240" font-size="13" font-weight="800" fill="#C2203A">EC化率が1ポイント上がるだけで、約1.5兆円分の買い物がECへ動く</text>
+      <text x="216" y="264" font-size="11.5" fill="#454956">（物販の商取引全体≒15.2兆円÷9.78%＝約155兆円の単純計算。伸びしろはEC内のシェア争いより大きい）</text>
+      <text x="30" y="308" font-size="10.5" fill="#787D8A">出典：経済産業省「令和6年度電子商取引に関する市場調査」（2025年8月公表）をもとにLEAMが単純計算</text>
+    </svg>
+    <figcaption>図4：日本の物販市場の構造。EC化率の上昇余地そのものが伸びしろになる（LEAM作成）</figcaption>
+  </figure>
+  <h3>追い風：4,200万人のユーザー基盤と「35歳以上が半数」の購買層</h3>
+  <p>TikTokは2025年11月、<strong>日本の月間アクティブユーザー数が4,200万を突破</strong>したと公式発表しました（TikTok Lite合算・重複除く）。約3年で2倍という伸びで、およそ3人に1人が使う計算です。そしてTikTok Shopの購入者は前述のとおり35歳以上が約半数。「利用者が多く、しかも購買力のある年代が実際に買っている」という組み合わせは、市場拡大の前提条件としては十分に揃っています。物販のEC化率がまだ9.78%であることを踏まえると、TikTok Shopの成長は既存ECからシェアを奪うだけでなく、<strong>「これまでECで買っていなかった買い物」をECに引き込む形</strong>でも起こり得ます。コンテンツ起点の衝動的な出会いは、検索型ECが取り込めなかった需要を掘り起こすからです。</p>
+  <h3>逆風と不確実性：購買習慣・既存モールの強さ・信頼の壁</h3>
+  <p>一方で、日本特有の逆風も直視すべきです。第一に、楽天・Amazonという成熟したECモールが強く、ポイント経済圏も含めて購買習慣が固まっていること。第二に、日本の消費者はレビューや比較検討を重視する傾向が強く、衝動購買型のECに対する心理的ハードルがあると当社の運用でも実感していること。第三に、ライブコマースが過去に日本で何度か試みられながら、中国のような主流化には至っていないことです。これらは「日本では伸びない」根拠ではなく、<strong>「中国や東南アジアと同じ速度・同じ形では伸びない可能性がある」</strong>という不確実性として織り込むべき要素です。</p>
+
+  <h2 id="s5"><span class="no en">05</span>市場が伸びても自社が儲かるとは限らない：参入判断は損益から逆算する</h2>
+  <p>市場規模の記事はしばしば「伸びるから乗るべき」で終わりますが、実務では<strong>「市場の伸び」と「自社の利益」は別の問題</strong>です。市場が2倍になっても、損益設計を誤れば売れるほど赤字になります。参入判断で最初にやるべきは、1個売れたときの手残りを数字にすることです。</p>
+  <figure>
+    <svg viewBox="0 0 720 210" role="img" aria-label="販売価格の内訳図：原価、プラットフォーム手数料、クリエイター報酬、送料等を引いた残りが広告と利益の余地になる。市場が伸びてもこの構造は変わらない">
+      <text x="30" y="45" font-size="12.5" font-weight="700" fill="#454956">販売価格を100%としたときの構造（比率は商材により大きく異なる）</text>
+      <rect x="30" y="60" width="660" height="52" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="215" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="245" y="60" width="95" height="52" fill="#AEB2BE"/>
+      <rect x="340" y="60" width="95" height="52" fill="#8F94A3"/>
+      <rect x="435" y="60" width="85" height="52" fill="#787D8A"/>
+      <rect x="520" y="60" width="170" height="52" rx="8" fill="#E8324A"/>
+      <text x="137" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">原価</text>
+      <text x="292" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">手数料</text>
+      <text x="387" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">CR報酬</text>
+      <text x="477" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">送料等</text>
+      <text x="605" y="85" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">広告と利益の余地</text>
+      <text x="605" y="103" text-anchor="middle" font-size="10.5" fill="#FDEEF1">ここが残らない商材は参入NG</text>
+      <path d="M520 125 V150 M690 125 V150 M520 150 H690" stroke="#E8324A" stroke-width="1.5" fill="none"/>
+      <text x="605" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">市場が何倍に伸びても、この余地が無ければ利益は出ない</text>
+    </svg>
+    <figcaption>図5：1個あたりの損益構造。市場規模より先に、この余地を確認する（LEAM作成）</figcaption>
+  </figure>
+  <h3>先に「1個あたりの手残り」を数字にする</h3>
+  <p>TikTok Shopでは、販売価格から①商品原価、②プラットフォームの販売手数料、③商品を紹介してくれるクリエイターへのアフィリエイト報酬、④送料・梱包費を引いた残りが、広告費と利益の原資になります。<strong>この残りが薄い商材は、市場がどれだけ伸びても利益が出ません。</strong>逆にここが厚い商材なら、クリエイター起用と広告に投資しながら市場の成長に乗れます。実務的には、参入判断の8割はこの計算で決まると考えてよいでしょう。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 手数料率などの仕様値は必ず公式で確認を</div>
+    <p>販売手数料の料率やキャンペーン条件は改定されることがあります。本記事では特定の料率を記載しません。<strong>試算する際は必ずTikTok Shopセラーセンターの最新の公式情報を確認してください。</strong></p>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>成長の中心はクリエイター経由：「誰が売るか」が市場の伸びを決める</h2>
+  <p>日本の公式データが示す「流通総額の約70%がコンテンツ起点」という構造は、事業者にとって明確な示唆を持ちます。<strong>TikTok Shopの売上は、商品を紹介するクリエイターの動画・ライブから生まれる</strong>ということです。半年でクリエイターが約20万人まで増えた一方、彼らが「紹介したくなる商品」と「紹介しやすい条件」を用意できているセラーはまだ限られています。</p>
+  <p>つまり市場の伸びを自社に取り込む競争は、広告の上手さ以前に<strong>「どれだけ多くのクリエイターに、継続的に自社商品を扱ってもらえるか」</strong>で決まります。アフィリエイト報酬の設計、サンプル提供の体制、クリエイターへの声かけ──この地味な積み上げが、コンテンツ起点70%の市場における実質的なシェア争いです。当社の運用実感でも、商品力を除くと、この積み上げの差が成果に効いていると感じる場面が多くあります。ただし価格設計や出荷体制が崩れていれば、そちらが先に効いてきます。</p>
+  <div class="ctabox">
+    <div class="ct">クリエイター起用から、市場の伸びに乗る設計をお手伝いします</div>
+    <p>LEAMはTikTok Shop特化のMCN（クリエイター事務所）を運営し、商品とクリエイターのマッチングを一次データに基づいて設計しています。セラーの方も、商品を紹介したいクリエイターの方もご相談ください。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>今後を金額で断定できる公開データはまだ無い：追うべきは3つの指標</h2>
+  <p>正直に書きます。「日本のTikTok Shop市場は◯年に◯兆円になる」と断定できる公開データは、2026年8月時点で存在しません。日本のGMVは非公表で、信頼できる第三者予測もまだ出揃っていないためです。<strong>根拠のない金額予測を載せるより、「何を見れば市場の伸びが分かるか」を持っておく方が実務では役立ちます。</strong>当社が定点観測しているのは次の3つです。</p>
+  <ol class="steps">
+    <li><b>公式発表の頻度と中身（セラー数・購入者数の伸び）</b><p>TikTokは半年ごとに日本の進捗を発表しています。セラー数と購入者数の伸びが続いているかが、市場拡大の最も確かなシグナルです。</p></li>
+    <li><b>ライブコマース起点の売上比率</b><p>先行市場が示すとおり、ライブの定着はステージ3への移行条件です。動画起点からライブ起点へ比重が移り始めたら、市場は次の成長段階に入ったと判断できます。</p></li>
+    <li><b>カテゴリと購買層の広がり</b><p>美容・食品などの先行カテゴリから、家電・日用品・地方産品へ広がるか。TikTokが2026年2月に始動を発表した地域産品の取り組み「TikTok Shop Local」（第1弾は2026年3月に香川県高松市、第2弾は6月に沖縄県那覇市で開催）は、プラットフォーム側がカテゴリ拡大に投資する意思の表れです。</p></li>
+  </ol>
+  <div class="box box-point">
+    <div class="bt">📈 【毎月更新予定】日本市場の最新動向はこの記事に追記します</div>
+    <p>LEAMは市場データを毎営業日自動で蓄積しています。日本のTikTok Shopで「いま何が伸びているか」（勢いのあるカテゴリ・売れ方の変化）は、外部ツールの利用規約に沿って掲載可能な形に集計し、無料相談で個別にお伝えしています。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>実務の結論は「様子見」より「小さく検証」：立場別の動き方</h2>
+  <p>ここまでの材料を並べると、実務の結論はシンプルです。<strong>世界では市場が加速しており、日本では土台の数字が揃い始めたが、金額の断定はできない。</strong>この状況で合理的なのは、大きく張ることでも様子見することでもなく、損益が成り立つ商材で小さく検証を始め、市場の伸びと一緒に学習を蓄積することです。立場別に整理します。</p>
+  <div class="tw"><table>
+    <thead><tr><th>立場</th><th>いま取るべき動き</th><th>理由</th></tr></thead>
+    <tbody>
+      <tr><td><b>メーカー・D2Cブランド</b></td><td class="y">主力商品1つで出店し、クリエイターのアフィリエイト動画が増える体制づくりから始める</td><td>コンテンツ起点70%の市場では、素材の蓄積がそのまま参入障壁になる</td></tr>
+      <tr><td><b>小売・複数商品を扱う事業者</b></td><td class="y">全商品を並べず、動画映えする商品に絞ってテストする</td><td>検索型ECと違い「棚の広さ」より「1商品の動画の強さ」が効く</td></tr>
+      <tr><td><b>これから商材を探す個人・小規模事業者</b></td><td>損益構造（図5）が成り立つ商材かを先に確認してから出店する</td><td>登録セラー約5万店の中で埋もれないためには利益余地が必須</td></tr>
+      <tr><td><b>クリエイター</b></td><td class="y">TikTok Shopクリエイターとして早期に実績（販売データ）を作る</td><td>市場拡大期は案件の獲得競争より実績づくりが先行者利益になる</td></tr>
+    </tbody>
+  </table></div>
+  <p>いずれの立場でも共通するのは、<strong>「市場が伸びてから入る」のではなく「伸びる過程で学習を貯める」</strong>という考え方です。先行市場では、初期からクリエイターとの関係と販売データを積み上げたプレイヤーが、市場拡大の果実を大きく取りました。日本で同じ構図が起きない理由は、いまのところ見当たりません。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>TikTok Shopの日本国内の市場規模（GMV）は公表されていますか？</summary><div class="a">金額ベースのGMVは公表されていません（2026年8月時点）。公式に確認できるのは「流通総額の約70%がコンテンツ起点」「登録セラー約5万店」といった比率・件数ベースの数値です。金額を断定している記事を見たら、出典を確認することをおすすめします。</div></details>
+    <details><summary>世界のTikTok Shopの市場規模はどのくらいですか？</summary><div class="a">調査会社Momentum Worksらの推計で、2024年のグローバルGMVは約332億ドルと前年からほぼ倍増しました。最大市場は米国（90億ドル超）です。いずれも外部推計のため、絶対額は幅を持って見るのが安全です。</div></details>
+    <details><summary>日本でも米国や東南アジアのように急成長しますか？</summary><div class="a">断定はできません。国内月間ユーザー4,200万超という土台や、コンテンツ起点の購買が定着し始めたことを示す公式データは追い風ですが、既存ECモールの強さや購買習慣の違いという逆風もあります。本記事では毎月の更新で最新動向を追っていきます。</div></details>
+    <details><summary>今から参入しても遅くないですか？</summary><div class="a">日本での提供開始は2025年6月30日で、まだ1年強です。登録セラーは約5万店まで増えましたが、成熟した既存モールと比べれば初期段階です。ただし「早いから有利」と考えるのではなく、損益ラインを先に設計した上で小さく検証するのが実務的です。</div></details>
+    <details><summary>市場が伸びる中で、最初に何をすべきですか？</summary><div class="a">主力商品を1つ決めて出店し、クリエイターのアフィリエイト動画が継続的に生まれる体制を作ることです。当社の運用実感でも、成果の差が出やすいのは、広告や機能の使いこなしより「素材が増え続ける体制」の有無だと感じています。</div></details>
+    <details><summary>ライブコマースは日本で定着しますか？</summary><div class="a">中国では動画・ライブ起点のECが主要チャネルの一角へ成長した先行事例がありますが、日本はまだ検証段階です。TikTok公式も動画・LIVE起点の購買を成長の中心と位置づけており、ライブ起点の売上比率は市場の今後を読む重要指標として注視すべき領域です。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">基礎</span><b>TikTok Shopとは？完全ガイド</b><span>仕組みと始め方の基本</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/tiktok-shop-fees/"><span class="rc">手数料</span><b>TikTok Shopの手数料完全ガイド</b><span>カテゴリー別の料率と利益計算</span></a>
+      <a class="relcard" href="https://leam.co.jp/column/best-categories/"><span class="rc">商品選定</span><b>売れる商品カテゴリー</b><span>何を売るかの決め方</span></a>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。クリエイター起用だけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Newsroom「TikTok Shop、日本での提供開始から半年が経過」（2026年2月3日）／TikTok公式発表「日本の月間アクティブユーザー数が4,200万を突破」（2025年11月）／経済産業省「令和6年度電子商取引に関する市場調査」（2025年8月公表）／TikTok Newsroom「TikTok Shop、地域の魅力的な商品を全国へつなぐ新プロジェクト『TikTok Shop Local』を始動」（2026年2月3日）／Momentum Works「Ecommerce in Southeast Asia」・Momentum Works × Tabcut発表（2025年1月）・Momentum Works「TikTok Shop on track to surpass US$100 billion GMV globally in 2026」ほか。市場推計値は調査会社による概算であり、仕様・数値は更新されることがあります。本記事は2026年8月30日時点の情報です。最新は一次情報でご確認ください。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">日本の現在地（公式数値）</a></li>
+        <li><a href="#s2">世界の市場規模：約332億ドル</a></li>
+        <li><a href="#s3">先行市場の成長の型</a></li>
+        <li><a href="#s4">日本の伸びしろの読み方</a></li>
+        <li><a href="#s5">参入判断は損益から逆算</a></li>
+        <li><a href="#s6">成長の中心はクリエイター</a></li>
+        <li><a href="#s7">今後を読む3つの指標</a></li>
+        <li><a href="#s8">立場別の動き方</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>参入判断の前に、無料診断</b>
+      <p>商材の向き・不向きと損益の成立性を、一次データから率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "TikTok Shopの日本国内の市場規模（GMV）は公表されていますか？", "acceptedAnswer": {"@type": "Answer", "text": "金額ベースのGMVは公表されていません（2026年8月時点）。公式に確認できるのは「流通総額の約70%がコンテンツ起点」「登録セラー約5万店」といった比率・件数ベースの数値です。金額を断定している記事を見たら、出典を確認することをおすすめします。"}},
+        {"@type": "Question", "name": "世界のTikTok Shopの市場規模はどのくらいですか？", "acceptedAnswer": {"@type": "Answer", "text": "調査会社Momentum Worksらの推計で、2024年のグローバルGMVは約332億ドルと前年からほぼ倍増しました。最大市場は米国（90億ドル超）です。いずれも外部推計のため、絶対額は幅を持って見るのが安全です。"}},
+        {"@type": "Question", "name": "日本でも米国や東南アジアのように急成長しますか？", "acceptedAnswer": {"@type": "Answer", "text": "断定はできません。国内月間ユーザー4,200万超という土台や、コンテンツ起点の購買が定着し始めたことを示す公式データは追い風ですが、既存ECモールの強さや購買習慣の違いという逆風もあります。本記事では毎月の更新で最新動向を追っていきます。"}},
+        {"@type": "Question", "name": "今から参入しても遅くないですか？", "acceptedAnswer": {"@type": "Answer", "text": "日本での提供開始は2025年6月30日で、まだ1年強です。登録セラーは約5万店まで増えましたが、成熟した既存モールと比べれば初期段階です。ただし「早いから有利」と考えるのではなく、損益ラインを先に設計した上で小さく検証するのが実務的です。"}},
+        {"@type": "Question", "name": "市場が伸びる中で、最初に何をすべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "主力商品を1つ決めて出店し、クリエイターのアフィリエイト動画が継続的に生まれる体制を作ることです。当社の運用実感でも、成果の差が出やすいのは、広告や機能の使いこなしより「素材が増え続ける体制」の有無だと感じています。"}},
+        {"@type": "Question", "name": "ライブコマースは日本で定着しますか？", "acceptedAnswer": {"@type": "Answer", "text": "中国では動画・ライブ起点のECが主要チャネルの一角へ成長した先行事例がありますが、日本はまだ検証段階です。TikTok公式も動画・LIVE起点の購買を成長の中心と位置づけており、ライブ起点の売上比率は市場の今後を読む重要指標として注視すべき領域です。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

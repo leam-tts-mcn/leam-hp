@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計</title>
+<meta name="description" content="TikTok Shopの価格設定を、衝動買いされる値付けとセット設計の観点から解説します。手数料を踏まえた考え方つきです。">
+<link rel="canonical" href="https://leam.co.jp/column/pricing-strategy/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計">
+<meta property="og:description" content="TikTok Shopの価格設定を、衝動買いされる値付けとセット設計の観点から解説します。手数料を踏まえた考え方つきです。">
+<meta property="og:url" content="https://leam.co.jp/column/pricing-strategy/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計">
+<meta name="twitter:description" content="TikTok Shopの価格設定を、衝動買いされる値付けとセット設計の観点から解説します。手数料を踏まえた考え方つきです。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計", "description": "TikTok Shopの価格設定を、衝動買いされる値付けとセット設計の観点から解説します。手数料を踏まえた考え方つきです。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/pricing-strategy/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計", "item": "https://leam.co.jp/column/pricing-strategy/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの価格設定戦略</p>
+  <span class="cat">販売戦略</span>
+  <h1>TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="値付けの考え方：赤い価格の吹き出しを手元に置き、右には帯で束ねたセット販売の箱、下には目盛りの上で高さの違う3枚の値札を並べて価格を見比べているイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v298c-130 44-244 12-368-14-118-25-212-14-320 22-116 39-236 44-352-2-58-23-110-52-160-70z" fill="#F6F7F9"/>
+  <ellipse cx="884" cy="252" rx="298" ry="200" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="672" cy="62" r="5"/><circle cx="708" cy="62" r="5"/><circle cx="744" cy="62" r="5"/><circle cx="780" cy="62" r="5"/>
+      <circle cx="672" cy="98" r="5"/><circle cx="708" cy="98" r="5"/><circle cx="744" cy="98" r="5"/><circle cx="780" cy="98" r="5"/>
+      <circle cx="672" cy="134" r="5"/><circle cx="708" cy="134" r="5"/><circle cx="744" cy="134" r="5"/><circle cx="780" cy="134" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(-588 424)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 508c150 30 268 6 402-16 128-21 246-26 372-6 118 19 244 34 426 6v138H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 下：比較の目盛り（値札の背後） ================= -->
+  <g>
+    <path d="M254 398v200" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round"/>
+    <path d="M254 436h506" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M254 488h506" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+    <path d="M254 540h506" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+    <g fill="#25F4EE">
+      <rect x="238" y="430" width="34" height="12" rx="6"/>
+      <rect x="238" y="482" width="34" height="12" rx="6"/>
+      <rect x="238" y="534" width="34" height="12" rx="6"/>
+    </g>
+  </g>
+
+  <!-- ================= 右：セット販売の束（副役・シアン） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="778" y="158" width="310" height="352" rx="14" fill="#5E6064" opacity=".14" transform="translate(10 12)"/>
+
+    <!-- 箱3つ -->
+    <rect x="778" y="158" width="310" height="112" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="778" y="278" width="310" height="112" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="778" y="398" width="310" height="112" rx="12" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 束ねる帯（横） -->
+    <rect x="766" y="318" width="334" height="32" rx="8" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <!-- 束ねる帯（縦） -->
+    <rect x="907" y="142" width="38" height="384" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 下：値札が3つ並ぶ（高さが違う＝見比べ） ================= -->
+  <g>
+    <!-- 3枚目（いちばん高い位置） -->
+    <path d="M616 410h44l34 34v90a14 14 0 0 1-14 14h-84a14 14 0 0 1-14-14v-90z" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+    <path d="M616 410h44l34 34v90a14 14 0 0 1-14 14h-84a14 14 0 0 1-14-14v-90z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="638" cy="442" r="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <g fill="#DFE0E2">
+      <rect x="600" y="490" width="76" height="12" rx="6"/>
+      <rect x="600" y="516" width="54" height="12" rx="6"/>
+    </g>
+
+    <!-- 2枚目（シアン＝選んだ価格） -->
+    <path d="M470 438h44l34 34v90a14 14 0 0 1-14 14h-84a14 14 0 0 1-14-14v-90z" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+    <path d="M470 438h44l34 34v90a14 14 0 0 1-14 14h-84a14 14 0 0 1-14-14v-90z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="492" cy="470" r="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <g fill="#FFFFFF">
+      <rect x="454" y="518" width="76" height="12" rx="6"/>
+      <rect x="454" y="544" width="54" height="12" rx="6"/>
+    </g>
+
+    <!-- 1枚目（いちばん低い位置） -->
+    <path d="M324 466h44l34 34v90a14 14 0 0 1-14 14h-84a14 14 0 0 1-14-14v-90z" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+    <path d="M324 466h44l34 34v90a14 14 0 0 1-14 14h-84a14 14 0 0 1-14-14v-90z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="346" cy="498" r="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <g fill="#DFE0E2">
+      <rect x="308" y="546" width="76" height="12" rx="6"/>
+      <rect x="308" y="572" width="54" height="12" rx="6"/>
+    </g>
+  </g>
+
+  <!-- ================= 左：価格の吹き出し（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <path d="M78 40h536a34 34 0 0 1 34 34v274a34 34 0 0 1-34 34H300l-132 68 30-68H78a34 34 0 0 1-34-34V74a34 34 0 0 1 34-34z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+
+    <!-- 本体（赤） -->
+    <path d="M78 40h536a34 34 0 0 1 34 34v274a34 34 0 0 1-34 34H300l-132 68 30-68H78a34 34 0 0 1-34-34V74a34 34 0 0 1 34-34z" fill="#FE2C55"/>
+    <!-- しっぽ（赤の陰） -->
+    <path d="M300 382l-132 68 30-68z" fill="#CE1730"/>
+
+    <!-- 券面：値札のかたち -->
+    <path d="M142 124h106a16 16 0 0 1 16 16v132a16 16 0 0 1-16 16H142l-42-82z" fill="#FFFFFF"/>
+    <circle cx="132" cy="206" r="13" fill="#FE2C55"/>
+    <g fill="#FFFFFF">
+      <rect x="310" y="160" width="260" height="24" rx="12"/>
+      <rect x="310" y="212" width="216" height="24" rx="12"/>
+      <rect x="310" y="264" width="168" height="24" rx="12"/>
+    </g>
+
+    <!-- 輪郭 -->
+    <path d="M78 40h536a34 34 0 0 1 34 34v274a34 34 0 0 1-34 34H300l-132 68 30-68H78a34 34 0 0 1-34-34V74a34 34 0 0 1 34-34z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1140" cy="86" r="22" fill="#25F4EE"/>
+  <circle cx="736" cy="586" r="15" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok Shopの価格設定は、検索して比較される楽天やAmazonの値付けとは前提が違います。</strong>ショート動画やライブを見て短時間で買うか決める売り場では、価格は他社と比べる道具ではなく、<strong>欲しくなった気持ちのまま支払いまで進んでもらう「迷いを消す道具」</strong>になります。この記事では、衝動買い文脈での価格の考え方、送料込み表示の設計、セット・バンドルで客単価を上げる方法、値引きとクーポンの使い分け、損益ラインの逆算までを順に解説します。なお「この価格帯なら売れる」という断定はせず、自社の商材に当てはめられる考え方の枠組みとして整理します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>衝動買い文脈で価格が判断される3つの地点と、送料込み表示の設計</li>
+      <li>損益ラインの逆算手順と、セット・バンドルで客単価を上げる設計表</li>
+      <li>値引きとクーポンの使い分け、クリエイター報酬まで含めた値付けの考え方</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">いまの価格とセット構成、損益が成立しているか無料で診断します</div>
+    <p>価格設定は手数料・送料・クリエイター報酬・広告余地が絡む計算問題です。現状の値付けとカートまでの動線を拝見し、直すべき順番を率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">価格設定は「比較されない売り場」を前提に組む：検討時間は秒単位</a></li>
+      <li><a href="#s2">価格は総額で判断される：送料込み表示で「カートで増える」をなくす</a></li>
+      <li><a href="#s3">値付けの前に損益ラインを逆算する：引き算の順番を固定すれば迷わない</a></li>
+      <li><a href="#s4">客単価は「セットという商品」を作って上げる：ついで買いは起きにくい</a></li>
+      <li><a href="#s5">値引きとクーポンは役割が違う：価格の基準を守れるのはクーポン</a></li>
+      <li><a href="#s6">クリエイター報酬の余地まで含めて値付けする：余地のない価格に動画は集まらない</a></li>
+      <li><a href="#s7">価格は決めて終わりにしない：週次で「離脱の場所」だけ見る</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>価格設定は「比較されない売り場」を前提に組む：検討時間は秒単位</h2>
+  <p>楽天市場やAmazonのような検索型ECでは、ユーザーは検索結果に並んだ商品を見比べてから買います。価格は「隣の商品よりお得か」という<strong>相対評価</strong>で判断されます。一方TikTok Shopの購入のきっかけは、おすすめフィードに流れてきたショート動画やライブです。画面の中に競合商品が並ばないため、価格は比較ではなく、<strong>「この動画で欲しくなった気持ちのまま、支払いまで進めるか」という絶対評価</strong>で判断されます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>検索型EC（楽天・Amazon等）</th><th>TikTok Shop</th></tr></thead>
+    <tbody>
+      <tr><td>購入のきっかけ</td><td class="n">検索（欲しいものが決まっている）</td><td class="y">動画・ライブ（見て欲しくなる）</td></tr>
+      <tr><td>価格の判断</td><td class="n">並んだ競合との比較（相対評価）</td><td class="y">その場の納得感（絶対評価）</td></tr>
+      <tr><td>検討時間</td><td class="n">比較しながらじっくり</td><td class="y">短い。一度離れると戻ってこないことが多い</td></tr>
+      <tr><td>価格の役割</td><td class="n">選ばれる理由をつくる</td><td class="y">迷う理由を消す</td></tr>
+      <tr><td>効く打ち手</td><td class="n">最安値・ポイント施策</td><td class="y">総額表示・セット設計・今買う理由づくり</td></tr>
+    </tbody>
+  </table></div>
+  <p>価格が購入を左右する場面は3つに絞られます。<strong>①動画・ライブの中で価格が語られた瞬間、②商品カードで価格が目に入った瞬間、③カートで送料を含む総額を見た瞬間</strong>です。</p>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="TikTok Shopの購買動線図：動画・ライブ→商品カード→商品ページ→カートの4段階のうち、価格が効くのは動画内・商品カード・カートの3地点">
+      <text x="360" y="34" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">動画を見てから買うまでの動線と、価格が効く3地点</text>
+      <rect x="24" y="60" width="150" height="96" rx="12" fill="#17181C"/>
+      <text x="99" y="94" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">動画・ライブ</text>
+      <text x="99" y="118" text-anchor="middle" font-size="11" fill="#C9CBD4">価格を「耳」で聞く</text>
+      <circle cx="99" cy="140" r="11" fill="#E8324A"/>
+      <text x="99" y="145" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">1</text>
+      <path d="M178 108 H198" stroke="#787D8A" stroke-width="2"/><path d="M194 102 L204 108 L194 114 Z" fill="#787D8A"/>
+      <rect x="206" y="60" width="150" height="96" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="281" y="94" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">商品カード</text>
+      <text x="281" y="118" text-anchor="middle" font-size="11" fill="#787D8A">価格を「目」で見る</text>
+      <circle cx="281" cy="140" r="11" fill="#E8324A"/>
+      <text x="281" y="145" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">2</text>
+      <path d="M360 108 H380" stroke="#787D8A" stroke-width="2"/><path d="M376 102 L386 108 L376 114 Z" fill="#787D8A"/>
+      <rect x="388" y="60" width="150" height="96" rx="12" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="463" y="94" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">商品ページ</text>
+      <text x="463" y="118" text-anchor="middle" font-size="11" fill="#787D8A">納得を確かめる</text>
+      <path d="M542 108 H562" stroke="#787D8A" stroke-width="2"/><path d="M558 102 L568 108 L558 114 Z" fill="#787D8A"/>
+      <rect x="570" y="60" width="126" height="96" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="633" y="94" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">カート</text>
+      <text x="633" y="118" text-anchor="middle" font-size="11" fill="#787D8A">総額で最終判断</text>
+      <circle cx="633" cy="140" r="11" fill="#E8324A"/>
+      <text x="633" y="145" text-anchor="middle" font-size="11" font-weight="800" fill="#fff">3</text>
+      <path d="M99 170 V196 M281 170 V196 M633 170 V196 M99 196 H633" stroke="#E8324A" stroke-width="1.5" fill="none" stroke-dasharray="4 4"/>
+      <rect x="180" y="210" width="360" height="44" rx="10" fill="#17181C"/>
+      <text x="360" y="238" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">3地点で「同じ価格」に見えることが最初の設計目標</text>
+    </svg>
+    <figcaption>図1：購買動線と価格が効く3地点。途中で迷わせないことが値付けの目的になる（LEAM作成）</figcaption>
+  </figure>
+  <p>実務的には、③のカートが最初の「我に返る瞬間」になります。以降の章では、この3地点を順番に設計していきます。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>TikTok Shopの価格設定は「安くする」話ではありません。比較の土俵がない分、安さそのものは伝わりにくく、それよりも<strong>総額の分かりやすさと「今この価格で買える理由」の設計</strong>が購入を左右します。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>価格は総額で判断される：送料込み表示で「カートで増える」をなくす</h2>
+  <p>3地点のうち、最も直しやすく、最も見落とされているのがカートです。動画や商品カードで見た価格とカートの総額がズレると、短い検討時間では「思っていた話と違う」という感覚だけが残ります。対策の基本は、<strong>ユーザーが最初に見る価格と、実際に支払う総額を一致させること</strong>。つまり送料を価格に織り込んだ「送料込み」表示です。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="送料別と送料込みの比較図：送料別では商品ページ2,980円がカートで3,640円に増えて離脱リスクになるが、送料込みでは3,480円のまま変わらない">
+      <rect x="20" y="20" width="330" height="290" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">送料別の設計</text>
+      <rect x="55" y="70" width="260" height="64" rx="10" fill="#fff" stroke="#E6E7EB"/>
+      <text x="70" y="97" font-size="11.5" fill="#787D8A">商品ページで見た価格</text>
+      <text x="70" y="122" font-size="18" font-weight="800" fill="#17181C">¥2,980</text>
+      <path d="M185 140 V160" stroke="#787D8A" stroke-width="2"/><path d="M179 156 L185 166 L191 156 Z" fill="#787D8A"/>
+      <rect x="55" y="172" width="260" height="92" rx="10" fill="#fff" stroke="#C2203A" stroke-width="1.5"/>
+      <text x="70" y="197" font-size="11.5" fill="#787D8A">カートの総額</text>
+      <text x="70" y="224" font-size="18" font-weight="800" fill="#C2203A">¥3,640</text>
+      <text x="150" y="224" font-size="11.5" fill="#787D8A">（＋送料660円）</text>
+      <text x="70" y="250" font-size="11.5" font-weight="700" fill="#C2203A">「増えた」と気づく＝我に返る瞬間</text>
+      <text x="185" y="296" text-anchor="middle" font-size="11" fill="#787D8A">最後の1画面で離脱リスクが生まれる</text>
+      <rect x="370" y="20" width="330" height="290" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">送料込みの設計</text>
+      <rect x="405" y="70" width="260" height="64" rx="10" fill="#FDEEF1"/>
+      <text x="420" y="97" font-size="11.5" fill="#787D8A">商品ページで見た価格</text>
+      <text x="420" y="122" font-size="18" font-weight="800" fill="#17181C">¥3,480</text>
+      <text x="510" y="122" font-size="11.5" font-weight="700" fill="#0E8A5F">送料込み</text>
+      <path d="M535 140 V160" stroke="#787D8A" stroke-width="2"/><path d="M529 156 L535 166 L541 156 Z" fill="#787D8A"/>
+      <rect x="405" y="172" width="260" height="92" rx="10" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="420" y="197" font-size="11.5" fill="#787D8A">カートの総額</text>
+      <text x="420" y="224" font-size="18" font-weight="800" fill="#0E8A5F">¥3,480</text>
+      <text x="510" y="224" font-size="11.5" fill="#787D8A">（そのまま）</text>
+      <text x="420" y="250" font-size="11.5" font-weight="700" fill="#0E8A5F">見た価格 ＝ 払う価格</text>
+      <text x="535" y="296" text-anchor="middle" font-size="11" fill="#787D8A">動画でも「◯円、送料込み」と言い切れる</text>
+    </svg>
+    <figcaption>図2：カートで総額が増えると、そこが「我に返る瞬間」になる（金額は説明用の例・LEAM作成）</figcaption>
+  </figure>
+  <h3>送料込みに寄せるべきなのは、低単価・軽量の商材</h3>
+  <p>低単価の商材は総額に占める送料の比率が高く、カートでの増額インパクトが大きくなります。送料を価格に織り込んで「◯円、送料込み」と一言で言い切れる状態にしておくと、動画・ライブ・商品カード・カートの全地点で同じ価格を見せられます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>商材タイプ</th><th>送料の扱い</th><th>理由</th></tr></thead>
+    <tbody>
+      <tr><td><b>低単価 × 軽量</b>（雑貨・消耗品など）</td><td class="y">送料込みに寄せる</td><td>送料の比率が高く、カートでの増額が離脱に直結しやすい</td></tr>
+      <tr><td><b>低単価 × 重量・大型</b></td><td>セット化で単価を上げてから送料込みへ</td><td>単品に送料を織り込むと価格が不自然に上がる。§04のセット設計とセットで解決する</td></tr>
+      <tr><td><b>高単価</b></td><td>どちらでも成立。総額の目安は明示</td><td>総額に占める送料の比率が小さい。動画で価格を語るなら込みの方が伝えやすい</td></tr>
+    </tbody>
+  </table></div>
+  <h3>送料無料ラインは「狙いたい客単価の少し上」に置く</h3>
+  <p>一定金額以上の購入で送料無料にするラインは、客単価を引き上げるレバーになります。置き方の考え方はシンプルで、<strong>いま狙っているカート合計額より少し上に置く</strong>ことです。既存のECを運営しているなら、その平均注文額が出発点になります。ラインが高すぎると「どうせ届かない」と判断されて機能せず、かえって離脱を生みます。また、<strong>ラインを超えられるセット商品（§04）を用意して、「あと少しで送料無料」を実際に埋められる選択肢を作っておく</strong>ことまでが設計です。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意</div>
+    <p>送料・配送設定の画面や仕様は更新されることがあります。最新は必ずセラーセンターの公式ヘルプで確認してください。送料の裏側にある出荷体制の組み方は、姉妹記事「<a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷体制</a>」で扱います。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>値付けの前に損益ラインを逆算する：引き算の順番を固定すれば迷わない</h2>
+  <p>送料を価格に織り込むと決めた瞬間から、値付けは感覚の話ではなく損益の計算問題になります。手順は、<strong>販売価格から「必ず出ていくお金」を先に引き、残りで広告と利益を賄えるかを確かめる</strong>だけです。この引き算の順番を固定しておくと、セールやクーポンの判断で迷わなくなります。</p>
+  <div class="tw"><table>
+    <thead><tr><th>項目</th><th>金額（例）</th><th>備考</th></tr></thead>
+    <tbody>
+      <tr><td>販売価格（送料込み）</td><td class="num">3,980円</td><td>ユーザーが見る総額と一致させる（§02）</td></tr>
+      <tr><td>原価</td><td class="num">−1,200円</td><td>仕入れ・製造</td></tr>
+      <tr><td>販売手数料</td><td class="num">−α</td><td>料率はカテゴリや時期により改定されるため、最新は公式で確認</td></tr>
+      <tr><td>クリエイターへのコミッション</td><td class="num">−400円</td><td>10%で設定した場合の概算（§06）</td></tr>
+      <tr><td>送料・梱包・資材</td><td class="num">−600円</td><td>送料込み表示なら、ここに実費を必ず計上する</td></tr>
+      <tr><td>値引き・クーポンの原資</td><td class="num">−200円</td><td>セールをやる前提なら、先に確保しておく（§05）</td></tr>
+      <tr><td><b>残り ＝ 広告余地 ＋ 利益</b></td><td class="num"><b>残額すべて</b></td><td>ここが薄い価格では、広告もセールも打てない</td></tr>
+    </tbody>
+  </table></div>
+  <figure>
+    <svg viewBox="0 0 720 230" role="img" aria-label="販売価格の内訳図：原価・手数料・クリエイター報酬・送料等・値引き原資を引いた残りが広告余地と利益になる">
+      <text x="30" y="45" font-size="12.5" font-weight="700" fill="#454956">販売価格 3,980円・送料込み（説明用の例）</text>
+      <rect x="30" y="60" width="660" height="52" rx="8" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <rect x="30" y="60" width="190" height="52" rx="8" fill="#C9CBD4"/>
+      <rect x="220" y="60" width="80" height="52" fill="#AEB2BE"/>
+      <rect x="300" y="60" width="75" height="52" fill="#8F94A3"/>
+      <rect x="375" y="60" width="90" height="52" fill="#787D8A"/>
+      <rect x="465" y="60" width="55" height="52" fill="#5C6170"/>
+      <rect x="520" y="60" width="105" height="52" fill="#E8324A"/>
+      <rect x="625" y="60" width="65" height="52" rx="8" fill="#0E8A5F"/>
+      <text x="125" y="91" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">原価</text>
+      <text x="260" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">手数料</text>
+      <text x="337" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">報酬</text>
+      <text x="420" y="91" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">送料等</text>
+      <text x="492" y="91" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">値引き</text>
+      <text x="572" y="91" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">広告余地</text>
+      <text x="657" y="91" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">利益</text>
+      <path d="M520 125 V150 M690 125 V150 M520 150 H690" stroke="#E8324A" stroke-width="1.5" fill="none"/>
+      <text x="605" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#C2203A">ここが「攻められる範囲」。薄いなら価格でなく構成を直す</text>
+      <text x="360" y="208" text-anchor="middle" font-size="11" fill="#787D8A">出ていくお金を先に引き切ってから、広告と利益を考える</text>
+    </svg>
+    <figcaption>図3：損益ラインの逆算。値引き・クーポンの原資も先に確保しておく（LEAM作成）</figcaption>
+  </figure>
+  <h3>成立しないときは、価格ではなく「構成」を動かす</h3>
+  <p>逆算して利益が残らない場合、単純な値上げは、動画で価格を語ったときの納得感と、商品カードを見た瞬間の引きの両方を弱めがちです。実務的には、価格を上げるのではなく<strong>商品構成（セット・容量・特典）を変えて、1注文あたりの売上と原価構造ごと作り直す</strong>方がうまくいきます。送料・梱包・出荷の手間は1注文単位でかかるため、客単価が上がるほど1注文に占める固定費の比率が下がり、広告余地が生まれるからです。手数料の内訳や利益計算の全体像は、姉妹記事「<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料と利益計算</a>」で詳しく解説しています。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 注意：金額に直結する仕様は必ず公式で確認</div>
+    <p>販売手数料の料率や、値引き・クーポン適用時に手数料がどの金額を基準に計算されるかといった仕様は、改定されることがあります。損益設計の前提となる数値は、必ず最新の公式情報で確認してから確定してください。</p>
+  </div>
+
+  <h2 id="s4"><span class="no en">04</span>客単価は「セットという商品」を作って上げる：ついで買いは起きにくい</h2>
+  <p>検索型ECなら、店内の回遊や「ついで買い」で客単価が伸びていきます。しかし動画起点の購入では、ユーザーは動画で見たその商品だけをカートに入れ、決済まで一直線に進みます。だから客単価は、後から積んでもらうのではなく、<strong>最初から「セットという1つの商品」として作っておく</strong>のが基本です。</p>
+  <h3>セットは3つの型で考える</h3>
+  <div class="tw"><table>
+    <thead><tr><th>型</th><th>狙い</th><th>向く商材</th><th>値付けの考え方</th></tr></thead>
+    <tbody>
+      <tr><td><b>① 同一商品の複数個パック</b></td><td>消費ペースに合わせて1回で買い切ってもらう</td><td>食品・日用品・コスメなどの消耗品</td><td>単品×個数より少しお得に。送料込みが成立しやすくなる</td></tr>
+      <tr><td><b>② 本体＋消耗品・付属品</b></td><td>「これだけ買えば始められる」を作る</td><td>美容機器・調理器具・ホビー</td><td>単品合算より安く。ただし本体単品の価格基準は崩さない</td></tr>
+      <tr><td><b>③ テーマ詰め合わせ</b></td><td>選ぶ手間を消す。ギフト・お試し需要</td><td>コスメ・食品・雑貨</td><td>中身の合計額ではなく「体験・用途」に値付けする</td></tr>
+    </tbody>
+  </table></div>
+  <h3>「単品・標準セット・大容量」の3段で、真ん中に誘導する</h3>
+  <p>セットを作ったら、単品・標準セット・大容量の3段構成にし、<strong>動画やライブで紹介する主役は真ん中の標準セットに置きます</strong>。単品は「お試しの入口」、大容量は「リピーター向け」と役割を分けると、標準セットの価格が自然にそのショップの基準になります。当社の運用実感でも、セットを主役にした方がクリエイター起用（§06）まで含めて設計が組みやすくなります。3段を<strong>同じ商品のバリエーション（SKU）で持つか、別商品として立てるか</strong>は、動画からのリンク先で決めてください。バリエーションなら実績とレビューが1つの商品ページに集まり、別商品なら段ごとに違う訴求で動画を出せます。クリエイターに渡すリンクは、迷わないように<strong>主役の標準セット1つに統一する</strong>のが実務的です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="3段構成の図：単品はお試しの入口、標準セットが動画で紹介する主役、大容量セットはリピーター向けという役割分担">
+      <rect x="28" y="56" width="200" height="180" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="128" y="92" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">単品</text>
+      <text x="128" y="126" text-anchor="middle" font-size="20" font-weight="800" fill="#17181C">¥1,980</text>
+      <rect x="58" y="146" width="140" height="30" rx="15" fill="#fff" stroke="#E6E7EB"/>
+      <text x="128" y="166" text-anchor="middle" font-size="11.5" fill="#787D8A">お試しの入口</text>
+      <text x="128" y="212" text-anchor="middle" font-size="11" fill="#787D8A">初回の心理ハードルを下げる</text>
+      <rect x="260" y="26" width="200" height="230" rx="14" fill="#fff" stroke="#E8324A" stroke-width="2"/>
+      <rect x="300" y="12" width="120" height="28" rx="14" fill="#E8324A"/>
+      <text x="360" y="31" text-anchor="middle" font-size="11.5" font-weight="800" fill="#fff">動画・ライブの主役</text>
+      <text x="360" y="80" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">標準セット（3個）</text>
+      <text x="360" y="116" text-anchor="middle" font-size="22" font-weight="800" fill="#17181C">¥4,980</text>
+      <text x="360" y="142" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0E8A5F">送料込み・送料無料ライン超え</text>
+      <rect x="290" y="158" width="140" height="30" rx="15" fill="#FDEEF1"/>
+      <text x="360" y="178" text-anchor="middle" font-size="11.5" font-weight="700" fill="#C2203A">ショップの価格基準</text>
+      <text x="360" y="226" text-anchor="middle" font-size="11" fill="#787D8A">客単価と報酬余地を両立させる</text>
+      <rect x="492" y="56" width="200" height="180" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="592" y="92" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">大容量セット</text>
+      <text x="592" y="126" text-anchor="middle" font-size="20" font-weight="800" fill="#17181C">¥8,980</text>
+      <rect x="522" y="146" width="140" height="30" rx="15" fill="#fff" stroke="#E6E7EB"/>
+      <text x="592" y="166" text-anchor="middle" font-size="11.5" fill="#787D8A">リピーター向け</text>
+      <text x="592" y="212" text-anchor="middle" font-size="11" fill="#787D8A">ファンの買い増し先を用意</text>
+      <text x="360" y="284" text-anchor="middle" font-size="11" fill="#787D8A">3段そろえて、紹介するのは真ん中。金額は説明用の例</text>
+    </svg>
+    <figcaption>図4：3段構成の役割分担。主役は真ん中の標準セットに置く（金額は説明用の例・LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>セットを組んだら§02の送料無料ラインと整合させます。<strong>標準セットがちょうど送料無料ラインを超える設計</strong>にしておくと、「セットで買う理由」がもう1つ増え、単品からの引き上げが自然になります。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>値引きとクーポンは役割が違う：価格の基準を守れるのはクーポン</h2>
+  <p>衝動買い文脈では「今買う理由」が強力に効くため、値引きやクーポンに頼りたくなります。ただし両者は似て非なる道具です。<strong>販売価格そのものを下げる値引きは「価格の基準」を動かす行為、クーポンは基準を保ったまま「実質価格」を一時的に下げる行為</strong>です。</p>
+  <figure>
+    <svg viewBox="0 0 720 290" role="img" aria-label="値引きとクーポンの違いの図：常時値引きは価格の基準線ごと下がっていくが、クーポンは基準線を保ったまま期間限定で実質価格だけを下げる">
+      <rect x="20" y="20" width="330" height="240" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="50" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">常時値引き</text>
+      <line x1="55" y1="220" x2="320" y2="220" stroke="#AEB2BE" stroke-width="1.5"/>
+      <path d="M60 100 H120 V125 H180 V150 H240 V175 H315" stroke="#787D8A" stroke-width="3" fill="none"/>
+      <text x="66" y="90" font-size="10.5" fill="#787D8A">販売価格</text>
+      <path d="M250 105 L290 150" stroke="#C2203A" stroke-width="1.5" stroke-dasharray="4 3"/>
+      <text x="185" y="245" text-anchor="middle" font-size="11" font-weight="700" fill="#C2203A">基準線ごと下がり、通常価格が信じられなくなる</text>
+      <rect x="370" y="20" width="330" height="240" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="50" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">期間限定クーポン</text>
+      <line x1="405" y1="220" x2="670" y2="220" stroke="#AEB2BE" stroke-width="1.5"/>
+      <path d="M410 100 H665" stroke="#17181C" stroke-width="3"/>
+      <text x="416" y="90" font-size="10.5" fill="#787D8A">販売価格（基準は不変）</text>
+      <path d="M470 100 V150 H510 V100" stroke="#E8324A" stroke-width="3" fill="none"/>
+      <path d="M580 100 V150 H620 V100" stroke="#E8324A" stroke-width="3" fill="none"/>
+      <text x="490" y="172" text-anchor="middle" font-size="10" font-weight="700" fill="#C2203A">新規向け</text>
+      <text x="600" y="172" text-anchor="middle" font-size="10" font-weight="700" fill="#C2203A">ライブ限定</text>
+      <text x="535" y="245" text-anchor="middle" font-size="11" font-weight="700" fill="#0E8A5F">基準を保ったまま「今買う理由」だけを作れる</text>
+    </svg>
+    <figcaption>図5：値引きは基準線を動かし、クーポンは基準線を守る（LEAM作成）</figcaption>
+  </figure>
+  <h3>常時値引きは、通常価格の信頼を壊す</h3>
+  <p>いつ見てもセール中の商品は、やがて割引後の価格が「本当の価格」として認識されます。すると通常価格に戻した瞬間、同じ商品が割高に見えるようになります。販売価格の変更は、新商品の立ち上げやシーズンの節目など、<strong>理由を説明できる場面に絞る</strong>のが実務的です。</p>
+  <h3>クーポンは「誰に・いつまで」を絞って設計する</h3>
+  <p>クーポンは対象と期限を絞れるため、価格の基準を守ったまま「今この動画を見ているあなたが、今日買う理由」を作れます。新規向け・リピート向け・ライブ視聴者限定など、配る相手ごとに設計を変えられるのも、全員の価格を一律に下げる値引きとの大きな違いです。具体的な設計パターンと運用の型は、姉妹記事「<a href="https://leam.co.jp/column/coupon-sale-tactics/">クーポン・セール活用術</a>」で詳しく解説しています。</p>
+  <h3>「セール前提の高値」は作らない：二重価格表示に注意</h3>
+  <p>販売実績のない高い「通常価格」を設定し、そこからの大幅値引きを演出する見せ方は、<strong>景品表示法の有利誤認表示にあたるおそれ</strong>があります。消費者庁の価格表示ガイドライン（「不当な価格表示についての景品表示法上の考え方」）では、比較対照価格に使ってよいのは<strong>「最近相当期間にわたって販売されていた価格」</strong>とされています。その判断の一般的な目安として、セール開始時点からさかのぼる8週間のうち、その価格で販売していた期間が販売期間の過半を占めること、かつ通算2週間以上あり、最後にその価格で販売した日から2週間以上経っていないこと、が示されています（個々の事案ごとに検討されます）。なお同ガイドラインでは「販売されていた」とは通常の販売活動として販売していたことを指し、実際に購入された実績まで求められるものではないとされています。判断に迷う場合は消費者庁の公表資料を確認し、通常価格での販売期間を社内で記録に残しておいてください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>手段</th><th>価格の基準への影響</th><th>向く場面</th><th>注意点</th></tr></thead>
+    <tbody>
+      <tr><td><b>値引き</b>（販売価格の変更）</td><td class="n">基準そのものが動く</td><td>新商品の立ち上げ、シーズン切り替え、在庫整理</td><td>常態化すると通常価格が信じられなくなる</td></tr>
+      <tr><td><b>クーポン</b></td><td class="y">基準は保たれる</td><td>「今買う理由」づくり。新規・リピート・ライブ限定</td><td>原資を§03で先に確保していないと利益が消える</td></tr>
+      <tr><td><b>二段表示</b>（通常価格＋販売価格）</td><td>通常価格が参照点になる</td><td>根拠のある通常価格からのセールを見せるとき</td><td>実績のない通常価格は景品表示法のリスク</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="ctabox">
+    <div class="ct">値付け・セット構成・クーポン設計を、まとめて一度整理しませんか</div>
+    <p>LEAMは市場データを毎営業日蓄積し、商品選定からクリエイター起用・販促設計までを一次データに基づいて組み立てます。価格まわりの「直す順番」だけでも無料相談でお伝えできます。</p>
+    <div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>クリエイター報酬の余地まで含めて値付けする：余地のない価格に動画は集まらない</h2>
+  <p>TikTok Shopでは、クリエイターがアフィリエイトで商品を紹介する動画が販売の主力チャネルになります。つまり価格は、買う人の納得感という審査だけでなく、<strong>「紹介する側にとって割に合うか」という2つ目の審査</strong>も通る必要があります。コミッションの余地がない値付けをしてしまうと、後から報酬を上げようにも原資がなく、動画の供給が細ったまま広告費で埋める苦しい展開になりがちです。</p>
+  <h3>単価が低い商材は、率より「1件あたりの報酬額」で考える</h3>
+  <p>報酬率を引き上げても、商品単価が低ければクリエイターが1件の成約で受け取る金額は小さいままです。実務的には、率の引き上げよりも<strong>§04のセット化で客単価を上げ、1件あたりの報酬額そのものを大きくする</strong>方が、紹介する魅力に直結します。報酬設計の考え方は姉妹記事「<a href="https://leam.co.jp/column/creator-commission/">クリエイター報酬相場</a>」で扱います。なお、紹介する側として案件を探しているクリエイターの方は、<a href="https://leam.co.jp/mcn/">LEAMのMCN（クリエイター事務所）</a>もご覧ください。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>「価格を決めてからクリエイターを探す」のではなく、<strong>「クリエイターが紹介したくなる報酬余地から逆算して価格とセットを組む」</strong>。この順番の入れ替えが、動画が集まるショップとの分かれ目になります。</p>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>価格は決めて終わりにしない：週次で「離脱の場所」だけ見る</h2>
+  <p>ここまでの設計をしても、最初に決めた価格が正解とは限りません。大切なのは、どの数字を見て、どう直すかを先に決めておくことです。見るべきは難しい指標ではなく、<strong>「ユーザーがどこで落ちているか」</strong>です。落ちている場所が分かれば、そもそも価格の問題なのかどうかを切り分けられます。</p>
+  <ol class="steps">
+    <li><b>損益ラインを確定する</b><p>§03の逆算を済ませ、「動かせる範囲」を数字で持ちます。ここが無いままの価格テストは、当たっても赤字の可能性が残ります。</p></li>
+    <li><b>販売価格は固定し、クーポンで実質価格を試す</b><p>販売価格を頻繁に動かすと基準が壊れます（§05）。検証は期限つきクーポン側で行うのが定石です。</p></li>
+    <li><b>週次で3つの離脱地点を確認する</b><p>動画・カードのクリック → ページからカート → カートから購入。どこで落ちているかで、価格が原因かを切り分けます。</p></li>
+    <li><b>当たった実質価格を、販売価格やセット構成に反映する</b><p>クーポン頼みを常態化させず、検証で分かった納得ラインを本体の設計に取り込みます。</p></li>
+    <li><b>セット構成と送料無料ラインを見直す</b><p>実際のカート合計額とラインのズレを補正します。客単価の実績が変われば、ラインも動かします。</p></li>
+  </ol>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 検証は「1回に1つ」だけ動かす</div>
+    <p>価格を検証するタイミングで、同時に動画素材や商品ページまで変えてしまうと、何が効いたのか分からなくなります。1回の検証で動かす要素は1つに絞ってください。</p>
+  </div>
+
+  <h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>セール前提で、最初は高めに値付けしておくのはアリですか？</summary><div class="a">おすすめしません。販売実績のない高い「通常価格」からの値引きを演出する見せ方は、景品表示法の有利誤認表示にあたるおそれがあります。消費者庁の価格表示ガイドラインでは、比較対照価格に使ってよいのは「最近相当期間にわたって販売されていた価格」とされており、目安としてセール開始時点からさかのぼる8週間のうち販売期間の過半、かつ通算2週間以上その価格で販売していたことなどが挙げられています。迷う場合は消費者庁の公表資料を確認してください。</div></details>
+    <details><summary>販売価格は頻繁に変えてもいいですか？</summary><div class="a">実務的には最小限にとどめるのがおすすめです。価格の基準が壊れるうえ、見た価格と買う時の価格がズレると離脱の原因になります。検証は販売価格ではなく、期限つきクーポンで実質価格を動かして行うのが定石です。</div></details>
+    <details><summary>楽天やAmazon、自社ECより安くすべきですか？</summary><div class="a">安値競争を前提にする必要はありません。TikTok Shopは検索比較の売り場ではなく、価格はその場の納得感で判断されるためです。ただし同じ商品を併売する場合、極端な価格差は問い合わせやレビューの火種になるため、送料まで含めた総額の見え方を大きくズラさないのが実務的です。</div></details>
+    <details><summary>送料無料ラインはいくらに設定すべきですか？</summary><div class="a">一律の正解額はありません。考え方は「いま狙っているカート合計額の少し上」に置き、そのラインを超えられるセット商品を必ず用意することです。既存ECがあるなら平均注文額が出発点になります。</div></details>
+    <details><summary>単品とセット、どちらから売り始めるべきですか？</summary><div class="a">商材の消費ペースによりますが、単品を「お試しの入口」、標準セットを「動画で紹介する主役」と役割を分けて両方用意するのが実務的です。単品だけだと客単価とクリエイター報酬の余地が確保しにくくなります。</div></details>
+    <details><summary>値下げしたのに売れません。さらに下げるべきですか？</summary><div class="a">値下げの前に、離脱の場所を確認してください。動画やカードのクリックが少ないなら素材の問題、ページからカートに進まないならページの情報不足が原因のことが多く、価格をいくら下げても解決しません。価格が効くのは主にカート（総額）の地点です。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">手数料</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="color:inherit;text-decoration:none">手数料と利益計算</a></b><span>カテゴリー別の料率と利益計算</span></div>
+      <div class="relcard"><span class="rc">販促</span><b><a href="https://leam.co.jp/column/coupon-sale-tactics/" style="color:inherit;text-decoration:none">クーポン・セール活用術</a></b><span>値引きで利益を溶かさない設計</span></div>
+      <div class="relcard"><span class="rc">商品ページ</span><b><a href="https://leam.co.jp/column/product-page-cvr/" style="color:inherit;text-decoration:none">商品登録と売れる商品ページ</a></b><span>購入率を落とさない作り方</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">TikTok Shopの出店・運用のご相談は無料です</div>
+    <p>商材とご状況を伺い、「TikTok Shopに向いているか」から正直にお伝えします。価格とセット構成の見直しだけを小さく試す形からでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター・TikTok for Business の公式ヘルプ、消費者庁「不当な価格表示についての景品表示法上の考え方」（価格表示ガイドライン）および同庁の二重価格表示に関する公表資料（手数料率・仕様・画面は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">「比較されない売り場」の前提</a></li>
+        <li><a href="#s2">送料込み表示で離脱を防ぐ</a></li>
+        <li><a href="#s3">損益ラインの逆算</a></li>
+        <li><a href="#s4">セット設計で客単価を上げる</a></li>
+        <li><a href="#s5">値引きとクーポンの使い分け</a></li>
+        <li><a href="#s6">クリエイター報酬まで織り込む</a></li>
+        <li><a href="#s7">週次で「離脱の場所」を見る</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>価格とセット構成の無料診断</b>
+      <p>損益ライン・送料設計・報酬余地を拝見し、直す順番をお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "セール前提で、最初は高めに値付けしておくのはアリですか？", "acceptedAnswer": {"@type": "Answer", "text": "おすすめしません。販売実績のない高い「通常価格」からの値引きを演出する見せ方は、景品表示法の有利誤認表示にあたるおそれがあります。消費者庁の価格表示ガイドラインでは、比較対照価格に使ってよいのは「最近相当期間にわたって販売されていた価格」とされており、目安としてセール開始時点からさかのぼる8週間のうち販売期間の過半、かつ通算2週間以上その価格で販売していたことなどが挙げられています。迷う場合は消費者庁の公表資料を確認してください。"}},
+        {"@type": "Question", "name": "販売価格は頻繁に変えてもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "実務的には最小限にとどめるのがおすすめです。価格の基準が壊れるうえ、見た価格と買う時の価格がズレると離脱の原因になります。検証は販売価格ではなく、期限つきクーポンで実質価格を動かして行うのが定石です。"}},
+        {"@type": "Question", "name": "楽天やAmazon、自社ECより安くすべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "安値競争を前提にする必要はありません。TikTok Shopは検索比較の売り場ではなく、価格はその場の納得感で判断されるためです。ただし同じ商品を併売する場合、極端な価格差は問い合わせやレビューの火種になるため、送料まで含めた総額の見え方を大きくズラさないのが実務的です。"}},
+        {"@type": "Question", "name": "送料無料ラインはいくらに設定すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "一律の正解額はありません。考え方は「いま狙っているカート合計額の少し上」に置き、そのラインを超えられるセット商品を必ず用意することです。既存ECがあるなら平均注文額が出発点になります。"}},
+        {"@type": "Question", "name": "単品とセット、どちらから売り始めるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "商材の消費ペースによりますが、単品を「お試しの入口」、標準セットを「動画で紹介する主役」と役割を分けて両方用意するのが実務的です。単品だけだと客単価とクリエイター報酬の余地が確保しにくくなります。"}},
+        {"@type": "Question", "name": "値下げしたのに売れません。さらに下げるべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "値下げの前に、離脱の場所を確認してください。動画やカードのクリックが少ないなら素材の問題、ページからカートに進まないならページの情報不足が原因のことが多く、価格をいくら下げても解決しません。価格が効くのは主にカート（総額）の地点です。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

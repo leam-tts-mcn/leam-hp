@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略</title>
+<meta name="description" content="TikTok ShopとAmazon・楽天の違いを、発見型と検索型という構造から整理し、使い分けと併売戦略を解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/marketplace-comparison/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略">
+<meta property="og:description" content="TikTok ShopとAmazon・楽天の違いを、発見型と検索型という構造から整理し、使い分けと併売戦略を解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/marketplace-comparison/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略">
+<meta name="twitter:description" content="TikTok ShopとAmazon・楽天の違いを、発見型と検索型という構造から整理し、使い分けと併売戦略を解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.22em;padding-left:.1em}
+    .meta .lmk{width:13px;height:auto;display:inline-block;vertical-align:-2px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+  /* スマホ：ヘッダーが折り返さないようにする（2026-08-30 追加） */
+  .hbtn{white-space:nowrap}
+  .logo .lnm{white-space:nowrap}
+  @media(max-width:560px){
+    .hcat{display:none}
+    .hbar{gap:10px;padding:11px 16px}
+    .hbtn{font-size:13px;padding:9px 14px}
+  }
+
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:#fff;border:1px solid var(--line);display:grid;place-items:center}
+  .av svg{width:26px;height:auto;display:block}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略", "description": "TikTok ShopとAmazon・楽天の違いを、発見型と検索型という構造から整理し、使い分けと併売戦略を解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/marketplace-comparison/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略", "item": "https://leam.co.jp/column/marketplace-comparison/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+
+<div class="hbar">
+    <a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a>
+    <span class="hcat">TikTok Shop 実践コラム</span>
+    <a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a>
+  </div>
+
+
+<div class="shell">
+<article>
+  <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok ShopとAmazon・楽天の違い</p>
+  <span class="cat">戦略・使い分け</span>
+  <h1>TikTok ShopとAmazon・楽天の違いとは？発見型×検索型の使い分けと併売戦略</h1>
+  <div class="meta">
+    <span class="upd">更新日：2026年8月30日</span><span>公開日：2026年8月30日</span>
+    <span>執筆：<svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg>株式会社LEAM 編集部</span>
+  </div>
+
+  <figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="モールの使い分け：太い赤い柱がTikTok Shop、右のシアンの細い柱2本が他のモールで、同じ地面に立つ3本の柱の高さを横一直線の基準線で見比べているイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v320c-100 30-206 34-316 18-120-18-214-50-330-46-112 4-190 44-292 56-92 11-184 0-262-30z" fill="#F6F7F9"/>
+  <ellipse cx="600" cy="240" rx="400" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="80" cy="74" r="5"/><circle cx="116" cy="74" r="5"/><circle cx="152" cy="74" r="5"/><circle cx="188" cy="74" r="5"/>
+      <circle cx="80" cy="110" r="5"/><circle cx="116" cy="110" r="5"/><circle cx="152" cy="110" r="5"/><circle cx="188" cy="110" r="5"/>
+      <circle cx="80" cy="146" r="5"/><circle cx="116" cy="146" r="5"/><circle cx="152" cy="146" r="5"/><circle cx="188" cy="146" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(940 -20)"/>
+    <use href="#dots" transform="translate(-56 288)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯・3本が同じ床に立つ） -->
+  <path d="M0 512c150-30 276-14 404 10 130 24 246 30 366 12 118-18 232-44 430-26v122H0z" fill="#ECEEF1"/>
+
+  <!-- いちばん高い柱の水準を示す細い罫 -->
+  <path d="M478 150h654" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 比較の横線（シアン・赤い柱の手前で切る） -->
+  <g stroke="#25F4EE" stroke-width="9" stroke-linecap="round" fill="none">
+    <path d="M66 262h90"/>
+    <path d="M424 262h712"/>
+  </g>
+
+  <!-- 基準線から届いていないことを示す縦の点線 -->
+  <path d="M936 276v34" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round" stroke-dasharray="9 13"/>
+
+  <!-- ================= 右奥：他モールの柱（シアン・低い） ================= -->
+  <g>
+    <g fill="#5E6064" opacity=".14" transform="translate(9 11)">
+      <rect x="854" y="316" width="164" height="36" rx="5"/>
+      <rect x="874" y="348" width="124" height="158"/>
+      <rect x="854" y="502" width="164" height="38" rx="5"/>
+    </g>
+    <rect x="874" y="348" width="124" height="158" fill="#25F4EE"/>
+    <g fill="#FFFFFF">
+      <rect x="900" y="372" width="11" height="112" rx="5.5"/>
+      <rect x="954" y="372" width="11" height="112" rx="5.5"/>
+    </g>
+    <rect x="874" y="348" width="124" height="158" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="854" y="316" width="164" height="36" rx="5" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="854" y="502" width="164" height="38" rx="5" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 右：他モールの柱（シアン・中くらい） ================= -->
+  <g>
+    <g fill="#5E6064" opacity=".14" transform="translate(9 11)">
+      <rect x="616" y="262" width="180" height="38" rx="5"/>
+      <rect x="638" y="296" width="132" height="208"/>
+      <rect x="616" y="500" width="180" height="40" rx="5"/>
+    </g>
+    <rect x="638" y="296" width="132" height="208" fill="#25F4EE"/>
+    <g fill="#FFFFFF">
+      <rect x="664" y="322" width="12" height="156" rx="6"/>
+      <rect x="722" y="322" width="12" height="156" rx="6"/>
+    </g>
+    <rect x="638" y="296" width="132" height="208" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="616" y="262" width="180" height="38" rx="5" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="616" y="500" width="180" height="40" rx="5" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 左：TikTok Shopの柱（主役・赤） ================= -->
+  <g>
+    <!-- 影 -->
+    <g fill="#5E6064" opacity=".15" transform="translate(11 13)">
+      <rect x="120" y="150" width="340" height="48" rx="6"/>
+      <path d="M132 198h316l-28 32H160z"/>
+      <rect x="160" y="226" width="260" height="236"/>
+      <path d="M160 462h260l28 28H132z"/>
+      <rect x="120" y="488" width="340" height="52" rx="6"/>
+    </g>
+
+    <!-- 柱身 -->
+    <rect x="160" y="226" width="260" height="236" fill="#FE2C55"/>
+    <!-- 裏面（丸みの陰） -->
+    <rect x="366" y="226" width="54" height="236" fill="#CE1730"/>
+    <!-- 溝 -->
+    <g fill="#CE1730">
+      <rect x="204" y="250" width="14" height="190" rx="7"/>
+      <rect x="251" y="250" width="14" height="190" rx="7"/>
+      <rect x="298" y="250" width="14" height="190" rx="7"/>
+    </g>
+    <rect x="160" y="226" width="260" height="236" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- 柱頭の受け -->
+    <path d="M132 198h316l-28 32H160z" fill="#FE2C55" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <!-- 柱脚の受け -->
+    <path d="M160 462h260l28 28H132z" fill="#FE2C55" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- 柱頭 -->
+    <rect x="120" y="150" width="340" height="48" rx="6" fill="#FE2C55" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <rect x="410" y="158" width="42" height="32" rx="5" fill="#CE1730"/>
+    <rect x="120" y="150" width="340" height="48" rx="6" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+
+    <!-- 柱脚 -->
+    <rect x="120" y="488" width="340" height="52" rx="6" fill="#FE2C55" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <rect x="410" y="496" width="42" height="36" rx="5" fill="#CE1730"/>
+    <rect x="120" y="488" width="340" height="52" rx="6" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 比較の目印（シアン） ================= -->
+  <g stroke="#0B0C10" stroke-width="7">
+    <circle cx="290" cy="262" r="18" fill="#25F4EE"/>
+    <circle cx="706" cy="262" r="18" fill="#25F4EE"/>
+    <circle cx="936" cy="262" r="18" fill="#25F4EE"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1118" cy="392" r="22" fill="#25F4EE"/>
+  <circle cx="536" cy="374" r="16" fill="#DFE0E2"/>
+</svg></figure>
+
+  <p class="lead"><strong>TikTok ShopとAmazon・楽天の最大の違いは、集客の起点です。</strong>Amazon・楽天は「欲しいものを探しに来た人」を検索で受け止める<strong>検索型</strong>、TikTok Shopは「探していなかった人」に動画で見つけてもらう<strong>発見型</strong>のECで、売れ方もコスト構造も積み上がる資産も、ほぼ逆向きにできています。この記事では、TikTok Shop・Amazon・楽天の違いをセラー目線の比較表と図解で整理し、「どのモールに出すか」ではなく<strong>「どう役割分担させて併売するか」</strong>という実務の設計まで解説します。</p>
+
+  <div class="learn">
+    <div class="lt">▼ この記事でわかること</div>
+    <ul>
+      <li>TikTok ShopとAmazon・楽天の構造的な違い（集客・コスト・レビュー資産・リピート導線）</li>
+      <li>商材・フェーズ・体制ごとの「どれを主戦場にするか」の判断軸</li>
+      <li>TikTokで認知をつくり、モール・自社ECで受け止める併売の設計手順</li>
+    </ul>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">自社の商材がTikTok Shop向きか、無料で診断します</div>
+    <p>「モールでは頭打ちだが、TikTok Shopで売れる商材か分からない」という段階のご相談が最も多いです。商材とご状況を伺い、向き・不向きから率直にお伝えします。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/contact/">資料を受け取る</a>
+    </div>
+  </div>
+
+  <nav class="toc-inline" aria-label="目次">
+    <div class="tt">CONTENTS</div>
+    <ol>
+      <li><a href="#s1">結論：役割が違う売り場として使い分ける</a></li>
+      <li><a href="#s2">最大の違いは集客の起点（発見型×検索型）</a></li>
+      <li><a href="#s3">手数料はコスト構造で見る</a></li>
+      <li><a href="#s4">積み上がる資産の違い</a></li>
+      <li><a href="#s5">リピート導線の違い</a></li>
+      <li><a href="#s6">クリエイター起用という運用差</a></li>
+      <li><a href="#s7">使い分けの3つの判断軸</a></li>
+      <li><a href="#s8">併売の設計と5ステップ</a></li>
+      <li><a href="#faq">よくある質問</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="s1"><span class="no en">01</span>結論：3つは競合ではなく「役割が違う売り場」として使い分ける</h2>
+  <p>先に結論です。TikTok ShopとAmazon・楽天は「どちらが優れているか」を選ぶ関係ではなく、<strong>集客の起点がまったく違う、役割の異なる売り場</strong>です。Amazon・楽天が「すでに欲しい人の需要を受け止める場所」なら、TikTok Shopは「まだ欲しいと思っていない人に、需要そのものを作る場所」。実務上の問いは「乗り換えるべきか」ではなく、<strong>「それぞれに何の役割を持たせるか」</strong>です。</p>
+  <p>まず全体像を1枚の表で。各行の中身は後の章で掘り下げます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>比較軸</th><th>TikTok Shop</th><th>Amazon</th><th>楽天市場</th></tr></thead>
+    <tbody>
+      <tr><td><b>集客の起点</b></td><td class="y">発見型：おすすめフィードの動画・ライブ</td><td>検索型：キーワード検索・カテゴリ</td><td>検索型＋イベント型：検索・セール・ポイント施策</td></tr>
+      <tr><td><b>買う理由の中心</b></td><td>「見て欲しくなった」共感・衝動</td><td>「探していた」指名・比較検討</td><td>「お得なタイミング」ポイント・買い回り</td></tr>
+      <tr><td><b>出店コストの考え方</b></td><td>初期費用・月額固定費なし、売れた分の販売手数料が中心※</td><td>出品プランに応じた費用（大口出品は月額、小口出品は商品ごと）＋カテゴリ別の販売手数料※</td><td>初期費用＋月額＋システム利用料などの複合型※</td></tr>
+      <tr><td><b>販促の中心</b></td><td class="y">クリエイターのアフィリエイト（成果報酬）＋広告</td><td>検索連動広告（クリック課金）が中心</td><td>広告＋セール参加・ポイント原資</td></tr>
+      <tr><td><b>レビュー資産</b></td><td class="n">歴史が浅く、各社これから積む段階</td><td class="y">蓄積が厚く、購入判断の中心</td><td class="y">蓄積が厚く、店舗評価も効く</td></tr>
+      <tr><td><b>リピート導線</b></td><td class="n">標準の導線が弱く、自分で設計が必要</td><td>再購入導線・定期おトク便などが標準装備</td><td>ポイント・メルマガなど店舗単位の仕組みあり</td></tr>
+      <tr><td><b>物流</b></td><td>自社発送が基本。規定の出荷期限あり※</td><td>FBAなど物流代行が充実</td><td>RSLなどの選択肢あり</td></tr>
+      <tr><td><b>向いている役割</b></td><td class="y">認知づくりと新規顧客の獲得</td><td>指名需要の受け皿・スピード配送</td><td>お得需要の受け皿・ファン化</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-warn">
+    <div class="bt">⚠️ ※印の項目について</div>
+    <p>手数料率・料金プラン・出荷期限などの仕様値は改定されることがあります。本記事は「構造の違い」に絞って解説し、<strong>具体的な率・金額は各社公式ページの最新情報をご確認ください</strong>。</p>
+  </div>
+
+  <h2 id="s2"><span class="no en">02</span>最大の違いは集客の起点：「発見型」と「検索型」で売れ方の構造が逆になる</h2>
+  <p>3つの売り場の違いは、突き詰めると<strong>「お客様が先か、コンテンツが先か」</strong>の1点に集約されます。コスト・レビュー・リピートの違いも、すべてここから派生します。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="検索型と発見型の構造比較図：検索型は欲しいという需要が先にあり、検索・比較を経て購入に至る。発見型は動画が先にあり、視聴して欲しくなり、その場で購入する。矢印の向きが逆になっている">
+      <rect x="20" y="20" width="330" height="300" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#454956">検索型（Amazon・楽天）</text>
+      <text x="185" y="72" text-anchor="middle" font-size="10.5" fill="#787D8A">需要が先。探しに来た人を待ち受ける</text>
+      <rect x="60" y="90" width="250" height="42" rx="9" fill="#fff" stroke="#AEB2BE"/>
+      <text x="185" y="117" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">「欲しい」がすでにある</text>
+      <path d="M185 132 V152" stroke="#787D8A" stroke-width="2"/><path d="M179 146 L185 156 L191 146 Z" fill="#787D8A"/>
+      <rect x="60" y="158" width="250" height="42" rx="9" fill="#fff" stroke="#AEB2BE"/>
+      <text x="185" y="185" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">キーワードで検索する</text>
+      <path d="M185 200 V220" stroke="#787D8A" stroke-width="2"/><path d="M179 214 L185 224 L191 214 Z" fill="#787D8A"/>
+      <rect x="60" y="226" width="250" height="42" rx="9" fill="#fff" stroke="#AEB2BE"/>
+      <text x="185" y="253" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">価格・レビューで比較する</text>
+      <path d="M185 268 V288" stroke="#787D8A" stroke-width="2"/><path d="M179 282 L185 292 L191 282 Z" fill="#787D8A"/>
+      <text x="185" y="310" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">納得して購入</text>
+      <rect x="370" y="20" width="330" height="300" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="52" text-anchor="middle" font-size="14" font-weight="800" fill="#C2203A">発見型（TikTok Shop）</text>
+      <text x="535" y="72" text-anchor="middle" font-size="10.5" fill="#787D8A">コンテンツが先。需要をその場で作る</text>
+      <rect x="410" y="90" width="250" height="42" rx="9" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="535" y="117" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2203A">動画・ライブが流れてくる</text>
+      <path d="M535 132 V152" stroke="#E8324A" stroke-width="2"/><path d="M529 146 L535 156 L541 146 Z" fill="#E8324A"/>
+      <rect x="410" y="158" width="250" height="42" rx="9" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="535" y="185" text-anchor="middle" font-size="12.5" font-weight="700" fill="#C2203A">見て「欲しい」が生まれる</text>
+      <path d="M535 200 V220" stroke="#E8324A" stroke-width="2"/><path d="M529 214 L535 224 L541 214 Z" fill="#E8324A"/>
+      <rect x="410" y="226" width="250" height="42" rx="9" fill="#17181C"/>
+      <text x="535" y="253" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">数タップでその場で購入</text>
+      <path d="M535 268 V288" stroke="#787D8A" stroke-width="2"/><path d="M529 282 L535 292 L541 282 Z" fill="#787D8A"/>
+      <text x="535" y="310" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">購入後に指名検索が生まれる</text>
+    </svg>
+    <figcaption>図1：検索型と発見型の構造差。矢印の起点が「需要」か「コンテンツ」かで逆になる（LEAM作成）</figcaption>
+  </figure>
+
+  <h3>検索型（Amazon・楽天）：すでにある需要を「待ち受けて」獲得する</h3>
+  <p>Amazon・楽天では「欲しいもの」が先にあり、セラーの仕事は<strong>検索結果で上位に出て、価格とレビューの比較に勝つこと</strong>です。裏を返すと、検索されない商品＝まだ誰も欲しいと思っていない商品は、広告を焚いても需要の器が小さいままです。</p>
+
+  <h3>発見型（TikTok Shop）：まだ需要がない人に「見つけてもらって」需要を作る</h3>
+  <p>TikTok Shopのお客様は買い物をしに来ていません。エンタメとして動画を見ているところに商品動画が流れてきて「これ良いかも」が生まれ、アプリを離れず数タップで購入まで完結します。セラーの仕事は検索対策ではなく、<strong>「欲しい」を発生させる動画・ライブの供給</strong>に変わります。</p>
+
+  <h3>この構造差は「売れる商品」まで変える</h3>
+  <p>当社の運用実感では、検索型で強いのは<strong>型番商品・定番品・指名買いされる商品</strong>、発見型で強いのは<strong>「説明されて初めて欲しくなる」商品</strong>です。使用前後の変化が映像で伝わる、デモで納得感が出る──そうした商材は検索需要が小さくてもTikTok Shopで売れる余地があります。逆に、動画で差が伝わらない商品は発見型では苦戦しやすいのが実務的な感覚です。</p>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p><strong>検索需要の大きさと「動画で欲しくさせられるか」は独立した軸</strong>です。モールでの実績だけで発見型の適性を判断しないでください。</p>
+  </div>
+
+  <h2 id="s3"><span class="no en">03</span>手数料は「率の比較」より「固定費と広告費の構造」で見る</h2>
+  <p>手数料の率だけを並べて比べるのは実務的にはおすすめしません。<strong>各社の料率・プランは改定されて数字がすぐ古くなる</strong>うえ（最新は必ず各社公式で確認してください）、セラーの手残りを決めるのは率だけでなく、<strong>「売上がゼロでも出ていくお金」と「売れた分だけ出ていくお金」の構成比</strong>だからです。</p>
+  <div class="tw"><table>
+    <thead><tr><th>コストの種類</th><th>TikTok Shop</th><th>Amazon</th><th>楽天市場</th></tr></thead>
+    <tbody>
+      <tr><td><b>出店の固定費<br>（初期・月額）</b></td><td class="y">原則なし（売れるまで固定費が発生しにくい）</td><td>大口出品プランは月額が発生（小口出品は商品ごとの成約料）</td><td>初期費用と月額が発生</td></tr>
+      <tr><td><b>販売手数料</b></td><td>カテゴリ別の率。売れたときのみ発生</td><td>カテゴリ別の率。売れたときのみ発生</td><td>システム利用料ほか複合的に発生</td></tr>
+      <tr><td><b>販促費の性質</b></td><td class="y">クリエイターへのアフィリエイト報酬が中心にできる＝<b>売れた分だけ払う成果報酬</b></td><td>クリック課金広告が中心＝<b>売れなくても発生</b></td><td>クリック課金広告＋セール参加・ポイント原資</td></tr>
+      <tr><td><b>売上ゼロの月の支出</b></td><td class="y">小さく抑えられる</td><td>固定費＋広告費が残る</td><td>固定費＋広告費が残る</td></tr>
+      <tr><td><b>代わりに必要な投資</b></td><td class="n">動画制作・サンプル提供・クリエイター対応の工数</td><td>SEO・広告運用・在庫（FBA）の管理</td><td>ページ制作・セール設計の工数</td></tr>
+    </tbody>
+  </table></div>
+  <p>モール型は売上が立つ前から固定費と広告費が出ていく一方、TikTok Shopはコストを売上に連動させられます。ただし<strong>「お金の代わりに動画供給の工数がかかる」</strong>のが正確な理解です。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="コスト構造の概念図：横軸が売上、縦軸がコスト。モール型は売上ゼロでも固定費と広告費の切片があり、TikTok Shopは原点近くから売上に比例してコストが増える変動費型">
+      <line x1="70" y1="250" x2="680" y2="250" stroke="#17181C" stroke-width="2"/>
+      <line x1="70" y1="250" x2="70" y2="30" stroke="#17181C" stroke-width="2"/>
+      <path d="M674 244 L684 250 L674 256 Z" fill="#17181C"/>
+      <path d="M64 36 L70 26 L76 36 Z" fill="#17181C"/>
+      <text x="660" y="275" text-anchor="end" font-size="12" font-weight="700" fill="#454956">売上（月商）→</text>
+      <text x="40" y="45" font-size="12" font-weight="700" fill="#454956" transform="rotate(-90 40 45)" text-anchor="end">↑ コスト</text>
+      <!-- モール型：切片あり -->
+      <line x1="70" y1="150" x2="660" y2="70" stroke="#787D8A" stroke-width="3.5"/>
+      <rect x="80" y="155" width="180" height="40" rx="8" fill="#F6F6F8" stroke="#AEB2BE"/>
+      <text x="170" y="172" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">モール型（Amazon・楽天）</text>
+      <text x="170" y="188" text-anchor="middle" font-size="10" fill="#787D8A">売上0でも固定費＋広告費</text>
+      <path d="M70 150 L58 150" stroke="#C2203A" stroke-width="2"/>
+      <text x="52" y="154" text-anchor="end" font-size="10.5" font-weight="700" fill="#C2203A">切片＝固定費</text>
+      <!-- TikTok Shop：原点近くから比例 -->
+      <line x1="70" y1="240" x2="660" y2="110" stroke="#E8324A" stroke-width="3.5"/>
+      <rect x="380" y="180" width="230" height="40" rx="8" fill="#FDEEF1" stroke="#E8324A"/>
+      <text x="495" y="197" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">TikTok Shop（変動費型）</text>
+      <text x="495" y="213" text-anchor="middle" font-size="10" fill="#787D8A">手数料もアフィリ報酬も売れた分だけ</text>
+      <text x="365" y="45" font-size="11.5" font-weight="700" fill="#0E8A5F">※ただし動画供給の「工数」は別途かかる</text>
+    </svg>
+    <figcaption>図2：コスト構造の概念図。固定費型か変動費型かで、売上ゼロ時のリスクが変わる（LEAM作成）</figcaption>
+  </figure>
+
+  <h3>損益で見るときの実務チェックポイント</h3>
+  <p>チャネル損益を比べるときは、①販売手数料、②広告・販促費（クリック課金か成果報酬か）、③物流費、④固定費の4つを同じ表に載せ、<strong>「1件売れたときの手残り」と「売上ゼロの月の支出」を両方</strong>出してください。詳しい損益設計は姉妹記事「手数料と利益計算」で扱っています。</p>
+
+  <h2 id="s4"><span class="no en">04</span>レビューと検索順位は「積み上がる資産」、動画の露出は「流れる資産」</h2>
+  <p>併売判断で最も重要なのに、あまり語られない違いがこれです。<strong>チャネルごとに「時間とともに積み上がる資産」の種類が違い、しかも資産はチャネル間で持ち運べません</strong>。</p>
+  <h3>モールの資産：レビュー・販売実績・検索順位</h3>
+  <p>Amazon・楽天では、レビュー件数・評価・販売実績が検索順位と転換率に効き、<strong>売れるほど売れやすくなる複利構造</strong>があります。ただしこの資産はモールの外には持ち出せません。Amazonのレビュー1,000件は、楽天でもTikTok Shopでもゼロです。</p>
+  <h3>TikTok Shopの資産：当たり動画の型・クリエイターとの関係・広告の学習データ</h3>
+  <p>一方TikTok Shopでは、個々の動画の露出は数日で減衰しやすい「流れる」性質です（時間が経ってから伸び直すこともあります）。ただし消えるのは露出だけで、<strong>「どんな切り口の動画が売れたか」という型、報酬設計を通じて築いたクリエイターとの関係</strong>は残り続けます。広告の学習データも資産になりますが、こちらはキャンペーン単位で、作り直したり商品を大きく変えたりすると実質的にリセットされます。<strong>持ち越せる度合いが高いのは、型とクリエイターとの関係のほう</strong>です。当社の運用実感では、この見えない資産の厚みが先行ショップと新規参入の差になります。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="資産の積み上がり方の違い：モールはレビューと実績が階段状に累積して検索順位に効く。TikTok Shopは動画ごとの露出が山なりに減衰するが、その下で当たり動画の型・クリエイター関係・学習データが少しずつ積み上がる">
+      <rect x="20" y="20" width="330" height="260" rx="14" fill="#F6F6F8" stroke="#E6E7EB"/>
+      <text x="185" y="50" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">モール：レビュー・実績が累積</text>
+      <line x1="50" y1="240" x2="320" y2="240" stroke="#AEB2BE" stroke-width="1.5"/>
+      <path d="M50 240 L90 240 L90 215 L135 215 L135 185 L185 185 L185 150 L240 150 L240 110 L320 110" fill="none" stroke="#0E8A5F" stroke-width="3.5"/>
+      <text x="300" y="95" text-anchor="end" font-size="11" font-weight="700" fill="#0E8A5F">検索順位・転換率に効く</text>
+      <text x="185" y="266" text-anchor="middle" font-size="10.5" fill="#787D8A">時間 →（下がりにくいが、外へ持ち出せない）</text>
+      <rect x="370" y="20" width="330" height="260" rx="14" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="535" y="50" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">TikTok Shop：露出は流れ、型が残る</text>
+      <line x1="400" y1="240" x2="670" y2="240" stroke="#AEB2BE" stroke-width="1.5"/>
+      <path d="M400 238 Q420 130 440 238" fill="none" stroke="#E8324A" stroke-width="3"/>
+      <path d="M450 238 Q472 90 494 238" fill="none" stroke="#E8324A" stroke-width="3"/>
+      <path d="M505 238 Q530 150 555 238" fill="none" stroke="#E8324A" stroke-width="3"/>
+      <path d="M565 238 Q592 70 619 238" fill="none" stroke="#E8324A" stroke-width="3"/>
+      <text x="510" y="80" font-size="10.5" font-weight="700" fill="#C2203A">動画ごとの露出（減衰する）</text>
+      <path d="M400 232 L670 190" stroke="#0E8A5F" stroke-width="3" stroke-dasharray="7 5"/>
+      <text x="662" y="178" text-anchor="end" font-size="11" font-weight="700" fill="#0E8A5F">型・CR関係・学習データは蓄積</text>
+      <text x="535" y="266" text-anchor="middle" font-size="10.5" fill="#787D8A">時間 →（1本ずつは流れるが、勝ち筋が貯まる）</text>
+    </svg>
+    <figcaption>図3：チャネルごとに積み上がる資産が違う。資産は相互に持ち運べない（LEAM作成）</figcaption>
+  </figure>
+  <div class="box box-point">
+    <div class="bt">💡 併売判断への示唆</div>
+    <p>資産が持ち運べない以上、<strong>「モールが伸びてからTikTok」は発見型の資産形成をその分遅らせます</strong>。小さくでも早く始めて型とクリエイター関係を貯めることが、後発との差になります。</p>
+  </div>
+
+  <h2 id="s5"><span class="no en">05</span>リピート導線：モールは仕組みが用意され、TikTok Shopは自分で設計する</h2>
+  <p>Amazonには再購入導線や定期おトク便、楽天にはポイントや店舗単位のメルマガ・フォロワー施策があり、モールでは<strong>リピートの器がプラットフォーム側にあらかじめ用意されています</strong>。</p>
+  <p>TikTok Shopは逆で、購入後のお客様はおすすめフィードへ戻り、次に出会えるかはアルゴリズム次第です。実務的には、<strong>フォロー導線・再訪施策・配信の定期化を自分で組み立てないと、単発購入の連続</strong>になりがちです。だからこそ併売設計では「初回はTikTok、2回目以降は別の器で受け止める」考え方が軸になります。</p>
+  <div class="box box-warn">
+    <div class="bt">⚠️ 外部誘導は各プラットフォームの規約を必ず確認</div>
+    <p>同梱物やメッセージで他チャネルへ誘導する行為には、プラットフォームごとに規約上の制限があります。リピート導線は<strong>必ず各社の最新規約の範囲内で</strong>設計してください。違反はアカウント停止リスクに直結します。</p>
+  </div>
+
+  <h2 id="s6"><span class="no en">06</span>クリエイター起用の有無が、日々の運用の中身を最も大きく変える</h2>
+  <p>日常業務レベルで最も大きな違いはここです。モール運用の中心が「検索対策・広告運用・ページ改善」なら、TikTok Shop運用の中心は<strong>「クリエイターとの協業マネジメント」</strong>です。</p>
+  <p>TikTok Shopには、クリエイターが商品を動画やライブで紹介し、売れた分だけ報酬が支払われるアフィリエイト機能が標準で組み込まれています。セラーの仕事は、クリエイターを見つけ、サンプルを届け、報酬率を設計し、<strong>紹介動画が毎週生まれ続ける状態を作ること</strong>。当社の運用実感でも、自社動画だけで伸ばすよりクリエイター経由の動画本数を増やす方が立ち上がりは安定しやすいです。ただし<strong>最初からクリエイターが集まるわけではありません</strong>。実績もレビューも無い商品は選ばれにくいため、まずは自社の投稿とサンプル提供で最初の数本と最初の実績を作り、それを材料に打診していく順番になります。</p>
+  <p>裏を返すと、モールで培った広告・SEOのスキルはそのまま通用しません。<strong>「EC運用の延長」ではなく「キャスティングとコンテンツ供給の運用」</strong>として体制を考えるのが失敗しない入り方です。</p>
+
+  <div class="ctabox">
+    <div class="ct">クリエイター起用の体制づくりから、伴走します</div>
+    <p>LEAMはTikTok Shop特化MCNを運営し、商材とクリエイターの相性を一次データで判断しています。「誰に・いくらの報酬設計で・何本作ってもらうか」からご相談いただけます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+
+  <h2 id="s7"><span class="no en">07</span>使い分けは「商材・フェーズ・体制」の3軸で決める</h2>
+  <p>ここまでの構造差を踏まえると、主戦場は次の3軸で判断できます。</p>
+  <div class="tw"><table>
+    <thead><tr><th>判断軸</th><th>こういう状況なら</th><th>実務的な選択</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="2"><b>① 商材</b></td><td>型番商品・定番品で、指名検索がすでにある</td><td>モールを主戦場に。TikTok Shopは認知の上乗せとして併用</td></tr>
+      <tr><td>新規性が高く、動画で使用感・変化が伝わる</td><td class="y">TikTok Shopを主戦場に。売れてからモールで受け皿を整備</td></tr>
+      <tr><td rowspan="2"><b>② フェーズ</b></td><td>ブランド認知ゼロの立ち上げ期</td><td class="y">検索されない段階では検索型は不利。発見型で認知から作る</td></tr>
+      <tr><td>すでにモールで一定の売上がある</td><td>モールの資産を守りつつ、新規獲得チャネルとしてTikTok Shopを追加</td></tr>
+      <tr><td rowspan="2"><b>③ 体制</b></td><td>動画・クリエイター対応に工数を割ける</td><td class="y">TikTok Shopの適性が高い</td></tr>
+      <tr><td>少人数で、物流も外部化して回したい</td><td>FBA等を軸にモール中心。TikTok Shopは出荷体制を作ってから</td></tr>
+    </tbody>
+  </table></div>
+  <div class="box box-point">
+    <div class="bt">💡 ポイント</div>
+    <p>迷ったら「<strong>この商品は、動画を見た人がその場で欲しくなるか？</strong>」を最初の問いにしてください。イエスならTikTok Shopに主軸を置く価値があり、ノーならモールの比較検討に勝つ設計（価格・レビュー・ページ）への投資が合理的です。</p>
+  </div>
+
+  <h2 id="s8"><span class="no en">08</span>併売の設計：TikTokで認知をつくり、モールと自社ECで受け止める</h2>
+  <p>最後に本題の併売設計です。役割分担の基本形は、<strong>「TikTok Shopで需要を作り、生まれた指名検索をモールと自社ECで受け止め、リピートは自社の器で育てる」</strong>という流れです。</p>
+  <figure>
+    <svg viewBox="0 0 720 400" role="img" aria-label="併売の設計図：TikTok Shopの動画・ライブで認知と初回購入が生まれ、指名検索が発生する。その指名検索をAmazon・楽天と自社ECが受け止め、リピート・ファン化は自社ECとLINE等の直接接点で育てる">
+      <rect x="185" y="20" width="350" height="76" rx="14" fill="#E8324A"/>
+      <text x="360" y="52" text-anchor="middle" font-size="15" font-weight="900" fill="#fff">TikTok Shop ＝ 需要を作る</text>
+      <text x="360" y="76" text-anchor="middle" font-size="11.5" fill="#FDEEF1">クリエイター動画・ライブで認知＋初回購入</text>
+      <path d="M360 96 V136" stroke="#17181C" stroke-width="2.5"/>
+      <path d="M353 129 L360 141 L367 129 Z" fill="#17181C"/>
+      <rect x="235" y="142" width="250" height="44" rx="22" fill="#17181C"/>
+      <text x="360" y="170" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">指名検索・ブランド名検索が発生</text>
+      <path d="M300 186 L170 226" stroke="#787D8A" stroke-width="2.5" fill="none"/>
+      <path d="M175 218 L164 229 L180 231 Z" fill="#787D8A"/>
+      <path d="M420 186 L550 226" stroke="#787D8A" stroke-width="2.5" fill="none"/>
+      <path d="M540 231 L556 229 L545 218 Z" fill="#787D8A"/>
+      <rect x="40" y="232" width="270" height="76" rx="12" fill="#F6F6F8" stroke="#AEB2BE"/>
+      <text x="175" y="262" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">Amazon・楽天 ＝ 受け皿</text>
+      <text x="175" y="286" text-anchor="middle" font-size="11" fill="#787D8A">レビューの安心感・即納・ポイントで刈り取る</text>
+      <rect x="410" y="232" width="270" height="76" rx="12" fill="#EAF6F1" stroke="#0E8A5F"/>
+      <text x="545" y="262" text-anchor="middle" font-size="13.5" font-weight="800" fill="#0E8A5F">自社EC ＝ 利益とデータの母艦</text>
+      <text x="545" y="286" text-anchor="middle" font-size="11" fill="#454956">顧客データが手元に残る・手数料構造が軽い</text>
+      <path d="M545 308 V344" stroke="#0E8A5F" stroke-width="2.5" stroke-dasharray="6 4"/>
+      <path d="M538 337 L545 349 L552 337 Z" fill="#0E8A5F"/>
+      <rect x="410" y="350" width="270" height="40" rx="20" fill="#fff" stroke="#0E8A5F" stroke-width="1.5"/>
+      <text x="545" y="376" text-anchor="middle" font-size="12" font-weight="700" fill="#0E8A5F">リピート・ファン化（規約の範囲で直接接点へ）</text>
+      <text x="175" y="376" text-anchor="middle" font-size="11" fill="#787D8A">※モール内のリピート導線も併用する</text>
+    </svg>
+    <figcaption>図4：併売の基本設計。認知はTikTok、受け皿はモール、リピートは自社の器で（LEAM作成）</figcaption>
+  </figure>
+
+  <h3>橋になるのは「指名検索」：発見型の露出が検索型の売上にも波及することがある</h3>
+  <p>TikTokで商品が話題になると、その場で買う人だけでなく、<strong>後からブランド名・商品名で検索して買う人</strong>が生まれます。当社の運用実感でも、TikTok側の露出が増えた時期にモールや自社ECの指名流入が動くケースは珍しくありません。併売設計とは、この波及を取りこぼさないよう<strong>指名検索の着地先をあらかじめ整えておくこと</strong>です。具体的には、①モール側の商品名とブランド表記をTikTokでの呼ばれ方に合わせる ②ブランド名＋商品名の指名キーワードで自社ページが1位に出る状態にする ③モールの検索キーワードレポートとGA4の指名流入で、TikTokの露出が増えた週と突き合わせる——の3つです。なお同じ時期に別の施策を打っていると効果が混ざるため、指名流入は分けて見てください。</p>
+  <div class="tw"><table>
+    <thead><tr><th>チャネル</th><th>役割</th><th>見るべき指標</th><th>やること</th></tr></thead>
+    <tbody>
+      <tr><td><b>TikTok Shop</b></td><td>需要創出・新規獲得</td><td>動画経由の売上、紹介クリエイター数、動画本数</td><td>クリエイター起用・ライブ・広告で露出を供給し続ける</td></tr>
+      <tr><td><b>Amazon・楽天</b></td><td>指名需要の受け皿</td><td>指名検索経由の売上、レビュー件数・評価</td><td>商品名の表記をTikTokと揃え、レビューを健全に蓄積</td></tr>
+      <tr><td><b>自社EC</b></td><td>利益率とLTVの母艦</td><td>リピート率、顧客単価、顧客データ</td><td>規約の範囲で直接接点を作り、2回目以降を受け止める</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>併売を始める5ステップ</h3>
+  <ol class="steps">
+    <li><b>主力商品を1つ決め、チャネルごとの役割を紙に書く</b><p>全商品で一斉にやらず、動画映えする主力1品から。「TikTokで認知→どこで受けるか」を先に決めます。</p></li>
+    <li><b>指名検索の着地先を整える</b><p>モール・自社ECの商品ページを、TikTok動画と同じ商品名・訴求に揃え、検索した人が「これだ」と確信できる状態にします。</p></li>
+    <li><b>TikTok Shopでクリエイター起用と動画供給を開始する</b><p>自社動画だけに頼らず、アフィリエイトでクリエイターの紹介動画が増える体制を作ります。ここが併売全体のエンジンです。</p></li>
+    <li><b>チャネル別の数字を毎週同じ表で見る</b><p>チャネル別の売上・広告費に加えて指名検索の推移を並べ、TikTokの露出がモールに波及しているかを確認します。</p></li>
+    <li><b>リピート導線を規約の範囲で設計する</b><p>2回目以降をどの器で受けるかを決め、各社の規約を確認した上で直接接点を作ります。</p></li>
+  </ol>
+
+  <h3>併売の注意点：価格の整合と在庫の一元管理</h3>
+  <p>つまずきやすいのは価格と在庫です。指名検索で複数チャネルが比較される以上、<strong>不用意な価格差は高い方のチャネルの転換率を下げます</strong>。セールもチャネル横断で整合を取ってください。在庫はバズで一気に動くため、固定で振り分けるより一元管理して引き当てる体制が安全です。TikTok Shopには規定の出荷期限があるため（最新基準は公式で確認）、<strong>バズ時に出荷が追いつく物流体制</strong>も先に確認しておきましょう。</p>
+
+  <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+  <div class="faq">
+    <details><summary>TikTok ShopはAmazonや楽天より手数料が安いですか？</summary><div class="a">単純な率の比較では判断できません。TikTok Shopは固定費がかからず販促も成果報酬に寄せられる一方、モールは固定費とクリック課金広告が乗ります。「1件売れたときの手残り」と「売上ゼロの月の支出」の両方で比べ、各社の最新料率は公式ページでご確認ください。</div></details>
+    <details><summary>Amazon・楽天で売れていない商品でも、TikTok Shopなら売れますか？</summary><div class="a">売れる可能性はあります。検索需要の大きさと「動画で欲しくさせられるか」は別の軸だからです。ただし確実ではなく、使用感や変化が動画で伝わる商材かどうかが分かれ目になります。</div></details>
+    <details><summary>併売するとき、チャネルごとに価格を変えてもいいですか？</summary><div class="a">実務的には整合を推奨します。TikTokで認知した人は指名検索で複数チャネルを見比べるため、不用意な価格差は高い側の転換率を下げます。差を付けたい場合も、セット構成や特典で行う方が安全です。</div></details>
+    <details><summary>すでにモールで売れています。TikTok Shopを追加する順番は？</summary><div class="a">モールの資産（レビュー・検索順位）を守りながら、新規獲得チャネルとしてTikTok Shopを小さく追加するのが定石です。主力1品でクリエイター起用を始め、指名検索の波及をモール側で受け止める設計にすると相乗効果が出やすくなります。</div></details>
+    <details><summary>動画は自社で作らないとだめですか？</summary><div class="a">自社制作だけに頼る必要はありません。アフィリエイト機能でクリエイターに紹介動画を作ってもらい、売れた分だけ報酬を支払う形が標準的です。実務的には、自社動画とクリエイター動画の両輪で本数を供給し続ける体制が成果につながりやすいです。</div></details>
+    <details><summary>モールのレビューをTikTok Shopに引き継げますか？</summary><div class="a">引き継げません。レビュー・販売実績・検索順位といった資産はチャネルごとに独立しています。だからこそ、参入するチャネルでは早めに販売とレビューの蓄積を始めることが重要です。</div></details>
+  </div>
+
+  <div class="author">
+    <div class="av"><svg viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg></div>
+    <div>
+      <b>株式会社LEAM 編集部</b>
+      <p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p>
+    </div>
+  </div>
+
+  <div class="rel">
+    <div class="rt">RELATED ─ あわせて読みたい</div>
+    <div class="relgrid">
+      <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/" style="color:inherit;text-decoration:none">TikTok Shopとは</a></b><span>発見型ECの全体像をここから</span></div>
+      <div class="relcard"><span class="rc">損益</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/" style="color:inherit;text-decoration:none">手数料と利益計算</a></b><span>1件売れたときの手残りを設計する</span></div>
+      <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/affiliate-guide/" style="color:inherit;text-decoration:none">アフィリエイトの仕組み</a></b><span>成果報酬型の販促を体制にする</span></div>
+    </div>
+  </div>
+
+  <div class="ctabox">
+    <div class="ct">併売の設計図づくりを、無料相談で一緒に</div>
+    <p>商材とご状況を伺い、3チャネルの役割分担の組み方を、向き・不向きを含めて率直にお伝えします。主力1品の小さなテストからでも始められます。</p>
+    <div class="row">
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+      <a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a>
+    </div>
+  </div>
+
+  <p class="src">参考情報：TikTok Shop セラーセンター、Amazon出品サービス、楽天市場出店案内の各公式ページ（手数料率・料金プラン・出荷基準などの仕様値は更新されることがあります。本記事は2026年8月30日時点の情報に基づき、 最新は一次情報でご確認ください）。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+</article>
+
+<aside class="rail">
+  <div class="railbox">
+    <nav class="toc-side" aria-label="目次">
+      <div class="tt">CONTENTS</div>
+      <ol>
+        <li><a href="#s1">結論：役割が違う売り場</a></li>
+        <li><a href="#s2">発見型と検索型の構造差</a></li>
+        <li><a href="#s3">手数料はコスト構造で見る</a></li>
+        <li><a href="#s4">積み上がる資産の違い</a></li>
+        <li><a href="#s5">リピート導線の違い</a></li>
+        <li><a href="#s6">クリエイター起用という運用差</a></li>
+        <li><a href="#s7">使い分けの3つの判断軸</a></li>
+        <li><a href="#s8">併売の設計と5ステップ</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+    <div class="railcta">
+      <b>商材のTikTok Shop適性、無料診断</b>
+      <p>モールとの役割分担まで含めて、率直にお伝えします。</p>
+      <a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a>
+    </div>
+  </div>
+</aside>
+</div>
+
+<footer class="site">
+  株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "TikTok ShopとAmazon・楽天の違いとは？発見型×検索型の使い分けと併売戦略",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "author": {"@type": "Organization", "name": "株式会社LEAM"},
+      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "TikTok ShopはAmazonや楽天より手数料が安いですか？", "acceptedAnswer": {"@type": "Answer", "text": "単純な率の比較では判断できません。TikTok Shopは固定費がかからず販促も成果報酬に寄せられる一方、モールは固定費とクリック課金広告が乗ります。「1件売れたときの手残り」と「売上ゼロの月の支出」の両方で比べ、各社の最新料率は公式ページでご確認ください。"}},
+        {"@type": "Question", "name": "Amazon・楽天で売れていない商品でも、TikTok Shopなら売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "売れる可能性はあります。検索需要の大きさと「動画で欲しくさせられるか」は別の軸だからです。ただし確実ではなく、使用感や変化が動画で伝わる商材かどうかが分かれ目になります。"}},
+        {"@type": "Question", "name": "併売するとき、チャネルごとに価格を変えてもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "実務的には整合を推奨します。TikTokで認知した人は指名検索で複数チャネルを見比べるため、不用意な価格差は高い側の転換率を下げます。差を付けたい場合も、セット構成や特典で行う方が安全です。"}},
+        {"@type": "Question", "name": "すでにモールで売れています。TikTok Shopを追加する順番は？", "acceptedAnswer": {"@type": "Answer", "text": "モールの資産（レビュー・検索順位）を守りながら、新規獲得チャネルとしてTikTok Shopを小さく追加するのが定石です。主力1品でクリエイター起用を始め、指名検索の波及をモール側で受け止める設計にすると相乗効果が出やすくなります。"}},
+        {"@type": "Question", "name": "動画は自社で作らないとだめですか？", "acceptedAnswer": {"@type": "Answer", "text": "自社制作だけに頼る必要はありません。アフィリエイト機能でクリエイターに紹介動画を作ってもらい、売れた分だけ報酬を支払う形が標準的です。実務的には、自社動画とクリエイター動画の両輪で本数を供給し続ける体制が成果につながりやすいです。"}},
+        {"@type": "Question", "name": "モールのレビューをTikTok Shopに引き継げますか？", "acceptedAnswer": {"@type": "Answer", "text": "引き継げません。レビュー・販売実績・検索順位といった資産はチャネルごとに独立しています。だからこそ、参入するチャネルでは早めに販売とレビューの蓄積を始めることが重要です。"}}
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>
