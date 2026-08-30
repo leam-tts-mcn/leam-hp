@@ -170,6 +170,23 @@
   .pv-doc a:hover { color: var(--ink); }
 
   /* CTA band (dark accent) */
+
+  /* ---------- HOME: コラム導線（2026-08-30 追加） ---------- */
+  #home-column { border-top: 1px solid var(--line); }
+  .col-lead { font-size: 15px; color: var(--gray-1); max-width: 62ch; margin: -18px 0 26px; line-height: 2; }
+  .col-grid { display: grid; gap: 14px; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .col-grid { grid-template-columns: repeat(3, 1fr); } }
+  .col-card {
+    display: block; border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 22px;
+    background: #fff; transition: border-color .2s, transform .2s;
+  }
+  .col-card:hover { border-color: var(--ink); transform: translateY(-2px); }
+  .col-card .cc-no { font-family: var(--en); font-weight: 700; font-size: 11.5px; letter-spacing: .14em; color: var(--gray-2); }
+  .col-card h3 { font-size: 16px; font-weight: 700; line-height: 1.7; margin: 8px 0 6px; }
+  .col-card p { font-size: 13px; color: var(--gray-1); line-height: 1.85; margin: 0; }
+  .col-more { display: inline-flex; align-items: center; gap: 10px; margin-top: 26px;
+    font-weight: 700; font-size: 14.5px; border-bottom: 2px solid var(--ink); padding-bottom: 4px; }
+  .col-more span { font-family: var(--en); font-size: 12px; letter-spacing: .12em; color: var(--gray-2); }
   .cta-band { background: var(--ink); color: #fff; }
   .cta-band .wrap {
     display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
@@ -3122,6 +3139,37 @@
       <div class="sec-more rv"><a class="btn btn-ghost" href="/member">メンバー紹介へ <span class="ar">→</span></a></div>
     </div>
   </section>
+
+<!-- COLUMN digest -->
+<section id="home-column">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="ghost" aria-hidden="true">COLUMN</p>
+      <p class="eyebrow">COLUMN</p>
+      <h2>TikTok Shop 実践コラム</h2>
+    </div>
+    <p class="col-lead rv">出店から売上づくりまで、TikTok Shopの実務を公式の一次情報と当社の運用実感にもとづいて解説しています。出店を検討している方、出店したが売れていない方、クリエイターとして活動したい方、それぞれの入口から読めるように並べました。</p>
+    <div class="col-grid" data-stagger>
+      <a class="col-card phv" href="/column/what-is-tiktok-shop/">
+        <span class="cc-no">01</span>
+        <h3>TikTok Shopとは？<br>仕組み・始め方・売れる理由</h3>
+        <p>何ができる売り場なのかを、仕組みと他モールとの違いから解説します。最初に読む記事です。</p>
+      </a>
+      <a class="col-card phv" href="/column/tiktok-shop-fees/">
+        <span class="cc-no">02</span>
+        <h3>手数料はいくら？<br>カテゴリー別の料率と利益計算</h3>
+        <p>販売手数料をカテゴリー別に整理し、手残りの計算方法まで。出店前の損益設計に。</p>
+      </a>
+      <a class="col-card phv" href="/column/not-selling-checklist/">
+        <span class="cc-no">03</span>
+        <h3>売れない時に見る<br>10のチェックリスト</h3>
+        <p>出店したのに動かないとき、原因がどこにあるかを順番に確かめます。</p>
+      </a>
+    </div>
+    <a class="col-more phv" href="/column/">コラムを全部見る（32記事）<span>VIEW ALL</span></a>
+  </div>
+</section>
+
 
   <div class="layers" aria-hidden="true"><span class="l1"></span><span class="l2"></span><span class="l3"></span><span class="l4"></span></div>
   <div class="cta-band">
