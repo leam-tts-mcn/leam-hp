@@ -76,11 +76,11 @@
   .brand svg { width: 26px; height: auto; }
   .brand-name { font-family: var(--en); font-weight: 700; font-size: 19px; letter-spacing: .22em; padding-left: .1em; }
   .gnav { display: flex; align-items: center; gap: 28px; }
-  .gnav a[data-r] { font-family: var(--en); font-size: 12px; font-weight: 600; letter-spacing: .16em; color: var(--gray-1); position: relative; padding: 4px 0; transition: color .2s; }
-  .gnav a[data-r]::before { content: ""; position: absolute; inset: -11px -3px; }
-  .gnav a[data-r]::after { content: ""; position: absolute; left: 0; bottom: -2px; height: 2px; width: 100%; background: var(--ink); transform: scaleX(0); transform-origin: right; transition: transform .25s ease; }
-  .gnav a[data-r]:hover::after, .gnav a[data-r].cur::after { transform: scaleX(1); transform-origin: left; }
-  .gnav a[data-r]:hover, .gnav a[data-r].cur { color: var(--ink); }
+  .gnav a[data-r], .gnav a.ext { font-family: var(--en); font-size: 12px; font-weight: 600; letter-spacing: .16em; color: var(--gray-1); position: relative; padding: 4px 0; transition: color .2s; }
+  .gnav a[data-r]::before, .gnav a.ext::before { content: ""; position: absolute; inset: -11px -3px; }
+  .gnav a[data-r]::after, .gnav a.ext::after { content: ""; position: absolute; left: 0; bottom: -2px; height: 2px; width: 100%; background: var(--ink); transform: scaleX(0); transform-origin: right; transition: transform .25s ease; }
+  .gnav a[data-r]:hover::after, .gnav a[data-r].cur::after, .gnav a.ext:hover::after { transform: scaleX(1); transform-origin: left; }
+  .gnav a[data-r]:hover, .gnav a[data-r].cur, .gnav a.ext:hover { color: var(--ink); }
   .btn-contact {
     font-family: var(--en); font-weight: 600; font-size: 12px; letter-spacing: .14em;
     background: var(--ink); color: #fff !important; padding: 10px 22px; transition: background .2s;
@@ -88,14 +88,16 @@
   .btn-contact:hover { background: var(--gray-1); }
   @media (max-width: 760px) {
     .gnav { gap: 15px; }
-    .gnav a[data-r] { font-size: 11.5px; }
+    .gnav a[data-r], .gnav a.ext { font-size: 11.5px; }
     .brand-name { display: none; }
   }
   @media (max-width: 480px) {
-    .site-head .wrap { padding: 0 14px; }
-    .gnav { gap: 9px; }
-    .gnav a[data-r] { font-size: 10px; letter-spacing: .08em; }
+    .site-head .wrap { padding: 0 12px; }
+    .gnav { gap: 8px; }
+    .gnav a[data-r], .gnav a.ext { font-size: 10px; letter-spacing: .08em; }
     .btn-contact { font-size: 10px; letter-spacing: .08em; padding: 8px 10px; }
+    /* 狭い画面では6項目が入りきらないため MEMBER を畳む（フッターとCOMPANYページから到達可能） */
+    .gnav a[href="/member"] { display: none; }
   }
 
   /* ---------- routing ---------- */
@@ -2163,6 +2165,7 @@
       <a data-r href="/service">SERVICE</a>
       <a data-r href="/member">MEMBER</a>
       <a data-r href="/company">COMPANY</a>
+      <a class="ext" href="/column/">COLUMN</a>
       <a class="btn-contact" href="/contact">CONTACT</a>
     </nav>
   </div>
@@ -3984,6 +3987,7 @@
       <a href="/member">MEMBER</a>
       <a href="/company">COMPANY</a>
       <a href="/contact">CONTACT</a>
+      <a href="/column/">TikTok Shop 実践コラム</a>
       <a href="/mcn/">クリエイター募集（MCN）</a>
       <a data-r href="/privacy">個人情報保護方針</a>
     </nav>
