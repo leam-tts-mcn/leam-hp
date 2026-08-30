@@ -24,6 +24,9 @@ H1_SWAP = {
     '/contact': '<h2 class="rv">EC・TikTok Shopのことなら、<br>お気軽にご相談ください。</h2>',
 }
 
+# HOMEのヒーロー見出し（SPAなので全ルートのDOMに含まれる）。下層ではh2へ降格させる
+HERO_H1_RE = r'<h1 class="hi hi-2">(.*?)</h1>'
+
 ROUTES = {
     '/service': {
         't': 'SERVICE｜TikTok Shopコンサルティング・MCN・SNSサービス｜株式会社LEAM',
@@ -75,6 +78,11 @@ def stamp(src, path, meta):
             sys.exit('gen_routes: h1スワップ対象が見つからない ' + path)
         rep = tgt.replace('<h2 ', '<h1 ', 1).replace('</h2>', '</h1>')
         h = h.replace(tgt, rep, 1)
+        # 下層ページではHOMEのヒーロー見出しをh2へ降格する（SPAなので全ルートのDOMに
+        # 残り、放置するとh1が2個になる）。見た目はCSSの .hero h1, .hero h2 併記で同一。
+        h, n = re.subn(HERO_H1_RE, r'<h2 class="hi hi-2">\1</h2>', h, count=1)
+        if n != 1:
+            sys.exit('gen_routes: ヒーロー見出しの降格に失敗 ' + path)
     return h
 
 
