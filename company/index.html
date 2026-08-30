@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
 <script>
@@ -47,6 +50,8 @@
     --dline: #26272d;
     --ddim: #8b8d93;
     --en: 'Archivo', 'Helvetica Neue', sans-serif;
+    /* ロゴのワードマーク専用。実物ロゴに合わせた設定（2026-08-30 江崎さん確定） */
+    --logo: 'Inter', 'Archivo', 'Helvetica Neue', sans-serif;
     --jp: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Noto Sans JP', sans-serif;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -74,7 +79,7 @@
   .progress { position: absolute; left: 0; bottom: -1px; height: 2px; width: 100%; background: var(--ink); z-index: 51; transform: scaleX(0); transform-origin: left; }
   .brand { display: flex; align-items: center; gap: 10px; }
   .brand svg { width: 26px; height: auto; }
-  .brand-name { font-family: var(--en); font-weight: 700; font-size: 19px; letter-spacing: .22em; padding-left: .1em; }
+  .brand-name { font-family: var(--logo); font-weight: 600; font-size: 19px; letter-spacing: .065em; padding-left: .065em; }
   .gnav { display: flex; align-items: center; gap: 28px; }
   .gnav a[data-r], .gnav a.ext { font-family: var(--en); font-size: 12px; font-weight: 600; letter-spacing: .16em; color: var(--gray-1); position: relative; padding: 4px 0; transition: color .2s; }
   .gnav a[data-r]::before, .gnav a.ext::before { content: ""; position: absolute; inset: -11px -3px; }
