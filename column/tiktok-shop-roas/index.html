@@ -797,35 +797,63 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      "headline": "TikTok ShopのROAS基準は自分で計算する｜損益分岐ROASの出し方とGMV Maxの目標設定",
-      "description": "TikTok Shopの必要ROASは粗利率・販売手数料・コミッション率から逆算できます。損益分岐ROASの式と原価率別の早見表、GMV MaxのROI目標の置き方を実数で解説します。",
-      "datePublished": "2026-08-30",
-      "dateModified": "2026-08-30",
-      "mainEntityOfPage": "https://leam.co.jp/column/tiktok-shop-roas/",
-      "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"},
-      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
-        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
-        {"@type": "ListItem", "position": 3, "name": "TikTok ShopのROAS基準は自分で計算する｜損益分岐ROASの出し方とGMV Maxの目標設定", "item": "https://leam.co.jp/column/tiktok-shop-roas/"}
-      ]
-    },
-    {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "ROASとROI、CPAは何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "ROASは売上÷広告費、CPAは広告費÷注文件数で、同じ関係を別の単位で表したものです。売価が決まっていれば、限界CPA＝売価×貢献利益率、損益分岐ROAS＝売価÷限界CPAで相互に変換できます。会計で使うROIは利益÷投資額なので分子が異なります。広告管理画面のROI目標がどの定義かは、最新は公式でご確認ください。"}},
-        {"@type": "Question", "name": "返品やキャンセルが出た月は、ROASをどう計算し直しますか？", "acceptedAnswer": {"@type": "Answer", "text": "分子の売上から返品分を差し引いて再計算します。返品率が5％なら実質のROASは表示値の0.95倍になるため、損益分岐ROASが2.50倍の商品で表示ROASが2.60倍でも、実質は2.47倍となり赤字側に入ります。返品率は商品ごとに差が出るので、キャンペーン単位ではなく商品単位で確認してください。"}},
-        {"@type": "Question", "name": "クーポンを出したとき、ROASの分子は割引前と割引後のどちらで見ますか？", "acceptedAnswer": {"@type": "Answer", "text": "利益判断に使うなら割引後でそろえます。クーポンの自社負担分は貢献利益率を直接下げるため、値引き率をコミッション率と同じように差し引いて損益分岐ROASを引き直すのが安全です。貢献利益率40％の商品に自社負担10％のクーポンを付けると貢献利益率は30％になり、損益分岐ROASは2.50倍から3.33倍へ上がります。"}},
-        {"@type": "Question", "name": "損益分岐ROASは税込と税抜のどちらで計算しますか？", "acceptedAnswer": {"@type": "Answer", "text": "売価・原価・手数料・広告費のすべてを同じ基準にそろえることが重要で、実務では税抜でそろえるほうが計算が崩れません。税込の売価と税抜の原価を混ぜると貢献利益率が実際より高く出てしまい、必要ROASを低く見積もることになります。"}},
-        {"@type": "Question", "name": "人件費や運用代行費のような固定費は、ROASの計算に入れますか？", "acceptedAnswer": {"@type": "Answer", "text": "商品単位の損益分岐ROASには入れません。固定費は販売件数に比例しないため、月単位で「貢献利益の合計−広告費−固定費」が黒字かどうかで見ます。月商300万円・貢献利益率35％・固定費50万円なら、広告費に使える上限は55万円で、全体ROASの下限は約5.5倍という形で算出できます。"}},
-        {"@type": "Question", "name": "ROASの目標は商品ごとに変えるべきですか、ショップ全体で1つにすべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "貢献利益率が商品ごとに違う以上、目標も商品ごとに変わります。貢献利益率50％の商品の損益分岐ROASは2.00倍、20％の商品は5.00倍なので、同じ目標値を当てるとどちらかが必ず間違った判断になります。ショップ全体で1つの数字を使うのは、全体ROASで月次の採算を見るときだけにしてください。"}}
+        {
+          "@type": "Question",
+          "name": "ROASとROI、CPAは何が違いますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ROASは売上÷広告費、CPAは広告費÷注文件数で、同じ関係を別の単位で表したものです。売価が決まっていれば、限界CPA＝売価×貢献利益率、損益分岐ROAS＝売価÷限界CPAで相互に変換できます。会計で使うROIは利益÷投資額なので分子が異なります。広告管理画面のROI目標がどの定義かは、最新は公式でご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "返品やキャンセルが出た月は、ROASをどう計算し直しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "分子の売上から返品分を差し引いて再計算します。返品率が5％なら実質のROASは表示値の0.95倍になるため、損益分岐ROASが2.50倍の商品で表示ROASが2.60倍でも、実質は2.47倍となり赤字側に入ります。返品率は商品ごとに差が出るので、キャンペーン単位ではなく商品単位で確認してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "クーポンを出したとき、ROASの分子は割引前と割引後のどちらで見ますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "利益判断に使うなら割引後でそろえます。クーポンの自社負担分は貢献利益率を直接下げるため、値引き率をコミッション率と同じように差し引いて損益分岐ROASを引き直すのが安全です。貢献利益率40％の商品に自社負担10％のクーポンを付けると貢献利益率は30％になり、損益分岐ROASは2.50倍から3.33倍へ上がります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "損益分岐ROASは税込と税抜のどちらで計算しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "売価・原価・手数料・広告費のすべてを同じ基準にそろえることが重要で、実務では税抜でそろえるほうが計算が崩れません。税込の売価と税抜の原価を混ぜると貢献利益率が実際より高く出てしまい、必要ROASを低く見積もることになります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "人件費や運用代行費のような固定費は、ROASの計算に入れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "商品単位の損益分岐ROASには入れません。固定費は販売件数に比例しないため、月単位で「貢献利益の合計−広告費−固定費」が黒字かどうかで見ます。月商300万円・貢献利益率35％・固定費50万円なら、広告費に使える上限は55万円で、全体ROASの下限は約5.5倍という形で算出できます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ROASの目標は商品ごとに変えるべきですか、ショップ全体で1つにすべきですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "貢献利益率が商品ごとに違う以上、目標も商品ごとに変わります。貢献利益率50％の商品の損益分岐ROASは2.00倍、20％の商品は5.00倍なので、同じ目標値を当てるとどちらかが必ず間違った判断になります。ショップ全体で1つの数字を使うのは、全体ROASで月次の採算を見るときだけにしてください。"
+          }
+        }
       ]
     },
-    {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
   ]
 }
 </script>

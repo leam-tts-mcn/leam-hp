@@ -809,33 +809,56 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      "headline": "D2CブランドがTikTok Shopを始める意味｜自社ECとの役割分担と新規獲得の設計",
-      "description": "自社ECを運営するD2CブランドがTikTok Shopを新規獲得に使う設計。役割分担・実効コスト比較・クリエイターへの任せ方・価格の整合を図解します。",
-      "datePublished": "2026-08-30",
-      "dateModified": "2026-08-30",
-      "inLanguage": "ja",
-      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/d2c-tiktok-shop/"},
-      "author": {"@type": "Organization", "name": "株式会社LEAM"},
-      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
-        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
-        {"@type": "ListItem", "position": 3, "name": "D2CブランドがTikTok Shopを始める意味", "item": "https://leam.co.jp/column/d2c-tiktok-shop/"}
-      ]
-    },
-    {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "TikTok Shopに出すと、自社ECの売上が食われませんか？", "acceptedAnswer": {"@type": "Answer", "text": "会っている相手が違うため、基本的には食い合いになりにくい関係です。自社ECは指名検索やメール・LINEから戻ってくる既存のお客様が中心で、TikTok Shopはブランドを知らない人がフィードで偶然出会う場所です。ただし同じ商品に大きな価格差をつけると、既存のお客様が安いほうへ移るため食い合いが起きます。価格と送料の条件を揃えておくことが前提になります。"}},
-        {"@type": "Question", "name": "ブランドを複数持っている場合、TikTok Shopのショップは分けたほうがよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "法人は最大5店まで出店できるため、ブランドごとに分けることは可能です。ただしショップを分けると、レビュー・素材・クリエイターとの関係もそれぞれ別に育てることになります。運営できる体制があるかを先に確認し、迷う場合は1店から始めて、世界観や価格帯が明確に違うブランドが出てきた段階で分けるほうが現実的です。"}},
-        {"@type": "Question", "name": "TikTok Shopの売上は、自社ECと分けて会計処理したほうがよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "入金の経路も差し引かれる費用の性質も異なるため、売上と費用の区分を分けて管理するほうが実務的です。新規獲得チャネルとして機能しているかを判断するには、自社ECと合算せず、チャネル別に手残りを見られる状態にしておく必要があります。精算の仕組みや明細の見方は公式ヘルプ、勘定科目の扱いは顧問税理士にご確認ください。"}},
-        {"@type": "Question", "name": "TikTok Shopのショップ名は、自社ECと同じブランド名にすべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "同じ表記に揃えることをおすすめします。動画を見た人がその場では買わず、あとからブランド名で検索するという戻り方があるためです。ショップ名と自社ECの表記が違うと、この検索が自社サイトにたどり着きません。英字とカタカナの使い分け、スペースや記号の有無まで揃えておくと、検索での取りこぼしが減ります。"}},
-        {"@type": "Question", "name": "自社ECで回しているMeta広告と、TikTok Shopの広告は何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopの広告は、2025年7月に日本展開が始まったGMV Maxが、2025年7月以降唯一のキャンペーンタイプになっています。細かいターゲティングを組むのではなく、ROI目標と日予算を設定する形式で、ショート動画向けのProduct GMV Maxとライブ向けのLIVE GMV Maxの2種類があります。自社サイトへ送客する広告とは、着地先も評価指標も異なります。"}},
-        {"@type": "Question", "name": "送料の設定は自社ECと同じでよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "そのままコピーすると手残りが変わります。自社ECでは決済まわりの手数料が3〜6.6%程度ですが、TikTok Shopではカテゴリ別に7〜12%の販売手数料がかかり、そこにクリエイターへのコミッションが乗ります。送料無料ラインを自社ECと同じ金額に置くと、TikTok Shop側だけ赤字になることがあるため、手残りを計算してから決めてください。"}}
+        {
+          "@type": "Question",
+          "name": "TikTok Shopに出すと、自社ECの売上が食われませんか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "会っている相手が違うため、基本的には食い合いになりにくい関係です。自社ECは指名検索やメール・LINEから戻ってくる既存のお客様が中心で、TikTok Shopはブランドを知らない人がフィードで偶然出会う場所です。ただし同じ商品に大きな価格差をつけると、既存のお客様が安いほうへ移るため食い合いが起きます。価格と送料の条件を揃えておくことが前提になります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ブランドを複数持っている場合、TikTok Shopのショップは分けたほうがよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "法人は最大5店まで出店できるため、ブランドごとに分けることは可能です。ただしショップを分けると、レビュー・素材・クリエイターとの関係もそれぞれ別に育てることになります。運営できる体制があるかを先に確認し、迷う場合は1店から始めて、世界観や価格帯が明確に違うブランドが出てきた段階で分けるほうが現実的です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TikTok Shopの売上は、自社ECと分けて会計処理したほうがよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "入金の経路も差し引かれる費用の性質も異なるため、売上と費用の区分を分けて管理するほうが実務的です。新規獲得チャネルとして機能しているかを判断するには、自社ECと合算せず、チャネル別に手残りを見られる状態にしておく必要があります。精算の仕組みや明細の見方は公式ヘルプ、勘定科目の扱いは顧問税理士にご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TikTok Shopのショップ名は、自社ECと同じブランド名にすべきですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "同じ表記に揃えることをおすすめします。動画を見た人がその場では買わず、あとからブランド名で検索するという戻り方があるためです。ショップ名と自社ECの表記が違うと、この検索が自社サイトにたどり着きません。英字とカタカナの使い分け、スペースや記号の有無まで揃えておくと、検索での取りこぼしが減ります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "自社ECで回しているMeta広告と、TikTok Shopの広告は何が違いますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TikTok Shopの広告は、2025年7月に日本展開が始まったGMV Maxが、2025年7月以降唯一のキャンペーンタイプになっています。細かいターゲティングを組むのではなく、ROI目標と日予算を設定する形式で、ショート動画向けのProduct GMV Maxとライブ向けのLIVE GMV Maxの2種類があります。自社サイトへ送客する広告とは、着地先も評価指標も異なります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "送料の設定は自社ECと同じでよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "そのままコピーすると手残りが変わります。自社ECでは決済まわりの手数料が3〜6.6%程度ですが、TikTok Shopではカテゴリ別に7〜12%の販売手数料がかかり、そこにクリエイターへのコミッションが乗ります。送料無料ラインを自社ECと同じ金額に置くと、TikTok Shop側だけ赤字になることがあるため、手残りを計算してから決めてください。"
+          }
+        }
       ]
     }
   ]

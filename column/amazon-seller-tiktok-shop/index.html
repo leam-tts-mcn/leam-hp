@@ -788,32 +788,56 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      "headline": "Amazonセラーが TikTok Shop を始める意味｜何が変わり、何が使えるか",
-      "description": "Amazonで売っている方向けに、TikTok Shopで何が変わるかを整理。相乗りとカート獲得、商品ページの作法、レビュー、JAN、FBAの扱いを実数で比べます。",
-      "datePublished": "2026-08-30",
-      "dateModified": "2026-08-30",
-      "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/amazon-seller-tiktok-shop/"},
-      "author": {"@type": "Organization", "name": "株式会社LEAM"},
-      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
-        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
-        {"@type": "ListItem", "position": 3, "name": "Amazonセラーが TikTok Shop を始める意味", "item": "https://leam.co.jp/column/amazon-seller-tiktok-shop/"}
-      ]
-    },
-    {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "AmazonとTikTok Shopで販売価格を変えてもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "価格を揃えるか変えるかは事業者の判断ですが、手数料と物流費の構造が違うため、同じ価格にすると手残りが揃いません。Amazonは購入者が払った配送料やギフト包装料も販売手数料の対象になるため、比較するときは送料込みの支払総額で揃えて計算してください。なお、購入者から見て同一商品の価格差が説明できる状態にしておくと、問い合わせ対応が楽になります。"}},
-        {"@type": "Question", "name": "Amazonの商品画像や説明文をそのままTikTok Shopに転用していいですか？", "acceptedAnswer": {"@type": "Answer", "text": "自社で権利を持っている素材であれば転用自体は可能ですが、実務的にはおすすめしません。白背景でスペックを訴求する画像は、動画を見て来た人には「動画で見た商品と同じもの」だと認識されにくいためです。動画に映っているカットを1枚目に据え、説明文は動画のセリフから起こし直すほうが結果につながりやすくなります。撮影者やモデルとの契約で使用範囲が限定されている素材は、範囲を確認してから使ってください。"}},
-        {"@type": "Question", "name": "TikTok Shopの出店審査にはどのくらいかかりますか？", "acceptedAnswer": {"@type": "Answer", "text": "通常1〜5営業日とされています。Amazonの出品開始と比べると待ち時間が発生するため、書類が揃った時点で先に申請を出し、審査中に商品ページの準備と出荷体制の整備を並行して進めるのが効率的です。"}},
-        {"@type": "Question", "name": "ブランドを複数持っている場合、TikTok Shopのショップは分けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "分けられます。個人セラーは1店、法人は最大5店まで持てるとされています。Amazonのように1つのストアフロントへ集約する必要はないため、ターゲットが大きく異なるブランドは、ショップ自体を分けて世界観を作る選択肢があります。ただし店舗を分けると運用工数も分かれるため、動画とクリエイターを供給し続けられる範囲で判断してください。"}},
-        {"@type": "Question", "name": "TikTok Shopで買ってくれた人を、自社のメルマガやLINEに誘導してもいいですか？", "acceptedAnswer": {"@type": "Answer", "text": "できません。TikTok Shopでは外部サイトやLINE等への誘導が規約違反にあたります。Amazonでも同梱物での外部誘導には制限があるため感覚は近いのですが、TikTok Shop側の運用ではより明確に禁止されていると考えてください。リピートを作りたい場合は、ショップのフォローと動画の継続投稿で接点を維持する形になります。"}},
-        {"@type": "Question", "name": "Amazonで売れている商品が、そのままTikTok Shopでも売れますか？", "acceptedAnswer": {"@type": "Answer", "text": "売れるとは限りません。Amazonで売れている商品は「すでに検索されている＝需要が顕在化している」商品で、TikTok Shopで伸びるのは「動画で見せると欲しくなる」商品だからです。判断基準としては、30秒の動画で使用前後の違いや意外性が伝わるかを見てください。スペック表の優位で選ばれてきた商品は、動画にすると差が見えにくく、苦戦しやすい傾向があります。"}}
+        {
+          "@type": "Question",
+          "name": "AmazonとTikTok Shopで販売価格を変えてもいいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "価格を揃えるか変えるかは事業者の判断ですが、手数料と物流費の構造が違うため、同じ価格にすると手残りが揃いません。Amazonは購入者が払った配送料やギフト包装料も販売手数料の対象になるため、比較するときは送料込みの支払総額で揃えて計算してください。なお、購入者から見て同一商品の価格差が説明できる状態にしておくと、問い合わせ対応が楽になります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Amazonの商品画像や説明文をそのままTikTok Shopに転用していいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "自社で権利を持っている素材であれば転用自体は可能ですが、実務的にはおすすめしません。白背景でスペックを訴求する画像は、動画を見て来た人には「動画で見た商品と同じもの」だと認識されにくいためです。動画に映っているカットを1枚目に据え、説明文は動画のセリフから起こし直すほうが結果につながりやすくなります。撮影者やモデルとの契約で使用範囲が限定されている素材は、範囲を確認してから使ってください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TikTok Shopの出店審査にはどのくらいかかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "通常1〜5営業日とされています。Amazonの出品開始と比べると待ち時間が発生するため、書類が揃った時点で先に申請を出し、審査中に商品ページの準備と出荷体制の整備を並行して進めるのが効率的です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ブランドを複数持っている場合、TikTok Shopのショップは分けられますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "分けられます。個人セラーは1店、法人は最大5店まで持てるとされています。Amazonのように1つのストアフロントへ集約する必要はないため、ターゲットが大きく異なるブランドは、ショップ自体を分けて世界観を作る選択肢があります。ただし店舗を分けると運用工数も分かれるため、動画とクリエイターを供給し続けられる範囲で判断してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TikTok Shopで買ってくれた人を、自社のメルマガやLINEに誘導してもいいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "できません。TikTok Shopでは外部サイトやLINE等への誘導が規約違反にあたります。Amazonでも同梱物での外部誘導には制限があるため感覚は近いのですが、TikTok Shop側の運用ではより明確に禁止されていると考えてください。リピートを作りたい場合は、ショップのフォローと動画の継続投稿で接点を維持する形になります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Amazonで売れている商品が、そのままTikTok Shopでも売れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "売れるとは限りません。Amazonで売れている商品は「すでに検索されている＝需要が顕在化している」商品で、TikTok Shopで伸びるのは「動画で見せると欲しくなる」商品だからです。判断基準としては、30秒の動画で使用前後の違いや意外性が伝わるかを見てください。スペック表の優位で選ばれてきた商品は、動画にすると差が見えにくく、苦戦しやすい傾向があります。"
+          }
+        }
       ]
     }
   ]

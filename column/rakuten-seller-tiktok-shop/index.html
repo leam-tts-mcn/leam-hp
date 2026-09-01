@@ -815,35 +815,63 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "Article",
-      "headline": "楽天市場のセラーがTikTok Shopを始める意味｜店舗運営との違いと持ち込めるもの",
-      "description": "楽天のセラーがTikTok Shopを始めるとき何が変わるかを整理。固定費と多層手数料、RMS販促の移植可否、ポイント原資とコミッションの置き換えを実数で解説します。",
-      "datePublished": "2026-08-30",
-      "dateModified": "2026-08-30",
-      "mainEntityOfPage": "https://leam.co.jp/column/rakuten-seller-tiktok-shop/",
-      "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"},
-      "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"},
-        {"@type": "ListItem", "position": 2, "name": "コラム", "item": "https://leam.co.jp/column/"},
-        {"@type": "ListItem", "position": 3, "name": "楽天市場のセラーがTikTok Shopを始める意味", "item": "https://leam.co.jp/column/rakuten-seller-tiktok-shop/"}
-      ]
-    },
-    {
       "@type": "FAQPage",
       "mainEntity": [
-        {"@type": "Question", "name": "楽天市場に出店したまま、TikTok Shopにも出店できますか？", "acceptedAnswer": {"@type": "Answer", "text": "併売している事業者は多くあります。楽天が公開している料金・プランのページには、他モールへの出店を制限する記載はありません。契約上の扱いは出店規約でご確認ください。TikTok Shop側は、個人セラーが1店、法人が最大5店までとされています。"}},
-        {"@type": "Question", "name": "楽天の商品CSVを、そのままTikTok Shopに使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "項目の設計が違うため、そのままでは使えません。楽天側からCSVを出力するにはRMS商品一括編集機能（10,000円／月・税別）が必要です。移す際は、送料込みで組んでいた価格をいったん分解し、TikTok Shop側の料率で粗利を計算し直してください。"}},
-        {"@type": "Question", "name": "商品説明や動画で「楽天でも買えます」と案内してよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "TikTok Shopでは外部サイトやLINEへの誘導が規約違反にあたります。他モールの店舗へ送客する案内は避けてください。両方の売り場に出すことと、TikTok Shopの中から他所へ誘導することは別の話です。"}},
-        {"@type": "Question", "name": "楽天のレビューや店舗評価は引き継げますか？", "acceptedAnswer": {"@type": "Answer", "text": "引き継げません。レビューは売り場ごとに独立して積み上がります。楽天で高評価を得ている商品でも、TikTok Shop側ではゼロから始まると考えて、最初のレビューが付くまでの導線を別に設計してください。"}},
-        {"@type": "Question", "name": "楽天の3,980円の送料無料ラインは、TikTok Shopにもありますか？", "acceptedAnswer": {"@type": "Answer", "text": "単品または合計注文金額が3,980円（税込）以上で送料無料表示が強制されるのは楽天市場の規約です（沖縄・離島宛は9,800円税込以上）。TikTok Shop側の送料の条件は異なりますので、最新は公式ヘルプでご確認ください。"}},
-        {"@type": "Question", "name": "楽天の新規出店コンサルタントにあたる窓口はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "楽天では広告やオプションの相談を新規出店コンサルタントにできます。TikTok Shopで同等の伴走を求める場合は、社内に担当を置くか、運用代行を使うかの判断になります。動画とクリエイターを誰が担当するかを決めることが、最初の分かれ目です。"}}
+        {
+          "@type": "Question",
+          "name": "楽天市場に出店したまま、TikTok Shopにも出店できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "併売している事業者は多くあります。楽天が公開している料金・プランのページには、他モールへの出店を制限する記載はありません。契約上の扱いは出店規約でご確認ください。TikTok Shop側は、個人セラーが1店、法人が最大5店までとされています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "楽天の商品CSVを、そのままTikTok Shopに使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "項目の設計が違うため、そのままでは使えません。楽天側からCSVを出力するにはRMS商品一括編集機能（10,000円／月・税別）が必要です。移す際は、送料込みで組んでいた価格をいったん分解し、TikTok Shop側の料率で粗利を計算し直してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "商品説明や動画で「楽天でも買えます」と案内してよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TikTok Shopでは外部サイトやLINEへの誘導が規約違反にあたります。他モールの店舗へ送客する案内は避けてください。両方の売り場に出すことと、TikTok Shopの中から他所へ誘導することは別の話です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "楽天のレビューや店舗評価は引き継げますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "引き継げません。レビューは売り場ごとに独立して積み上がります。楽天で高評価を得ている商品でも、TikTok Shop側ではゼロから始まると考えて、最初のレビューが付くまでの導線を別に設計してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "楽天の3,980円の送料無料ラインは、TikTok Shopにもありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "単品または合計注文金額が3,980円（税込）以上で送料無料表示が強制されるのは楽天市場の規約です（沖縄・離島宛は9,800円税込以上）。TikTok Shop側の送料の条件は異なりますので、最新は公式ヘルプでご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "楽天の新規出店コンサルタントにあたる窓口はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "楽天では広告やオプションの相談を新規出店コンサルタントにできます。TikTok Shopで同等の伴走を求める場合は、社内に担当を置くか、運用代行を使うかの判断になります。動画とクリエイターを誰が担当するかを決めることが、最初の分かれ目です。"
+          }
+        }
       ]
     },
-    {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
   ]
 }
 </script>
