@@ -48,7 +48,9 @@ COLUMN_SLUGS = (
 )
 
 # ROUTES外だがsitemapに載せる実コンテンツ（SPAではなく独立ページ）
-EXTRA_SITEMAP = ('/mcn', '/column') + tuple('/column/%s' % s for s in COLUMN_SLUGS)
+# /ecplus は robots=all の実ページで表示も取れているが、RESERVED のため ROUTES に無く
+# sitemap から漏れていた（2026-09-01 のGSC実測で発覚）。他のRESERVEDは全てnoindexなので載せない。
+EXTRA_SITEMAP = ('/mcn', '/column', '/ecplus') + tuple('/column/%s' % s for s in COLUMN_SLUGS)
 
 
 # ルート別：そのページの主見出しだけ h2→h1 に昇格（見た目はCSS側で同一に調整済み）
