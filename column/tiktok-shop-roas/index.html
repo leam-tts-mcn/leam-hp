@@ -180,7 +180,7 @@
     .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
     .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
     .toc-side li{margin:6px 0}
-    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
     .toc-side a:hover{color:var(--accent-d)}
     .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
     .railcta b{font-size:14px;display:block;margin-bottom:4px}
@@ -191,7 +191,7 @@
   footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok ShopのROAS基準｜損益分岐の出し方", "description": "TikTok Shopの必要ROASは相場ではなく粗利率から逆算します。損益分岐ROASの式と、GMV Maxの目標設定を計算表つきで解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-shop-roas/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok ShopのROAS基準｜損益分岐の出し方", "description": "TikTok Shopの必要ROASは相場ではなく粗利率から逆算します。損益分岐ROASの式と、GMV Maxの目標設定を計算表つきで解説します。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-shop-roas/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok ShopのROAS基準｜損益分岐の出し方", "item": "https://leam.co.jp/column/tiktok-shop-roas/"}]}</script>
 </head>
 <body>
@@ -767,15 +767,15 @@
     <nav class="toc-side" aria-label="目次">
       <div class="tt">CONTENTS</div>
       <ol>
-        <li><a href="#s1">相場ではなく自社の基準を出す</a></li>
-        <li><a href="#s2">損益分岐ROASの計算式</a></li>
-        <li><a href="#s3">カテゴリー別手数料7〜12％</a></li>
-        <li><a href="#s4">必要ROASのマトリクス</a></li>
-        <li><a href="#s5">送料と単価で跳ね上がる必要ROAS</a></li>
-        <li><a href="#s6">GMV MaxのROI目標の置き方</a></li>
-        <li><a href="#s7">限界ROASで増額を止める</a></li>
-        <li><a href="#s8">3つのROASを分けて判定する</a></li>
-        <li><a href="#s9">まとめ：3日で確定させる順番</a></li>
+        <li><a href="#s1">相場を調べるのをやめて、自社の損益分岐ROASを先に出す</a></li>
+        <li><a href="#s2">損益分岐ROASは「1 ÷ 貢献利益率」の1本で計算できる</a></li>
+        <li><a href="#s3">カテゴリー別の販売手数料7〜12％は、必要ROASを0.3倍ぶん動かす</a></li>
+        <li><a href="#s4">原価率・手数料・コミッションのマトリクスで自社の値を読み取る</a></li>
+        <li><a href="#s5">送料は定額なので、単価が下がるほど必要ROASは跳ね上がる</a></li>
+        <li><a href="#s6">GMV MaxのROI目標は、損益分岐ROASに上乗せ倍率をかけて置く</a></li>
+        <li><a href="#s7">ROASを上げすぎると利益額は減るので、限界ROASで増額を止める</a></li>
+        <li><a href="#s8">広告ROAS・全体ROAS・増分ROASは、別々の閾値で判定する</a></li>
+        <li><a href="#s9">まとめ：3日でROAS基準を確定させる順番で動く</a></li>
         <li><a href="#faq">よくある質問</a></li>
       </ol>
     </nav>

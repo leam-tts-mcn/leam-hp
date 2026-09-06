@@ -180,7 +180,7 @@
     .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
     .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
     .toc-side li{margin:6px 0}
-    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
     .toc-side a:hover{color:var(--accent-d)}
     .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
     .railcta b{font-size:14px;display:block;margin-bottom:4px}
@@ -190,7 +190,7 @@
 
   footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
 </style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計", "description": "TikTok Shopの発送ルールと2段階の出荷期限を整理し、遅延ペナルティを防ぐ出荷体制の作り方を解説します。少人数でも回る運用設計です。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-08-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/shipping-rules/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計", "description": "TikTok Shopの発送ルールと2段階の出荷期限を整理し、遅延ペナルティを防ぐ出荷体制の作り方を解説します。少人数でも回る運用設計です。", "inLanguage": "ja", "datePublished": "2026-08-30", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/shipping-rules/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計", "item": "https://leam.co.jp/column/shipping-rules/"}]}</script>
 </head>
 <body>
@@ -684,14 +684,14 @@
     <nav class="toc-side" aria-label="目次">
       <div class="tt">CONTENTS</div>
       <ol>
-        <li><a href="#s1">発送期限は「2段階」</a></li>
-        <li><a href="#s2">ペナルティは「率」で判定</a></li>
-        <li><a href="#s3">「営業日」と起算日の落とし穴</a></li>
-        <li><a href="#s4">完了条件はステータス更新まで</a></li>
-        <li><a href="#s5">配送業者・同梱物のルール</a></li>
-        <li><a href="#s6">返品・返金の前提設計</a></li>
-        <li><a href="#s7">出荷体制の3パターン</a></li>
-        <li><a href="#s8">繁忙期・施策前の事前設計</a></li>
+        <li><a href="#s1">発送期限は「2段階」：2営業日目でステータス更新、3営業日目で引き渡し</a></li>
+        <li><a href="#s2">ペナルティは1件ごとではなく「率」で判定される：見るべき指標は3つ</a></li>
+        <li><a href="#s3">「営業日」は月〜金、土日祝は非営業日：起算日を間違えると期限が2日ずれる</a></li>
+        <li><a href="#s4">発送作業は「ステータス更新と追跡番号登録」まで終えて完了になる</a></li>
+        <li><a href="#s5">配送業者・ラベル・同梱物は自由に選べない：指定と禁止事項がある</a></li>
+        <li><a href="#s6">返品・返金は「承認を待たずに進むケース」を前提に設計する</a></li>
+        <li><a href="#s7">出荷体制は自社・委託・ハイブリッドの3択：規模と商材で使い分ける</a></li>
+        <li><a href="#s8">繁忙期とクリエイター施策は「出荷キャパの事前設計」とセットで計画する</a></li>
         <li><a href="#faq">よくある質問</a></li>
       </ol>
     </nav>
