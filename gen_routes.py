@@ -41,7 +41,7 @@ HERO_H1_RE = r'<h1 class="hi hi-2">(.*?)</h1>'
 
 ROUTES = {
     '/service': {
-        't': 'SERVICE｜TikTok Shopコンサルティング・MCN・SNSサービス｜株式会社LEAM',
+        't': 'SERVICE｜TikTok Shopコンサルティング・MCN｜株式会社LEAM',
         'd': 'TikTok Shopコンサルティング、TikTok Shop特化MCN、SNSサービスの3領域で、出店から売上づくり・クリエイター連携までを一気通貫で支援します。',
     },
     '/member': {
