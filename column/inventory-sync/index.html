@@ -408,7 +408,7 @@
       <text x="596" y="236" text-anchor="middle" font-size="12" fill="#3A3F46">休業モードで0になる</text>
       <text x="360" y="288" text-anchor="middle" font-size="12.5" fill="#787D8A">三つを同時に触らず、左から順に一つずつ確認して切り分ける</text>
     </svg>
-    <figcaption>図3：在庫が0になる原因は三つに分かれる（公式ヘルプの記載をもとにLEAM編集部作成）</figcaption>
+    <figcaption>図3：在庫が0になる原因は三つに分かれる（公式ヘルプの記載をもとに当社作成）</figcaption>
   </figure>
 
 <h2 id="s6"><span class="no en">06</span>連携前チェックは数えられる判定基準で書く</h2>
@@ -443,7 +443,7 @@
 <p>手運用は更新が遅れる前提で設計します。全量を載せると遅れがそのまま売り越しになります。台帳の在庫から他チャネル向けを引いた残りを配分値として載せ、変えた日と担当を記録します。配分幅の決め方は<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理の記事</a>を参照してください。</p>
 <h3>連携を外すときと正を移すときは同期を止めてから動かす</h3>
 <p>連携を外す、在庫の正を移すといった作業は、接続時より事故が起きやすい工程です。同期がオンのまま台帳を入れ替えると、移行途中の値が同期先へ流れます。先に在庫同期を止め、両側を突き合わせてから切り替えます。BASE公式ヘルプでは連携解除とアカウント連携期限の更新が手順として案内され、TikTok Shopで入った注文はSeller Center側で発送処理を行う必要があると記載されています（出典：<a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ</a>／2026年9月2日確認）。</p>
-<div class="box box-point"><div class="bt">💡 公式情報と設計の切り分け</div><p>上限値・連携対象外の条件・エラー原因は公式ヘルプに記載がある事実です。チェック表の判定基準や配分の考え方はLEAM編集部が実務用に組んだ整理で、公式の要件ではありません。</p></div>
+<div class="box box-point"><div class="bt">💡 公式情報と設計の切り分け</div><p>上限値・連携対象外の条件・エラー原因は公式ヘルプに記載がある事実です。チェック表の判定基準や配分の考え方は当社が実務用に組んだ整理で、公式の要件ではありません。</p></div>
 
 <h2 id="summary"><span class="no en">08</span>まとめ</h2>
 <p>接続作業に入る前に、上から順に片付けてください。</p><div class="summary-grid"><div class="summary-item">在庫の正を一つに決め、人が触る画面と自動更新に任せる画面を書き分ける</div><div class="summary-item">SKU数とチャネル数から手段を選び、提供元の公式ドキュメントで対応状況を確認する</div><div class="summary-item">連携対象外の商品と、サイズ・重量・在庫数の不備を接続前に数え終える</div><div class="summary-item">倉庫と出荷条件を登録し、代表数点でマッピングを確認してから全件を流す</div><div class="summary-item">在庫同期をオンにしたら、テスト注文を1件通して発送処理まで見る</div><div class="summary-item">症状から原因を引く表を持ち、設定を一度に複数変えない</div></div>
