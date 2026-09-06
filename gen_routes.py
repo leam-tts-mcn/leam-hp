@@ -5,7 +5,7 @@
 # 手順: index.html を差し替え → python3 gen_routes.py → git add -A && git commit && git push
 import re
 import sys
-import datetime, glob, os
+import datetime, glob, os, subprocess
 
 BASE = 'https://leam.co.jp'
 RESERVED = ('', 'mcn', 'line', 'column', 'ecplus', 'ecplus-2', 'ecplus-3', 'fashion',
@@ -111,9 +111,30 @@ def main():
         print('generated %s/index.html' % d)
 
     today = datetime.date.today().isoformat()
+
+    def lastmod(url):
+        """🔴 lastmod はそのページが実際に最後に変わった日にする。
+
+        2026-09-07 の実測で、全61URLが一律「今日」になっていた。
+        実際には mcn/ は 2026-09-01、ecplus/ は 2026-08-03 が最後の更新で、
+        毎回ビルドするだけで「今日更新した」と主張していた。
+        lastmod が常に嘘だとクローラは lastmod を無視するようになるので、
+        git のコミット日（そのファイルが最後に変わった日）から取る。
+        """
+        rel = url[len(BASE):].strip('/')
+        path = (rel + '/index.html') if rel else 'index.html'
+        if not os.path.exists(path):
+            return today
+        try:
+            d = subprocess.run(['git', 'log', '-1', '--format=%cs', '--', path],
+                               capture_output=True, text=True, timeout=20).stdout.strip()
+            return d or today
+        except Exception:
+            return today
+
     urls = [BASE + '/'] + [BASE + p + '/' for p in ROUTES] + [BASE + p + '/' for p in EXTRA_SITEMAP]
     items = '\n'.join(
-        '  <url><loc>%s</loc><lastmod>%s</lastmod></url>' % (u, today) for u in urls
+        '  <url><loc>%s</loc><lastmod>%s</lastmod></url>' % (u, lastmod(u)) for u in urls
     )
     with open('sitemap.xml', 'w', encoding='utf-8') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n'
