@@ -4088,16 +4088,26 @@
       var co = document.getElementById('ctCo').value.trim();
       var em = document.getElementById('ctMail').value.trim();
       var subject = '【お問い合わせ】' + topic + (co ? ' ─ ' + co : '');
+/* どのコラムから来たか。CTAに ?src=column&a=<slug> を付けてある。
+   値は英数字とハイフンだけに絞る（メール本文へそのまま入れるため）。 */
+var ref = '';
+try {
+  var qs = new URLSearchParams(location.search);
+  var sc = (qs.get('src') || '').replace(/[^a-z0-9_-]/gi, '').slice(0, 24);
+  var ar = (qs.get('a') || '').replace(/[^a-z0-9-]/gi, '').slice(0, 64);
+  if (sc === 'column' && ar) ref = 'https://leam.co.jp/column/' + ar + '/';
+} catch (e) { ref = ''; }
       var body = '株式会社LEAM ご担当者様\n\n' +
         'ホームページのお問い合わせフォームよりご連絡いたします。\n\n' +
         '■ 会社名：' + (co || '（未記入）') + '\n' +
         '■ お名前：' + name + '\n' +
         '■ メールアドレス：' + (em || '（未記入）') + '\n' +
-        '■ ご相談内容：' + topic + '\n\n' +
+        '■ ご相談内容：' + topic + '\n' +
+(ref ? '■ ご覧いただいた記事：' + ref + '\n' : '') + '\n' +
         '■ 内容：\n' + msg + '\n';
       var mailto = 'mailto:info@leam.co.jp?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       form.setAttribute('data-mailto', mailto);
-      if (typeof gtag === 'function') gtag('event', 'contact_submit', { method: 'mailto', topic: topic });
+      if (typeof gtag === 'function') gtag('event', 'contact_submit', { method: 'mailto', topic: topic, article: ref || '(none)' });
       window.location.href = mailto;
       btn.classList.add('sent');
       clearTimeout(sentT);
