@@ -295,7 +295,7 @@
   <circle cx="104" cy="222" r="14" fill="#25F4EE"/>
   <circle cx="688" cy="568" r="13" fill="#FE2C55"/>
 </svg>
-    <figcaption>TikTok Shopの在庫連携｜Shopify・BASEなど他モールとの繋ぎ方（LEAM編集部作成）</figcaption>
+    <figcaption>TikTok Shopの在庫連携｜Shopify・BASEなど他モールとの繋ぎ方（LEAM作成）</figcaption>
   </figure>
 <p class="lead">在庫連携でつまずく場所は、たいていアプリの設定画面より手前にあります。<strong>自社ECとTikTok Shopのどちらを在庫の正にするか</strong>を決めずに接続すると、同期は動いているのに数が合わず、原因を追えません。この記事は外部システムとの接続に絞ります。安全在庫や欠品対応といった在庫の運用設計は<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理の記事</a>で扱います。</p>
 <div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>在庫の正をどちら側に置くかの決め方と、決めた後に触ってはいけない画面</li><li>公式連携アプリ・在庫管理システム・手運用の選び分けと、接続の順番</li><li>「在庫が0のまま」「注文が届かない」ときに見る画面と、公式に挙がっている原因</li></ul></div>
@@ -315,7 +315,7 @@
 <p>在庫連携は、二つの在庫表を一つに見せる仕組みではありません。<strong>片方を正とし、もう片方をその写しにする</strong>仕組みです。決めずに接続すると担当者が両方の画面で在庫を直し、差異が出たときにどちらが正しいか判定できません。</p>
 <p>公式ヘルプの書き方も、この一方向が前提です。BASEの「TikTok Shop連携 App」では、TikTok Shop側で商品情報を変更してもBASEには反映されないと案内されています（出典：<a href="https://apps.thebase.com/detail/137" target="_blank" rel="noopener noreferrer">BASE公式：Apps紹介</a>／2026年9月2日確認）。Shopify連携でも、TikTok Shopの在庫が0になる原因として、商品マッピングの不備、在庫の同期がオンになっていないこと、Shopifyに販売可能な在庫がないことが挙げられています（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。</p>
 <div class="tw"><table><thead><tr><th>在庫の正</th><th>向いているケース</th><th>決めたら守ること</th></tr></thead><tbody><tr><td>自社EC（Shopify・BASEなど）</td><td>既にECが稼働し、TikTok Shopを販路として足す</td><td>TikTok Shop側の在庫欄は原則として触らない</td></tr><tr><td>TikTok Shop</td><td>販売がTikTok Shopのみ、または自社ECを持たない</td><td>チャネルを増やす時点で正の置き場所を再設計する</td></tr><tr><td>在庫管理システム</td><td>複数モール・複数倉庫があり、どのカートも従属させたい</td><td>各チャネルの在庫欄は全て自動更新に限定する</td></tr></tbody></table></div>
-<p class="src">在庫の正をどこに置くかの三択（LEAM編集部作成）</p>
+<p class="src">在庫の正をどこに置くかの三択（LEAM作成）</p>
 <div class="box box-point"><div class="bt">💡 決めた内容は画面名まで書き残す</div><p>「自社ECを正にする」だけでは運用に落ちません。どの画面のどの欄を人が触り、どこを自動更新に任せるかまで書き残します。</p></div>
   <figure>
     <svg viewBox="0 0 720 268" role="img" aria-label="在庫の正を自社EC側に置き、TikTok Shopを同期先にする一方向の設計図">
@@ -337,13 +337,13 @@
       <path d="M362 188 L378 204 M378 188 L362 204" stroke="#8A5A00" stroke-width="3"/>
       <text x="360" y="242" text-anchor="middle" font-size="12.5" fill="#787D8A">同期先の在庫を直接書き換えると、次の同期で上書きされて差異の原因が追えなくなる</text>
     </svg>
-    <figcaption>図1：在庫の正は片側に固定し、逆向きの手入力を作らない（LEAM編集部作成）</figcaption>
+    <figcaption>図1：在庫の正は片側に固定し、逆向きの手入力を作らない（LEAM作成）</figcaption>
   </figure>
 
 <h2 id="s2"><span class="no en">02</span>接続手段は公式連携アプリ・在庫管理システム・手運用の三択</h2>
 <p>選択肢は三つで、優劣ではなくSKU数・チャネル数・更新頻度で決まります。公式ヘルプは商品の追加方法として単一商品のアップロード、一括アップロード、外部eコマースショップとの同期を案内しており（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;default_language=ja-JP" target="_blank" rel="noopener noreferrer">公式：ショップの設定</a>／2026年9月2日確認）、この三つがそのまま接続手段に対応します。</p>
 <div class="tw"><table><thead><tr><th>手段</th><th>在庫の正</th><th>初期作業</th><th>先に確認すること</th></tr></thead><tbody><tr><td>公式連携アプリ（Shopify・BASEなど）</td><td>自社EC</td><td>軽い</td><td>連携対象外の商品条件と、併用中アプリの対応可否</td></tr><tr><td>在庫管理システム</td><td>システム</td><td>重い</td><td>TikTok Shopへの対応可否と、倉庫単位で在庫を配分できるか</td></tr><tr><td>一括アップロード・手運用</td><td>自社の在庫台帳</td><td>軽いが工数が残る</td><td>更新の頻度と担当、更新漏れに気づく仕組み</td></tr></tbody></table></div>
-<p class="src">接続手段の比較（LEAM編集部作成）</p>
+<p class="src">接続手段の比較（LEAM作成）</p>
 <p>BASEでは、BASE Appsの「TikTok Shop連携 App」が公式のAPI連携として提供されています。BASE公式の案内では、2025年6月30日のTikTok Shop日本ローンチに伴い商品情報と在庫数の自動連携が可能になったこと、利用料が無料であることが記載されています（出典：<a href="https://baseu.jp/information/20250701" target="_blank" rel="noopener noreferrer">BASE公式お知らせ</a>／<a href="https://apps.thebase.com/detail/137" target="_blank" rel="noopener noreferrer">BASE公式：Apps紹介</a>／2026年9月2日確認）。それ以外のカートやモールでは、<strong>提供元の公式ドキュメント</strong>を先に見てください。連携ツールの有無も、在庫をどちら優先で上書きするかも提供元ごとに違います。</p>
   <figure>
     <svg viewBox="0 0 720 330" role="img" aria-label="SKU数と販売チャネル数で接続手段を選び分けるマトリクス図">
@@ -366,14 +366,14 @@
       <text x="150" y="80" font-size="11.5" fill="#9AA0AC">※チャネルが多くSKUが少ない場合も</text>
       <text x="150" y="100" font-size="11.5" fill="#9AA0AC">　在庫管理システム側が楽になる</text>
     </svg>
-    <figcaption>図2：接続手段はSKU数と販売チャネル数で決める（LEAM編集部作成）</figcaption>
+    <figcaption>図2：接続手段はSKU数と販売チャネル数で決める（LEAM作成）</figcaption>
   </figure>
 
 <h2 id="s3"><span class="no en">03</span>繋ぐ順番は「倉庫と重量→接続→マッピング→同期→テスト注文」</h2>
 <p>接続作業そのものは短時間で終わります。失敗するのは順番を変えたときです。公式ヘルプのショップ設定は、ビジネス情報の確認、倉庫と出荷テンプレート、銀行情報、商品の追加、公式アカウントのリンクという流れです（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;default_language=ja-JP" target="_blank" rel="noopener noreferrer">公式：ショップの設定</a>／2026年9月2日確認）。倉庫の登録上限は集荷用の住所が最大20件、返品用が1件です（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。</p>
 <ol class="steps"><li><b>倉庫と出荷条件を確定する</b><p>集荷用と返品用の住所、出荷テンプレートを先に登録します。</p></li><li><b>サイズと重量を埋める</b><p>Shopifyでは任意項目のため、未入力だとTikTok側で0になることがあります（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。</p></li><li><b>アカウントを接続する</b><p>BASEはかんたん決済の申請完了が前提で、紐づくセラーセンターは一つです（出典：<a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ</a>／2026年9月2日確認）。</p></li><li><b>商品をマッピングする</b><p>バリエーション単位まで紐づけ、代表数点で形を確認します。</p></li><li><b>在庫同期をオンにする</b><p>スイッチと対象倉庫を確認します。外れていると在庫は0のまま表示されます。</p></li><li><b>1点だけテスト注文を通す</b><p>注文が流れ、在庫が減り、発送できるかを実物で見ます。</p></li></ol>
 <div class="tw"><table><thead><tr><th>工程</th><th>完了の判定</th><th>判定に使う画面</th></tr></thead><tbody><tr><td>倉庫・出荷条件</td><td>集荷用と返品用の住所が登録済み</td><td>セラーセンターのショップ設定</td></tr><tr><td>サイズ・重量</td><td>対象SKUで0のままの項目が無い</td><td>自社ECの商品編集</td></tr><tr><td>アカウント接続</td><td>接続状態と有効期限が表示される</td><td>連携アプリの管理画面</td></tr><tr><td>マッピング</td><td>バリエーション数が両側で一致</td><td>連携アプリの商品一覧</td></tr><tr><td>在庫同期</td><td>自社ECの在庫数と表示在庫が一致</td><td>TikTok Shopの商品一覧</td></tr><tr><td>テスト注文</td><td>注文が自社EC側に届き在庫が減る</td><td>注文同期ステータスと自社ECの注文</td></tr></tbody></table></div>
-<p class="src">工程ごとの完了条件（LEAM編集部作成）</p>
+<p class="src">工程ごとの完了条件（LEAM作成）</p>
 
 <h2 id="s4"><span class="no en">04</span>連携できない商品を先に洗い出さないと当日に全部止まる</h2>
 <p>連携アプリには、仕様として連携できない商品があります。接続当日に知ると商品登録のやり直しになります。BASE公式ヘルプの記載は条件が明確なので、接続前の商品一覧へそのまま当てられます（出典：<a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ</a>／2026年9月2日確認）。</p>
@@ -414,7 +414,7 @@
 <h2 id="s6"><span class="no en">06</span>連携前チェックは数えられる判定基準で書く</h2>
 <p>チェック表は「確認する」ではなく<strong>数えられる判定基準</strong>で書きます。感覚に寄ると接続当日に同じ確認をやり直します。</p>
 <div class="tw"><table><thead><tr><th>チェック項目</th><th>合格の判定基準</th><th>不合格のときの処理</th></tr></thead><tbody><tr><td>在庫の正</td><td>正とする画面が一つに決まっている</td><td>接続を始めず、先に決める</td></tr><tr><td>連携対象外の商品</td><td>対象外に当たる商品の件数を数え終えている</td><td>対象外を一覧から分離する</td></tr><tr><td>サイズ・重量</td><td>連携予定SKUで未入力が無い</td><td>入力を終えてから接続する</td></tr><tr><td>在庫数の範囲</td><td>マイナス在庫と在庫切れが無い</td><td>0から999999の範囲へ修正する</td></tr><tr><td>倉庫</td><td>集荷用と返品用の住所が登録済み</td><td>登録してから商品を流す</td></tr><tr><td>併用アプリ</td><td>導入中アプリの対応可否を確認済み</td><td>非対応アプリを外す判断をする</td></tr><tr><td>テスト注文</td><td>1件通し、在庫の減りと発送まで確認</td><td>公開を止めて原因を切り分ける</td></tr></tbody></table></div>
-<p class="src">連携前チェック表（LEAM編集部作成）</p>
+<p class="src">連携前チェック表（LEAM作成）</p>
   <figure>
     <svg viewBox="0 0 720 236" role="img" aria-label="接続前・接続当日・接続後の点検を並べた在庫連携の工程タイムライン">
       <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">TIMELINE</text>
@@ -434,7 +434,7 @@
       <text x="550" y="184" text-anchor="middle" font-size="11.5" fill="#3A3F46">在庫差異の突き合わせ</text>
       <text x="360" y="216" text-anchor="middle" font-size="12.5" fill="#787D8A">洗い出しを飛ばすと、当日の失敗が全商品に同時に出る</text>
     </svg>
-    <figcaption>図4：在庫連携は三つの区間に分けて進める（LEAM編集部作成）</figcaption>
+    <figcaption>図4：在庫連携は三つの区間に分けて進める（LEAM作成）</figcaption>
   </figure>
 
 <h2 id="s7"><span class="no en">07</span>連携できないときは更新の起点と担当を先に決める</h2>
@@ -451,10 +451,10 @@
 <h2 id="faq"><span class="no en">09</span>よくある質問</h2>
 <div class="faq"><details><summary>在庫の正はTikTok Shop側にしてもよいですか？</summary><div class="a">TikTok Shopだけで販売するなら問題ありません。ただしShopifyやBASEの公式連携アプリは、自社ECの商品情報と在庫をTikTok Shopへ送る方向で作られています。BASE公式ヘルプでもTikTok Shop側の変更はBASEへ反映されないとされているため、連携アプリを使うなら自社EC側を正にしてください（2026年9月2日確認）。</div></details><details><summary>TikTok Shopの在庫が0のままです。どこを見ればよいですか？</summary><div class="a">公式のShopify連携FAQでは、商品マッピングの不備、在庫の同期がオンになっていないこと、Shopifyに販売可能な在庫がないことが原因として挙げられています。この三つを一つずつ確認してください（2026年9月2日確認）。</div></details><details><summary>BASEとTikTok Shopの在庫連携に費用はかかりますか？</summary><div class="a">BASE公式のAppsページでは、TikTok Shop連携 Appの利用料は無料と記載されています。利用にはBASEかんたん決済の申請完了が必要です。TikTok Shop側の手数料は別に確認してください（2026年9月2日確認）。</div></details><details><summary>連携できない商品はありますか？</summary><div class="a">あります。BASE公式ヘルプでは、定期便、抽選販売、テイクアウト、デジタルコンテンツ、一部のAppを使った設定商品、価格500,000円超、種類300超、説明文が5,000字超または0字、画像が未設定の商品は連携できないと案内されています（2026年9月2日確認）。</div></details><details><summary>注文が自社ECに入ってきません。何を確認しますか？</summary><div class="a">公式のShopify連携FAQでは、注文の同期ステータスを確認するタブが用意されており、注文IDが表示されない場合は同期に失敗しているため、セラーセンターでの手動処理が必要とされています（2026年9月2日確認）。</div></details><details><summary>連携アプリは他のアプリと併用できますか？</summary><div class="a">公式のShopify連携FAQでは、他の商品リストアプリや注文管理アプリは対応可否の確認が必要で、非対応のアプリを使うと注文ステータスに不具合が発生する可能性があると案内されています（2026年9月2日確認）。</div></details></div>
 <div class="ctabox"><div class="ct">連携の設計から運用の引き継ぎまで相談できます</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。使っているカートと社内体制を伺い、必要な範囲を率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
-<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
 <h2><span class="no en">10</span>参考にした公式情報</h2>
 <ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">TikTok Shop公式：Shopify連携のよくある質問</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：ショップの設定</a>（2026年9月2日確認）</li><li><a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ：TikTok Shop連携 App</a>（2026年9月2日確認）</li><li><a href="https://apps.thebase.com/detail/137" target="_blank" rel="noopener noreferrer">BASE公式：TikTok Shop連携（Apps）</a>（2026年9月2日確認）</li><li><a href="https://baseu.jp/information/20250701" target="_blank" rel="noopener noreferrer">BASE公式：TikTok ShopとBASEの公式API連携</a>（2026年9月2日確認）</li></ul>
-<p class="src">仕様、画面名称、上限値、連携対象の条件は更新されることがあります。本記事は2026年9月2日時点で確認できた公式情報と、LEAM編集部が作成した運用フレームを区別して記載しています。</p>
+<p class="src">仕様、画面名称、上限値、連携対象の条件は更新されることがあります。本記事は2026年9月2日時点で確認できた公式情報と、当社が作成した運用フレームを区別して記載しています。</p>
 <div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">関連記事</span><b>TikTok Shopとは｜仕組みと始め方の全体像</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-inventory-management/"><span class="rc">関連記事</span><b>TikTok Shopの在庫管理｜欠品と売り越しを防ぐ</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/seller-center-guide/"><span class="rc">関連記事</span><b>セラーセンターの使い方と初期設定</b><span>詳しく読む</span></a></div></div>
 </article>
 <aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">在庫の正は自社EC側かTikTok Shop側のどちらか一方に決める</a></li><li><a href="#s2">接続手段は公式連携アプリ・在庫管理システム・手運用の三択</a></li><li><a href="#s3">繋ぐ順番は「倉庫と重量→接続→マッピング→同期→テスト注文」</a></li><li><a href="#s4">連携できない商品を先に洗い出さないと当日に全部止まる</a></li><li><a href="#s5">ズレは症状から原因を引き、三つを同時に触らない</a></li><li><a href="#s6">連携前チェックは数えられる判定基準で書く</a></li><li><a href="#s7">連携できないときは更新の起点と担当を先に決める</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
