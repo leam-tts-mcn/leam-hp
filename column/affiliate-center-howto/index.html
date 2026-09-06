@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopアフィリエイトセンターの使い方と案件の探し方</title>
+<meta name="description" content="「アフィリエイトセンター」はセラー側の画面名。TikTok Shopの案件の探し方、参加申請、商品リンクの貼り方、実績の見方を公式ヘルプで整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/affiliate-center-howto/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopアフィリエイトセンターの使い方と案件の探し方">
+<meta property="og:description" content="「アフィリエイトセンター」はセラー側の画面名。TikTok Shopの案件の探し方、参加申請、商品リンクの貼り方、実績の見方を公式ヘルプで整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/affiliate-center-howto/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopアフィリエイトセンターの使い方と案件の探し方">
+<meta name="twitter:description" content="「アフィリエイトセンター」はセラー側の画面名。TikTok Shopの案件の探し方、参加申請、商品リンクの貼り方、実績の見方を公式ヘルプで整理します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopアフィリエイトセンターの使い方と案件の探し方", "description": "「アフィリエイトセンター」はセラー側の画面名。TikTok Shopの案件の探し方、参加申請、商品リンクの貼り方、実績の見方を公式ヘルプで整理します。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/affiliate-center-howto/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopアフィリエイトセンターの使い方と案件の探し方", "item": "https://leam.co.jp/column/affiliate-center-howto/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTokアフィリエイトセンターの使い方｜案件の探し方と申請の流れ</p>
+<span class="cat">クリエイター向け</span>
+<h1>TikTokアフィリエイトセンターの使い方｜案件の探し方と申請の流れ</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="アフィリエイトセンターでの案件探し：手前の大きな案件カードの条件欄を虫眼鏡で拡大して評価とコミッション率を確かめ、右上に積み上がった見送りの案件を残したまま、太いシアンの矢印がその一件を右下の承認スタンプへ運んで申し込みが通る場面を表したイラスト">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <path d="M0 0h1200v322c-96 34-192 34-296 16-112-20-196-52-308-46-112 6-196 50-306 60-98 9-196-6-290-38z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="252" rx="270" ry="205" fill="#EFF1F4"/>
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(1000 -20)"/>
+  </g>
+  <path d="M0 512c142-32 264-18 394 6 132 24 250 32 374 10 122-22 238-46 432-28v130H0z" fill="#ECEEF1"/>
+
+  <g transform="rotate(-2 902 210)">
+    <rect x="766" y="178" width="272" height="64" rx="13" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="766" y="178" width="272" height="64" rx="13" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="800" cy="210" r="18" fill="#FFFFFF"/>
+    <rect x="832" y="196" width="120" height="13" rx="6.5" fill="#FFFFFF"/>
+    <rect x="832" y="218" width="88" height="12" rx="6" fill="#FFFFFF"/>
+  </g>
+  <g transform="rotate(3 878 132)">
+    <rect x="742" y="100" width="272" height="64" rx="13" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="742" y="100" width="272" height="64" rx="13" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="776" cy="132" r="18" fill="#FFFFFF"/>
+    <rect x="808" y="118" width="120" height="13" rx="6.5" fill="#FFFFFF"/>
+    <rect x="808" y="140" width="76" height="12" rx="6" fill="#FFFFFF"/>
+  </g>
+  <g transform="rotate(4 926 288)">
+    <rect x="790" y="256" width="272" height="64" rx="13" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="790" y="256" width="272" height="64" rx="13" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="824" cy="288" r="18" fill="#FFFFFF"/>
+    <rect x="856" y="274" width="120" height="13" rx="6.5" fill="#FFFFFF"/>
+    <rect x="856" y="296" width="66" height="12" rx="6" fill="#FFFFFF"/>
+  </g>
+
+  <path d="M868 566H1116" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+  <g transform="rotate(-8 990 462)">
+    <circle cx="990" cy="462" r="94" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <circle cx="990" cy="462" r="94" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="990" cy="462" r="68" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M958 462l22 24 42-52" fill="none" stroke="#0B0C10" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <path d="M566 392C654 366 736 364 812 380L806 346 884 404 800 456 800 424C736 410 656 412 570 434Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <path d="M566 392C654 366 736 364 812 380L806 346 884 404 800 456 800 424C736 410 656 412 570 434Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <g transform="rotate(-5 335 341)">
+    <rect x="120" y="196" width="430" height="290" rx="20" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <rect x="120" y="196" width="430" height="290" rx="20" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="152" y="228" width="112" height="112" rx="14" fill="#FFFFFF"/>
+    <circle cx="184" cy="262" r="17" fill="#DFE0E2"/>
+    <path d="M164 340l40-48 26 34 12-20 16 34z" fill="#DFE0E2"/>
+    <rect x="286" y="246" width="196" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="286" y="282" width="142" height="17" rx="8.5" fill="#CE1730"/>
+    <rect x="286" y="313" width="104" height="17" rx="8.5" fill="#CE1730"/>
+    <path d="M152 366H518" fill="none" stroke="#CE1730" stroke-width="4" stroke-linecap="round"/>
+    <rect x="152" y="386" width="366" height="26" rx="13" fill="#FFFFFF"/>
+    <rect x="152" y="386" width="222" height="26" rx="13" fill="#25F4EE"/>
+    <rect x="152" y="430" width="32" height="32" rx="9" fill="#FFFFFF"/>
+    <path d="M160 446l7 8 13-16" fill="none" stroke="#25F4EE" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="200" y="439" width="136" height="15" rx="7.5" fill="#FFFFFF"/>
+    <rect x="356" y="430" width="32" height="32" rx="9" fill="#FFFFFF"/>
+    <rect x="404" y="439" width="114" height="15" rx="7.5" fill="#FFFFFF"/>
+  </g>
+
+  <circle cx="300" cy="420" r="78" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+  <path d="M245 475L176 544" fill="none" stroke="#0B0C10" stroke-width="24" stroke-linecap="round"/>
+  <circle cx="300" cy="420" r="78" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+  <rect x="252" y="392" width="96" height="22" rx="11" fill="#DFE0E2"/>
+  <rect x="252" y="392" width="58" height="22" rx="11" fill="#25F4EE"/>
+  <rect x="256" y="436" width="26" height="26" rx="7" fill="#DFE0E2"/>
+  <rect x="290" y="440" width="58" height="15" rx="7.5" fill="#DFE0E2"/>
+
+  <circle cx="628" cy="152" r="15" fill="#25F4EE"/>
+  <circle cx="1140" cy="250" r="12" fill="#FE2C55"/>
+  <circle cx="1096" cy="168" r="14" fill="#DFE0E2"/>
+</svg>
+    <figcaption>アフィリエイトセンターの使い方（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">「アフィリエイトセンター」をTikTokアプリで探しても見つからない、という詰まり方をする機能です。原因は名前で、公式ヘルプの<strong>アフィリエイトセンター</strong>はセラーがパソコンから入る管理画面を指します。クリエイターの入口はアプリ内の<strong>TikTok Shopクリエイターセンター</strong>です。呼び分けから実績の確認まで、日本向け公式ヘルプで確認できた範囲で並べます。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>セラー側の「アフィリエイトセンター」とクリエイター側の画面の呼び分け</li><li>商品マーケットプレイスとコラボ招待の使い分け</li><li>参加申請の条件、商品リンクを貼れる範囲、報酬が確定する条件</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">案件</span><b><a href="https://leam.co.jp/column/creator-invite/">クリエイター招待の仕組み</a></b><span>届いた後の判断</span></div>
+    <div class="relcard"><span class="rc">サンプル</span><b><a href="https://leam.co.jp/column/sample-request/">サンプル申請のやり方</a></b><span>申請から投稿まで</span></div>
+    <div class="relcard"><span class="rc">報酬</span><b><a href="https://leam.co.jp/column/creator-commission/">コミッションの決まり方</a></b><span>率の決まり方</span></div>
+  </div>
+</div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">アフィリエイトセンターはセラー側の画面名</a></li><li><a href="#s2">案件の入口は2系統</a></li><li><a href="#s3">最初に見るのは品質、率は3番目</a></li><li><a href="#s4">申請は2段階に分かれる</a></li><li><a href="#s5">サンプルは対応まで1セット</a></li><li><a href="#s6">貼れるのはショーケースの商品だけ</a></li><li><a href="#s7">実績は割って見る</a></li><li><a href="#s8">報酬の確定条件</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>「アフィリエイトセンター」はセラー側の画面名で、入口が別にある</h2>
+<p>公式ヘルプ「アフィリエイトコラボ」は、デスクトップでセラーセンターにログインし「アフィリエイト・マーケティング」をタップするとアフィリエイトセンターにリダイレクトされる、と書いています。売る側の管理画面です。クリエイター側は、アカウントページの<strong>ショッピングバッグアイコン</strong>から「TikTok Shop」へ進み、<strong>クリエイターセンター</strong>を開きます。</p>
+<p>ただしクリエイター向け「アフィリエイトリンク」の公式ガイドは、収益の確認先を<strong>［アフィリエイトセンター］</strong>以下と書いており、同じ語が両側に出てきます。表示名は端末やバージョンで異なることがあるので、ボタン名より<span class="hl">アプリ側かセラーセンター側かという階層で覚える</span>ほうが迷いません。</p>
+<div class="tw"><table><thead><tr><th>呼び名</th><th>入口</th><th>公式ヘルプで確認できる中身</th></tr></thead><tbody><tr><td>アフィリエイトセンター</td><td>セラーセンター ＞ アフィリエイト・マーケティング</td><td>コラボ（オープン／ターゲット）の設定</td></tr><tr><td>クリエイターセンター</td><td>アプリ ＞ ショッピングバッグ ＞ TikTok Shop</td><td>クリエイタータスク、その他の機能、アカウントの健全性、収益</td></tr><tr><td>商品マーケットプレイス</td><td>クリエイターセンター ＞ ツールキット</td><td>カテゴリー、人気の商品、人気上昇中のショップ</td></tr><tr><td>ショーケース</td><td>アカウントページのショッピングバッグ</td><td>紹介する商品の置き場。動画やLIVEに使える</td></tr><tr><td>コラボ招待</td><td>クリエイターセンター ＞ その他の機能</td><td>保留中の招待、特典、ショップ情報、商品一覧</td></tr></tbody></table></div>
+<p class="src">公式ヘルプの表記のみで作成（2026年9月2日確認）</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="セラー側のアフィリエイトセンターとクリエイター側のクリエイターセンターの階層図">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">SCREEN MAP</text>
+      <rect x="28" y="54" width="300" height="222" rx="14" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="178" y="82" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">パソコン（セラー）</text>
+      <rect x="52" y="98" width="252" height="38" rx="10" fill="#17181C"/>
+      <text x="178" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">セラーセンター</text>
+      <path d="M178 140 V158" stroke="#787D8A" stroke-width="2"/>
+      <rect x="52" y="160" width="252" height="38" rx="10" fill="#fff" stroke="#787D8A"/>
+      <text x="178" y="184" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">アフィリエイト・マーケティング</text>
+      <path d="M178 202 V220" stroke="#787D8A" stroke-width="2"/>
+      <rect x="52" y="222" width="252" height="38" rx="10" fill="#E8324A"/>
+      <text x="178" y="246" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">アフィリエイトセンター</text>
+      <rect x="392" y="54" width="300" height="222" rx="14" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".4"/>
+      <text x="542" y="82" text-anchor="middle" font-size="14" font-weight="800" fill="#17181C">TikTokアプリ（クリエイター）</text>
+      <rect x="416" y="98" width="252" height="38" rx="10" fill="#17181C"/>
+      <text x="542" y="122" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">ショッピングバッグ</text>
+      <path d="M542 140 V158" stroke="#B01D36" stroke-width="2"/>
+      <rect x="416" y="160" width="252" height="38" rx="10" fill="#E8324A"/>
+      <text x="542" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">クリエイターセンター</text>
+      <path d="M470 202 V220" stroke="#B01D36" stroke-width="2"/><path d="M614 202 V220" stroke="#B01D36" stroke-width="2"/>
+      <rect x="416" y="222" width="108" height="38" rx="10" fill="#fff" stroke="#B01D36"/>
+      <text x="470" y="246" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">ツールキット</text>
+      <rect x="560" y="222" width="108" height="38" rx="10" fill="#fff" stroke="#B01D36"/>
+      <text x="614" y="246" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">その他の機能</text>
+    </svg>
+    <figcaption>図1：入口はセラー側とクリエイター側で別（LEAM作成）</figcaption>
+  </figure>
+<h2 id="s2"><span class="no en">02</span>案件は自分で探すか、コラボ招待で届くかの2系統</h2>
+<p>公式ヘルプはショーケースへの追加方法を<strong>4通り</strong>と説明しています。商品マーケットプレイス、商品の詳細ページ、セラーからの招待、ショッピングカートや購入済み商品です。マーケットプレイスへは、クリエイターセンターの「TikTok Shopツールキット」の最初のボタンから入ります。</p>
+<p>「おすすめ」はクリエイターごとにパーソナライズされ、アクセスするたび更新されると公式FAQにあります。<span class="hl">初回の並びを自分の適性と読まない</span>ほうがいい、という意味です。コラボ招待は「その他の機能」から開き、カテゴリーとストアの評価で絞れます。承諾できる件数に上限はありません。</p>
+<div class="tw"><table><thead><tr><th>入口</th><th>どう来るか</th><th>公式に明記されている制約</th></tr></thead><tbody><tr><td>商品マーケットプレイス</td><td>自分で探して「追加」</td><td>追加先は自分のショーケース。おすすめは毎回更新</td></tr><tr><td>コラボ招待</td><td>セラーから届く</td><td>追加できるのは有効期間中のみ。過ぎると提示された率も無効</td></tr><tr><td>商品の詳細ページ</td><td>気になった商品から直接</td><td>クイックボタンでショーケースへ追加</td></tr><tr><td>商品URL</td><td>マーケットプレイス右上の「＋」</td><td>TikTok Shopのリンクから追加</td></tr></tbody></table></div>
+<p class="src">入口と公式の制約（2026年9月2日確認）</p>
+<div class="box box-point"><div class="bt">💡 断っても不利にならない</div><p>公式FAQは、招待を拒否しても今後のコラボ機会には影響しないと明記しています。合わない案件で投稿が滞るほうが、後から実績を読みづらくします。</p></div>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="4つの入口からショーケースへ商品が集まり、動画とLIVEとアフィリエイトリンクに分かれる図">
+      <text x="28" y="32" font-size="13" font-weight="800" fill="#E8324A">FUNNEL</text>
+      <rect x="24" y="52" width="150" height="34" rx="8" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/><text x="99" y="74" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">商品マーケットプレイス</text>
+      <rect x="24" y="94" width="150" height="34" rx="8" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/><text x="99" y="116" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">コラボ招待</text>
+      <rect x="24" y="136" width="150" height="34" rx="8" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/><text x="99" y="158" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">商品の詳細ページ</text>
+      <rect x="24" y="178" width="150" height="34" rx="8" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/><text x="99" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">商品URL</text>
+      <path d="M174 69 C230 69 240 132 286 132" fill="none" stroke="#B01D36" stroke-width="2"/>
+      <path d="M174 111 C230 111 240 132 286 132" fill="none" stroke="#B01D36" stroke-width="2"/>
+      <path d="M174 153 C230 153 240 132 286 132" fill="none" stroke="#B01D36" stroke-width="2"/>
+      <path d="M174 195 C230 195 240 132 286 132" fill="none" stroke="#B01D36" stroke-width="2"/>
+      <rect x="292" y="98" width="128" height="68" rx="14" fill="#17181C"/>
+      <text x="356" y="128" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">ショーケース</text>
+      <text x="356" y="150" text-anchor="middle" font-size="11" fill="#C9CBD4">紹介する商品の置き場</text>
+      <path d="M420 132 H452" stroke="#B01D36" stroke-width="2"/><path d="M446 126 L456 132 L446 138 Z" fill="#B01D36"/>
+      <rect x="462" y="62" width="228" height="42" rx="10" fill="#fff" stroke="#787D8A"/><text x="576" y="88" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">ショート動画のショッピングカート</text>
+      <rect x="462" y="112" width="228" height="42" rx="10" fill="#fff" stroke="#787D8A"/><text x="576" y="138" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">LIVEの商品</text>
+      <rect x="462" y="162" width="228" height="42" rx="10" fill="#fff" stroke="#787D8A"/><text x="576" y="188" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">アフィリエイトリンク（アプリ外）</text>
+      <path d="M452 132 V83 H462" fill="none" stroke="#787D8A" stroke-width="1.5"/><path d="M452 132 H462" stroke="#787D8A" stroke-width="1.5"/><path d="M452 132 V183 H462" fill="none" stroke="#787D8A" stroke-width="1.5"/>
+      <text x="356" y="238" text-anchor="middle" font-size="12" fill="#787D8A">入口が違っても、通り道はショーケースに一本化される</text>
+    </svg>
+    <figcaption>図2：通り道はショーケース（LEAM作成）</figcaption>
+  </figure>
+<h2 id="s3"><span class="no en">03</span>商品選びで最初に見るのは品質で、コミッション率は3番目でいい</h2>
+<p>公式FAQは「商品を選択するときに最初に注意すべきことは、商品の品質です」と書き、材料として<strong>商品の評価とセラーの評価</strong>を挙げ、その他の要因としてコミッション率と価格を並べています。率から選ぶと、返品された注文の成果報酬は発生しないという規定に当たります。<span class="hl">率が高くても返ってくる商品は報酬になりません。</span></p>
+<div class="tw"><table><thead><tr><th>順</th><th>見るもの</th><th>公式ヘルプに書かれていること</th><th>自分で決める基準の例</th></tr></thead><tbody><tr><td>1</td><td>商品の評価</td><td>品質は商品の評価に注目する</td><td>低評価が使い方か不良かを読み分ける</td></tr><tr><td>2</td><td>セラーの評価</td><td>セラーの評価にも注目。ショップスコアは招待の詳細下部から</td><td>発送や対応の評価が低い商品は避ける</td></tr><tr><td>3</td><td>コミッション率</td><td>動画・LIVE・リンクで適用される率は同じ</td><td>率で並べず、価格と掛けた金額で見る</td></tr><tr><td>4</td><td>価格</td><td>価格だけでなくコスパも考慮する</td><td>視聴者が普段買う価格帯から離れすぎないか</td></tr><tr><td>5</td><td>在庫と期限</td><td>売り切れると追加できなくなる</td><td>撮影日まで在庫が残るか</td></tr></tbody></table></div>
+<p class="src">公式の確認順＋実務の基準（2026年9月2日確認）</p>
+<h2 id="s4"><span class="no en">04</span>申請は2段階：参加の申請と、案件ごとの追加・承諾</h2>
+<p>「申請」が2つの意味で使われます。1段階目は<strong>プログラムに参加する申請</strong>で、1回だけ。2段階目は<strong>案件ごとの手続き</strong>で、マーケットプレイスの「追加」や、コラボ招待から商品を選ぶ操作です。1段階目の条件は公式ヘルプに列挙されています。</p>
+<div class="tw"><table><thead><tr><th>区分</th><th>公式ヘルプに明記されている内容</th></tr></thead><tbody><tr><td>年齢</td><td>18歳以上</td></tr><tr><td>フォロワー</td><td>TikTokのフォロワーが1,000人以上</td></tr><tr><td>規約・ポリシー</td><td>行動規範に違反していない／コミュニティガイドラインに準拠／Eコマース利用資格を取り消されたことがない／リンクされたアカウントに違反リスクがない</td></tr><tr><td>属性</td><td>政府、政治家、または政党アカウントとの関係がない</td></tr><tr><td>用意する情報</td><td>本名、生年月日、国籍、出生国、ID番号と有効期限、住所</td></tr><tr><td>本人確認書類</td><td>日本のパスポート／運転免許証または在留カード（就労制限がない場合のみ）／マイナンバーカード（表面のみ）のいずれか1つ</td></tr><tr><td>住所証明</td><td>公共料金の請求書／銀行かカードの明細書／住民票のいずれか1つ</td></tr></tbody></table></div>
+<p class="src">出典＝公式「クリエイター申請方法」（2026年9月2日確認）</p>
+<p>同一の身分証明書を使えるのは最大5つのアカウントまでという注記もあります。報酬側では<strong>登録した名前が出金先の銀行口座の名義と一致していること</strong>が必要で、提出後は名前を変更できません。食い違うと出金処理ができず成果報酬を受け取れないため、いちばん慎重になるべき欄です。</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="参加申請と案件ごとの手続きを分けた2段階の分岐図">
+      <text x="28" y="32" font-size="13" font-weight="800" fill="#E8324A">TWO STAGES</text>
+      <rect x="26" y="56" width="180" height="72" rx="12" fill="#17181C"/>
+      <text x="116" y="86" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">STAGE 1</text>
+      <text x="116" y="110" text-anchor="middle" font-size="12" fill="#C9CBD4">プログラム参加の申請</text>
+      <text x="116" y="152" text-anchor="middle" font-size="11.5" fill="#3A3F46">年齢・フォロワー・本人確認</text>
+      <text x="116" y="172" text-anchor="middle" font-size="11.5" fill="#3A3F46">名前と口座名義の一致</text>
+      <text x="116" y="196" text-anchor="middle" font-size="11.5" font-weight="700" fill="#B01D36">1回だけ</text>
+      <path d="M212 92 H256" stroke="#787D8A" stroke-width="2"/><path d="M250 86 L260 92 L250 98 Z" fill="#787D8A"/>
+      <rect x="266" y="56" width="170" height="72" rx="12" fill="#E8324A"/>
+      <text x="351" y="86" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">STAGE 2</text>
+      <text x="351" y="110" text-anchor="middle" font-size="12" fill="#FFECF0">案件ごとの追加・承諾</text>
+      <path d="M351 134 V158" stroke="#B01D36" stroke-width="2"/>
+      <path d="M351 158 H240 V186" fill="none" stroke="#B01D36" stroke-width="2"/>
+      <path d="M351 158 H462 V186" fill="none" stroke="#B01D36" stroke-width="2"/>
+      <rect x="166" y="188" width="148" height="44" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="240" y="207" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">マーケットプレイス</text>
+      <text x="240" y="223" text-anchor="middle" font-size="11" fill="#646C7A">「追加」をタップ</text>
+      <rect x="388" y="188" width="148" height="44" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="462" y="207" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">コラボ招待</text>
+      <text x="462" y="223" text-anchor="middle" font-size="11" fill="#646C7A">有効期間内に商品を選ぶ</text>
+      <rect x="556" y="56" width="138" height="176" rx="12" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="625" y="82" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">つまずく所</text>
+      <text x="625" y="110" text-anchor="middle" font-size="11" fill="#3A3F46">名前を後から</text>
+      <text x="625" y="128" text-anchor="middle" font-size="11" fill="#3A3F46">変更できない</text>
+      <text x="625" y="156" text-anchor="middle" font-size="11" fill="#3A3F46">招待の期限切れで</text>
+      <text x="625" y="174" text-anchor="middle" font-size="11" fill="#3A3F46">提示率が無効</text>
+      <text x="625" y="202" text-anchor="middle" font-size="11" fill="#3A3F46">売り切れで</text>
+      <text x="625" y="220" text-anchor="middle" font-size="11" fill="#3A3F46">追加できない</text>
+    </svg>
+    <figcaption>図3：参加申請と案件ごとの手続きは別（LEAM作成）</figcaption>
+  </figure>
+<h2 id="s5"><span class="no en">05</span>サンプル申請は受け取ったあとの対応まで含めて1セット</h2>
+<p>マーケットプレイスでは、商品名の下に<strong>「無料サンプル」のタグ</strong>が付いた商品を探せます。選ぶとリクエストのバナーが付いた詳細ページに移動し、「リクエスト」をタップして配送先情報を追加すれば送信は完了です。制限時間内に商品リンクをサンプルに追加することも明記されています。</p>
+<p>期限が肝心です。公式ヘルプは、無料サンプルは<strong>リクエストの対応完了までに14日間必要で、動画は少なくとも3日間は公開されたままである必要がある</strong>と説明しています。届いてから考えると間に合いません。セラーが処理しないまま止まっているなら「リクエストの詳細」下部の「リクエストを撤回」で取り消せます。手順は<a href="https://leam.co.jp/column/sample-request/">サンプル申請のやり方</a>で扱っています。</p>
+<h2 id="s6"><span class="no en">06</span>商品リンクはショーケースに入っている商品しか貼れない</h2>
+<p>公式FAQは<strong>「動画に追加できるのは、自分のアカウントのショーケースにある商品のみ」</strong>と明記しています。コミッションの対象も、ショーケースとコンテンツの両方に追加した商品の売上だけです。新規の動画では編集後に「リンクを追加」から選び、1つの動画に付けられるのは最大10件です。</p>
+<p>貼り忘れた場合は「TikTok Studio」から「その他機能」＞「商品をリンク」を開きます。対象は<strong>過去30日以内に投稿され、まだ商品リンクが付いていない動画</strong>だけで、<span class="hl">一度追加した商品は変更できません</span>。アプリの外ではアフィリエイトリンクを使います。</p>
+<div class="tw"><table><thead><tr><th>貼り方</th><th>操作</th><th>公式に明記されている制限</th></tr></thead><tbody><tr><td>新規のショート動画</td><td>編集後に「リンクを追加」から選ぶ</td><td>ショーケースにある商品のみ／1動画あたり最大10件</td></tr><tr><td>投稿済みの動画</td><td>TikTok Studio ＞ その他機能 ＞ 商品をリンク</td><td>過去30日以内かつリンク未設定の動画のみ／追加した商品は変更できない</td></tr><tr><td>アフィリエイトリンク</td><td>「シェア」＞「リンクをコピー」</td><td>有効期限は100日／クリックから14日以内の購入が対象</td></tr></tbody></table></div>
+<p class="src">設置方法と制限（2026年9月2日確認）</p>
+<div class="box box-warn"><div class="bt">⚠️ 「あとで貼る」は30日で締まる</div><p>投稿済みの動画にリンクを足せるのは30日以内なので、昔伸びた動画をさかのぼって収益化はできません。伸びる見込みの企画は投稿時に貼ります。</p></div>
+<h2 id="s7"><span class="no en">07</span>実績はコンテンツ別とリンク別に割って見る</h2>
+<p>入口は、クリエイターセンターのホームで成果売上などの項目をタップし、「データ」ページへ進む経路です。「コンテンツパフォーマンス」の「すべて表示」をタップすると上位動画の一覧が開きます。期間は<strong>過去7日間から28日間</strong>で設定できます。</p>
+<div class="tw"><table><thead><tr><th>見る画面</th><th>並んでいる指標</th><th>次の一手</th></tr></thead><tbody><tr><td>コンテンツパフォーマンス</td><td>GMV、販売品数、視聴者、いいね数、CTR、CTOR</td><td>売れた動画の構成を次の企画に写す</td></tr><tr><td>動画の詳細（もっと見る）</td><td>コメントと共有、ダイレクトGMV、新規フォロワー数、AOV</td><td>増えた型と売れた型を分けて持つ</td></tr><tr><td>リンク済み商品</td><td>商品情報、GMV／ダイレクトGMV、販売品数、成果報酬</td><td>動かない商品を入れ替える</td></tr><tr><td>リンクパフォーマンス</td><td>トラフィックソース（既定は上位5件）、アトリビューション</td><td>効いている置き場に告知を寄せる</td></tr><tr><td>主要指標</td><td>GMV、販売数、推定成果報酬、成果報酬ベース（全チャネル累計）</td><td>チャネル別に割って原因を探す</td></tr></tbody></table></div>
+<p class="src">指標と使いどころ（2026年9月2日確認）</p>
+<p>商品リンクでは購入者が商品ページへ直接進むため<strong>カード閲覧数がカウントされず</strong>、キャンペーンリンクやショーケースリンクでは商品カードが先に出るので閲覧数とクリック数の両方が付きます。<span class="hl">同じ「クリック」でも分母が違う</span>ため、種類をまたいでCTRを比べても意味がありません。</p>
+<h2 id="s8"><span class="no en">08</span>報酬が確定するのは配送完了と決済期間を越えた注文だけ</h2>
+<p>画面に出る金額は<strong>推定成果報酬額</strong>で、公式ヘルプは「商品の平均価格（割引適用後）に成果報酬率を掛けて算出する」「確定額ではありません」と説明しています。確定額の式は<strong>成果報酬 =（収益 − 返金）× 成果報酬率</strong>。受け取れるのは決済（売上確定）の完了後で、期間はセラーの設定により<strong>配送から3日、15日、または31日</strong>です。返金の請求があると、解決するまで支払われません。</p>
+<p>率が動いたときの扱いも決まっています。上げた場合はすぐ有効になり、<strong>下げた場合はすぐには有効にならず、すでにショーケースに登録している商品や動画にリンクしている商品は引き続き30日間は高いほうの率が適用される</strong>と明記されています。</p>
+  <figure>
+    <svg viewBox="0 0 720 220" role="img" aria-label="紹介から報酬確定までの時間軸と、途中で止まる条件を示した図">
+      <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">TIMELINE</text>
+      <line x1="60" y1="96" x2="670" y2="96" stroke="#E3E6EA" stroke-width="6" stroke-linecap="round"/>
+      <line x1="60" y1="96" x2="470" y2="96" stroke="#E8324A" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="60" cy="96" r="11" fill="#17181C"/><text x="60" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">紹介</text>
+      <text x="60" y="132" text-anchor="middle" font-size="10.5" fill="#646C7A">推定額</text>
+      <circle cx="197" cy="96" r="11" fill="#17181C"/><text x="197" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">購入</text>
+      <text x="197" y="132" text-anchor="middle" font-size="10.5" fill="#646C7A">注文ページに表示</text>
+      <circle cx="334" cy="96" r="11" fill="#17181C"/><text x="334" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">配送完了</text>
+      <text x="334" y="132" text-anchor="middle" font-size="10.5" fill="#646C7A">ここで初めて発生</text>
+      <circle cx="470" cy="96" r="11" fill="#B01D36"/><text x="470" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#B01D36">決済期間</text>
+      <text x="470" y="132" text-anchor="middle" font-size="10.5" fill="#646C7A">3日／15日／31日</text>
+      <circle cx="640" cy="96" r="11" fill="#0A6E68"/><text x="640" y="72" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0A6E68">出金</text>
+      <text x="640" y="132" text-anchor="middle" font-size="10.5" fill="#646C7A">収益から引き出す</text>
+      <rect x="150" y="160" width="420" height="40" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="360" y="185" text-anchor="middle" font-size="12" font-weight="700" fill="#8A5A00">返品・異議申し立てが入ると、解決するまで進まない</text>
+      <path d="M334 108 V158" stroke="#8A5A00" stroke-width="1.5" stroke-dasharray="4 4"/>
+    </svg>
+    <figcaption>図4：紹介時の金額と受取額は別（LEAM作成）</figcaption>
+  </figure>
+<h2 id="summary"><span class="no en">09</span>まとめ</h2>
+<p>手を動かす順に並べ直すと、こうなります。</p><div class="summary-grid"><div class="summary-item">入口を確定する。パソコンで探していたならセラー側の画面</div><div class="summary-item">名前と口座名義をそろえてから参加申請する。提出後は変更できない</div><div class="summary-item">商品は評価とセラーの状態から絞り、コミッション率は3番目に見る</div><div class="summary-item">サンプルは申請前に撮影日を決める。対応14日、投稿は3日以上</div><div class="summary-item">貼れるのはショーケースの商品だけ。貼り忘れの救済は30日以内</div><div class="summary-item">累計の主要指標は原因を教えない。別々に割って見る</div></div>
+<h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+<div class="faq"><details><summary>アフィリエイトセンターがアプリの中に見つかりません。どこにありますか？</summary><div class="a">公式ヘルプの「アフィリエイトセンター」は、パソコンのセラーセンターから「アフィリエイト・マーケティング」で入るセラー側の画面です。クリエイターが商品を探す場所は、アカウントページのショッピングバッグアイコンから入る「TikTok Shopクリエイターセンター」です。</div></details><details><summary>アフィリエイトに参加するための条件は何ですか？</summary><div class="a">18歳以上、TikTokのフォロワーが1,000人以上、行動規範とコミュニティガイドラインの遵守、政府・政治家・政党アカウントとの関係がないこと、Eコマース利用資格を取り消されていないこと——公式ヘルプはこれらをすべて満たすよう求めています。</div></details><details><summary>ショーケースに追加していない商品を動画に貼れますか？</summary><div class="a">貼れません。公式FAQは、動画に追加できるのは自分のアカウントのショーケースにある商品のみと明記しています。1つの動画に追加できる商品リンクは最大10件です。</div></details><details><summary>投稿し忘れた動画に、あとから商品リンクを追加できますか？</summary><div class="a">「商品をリンク」機能の対象は、過去30日以内に投稿され、まだ商品リンクが付いていない動画だけです。TikTok Studioからクリエイターセンターに移動して操作します。一度追加した商品は変更できません。</div></details><details><summary>セラーがコミッション率を下げたら、すでに貼った商品の報酬も下がりますか？</summary><div class="a">すぐには下がりません。公式ヘルプは、下げた場合はすでにショーケースに登録している商品や動画にリンクしている商品について、引き続き30日間は高いほうの率が適用されると説明しています。</div></details><details><summary>成果報酬はいつ受け取れますか？</summary><div class="a">注文の決済（売上確定）が完了してからです。この期間はセラーの設定により、配送されてから3日、15日、または31日のいずれかになります。返品された注文分は発生しません。</div></details></div>
+<div class="ctabox"><div class="ct">案件の受け方や条件の相談ができます</div><p>LEAMはTikTok Shop特化のMCNとして、クリエイターの案件獲得と運用をサポートしています。今の投稿状況と扱いたい商材を伺い、次に確認することを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/mcn/">クリエイター向けの案内を見る</a><a class="btn btn-g" href="https://leam.co.jp/contact/">相談する</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">11</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787227408&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：クリエイター申請方法</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：報酬の仕組みについて</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787030800&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：クリエイターセンターとは？</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786965264&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：商品マーケットプレイス</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：クリエイター用の無料サンプル</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787096336&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：動画にショッピングカートを追加する方法</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=1280227327674128&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：既存動画にショッピングカートを追加する方法</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=4193088864388865&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：ショッピング動画のパフォーマンス確認</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=1341131783178001&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：アフィリエイトリンク（クリエイター向け）</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP" target="_blank" rel="noopener noreferrer">公式ヘルプ：アフィリエイトコラボ</a>（2026年9月2日確認）</li></ul>
+<p class="src">画面名称や参加条件、期限などの仕様は更新されることがあります。本記事は2026年9月2日時点で日本向け公式ヘルプに記載を確認できた事実と、LEAM編集部が補った判断基準を区別して記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">関連記事</span><b>TikTok Shopとは？仕組みと始め方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/affiliate-guide/"><span class="rc">関連記事</span><b>アフィリエイトの仕組み【セラー向け】</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-kpi/"><span class="rc">関連記事</span><b>TikTok ShopのKPI設計</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">「アフィリエイトセンター」はセラー側の画面名で、入口が別にある</a></li><li><a href="#s2">案件は自分で探すか、コラボ招待で届くかの2系統</a></li><li><a href="#s3">商品選びで最初に見るのは品質で、コミッション率は3番目でいい</a></li><li><a href="#s4">申請は2段階：参加の申請と、案件ごとの追加・承諾</a></li><li><a href="#s5">サンプル申請は受け取ったあとの対応まで含めて1セット</a></li><li><a href="#s6">商品リンクはショーケースに入っている商品しか貼れない</a></li><li><a href="#s7">実績はコンテンツ別とリンク別に割って見る</a></li><li><a href="#s8">報酬が確定するのは配送完了と決済期間を越えた注文だけ</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの案件相談</b><p>今の投稿状況を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "アフィリエイトセンターがアプリの中に見つかりません。どこにありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプの「アフィリエイトセンター」は、パソコンのセラーセンターから「アフィリエイト・マーケティング」で入るセラー側の画面です。クリエイターが商品を探す場所は、アカウントページのショッピングバッグアイコンから入る「TikTok Shopクリエイターセンター」です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "アフィリエイトに参加するための条件は何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "18歳以上、TikTokのフォロワーが1,000人以上、行動規範とコミュニティガイドラインの遵守、政府・政治家・政党アカウントとの関係がないこと、Eコマース利用資格を取り消されていないこと——公式ヘルプはこれらをすべて満たすよう求めています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ショーケースに追加していない商品を動画に貼れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "貼れません。公式FAQは、動画に追加できるのは自分のアカウントのショーケースにある商品のみと明記しています。1つの動画に追加できる商品リンクは最大10件です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "投稿し忘れた動画に、あとから商品リンクを追加できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "「商品をリンク」機能の対象は、過去30日以内に投稿され、まだ商品リンクが付いていない動画だけです。TikTok Studioからクリエイターセンターに移動して操作します。一度追加した商品は変更できません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "セラーがコミッション率を下げたら、すでに貼った商品の報酬も下がりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "すぐには下がりません。公式ヘルプは、下げた場合はすでにショーケースに登録している商品や動画にリンクしている商品について、引き続き30日間は高いほうの率が適用されると説明しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "成果報酬はいつ受け取れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "注文の決済（売上確定）が完了してからです。この期間はセラーの設定により、配送されてから3日、15日、または31日のいずれかになります。返品された注文分は発生しません。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

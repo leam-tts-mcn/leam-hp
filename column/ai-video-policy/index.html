@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok ShopでAI生成動画は使えるか｜規約と実務</title>
+<meta name="description" content="TikTok ShopでAI生成動画をどこまで使えるかを、日本向け公式ヘルプの記述と国内法令から整理。開示方法・禁止行為・公開前チェック表つき。">
+<link rel="canonical" href="https://leam.co.jp/column/ai-video-policy/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok ShopでAI生成動画は使えるか｜規約と実務">
+<meta property="og:description" content="TikTok ShopでAI生成動画をどこまで使えるかを、日本向け公式ヘルプの記述と国内法令から整理。開示方法・禁止行為・公開前チェック表つき。">
+<meta property="og:url" content="https://leam.co.jp/column/ai-video-policy/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok ShopでAI生成動画は使えるか｜規約と実務">
+<meta name="twitter:description" content="TikTok ShopでAI生成動画をどこまで使えるかを、日本向け公式ヘルプの記述と国内法令から整理。開示方法・禁止行為・公開前チェック表つき。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok ShopでAI生成動画は使えるか｜規約と実務", "description": "TikTok ShopでAI生成動画をどこまで使えるかを、日本向け公式ヘルプの記述と国内法令から整理。開示方法・禁止行為・公開前チェック表つき。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/ai-video-policy/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok ShopでAI生成動画は使えるか｜規約と実務", "item": "https://leam.co.jp/column/ai-video-policy/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok ShopでAI生成動画は使えるか｜規約上の扱いと実務の線引き</p>
+<span class="cat">規約・ポリシー</span>
+<h1>TikTok ShopでAI生成動画は使えるか｜規約上の扱いと実務の線引き</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="AI生成動画の可否の線引き：シアンの開示ラベルを付けた大きなAI生成動画が、上がった遮断機のゲートを通り抜けていく一方、手前では実在の人物になりすました動画が赤い帯で塞がれてゲートから押し戻され、開示だけでは通れない層が残ることを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v312c-104 30-198 24-306 2-108-22-198-56-312-50-114 6-200 52-312 62-96 9-190-2-270-30z" fill="#F6F7F9"/>
+  <ellipse cx="880" cy="246" rx="280" ry="210" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="62" cy="68" r="5"/><circle cx="98" cy="68" r="5"/><circle cx="134" cy="68" r="5"/><circle cx="170" cy="68" r="5"/>
+      <circle cx="62" cy="104" r="5"/><circle cx="98" cy="104" r="5"/><circle cx="134" cy="104" r="5"/><circle cx="170" cy="104" r="5"/>
+      <circle cx="62" cy="140" r="5"/><circle cx="98" cy="140" r="5"/><circle cx="134" cy="140" r="5"/><circle cx="170" cy="140" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(692 -8)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 516c150-30 268-16 396 6 128 22 246 30 372 10 124-20 240-44 432-26v134H0z" fill="#ECEEF1"/>
+
+  <!-- ゲートの床線 -->
+  <path d="M604 520h548" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ================= 通す矢印（シアン＝開示すれば通る） ================= -->
+  <path d="M500 288h250v-26l60 44-60 44v-26H500z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <path d="M500 288h250v-26l60 44-60 44v-26H500z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- ================= 右：審査ゲート（従・遮断機は上がっている） ================= -->
+  <g>
+    <!-- 支柱 -->
+    <rect x="886" y="290" width="54" height="210" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="886" y="290" width="54" height="210" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 台座 -->
+    <rect x="856" y="490" width="114" height="30" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 二段の表示灯（赤＝止める段／シアン＝通す段） -->
+    <circle cx="913" cy="360" r="11" fill="#FE2C55" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="913" cy="406" r="11" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <!-- 遮断機（上がった腕） -->
+    <g transform="rotate(-52 913 320)">
+      <rect x="913" y="305" width="210" height="30" rx="15" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+      <rect x="913" y="305" width="210" height="30" rx="15" fill="#25F4EE"/>
+      <rect x="1000" y="305" width="18" height="30" fill="#FFFFFF"/>
+      <rect x="1052" y="305" width="18" height="30" fill="#FFFFFF"/>
+      <rect x="913" y="305" width="210" height="30" rx="15" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    </g>
+    <!-- 回転軸 -->
+    <circle cx="913" cy="320" r="17" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- ゲートから押し戻された経路（破線） -->
+  <path d="M880 398C858 438 834 456 806 460" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 11"/>
+
+  <!-- ================= 手前：なりすまし動画（従・開示しても通らない） ================= -->
+  <g transform="rotate(14 700 470)">
+    <rect x="605" y="385" width="190" height="170" rx="16" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="605" y="385" width="190" height="170" rx="16" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="700" cy="442" r="27" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M657 508a43 43 0 0 1 86 0z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="608" y="455" width="184" height="28" rx="14" fill="#FE2C55" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round" transform="rotate(-30 700 469)"/>
+  </g>
+
+  <!-- ================= 左：AI生成動画（主役・赤／シアンの開示ラベル付き） ================= -->
+  <g transform="rotate(-6 300 344)">
+    <rect x="175" y="196" width="250" height="296" rx="24" fill="#5E6064" opacity=".15" transform="translate(10 12)"/>
+    <rect x="175" y="196" width="250" height="296" rx="24" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="277" y="208" width="46" height="10" rx="5" fill="#DFE0E2"/>
+    <rect x="199" y="222" width="202" height="204" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <!-- AI生成のきらめき -->
+    <path d="M300 246C306 272 313 279 339 284C313 289 306 296 300 322C294 296 287 289 261 284C287 279 294 272 300 246Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="221" y="348" width="158" height="16" rx="8" fill="#DFE0E2"/>
+    <rect x="221" y="380" width="116" height="14" rx="7" fill="#DFE0E2"/>
+    <rect x="221" y="406" width="90" height="14" rx="7" fill="#DFE0E2"/>
+    <!-- 開示ラベル -->
+    <rect x="199" y="440" width="150" height="36" rx="18" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M218 458l9 10 18-20" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="260" y="451" width="76" height="14" rx="7" fill="#FFFFFF"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1136" cy="92" r="20" fill="#25F4EE"/>
+  <circle cx="560" cy="164" r="14" fill="#FE2C55"/>
+  <circle cx="846" cy="570" r="15" fill="#DFE0E2"/>
+</svg>
+    <figcaption>TikTok ShopでAI生成動画は使えるか｜規約上の扱いと実務の線引き（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">日本向けのTikTok Shop公式ヘルプは<strong>「AI生成コンテンツ（AIGC）は、TikTok Shopコンテンツポリシーおよびコミュニティガイドラインを遵守する限り、TikTok Shopでの利用が認められています」</strong>と書いています（2026年3月31日更新・適用対象：日本）。論点は「使えるか」ではなく<strong>どこから禁止行為になるか</strong>です。公式ヘルプで確認できた記述と、確認できない論点を分けて整理します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>公式が認めていることと、開示しても禁止されること</li><li>開示の三つの方法と、公式AIツールの素材条件</li><li>景表法・薬機法で落ちる表現と、公開前チェック表</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">規約</span><b><a href="https://leam.co.jp/column/prohibited-items/">禁止商品・制限商品ガイド</a></b><span>出せない商品の確認</span></div>
+    <div class="relcard"><span class="rc">リスク</span><b><a href="https://leam.co.jp/column/account-suspension/">アカウント停止の仕組み</a></b><span>違反が積み上がる経路</span></div>
+    <div class="relcard"><span class="rc">制作</span><b><a href="https://leam.co.jp/column/creator-brief-template/">クリエイターブリーフ</a></b><span>依頼時の確認項目</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">AI動画の可否判断を一緒に整理します</div><p>商材と訴求を伺い、公式ポリシーのどこに当たるか、どの表現を差し替えるべきかを確認します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">公式の結論は「開示すれば使える」</a></li><li><a href="#s2">開示は三つの方法のどれか一つで足りる</a></li><li><a href="#s3">公式AIツールには素材条件と生成上限がある</a></li><li><a href="#s4">分かれ目は「実物と一致するか」</a></li><li><a href="#s5">景表法と薬機法は表現そのものを見る</a></li><li><a href="#s6">背景・テロップ・人物で段が変わる</a></li><li><a href="#s7">公開前に12項目を機械的に潰す</a></li><li><a href="#s8">人が出る動画とは工程を分けて組む</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>公式の結論は「開示すれば使える」</h2>
+<p>公式ヘルプはAIGCを「AIツール（例：スクリプト、音声、アバター、画像、アニメーション）によって全部または一部が生成され、人間による関与がほとんど、あるいは全くないコンテンツ」と定義します。</p>
+<p>名指しで禁止されているのは<strong>AI生成であることが明確に開示されていないコンテンツ</strong>と、<strong>有名人・医療専門家・政治家・公人になりすますコンテンツ</strong>です。後者は「適切に開示されている場合であっても禁止」とされ、開示では救われません。</p>
+<div class="tw"><table><thead><tr><th>論点</th><th>公式ヘルプの記述</th><th>実務上の読み方</th></tr></thead><tbody><tr><td>利用可否</td><td>ポリシーとガイドラインを遵守する限り認められる</td><td>AI利用自体は論点にならない</td></tr><tr><td>開示</td><td>AIを使用していることを明確に表示する必要がある</td><td>投稿テンプレに開示欄を固定</td></tr><tr><td>未開示</td><td>禁止・執行措置の対象となる場合がある</td><td>「バレなければ」は成立しない</td></tr><tr><td>なりすまし</td><td>有名人・医療専門家・政治家・公人は開示しても禁止</td><td>開示で解決しない層がある</td></tr><tr><td>ラベル</td><td>設定が有効なことだけを理由に制限されない</td><td>開示を伏せる動機がない</td></tr></tbody></table></div><p class="src">出典：公式ヘルプ「AI生成コンテンツ（AIGC）」「同 解説」（2026年9月2日確認）</p>
+<div class="box box-warn"><div class="bt">⚠️ 公式内で記述の粒度が違う</div><p>「コンテンツ・ポリシー」（2026年6月15日更新）のAI生成コンテンツ欄には「なりすまし又は編集されたコンテンツ等、AI生成コンテンツ（AIGC）は禁止されています」という一文があります。専用ページ二つとは粒度が違い、どちらが優先するかは明記されていません。<strong>専用ページの条件を満たし、なりすましと加工表現を避ける</strong>のが安全側です。</p></div>
+
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="AI生成動画の可否を判定する分岐図。AI関与の有無、開示の有無、なりすましや加工表現の有無で結論が変わる">
+      <text x="24" y="30" font-size="13" font-weight="800" fill="#E8324A">FIG.1  可否の判定分岐</text>
+      <rect x="24" y="52" width="150" height="52" rx="10" fill="#17181C"/>
+      <text x="99" y="84" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">動画を用意した</text>
+      <path d="M174 78 H214" stroke="#17181C" stroke-width="2.5"/><path d="M206 72 L218 78 L206 84 Z" fill="#17181C"/>
+      <path d="M300 46 L360 78 L300 110 L240 78 Z" fill="#FDEEF1" stroke="#E8324A" stroke-width="2"/>
+      <text x="300" y="76" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">AIが映像・音声・</text>
+      <text x="300" y="93" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">アバターに関与？</text>
+      <path d="M360 78 H408" stroke="#E8324A" stroke-width="2.5"/><path d="M400 72 L412 78 L400 84 Z" fill="#E8324A"/>
+      <text x="384" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">はい</text>
+      <path fill="none" d="M300 110 V148 H176" stroke="#787D8A" stroke-width="2"/><path d="M184 142 L172 148 L184 154 Z" fill="#787D8A"/>
+      <text x="318" y="132" font-size="11" font-weight="700" fill="#646C7A">いいえ</text>
+      <rect x="24" y="126" width="148" height="44" rx="10" fill="#EDF6F5" stroke="#0A6E68" stroke-opacity=".5"/>
+      <text x="98" y="153" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0A6E68">開示は不要</text>
+      <path d="M470 46 L534 78 L470 110 L406 78 Z" fill="#FDEEF1" stroke="#E8324A" stroke-width="2"/>
+      <text x="470" y="76" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">AI利用を</text>
+      <text x="470" y="93" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">開示した？</text>
+      <path d="M470 110 V150" stroke="#B01D36" stroke-width="2.5"/><path d="M464 142 L470 154 L476 142 Z" fill="#B01D36"/>
+      <text x="486" y="136" font-size="11" font-weight="700" fill="#B01D36">いいえ</text>
+      <rect x="390" y="158" width="160" height="44" rx="10" fill="#FFECF0" stroke="#B01D36" stroke-width="1.5"/>
+      <text x="470" y="185" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">未開示＝違反</text>
+      <path d="M534 78 H580" stroke="#17181C" stroke-width="2.5"/><path d="M572 72 L584 78 L572 84 Z" fill="#17181C"/>
+      <text x="558" y="70" text-anchor="middle" font-size="11" font-weight="700" fill="#3A3F46">はい</text>
+      <rect x="580" y="52" width="116" height="52" rx="10" fill="#17181C"/>
+      <text x="638" y="74" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">次の関門へ</text>
+      <text x="638" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#C9CBD4">表現内容の審査</text>
+      <path fill="none" d="M638 104 V214 H556" stroke="#17181C" stroke-width="2"/><path d="M564 208 L552 214 L564 220 Z" fill="#17181C"/>
+      <rect x="300" y="222" width="256" height="56" rx="10" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <text x="428" y="244" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">なりすまし・効果の捏造・</text>
+      <text x="428" y="264" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">商品属性の改変はあるか</text>
+      <path d="M300 250 H196" stroke="#0A6E68" stroke-width="2.5"/><path d="M204 244 L192 250 L204 256 Z" fill="#0A6E68"/>
+      <text x="248" y="242" text-anchor="middle" font-size="11" font-weight="700" fill="#0A6E68">なし</text>
+      <rect x="24" y="228" width="168" height="44" rx="10" fill="#EDF6F5" stroke="#0A6E68" stroke-width="1.5"/>
+      <text x="108" y="255" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0A6E68">開示のうえで公開できる</text>
+      <path d="M556 250 H628" stroke="#B01D36" stroke-width="2.5"/><path d="M620 244 L632 250 L620 256 Z" fill="#B01D36"/>
+      <text x="592" y="242" text-anchor="middle" font-size="11" font-weight="700" fill="#B01D36">あり</text>
+      <rect x="628" y="228" width="68" height="44" rx="10" fill="#B01D36"/>
+      <text x="662" y="255" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">不可</text>
+    </svg>
+    <figcaption>図1：AI関与→開示→表現内容の順に見る。開示で救えない層が最後に残る（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s2"><span class="no en">02</span>開示は三つの方法のどれか一つで足りる</h2>
+<p>公式ヘルプは開示を「以下のいずれかの方法で表示できます」と示します。一つは<strong>画面上のテキスト、透かし、ステッカー、動画説明欄のメモ</strong>。もう一つは投稿時のスイッチで、オンにすると左下に「クリエイターがAI生成と明記」のラベルが出ます。</p>
+<p>重要なのは「AIが映像、音声、アバター、商品デモンストレーションなどに実質的に関与している場合は、人による編集やナレーションが加えられていても開示する」という記述です。<strong>人の手が入っていることは開示免除の理由になりません</strong>。</p>
+<div class="tw"><table><thead><tr><th>開示ルート</th><th>具体的な操作</th><th>公式ヘルプ上の位置づけ</th></tr></thead><tbody><tr><td>コンテンツ内で示す</td><td>画面テキスト・透かし・ステッカー・説明欄のメモ</td><td>「いずれかの方法」の一つ</td></tr><tr><td>表示ツールを使う</td><td>投稿時にスイッチをオン。左下にラベルが出る</td><td>同じく一つ。推奨にも記載</td></tr><tr><td>タイトル・説明文</td><td>タイトルや説明欄に明記。ハッシュタグ表記も例示</td><td>ベストプラクティスに明記</td></tr><tr><td>公式AIエフェクト</td><td>操作不要。自動でラベルが付与される</td><td>「追加の操作は不要」と明記</td></tr><tr><td>自動判定</td><td>特定の技術的メタデータがあると自動付与</td><td>付与後は削除できない</td></tr></tbody></table></div><p class="src">出典：公式ヘルプ「AI生成コンテンツ（AIGC）の解説」（2026年9月2日確認）</p>
+<div class="box box-point"><div class="bt">💡 開示を渋る理由がない</div><p>公式ヘルプは自動ラベルについて「ラベルが付いていることのみを理由として、追加のペナルティや配信制限を受けることはありません」と明記しています。<strong>伏せる運用は、得るものがないまま未開示違反のリスクだけを負います</strong>。</p></div>
+
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="AI利用を開示する三つのルートと、自動付与ラベルの関係を示した図">
+      <text x="24" y="30" font-size="13" font-weight="800" fill="#E8324A">FIG.2  開示の三ルート</text>
+      <rect x="24" y="50" width="200" height="96" rx="12" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <circle cx="52" cy="78" r="14" fill="#E8324A"/><text x="52" y="83" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">A</text>
+      <text x="76" y="83" font-size="13.5" font-weight="800" fill="#17181C">コンテンツ内で示す</text>
+      <text x="42" y="108" font-size="11.5" fill="#3A3F46">画面テキスト／透かし／</text>
+      <text x="42" y="128" font-size="11.5" fill="#3A3F46">ステッカー／説明欄のメモ</text>
+      <rect x="248" y="50" width="200" height="96" rx="12" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <circle cx="276" cy="78" r="14" fill="#E8324A"/><text x="276" y="83" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">B</text>
+      <text x="300" y="83" font-size="13.5" font-weight="800" fill="#17181C">表示ツールを使う</text>
+      <text x="266" y="108" font-size="11.5" fill="#3A3F46">投稿時にスイッチをON→</text>
+      <text x="266" y="128" font-size="11.5" fill="#3A3F46">左下にラベルが表示される</text>
+      <rect x="472" y="50" width="200" height="96" rx="12" fill="#fff" stroke="#E8324A" stroke-width="1.5"/>
+      <circle cx="500" cy="78" r="14" fill="#E8324A"/><text x="500" y="83" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">C</text>
+      <text x="524" y="83" font-size="13.5" font-weight="800" fill="#17181C">タイトル・説明文</text>
+      <text x="490" y="108" font-size="11.5" fill="#3A3F46">タイトルや説明欄に明記／</text>
+      <text x="490" y="128" font-size="11.5" fill="#3A3F46">ハッシュタグ表記も例示</text>
+      <text x="236" y="104" text-anchor="middle" font-size="15" font-weight="900" fill="#B01D36">＋</text>
+      <text x="460" y="104" text-anchor="middle" font-size="15" font-weight="900" fill="#B01D36">＋</text>
+      <path fill="none" d="M124 146 V172 H348" stroke="#17181C" stroke-width="2"/>
+      <path d="M348 146 V172" stroke="#17181C" stroke-width="2"/>
+      <path fill="none" d="M572 146 V172 H348" stroke="#17181C" stroke-width="2"/>
+      <path d="M348 172 V190" stroke="#17181C" stroke-width="2"/><path d="M342 182 L348 194 L354 182 Z" fill="#17181C"/>
+      <rect x="120" y="196" width="356" height="42" rx="10" fill="#17181C"/>
+      <text x="298" y="223" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">いずれか一つで開示要件は満たせる</text>
+      <rect x="496" y="196" width="200" height="42" rx="10" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="596" y="212" text-anchor="middle" font-size="11" font-weight="700" fill="#646C7A">別枠：公式エフェクトと</text>
+      <text x="596" y="229" text-anchor="middle" font-size="11" font-weight="700" fill="#646C7A">メタデータは自動付与</text>
+    </svg>
+    <figcaption>図2：三つのうち一つを満たせば開示要件は埋まる。自動付与は別枠で走る（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s3"><span class="no en">03</span>公式AIツールには素材条件と生成上限がある</h2>
+<p>セラーセンターには公式のAI動画生成機能があります。公式ヘルプ「AI動画制作ツール」（2026年6月4日更新・適用対象：日本）によると、場所は<strong>セラーセンター＞カート付き動画＞コンテンツ作成＞AI動画制作ツール</strong>。生成は<strong>1回あたり既定3本、1日に最大10回</strong>まで、所要時間は<strong>動画が約30〜45分、スクリプトが約5分</strong>と案内されています。機能改善で変わる前提で読みます。</p>
+<div class="tw"><table><thead><tr><th>項目</th><th>公式ヘルプの記載</th><th>運用上の注意</th></tr></thead><tbody><tr><td>生成本数</td><td>1回あたり既定3本、1日に最大10回まで</td><td>1日の枠を先に配分する</td></tr><tr><td>所要時間</td><td>動画は約30〜45分、スクリプトは約5分</td><td>投稿日の当日に生成を始めない</td></tr><tr><td>画像素材</td><td>1080p以上。商品が隅々まではっきり見える複数枚</td><td>720p以下や不明確な画像は避ける</td></tr><tr><td>動画素材</td><td>9:16・1080p以上。編集の痕跡がない実写素材</td><td>字幕・装飾文字入りは入れない</td></tr><tr><td>混在</td><td>高品質な画像と低品質な動画を同時に入れない</td><td>良い画像だけのほうが揃う</td></tr><tr><td>プロンプト</td><td>「セールスポイント」「価格・プロモーション」の入力を推奨</td><td>プリセットをそのまま使わない</td></tr></tbody></table></div><p class="src">出典：公式ヘルプ「AI動画制作ツール」（2026年9月2日確認）</p>
+<div class="box box-warn"><div class="bt">⚠️ 公式に書かれていないこと</div><p>このツールの出力に自動でAI生成ラベルが付くかは、確認した公式ヘルプに明記がありません。自動付与の説明は「TikTok公式AIエフェクト」と「特定の技術的メタデータを含むコンテンツ」についてのものです。<strong>自動付与を前提にせず、自分で開示します</strong>。入力素材にAI生成物や編集済みの完成版を使わないよう案内されている点も見落としやすい箇所です。</p></div>
+
+<h2 id="s4"><span class="no en">04</span>分かれ目は「実物と一致するか」</h2>
+<p>禁止項目を並べると判断軸は一つに収束します。公式ヘルプは「AI生成の商品ビジュアルは、実際の商品および出品の詳細（色、サイズ、素材、機能、デザイン、形状、重量など）と一致していなければなりません」と定めます。禁止例は、実際より大きく／小さく見せる、パッケージを別物に見せる、平面（2D）を立体（3D）に見せる、静止した商品を非現実的に動かす、実際にない発光や照明効果を足す、など。防水仕様でないスマートフォンが水中で動作しているように見せる例も挙げられています。</p>
+<div class="tw"><table><thead><tr><th>用途</th><th>公式ヘルプ上の扱い</th><th>満たすべき条件</th></tr></thead><tbody><tr><td>複数アングルで見せる</td><td>「良いAI生成コンテンツ」の要件として例示</td><td>細部・色・パッケージが一貫</td></tr><tr><td>価格や特徴のテロップ</td><td>実際の商品情報に基づく紹介は可</td><td>価格・機能・サイズ・付属品と一致</td></tr><tr><td>架空キャラクター</td><td>生成して使用することは可能と明記</td><td>AI生成を明示。権利の許諾は別問題</td></tr><tr><td>使用シーンの再現</td><td>本来想定されない環境で機能させるのは禁止</td><td>実際に成立する使い方に収める</td></tr><tr><td>ビフォーアフター</td><td>誇張されたビフォーアフター表現は禁止</td><td>開示では救われない。実写に替える</td></tr><tr><td>人物の推奨・証言</td><td>有名人・医療専門家・政治家・公人は開示しても禁止</td><td>実在人物に似せたアバターも避ける</td></tr></tbody></table></div><p class="src">出典：公式ヘルプ「AI生成コンテンツ（AIGC）の解説」（2026年9月2日確認）</p>
+<p>量産の扱いも明記されています。「同一またはほぼ同一の動画を複数作成・投稿すること」「同じ台本、ビジュアル、または構成を使い回し、わずかな変更のみを加えた販促動画を複数投稿すること」は禁止です。<strong>AIで本数を稼ぐ発想そのものが違反の入口になります</strong>。</p>
+
+<h2 id="s5"><span class="no en">05</span>景表法と薬機法は表現そのものを見る</h2>
+<p>ここからは国内法令の話で、ポリシーとは別に効きます。要点は<strong>法令はAIで作ったかどうかを区別しない</strong>こと。表示内容が実際と違えば、生成手段は関係ありません。</p>
+<p>景品表示法は、品質を実際より著しく優良と示す表示（優良誤認・第5条第1号）と、取引条件を著しく有利と誤認させる表示（有利誤認・同2号）を禁じます。さらに第7条第2項の不実証広告規制では、消費者庁が<strong>表示の裏付けとなる合理的な根拠を示す資料の提出を求めることができ、提出されない場合は不当表示とみなされます</strong>。AIの演出映像はこの根拠資料になりません。</p>
+<p>薬機法側は公式ヘルプ自体が触れています。「医薬的な効能効果の不適切な表示」は、医薬品として承認を受けた商品以外に医薬的な効能効果を謳うことは法律で禁止されているとし、プラットフォーム上でも禁止すると明記。「体重管理の主張」では、減量や筋肉増強を主眼とするコンテンツは<strong>トラフィック制限の対象になる場合がある</strong>とされています。</p>
+<div class="tw"><table><thead><tr><th>観点</th><th>AI動画で起きやすい形</th><th>差し替えの方向</th></tr></thead><tbody><tr><td>優良誤認（5条1号）</td><td>汚れが一拭きで完全に消えるAI演出</td><td>実写で、実際に落ちる範囲だけ見せる</td></tr><tr><td>有利誤認（5条2号）</td><td>実際の販売条件と違う価格・特典のテロップ</td><td>商品ページの値と突き合わせる</td></tr><tr><td>不実証広告規制（7条2項）</td><td>効果の映像はあるが裏付け資料がない</td><td>根拠を出せる範囲まで表現を下げる</td></tr><tr><td>薬機法（効能効果）</td><td>AIアバターが症状の改善・治癒を語る</td><td>効能に触れず、使用感と仕様の説明に寄せる</td></tr><tr><td>体重管理の主張</td><td>AI生成のビフォーアフターで体型変化を提示</td><td>体型変化を主眼にしない</td></tr><tr><td>ステマ規制</td><td>AIアバターに一般消費者の感想を語らせる</td><td>事業者の表示と分かる形にする</td></tr></tbody></table></div><p class="src">出典：消費者庁「優良誤認とは」「有利誤認とは」、厚生労働省「医薬品等の広告規制について」、公式ヘルプ（2026年9月2日確認）</p>
+<p>ステマ規制は2023年10月1日に施行され、消費者庁は<strong>規制対象は商品・サービスを供給する事業者（広告主）であり、依頼を受けたインフルエンサー等の第三者は規制対象とならない</strong>と説明しています。AIアバターに「使ってみた感想」を語らせる構図は、責任がセラー側に寄る前提で設計します。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 270" role="img" aria-label="AI利用の対象を背景・テロップ・ナレーション・アバター・実在人物の順に並べ、右にいくほど審査が厳しくなることを示した階段図">
+      <text x="24" y="30" font-size="13" font-weight="800" fill="#E8324A">FIG.3  対象別に段が変わる</text>
+      <line x1="24" y1="230" x2="700" y2="230" stroke="#E3E6EA" stroke-width="2"/>
+      <rect x="34" y="196" width="118" height="34" rx="6" fill="#EDF6F5" stroke="#0A6E68" stroke-opacity=".55"/>
+      <text x="93" y="218" text-anchor="middle" font-size="12" font-weight="800" fill="#0A6E68">背景・環境</text>
+      <text x="93" y="248" text-anchor="middle" font-size="10.5" fill="#646C7A">実物の見え方を変えない</text>
+      <rect x="164" y="166" width="118" height="64" rx="6" fill="#F4F6F8" stroke="#646C7A" stroke-opacity=".45"/>
+      <text x="223" y="203" text-anchor="middle" font-size="12" font-weight="800" fill="#3A3F46">テロップ</text>
+      <text x="223" y="248" text-anchor="middle" font-size="10.5" fill="#646C7A">商品ページと一致</text>
+      <rect x="294" y="136" width="118" height="94" rx="6" fill="#FBF3E2" stroke="#8A5A00" stroke-opacity=".5"/>
+      <text x="353" y="188" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">ナレーション</text>
+      <text x="353" y="248" text-anchor="middle" font-size="10.5" fill="#646C7A">開示対象・断定を避ける</text>
+      <rect x="424" y="100" width="118" height="130" rx="6" fill="#FFECF0" stroke="#B01D36" stroke-opacity=".55"/>
+      <text x="483" y="170" text-anchor="middle" font-size="12" font-weight="800" fill="#B01D36">アバター</text>
+      <text x="483" y="248" text-anchor="middle" font-size="10.5" fill="#646C7A">架空なら可・開示必須</text>
+      <rect x="554" y="60" width="118" height="170" rx="6" fill="#B01D36"/>
+      <text x="613" y="150" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">実在人物・専門家</text>
+      <text x="613" y="248" text-anchor="middle" font-size="10.5" fill="#646C7A">開示しても不可</text>
+      <path d="M34 52 H700" stroke="#E8324A" stroke-width="2" stroke-dasharray="6 5"/>
+      <path d="M690 46 L702 52 L690 58 Z" fill="#E8324A"/>
+      <text x="42" y="45" font-size="11.5" font-weight="800" fill="#B01D36">右にいくほど、開示だけでは通らなくなる</text>
+    </svg>
+    <figcaption>図3：AIをどこに使うかで審査の段が変わる。右端は開示では救われない層（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s6"><span class="no en">06</span>背景・テロップ・人物で段が変わる</h2>
+<p>「AI動画は可か不可か」ではなく<strong>AIを何に使ったか</strong>で判断が変わります。下から積み上げると結論が安定します。</p>
+<ol class="steps"><li><b>背景・環境から始める</b><p>実物の色・サイズ・質感の見え方を変えないなら扱いやすい層。ただし本来想定されない使用環境を作ると禁止側です。</p></li><li><b>テロップは商品ページを正とする</b><p>「公式の商品情報と異なる内容を表示または主張すること」は禁止です。生成後に必ず照合します。</p></li><li><b>ナレーションは開示対象に置く</b><p>開示対象に「音声」が含まれます。台本が人でも、読み上げがAIなら開示します。</p></li><li><b>アバターは架空に限定する</b><p>架空キャラクターの生成使用は可能ですが、実在の人物に似せるのは避けるよう案内されています。</p></li><li><b>専門家の見た目を作らない</b><p>医師・看護師・薬剤師・栄養士・美容やウェルネスの専門家として提示される人物像をAIで作ることは禁止で、公式ヘルプは「本ポリシーの重大な違反」とし、Eコマース機能の利用停止につながる場合があるとしています。</p></li></ol>
+<p>健康・美容はさらに一段厳しく、臓器や身体機能・疾患を描いた刺激の強い画像で購入を促すこと、恐怖感や嫌悪感で販売を促進することが禁止されています。</p>
+
+<h2 id="s7"><span class="no en">07</span>公開前に12項目を機械的に潰す</h2>
+<p>毎回議論すると担当者ごとに結論が変わります。生成の直後に次の12項目を上から確認し、1項目でも「いいえ」があれば公開しません。</p>
+<div class="tw"><table><thead><tr><th>#</th><th>確認項目</th><th>合格の状態</th></tr></thead><tbody><tr><td class="num">1</td><td>AIの関与範囲を書き出したか</td><td>映像・音声・アバター・デモのどこに使ったかが残っている</td></tr><tr><td class="num">2</td><td>開示を入れたか</td><td>画面内・表示ツール・タイトル説明文のいずれかで明示</td></tr><tr><td class="num">3</td><td>商品ページと照合したか</td><td>価格・サイズ・素材・付属品が一致</td></tr><tr><td class="num">4</td><td>大きさとパッケージは実物か</td><td>比較物との比率、ロゴ・表記・色が実物どおり</td></tr><tr><td class="num">5</td><td>存在しない機能を足していないか</td><td>発光・特殊効果・可動部が実機どおり</td></tr><tr><td class="num">6</td><td>効果の演出が実測の範囲か</td><td>落ちる・消える度合いを実写で再現できる</td></tr><tr><td class="num">7</td><td>ビフォーアフターを使っていないか</td><td>使用前後の対比表現がない</td></tr><tr><td class="num">8</td><td>効能効果を語っていないか</td><td>治癒・改善・予防に触れる音声とテロップがない</td></tr><tr><td class="num">9</td><td>人物像がなりすましでないか</td><td>有名人・専門家・公人・公的機関を想起させない</td></tr><tr><td class="num">10</td><td>恐怖訴求になっていないか</td><td>身体内部の刺激的な描写や不安の煽りがない</td></tr><tr><td class="num">11</td><td>使い回しでないか</td><td>台本・構成・ビジュアルが直近の投稿と重複しない</td></tr><tr><td class="num">12</td><td>破綻を目視したか</td><td>指・顔・文字・口の動きと音声のずれがない</td></tr></tbody></table></div><p class="src">公開前チェック表：公式ヘルプの禁止項目と国内法令の観点から作成（LEAM編集部作成）</p>
+<div class="box box-point"><div class="bt">💡 チェックの置き場所</div><p>この表は編集の最後ではなく<strong>生成の直後</strong>に通します。公式ヘルプも「公開前にAI生成コンテンツの内容を確認し、商品仕様、価格、使用方法などの情報が正確であることを確認する」ことを推奨しています。編集後に差し戻すと作り直しの工数が跳ねます。</p></div>
+
+<h2 id="s8"><span class="no en">08</span>人が出る動画とは工程を分けて組む</h2>
+<p>AIが向くのは、商品カットの角度を増やす、吹き替えや言語を展開する、切り口の候補を短時間で複数作る<strong>量と速さが効く工程</strong>。人が向くのは、質感やサイズを手元で示す、使用手順を通しで見せる、コメントに答える<strong>検証と信頼が効く工程</strong>です。AIで候補を出し、反応した切り口だけを人が撮り直します。ただし量産禁止と矛盾しないよう、候補は同一構成の複製ではなく<strong>訴求そのものを変えたもの</strong>に。構成の型は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方</a>を参照してください。</p>
+<p>違反時に起きることも公式ヘルプに書かれています。執行措置は違反の性質・重大性・頻度・影響に応じて変わり、<strong>投稿機能の一時的な制限（例として30日間で投稿できる動画数を15本までに制限）</strong>やトラフィック制限が含まれます。繰り返しや重大な悪影響があればアカウント停止、Eコマース利用資格の剥奪、成果報酬の差し止めもあります。判定が誤りと考える場合は違反通知から異議申し立てができます。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="AIが担う工程と人が担う工程を二つのレーンに分け、検証を経て次の生成へ戻る循環を示した図">
+      <text x="24" y="28" font-size="13" font-weight="800" fill="#E8324A">FIG.4  工程の割り振りと循環</text>
+      <rect x="24" y="46" width="300" height="76" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="44" y="70" font-size="12" font-weight="800" fill="#B01D36">AIが担う工程</text>
+      <text x="44" y="92" font-size="11.5" fill="#3A3F46">角度を増やす／吹き替え・言語展開／</text>
+      <text x="44" y="110" font-size="11.5" fill="#3A3F46">切り口の候補を短時間で複数出す</text>
+      <rect x="24" y="140" width="300" height="76" rx="12" fill="#EDF6F5" stroke="#0A6E68" stroke-opacity=".5"/>
+      <text x="44" y="164" font-size="12" font-weight="800" fill="#0A6E68">人が担う工程</text>
+      <text x="44" y="186" font-size="11.5" fill="#3A3F46">質感とサイズの実測／使用手順の通し／</text>
+      <text x="44" y="204" font-size="11.5" fill="#3A3F46">コメント対応とLIVEでのやり取り</text>
+      <path fill="none" d="M324 84 H388 V126" stroke="#E8324A" stroke-width="2.5"/>
+      <path fill="none" d="M324 178 H388 V138" stroke="#0A6E68" stroke-width="2.5"/>
+      <path d="M382 134 L388 146 L394 134 Z" fill="#0A6E68"/>
+      <rect x="404" y="106" width="132" height="52" rx="12" fill="#17181C"/>
+      <text x="470" y="128" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">開示を付けて公開</text>
+      <text x="470" y="147" text-anchor="middle" font-size="11" font-weight="700" fill="#C9CBD4">12項目を通してから</text>
+      <path d="M536 132 H580" stroke="#17181C" stroke-width="2.5"/><path d="M572 126 L584 132 L572 138 Z" fill="#17181C"/>
+      <rect x="588" y="102" width="108" height="60" rx="12" fill="#fff" stroke="#17181C" stroke-width="1.5"/>
+      <text x="642" y="126" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">反応を検証</text>
+      <text x="642" y="145" text-anchor="middle" font-size="11" fill="#3A3F46">切り口ごとに</text>
+      <path fill="none" d="M642 162 V232 H188" stroke="#787D8A" stroke-width="2" stroke-dasharray="7 5"/>
+      <path d="M196 226 L184 232 L196 238 Z" fill="#787D8A"/>
+      <text x="416" y="226" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">反応した切り口だけを人が撮り直す（同一構成の複製はしない）</text>
+    </svg>
+    <figcaption>図4：AIで幅を出し、人で確かめる。戻りの矢印が「量産」との違いを作る（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="summary"><span class="no en">09</span>まとめ</h2>
+<p>着手する順に並べます。上から片づけると判断で止まりません。</p><div class="summary-grid"><div class="summary-item">投稿テンプレに開示欄を作る。人の編集が入っていても、AIが実質的に関与したなら開示する</div><div class="summary-item">生成の入力素材を先に決める。AI生成物や字幕入りの完成版動画を混ぜない</div><div class="summary-item">生成の直後に商品ページと照合する。価格・サイズ・素材・付属品を1項目ずつ見る</div><div class="summary-item">健康・美容は演出をやめる。ビフォーアフターと体内描写は開示しても通らない</div><div class="summary-item">人物像は架空に限る。専門家・有名人・公人を想起させる見た目は作らない</div><div class="summary-item">同一構成の複製で本数を稼がない。切り口を変えて出し、反応した分を実写で撮り直す</div></div>
+
+<h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+<div class="faq"><details><summary>AI生成動画はTikTok Shopで使ってよいのですか？</summary><div class="a">日本向け公式ヘルプは「コンテンツポリシーおよびコミュニティガイドラインを遵守する限り、TikTok Shopでの利用が認められています」と明記しています（2026年3月31日更新・9月2日確認）。ただし開示が必要で、なりすましと商品の加工表現は開示しても禁止です。</div></details><details><summary>開示は必ず投稿画面のスイッチを使わないといけませんか？</summary><div class="a">公式ヘルプは「いずれかの方法」として、画面上のテキスト・透かし・ステッカー・説明欄のメモと、投稿時のスイッチを挙げています。タイトルや説明文での明示も推奨されており、スイッチだけが唯一の手段とは書かれていません。</div></details><details><summary>背景だけAIで差し替えた場合も開示は必要ですか？</summary><div class="a">背景のみという条件での可否は、確認した公式ヘルプに明記がありません。「AIが映像、音声、アバター、商品デモンストレーションなどに実質的に関与している場合」は人の編集があっても開示するよう案内されているため、開示側に置くのが安全です。</div></details><details><summary>公式のAI動画制作ツールで作った動画は自動でラベルが付きますか？</summary><div class="a">確認した公式ヘルプに明記がありません。自動付与の説明は「TikTok公式AIエフェクト」と「特定の技術的メタデータを含むコンテンツ」についてのもので、このツールの出力が対象とは書かれていません。自分で開示してください。</div></details><details><summary>AIで作ったビフォーアフターは、開示すれば使えますか？</summary><div class="a">使えません。公式ヘルプは「誇張されたビフォーアフター表現」を禁止例に挙げています。景品表示法でも、表示の裏付けとなる合理的な根拠を示す資料を出せない場合は不当表示とみなされます。AIの演出映像は根拠資料になりません。</div></details><details><summary>ポリシーに違反すると何が起きますか？</summary><div class="a">公式ヘルプによると、執行措置は違反の性質・重大性・頻度・影響に応じて変わり、投稿機能の一時的な制限（例として30日間で15本まで）やトラフィック制限が含まれます。繰り返しや重大な悪影響があれば、アカウント停止やEコマース利用資格の剥奪もあります。</div></details></div>
+<div class="ctabox"><div class="ct">AI動画を使う前に、表現の可否を整理できます</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。商材と訴求を伺い、公式ポリシーと国内法令のどこに当たるかを一緒に確認します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">11</span>参考にした公式情報</h2>
+<p class="src">以下はすべて2026年9月2日に確認しました。TikTok Shop公式ヘルプは日本向け（適用対象：日本）のページです。</p>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7801693312386833&default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：AI生成コンテンツ（AIGC）</a>（2026年3月31日更新）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7981558599599888&default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：AI生成コンテンツ（AIGC）の解説</a>（2026年8月19日更新）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2707587427927825&default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：コンテンツ・ポリシー</a>（2026年6月15日更新）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=309504668829441&default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：AI動画制作ツール</a>（2026年6月4日更新）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2714558917560081&default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：医薬的な効能効果の不適切な表示</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2715915867440897&default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：体重管理の主張</a>（2026年6月12日更新）</li><li><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/representation_regulation/misleading_representation/" target="_blank" rel="noopener noreferrer">消費者庁：優良誤認とは</a></li><li><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/representation_regulation/advantageous_misidentification/" target="_blank" rel="noopener noreferrer">消費者庁：有利誤認とは</a></li><li><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/stealth_marketing/" target="_blank" rel="noopener noreferrer">消費者庁：一般消費者が事業者の表示であることを判別することが困難である表示</a></li><li><a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/kenkou_iryou/iyakuhin/koukokukisei/index.html" target="_blank" rel="noopener noreferrer">厚生労働省：医薬品等の広告規制について</a></li></ul>
+<p class="src">ポリシー・画面名称・提供機能・生成上限は更新されます。本記事は公式情報と、LEAM編集部が作成した判断フレーム・チェック表を区別して記載しました。公式に明記がない論点は、明記がないことを本文に書いています。個別の表現の適法性判断は専門家にご確認ください。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">関連記事</span><b>TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/short-video-playbook/"><span class="rc">関連記事</span><b>TikTok Shopで売れるショート動画の作り方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/prohibited-items/"><span class="rc">関連記事</span><b>TikTok Shopの禁止商品・制限商品ガイド</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">公式の結論は「開示すれば使える」</a></li><li><a href="#s2">開示は三つの方法のどれか一つで足りる</a></li><li><a href="#s3">公式AIツールには素材条件と生成上限がある</a></li><li><a href="#s4">分かれ目は「実物と一致するか」</a></li><li><a href="#s5">景表法と薬機法は表現そのものを見る</a></li><li><a href="#s6">背景・テロップ・人物で段が変わる</a></li><li><a href="#s7">公開前に12項目を機械的に潰す</a></li><li><a href="#s8">人が出る動画とは工程を分けて組む</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>AI動画の可否を相談する</b><p>商材と訴求を伺い、線引きを整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "AI生成動画はTikTok Shopで使ってよいのですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "日本向け公式ヘルプは「コンテンツポリシーおよびコミュニティガイドラインを遵守する限り、TikTok Shopでの利用が認められています」と明記しています（2026年3月31日更新・9月2日確認）。ただし開示が必要で、なりすましと商品の加工表現は開示しても禁止です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "開示は必ず投稿画面のスイッチを使わないといけませんか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプは「いずれかの方法」として、画面上のテキスト・透かし・ステッカー・説明欄のメモと、投稿時のスイッチを挙げています。タイトルや説明文での明示も推奨されており、スイッチだけが唯一の手段とは書かれていません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "背景だけAIで差し替えた場合も開示は必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "背景のみという条件での可否は、確認した公式ヘルプに明記がありません。「AIが映像、音声、アバター、商品デモンストレーションなどに実質的に関与している場合」は人の編集があっても開示するよう案内されているため、開示側に置くのが安全です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "公式のAI動画制作ツールで作った動画は自動でラベルが付きますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "確認した公式ヘルプに明記がありません。自動付与の説明は「TikTok公式AIエフェクト」と「特定の技術的メタデータを含むコンテンツ」についてのもので、このツールの出力が対象とは書かれていません。自分で開示してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "AIで作ったビフォーアフターは、開示すれば使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "使えません。公式ヘルプは「誇張されたビフォーアフター表現」を禁止例に挙げています。景品表示法でも、表示の裏付けとなる合理的な根拠を示す資料を出せない場合は不当表示とみなされます。AIの演出映像は根拠資料になりません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ポリシーに違反すると何が起きますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプによると、執行措置は違反の性質・重大性・頻度・影響に応じて変わり、投稿機能の一時的な制限（例として30日間で15本まで）やトラフィック制限が含まれます。繰り返しや重大な悪影響があれば、アカウント停止やEコマース利用資格の剥奪もあります。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

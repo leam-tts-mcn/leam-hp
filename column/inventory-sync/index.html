@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの在庫連携｜Shopify・BASEの繋ぎ方</title>
+<meta name="description" content="TikTok Shopの在庫連携を解説。在庫の正の決め方、Shopify・BASEの連携アプリと手運用の選び分け、公式ヘルプで確認できたズレの原因をまとめます。">
+<link rel="canonical" href="https://leam.co.jp/column/inventory-sync/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの在庫連携｜Shopify・BASEの繋ぎ方">
+<meta property="og:description" content="TikTok Shopの在庫連携を解説。在庫の正の決め方、Shopify・BASEの連携アプリと手運用の選び分け、公式ヘルプで確認できたズレの原因をまとめます。">
+<meta property="og:url" content="https://leam.co.jp/column/inventory-sync/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの在庫連携｜Shopify・BASEの繋ぎ方">
+<meta name="twitter:description" content="TikTok Shopの在庫連携を解説。在庫の正の決め方、Shopify・BASEの連携アプリと手運用の選び分け、公式ヘルプで確認できたズレの原因をまとめます。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの在庫連携｜Shopify・BASEの繋ぎ方", "description": "TikTok Shopの在庫連携を解説。在庫の正の決め方、Shopify・BASEの連携アプリと手運用の選び分け、公式ヘルプで確認できたズレの原因をまとめます。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/inventory-sync/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの在庫連携｜Shopify・BASEの繋ぎ方", "item": "https://leam.co.jp/column/inventory-sync/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの在庫連携｜Shopify・BASEなど他モールとの繋ぎ方</p>
+<span class="cat">運用の仕組み</span>
+<h1>TikTok Shopの在庫連携｜Shopify・BASEなど他モールとの繋ぎ方</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="在庫連携の向き：左の赤い在庫台帳だけを在庫の正とし、そこからシアンの太い矢印で右上のTikTok Shopの商品一覧と右下のもう一つの販路へ在庫が写されていく一方、写し側から台帳へ手で書き戻そうとする破線の逆流には赤い禁止マークが重ねられている場面を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v322c-96 30-190 30-296 10-110-20-198-54-312-50-112 4-198 50-308 60-98 9-190-4-284-32z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="252" rx="270" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(880 -30)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-30 272-16 402 8 130 24 244 30 366 10 120-20 236-42 432-24v130H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右上：TikTok Shop の商品一覧（従・シアン＝同期された写し） ================= -->
+  <g transform="rotate(-6 940 223)">
+    <rect x="790" y="118" width="300" height="210" rx="20" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="790" y="118" width="300" height="210" rx="20" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <rect x="812" y="146" width="256" height="76" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="828" y="160" width="48" height="48" rx="8" fill="#DFE0E2"/>
+    <rect x="892" y="164" width="110" height="13" rx="6.5" fill="#DFE0E2"/>
+    <rect x="892" y="190" width="72" height="12" rx="6" fill="#25F4EE"/>
+
+    <rect x="812" y="238" width="256" height="76" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="828" y="252" width="48" height="48" rx="8" fill="#DFE0E2"/>
+    <rect x="892" y="256" width="94" height="13" rx="6.5" fill="#DFE0E2"/>
+    <rect x="892" y="282" width="58" height="12" rx="6" fill="#25F4EE"/>
+  </g>
+
+  <!-- ================= 右下：もう一つの販路（従・グレー＝二つめの写し） ================= -->
+  <g>
+    <rect x="800" y="372" width="280" height="175" rx="18" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="800" y="372" width="280" height="175" rx="18" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <rect x="822" y="396" width="236" height="58" rx="11" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="836" y="408" width="34" height="34" rx="7" fill="#DFE0E2"/>
+    <rect x="886" y="412" width="100" height="12" rx="6" fill="#DFE0E2"/>
+    <rect x="886" y="432" width="64" height="11" rx="5.5" fill="#C9CBD0"/>
+
+    <rect x="822" y="470" width="236" height="58" rx="11" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="836" y="482" width="34" height="34" rx="7" fill="#DFE0E2"/>
+    <rect x="886" y="486" width="84" height="12" rx="6" fill="#DFE0E2"/>
+    <rect x="886" y="506" width="48" height="11" rx="5.5" fill="#C9CBD0"/>
+  </g>
+
+  <!-- ================= 同期の向き（シアンの矢印・正→写し） ================= -->
+  <g>
+    <path d="M496 303L712 237L717 254L768 208L700 196L705 212L489 278Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M496 303L712 237L717 254L768 208L700 196L705 212L489 278Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <g>
+    <path d="M490 405L719 448L716 464L782 446L727 405L724 422L494 379Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M490 405L719 448L716 464L782 446L727 405L724 422L494 379Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 左：在庫の正＝在庫台帳（主役・赤） ================= -->
+  <g>
+    <path d="M150 196v246a150 40 0 0 0 300 0V196a150 40 0 0 0-300 0z" fill="#5E6064" opacity=".15" transform="translate(10 12)"/>
+    <path d="M150 196v246a150 40 0 0 0 300 0V196z" fill="#FE2C55"/>
+    <ellipse cx="300" cy="196" rx="150" ry="40" fill="#CE1730"/>
+
+    <rect x="200" y="262" width="190" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="200" y="300" width="140" height="18" rx="9" fill="#FFFFFF"/>
+    <rect x="200" y="392" width="166" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="200" y="430" width="112" height="18" rx="9" fill="#FFFFFF"/>
+
+    <path d="M150 316a150 40 0 0 0 300 0" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+    <path d="M150 196v246a150 40 0 0 0 300 0V196" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <ellipse cx="300" cy="196" rx="150" ry="40" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- ================= 逆向きの手入力（破線）と禁止マーク ================= -->
+  <path d="M776 140C712 148 696 158 640 174C584 190 546 214 516 227" fill="none" stroke="#C9CBD0" stroke-width="7" stroke-linecap="round" stroke-dasharray="15 14"/>
+  <path d="M470 240L508 204L521 250Z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="640" cy="174" r="34" fill="#FE2C55" stroke="#0B0C10" stroke-width="7"/>
+  <path d="M626 188L654 160" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+
+  <!-- 小さな装飾 -->
+  <circle cx="104" cy="222" r="14" fill="#25F4EE"/>
+  <circle cx="688" cy="568" r="13" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTok Shopの在庫連携｜Shopify・BASEなど他モールとの繋ぎ方（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">在庫連携でつまずく場所は、たいていアプリの設定画面より手前にあります。<strong>自社ECとTikTok Shopのどちらを在庫の正にするか</strong>を決めずに接続すると、同期は動いているのに数が合わず、原因を追えません。この記事は外部システムとの接続に絞ります。安全在庫や欠品対応といった在庫の運用設計は<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理の記事</a>で扱います。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>在庫の正をどちら側に置くかの決め方と、決めた後に触ってはいけない画面</li><li>公式連携アプリ・在庫管理システム・手運用の選び分けと、接続の順番</li><li>「在庫が0のまま」「注文が届かない」ときに見る画面と、公式に挙がっている原因</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">在庫運用</span><b><a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理と欠品対応</a></b><span>連携した後の運用ルール</span></div>
+    <div class="relcard"><span class="rc">比較</span><b><a href="https://leam.co.jp/column/marketplace-comparison/">他モールとの違い</a></b><span>どこに何を任せるか</span></div>
+    <div class="relcard"><span class="rc">出荷</span><b><a href="https://leam.co.jp/column/shipping-rules/">配送・発送のルール</a></b><span>注文が流れた後の工程</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">TikTok Shopの運用課題を無料で整理します</div><p>商品・コンテンツ・クリエイター・ショップ運用のどこに詰まりがあるかを伺い、次に確認すべきことを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">在庫の正は自社EC側かTikTok Shop側のどちらか一方に決める</a></li><li><a href="#s2">接続手段は公式連携アプリ・在庫管理システム・手運用の三択</a></li><li><a href="#s3">繋ぐ順番は「倉庫と重量→接続→マッピング→同期→テスト注文」</a></li><li><a href="#s4">連携できない商品を先に洗い出さないと当日に全部止まる</a></li><li><a href="#s5">ズレは症状から原因を引き、三つを同時に触らない</a></li><li><a href="#s6">連携前チェックは数えられる判定基準で書く</a></li><li><a href="#s7">連携できないときは更新の起点と担当を先に決める</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>在庫の正は自社EC側かTikTok Shop側のどちらか一方に決める</h2>
+<p>在庫連携は、二つの在庫表を一つに見せる仕組みではありません。<strong>片方を正とし、もう片方をその写しにする</strong>仕組みです。決めずに接続すると担当者が両方の画面で在庫を直し、差異が出たときにどちらが正しいか判定できません。</p>
+<p>公式ヘルプの書き方も、この一方向が前提です。BASEの「TikTok Shop連携 App」では、TikTok Shop側で商品情報を変更してもBASEには反映されないと案内されています（出典：<a href="https://apps.thebase.com/detail/137" target="_blank" rel="noopener noreferrer">BASE公式：Apps紹介</a>／2026年9月2日確認）。Shopify連携でも、TikTok Shopの在庫が0になる原因として、商品マッピングの不備、在庫の同期がオンになっていないこと、Shopifyに販売可能な在庫がないことが挙げられています（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。</p>
+<div class="tw"><table><thead><tr><th>在庫の正</th><th>向いているケース</th><th>決めたら守ること</th></tr></thead><tbody><tr><td>自社EC（Shopify・BASEなど）</td><td>既にECが稼働し、TikTok Shopを販路として足す</td><td>TikTok Shop側の在庫欄は原則として触らない</td></tr><tr><td>TikTok Shop</td><td>販売がTikTok Shopのみ、または自社ECを持たない</td><td>チャネルを増やす時点で正の置き場所を再設計する</td></tr><tr><td>在庫管理システム</td><td>複数モール・複数倉庫があり、どのカートも従属させたい</td><td>各チャネルの在庫欄は全て自動更新に限定する</td></tr></tbody></table></div>
+<p class="src">在庫の正をどこに置くかの三択（LEAM編集部作成）</p>
+<div class="box box-point"><div class="bt">💡 決めた内容は画面名まで書き残す</div><p>「自社ECを正にする」だけでは運用に落ちません。どの画面のどの欄を人が触り、どこを自動更新に任せるかまで書き残します。</p></div>
+  <figure>
+    <svg viewBox="0 0 720 268" role="img" aria-label="在庫の正を自社EC側に置き、TikTok Shopを同期先にする一方向の設計図">
+      <defs><linearGradient id="isy-g1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E8324A" stop-opacity=".85"/><stop offset="1" stop-color="#E8324A" stop-opacity=".35"/></linearGradient></defs>
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">ONE SOURCE OF TRUTH</text>
+      <rect x="28" y="60" width="196" height="96" rx="14" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="126" y="96" text-anchor="middle" font-size="15" font-weight="800" fill="#17181C">自社EC・在庫台帳</text>
+      <text x="126" y="124" text-anchor="middle" font-size="13" font-weight="700" fill="#B01D36">ここだけを人が触る</text>
+      <rect x="290" y="76" width="140" height="64" rx="12" fill="#fff" stroke="#17181C" stroke-opacity=".35"/>
+      <text x="360" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">連携アプリ／</text>
+      <text x="360" y="124" text-anchor="middle" font-size="13" font-weight="700" fill="#17181C">在庫管理システム</text>
+      <path d="M232 108 H286" stroke="url(#isy-g1)" stroke-width="5"/><path d="M278 100 L292 108 L278 116 Z" fill="#E8324A"/>
+      <path d="M436 108 H492" stroke="url(#isy-g1)" stroke-width="5"/><path d="M484 100 L498 108 L484 116 Z" fill="#E8324A"/>
+      <rect x="500" y="60" width="192" height="96" rx="14" fill="#17181C"/>
+      <text x="596" y="96" text-anchor="middle" font-size="15" font-weight="800" fill="#fff">TikTok Shop</text>
+      <text x="596" y="124" text-anchor="middle" font-size="13" font-weight="700" fill="#F3A9B6">同期された写し</text>
+      <path d="M500 196 H240" stroke="#9AA0AC" stroke-width="4" stroke-dasharray="9 7"/>
+      <circle cx="370" cy="196" r="17" fill="#fff" stroke="#8A5A00" stroke-width="3"/>
+      <path d="M362 188 L378 204 M378 188 L362 204" stroke="#8A5A00" stroke-width="3"/>
+      <text x="360" y="242" text-anchor="middle" font-size="12.5" fill="#787D8A">同期先の在庫を直接書き換えると、次の同期で上書きされて差異の原因が追えなくなる</text>
+    </svg>
+    <figcaption>図1：在庫の正は片側に固定し、逆向きの手入力を作らない（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s2"><span class="no en">02</span>接続手段は公式連携アプリ・在庫管理システム・手運用の三択</h2>
+<p>選択肢は三つで、優劣ではなくSKU数・チャネル数・更新頻度で決まります。公式ヘルプは商品の追加方法として単一商品のアップロード、一括アップロード、外部eコマースショップとの同期を案内しており（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;default_language=ja-JP" target="_blank" rel="noopener noreferrer">公式：ショップの設定</a>／2026年9月2日確認）、この三つがそのまま接続手段に対応します。</p>
+<div class="tw"><table><thead><tr><th>手段</th><th>在庫の正</th><th>初期作業</th><th>先に確認すること</th></tr></thead><tbody><tr><td>公式連携アプリ（Shopify・BASEなど）</td><td>自社EC</td><td>軽い</td><td>連携対象外の商品条件と、併用中アプリの対応可否</td></tr><tr><td>在庫管理システム</td><td>システム</td><td>重い</td><td>TikTok Shopへの対応可否と、倉庫単位で在庫を配分できるか</td></tr><tr><td>一括アップロード・手運用</td><td>自社の在庫台帳</td><td>軽いが工数が残る</td><td>更新の頻度と担当、更新漏れに気づく仕組み</td></tr></tbody></table></div>
+<p class="src">接続手段の比較（LEAM編集部作成）</p>
+<p>BASEでは、BASE Appsの「TikTok Shop連携 App」が公式のAPI連携として提供されています。BASE公式の案内では、2025年6月30日のTikTok Shop日本ローンチに伴い商品情報と在庫数の自動連携が可能になったこと、利用料が無料であることが記載されています（出典：<a href="https://baseu.jp/information/20250701" target="_blank" rel="noopener noreferrer">BASE公式お知らせ</a>／<a href="https://apps.thebase.com/detail/137" target="_blank" rel="noopener noreferrer">BASE公式：Apps紹介</a>／2026年9月2日確認）。それ以外のカートやモールでは、<strong>提供元の公式ドキュメント</strong>を先に見てください。連携ツールの有無も、在庫をどちら優先で上書きするかも提供元ごとに違います。</p>
+  <figure>
+    <svg viewBox="0 0 720 330" role="img" aria-label="SKU数と販売チャネル数で接続手段を選び分けるマトリクス図">
+      <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">SELECTION MAP</text>
+      <line x1="72" y1="286" x2="688" y2="286" stroke="#17181C" stroke-width="2"/>
+      <line x1="72" y1="286" x2="72" y2="56" stroke="#17181C" stroke-width="2"/>
+      <text x="380" y="316" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3A3F46">SKU数・商品更新の頻度 →</text>
+      <text x="30" y="170" font-size="12.5" font-weight="700" fill="#3A3F46" transform="rotate(-90 30 170)">販売チャネル数 →</text>
+      <line x1="72" y1="170" x2="688" y2="170" stroke="#E3E6EA" stroke-width="1"/>
+      <line x1="380" y1="286" x2="380" y2="56" stroke="#E3E6EA" stroke-width="1"/>
+      <ellipse cx="176" cy="232" rx="86" ry="42" fill="#FBF3E2" stroke="#8A5A00" stroke-opacity=".5"/>
+      <text x="176" y="228" text-anchor="middle" font-size="13.5" font-weight="800" fill="#8A5A00">手運用</text>
+      <text x="176" y="250" text-anchor="middle" font-size="11.5" fill="#8A5A00">少SKU・単一チャネル</text>
+      <ellipse cx="470" cy="212" rx="106" ry="46" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".55"/>
+      <text x="470" y="206" text-anchor="middle" font-size="13.5" font-weight="800" fill="#B01D36">公式連携アプリ</text>
+      <text x="470" y="230" text-anchor="middle" font-size="11.5" fill="#B01D36">Shopify・BASEなど</text>
+      <ellipse cx="500" cy="106" rx="112" ry="44" fill="#EDF6F5" stroke="#0A6E68" stroke-opacity=".5"/>
+      <text x="500" y="100" text-anchor="middle" font-size="13.5" font-weight="800" fill="#0A6E68">在庫管理システム</text>
+      <text x="500" y="124" text-anchor="middle" font-size="11.5" fill="#0A6E68">複数モール＋倉庫を束ねる</text>
+      <text x="150" y="80" font-size="11.5" fill="#9AA0AC">※チャネルが多くSKUが少ない場合も</text>
+      <text x="150" y="100" font-size="11.5" fill="#9AA0AC">　在庫管理システム側が楽になる</text>
+    </svg>
+    <figcaption>図2：接続手段はSKU数と販売チャネル数で決める（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s3"><span class="no en">03</span>繋ぐ順番は「倉庫と重量→接続→マッピング→同期→テスト注文」</h2>
+<p>接続作業そのものは短時間で終わります。失敗するのは順番を変えたときです。公式ヘルプのショップ設定は、ビジネス情報の確認、倉庫と出荷テンプレート、銀行情報、商品の追加、公式アカウントのリンクという流れです（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;default_language=ja-JP" target="_blank" rel="noopener noreferrer">公式：ショップの設定</a>／2026年9月2日確認）。倉庫の登録上限は集荷用の住所が最大20件、返品用が1件です（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。</p>
+<ol class="steps"><li><b>倉庫と出荷条件を確定する</b><p>集荷用と返品用の住所、出荷テンプレートを先に登録します。</p></li><li><b>サイズと重量を埋める</b><p>Shopifyでは任意項目のため、未入力だとTikTok側で0になることがあります（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。</p></li><li><b>アカウントを接続する</b><p>BASEはかんたん決済の申請完了が前提で、紐づくセラーセンターは一つです（出典：<a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ</a>／2026年9月2日確認）。</p></li><li><b>商品をマッピングする</b><p>バリエーション単位まで紐づけ、代表数点で形を確認します。</p></li><li><b>在庫同期をオンにする</b><p>スイッチと対象倉庫を確認します。外れていると在庫は0のまま表示されます。</p></li><li><b>1点だけテスト注文を通す</b><p>注文が流れ、在庫が減り、発送できるかを実物で見ます。</p></li></ol>
+<div class="tw"><table><thead><tr><th>工程</th><th>完了の判定</th><th>判定に使う画面</th></tr></thead><tbody><tr><td>倉庫・出荷条件</td><td>集荷用と返品用の住所が登録済み</td><td>セラーセンターのショップ設定</td></tr><tr><td>サイズ・重量</td><td>対象SKUで0のままの項目が無い</td><td>自社ECの商品編集</td></tr><tr><td>アカウント接続</td><td>接続状態と有効期限が表示される</td><td>連携アプリの管理画面</td></tr><tr><td>マッピング</td><td>バリエーション数が両側で一致</td><td>連携アプリの商品一覧</td></tr><tr><td>在庫同期</td><td>自社ECの在庫数と表示在庫が一致</td><td>TikTok Shopの商品一覧</td></tr><tr><td>テスト注文</td><td>注文が自社EC側に届き在庫が減る</td><td>注文同期ステータスと自社ECの注文</td></tr></tbody></table></div>
+<p class="src">工程ごとの完了条件（LEAM編集部作成）</p>
+
+<h2 id="s4"><span class="no en">04</span>連携できない商品を先に洗い出さないと当日に全部止まる</h2>
+<p>連携アプリには、仕様として連携できない商品があります。接続当日に知ると商品登録のやり直しになります。BASE公式ヘルプの記載は条件が明確なので、接続前の商品一覧へそのまま当てられます（出典：<a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ</a>／2026年9月2日確認）。</p>
+<div class="tw"><table><thead><tr><th>区分</th><th>連携できない条件</th><th>接続前にやること</th></tr></thead><tbody><tr><td>販売形態</td><td>定期便・抽選販売・テイクアウト・デジタルコンテンツ</td><td>一覧から外して別管理にする</td></tr><tr><td>App由来の設定</td><td>オプションや予約販売など、一部のAppを使った設定商品</td><td>設定なしで作り直すか除外する</td></tr><tr><td>価格</td><td>500,000円を超える</td><td>外して販売方法を分ける</td></tr><tr><td>商品の種類</td><td>種類が300を超える</td><td>種類を分割して整理する</td></tr><tr><td>説明文・画像</td><td>説明文が5,000字超または0字、画像が未設定</td><td>文字数と画像の有無を機械的に洗う</td></tr><tr><td>重複</td><td>すでに連携済みの商品</td><td>既存の紐づけを確認する</td></tr></tbody></table></div>
+<p class="src">BASE公式ヘルプに記載された連携対象外の条件（2026年9月2日時点）</p>
+<p>Shopify側にも上限があります。公式FAQでは、新規セラーが1週間に同期できるアイテム数は1,400個に制限され、SKUごとの在庫数は0から999999の範囲に収める必要があると案内されています（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。商品数が多いショップは、初回に全件を流さず優先SKUから分けます。</p>
+
+<h2 id="s5"><span class="no en">05</span>ズレは症状から原因を引き、三つを同時に触らない</h2>
+<p>連携後の不具合は、症状ごとに公式ヘルプが原因を挙げています。<strong>症状から原因を引く表があると、思いつく順に設定を触って状態を悪化させることを避けられます。</strong>複数を同時に変えると、直った理由が分からなくなります。</p>
+<div class="tw"><table><thead><tr><th>症状</th><th>公式ヘルプに挙がっている原因</th><th>確認する場所</th></tr></thead><tbody><tr><td>在庫が0のまま</td><td>マッピングの不備／在庫の同期がオフ／自社EC側に販売可能な在庫がない</td><td>連携アプリの商品一覧と在庫同期設定</td></tr><tr><td>SKUの在庫エラー</td><td>マイナス在庫や在庫切れがある（0から999999へ修正）</td><td>自社ECの在庫欄</td></tr><tr><td>購入できない</td><td>商品の重量が未設定</td><td>自社ECの商品編集</td></tr><tr><td>注文が自社ECに届かない</td><td>注文の同期に失敗している（注文IDが表示されない）</td><td>注文の同期ステータスのタブ</td></tr><tr><td>在庫が一斉に0になる</td><td>休業モードを有効にすると指定期間だけ倉庫の在庫が0になる</td><td>セラーセンターのアカウント設定</td></tr><tr><td>注文ステータスが崩れる</td><td>非対応のアプリを併用している</td><td>導入中アプリの一覧と対応可否</td></tr></tbody></table></div>
+<p class="src">症状と原因の対応（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）</p>
+<p>接続自体ができない場合はアカウントの持ち方を疑います。公式FAQでは、TikTok Shopとマーケティングアカウントで異なるメールアドレスを使うとエラーになるため、同一のメールアドレスでのログインが推奨されています（出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">公式：Shopify連携FAQ</a>／2026年9月2日確認）。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="TikTok Shopの在庫が0のままになる原因を三つに切り分ける分岐図">
+      <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">TRIAGE TREE</text>
+      <rect x="252" y="50" width="216" height="56" rx="12" fill="#17181C"/>
+      <text x="360" y="84" text-anchor="middle" font-size="14.5" font-weight="800" fill="#fff">在庫が0のまま表示される</text>
+      <path d="M360 106 V132" stroke="#17181C" stroke-width="3"/>
+      <path d="M124 132 H596" stroke="#17181C" stroke-width="3"/>
+      <path d="M124 132 V162 M360 132 V162 M596 132 V162" stroke="#17181C" stroke-width="3"/>
+      <rect x="34" y="162" width="180" height="98" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="124" y="192" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">商品マッピング</text>
+      <text x="124" y="216" text-anchor="middle" font-size="12" fill="#3A3F46">紐づけ漏れ・</text>
+      <text x="124" y="236" text-anchor="middle" font-size="12" fill="#3A3F46">バリエーション不一致</text>
+      <rect x="270" y="162" width="180" height="98" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="360" y="192" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">在庫同期の設定</text>
+      <text x="360" y="216" text-anchor="middle" font-size="12" fill="#3A3F46">スイッチがオフ／</text>
+      <text x="360" y="236" text-anchor="middle" font-size="12" fill="#3A3F46">対象倉庫が外れている</text>
+      <rect x="506" y="162" width="180" height="98" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="596" y="192" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">元の販売可能在庫</text>
+      <text x="596" y="216" text-anchor="middle" font-size="12" fill="#3A3F46">自社EC側が0／</text>
+      <text x="596" y="236" text-anchor="middle" font-size="12" fill="#3A3F46">休業モードで0になる</text>
+      <text x="360" y="288" text-anchor="middle" font-size="12.5" fill="#787D8A">三つを同時に触らず、左から順に一つずつ確認して切り分ける</text>
+    </svg>
+    <figcaption>図3：在庫が0になる原因は三つに分かれる（公式ヘルプの記載をもとにLEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s6"><span class="no en">06</span>連携前チェックは数えられる判定基準で書く</h2>
+<p>チェック表は「確認する」ではなく<strong>数えられる判定基準</strong>で書きます。感覚に寄ると接続当日に同じ確認をやり直します。</p>
+<div class="tw"><table><thead><tr><th>チェック項目</th><th>合格の判定基準</th><th>不合格のときの処理</th></tr></thead><tbody><tr><td>在庫の正</td><td>正とする画面が一つに決まっている</td><td>接続を始めず、先に決める</td></tr><tr><td>連携対象外の商品</td><td>対象外に当たる商品の件数を数え終えている</td><td>対象外を一覧から分離する</td></tr><tr><td>サイズ・重量</td><td>連携予定SKUで未入力が無い</td><td>入力を終えてから接続する</td></tr><tr><td>在庫数の範囲</td><td>マイナス在庫と在庫切れが無い</td><td>0から999999の範囲へ修正する</td></tr><tr><td>倉庫</td><td>集荷用と返品用の住所が登録済み</td><td>登録してから商品を流す</td></tr><tr><td>併用アプリ</td><td>導入中アプリの対応可否を確認済み</td><td>非対応アプリを外す判断をする</td></tr><tr><td>テスト注文</td><td>1件通し、在庫の減りと発送まで確認</td><td>公開を止めて原因を切り分ける</td></tr></tbody></table></div>
+<p class="src">連携前チェック表（LEAM編集部作成）</p>
+  <figure>
+    <svg viewBox="0 0 720 236" role="img" aria-label="接続前・接続当日・接続後の点検を並べた在庫連携の工程タイムライン">
+      <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">TIMELINE</text>
+      <line x1="46" y1="118" x2="686" y2="118" stroke="#E3E6EA" stroke-width="10" stroke-linecap="round"/>
+      <line x1="46" y1="118" x2="470" y2="118" stroke="#E8324A" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="110" cy="118" r="15" fill="#17181C"/><text x="110" y="123" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+      <circle cx="330" cy="118" r="15" fill="#17181C"/><text x="330" y="123" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+      <circle cx="550" cy="118" r="15" fill="#B01D36"/><text x="550" y="123" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">3</text>
+      <text x="110" y="76" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">接続前</text>
+      <text x="110" y="164" text-anchor="middle" font-size="11.5" fill="#3A3F46">倉庫・重量・</text>
+      <text x="110" y="184" text-anchor="middle" font-size="11.5" fill="#3A3F46">対象外商品の洗い出し</text>
+      <text x="330" y="76" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">接続当日</text>
+      <text x="330" y="164" text-anchor="middle" font-size="11.5" fill="#3A3F46">マッピング→在庫同期→</text>
+      <text x="330" y="184" text-anchor="middle" font-size="11.5" fill="#3A3F46">1点だけテスト注文</text>
+      <text x="550" y="76" text-anchor="middle" font-size="13.5" font-weight="800" fill="#B01D36">接続後の点検</text>
+      <text x="550" y="164" text-anchor="middle" font-size="11.5" fill="#3A3F46">注文同期ステータスと</text>
+      <text x="550" y="184" text-anchor="middle" font-size="11.5" fill="#3A3F46">在庫差異の突き合わせ</text>
+      <text x="360" y="216" text-anchor="middle" font-size="12.5" fill="#787D8A">洗い出しを飛ばすと、当日の失敗が全商品に同時に出る</text>
+    </svg>
+    <figcaption>図4：在庫連携は三つの区間に分けて進める（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s7"><span class="no en">07</span>連携できないときは更新の起点と担当を先に決める</h2>
+<p>連携アプリが無いカートを使う場合や、対象外の商品が主力の場合は手運用で繋ぎます。手運用が壊れるのは頻度ではなく<strong>起点</strong>が決まっていないときです。起点を自社の在庫台帳に固定し、TikTok Shop側の在庫は台帳から配分した数として扱います。</p>
+<h3>手運用では在庫を全量ではなく配分で載せる</h3>
+<p>手運用は更新が遅れる前提で設計します。全量を載せると遅れがそのまま売り越しになります。台帳の在庫から他チャネル向けを引いた残りを配分値として載せ、変えた日と担当を記録します。配分幅の決め方は<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理の記事</a>を参照してください。</p>
+<h3>連携を外すときと正を移すときは同期を止めてから動かす</h3>
+<p>連携を外す、在庫の正を移すといった作業は、接続時より事故が起きやすい工程です。同期がオンのまま台帳を入れ替えると、移行途中の値が同期先へ流れます。先に在庫同期を止め、両側を突き合わせてから切り替えます。BASE公式ヘルプでは連携解除とアカウント連携期限の更新が手順として案内され、TikTok Shopで入った注文はSeller Center側で発送処理を行う必要があると記載されています（出典：<a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ</a>／2026年9月2日確認）。</p>
+<div class="box box-point"><div class="bt">💡 公式情報と設計の切り分け</div><p>上限値・連携対象外の条件・エラー原因は公式ヘルプに記載がある事実です。チェック表の判定基準や配分の考え方はLEAM編集部が実務用に組んだ整理で、公式の要件ではありません。</p></div>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>接続作業に入る前に、上から順に片付けてください。</p><div class="summary-grid"><div class="summary-item">在庫の正を一つに決め、人が触る画面と自動更新に任せる画面を書き分ける</div><div class="summary-item">SKU数とチャネル数から手段を選び、提供元の公式ドキュメントで対応状況を確認する</div><div class="summary-item">連携対象外の商品と、サイズ・重量・在庫数の不備を接続前に数え終える</div><div class="summary-item">倉庫と出荷条件を登録し、代表数点でマッピングを確認してから全件を流す</div><div class="summary-item">在庫同期をオンにしたら、テスト注文を1件通して発送処理まで見る</div><div class="summary-item">症状から原因を引く表を持ち、設定を一度に複数変えない</div></div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>在庫の正はTikTok Shop側にしてもよいですか？</summary><div class="a">TikTok Shopだけで販売するなら問題ありません。ただしShopifyやBASEの公式連携アプリは、自社ECの商品情報と在庫をTikTok Shopへ送る方向で作られています。BASE公式ヘルプでもTikTok Shop側の変更はBASEへ反映されないとされているため、連携アプリを使うなら自社EC側を正にしてください（2026年9月2日確認）。</div></details><details><summary>TikTok Shopの在庫が0のままです。どこを見ればよいですか？</summary><div class="a">公式のShopify連携FAQでは、商品マッピングの不備、在庫の同期がオンになっていないこと、Shopifyに販売可能な在庫がないことが原因として挙げられています。この三つを一つずつ確認してください（2026年9月2日確認）。</div></details><details><summary>BASEとTikTok Shopの在庫連携に費用はかかりますか？</summary><div class="a">BASE公式のAppsページでは、TikTok Shop連携 Appの利用料は無料と記載されています。利用にはBASEかんたん決済の申請完了が必要です。TikTok Shop側の手数料は別に確認してください（2026年9月2日確認）。</div></details><details><summary>連携できない商品はありますか？</summary><div class="a">あります。BASE公式ヘルプでは、定期便、抽選販売、テイクアウト、デジタルコンテンツ、一部のAppを使った設定商品、価格500,000円超、種類300超、説明文が5,000字超または0字、画像が未設定の商品は連携できないと案内されています（2026年9月2日確認）。</div></details><details><summary>注文が自社ECに入ってきません。何を確認しますか？</summary><div class="a">公式のShopify連携FAQでは、注文の同期ステータスを確認するタブが用意されており、注文IDが表示されない場合は同期に失敗しているため、セラーセンターでの手動処理が必要とされています（2026年9月2日確認）。</div></details><details><summary>連携アプリは他のアプリと併用できますか？</summary><div class="a">公式のShopify連携FAQでは、他の商品リストアプリや注文管理アプリは対応可否の確認が必要で、非対応のアプリを使うと注文ステータスに不具合が発生する可能性があると案内されています（2026年9月2日確認）。</div></details></div>
+<div class="ctabox"><div class="ct">連携の設計から運用の引き継ぎまで相談できます</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。使っているカートと社内体制を伺い、必要な範囲を率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7248582190548737" target="_blank" rel="noopener noreferrer">TikTok Shop公式：Shopify連携のよくある質問</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;default_language=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：ショップの設定</a>（2026年9月2日確認）</li><li><a href="https://help.thebase.in/hc/ja/sections/47082044648217" target="_blank" rel="noopener noreferrer">BASE公式ヘルプ：TikTok Shop連携 App</a>（2026年9月2日確認）</li><li><a href="https://apps.thebase.com/detail/137" target="_blank" rel="noopener noreferrer">BASE公式：TikTok Shop連携（Apps）</a>（2026年9月2日確認）</li><li><a href="https://baseu.jp/information/20250701" target="_blank" rel="noopener noreferrer">BASE公式：TikTok ShopとBASEの公式API連携</a>（2026年9月2日確認）</li></ul>
+<p class="src">仕様、画面名称、上限値、連携対象の条件は更新されることがあります。本記事は2026年9月2日時点で確認できた公式情報と、LEAM編集部が作成した運用フレームを区別して記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">関連記事</span><b>TikTok Shopとは｜仕組みと始め方の全体像</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-inventory-management/"><span class="rc">関連記事</span><b>TikTok Shopの在庫管理｜欠品と売り越しを防ぐ</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/seller-center-guide/"><span class="rc">関連記事</span><b>セラーセンターの使い方と初期設定</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">在庫の正は自社EC側かTikTok Shop側のどちらか一方に決める</a></li><li><a href="#s2">接続手段は公式連携アプリ・在庫管理システム・手運用の三択</a></li><li><a href="#s3">繋ぐ順番は「倉庫と重量→接続→マッピング→同期→テスト注文」</a></li><li><a href="#s4">連携できない商品を先に洗い出さないと当日に全部止まる</a></li><li><a href="#s5">ズレは症状から原因を引き、三つを同時に触らない</a></li><li><a href="#s6">連携前チェックは数えられる判定基準で書く</a></li><li><a href="#s7">連携できないときは更新の起点と担当を先に決める</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "在庫の正はTikTok Shop側にしてもよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TikTok Shopだけで販売するなら問題ありません。ただしShopifyやBASEの公式連携アプリは、自社ECの商品情報と在庫をTikTok Shopへ送る方向で作られています。BASE公式ヘルプでもTikTok Shop側の変更はBASEへ反映されないとされているため、連携アプリを使うなら自社EC側を正にしてください（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TikTok Shopの在庫が0のままです。どこを見ればよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式のShopify連携FAQでは、商品マッピングの不備、在庫の同期がオンになっていないこと、Shopifyに販売可能な在庫がないことが原因として挙げられています。この三つを一つずつ確認してください（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "BASEとTikTok Shopの在庫連携に費用はかかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BASE公式のAppsページでは、TikTok Shop連携 Appの利用料は無料と記載されています。利用にはBASEかんたん決済の申請完了が必要です。TikTok Shop側の手数料は別に確認してください（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "連携できない商品はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "あります。BASE公式ヘルプでは、定期便、抽選販売、テイクアウト、デジタルコンテンツ、一部のAppを使った設定商品、価格500,000円超、種類300超、説明文が5,000字超または0字、画像が未設定の商品は連携できないと案内されています（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "注文が自社ECに入ってきません。何を確認しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式のShopify連携FAQでは、注文の同期ステータスを確認するタブが用意されており、注文IDが表示されない場合は同期に失敗しているため、セラーセンターでの手動処理が必要とされています（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "連携アプリは他のアプリと併用できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式のShopify連携FAQでは、他の商品リストアプリや注文管理アプリは対応可否の確認が必要で、非対応のアプリを使うと注文ステータスに不具合が発生する可能性があると案内されています（2026年9月2日確認）。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

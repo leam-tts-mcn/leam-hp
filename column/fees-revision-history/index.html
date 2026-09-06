@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shop手数料の改定履歴と見直し方</title>
+<meta name="description" content="TikTok Shopの手数料改定で変わる四つの層と、公式ヘルプで確認できる痕跡、値上げ時に価格・原価・報酬・広告を見直す順番を出典つきで解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/fees-revision-history/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shop手数料の改定履歴と見直し方">
+<meta property="og:description" content="TikTok Shopの手数料改定で変わる四つの層と、公式ヘルプで確認できる痕跡、値上げ時に価格・原価・報酬・広告を見直す順番を出典つきで解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/fees-revision-history/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shop手数料の改定履歴と見直し方">
+<meta name="twitter:description" content="TikTok Shopの手数料改定で変わる四つの層と、公式ヘルプで確認できる痕跡、値上げ時に価格・原価・報酬・広告を見直す順番を出典つきで解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shop手数料の改定履歴と見直し方", "description": "TikTok Shopの手数料改定で変わる四つの層と、公式ヘルプで確認できる痕跡、値上げ時に価格・原価・報酬・広告を見直す順番を出典つきで解説します。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/fees-revision-history/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shop手数料の改定履歴と見直し方", "item": "https://leam.co.jp/column/fees-revision-history/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shop手数料の改定履歴</p>
+<span class="cat">費用・手数料</span>
+<h1>TikTok Shop手数料の改定履歴｜値上げ時に見直す順番</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="手数料改定と採算の関係：これまで積み上がってきた料率の段の上に、今回の改定ぶんの濃い赤の板が傾いて乗り、そこから伸びた矢印が右の器のふたを押し下げて、下に残るシアンの手残りが薄くなっていく様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v322c-96 32-186 36-286 22-110-16-196-50-306-48-112 2-198 44-308 56-118 13-222-6-300-40z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="250" rx="270" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(700 -6)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-30 268-16 396 6 128 22 246 30 372 10 124-20 240-44 432-26v128H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 左：改定で積み上がってきた料率の段（主役・赤） ================= -->
+  <g>
+    <!-- 床線 -->
+    <path d="M84 508h552" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- 過去の水準線（改定の履歴） -->
+    <g fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 11">
+      <path fill="none" d="M64 396H104"/>
+      <path fill="none" d="M64 326H268"/>
+      <path fill="none" d="M64 252H432"/>
+    </g>
+
+    <!-- 段1（古い料率） -->
+    <rect x="112" y="396" width="150" height="110" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="112" y="396" width="150" height="110" rx="10" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="136" y="430" width="102" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="136" y="464" width="68" height="16" rx="8" fill="#FFFFFF"/>
+
+    <!-- 段2 -->
+    <rect x="276" y="326" width="150" height="180" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="276" y="326" width="150" height="180" rx="10" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="300" y="380" width="102" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="300" y="414" width="68" height="16" rx="8" fill="#FFFFFF"/>
+
+    <!-- 段3（現行料率） -->
+    <rect x="440" y="252" width="150" height="254" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="440" y="252" width="150" height="254" rx="10" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="464" y="316" width="102" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="464" y="350" width="68" height="16" rx="8" fill="#FFFFFF"/>
+
+    <!-- 今回の改定ぶん（濃赤・傾いて着地する） -->
+    <g transform="rotate(-7 515 219)">
+      <rect x="440" y="190" width="150" height="58" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+      <rect x="440" y="190" width="150" height="58" rx="10" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <rect x="470" y="210" width="90" height="18" rx="9" fill="#FFFFFF"/>
+    </g>
+  </g>
+
+  <!-- ================= 右：手残りの器（従・ふたが押し下げられる） ================= -->
+  <g>
+    <rect x="800" y="286" width="290" height="220" rx="22" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="800" y="286" width="290" height="220" rx="22" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 改定前の水位 -->
+    <path d="M814 326H1076" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 10"/>
+
+    <!-- 失われた高さ -->
+    <g fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round">
+      <path fill="none" d="M846 350L870 334"/>
+      <path fill="none" d="M906 350L930 334"/>
+      <path fill="none" d="M966 350L990 334"/>
+    </g>
+
+    <!-- 押し下げられるふた -->
+    <rect x="808" y="358" width="274" height="40" rx="9" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="808" y="358" width="274" height="40" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 残る手残り（シアン） -->
+    <rect x="814" y="404" width="262" height="92" rx="10" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="814" y="404" width="262" height="92" rx="10" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 目盛り -->
+    <g fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round">
+      <path fill="none" d="M1098 340h24"/>
+      <path fill="none" d="M1098 388h24"/>
+      <path fill="none" d="M1098 436h24"/>
+      <path fill="none" d="M1098 484h24"/>
+    </g>
+
+    <!-- 器の口（縁） -->
+    <rect x="786" y="270" width="318" height="32" rx="14" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="786" y="270" width="318" height="32" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 上乗せ分が手残りを押し下げる矢印（濃赤） ================= -->
+  <g>
+    <path d="M612 158C770 116 927 117 947 173L973 163L953 236L891 193L917 184C898 132 770 152 620 194Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M612 158C770 116 927 117 947 173L973 163L953 236L891 193L917 184C898 132 770 152 620 194Z" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1142" cy="108" r="16" fill="#25F4EE"/>
+  <circle cx="78" cy="462" r="12" fill="#FE2C55"/>
+  <circle cx="668" cy="558" r="15" fill="#DFE0E2"/>
+</svg>
+    <figcaption>TikTok Shop手数料の改定履歴｜値上げ時に見直す順番（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">公式ヘルプには<strong>「販売手数料の調整には、一定の頻度は定められていません」</strong>と明記され、変更時は発効日の少なくとも30日前までに通知するとも書かれています。料率は暗記する対象ではなく、<strong>改定に気づく仕組みと、気づいた日に直す順番</strong>を持つのがセラーの仕事です。この記事は現行料率の解説ではなく「改定が起きた日の動き方」を扱います。現行料率は<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料はいくら？カテゴリー別の料率</a>で確認してください。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>公式で確認できる「改定の痕跡」はどこにあり、どこには無いのか（2026年9月2日確認）</li><li>通知のルールと、月1回5分の定点観測の手順</li><li>値上げ時に価格・原価・送料・報酬・広告を動かす順番</li></ul></div>
+
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">動くのは料率だけではなく四つの層</a></li><li><a href="#s2">公式の痕跡は「最終更新日」しかない</a></li><li><a href="#s3">例外があるのは五カテゴリー</a></li><li><a href="#s4">30日前通知と定点観測で拾う</a></li><li><a href="#s5">五つのレバーを1本ずつ動かす</a></li><li><a href="#s6">告知の順番を先に決める</a></li><li><a href="#s7">再計算は1枚の表で足りる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>改定で動くのは料率だけではなく、四つの層がある</h2>
+<p>手元に残る金額を変える要素は四つあります。料率が据え置きでも、下の三つが動けば手残りは変わります。</p>
+<div class="tw"><table><thead><tr><th>層</th><th>何が動くか</th><th>見落とすと起きること</th></tr></thead><tbody>
+<tr><td>① 料率</td><td>カテゴリー単位の販売手数料率</td><td>旧料率で値付けし粗利を読み違える</td></tr>
+<tr><td>② 例外サブカテゴリー</td><td>同カテゴリー内でベースと違う率の範囲</td><td>自社SKUだけ率が違うと気づかない</td></tr>
+<tr><td>③ 割引プログラム</td><td>新規セラー向け・GMV Max割引の条件と期間</td><td>期間が切れた月に手残りが落ちる</td></tr>
+<tr><td>④ 計算の分母</td><td>手数料の計算に含める金額の定義</td><td>クーポン期の手数料を少なく見積もる</td></tr>
+</tbody></table></div>
+<p class="src">改定で動く四つの層（LEAM編集部作成）</p>
+<p>④は公式ヘルプに計算式が示されています。<strong>販売手数料率（%）×（カスタマーの支払額 ＋ プラットフォーム割引額 − カスタマーへの返金額 − プラットフォーム割引の返金額）</strong>（<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861174545&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：販売手数料</a>・2026年9月2日確認）。プラットフォーム負担の割引は分母から引かれません。</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="手数料の改定で動く四つの層を積み上げた図。料率・例外サブカテゴリー・割引プログラム・計算の分母">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">FOUR LAYERS</text>
+      <rect x="28" y="52" width="470" height="44" rx="9" fill="#E8324A"/>
+      <text x="46" y="80" font-size="15" font-weight="800" fill="#fff">① 料率（カテゴリー単位の％）</text>
+      <rect x="28" y="106" width="470" height="44" rx="9" fill="#F5798C"/>
+      <text x="46" y="134" font-size="15" font-weight="800" fill="#fff">② 例外サブカテゴリー</text>
+      <rect x="28" y="160" width="470" height="44" rx="9" fill="#FBC3CC"/>
+      <text x="46" y="188" font-size="15" font-weight="800" fill="#17181C">③ 割引プログラムの条件と期間</text>
+      <rect x="28" y="214" width="470" height="44" rx="9" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".4"/>
+      <text x="46" y="242" font-size="15" font-weight="800" fill="#17181C">④ 計算の分母（割引・返金の扱い）</text>
+      <path d="M528 74 V236" stroke="#17181C" stroke-width="2"/>
+      <path d="M522 230 L528 242 L534 230 Z" fill="#17181C"/>
+      <text x="548" y="86" font-size="12.5" font-weight="700" fill="#17181C">気づきやすい</text>
+      <text x="548" y="248" font-size="12.5" font-weight="700" fill="#17181C">気づきにくい</text>
+      <text x="548" y="168" font-size="12" fill="#787D8A">下ほど見落とす</text>
+      <text x="28" y="286" font-size="12" fill="#787D8A">料率が据え置きでも、②③④が動けば手元に残る金額は変わる</text>
+    </svg>
+    <figcaption>図1：改定で動く四つの層（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s2"><span class="no en">02</span>公式で確認できる痕跡は「最終更新日」しかない</h2>
+<p>確認できたことと、できなかったことを分けます。<strong>日本向け公式ヘルプに、過去の料率を並べた改定履歴のページは見つかりませんでした</strong>（2026年9月2日・ファイナンス関連ページを一覧で確認）。旧料率や改定日を公式だけで遡れないため、過去の料率は書きません。</p>
+<p>一方、各ヘルプページには冒頭に最終更新日が表示され、「変更の際は、記事冒頭の『最終更新日』を更新いたします」と明記されています。ここが唯一の公式な手がかりです。</p>
+<div class="tw"><table><thead><tr><th>公式ヘルプのページ</th><th>最終更新日</th><th>書かれていること</th></tr></thead><tbody>
+<tr><td>TikTok Shopの販売手数料</td><td>2026/08/31</td><td>現行料率表、例外、計算式、返品時の扱い</td></tr>
+<tr><td>同・販売手数料FAQ</td><td>2026/08/31</td><td>調整の頻度と通知、割引制度、確認場所</td></tr>
+<tr><td>GMV Maxによる割引</td><td>2026/07/31</td><td>適用条件、有効期間、料率の下限</td></tr>
+<tr><td>新規セラー向け割引</td><td>2026/05/12</td><td>ミッションと割引の適用期間</td></tr>
+</tbody></table></div>
+<p class="src">手数料関連4ページの最終更新日（2026年9月2日確認／表示は各ページの記載どおり）</p>
+<div class="box box-point"><div class="bt">💡 ここが実務の分かれ目</div><p>最終更新日は「更新があった」ことしか示しません。何が変わったかを知るには前回の内容を自分で持つ必要があります。公式の履歴が無い前提で組みます。</p></div>
+<h3>自分の確認記録も履歴として残す</h3>
+<p>当コラムが同じ料率表を2026年8月30日に確認した際は、9月1日から中古品と食品・ドリンク（ビール・ワイン・スピリッツを除く）を7％とする改定が案内されていました。9月2日の再確認では、その内容どおりに記載されています。これは公式の履歴ではなく<strong>当コラムの確認記録</strong>ですが、予告が出て発効後に本文が書き換わる流れは読み取れます。</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="公式ヘルプ4ページの最終更新日を時系列に並べた図">
+      <text x="28" y="32" font-size="13" font-weight="800" fill="#E8324A">LAST UPDATED ─ 2026年9月2日確認</text>
+      <path d="M60 176 H676" stroke="#D7DAE2" stroke-width="3"/>
+      <circle cx="110" cy="176" r="10" fill="#FBC3CC" stroke="#E8324A" stroke-width="3"/>
+      <text x="110" y="206" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">05/12</text>
+      <text x="110" y="226" text-anchor="middle" font-size="11.5" fill="#787D8A">新規セラー割引</text>
+      <circle cx="330" cy="176" r="10" fill="#F5798C" stroke="#E8324A" stroke-width="3"/>
+      <text x="330" y="206" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">07/31</text>
+      <text x="330" y="226" text-anchor="middle" font-size="11.5" fill="#787D8A">GMV Max割引</text>
+      <circle cx="600" cy="176" r="13" fill="#E8324A"/>
+      <text x="600" y="209" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">08/31</text>
+      <text x="600" y="229" text-anchor="middle" font-size="11.5" fill="#787D8A">販売手数料／同FAQ</text>
+      <rect x="504" y="52" width="192" height="72" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="600" y="80" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">料率表とFAQが同日更新</text>
+      <text x="600" y="102" text-anchor="middle" font-size="12" fill="#787D8A">＝料率まわりが動いた合図</text>
+      <path d="M600 124 V158" stroke="#E8324A" stroke-width="2" stroke-dasharray="5 4"/>
+      <text x="60" y="120" font-size="12" fill="#787D8A">公式が出しているのは日付だけ。差分は自分で持つ</text>
+    </svg>
+    <figcaption>図2：最終更新日の並び。同日更新は料率が動いた合図（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s3"><span class="no en">03</span>例外サブカテゴリーが付いているのは五カテゴリー</h2>
+<p>改定でいちばん静かに動くのは料率表の「例外」列です。ベース料率が変わらないまま、指定される範囲が増減します。2026年9月2日時点で例外があるのは次の五つです。</p>
+<div class="tw"><table><thead><tr><th>カテゴリー</th><th>ベース</th><th>例外のサブカテゴリー</th><th>例外</th></tr></thead><tbody>
+<tr><td>食品・ドリンク</td><td class="num">7%</td><td>ビール、ワイン、スピリッツ</td><td class="num">12%</td></tr>
+<tr><td>日用雑貨</td><td class="num">9%</td><td>タオル、家庭用洗剤、キッチンロール・シート、スポンジ・たわし、ティッシュ・ナプキン、トイレットペーパー・シート、ゴミ袋</td><td class="num">7%</td></tr>
+<tr><td>ベビー・マタニティ</td><td class="num">10%</td><td>乳児用粉ミルク、成長期用粉ミルク</td><td class="num">7%</td></tr>
+<tr><td>美容・パーソナルケア</td><td class="num">10%</td><td>美容家電</td><td class="num">7%</td></tr>
+<tr><td>ペット用品</td><td class="num">12%</td><td>犬・猫用フード、犬・猫用トイレ</td><td class="num">7%</td></tr>
+</tbody></table></div>
+<p class="src">出典：<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861174545&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：販売手数料</a>（2026年9月2日確認）／全区分は<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料の記事</a>へ</p>
+<p>例外は低い方向と高い方向の両方にあります。<strong>同じショップで隣り合う商品の料率が5ポイント違うことが普通に起こります。</strong></p>
+<div class="box box-warn"><div class="bt">⚠️ 確認の単位は「カテゴリー」ではなく「登録サブカテゴリー」</div><p>カテゴリーの数字が同じなら安心、では例外の増減を拾えません。SKU一覧に「登録サブカテゴリー」の列を作り、改定日はその列で照合します。</p></div>
+
+<h2 id="s4"><span class="no en">04</span>30日前通知と最終更新日の定点観測で拾う</h2>
+<p>ここは公式の記載が明確です。公式FAQは、「ポリシー、TikTok Shopセラーセンター、メールなど複数のチャネルを通じて、書面にてセラーへ通知」し、「通常、当該変更の発効日の少なくとも30日前までに通知が行われ」ると説明しています（<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=6558182719014672&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：販売手数料FAQ</a>・2026年9月2日確認）。</p>
+<div class="tw"><table><thead><tr><th>経路</th><th>公式の位置づけ</th><th>自社側での受け方</th></tr></thead><tbody>
+<tr><td>セラーセンターの通知</td><td>通知チャネルとして明記</td><td>見る人を決め週1回既読を確認</td></tr>
+<tr><td>メール</td><td>通知チャネルとして明記</td><td>登録先を共有アドレスにする</td></tr>
+<tr><td>ポリシー・ヘルプ本文</td><td>最新情報は公式ヘルプ本文が優先</td><td>料率表をブックマークし月1回開く</td></tr>
+<tr><td>各ページの最終更新日</td><td>変更時に更新すると明記</td><td>日付と料率表を毎月同じ場所に保存</td></tr>
+</tbody></table></div>
+<p class="src">改定を拾う四つの経路（位置づけは公式記載・2026年9月2日確認／受け方はLEAM編集部案）</p>
+<p>ここからは公式の記載ではなく運用の話です。通知は届いても読む人が決まっていなければ止まります。月1回5分でやるのは三つ。①最終更新日を記録、②自社SKUの登録サブカテゴリーと料率を照合、③割引の残り日数を見る。</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="30日前通知から発効日までの30日間に何をするかを示した帯図">
+      <text x="28" y="32" font-size="13" font-weight="800" fill="#E8324A">30日間の使い方</text>
+      <rect x="40" y="56" width="640" height="46" rx="8" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".4"/>
+      <rect x="40" y="56" width="150" height="46" rx="8" fill="#E8324A" opacity=".18"/>
+      <text x="115" y="85" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">通知が届く</text>
+      <text x="420" y="85" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">通常30日以上の猶予（公式FAQ記載）</text>
+      <rect x="612" y="42" width="76" height="74" rx="8" fill="#E8324A"/>
+      <text x="650" y="76" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">発効日</text>
+      <text x="650" y="97" text-anchor="middle" font-size="11.5" fill="#FBC3CC">この日から</text>
+      <g font-size="12.5" fill="#17181C">
+        <rect x="40" y="130" width="196" height="60" rx="9" fill="#F4F6F8" stroke="#E3E6EA"/>
+        <text x="56" y="154" font-weight="800">1〜7日目</text>
+        <text x="56" y="178">影響SKUの洗い出しと再計算</text>
+        <rect x="252" y="130" width="196" height="60" rx="9" fill="#F4F6F8" stroke="#E3E6EA"/>
+        <text x="268" y="154" font-weight="800">8〜20日目</text>
+        <text x="268" y="178">価格・報酬・送料条件を決定</text>
+        <rect x="464" y="130" width="216" height="60" rx="9" fill="#F4F6F8" stroke="#E3E6EA"/>
+        <text x="480" y="154" font-weight="800">21〜30日目</text>
+        <text x="480" y="178">告知と反映、広告上限を更新</text>
+      </g>
+      <text x="40" y="224" font-size="12" fill="#787D8A">猶予を様子見に使うと、発効日に旧価格のまま売り続けることになる</text>
+    </svg>
+    <figcaption>図3：通知から発効日までの30日間の使い方（30日前通知は公式FAQ記載）</figcaption>
+  </figure>
+<h3>手数料が下がる制度も同じ頻度で確認する</h3>
+<p>公式FAQは減額の対象を二つ挙げています。新規セラー向け割引は「45日以内に3つの商品を出品」の達成者に7％の割引料率が45日間適用。GMV Max割引は広告連動で、<strong>「割引後の販売手数料率は、最低販売手数料率3.5％を下回ることはありません」</strong>、有効期間は14日間、既存キャンペーンには自動適用されないとされています（<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=4252874242836241&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：GMV Max割引</a>・2026年9月2日確認）。期間が有限なので、割引前提の価格は終了と同時に崩れます。</p>
+
+<h2 id="s5"><span class="no en">05</span>値上げされた日は五つのレバーを1本ずつ動かす</h2>
+<p>ここからは運用の話です。よくある失敗は、価格をいくら上げるかから考えることです。先に決めるのは<strong>どのSKUを守るか</strong>で、価格はその後に出ます。</p>
+<ol class="steps">
+<li><b>損益分岐を引き直す</b><p>新料率で1個あたり手残りを出し、マイナス・ほぼゼロ・余裕ありに分ける。価格の話はまだしない。</p></li>
+<li><b>畳むSKUを決める</b><p>手残りがマイナスで打ち手が無いものは在庫消化に回す。全部守ると次の判断が甘くなる。</p></li>
+<li><b>原価と外注費を当たる</b><p>仕入単価・資材費・代行費のうち、動く幅を金額で把握する。</p></li>
+<li><b>送料無料ラインとセットを見直す</b><p>1個あたりで薄くなったぶんを注文単位で取り戻す。値上げより先に検討できる。</p></li>
+<li><b>クリエイター報酬率を再配分する</b><p>主力は維持し薄いSKUを下げる。手数料率と報酬率の合計が粗利率を超えないように。</p></li>
+<li><b>価格を上げ、広告上限を更新する</b><p>残った不足だけを価格に載せ、許容獲得コストを新しい手残りで引き直す。</p></li>
+</ol>
+<div class="tw"><table><thead><tr><th>順</th><th>使う数字</th><th>次へ進む条件</th></tr></thead><tbody>
+<tr><td>1 損益分岐</td><td>新料率での1個あたり手残り</td><td>全SKUを三分類できた</td></tr>
+<tr><td>2 SKUの取捨</td><td>手残りと在庫数量</td><td>畳むSKUと消化期限が決まった</td></tr>
+<tr><td>3 原価・外注費</td><td>仕入単価、資材費、代行費</td><td>動く幅を金額で把握した</td></tr>
+<tr><td>4 送料・セット</td><td>注文単価、同梱率、配送実費</td><td>注文単位の手残りが基準超え</td></tr>
+<tr><td>5 報酬率</td><td>手数料率＋報酬率と粗利率</td><td>合計率が粗利率を超えるSKUが無い</td></tr>
+<tr><td>6 価格・広告</td><td>不足額、許容獲得コスト</td><td>広告上限を更新した</td></tr>
+</tbody></table></div>
+<p class="src">値上げ時に動かす順番と、次へ進む条件（LEAM編集部作成）</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="五つのレバーを効きの大きさと反映の速さで配置した図">
+      <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">レバーの選び方</text>
+      <path d="M92 258 H676" stroke="#D7DAE2" stroke-width="2"/>
+      <path d="M92 258 V52" stroke="#D7DAE2" stroke-width="2"/>
+      <text x="384" y="288" text-anchor="middle" font-size="12" fill="#787D8A">反映までの速さ（右が速い）</text>
+      <text x="70" y="155" font-size="12" fill="#787D8A" transform="rotate(-90 70 155)" text-anchor="middle">手残りへの効き（上が大きい）</text>
+      <g font-size="12.5" font-weight="800">
+        <circle cx="556" cy="94" r="44" fill="#E8324A"/>
+        <text x="556" y="91" text-anchor="middle" fill="#fff">販売価格</text>
+        <text x="556" y="110" text-anchor="middle" font-size="11" fill="#FBC3CC">効く／速い</text>
+        <circle cx="418" cy="146" r="40" fill="#F5798C"/>
+        <text x="418" y="143" text-anchor="middle" fill="#fff">報酬率</text>
+        <text x="418" y="161" text-anchor="middle" font-size="11" fill="#fff">効く／速い</text>
+        <circle cx="292" cy="108" r="40" fill="#FBC3CC"/>
+        <text x="292" y="105" text-anchor="middle" fill="#17181C">原価</text>
+        <text x="292" y="123" text-anchor="middle" font-size="11" fill="#3A3F46">効く／遅い</text>
+        <circle cx="498" cy="206" r="40" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+        <text x="498" y="203" text-anchor="middle" fill="#17181C">送料条件</text>
+        <text x="498" y="221" text-anchor="middle" font-size="11" fill="#3A3F46">中／速い</text>
+        <circle cx="196" cy="214" r="40" fill="#F4F6F8" stroke="#E3E6EA"/>
+        <text x="196" y="211" text-anchor="middle" fill="#17181C">広告上限</text>
+        <text x="196" y="229" text-anchor="middle" font-size="11" fill="#3A3F46">下支え／即日</text>
+      </g>
+      <text x="92" y="44" font-size="12" fill="#787D8A">遅いレバー（原価）から着手し、速いレバー（価格）で着地させる</text>
+    </svg>
+    <figcaption>図4：五つのレバーの効きと速さ。着手順と反映順は逆（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s6"><span class="no en">06</span>価格を上げるときは告知の順番を先に決める</h2>
+<p>つまずくのは金額より伝え方です。決めるのは<strong>いつから／いくら／対象SKU／既存の購入者への伝え方</strong>の四点。決まる前に商品ページを触ると価格と記述がずれます。</p>
+<p>型は四つ。①改定日の前に告知期間を置く、②値上げ対象と据え置き対象を明示する、③内容量やセット構成も変えるなら変更点を先に書く、④「手数料が上がったので」を主語にしない。④はプラットフォームの事情が購入理由にならないためで、代わりに維持するもの（品質・サポート・発送日数）を先に置きます。主力を据え置くなら、単品を触らず2個セットを主導線にする手もあります（<a href="https://leam.co.jp/column/pricing-strategy/">値付けとセット設計</a>）。</p>
+<div class="box box-warn"><div class="bt">⚠️ 旧価格の併記は二重価格表示になりうる</div><p>値上げ前の価格を「通常価格」として長く併記すると、実際には販売していない価格を比較対象にしてしまいます。景品表示法の考え方では、比較対象は実際に販売していた価格に限られます。出すなら販売期間を併記します。</p></div>
+
+<h2 id="s7"><span class="no en">07</span>再計算は1枚の表で足りる</h2>
+<p>改定日に埋める表です。金額は<strong>説明用の仮の数値</strong>で実際の改定ではありません。ベース料率10％（2026年9月2日時点の公式料率表）の商品が仮に12％になった場合。</p>
+<div class="tw"><table><thead><tr><th>行</th><th>改定前（仮）</th><th>改定後（仮）</th><th>自社で入れる値</th></tr></thead><tbody>
+<tr><td>販売価格</td><td class="num">3,000円</td><td class="num">3,000円</td><td>現行価格</td></tr>
+<tr><td>販売手数料</td><td class="num">300円（10%）</td><td class="num">360円（12%）</td><td>登録サブカテゴリーの料率</td></tr>
+<tr><td>クリエイター報酬</td><td class="num">450円（15%）</td><td class="num">450円（15%）</td><td>商品ごとの設定率</td></tr>
+<tr><td>原価</td><td class="num">900円</td><td class="num">900円</td><td>直近ロットの単価</td></tr>
+<tr><td>配送費・資材</td><td class="num">400円</td><td class="num">400円</td><td>実績平均</td></tr>
+<tr><td>1個あたり手残り</td><td class="num">950円</td><td class="num">890円</td><td>判断に使う数字</td></tr>
+<tr><td>不足額</td><td class="num">─</td><td class="num">60円</td><td>価格の2.0%に相当</td></tr>
+<tr><td>必要な値上げ幅</td><td class="num">─</td><td class="num">約90円（約3.0%）</td><td>下の注記へ</td></tr>
+</tbody></table></div>
+<p class="src">改定前後の再計算シート（数値は説明用の仮の想定／10％は公式のベース料率）</p>
+<div class="box box-point"><div class="bt">💡 2ポイントの値上げは2％の値上げでは戻らない</div><p>不足額は価格の2.0％ですが、価格を上げれば手数料と報酬も同じ率で増えます。原価と配送は固定額なので、必要な値上げ幅は不足の割合より大きくなります。上の例で手残り950円に戻る価格は約3,090円、幅は約3.0％。<strong>上がったポイント数ぶんでは毎回足りません。</strong></p></div>
+<p>最後に画面で照合します。公式FAQは、集計を「ファイナンス＞概要＞財務概要」、注文ごとを「同＞明細」で確認できると案内しています（2026年9月2日確認）。<strong>改定月は表の計算値と明細の実額を1回突き合わせます。</strong>ずれていれば、登録サブカテゴリーか割引の適用が想定と違います。</p>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>改定は避けられません。気づく仕組みと直す順番を持ちます。実行順に並べます。</p>
+<div class="summary-grid">
+<div class="summary-item">料率表をブックマークし、月1回、最終更新日と料率表を同じ場所に保存する（公式に履歴ページは無い）</div>
+<div class="summary-item">SKU一覧に「登録サブカテゴリー」の列を作り、改定日はカテゴリー名ではなくその列で照合する</div>
+<div class="summary-item">通知を読む担当と曜日を決め、メールの登録先を共有アドレスにする</div>
+<div class="summary-item">値上げ時は、損益分岐→畳むSKU→原価→送料無料ライン→報酬率→価格と広告上限の順に動かす</div>
+<div class="summary-item">値上げ幅は上がったポイント数ぶんでは足りない。必要幅を計算してから告知する</div>
+<div class="summary-item">改定月は再計算シートの値と明細の実額を1回突き合わせる</div>
+</div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq">
+<details><summary>TikTok Shopの手数料改定はどのくらいの頻度でありますか？</summary><div class="a">公式FAQに「販売手数料の調整には、一定の頻度は定められていません」と明記されています。頻度を前提にせず、通知と最終更新日を定点で確認してください（2026年9月2日確認）。</div></details>
+<details><summary>改定はいつ、どこに通知されますか？</summary><div class="a">公式FAQは、ポリシー・セラーセンター・メールなど複数のチャネルで書面により通知し、通常は発効日の少なくとも30日前までに通知、その後に複数回のリマインドが行われる場合があると記載しています（2026年9月2日確認）。あわせて各ヘルプページの最終更新日が更新されます。</div></details>
+<details><summary>過去の改定履歴は公式で確認できますか？</summary><div class="a">2026年9月2日時点で、日本向け公式ヘルプに過去の料率を並べた履歴ページは見つかりませんでした。手がかりは各ページの最終更新日だけです。過去の改定日や旧料率は、セラーセンターの通知や告知でご確認ください。</div></details>
+<details><summary>値上げされたら最初に何を見直せばよいですか？</summary><div class="a">価格ではなく損益分岐です。新料率で1個あたり手残りを出し、マイナス・ほぼゼロ・余裕ありに分けてから、畳むSKU、原価、送料無料ライン、報酬率の順に当たり、最後に価格と広告上限を更新します。</div></details>
+<details><summary>手数料が下がる制度はありますか？</summary><div class="a">公式FAQは二つを挙げています。新規セラー向け販売手数料割引（45日以内に3つの商品を出品するミッションの達成者に7％の割引料率が45日間適用）と、GMV Maxによる販売手数料割引です。後者は割引後も最低販売手数料率3.5％を下回らず、有効期間は14日間と記載されています（2026年9月2日確認）。</div></details>
+<details><summary>改定後の実際の手数料額はどこで確認できますか？</summary><div class="a">公式FAQによると、集計は「セラーセンター＞ファイナンス＞概要＞財務概要」、注文ごとは「同＞明細」で確認できます。請求書は前月分が翌月に発行され「ファイナンス＞概要＞請求書＞プラットフォームインボイス」から取得できると案内されています（2026年9月2日確認）。</div></details>
+</div>
+
+<div class="ctabox"><div class="ct">改定後の損益ラインと価格の引き直しを一緒に整理します</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。商材と価格設計を伺い、どこから直すべきかを率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list">
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861174545&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shopの販売手数料</a>（最終更新日 2026/08/31・2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=6558182719014672&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shopの販売手数料FAQ</a>（最終更新日 2026/08/31・2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=4252874242836241&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：GMV Maxによる販売手数料割引</a>（最終更新日 2026/07/31・2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=108878516750081&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：新規セラー向け販売手数料割引</a>（最終更新日 2026/05/12・2026年9月2日確認）</li>
+</ul>
+<p class="src">料率・例外・割引の条件は改定されます。本記事は2026年9月2日時点で日本向け公式ヘルプに確認できた事実と、LEAM編集部の運用手順を区別して記載しています。過去の改定日や旧料率は公式の告知でご確認ください。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">基礎</span><b>TikTok Shopとは｜仕組みと始め方</b><span>手数料の前提になる全体像</span></a><a class="relcard" href="https://leam.co.jp/column/creator-commission/"><span class="rc">クリエイター</span><b>クリエイターへの報酬相場と決め方</b><span>手数料と並ぶもう一つの率</span></a><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-roas/"><span class="rc">採算</span><b>ROAS基準と損益分岐の出し方</b><span>広告の上限を引き直す</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">改定で動くのは料率だけではなく、四つの層がある</a></li><li><a href="#s2">公式で確認できる痕跡は「最終更新日」しかない</a></li><li><a href="#s3">例外サブカテゴリーが付いているのは五カテゴリー</a></li><li><a href="#s4">30日前通知と最終更新日の定点観測で拾う</a></li><li><a href="#s5">値上げされた日は五つのレバーを1本ずつ動かす</a></li><li><a href="#s6">価格を上げるときは告知の順番を先に決める</a></li><li><a href="#s7">再計算は1枚の表で足りる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "TikTok Shopの手数料改定はどのくらいの頻度でありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式FAQに「販売手数料の調整には、一定の頻度は定められていません」と明記されています。頻度を前提にせず、通知と最終更新日を定点で確認してください（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "改定はいつ、どこに通知されますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式FAQは、ポリシー・セラーセンター・メールなど複数のチャネルで書面により通知し、通常は発効日の少なくとも30日前までに通知、その後に複数回のリマインドが行われる場合があると記載しています（2026年9月2日確認）。あわせて各ヘルプページの最終更新日が更新されます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "過去の改定履歴は公式で確認できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026年9月2日時点で、日本向け公式ヘルプに過去の料率を並べた履歴ページは見つかりませんでした。手がかりは各ページの最終更新日だけです。過去の改定日や旧料率は、セラーセンターの通知や告知でご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "値上げされたら最初に何を見直せばよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "価格ではなく損益分岐です。新料率で1個あたり手残りを出し、マイナス・ほぼゼロ・余裕ありに分けてから、畳むSKU、原価、送料無料ライン、報酬率の順に当たり、最後に価格と広告上限を更新します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "手数料が下がる制度はありますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式FAQは二つを挙げています。新規セラー向け販売手数料割引（45日以内に3つの商品を出品するミッションの達成者に7％の割引料率が45日間適用）と、GMV Maxによる販売手数料割引です。後者は割引後も最低販売手数料率3.5％を下回らず、有効期間は14日間と記載されています（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "改定後の実際の手数料額はどこで確認できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式FAQによると、集計は「セラーセンター＞ファイナンス＞概要＞財務概要」、注文ごとは「同＞明細」で確認できます。請求書は前月分が翌月に発行され「ファイナンス＞概要＞請求書＞プラットフォームインボイス」から取得できると案内されています（2026年9月2日確認）。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+</body>
+</html>

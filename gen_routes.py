@@ -5,47 +5,21 @@
 # 手順: index.html を差し替え → python3 gen_routes.py → git add -A && git commit && git push
 import re
 import sys
-import datetime
+import datetime, glob, os
 
 BASE = 'https://leam.co.jp'
 RESERVED = ('', 'mcn', 'line', 'column', 'ecplus', 'ecplus-2', 'ecplus-3', 'fashion',
             'present', 'mission', 'lineredirect', 'thanks-2')  # 実コンテンツ用ディレクトリ。ここへは絶対に出力しない
 
 # /column/ の記事（build_column.py が生成。追加したらここにも足す）
-COLUMN_SLUGS = (
-    'account-suspension',
-    'affiliate-guide',
-    'amazon-seller-tiktok-shop',
-    'best-categories',
-    'coupon-sale-tactics',
-    'creator-commission',
-    'creator-invite',
-    'd2c-tiktok-shop',
-    'gmvmax',
-    'is-tiktok-shop-safe',
-    'live-audience',
-    'live-commerce-guide',
-    'market-outlook',
-    'marketplace-comparison',
-    'not-selling-checklist',
-    'pricing-strategy',
-    'product-page-cvr',
-    'prohibited-items',
-    'rakuten-seller-tiktok-shop',
-    'returns-refunds',
-    'review-management',
-    'sample-request',
-    'seasonal-campaign',
-    'seller-center-guide',
-    'shipping-rules',
-    'short-video-playbook',
-    'tiktok-shop-fees',
-    'tiktok-shop-roas',
-    'tiktok-shop-shinsa',
-    'unyodaiko-cost',
-    'what-is-tiktok-shop',
-    'yahoo-seller-tiktok-shop',
-)
+# 🔴 ベタ書きにすると記事を足すたびに古くなる（2026-09-07、20本を公開したとき
+#    sitemap が 41URL のまま＝新規20本が全部載らない状態で発覚した）。
+#    **実物のディレクトリから導く。ここが唯一の正。**
+COLUMN_SLUGS = tuple(sorted(
+    os.path.basename(os.path.dirname(f))
+    for f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                    'column', '*', 'index.html'))
+))
 
 # ROUTES外だがsitemapに載せる実コンテンツ（SPAではなく独立ページ）
 # /ecplus は robots=all の実ページで表示も取れているが、RESERVED のため ROUTES に無く

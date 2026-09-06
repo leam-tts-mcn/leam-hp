@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shop LIVEの機材と配信環境</title>
+<meta name="description" content="TikTok Shop LIVEに必要なスマホ・固定具・照明・音声・回線を解説します。まず揃える最小構成と、配信前のチェック表つきです。">
+<link rel="canonical" href="https://leam.co.jp/column/tiktok-shop-live-equipment/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shop LIVEの機材と配信環境">
+<meta property="og:description" content="TikTok Shop LIVEに必要なスマホ・固定具・照明・音声・回線を解説します。まず揃える最小構成と、配信前のチェック表つきです。">
+<meta property="og:url" content="https://leam.co.jp/column/tiktok-shop-live-equipment/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shop LIVEの機材と配信環境">
+<meta name="twitter:description" content="TikTok Shop LIVEに必要なスマホ・固定具・照明・音声・回線を解説します。まず揃える最小構成と、配信前のチェック表つきです。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shop LIVEの機材と配信環境", "description": "TikTok Shop LIVEに必要なスマホ・固定具・照明・音声・回線を解説します。まず揃える最小構成と、配信前のチェック表つきです。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-shop-live-equipment/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shop LIVEの機材と配信環境", "item": "https://leam.co.jp/column/tiktok-shop-live-equipment/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shop LIVEの機材と配信環境｜スマホ配信の最小構成とチェック表</p>
+<span class="cat">LIVE運用</span>
+<h1>TikTok Shop LIVEの機材と配信環境｜スマホ配信の最小構成とチェック表</h1>
+<div class="meta"><time class="upd" datetime="2026-08-30" aria-label="更新日">更新日：2026年8月30日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="LIVE配信の機材と環境：三脚に立てた赤い配信スマホがシアンの商品と購入ボタンを映し、左のリングライトが光を当てて商品を見えるようにし、その配信がシアンの曲線の矢印で右の別の視聴端末へ届いて、映像・音・購入導線が正しく見えているかをチェックで確かめている場面を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v332c-96 32-190 36-292 22-110-16-196-50-306-48-112 2-196 46-306 58-98 12-192-2-296-32z" fill="#F6F7F9"/>
+  <ellipse cx="880" cy="252" rx="272" ry="206" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="64" cy="66" r="5"/><circle cx="100" cy="66" r="5"/><circle cx="136" cy="66" r="5"/><circle cx="172" cy="66" r="5"/>
+      <circle cx="64" cy="102" r="5"/><circle cx="100" cy="102" r="5"/><circle cx="136" cy="102" r="5"/><circle cx="172" cy="102" r="5"/>
+      <circle cx="64" cy="138" r="5"/><circle cx="100" cy="138" r="5"/><circle cx="136" cy="138" r="5"/><circle cx="172" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(694 -6)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 514c152-30 270-16 398 6 128 22 246 30 372 10 124-20 240-44 430-26v126H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 左：リングライト（従・光を当てる側） ================= -->
+  <g>
+    <!-- スタンドの柱 -->
+    <rect x="129" y="336" width="24" height="190" rx="11" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="129" y="336" width="24" height="190" rx="11" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+    <!-- 台座 -->
+    <path d="M88 566L126 518H156L194 566Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M88 566L126 518H156L194 566Z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- リング本体（主役の方へ少し傾ける） -->
+    <g transform="rotate(-8 140 262)">
+      <circle cx="140" cy="262" r="88" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+      <circle cx="140" cy="262" r="88" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+      <circle cx="140" cy="262" r="52" fill="#EFF1F4" stroke="#0B0C10" stroke-width="7"/>
+      <g fill="#DFE0E2">
+        <circle cx="175" cy="201" r="9"/>
+        <circle cx="206" cy="238" r="9"/>
+        <circle cx="206" cy="286" r="9"/>
+        <circle cx="175" cy="323" r="9"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- 光（リングライト → 配信スマホ） -->
+  <g fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 10">
+    <path d="M229 221L278 198"/>
+    <path d="M238 262L288 262"/>
+    <path d="M229 303L286 330"/>
+  </g>
+
+  <!-- ================= 中央：三脚（主役の支持体） ================= -->
+  <g>
+    <rect x="392" y="466" width="42" height="34" rx="9" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="392" y="466" width="42" height="34" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <g fill="none" stroke="#0B0C10" stroke-linecap="round">
+      <path d="M413 496V524" stroke-width="13"/>
+      <path d="M413 520L344 570" stroke-width="11"/>
+      <path d="M413 520L482 570" stroke-width="11"/>
+      <path d="M413 520V558" stroke-width="10"/>
+    </g>
+  </g>
+
+  <!-- ================= 主役：配信スマホ（赤） ================= -->
+  <g transform="rotate(-5 413 326)">
+    <!-- 影 -->
+    <rect x="302" y="176" width="222" height="300" rx="28" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+
+    <!-- 筐体の側面（濃赤） -->
+    <rect x="302" y="176" width="222" height="300" rx="28" fill="#CE1730"/>
+    <!-- 筐体の前面（赤） -->
+    <rect x="302" y="176" width="204" height="300" rx="28" fill="#FE2C55"/>
+    <!-- スピーカー -->
+    <rect x="380" y="184" width="48" height="7" rx="3.5" fill="#CE1730"/>
+
+    <!-- 画面 -->
+    <rect x="322" y="200" width="164" height="254" rx="13" fill="#FFFFFF"/>
+
+    <!-- 配信中の印 -->
+    <circle cx="344" cy="222" r="8" fill="#0B0C10"/>
+    <rect x="360" y="216" width="46" height="12" rx="6" fill="#DFE0E2"/>
+
+    <!-- 映っている商品（シアン＝見えている状態） -->
+    <rect x="352" y="252" width="104" height="76" rx="10" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M352 276h104" fill="none" stroke="#0B0C10" stroke-width="5"/>
+
+    <!-- 購入導線のカード -->
+    <rect x="336" y="348" width="136" height="44" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="346" y="356" width="28" height="28" rx="6" fill="#25F4EE"/>
+    <rect x="384" y="360" width="56" height="8" rx="4" fill="#DFE0E2"/>
+    <rect x="384" y="376" width="38" height="8" rx="4" fill="#DFE0E2"/>
+
+    <!-- コメント -->
+    <rect x="336" y="408" width="92" height="10" rx="5" fill="#DFE0E2"/>
+    <rect x="336" y="428" width="64" height="10" rx="5" fill="#DFE0E2"/>
+
+    <!-- 輪郭 -->
+    <rect x="302" y="176" width="222" height="300" rx="28" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 関係：配信が別端末へ届く矢印（シアン） ================= -->
+  <g>
+    <path d="M540 298C626 232 714 214 800 234L796 204L874 258L802 296L808 266C724 250 632 268 552 328Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M540 298C626 232 714 214 800 234L796 204L874 258L802 296L808 266C724 250 632 268 552 328Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 右：視聴確認用の端末（従・確かめる側） ================= -->
+  <g transform="rotate(6 960 398)">
+    <rect x="888" y="300" width="144" height="196" rx="20" fill="#5E6064" opacity=".15" transform="translate(10 12)"/>
+    <rect x="888" y="300" width="144" height="196" rx="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="940" y="305" width="40" height="6" rx="3" fill="#DFE0E2"/>
+    <rect x="902" y="316" width="116" height="166" rx="10" fill="#F6F7F9"/>
+    <rect x="926" y="334" width="68" height="48" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="960" cy="424" r="26" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M948 424l9 10 17-20" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="924" y="458" width="72" height="9" rx="4.5" fill="#DFE0E2"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1124" cy="108" r="15" fill="#25F4EE"/>
+  <circle cx="628" cy="124" r="12" fill="#FE2C55"/>
+  <circle cx="744" cy="538" r="13" fill="#DFE0E2"/>
+</svg>
+    <figcaption>TikTok Shop LIVEの機材と配信環境｜スマホ配信の最小構成とチェック表（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shop LIVEの機材は、高価なカメラからそろえる必要はありません。優先すべきなのは、商品が見える、声が聞こえる、画面が揺れない、配信が途切れにくい、実演と購入導線が一致することです。公式の高品質コンテンツガイドも、鮮明な映像、クリアな音声、整理された撮影環境、商品を中心にした見せ方を重視しています。本記事では、スマホ配信の最小構成から段階的な拡張までを整理します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>商品が見えて声が聞こえる最小機材の優先順位</li><li>照明、音声、回線、電源、実演台を配信前に確認する方法</li><li>配信中の故障や欠品に備えるバックアップ設計</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a></b><span>機材の前に決める配信設計</span></div>
+    <div class="relcard"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-audience/">ライブは誰が見ているか</a></b><span>誰に向けて配信するか</span></div>
+    <div class="relcard"><span class="rc">動画</span><b><a href="https://leam.co.jp/column/short-video-playbook/">売れるショート動画の作り方</a></b><span>ライブ前に動画で集める</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">TikTok Shopの運用課題を無料で整理します</div><p>商品・コンテンツ・クリエイター・ショップ運用のどこに詰まりがあるかを伺い、次に確認すべきことを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">機材は画質より先に「見える・聞こえる・止まらない」を満たす</a></li><li><a href="#s2">スマホ配信の最小構成は六点で始められる</a></li><li><a href="#s3">照明と画角は商品の特徴が伝わる実演から逆算する</a></li><li><a href="#s4">音声は最優先。ただしマイクを買う前に距離・反響・環境音を確かめる</a></li><li><a href="#s5">回線・電源・端末温度は本番と同じ条件でテストする</a></li><li><a href="#s6">配信前チェックは映像・商品・運用・ポリシーを同じ表で確認する</a></li><li><a href="#s7">配信環境は設営写真と数値に頼らない再現手順を残す</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>機材は画質より先に「見える・聞こえる・止まらない」を満たす</h2><p>LIVEの目的は映像作品を作ることではなく、視聴者が商品を理解し、質問し、購入判断できる状態を作ることです。機材選びは、商品視認性、音声、安定性、操作性の順で考えます。</p><div class="tw"><table><thead><tr><th>優先</th><th>満たす状態</th><th>最小構成</th></tr></thead><tbody><tr><td>商品が見える</td><td>色・質感・サイズ・動きが分かる</td><td>スマホ＋正面照明＋実演台</td></tr><tr><td>声が聞こえる</td><td>説明と質問回答が明瞭</td><td>静かな場所＋距離調整。必要に応じ外部マイク</td></tr><tr><td>画面が安定</td><td>揺れず、商品がフレーム内に収まる</td><td>固定具・三脚</td></tr><tr><td>配信が続く</td><td>回線と電源が安定する</td><td>事前テスト＋給電＋予備回線</td></tr><tr><td>操作できる</td><td>商品切替とコメント対応が止まらない</td><td>モデレーター端末または担当</td></tr></tbody></table></div><p class="src">機材の優先順位は視聴者の判断材料から決める（LEAM編集部作成）</p><div class="box box-point"><div class="bt">💡 高価な機材より再現できる配置</div><p>毎回同じ明るさ、距離、画角で設営できるよう、床や机に位置を記録します。担当が変わっても同じ状態を作れることが大切です。</p></div>
+  <figure> <svg viewBox="0 0 720 274" role="img" aria-label="配信機材を、商品が見える・声が聞こえる・止まらない・操作できるの優先順で並べ、画質より先に満たすべきことを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">機材は画質より先に、この順で満たす</text><rect x="20" y="40" width="680" height="44" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="52" y="67" text-anchor="middle" font-size="15" font-weight="900" fill="#C2203A">1</text><text x="170" y="67" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">🔴 商品が見える</text><text x="460" y="67" text-anchor="middle" font-size="11.5" fill="#787D8A">色・質感・サイズ・動きが分かる／スマホ＋正面照明＋実演台</text><rect x="20" y="92" width="680" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="52" y="119" text-anchor="middle" font-size="15" font-weight="900" fill="#787D8A">2</text><text x="170" y="119" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">声が聞こえる</text><text x="460" y="119" text-anchor="middle" font-size="11.5" fill="#787D8A">説明と質問回答が明瞭／静かな場所と反響の少ない部屋</text><rect x="20" y="144" width="680" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="52" y="171" text-anchor="middle" font-size="15" font-weight="900" fill="#787D8A">3</text><text x="170" y="171" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">止まらない</text><text x="460" y="171" text-anchor="middle" font-size="11.5" fill="#787D8A">回線と電源が配信時間もつ／有線・モバイル二重化</text><rect x="20" y="196" width="680" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="52" y="223" text-anchor="middle" font-size="15" font-weight="900" fill="#787D8A">4</text><text x="170" y="223" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">操作できる</text><text x="460" y="223" text-anchor="middle" font-size="11.5" fill="#787D8A">ピン留めやコメント対応の手が別に要る</text><text x="360" y="266" text-anchor="middle" font-size="11.5" fill="#787D8A">目的は映像作品ではなく、視聴者が購入を判断できる状態を作ること</text></svg> <figcaption>図1：画質より先に満たすものがある（LEAM編集部作成）</figcaption> </figure><h2 id="s2"><span class="no en">02</span>スマホ配信は六つの機能を満たせば始められる</h2><p>最初はスマホ、固定具、照明、音声環境、安定回線、電源の六点をそろえます。商材に応じて、俯瞰アーム、背景、接写用の補助照明、実演用の水場などを追加します。</p><div class="tw"><table><thead><tr><th>要素</th><th>役割</th><th>選ぶ基準</th></tr></thead><tbody><tr><td>配信端末</td><td>映像・配信操作</td><td>アプリが安定し、カメラと電池状態を確認できる</td></tr><tr><td>固定具</td><td>画角の維持</td><td>商品を動かしても倒れにくく微調整できる</td></tr><tr><td>照明</td><td>色・質感・顔を見せる</td><td>影と反射を確認し、明るさを再現できる</td></tr><tr><td>音声</td><td>説明を明瞭にする</td><td>環境音、反響、衣擦れをテストできる</td></tr><tr><td>回線</td><td>配信の継続</td><td>実際の配信場所と時間帯で安定する</td></tr><tr><td>電源</td><td>電池切れ防止</td><td>給電しながら安全に設置できる</td></tr></tbody></table></div><p class="src">最小構成は六つの機能で考える（LEAM編集部作成）</p><p>特定の機材名や通信速度だけで判断せず、実際の配信場所、照明を点けた状態、同じ時間帯でテストしてください。端末の発熱や給電ケーブルの取り回しも確認します。</p>
+  <figure> <svg viewBox="0 0 720 264" role="img" aria-label="スマホ配信に必要な最小6点（配信端末・固定具・照明・音声環境・回線・電源）と選ぶ基準を示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">スマホ配信の最小6点</text><rect x="20" y="46" width="221" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="130.5" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">配信端末</text><text x="130.5" y="94" text-anchor="middle" font-size="11" fill="#787D8A">アプリが安定</text><text x="130.5" y="110" text-anchor="middle" font-size="11" fill="#787D8A">電池と発熱を確認</text><rect x="259" y="46" width="221" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="369.5" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">固定具</text><text x="369.5" y="94" text-anchor="middle" font-size="11" fill="#787D8A">画角を保つ</text><text x="369.5" y="110" text-anchor="middle" font-size="11" fill="#787D8A">微調整できる</text><rect x="498" y="46" width="221" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="608.5" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">照明</text><text x="608.5" y="94" text-anchor="middle" font-size="11" fill="#787D8A">色と質感が出る</text><text x="608.5" y="110" text-anchor="middle" font-size="11" fill="#787D8A">正面から</text><rect x="20" y="140" width="221" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="130.5" y="166" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">音声環境</text><text x="130.5" y="188" text-anchor="middle" font-size="11" fill="#787D8A">静かな場所</text><text x="130.5" y="204" text-anchor="middle" font-size="11" fill="#787D8A">反響が少ない</text><rect x="259" y="140" width="221" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="369.5" y="166" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">回線</text><text x="369.5" y="188" text-anchor="middle" font-size="11" fill="#787D8A">配信時間もつ</text><text x="369.5" y="204" text-anchor="middle" font-size="11" fill="#787D8A">予備を用意</text><rect x="498" y="140" width="221" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="608.5" y="166" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">電源</text><text x="608.5" y="188" text-anchor="middle" font-size="11" fill="#787D8A">給電しながら</text><text x="608.5" y="204" text-anchor="middle" font-size="11" fill="#787D8A">配信できる</text><text x="360" y="252" text-anchor="middle" font-size="11.5" fill="#787D8A">商材に応じて、俯瞰アーム・背景・接写照明・実演用の水場を足す</text></svg> <figcaption>図2：この6点がそろえば始められる（LEAM編集部作成）</figcaption> </figure><h2 id="s3"><span class="no en">03</span>照明と画角は商品の特徴が伝わる実演から逆算する</h2><p>美容、食品、衣類、家電では、見せたい情報が異なります。顔をきれいに見せるだけでなく、商品の細部、使用前後、サイズ比較が分かる画角を準備します。なお<strong>美容・健康関連の実演は、映像・口頭とも薬機法の広告規制の対象</strong>になります。使用前後の見せ方を含め、効能効果の言い切りにならないか配信前に確認してください。</p><div class="tw"><table><thead><tr><th>商材・実演</th><th>必要な画角</th><th>注意点</th></tr></thead><tbody><tr><td>手元の操作</td><td>俯瞰または斜め上</td><td>手で商品を隠さない</td></tr><tr><td>質感・色</td><td>接写＋正面の補助光</td><td>反射と自動露出の変化</td></tr><tr><td>衣類・全身</td><td>縦の引き画</td><td>頭から足元と商品を同時に入れる</td></tr><tr><td>比較</td><td>同じ距離・同じ光で左右に並べる</td><td>条件を変えて誤認を招かない</td></tr><tr><td>食品・調理</td><td>工程と完成品の二つの位置</td><td>衛生と蒸気・油はね</td></tr></tbody></table></div><p class="src">実演から画角と光を逆算する（LEAM編集部作成）</p><div class="box box-warn"><div class="bt">⚠️ 画面上の見え方で確認</div><p>肉眼で明るく見えても、スマホの自動調整で白飛びや色ずれが起きます。配信端末とは別の視聴端末で最終確認します。</p></div><h2 id="s4"><span class="no en">04</span>音声は最優先。ただしマイクを買う前に距離・反響・環境音を確かめる</h2><p>音が聞き取りにくい原因は、出演者と端末の距離、部屋の反響、空調や作業音であることが多く、外部マイクだけでは解決しません。まず配信位置で録音し、視聴端末から確認します。音声を最優先する点は<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>と同じです。ただし反響や環境音が原因の場合は外部マイクを買っても解決しないため、購入の前に配信場所でテストしてください。</p><ol class="steps"><li><b>環境音を止めて録音する</b><p>空調、冷蔵機器、道路、スタッフの声を確認します。</p></li><li><b>出演者と端末の距離を決める</b><p>実演で動く範囲を含め、声量が安定する位置を探します。</p></li><li><b>反響を減らす</b><p>硬い壁や空の部屋では、布や商品棚の配置で反射音を抑えます。</p></li><li><b>必要なら外部マイクを追加する</b><p>衣擦れ、接続、充電、音ずれを本番前に確認します。</p></li><li><b>予備の音声手段を決める</b><p>マイク不調時に端末音声へ戻す手順を共有します。</p></li></ol>
+  <figure> <svg viewBox="0 0 720 210" role="img" aria-label="音が聞き取りにくいとき、外部マイクを買う前に配信位置で録音して距離・反響・環境音を確かめるべきことを対比した図"><rect x="20" y="20" width="320" height="168" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="180" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">マイクを買う</text><text x="180" y="86" text-anchor="middle" font-size="12" fill="#454956">外部マイクを追加</text><text x="180" y="112" text-anchor="middle" font-size="12" fill="#454956">設定を詰める</text><text x="180" y="138" text-anchor="middle" font-size="12" fill="#454956">それでも聞こえない</text><text x="180" y="170" text-anchor="middle" font-size="11" fill="#787D8A">原因が部屋なら、マイクでは解決しない</text><rect x="380" y="20" width="320" height="168" rx="14" fill="#ffffff" stroke="#E8324A" stroke-width="1.5"/><text x="540" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">先に測る</text><text x="540" y="86" text-anchor="middle" font-size="12" fill="#454956">配信位置で録音</text><text x="540" y="112" text-anchor="middle" font-size="12" fill="#454956">視聴端末で聞く</text><text x="540" y="138" text-anchor="middle" font-size="12" fill="#454956">距離・反響・環境音</text><text x="540" y="170" text-anchor="middle" font-size="11" fill="#C2203A">原因が分かってから、買うものを決める</text><path d="M342 104.0 H368" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M362 97.0 L374 104.0 L362 111.0 Z" fill="#787D8A"/></svg> <figcaption>図3：買う前に、配信場所で録って聞く（LEAM編集部作成）</figcaption> </figure><h2 id="s5"><span class="no en">05</span>回線・電源・端末温度は本番と同じ条件でテストする</h2><p>短い通信テストだけでは、長時間配信の安定性は分かりません。照明、充電、アプリ、コメント確認端末をすべて動かし、本番に近い長さでテストします。</p><div class="tw"><table><thead><tr><th>テスト</th><th>確認内容</th><th>バックアップ</th></tr></thead><tbody><tr><td>回線</td><td>映像・音声の途切れ、混雑時間帯</td><td>別回線・切替担当</td></tr><tr><td>電源</td><td>給電状態、ケーブル、容量</td><td>予備電源・予備ケーブル</td></tr><tr><td>端末</td><td>発熱、通知、空き容量、アプリ動作</td><td>予備端末・再起動手順</td></tr><tr><td>照明</td><td>発熱、ちらつき、反射</td><td>配置変更・予備灯</td></tr><tr><td>音声</td><td>接続、電池、遅延、衣擦れ</td><td>端末音声へ戻す</td></tr></tbody></table></div><p class="src">技術トラブルは切り替え手順まで決める（LEAM編集部作成）</p><div class="box box-point"><div class="bt">💡 担当を決める</div><p>出演者がトラブル対応まで抱えると進行が止まります。技術、商品、コメントの担当と、配信を止める条件を共有します。</p></div><h2 id="s6"><span class="no en">06</span>配信前チェックは映像・商品・運用・ポリシーを同じ表で確認する</h2><p>機材だけ正常でも、リンク先の商品、在庫、台本、表示内容がずれていれば販売は止まります。配信前に四領域を一枚で確認します。</p><div class="tw"><table><thead><tr><th>領域</th><th>チェック項目</th></tr></thead><tbody><tr><td>映像・音声</td><td>画角、ピント、明るさ、音量、反響、視聴端末での確認</td></tr><tr><td>商品</td><td>実物、バリエーション、在庫、商品リンク、実演小物</td></tr><tr><td>運用</td><td>台本、出演者、モデレーター、回線、電源、予備手段</td></tr><tr><td>表示・表現</td><td>商品とリンクの一致、事実確認、注意事項、不要な個人情報の映り込み</td></tr><tr><td>終了後</td><td>注文、質問、トラブル、素材保存、次回改善の記録先</td></tr></tbody></table></div><p class="src">配信前後を一枚のチェック表にする（LEAM編集部作成）</p><h2 id="s7"><span class="no en">07</span>配信環境は設営写真と数値に頼らない再現手順を残す</h2><p>毎回担当者が変わると、同じ機材でも画角と音が変わります。完成した設営を正面・横・出演者位置から撮影し、三脚の高さ、机との距離、照明の向き、商品を置く範囲、ケーブル経路を記録します。機材名より、同じ状態を再現できる手順が運用品質を支えます。</p><div class="tw"><table><thead><tr><th>確認ポイント</th><th>できている状態</th><th>次のアクション</th></tr></thead><tbody><tr><td>端末</td><td>通知、空き容量、アプリ、電池、発熱を確認済み</td><td>本番前に再起動し、不要なアプリと通知を止める</td></tr><tr><td>画角</td><td>出演者・商品・実演台が予定の動きでも収まる</td><td>床と机へ位置印を付け、設営写真を保存する</td></tr><tr><td>ピント・露出</td><td>接写と引き画の切替でも商品が識別できる</td><td>白飛びや暗部が出る商品は照明角度を別に記録する</td></tr><tr><td>照明</td><td>商品色と質感が視聴端末で自然に見える</td><td>反射商品は光源をずらし、背景との明暗差を調整する</td></tr><tr><td>音声</td><td>通常声量・実演音・衣擦れ・環境音を確認済み</td><td>マイク不調時に端末音声へ戻す手順を練習する</td></tr><tr><td>回線</td><td>本番の場所と時間帯で長めのテストを実施</td><td>予備回線の切替担当と配信停止条件を決める</td></tr><tr><td>電源</td><td>給電しながら安全に動け、ケーブルへ触れない</td><td>予備ケーブルと電源を手の届く場所へ置く</td></tr><tr><td>実演備品</td><td>水、布、比較物、廃棄物、清掃まで配置済み</td><td>実演後の商品置き場と画面外の動線を決める</td></tr><tr><td>視聴確認</td><td>別端末で映像・音声・商品表示を確認できる</td><td>配信端末だけを見て開始せず第三者が最終判定する</td></tr><tr><td>終了後</td><td>充電、素材、故障、次回配置の変更を記録する</td><td>問題を機材購入で片づけず原因と再現条件を残す</td></tr></tbody></table></div><p class="src">実務導入ワークシート（LEAM編集部作成）</p><h3>商材別セットは共通機材と追加備品へ分ける</h3><p>すべての配信で使う端末、三脚、照明、回線、電源は共通セットにし、食品の調理器具、美容の鏡と衛生用品、衣類の全身確認、家電の接写や電源などを商材別箱へ分けます。配信表から必要箱を選べるようにすると、毎回の持ち物判断を減らせます。使用後は不足・破損・充電状態を記録し、次回担当が箱を開けてから問題へ気づく状態を避けます。</p><h3>視聴端末の確認者は映像だけでなく購入導線も見る</h3><p>配信端末側で正常に見えていても、視聴者側では音量、文字、商品のピン留め、コメント表示が違って見えることがあります。確認者は『商品名が分かる』『話題の商品が選べる』『実演の細部が見える』『声と実演音のバランスがよい』を順に見ます。問題を出演者へ一度に伝えず、継続できない障害と、次回改善へ送る項目に分けてください。</p><div class="box box-point"><div class="bt">💡 運用へ定着させる</div><p>機材を追加すると、接続、充電、担当、故障箇所も増えます。新しい機材は『何の判断材料を改善するのか』を一行で決め、導入前後を同じ商品・同じ実演で比べてください。画質が上がっても操作が複雑になり配信回数が減るなら、立ち上げ期の構成としては見直しが必要です。</p></div>
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>この記事の要点を、実行順にまとめます。</p><div class="summary-grid"><div class="summary-item">商品が見えて声が聞こえる最小機材の優先順位</div><div class="summary-item">照明、音声、回線、電源、実演台を配信前に確認する方法</div><div class="summary-item">配信中の故障や欠品に備えるバックアップ設計</div></div>
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>スマホだけでTikTok Shop LIVEを始められますか？</summary><div class="a">スマホ配信から始められますが、固定具、照明、静かな音声環境、安定回線、給電を準備すると商品説明を続けやすくなります。</div></details><details><summary>外部マイクは必要ですか？</summary><div class="a">環境と距離によります。まず配信場所で端末音声をテストし、反響や環境音を直してから必要性を判断してください。</div></details><details><summary>照明はいくつ必要ですか？</summary><div class="a">個数より、商品と出演者が白飛びや影なく見えるかで決めます。商材と実演角度に合わせ、視聴端末で確認してください。</div></details><details><summary>回線テストは何を見ますか？</summary><div class="a">本番と同じ場所・時間帯・端末・給電状態で、映像と音声の途切れ、遅延、端末発熱を確認します。</div></details><details><summary>機材トラブル時は配信を続けるべきですか？</summary><div class="a">商品説明や購入判断に支障がある場合は、予備手段へ切り替えるか停止します。出演者とは別に判断担当を決めてください。</div></details><details><summary>最初からカメラや配信ソフトを導入すべきですか？</summary><div class="a">最小構成で配信フローと実演を安定させ、必要な画角や演出が明確になってから段階的に拡張すると無駄を減らせます。</div></details></div>
+<div class="ctabox"><div class="ct">自社だけで回すか、外部を使うかも含めて整理できます</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。商材と社内体制を伺い、必要な範囲を率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?from=policy&identity=1&knowledge_id=6062586719684368&role=2" target="_blank" rel="noopener noreferrer">TikTok Shop公式：高品質 Eコマース コンテンツ</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5514075966703376" target="_blank" rel="noopener noreferrer">TikTok Shop公式：高品質な動画コンテンツのガイドライン</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=309514077865745" target="_blank" rel="noopener noreferrer">TikTok Shop公式：日本クリエイター LIVE 完全攻略ガイド</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?from=policy&identity=1&knowledge_id=2715915867866881&role=2" target="_blank" rel="noopener noreferrer">TikTok Shop公式：無関係なプロモーションコンテンツ</a>（2026年8月30日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、評価条件は更新されることがあります。本記事は2026年8月30日時点で確認できた日本向け公式情報と、LEAM編集部が作成した運用フレームを区別して記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-live-script/"><span class="rc">関連記事</span><b>TikTok Shop LIVEの台本テンプレート｜商品紹介を回す構成と話し方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/live-commerce-guide/"><span class="rc">関連記事</span><b>TikTok Shopのライブコマース入門</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/live-audience/"><span class="rc">関連記事</span><b>TikTok Shopライブの視聴者層と売れる時間帯</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">機材は画質より先に「見える・聞こえる・止まらない」を満たす</a></li><li><a href="#s2">スマホ配信は六つの機能を満たせば始められる</a></li><li><a href="#s3">照明と画角は商品の特徴が伝わる実演から逆算する</a></li><li><a href="#s4">音声は最優先。ただしマイクを買う前に距離・反響・環境音を確かめる</a></li><li><a href="#s5">回線・電源・端末温度は本番と同じ条件でテストする</a></li><li><a href="#s6">配信前チェックは映像・商品・運用・ポリシーを同じ表で確認する</a></li><li><a href="#s7">配信環境は設営写真と数値に頼らない再現手順を残す</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "スマホだけでTikTok Shop LIVEを始められますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "スマホ配信から始められますが、固定具、照明、静かな音声環境、安定回線、給電を準備すると商品説明を続けやすくなります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "外部マイクは必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "環境と距離によります。まず配信場所で端末音声をテストし、反響や環境音を直してから必要性を判断してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "照明はいくつ必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "個数より、商品と出演者が白飛びや影なく見えるかで決めます。商材と実演角度に合わせ、視聴端末で確認してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "回線テストは何を見ますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "本番と同じ場所・時間帯・端末・給電状態で、映像と音声の途切れ、遅延、端末発熱を確認します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "機材トラブル時は配信を続けるべきですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "商品説明や購入判断に支障がある場合は、予備手段へ切り替えるか停止します。出演者とは別に判断担当を決めてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "最初からカメラや配信ソフトを導入すべきですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "最小構成で配信フローと実演を安定させ、必要な画角や演出が明確になってから段階的に拡張すると無駄を減らせます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

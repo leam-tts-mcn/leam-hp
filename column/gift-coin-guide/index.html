@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTokのギフトとコインの仕組み｜TikTok Shopとの違い</title>
+<meta name="description" content="TikTokのコイン・ギフト・ダイヤモンドの関係と受取額の考え方を整理。誰が負担するのか、換金の流れ、TikTok Shopの収入との違いまで解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/gift-coin-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTokのギフトとコインの仕組み｜TikTok Shopとの違い">
+<meta property="og:description" content="TikTokのコイン・ギフト・ダイヤモンドの関係と受取額の考え方を整理。誰が負担するのか、換金の流れ、TikTok Shopの収入との違いまで解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/gift-coin-guide/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTokのギフトとコインの仕組み｜TikTok Shopとの違い">
+<meta name="twitter:description" content="TikTokのコイン・ギフト・ダイヤモンドの関係と受取額の考え方を整理。誰が負担するのか、換金の流れ、TikTok Shopの収入との違いまで解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTokのギフトとコインの仕組み｜TikTok Shopとの違い", "description": "TikTokのコイン・ギフト・ダイヤモンドの関係と受取額の考え方を整理。誰が負担するのか、換金の流れ、TikTok Shopの収入との違いまで解説します。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/gift-coin-guide/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTokのギフトとコインの仕組み｜TikTok Shopとの違い", "item": "https://leam.co.jp/column/gift-coin-guide/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTokのギフトとコインの仕組み｜受取額の考え方と換金の流れ</p>
+<span class="cat">クリエイター</span>
+<h1>TikTokのギフトとコインの仕組み｜受取額の考え方と換金の流れ</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="ギフトとコインの流れ：視聴者が買ったコインの積みが中央の大きな赤いギフト箱に入り、そこから右へ伸びるシアンの矢印の途中で、差し引かれる四つのぶんがグレーの板になって下へ落ち、右端には破線で示した見かけの大きさより一回り小さいシアンのダイヤモンドだけが手元に残ることを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v330c-96 30-190 34-286 20-108-16-196-50-306-46-112 4-198 46-308 58-98 11-196-2-300-34z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="250" rx="270" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(700 -6)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 508c152-30 272-14 400 8 130 22 248 30 368 10 120-20 236-44 432-26v130H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：送られた見かけの額（破線のダイヤ輪郭） ================= -->
+  <path d="M910 276H1090L1133 342L1000 532L867 342Z" fill="none" stroke="#C9CBD0" stroke-width="6" stroke-linejoin="round" stroke-dasharray="16 14"/>
+
+  <!-- ================= 右：手元に残るダイヤモンド（従・シアン） ================= -->
+  <path d="M930 300h140l34 52-104 148-104-148z" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+  <path d="M930 300h140l34 52-104 148-104-148z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <g fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M896 352h208"/>
+    <path d="M930 300L964 352"/>
+    <path d="M1070 300L1036 352"/>
+    <path d="M964 352L1000 300L1036 352"/>
+    <path d="M964 352L1000 500L1036 352"/>
+  </g>
+  <path d="M912 548h214" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- ================= 関係づけ：受け取り側へ向かう矢印（シアン） ================= -->
+  <path d="M652 416C706 412 760 402 800 376L796 348 852 386 806 430 802 408C762 432 706 444 652 450Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <path d="M652 416C706 412 760 402 800 376L796 348 852 386 806 430 802 408C762 432 706 444 652 450Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- 差し引かれる四つの場所（こぼれ落ちる板） -->
+  <g transform="rotate(-11 688 484)">
+    <rect x="646" y="468" width="84" height="32" rx="9" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="646" y="468" width="84" height="32" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-3 748 520)">
+    <rect x="706" y="504" width="84" height="32" rx="9" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="706" y="504" width="84" height="32" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(6 804 554)">
+    <rect x="762" y="538" width="84" height="32" rx="9" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="762" y="538" width="84" height="32" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(13 852 576)">
+    <rect x="810" y="560" width="84" height="32" rx="9" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="810" y="560" width="84" height="32" rx="9" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 中央左：ギフト箱（主役・赤・傾き） ================= -->
+  <g transform="rotate(-5 480 400)">
+    <rect x="330" y="318" width="300" height="196" rx="14" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <rect x="306" y="262" width="348" height="64" rx="12" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <path d="M480 262C430 264 400 244 408 228C416 212 452 220 480 262Z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M480 262C530 264 560 244 552 228C544 212 508 220 480 262Z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="330" y="318" width="300" height="196" rx="14" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="462" y="318" width="44" height="196" fill="#CE1730" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="306" y="262" width="348" height="64" rx="12" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="462" y="262" width="44" height="64" fill="#CE1730" stroke="#0B0C10" stroke-width="6"/>
+    <circle cx="480" cy="262" r="19" fill="#CE1730" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- ================= 左手前：視聴者が買ったコインの積み（原資） ================= -->
+  <ellipse cx="270" cy="494" rx="84" ry="25" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <path d="M186 468v26a84 25 0 0 0 168 0v-26" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M186 442v26a84 25 0 0 0 168 0v-26" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M186 416v26a84 25 0 0 0 168 0v-26" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <ellipse cx="270" cy="416" rx="84" ry="25" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+  <circle cx="270" cy="416" r="21" fill="#FE2C55"/>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1138" cy="106" r="16" fill="#25F4EE"/>
+  <circle cx="128" cy="268" r="13" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTokのギフトとコインの仕組み（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">TikTokのギフトは、視聴者が押した金額がそのまま配信者に届く仕組みではありません。<strong>コインを買うのは視聴者、ギフトは送る行為、受け取った側に積み上がるのはダイヤモンド</strong>で、見る画面も持ち主も段階ごとに変わります。この記事では流れと負担の構造を整理し、受取額を率で断定せず自分の実績から確かめる手順、換金でつまずく位置、配信の作り方をまとめます。価格や換算、出金の条件は変わるため、数値は書かず公式ヘルプの参照先を示します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>コイン・ギフト・ダイヤモンドがそれぞれ誰の手元にある単位なのか</li><li>受取額を率で覚えず、差し引かれる場所を四つ数えて管理する方法</li><li>換金が止まる位置と、ギフト収入をTikTok Shopの収入と分けて記録する形</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組みの全体像</a></b><span>ギフトと商品販売の位置関係</span></div>
+    <div class="relcard"><span class="rc">LIVE</span><b><a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門｜やり方と準備</a></b><span>配信の始め方と条件</span></div>
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-invite/">クリエイター招待とコラボの仕組み</a></b><span>商品案件の受け方</span></div>
+  </div>
+</div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">コインからダイヤモンドまで、お金は三回姿を変える</a></li><li><a href="#s2">負担しているのは視聴者だけで、配信者は経路の下流にいる</a></li><li><a href="#s3">受取額は「率」ではなく「差し引かれる場所」を四つ数える</a></li><li><a href="#s4">換金は四段階で、止まるのはほぼ本人情報のところ</a></li><li><a href="#s5">ギフト収入とTikTok Shopの収入は、別の財布として管理する</a></li><li><a href="#s6">ギフトが動く配信は、理由とタイミングとお礼が設計されている</a></li><li><a href="#s7">先に確認すべき注意点は、規約・年齢・税・契約の四つ</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>コインからダイヤモンドまで、お金は三回姿を変える</h2>
+<p>TikTokのギフトは、視聴者が押した瞬間にお金が配信者へ届く仕組みではありません。<span class="hl">視聴者が買った「コイン」が演出としての「ギフト」になり、受け取った側では「ダイヤモンド」という別の単位で積み上がります。</span>この三段階を分けておかないと、画面の数字と口座に入る金額が違う理由が分かりません。用語は日本語の公式ヘルプでも項目が分かれています（2026年9月2日確認）。</p>
+<div class="tw"><table><thead><tr><th>単位</th><th>持っているのは誰か</th><th>どこで確認するか</th></tr></thead><tbody>
+<tr><td>コイン</td><td>視聴者</td><td>視聴者自身のアプリ内の残高画面</td></tr>
+<tr><td>ギフト</td><td>誰も保有しない（送る行為）</td><td>配信画面とコメント欄の演出</td></tr>
+<tr><td>ダイヤモンド</td><td>受け取った配信者</td><td>配信者のアカウントの残高画面</td></tr>
+<tr><td>出金申請</td><td>配信者</td><td>本人情報と受け取り口座の設定画面</td></tr>
+<tr><td>着金した現金</td><td>配信者</td><td>銀行口座の入出金明細</td></tr>
+</tbody></table></div><p class="src">段階ごとに持ち主と画面が変わる（LEAM編集部作成）</p>
+<div class="box box-warn"><div class="bt">⚠️ 数値を覚えない</div><p>コインの価格、必要なコイン数、ダイヤモンドの扱い、出金の下限は変わります。本記事は数値を書きません。金額に関わる判断のときは、記事末の公式ヘルプで当日の記載を見てください。</p></div>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="コインの購入からギフト送付、ダイヤモンドの計上、出金申請までの四段階">
+      <defs><linearGradient id="gcFlowGrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FDEEF1"/><stop offset="1" stop-color="#F6DCE2"/></linearGradient></defs>
+      <text x="28" y="36" font-size="13" font-weight="800" fill="#E8324A">STEP FLOW</text>
+      <rect x="28" y="62" width="150" height="96" rx="14" fill="url(#gcFlowGrad)" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="103" y="100" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">① コインを購入</text>
+      <text x="103" y="124" text-anchor="middle" font-size="12" fill="#5A5F6B">払うのは視聴者</text>
+      <path d="M182 110 H204" stroke="#E8324A" stroke-width="3"/><path d="M196 104 L206 110 L196 116 Z" fill="#E8324A"/>
+      <rect x="208" y="62" width="150" height="96" rx="14" fill="url(#gcFlowGrad)" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="283" y="100" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">② ギフトを送る</text>
+      <text x="283" y="124" text-anchor="middle" font-size="12" fill="#5A5F6B">LIVEと動画の両方</text>
+      <path d="M362 110 H384" stroke="#E8324A" stroke-width="3"/><path d="M376 104 L386 110 L376 116 Z" fill="#E8324A"/>
+      <rect x="388" y="62" width="150" height="96" rx="14" fill="url(#gcFlowGrad)" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="463" y="100" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">③ ダイヤモンド</text>
+      <text x="463" y="124" text-anchor="middle" font-size="12" fill="#5A5F6B">受け取り側の集計</text>
+      <path d="M542 110 H564" stroke="#E8324A" stroke-width="3"/><path d="M556 104 L566 110 L556 116 Z" fill="#E8324A"/>
+      <rect x="568" y="62" width="124" height="96" rx="14" fill="#E8324A"/>
+      <text x="630" y="100" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">④ 出金申請</text>
+      <text x="630" y="124" text-anchor="middle" font-size="12" fill="#FFD9E0">口座へ着金</text>
+      <rect x="28" y="184" width="664" height="42" rx="10" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="360" y="210" text-anchor="middle" font-size="12" fill="#646C7A">価格・必要コイン数・出金条件は変わるため、数値は公式ヘルプで確認する</text>
+    </svg>
+    <figcaption>図1：コインからダイヤモンドまでの四段階（LEAM編集部作成）</figcaption>
+  </figure><h2 id="s2"><span class="no en">02</span>負担しているのは視聴者だけで、配信者は経路の下流にいる</h2>
+<p>お金を出しているのは視聴者だけです。配信者もセラーも支払いはしていないため、<strong>ギフトは売上が立たない配信でも発生します</strong>。ただし払った額がそのまま届くわけでもありません。コインはアプリ内の課金として購入され、運営側の取り扱いを経て受け取り側のダイヤモンドになります。<span class="hl">「送られた額」と「受け取れる額」は構造上ずれます。</span></p>
+<div class="tw"><table><thead><tr><th>立場</th><th>この段階でしていること</th><th>本人が見られる数字</th></tr></thead><tbody>
+<tr><td>視聴者</td><td>自分のお金でコインを買い、ギフトを送る</td><td>支払った額と残りのコイン</td></tr>
+<tr><td>決済の経路</td><td>アプリ内課金として購入処理を通す</td><td>視聴者側の購入履歴</td></tr>
+<tr><td>プラットフォーム</td><td>ギフトを受け取り側の単位に置き換える</td><td>配信者側の残高</td></tr>
+<tr><td>配信者</td><td>残高を確認し、条件を満たして出金を申請する</td><td>残高と申請の状態</td></tr>
+<tr><td>受け取り口座</td><td>着金する</td><td>入出金明細の実額</td></tr>
+</tbody></table></div><p class="src">一件のギフトを五つの立場から見る（LEAM編集部作成）</p>
+<p>大事なのは右の列です。視聴者が言う「これだけ送った」と自分の残高の増え方は一致しないので、<strong>別の数字として扱ってください。</strong></p>
+  <figure>
+    <svg viewBox="0 0 720 280" role="img" aria-label="視聴者の支払いから配信者の受取までの三層構造と、差が生まれる位置">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">WHO PAYS</text>
+      <rect x="28" y="52" width="470" height="58" rx="12" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".4"/>
+      <text x="48" y="78" font-size="13" font-weight="800" fill="#17181C">視聴者</text>
+      <text x="48" y="98" font-size="12" fill="#5A5F6B">自分のお金でコインを購入する（原資はここだけ）</text>
+      <rect x="28" y="126" width="470" height="58" rx="12" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="48" y="152" font-size="13" font-weight="800" fill="#17181C">アプリ内課金とプラットフォーム</text>
+      <text x="48" y="172" font-size="12" fill="#5A5F6B">決済の経路とサービス側の取り扱いを通る</text>
+      <rect x="28" y="200" width="470" height="58" rx="12" fill="#0B0C10"/>
+      <text x="48" y="226" font-size="13" font-weight="800" fill="#fff">配信者</text>
+      <text x="48" y="246" font-size="12" fill="#B9BCC5">ダイヤモンドとして受け取り、出金を申請する</text>
+      <path d="M263 110 L263 126" stroke="#646C7A" stroke-width="2"/><path d="M256 120 L263 130 L270 120 Z" fill="#646C7A"/>
+      <path d="M263 184 L263 200" stroke="#646C7A" stroke-width="2"/><path d="M256 194 L263 204 L270 194 Z" fill="#646C7A"/>
+      <rect x="516" y="52" width="176" height="206" rx="12" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="604" y="80" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">差が生まれるのは</text>
+      <text x="604" y="106" text-anchor="middle" font-size="12" fill="#6B4A0A">層のあいだ</text>
+      <circle cx="604" cy="140" r="13" fill="#8A5A00"/><text x="604" y="140" dy=".35em" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">1</text>
+      <text x="604" y="170" text-anchor="middle" font-size="11" fill="#6B4A0A">支払いから到着まで</text>
+      <circle cx="604" cy="200" r="13" fill="#8A5A00"/><text x="604" y="200" dy=".35em" text-anchor="middle" font-size="12" font-weight="800" fill="#fff">2</text>
+      <text x="604" y="230" text-anchor="middle" font-size="11" fill="#6B4A0A">受取から着金まで</text>
+    </svg>
+    <figcaption>図2：負担は視聴者、配信者は経路の下流（LEAM編集部作成）</figcaption>
+  </figure><h2 id="s3"><span class="no en">03</span>受取額は「率」ではなく「差し引かれる場所」を四つ数える</h2>
+<p>「何パーセント残るのか」を固定値で覚えるのは危険です。換算の扱いが変わること、地域や通貨で条件が違うこと、事務所と契約していれば配分が後から乗ることの三つが理由です。代わりに使えるのが、<span class="hl">差し引かれる可能性がある場所を四つ数えておく</span>方法です。率は変わっても場所の並びは変わりません。</p>
+<div class="tw"><table><thead><tr><th>差が出る場所</th><th>何が起きているか</th><th>自分が見るべき情報</th></tr></thead><tbody>
+<tr><td>① 決済の経路</td><td>コインはアプリ内の課金として購入される</td><td>視聴者側の話。自分は残高だけを見る</td></tr>
+<tr><td>② サービス側の扱い</td><td>ギフトが受け取り側の単位に置き換わる</td><td>公式ヘルプのダイヤモンドの項目</td></tr>
+<tr><td>③ 出金の条件</td><td>下限、申請の単位、処理の時間がある</td><td>出金画面の表示と申請履歴</td></tr>
+<tr><td>④ 税と契約</td><td>所得としての扱いと、事務所との配分</td><td>納税者情報の公式項目と自分の契約書</td></tr>
+</tbody></table></div><p class="src">率ではなく場所で管理する（LEAM編集部作成）</p>
+<h3>自分の受取率は、後から実績で分かる</h3>
+<p><strong>配信ごとに残高の増加分を記録し、着金した実額を月ごとに記録する。</strong>三か月ぶん並べれば自分の目安が出ます。日付、配信の長さ、増加分、申請日、着金日、着金額の六列で足ります。</p>
+  <figure>
+    <svg viewBox="0 0 720 240" role="img" aria-label="視聴者の支払額から受取額までに差し引かれる可能性がある四つの位置">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">WHERE IT SHRINKS</text>
+      <text x="28" y="62" font-size="12" fill="#646C7A">視聴者が払った額（左端）から、自分の口座に着く額（右端）まで</text>
+      <rect x="28" y="80" width="664" height="46" rx="8" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <rect x="28" y="80" width="166" height="46" rx="8" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".35"/>
+      <rect x="194" y="80" width="166" height="46" fill="#F8E3E8" stroke="#E8324A" stroke-opacity=".2"/>
+      <rect x="360" y="80" width="166" height="46" fill="#F2E7EA" stroke="#E8324A" stroke-opacity=".15"/>
+      <rect x="526" y="80" width="166" height="46" rx="8" fill="#E9EBEE" stroke="#E3E6EA"/>
+      <text x="111" y="108" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">決済の経路</text>
+      <text x="277" y="108" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">サービス側の扱い</text>
+      <text x="443" y="108" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">出金の条件</text>
+      <text x="609" y="108" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">税と契約</text>
+      <text x="111" y="156" text-anchor="middle" font-size="22" font-weight="900" fill="#B01D36">?</text>
+      <text x="277" y="156" text-anchor="middle" font-size="22" font-weight="900" fill="#B01D36">?</text>
+      <text x="443" y="156" text-anchor="middle" font-size="22" font-weight="900" fill="#B01D36">?</text>
+      <text x="609" y="156" text-anchor="middle" font-size="22" font-weight="900" fill="#B01D36">?</text>
+      <rect x="28" y="176" width="664" height="44" rx="10" fill="#EDF6F5" stroke="#BFE3D4"/>
+      <text x="360" y="196" text-anchor="middle" font-size="12" font-weight="800" fill="#0A6E68">幅は自分では確定できない。だから「率」ではなく「場所」を数える</text>
+      <text x="360" y="213" text-anchor="middle" font-size="11" fill="#0A6E68">場所を並べておけば、着金額がずれた月にどこを見ればよいか分かる</text>
+    </svg>
+    <figcaption>図3：差し引かれる場所は四つ（LEAM編集部作成）</figcaption>
+  </figure><h2 id="s4"><span class="no en">04</span>換金は四段階で、止まるのはほぼ本人情報のところ</h2>
+<p>手続きは四段階です。残高を確認し、本人情報と口座を登録し、申請して着金を待つ。相談として多いのは手順の分かりにくさではなく、<strong>申請したのに進まない</strong>という状態です。</p>
+<ol class="steps">
+<li><b>残高が出金の下限に届いているかを見る</b><p>届いていないと申請自体ができません。下限の値は変わるため画面の表示を見ます。</p></li>
+<li><b>本人情報と口座の名義をそろえる</b><p>氏名と口座名義が一致しないと処理が止まります。旧姓、屋号、家族の口座はここで引っかかります。</p></li>
+<li><b>申請して、状態の表示を確認する</b><p>直後は処理中の表示になります。切り替わるまでの日数は条件によるため記録します。</p></li>
+<li><b>着金額を明細と突き合わせる</b><p>入出金明細の実額が、受取額の唯一の実測値です。</p></li>
+</ol>
+<div class="tw"><table><thead><tr><th>手順</th><th>見る画面</th><th>進まないときの確認先</th></tr></thead><tbody>
+<tr><td>残高の確認</td><td>アカウントの残高画面</td><td>下限に届いているか、機能が使える状態か</td></tr>
+<tr><td>本人情報の登録</td><td>本人情報と支払い設定</td><td>氏名の表記、生年月日、居住地の登録内容</td></tr>
+<tr><td>口座の登録</td><td>受け取り口座の設定</td><td>名義の一致、金融機関の情報の誤り</td></tr>
+<tr><td>申請</td><td>出金の申請履歴</td><td>処理中で止まっていないか、却下の通知がないか</td></tr>
+<tr><td>着金</td><td>銀行の入出金明細</td><td>申請日と着金日の間隔を記録して次回と比べる</td></tr>
+</tbody></table></div><p class="src">詰まったときの確認先を画面単位で固定（LEAM編集部作成）</p>
+<p>年齢や地域の条件、本人確認の内容は変わります。<strong>足りない部分が出たら記事末の公式ヘルプを先に開いてください。</strong></p>
+  <figure>
+    <svg viewBox="0 0 720 230" role="img" aria-label="残高確認から着金までの換金手順と、止まりやすい位置">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">WITHDRAW TIMELINE</text>
+      <path d="M70 108 H660" stroke="#E3E6EA" stroke-width="4"/>
+      <circle cx="70" cy="108" r="22" fill="#0B0C10"/><text x="70" y="108" dy=".35em" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">1</text>
+      <circle cx="266" cy="108" r="22" fill="#0B0C10"/><text x="266" y="108" dy=".35em" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">2</text>
+      <circle cx="463" cy="108" r="22" fill="#0B0C10"/><text x="463" y="108" dy=".35em" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">3</text>
+      <circle cx="660" cy="108" r="22" fill="#E8324A"/><text x="660" y="108" dy=".35em" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">4</text>
+      <text x="70" y="70" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">残高を見る</text>
+      <text x="266" y="70" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">本人情報と口座</text>
+      <text x="463" y="70" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">出金を申請</text>
+      <text x="660" y="70" text-anchor="middle" font-size="12" font-weight="800" fill="#17181C">着金</text>
+      <text x="70" y="152" text-anchor="middle" font-size="11" fill="#646C7A">下限に届いたか</text>
+      <text x="266" y="152" text-anchor="middle" font-size="11" fill="#646C7A">名義が一致するか</text>
+      <text x="463" y="152" text-anchor="middle" font-size="11" fill="#646C7A">処理中で止まらないか</text>
+      <text x="660" y="152" text-anchor="middle" font-size="11" fill="#646C7A">通帳と突き合わせる</text>
+      <rect x="180" y="176" width="360" height="38" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="360" y="200" text-anchor="middle" font-size="12" font-weight="800" fill="#8A5A00">止まるのはほぼ②。名義と本人情報の不一致が多い</text>
+    </svg>
+    <figcaption>図4：換金の四段階と詰まる位置（LEAM編集部作成）</figcaption>
+  </figure><h2 id="s5"><span class="no en">05</span>ギフト収入とTikTok Shopの収入は、別の財布として管理する</h2>
+<p>ギフトと並ぶ収入源が、商品を紹介して売れたときに発生するTikTok Shopの報酬です。<span class="hl">ギフトは応援に対して発生し、商品の報酬は購入が確定して初めて発生します。</span>発生条件が違うので、改善の打ち手も別になります。</p>
+<p>TikTok Shop側は金額の扱いが公式に明文化されています。セラーへの支払いは、決済期間が終わり金額が最低支払金額を超えていれば<strong>毎月1日と14日に自動的に開始され、銀行によって着金までさらに1〜3営業日かかる場合がある</strong>と案内されています（2026年9月2日確認）。日付が公式に定義されているのがギフト側との違いです。</p>
+<div class="tw"><table><thead><tr><th>比べる点</th><th>ギフト（ダイヤモンド）</th><th>TikTok Shopの商品販売</th></tr></thead><tbody>
+<tr><td>発生の条件</td><td>視聴者がギフトを送ったとき</td><td>商品が売れて注文が確定したとき</td></tr>
+<tr><td>数字の確認場所</td><td>アプリ内の残高画面</td><td>TikTok Shop側の管理画面</td></tr>
+<tr><td>入金の時期</td><td>出金の申請と処理の状況による</td><td>セラーへの支払いは毎月1日と14日に開始</td></tr>
+<tr><td>変わりやすい点</td><td>コインの価格、換算、出金の条件</td><td>カテゴリー別の販売手数料率</td></tr>
+</tbody></table></div><p class="src">入金の列が最もずれやすい（LEAM編集部作成）</p>
+<p>手数料率については、公式ヘルプが<strong>重要な変更は適用の30日前までに通知し、最新の情報は当該ヘルプの記載が優先される</strong>と明記しています（2026年9月2日確認）。</p>
+<div class="box box-point"><div class="bt">💡 一枚で管理する</div><p>配信の記録に「ギフトで増えた残高」と「商品経由の報酬」を別の列で置きます。合計だけを見ると、応援で増えた月と商品が売れた月の区別がつきません。</p></div>
+<h2 id="s6"><span class="no en">06</span>ギフトが動く配信は、理由とタイミングとお礼が設計されている</h2>
+<p>ここからは公式の仕様ではなく、配信の作り方の一般的な考え方です。効果を保証するものではありませんが、<strong>ギフトが動いている配信には、押す理由と押しやすいタイミングが用意されている</strong>という共通点があります。求める言葉を増やしても、理由とタイミングがなければ動きません。</p>
+<p>実務で作りやすいのは四つです。<strong>①企画に節目を置く</strong>（達成したら何をするかを先に宣言する）、<strong>②名前を呼んで反応を返す</strong>、<strong>③役割を渡す</strong>（次に紹介するものを視聴者に選ばせる）、<strong>④継続を見せる</strong>（前回からの変化を一言で報告する）。お礼は名前・一言・本題への復帰で一区切りにし、毎回同じ形にします。</p>
+<div class="tw"><table><thead><tr><th>準備する項目</th><th>できている状態</th><th>確認の方法</th></tr></thead><tbody>
+<tr><td>配信の節目</td><td>達成時にやることを開始前に決めてある</td><td>配信メモの一行目に書いてあるか</td></tr>
+<tr><td>お礼の型</td><td>名前と一言と復帰が十秒以内で終わる</td><td>録画を見返して秒数を測る</td></tr>
+<tr><td>初見向けの説明</td><td>誰が何をしている配信かを定期的に言い直す</td><td>録画から自己紹介の間隔を数える</td></tr>
+<tr><td>配信の枠</td><td>曜日と時間を固定して告知してある</td><td>過去四週の開始時刻がそろっているか</td></tr>
+<tr><td>コメントの拾い方</td><td>質問を読み上げてから答えている</td><td>録画で未対応のコメント数を数える</td></tr>
+<tr><td>禁止事項の確認</td><td>言えない表現と要求表現を一覧にしてある</td><td>配信前にその一覧を読み直したか</td></tr>
+</tbody></table></div><p class="src">配信前チェック表（LEAM編集部作成）</p>
+<h2 id="s7"><span class="no en">07</span>先に確認すべき注意点は、規約・年齢・税・契約の四つ</h2>
+<p>視聴者へ過度な要求をしたり、送った人だけに規約に触れる見返りを約束するのは避けてください。年齢や地域による利用条件は変わるため、<strong>条件の根拠は他の配信者の説明ではなく公式ヘルプの記載に取ります。</strong>ギフト由来の収入も所得として扱われます。金額や税率、申告の要否は状況で変わるため本記事では書きません。日本語の公式ヘルプにクリエイター向けの納税者情報の項目があり、そこが出発点です。</p>
+<h3>事務所やMCNとの契約は、この四点を条項で確認する</h3>
+<p>所属先がある場合、ギフト由来の収入が契約の対象に入るかで手取りが変わります。</p>
+<ul>
+<li>ギフト由来の収入が契約の対象に含まれるか、対象外か</li>
+<li>配分をどの数字（残高の増加分か、着金額か）で計算するか</li>
+<li>支払いのタイミングと、遅れた場合の連絡方法</li>
+<li>集計に使う画面と、こちらが確認できる資料の形</li>
+</ul>
+<p>口頭の説明で進めず、契約書の条項として書かれているかを見てください。<strong>特に二つめは、同じ配分でも手取りが変わる項目です。</strong></p>
+<div class="box box-warn"><div class="bt">⚠️ 仕様は変わる前提で運用する</div><p>数値を含む判断（下限、価格、率、日数）が必要になったら、そのたびに公式ヘルプを開くのが最短です。過去に自分がメモした数値を根拠にしないでください。</p></div>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>この順番で手を動かすと、数字が自分のものになります。</p>
+<div class="summary-grid">
+<div class="summary-item">今日：残高画面を開き、本人情報と口座の名義が一致しているかだけ確認する</div>
+<div class="summary-item">今週：日付・配信の長さ・残高の増加分で記録を始め、ギフトと商品の報酬を別の列に分ける</div>
+<div class="summary-item">今月：一度出金まで通し、申請日と着金日と着金額を記録して待ち時間の基準を作る</div>
+</div>
+<p><strong>差し引かれる場所を四つ数え、着金額を記録し、条件は毎回公式で見る。</strong>この三つが回っていれば、仕様が変わっても判断の仕方は変わりません。</p>
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>コイン、ギフト、ダイヤモンドは何が違うのですか？</summary><div class="a">コインは視聴者が購入して持つもの、ギフトはそのコインを使って送る演出、ダイヤモンドは受け取った側に積み上がる集計単位です。公式ヘルプでも別の項目になっています。</div></details><details><summary>ギフトのうち何割が手元に残りますか？</summary><div class="a">本記事では率を書きません。価格、必要なコイン数、換算、出金の条件がいずれも変わるためです。配信ごとの残高の増え方と実際の着金額を数か月ぶん並べて確認してください。</div></details><details><summary>ギフトはLIVE配信中だけのものですか？</summary><div class="a">公式ヘルプには日本語で「LIVE配信中にギフトを送る」と「動画にギフトを送る」の両方の項目があります。自分のアカウントで使えるかは公式ヘルプで確認してください。</div></details><details><summary>換金できないときは何を確認すればよいですか？</summary><div class="a">残高が下限に届いているか、本人情報と口座の名義が一致しているか、年齢や地域の条件を満たしているか、申請が止まっていないかの順に見ます。</div></details><details><summary>ギフトの収入とTikTok Shopの収入は同じ画面で確認できますか？</summary><div class="a">別の画面です。ギフト由来の残高はアプリ側、商品が売れて発生する報酬はTikTok Shop側で確認します。セラーへの支払いは毎月1日と14日に開始されると公式ヘルプが案内しています（2026年9月2日確認）。</div></details><details><summary>MCNや事務所に所属すると受取額は変わりますか？</summary><div class="a">契約内容によります。ギフト由来の収入が対象に入るか、配分をどの数字で計算するか、支払いのタイミング、集計に使う画面の四点を条項として確認してください。</div></details></div>
+<div class="ctabox"><div class="ct">配信と商品の両方をどう組み合わせるか、一緒に整理できます</div><p>LEAMはTikTok Shopの運用支援とTikTok Shop特化のMCNを運営しています。配信の設計、商品との組み合わせ、契約面の確認までご相談いただけます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイター募集を見る</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list">
+<li><a href="https://support.tiktok.com/ja/live-gifts-wallet/gifts/gifts" target="_blank" rel="noopener noreferrer">TikTok公式ヘルプ（日本語）：ギフト</a>（2026年9月2日確認）</li>
+<li><a href="https://support.tiktok.com/ja/live-gifts-wallet/gifts/send-a-gift-to-a-tiktok-video" target="_blank" rel="noopener noreferrer">TikTok公式ヘルプ（日本語）：TikTok動画にギフトを送る</a>（2026年9月2日確認）</li>
+<li><a href="https://support.tiktok.com/ja/business-and-creator/video-gifts-on-tiktok/diamonds" target="_blank" rel="noopener noreferrer">TikTok公式ヘルプ（日本語）：ダイヤモンド</a>（2026年9月2日確認）</li>
+<li><a href="https://support.tiktok.com/ja/business-and-creator/creator-and-business-accounts/tax-information-for-creators" target="_blank" rel="noopener noreferrer">TikTok公式ヘルプ（日本語）：クリエイター向け納税者情報</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342562049&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式ヘルプ：決済および支払い</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861174545&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式ヘルプ：TikTok Shopの販売手数料</a>（2026年9月2日確認）</li>
+</ul>
+<p class="src">コインの価格、ダイヤモンドの扱い、出金の条件、販売手数料率は変更されることがあります。本記事は2026年9月2日時点の日本向け公式情報と、LEAM編集部が整理した運用の考え方を区別して記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/creator-commission/"><span class="rc">関連記事</span><b>TikTok Shopのコミッション相場は？報酬の決め方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-live-script/"><span class="rc">関連記事</span><b>TikTok Shop LIVEの台本テンプレート</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/live-audience/"><span class="rc">関連記事</span><b>TikTok Shopのライブは誰が見ている？視聴者層</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">コインからダイヤモンドまで、お金は三回姿を変える</a></li><li><a href="#s2">負担しているのは視聴者だけで、配信者は経路の下流にいる</a></li><li><a href="#s3">受取額は「率」ではなく「差し引かれる場所」を四つ数える</a></li><li><a href="#s4">換金は四段階で、止まるのはほぼ本人情報のところ</a></li><li><a href="#s5">ギフト収入とTikTok Shopの収入は、別の財布として管理する</a></li><li><a href="#s6">ギフトが動く配信は、理由とタイミングとお礼が設計されている</a></li><li><a href="#s7">先に確認すべき注意点は、規約・年齢・税・契約の四つ</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "コイン、ギフト、ダイヤモンドは何が違うのですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "コインは視聴者が購入して持つもの、ギフトはそのコインを使って送る演出、ダイヤモンドは受け取った側に積み上がる集計単位です。公式ヘルプでも別の項目になっています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ギフトのうち何割が手元に残りますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "本記事では率を書きません。価格、必要なコイン数、換算、出金の条件がいずれも変わるためです。配信ごとの残高の増え方と実際の着金額を数か月ぶん並べて確認してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ギフトはLIVE配信中だけのものですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプには日本語で「LIVE配信中にギフトを送る」と「動画にギフトを送る」の両方の項目があります。自分のアカウントで使えるかは公式ヘルプで確認してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "換金できないときは何を確認すればよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "残高が下限に届いているか、本人情報と口座の名義が一致しているか、年齢や地域の条件を満たしているか、申請が止まっていないかの順に見ます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ギフトの収入とTikTok Shopの収入は同じ画面で確認できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "別の画面です。ギフト由来の残高はアプリ側、商品が売れて発生する報酬はTikTok Shop側で確認します。セラーへの支払いは毎月1日と14日に開始されると公式ヘルプが案内しています（2026年9月2日確認）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "MCNや事務所に所属すると受取額は変わりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "契約内容によります。ギフト由来の収入が対象に入るか、配分をどの数字で計算するか、支払いのタイミング、集計に使う画面の四点を条項として確認してください。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの報酬はいつ入る？支払いと出金</title>
+<meta name="description" content="TikTok Shopの報酬は発生・確定・支払いの3段階で動きます。精算タイプ別の支払日、返品時の扱い、出金手順、入らない時の確認順を公式ヘルプで整理">
+<link rel="canonical" href="https://leam.co.jp/column/creator-payout/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの報酬はいつ入る？支払いと出金">
+<meta property="og:description" content="TikTok Shopの報酬は発生・確定・支払いの3段階で動きます。精算タイプ別の支払日、返品時の扱い、出金手順、入らない時の確認順を公式ヘルプで整理">
+<meta property="og:url" content="https://leam.co.jp/column/creator-payout/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの報酬はいつ入る？支払いと出金">
+<meta name="twitter:description" content="TikTok Shopの報酬は発生・確定・支払いの3段階で動きます。精算タイプ別の支払日、返品時の扱い、出金手順、入らない時の確認順を公式ヘルプで整理">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの報酬はいつ入る？支払いと出金", "description": "TikTok Shopの報酬は発生・確定・支払いの3段階で動きます。精算タイプ別の支払日、返品時の扱い、出金手順、入らない時の確認順を公式ヘルプで整理", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creator-payout/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの報酬はいつ入る？支払いと出金", "item": "https://leam.co.jp/column/creator-payout/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの報酬はいつ入る？確定から支払い・出金までの流れ</p>
+<span class="cat">クリエイター向け</span>
+<h1>TikTok Shopの報酬はいつ入る？確定から支払い・出金までの流れ</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="報酬が入金されるまでの流れ：確定した赤い報酬が大きな砂時計にたまり、精算期間のくびれを少しずつ落ちて下に出金できる残高としてシアンでたまり、右上の条件チェックリストを満たすとシアンの矢印にのって右下の口座パネルへ入金されることを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v340c-90 30-180 38-272 26-108-14-192-48-300-48-114 0-198 42-310 54-120 13-230-4-318-42z" fill="#F6F7F9"/>
+  <ellipse cx="880" cy="250" rx="270" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(880 -10)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 508c140-26 262-12 392 8 130 20 250 26 372 8 122-18 246-36 436-20v126H0z" fill="#ECEEF1"/>
+  <path d="M182 516h318" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ================= 主役：砂時計（＝報酬が確定してから出金できるようになるまでの保留期間） ================= -->
+  <!-- 枠の影 -->
+  <rect x="196" y="180" width="288" height="34" rx="12" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+  <rect x="196" y="466" width="288" height="34" rx="12" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+
+  <!-- ガラスの影 -->
+  <path d="M224 214H456C456 300 356 320 356 340C356 360 456 380 456 466H224C224 380 324 360 324 340C324 320 224 300 224 214Z" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+
+  <!-- ガラス本体 -->
+  <path d="M224 214H456C456 300 356 320 356 340C356 360 456 380 456 466H224C224 380 324 360 324 340C324 320 224 300 224 214Z" fill="#FFFFFF"/>
+
+  <!-- 上の砂＝確定したがまだ出せない報酬（赤） -->
+  <path d="M240 267C290 284 390 284 440 267C412 310 356 325 356 340L324 340C324 325 268 310 240 267Z" fill="#FE2C55"/>
+  <path d="M240 267C290 284 390 284 440 267" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- 目盛りの破線 -->
+  <path d="M242 243h196" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round" stroke-dasharray="11 10"/>
+
+  <!-- 下にたまった分＝出金できる残高（シアン） -->
+  <path d="M228 452C252 408 292 394 340 394C388 394 428 408 452 452V462H228Z" fill="#25F4EE"/>
+  <path d="M228 452C252 408 292 394 340 394C388 394 428 408 452 452" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- くびれを落ちていく粒（赤→シアンに変わる） -->
+  <circle cx="340" cy="357" r="8" fill="#FE2C55"/>
+  <circle cx="335" cy="374" r="7" fill="#CE1730"/>
+  <circle cx="345" cy="387" r="6" fill="#25F4EE"/>
+
+  <!-- ガラスの輪郭 -->
+  <path d="M224 214H456C456 300 356 320 356 340C356 360 456 380 456 466H224C224 380 324 360 324 340C324 320 224 300 224 214Z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- 支柱 -->
+  <rect x="200" y="208" width="20" height="260" rx="10" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+  <rect x="200" y="208" width="20" height="260" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="460" y="208" width="20" height="260" rx="10" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+  <rect x="460" y="208" width="20" height="260" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- 天板・底板 -->
+  <rect x="196" y="180" width="288" height="34" rx="12" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="196" y="466" width="288" height="34" rx="12" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- ================= 関係づけ：出金されて口座へ流れる矢印（シアン） ================= -->
+  <path d="M502 452C572 464 652 458 722 420L722 396L780 432L722 468L722 444C652 482 572 488 502 476Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <path d="M502 452C572 464 652 458 722 420L722 396L780 432L722 468L722 444C652 482 572 488 502 476Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <!-- 条件が矢印にかかっていることを示す破線 -->
+  <path d="M712 340v70" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round" stroke-dasharray="11 10"/>
+
+  <!-- ================= 従1：出金の条件チェックリスト（傾ける） ================= -->
+  <g transform="rotate(-6 830 225)">
+    <rect x="680" y="132" width="300" height="186" rx="18" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="680" y="132" width="300" height="186" rx="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="710" y="158" width="132" height="15" rx="7.5" fill="#C9CBD0"/>
+
+    <circle cx="726" cy="206" r="17" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M718 206l6 7 12-14" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="756" y="198" width="186" height="16" rx="8" fill="#DFE0E2"/>
+
+    <circle cx="726" cy="248" r="17" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M718 248l6 7 12-14" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="756" y="240" width="152" height="16" rx="8" fill="#DFE0E2"/>
+
+    <circle cx="726" cy="290" r="17" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="5"/>
+    <path d="M718 290l6 7 12-14" fill="none" stroke="#25F4EE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="756" y="282" width="120" height="16" rx="8" fill="#DFE0E2"/>
+  </g>
+
+  <!-- ================= 従2：入金先の口座パネル ================= -->
+  <rect x="792" y="340" width="344" height="182" rx="20" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+  <rect x="792" y="340" width="344" height="182" rx="20" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="820" y="362" width="128" height="16" rx="8" fill="#FFFFFF"/>
+  <rect x="818" y="396" width="292" height="106" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="844" y="420" width="140" height="16" rx="8" fill="#DFE0E2"/>
+  <rect x="844" y="456" width="96" height="15" rx="7.5" fill="#25F4EE"/>
+  <circle cx="1056" cy="448" r="30" fill="#FE2C55" stroke="#0B0C10" stroke-width="6"/>
+  <circle cx="1056" cy="448" r="13" fill="#CE1730"/>
+
+  <!-- 小さな装飾 -->
+  <circle cx="600" cy="118" r="16" fill="#25F4EE"/>
+  <circle cx="628" cy="552" r="12" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTok Shopの報酬はいつ入る？確定から支払い・出金までの流れ（LEAM編集部作成）</figcaption>
+  </figure>
+
+<p class="lead">紹介した商品が売れても、その金額がそのまま出金できる残高になるわけではありません。日本向けの公式ヘルプは、コミッションの支払い時期を<strong>「販売者に適用される精算期間」</strong>に紐づけて説明しており、注文の配達が完了したあと所定の日数を経て支払われると明記しています。いま画面に出ている金額の多くは推定値です。この記事では、報酬が銀行口座に入るまでを段階に分け、公式ヘルプで確認できた事実と、一般的な考え方にとどめる部分を分けて整理します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>いま自分の報酬が「発生・確定・支払い」のどこで止まっているかの見分け方</li><li>精算タイプで支払日が変わる仕組みと、返品・一部返金が出たときの扱い</li><li>出金の3ステップと、報酬が入らないときに上から確認する7項目</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">料率</span><b><a href="https://leam.co.jp/column/creator-commission/">コミッションの決まり方</a></b><span>いくら受け取れるかの側</span></div>
+    <div class="relcard"><span class="rc">仕組み</span><b><a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み</a></b><span>セラー側から見た全体像</span></div>
+    <div class="relcard"><span class="rc">前提</span><b><a href="https://leam.co.jp/column/is-tiktok-shop-safe/">安全性と気をつける点</a></b><span>始める前の確認事項</span></div>
+  </div>
+</div>
+
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">報酬は「発生・確定・支払い」の3段階で動く</a></li><li><a href="#s2">支払日を決めているのは自分ではなくセラーの精算タイプ</a></li><li><a href="#s3">返品・キャンセル・一部返金が出ると報酬はこう変わる</a></li><li><a href="#s4">出金は本人確認・口座登録・出金申請の3ステップで終わる</a></li><li><a href="#s5">手動で出金しないと90日ごとに自動出金が走る</a></li><li><a href="#s6">報酬が入らないときは上から7項目を順に確認する</a></li><li><a href="#s7">税金は金額より「所得の区分」から考える</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>報酬は「発生・確定・支払い」の3段階で動く</h2>
+<p>報酬が入らないという相談のほとんどは、金額が消えたのではなく<strong>段階が進んでいないだけ</strong>です。公式ヘルプは、注文の決済（売上確定）が完了してはじめて成果報酬を受け取れると説明しています。さらにアフィリエイトリンクの機能ガイドでは、成果報酬が発生する条件は購入者が商品を受け取ることであり、リンクのクリックだけでは足りないと明記されています。</p>
+<p>金額の出方も段階で違います。公式ヘルプによると、推定コミッションは<strong>商品の平均割引後価格にコミッション率を掛けた額</strong>、実際のコミッションは<strong>（売上 − 返金額）× コミッション率</strong>です。購入者が使ったクーポンや返金があれば、両者は一致しません。</p>
+<p>この「発生・確定・支払い」の3段階を、画面上で追える単位まで分けると次の5つになります。自分の報酬がどこで止まっているかは、この表のどの行にいるかで決まります。</p>
+<div class="tw"><table><thead><tr><th>段階</th><th>起点になる出来事</th><th>この時点で確定していること</th><th>自分ができること</th></tr></thead><tbody><tr><td>発生</td><td>視聴者が動画・LIVE・リンクから購入</td><td>まだ何も確定しない（推定額の表示）</td><td>数字を読むだけ。まだ計算に入れない</td></tr><tr><td>受領</td><td>購入者が商品を受け取る</td><td>報酬の発生条件を満たす</td><td>配送が遅れている注文を控えておく</td></tr><tr><td>精算</td><td>セラーの精算期間が完了</td><td>実際のコミッション額が決まる</td><td>「未精算」から外れたかを確認</td></tr><tr><td>支払い</td><td>精算後、出金可能残高に反映</td><td>出金できる金額として確定</td><td>口座を登録して出金を申請</td></tr><tr><td>着金</td><td>出金処理が完了</td><td>銀行口座で受け取り済み</td><td>支払い履歴と口座を突き合わせる</td></tr></tbody></table></div>
+<p class="src">報酬が動く5つの段階と、それぞれで自分がやること（LEAM編集部作成）</p>
+<div class="box box-point"><div class="bt">💡 推定額は収入の見込みに使わない</div><p>公式ヘルプは、推定コミッションが確定額ではないと明記しています。収入の見込みは<strong>精算が終わった金額</strong>で立ててください。返品が起きやすい商材ほど、推定額との差は大きくなります。</p></div>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="報酬が発生・受領・精算・支払い・着金の5段階で進み、精算より前は推定額であることを示す図">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">STAGE PIPELINE</text>
+      <rect x="28" y="58" width="330" height="26" rx="13" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".4" stroke-dasharray="5 4"/>
+      <text x="193" y="76" text-anchor="middle" font-size="12.5" font-weight="700" fill="#B01D36">この区間はすべて推定額</text>
+      <rect x="368" y="58" width="324" height="26" rx="13" fill="#E8324A"/>
+      <text x="530" y="76" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">ここから確定額</text>
+      <line x1="46" y1="140" x2="674" y2="140" stroke="#E3E6EA" stroke-width="6" stroke-linecap="round"/>
+      <line x1="46" y1="140" x2="368" y2="140" stroke="#F6B8C4" stroke-width="6" stroke-linecap="round"/>
+      <line x1="368" y1="140" x2="674" y2="140" stroke="#E8324A" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="46" cy="140" r="13" fill="#fff" stroke="#E8324A" stroke-width="4"/>
+      <circle cx="207" cy="140" r="13" fill="#fff" stroke="#E8324A" stroke-width="4"/>
+      <circle cx="368" cy="140" r="15" fill="#E8324A"/>
+      <circle cx="521" cy="140" r="13" fill="#E8324A"/>
+      <circle cx="674" cy="140" r="13" fill="#17181C"/>
+      <text x="46" y="180" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">発生</text>
+      <text x="207" y="180" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">受領</text>
+      <text x="368" y="182" text-anchor="middle" font-size="13.5" font-weight="800" fill="#B01D36">精算</text>
+      <text x="521" y="180" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">支払い</text>
+      <text x="674" y="180" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">着金</text>
+      <text x="46" y="206" text-anchor="middle" font-size="11.5" fill="#787D8A">購入</text>
+      <text x="207" y="206" text-anchor="middle" font-size="11.5" fill="#787D8A">配達完了</text>
+      <text x="368" y="208" text-anchor="middle" font-size="11.5" fill="#787D8A">精算期間の満了</text>
+      <text x="521" y="206" text-anchor="middle" font-size="11.5" fill="#787D8A">出金可能残高</text>
+      <text x="674" y="206" text-anchor="middle" font-size="11.5" fill="#787D8A">銀行口座</text>
+      <text x="360" y="238" text-anchor="middle" font-size="12" fill="#787D8A">止まっている段階が分かれば、次に見る画面が決まる</text>
+    </svg>
+    <figcaption>図1：報酬の5段階と、推定額が確定額に切り替わる位置（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s2"><span class="no en">02</span>支払日を決めているのは自分ではなくセラーの精算タイプ</h2>
+<p>同じ日に同じ本数の動画を出しても、入金日は商品ごとにずれます。公式ヘルプは、支払い時期が<strong>販売者に適用される精算期間</strong>に基づくと説明し、精算タイプごとに配達完了日を起点とした日数を示しています。</p>
+<div class="tw"><table><thead><tr><th>セラーの精算タイプ</th><th>コミッションの支払い時期</th><th>4月5日に配達完了した場合</th></tr></thead><tbody><tr><td>エクスプレス精算</td><td>注文の配達完了日から3日後</td><td class="num">4月8日</td></tr><tr><td>スタンダード精算</td><td>注文の配達完了日から15日後</td><td class="num">4月20日</td></tr><tr><td>延長精算</td><td>注文の配達完了日から31日後</td><td class="num">5月6日</td></tr></tbody></table></div>
+<p class="src">出典：TikTok Shop公式ヘルプ「アフィリエイトのコミッションおよび支払いに関する規約」（適用対象：日本／2026年9月2日確認）。<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5554058321364752&lang=ja-JP" target="_blank" rel="noopener noreferrer">該当ページ</a>。表の日付は同ページの計算例</p>
+<p>重要なのは、<strong>精算タイプはクリエイターが選べない</strong>点です。紹介する商品を決めた時点で、入金までの待ち時間もほぼ決まります。料率だけで選ぶと、入金が想定より1か月近く遅れることがあります。</p>
+<h3>紹介する商品を決めるときに一緒に見ておく3点</h3>
+<ol class="steps"><li><b>配達までの日数</b><p>起点は「注文日」ではなく「配達完了日」です。海外発送や受注生産が混ざる商品は、その日数がそのまま支払いの遅れになります。</p></li><li><b>返品が起きやすいか</b><p>サイズや色の印象で返品が起きやすい商材は、精算まで進まない注文が増えます。料率が高くても手取りは伸びません。</p></li><li><b>単発かリピートか</b><p>毎月同じ商品を紹介できるなら、入金の遅い精算タイプでも2か月目以降は平準化します。単発の企画では遅さがそのまま残ります。</p></li></ol>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="配達完了日を起点に、エクスプレス精算3日・スタンダード精算15日・延長精算31日で支払日が異なることを示す横棒グラフ">
+      <text x="28" y="32" font-size="13" font-weight="800" fill="#E8324A">PAYOUT TIMELINE</text>
+      <line x1="176" y1="60" x2="176" y2="196" stroke="#17181C" stroke-width="2" stroke-dasharray="4 4"/>
+      <text x="176" y="52" text-anchor="middle" font-size="11.5" font-weight="700" fill="#17181C">配達完了日</text>
+      <rect x="176" y="72" width="42" height="26" rx="6" fill="#E8324A"/>
+      <text x="30" y="90" font-size="12.5" font-weight="700" fill="#17181C">エクスプレス</text>
+      <text x="232" y="90" font-size="12" font-weight="700" fill="#B01D36">3日後</text>
+      <rect x="176" y="112" width="210" height="26" rx="6" fill="#E8324A" opacity=".75"/>
+      <text x="30" y="130" font-size="12.5" font-weight="700" fill="#17181C">スタンダード</text>
+      <text x="400" y="130" font-size="12" font-weight="700" fill="#B01D36">15日後</text>
+      <rect x="176" y="152" width="434" height="26" rx="6" fill="#E8324A" opacity=".5"/>
+      <text x="30" y="170" font-size="12.5" font-weight="700" fill="#17181C">延長</text>
+      <text x="624" y="170" font-size="12" font-weight="700" fill="#B01D36">31日後</text>
+      <line x1="176" y1="200" x2="660" y2="200" stroke="#C9CDD4" stroke-width="2"/>
+      <g font-size="11" fill="#787D8A" text-anchor="middle">
+        <text x="176" y="218">0日</text><text x="316" y="218">10日</text><text x="456" y="218">20日</text><text x="610" y="218">31日</text>
+      </g>
+      <text x="360" y="242" text-anchor="middle" font-size="12" fill="#787D8A">同じ売上でも、セラーの精算タイプで入金日は1か月近く動く</text>
+    </svg>
+    <figcaption>図2：精算タイプ別・配達完了日から支払いまでの日数（公式ヘルプの記載をもとに作図）</figcaption>
+  </figure>
+
+<h2 id="s3"><span class="no en">03</span>返品・キャンセル・一部返金が出ると報酬はこう変わる</h2>
+<p>報酬が減る理由は公式ヘルプに列挙されています。次の表は、コミッションを受け取れなかった原因として案内されているケースと、その扱いです。</p>
+<div class="tw"><table><thead><tr><th>起きたこと</th><th>報酬の扱い</th><th>先に確認する画面</th></tr></thead><tbody><tr><td>購入者が商品を受け取る前にキャンセル</td><td>そのコミッションは受け取れない</td><td>注文一覧のキャンセル欄</td></tr><tr><td>アフターサービス期間中に返金を申請された</td><td>そのコミッションは受け取れない</td><td>注文の返金ステータス</td></tr><tr><td>受領確認後に一部返金が発生</td><td>返金後の金額に基づき一部のみ支払い</td><td>実際のコミッション額</td></tr><tr><td>商品に関する紛争・返品リクエストが未解決</td><td>手続きが解決するまで支払われない</td><td>該当注文の対応状況</td></tr><tr><td>精算がまだ終わっていない</td><td>「未精算」欄で実際の額が0円と表示</td><td>未精算（Not Settled）</td></tr></tbody></table></div>
+<p class="src">出典：TikTok Shop公式ヘルプ「アフィリエイトのコミッションおよび支払いに関する規約」（適用対象：日本／2026年9月2日確認）。表への整理はLEAM編集部</p>
+<div class="box box-warn"><div class="bt">⚠️ 「未精算で0円」は取り消されたのではない</div><p>公式ヘルプは、未精算ページの注文は精算完了まで実際のコミッションが0円と表示されると説明しています。0円を見て報酬が消えたと判断する前に、その注文が精算済みかを確認してください。</p></div>
+<h3>料率が下がったときの扱いには猶予がある</h3>
+<p>料率が変更された場合の扱いも公式ヘルプにあります。<strong>引き上げは即時に有効</strong>、<strong>引き下げはすぐには反映されません</strong>。すでにショーケースに登録済みの商品や動画にリンク済みの商品は、引き続き30日間は高いほうの料率が適用され、その後に更新されます。過去の動画が回り続けている場合、通知が来てからでも打ち手があるということです。</p>
+  <figure>
+    <svg viewBox="0 0 720 290" role="img" aria-label="購入者が商品を受け取ったか、返金があったかで報酬が満額・一部・なしに分かれる分岐図">
+      <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">DECISION TREE</text>
+      <rect x="286" y="48" width="150" height="40" rx="10" fill="#17181C"/>
+      <text x="361" y="73" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">注文が発生</text>
+      <path d="M361 88 V112" stroke="#C9CDD4" stroke-width="2"/>
+      <polygon points="361,112 452,148 361,184 270,148" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="361" y="144" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">購入者が商品を</text>
+      <text x="361" y="162" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">受け取ったか</text>
+      <path d="M270 148 H150 V216" stroke="#C9CDD4" stroke-width="2" fill="none"/>
+      <text x="196" y="140" font-size="11.5" font-weight="700" fill="#787D8A">いいえ</text>
+      <rect x="72" y="216" width="156" height="44" rx="10" fill="#fff" stroke="#C9CDD4"/>
+      <text x="150" y="236" text-anchor="middle" font-size="12.5" font-weight="800" fill="#646C7A">報酬なし</text>
+      <text x="150" y="252" text-anchor="middle" font-size="10.5" fill="#787D8A">受領前キャンセル</text>
+      <path d="M452 148 H524" stroke="#C9CDD4" stroke-width="2"/>
+      <text x="478" y="140" font-size="11.5" font-weight="700" fill="#787D8A">はい</text>
+      <polygon points="590,120 656,148 590,176 524,148" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="590" y="152" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">返金の有無</text>
+      <path d="M590 176 V202 H470 V232" stroke="#C9CDD4" stroke-width="2" fill="none"/>
+      <path d="M590 176 V202 H640 V232" stroke="#C9CDD4" stroke-width="2" fill="none"/>
+      <rect x="386" y="232" width="168" height="44" rx="10" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="470" y="252" text-anchor="middle" font-size="12.5" font-weight="800" fill="#8A5A00">一部のみ</text>
+      <text x="470" y="268" text-anchor="middle" font-size="10.5" fill="#8A5A00">返金後の金額で計算</text>
+      <rect x="580" y="232" width="120" height="44" rx="10" fill="#E8324A"/>
+      <text x="640" y="252" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">満額</text>
+      <text x="640" y="268" text-anchor="middle" font-size="10.5" fill="#FDEEF1">精算後に支払い</text>
+      <text x="500" y="196" font-size="11" fill="#787D8A">一部返金</text>
+      <text x="600" y="196" font-size="11" fill="#787D8A">なし</text>
+    </svg>
+    <figcaption>図3：受領と返金の有無で報酬が満額・一部・なしに分かれる分岐（同上をもとに作図）</figcaption>
+  </figure>
+
+<h2 id="s4"><span class="no en">04</span>出金は本人確認・口座登録・出金申請の3ステップで終わる</h2>
+<p>出金でつまずくのは、手続きが難しいからではなく<strong>順番が逆</strong>だからです。公式ヘルプは、ショッパブル動画の投稿・LIVE配信・ショーケースへの商品追加・収益の出金を始める前に、本人確認と年齢確認を完了するよう求めています。売れてから慌てて用意すると、その分だけ着金が遅れます。</p>
+<ol class="steps"><li><b>本人確認と年齢確認を先に終える</b><p>TikTok Studioの収益化メニューから「クリエイター用TikTok Shop」に進み、本人確認を開始します。公式ヘルプでは、この確認がショーケースへの商品追加や資金センターなど複数の場所から始まると案内されています。</p></li><li><b>受取用の銀行口座を登録する</b><p>公式ヘルプでは、クリエイターセンターの「収益」から銀行口座を追加できると説明されています。対象は日本国内の口座です。</p></li><li><b>収益画面から出金を申請する</b><p>出金可能な成果報酬はクリエイターセンターの「収益」に表示され、支払い可能額と支払い履歴はEコマースクリエイターセンターの「支払い概要（Payout Summary）」で確認できます。</p></li></ol>
+<div class="tw"><table><thead><tr><th>登録項目</th><th>公式ヘルプで求められていること</th><th>つまずきやすい点</th></tr></thead><tbody><tr><td>氏名</td><td>登録する氏名が受取口座の名義と一致していること</td><td>送信後は氏名を変更できない</td></tr><tr><td>銀行口座</td><td>支払いを受け取るための日本国内の銀行口座情報</td><td>旧姓や屋号の名義のままだと一致しない</td></tr><tr><td>KYC（本人確認）</td><td>日本の関連法令および規制に準拠するために必要</td><td>年齢確認まで終わらないと出金に進めない</td></tr></tbody></table></div>
+<p class="src">出典：TikTok Shop公式ヘルプ「アフィリエイトのコミッションおよび支払いに関する規約」「クリエイター申請方法」「クリエイターセンターとは？」（適用対象：日本／2026年9月2日確認）</p>
+<div class="box box-warn"><div class="bt">⚠️ 氏名は送信後に変更できない</div><p>公式ヘルプは、氏名の送信後は変更できず、登録情報に誤りがあると支払いを処理できずコミッションを受け取れない可能性があると明記しています。入力前に、通帳やキャッシュカードの名義表記と一字ずつ合わせてください。</p></div>
+<h3>本人確認で用意する書類</h3>
+<div class="tw"><table><thead><tr><th>区分</th><th>公式ヘルプに挙げられている選択肢</th><th>ファイルの条件</th></tr></thead><tbody><tr><td>身分証（1つ選択）</td><td>マイナンバーカード／日本の運転免許証／日本のパスポート／日本の在留カード</td><td rowspan="2">5MB未満のPDF・JPEG・PNG。ファイル名に特殊文字を使わない</td></tr><tr><td>住所証明（1つ選択）</td><td>公共料金の請求書（ガス・水道・電気）／銀行またはクレジットカードの明細書／住民票</td></tr></tbody></table></div>
+<p class="src">出典：TikTok Shop公式ヘルプ「クリエイター申請方法」（適用対象：日本／2026年9月2日確認）。書類は有効期限内のもので、画像の編集は認められていません</p>
+
+<h2 id="s5"><span class="no en">05</span>手動で出金しないと90日ごとに自動出金が走る</h2>
+<p>公式ヘルプには自動支払いの仕組みも書かれています。残高を手動で出金しなかった場合、TikTok Shopは<strong>90日ごとに自動的な出金処理を開始する</strong>とされ、その条件として次の3点が挙げられています。ただし、自動任せにしてよいという話ではありません。</p>
+<ul><li>支払い可能な残高があること</li><li>有効な日本国内の銀行口座が登録されていること</li><li>アカウントに出金制限がないこと（例：税務コンプライアンスに関する問題）</li></ul>
+<p>逆から読むと、<strong>口座が未登録なら自動処理も動きません</strong>。放置すればいつか届く仕組みではない、というのが正しい理解です。自動任せにすると入金が3か月単位でまとまり、月ごとの収入も把握しづらくなります。</p>
+<h3>手動で出金するほうが扱いやすい理由</h3>
+<p>収益画面には、遡れる範囲の制約もあります。公式ヘルプでは、収益分析の日付範囲は1回の分析につき最大90日間、分析できる最初期の日付は2025年1月1日と案内されています。また「ボーナス」の金額は「推定成果報酬」または「成果報酬」の合計にすでに含まれており、二重に数えないよう注意が示されています。<strong>画面で確認できる範囲に上限がある</strong>ため、月末に出金額と支払い履歴を控えておくと、あとから照合できます。</p>
+  <figure>
+    <svg viewBox="0 0 720 260" role="img" aria-label="手動出金がない場合の90日周期と、自動出金が成立する3条件を示す図">
+      <text x="28" y="30" font-size="13" font-weight="800" fill="#E8324A">AUTO PAYOUT CYCLE</text>
+      <g transform="translate(148 152)">
+        <circle r="76" fill="none" stroke="#E3E6EA" stroke-width="20"/>
+        <path d="M0 -76 A76 76 0 1 1 -65.8 38" fill="none" stroke="#E8324A" stroke-width="20" stroke-linecap="round"/>
+        <text y="-6" text-anchor="middle" font-size="24" font-weight="900" fill="#17181C">90日</text>
+        <text y="18" text-anchor="middle" font-size="11.5" fill="#787D8A">手動出金なし</text>
+      </g>
+      <text x="148" y="248" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">この周期で自動出金が開始</text>
+      <path d="M240 152 H286" stroke="#E8324A" stroke-width="3"/>
+      <polygon points="278,146 290,152 278,158" fill="#E8324A"/>
+      <text x="306" y="62" font-size="12.5" font-weight="800" fill="#B01D36">3条件をすべて満たすとき</text>
+      <rect x="306" y="80" width="384" height="42" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".35"/>
+      <rect x="306" y="132" width="384" height="42" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".35"/>
+      <rect x="306" y="184" width="384" height="42" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".35"/>
+      <text x="326" y="106" font-size="12.5" font-weight="700" fill="#17181C">支払い可能な残高がある</text>
+      <text x="326" y="158" font-size="12.5" font-weight="700" fill="#17181C">有効な日本国内の銀行口座が登録されている</text>
+      <text x="326" y="210" font-size="12.5" font-weight="700" fill="#17181C">アカウントに出金制限がない</text>
+      <text x="498" y="246" text-anchor="middle" font-size="11.5" fill="#787D8A">1つでも欠けると自動処理は始まらない</text>
+    </svg>
+    <figcaption>図4：90日ごとの自動出金が成立する3条件（同上をもとに作図）</figcaption>
+  </figure>
+
+<h2 id="s6"><span class="no en">06</span>報酬が入らないときは上から7項目を順に確認する</h2>
+<p>「入らない」と感じたときは、心当たりから探すのではなく<strong>上流から順に潰す</strong>ほうが早く終わります。次の表は確認する順番のまま並べています。上の行が解決していないと、下の行を直しても着金しません。</p>
+<div class="tw"><table><thead><tr><th>順</th><th>確認すること</th><th>見る場所</th><th>該当したときの行動</th></tr></thead><tbody><tr><td class="num">1</td><td>本人確認と年齢確認が完了しているか</td><td>確認センターのステータス</td><td>先に確認を完了させる</td></tr><tr><td class="num">2</td><td>受取用の銀行口座を登録したか</td><td>クリエイターセンター「収益」</td><td>日本国内の口座を追加する</td></tr><tr><td class="num">3</td><td>登録氏名と口座名義が一致しているか</td><td>登録情報と通帳の名義</td><td>相違があればサポートへ問い合わせる</td></tr><tr><td class="num">4</td><td>該当注文が配達完了しているか</td><td>注文の配送ステータス</td><td>配達完了まで待つ</td></tr><tr><td class="num">5</td><td>精算が終わっているか</td><td>未精算（Not Settled）</td><td>セラーの精算タイプの日数を待つ</td></tr><tr><td class="num">6</td><td>返金・返品・紛争が残っていないか</td><td>該当注文の対応状況</td><td>手続きの解決を待つ</td></tr><tr><td class="num">7</td><td>アカウントに出金制限がないか</td><td>支払い概要と通知</td><td>案内された対応を行う</td></tr></tbody></table></div>
+<p class="src">上から順に確認する7項目（公式ヘルプの記載をもとにLEAM編集部が作成）</p>
+<p>1から3は自分で直せる項目、4から6は待つほかにない項目、7はサポートへの連絡が必要な項目です。公式ヘルプでは、確認の失敗や不当な却下について、クリエイターセンターのヘルプからカスタマーサービスに連絡する経路が案内されています。</p>
+
+<h2 id="s7"><span class="no en">07</span>税金は金額より「所得の区分」から考える</h2>
+<p>ここから先は公式ヘルプの範囲を超えるため、<strong>一般的な考え方</strong>として書きます。個々の判断は状況で変わり、この記事で断定はできません。</p>
+<p>国税庁は、給与を1か所から受けていてその全部が源泉徴収の対象となる場合、給与所得や退職所得以外の各種の所得金額の合計額が20万円を超える人は確定申告が必要としています。ただしこれは給与所得者についての一つの基準で、給与がない場合や2か所以上から受けている場合は別の条件が示されています。<strong>自分がどの類型に当たるかを先に確かめる</strong>のが順番です。</p>
+<p>また、報酬が「事業所得」か「雑所得」かは活動の規模や継続性をふまえた判断で、金額だけでは決まりません。どちらに当たるかで経費の扱いや申告方法が変わるため、自己判断せず専門家に確認する領域です。</p>
+<h3>いま日々やっておくと後で困らない記録</h3>
+<ol class="steps"><li><b>月末に支払い履歴を控える</b><p>支払い可能額と支払い履歴は「支払い概要（Payout Summary）」で確認できます。遡れる日付範囲に上限があるため、月末に控えを残します。</p></li><li><b>推定額と精算後の額を分けて記録する</b><p>推定コミッションは確定額ではありません。同じ欄に混ぜず、精算が終わった金額だけを収入として並べます。</p></li><li><b>関連する支出の証憑を残す</b><p>撮影に使った物品や通信費の領収書は、区分の判断がついてからでは集め直せません。判断が決まる前から残します。</p></li></ol>
+<div class="box box-warn"><div class="bt">⚠️ この記事は税務の助言ではありません</div><p>本記事の税務に関する記載は、国税庁が公開している一般的な基準の紹介にとどまります。申告が必要か、どの所得区分に当たるかは個々の事情で変わります。実際の判断と手続きは税理士にご相談ください。</p></div>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>この記事の内容を、明日から動かせる順に並べ直します。</p>
+<div class="summary-grid"><div class="summary-item">売れてからではなく<strong>今日のうちに</strong>本人確認・年齢確認と受取口座の登録を終える。ここが未完了だと自動出金も動かない</div><div class="summary-item">画面の推定額を収入として数えず、<strong>精算後の金額</strong>だけを収入の記録に入れる</div><div class="summary-item">紹介する商品を選ぶとき、料率と一緒に<strong>配達までの日数と返品の起きやすさ</strong>を見る。入金日は精算タイプで1か月近く動く</div><div class="summary-item">入らないときは心当たりから探さず、<strong>本人確認→口座→名義→配達→精算→返金→出金制限</strong>の順に潰す</div><div class="summary-item">税務は金額の前に<strong>所得区分</strong>を確かめる。月末の支払い履歴の控えと支出の証憑だけは先に残しておく</div></div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>動画が再生されたりリンクがクリックされた時点で、報酬は確定しますか？</summary><div class="a">確定しません。公式ヘルプは、注文の決済（売上確定）が完了してはじめて成果報酬を受け取れると説明しています。アフィリエイトリンクの機能ガイドでも、成果報酬が発生する条件は購入者が商品を受け取ることだと明記されています。それまで画面に出ている金額は推定額です。</div></details><details><summary>報酬が支払われるまで何日かかりますか？</summary><div class="a">セラーに適用される精算タイプで決まります。公式ヘルプでは、エクスプレス精算は注文の配達完了日から3日後、スタンダード精算は15日後、延長精算は31日後と案内されています。加えて、紛争・返金・返品リクエストがある注文は、その手続きが解決するまで支払われません。</div></details><details><summary>出金の申請をしないまま放置するとどうなりますか？</summary><div class="a">公式ヘルプによると、手動で出金しなかった場合、支払い可能な残高がある・有効な日本国内の銀行口座が登録されている・アカウントに出金制限がない、という3条件を満たすクリエイターに対して、90日ごとに自動的な出金処理が開始されます。条件を満たしていなければ自動処理も動きません。</div></details><details><summary>「未精算」のページで実際のコミッションが0円と表示されるのはなぜですか？</summary><div class="a">コミッションは注文の精算が完了したあとに支払われるため、公式ヘルプでは「未精算（Not Settled）」ページの注文は精算完了まで実際のコミッションが0円と表示されると説明されています。表示されている推定額が取り消されたわけではありません。</div></details><details><summary>一部だけ返金された注文の報酬はどうなりますか？</summary><div class="a">公式ヘルプは、商品の受領確認後に一部返金が発生した場合、返金後の金額に基づいて一部のコミッションのみが支払われると案内しています。購入者が受け取る前にキャンセルした場合と、アフターサービス期間中に返金を申請された場合は、その注文の報酬を受け取れません。</div></details><details><summary>報酬を受け取ったら確定申告は必要ですか？</summary><div class="a">必要かどうかは所得の区分や他の収入によって変わるため、一律には決まりません。国税庁は、給与を1か所から受けている人について、給与以外の各種の所得金額の合計額が20万円を超える場合は確定申告が必要としています。適用の判断は個々の事情によるため、国税庁の案内を確認し、最終的な判断は税理士に相談してください。</div></details></div>
+<div class="ctabox"><div class="ct">TikTok Shopでの活動について相談できます</div><p>LEAMはTikTok Shopのコンサルティングと、TikTok Shopに特化したMCNを運営しています。どんな商品と組むか、どう続けるかを含めて、現状を伺ったうえで率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/mcn/">クリエイター募集を見る</a><a class="btn btn-g" href="https://leam.co.jp/contact/">問い合わせる</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5554058321364752&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトのコミッションおよび支払いに関する規約</a>（適用対象：日本／2026年9月2日確認）─ 精算タイプ別の支払い時期、計算式、90日ごとの自動出金</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：報酬の仕組みについて</a>（適用対象：日本／2026年9月2日確認）─ 決済完了が受け取りの前提、料率引き下げ時の30日間</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787227408&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイター申請方法</a>（適用対象：日本／2026年9月2日確認）─ 出金前の本人確認・年齢確認、必要書類</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787030800&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shopクリエイターセンターとは？</a>（適用対象：日本／2026年9月2日確認）─ 「収益」から銀行口座を追加する経路</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5507176370308880&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイター収益分析ガイド</a>（適用対象：日本／2026年9月2日確認）─ 日付範囲は最大90日間、最初期データは2025年1月1日</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=1341131783178001&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトリンク ─ クリエイター向け機能ガイド</a>（2026年9月2日確認）─ 発生条件は購入者が商品を受け取ること、返品分は発生しない</li><li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1900.htm" target="_blank" rel="noopener noreferrer">国税庁：No.1900 給与所得者で確定申告が必要な人</a>（2026年9月2日確認）─ 給与1か所の場合の20万円の基準</li></ul>
+<p class="src">仕様、画面名称、精算の条件は更新されることがあります。本記事は2026年9月2日時点で確認できた日本向け公式情報と、LEAM編集部が作成した確認手順を区別して記載しています。税務の記載は一般的な考え方の紹介です。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">基礎</span><b>TikTok Shopとは？仕組みと始め方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/returns-refunds/"><span class="rc">返品</span><b>TikTok Shopの返品・返金ルールと対応フロー</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/creator-invite/"><span class="rc">案件</span><b>クリエイター招待とコラボの仕組み</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">報酬は「発生・確定・支払い」の3段階で動く</a></li><li><a href="#s2">支払日を決めているのは自分ではなくセラーの精算タイプ</a></li><li><a href="#s3">返品・キャンセル・一部返金が出ると報酬はこう変わる</a></li><li><a href="#s4">出金は本人確認・口座登録・出金申請の3ステップで終わる</a></li><li><a href="#s5">手動で出金しないと90日ごとに自動出金が走る</a></li><li><a href="#s6">報酬が入らないときは上から7項目を順に確認する</a></li><li><a href="#s7">税金は金額より「所得の区分」から考える</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの相談</b><p>現状を伺い、次に確認することを整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "動画が再生されたりリンクがクリックされた時点で、報酬は確定しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "確定しません。公式ヘルプは、注文の決済（売上確定）が完了してはじめて成果報酬を受け取れると説明しています。アフィリエイトリンクの機能ガイドでも、成果報酬が発生する条件は購入者が商品を受け取ることだと明記されています。それまで画面に出ている金額は推定額です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "報酬が支払われるまで何日かかりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "セラーに適用される精算タイプで決まります。公式ヘルプでは、エクスプレス精算は注文の配達完了日から3日後、スタンダード精算は15日後、延長精算は31日後と案内されています。加えて、紛争・返金・返品リクエストがある注文は、その手続きが解決するまで支払われません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "出金の申請をしないまま放置するとどうなりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプによると、手動で出金しなかった場合、支払い可能な残高がある・有効な日本国内の銀行口座が登録されている・アカウントに出金制限がない、という3条件を満たすクリエイターに対して、90日ごとに自動的な出金処理が開始されます。条件を満たしていなければ自動処理も動きません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "「未精算」のページで実際のコミッションが0円と表示されるのはなぜですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "コミッションは注文の精算が完了したあとに支払われるため、公式ヘルプでは「未精算（Not Settled）」ページの注文は精算完了まで実際のコミッションが0円と表示されると説明されています。表示されている推定額が取り消されたわけではありません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "一部だけ返金された注文の報酬はどうなりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプは、商品の受領確認後に一部返金が発生した場合、返金後の金額に基づいて一部のコミッションのみが支払われると案内しています。購入者が受け取る前にキャンセルした場合と、アフターサービス期間中に返金を申請された場合は、その注文の報酬を受け取れません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "報酬を受け取ったら確定申告は必要ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "必要かどうかは所得の区分や他の収入によって変わるため、一律には決まりません。国税庁は、給与を1か所から受けている人について、給与以外の各種の所得金額の合計額が20万円を超える場合は確定申告が必要としています。適用の判断は個々の事情によるため、国税庁の案内を確認し、最終的な判断は税理士に相談してください。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

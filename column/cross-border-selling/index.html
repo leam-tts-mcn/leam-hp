@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの越境販売｜海外セラーとの競合</title>
+<meta name="description" content="TikTok Shopで海外セラーと並ぶとき見る差を、公式の配送期限・返品期限・表示義務から整理します。越境で売る側が決める六つと、見送る基準つき。">
+<link rel="canonical" href="https://leam.co.jp/column/cross-border-selling/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの越境販売｜海外セラーとの競合">
+<meta property="og:description" content="TikTok Shopで海外セラーと並ぶとき見る差を、公式の配送期限・返品期限・表示義務から整理します。越境で売る側が決める六つと、見送る基準つき。">
+<meta property="og:url" content="https://leam.co.jp/column/cross-border-selling/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの越境販売｜海外セラーとの競合">
+<meta name="twitter:description" content="TikTok Shopで海外セラーと並ぶとき見る差を、公式の配送期限・返品期限・表示義務から整理します。越境で売る側が決める六つと、見送る基準つき。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの越境販売｜海外セラーとの競合", "description": "TikTok Shopで海外セラーと並ぶとき見る差を、公式の配送期限・返品期限・表示義務から整理します。越境で売る側が決める六つと、見送る基準つき。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/cross-border-selling/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの越境販売｜海外セラーとの競合", "item": "https://leam.co.jp/column/cross-border-selling/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの越境販売と、海外セラーとの競合で見るところ</p>
+<span class="cat">越境・競合</span>
+<h1>TikTok Shopの越境販売と、海外セラーとの競合で見るところ</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="越境販売の関門：左の大きな赤い荷物が破線の経路をたどって、通関を表すシアンのアーチ型ゲートをくぐり、国境の向こう側へ抜けていく。規制に引っかかった小さな荷物だけが経路から外れて手前に落ち、右のチェックリストでは二つに通過の印、一つに赤い×が付いていることを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-98 32-190 30-292 10-110-22-198-52-310-46-110 6-196 48-306 58-100 9-196-4-292-32z" fill="#F6F7F9"/>
+  <ellipse cx="890" cy="248" rx="270" ry="205" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(700 -6)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 516c150-28 272-14 400 8 128 22 244 28 366 8 120-20 236-42 434-24v122H0z" fill="#ECEEF1"/>
+  <path d="M690 558h356" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- 荷物が国境を越えていく経路（破線・ゲートの開口部を通る） -->
+  <path d="M556 470C636 444 716 436 800 446 882 460 952 482 1016 510" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 12"/>
+
+  <!-- ================= 従①：国境の関門（通関のアーチ・シアン） ================= -->
+  <path d="M748 558V470a120 120 0 0 1 240 0V558h-42V470a78 78 0 0 0-156 0V558Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <path d="M748 558V470a120 120 0 0 1 240 0V558h-42V470a78 78 0 0 0-156 0V558Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="868" cy="371" r="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+  <path d="M861 371l5 6 11-13" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 向こう側へ抜ける矢印 -->
+  <g transform="translate(1012 507) rotate(24)">
+    <path d="M0 -22L46 0L0 22Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M0 -22L46 0L0 22Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 従②：規制の確認リスト ================= -->
+  <rect x="1000" y="226" width="160" height="210" rx="16" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <rect x="1000" y="226" width="160" height="210" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="1052" y="210" width="56" height="28" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+  <rect x="1020" y="268" width="30" height="30" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+  <path d="M1028 283l6 7 12-15" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1020" y="322" width="30" height="30" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+  <path d="M1028 337l6 7 12-15" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1020" y="376" width="30" height="30" rx="8" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="5"/>
+  <path d="M1028 384l14 14" fill="none" stroke="#FE2C55" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1042 384l-14 14" fill="none" stroke="#FE2C55" stroke-width="6" stroke-linecap="round"/>
+
+  <rect x="1062" y="272" width="76" height="14" rx="7" fill="#DFE0E2"/>
+  <rect x="1062" y="294" width="50" height="10" rx="5" fill="#DFE0E2"/>
+  <rect x="1062" y="326" width="64" height="14" rx="7" fill="#DFE0E2"/>
+  <rect x="1062" y="348" width="44" height="10" rx="5" fill="#DFE0E2"/>
+  <rect x="1062" y="380" width="70" height="14" rx="7" fill="#DFE0E2"/>
+
+  <!-- ================= 経路から外れて落ちる荷物（規制で通らないもの） ================= -->
+  <path d="M676 448C670 462 666 472 664 482" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round" stroke-dasharray="9 9"/>
+  <g transform="rotate(15 659 530)">
+    <rect x="606" y="486" width="106" height="88" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="606" y="486" width="106" height="88" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="606" y="520" width="106" height="20" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= 主役：越境していく荷物（赤） ================= -->
+  <g transform="rotate(-5 336 403)">
+    <path d="M140 316L196 262L532 262L532 490L476 544L140 544Z" fill="#5E6064" opacity=".15" transform="translate(10 12)"/>
+    <path d="M140 316L196 262L532 262L476 316Z" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M476 316L532 262L532 490L476 544Z" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="140" y="316" width="336" height="228" rx="6" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M398 316L454 262L498 262L442 316Z" fill="#DFE0E2"/>
+    <rect x="398" y="316" width="44" height="228" fill="#FFFFFF"/>
+    <rect x="186" y="362" width="178" height="126" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="210" y="388" width="124" height="15" rx="7.5" fill="#DFE0E2"/>
+    <rect x="210" y="420" width="96" height="13" rx="6.5" fill="#DFE0E2"/>
+    <rect x="210" y="450" width="70" height="13" rx="6.5" fill="#25F4EE"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="636" cy="182" r="16" fill="#25F4EE"/>
+  <circle cx="1152" cy="572" r="13" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTok Shopの越境販売と、海外セラーとの競合で見るところ（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">日本のTikTok Shopでは、国外に拠点を置くセラーの商品が、日本の事業者の商品と同じ画面に並びます。価格だけ見れば不利でも、<strong>公式に定められた配送期限・返品期限・表示義務は、拠点がどこでも同じ基準で適用されます</strong>。商品ページから相手の実務体制を読む方法、価格以外で差が出る四つ、自社が越境で売るときに決めることを、公式ヘルプで確認できた事実と一般的な考え方に分けて整理します。関税と税制の数値は示さず、確認先を挙げます。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>商品ページの事業者表示から、相手が国内で回しているかを読む見方</li><li>公式の配送・返品の期限を自社の指標として数える方法</li><li>越境で売る前に決める六つと、見送る基準</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">発送</span><b><a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷体制</a></b><span>期限を守る体制の作り方</span></div>
+    <div class="relcard"><span class="rc">返品</span><b><a href="https://leam.co.jp/column/returns-refunds/">返品・返金の対応</a></b><span>依頼が来た後の実務</span></div>
+    <div class="relcard"><span class="rc">出品</span><b><a href="https://leam.co.jp/column/prohibited-items/">出品できない商品</a></b><span>カテゴリー別の制限</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">越境で売るか、国内在庫に切り替えるかを一緒に整理します</div><p>商品、在庫の置き場所、返送先、許認可のどこに詰まりがあるかを伺い、次に確認すべきことを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">海外セラーかどうかは、商品ページの事業者表示で確かめられる</a></li><li><a href="#s2">価格で並べない相手には、配送・返品・言語・レビューの四つで差を作る</a></li><li><a href="#s3">いちばん効くのは配達完了までの日数で、公式の期限は営業日で刻まれている</a></li><li><a href="#s4">返品は暦日で走るので、返送先が国内かどうかが採算を分ける</a></li><li><a href="#s5">自社が越境で売るなら、値付けの前に六つを決める</a></li><li><a href="#s6">表示と許認可はカテゴリーごとに違うので、出品前に制限付き商品を読む</a></li><li><a href="#s7">判断の順番を固定し、見送る基準は数えられる形で持つ</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>海外セラーかどうかは、商品ページの事業者表示で確かめられる</h2>
+<p>日本のTikTok Shopでは、拠点が国外のセラーの商品も同じ枠に並びます。競合を調べるとき、最初に見るのは価格ではなく<strong>誰が売っているか</strong>です。</p>
+<p>公式ヘルプのセラー登録ページには、現地の法令に準拠するため、商品ページに個人事業主なら氏名および事業所住所、法人なら会社代表者名および法人登記上の事業所住所が表示されると明記されています。<span class="hl">販売主体の名前と住所は、購入者にも競合にも見える情報</span>です。</p>
+<p>同じページには、日本版で登録したアカウントはTikTok Shop Japanのみでの運営が認められることも書かれています。</p>
+<div class="tw"><table><thead><tr><th>見る場所</th><th>読み取れること</th><th>自社が取れる手</th></tr></thead><tbody><tr><td>事業者表示（氏名または代表者名と住所）</td><td>販売主体が国内か国外か</td><td>住所と窓口を省略せず、同じ欄で読み比べられる形にする</td></tr><tr><td>配送予定日</td><td>手元に届くまでの見込み日数</td><td>最短到着を商品名と説明の冒頭に書く</td></tr><tr><td>返品・交換の記載</td><td>返送先と対応範囲</td><td>返送先が国内であることと受付期間を明記する</td></tr><tr><td>レビューの言語と写真</td><td>日本語の使用実感が積まれているか</td><td>使用シーンの写真が集まる導線を作る</td></tr><tr><td>商品説明の項目</td><td>翻訳だけか、表示要件を満たしているか</td><td>公式が求める表示項目を先に埋め切る</td></tr><tr><td>価格と送料の内訳</td><td>送料込みか、後から費用が乗るか</td><td>総額で並べた比較を作り、議論を総額に移す</td></tr></tbody></table></div><p class="src">表1：商品ページから相手の体制を推定する</p>
+<div class="box box-point"><div class="bt">💡 相手は三行で記録する</div><p>事業者表示、配送予定日、返品の記載を一行ずつ残します。スクリーンショットを溜めるより、この三行を並べたほうが自社の弱点が先に見えます。</p></div>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="商品ページの事業者表示・配送予定日・返品記載から相手の実務体制を推定する見方">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">FIG 1 ─ 商品ページの読み方</text>
+      <rect x="28" y="56" width="212" height="216" rx="16" fill="#fff" stroke="#17181C" stroke-opacity=".35"/>
+      <rect x="44" y="72" width="180" height="70" rx="8" fill="#FDEEF1"/>
+      <text x="134" y="113" text-anchor="middle" font-size="13" font-weight="700" fill="#8F94A3">商品画像</text>
+      <rect x="44" y="154" width="122" height="14" rx="7" fill="#17181C" opacity=".7"/>
+      <rect x="44" y="178" width="74" height="14" rx="7" fill="#E8324A" opacity=".85"/>
+      <rect x="44" y="202" width="156" height="10" rx="5" fill="#17181C" opacity=".3"/>
+      <rect x="44" y="220" width="140" height="10" rx="5" fill="#17181C" opacity=".3"/>
+      <rect x="44" y="242" width="166" height="10" rx="5" fill="#17181C" opacity=".3"/>
+      <path d="M244 161 H316" stroke="#E8324A" stroke-width="2.5" stroke-dasharray="7 6"/>
+      <path d="M244 207 H316" stroke="#E8324A" stroke-width="2.5" stroke-dasharray="7 6"/>
+      <path d="M244 247 H316" stroke="#E8324A" stroke-width="2.5" stroke-dasharray="7 6"/>
+      <path d="M244 108 H316" stroke="#E8324A" stroke-width="2.5" stroke-dasharray="7 6"/>
+      <rect x="320" y="86" width="372" height="44" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="336" y="113" font-size="13.5" font-weight="700" fill="#17181C">価格と送料 ─ 総額で並べ直す</text>
+      <rect x="320" y="139" width="372" height="44" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="336" y="166" font-size="13.5" font-weight="700" fill="#17181C">事業者表示 ─ 氏名または代表者名と住所</text>
+      <rect x="320" y="192" width="372" height="44" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".45"/>
+      <text x="336" y="219" font-size="13.5" font-weight="700" fill="#17181C">配送予定日 ─ 到着までの見込み日数</text>
+      <rect x="320" y="245" width="372" height="44" rx="10" fill="#E8324A"/>
+      <text x="336" y="272" font-size="13.5" font-weight="700" fill="#fff">返品の記載 ─ 返送先が国内かどうか</text>
+    </svg>
+    <figcaption>図1：商品ページで最初に読む四箇所（LEAM編集部作成）</figcaption>
+  </figure>
+<h2 id="s2"><span class="no en">02</span>価格で並べない相手には、配送・返品・言語・レビューの四つで差を作る</h2>
+<p>原価で勝てない相手に値下げで応じると、粗利を削っただけで順位が戻らないことがあります。手がかりは、<strong>公式のルールが拠点を問わず同じ基準で適用される</strong>点です。配送の期限も返品の受付期間も国内外で同じように課され、守りやすさに差が出るのは在庫と返送先が国内にあるかどうかです。</p>
+<p>差を作れる場所は四つです。いずれも「相手より良い」と主張するのではなく、<span class="hl">自社の数字として数え、商品ページに書く</span>ところまでが仕事です。</p>
+<div class="tw"><table><thead><tr><th>差が出る要素</th><th>公式ルールで決まっている部分</th><th>自社で数えられる指標</th></tr></thead><tbody><tr><td>配送</td><td>追跡可能な配送が必須。ステータス更新の期限は営業日で定められている</td><td>発送遅延率、納期遵守率、締め時間に間に合わなかった件数</td></tr><tr><td>返品</td><td>配達済みから30暦日の依頼受付、対応は2営業日以内</td><td>返品率、初回対応までの時間、返送品の受領日数</td></tr><tr><td>言語</td><td>商品ページの表示項目がカテゴリーごとに定められている</td><td>未記入の必須項目数、同じ質問が届いた回数</td></tr><tr><td>レビュー</td><td>レビュー投稿を依頼するメッセージの同梱は禁止</td><td>レビュー投稿数、写真付きの割合</td></tr></tbody></table></div><p class="src">表2：価格以外の四つの差</p>
+<p>一般的な考え方として、最初に効くのは配送です。到着までの日数は購入前に表示され、購入後の評価にも直結します。言語とレビューは積み上げに時間がかかるので、配送と返品を整えてから着手します。</p>
+  <figure>
+    <svg viewBox="0 0 720 340" role="img" aria-label="価格の安さと到着の速さ・確実さで四つの領域に分けた競合の位置づけ">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">FIG 2 ─ 価格と到着で四つに分かれる</text>
+      <rect x="96" y="56" width="272" height="118" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".3"/>
+      <rect x="368" y="56" width="272" height="118" rx="10" fill="#E8324A" opacity=".14" stroke="#E8324A" stroke-opacity=".45"/>
+      <rect x="96" y="174" width="272" height="118" rx="10" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <rect x="368" y="174" width="272" height="118" rx="10" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="232" y="104" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">早いが高い</text>
+      <text x="232" y="130" text-anchor="middle" font-size="12" fill="#3A3F46">到着の確実さを言葉にする</text>
+      <text x="504" y="104" text-anchor="middle" font-size="13.5" font-weight="800" fill="#17181C">早くて安い</text>
+      <text x="504" y="130" text-anchor="middle" font-size="12" fill="#3A3F46">最も競争が厳しい領域</text>
+      <text x="232" y="222" text-anchor="middle" font-size="13.5" font-weight="800" fill="#646C7A">遅くて高い</text>
+      <text x="232" y="248" text-anchor="middle" font-size="12" fill="#646C7A">出品を見送る候補</text>
+      <text x="504" y="222" text-anchor="middle" font-size="13.5" font-weight="800" fill="#646C7A">遅いが安い</text>
+      <text x="504" y="248" text-anchor="middle" font-size="12" fill="#646C7A">総額と待ち時間で比較される</text>
+      <path d="M96 292 H648" stroke="#17181C" stroke-width="2"/>
+      <path d="M96 292 V56" stroke="#17181C" stroke-width="2"/>
+      <text x="372" y="320" text-anchor="middle" font-size="12" font-weight="700" fill="#3A3F46">価格の安さ →</text>
+      <text x="60" y="174" font-size="12" font-weight="700" fill="#3A3F46" transform="rotate(-90 60 174)" text-anchor="middle">到着の速さと確実さ →</text>
+    </svg>
+    <figcaption>図2：価格以外の軸を持たないと、右下の比較に巻き込まれる（LEAM編集部作成）</figcaption>
+  </figure>
+<h2 id="s3"><span class="no en">03</span>いちばん効くのは配達完了までの日数で、公式の期限は営業日で刻まれている</h2>
+<p>公式の注文品配送ポリシーは、期限を暦日ではなく<strong>営業日</strong>で定めています。営業日は月曜から金曜で、土曜・日曜・日本の祝祭日は非営業日です。金曜夕方の注文は月曜からの数え方になります。</p>
+<p>同ポリシーでは、認定総合配送業者から一社を選び、追跡可能な配送オプションを使うことが必須です。配送ラベルには<strong>販売者の正式な名称及び住所</strong>の記載も求められます。</p>
+<div class="tw"><table><thead><tr><th>やること</th><th>公式に定められた期限</th><th>守れないと動く指標</th></tr></thead><tbody><tr><td>注文の確認、梱包、配送ラベルの貼り付け</td><td>翌営業日から起算して2営業日目の23:59までに「集荷待ち」へ</td><td>発送遅延率、セラーの過失によるキャンセル率</td></tr><tr><td>配送業者への引き渡しと追跡番号の入力</td><td>翌営業日から起算して3営業日目の23:59までに「発送済み」へ</td><td>有効追跡率</td></tr><tr><td>配達完了までの状況確認</td><td>通常注文は5営業日目の23:59までに「配達完了」へ</td><td>納期遵守率</td></tr><tr><td>放置した場合</td><td>発注日から7営業日を過ぎて更新されない注文は自動キャンセル</td><td>セラーの過失によるキャンセル率</td></tr></tbody></table></div><p class="src">表3：注文履行スケジュール（公式ポリシーより抜粋）</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="注文日から配達完了までの公式スケジュールを営業日で並べたタイムライン">
+      <defs><marker id="cbsArrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#17181C"/></marker></defs>
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">FIG 3 ─ 注文履行スケジュール（営業日）</text>
+      <path d="M52 168 H672" stroke="#17181C" stroke-width="2.5" marker-end="url(#cbsArrow)"/>
+      <g font-size="11.5" fill="#787D8A" text-anchor="middle">
+        <text x="72" y="196">注文日</text><text x="192" y="196">1営業日目</text><text x="312" y="196">2営業日目</text>
+        <text x="432" y="196">3営業日目</text><text x="552" y="196">5営業日目</text><text x="660" y="196">7営業日目</text>
+      </g>
+      <g fill="#17181C">
+        <circle cx="72" cy="168" r="6"/><circle cx="192" cy="168" r="5"/><circle cx="312" cy="168" r="6"/>
+        <circle cx="432" cy="168" r="6"/><circle cx="552" cy="168" r="6"/><circle cx="660" cy="168" r="5"/>
+      </g>
+      <rect x="248" y="106" width="128" height="34" rx="9" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="312" y="128" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">集荷待ちへ</text>
+      <path d="M312 140 V160" stroke="#E8324A" stroke-width="2"/>
+      <rect x="368" y="62" width="128" height="34" rx="9" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="432" y="84" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">発送済みへ</text>
+      <path d="M432 96 V160" stroke="#E8324A" stroke-width="2"/>
+      <rect x="488" y="106" width="128" height="34" rx="9" fill="#E8324A"/>
+      <text x="552" y="128" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">配達完了へ</text>
+      <path d="M552 140 V160" stroke="#E8324A" stroke-width="2"/>
+      <text x="660" y="150" text-anchor="middle" font-size="11.5" font-weight="700" fill="#8A5A00">自動キャンセル</text>
+      <text x="52" y="228" font-size="12" fill="#787D8A">営業日は月曜から金曜。土曜・日曜・日本の祝祭日は非営業日として数える</text>
+    </svg>
+    <figcaption>図3：期限はすべて営業日で刻まれている（公式の注文履行スケジュールをLEAM編集部が図式化）</figcaption>
+  </figure>
+<p>一般的な考え方として、国外から一件ずつ発送する形では通関の日数が読みにくく、5営業日目までの配達完了は構造的に厳しくなります。国内在庫なら、守れるかは自社の締め時間と集荷の設計で決まります。訴求ではなく<span class="hl">体制として先に決める</span>部分です。</p>
+<h2 id="s4"><span class="no en">04</span>返品は暦日で走るので、返送先が国内かどうかが採算を分ける</h2>
+<p>配送の期限が営業日だったのに対し、返品と返金の期限は<strong>暦日</strong>で数えます。土日祝で止まらないので、体制の差がそのまま出ます。</p>
+<p>公式ポリシーでは、購入者は配達済みへの更新から30暦日以内に返品・返金を依頼できます。30日を過ぎても、購入者向け保証プログラムの対象なら受け取った日から90暦日以内に申立てが可能です（対象外カテゴリーあり）。セラー側は依頼への対応も検品も2営業日以内で、放置すると自動承認されます。</p>
+<div class="tw"><table><thead><tr><th>起点</th><th>期限</th><th>誰の作業か</th><th>過ぎたときの扱い</th></tr></thead><tbody><tr><td>配達済みへの更新</td><td>30暦日</td><td>購入者の返品・返金依頼</td><td>通常の受付期間が終わる</td></tr><tr><td>注文品の受け取り</td><td>90暦日</td><td>購入者向け保証プログラムの申立て</td><td>対象外カテゴリーがあり商品ごとに確認する</td></tr><tr><td>依頼の送信</td><td>2営業日</td><td>セラーの一次対応</td><td>異議を出さなければ返金が自動承認</td></tr><tr><td>返品対象商品の受領</td><td>2営業日</td><td>セラーの検品と承認・拒否</td><td>対応しなければ返品が自動承認</td></tr><tr><td>購入者が返送の物流情報を登録</td><td>14暦日</td><td>セラーが返送品を受け取る</td><td>受け取らないと自動で返金される</td></tr><tr><td>返品理由の区分</td><td>─</td><td>返送料の負担者の決定</td><td>「不要になった」は購入者、セラー起因はセラー</td></tr></tbody></table></div><p class="src">表4：返品・返金の期限（公式ポリシーより抜粋）</p>
+<p>越境の判断で効くのは五行目です。購入者が返送の物流情報を登録してから14暦日以内にセラーが返品対象商品を受け取らないと、自動で返金されます。<span class="hl">国外へ返送する設計では、この14暦日に現実的な余裕がありません。</span>返送先を国内に置けるかは送料の話ではなく、商品と代金の両方を失うかの話です。</p>
+<h2 id="s5"><span class="no en">05</span>自社が越境で売るなら、値付けの前に六つを決める</h2>
+<p>越境販売の相談は価格から始まりますが、価格は最後に決めるほうが崩れません。先に決めるのは次の六つです。</p>
+<ol class="steps"><li><b>登録する市場</b><p>日本版で登録したアカウントはTikTok Shop Japanのみでの運営が認められます。</p></li><li><b>在庫の置き場所</b><p>5営業日目までに配達完了へ更新できる場所か、通関の日数も含めて数えます。</p></li><li><b>配送業者と締め時間</b><p>認定総合配送業者から選び、追跡番号を入力する時刻まで決めます。</p></li><li><b>返送先</b><p>国内に置けるかを先に確認します。置けないなら14暦日での受領を前提にしません。</p></li><li><b>表示項目</b><p>カテゴリー別の必須項目と許認可の表示要件を出品前に確認します。</p></li><li><b>日本語の一次対応</b><p>2営業日以内に返せるかで、返品・返金の判断を自社で持てるかが変わります。</p></li></ol>
+<div class="tw"><table><thead><tr><th>決めること</th><th>決め方の目安</th><th>決めないと起きること</th></tr></thead><tbody><tr><td>登録する市場</td><td>日本の購入者へ売るなら日本版で登録する</td><td>登録をやり直すことになる</td></tr><tr><td>在庫の置き場所</td><td>5営業日目の配達完了を守れる場所。国外なら通関日数も数える</td><td>自動キャンセルと評価低下が積み上がる</td></tr><tr><td>配送業者と締め時間</td><td>認定業者から選び、追跡番号を入れる時刻まで決める</td><td>集荷待ちへの更新が翌日にずれる</td></tr><tr><td>返送先</td><td>国内に置けるかを先に確認する</td><td>返送品が届く前に自動返金になる</td></tr><tr><td>商品ページの表示項目</td><td>カテゴリー別の必須項目と許認可表示を先に洗い出す</td><td>審査で止まる、掲載後に取り下げ</td></tr><tr><td>日本語の一次対応</td><td>担当と時間帯を決め、2営業日以内に返せる形にする</td><td>返品・返金が自動承認される</td></tr></tbody></table></div><p class="src">表5：越境で売る前に決める六つ</p>
+<p>税金の扱いは購入者向けのTikTok Shop利用及び販売規約に記載があります。商品の供給に税金が賦課される場合、表示される価格及び送料には日本の消費税に加え関税その他の輸入税も含まれ、正確な金額を明示できない場合は見積額が表示される建て付けです。販売者利用規約では、コミッションは日本に所在する顧客に販売された注文について請求されると定められています。</p>
+<div class="box box-warn"><div class="bt">⚠️ 関税と税務は確認先に当てる</div><p>関税率や輸入申告、消費税の課税関係は商品の分類と取引の形で変わります。本記事では数値と手続きを示しません。確認先は<a href="https://www.customs.go.jp/" target="_blank" rel="noopener noreferrer">税関</a>と<a href="https://www.nta.go.jp/" target="_blank" rel="noopener noreferrer">国税庁</a>で、判断が分かれる論点は税理士や通関業者に当ててください。</p></div>
+<h2 id="s6"><span class="no en">06</span>表示と許認可はカテゴリーごとに違うので、出品前に制限付き商品を読む</h2>
+<p>公式ヘルプの制限付き商品ページは、事前承認が必要な商品を並べています。認証、テストレポート、商品やパッケージの画像、規制関連の文書の提出を求められる場合があり、<strong>求められる書類はカテゴリーごとに違います</strong>。</p>
+<p>越境で引っかかりやすいのは、日本の法令に紐づく要求です。自動車・オートバイ関連ではPSE、PSC、技適などへの適合が求められ、商品詳細ページには製造業者および原産地、使用方法、安全警告、アフターサービスの方針まで開示するよう要求されています。</p>
+<div class="tw"><table><thead><tr><th>カテゴリー</th><th>公式に挙げられている書類・表示</th><th>詰まりやすい点</th></tr></thead><tbody><tr><td>食品・飲料・サプリ</td><td>ラベル画像、保存期限・有効期限・製造日・原材料・警告、営業許可</td><td>温度管理品は冷蔵冷凍対応の業者と梱包方法の提出も要る</td></tr><tr><td>美容・パーソナルケア</td><td>化粧品／医薬部外品の製造および流通ライセンス（該当する場合）、生産者名と原産国</td><td>医療的な効果を主張する商品は掲載されない場合がある</td></tr><tr><td>家庭用医療機器</td><td>クラス別の販売業許可・届出、承認番号、資格情報の表示</td><td>Class IIとIIIは法人セラーのみ</td></tr><tr><td>自動車・タイヤ</td><td>履歴事項全部証明書、使用許諾書、PSE・PSC・技適への適合、生産国</td><td>コーポレートセラー限定。中古が不可の枠もある</td></tr><tr><td>アルコール</td><td>通信販売酒類小売業免許など、酒類販売管理者標識の五項目の掲載</td><td>書類の記載が登録した法人情報と一致していること</td></tr><tr><td>中古品</td><td>公安委員会発行の古物商許可証、仕入れ記録、状態の表記</td><td>招待制の枠があり、返品条件も通常と異なる</td></tr></tbody></table></div><p class="src">表6：カテゴリー別の要求（公式ページより抜粋）</p>
+<p>区別したいのは、公式ヘルプが定めているのは<span class="hl">提出物と表示項目</span>で、個々の商品が電気用品安全法や医薬品医療機器等法の要件を満たすかの判断ではない点です。適合の判断は所管の行政に確認します。海外の工場から仕入れる場合、これを仕入れ前に済ませないと在庫を抱えたまま出品できません。</p>
+  <figure>
+    <svg viewBox="0 0 720 360" role="img" aria-label="越境で売るかどうかを在庫・返送先・許認可・総額の順に判断する分岐図">
+      <text x="28" y="32" font-size="13" font-weight="800" fill="#E8324A">FIG 4 ─ 判断の分岐</text>
+      <rect x="242" y="48" width="236" height="40" rx="10" fill="#17181C"/>
+      <text x="360" y="73" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">この商品を出品するか</text>
+      <path d="M360 88 V108" stroke="#17181C" stroke-width="2"/>
+      <path d="M360 108 L470 140 L360 172 L250 140 Z" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="360" y="138" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">5営業日目の配達完了を</text>
+      <text x="360" y="156" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">守れるか</text>
+      <path d="M360 172 V200" stroke="#17181C" stroke-width="2"/>
+      <path d="M470 140 H592" stroke="#646C7A" stroke-width="2" stroke-dasharray="7 6"/>
+      <text x="531" y="132" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">いいえ</text>
+      <rect x="592" y="120" width="104" height="40" rx="10" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="644" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#646C7A">在庫を国内へ</text>
+      <path d="M360 200 L470 232 L360 264 L250 232 Z" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/>
+      <text x="360" y="230" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">返送先を国内に</text>
+      <text x="360" y="248" text-anchor="middle" font-size="12.5" font-weight="700" fill="#17181C">置けるか</text>
+      <path d="M470 232 H592" stroke="#646C7A" stroke-width="2" stroke-dasharray="7 6"/>
+      <text x="531" y="224" text-anchor="middle" font-size="11.5" font-weight="700" fill="#646C7A">いいえ</text>
+      <rect x="592" y="212" width="104" height="40" rx="10" fill="#F4F6F8" stroke="#E3E6EA"/>
+      <text x="644" y="237" text-anchor="middle" font-size="12" font-weight="700" fill="#646C7A">見送る</text>
+      <path d="M360 264 V292" stroke="#17181C" stroke-width="2"/>
+      <rect x="182" y="292" width="356" height="42" rx="10" fill="#E8324A"/>
+      <text x="360" y="318" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">許認可と表示項目を揃えてから値付けへ</text>
+      <text x="28" y="352" font-size="11.5" fill="#787D8A">分岐の順番を固定すると、価格の判断が最後に来る</text>
+    </svg>
+    <figcaption>図4：価格を決めるのは最後（LEAM編集部作成）</figcaption>
+  </figure>
+<h2 id="s7"><span class="no en">07</span>判断の順番を固定し、見送る基準は数えられる形で持つ</h2>
+<p>価格から入ると「安いから売れるはず」になり、法規から入ると何も出品できなくなります。順番を固定すると、損失が小さいところで止まれます。</p>
+<h3>この順番で見る</h3>
+<p>①競合の事業者表示と配送予定日を読む。②注文履行スケジュールを守れるかを直近の実績で数える。③返送先を国内に置けるか確認する。④必須書類と表示項目が揃うか確認する。⑤関税と税務を確認先に当てる。⑥通ったものだけ総額で価格を決める。</p>
+<h3>見送る基準は六つの条件で持つ</h3>
+<p>次のうち一つでも当てはまるなら、先に条件を直します。<strong>直近四週間で5営業日目までの配達完了を守れなかった週がある。返送先を国内に置けない。必須書類が一点でも揃わない。商品ページの必須表示項目を埋め切れない。関税と輸入税を織り込んだ総額で粗利が残らない。日本語の一次対応を2営業日以内に返せる担当がいない。</strong></p>
+<div class="box box-point"><div class="bt">💡 見送りは撤退ではない</div><p>六つはどれも体制で動かせます。国内倉庫を一つ確保すれば二つ同時に解けることもあります。記録には、どの条件で止めたかと、何が変われば再検討するかを書き添えます。</p></div>
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>読み終えたあと、この順番で手を動かすと現状が数字になります。</p>
+<div class="summary-grid">
+<div class="summary-item">競合10商品の事業者表示・配送予定日・返品記載を書き出し、負けている欄を特定する</div>
+<div class="summary-item">直近四週間の注文で、5営業日目までに配達完了へ更新できた割合を自分で数える</div>
+<div class="summary-item">返送先が国内にあるか確認し、無いなら14暦日の受領を前提にしない採算に組む</div>
+<div class="summary-item">扱うカテゴリーの制限付き商品ページを開き、必須書類と表示項目を一覧にする</div>
+<div class="summary-item">関税・輸入税・消費税の論点を書き出し、税関と国税庁に当てる日を決める</div>
+<div class="summary-item">六つの見送り基準に照らし、止める商品と進める商品を今週のうちに分ける</div>
+</div>
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>海外セラーかどうかは、商品ページのどこで分かりますか？</summary><div class="a">公式ヘルプのセラー登録ページに、現地の法令に準拠するため、商品ページへ個人事業主なら氏名と事業所住所、法人なら会社代表者名と法人登記上の事業所住所が表示されると記載されています。まず事業者表示、次に配送予定日を見てください。</div></details><details><summary>海外に在庫を置いたまま、日本のTikTok Shopで売れますか？</summary><div class="a">公式ヘルプは在庫の置き場所を定めていません。ただし注文品配送ポリシーは、通常注文を注文日の翌営業日から起算して5営業日目の23:59までに「配達完了」へ更新することを求めています。この期限を守れるかが分かれ目です。</div></details><details><summary>関税や消費税はどちらが負担しますか？</summary><div class="a">購入者向けのTikTok Shop利用及び販売規約に、表示価格と送料には日本の消費税に加え関税その他の輸入税も含まれ、明示できない場合は見積額を表示すると記載されています。税率と手続きは取引の形で変わるため、税関と国税庁に確認してください。</div></details><details><summary>価格で負けているとき、最初に直すのはどこですか？</summary><div class="a">到着までの日数と、返品を受ける場所です。公式の期限は拠点がどこでも同じ基準なので、国内在庫と国内の返送先は守りやすくなります。値下げは体制を整えた後に回す順番が扱いやすいです。</div></details><details><summary>自社が海外市場のTikTok Shopで売りたい場合はどうなりますか？</summary><div class="a">セラー登録ページに、日本版で登録したアカウントはTikTok Shop Japanのみでの運営が認められると記載されています。別の市場で売るなら、その市場の要件を個別に確認する前提です。</div></details><details><summary>カテゴリーによって必要書類は変わりますか？</summary><div class="a">変わります。制限付き商品は事前承認が必要で、食品はラベル画像と期限の表示、美容は化粧品または医薬部外品の製造および流通ライセンス（該当する場合）、家庭用医療機器はクラス別の販売業許可、酒類は通信販売酒類小売業免許、中古品は古物商許可証が挙げられています。</div></details></div>
+<div class="ctabox"><div class="ct">自社だけで回すか、外部を使うかも含めて整理できます</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。商材と社内体制を伺い、必要な範囲を率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつないで支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list">
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=69203995543313&default_language=ja-JP&identity=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：セラー登録</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2727812995221265&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shop注文品配送ポリシー</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2735097048762128&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：顧客注文のキャンセル、返品及び返金に関するポリシー</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2721296229222161&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：制限付き商品</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2979955248465665&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shop利用及び販売規約</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TIKTOK SHOP販売者利用規約</a>（2026年9月2日確認）</li>
+<li><a href="https://www.customs.go.jp/" target="_blank" rel="noopener noreferrer">税関</a>／<a href="https://www.nta.go.jp/" target="_blank" rel="noopener noreferrer">国税庁</a>（関税・消費税の確認先）</li>
+</ul>
+<p class="src">仕様やポリシーは更新されることがあります。本記事は2026年9月2日時点の日本向け公式情報と、LEAM編集部の実務整理を区別して記載し、関税・税制の数値は確認先のみ示しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">関連記事</span><b>TikTok Shopとは｜仕組みと始め方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/market-outlook/"><span class="rc">関連記事</span><b>TikTok Shopの市場規模と今後</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/marketplace-comparison/"><span class="rc">関連記事</span><b>他モールとの比較</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">海外セラーかどうかは、商品ページの事業者表示で確かめられる</a></li><li><a href="#s2">価格で並べない相手には、配送・返品・言語・レビューの四つで差を作る</a></li><li><a href="#s3">いちばん効くのは配達完了までの日数で、公式の期限は営業日で刻まれている</a></li><li><a href="#s4">返品は暦日で走るので、返送先が国内かどうかが採算を分ける</a></li><li><a href="#s5">自社が越境で売るなら、値付けの前に六つを決める</a></li><li><a href="#s6">表示と許認可はカテゴリーごとに違うので、出品前に制限付き商品を読む</a></li><li><a href="#s7">判断の順番を固定し、見送る基準は数えられる形で持つ</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの越境相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "海外セラーかどうかは、商品ページのどこで分かりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプのセラー登録ページに、現地の法令に準拠するため、商品ページへ個人事業主なら氏名と事業所住所、法人なら会社代表者名と法人登記上の事業所住所が表示されると記載されています。まず事業者表示、次に配送予定日を見てください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "海外に在庫を置いたまま、日本のTikTok Shopで売れますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプは在庫の置き場所を定めていません。ただし注文品配送ポリシーは、通常注文を注文日の翌営業日から起算して5営業日目の23:59までに「配達完了」へ更新することを求めています。この期限を守れるかが分かれ目です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "関税や消費税はどちらが負担しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "購入者向けのTikTok Shop利用及び販売規約に、表示価格と送料には日本の消費税に加え関税その他の輸入税も含まれ、明示できない場合は見積額を表示すると記載されています。税率と手続きは取引の形で変わるため、税関と国税庁に確認してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "価格で負けているとき、最初に直すのはどこですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "到着までの日数と、返品を受ける場所です。公式の期限は拠点がどこでも同じ基準なので、国内在庫と国内の返送先は守りやすくなります。値下げは体制を整えた後に回す順番が扱いやすいです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "自社が海外市場のTikTok Shopで売りたい場合はどうなりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "セラー登録ページに、日本版で登録したアカウントはTikTok Shop Japanのみでの運営が認められると記載されています。別の市場で売るなら、その市場の要件を個別に確認する前提です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "カテゴリーによって必要書類は変わりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "変わります。制限付き商品は事前承認が必要で、食品はラベル画像と期限の表示、美容は化粧品または医薬部外品の製造および流通ライセンス（該当する場合）、家庭用医療機器はクラス別の販売業許可、酒類は通信販売酒類小売業免許、中古品は古物商許可証が挙げられています。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

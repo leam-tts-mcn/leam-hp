@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの顧客対応｜返信テンプレート</title>
+<meta name="description" content="TikTok Shopの購入前質問・配送状況・不具合・返品・低評価への対応を整理しました。返信テンプレートと引き継ぎのルールつきです。">
+<link rel="canonical" href="https://leam.co.jp/column/tiktok-shop-customer-support/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの顧客対応｜返信テンプレート">
+<meta property="og:description" content="TikTok Shopの購入前質問・配送状況・不具合・返品・低評価への対応を整理しました。返信テンプレートと引き継ぎのルールつきです。">
+<meta property="og:url" content="https://leam.co.jp/column/tiktok-shop-customer-support/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの顧客対応｜返信テンプレート">
+<meta name="twitter:description" content="TikTok Shopの購入前質問・配送状況・不具合・返品・低評価への対応を整理しました。返信テンプレートと引き継ぎのルールつきです。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの顧客対応｜返信テンプレート", "description": "TikTok Shopの購入前質問・配送状況・不具合・返品・低評価への対応を整理しました。返信テンプレートと引き継ぎのルールつきです。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-shop-customer-support/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの顧客対応｜返信テンプレート", "item": "https://leam.co.jp/column/tiktok-shop-customer-support/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの顧客対応｜問い合わせ返信テンプレートと運用ルール</p>
+<span class="cat">顧客対応</span>
+<h1>TikTok Shopの顧客対応｜問い合わせ返信テンプレートと運用ルール</h1>
+<div class="meta"><time class="upd" datetime="2026-08-30" aria-label="更新日">更新日：2026年8月30日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="TikTok Shopの顧客対応：左の赤い問い合わせの吹き出しが、砂が落ちていく砂時計の上をシアンの矢印で越えて、右の判断担当のクリップボードへ渡り、承認か拒否のチェックが付けられる。期限が切れる前に決める人へ引き継ぐ運用を表したイラスト">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <path d="M0 0h1200v312c-98 30-192 26-300 4-106-22-196-54-308-48-112 6-198 50-308 60-96 9-190-2-284-30z" fill="#F6F7F9"/>
+  <ellipse cx="880" cy="246" rx="270" ry="205" fill="#EFF1F4"/>
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="62" cy="66" r="5"/><circle cx="98" cy="66" r="5"/><circle cx="134" cy="66" r="5"/><circle cx="170" cy="66" r="5"/>
+      <circle cx="62" cy="102" r="5"/><circle cx="98" cy="102" r="5"/><circle cx="134" cy="102" r="5"/><circle cx="170" cy="102" r="5"/>
+      <circle cx="62" cy="138" r="5"/><circle cx="98" cy="138" r="5"/><circle cx="134" cy="138" r="5"/><circle cx="170" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(706 -4)"/>
+  </g>
+  <path d="M0 508c150-28 274-14 402 8 130 22 248 30 372 10 122-20 238-42 426-24v128H0z" fill="#ECEEF1"/>
+  <g>
+    <rect x="852" y="252" width="252" height="214" rx="20" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="852" y="252" width="252" height="214" rx="20" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="876" y="288" width="204" height="166" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="898" y="306" width="28" height="28" rx="8" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+    <path d="M906 320l7 8 13-15" fill="none" stroke="#25F4EE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="940" y="313" width="104" height="14" rx="7" fill="#DFE0E2"/>
+    <rect x="898" y="352" width="28" height="28" rx="8" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+    <path d="M906 366l7 8 13-15" fill="none" stroke="#25F4EE" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="940" y="359" width="86" height="14" rx="7" fill="#DFE0E2"/>
+    <rect x="898" y="398" width="28" height="28" rx="8" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+    <rect x="940" y="405" width="112" height="14" rx="7" fill="#DFE0E2"/>
+    <rect x="936" y="232" width="84" height="40" rx="12" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-6 670 400)">
+    <path d="M618 326H722L678 400L722 474H618L662 400Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="600" y="300" width="140" height="26" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="600" y="474" width="140" height="26" rx="10" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M618 326H722L678 400L722 474H618L662 400Z" fill="#FFFFFF"/>
+    <path d="M637 358H703L678 400H662Z" fill="#FE2C55"/>
+    <path d="M628 474H712L704 454Q670 430 636 454Z" fill="#FE2C55"/>
+    <path d="M670 406V450" fill="none" stroke="#CE1730" stroke-width="6" stroke-linecap="round"/>
+    <path d="M618 326H722L678 400L722 474H618L662 400Z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="600" y="300" width="140" height="26" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="600" y="474" width="140" height="26" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <path d="M666 246V290" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 9"/>
+  <g>
+    <path d="M546 292C596 190 712 158 812 232L828 207L859 290L770 285L786 260C700 196 606 228 560 324Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M546 292C596 190 712 158 812 232L828 207L859 290L770 285L786 260C700 196 606 228 560 324Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(-2.5 314 342)">
+    <path d="M122 190H506A26 26 0 0 1 532 216V410A26 26 0 0 1 506 436H262L196 494L206 436H122A26 26 0 0 1 96 410V216A26 26 0 0 1 122 190Z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <path d="M122 190H506A26 26 0 0 1 532 216V410A26 26 0 0 1 506 436H262L196 494L206 436H122A26 26 0 0 1 96 410V216A26 26 0 0 1 122 190Z" fill="#FE2C55"/>
+    <path d="M122 190H506A26 26 0 0 1 532 216V268H96V216A26 26 0 0 1 122 190Z" fill="#CE1730"/>
+    <circle cx="146" cy="229" r="17" fill="#FFFFFF"/>
+    <rect x="182" y="220" width="170" height="18" rx="9" fill="#FFFFFF"/>
+    <rect x="140" y="300" width="306" height="22" rx="11" fill="#FFFFFF"/>
+    <rect x="140" y="342" width="352" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="140" y="380" width="244" height="20" rx="10" fill="#FFFFFF"/>
+    <circle cx="152" cy="414" r="10" fill="#FFFFFF"/>
+    <circle cx="190" cy="414" r="10" fill="#FFFFFF"/>
+    <circle cx="228" cy="414" r="10" fill="#FFFFFF"/>
+    <path d="M122 190H506A26 26 0 0 1 532 216V410A26 26 0 0 1 506 436H262L196 494L206 436H122A26 26 0 0 1 96 410V216A26 26 0 0 1 122 190Z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <circle cx="1150" cy="100" r="16" fill="#25F4EE"/>
+  <circle cx="568" cy="562" r="13" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTok Shopの顧客対応｜問い合わせ返信テンプレートと運用ルール（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopの顧客対応は、返信文を早く送るだけの仕事ではありません。購入者の状況を確認し、プラットフォームの手順に沿って、商品・物流・返品担当へ正しく引き継ぐ運用です。公式のコミュニケーションガイドラインは、購入者をプラットフォーム外へ誘導したり、外部で取引・返金を処理したりする行為を禁止しています。本記事では、購入前からアフターセールスまでの返信テンプレートと、社内運用の作り方を解説します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>購入前・配送・不具合・返品・レビューを分けて対応する方法</li><li>プラットフォーム内で安全に使える返信テンプレートの骨格</li><li>担当不明を防ぐエスカレーション表と品質確認の仕組み</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">顧客対応</span><b><a href="https://leam.co.jp/column/returns-refunds/">返品・返金ルールと対応フロー</a></b><span>返品・返金の判断基準</span></div>
+    <div class="relcard"><span class="rc">顧客対応</span><b><a href="https://leam.co.jp/column/review-management/">レビューの集め方と低評価対応</a></b><span>対応がレビューに反映される</span></div>
+    <div class="relcard"><span class="rc">出荷体制</span><b><a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷体制</a></b><span>問い合わせの大半は配送起因</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">TikTok Shopの運用課題を無料で整理します</div><p>商品・コンテンツ・クリエイター・ショップ運用のどこに詰まりがあるかを伺い、次に確認すべきことを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">顧客対応は「受領・確認・回答・次の行動」の四段階で統一する</a></li><li><a href="#s2">購入前の質問は結論・条件・確認先を短く返す</a></li><li><a href="#s3">配送問い合わせは注文状態を確認し、見込みではなく現在地を伝える</a></li><li><a href="#s4">不具合・返品・返金は証拠収集と判断担当を分ける</a></li><li><a href="#s5">低評価レビューは反論せず、事実確認と改善の入口にする</a></li><li><a href="#s6">担当表・返信期限・記録項目を決めると顧客対応が属人化しない</a></li><li><a href="#s7">返信品質は速さ・正確さ・解決・改善の四点でレビューする</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>顧客対応は「受領・確認・回答・次の行動」の四段階で統一する</h2><p>問い合わせの種類が違っても、返信の骨格は共通化できます。まず受領を伝え、注文や商品の事実を確認し、結論を答え、購入者が次に何をすればよいかを示します。</p><div class="tw"><table><thead><tr><th>段階</th><th>書くこと</th><th>避けること</th></tr></thead><tbody><tr><td>受領</td><td>問い合わせ内容を短く言い換える</td><td>定型文だけで質問を無視する</td></tr><tr><td>確認</td><td>注文・商品・配送・画像など必要情報</td><td>不要な個人情報を求める</td></tr><tr><td>回答</td><td>確認できた事実と対応可否</td><td>推測・責任の押し付け・強い断定</td></tr><tr><td>次の行動</td><td>プラットフォーム内の手順と期限</td><td>外部連絡先や外部決済へ誘導する</td></tr></tbody></table></div><p class="src">返信は四段階で読みやすくする（LEAM編集部作成）</p><div class="box box-point"><div class="bt">💡 テンプレートは骨格だけ固定</div><p>名前、注文、商品、状況、期限を確認してから送ります。定型文をそのまま貼り付けず、質問への答えが一文目にあるかを見直してください。</p></div>
+  <figure> <svg viewBox="0 0 720 165" role="img" aria-label="顧客対応の返信を受領・確認・回答・次の行動の四段階に統一する骨格を示した図"><rect x="20" y="40" width="155" height="85" rx="12" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="97.5" y="26" text-anchor="middle" font-size="11" font-weight="800" fill="#787D8A">01</text><text x="97.5" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">受領</text><text x="97.5" y="92" text-anchor="middle" font-size="11" fill="#787D8A">内容を短く</text><text x="97.5" y="109" text-anchor="middle" font-size="11" fill="#787D8A">言い換えて返す</text><path d="M177 82.5 H189" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M183 75.5 L195 82.5 L183 89.5 Z" fill="#787D8A"/><rect x="201" y="40" width="155" height="85" rx="12" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="278.5" y="26" text-anchor="middle" font-size="11" font-weight="800" fill="#787D8A">02</text><text x="278.5" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">確認</text><text x="278.5" y="92" text-anchor="middle" font-size="11" fill="#787D8A">注文・商品</text><text x="278.5" y="109" text-anchor="middle" font-size="11" fill="#787D8A">配送・画像</text><path d="M358 82.5 H370" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M364 75.5 L376 82.5 L364 89.5 Z" fill="#787D8A"/><rect x="382" y="40" width="155" height="85" rx="12" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="459.5" y="26" text-anchor="middle" font-size="11" font-weight="800" fill="#787D8A">03</text><text x="459.5" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">回答</text><text x="459.5" y="92" text-anchor="middle" font-size="11" fill="#787D8A">結論を先に</text><text x="459.5" y="109" text-anchor="middle" font-size="11" fill="#787D8A">確認できた事実のみ</text><path d="M539 82.5 H551" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M545 75.5 L557 82.5 L545 89.5 Z" fill="#787D8A"/><rect x="563" y="40" width="155" height="85" rx="12" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="640.5" y="26" text-anchor="middle" font-size="11" font-weight="800" fill="#787D8A">04</text><text x="640.5" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">次の行動</text><text x="640.5" y="92" text-anchor="middle" font-size="11" fill="#787D8A">購入者が</text><text x="640.5" y="109" text-anchor="middle" font-size="11" fill="#787D8A">次に何をするか</text><text x="360" y="151" text-anchor="middle" font-size="11.5" fill="#787D8A">問い合わせの種類が違っても、返信の骨格は共通化できる</text></svg> <figcaption>図1：返信は四段階でそろえる（LEAM編集部作成）</figcaption> </figure><h2 id="s2"><span class="no en">02</span>購入前の質問は結論・条件・確認先を短く返す</h2><p>サイズ、素材、使用方法、在庫、配送予定などの購入前質問では、商品ページと最新在庫を確認し、結論を先に答えます。分からない場合は推測せず、確認に必要な時間と返信方法を伝えます。</p><div class="tw"><table><thead><tr><th>質問</th><th>返信テンプレート</th><th>社内確認</th></tr></thead><tbody><tr><td>サイズ</td><td>『お問い合わせありがとうございます。［商品名］の［箇所］は［確認できた寸法・選び方］です。［注意条件］もご確認ください。』</td><td>商品仕様・計測条件</td></tr><tr><td>在庫</td><td>『［バリエーション］は、現時点では［表示状況］です。最新の在庫は商品ページをご確認ください。』</td><td>販売可能在庫</td></tr><tr><td>使い方</td><td>『［用途］では［手順］でお使いいただけます。［避ける条件］があります。』</td><td>説明書・注意事項</td></tr><tr><td>判断不能</td><td>『確認が必要なため、担当部署で調べてこちらのチャットからご案内します。』</td><td>担当と回答期限</td></tr></tbody></table></div><p class="src">購入前返信は商品資料と一致させる（LEAM編集部作成）</p><div class="box box-warn"><div class="bt">⚠️ 表示と回答をそろえる</div><p>チャットで案内する仕様が商品ページと違う場合、先に商品情報の誤りを確認します。個別返信だけで終わらせず、同じ質問が続くなら商品ページを直します。</p></div>
+  <figure> <svg viewBox="0 0 720 210" role="img" aria-label="購入前の質問への返信について、定型文や推測で答える場合と、結論・条件・確認先を短く返す場合を対比した図"><rect x="20" y="20" width="320" height="168" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="180" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">やってしまう返信</text><text x="180" y="86" text-anchor="middle" font-size="12" fill="#454956">定型文だけで返す</text><text x="180" y="112" text-anchor="middle" font-size="12" fill="#454956">推測で答える</text><text x="180" y="138" text-anchor="middle" font-size="12" fill="#454956">不要な個人情報を聞く</text><text x="180" y="170" text-anchor="middle" font-size="11" fill="#787D8A">もう一度同じ質問が来る</text><rect x="380" y="20" width="320" height="168" rx="14" fill="#ffffff" stroke="#E8324A" stroke-width="1.5"/><text x="540" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">購入前質問の返信</text><text x="540" y="86" text-anchor="middle" font-size="12" fill="#454956">結論を先に書く</text><text x="540" y="112" text-anchor="middle" font-size="12" fill="#454956">条件を添える</text><text x="540" y="138" text-anchor="middle" font-size="12" fill="#454956">分からなければ期限を伝える</text><text x="540" y="170" text-anchor="middle" font-size="11" fill="#C2203A">商品ページと最新在庫を見てから答える</text><path d="M342 104.0 H368" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M362 97.0 L374 104.0 L362 111.0 Z" fill="#787D8A"/></svg> <figcaption>図2：購入前の質問は結論から返す（LEAM編集部作成）</figcaption> </figure><h2 id="s3"><span class="no en">03</span>配送問い合わせは注文状態を確認し、見込みではなく現在地を伝える</h2><p>配送状況の問い合わせでは、注文番号、出荷状態、追跡情報、配送業者側の情報を確認します。社内の予定だけで到着を約束せず、確認できた現在地と次の確認方法を伝えます。</p><div class="tw"><table><thead><tr><th>状態</th><th>返信の骨格</th><th>次の社内行動</th></tr></thead><tbody><tr><td>出荷前</td><td>受注状況と出荷予定を確認中であることを案内</td><td>倉庫・在庫・締め時刻を確認</td></tr><tr><td>出荷済み</td><td>追跡情報と最新状態の確認方法を案内</td><td>伝票と配送業者情報を照合</td></tr><tr><td>追跡停止</td><td>確認中であることと次の連絡方法を案内</td><td>配送業者・倉庫へ調査</td></tr><tr><td>誤配送</td><td>状況を受領し、公式手順に沿って対応する旨を案内</td><td>商品・注文・画像を確認し責任者へ</td></tr></tbody></table></div><p class="src">配送返信は注文状態ごとに分ける（LEAM編集部作成）</p><p>購入者へは、プラットフォーム内の注文情報と公式プロセスに沿って案内します。外部で返金や追加請求を持ちかけないでください。</p><h2 id="s4"><span class="no en">04</span>不具合・返品・返金は証拠収集と判断担当を分ける</h2><p>商品不具合や返品の問い合わせは、チャット担当が独自判断せず、必要情報をそろえて商品・物流・返品担当へ渡します。購入者へ同じ説明を何度も求めないよう、記録を一つにまとめます。</p>
+<div class="box box-warn"><div class="bt">⚠️ 返品リクエストには対応期限がある</div><p>返品・返金のリクエストは、<strong>期限内に承認・拒否をしないと自動的に承認されます</strong>。「確認します」で止めたまま社内を回していると、判断の余地ごと失います。期限は変更されることがあるため、注文ごとに管理画面へ表示される実際の期限を正としてください。一次担当が引き継ぐ前に、期限内で判断する担当を決めておきます（<a href="https://leam.co.jp/column/returns-refunds/">返品・返金ルールと対応フロー</a>）。</p></div><ol class="steps"><li><b>問い合わせを受領する</b><p>不便をかけている状況を認識し、確認を始めることを伝えます。</p></li><li><b>注文と商品を特定する</b><p>注文情報、SKU、受取状態、問題箇所を確認します。</p></li><li><b>必要な証拠だけを案内する</b><p>写真や状況説明など、判断に必要な範囲に絞ります。</p></li><li><b>社内担当へ引き継ぐ</b><p>商品、物流、返品のどこが判断するかを決めます。</p></li><li><b>公式プロセスで回答する</b><p>購入者へ次の手順、確認状況、連絡方法を案内します。</p></li></ol><div class="box box-point"><div class="bt">💡 一回の記録で引き継ぐ</div><p>注文、商品、問題、添付、過去返信、次の担当を一行にまとめると、購入者へ重複質問をしにくくなります。</p></div>
+  <figure> <svg viewBox="0 0 720 274" role="img" aria-label="不具合や返品の問い合わせでは、返品リクエストに期限があり期限内に承認拒否しないと自動承認されること、チャット担当は情報収集に徹し商品物流担当が判断すること、記録を一つにまとめることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">不具合・返品は「集める人」と「決める人」を分ける</text><rect x="20" y="40" width="680" height="44" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="52" y="67" text-anchor="middle" font-size="15" font-weight="900" fill="#C2203A">1</text><text x="170" y="67" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">🔴 期限がある</text><text x="460" y="67" text-anchor="middle" font-size="11.5" fill="#787D8A">返品リクエストは期限内に承認・拒否しないと自動承認になる</text><rect x="20" y="92" width="680" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="52" y="119" text-anchor="middle" font-size="15" font-weight="900" fill="#787D8A">2</text><text x="170" y="119" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">チャット担当</text><text x="460" y="119" text-anchor="middle" font-size="11.5" fill="#787D8A">必要情報をそろえる。独自に可否を判断しない</text><rect x="20" y="144" width="680" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="52" y="171" text-anchor="middle" font-size="15" font-weight="900" fill="#787D8A">3</text><text x="170" y="171" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">商品・物流担当</text><text x="460" y="171" text-anchor="middle" font-size="11.5" fill="#787D8A">事実を確認し、可否を決める</text><rect x="20" y="196" width="680" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="52" y="223" text-anchor="middle" font-size="15" font-weight="900" fill="#787D8A">4</text><text x="170" y="223" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">記録は一つに</text><text x="460" y="223" text-anchor="middle" font-size="11.5" fill="#787D8A">購入者へ同じ説明を何度も求めない</text><text x="360" y="266" text-anchor="middle" font-size="11.5" fill="#787D8A">「確認します」で止めたまま期限を過ぎると、判断しないまま承認される</text></svg> <figcaption>図3：証拠を集める人と、可否を決める人を分ける（LEAM編集部作成）</figcaption> </figure><h2 id="s5"><span class="no en">05</span>低評価レビューは反論せず、事実確認と改善の入口にする</h2><p>低評価へ公開で反論すると、購入者との対立が目立ちます。まず内容を分類し、注文・商品・配送の事実を確認します。公開返信は個人情報や注文詳細を書かず、受領、確認姿勢、プラットフォーム内での案内に絞ります。</p><div class="tw"><table><thead><tr><th>レビュー内容</th><th>内部対応</th><th>公開返信の方向</th></tr></thead><tbody><tr><td>商品説明との違い</td><td>ページと実物を照合</td><td>内容を受け止め、確認・改善を伝える</td></tr><tr><td>破損・不具合</td><td>注文と梱包・製造を確認</td><td>公式手順で状況確認する旨を案内</td></tr><tr><td>配送</td><td>出荷・追跡・梱包を確認</td><td>不便への認識と確認姿勢</td></tr><tr><td>使い方</td><td>説明不足か誤使用か確認</td><td>正しい確認先を簡潔に案内</td></tr><tr><td>感想</td><td>傾向を蓄積</td><td>必要に応じ丁寧に受領</td></tr></tbody></table></div><p class="src">レビューは原因分類して改善へつなぐ（LEAM編集部作成）</p><div class="box box-warn"><div class="bt">⚠️ レビュー操作をしない</div><p>評価変更を不当に迫る、嫌がらせをする行為は規約違反です。<strong>高評価と引き換えにクーポンや返金を出すなど、見返りを条件にしたレビュー依頼は、景品表示法のステルスマーケティング規制に触れるおそれ</strong>があります。線引きは<a href="https://leam.co.jp/column/review-management/">レビューの集め方と低評価への対応</a>で詳しく扱っています。</p></div><h2 id="s6"><span class="no en">06</span>担当表・返信期限・記録項目を決めると顧客対応が属人化しない</h2><p>公式のショップパフォーマンススコアでは、カスタマーサービスの指標として24時間応答率とアフターセールス対応時間が示されています。最新の評価条件は公式で確認しつつ、社内ではより短い一次確認の目標を置き、休日も含めて担当を決めます。</p><div class="tw"><table><thead><tr><th>問い合わせ</th><th>一次担当</th><th>判断担当</th><th>記録</th></tr></thead><tbody><tr><td>商品仕様</td><td>チャット担当</td><td>商品担当</td><td>質問・回答・根拠資料</td></tr><tr><td>在庫・発送</td><td>チャット担当</td><td>倉庫・物流</td><td>注文状態・追跡・次回確認</td></tr><tr><td>不具合</td><td>チャット担当</td><td>商品・品質</td><td>写真・ロット・判断</td></tr><tr><td>返品・返金</td><td>チャット担当</td><td>返品責任者</td><td>申請状態・期限・結果</td></tr><tr><td>ポリシー・重大案件</td><td>一次担当</td><td>責任者・専門担当</td><td>事実・影響・対応履歴</td></tr></tbody></table></div><p class="src">一次返信と最終判断を分ける（LEAM編集部作成）</p><p>週次で、繰り返された質問、返信が遅れた原因、商品ページへ戻すべき情報、物流事故を確認します。顧客対応を閉じた作業にせず、商品・コンテンツ・在庫の改善へ戻してください。</p><h2 id="s7"><span class="no en">07</span>返信品質は速さ・正確さ・解決・改善の四点でレビューする</h2><p>返信が速くても誤った案内では問題が広がり、正しくても購入者が次に何をすればよいか分からなければ解決しません。週次で数件を抽出し、一次返信までの時間、事実の正確さ、次の行動、最終解決、商品・物流への改善反映を確認します。</p><div class="tw"><table><thead><tr><th>確認ポイント</th><th>できている状態</th><th>次のアクション</th></tr></thead><tbody><tr><td>質問理解</td><td>購入者の要望を一文で正しく言い換えている</td><td>定型文の前に結論を置き、質問の読み違いを修正する</td></tr><tr><td>本人・注文確認</td><td>必要な注文と商品だけを特定している</td><td>不要な個人情報を求めずプラットフォーム情報を使う</td></tr><tr><td>事実</td><td>商品資料・在庫・追跡・公式手順と回答が一致</td><td>推測語を除き、確認元と担当を記録する</td></tr><tr><td>トーン</td><td>不便を認識し、責任転嫁や反論をしていない</td><td>感情的な案件は責任者確認を通してから送る</td></tr><tr><td>次の行動</td><td>購入者と社内担当の次の手順が分かる</td><td>期限、確認方法、連絡先をプラットフォーム内で明示する</td></tr><tr><td>引き継ぎ</td><td>商品・物流・返品・責任者のどこへ渡すか明確</td><td>『確認します』で止めず次回確認時刻と所有者を置く</td></tr><tr><td>解決</td><td>最終状態と購入者への案内が記録されている</td><td>返信数だけでなく未解決・再問い合わせを確認する</td></tr><tr><td>改善</td><td>繰り返す質問を商品ページや手順へ戻している</td><td>FAQ追加、梱包改善、在庫修正など発生源の担当へ渡す</td></tr></tbody></table></div><p class="src">実務導入ワークシート（LEAM編集部作成）</p><h3>問い合わせタグは発生源へ戻せる粒度で付ける</h3><p>『商品』『配送』だけでは改善担当が動けません。サイズ表不足、使い方不明、在庫表示、出荷遅れ、追跡停止、梱包破損、誤配送、返品手順のように、商品ページ・倉庫・配送・システムのどこへ戻すかが分かるタグにします。タグを増やしすぎず、毎月上位の問い合わせを確認し、件数が少なくても重大な安全・品質案件は別に管理してください。</p><h3>テンプレート変更は承認と施行日を残す</h3><p>返品、返金、配送、商品仕様の案内は、運用や公式条件の変更で古くなることがあります。各テンプレートに確認元、更新日、承認者、適用商品を持たせます。担当者の手元メモへ古い文章が残らないよう、利用場所を一つにし、変更時は旧版を停止します。公開返信と個別チャットでは書ける情報が違うため、同じ文章を流用せず用途別に分けてください。</p><div class="box box-point"><div class="bt">💡 運用へ定着させる</div><p>テンプレートを更新するときは、担当者の言い回しではなく、実際に繰り返された質問と誤解の原因を使います。商品ページで解決できる質問、発送通知で減らせる質問、個別判断が必要な質問を分けると、顧客対応の工数と購入者の迷いを同時に減らせます。</p></div>
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>この記事の要点を、実行順にまとめます。</p><div class="summary-grid"><div class="summary-item">購入前・配送・不具合・返品・レビューを分けて対応する方法</div><div class="summary-item">プラットフォーム内で安全に使える返信テンプレートの骨格</div><div class="summary-item">担当不明を防ぐエスカレーション表と品質確認の仕組み</div></div>
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shop外のメールやSNSへ誘導してよいですか？</summary><div class="a">公式ガイドラインは、購入者をプラットフォーム外へ誘導し、外部で取引や返金を処理する行為を禁止しています。プラットフォーム内の公式手順に沿ってください。</div></details><details><summary>問い合わせへ何時間以内に返信すべきですか？</summary><div class="a">公式のショップ評価には24時間応答率が含まれます。適用条件や最新基準は公式で確認し、社内では休日を含む一次確認の担当を決めてください。</div></details><details><summary>回答が分からないときはどうしますか？</summary><div class="a">推測せず、確認が必要であることと、こちらのチャットで改めて案内することを伝え、商品・物流・返品の担当へ引き継ぎます。</div></details><details><summary>返品・返金をチャットだけで決めてもよいですか？</summary><div class="a">注文状態と適用される公式プロセスを確認し、権限を持つ担当が判断してください。外部で処理しないでください。</div></details><details><summary>低評価レビューへどう返信しますか？</summary><div class="a">反論や個人情報の記載を避け、内容の受領、確認姿勢、公式手順での案内を簡潔に伝えます。内部では原因を商品・配送・説明へ分類します。</div></details><details><summary>返信テンプレートをそのまま使えますか？</summary><div class="a">骨格として使い、注文・商品・状況を確認して個別化してください。質問への結論が先にあり、次の行動が分かるかを確認します。</div></details></div>
+<div class="ctabox"><div class="ct">自社だけで回すか、外部を使うかも含めて整理できます</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。商材と社内体制を伺い、必要な範囲を率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?from=policy&identity=1&knowledge_id=2721296228730641&role=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：お客様とのコミュニケーションガイドライン</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：ショップパフォーマンススコアガイド</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&identity=1&knowledge_id=100037342299905" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年8月30日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、評価条件は更新されることがあります。本記事は2026年8月30日時点で確認できた日本向け公式情報と、LEAM編集部が作成した運用フレームを区別して記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/returns-refunds/"><span class="rc">関連記事</span><b>TikTok Shopの返品・返金ルール</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/review-management/"><span class="rc">関連記事</span><b>TikTok Shopのレビューの集め方と低評価対応</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/shipping-rules/"><span class="rc">関連記事</span><b>TikTok Shopの発送ルールと出荷体制</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">顧客対応は「受領・確認・回答・次の行動」の四段階で統一する</a></li><li><a href="#s2">購入前の質問は結論・条件・確認先を短く返す</a></li><li><a href="#s3">配送問い合わせは注文状態を確認し、見込みではなく現在地を伝える</a></li><li><a href="#s4">不具合・返品・返金は証拠収集と判断担当を分ける</a></li><li><a href="#s5">低評価レビューは反論せず、事実確認と改善の入口にする</a></li><li><a href="#s6">担当表・返信期限・記録項目を決めると顧客対応が属人化しない</a></li><li><a href="#s7">返信品質は速さ・正確さ・解決・改善の四点でレビューする</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "TikTok Shop外のメールやSNSへ誘導してよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ガイドラインは、購入者をプラットフォーム外へ誘導し、外部で取引や返金を処理する行為を禁止しています。プラットフォーム内の公式手順に沿ってください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "問い合わせへ何時間以内に返信すべきですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式のショップ評価には24時間応答率が含まれます。適用条件や最新基準は公式で確認し、社内では休日を含む一次確認の担当を決めてください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "回答が分からないときはどうしますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "推測せず、確認が必要であることと、こちらのチャットで改めて案内することを伝え、商品・物流・返品の担当へ引き継ぎます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "返品・返金をチャットだけで決めてもよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "注文状態と適用される公式プロセスを確認し、権限を持つ担当が判断してください。外部で処理しないでください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "低評価レビューへどう返信しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "反論や個人情報の記載を避け、内容の受領、確認姿勢、公式手順での案内を簡潔に伝えます。内部では原因を商品・配送・説明へ分類します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "返信テンプレートをそのまま使えますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "骨格として使い、注文・商品・状況を確認して個別化してください。質問への結論が先にあり、次の行動が分かるかを確認します。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

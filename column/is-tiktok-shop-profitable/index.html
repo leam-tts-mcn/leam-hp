@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopは儲かる？利益が出る条件と出ない条件</title>
+<meta name="description" content="TikTok Shopは儲かるのか。手数料や送料を引いて粗利を出す型、損益分岐に必要な注文数、赤字になる6パターン、撤退ラインの決め方を解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/is-tiktok-shop-profitable/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopは儲かる？利益が出る条件と出ない条件">
+<meta property="og:description" content="TikTok Shopは儲かるのか。手数料や送料を引いて粗利を出す型、損益分岐に必要な注文数、赤字になる6パターン、撤退ラインの決め方を解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/is-tiktok-shop-profitable/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopは儲かる？利益が出る条件と出ない条件">
+<meta name="twitter:description" content="TikTok Shopは儲かるのか。手数料や送料を引いて粗利を出す型、損益分岐に必要な注文数、赤字になる6パターン、撤退ラインの決め方を解説します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopは儲かる？利益が出る条件と出ない条件", "description": "TikTok Shopは儲かるのか。手数料や送料を引いて粗利を出す型、損益分岐に必要な注文数、赤字になる6パターン、撤退ラインの決め方を解説します。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/is-tiktok-shop-profitable/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopは儲かる？利益が出る条件と出ない条件", "item": "https://leam.co.jp/column/is-tiktok-shop-profitable/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopは儲かる？利益が出る条件と、出ない条件</p>
+<span class="cat">採算</span>
+<h1>TikTok Shopは儲かる？利益が出る条件と、出ない条件</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="TikTok Shopの採算：左に高く積み上がった赤いコインの山（売価）が傾いた樋を滑り落ち、原価・手数料・送料・報酬・広告・返品の6つの穴からグレーのコインが次々に抜け落ちて、右の受け皿にはシアンの利益がわずかに残ることを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v322c-96 32-192 34-292 16-112-20-196-52-306-46-112 6-196 50-306 60-102 9-198-4-296-34z" fill="#F6F7F9"/>
+  <ellipse cx="912" cy="248" rx="268" ry="204" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="62" cy="70" r="5"/><circle cx="98" cy="70" r="5"/><circle cx="134" cy="70" r="5"/><circle cx="170" cy="70" r="5"/>
+      <circle cx="62" cy="106" r="5"/><circle cx="98" cy="106" r="5"/><circle cx="134" cy="106" r="5"/><circle cx="170" cy="106" r="5"/>
+      <circle cx="62" cy="142" r="5"/><circle cx="98" cy="142" r="5"/><circle cx="134" cy="142" r="5"/><circle cx="170" cy="142" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(896 -4)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 514c148-30 272-16 402 6 130 22 248 30 372 10 122-20 238-44 426-26v126H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 傾いた樋＝6つの費目のふるい（関係づけ） ================= -->
+  <g transform="rotate(14 595 285)">
+    <rect x="350" y="262" width="490" height="46" rx="23" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="350" y="262" width="490" height="46" rx="23" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 抜け落ちる穴（6費目） -->
+    <rect x="480" y="276" width="40" height="18" rx="9" fill="#0B0C10"/>
+    <rect x="536" y="276" width="40" height="18" rx="9" fill="#0B0C10"/>
+    <rect x="592" y="276" width="40" height="18" rx="9" fill="#0B0C10"/>
+    <rect x="648" y="276" width="40" height="18" rx="9" fill="#0B0C10"/>
+    <rect x="704" y="276" width="40" height="18" rx="9" fill="#0B0C10"/>
+    <rect x="760" y="276" width="40" height="18" rx="9" fill="#0B0C10"/>
+
+    <!-- 山から滑り出した売価のコイン -->
+    <path d="M368 240v14a28 9 0 0 0 56 0v-14a28 9 0 0 0-56 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M424 236v14a28 9 0 0 0 56 0v-14a28 9 0 0 0-56 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 穴から抜け落ちる費用（従・グレー） ================= -->
+  <g transform="translate(496 348) rotate(-22)">
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(552 400) rotate(16)">
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(606 362) rotate(-34)">
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(660 416) rotate(24)">
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(716 376) rotate(-14)">
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(770 428) rotate(30)">
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 床線 -->
+  <path d="M126 502h300" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- ================= 主役：売価のコインの山（赤） ================= -->
+  <g>
+    <path d="M150 210v276a115 22 0 0 0 230 0V210a115 22 0 0 0-230 0z" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <path d="M150 430v34a115 22 0 0 0 230 0v-34a115 22 0 0 0-230 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M150 386v34a115 22 0 0 0 230 0v-34a115 22 0 0 0-230 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M150 342v34a115 22 0 0 0 230 0v-34a115 22 0 0 0-230 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M150 298v34a115 22 0 0 0 230 0v-34a115 22 0 0 0-230 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M150 254v34a115 22 0 0 0 230 0v-34a115 22 0 0 0-230 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M150 210v34a115 22 0 0 0 230 0v-34a115 22 0 0 0-230 0z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <ellipse cx="265" cy="210" rx="115" ry="22" fill="#CE1730" stroke="#0B0C10" stroke-width="7"/>
+    <ellipse cx="265" cy="210" rx="52" ry="10" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= 樋の出口から受け皿へ落ちる「残り」（シアン） ================= -->
+  <path d="M816 346C846 306 906 300 946 344" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 11"/>
+  <g transform="translate(877 313) rotate(-14)">
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <path d="M-30-8v14a30 9 0 0 0 60 0v-14a30 9 0 0 0-60 0z" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 従：受け皿に残った利益 ================= -->
+  <g>
+    <path d="M910 380v70a90 18 0 0 0 180 0V380a90 18 0 0 0-180 0z" fill="#5E6064" opacity=".15" transform="translate(10 12)"/>
+    <path d="M910 420v30a90 18 0 0 0 180 0v-30a90 18 0 0 0-180 0z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M910 380v30a90 18 0 0 0 180 0v-30a90 18 0 0 0-180 0z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <ellipse cx="1000" cy="380" rx="90" ry="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <ellipse cx="1000" cy="380" rx="44" ry="9" fill="#25F4EE"/>
+
+    <path d="M866 442h276a14 14 0 0 1 13 19l-26 62a20 20 0 0 1-18 12H897a20 20 0 0 1-18-12l-26-62a14 14 0 0 1 13-19z" fill="#5E6064" opacity=".15" transform="translate(10 12)"/>
+    <path d="M866 442h276a14 14 0 0 1 13 19l-26 62a20 20 0 0 1-18 12H897a20 20 0 0 1-18-12l-26-62a14 14 0 0 1 13-19z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M876 470h268" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1132" cy="100" r="16" fill="#25F4EE"/>
+  <circle cx="86" cy="392" r="12" fill="#FE2C55"/>
+  <circle cx="330" cy="566" r="14" fill="#DFE0E2"/>
+</svg>
+    <figcaption>TikTok Shopは儲かる？利益が出る条件と、出ない条件（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">「TikTok Shopは儲かるのか」は、そのままでは答えが出ません。<strong>儲かるかは市場全体では決まらず、商品1点ごとに、売価から費用を引いた残りがプラスかマイナスかで決まる</strong>からです。この記事では1注文あたりの残りを出し、必要な注文数へ翻訳し、赤字の典型と撤退ラインの決め方までを扱います。カテゴリー別の料率は<a href="https://leam.co.jp/column/tiktok-shop-fees/">販売手数料の記事</a>に譲り、ここでは計算の型を示します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>売価から6費目を引いて1注文あたりの残りを出す手順</li><li>公式が定める手数料と報酬の計算基礎の違い</li><li>黒字化に必要な注文数の出し方と、埋めるだけの計算表</li><li>赤字になる6つの典型と、撤退ラインの決め方</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">費用</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/">販売手数料の料率と計算</a></b><span>料率はこちら</span></div>
+    <div class="relcard"><span class="rc">値付け</span><b><a href="https://leam.co.jp/column/pricing-strategy/">売価の決め方</a></b><span>粗利を残す値付け</span></div>
+    <div class="relcard"><span class="rc">物流</span><b><a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用構造</a></b><span>固定費の置き方</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">採算が合うかどうかを一緒に計算します</div><p>原価構成と体制を伺い、どの費目が利益を削っているかを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">儲かるかどうかは「売価から6つ引いた残り」で決まる</a></li><li><a href="#s2">手数料の計算基礎は、値引き後の入金額ではない</a></li><li><a href="#s3">利益が残る商品は5つの条件で見分けられる</a></li><li><a href="#s4">単価が低く選択肢が多い商品は、売れても残らない</a></li><li><a href="#s5">黒字化ラインは「必要な注文数」に翻訳する</a></li><li><a href="#s6">赤字になる原因は、ほぼこの6パターンに収まる</a></li><li><a href="#s7">撤退ラインは投入前に、期限と回数で決めておく</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>儲かるかどうかは「売価から6つ引いた残り」で決まる</h2>
+<p>最初にやるのは、1注文あたりの残りを計算することです。費用は<strong>商品原価、販売手数料、送料と梱包、クリエイター報酬、広告費、返品の損失</strong>の6つに整理できます。プラスの商品は増やすほど利益が積み上がり、マイナスの商品は売上が伸びるほど赤字が深くなります。</p>
+<p>分析画面のGMVは利益ではありません。公式ヘルプは、分析のGMVは返品・返金・キャンセルを含むショップのパフォーマンスで、財務の確認は「財務」ページで行うよう案内しています。<span class="hl">GMVが伸びても手元に残らない状態は、指標の設計上ふつうに起こります</span>。</p>
+<div class="tw"><table><thead><tr><th>費目</th><th>何で決まるか</th><th>どこで数字を取るか</th></tr></thead><tbody><tr><td>商品原価</td><td>仕入単価・輸入費用・ロット</td><td>自社の仕入台帳</td></tr><tr><td>販売手数料</td><td>料率と公式の計算基礎</td><td>公式ヘルプ「販売手数料」</td></tr><tr><td>送料・梱包</td><td>重量・サイズ・無料配送</td><td>決済レポートの発送</td></tr><tr><td>クリエイター報酬</td><td>自分で設定した料率</td><td>決済レポートの手数料</td></tr><tr><td>広告費</td><td>出稿の有無と配信量</td><td>広告の管理画面</td></tr><tr><td>返品の損失</td><td>返品率・再販可否・返送料</td><td>決済レポートの返金・調整</td></tr></tbody></table></div>
+<p class="src">1注文の残りを出すために引く6費目（公式の項目定義をもとに整理）</p>
+  <figure>
+    <svg viewBox="0 0 720 250" role="img" aria-label="売価から原価・販売手数料・送料・クリエイター報酬・広告費を順に引いて、残りが利益になることを示す棒グラフ">
+      <text x="30" y="30" font-size="13" font-weight="800" fill="#E8324A">STEP DOWN ─ 1注文の残高</text>
+      <line x1="26" y1="192" x2="700" y2="192" stroke="#C9CDD4" stroke-width="1.5"/>
+      <rect x="30" y="46" width="80" height="146" rx="5" fill="#E8324A" opacity=".92"/>
+      <rect x="128" y="46" width="80" height="146" rx="5" fill="#FDEEF1"/><rect x="128" y="96" width="80" height="96" rx="5" fill="#E8324A" opacity=".8"/>
+      <rect x="226" y="46" width="80" height="146" rx="5" fill="#FDEEF1"/><rect x="226" y="110" width="80" height="82" rx="5" fill="#E8324A" opacity=".72"/>
+      <rect x="324" y="46" width="80" height="146" rx="5" fill="#FDEEF1"/><rect x="324" y="124" width="80" height="68" rx="5" fill="#E8324A" opacity=".64"/>
+      <rect x="422" y="46" width="80" height="146" rx="5" fill="#FDEEF1"/><rect x="422" y="140" width="80" height="52" rx="5" fill="#E8324A" opacity=".56"/>
+      <rect x="520" y="46" width="80" height="146" rx="5" fill="#FDEEF1"/><rect x="520" y="152" width="80" height="40" rx="5" fill="#E8324A" opacity=".48"/>
+      <rect x="618" y="46" width="80" height="146" rx="5" fill="#FDEEF1"/><rect x="618" y="152" width="80" height="40" rx="5" fill="#17181C"/>
+      <text x="70" y="212" text-anchor="middle" font-size="12" font-weight="700" fill="#3A3F46">売価</text>
+      <text x="168" y="212" text-anchor="middle" font-size="12" fill="#3A3F46">−原価</text>
+      <text x="266" y="212" text-anchor="middle" font-size="12" fill="#3A3F46">−手数料</text>
+      <text x="364" y="212" text-anchor="middle" font-size="12" fill="#3A3F46">−送料梱包</text>
+      <text x="462" y="212" text-anchor="middle" font-size="12" fill="#3A3F46">−CR報酬</text>
+      <text x="560" y="212" text-anchor="middle" font-size="12" fill="#3A3F46">−広告費</text>
+      <text x="658" y="212" text-anchor="middle" font-size="12" font-weight="700" fill="#17181C">残り</text>
+      <text x="364" y="238" text-anchor="middle" font-size="12" fill="#787D8A">薄い部分が引かれた費用。最後の濃い棒がその注文の利益</text>
+    </svg>
+    <figcaption>図1：1注文あたりの残高を段階的に引き算する（LEAM編集部作成）</figcaption>
+  </figure>
+<div class="box box-point"><div class="bt">💡 先に決める単位</div><p>計算は全体平均ではなく主力SKU1点ずつで行います。平均だと赤字SKUの損失が黒字SKUに隠れます。</p></div>
+
+<h2 id="s2"><span class="no en">02</span>手数料の計算基礎は、値引き後の入金額ではない</h2>
+<p>粗利計算がずれる最大の原因は、手数料が「いくらに対して」かかるかの取り違えです。公式ヘルプは販売手数料を、<strong>販売手数料率×（カスタマーの支払額＋プラットフォーム割引額−カスタマーへの返金額−プラットフォーム割引の返金額）</strong>と定義し、支払額は商品代金と客が払った配送料の合計税込金額としています。要点は4つです。</p>
+<ol class="steps"><li><b>客が払った送料も計算基礎に入る</b><p>送料をお客様負担にしても、その分が手数料の対象です。送料込みで粗利を組みます。</p></li><li><b>プラットフォーム側が負担した割引は差し引かれない</b><p>公式は、割引時の手数料は支払額にプラットフォーム割引額を加えた金額で算出すると明記しています。安く売れても手数料は割引前の水準です。</p></li>
+<li><b>自分で設定した商品割引は支払額を下げる</b><p>セラー自身の商品割引は支払額を下げるので手数料も下がります。ただし原価と送料は変わりません。</p></li><li><b>返金は手数料だけを戻す</b><p>公式は返品時に販売手数料を返金するとしています。一方、決済レポートの定義ではアフィリエイトコミッションは決済後の返金では返金されません。</p></li></ol>
+<p>公式の定義では、アフィリエイトコミッションは（商品価格（税抜き）−販売者割引）×コミッション率です。<span class="hl">返品されると手数料は戻るのに報酬は戻らないため、返品率の高いSKUは報酬の負担だけが積み上がります</span>。</p>
+  <figure>
+    <svg viewBox="0 0 720 236" role="img" aria-label="販売手数料の計算基礎は、商品代金と客が支払った配送料の税込合計にプラットフォーム割引額を足し戻した金額であることを示す積み上げ図">
+      <text x="30" y="30" font-size="13" font-weight="800" fill="#E8324A">計算基礎の作り方（公式の定義）</text>
+      <rect x="30" y="52" width="250" height="46" rx="6" fill="#E8324A" opacity=".85"/>
+      <text x="155" y="81" text-anchor="middle" font-size="14" font-weight="800" fill="#fff">商品代金（税込）</text>
+      <rect x="288" y="52" width="150" height="46" rx="6" fill="#E8324A" opacity=".6"/>
+      <text x="363" y="81" text-anchor="middle" font-size="13" font-weight="800" fill="#fff">客が払った送料</text>
+      <rect x="446" y="52" width="176" height="46" rx="6" fill="#F2A0AF"/>
+      <text x="534" y="81" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">＋PF割引額</text>
+      <text x="640" y="81" font-size="20" font-weight="900" fill="#17181C">＝</text>
+      <line x1="30" y1="112" x2="622" y2="112" stroke="#17181C" stroke-width="2"/>
+      <text x="326" y="136" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">この合計に料率をかける（＝計算基礎）</text>
+      <rect x="30" y="156" width="290" height="52" rx="8" fill="#F4F6F8" stroke="#C9CDD4" stroke-dasharray="5 4"/>
+      <text x="175" y="180" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3A3F46">セラー自身の商品割引</text>
+      <text x="175" y="198" text-anchor="middle" font-size="12" fill="#787D8A">支払額が下がるので手数料も下がる</text>
+      <rect x="336" y="156" width="290" height="52" rx="8" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="481" y="180" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8A5A00">返金があったとき</text>
+      <text x="481" y="198" text-anchor="middle" font-size="12" fill="#8A5A00">手数料は返るが報酬は返らない</text>
+    </svg>
+    <figcaption>図2：販売手数料の計算基礎と、割引・返金の効き方の違い（公式ヘルプの定義をもとにLEAM編集部作成）</figcaption>
+  </figure>
+<p>実額の突き合わせは決済レポートで行います。公式ヘルプによると決済期間に基づいて毎日つくられ、SKU単位の内訳が入ります。</p>
+<div class="tw"><table><thead><tr><th>公式の項目</th><th>公式の定義（要点）</th><th>自作の粗利表での置き場所</th></tr></thead><tbody><tr><td>総合決済金額</td><td>純売上高＋発送＋手数料＋調整額</td><td>手元に残る実額</td></tr><tr><td>発送</td><td>発送料・客支払い分・返品発送料</td><td>送料の行（返送料を含める）</td></tr><tr><td>手数料</td><td>取引料・紹介手数料・返金管理料・報酬</td><td>手数料と報酬に分ける</td></tr><tr><td>調整額</td><td>物流の調整・違反控除・入金取り消し</td><td>予備費の行</td></tr></tbody></table></div>
+<p class="src">決済レポートの項目と自作粗利表の対応（公式の定義をもとに整理）</p>
+<div class="box box-warn"><div class="bt">⚠️ 料率をここで暗記しない</div><p>料率と例外は改定されます。<a href="https://leam.co.jp/column/tiktok-shop-fees/">販売手数料の記事</a>と公式ヘルプで都度確認し、この式に当てはめます。</p></div>
+
+<h2 id="s3"><span class="no en">03</span>利益が残る商品は5つの条件で見分けられる</h2>
+<p>費目を並べると、残る商品の条件は自動的に決まります。<strong>原価率が低く、動画1本で価値が伝わり、軽くて壊れにくく、返品理由が生まれにくく、買い直しが起きる商品</strong>です。判断は感覚ではなく、次を1つずつ埋めます。</p>
+<div class="tw"><table><thead><tr><th>条件</th><th>確かめ方（数えられる形にする）</th><th>欠けているときの対処</th></tr></thead><tbody><tr><td>原価率が低い</td><td>売価に対する原価の比率</td><td>セット化で単価を上げる</td></tr><tr><td>説明が短くて済む</td><td>前後の違いが映像で見えるか</td><td>用途を1つに絞る</td></tr><tr><td>送料が小さい</td><td>実測の重量・サイズ・常温可否</td><td>同梱前提にする</td></tr><tr><td>返品されにくい</td><td>選択肢の数・体格差・破損</td><td>選択肢を減らし実寸を書く</td></tr><tr><td>買い直しが起きる</td><td>消耗の周期があるか</td><td>獲得費用を回収できる単価に</td></tr></tbody></table></div>
+<p class="src">利益が残る商品の5条件と確認項目（LEAM編集部作成）</p>
+<p>同じカテゴリーでも選択肢の数で返品の起きやすさは変わります。カテゴリー単位の向き不向きは<a href="https://leam.co.jp/column/best-categories/">売れやすいカテゴリーの記事</a>にあるため、ここはSKU単位で判断します。</p>
+
+<h2 id="s4"><span class="no en">04</span>単価が低く選択肢が多い商品は、売れても残らない</h2>
+<p>利益が出ない条件は、出る条件の裏返しではありません。<strong>1注文あたり必ず発生する費用があるため、単価が低いほど不利になる</strong>という構造があります。梱包資材、配送、返送料、問い合わせ対応は単価が低くても同額です。</p>
+<p>選択肢の多さも直接コストです。展開が多いと在庫が分散して欠品と過剰在庫が同時に起き、「思っていたものと違う」返品が増えます。返品の実務は<a href="https://leam.co.jp/column/returns-refunds/">返品・返金の記事</a>にまとめています。</p>
+<p>説明に尺が要る商品も不利です。冒頭で価値が伝わらないと視聴が続かず、クリエイター側にも成果が出ないため継続されません。結果として広告に頼り、費用が固定化します。<span class="hl">「単価が低い」「選択肢が多い」「説明が長い」が3つ揃った商品は、投入前に見送るほうが安全です</span>。</p>
+<div class="box box-warn"><div class="bt">⚠️ 大型・重量・温度管理の商品</div><p>大型品、重量物、冷蔵・冷凍品は送料と事故率が上がります。<a href="https://leam.co.jp/column/shipping-rules/">配送ルールの記事</a>で条件を確認し、送料を仮置きした粗利計算を先に済ませます。</p></div>
+
+<h2 id="s5"><span class="no en">05</span>黒字化ラインは「必要な注文数」に翻訳する</h2>
+<p>「いくら売れれば黒字か」は金額のままでは動けません。注文数まで落とすと、動画本数やクリエイターの人数に翻訳できます。手順は4段です。</p>
+<ol class="steps"><li><b>1注文あたりの貢献利益を出す</b><p>平均注文額から原価・手数料・送料と梱包・報酬を引きます。広告費と固定費は含めません。</p></li><li><b>月の固定費を並べる</b><p>人件費、制作、ツール、代行、倉庫、広告枠を合計します。</p></li><li><b>固定費を貢献利益で割る</b><p>月の固定費÷1注文の貢献利益＝損益分岐に必要な注文数です。</p></li><li><b>注文数を打ち手の量に変える</b><p>必要な注文数÷購入率で必要な訪問数を出し、動画1本あたりの直近実績で割って本数にします。</p></li></ol>
+<p>この4段を通すと、いまの本数では桁が足りないといった不足が見えます。貢献利益がマイナスなら、直す対象は動画ではなく売価か原価か報酬です。</p>
+  <figure>
+    <svg viewBox="0 0 720 272" role="img" aria-label="注文数の増加にともなう貢献利益の累計と固定費の水平線が交わる点が損益分岐であることを示す折れ線グラフ">
+      <text x="30" y="28" font-size="13" font-weight="800" fill="#E8324A">損益分岐＝固定費 ÷ 1注文の貢献利益</text>
+      <line x1="70" y1="46" x2="70" y2="220" stroke="#C9CDD4" stroke-width="1.5"/>
+      <line x1="70" y1="220" x2="690" y2="220" stroke="#C9CDD4" stroke-width="1.5"/>
+      <text x="34" y="52" font-size="11" fill="#787D8A">金額</text>
+      <text x="662" y="240" font-size="11" fill="#787D8A">注文数</text>
+      <path d="M352 150 L690 66 L690 150 Z" fill="#EDF6F5" stroke="none"/>
+      <path d="M70 220 L690 66" fill="none" stroke="#E8324A" stroke-width="3.5"/>
+      <line x1="70" y1="150" x2="690" y2="150" stroke="#17181C" stroke-width="2.5" stroke-dasharray="7 5"/>
+      <text x="86" y="142" font-size="12.5" font-weight="800" fill="#17181C">月の固定費</text>
+      <text x="560" y="58" font-size="12.5" font-weight="800" fill="#B01D36">貢献利益の累計</text>
+      <text x="556" y="128" font-size="12.5" font-weight="800" fill="#0A6E68">ここから黒字</text>
+      <path d="M120 190 L340 190" stroke="#787D8A" stroke-width="1" stroke-dasharray="4 4"/>
+      <text x="122" y="184" font-size="12" fill="#787D8A">この範囲は赤字</text>
+      <circle cx="352" cy="150" r="7" fill="#fff" stroke="#17181C" stroke-width="3"/>
+      <line x1="352" y1="150" x2="352" y2="220" stroke="#17181C" stroke-width="1.5" stroke-dasharray="4 4"/>
+      <text x="352" y="240" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">損益分岐注文数</text>
+      <text x="360" y="264" text-anchor="middle" font-size="12" fill="#787D8A">傾き＝1注文あたりの貢献利益。傾きが負なら交点は生まれない</text>
+    </svg>
+    <figcaption>図3：貢献利益の傾きと固定費の交点で黒字化点が決まる（LEAM編集部作成）</figcaption>
+  </figure>
+<div class="tw"><table><thead><tr><th>欄</th><th>入れる数字</th><th>取得元</th></tr></thead><tbody><tr><td>A 平均注文額</td><td>送料込みの支払額の平均</td><td>決済レポート</td></tr><tr><td>B 商品原価</td><td>1注文あたりの原価</td><td>自社の仕入台帳</td></tr><tr><td>C 販売手数料</td><td>計算基礎×料率</td><td>公式ヘルプ</td></tr><tr><td>D 送料・梱包</td><td>配送料＋資材費＋返品発送料</td><td>配送契約と決済レポート</td></tr><tr><td>E クリエイター報酬</td><td>（税抜価格−販売者割引）×設定料率</td><td>自分の設定値</td></tr><tr><td>F 貢献利益</td><td>A−B−C−D−E</td><td>この表の計算</td></tr><tr><td>G 月の固定費</td><td>人件費・制作・代行・倉庫・広告枠</td><td>自社の費用台帳</td></tr><tr><td>H 損益分岐注文数</td><td>G÷F（Fが負なら計算不能）</td><td>この表の計算</td></tr></tbody></table></div>
+<p class="src">損益分岐の計算に埋める8欄（SKUごとに1枚つくる）</p>
+<div class="box box-point"><div class="bt">💡 予備費の置き方</div><p>公式の項目定義には、物流の調整やポリシー違反控除、入金取り消しといった調整額が並びます。発生しない前提だと月次でずれます。</p></div>
+
+<h2 id="s6"><span class="no en">06</span>赤字になる原因は、ほぼこの6パターンに収まる</h2>
+<p>式が正しくても、前提を間違えると赤字になります。頻出は次の6つで、投入前に計算をやり直せば気づけます。</p>
+<div class="tw"><table><thead><tr><th>パターン</th><th>何が起きているか</th><th>最初に見る数字</th></tr></thead><tbody><tr><td>①優遇料率のまま計算</td><td>新規セラー向け割引が終わり料率が戻る</td><td>終了後の料率での貢献利益</td></tr><tr><td>②返品で報酬だけ残る</td><td>手数料は返るが、報酬は決済後の返金では返らない</td><td>SKUごとの返品率と報酬額</td></tr><tr><td>③送料の逆ざや</td><td>無料配送のラインが原価に入らない</td><td>決済レポートの発送の合計</td></tr><tr><td>④値引きで手数料も下がると誤解</td><td>プラットフォーム負担の割引は計算基礎に足し戻される</td><td>割引期間だけの貢献利益</td></tr><tr><td>⑤広告と報酬の二重負担</td><td>広告費と報酬が同じ注文に乗る</td><td>1注文あたりの獲得費用</td></tr><tr><td>⑥黒字なのに資金が尽きる</td><td>入金より先に仕入れの支払いが来る</td><td>入金予定日と支払日のずれ</td></tr></tbody></table></div>
+<p class="src">赤字になる6パターンと最初に見る数字（LEAM編集部作成）</p>
+<p>⑥は特に見落とされます。公式ヘルプは決済期間を、商品が配達された日から売上金が支払われるまでの期間と定義し、期間終了後に条件を満たせば毎月1日と14日に支払いが開始されると案内しています。<span class="hl">利益が出ることと、仕入れの支払いに間に合うことは別問題です</span>。</p>
+<div class="box box-warn"><div class="bt">⚠️ 期間限定の条件で計画を組まない</div><p>期間や達成条件が付いた優遇は、終了後が通常運転です。優遇期間の数字で判断すると、終了と同時に赤字へ転落します。</p></div>
+
+<h2 id="s7"><span class="no en">07</span>撤退ラインは投入前に、期限と回数で決めておく</h2>
+<p>撤退の判断が遅れるのは、基準を後から作るからです。防ぐには<strong>投入前に期限・試行回数・貢献利益の下限の3つを文章で決めておく</strong>ことです。金額だけの基準は動かしやすいので、回数と期限を併記します。</p>
+<h3>撤退の判断は、売れない理由を3つに切り分けてから</h3>
+<p>成果が出ない状態は3種類あり、対処が違います。第一に、クリエイターが集まらない状態。報酬設定とサンプル提供、案件情報の伝え方の問題が多く、条件の作り直しが先です。第二に、再生されるのに売れない状態。商品ページと価格の問題なので、<a href="https://leam.co.jp/column/not-selling-checklist/">売れない時のチェック</a>を先に通します。第三に、売れているのに残らない状態。これだけは続けるほど損失が増えます。切り分けずに撤退すると、直せば黒字になった商品まで手放します。</p>
+<h3>撤退を決めたら、在庫と関係先の後片付けまで書く</h3>
+<p>撤退は「やめる」だけでは終わりません。在庫の処理先、進行中の案件の連絡、商品ページの扱い、記録の保存までが1セットです。SKU、売価、原価、料率、報酬設定、動画本数、貢献利益、撤退理由を1行に残します。</p>
+<div class="tw"><table><thead><tr><th>確認ポイント</th><th>できている状態</th><th>次のアクション</th></tr></thead><tbody><tr><td>手数料の基礎</td><td>送料込み支払額＋PF割引で計算</td><td>入金額に料率をかけているなら直す</td></tr><tr><td>返品の反映</td><td>返品率・返送料・戻らない報酬がある</td><td>返品ゼロ前提なら行を追加する</td></tr><tr><td>優遇期間</td><td>優遇終了後の料率でもプラス</td><td>マイナスなら売価か原価を先に直す</td></tr><tr><td>資金の並び</td><td>入金予定日と支払日を並べている</td><td>ずれが大きければロットを縮める</td></tr><tr><td>撤退ライン</td><td>期限・試行回数・下限が決まっている</td><td>なければ今日の日付で書く</td></tr></tbody></table></div>
+<p class="src">実務導入ワークシート（LEAM編集部作成）</p>
+  <figure>
+    <svg viewBox="0 0 720 300" role="img" aria-label="貢献利益と注文数と期限の3つの分岐で、継続か直しか撤退かを判定するフローチャート">
+      <text x="30" y="28" font-size="13" font-weight="800" fill="#E8324A">継続・直し・撤退の判定</text>
+      <path d="M150 48 L266 84 L150 120 L34 84 Z" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.6"/>
+      <text x="150" y="80" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">貢献利益は</text>
+      <text x="150" y="98" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">プラスか</text>
+      <path d="M266 84 H332" stroke="#E8324A" stroke-width="2.5"/><path d="M324 79 L334 84 L324 89 Z" fill="#E8324A"/>
+      <text x="298" y="74" text-anchor="middle" font-size="11" font-weight="800" fill="#B01D36">はい</text>
+      <path d="M470 48 L586 84 L470 120 L354 84 Z" fill="#FDEEF1" stroke="#E8324A" stroke-width="1.6"/>
+      <text x="470" y="80" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">分岐点の注文数を</text>
+      <text x="470" y="98" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">超えたか</text>
+      <path d="M586 84 H646" stroke="#0A6E68" stroke-width="2.5"/>
+      <path d="M647 84 V132" stroke="#0A6E68" stroke-width="2.5"/><path d="M642 124 L647 134 L652 124 Z" fill="#0A6E68"/>
+      <text x="616" y="76" font-size="11" font-weight="800" fill="#0A6E68">はい</text>
+      <rect x="600" y="132" width="98" height="52" rx="10" fill="#EDF6F5" stroke="#0A6E68" stroke-width="1.6"/>
+      <text x="649" y="152" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0A6E68">継続して</text>
+      <text x="649" y="170" text-anchor="middle" font-size="12.5" font-weight="800" fill="#0A6E68">量を増やす</text>
+      <path d="M470 120 V166" stroke="#8A5A00" stroke-width="2.5"/><path d="M465 158 L470 168 L475 158 Z" fill="#8A5A00"/>
+      <text x="486" y="146" font-size="11" font-weight="800" fill="#8A5A00">いいえ</text>
+      <path d="M470 166 L586 202 L470 238 L354 202 Z" fill="#FBF3E2" stroke="#8A5A00" stroke-width="1.6"/>
+      <text x="470" y="198" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">決めた期限と</text>
+      <text x="470" y="216" text-anchor="middle" font-size="12.5" font-weight="800" fill="#17181C">試行回数は残っているか</text>
+      <path d="M354 202 H300" stroke="#8A5A00" stroke-width="2.5"/><path d="M308 197 L298 202 L308 207 Z" fill="#8A5A00"/>
+      <rect x="196" y="176" width="100" height="52" rx="10" fill="#FBF3E2" stroke="#8A5A00" stroke-width="1.6"/>
+      <text x="246" y="196" text-anchor="middle" font-size="12.5" font-weight="800" fill="#8A5A00">残っている</text>
+      <text x="246" y="214" text-anchor="middle" font-size="12.5" font-weight="800" fill="#8A5A00">→試行を続ける</text>
+      <path d="M470 238 V270" stroke="#17181C" stroke-width="2.5"/><path d="M465 262 L470 272 L475 262 Z" fill="#17181C"/>
+      <rect x="386" y="264" width="168" height="30" rx="9" fill="#17181C"/>
+      <text x="470" y="284" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">使い切った→撤退する</text>
+      <path d="M150 120 V186" stroke="#B01D36" stroke-width="2.5"/><path d="M145 178 L150 188 L155 178 Z" fill="#B01D36"/>
+      <rect x="34" y="188" width="150" height="56" rx="10" fill="#fff" stroke="#B01D36" stroke-width="1.8"/>
+      <text x="109" y="210" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">売価・原価・報酬</text>
+      <text x="109" y="228" text-anchor="middle" font-size="12.5" font-weight="800" fill="#B01D36">を直す（増やさない）</text>
+      <text x="70" y="146" font-size="11" font-weight="800" fill="#B01D36">いいえ</text>
+    </svg>
+    <figcaption>図4：貢献利益・注文数・期限の順に見て、継続か直しか撤退かを決める（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>今週から着手できる順に並べます。上から手を動かせば、儲かるかを自社の数字で答えられます。</p>
+<div class="summary-grid"><div class="summary-item">① 主力SKU3点で1注文あたりの貢献利益を出す</div><div class="summary-item">② 手数料は入金額ではなく、送料込み支払額＋PF割引を基礎に計算し直す</div><div class="summary-item">③ 固定費÷貢献利益で損益分岐注文数を出し、必要な動画本数に翻訳する</div><div class="summary-item">④ 返品発送料・戻らない報酬・調整額の3行を足す</div><div class="summary-item">⑤ 優遇終了後の料率でもプラスかを確認する</div><div class="summary-item">⑥ 入金予定日と支払日を並べ、撤退ラインを文章で残す</div></div>
+<p>貢献利益がマイナスのまま量を増やす判断だけは避けます。前提が正しければ伸びやすさは追い風になり、間違っていれば損失の増幅装置になります。</p>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopは儲かりますか？</summary><div class="a">市場単位では答えが出ません。売価から原価・販売手数料・送料と梱包・クリエイター報酬・広告費・返品の損失を引いた残りが、SKUごとにプラスかマイナスかで決まります。</div></details><details><summary>販売手数料は、値引きすれば安くなりますか？</summary><div class="a">負担元によって変わります。公式ヘルプは、割引時の販売手数料は支払額にプラットフォーム割引額を加えた金額で算出すると定めています。プラットフォーム負担の割引では下がらず、セラー自身の商品割引では下がります。</div></details><details><summary>返品されたら、支払った費用は戻りますか？</summary><div class="a">費目によって違います。公式ヘルプは、キャンセル・返品・返金のリクエストがあった場合、該当商品の販売手数料を返金するとしています。一方、決済レポートの定義では、決済後は返金が発生してもアフィリエイトコミッションは返金されないと明記されています。</div></details><details><summary>何注文で黒字になりますか？</summary><div class="a">月の固定費を1注文あたりの貢献利益で割った数です。貢献利益は、送料込みの平均注文額から原価・販売手数料・送料と梱包・報酬を引いて出します。マイナスなら注文数を増やしても黒字になりません。</div></details><details><summary>利益が出ているかは、どこで確認できますか？</summary><div class="a">公式ヘルプによれば、分析画面のGMVは返品・返金・キャンセルを含むショップのパフォーマンスで、収入と同じではありません。実額は財務ページと決済レポートで確認します。</div></details><details><summary>撤退はいつ決めればよいですか？</summary><div class="a">商品を投入する前に、期限、試行回数、貢献利益の下限の3つを文章で決めておきます。ただし撤退の前に、クリエイターが集まらないのか、動画は回るが売れないのか、売れるが残らないのかを切り分けます。</div></details></div>
+
+<div class="ctabox"><div class="ct">この計算を自社の数字で埋めるところからご一緒します</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつないで支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861174545&default_language=ja-JP&identity=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shopの販売手数料</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&default_language=ja-JP&identity=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：決済レポートを読む</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342562049&default_language=ja-JP&identity=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：決済および支払い</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=108878516750081&default_language=ja-JP&identity=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：新規セラー向け販売手数料割引</a>（2026年9月2日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&default_language=ja-JP&identity=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ解析の概要</a>（2026年9月2日確認）</li></ul>
+<p class="src">料率、優遇の条件、決済や支払いの仕様は更新されます。本記事は2026年9月2日時点の日本向け公式ヘルプの記載と、LEAM編集部の計算フレームを区別して記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">基礎</span><b>TikTok Shopとは？仕組みと始め方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-roas/"><span class="rc">採算</span><b>ROAS基準と損益分岐の出し方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/creator-commission/"><span class="rc">報酬</span><b>クリエイター報酬の決め方</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">儲かるかどうかは「売価から6つ引いた残り」で決まる</a></li><li><a href="#s2">手数料の計算基礎は、値引き後の入金額ではない</a></li><li><a href="#s3">利益が残る商品は5つの条件で見分けられる</a></li><li><a href="#s4">単価が低く選択肢が多い商品は、売れても残らない</a></li><li><a href="#s5">黒字化ラインは「必要な注文数」に翻訳する</a></li><li><a href="#s6">赤字になる原因は、ほぼこの6パターンに収まる</a></li><li><a href="#s7">撤退ラインは投入前に、期限と回数で決めておく</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "TikTok Shopは儲かりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "市場単位では答えが出ません。売価から原価・販売手数料・送料と梱包・クリエイター報酬・広告費・返品の損失を引いた残りが、SKUごとにプラスかマイナスかで決まります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "販売手数料は、値引きすれば安くなりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "負担元によって変わります。公式ヘルプは、割引時の販売手数料は支払額にプラットフォーム割引額を加えた金額で算出すると定めています。プラットフォーム負担の割引では下がらず、セラー自身の商品割引では下がります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "返品されたら、支払った費用は戻りますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "費目によって違います。公式ヘルプは、キャンセル・返品・返金のリクエストがあった場合、該当商品の販売手数料を返金するとしています。一方、決済レポートの定義では、決済後は返金が発生してもアフィリエイトコミッションは返金されないと明記されています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "何注文で黒字になりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "月の固定費を1注文あたりの貢献利益で割った数です。貢献利益は、送料込みの平均注文額から原価・販売手数料・送料と梱包・報酬を引いて出します。マイナスなら注文数を増やしても黒字になりません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "利益が出ているかは、どこで確認できますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "公式ヘルプによれば、分析画面のGMVは返品・返金・キャンセルを含むショップのパフォーマンスで、収入と同じではありません。実額は財務ページと決済レポートで確認します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "撤退はいつ決めればよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "商品を投入する前に、期限、試行回数、貢献利益の下限の3つを文章で決めておきます。ただし撤退の前に、クリエイターが集まらないのか、動画は回るが売れないのか、売れるが残らないのかを切り分けます。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

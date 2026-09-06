@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのクリエイターブリーフの作り方</title>
+<meta name="description" content="クリエイターへ動画制作を依頼するブリーフを、目的・商品・訴求・必須表現・禁止事項・納品の項目に分けて解説します。ひな形つきです。">
+<link rel="canonical" href="https://leam.co.jp/column/creator-brief-template/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのクリエイターブリーフの作り方">
+<meta property="og:description" content="クリエイターへ動画制作を依頼するブリーフを、目的・商品・訴求・必須表現・禁止事項・納品の項目に分けて解説します。ひな形つきです。">
+<meta property="og:url" content="https://leam.co.jp/column/creator-brief-template/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのクリエイターブリーフの作り方">
+<meta name="twitter:description" content="クリエイターへ動画制作を依頼するブリーフを、目的・商品・訴求・必須表現・禁止事項・納品の項目に分けて解説します。ひな形つきです。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのクリエイターブリーフの作り方", "description": "クリエイターへ動画制作を依頼するブリーフを、目的・商品・訴求・必須表現・禁止事項・納品の項目に分けて解説します。ひな形つきです。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creator-brief-template/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのクリエイターブリーフの作り方", "item": "https://leam.co.jp/column/creator-brief-template/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopのクリエイターブリーフ｜動画制作依頼テンプレートと確認項目</p>
+<span class="cat">クリエイター施策</span>
+<h1>TikTok Shopのクリエイターブリーフ｜動画制作依頼テンプレートと確認項目</h1>
+<div class="meta"><time class="upd" datetime="2026-08-30" aria-label="更新日">更新日：2026年8月30日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="クリエイターブリーフの作り方：左の大きなブリーフ用紙は、赤い錠前が付いた行＝守る商品事実と、シアンの破線で空けた枠＝クリエイターに任せる表現の余白に分かれており、そのブリーフがシアンの矢印で右の縦型動画へ渡され、右下の成果カードで測った結果が破線の矢印でブリーフへ戻って次の依頼が更新される様子を表したイラスト">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <path d="M0 0h1200v336c-96 28-190 34-286 20-112-16-198-50-306-46-112 4-196 46-306 58-104 11-206-2-302-34z" fill="#F6F7F9"/>
+  <ellipse cx="880" cy="250" rx="270" ry="205" fill="#EFF1F4"/>
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/><circle cx="168" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/><circle cx="168" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/><circle cx="168" cy="138" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(700 -6)"/>
+  </g>
+  <path d="M0 508c148-28 272-14 402 10 130 24 248 30 372 8 122-22 238-44 426-24v128H0z" fill="#ECEEF1"/>
+  <path d="M948 316C900 214 780 174 640 196" fill="none" stroke="#C9CBD0" stroke-width="6" stroke-linecap="round" stroke-dasharray="16 14"/>
+  <path d="M600 202l50-20 4 42z" fill="#C9CBD0"/>
+  <path d="M598 322h56v-18l40 32-40 32v-18h-56z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+  <path d="M598 322h56v-18l40 32-40 32v-18h-56z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <g transform="rotate(-4 345 328)">
+    <rect x="110" y="168" width="470" height="320" rx="18" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <rect x="110" y="168" width="470" height="320" rx="18" fill="#FFFFFF"/>
+    <path d="M128 168h434a18 18 0 0 1 18 18v70H110v-70a18 18 0 0 1 18-18z" fill="#FE2C55"/>
+    <rect x="146" y="190" width="228" height="20" rx="10" fill="#FFFFFF"/>
+    <rect x="146" y="222" width="150" height="16" rx="8" fill="#FFFFFF"/>
+    <rect x="452" y="192" width="110" height="48" rx="12" fill="#CE1730"/>
+    <rect x="142" y="276" width="396" height="56" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="152" y="286" width="14" height="36" rx="7" fill="#FE2C55"/>
+    <rect x="180" y="294" width="210" height="16" rx="8" fill="#DFE0E2"/>
+    <rect x="470" y="298" width="34" height="26" rx="6" fill="#FE2C55"/>
+    <path d="M478 298v-10a9 9 0 0 1 18 0v10" fill="none" stroke="#FE2C55" stroke-width="6" stroke-linecap="round"/>
+    <rect x="142" y="346" width="396" height="56" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="152" y="356" width="14" height="36" rx="7" fill="#FE2C55"/>
+    <rect x="180" y="364" width="168" height="16" rx="8" fill="#DFE0E2"/>
+    <rect x="470" y="368" width="34" height="26" rx="6" fill="#FE2C55"/>
+    <path d="M478 368v-10a9 9 0 0 1 18 0v10" fill="none" stroke="#FE2C55" stroke-width="6" stroke-linecap="round"/>
+    <rect x="142" y="416" width="190" height="54" rx="12" fill="none" stroke="#25F4EE" stroke-width="6" stroke-dasharray="14 12" stroke-linejoin="round"/>
+    <rect x="162" y="436" width="100" height="14" rx="7" fill="#25F4EE"/>
+    <rect x="348" y="416" width="190" height="54" rx="12" fill="none" stroke="#25F4EE" stroke-width="6" stroke-dasharray="14 12" stroke-linejoin="round"/>
+    <circle cx="374" cy="443" r="11" fill="#25F4EE"/>
+    <rect x="396" y="436" width="112" height="14" rx="7" fill="#DFE0E2"/>
+    <path d="M110 256h470" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <rect x="110" y="168" width="470" height="320" rx="18" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(4 782 378)">
+    <rect x="706" y="266" width="152" height="224" rx="22" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="706" y="266" width="152" height="224" rx="22" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="722" y="284" width="120" height="188" rx="12" fill="#F6F7F9"/>
+    <rect x="764" y="272" width="36" height="8" rx="4" fill="#DFE0E2"/>
+    <rect x="734" y="296" width="64" height="22" rx="11" fill="#FE2C55"/>
+    <circle cx="782" cy="372" r="24" fill="#DFE0E2"/>
+    <path d="M752 424a30 30 0 0 1 60 0z" fill="#DFE0E2"/>
+    <rect x="734" y="440" width="76" height="16" rx="8" fill="#25F4EE"/>
+  </g>
+  <g>
+    <rect x="920" y="320" width="160" height="170" rx="18" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="920" y="320" width="160" height="170" rx="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="944" y="346" width="72" height="14" rx="7" fill="#DFE0E2"/>
+    <rect x="944" y="430" width="26" height="38" rx="6" fill="#DFE0E2"/>
+    <rect x="982" y="404" width="26" height="64" rx="6" fill="#DFE0E2"/>
+    <rect x="1020" y="372" width="26" height="96" rx="6" fill="#25F4EE"/>
+    <path d="M938 476h124" fill="none" stroke="#C9CBD0" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="1074" cy="326" r="24" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M1062 327l9 10 17-20" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <circle cx="1140" cy="102" r="18" fill="#25F4EE"/>
+  <circle cx="652" cy="556" r="13" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTok Shopのクリエイターブリーフ｜動画制作依頼テンプレートと確認項目（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopのクリエイターブリーフは、台本を細かく縛る書類ではありません。商品について誤解なく伝えるための必須情報と、クリエイターが自分の言葉で表現する余白を分ける設計図です。公式Playbookも、商品ベネフィット、購買ターゲット、差別化ポイント、訴求軸を事前に明文化する考え方を示しています。本記事では、そのまま社内様式へ移せる項目と、依頼後の評価方法を解説します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>クリエイターへ渡す必須情報と表現の自由を分ける方法</li><li>商品・訴求・事実・納品・利用範囲を整理するテンプレート</li><li>再生数だけでなくクリック・購入・品質まで見る評価表</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-invite/">クリエイター招待とコラボの仕組み</a></b><span>ブリーフを渡す前の招待</span></div>
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-commission/">コミッション相場と報酬の決め方</a></b><span>ブリーフに書く報酬条件</span></div>
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み</a></b><span>前提になる仕組みの理解</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">TikTok Shopの運用課題を無料で整理します</div><p>商品・コンテンツ・クリエイター・ショップ運用のどこに詰まりがあるかを伺い、次に確認すべきことを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">ブリーフは「守る事実」と「試す表現」を分けると機能する</a></li><li><a href="#s2">冒頭には目的・ターゲット・一番の訴求・商品リンクを置く</a></li><li><a href="#s3">商品情報はベネフィット・証拠・注意点を対応させる</a></li><li><a href="#s4">構成指定は必須シーンと候補フックだけに絞る</a></li><li><a href="#s5">納品条件・修正・利用範囲は制作前に合意する</a></li><li><a href="#s6">評価は再生数だけでなく、商品クリック・購入・品質・再現性で見る</a></li><li><a href="#s7">投稿前レビューは好みではなく事実・安全・導線・契約範囲で行う</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>ブリーフは「守る事実」と「試す表現」を分けると機能する</h2><p>商品名、仕様、使用方法、注意事項、リンク先は正確にそろえる必要があります。一方、話し方、冒頭の見せ方、日常のエピソードまで固定すると、クリエイターの視聴者に合う自然な表現が失われます。</p><div class="tw"><table><thead><tr><th>固定するもの</th><th>選択肢を渡すもの</th><th>自由に任せるもの</th></tr></thead><tbody><tr><td>商品・SKU・リンク</td><td>訴求候補</td><td>本人の言葉遣い</td></tr><tr><td>確認済み仕様・注意</td><td>実演候補</td><td>撮影場所と生活文脈</td></tr><tr><td>言えない表現（薬機法・景品表示法にふれるもの）</td><td>冒頭の悩み候補</td><td>演出と編集テンポ</td></tr>
+<tr><td>PR表記・関係性の明示</td><td>—</td><td>—</td></tr><tr><td>提出物・期限・連絡先</td><td>CTAの言い回し候補</td><td>コメントへの自然な反応</td></tr></tbody></table></div><p class="src">ブリーフは固定・選択・自由の三層にする（LEAM編集部作成）</p><div class="box box-warn"><div class="bt">⚠️ 報酬や商品提供があるなら、PR表記をブリーフの必須項目に入れる</div><p>報酬の支払いや商品の無償提供を条件に依頼した投稿は、事業者の表示にあたり、景品表示法のステルスマーケティング規制の対象になります。<strong>責任を問われるのは投稿者ではなく依頼した事業者（セラー）側</strong>です。広告であることが視聴者に分かる表示をブリーフの必須項目に入れ、投稿前の確認でも見てください。表示方法は最新の公式ヘルプと消費者庁の公表資料でご確認ください。<br>また化粧品・健康食品は、クリエイターの発言も薬機法の広告規制の対象になります。効能効果の言い切りは避け、言える表現と言えない表現を「事実」欄に書き分けてください（<a href="https://leam.co.jp/column/prohibited-items/">禁止商品・制限商品ガイド</a>）。</p></div>
+<div class="box box-point"><div class="bt">💡 依頼の目的を一つに絞る</div><p>認知、商品クリック、初回購入、LIVE告知などを一投稿に詰め込まず、主目的を一つ決めます。評価指標と動画構成がそろいやすくなります。</p></div>
+  <figure> <svg viewBox="0 0 720 199" role="img" aria-label="クリエイターブリーフを、固定する項目（商品・SKU・リンク・仕様・注意事項）、選択肢を渡す項目（訴求候補・実演候補・冒頭フック候補）、自由に任せる項目（言葉遣い・撮影場所・話す順番）の三段階に分けた図"><rect x="20" y="40" width="216" height="119" rx="12" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="128.0" y="26" text-anchor="middle" font-size="11" font-weight="800" fill="#787D8A">FIX</text><text x="128.0" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">固定する</text><text x="128.0" y="92" text-anchor="middle" font-size="11" fill="#787D8A">商品・SKU</text><text x="128.0" y="109" text-anchor="middle" font-size="11" fill="#787D8A">商品リンク</text><text x="128.0" y="126" text-anchor="middle" font-size="11" fill="#787D8A">確認済みの仕様</text><text x="128.0" y="143" text-anchor="middle" font-size="11" fill="#787D8A">注意事項</text><path d="M238 99.5 H250" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M244 92.5 L256 99.5 L244 106.5 Z" fill="#787D8A"/><rect x="262" y="40" width="216" height="119" rx="12" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="370.0" y="26" text-anchor="middle" font-size="11" font-weight="800" fill="#787D8A">CHOOSE</text><text x="370.0" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">選択肢を渡す</text><text x="370.0" y="92" text-anchor="middle" font-size="11" fill="#787D8A">訴求の候補</text><text x="370.0" y="109" text-anchor="middle" font-size="11" fill="#787D8A">実演の候補</text><text x="370.0" y="126" text-anchor="middle" font-size="11" fill="#787D8A">冒頭フック候補</text><path d="M480 99.5 H492" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M486 92.5 L498 99.5 L486 106.5 Z" fill="#787D8A"/><rect x="504" y="40" width="216" height="119" rx="12" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="612.0" y="26" text-anchor="middle" font-size="11" font-weight="800" fill="#787D8A">FREE</text><text x="612.0" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">自由に任せる</text><text x="612.0" y="92" text-anchor="middle" font-size="11" fill="#787D8A">本人の言葉遣い</text><text x="612.0" y="109" text-anchor="middle" font-size="11" fill="#787D8A">撮影の場所</text><text x="612.0" y="126" text-anchor="middle" font-size="11" fill="#787D8A">話す順番</text><text x="360" y="185" text-anchor="middle" font-size="11.5" fill="#787D8A">固定を増やすほど正確になるが、その分だけ本人の言葉が消える</text></svg> <figcaption>図1：ブリーフは「守る事実」と「試す表現」を分ける（LEAM編集部作成）</figcaption> </figure><h2 id="s2"><span class="no en">02</span>冒頭には目的・ターゲット・一番の訴求・商品リンクを置く</h2><p>長い商品資料を添付するだけでは、制作時に重要情報が埋もれます。ブリーフの一ページ目に、今回の目的、誰のどんな困りごとへ伝えるか、一番の訴求、対象商品を置きます。</p><div class="tw"><table><thead><tr><th>項目</th><th>書き方</th><th>例の骨格</th></tr></thead><tbody><tr><td>目的</td><td>一投稿で狙う行動</td><td>商品ページを見てもらう</td></tr><tr><td>ターゲット</td><td>利用場面と困りごと</td><td>［場面］で［悩み］を感じる人</td></tr><tr><td>一番の訴求</td><td>一文で伝える価値</td><td>［特徴］により［使いやすさ］を作る</td></tr><tr><td>対象商品</td><td>正式名、SKU、リンク、実物</td><td>紹介商品とリンクを一致</td></tr><tr><td>成功イメージ</td><td>視聴後に理解してほしいこと</td><td>自分の場面を想像できる</td></tr></tbody></table></div><p class="src">一ページ目だけで依頼の軸が分かるようにする（LEAM編集部作成）</p><p>ターゲットは年齢・性別だけでなく、利用場面、困りごと、購入前の不安で書くと、生活に自然に入る表現を作りやすくなります。</p>
+  <figure> <svg viewBox="0 0 720 170" role="img" aria-label="クリエイターブリーフの1ページ目に置くべき四項目（目的・ターゲット・一番の訴求・商品リンク）と、それぞれの書き方を示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">ブリーフ1ページ目に置く四項目</text><rect x="20" y="46" width="161" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="100.5" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">目的</text><text x="100.5" y="94" text-anchor="middle" font-size="11" fill="#787D8A">一投稿で狙う行動</text><text x="100.5" y="110" text-anchor="middle" font-size="11" fill="#787D8A">例：商品ページ閲覧</text><rect x="199" y="46" width="161" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="279.5" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">ターゲット</text><text x="279.5" y="94" text-anchor="middle" font-size="11" fill="#787D8A">利用場面と悩み</text><text x="279.5" y="110" text-anchor="middle" font-size="11" fill="#787D8A">例：朝が忙しい人</text><rect x="378" y="46" width="161" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="458.5" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">一番の訴求</text><text x="458.5" y="94" text-anchor="middle" font-size="11" fill="#787D8A">一文で伝える価値</text><text x="458.5" y="110" text-anchor="middle" font-size="11" fill="#787D8A">複数書かない</text><rect x="557" y="46" width="161" height="78" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="637.5" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">商品リンク</text><text x="637.5" y="94" text-anchor="middle" font-size="11" fill="#787D8A">対象SKUまで</text><text x="637.5" y="110" text-anchor="middle" font-size="11" fill="#787D8A">リンク先を確認済み</text><text x="360" y="158" text-anchor="middle" font-size="11.5" fill="#787D8A">長い商品資料を添付するだけでは、制作時に重要情報が埋もれる</text></svg> <figcaption>図2：一ページ目で伝わらなければ、後ろは読まれない（LEAM編集部作成）</figcaption> </figure><h2 id="s3"><span class="no en">03</span>商品情報はベネフィット・証拠・注意点を対応させる</h2><p>魅力だけを列挙すると、クリエイターがどこまで言えるか判断できません。訴求ごとに、見せる実演、根拠となる商品資料、言い過ぎを避ける注意点を一行にします。</p><div class="tw"><table><thead><tr><th>訴求</th><th>実演・証拠</th><th>注意・条件</th></tr></thead><tbody><tr><td>使いやすさ</td><td>操作手順を実物で見せる</td><td>慣れや利用環境の違い</td></tr><tr><td>サイズ・収納</td><td>比較物や寸法表示</td><td>比較条件をそろえる</td></tr><tr><td>素材・質感</td><td>接写と商品表示</td><td>色味・個体差・手入れ</td></tr><tr><td>時短・手間</td><td>工程を同条件で見せる</td><td>結果を一律に断定しない</td></tr><tr><td>価格・販促</td><td>商品ページの表示と合わせる</td><td>時点・対象・終了条件</td></tr></tbody></table></div><p class="src">訴求と根拠と注意点を一行で管理する（LEAM編集部作成）</p><div class="box box-warn"><div class="bt">⚠️ 商品とリンクを一致させる</div><p>公式ポリシーは、紹介していない商品へリンクする、商品を明確に示さない、別商品へ誘導するコンテンツを禁止しています。実物、台本、商品リンクを依頼時と投稿前に確認します。</p></div><h2 id="s4"><span class="no en">04</span>構成指定は必須シーンと候補フックだけに絞る</h2><p>ブリーフでは、商品が分かるカット、使用方法、注意事項、購入導線など必要な場面を指定します。話す全文を固定するより、冒頭フック候補と実演順を複数渡し、本人の視聴者に合うものを選んでもらいます。</p><ol class="steps"><li><b>冒頭の困りごとを示す</b><p>対象視聴者が自分ごと化できる場面を短く見せます。</p></li><li><b>商品を早めに明示する</b><p>何を紹介する動画かを分かる状態にします。</p></li><li><b>一番の価値を実演する</b><p>口頭説明だけでなく、商品を使う場面を見せます。</p></li><li><b>判断材料と注意点を加える</b><p>サイズ、素材、使える条件、合わない条件を伝えます。</p></li><li><b>商品への導線を案内する</b><p>動画内容と一致する商品リンクを確認します。</p></li></ol><div class="box box-point"><div class="bt">💡 フック候補は三方向</div><p>悩みから入る、意外な使い方から入る、実演結果から入るなど、訴求は同じまま冒頭だけ選べるようにすると比較できます。</p></div>
+  <figure> <svg viewBox="0 0 720 236" role="img" aria-label="クリエイターブリーフで話す全文を固定する場合と、必須シーン（商品カット・使用方法・注意事項・購入導線）だけを指定して見せ方は選んでもらう場合を対比した図"><rect x="20" y="20" width="320" height="194" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="180" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">話す全文を固定</text><text x="180" y="86" text-anchor="middle" font-size="12" fill="#454956">台詞をそのまま指定</text><text x="180" y="112" text-anchor="middle" font-size="12" fill="#454956">尺も秒単位で指定</text><text x="180" y="138" text-anchor="middle" font-size="12" fill="#454956">表情まで指示</text><text x="180" y="196" text-anchor="middle" font-size="11" fill="#787D8A">本人の視聴者に合わない動画になる</text><rect x="380" y="20" width="320" height="194" rx="14" fill="#ffffff" stroke="#E8324A" stroke-width="1.5"/><text x="540" y="52" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">必須シーンだけ指定</text><text x="540" y="86" text-anchor="middle" font-size="12" fill="#454956">商品が分かるカット</text><text x="540" y="112" text-anchor="middle" font-size="12" fill="#454956">使用方法</text><text x="540" y="138" text-anchor="middle" font-size="12" fill="#454956">注意事項</text><text x="540" y="164" text-anchor="middle" font-size="12" fill="#454956">購入導線</text><text x="540" y="196" text-anchor="middle" font-size="11" fill="#C2203A">見せる順番は複数案から選んでもらう</text><path d="M342 117.0 H368" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M362 110.0 L374 117.0 L362 124.0 Z" fill="#787D8A"/></svg> <figcaption>図3：構成指定は必須シーンと候補フックまで（LEAM編集部作成）</figcaption> </figure><h2 id="s5"><span class="no en">05</span>納品条件・修正・利用範囲は制作前に合意する</h2><p>投稿後に広告利用や二次利用を追加で求めると、権利と報酬の認識ずれになります。制作前に、投稿先、提出物、確認工程、修正対象、素材の利用範囲、期間、権限を合意します。具体的な利用可否は契約とプラットフォーム設定に従ってください。</p><div class="tw"><table><thead><tr><th>項目</th><th>決めること</th><th>曖昧な場合の問題</th></tr></thead><tbody><tr><td>投稿</td><td>アカウント、形式、公開時期</td><td>誰がいつ公開するか分からない</td></tr><tr><td>提出物</td><td>完成動画、確認用データ、必要素材</td><td>後から追加要求になる</td></tr><tr><td>確認</td><td>事実・表現・リンクの確認範囲</td><td>好みで修正が増える</td></tr><tr><td>修正</td><td>対象、回数、期限、追加費用の扱い</td><td>制作負荷が読めない</td></tr><tr><td>利用範囲</td><td>オーガニック投稿、広告、転載、期間、地域</td><td>権利認識がずれる</td></tr><tr><td>データ</td><td>閲覧できる指標と共有頻度</td><td>評価できない</td></tr></tbody></table></div><p class="src">制作条件は投稿前に書面でそろえる（LEAM編集部作成）</p><p>未成年者、所属先、第三者素材、音源、映り込みなど、個別の確認が必要な場合は責任者へ早めに引き継ぎます。</p><h2 id="s6"><span class="no en">06</span>評価は再生数だけでなく、商品クリック・購入・品質・再現性で見る</h2><p>再生数が多くても、商品が伝わらずクリックされない場合があります。反対に、再生規模が小さくても、商品との相性がよく購入へつながる場合があります。評価はファネルと制作品質を一緒に見ます。</p><div class="tw"><table><thead><tr><th>評価軸</th><th>見るもの</th><th>次の判断</th></tr></thead><tbody><tr><td>露出</td><td>表示・再生・視聴維持</td><td>冒頭と対象視聴者の相性</td></tr><tr><td>興味</td><td>商品クリック・コメント質問</td><td>訴求と商品提示の強さ</td></tr><tr><td>購入</td><td>注文・GMV・CVR</td><td>商品ページとの接続</td></tr><tr><td>品質</td><td>商品・リンク・表現の正確さ</td><td>継続時の修正負荷</td></tr><tr><td>再現性</td><td>同じ構成を別素材へ展開できるか</td><td>継続・派生依頼</td></tr><tr><td>運用</td><td>連絡、期限、確認対応</td><td>長期協業のしやすさ</td></tr></tbody></table></div><p class="src">クリエイター評価はファネルと運用品質を併記する（LEAM編集部作成）</p><div class="box box-point"><div class="bt">💡 上位動画をブリーフへ戻す</div><p>当たった理由を『クリエイターのセンス』で終わらせず、冒頭、悩み、実演、証拠、CTAへ分解し、次の依頼へ反映します。</p></div><h2 id="s7"><span class="no en">07</span>投稿前レビューは好みではなく事実・安全・導線・契約範囲で行う</h2><p>確認者ごとに『もっとブランドらしく』と修正すると、クリエイターの表現が消え、確認も長引きます。投稿前レビューでは、商品とリンク、確認済みの事実、誤認の可能性、第三者素材、合意した提出条件だけをチェックします。好みの修正と、公開に必要な修正を分けてください。</p><div class="tw"><table><thead><tr><th>確認ポイント</th><th>できている状態</th><th>次のアクション</th></tr></thead><tbody><tr><td>商品一致</td><td>動画内の商品・バリエーション・商品リンクが一致</td><td>別商品が混ざる場合は公開前にリンクと編集を修正する</td></tr><tr><td>訴求</td><td>ブリーフの主目的と一番の価値が分かる</td><td>複数訴求でぼやける場合は主訴求以外を削る</td></tr><tr><td>実演</td><td>使い方と条件が実物で正確に示される</td><td>誤った使い方や不公平な比較は再撮影・編集を判断する</td></tr><tr><td>事実</td><td>仕様・素材・価格・注意が最新資料と一致</td><td>確認できない断定は削除または確認可能な表現へ直す</td></tr><tr><td>第三者要素</td><td>音源、画像、ロゴ、人物、場所の扱いを確認</td><td>権利・許諾が不明な素材は責任者へ引き継ぐ</td></tr><tr><td>表示</td><td>必要な表示や商品案内が読み取れる</td><td>小さすぎる文字や一瞬だけの表示は視聴端末で確認する</td></tr><tr><td>利用範囲</td><td>合意した投稿・広告・転載・期間の範囲内</td><td>追加利用が必要なら公開後ではなく事前に再合意する</td></tr><tr><td>評価準備</td><td>動画ID、商品、訴求、公開日、確認指標を記録</td><td>公開後に数字とブリーフを結びつけられる状態にする</td></tr></tbody></table></div><p class="src">実務導入ワークシート（LEAM編集部作成）</p><h3>商品シートと施策ブリーフを分けて更新負荷を下げる</h3><p>毎回変わらない商品名、SKU、仕様、使い方、注意事項、根拠資料は商品シートへ置きます。施策ごとに変わる目的、ターゲット、訴求、投稿形式、期限、利用範囲、評価指標はブリーフへ置きます。この二層に分けると、商品情報の更新がすべての依頼へ反映され、過去ブリーフをコピーして古い仕様を渡す事故を減らせます。</p><h3>公開後の評価コメントは次の依頼で使える言葉にする</h3><p>『雰囲気がよかった』『再生が弱かった』だけでは次の制作へ移せません。冒頭で対象者が分かった、実演でクリックが動いた、注意説明が長く離脱した、商品ページと訴求がずれた、コメント対応から新しい不安が見えた、のように構成要素で記録します。クリエイター本人へのフィードバックと、社内の学びを分け、継続依頼では変更点を一つへ絞ってください。</p><div class="box box-point"><div class="bt">💡 運用へ定着させる</div><p>レビュー結果は『修正必須』『提案』『確認待ち』の三種類に分けます。必須は商品事実・安全・導線・合意条件、提案は表現上の改善、確認待ちは根拠や権利の判断です。この区分があれば、クリエイターは自分の表現を保ちながら、公開に必要な修正へ集中できます。</p></div>
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>この記事の要点を、実行順にまとめます。</p><div class="summary-grid"><div class="summary-item">クリエイターへ渡す必須情報と表現の自由を分ける方法</div><div class="summary-item">商品・訴求・事実・納品・利用範囲を整理するテンプレート</div><div class="summary-item">再生数だけでなくクリック・購入・品質まで見る評価表</div></div>
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>クリエイターブリーフは台本と同じですか？</summary><div class="a">異なります。ブリーフは目的、商品、ターゲット、訴求、事実、条件を共有する設計図で、台本は具体的な話す順や場面です。</div></details><details><summary>話し方を細かく指定すべきですか？</summary><div class="a">商品事実と必要シーンは指定しつつ、本人の言葉遣いや生活文脈には余白を残すと自然な表現を作りやすくなります。</div></details><details><summary>何を最初の一ページに書きますか？</summary><div class="a">目的、ターゲットの利用場面と悩み、一番の訴求、対象商品、商品リンク、成功イメージを置きます。</div></details><details><summary>広告利用や二次利用は後から決めてもよいですか？</summary><div class="a">認識ずれを避けるため、利用範囲、期間、地域、権限、報酬を制作前に合意してください。具体的な可否は契約とプラットフォーム設定に従います。</div></details><details><summary>再生数が少ない動画は不採用ですか？</summary><div class="a">再生数だけで判断せず、商品クリック、購入、コメントの質、商品相性、制作品質、再現性を確認してください。</div></details><details><summary>ブリーフは毎回作り直しますか？</summary><div class="a">商品ごとの基礎情報は共通化し、目的、訴求、対象クリエイター、実演、利用条件、評価項目を施策ごとに更新します。</div></details></div>
+<div class="ctabox"><div class="ct">自社だけで回すか、外部を使うかも含めて整理できます</div><p>LEAMはTikTok Shopの立ち上げ・コンテンツ・クリエイター連携・運用改善を支援しています。商材と社内体制を伺い、必要な範囲を率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?identity=1&knowledge_id=5653863148177169" target="_blank" rel="noopener noreferrer">TikTok Shop公式：セラー向け完全攻略Playbook</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?from=policy&identity=1&knowledge_id=6062586719684368&role=2" target="_blank" rel="noopener noreferrer">TikTok Shop公式：高品質 Eコマース コンテンツ</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?from=policy&identity=1&knowledge_id=2715915867866881&role=2" target="_blank" rel="noopener noreferrer">TikTok Shop公式：無関係なプロモーションコンテンツ</a>（2026年8月30日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786801424&lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：動画パフォーマンス</a>（2026年8月30日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、評価条件は更新されることがあります。本記事は2026年8月30日時点で確認できた日本向け公式情報と、LEAM編集部が作成した運用フレームを区別して記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/creator-invite/"><span class="rc">関連記事</span><b>TikTok Shopのクリエイター招待・コラボの仕組み</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/affiliate-guide/"><span class="rc">関連記事</span><b>TikTok Shopアフィリエイトの仕組み</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/short-video-playbook/"><span class="rc">関連記事</span><b>TikTok Shopで売れるショート動画の作り方</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">ブリーフは「守る事実」と「試す表現」を分けると機能する</a></li><li><a href="#s2">冒頭には目的・ターゲット・一番の訴求・商品リンクを置く</a></li><li><a href="#s3">商品情報はベネフィット・証拠・注意点を対応させる</a></li><li><a href="#s4">構成指定は必須シーンと候補フックだけに絞る</a></li><li><a href="#s5">納品条件・修正・利用範囲は制作前に合意する</a></li><li><a href="#s6">評価は再生数だけでなく、商品クリック・購入・品質・再現性で見る</a></li><li><a href="#s7">投稿前レビューは好みではなく事実・安全・導線・契約範囲で行う</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "クリエイターブリーフは台本と同じですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "異なります。ブリーフは目的、商品、ターゲット、訴求、事実、条件を共有する設計図で、台本は具体的な話す順や場面です。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "話し方を細かく指定すべきですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "商品事実と必要シーンは指定しつつ、本人の言葉遣いや生活文脈には余白を残すと自然な表現を作りやすくなります。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "何を最初の一ページに書きますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "目的、ターゲットの利用場面と悩み、一番の訴求、対象商品、商品リンク、成功イメージを置きます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "広告利用や二次利用は後から決めてもよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "認識ずれを避けるため、利用範囲、期間、地域、権限、報酬を制作前に合意してください。具体的な可否は契約とプラットフォーム設定に従います。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "再生数が少ない動画は不採用ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "再生数だけで判断せず、商品クリック、購入、コメントの質、商品相性、制作品質、再現性を確認してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ブリーフは毎回作り直しますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "商品ごとの基礎情報は共通化し、目的、訴求、対象クリエイター、実演、利用条件、評価項目を施策ごとに更新します。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>

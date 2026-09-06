@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopライブコマース代行の使い方｜自社運用と比較</title>
+<meta name="description" content="TikTok Shopのライブ配信を外注するか自社で回すかを決める記事です。五つの層への分解、比較表、見積りの読み方、契約で確認する項目を整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/live-agency-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopライブコマース代行の使い方｜自社運用と比較">
+<meta property="og:description" content="TikTok Shopのライブ配信を外注するか自社で回すかを決める記事です。五つの層への分解、比較表、見積りの読み方、契約で確認する項目を整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/live-agency-guide/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopライブコマース代行の使い方｜自社運用と比較">
+<meta name="twitter:description" content="TikTok Shopのライブ配信を外注するか自社で回すかを決める記事です。五つの層への分解、比較表、見積りの読み方、契約で確認する項目を整理します。">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3)}
+  .hbtn{margin-left:auto;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopライブコマース代行の使い方｜自社運用と比較", "description": "TikTok Shopのライブ配信を外注するか自社で回すかを決める記事です。五つの層への分解、比較表、見積りの読み方、契約で確認する項目を整理します。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-07", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/live-agency-guide/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopライブコマース代行の使い方｜自社運用と比較", "item": "https://leam.co.jp/column/live-agency-guide/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › ライブコマース代行の使い方｜自社運用と比べて決める判断基準</p>
+<span class="cat">外注の判断</span>
+<h1>ライブコマース代行の使い方｜自社運用と比べて決める判断基準</h1>
+<div class="meta"><time class="upd" datetime="2026-09-02" aria-label="更新日">更新日：2026年9月2日</time><span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span></div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="ライブ配信の依頼範囲を決める場面：左の赤い五段のキャビネットに積まれた層のうち、上下のシアンの層（企画と分析）はチェックが付いて自社に残り、真ん中の層は引き抜かれて空のスロットだけが点線で残り、その層がシアンの矢印に沿って傾きながら右へ運ばれ、代行会社の受け取り箱にすでに収まっている二枚の層の上へ入っていくことを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v326c-96 32-188 34-286 18-112-18-198-52-312-46-112 6-196 48-306 60-96 10-196-6-296-40z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="246" rx="272" ry="204" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="dots">
+      <circle cx="62" cy="68" r="5"/><circle cx="98" cy="68" r="5"/><circle cx="134" cy="68" r="5"/><circle cx="170" cy="68" r="5"/>
+      <circle cx="62" cy="104" r="5"/><circle cx="98" cy="104" r="5"/><circle cx="134" cy="104" r="5"/><circle cx="170" cy="104" r="5"/>
+      <circle cx="62" cy="140" r="5"/><circle cx="98" cy="140" r="5"/><circle cx="134" cy="140" r="5"/><circle cx="170" cy="140" r="5"/>
+    </g>
+    <use href="#dots" transform="translate(700 -8)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 508c146-28 272-14 402 8 130 22 248 30 372 10 122-20 236-42 426-24v128H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 左：五層のキャビネット（主役・赤／高さ322） ================= -->
+  <g>
+    <!-- 影 -->
+    <rect x="110" y="186" width="430" height="322" rx="22" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <!-- 本体 -->
+    <rect x="110" y="186" width="430" height="322" rx="22" fill="#FE2C55"/>
+    <!-- 内側（濃赤） -->
+    <rect x="126" y="200" width="398" height="294" rx="14" fill="#CE1730"/>
+
+    <!-- ① 企画・商品選定：自社に残す（シアン＋チェック） -->
+    <rect x="140" y="206" width="370" height="50" rx="10" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="172" cy="231" r="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M165 231l6 7 11-14" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="452" y="225" width="42" height="12" rx="6" fill="#FFFFFF"/>
+
+    <!-- ② 出演：分岐（白・未決） -->
+    <rect x="140" y="264" width="370" height="50" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="172" cy="289" r="15" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="5"/>
+    <rect x="452" y="283" width="42" height="12" rx="6" fill="#C9CBD0"/>
+
+    <!-- ③ 抜き出された層のあと（空スロット） -->
+    <rect x="140" y="322" width="370" height="50" rx="10" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-dasharray="13 12" stroke-linejoin="round"/>
+
+    <!-- ④ 配信オペ：外に出す（グレー＋右向き） -->
+    <rect x="140" y="380" width="370" height="50" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="172" cy="405" r="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M167 398l9 7-9 7" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="452" y="399" width="42" height="12" rx="6" fill="#FFFFFF"/>
+
+    <!-- ⑤ 分析・振り返り：自社に残す（シアン＋チェック） -->
+    <rect x="140" y="438" width="370" height="50" rx="10" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="172" cy="463" r="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M165 463l6 7 11-14" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="452" y="457" width="42" height="12" rx="6" fill="#FFFFFF"/>
+
+    <!-- 輪郭 -->
+    <rect x="110" y="186" width="430" height="322" rx="22" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 空スロットから伸びる受け渡しの矢印（シアン） ================= -->
+  <g>
+    <path d="M562 348Q656 344 722 277" fill="none" stroke="#0B0C10" stroke-width="20" stroke-linecap="round"/>
+    <path d="M562 348Q656 344 722 277" fill="none" stroke="#25F4EE" stroke-width="10" stroke-linecap="round"/>
+    <path d="M751 247L741 295L703 259Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 右上：外に出された層が運ばれていく（傾き -9度） ================= -->
+  <g transform="rotate(-9 963 223)">
+    <rect x="838" y="196" width="250" height="54" rx="12" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <rect x="838" y="196" width="250" height="54" rx="12" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="1032" y="217" width="42" height="12" rx="6" fill="#FFFFFF"/>
+  </g>
+
+  <!-- ================= 右下：代行会社の受け取り箱（従・高さ212＝主役の0.66倍） ================= -->
+  <g>
+    <rect x="826" y="318" width="318" height="212" rx="16" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="826" y="318" width="318" height="212" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 受け入れ口 -->
+    <path d="M848 336H1122" fill="none" stroke="#C9CBD0" stroke-width="5" stroke-linecap="round" stroke-dasharray="13 12"/>
+
+    <!-- すでに渡した層（2枚） -->
+    <rect x="852" y="346" width="266" height="52" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="1058" y="366" width="40" height="12" rx="6" fill="#FFFFFF"/>
+    <rect x="852" y="410" width="266" height="52" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="1058" y="430" width="40" height="12" rx="6" fill="#FFFFFF"/>
+
+    <!-- 箱の前面 -->
+    <path d="M826 452h318v62a16 16 0 0 1-16 16H842a16 16 0 0 1-16-16z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="940" y="478" width="92" height="14" rx="7" fill="#C9CBD0"/>
+
+    <!-- 輪郭 -->
+    <rect x="826" y="318" width="318" height="212" rx="16" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="618" cy="128" r="15" fill="#25F4EE"/>
+  <circle cx="1152" cy="142" r="12" fill="#FE2C55"/>
+  <circle cx="786" cy="560" r="13" fill="#DFE0E2"/>
+</svg>
+    <figcaption>ライブコマース代行の使い方｜自社運用と比べて決める判断基準（LEAM編集部作成）</figcaption>
+  </figure>
+<p class="lead">企画から振り返りまでを一社に渡す契約と、出演者だけを手配する契約は別の買い物です。<strong>範囲を決めずに見積りを取ると、金額を並べても比べられません。</strong>この記事はライブ配信に限って外注の判断を扱います。運用代行全体の内製比較ではなく、ライブという一工程を五層に分け、どこを出しどこを自社に残すかを決める手順です。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>ライブ配信を五層に分け、外に出す層を選ぶ判断基準</li><li>見積りに含まれていない作業を洗い出すチェック表</li><li>失敗する発注の型と、契約で確認する十二項目</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">基礎</span><b>TikTok Shopとは？仕組みと始め方</b><span>詳しく読む</span></a>
+    <a class="relcard" href="https://leam.co.jp/column/live-commerce-guide/"><span class="rc">自社で回す</span><b>ライブコマース入門｜やり方と準備</b><span>詳しく読む</span></a>
+    <a class="relcard" href="https://leam.co.jp/column/inhouse-vs-agency/"><span class="rc">体制</span><b>内製か運用代行か｜比較と判断基準</b><span>詳しく読む</span></a>
+  </div>
+</div>
+
+<div class="ctabox"><div class="ct">ライブ配信のどこを外に出すかを一緒に整理します</div><p>商材、社内の人員、配信できる場所を伺い、外注に向く層と自社に残す層を切り分けます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">ライブ配信の外注は「五つの層」に分けてから範囲を決める</a></li><li><a href="#s2">自社運用と代行の差は本数ではなく「翌週に何が残るか」</a></li><li><a href="#s3">依頼する前に自社が決めておく七項目（決めないと見積りが出ない）</a></li><li><a href="#s4">見積りは「入っている作業」ではなく「入っていない作業」から読む</a></li><li><a href="#s5">失敗する発注は五つの型に集約される</a></li><li><a href="#s6">契約で確認するのは十二項目。口約束を残さない</a></li><li><a href="#s7">三か月は「外に出しても自社に記録が残る形」で回す</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>ライブ配信の外注は「五つの層」に分けてから範囲を決める</h2>
+<p>ライブ配信は一つの作業ではありません。実務では<strong>①企画と商品選定、②出演、③機材と配信環境、④配信中のオペレーション、⑤分析と振り返り</strong>の五層に分かれ、必要な人と場所が違います。「ライブをお願いします」は見積りの単位として粗すぎます。起きやすいのは、出演者だけが来て設営とピン留め操作は自社、という中途半端な状態です。</p>
+<p>公式の「日本クリエイター LIVE 完全攻略ガイド」は社内運営チームと外部提携クリエイターの両方を対象とし、配信前・配信中・配信後の三フェーズで設計するよう案内しています。同じガイドは商品のピン留め（Pin Card）が一回あたり十五〜三十秒程度の表示で、保つには繰り返し操作が必要だと明記しています（<a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&amp;identity=1&amp;knowledge_id=309514077865745" target="_blank" rel="noopener noreferrer">TikTok Shop公式：日本クリエイター LIVE 完全攻略ガイド</a>／確認日 2026年9月2日）。話しながら操作し続けるのは現実的でないため、④を誰が持つかは範囲を決める段階で確定させます。</p>
+<div class="tw"><table><thead><tr><th>層</th><th>実際の作業</th><th>外に出したときに起きること</th><th>自社に残す判断</th></tr></thead><tbody>
+<tr><td>① 企画・商品選定</td><td>テーマ、商品と点数、価格と在庫の決裁</td><td>紹介順が代行側の都合で決まる</td><td class="y">残す</td></tr>
+<tr><td>② 出演</td><td>話す人の手配、実演、コメント応答</td><td>顔と声が外部に依存し、交代で品質が振れる</td><td class="n">社内に話せる人がいなければ出す</td></tr>
+<tr><td>③ 機材・配信環境</td><td>端末、照明、音声、回線、配信場所</td><td>商品の送付と返送が発生する</td><td class="n">場所と回線を持っている側が持つ</td></tr>
+<tr><td>④ 配信中オペ</td><td>ピン留めの切り替え、広告板の更新</td><td>出演と兼務すると操作が止まり導線が切れる</td><td class="n">出しやすい。ただし出演と別の人と明記する</td></tr>
+<tr><td>⑤ 分析・振り返り</td><td>入口別の数値取得、台本への反映</td><td>成果の解釈が代行側にしか残らない</td><td class="y">残す</td></tr>
+</tbody></table></div><p class="src">五層それぞれの作業と、外に出したときに起きること（LEAM編集部作成）</p>
+<div class="box box-point"><div class="bt">💡 見積りは層ごとに取る</div><p>一式の金額ではなく、②だけ、③④だけ、②③④まとめて、の三通りで出してもらいます。層別に出せない相手は、その層を自社で内製していない可能性があります。</p></div>
+  <figure>
+    <svg id="lag-fig1" viewBox="0 0 720 320" role="img" aria-label="ライブ配信を企画・出演・機材・配信オペ・分析の五層に分け、外に出す層と自社に残す層を分ける図">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">LAYERS 01</text>
+      <text x="470" y="34" font-size="12" font-weight="700" fill="#787D8A">← 自社に残す　　外に出せる →</text>
+      <rect x="28" y="52" width="664" height="1" fill="#E3E6EA"/>
+      <rect x="28" y="64" width="470" height="42" rx="10" fill="#17181C"/><text x="46" y="91" font-size="14" font-weight="800" fill="#fff">① 企画・商品選定</text><text x="516" y="91" font-size="12.5" fill="#787D8A">商品と価格は自社の決裁</text>
+      <rect x="28" y="114" width="300" height="42" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/><text x="46" y="141" font-size="14" font-weight="800" fill="#17181C">② 出演</text><text x="348" y="141" font-size="12.5" fill="#787D8A">社内に話せる人がいるかで分岐</text>
+      <rect x="28" y="164" width="180" height="42" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/><text x="46" y="191" font-size="14" font-weight="800" fill="#17181C">③ 機材・配信環境</text><text x="228" y="191" font-size="12.5" fill="#787D8A">場所と回線がある側が持つ</text>
+      <rect x="28" y="214" width="140" height="42" rx="10" fill="#E8324A"/><text x="46" y="241" font-size="14" font-weight="800" fill="#fff">④ 配信オペ</text><text x="188" y="241" font-size="12.5" fill="#787D8A">出演とは別の手が必要（公式：ピン留めは繰り返し操作）</text>
+      <rect x="28" y="264" width="520" height="42" rx="10" fill="#17181C"/><text x="46" y="291" font-size="14" font-weight="800" fill="#fff">⑤ 分析・振り返り</text><text x="566" y="291" font-size="12.5" fill="#787D8A">記録は自社に置く</text>
+    </svg>
+    <figcaption>図1：帯が短い層ほど外に出しやすい（LEAM編集部作成）</figcaption>
+  </figure>
+
+<h2 id="s2"><span class="no en">02</span>自社運用と代行の差は本数ではなく「翌週に何が残るか」</h2>
+<p>「配信本数」で比べると外注が常に有利に見えます。しかし本数は買えても、翌週に何が残るかは契約の書き方で決まります。公式のセラー向け自社運用マニュアルは、ショート動画とLIVE配信を自社で運用する前提の手順を段階ごとに示しています（<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2652995084699409" target="_blank" rel="noopener noreferrer">TikTok Shop公式：セラー向けコンテンツ自社運用マニュアル</a>／確認日 2026年9月2日）。一方でLIVEガイドは外部提携クリエイターも読者に含めています。プラットフォーム側は内製と外部起用を排他的に扱っていません。比べるべきは「どちらが正しいか」ではなく、自社にどの能力を残すかです。</p>
+<div class="tw"><table><thead><tr><th>比較する項目</th><th>自社運用</th><th>ライブ代行に出す</th><th>層で分けて併用</th></tr></thead><tbody>
+<tr><td>始めるまでの時間</td><td>練習と機材準備の分かかる</td><td>短い。商品理解の共有に時間を使う</td><td>短い層から先に出せる</td></tr>
+<tr><td>週あたりの配信本数</td><td>担当者の稼働が上限</td><td>契約本数で増やせる</td><td>本数は外、企画は内</td></tr>
+<tr><td>商品知識の反映速度</td><td>速い。その場で仕様を答えられる</td><td>質問が持ち帰りになる</td><td>企画を内に残せば速さを保てる</td></tr>
+<tr><td>表現の責任</td><td>自社が原稿と発言を管理</td><td>分界を書かないと事故時に決まらない</td><td>原稿確認を内、発話を外に置ける</td></tr>
+<tr><td>ノウハウの蓄積先</td><td>自社の台本と記録</td><td>代行側の運用手順</td><td>台本の所有を内に決めれば残る</td></tr>
+<tr><td>担当者が抜けたとき</td><td>止まる。属人化しやすい</td><td>止まらない</td><td>止まらず、判断は自社に残る</td></tr>
+<tr><td>費用の性質</td><td>人件費と機材の固定費</td><td>月額または変動費</td><td>層ごとに固定費と変動費を分けられる</td></tr>
+<tr><td>やめやすさ</td><td>やめても機材と経験が残る</td><td>アカウントと素材の扱いで変わる</td><td>層単位で戻せる</td></tr>
+</tbody></table></div><p class="src">自社運用・代行・併用の比較。金額ではなく残るものを軸に置く（LEAM編集部作成）</p>
+  <figure>
+    <svg id="lag-fig2" viewBox="0 0 720 330" role="img" aria-label="出演者の有無と分析の担当から、内製・オペ外注・全層外注のどれを選ぶかを分岐で示した判断フロー">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">DECISION FLOW 02</text>
+      <rect x="250" y="52" width="220" height="46" rx="10" fill="#17181C"/><text x="360" y="80" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">社内に出演できる人がいる？</text>
+      <path d="M300 98 L180 132" stroke="#E8324A" stroke-width="2.5" fill="none"/><text x="212" y="118" font-size="12" font-weight="700" fill="#B01D36">いる</text>
+      <path d="M420 98 L540 132" stroke="#787D8A" stroke-width="2.5" fill="none"/><text x="470" y="118" font-size="12" font-weight="700" fill="#646C7A">いない</text>
+      <rect x="60" y="134" width="240" height="46" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/><text x="180" y="162" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">③④だけ外に出す</text>
+      <rect x="420" y="134" width="240" height="46" rx="10" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/><text x="540" y="162" text-anchor="middle" font-size="13" font-weight="800" fill="#17181C">②③④を外に出す</text>
+      <path d="M180 180 V214" stroke="#E8324A" stroke-width="2.5"/><path d="M540 180 V214" stroke="#E8324A" stroke-width="2.5"/>
+      <rect x="60" y="216" width="600" height="46" rx="10" fill="#17181C"/><text x="360" y="244" text-anchor="middle" font-size="13.5" font-weight="800" fill="#fff">①企画と⑤分析は自社が持てる？</text>
+      <path d="M240 262 L160 292" stroke="#0A6E68" stroke-width="2.5" fill="none"/><text x="176" y="282" font-size="12" font-weight="700" fill="#0A6E68">持てる</text>
+      <path d="M480 262 L560 292" stroke="#8A5A00" stroke-width="2.5" fill="none"/><text x="504" y="282" font-size="12" font-weight="700" fill="#8A5A00">持てない</text>
+      <rect x="40" y="294" width="240" height="30" rx="8" fill="#EDF6F5" stroke="#BFE3D4"/><text x="160" y="314" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0A6E68">層別に発注して比較できる</text>
+      <rect x="440" y="294" width="240" height="30" rx="8" fill="#FBF3E2" stroke="#EAD9A8"/><text x="560" y="314" text-anchor="middle" font-size="12.5" font-weight="700" fill="#8A5A00">先に社内の担当を決める</text>
+    </svg>
+    <figcaption>図2：企画と分析を持てるかまで確認して発注形態を選ぶ（LEAM編集部作成）</figcaption>
+  </figure>
+<p>判断は<strong>「社内に出演できる人がいるか」</strong>から始めます。いれば③④だけを外に出す形がもっとも軽く、企画と分析が自社に残ります。いない場合も、①と⑤を社内で持てるかで契約の形が変わります。両方持てないなら、発注より先に社内の担当を決める段階です。</p>
+
+<h2 id="s3"><span class="no en">03</span>依頼する前に自社が決めておく七項目（決めないと見積りが出ない）</h2>
+<p>見積りが「要件次第です」と返るのは、相手が不親切なのではなく前提が足りないからです。次の七つは自社しか決められません。</p>
+<p>商品点数と配信時間には公式の目安が使えます。公式のクリエイター向けガイド「LIVE販売の準備と商品の選択方法」は、三十分の配信なら二点以上を紹介し一点あたり五〜十分かけて実演する、一時間なら三〜五点、二時間以上なら五〜十点を選ぶ、という組み立てを示しています（<a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&amp;identity=1&amp;knowledge_id=111532143068929" target="_blank" rel="noopener noreferrer">TikTok Shop公式：LIVE販売の準備と商品の選択方法</a>／確認日 2026年9月2日）。これを当てはめれば一配信の長さと商品点数が自社で決まり、代行側は台本量と実演準備の工数を出せます。空欄のままでは、どの見積りも比較できない数字になります。</p>
+<div class="tw"><table><thead><tr><th>決めること</th><th>決めないまま発注すると起きること</th><th>決め方の目安</th></tr></thead><tbody>
+<tr><td>目的（売る／検証する／認知）</td><td>成果の合否が最後まで決まらない</td><td>初回は一つに絞る</td></tr>
+<tr><td>一配信の長さ</td><td>台本量が確定せず追加費用の交渉になる</td><td>公式の目安に合わせ三十分・一時間・二時間から選ぶ</td></tr>
+<tr><td>紹介する商品点数と順番</td><td>実演が薄く、どの商品が弱いか分からない</td><td>時間から逆算する</td></tr>
+<tr><td>配信の頻度と曜日・時間</td><td>比較できる回が集まらない</td><td>同じ曜日・時間で固定して連続させる</td></tr>
+<tr><td>誰のアカウントで配信するか</td><td>終了後にフォロワーと予約導線が残らない</td><td>自社なら操作権限の範囲も同時に決める</td></tr>
+<tr><td>在庫と価格の決裁者</td><td>配信中の値引き判断が止まる</td><td>配信中に連絡が取れる一名を指名する</td></tr>
+<tr><td>言ってはいけない表現の一覧</td><td>逸脱の判定基準がなく責任を追えない</td><td>NG表現と言い換えを一枚にして渡す</td></tr>
+</tbody></table></div><p class="src">発注前に自社で決める七項目（LEAM編集部作成）</p>
+<div class="box box-warn"><div class="bt">⚠️ 商品点数を空欄で渡さない</div><p>点数が決まらないと実演の分数も台本量も決まらず、見積りは幅で返ってきます。幅のある見積りを並べて安い方を選ぶのは、比較ではなく賭けです。</p></div>
+
+<h2 id="s4"><span class="no en">04</span>見積りは「入っている作業」ではなく「入っていない作業」から読む</h2>
+<p>金額の大小より、範囲外の作業が誰の負担になるかで実質コストは変わります。同じ月額の二社でも、配信場所、商品の送付と返送、告知の事前投稿、報告資料の扱いが違えば自社の工数は変わります。見積書は<strong>書かれていない作業</strong>から読みます。</p>
+<p>成果報酬型を選ぶ場合は、分母の定義を必ず文書に残してください。公式ヘルプは、分析画面のGMVは返品・返金・キャンセルを含むショップのパフォーマンスであり、財務上の確認はセラーセンターの「財務」ページで行うよう案内しています（<a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&amp;identity=1&amp;knowledge_id=100037342299905" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>／確認日 2026年9月2日）。分析画面のGMVをそのまま分母にすると、返品分にも報酬が発生します。どの画面のどの数値を使い、返品分をいつ控除するかを条文に書きます。</p>
+  <figure>
+    <svg id="lag-fig3" viewBox="0 0 720 290" role="img" aria-label="同額の見積り二社を帯で比べ、契約に含まれる作業・範囲外の作業・自社負担の割合が違うことを示した図">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">ESTIMATE BAND 03</text>
+      <text x="28" y="72" font-size="13" font-weight="800" fill="#17181C">A社の見積り</text>
+      <rect x="28" y="84" width="360" height="34" rx="6" fill="#E8324A"/><text x="208" y="106" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">契約に含まれる作業</text>
+      <rect x="388" y="84" width="150" height="34" rx="6" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/><text x="463" y="106" text-anchor="middle" font-size="12" font-weight="700" fill="#B01D36">追加費用</text>
+      <rect x="538" y="84" width="154" height="34" rx="6" fill="#F4F6F8" stroke="#E3E6EA"/><text x="615" y="106" text-anchor="middle" font-size="12" font-weight="700" fill="#646C7A">自社の工数</text>
+      <text x="28" y="166" font-size="13" font-weight="800" fill="#17181C">B社の見積り（同額）</text>
+      <rect x="28" y="178" width="180" height="34" rx="6" fill="#E8324A"/><text x="118" y="200" text-anchor="middle" font-size="12.5" font-weight="800" fill="#fff">含まれる作業</text>
+      <rect x="208" y="178" width="120" height="34" rx="6" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".5"/><text x="268" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#B01D36">追加費用</text>
+      <rect x="328" y="178" width="364" height="34" rx="6" fill="#F4F6F8" stroke="#E3E6EA"/><text x="510" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#646C7A">自社の工数（場所・商品送付・告知・報告資料）</text>
+      <rect x="28" y="238" width="664" height="34" rx="8" fill="#17181C"/><text x="360" y="260" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">金額が同じでも、帯の内訳が違えば実質コストは同じではない</text>
+    </svg>
+    <figcaption>図3：総額ではなく範囲外の作業がどちらに寄るかを見る（LEAM編集部作成）</figcaption>
+  </figure>
+<div class="tw"><table><thead><tr><th>確認する項目</th><th>見積り時に聞く言い方</th><th>含まれていない場合の自社負担</th></tr></thead><tbody>
+<tr><td>配信場所と回線</td><td>どこから配信し、回線と電源はどちら側ですか</td><td>会場の手配、通信環境の確保</td></tr>
+<tr><td>機材の搬入と設営</td><td>照明とマイクは持ち込みで、設営は誰がしますか</td><td>機材購入、当日の設営と撤収</td></tr>
+<tr><td>商品の受け渡しと返送</td><td>サンプルは何点、返送はありますか</td><td>送料、在庫の引き当て、破損時の負担</td></tr>
+<tr><td>台本の作成</td><td>台本は誰が書き、原稿確認は何営業日前ですか</td><td>台本執筆、NG表現の確認</td></tr>
+<tr><td>配信中のオペ人数</td><td>当日は何名入り、ピン留めは誰が操作しますか</td><td>自社スタッフの当日拘束</td></tr>
+<tr><td>事前告知の投稿</td><td>配信予約と告知動画の投稿は含まれますか</td><td>告知動画の制作と投稿</td></tr>
+<tr><td>報告資料の作成</td><td>数値の共有はどの粒度で、いつ届きますか</td><td>数値の取得と社内共有資料の用意</td></tr>
+<tr><td>追加配信の単価</td><td>契約本数を超えた場合の一本単価はいくらですか</td><td>都度見積りによる予算超過</td></tr>
+<tr><td>中止・延期の扱い</td><td>何日前までなら費用が発生しませんか</td><td>キャンセル料、日程再調整</td></tr>
+<tr><td>アカウントの操作権限</td><td>誰にどの権限を渡す必要がありますか</td><td>権限管理、終了時の解除作業</td></tr>
+</tbody></table></div><p class="src">見積りに含まれにくい十項目のチェック表（LEAM編集部作成）</p>
+
+<h2 id="s5"><span class="no en">05</span>失敗する発注は五つの型に集約される</h2>
+<p>発注の失敗は、代行会社の実力不足より前の段階で起きます。次の五つは契約前の会話で見分けられます。</p>
+<div class="tw"><table><thead><tr><th>失敗の型</th><th>発注時に出る兆候</th><th>潰し方</th></tr></thead><tbody>
+<tr><td>丸投げ型</td><td>自社の担当者を置かず月次の報告だけ待つ</td><td>①と⑤を社内に置き、確認者を一名決める</td></tr>
+<tr><td>単発お試し型</td><td>「まず一回やってみて判断する」</td><td>同条件で複数回に分け、評価指標を先に決める</td></tr>
+<tr><td>出演者だけ型</td><td>話す人だけ手配し当日のオペが未定</td><td>操作担当を契約書に人数で明記する</td></tr>
+<tr><td>権限あいまい型</td><td>権限をその場の口約束で渡す</td><td>権限、期間、解除手順を書面にする</td></tr>
+<tr><td>数字あいまい型</td><td>成果報酬の分母を「売上」の一語で済ませる</td><td>画面名まで書き、返品控除も定める</td></tr>
+</tbody></table></div><p class="src">発注段階で起きる五つの失敗と、その場で潰す方法（LEAM編集部作成）</p>
+<div class="box box-warn"><div class="bt">⚠️ 単発の結果で会社を評価しない</div><p>ライブは段階が多く、一回の結果には偶然が混ざります。回数と評価軸を決めずに始めた発注は、続けるか切るかを決められないまま更新時期を迎えます。判断できない状態を「様子見」と呼ばないでください。</p></div>
+
+<h2 id="s6"><span class="no en">06</span>契約で確認するのは十二項目。口約束を残さない</h2>
+<p>もめる原因は金額よりも範囲と権利です。次の十二項目は、金額が決まった後ではなく見積り段階で文言を確認します。</p>
+<div class="tw"><table><thead><tr><th>条項</th><th>確認する文言の例</th><th>曖昧なままだと起きること</th></tr></thead><tbody>
+<tr><td>業務範囲</td><td>五層のどこを受託するかを層名で列挙</td><td>当日「範囲外です」で作業が止まる</td></tr>
+<tr><td>最低配信本数</td><td>最低本数と、下回った場合の扱い</td><td>本数が減っても月額が変わらない</td></tr>
+<tr><td>一配信の時間</td><td>標準時間と、延長時の単価</td><td>延長のたびに都度交渉になる</td></tr>
+<tr><td>出演者の指定</td><td>指名の可否、交代時の事前通知と拒否権</td><td>告知後に別人が出て視聴者が離れる</td></tr>
+<tr><td>操作権限</td><td>渡す権限の種類、付与期間、解除の手順</td><td>終了後も権限が残る</td></tr>
+<tr><td>アーカイブと素材</td><td>撮影データと編集素材の帰属と引き渡し</td><td>過去の配信を自社で再利用できない</td></tr>
+<tr><td>二次利用の範囲</td><td>広告・商品ページ・他媒体の可否と期間</td><td>使えると思った素材が使えない</td></tr>
+<tr><td>表現の責任分界</td><td>原稿確認の担当、逸脱時の訂正と再配信</td><td>指摘時に対応の主体が決まらない</td></tr>
+<tr><td>成果報酬の分母</td><td>参照する画面名と数値、返品の控除</td><td>返品分にも報酬が発生する</td></tr>
+<tr><td>追加費用の条件</td><td>発生事由と単価を事前に列挙</td><td>請求書で初めて知る費目が出る</td></tr>
+<tr><td>中止・延期・振替</td><td>何日前までなら無償か、振替の期限</td><td>欠員のたびに費用が読めない</td></tr>
+<tr><td>終了時の引き渡し</td><td>台本、商品セット、記録、権限の返却範囲</td><td>次の体制に何も渡らない</td></tr>
+</tbody></table></div><p class="src">契約前に文言を確認する十二項目（LEAM編集部作成）</p>
+<p>特に曖昧になりやすいのは<strong>表現の責任分界</strong>です。配信中の発言は自社の販売行為として受け取られるため、原稿を誰が確認し、逸脱時に誰が訂正・削除・再配信を負担するのかを条文に落とします。法令の解釈が絡むため、社内の確認手順と迷ったときの相談先も同時に決めます。</p>
+
+<h2 id="s7"><span class="no en">07</span>三か月は「外に出しても自社に記録が残る形」で回す</h2>
+<p>外注は「三か月後に判断できる状態」を作れたかで成否が決まります。次の順番で進めます。</p>
+<ol class="steps">
+<li><b>一週目：層と担当を紙に書く</b><p>五層のどこを出すかを決め、自社の確認担当を一名指名します。配信予約より先にここを終えます。</p></li>
+<li><b>二〜四週目：同条件で試験配信を並べる</b><p>曜日・時間・商品点数を固定し、複数回を同条件でそろえます。毎回変えると比較材料になりません。</p></li>
+<li><b>四〜八週目：入口別に切り分ける</b><p>公式の分析画面は「セールスソース」でLIVE・動画・商品カードを分けて確認でき、自社アカウント経由とアフィリエイト経由も分かれています。代行の配信がどの入口を動かしたかを入口別で見ます。</p></li>
+<li><b>八〜十二週目：台本と商品セットを自社側へ移す</b><p>公式の準備ガイドはLIVE商品セットを事前に複数作成し、配信時に一括追加できると説明しています。セットと台本を自社の管理下に置けば、担当会社が変わっても再現できます。</p></li>
+<li><b>十二週目：続ける層と戻す層を決める</b><p>層ごとに、続ける・自社に戻す・別の会社に出すの三択で判断します。全体を一括更新しないことが要点です。</p></li>
+</ol>
+  <figure>
+    <svg id="lag-fig4" viewBox="0 0 720 300" role="img" aria-label="十二週間で層の決定・試験配信・入口別の切り分け・資産の移管・継続判断を進める週次タイムライン">
+      <text x="28" y="34" font-size="13" font-weight="800" fill="#E8324A">12 WEEKS 04</text>
+      <line x1="150" y1="56" x2="150" y2="272" stroke="#E3E6EA"/><line x1="286" y1="56" x2="286" y2="272" stroke="#E3E6EA"/><line x1="422" y1="56" x2="422" y2="272" stroke="#E3E6EA"/><line x1="558" y1="56" x2="558" y2="272" stroke="#E3E6EA"/>
+      <text x="150" y="70" font-size="11.5" font-weight="700" fill="#787D8A">1週</text><text x="286" y="70" font-size="11.5" font-weight="700" fill="#787D8A">4週</text><text x="422" y="70" font-size="11.5" font-weight="700" fill="#787D8A">8週</text><text x="558" y="70" font-size="11.5" font-weight="700" fill="#787D8A">12週</text>
+      <text x="28" y="104" font-size="12.5" font-weight="700" fill="#17181C">層の決定</text><rect x="150" y="88" width="90" height="22" rx="6" fill="#17181C"/>
+      <text x="28" y="140" font-size="12.5" font-weight="700" fill="#17181C">試験配信</text><rect x="196" y="124" width="226" height="22" rx="6" fill="#E8324A"/>
+      <text x="28" y="176" font-size="12.5" font-weight="700" fill="#17181C">入口別の切り分け</text><rect x="286" y="160" width="272" height="22" rx="6" fill="#FDEEF1" stroke="#E8324A" stroke-opacity=".6"/>
+      <text x="28" y="212" font-size="12.5" font-weight="700" fill="#17181C">台本とセットの移管</text><rect x="376" y="196" width="182" height="22" rx="6" fill="#EDF6F5" stroke="#BFE3D4"/>
+      <text x="28" y="248" font-size="12.5" font-weight="700" fill="#17181C">継続と撤退の判断</text><rect x="512" y="232" width="136" height="22" rx="6" fill="#FBF3E2" stroke="#EAD9A8"/>
+      <text x="360" y="286" text-anchor="middle" font-size="12" fill="#787D8A">先に試験配信を始めず、層を決める週を必ず置く</text>
+    </svg>
+    <figcaption>図4：切り分けと移管を重ねると更新の判断材料がそろう（LEAM編集部作成）</figcaption>
+  </figure>
+<h3>記録は請求書ではなく「配信ごとの一行」で残す</h3>
+<p>代行を使うと、自社に残るのが請求書と配信日だけになりがちです。それでは何が効いたのかを次の担当に渡せません。配信ごとに、日時、出演者、商品点数、紹介順、告知の有無、入口別の数値、当日の変更点を一行で残します。取れなかった項目は推測で埋めず「取得できなかった」と書きます。推測は三か月後に事実と区別できなくなります。</p>
+<h3>出演をクリエイターに任せる場合は費用の出方が変わる</h3>
+<p>出演を外部のクリエイターに任せる形では、代行費とは別に商品単位の成果報酬が発生します。公式のクリエイター向け準備ガイドは、アフィリエイトの成果報酬率は商品ごとに異なり通常は五〜二十五パーセントに設定されると説明しています（<a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&amp;identity=1&amp;knowledge_id=111532143068929" target="_blank" rel="noopener noreferrer">TikTok Shop公式：LIVE販売の準備と商品の選択方法</a>／確認日 2026年9月2日）。固定費と商品単位の変動費を同じ表に混ぜると、実質の手数料率が見えなくなります。集計は分けます。</p>
+<div class="box box-point"><div class="bt">💡 判断できないときは判断できないと書く</div><p>三か月分の記録がそろっても、配信数が少なければ「どの層の効果か」は分かりません。無理に順位を付けず、何が分からなかったか、あと何回そろえば分かるかを残します。根拠のない結論で更新するより、判断保留の理由を書くほうが速く決まります。</p></div>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>判断は次の順番で行います。上から順に決めると、後の工程で決め直しが起きません。</p><div class="summary-grid"><div class="summary-item">出す層と残す層を先に決め、層ごとに三通りの見積りを取る</div><div class="summary-item">配信時間と商品点数を公式の目安から自社で確定し、空欄のまま発注しない</div><div class="summary-item">見積りは範囲外の作業から読み、成果報酬なら分母と返品控除を条文に書く</div><div class="summary-item">契約は十二項目を確認し、操作権限・二次利用・表現の責任分界を先に決める</div><div class="summary-item">三か月は配信ごとに一行の記録を残し、層単位で続ける・戻す・替えるを判断する</div></div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>ライブ配信の代行費用はいくらですか？</summary><div class="a">依頼範囲で変わるため一律の金額は示せません。本記事は金額ではなく、五層のどこを出すか、見積りに含まれない作業がどれかを比べる方法を扱います。複数社に同じ範囲・本数・商品点数を渡して比較してください。</div></details><details><summary>出演者だけを頼むことはできますか？</summary><div class="a">できますが、配信中の操作を誰が持つかを先に決めます。公式の日本クリエイター LIVE 完全攻略ガイドは、商品のピン留めが一回あたり十五〜三十秒程度の表示で、保つには繰り返し操作が必要だと説明しています。話す人と操作する人は分ける前提で発注します。</div></details><details><summary>一回だけ試すのは判断材料になりますか？</summary><div class="a">なりません。告知・入室・実演・購入の各段階で結果が変わるため、同じ曜日・時間・商品点数で複数回そろえないと、どこが弱いのか切り分けられません。試すなら回数と評価指標を発注前に決めます。</div></details><details><summary>成果報酬型なら安全ですか？</summary><div class="a">分母の定義次第です。公式ヘルプは、分析画面のGMVは返品・返金・キャンセルを含み、財務上の確認はセラーセンターの「財務」ページで行うよう案内しています。どの画面のどの数値を分母にするか、返品分を控除するかを契約に書きます。</div></details><details><summary>代行に出すと自社にノウハウは残りませんか？</summary><div class="a">記録の形を決めれば残ります。配信ごとに商品点数・実演内容・告知の有無・入口別の数値を一行で残し、台本とLIVE商品セットを自社側に置きます。請求書と配信日だけでは、続けるか戻すかを判断できません。</div></details><details><summary>自社アカウントで配信すべきですか、代行会社のアカウントでもよいですか？</summary><div class="a">どちらにするかで契約終了後に残るものが変わります。自社アカウントならフォロワーと予約導線が残りますが、操作権限の管理が必要です。代行会社のアカウントなら、終了時に何を引き渡すのかを先に確認します。</div></details></div>
+<div class="ctabox"><div class="ct">ライブを外に出すか、社内で回すかを整理できます</div><p>LEAMはTikTok Shopの立ち上げ、コンテンツ制作、クリエイター連携、運用改善を支援しています。商材と社内体制を伺い、必要な範囲を率直にお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok ShopコンサルティングとTikTok Shop特化MCNを運営。商品・コンテンツ・クリエイター・ショップ運用をつなぎ、検証から改善までを支援しています。</p></div></div>
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list">
+<li><a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&amp;identity=1&amp;knowledge_id=309514077865745" target="_blank" rel="noopener noreferrer">TikTok Shop公式：日本クリエイター LIVE 完全攻略ガイド</a>（2026年9月2日確認・適用対象：日本）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&amp;identity=1&amp;knowledge_id=111532143068929" target="_blank" rel="noopener noreferrer">TikTok Shop公式：LIVE販売の準備と商品の選択方法</a>（2026年9月2日確認・適用対象：日本）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?default_language=ja-JP&amp;identity=1&amp;knowledge_id=100037342299905" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年9月2日確認）</li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2652995084699409" target="_blank" rel="noopener noreferrer">TikTok Shop公式：セラー向けコンテンツ自社運用マニュアル</a>（2026年9月2日確認・適用対象：日本）</li>
+</ul>
+<p class="src">仕様・画面名称・提供範囲は更新されることがあります。本記事は2026年9月2日時点の日本向け公式情報と、LEAM編集部が作成した発注フレームを区別して記載しています。費用や日数の相場は、母数と時点を示せる調査がないため数値を載せていません。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><a class="relcard" href="https://leam.co.jp/column/what-is-tiktok-shop/"><span class="rc">関連記事</span><b>TikTok Shopとは？仕組み・始め方・売れる理由</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/unyodaiko-cost/"><span class="rc">関連記事</span><b>TikTok Shop運用代行の費用相場と選び方</b><span>詳しく読む</span></a><a class="relcard" href="https://leam.co.jp/column/tiktok-shop-live-script/"><span class="rc">関連記事</span><b>TikTok Shop LIVEの台本テンプレート</b><span>詳しく読む</span></a></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">ライブ配信の外注は「五つの層」に分けてから範囲を決める</a></li><li><a href="#s2">自社運用と代行の差は本数ではなく「翌週に何が残るか」</a></li><li><a href="#s3">依頼する前に自社が決めておく七項目（決めないと見積りが出ない）</a></li><li><a href="#s4">見積りは「入っている作業」ではなく「入っていない作業」から読む</a></li><li><a href="#s5">失敗する発注は五つの型に集約される</a></li><li><a href="#s6">契約で確認するのは十二項目。口約束を残さない</a></li><li><a href="#s7">三か月は「外に出しても自社に記録が残る形」で回す</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>ライブ外注の相談</b><p>出す層と残す層を切り分けます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ライブ配信の代行費用はいくらですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "依頼範囲で変わるため一律の金額は示せません。本記事は金額ではなく、五層のどこを出すか、見積りに含まれない作業がどれかを比べる方法を扱います。複数社に同じ範囲・本数・商品点数を渡して比較してください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "出演者だけを頼むことはできますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "できますが、配信中の操作を誰が持つかを先に決めます。公式の日本クリエイター LIVE 完全攻略ガイドは、商品のピン留めが一回あたり十五〜三十秒程度の表示で、保つには繰り返し操作が必要だと説明しています。話す人と操作する人は分ける前提で発注します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "一回だけ試すのは判断材料になりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "なりません。告知・入室・実演・購入の各段階で結果が変わるため、同じ曜日・時間・商品点数で複数回そろえないと、どこが弱いのか切り分けられません。試すなら回数と評価指標を発注前に決めます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "成果報酬型なら安全ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "分母の定義次第です。公式ヘルプは、分析画面のGMVは返品・返金・キャンセルを含み、財務上の確認はセラーセンターの「財務」ページで行うよう案内しています。どの画面のどの数値を分母にするか、返品分を控除するかを契約に書きます。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "代行に出すと自社にノウハウは残りませんか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "記録の形を決めれば残ります。配信ごとに商品点数・実演内容・告知の有無・入口別の数値を一行で残し、台本とLIVE商品セットを自社側に置きます。請求書と配信日だけでは、続けるか戻すかを判断できません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "自社アカウントで配信すべきですか、代行会社のアカウントでもよいですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "どちらにするかで契約終了後に残るものが変わります。自社アカウントならフォロワーと予約導線が残りますが、操作権限の管理が必要です。代行会社のアカウントなら、終了時に何を引き渡すのかを先に確認します。"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "name": "株式会社LEAM",
+      "url": "https://leam.co.jp/"
+    }
+  ]
+}
+</script>
+</body>
+</html>
