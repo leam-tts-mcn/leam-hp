@@ -9,11 +9,7 @@ import datetime, glob, os, subprocess
 
 BASE = 'https://leam.co.jp'
 RESERVED = ('', 'mcn', 'line', 'column', 'ecplus', 'ecplus-2', 'ecplus-3', 'fashion',
-            'present', 'mission', 'lineredirect', 'thanks-2',
-            'tts')  # 実コンテンツ用ディレクトリ。ここへは絶対に出力しない
-# 'tts' … TikTok Shop運用支援の広告LP（2026-09-07 追加）。正ソースは /Users/wing/Claude Code/leam-tts-lp/
-#         🔴 noindex の広告LPなので sitemap にも載せない（EXTRA_SITEMAP に足さないこと）
-#         🔴 lint.py は公開対象外。コピーするときに必ず除外する（取得元ツール名が入っている）
+            'present', 'mission', 'lineredirect', 'thanks-2')  # 実コンテンツ用ディレクトリ。ここへは絶対に出力しない
 
 # /column/ の記事（build_column.py が生成。追加したらここにも足す）
 # 🔴 ベタ書きにすると記事を足すたびに古くなる（2026-09-07、20本を公開したとき
