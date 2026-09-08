@@ -35,18 +35,18 @@
 
 ### 出店・審査
 - [TikTok Shopの出店条件と審査完全ガイド｜落ちる理由と対処法](https://leam.co.jp/column/tiktok-shop-shinsa/): 開業届がなくても個人セラーとして出店できます。書類は本人確認・住所証明・国内銀行口座の3点が基本、審査の公式目安は1〜5日。
-- [TikTok Shopセラーセンターの使い方｜最初の設定](https://leam.co.jp/column/seller-center-guide/): セラーセンターはメニューが10前後ありますが、毎日開くのは4画面だけです。最優先の設定は入金口座と発送・返品。
+- [TikTok Shopセラーセンターの使い方｜最初の設定](https://leam.co.jp/column/seller-center-guide/): セラーセンターはメニューが10前後ありますが、毎日開くのは4画面だけです。最優先の設定は入金口座と発送・返品。初期設定10項目と、売上と入金額がズレる理由まで整理しました。
 - [TikTok Shopの禁止商品・制限商品ガイド](https://leam.co.jp/column/prohibited-items/): 食品もコスメも「禁止」ではなく、書類提出と事前承認で出品できます。禁止・対象外・制限付きの3分類で判定する手順を解説します。
 - [TikTok Shopのアカウント停止・違反ポイント完全ガイド](https://leam.co.jp/column/account-suspension/): 停止されても、異議申し立てで復旧できるケースがあります。期限と回数に上限があり1回目が勝負。原因は商品・表現・知財・物流・不正の5分類で、誤検知や見落としによる停止もあります。
 - [TikTok Shop立ち上げ90日ロードマップ](https://leam.co.jp/column/tiktok-shop-90day-roadmap/): TikTok Shop出店後の90日を、準備、初回販売、改善、拡大の四段階に整理。商品、動画、LIVE、クリエイター、在庫、顧客対応の実行順を解説します。
 
 ### 商品・価格
 - [TikTok Shopで売れるものは？商品カテゴリーの選び方](https://leam.co.jp/column/best-categories/): 売れるのは「検索される商品」ではなく「動画で欲しくなる商品」。見抜く3条件と、手数料と報酬を引いても利益が残るかの確かめ方。
-- [TikTok Shopの商品登録と売れる商品ページの作り方](https://leam.co.jp/column/product-page-cvr/): TikTok Shopの商品登録は6ステップ。ただし項目を埋めただけのページは、動画で温まった購入意欲を冷まします。
-- [TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計](https://leam.co.jp/column/pricing-strategy/): TikTok Shopは比較されない売り場のため、安さは伝わりにくい。効くのは総額の分かりやすさです。
+- [TikTok Shopの商品登録と売れる商品ページの作り方](https://leam.co.jp/column/product-page-cvr/): TikTok Shopの商品登録は6ステップ。ただし項目を埋めただけのページは、動画で温まった購入意欲を冷まします。画像の役割設計、説明文5ブロックの型、NG表現まで解説。
+- [TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計](https://leam.co.jp/column/pricing-strategy/): TikTok Shopは比較されない売り場のため、安さは伝わりにくい。効くのは総額の分かりやすさです。価格が効く動画・商品カード・カートの3地点と、送料込み表示の考え方まで。
 
 ### 手数料・販促
-- [TikTok Shopの手数料はいくら？カテゴリー別の料率](https://leam.co.jp/column/tiktok-shop-fees/): 初期費用・月額0円、売れたときだけ販売手数料7〜12%（決済手数料込み）。2026年5月に一律7%から4段階へ改定。
+- [TikTok Shopの手数料はいくら？カテゴリー別の料率](https://leam.co.jp/column/tiktok-shop-fees/): 初期費用・月額0円、売れたときだけ販売手数料7〜12%（決済手数料込み）。2026年5月に一律7%から4段階へ改定。アフィリエイト報酬を足すと実質25%になる例も試算表で出します。
 - [TikTok Shopのクーポン・セール活用術](https://leam.co.jp/column/coupon-sale-tactics/): 割引率に一律の正解はありません。原価・手数料・報酬・送料を引いた「販促原資」から逆算します。クーポン6タイプの使い分けつき。
 - [TikTok Shopの商戦期カレンダー｜大型セールの準備と当日運用](https://leam.co.jp/column/seasonal-campaign/): TikTok Shopの年間最大の山は11〜12月の年末商戦。準備は8週間前＝9月が目安で、クリエイター起用は4週間前、広告の配信開始は2週間前が締め切り。
 - [TikTok Shop手数料の改定履歴と見直し方](https://leam.co.jp/column/fees-revision-history/): TikTok Shopの手数料改定で変わる四つの層と、公式ヘルプで確認できる痕跡、値上げ時に価格・原価・報酬・広告を見直す順番を出典つきで解説します。
@@ -62,7 +62,7 @@
 
 ### クリエイター連携
 - [TikTok Shopアフィリエイトの仕組み【セラー向け】](https://leam.co.jp/column/affiliate-guide/): TikTok Shopのアフィリエイトは売れるまで費用0円。当社の実務では10〜15%前後が起点で、10%を切ると選ばれにくくなります。
-- [TikTok Shopのコミッション相場は？報酬の決め方](https://leam.co.jp/column/creator-commission/): 何%が正解かは一律には決まらず、粗利で出せる上限を先に確定し、競合の公開料率と突き合わせて決めます。
+- [TikTok Shopのコミッション相場は？報酬の決め方](https://leam.co.jp/column/creator-commission/): 何%が正解かは一律には決まらず、粗利で出せる上限を先に確定し、競合の公開料率と突き合わせて決めます。公式の目安は5〜25%、当社の実務は10%前後から始めて売れた人に上乗せ。
 - [TikTok Shopのサンプル申請のやり方【クリエイター向け】](https://leam.co.jp/column/sample-request/): TikTok Shopのサンプル申請のやり方を、クリエイター向けに手順から解説します。セラーの承認が通りやすくなるコツもまとめました。
 - [TikTok Shopのクリエイター招待とは？コラボの仕組み](https://leam.co.jp/column/creator-invite/): TikTok Shopのクリエイター招待は、承諾も辞退も選べる依頼です。受ける前に見る5項目と、報酬が確定するタイミングを整理しました。
 - [TikTok Shopのクリエイターブリーフの作り方](https://leam.co.jp/column/creator-brief-template/): クリエイターへ動画制作を依頼するブリーフを、目的・商品・訴求・必須表現・禁止事項・納品の項目に分けて解説します。ひな形つきです。
@@ -77,7 +77,7 @@
 
 ### 広告運用
 - [GMV Maxとは？TikTok Shop広告の仕組みと始め方](https://leam.co.jp/column/gmvmax/): 2025年7月以降、TikTok Shopの広告で新しく作れるのはGMV Maxだけです。費用は固定でなく予算×成果のため、先に限界CPAを決めます。
-- [TikTok ShopのROAS基準｜損益分岐の出し方](https://leam.co.jp/column/tiktok-shop-roas/): ROAS3.0倍が黒字か赤字かは商品によって正反対です。損益分岐ROAS＝1÷貢献利益率で自社の基準が出ます。
+- [TikTok ShopのROAS基準｜損益分岐の出し方](https://leam.co.jp/column/tiktok-shop-roas/): ROAS3.0倍が黒字か赤字かは商品によって正反対です。損益分岐ROAS＝1÷貢献利益率で自社の基準が出ます。36通りの試算で必要ROASは1.72〜5.56倍になります。
 
 ### 配送・顧客対応
 - [TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計](https://leam.co.jp/column/shipping-rules/): 「集荷待ち」更新の期限は注文日の翌営業日から起算して2営業日目の23:59。注文日は数えず、週末をまたぐと1日の数え違いで期限が3日ずれます。
@@ -89,12 +89,12 @@
 
 ### 売上改善
 - [TikTok Shopで売れない時に見る10のチェックリスト](https://leam.co.jp/column/not-selling-checklist/): TikTok Shopで売れない原因の多くは商品ではなく「体制と順序」です。10項目のチェックリストと、原因を絞る診断フローを用意しました。
-- [TikTok Shop運用代行の費用相場と失敗しない選び方](https://leam.co.jp/column/unyodaiko-cost/): TikTok Shop運用代行の月額相場は5万〜150万円。幅の正体は会社の規模でなく依頼範囲の差です。
+- [TikTok Shop運用代行の費用相場と失敗しない選び方](https://leam.co.jp/column/unyodaiko-cost/): TikTok Shop運用代行の月額相場は5万〜150万円。幅の正体は会社の規模でなく依頼範囲の差です。規模別の目安、料金3類型、「売上への距離」で選ぶ比較軸5つまで。
 - [TikTok Shopは内製か運用代行か｜判断基準](https://leam.co.jp/column/inhouse-vs-agency/): TikTok Shopを内製するか運用代行に頼むかを、商品・動画・クリエイター・データ・物流・顧客対応の6領域で比較して判断基準を示します。
 - [TikTok ShopのKPI設計｜週次で見る指標](https://leam.co.jp/column/tiktok-shop-kpi/): TikTok Shop運用で見るKPIを、売上・トラフィック・動画・LIVE・商品・運用品質に分けて解説します。週次で見る指標と直す順番つきです。
 
 ### 既存ECからの参入
-- [Amazonセラー向けTikTok Shop入門｜何が変わるか](https://leam.co.jp/column/amazon-seller-tiktok-shop/): Amazonのレビュー・FBA・キーワード入札は持ち込めません。持ち込めるのは商品・在庫・原価表です。
+- [Amazonセラー向けTikTok Shop入門｜何が変わるか](https://leam.co.jp/column/amazon-seller-tiktok-shop/): Amazonのレビュー・FBA・キーワード入札は持ち込めません。持ち込めるのは商品・在庫・原価表です。TikTok Shopは初期費用も月額固定費もなし。手残り表の直し方まで解説。
 - [楽天セラー向けTikTok Shop入門｜店舗運営との違い](https://leam.co.jp/column/rakuten-seller-tiktok-shop/): 楽天市場に出店している事業者向けに、店舗運営との違い、持ち込める強み、ポイント原資の考え方の置き換えを解説します。
 - [Yahoo!ショッピングのセラー向けTikTok Shop入門](https://leam.co.jp/column/yahoo-seller-tiktok-shop/): 月額1万円が乗った今、TikTok Shopは安いのか。Yahoo!の必須6.5〜8.0%＋月額1万円と、カテゴリー別7〜12%が逆転する分岐点は月商18.2万〜200万円。
 - [D2Cブランド向けTikTok Shop入門｜自社ECとの分担](https://leam.co.jp/column/d2c-tiktok-shop/): 自社ECを持つD2Cブランド向けに、TikTok Shopを新規獲得チャネルとして設計する方法と、自社ECとの役割分担を解説します。
