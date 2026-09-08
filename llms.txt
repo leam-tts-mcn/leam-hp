@@ -27,6 +27,7 @@
 
 ### 基礎知識
 - [TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド](https://leam.co.jp/column/what-is-tiktok-shop/): TikTok Shopとは、動画・ライブ・ショーケースの3つの売り場で購入まで完結するEC機能。初期費用・月額の出店料は不要で、費用は売れたときの販売手数料が中心。
+- [TikTok Shopの用語集｜実務で意味を取り違えやすい30語](https://leam.co.jp/column/glossary/): GMV・実質手数料・貢献利益・限界CPA・LDR・SKUなど、TikTok Shopの実務で意味を取り違えると判断を誤る30語を、記事のどこで扱っているかとセットで整理しました。
 - [TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方](https://leam.co.jp/column/is-tiktok-shop-safe/): TikTok Shop自体は怪しくありません。出店審査のある公式機能です。危ないのはアプリの外へ誘導する詐欺3つの型。偽ショップは8項目のチェックリストで見分けられます。
 - [TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略](https://leam.co.jp/column/marketplace-comparison/): 乗り換えではなく役割分担です。Amazon・楽天は検索型、TikTok Shopは発見型で、売れ方もコスト構造もほぼ逆向き。
 - [TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか](https://leam.co.jp/column/market-outlook/): TikTok Shopの市場規模と今後の見通しを、公表されている一次情報にもとづいて整理します。日本市場がどこまで伸びるかを考えます。

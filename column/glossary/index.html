@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの用語集｜実務で意味を取り違えやすい30語</title>
+<meta name="description" content="GMV・実質手数料・貢献利益・限界CPA・LDR・SKUなど、TikTok Shopの実務で意味を取り違えると判断を誤る30語を、記事のどこで扱っているかとセットで整理しました。">
+<link rel="canonical" href="https://leam.co.jp/column/glossary/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの用語集｜実務で意味を取り違えやすい30語">
+<meta property="og:description" content="GMV・実質手数料・貢献利益・限界CPA・LDR・SKUなど、TikTok Shopの実務で意味を取り違えると判断を誤る30語を、記事のどこで扱っているかとセットで整理しました。">
+<meta property="og:url" content="https://leam.co.jp/column/glossary/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/glossary.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの用語集｜実務で意味を取り違えやすい30語">
+<meta name="twitter:description" content="GMV・実質手数料・貢献利益・限界CPA・LDR・SKUなど、TikTok Shopの実務で意味を取り違えると判断を誤る30語を、記事のどこで扱っているかとセットで整理しました。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/glossary.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  .demo{background:var(--ink);color:#fff;font-size:12px;text-align:center;padding:6px 14px;letter-spacing:.05em}
+  .demo b{color:#FFD34D}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  /* 🔴 375px では「LEAM ＋ コラム名 ＋ 無料相談」が横に並びきらず、
+     コラム名が2行に折れてヘッダーが高くなる。狭い画面ではコラム名を隠す
+     （パンくずに「コラム」が出るので情報は失われない）。2026-09-07 実機で確認 */
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<style>
+.gterm{border-left:3px solid var(--line);padding:2px 0 2px 16px;margin:0 0 22px}
+.gterm h3{margin:0 0 6px;font-size:17px}
+.gterm h3 .rd{font-size:12.5px;font-weight:500;color:#6B7681;margin-left:8px}
+.gdef{margin:0 0 8px}
+.gwhy{margin:0 0 6px;font-size:14.5px;color:#3E4650}
+.gwhy b{display:inline-block;margin-right:8px;font-size:12px;letter-spacing:.06em;background:#FBF1DF;color:#9A6510;padding:1px 7px;border-radius:2px;vertical-align:2px}
+.gsrc{margin:0;font-size:13px;color:#6B7681}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの用語集｜実務で意味を取り違えやすい30語", "description": "GMV・実質手数料・貢献利益・限界CPA・LDR・SKUなど、TikTok Shopの実務で意味を取り違えると判断を誤る30語を、記事のどこで扱っているかとセットで整理しました。", "inLanguage": "ja", "datePublished": "2026-09-07", "dateModified": "2026-09-08", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/glossary/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/glossary.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&lang=ja-JP", "name": "セラー向け完全攻略Playbook"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2727812995221265&lang=ja-JP", "name": "公式の注文品配送ポリシー"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの用語集｜実務で意味を取り違えやすい30語", "item": "https://leam.co.jp/column/glossary/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=glossary">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 用語集</p>
+<figure style="margin:0 0 26px">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="用語の取り違えを表したイラスト：左に「GMV」と書かれた大きなカードがあり、そこから右へ矢印が伸びて「入金額」と書かれた一回り小さいカードにつながっている。二つのカードの間には返品・手数料と書かれた札が挟まっており、同じ売上という言葉でも二つの数字が一致しないことを示している">
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+  <path d="M0 0h1200v320c-104 28-200 28-308 8-112-20-204-52-320-46-114 6-202 50-314 60-98 8-192-2-258-30z" fill="#F6F7F9"/>
+  <ellipse cx="900" cy="250" rx="250" ry="190" fill="#EFF1F4"/>
+  <g fill="#D8DADE">
+    <g id="gdots">
+      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/>
+      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/>
+      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/>
+    </g>
+    <use href="#gdots" transform="translate(950 -10)"/>
+  </g>
+  <path d="M0 520c150-28 270-12 398 10 128 22 248 28 374 8 124-20 240-40 428-22v114H0z" fill="#ECEEF1"/>
+
+  <rect x="96" y="212" width="300" height="216" rx="16" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+  <rect x="96" y="212" width="300" height="216" rx="16" fill="#B01D36"/>
+  <text x="246" y="292" text-anchor="middle" font-size="30" font-weight="700" fill="#FFC9D3" letter-spacing="3">GMV</text>
+  <text x="246" y="352" text-anchor="middle" font-size="46" font-weight="900" fill="#FFFFFF">流通取引総額</text>
+  <text x="246" y="394" text-anchor="middle" font-size="20" font-weight="700" fill="#FFC9D3">返品・返金・キャンセルを含む</text>
+
+  <path d="M436 320h150" stroke="#3A3F46" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M572 300l34 20-34 20z" fill="#3A3F46"/>
+
+  <rect x="412" y="356" width="226" height="76" rx="10" fill="#FFFFFF" stroke="#D8DADE" stroke-width="3"/>
+  <text x="525" y="387" text-anchor="middle" font-size="19" font-weight="700" fill="#454956">ここで引かれるもの</text>
+  <text x="525" y="415" text-anchor="middle" font-size="17" fill="#6B7681">返品・返金・販売手数料</text>
+
+  <rect x="656" y="252" width="252" height="164" rx="16" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+  <rect x="656" y="252" width="252" height="164" rx="16" fill="#FFFFFF" stroke="#3A3F46" stroke-width="4"/>
+  <text x="782" y="312" text-anchor="middle" font-size="26" font-weight="700" fill="#8A909C" letter-spacing="2">入金額</text>
+  <text x="782" y="366" text-anchor="middle" font-size="40" font-weight="900" fill="#14181D">手元に残る額</text>
+
+  <text x="96" y="150" font-size="26" font-weight="800" fill="#B01D36" letter-spacing="5">GLOSSARY</text>
+  <text x="96" y="504" font-size="34" font-weight="900" fill="#14181D">同じ「売上」でも、指している数字が違う</text>
+  <text x="96" y="546" font-size="22" font-weight="700" fill="#6B7681">取り違えると判断を誤る30語</text>
+  <text x="96" y="592" font-size="19" font-weight="700" fill="#8A909C">LEAM ─ TikTok Shop 実践コラム</text>
+</svg>
+<figcaption>図：GMVと入金額は同じ「売上」ではない。返品・返金と販売手数料を引いた後が手元に残る額（LEAM作成）</figcaption>
+</figure>
+<span class="cat">用語集</span>
+<h1>TikTok Shopの用語集｜実務で意味を取り違えやすい30語</h1>
+<div class="meta"><time class="upd" datetime="2026-09-08">更新日：2026年9月8日</time><time datetime="2026-09-07">公開日：2026年9月7日</time><span>執筆：株式会社LEAM 編集部</span></div>
+
+<p class="lead">TikTok Shopの実務では、同じ言葉が別の意味で使われる場面が何度も出てきます。GMVと入金額、粗利と貢献利益、販売手数料と実質手数料。どれも「なんとなく分かる」まま進めると、利益の計算や広告の上限を実際より甘く見積もることになります。ここでは<strong>取り違えると判断を誤る30語</strong>を、意味だけでなく<strong>取り違えると何が起きるか</strong>とセットでまとめました。定義はすべて、当コラムの各記事で実際に使っている説明にそろえています。</p>
+
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul>
+<li>お金まわりの9語（GMV・販売手数料・実質手数料・貢献利益・限界CPAなど）の区別</li>
+<li>売り場と機能、数字と指標、人と体制で分けた合計30語の意味</li>
+<li>それぞれの語を取り違えたときに、実務で何を間違えるか</li>
+</ul></div>
+
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">お金のことば</a></li><li><a href="#s2">売り場と機能のことば</a></li><li><a href="#s3">数字と指標のことば</a></li><li><a href="#s4">人と体制のことば</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>お金のことば</h2>
+<div class="gterm"><h3>GMV<span class="rd">流通取引総額（＝売上）</span></h3><p class="gdef">流通取引総額（＝売上）のこと。分析画面のGMVは返品・返金・キャンセルを含むため、財務画面で確認する入金額とは一致しない。</p><p class="gwhy"><b>取り違えると</b>入金額と混同すると、返品・返金と手数料を引く前の数字で利益を見積もってしまう。会議資料でGMV・売上・入金・利益を同じ意味で使うと、担当者ごとに解釈がずれる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計｜売上・動画・LIVE・商品を週次</a>／<a href="https://leam.co.jp/column/gmvmax/">GMV Maxとは？2種類の違い・費用・設定・改善までTikTok </a></p></div>
+<div class="gterm"><h3>販売手数料</h3><p class="gdef">商品が売れたときだけプラットフォームに支払う手数料のこと。TikTok Shopは初期費用・月額固定費が0円で、料率は2026年5月11日の改定でカテゴリー別7〜12%になり、決済手数料はこの料率に含まれる。</p><p class="gwhy"><b>取り違えると</b>決済手数料が別途かかる前提で原価計算すると二重に引いてしまう。逆に販売手数料だけを見て「7〜12%なら余裕がある」と判断すると、クリエイター報酬と広告費を引いた後の手残りを大きく見誤る。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の</a></p></div>
+<div class="gterm"><h3>実質手数料<span class="rd">実質手数料率</span></h3><p class="gdef">プラットフォームの販売手数料に、セラーが商品ごとに任意で設定するアフィリエイト報酬（クリエイター経由で売れたときに発生）を足したもの。他モールと同じ物差しで比べるときは、販促コストと固定費の按分まで含める。※記事冒頭のように広告費まで含めた広義で使う場合もある。</p><p class="gwhy"><b>取り違えると</b>販売手数料10%の商品でもアフィリエイト報酬を15%にすれば実質手数料は25%になる。ここを引かずに広告予算を決めると、売れているのに赤字になる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の</a>／<a href="https://leam.co.jp/column/best-categories/">TikTok Shopで売れるものは？売れる商品カテゴリーと参入ジャ</a></p></div>
+<div class="gterm"><h3>コミッション（成果報酬）</h3><p class="gdef">アフィリエイト機能（コラボ）を通じてクリエイターが商品を紹介・販売したときに、セラーが設定した率×売上額で支払う成果報酬のこと。プラットフォームへの販売手数料とは別に、売上からもう1段引かれる。</p><p class="gwhy"><b>取り違えると</b>販売手数料と同じ費目だと思って一度しか引かないと、粗利を実際より厚く見積もる。また率を上げても単価が低ければクリエイターが1本で受け取る実額は小さく、紹介する理由にならない。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/creator-commission/">TikTok Shopのコミッション相場は？クリエイターへの報酬の決</a>／<a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】</a></p></div>
+<div class="gterm"><h3>貢献利益<span class="rd">貢献利益率</span></h3><p class="gdef">売価から原価・販売手数料・コミッションを引いて手元に残る額のこと。売価に対する割合が貢献利益率で、「粗利率 − 販売手数料率 − コミッション率」で出す。送料・梱包は1件あたり定額のため、含めると低単価商品ほど大きく削られる。</p><p class="gwhy"><b>取り違えると</b>粗利率と混同したまま広告の上限を決めると、手数料とコミッションの分だけ使いすぎる。カテゴリーの料率が高いかどうかも、料率単体ではなく「1件あたりの貢献利益 × 見込み件数」で比べないと参入判断を誤る。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-roas/">TikTok ShopのROAS基準は自分で計算する｜損益分岐ROA</a>／<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の</a></p></div>
+<div class="gterm"><h3>限界CPA<span class="rd">CPA＝1件あたりの獲得コスト</span></h3><p class="gdef">1件売るために広告費として使える上限額のこと。「売価 × 貢献利益率」で出し、ここを超えたら売れても赤字になる。</p><p class="gwhy"><b>取り違えると</b>限界CPAを持たずに広告のROI目標を置くと、注文が増えるほど赤字が積み上がる。ROASとCPAは同じ1つの上限を別の単位で言っているだけなので、換算を1度やっておかないと管理画面の数字を金額の損得に翻訳できない。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-roas/">TikTok ShopのROAS基準は自分で計算する｜損益分岐ROA</a>／<a href="https://leam.co.jp/column/gmvmax/">GMV Maxとは？2種類の違い・費用・設定・改善までTikTok </a></p></div>
+<div class="gterm"><h3>ROAS</h3><p class="gdef">広告経由の売上 ÷ 広告費のこと。これが自社の損益分岐ROAS（＝1 ÷ 貢献利益率）を上回っているかどうかで、広告の損益が決まる。</p><p class="gwhy"><b>取り違えると</b>「何倍が目安か」を相場で調べると判断を誤る。必要な倍数は商品の粗利構造しだいで1.72倍から5.56倍まで動く。さらに広告ROAS・全体ROAS・増分ROASは別物なので、混ぜて見ると広告の貢献を大きく見誤る。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-roas/">TikTok ShopのROAS基準は自分で計算する｜損益分岐ROA</a></p></div>
+<div class="gterm"><h3>客単価<span class="rd">1注文あたりの売上</span></h3><p class="gdef">1回の注文で買われた金額のこと。GMVは「Impression × CTR × CVR × 客単価」に分解でき、客単価は売上を作る4つの要素のひとつ。</p><p class="gwhy"><b>取り違えると</b>手数料は率で決まるのに送料・梱包は1注文あたり定額なので、客単価が低いほど固定費の比率が上がって広告に使える余地が消える。動画起点の購入は「ついで買い」が起きにくく、セットを最初から1つの商品として作らないと客単価は上がらない。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の</a>／<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計｜売上・動画・LIVE・商品を週次</a></p></div>
+<div class="gterm"><h3>原資<span class="rd">げんし</span></h3><p class="gdef">販売価格から①商品原価、②プラットフォームの販売手数料、③クリエイターへのアフィリエイト報酬、④送料・梱包費を引いた残りのこと。ここが広告費と利益の原資になる。※アフィリエイト報酬を引く前の残りを指して「報酬に使える原資」と呼び、そこからコミッション・広告費・利益の3つを配分する使い方もある（この場合はコミッションを二重に引かない）。</p><p class="gwhy"><b>取り違えると</b>原資を先に出さずに報酬率や広告予算を決めると、配分の合計が原資を超えて赤字になる。楽天から移る場合、ポイント原資1.0%をそのままコミッションの下限として持ち込むのも誤りで、1.0%で動くクリエイターはほとんどいない。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/market-outlook/">TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか</a>／<a href="https://leam.co.jp/column/creator-commission/">TikTok Shopのコミッション相場は？クリエイターへの報酬の決</a></p></div>
+<h2 id="s2"><span class="no en">02</span>売り場と機能のことば</h2>
+<div class="gterm"><h3>セラーセンター<span class="rd">Seller Center</span></h3><p class="gdef">TikTok Shopの出品・注文・発送・販促・クリエイター連携・入金確認までを一括管理する、セラー専用の管理画面のこと。楽天市場のRMS、Amazonのセラーセントラルにあたる位置づけ。</p><p class="gwhy"><b>取り違えると</b>「売る場所」ではなく「販売を支える場所」だと分かっていないと、管理画面を整えることが目的化して、売上をつくる動画・ライブ・クリエイター起用に時間が回らなくなる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/seller-center-guide/">TikTok Shopセラーセンターの使い方｜最初に設定すべき項目と</a></p></div>
+<div class="gterm"><h3>アフィリエイトセンター</h3><p class="gdef">公式ヘルプでいう「アフィリエイトセンター」は、セラーがパソコンのセラーセンターから「アフィリエイト・マーケティング」で入る、コラボ（オープン／ターゲット）の設定を行うセラー側の画面のこと。クリエイターの入口はアプリ内のTikTok Shopクリエイターセンター。ただしクリエイター向け公式ガイドでも収益の確認先として同じ語が使われるため、ボタン名ではなく「アプリ側かセラーセンター側か」という階層で区別する。</p><p class="gwhy"><b>取り違えると</b>セラー側の画面名だと知らないと、クリエイターがアプリの中を探し続けて見つからず、案件の探し方の案内そのものが噛み合わなくなる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/affiliate-center-howto/">TikTokアフィリエイトセンターの使い方｜案件の探し方と申請の流れ</a></p></div>
+<div class="gterm"><h3>ショーケース</h3><p class="gdef">アカウントのプロフィールに表示される商品一覧のこと。ショート動画・ライブ配信と並ぶ3つの売り場のひとつで、動画が「集客」ならショーケースは「受け皿」にあたる。</p><p class="gwhy"><b>取り違えると</b>動画・LIVEに貼れる商品リンクは自分のショーケースにある商品だけで、コミッションの対象もショーケースとコンテンツの両方に追加した商品の売上だけなので、ショーケースが空のまま動画を出すと買える場所がない状態になる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</a>／<a href="https://leam.co.jp/column/affiliate-center-howto/">TikTokアフィリエイトセンターの使い方｜案件の探し方と申請の流れ</a></p></div>
+<div class="gterm"><h3>ピン留め（Pin Card）<span class="rd">Pin Card</span></h3><p class="gdef">ライブ配信中に紹介したい商品を画面に固定表示し、視聴者がワンタップで購入まで進める機能のこと。公式が初心者向けの「基本3点セット」として挙げるBillboard・Pin Card・Auto Highlightのひとつ。</p><p class="gwhy"><b>取り違えると</b>Pin Cardは15〜30秒程度で表示が消え、保つには繰り返し操作が必要なので、話す人と操作する人を分けずに配信すると、商品カードが出ていない時間帯に喋り続けることになる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門｜やり方・売れる配信の作り方</a></p></div>
+<div class="gterm"><h3>GMV Max<span class="rd">Product GMV Max／LIVE GMV Max</span></h3><p class="gdef">TikTok Shopの売上（GMV）が最大になるように、TikTokが配信を自動で最適化する広告のこと。商品を売る「Product GMV Max」と、ライブ配信への流入と配信中の購入を伸ばす「LIVE GMV Max」の2種類がある。</p><p class="gwhy"><b>取り違えると</b>2025年7月以降、TikTok Shopを販売先にするSales目的ではGMV Max以外のキャンペーンを新しく作れないため、「主力はGMV Max、検証は手動で」という広告設計を前提に計画すると、その計画自体が成立しない。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/gmvmax/">GMV Maxとは？2種類の違い・費用・設定・改善までTikTok </a></p></div>
+<div class="gterm"><h3>オープンコラボ／ターゲットコラボ<span class="rd">オープンコラボ＝公開プラン／ターゲットコラボ＝指名オファー</span></h3><p class="gdef">セラーがクリエイターにアフィリエイトを募る2つの出し方のこと。オープンコラボは全クリエイターに公開して自発的な紹介を集める公開プラン、ターゲットコラボは特定のクリエイターを指名して個別条件でオファーする指名オファー。</p><p class="gwhy"><b>取り違えると</b>同じ商品がターゲットコラボとオープンコラボの両方にある場合はターゲットコラボの率が適用されるため、2つを区別せずに料率を設計すると、想定より高い率で支払うことになる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopアフィリエイトの仕組み完全ガイド【セラー向け】</a>／<a href="https://leam.co.jp/column/mcn-merit/">TikTok ShopのMCNとは？所属した場合と個人で続ける場合の</a></p></div>
+<div class="gterm"><h3>ショップパフォーマンススコア</h3><p class="gdef">TikTok Shop公式が、ショップの運用品質を指標で評価する仕組みのこと。カスタマーサービスの指標として24時間応答率とアフターセールス対応時間が示されており、在庫不足などセラー側の事情によるキャンセルも評価対象になる。</p><p class="gwhy"><b>取り違えると</b>問い合わせ返信の遅れや在庫切れによるキャンセルを「その場の対応の丁寧さ」の問題だと捉えていると、ショップ全体の評価を下げていることに気づけない。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-customer-support/">TikTok Shopの顧客対応｜問い合わせ返信テンプレートと運用ル</a>／<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">TikTok Shopの在庫管理｜欠品・売り越し・キャンセルを防ぐ運</a></p></div>
+<h2 id="s3"><span class="no en">03</span>数字と指標のことば</h2>
+<div class="gterm"><h3>CVR<span class="rd">購入率</span></h3><p class="gdef">商品ページに来た人のうち、実際に購入した人の割合のこと（product-page-cvr の説明）。ただし公式ヘルプの<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">セラー向け完全攻略Playbook</a>がGMVの分解（GMV＝インプレッション×CTR×CVR×客単価）で使うCVRは「購入数÷商品カードクリック数」で、分母が「ページに来た人」か「商品カードのクリック」かで別の数字になる（2026年9月7日確認）。記事は「動画CTRと商品ページCVRのように、似た言葉でも対象範囲が異なる指標がある」として、どちらの定義で話しているかを先にそろえるよう促している。</p><p class="gwhy"><b>取り違えると</b>流入を増やす施策だけを追ってCVRを放置すると、広告やアフィリエイトで増やした分がそのまま取りこぼしになり、費用だけが積み上がる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/product-page-cvr/">TikTok Shopの商品登録と売れる商品ページの作り方｜CVRを</a>／<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計｜売上・動画・LIVE・商品を週次</a></p></div>
+<div class="gterm"><h3>CTR<span class="rd">クリック率</span></h3><p class="gdef">商品カードのクリック数を、インプレッション（表示回数）で割った割合のこと。公式ヘルプの<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">セラー向け完全攻略Playbook</a>がGMV＝インプレッション×CTR×CVR×客単価という分解で使う定義で、CTR＝商品カードクリック数÷インプレッション（2026年9月7日確認）。※インプレッションが何の表示回数を指すかは記事に書かれていないため「商品カードが表示された回数」と限定しない。記事は「動画CTR」と「商品ページCVR」を対象範囲の異なる指標として区別している。</p><p class="gwhy"><b>取り違えると</b>CTRとCVRを分けずに合計だけ見ると、弱い原因が動画の冒頭の見せ方なのか商品ページなのか切り分けられず、直す場所を間違える。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計｜売上・動画・LIVE・商品を週次</a></p></div>
+<div class="gterm"><h3>LDR（発送遅延率）<span class="rd">はっそうちえんりつ</span></h3><p class="gdef">直近7暦日の全注文のうち、期限内に「集荷待ち」へ更新できなかった注文の割合のこと（<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2727812995221265&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">公式の注文品配送ポリシー</a>の定義）。7日で100件なら遅延許容は4件まで。推奨水準は執筆時点（2026年9月7日確認）で4%未満とされるが、基準値は改定で変わるため、自社に適用される数値はセラーセンターの管理画面の表示を正とする。</p><p class="gwhy"><b>取り違えると</b>1件ごとではなく直近7暦日の「率」で判定されるため、注文数が少ない時期ほど1件の遅延で基準を割り、1日あたりの販売上限が段階的に下がる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/shipping-rules/">TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運</a>／<a href="https://leam.co.jp/column/account-suspension/">TikTok Shopのアカウント停止はなぜ起きる？違反ポイントの仕</a></p></div>
+<div class="gterm"><h3>OTDR（納期遵守率）<span class="rd">のうきじゅんしゅりつ</span></h3><p class="gdef">直近7暦日の全注文のうち、指定の配送期限（注文日の翌営業日から起算して5営業日目の23:59）内に配達完了した注文の割合のこと。</p><p class="gwhy"><b>取り違えると</b>配達完了までが対象なので「発送さえ済ませれば良い」と考えると、遠隔地の配送日数や配送業者の選定ミスで悪化する（70%以上という水準は、執筆時点で当社がセラーセンターの管理画面で確認した目安）。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/shipping-rules/">TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運</a>／<a href="https://leam.co.jp/column/account-suspension/">TikTok Shopのアカウント停止はなぜ起きる？違反ポイントの仕</a></p></div>
+<div class="gterm"><h3>SFCR（セラー過失キャンセル率）<span class="rd">セラーかしつキャンセルりつ（記事により「セラーの過失によるキャンセル率」とも表記）</span></h3><p class="gdef">直近7暦日の全注文のうち、在庫切れなどセラー側の理由でキャンセルした注文の割合のこと。</p><p class="gwhy"><b>取り違えると</b>在庫数を実在庫と合わせないまま販売を続けると、返金して終わりではなく率として積み上がり、1日あたりの販売上限が段階的に引き下げられる（2.5%未満という目標値は、執筆時点で当社がセラーセンターの管理画面で確認した目安）。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/shipping-rules/">TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運</a>／<a href="https://leam.co.jp/column/account-suspension/">TikTok Shopのアカウント停止はなぜ起きる？違反ポイントの仕</a></p></div>
+<div class="gterm"><h3>有効追跡率（VTR）<span class="rd">ゆうこうついせきりつ</span></h3><p class="gdef">認定配送業者の追跡可能な配送方法で発送された荷物の割合のこと。</p><p class="gwhy"><b>取り違えると</b>追跡番号の入力漏れや誤登録があると、荷物が実際に届いていても指標上は「追跡できない発送」として数えられ、評価が下がる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/account-suspension/">TikTok Shopのアカウント停止はなぜ起きる？違反ポイントの仕</a>／<a href="https://leam.co.jp/column/cross-border-selling/">TikTok Shopの越境販売と、海外セラーとの競合で見るところ</a></p></div>
+<div class="gterm"><h3>SKU</h3><p class="gdef">色・サイズやセット構成など、同じ商品でも在庫を分けて管理する単位のこと。同じ商品のバリエーションとして持つことも、別商品として立てることもできる。</p><p class="gwhy"><b>取り違えると</b>採算を商品単位や全体平均で見るとSKUごとの赤字が黒字に隠れ、畳むべき商品と守るべき商品の判断ができなくなる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/seller-center-guide/">TikTok Shopセラーセンターの使い方｜最初に設定すべき項目と</a>／<a href="https://leam.co.jp/column/pricing-strategy/">TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設</a></p></div>
+<h2 id="s4"><span class="no en">04</span>人と体制のことば</h2>
+<div class="gterm"><h3>MCN<span class="rd">エムシーエヌ／Multi-Channel Network</span></h3><p class="gdef">MCN（Multi-Channel Network）は、複数のクリエイターと契約し、案件の紹介、撮影や配信の設計、事務手続きなどをまとめて引き受ける事業者（クリエイター事務所）の総称。アプリやクリエイターセンターに「MCN」というボタンがあるわけではなく、所属したからといってクリエイター個人の資格や報酬率がTikTok側の仕組みで決まるものでもない。ただしTikTok側にも提携事務所向けのプラットフォームやTikTok Shopの公式パートナー一覧といった枠組み自体は存在する。</p><p class="gwhy"><b>取り違えると</b>TikTok側の仕組みだと取り違えると、「所属すれば審査が通る」「所属すれば率が上がる」という説明を信じてしまうが、申請条件もコミッション率も違反時の措置も所属では変わらず、アカウントの責任はクリエイター本人に残る。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/mcn-merit/">TikTok ShopのMCNとは？所属した場合と個人で続ける場合の</a></p></div>
+<div class="gterm"><h3>クリエイター</h3><p class="gdef">セラーが設定した商品とコミッション率をもとに、自分の判断でその商品を動画やライブで紹介し、売れた分だけ報酬を受け取る人のこと。TikTok Shopのアフィリエイトに参加する個人を指す。</p><p class="gwhy"><b>取り違えると</b>発注すれば作ってくれる外注先だと思うと設計を誤る。率を決めるのはセラー側で、受けるか見送るかを決めるのはクリエイター側なので、商品を登録して率を置いただけでは紹介は生まれない。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</a></p></div>
+<div class="gterm"><h3>ライブキャスト</h3><p class="gdef">ライブコマースの配信者のこと。ショート動画のアフィリエイトと違い、配信時間そのものを拘束され、事前の商品理解・台本準備・リハーサルも発生する。</p><p class="gwhy"><b>取り違えると</b>ショート動画と同じコミッション表で報酬を組むと打診が通らない。当社の運用実感では、ライブキャストへの報酬は「配信時間に対する固定報酬」＋「配信中の売上に対する成果報酬」の2階建てが基本形で、動画アフィリエイトの相場感をそのまま流用すると打診の段階で断られやすくなる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/creator-commission/">TikTok Shopのコミッション相場は？クリエイターへの報酬の決</a></p></div>
+<div class="gterm"><h3>セラー</h3><p class="gdef">TikTok Shopで商品を登録して売る側、つまり販売者のこと。商品の管理・注文処理・売上分析は「セラーセンター」と呼ばれる管理画面で行う。</p><p class="gwhy"><b>取り違えると</b>コミッションの支払い条件を合意する当事者はセラーとクリエイターであり、TikTokはその合意の当事者ではない。「TikTokが払ってくれる」と誤解すると、支払いの根拠が誰との合意にあるのかを見失う。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</a></p></div>
+<div class="gterm"><h3>個人セラー／コーポレートセラー<span class="rd">こじんセラー／コーポレートセラー</span></h3><p class="gdef">TikTok Shopの2つの出店区分のこと。個人は「個人セラー」、法人は「コーポレートセラー」として申請し、必要書類は本人確認・住所証明・国内銀行口座の3点セットが基本。開業届のない個人でも個人セラーとして申請できる。</p><p class="gwhy"><b>取り違えると</b>区分で扱える商材と持てるショップ数が変わる。アルコール類などは法人限定カテゴリーで個人セラーは出品できず、ショップ数は個人セラーが本人確認IDにつき1店・コーポレートセラーが最大5店。さらに個人セラーは氏名と事業所住所が商品ページに表示され、申請後に会社情報・個人情報を自分で変更できないため、後からの切り替えが困難になる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-shinsa/">TikTok Shopの開設・出店ガイド｜条件・必要書類と、審査に落</a></p></div>
+<div class="gterm"><h3>オーガニック</h3><p class="gdef">広告費をかけずに生まれる売上・流入のこと。自社アカウントの投稿やクリエイターの動画、検索経由など、広告なしで売上を作っている部分を指す。</p><p class="gwhy"><b>取り違えると</b>広告経由・アフィリエイト経由と分けずに数えると、広告を止めても残るはずの売上まで広告の成果に見えてしまい、ROASを実態より良く見積もる。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別料率と利益計算の</a></p></div>
+<div class="gterm"><h3>商戦期<span class="rd">しょうせんき</span></h3><p class="gdef">販売機会が集中する時期のこと。TikTok Shopでは、①プラットフォームが主催する公式セールと、②消費者側の季節イベント（母の日・夏休み・ハロウィン・クリスマス・年末年始など）の2層に分けて読む。年間最大の山は11〜12月の年末商戦。</p><p class="gwhy"><b>取り違えると</b>当日の頑張りで取り返せると考えると間に合わない。公式セールは開催時期も条件もプラットフォームが決めるため「早く知って、条件を満たして、乗る」しかなく、在庫・発送体制とクリエイター打診は前倒しで動かす必要がある（当社の運用実感では、商戦期は各社が一斉に打診するため返信率も下がりがち）。</p><p class="gsrc">くわしくは：<a href="https://leam.co.jp/column/seasonal-campaign/">TikTok Shopの商戦期カレンダー｜年末商戦など大型セールの準</a></p></div>
+
+<h2 id="faq"><span class="no en">05</span>よくある質問</h2>
+<div class="faq">
+<details><summary>TikTok ShopのGMVと入金額はなぜ一致しないのですか？</summary><div class="a">分析画面のGMVは返品・返金・キャンセルを含んだ流通取引総額で、財務画面の入金額はそこから販売手数料などを引いた後の金額だからです。会議で「売上」と言うときにどちらを指すかを先に決めておくと、担当者ごとの解釈のずれを防げます。</div></details>
+<details><summary>TikTok Shopの販売手数料と実質手数料は何が違いますか？</summary><div class="a">販売手数料はプラットフォームに支払うカテゴリー別7〜12%（決済手数料込み）で、実質手数料はそこにクリエイターへのアフィリエイト報酬を足したものです。報酬はクリエイター経由で売れたときに発生し、率はセラーが商品ごとに任意で設定します。</div></details>
+<details><summary>粗利と貢献利益はどう使い分けますか？</summary><div class="a">粗利は売価から原価を引いたもの、貢献利益はそこからさらに販売手数料とコミッションを引いて手元に残る額です。広告に使える上限（限界CPA）は貢献利益から出すので、粗利のまま広告予算を決めると手数料と報酬の分だけ使いすぎます。</div></details>
+<details><summary>TikTok ShopのLDR・OTDR・SFCRはどこで確認できますか？</summary><div class="a">セラーセンターの管理画面で確認します。いずれも直近7暦日の注文に占める「率」で判定されるため、注文数が少ない時期は1件の遅延やキャンセルで率が大きく動きます。基準値は改定されることがあるので、自社に適用される数値は必ず管理画面の表示で確認してください。</div></details>
+<details><summary>この用語集に載っていない言葉はどうすればよいですか？</summary><div class="a">ここに載せているのは、当コラムの記事内で実際に定義して使っている語だけです。公式ヘルプにしか出てこない語や、当社が定義を確認できていない語（TikTok発送／Haya-Ship、視聴維持率など）は、あえて載せていません。正確さを優先して、確認できたものだけを置いています。</div></details>
+</div>
+
+<div class="ctabox"><div class="ct">用語の整理から一緒にやれます</div><p>「どの数字で判断すればよいか」が決まらないまま運用が進むと、打ち手の良し悪しが測れません。商材と体制を伺って、見るべき指標と計算の順番を一緒に決めるところからご相談いただけます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=glossary">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/column/">コラム一覧を見る</a></div></div>
+
+<p class="note">参考情報：本記事の定義は、当コラムの各記事で使っている説明にそろえています。各語の詳細は「くわしくは」のリンク先をご覧ください。仕様・料率・基準値は更新されることがあるため、最新は必ずTikTok Shopセラーセンターおよび公式ヘルプでご確認ください。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。本記事は2026年9月8日時点の情報にもとづいています。</p>
+</article>
+</div>
+</body>
+</html>
