@@ -56,7 +56,7 @@
 - [TikTok Shopライブコマース入門｜やり方と準備](https://leam.co.jp/column/live-commerce-guide/): フォロワー1,000人はアフィリエイト参加の条件で、セラーの販売配信の条件ではありません。アプリに「LIVE」が出ていれば始められます。
 - [TikTok Shopのライブは誰が見ている？視聴者層](https://leam.co.jp/column/live-audience/): 「TikTokは若者だけ」は誤解です。公式発表では購入者の約6割が35歳以上。当社の運用実感では買う中心は35〜54歳の女性で、狙い目は競合の少ない平日昼11〜14時。
 - [TikTok ShopでAI生成動画は使えるか｜規約と実務](https://leam.co.jp/column/ai-video-policy/): TikTok ShopでAI生成動画をどこまで使えるかを、日本向け公式ヘルプの記述と国内法令から整理。開示方法・禁止行為・公開前チェック表つき。
-- [TikTok Shopライブコマース代行の使い方｜自社運用と比較](https://leam.co.jp/column/live-agency-guide/): TikTok Shopのライブ配信を外注するか自社で回すかを決める記事です。五つの層への分解、比較表、見積りの読み方、契約で確認する項目を整理します。
+- [TikTok Shopライブコマース代行の使い方｜自社運用と比較](https://leam.co.jp/column/live-agency-guide/): TikTok Shopのライブ配信を外注するか自社で回すかを決める記事です。五つの層への分解、比較表、見積もりの読み方、契約で確認する項目を整理します。
 - [TikTok Shop LIVEの機材と配信環境](https://leam.co.jp/column/tiktok-shop-live-equipment/): TikTok Shop LIVEに必要なスマホ・固定具・照明・音声・回線を解説します。まず揃える最小構成と、配信前のチェック表つきです。
 - [TikTok Shop LIVEの台本テンプレート](https://leam.co.jp/column/tiktok-shop-live-script/): TikTok Shop LIVEで使える台本を、入室対応、悩み提示、実演、比較、質問対応、購入案内、次の商品への接続に分けて解説。配信前後のチェック表つき。
 - [TikTok ShopのLIVEオークション｜始め方と条件](https://leam.co.jp/column/live-auction/): TikTok ShopのLIVEオークションは、LIVE中のカウントダウン入札で1点ずつ売る機能です。利用条件、出品の作り方、入札上げ幅、落札後15分の決済までを整理します。
