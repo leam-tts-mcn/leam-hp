@@ -59,6 +59,7 @@
 - [TikTok Shopライブコマース代行の使い方｜自社運用と比較](https://leam.co.jp/column/live-agency-guide/): TikTok Shopのライブ配信を外注するか自社で回すかを決める記事です。五つの層への分解、比較表、見積りの読み方、契約で確認する項目を整理します。
 - [TikTok Shop LIVEの機材と配信環境](https://leam.co.jp/column/tiktok-shop-live-equipment/): TikTok Shop LIVEに必要なスマホ・固定具・照明・音声・回線を解説します。まず揃える最小構成と、配信前のチェック表つきです。
 - [TikTok Shop LIVEの台本テンプレート](https://leam.co.jp/column/tiktok-shop-live-script/): TikTok Shop LIVEで使える台本を、入室対応、悩み提示、実演、比較、質問対応、購入案内、次の商品への接続に分けて解説。配信前後のチェック表つき。
+- [TikTok ShopのLIVEオークション｜始め方と条件](https://leam.co.jp/column/live-auction/): TikTok ShopのLIVEオークションは、LIVE中のカウントダウン入札で1点ずつ売る機能です。利用条件、出品の作り方、入札上げ幅、落札後15分の決済までを整理します。
 
 ### クリエイター連携
 - [TikTok Shopアフィリエイトの仕組み【セラー向け】](https://leam.co.jp/column/affiliate-guide/): TikTok Shopのアフィリエイトは売れるまで費用0円。当社の実務では10〜15%前後が起点で、10%を切ると選ばれにくくなります。
