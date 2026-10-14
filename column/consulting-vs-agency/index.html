@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのコンサルと運用代行の違い｜どちらに頼むべきか</title>
+<meta name="description" content="TikTok Shopのコンサルは判断を、運用代行は作業を外部に渡す支援で、運用支援（伴走）はその間です。社内の人・判断できる人・期限で選ぶ手順と、社内に残すものを整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/consulting-vs-agency/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのコンサルと運用代行の違い｜どちらに頼むべきか">
+<meta property="og:description" content="TikTok Shopのコンサルは判断を、運用代行は作業を外部に渡す支援で、運用支援（伴走）はその間です。社内の人・判断できる人・期限で選ぶ手順と、社内に残すものを整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/consulting-vs-agency/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/consulting-vs-agency.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのコンサルと運用代行の違い｜どちらに頼むべきか">
+<meta name="twitter:description" content="TikTok Shopのコンサルは判断を、運用代行は作業を外部に渡す支援で、運用支援（伴走）はその間です。社内の人・判断できる人・期限で選ぶ手順と、社内に残すものを整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/consulting-vs-agency.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのコンサルと運用代行の違い｜どちらに頼むべきか", "description": "TikTok Shopのコンサルは判断を、運用代行は作業を外部に渡す支援で、運用支援（伴走）はその間です。社内の人・判断できる人・期限で選ぶ手順と、社内に残すものを整理します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/consulting-vs-agency/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/consulting-vs-agency.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&lang=ja-JP", "name": "TikTok Shop公式：日本 TikTok Shop販売者利用規約（最終更新日 2026年5月7日）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&lang=ja-JP", "name": "TikTok Shop公式：データ分析の概要"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのコンサルと運用代行の違い｜どちらに頼むべきか", "item": "https://leam.co.jp/column/consulting-vs-agency/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=consulting-vs-agency">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopのコンサルと運用代行の違い｜判断・作業・伴走のどれを外に渡すかで選ぶ</p>
+<span class="cat">運用体制</span>
+<h1>TikTok Shopのコンサルと運用代行の違い｜判断・作業・伴走のどれを外に渡すかで選ぶ</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="赤い天秤の左の皿に判断を表すシアンの方位磁針、右の皿に作業を表す灰色の歯車が載って釣り合い、その右ではシアンの書類フォルダに数字の書類と記録の書類が収まってチェックが付く、外部に何を渡し社内に何を残すかを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="868" cy="246" rx="322" ry="200" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="consultingvsagencyDots">
+      <circle cx="636" cy="40" r="5"/><circle cx="672" cy="40" r="5"/><circle cx="708" cy="40" r="5"/><circle cx="744" cy="40" r="5"/>
+      <circle cx="636" cy="76" r="5"/><circle cx="672" cy="76" r="5"/><circle cx="708" cy="76" r="5"/><circle cx="744" cy="76" r="5"/>
+    </g>
+    <use href="#consultingvsagencyDots" transform="translate(404 512)"/>
+  </g>
+
+  <!-- ================= 左：天秤（主役・赤） ================= -->
+  <g>
+    <!-- 台の影 -->
+    <path d="M218 522h224l-30-50H248z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <!-- 支柱 -->
+    <rect x="318" y="172" width="24" height="306" rx="6" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 台 -->
+    <path d="M218 522h224l-30-50H248z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 吊り紐 -->
+    <g fill="none" stroke="#0B0C10" stroke-width="5" stroke-linecap="round">
+      <path d="M150 182L92 330M150 182L208 330"/>
+      <path d="M510 182L452 330M510 182L568 330"/>
+    </g>
+
+    <!-- 腕と支点 -->
+    <rect x="114" y="160" width="432" height="24" rx="12" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="330" cy="172" r="24" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="330" cy="172" r="9" fill="#CE1730"/>
+
+    <!-- 左の皿：判断（方位磁針） -->
+    <path d="M78 330h144c0 36-32 58-72 58s-72-22-72-58z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <circle cx="150" cy="282" r="46" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="150" cy="282" r="31" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M150 256l10 26h-20z" fill="#FE2C55" stroke="#0B0C10" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M150 308l10-26h-20z" fill="#C9CBD0" stroke="#0B0C10" stroke-width="4" stroke-linejoin="round"/>
+    <circle cx="150" cy="282" r="5" fill="#0B0C10"/>
+    <path d="M78 330h144c0 36-32 58-72 58s-72-22-72-58z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 右の皿：作業（歯車） -->
+    <path d="M438 330h144c0 36-32 58-72 58s-72-22-72-58z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <g transform="translate(510 276)" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round">
+      <rect x="-11" y="-54" width="22" height="24" rx="4"/>
+      <rect x="-11" y="-54" width="22" height="24" rx="4" transform="rotate(45)"/>
+      <rect x="-11" y="-54" width="22" height="24" rx="4" transform="rotate(90)"/>
+      <rect x="-11" y="-54" width="22" height="24" rx="4" transform="rotate(135)"/>
+      <rect x="-11" y="-54" width="22" height="24" rx="4" transform="rotate(180)"/>
+      <rect x="-11" y="-54" width="22" height="24" rx="4" transform="rotate(225)"/>
+      <rect x="-11" y="-54" width="22" height="24" rx="4" transform="rotate(270)"/>
+      <rect x="-11" y="-54" width="22" height="24" rx="4" transform="rotate(315)"/>
+      <circle r="40" stroke-width="6"/>
+      <circle r="14" fill="#FFFFFF"/>
+    </g>
+    <path d="M438 330h144c0 36-32 58-72 58s-72-22-72-58z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 中央：社内へ残す矢印（シアン） ================= -->
+  <g>
+    <path d="M606 396h44v-20l42 36-42 36v-20h-44z" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+    <path d="M606 396h44v-20l42 36-42 36v-20h-44z" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 右：社内に残すフォルダ（シアン） ================= -->
+  <g>
+    <!-- 背面と見出し -->
+    <path d="M738 170h124a14 14 0 0 1 11 5l22 27h205a16 16 0 0 1 16 16v290a16 16 0 0 1-16 16H738a16 16 0 0 1-16-16V186a16 16 0 0 1 16-16z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <path d="M738 170h124a14 14 0 0 1 11 5l22 27h205a16 16 0 0 1 16 16v290a16 16 0 0 1-16 16H738a16 16 0 0 1-16-16V186a16 16 0 0 1 16-16z" fill="#C9CBD0" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 数字の書類 -->
+    <g transform="rotate(-6 850 300)">
+      <rect x="764" y="208" width="176" height="214" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="788" y="228" width="64" height="12" rx="6" fill="#DFE0E2"/>
+      <rect x="800" y="270" width="24" height="36" rx="5" fill="#DFE0E2"/>
+      <rect x="836" y="254" width="24" height="52" rx="5" fill="#DFE0E2"/>
+      <rect x="872" y="232" width="24" height="74" rx="5" fill="#FE2C55" stroke="#0B0C10" stroke-width="4"/>
+    </g>
+
+    <!-- 記録の書類 -->
+    <g transform="rotate(5 990 300)">
+      <rect x="918" y="198" width="176" height="220" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+      <rect x="944" y="226" width="20" height="20" rx="5" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/>
+      <rect x="976" y="230" width="92" height="12" rx="6" fill="#DFE0E2"/>
+      <rect x="944" y="264" width="20" height="20" rx="5" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/>
+      <rect x="976" y="268" width="74" height="12" rx="6" fill="#DFE0E2"/>
+      <rect x="944" y="302" width="20" height="20" rx="5" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+      <rect x="976" y="306" width="84" height="12" rx="6" fill="#DFE0E2"/>
+    </g>
+
+    <!-- 前のポケット -->
+    <path d="M722 316h394v192a16 16 0 0 1-16 16H738a16 16 0 0 1-16-16z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="762" y="370" width="168" height="16" rx="8" fill="#FFFFFF"/>
+    <rect x="762" y="402" width="104" height="14" rx="7" fill="#FFFFFF"/>
+
+    <!-- 残せた印 -->
+    <circle cx="1052" cy="452" r="38" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
+    <circle cx="1052" cy="452" r="38" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M1035 453l12 14 23-27" fill="none" stroke="#0B0C10" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1146" cy="92" r="17" fill="#FE2C55"/>
+  <circle cx="612" cy="196" r="14" fill="#DFE0E2"/>
+  <circle cx="48" cy="446" r="12" fill="#25F4EE"/>
+</svg>
+    <figcaption>TikTok Shopのコンサルと運用代行で、外部に渡すものと社内に残すもの（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopの外部支援は、コンサル・運用支援（伴走）・運用代行と呼び方が分かれていますが、違いは作業の量ではなく<strong>外部に何を渡すか</strong>にあります。コンサルは判断を、運用代行は作業を渡し、運用支援はその両方を一部ずつ分け合って一緒に回します。本記事では、3つの形の違い、管理画面を外部に任せるときに日本向けの販売者利用規約が定めていること、自社の状態から合う形を選ぶ手順、そして3つの形で契約後に社内に残るものの違いを整理します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>コンサル・運用支援（伴走）・運用代行が、それぞれ何を外部に渡す支援なのか</li><li>「手を動かす人」「判断できる人」「期限」の3つから、自社に合う形を選ぶ方法</li><li>コンサル・伴走・代行で、契約が終わったあと社内に残るものの違いと引き取り方</li></ul></div>
+<div class="box box-point"><div class="bt">💡 この記事で扱わないこと</div><p>外部に頼むときの費用の相場と料金体系は<a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場と選び方</a>に、そもそも外部に出すか社内で回すかの判断は<a href="https://leam.co.jp/column/inhouse-vs-agency/">内製か運用代行かの判断基準</a>にまとめています。TikTok Shopの仕組みそのものは<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは</a>から読めます。本記事は「外に頼むと決めたあと、どの形で頼むか」だけを扱います。</p></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">運用代行</span><b><a href="https://leam.co.jp/column/unyodaiko-cost/">TikTok Shop運用代行の費用相場と選び方</a></b><span>形を決めたあとの金額感</span></div>
+    <div class="relcard"><span class="rc">運用体制</span><b><a href="https://leam.co.jp/column/inhouse-vs-agency/">TikTok Shopは内製か運用代行か</a></b><span>外に出すかどうかの判断</span></div>
+    <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方</a></b><span>判断の前提になる仕組み</span></div>
+    <div class="relcard"><span class="rc">立ち上げ</span><b><a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">TikTok Shop立ち上げ90日ロードマップ</a></b><span>段階ごとに増える作業と判断</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">コンサル・伴走・代行のどれが合うかを無料で整理します</div><p>社内で手を動かせる人、判断できる人、守りたい期限を伺い、外部に渡すものと社内に残すものを切り分けます。外部支援がまだ要らない段階なら、そうお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=consulting-vs-agency">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">コンサル・運用代行・運用支援の違いは、外部に「何を渡すか」で決まる</a></li><li><a href="#s2">名前ではなく、「誰が決めて、誰が手を動かすか」の一文で見分ける</a></li><li><a href="#s3">管理画面を外部に任せても、規約上の責任は自社に残る</a></li><li><a href="#s4">選び方は「手を動かす人」「判断できる人」「期限」の3つで決まる</a></li><li><a href="#s5">うまくいかない依頼は、足りないものと違うものを渡している</a></li><li><a href="#s6">期限があるときは、段階ごとに渡すものを切り替える前提で組む</a></li><li><a href="#s7">契約が終わったあと社内に残るものは、コンサル・伴走・代行で違う</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>コンサル・運用代行・運用支援の違いは、外部に「何を渡すか」で決まる</h2>
+<p>3つの呼び方は、外部が使う時間の長さで比べると違いが見えにくくなります。分けやすいのは、<strong>外部に渡すものの種類</strong>です。</p>
+<p><strong>コンサルは「判断」を渡す支援</strong>です。何を売るか、どの順に試すか、どの数字を見て続けるか止めるかを外部が組み立て、出品や制作など手を動かすのは自社です。<strong>運用代行は「作業」を渡す支援</strong>です。出品、動画の制作と投稿、LIVEの進行、クリエイターへの連絡といった実務を外部が持ち、方向を決めるのは自社です。<strong>運用支援（伴走）はその間</strong>にあり、判断と作業を一部ずつ外部が持ち、週次の打ち合わせで一緒に決めて一緒に回します。</p>
+<div class="tw"><table><thead><tr><th>観点</th><th>コンサル</th><th>運用支援（伴走）</th><th>運用代行</th></tr></thead><tbody><tr><td>外部に渡すもの</td><td>判断の組み立て（何を・どの順で・どの数字で）</td><td>判断と作業の一部</td><td>作業の実行（出品・制作・投稿・連絡など）</td></tr><tr><td>手を動かす人</td><td>自社</td><td>自社と外部で分担</td><td>外部</td></tr><tr><td>最終判断</td><td>自社</td><td>自社（外部と一緒に決める）</td><td>自社</td></tr><tr><td>外部から返ってくるもの</td><td>方針、優先順位、改善案</td><td>定例での決定事項と、分担した作業の成果物</td><td>完成した出品・動画・配信・連絡の記録</td></tr><tr><td>社内に毎週要る時間</td><td>多い（実行は社内）</td><td>中くらい（定例と分担分の作業）</td><td>少なめ（確認と承認）</td></tr><tr><td>契約を止めたときに社内に残りやすいもの</td><td>判断の型</td><td>判断の型と一部の作業手順</td><td>意識して残さないと、ほとんど残らない</td></tr></tbody></table></div><p class="src">3つの支援の形の違い（LEAM作成）</p>
+  <figure> <svg viewBox="0 0 720 262" role="img" aria-label="コンサル、運用支援（伴走）、運用代行の3つを横に並べ、それぞれ外部へ渡すものと自社に残るものを上下2段で示し、どの形でも最終判断は自社に残ることを添えた図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">外部へ渡すものが、3つの形で違う</text><rect x="20" y="42" width="214" height="176" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="127" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">コンサル</text><text x="127" y="89" text-anchor="middle" font-size="11" fill="#787D8A">判断を渡す</text><rect x="36" y="102" width="182" height="48" rx="9" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="127" y="121" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">外部へ</text><text x="127" y="139" text-anchor="middle" font-size="11.5" fill="#454956">判断の組み立て</text><rect x="36" y="158" width="182" height="48" rx="9" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="127" y="177" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">自社に</text><text x="127" y="195" text-anchor="middle" font-size="11.5" fill="#787D8A">作業と最終判断</text><rect x="253" y="42" width="214" height="176" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">運用支援（伴走）</text><text x="360" y="89" text-anchor="middle" font-size="11" fill="#787D8A">一緒に回す</text><rect x="269" y="102" width="182" height="48" rx="9" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="360" y="121" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">外部へ</text><text x="360" y="139" text-anchor="middle" font-size="11.5" fill="#454956">判断と作業の一部</text><rect x="269" y="158" width="182" height="48" rx="9" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="177" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">自社に</text><text x="360" y="195" text-anchor="middle" font-size="11.5" fill="#787D8A">残りの作業と最終判断</text><rect x="486" y="42" width="214" height="176" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="593" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">運用代行</text><text x="593" y="89" text-anchor="middle" font-size="11" fill="#787D8A">作業を渡す</text><rect x="502" y="102" width="182" height="48" rx="9" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="593" y="121" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">外部へ</text><text x="593" y="139" text-anchor="middle" font-size="11.5" fill="#454956">作業の実行</text><rect x="502" y="158" width="182" height="48" rx="9" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="593" y="177" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">自社に</text><text x="593" y="195" text-anchor="middle" font-size="11.5" fill="#787D8A">方向と最終判断</text><text x="360" y="246" text-anchor="middle" font-size="11.5" fill="#787D8A">どの形でも、最終判断は自社に残る</text></svg> <figcaption>図1：外部に渡すのは「判断」か「作業」か、その両方の一部か（LEAM作成）</figcaption> </figure>
+<p>図1で押さえておきたいのは、どの形でも<strong>最終判断の欄が自社に残っている</strong>ことです。コンサルは判断の材料と案を出しますが、採るかどうかを決めるのは自社です。運用代行も、作業を進めるための承認は自社から出ます。外部に渡せるのは判断の「組み立て」と作業の「実行」までで、決めたことの責任までは渡せません。なぜそう言えるのかは、§03で規約の条文から確かめます。</p>
+
+<h2 id="s2"><span class="no en">02</span>名前ではなく、「誰が決めて、誰が手を動かすか」の一文で見分ける</h2>
+<p>TikTok Shopの外部支援の呼び方には、統一された定義がありません。「運用支援」と書かれた提案が、週1回の定例会だけを指すこともあれば、出品から投稿までを持つこともあります。提案書や見積もりを読むときは、サービス名を一度脇に置き、作業ごとに<strong>「誰が決めるか」「誰が手を動かすか」</strong>の2つを書き出してください。</p>
+<div class="tw"><table><thead><tr><th>提案書での呼び方</th><th>名前から読み取れること</th><th>名前だけでは分からないこと</th><th>契約前に確かめる一文</th></tr></thead><tbody><tr><td>コンサルティング</td><td>判断の組み立てを外部が持つ</td><td>施策の実行まで手伝うか</td><td>「決めた施策を、誰が何日までに実行しますか」</td></tr><tr><td>スポット相談・診断</td><td>一度きりの判断材料が出る</td><td>その後の進み具合を誰が見るか</td><td>「診断のあと、次に見直すのはいつですか」</td></tr><tr><td>運用支援</td><td>判断と作業を分け合う</td><td>どの作業が外部で、どれが自社か</td><td>「この作業一覧のうち、御社が手を動かすのはどれですか」</td></tr><tr><td>伴走支援</td><td>定例で一緒に決める</td><td>定例と定例の間に誰が動くか</td><td>「次の定例までに、誰が何をしますか」</td></tr><tr><td>運用代行</td><td>作業を外部が持つ</td><td>方向を誰が決めるか</td><td>「来月の重点商品は、誰が決めますか」</td></tr><tr><td>一括代行</td><td>作業の大半を外部が持つ</td><td>契約が終わったとき自社に何が返るか</td><td>「契約が終わったら、何が自社に残りますか」</td></tr></tbody></table></div><p class="src">呼び方から読み取れることと、確かめる一文（LEAM作成）</p>
+<p>右端の一文に、担当者と期日の入った答えが返ってくるかを見てください。「状況に応じて柔軟に対応します」としか返ってこない場合、契約後に「それはそちらの作業だと思っていた」というずれが起きやすくなります。作業の範囲そのものを領域ごとに塗り分ける方法は、<a href="https://leam.co.jp/column/inhouse-vs-agency/">内製か運用代行かを決める記事</a>で扱っているので、ここでは繰り返しません。</p>
+<h3>「判断」と「作業」の境目は、承認がどこで要るかで決める</h3>
+<p>判断と作業の境目がぼやけるのは、作業の中に小さな判断が混ざっているからです。動画の制作は作業ですが、どの訴求で作るか、どの表現は使わないかは判断です。クリエイターへの連絡は作業ですが、誰に声をかけるかは判断です。境目は<strong>「その作業を始める前に、自社の誰かの承認が要るか」</strong>で引くと揃います。承認なしで外部が進めてよい作業は「渡した作業」、承認が要る作業は「判断を自社に残した作業」です。この線を契約前に一覧にしておくと、どの形を選んでも、承認待ちで止まる場所が先に見えます。</p>
+
+<h2 id="s3"><span class="no en">03</span>管理画面を外部に任せても、規約上の責任は自社に残る</h2>
+<p>運用代行や伴走で外部の担当者がセラーセンターを操作する場合、日本向けの<strong>販売者利用規約（最終更新日：2026年5月7日）</strong>の第10条が関わります。販売者がアカウントの管理を授権した相手は「認定ユーザー」と呼ばれ、<strong>その行為と違反は販売者のものとみなされる</strong>ため、外部の担当者が出品や設定で規約に触れたときに結果を受けるのは自社のショップです（<a href="https://leam.co.jp/column/account-suspension/">違反が積み上がったときの影響はアカウント停止の記事</a>）。条文の詳しい読み方と、権限の渡し方・外し方を契約書でどう確かめるかは、<a href="https://leam.co.jp/column/agency-contract-checklist/">運用代行の契約で確認すること</a>にまとめています。</p>
+  <figure> <svg viewBox="0 0 720 232" role="img" aria-label="自社（販売者）の枠の中に外部の担当者である認定ユーザーが入り、その行為や違反は販売者のものとみなされること、TikTok Shopは認定ユーザーの任用の当事者ではなく、支援会社との契約は販売者と支援会社の間だけであることを矢印で示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">任せた操作の結果は、販売者に返ってくる</text><rect x="20" y="44" width="330" height="150" rx="14" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="185" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">自社（販売者）</text><rect x="50" y="86" width="270" height="56" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="185" y="110" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">認定ユーザー</text><text x="185" y="129" text-anchor="middle" font-size="11" fill="#787D8A">外部の担当者など</text><text x="185" y="174" text-anchor="middle" font-size="11" fill="#C2203A">行為と違反は販売者のものとみなされる</text><rect x="420" y="44" width="280" height="66" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="560" y="71" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">TikTok Shop</text><text x="560" y="93" text-anchor="middle" font-size="11" fill="#787D8A">認定ユーザーの任用の当事者ではない</text><rect x="420" y="128" width="280" height="66" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="560" y="155" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">支援会社との契約</text><text x="560" y="177" text-anchor="middle" font-size="11" fill="#787D8A">販売者と支援会社の間だけのもの</text><path d="M352 77 L410 77" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M404 71 L416 77 L404 83 Z" fill="#787D8A"/><text x="383" y="68" text-anchor="middle" font-size="11" fill="#787D8A">利用</text><path d="M352 161 L410 161" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M404 155 L416 161 L404 167 Z" fill="#787D8A"/><text x="383" y="152" text-anchor="middle" font-size="11" fill="#787D8A">契約</text><text x="360" y="218" text-anchor="middle" font-size="11.5" fill="#787D8A">選ぶのも、権限を外すのも販売者（第10条・附属書類5）</text></svg> <figcaption>図2：管理画面を任せても、責任の行き先は変わらない（LEAM作成）</figcaption> </figure>
+
+<h2 id="s4"><span class="no en">04</span>選び方は「手を動かす人」「判断できる人」「期限」の3つで決まる</h2>
+<p>どの形が合うかは、自社に何が足りないかで決まります。見るのは3つだけです。1つ目は、出品・制作・投稿・連絡に毎週時間を使える<strong>「手を動かす人」</strong>が社内にいるか。2つ目は、何を売るか、どの数字で続けるか止めるかを決められる<strong>「判断できる人」</strong>がいるか。3つ目は、いつまでに売上の形を作る必要があるかという<strong>「期限」</strong>です。</p>
+<p>「判断できる人」は役職で数えません。TikTok Shopの数字を見て、週単位で決めを出せる人を指します。経営者がいても、TikTok Shopの数字を見る時間が週に取れないなら「いない」と数えてください。期限は、決算、新商品の発売、在庫の消化など、外から動かせない日付があるかどうかで判断します。</p>
+<div class="tw"><table><thead><tr><th>手を動かす人</th><th>判断できる人</th><th>期限</th><th>合う形</th><th>理由</th></tr></thead><tbody><tr><td>いる</td><td>いる</td><td>余裕あり</td><td>コンサル（スポットか定期）</td><td>足りないのは型と外からの視点。判断の材料を買い、実行は自社で回す</td></tr><tr><td>いる</td><td>いる</td><td>迫っている</td><td>コンサル＋一部の作業代行</td><td>社内の手で足りない分量だけを、期間を区切って外に出す</td></tr><tr><td>いる</td><td>いない</td><td>余裕あり</td><td>運用支援（伴走）</td><td>手は動くが方向が決まらない。週次で一緒に決め、決め方を社内に移す</td></tr><tr><td>いる</td><td>いない</td><td>迫っている</td><td>運用支援（伴走）を厚めに</td><td>判断の組み立ては外部が先導し、承認だけは社内の1人に集める</td></tr><tr><td>いない</td><td>いる</td><td>余裕あり</td><td>運用代行（範囲を絞る）</td><td>判断は社内で出せる。作業だけを渡し、承認の窓口を1本にする</td></tr><tr><td>いない</td><td>いる</td><td>迫っている</td><td>運用代行</td><td>作業量の不足が一番の詰まり。立ち上げの作業をまとめて外に出す</td></tr><tr><td>いない</td><td>いない</td><td>余裕あり</td><td>先に社内の担当を決める</td><td>判断も作業も外に出すと、外部の提案を承認する人がいない</td></tr><tr><td>いない</td><td>いない</td><td>迫っている</td><td>運用代行と判断の組み立てを期間限定で</td><td>期限のために両方を渡すが、終了日と社内の後任を契約前に決める</td></tr></tbody></table></div><p class="src">自社の状態と合う形の対応（LEAM作成）</p>
+  <figure> <svg viewBox="0 0 720 300" role="img" aria-label="手を動かす人が社内にいるかを最初に問い、次に判断できる人がいるかを問って、4つの行き先（コンサル、運用支援（伴走）、運用代行、先に承認する人を置く）に分かれる流れを示し、期限が迫っているほど外に出す作業を増やすと添えた図"><text x="360" y="24" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">足りないものから、合う形が決まる</text><rect x="220" y="38" width="280" height="40" rx="10" fill="#0B0C10"/><text x="360" y="63" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">手を動かす人が社内にいる？</text><path d="M300 78 L205 108" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M420 78 L515 108" stroke="#787D8A" stroke-width="2.5" fill="none"/><text x="222" y="88" text-anchor="middle" font-size="11" fill="#787D8A">いる</text><text x="508" y="88" text-anchor="middle" font-size="11" fill="#787D8A">いない</text><rect x="70" y="108" width="270" height="40" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="205" y="133" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">判断できる人がいる？</text><rect x="380" y="108" width="270" height="40" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="515" y="133" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">判断できる人がいる？</text><path d="M170 148 L90 182" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M240 148 L270 182" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M480 148 L450 182" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M550 148 L630 182" stroke="#787D8A" stroke-width="2.5" fill="none"/><text x="104" y="162" text-anchor="middle" font-size="11" fill="#787D8A">いる</text><text x="282" y="166" text-anchor="middle" font-size="11" fill="#787D8A">いない</text><text x="440" y="166" text-anchor="middle" font-size="11" fill="#787D8A">いる</text><text x="626" y="160" text-anchor="middle" font-size="11" fill="#787D8A">いない</text><rect x="12" y="182" width="156" height="64" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="90" y="208" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">コンサル</text><text x="90" y="229" text-anchor="middle" font-size="11" fill="#787D8A">判断の型を買う</text><rect x="192" y="182" width="156" height="64" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="270" y="208" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">運用支援（伴走）</text><text x="270" y="229" text-anchor="middle" font-size="11" fill="#787D8A">一緒に決めて社内へ移す</text><rect x="372" y="182" width="156" height="64" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="450" y="208" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">運用代行</text><text x="450" y="229" text-anchor="middle" font-size="11" fill="#787D8A">作業を渡す</text><rect x="552" y="182" width="156" height="64" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="630" y="208" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">先に承認者を置く</text><text x="630" y="229" text-anchor="middle" font-size="11" fill="#787D8A">外に出す前の条件</text><text x="360" y="282" text-anchor="middle" font-size="11.5" fill="#787D8A">期限が迫っているほど、外に出す作業の量を増やす</text></svg> <figcaption>図3：2つの問いで行き先が4つに分かれ、期限で厚みを変える（LEAM作成）</figcaption> </figure>
+<p>表の下の2行は、どの形を選んでも<strong>外部の提案を承認する人が社内にいない</strong>状態です。外部がどれだけ筋の通った判断を組み立てても、採るかどうかを決める人がいなければ、施策は承認待ちで止まります。期限が迫っていて判断と作業の両方を渡す場合でも、少なくとも「外部の提案に週1回イエスかノーを出す人」は社内に置いてください。</p>
+
+<h2 id="s5"><span class="no en">05</span>うまくいかない依頼は、足りないものと違うものを渡している</h2>
+<p>外部支援が「思ったほど進まない」とき、原因は支援会社の質だけとは限りません。当社の運用実感では、足りないのは作業なのに判断を買う、足りないのは判断なのに作業を買う、という取り違えが出発点になっていることが少なくありません。</p>
+<div class="tw"><table><thead><tr><th>頼んだ形</th><th>社内で本当に足りなかったもの</th><th>起きること</th><th>直し方</th></tr></thead><tbody><tr><td>コンサル</td><td>手を動かす人</td><td>改善案は増えるが、実行が追いつかず検証が進まない</td><td>実行の担当と期日を先に決め、足りない作業量は代行で補う</td></tr><tr><td>運用代行</td><td>判断できる人</td><td>作業は進むが、商品や訴求の方向が毎週変わる。承認待ちで止まる</td><td>判断の窓口を1人に決める。決められないうちは伴走に寄せる</td></tr><tr><td>運用支援（伴走）</td><td>定例の外で動く人</td><td>定例会で決めたことが、次の定例まで手つかずになる</td><td>定例ごとに「次回までに誰が何をやるか」を書き残す</td></tr><tr><td>一括代行</td><td>社内に残す仕組み</td><td>売上は立つが、契約を止めた月から何も回らなくなる</td><td>判断の記録と元データを自社で持つ（§07）</td></tr></tbody></table></div><p class="src">足りないものと違うものを渡したときに起きること（LEAM作成）</p>
+<p>表の2行目は、立ち上げの時期に起きやすい形です。運用代行の会社は作業を進めるために方向の確認を求めますが、社内で決める人が決まっていないと、返事が遅れたり、担当者ごとに違う返事が返ったりします。外部から見ると「方向が決まらない案件」になり、作業の質も落ちていきます。</p>
+<p>1行目は、社内の担当者がほかの業務と兼務しているときに起きやすい形です。改善案が筋の通ったものでも、出品の修正や動画の撮り直しをする時間が社内にないと、提案は資料のまま残ります。コンサルを選ぶ前に、<strong>提案を実行する時間が社内に毎週何時間あるか</strong>を数えてください。数えた時間で提案の何割を回せるかが、コンサルの効き方の上限になります。</p>
+<h3>ライブ配信だけを外に出すときも、同じ見方で決められる</h3>
+<p>運用全体ではなく、LIVE配信だけを外部に頼む場合も、渡すのが判断か作業かで分けられます。配信の企画と台本を外部が組み立てるならコンサル寄り、出演者の手配と当日の進行まで外部が持つなら代行寄りです。配信を外に出すときの範囲の決め方と見積もりの読み方は、<a href="https://leam.co.jp/column/live-agency-guide/">ライブコマース代行の使い方</a>にまとめています。</p>
+
+<h2 id="s6"><span class="no en">06</span>期限があるときは、段階ごとに渡すものを切り替える前提で組む</h2>
+<p>外部支援の形は、一度決めたら固定するものではありません。立ち上げの直後は作業の量が最も多く、判断に使える数字はまだ少ない時期です。売れ始めると、どの商品・どの動画・どのクリエイターに寄せるかの判断が増え、作業は型にはまって軽くなります。渡すものも、それに合わせて変えていくのが自然です。</p>
+  <figure> <svg viewBox="0 0 720 250" role="img" aria-label="立ち上げ、回り始め、定着の3段階を横棒で並べ、段階が進むほど外部が持つ赤い部分が短くなり自社が持つ灰色の部分が長くなること、外部の役割が作業から判断の組み立て、点検と相談へ移ることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">段階が進むほど、外に渡す量は小さくなる</text><text x="28" y="70" font-size="12.5" font-weight="800" fill="#454956">立ち上げ</text><rect x="140" y="54" width="410" height="22" rx="11" fill="#DFE0E2"/><rect x="140" y="54" width="290" height="22" rx="11" fill="#E8324A"/><text x="566" y="70" font-size="11" fill="#787D8A">外部は作業が中心</text><text x="28" y="122" font-size="12.5" font-weight="800" fill="#454956">回り始め</text><rect x="140" y="106" width="410" height="22" rx="11" fill="#DFE0E2"/><rect x="140" y="106" width="180" height="22" rx="11" fill="#E8324A"/><text x="566" y="122" font-size="11" fill="#787D8A">外部は判断の組み立て</text><text x="28" y="174" font-size="12.5" font-weight="800" fill="#454956">定着</text><rect x="140" y="158" width="410" height="22" rx="11" fill="#DFE0E2"/><rect x="140" y="158" width="80" height="22" rx="11" fill="#E8324A"/><text x="566" y="174" font-size="11" fill="#787D8A">外部は点検と相談</text><rect x="210" y="200" width="14" height="14" rx="3" fill="#E8324A"/><text x="230" y="212" font-size="11" fill="#454956">外部が持つ部分</text><rect x="370" y="200" width="14" height="14" rx="3" fill="#DFE0E2"/><text x="390" y="212" font-size="11" fill="#454956">自社が持つ部分</text><text x="360" y="238" text-anchor="middle" font-size="11.5" fill="#787D8A">切り替えの合図は日数ではなく、社内で回せる状態になったかどうか</text></svg> <figcaption>図4：外部の役割は、作業から判断の組み立て、点検へと移っていく（LEAM作成。棒の長さは考え方を示す模式で、実測値ではありません）</figcaption> </figure>
+<div class="tw"><table><thead><tr><th>段階</th><th>外部に多く渡すもの</th><th>社内が引き取り始めるもの</th><th>切り替えの合図</th></tr></thead><tbody><tr><td>立ち上げ</td><td>出品、初期の動画制作、クリエイターへの声かけなどの作業</td><td>商品情報の提供と承認</td><td>毎週の作業が、決まった手順で回り始めた</td></tr><tr><td>回り始め</td><td>数字の読み方と、次の一手の組み立て</td><td>定型の作業（出品の修正、投稿、問い合わせの返信）</td><td>社内の担当者が、週次の数字を見て次の一手を説明できる</td></tr><tr><td>定着</td><td>外からの点検と、新しい施策の相談</td><td>判断と作業の大半</td><td>外部への質問が「何をするか」から「これで合っているか」に変わった</td></tr></tbody></table></div><p class="src">段階ごとに渡すものの切り替え（LEAM作成）</p>
+<p>切り替えの合図は、日数ではなく状態で決めるのがおすすめです。立ち上げから何日目に何をするかの目安は<a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">立ち上げ90日ロードマップ</a>にまとめています。契約の段階で「どの状態になったら範囲を見直すか」を一文入れておくと、外部に渡していたものを社内に戻すときに話がこじれにくくなります。</p>
+
+<h2 id="s7"><span class="no en">07</span>契約が終わったあと社内に残るものは、コンサル・伴走・代行で違う</h2>
+<p>コンサル・運用支援・運用代行のどれを選んでも、契約はいつか終わります。終わった翌日に社内に残るものは、形によって違います。<strong>自社が手を動かしていた部分は放っておいても残り、外部が持っていた部分は意識して引き取らないと残りません。</strong>契約中に引き取るのは、形ごとに「残らない側」だけで足ります。</p>
+<div class="tw"><table><thead><tr><th>形</th><th>放っておいても社内に残りやすいもの</th><th>意識しないと残らないもの</th><th>契約中に引き取る方法</th></tr></thead><tbody><tr><td>コンサル</td><td>作業の手順と担当（社内が手を動かしているため）、提案を通じて身についた判断の型</td><td>提案の裏にある数字と、採らなかった案の理由（資料には結論だけが残りやすい）</td><td>提案ごとに「根拠の数字・採らなかった案・次に見る日」を、自社の文書に1行で書いてもらう</td></tr><tr><td>運用支援（伴走）</td><td>定例で一緒に決めた判断と、社内が分担した作業の手順</td><td>外部が分担していた作業の手順と、定例の外で外部が決めた細かな判断</td><td>外部が持つ作業を社内へ移す順番を定例の議題に入れ、移すたびに手順書を残す</td></tr><tr><td>運用代行</td><td>自社が出した承認の記録</td><td>作業の手順、制作の素材、元データ、判断の根拠。意識しないとほとんど残らない</td><td>成果物と手順書の受け渡し先を自社の保存先にし、元データは自社で期間を決めてダウンロードする</td></tr></tbody></table></div><p class="src">形ごとに社内に残るものと、契約中に引き取るもの（LEAM作成）</p>
+<p>差が一番大きいのは運用代行です。作業も素材も外部の手元で作られるため、成果物の受け渡し先を決めていないと、契約を止めた月から何も回らなくなります（§05の表の4行目）。元データについては、公式ヘルプの「データ分析の概要」で、期間を選んで右上の「ダウンロード」ボタンから結果をエクスポートできると説明されています。外部のレポートとは別に、同じ期間の数字を自社でも持っておくと、レポートの数字と突き合わせられます（週次で見る指標の組み方は<a href="https://leam.co.jp/column/tiktok-shop-kpi/">KPI設計の記事</a>）。</p>
+<p>逆にコンサルは、作業が社内に残る代わりに、判断の「なぜ」が外部の頭の中に残りがちです。結論だけを受け取っていると、契約が終わったあとに同じ検証を繰り返すことになります。引き取る項目を契約書のどこに書くか、アカウントとデータの持ち主をどう決めるかは<a href="https://leam.co.jp/column/agency-contract-checklist/">運用代行の契約で確認すること</a>に、社内と外部の分担そのものは<a href="https://leam.co.jp/column/inhouse-vs-agency/">内製か運用代行かの判断基準</a>にまとめています。</p>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>コンサルと運用代行の違いは、外部に渡すのが<strong>判断か作業か</strong>です。運用支援（伴走）はその両方を一部ずつ渡します。上から順に決めてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 足りないものを数える</b><br>手を動かす人、判断できる人、守りたい期限の3つを書き出す</div><div class="summary-item"><b>2. 足りないものと同じものを渡す</b><br>作業が足りないなら代行、判断が足りないなら伴走かコンサル。取り違えると進まない</div><div class="summary-item"><b>3. 承認する人を1人置く</b><br>どの形でも最終判断は自社に残る。外部の提案に週1回イエスかノーを出す人を決める</div><div class="summary-item"><b>4. 権限は授権で渡し、外す日を決める</b><br>認定ユーザーの行為と違反は販売者のものとみなされる（販売者利用規約 第10条）</div><div class="summary-item"><b>5. 残らない側を契約中に引き取る</b><br>コンサルなら判断の根拠、伴走なら外部が持つ作業の手順、代行なら手順・素材・元データを自社の保存先に置く</div></div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopのコンサルと運用代行は、何が違いますか？</summary><div class="a">外部に渡すものが違います。コンサルは何を売るか、どの順に試すか、どの数字で続けるか止めるかといった判断の組み立てを外部に渡し、手を動かすのは自社です。運用代行は出品・制作・投稿・連絡などの作業を外部に渡し、方向を決めるのは自社です。どちらの形でも、最終判断は自社に残ります。</div></details><details><summary>TikTok Shopの運用支援（伴走）とは、どんな支援ですか？</summary><div class="a">判断と作業を一部ずつ外部が持ち、週次の打ち合わせで自社と一緒に決めて回す形です。呼び方に統一された定義はないので、作業一覧のうちどれを外部が手を動かし、どれを自社が持つのかを契約前に確認してください。</div></details><details><summary>社内に担当者がいない場合、TikTok Shopはコンサルと運用代行のどちらを頼むべきですか？</summary><div class="a">手を動かす人がいないなら、作業を渡す運用代行が合います。ただし、判断できる人も社内にいない場合は、どの形でも外部の提案を承認する人がいなくなります。外部に頼む前に、少なくとも週1回は外部の提案にイエスかノーを出す担当者を社内で決めてください。</div></details><details><summary>TikTok Shopのコンサルと運用代行を、別々の会社に頼んでもよいですか？</summary><div class="a">頼めますが、判断と作業の間に自社が入る形になります。コンサルの提案を代行会社にそのまま流すと、どちらの指示で動いているのかが曖昧になり、承認待ちで止まりやすくなります。社内の1人を窓口にして、コンサルの提案を自社が採るかどうか決めてから代行会社に渡す順番にしてください。両社が同じ数字を見られるよう、元データは自社でダウンロードして共有します。管理画面の権限と規約上の責任の扱いは<a href="https://leam.co.jp/column/agency-contract-checklist/">運用代行の契約で確認すること</a>で確かめられます。</div></details><details><summary>TikTok Shopの外部支援は、途中で形を切り替えてもよいですか？</summary><div class="a">切り替える前提で組むほうが自然です。立ち上げは作業が多いので代行寄り、売れ始めて判断が増えたら伴走、社内で回せるようになったらコンサルや点検に寄せる、という順で外部に渡すものを減らしていきます。どの状態になったら範囲を見直すかを、契約の段階で一文入れておくと切り替えやすくなります。</div></details><details><summary>TikTok Shopのコンサルの提案を、社内で実行しきれない場合はどうすればよいですか？</summary><div class="a">提案の数を絞るか、実行の一部だけを外に出すかのどちらかです。まず提案の実行に使える時間が社内に毎週何時間あるかを数え、その時間で回せる数まで提案に優先順位を付けてもらいます。それでも期限に間に合わない場合は、足りない作業量だけを期間を区切って代行に出し、判断はコンサルと自社に残します。提案が資料のまま残る状態で契約を続けても、検証は進みません。</div></details></div>
+
+<div class="ctabox"><div class="ct">外部に何を渡し、何を社内に残すかからご相談いただけます</div><p>LEAMはTikTok Shopの運用支援と、TikTok Shop特化のMCNを運営しています。いまの体制で足りないのが判断か作業かを伺い、合う支援の形と社内に残す仕組みを一緒に整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=consulting-vs-agency">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：日本 TikTok Shop販売者利用規約（最終更新日 2026年5月7日）</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年10月14日確認）</li></ul>
+<p class="src">仕様、画面名称、規約の条文は更新されることがあります。本記事は2026年10月14日時点で確認できた日本向け公式情報と、当社が作成した判断の枠組みを区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">運用代行</span><b><a href="https://leam.co.jp/column/unyodaiko-cost/">TikTok Shop運用代行の費用相場と失敗しない選び方</a></b><span>形を決めたら金額を確かめる</span></div><div class="relcard"><span class="rc">運用体制</span><b><a href="https://leam.co.jp/column/inhouse-vs-agency/">TikTok Shopは内製か運用代行か｜費用だけで決めない比較と判断基準</a></b><span>作業の範囲を領域ごとに塗り分ける</span></div><div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</a></b><span>外部と話す前に押さえる仕組み</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">コンサル・運用代行・運用支援の違いは、外部に「何を渡すか」で決まる</a></li><li><a href="#s2">名前ではなく、「誰が決めて、誰が手を動かすか」の一文で見分ける</a></li><li><a href="#s3">管理画面を外部に任せても、規約上の責任は自社に残る</a></li><li><a href="#s4">選び方は「手を動かす人」「判断できる人」「期限」の3つで決まる</a></li><li><a href="#s5">うまくいかない依頼は、足りないものと違うものを渡している</a></li><li><a href="#s6">期限があるときは、段階ごとに渡すものを切り替える前提で組む</a></li><li><a href="#s7">契約が終わったあと社内に残るものは、コンサル・伴走・代行で違う</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=consulting-vs-agency">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopのコンサルと運用代行は、何が違いますか？", "acceptedAnswer": {"@type": "Answer", "text": "外部に渡すものが違います。コンサルは何を売るか、どの順に試すか、どの数字で続けるか止めるかといった判断の組み立てを外部に渡し、手を動かすのは自社です。運用代行は出品・制作・投稿・連絡などの作業を外部に渡し、方向を決めるのは自社です。どちらの形でも、最終判断は自社に残ります。"}}, {"@type": "Question", "name": "TikTok Shopの運用支援（伴走）とは、どんな支援ですか？", "acceptedAnswer": {"@type": "Answer", "text": "判断と作業を一部ずつ外部が持ち、週次の打ち合わせで自社と一緒に決めて回す形です。呼び方に統一された定義はないので、作業一覧のうちどれを外部が手を動かし、どれを自社が持つのかを契約前に確認してください。"}}, {"@type": "Question", "name": "社内に担当者がいない場合、TikTok Shopはコンサルと運用代行のどちらを頼むべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "手を動かす人がいないなら、作業を渡す運用代行が合います。ただし、判断できる人も社内にいない場合は、どの形でも外部の提案を承認する人がいなくなります。外部に頼む前に、少なくとも週1回は外部の提案にイエスかノーを出す担当者を社内で決めてください。"}}, {"@type": "Question", "name": "TikTok Shopのコンサルと運用代行を、別々の会社に頼んでもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "頼めますが、判断と作業の間に自社が入る形になります。コンサルの提案を代行会社にそのまま流すと、どちらの指示で動いているのかが曖昧になり、承認待ちで止まりやすくなります。社内の1人を窓口にして、コンサルの提案を自社が採るかどうか決めてから代行会社に渡す順番にしてください。両社が同じ数字を見られるよう、元データは自社でダウンロードして共有します。管理画面の権限と規約上の責任の扱いは運用代行の契約で確認することで確かめられます。"}}, {"@type": "Question", "name": "TikTok Shopの外部支援は、途中で形を切り替えてもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "切り替える前提で組むほうが自然です。立ち上げは作業が多いので代行寄り、売れ始めて判断が増えたら伴走、社内で回せるようになったらコンサルや点検に寄せる、という順で外部に渡すものを減らしていきます。どの状態になったら範囲を見直すかを、契約の段階で一文入れておくと切り替えやすくなります。"}}, {"@type": "Question", "name": "TikTok Shopのコンサルの提案を、社内で実行しきれない場合はどうすればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "提案の数を絞るか、実行の一部だけを外に出すかのどちらかです。まず提案の実行に使える時間が社内に毎週何時間あるかを数え、その時間で回せる数まで提案に優先順位を付けてもらいます。それでも期限に間に合わない場合は、足りない作業量だけを期間を区切って代行に出し、判断はコンサルと自社に残します。提案が資料のまま残る状態で契約を続けても、検証は進みません。"}}]}</script>
+</body>
+</html>

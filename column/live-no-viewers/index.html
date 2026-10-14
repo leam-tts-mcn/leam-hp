@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのライブに人が来ない｜視聴者が増えない原因と対策</title>
+<meta name="description" content="TikTok Shopのライブに人が来ない原因を、入口（告知・頻度・ショート動画）・冒頭の離脱・見せ方に分けて対策を整理。LIVEのデータで見る数字も公式ヘルプに沿って解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/live-no-viewers/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのライブに人が来ない｜視聴者が増えない原因と対策">
+<meta property="og:description" content="TikTok Shopのライブに人が来ない原因を、入口（告知・頻度・ショート動画）・冒頭の離脱・見せ方に分けて対策を整理。LIVEのデータで見る数字も公式ヘルプに沿って解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/live-no-viewers/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/live-no-viewers.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのライブに人が来ない｜視聴者が増えない原因と対策">
+<meta name="twitter:description" content="TikTok Shopのライブに人が来ない原因を、入口（告知・頻度・ショート動画）・冒頭の離脱・見せ方に分けて対策を整理。LIVEのデータで見る数字も公式ヘルプに沿って解説します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/live-no-viewers.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのライブに人が来ない｜視聴者が増えない原因と対策", "description": "TikTok Shopのライブに人が来ない原因を、入口（告知・頻度・ショート動画）・冒頭の離脱・見せ方に分けて対策を整理。LIVEのデータで見る数字も公式ヘルプに沿って解説します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/live-no-viewers/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/live-no-viewers.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2652995084699409&lang=ja-JP", "name": "TikTok Shop公式：[基礎知識]ショート動画とLIVE配信の運用"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=309514077865745&lang=ja-JP", "name": "TikTok Shop公式：LIVE配信ツールの活用マニュアル（LIVE Event・広告板・自動ハイライト・ピン留め）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&lang=ja-JP", "name": "TikTok Shop公式：動画・LIVE配信・クリエイター活用までの実践マニュアル"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&lang=ja-JP", "name": "TikTok Shop公式：データ分析の概要"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのライブに人が来ない｜視聴者が増えない原因と対策", "item": "https://leam.co.jp/column/live-no-viewers/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=live-no-viewers">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopのライブに人が来ない｜視聴者が増えない原因を入口・冒頭・見せ方に分けて直す</p>
+<span class="cat">LIVE運用</span>
+<h1>TikTok Shopのライブに人が来ない｜視聴者が増えない原因を入口・冒頭・見せ方に分けて直す</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左に並んだショート動画・配信予告のカレンダー・通知のベルの3枚のカードからシアンの矢印が中央の赤い舞台へ流れ込み、舞台の前の客席は一部だけシアンで埋まり残りは空席のまま、右のグラフでは視聴者の線が冒頭で落ちたあと持ち直して伸びていく様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="560" cy="250" rx="330" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="lnvDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#lnvDots" transform="translate(944 542)"/>
+  </g>
+
+  <!-- ================= 左：3つの入口 ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <!-- ショート動画 -->
+    <rect x="70" y="128" width="150" height="96" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="70" y="128" width="150" height="96" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="88" y="144" width="114" height="64" rx="8" fill="#DFE0E2"/>
+    <path d="M136 160l26 16-26 16z" fill="#0B0C10"/>
+
+    <!-- 配信予告（カレンダー） -->
+    <rect x="70" y="256" width="150" height="104" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="70" y="256" width="150" height="104" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M73 286h144" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="73" y="259" width="144" height="26" rx="11" fill="#FE2C55"/>
+    <rect x="94" y="300" width="22" height="18" rx="4" fill="#DFE0E2"/>
+    <rect x="126" y="300" width="22" height="18" rx="4" fill="#DFE0E2"/>
+    <rect x="158" y="300" width="22" height="18" rx="4" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/>
+    <rect x="94" y="328" width="22" height="18" rx="4" fill="#DFE0E2"/>
+    <rect x="126" y="328" width="22" height="18" rx="4" fill="#DFE0E2"/>
+
+    <!-- 通知（ベル） -->
+    <rect x="70" y="392" width="150" height="96" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="70" y="392" width="150" height="96" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M124 460c8-6 8-14 8-26 0-14 6-22 13-22s13 8 13 22c0 12 0 20 8 26z" fill="#C9CBD0" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="145" cy="468" r="6" fill="#0B0C10"/>
+    <circle cx="174" cy="414" r="9" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/>
+  </g>
+
+  <!-- 入口から舞台へ流れ込む矢印 -->
+  <g fill="none" stroke="#25F4EE" stroke-width="12" stroke-linecap="round">
+    <path d="M232 176c56 0 84 70 132 112"/>
+    <path d="M232 308h126"/>
+    <path d="M232 440c56 0 84-70 132-112"/>
+  </g>
+  <path d="M352 288l30 20-34 14z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- ================= 主役：LIVEの舞台（赤） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="392" y="104" width="380" height="300" rx="20" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="392" y="104" width="380" height="300" rx="20" fill="#CE1730"/>
+    <rect x="392" y="104" width="362" height="300" rx="20" fill="#FE2C55"/>
+    <!-- 舞台の開口 -->
+    <rect x="422" y="136" width="314" height="236" rx="10" fill="#FFFFFF"/>
+    <!-- 幕 -->
+    <path d="M422 136h70c-6 70-26 150-70 210z" fill="#CE1730"/>
+    <path d="M736 136h-70c6 70 26 150 70 210z" fill="#CE1730"/>
+    <!-- 台と商品 -->
+    <rect x="520" y="300" width="118" height="20" rx="6" fill="#C9CBD0" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="544" y="244" width="70" height="56" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M544 266h70" stroke="#0B0C10" stroke-width="5"/>
+    <!-- 開始の灯り -->
+    <circle cx="579" cy="176" r="16" fill="#FE2C55" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="392" y="104" width="380" height="300" rx="20" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- 客席：埋まった席（シアン）と空席 -->
+  <g stroke="#0B0C10" stroke-width="5">
+    <circle cx="452" cy="444" r="17" fill="#25F4EE"/>
+    <circle cx="510" cy="444" r="17" fill="#25F4EE"/>
+    <circle cx="568" cy="444" r="17" fill="#FFFFFF"/>
+    <circle cx="626" cy="444" r="17" fill="#FFFFFF"/>
+    <circle cx="684" cy="444" r="17" fill="#FFFFFF"/>
+    <circle cx="742" cy="444" r="17" fill="#FFFFFF"/>
+    <circle cx="481" cy="494" r="17" fill="#25F4EE"/>
+    <circle cx="539" cy="494" r="17" fill="#DFE0E2"/>
+    <circle cx="597" cy="494" r="17" fill="#DFE0E2"/>
+    <circle cx="655" cy="494" r="17" fill="#DFE0E2"/>
+    <circle cx="713" cy="494" r="17" fill="#DFE0E2"/>
+  </g>
+
+  <!-- ================= 右：視聴者の推移 ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="836" y="150" width="292" height="262" rx="18" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="836" y="150" width="292" height="262" rx="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M870 186v192h226" fill="none" stroke="#C9CBD0" stroke-width="5"/>
+    <path d="M874 214l40 104 44 12 44-28 44-44 46-52v172H874z" fill="#25F4EE"/>
+    <path d="M874 214l40 104 44 12 44-28 44-44 46-52" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <circle cx="914" cy="318" r="11" fill="#FE2C55" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="1092" cy="206" r="15" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1132" cy="104" r="14" fill="#FE2C55"/>
+  <circle cx="330" cy="96" r="11" fill="#25F4EE"/>
+  <circle cx="808" cy="560" r="12" fill="#DFE0E2"/>
+</svg>
+    <figcaption>TikTok Shopのライブに人が来ないときの3つの入口と、冒頭の離脱からの持ち直し（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopでライブを始めたのに、視聴者が数人のまま増えない。このとき「配信が下手だから」と台本から直し始めると、多くの場合は遠回りになります。人が来ない原因は、<strong>配信前に人を集める入口</strong>、<strong>入ってきた人がすぐ出ていく冒頭</strong>、<strong>おすすめに流れた数秒で選ばれない見せ方</strong>の3か所に分かれ、直す場所も見るデータも違うからです。この記事では、公式ヘルプとセラー向けの公式資料に書かれている範囲で、3か所の切り分け方と対策、LIVEのデータのどこを見るかを整理します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>視聴者が増えない原因を、入口・冒頭・見せ方のどこで止まっているかで分ける方法</li><li>LIVEのデータで見る指標と、公式資料が段階ごとに挙げている数字</li><li>LIVEイベント・配信頻度・ショート動画で入口を増やす具体的な手順</li></ul></div>
+<p>ライブの始め方と配信前の準備は<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>、どんな人がいつ見ているか（視聴者層と時間帯の選び方）は<a href="https://leam.co.jp/column/live-audience/">ライブの視聴者層の記事</a>、配信中に何を話すかは<a href="https://leam.co.jp/column/tiktok-shop-live-script/">LIVEの台本テンプレート</a>で扱っています。ここでは同じ説明を繰り返さず、「始めたが人が来ない」状態から抜けるための切り分けと直し方に絞ります。</p>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門</a></b><span>始め方と配信前の準備</span></div>
+    <div class="relcard"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-audience/">TikTok Shopのライブは誰が見ている？</a></b><span>視聴者層と時間帯の選び方</span></div>
+    <div class="relcard"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/tiktok-shop-live-script/">TikTok Shop LIVEの台本テンプレート</a></b><span>配信中に何を話すか</span></div>
+    <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？</a></b><span>動画・ライブ・ショーケースの全体像</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">ライブに人が来ない原因を、配信データから一緒に切り分けます</div><p>直近の配信の数字と告知のやり方を伺い、入口・冒頭・見せ方のどこから直すかを整理します。配信回数を増やす前に直したほうがよい点があれば、そこからお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=live-no-viewers">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">人が来ない原因は、入口・冒頭・見せ方の3か所に分けると直す場所が決まる</a></li><li><a href="#s2">LIVEのデータは「表示→入室→滞在→購入」の順に見て、最初に細くなる段を探す</a></li><li><a href="#s3">告知は、LIVEイベントの予約と予告動画をセットにして開始直後の入室を作る</a></li><li><a href="#s4">配信の頻度は売上の段階に合わせて決め、枠は毎週同じにする</a></li><li><a href="#s5">ショート動画は配信前・配信中・配信後の3回使い、LIVEへの入口を増やす</a></li><li><a href="#s6">冒頭の離脱は、最初の1分で特典と買い方を見せて防ぐ</a></li><li><a href="#s7">見せ方は、おすすめで流れてきた数秒で「何を売る配信か」が伝わる画面にする</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>人が来ない原因は、入口・冒頭・見せ方の3か所に分けると直す場所が決まる</h2>
+<p>公式の運用資料は、LIVE配信には<strong>ショート動画からの誘導、おすすめページ、フォロー／サブスクリプションなど、複数の経路からのトラフィック</strong>が入ってくると説明しています。つまり「人が来ない」は1つの問題ではありません。経路そのものが細いのか、経路から画面には出ているのに入室されないのか、入室はあるのにすぐ出ていかれるのかで、打ち手がまったく変わります。</p>
+<p>セラー向けの公式実践マニュアルは、売上（GMV）を<strong>Impression（表示）× CTR（クリック率）× CVR（購入率）× 客単価</strong>の掛け算で説明し、Impressionを「動画やLIVE配信がユーザーに表示された回数」と定義しています。ライブに置き換えると、表示されなければ入室は起きず、入室しても残らなければ商品は見られません。上流が細いまま下流を磨いても、数字は動きにくいということです。</p>
+<div class="tw"><table><thead><tr><th>いま起きていること</th><th>止まっている場所</th><th>最初に見る数字</th><th>この記事の対策</th></tr></thead><tbody><tr><td>配信を始めても、最初の数分は誰も入ってこない</td><td>入口（告知）</td><td>LIVEイベントの予約人数、開始直後の入室</td><td>§03</td></tr><tr><td>曜日や時間によって来る人数が大きくぶれる</td><td>入口（頻度と枠）</td><td>同じ枠での回ごとの視聴者数</td><td>§04</td></tr><tr><td>動画は見られているのに、ライブには来ない</td><td>入口（ショート動画との連動）</td><td>動画の再生数と、動画経由の入室</td><td>§05</td></tr><tr><td>入ってくる人はいるが、すぐ出ていく</td><td>冒頭の離脱</td><td>滞在時間（平均視聴時間）</td><td>§06</td></tr><tr><td>表示はされているのに、入室が少ない</td><td>見せ方</td><td>表示回数に対する入室の割合</td><td>§07</td></tr><tr><td>人は残るのに買われない</td><td>台本と商品ページ</td><td>商品クリックと購入</td><td><a href="https://leam.co.jp/column/tiktok-shop-live-script/">台本の記事</a></td></tr></tbody></table></div><p class="src">症状から止まっている場所を引く表（公式資料の指標をもとにLEAM作成）</p>
+  <figure> <svg viewBox="0 0 720 250" role="img" aria-label="ライブに人が来るまでを、入口、入室、滞在、購入の4つの箱で左から右へ並べ、入口は告知・頻度・ショート動画、入室は見せ方、滞在は冒頭の1分が効くことと、この記事が扱うのは最初の3つであることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">止まっている段で、直す場所が変わる</text><rect x="20" y="50" width="152" height="120" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="96" y="80" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">① 入口</text><text x="96" y="106" text-anchor="middle" font-size="11" fill="#454956">告知・頻度</text><text x="96" y="124" text-anchor="middle" font-size="11" fill="#454956">ショート動画</text><text x="96" y="152" text-anchor="middle" font-size="10.5" fill="#787D8A">§03〜§05</text><path d="M176 110 L196 110" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M192 104 L202 110 L192 116 Z" fill="#787D8A"/><rect x="206" y="50" width="152" height="120" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="282" y="80" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">② 入室</text><text x="282" y="106" text-anchor="middle" font-size="11" fill="#454956">流れてきた数秒で</text><text x="282" y="124" text-anchor="middle" font-size="11" fill="#454956">選ばれるか</text><text x="282" y="152" text-anchor="middle" font-size="10.5" fill="#787D8A">§07</text><path d="M362 110 L382 110" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M378 104 L388 110 L378 116 Z" fill="#787D8A"/><rect x="392" y="50" width="152" height="120" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="468" y="80" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">③ 滞在</text><text x="468" y="106" text-anchor="middle" font-size="11" fill="#454956">最初の1分で</text><text x="468" y="124" text-anchor="middle" font-size="11" fill="#454956">残る理由を見せる</text><text x="468" y="152" text-anchor="middle" font-size="10.5" fill="#787D8A">§06</text><path d="M548 110 L568 110" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M564 104 L574 110 L564 116 Z" fill="#787D8A"/><rect x="578" y="50" width="122" height="120" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="639" y="80" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">④ 購入</text><text x="639" y="106" text-anchor="middle" font-size="11" fill="#787D8A">台本と</text><text x="639" y="124" text-anchor="middle" font-size="11" fill="#787D8A">商品ページ</text><text x="639" y="152" text-anchor="middle" font-size="10.5" fill="#787D8A">別の記事で扱う</text><path d="M20 196 H544" stroke="#E8324A" stroke-width="2" fill="none"/><text x="282" y="222" text-anchor="middle" font-size="11.5" fill="#C2203A">人が来ない問題は、①〜③のどこかで止まっている</text></svg> <figcaption>図1：人が来ない原因は、入口・入室・滞在のどこかにある（LEAM作成）</figcaption> </figure>
+<div class="box box-point"><div class="bt">💡 先に「どこで止まっているか」を1つに決める</div><p>入口・見せ方・冒頭を同時に変えると、次の配信で数字が動いても、どれが効いたのか分かりません。当社の運用実感では、伸び悩む配信ほど毎回いくつも変えていて、前回と比べられなくなっています。まず§02のデータで止まっている段を1つ選び、そこだけを直します。</p></div>
+
+<h2 id="s2"><span class="no en">02</span>LIVEのデータは「表示→入室→滞在→購入」の順に見て、最初に細くなる段を探す</h2>
+<p>データの入口は、セラーセンターの<strong>データ分析の概要</strong>です。公式ヘルプによると、この画面からLIVE配信・動画・商品カードの詳細データに進めます。概要ページで並べ替えの基準（GMV最高額か最大視聴回数）と期間（昨日か過去7日間）を選ぶと上位3件のLIVE配信が表示され、<strong>［LIVE］＞［分析結果を表示］＞［LIVE配信のパフォーマンス］</strong>と進むと詳細が見られます。自社運営のLIVEは「セールスソース」タブから確認できます。リアルタイムのデータは「LIVE配信と動画」のページで確認する、と案内されています。</p>
+<p>注意したいのは、ここに表示されるGMVが<strong>返品、返金、キャンセルを含んだ数字</strong>だという点です。公式ヘルプは、これはショップのパフォーマンスであって収入とは同じではないとしています。人が来ない問題を見るときは、売上より先に、表示・入室・滞在の数字を見ます。</p>
+<p>では、どの数字を見ればよいか。公式の運用資料は、売上の段階ごとに見るべき指標を挙げています。初回注文までの段階では「LIVE配信ルームへの入室率」、月平均100万円までの成長期では「入室率」と「滞在時間」に加えて「ピーク時の視聴者数」、その先の段階では「平均同時視聴者数」と「滞在時間」です。公式の実践マニュアルは、計算のしかたも例示しています。</p>
+<div class="tw"><table><thead><tr><th>指標</th><th>公式資料での説明</th><th>低いときに疑う場所</th></tr></thead><tbody><tr><td>表示回数（Impression）</td><td>動画やLIVE配信がユーザーに表示された回数（実践マニュアル）</td><td>入口。告知・頻度・ショート動画（§03〜§05）</td></tr><tr><td>LIVE配信ルームへの入室率</td><td>初期段階からモニタリングする指標として挙げられている（運用資料）</td><td>見せ方。流れてきた数秒で選ばれていない（§07）</td></tr><tr><td>平均視聴時間（滞在時間）</td><td>総視聴時間÷視聴者数。コンテンツの魅力度を見る（実践マニュアル）</td><td>冒頭。入った直後に残る理由が見えない（§06）</td></tr><tr><td>コメント数／分</td><td>エンゲージメントの活性を見る指標（実践マニュアル）</td><td>冒頭と進行。問いかけがない、返事がない</td></tr><tr><td>再訪率</td><td>同じユーザーの視聴回数。ファン化を見る（実践マニュアル）</td><td>頻度と枠。次にいつ来ればいいかが伝わっていない（§04）</td></tr><tr><td>購入率（CVR）</td><td>購入数÷配信中の視聴数。購買導線の強さを見る（実践マニュアル）</td><td>台本と商品ページ（この記事の範囲外）</td></tr></tbody></table></div><p class="src">LIVEで見る指標と疑う場所（公式資料の記載をもとにLEAM作成。画面上の項目名は異なる場合があるため、最新は公式ヘルプで確認してください）</p>
+<p>実践マニュアルは、これらの数値は商材によって異なるため例示だと断っています。ですから「入室率が何%なら合格」という一律の線は置けません。比べる相手は他社ではなく、<strong>前回の自分の配信</strong>です。同じ枠・同じくらいの長さの配信どうしで並べ、どの段がいちばん大きく細くなっているかを見ます。</p>
+  <figure> <svg viewBox="0 0 720 262" role="img" aria-label="表示回数、入室、滞在、商品クリック、購入の5段の横棒が上から順に短くなる漏斗の形で並び、そのうち表示から入室への落ち込みがいちばん大きい段に赤い印を付けて、まずそこを直すことを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">いちばん大きく細くなる段を、1つだけ選ぶ</text><text x="128" y="62" text-anchor="end" font-size="11.5" font-weight="800" fill="#454956">表示回数</text><rect x="140" y="48" width="520" height="22" rx="6" fill="#454956"/><text x="128" y="100" text-anchor="end" font-size="11.5" font-weight="800" fill="#C2203A">入室</text><rect x="140" y="86" width="170" height="22" rx="6" fill="#E8324A"/><text x="128" y="138" text-anchor="end" font-size="11.5" font-weight="800" fill="#454956">滞在</text><rect x="140" y="124" width="120" height="22" rx="6" fill="#787D8A"/><text x="128" y="176" text-anchor="end" font-size="11.5" font-weight="800" fill="#454956">商品クリック</text><rect x="140" y="162" width="72" height="22" rx="6" fill="#A9ADB7"/><text x="128" y="214" text-anchor="end" font-size="11.5" font-weight="800" fill="#454956">購入</text><rect x="140" y="200" width="36" height="22" rx="6" fill="#C9CBD0"/><path d="M330 78 L660 78" stroke="#E8324A" stroke-width="2" stroke-dasharray="6 5" fill="none"/><rect x="420" y="90" width="236" height="44" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="538" y="110" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">この例では、表示から入室で</text><text x="538" y="126" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">大きく細くなっている＝見せ方</text><text x="360" y="248" text-anchor="middle" font-size="11" fill="#787D8A">棒の長さは形を示すための例で、実際の数値ではない</text></svg> <figcaption>図2：前回の自分の配信と並べて、最初に細くなる段を探す（LEAM作成）</figcaption> </figure>
+<h3>見るのは「回ごとの比較」と「配信中の時刻ごとの動き」の2つ</h3>
+<p>公式の実践マニュアルは、改善の手順として、ダッシュボードでKPIを日別・商品別に集計し、「視聴→カート→離脱」の流れがあればリテンション（滞在）を強化する施策を入れる、という順を示しています。当社では、これに加えて<strong>配信中の視聴者数の動きを時刻と一緒に記録</strong>しています。冒頭で落ちたのか、商品の切り替えで落ちたのかは、合計の数字からは見えないためです。画面の名称や表示される項目は更新されることがあるので、自社の画面で何が見られるかは公式ヘルプで最新を確認してください（週次で見る表の作り方は<a href="https://leam.co.jp/column/tiktok-shop-kpi/">KPI設計の記事</a>）。</p>
+
+<h2 id="s3"><span class="no en">03</span>告知は、LIVEイベントの予約と予告動画をセットにして開始直後の入室を作る</h2>
+<p>配信開始の直後に誰も入ってこないなら、入口の中でも<strong>告知</strong>が足りていません。公式のLIVE運営マニュアル（クリエイターと運営チーム向け）は、<strong>LIVE Event（LIVEイベント）を公式の事前告知機能</strong>と位置づけ、配信予定を予約の入口に変えて、配信開始時の初期流入を強化できると説明しています。同じ資料は、十分に事前の盛り上げを行ったLIVEは、行わないLIVEと比べて初期のトラフィックとユーザーの滞在意欲がいずれも明らかに高くなる、と実績データに触れています（数値は示されていません）。</p>
+<p>関連する指標として挙げられているのは<strong>予約人数</strong>と<strong>LIVE開始後の入室率</strong>です。予約人数が少ないなら告知の届け方、予約はあるのに開始直後の入室が少ないなら告知と配信時刻のずれ、と切り分けられます。</p>
+<div class="tw"><table><thead><tr><th>告知の手段</th><th>公式資料に書かれている使い方</th><th>見る数字</th></tr></thead><tbody><tr><td>LIVEイベントを作る</td><td>わかりやすいイベント名、正確な配信開始時間、興味を引く説明文を設定する。定期LIVEがある場合は各回ごとに作成し、定期的に見る習慣をつけてもらう</td><td>予約人数</td></tr><tr><td>動画にLIVEイベントを付ける</td><td>新規動画の投稿時に「リンクを追加」からLIVE Eventを選ぶ。作成後は新規動画の左下へワンクリックで紐付けられる</td><td>予約人数、動画の再生数</td></tr><tr><td>予告動画にステッカーで付ける</td><td>LIVEのテーマに関連する事前告知動画に、LIVE Eventをステッカー形式で追加して露出を強化する</td><td>予約人数</td></tr><tr><td>他の場所でも告知する</td><td>LIVEイベントの作成だけでは十分ではないとし、フォロワーグループやDM、他のSNSでの告知と組み合わせて予約人数の最大化を目指す</td><td>開始後の入室率</td></tr><tr><td>広告板で次回を予告する</td><td>入門の使い方として「LIVE予告」や「特典リスト」から始めることを勧めている</td><td>次回の予約人数</td></tr></tbody></table></div><p class="src">告知の手段（公式のLIVE運営マニュアルの記載を整理）</p>
+<p>この表のLIVE Event・広告板などの機能は、クリエイター向けのLIVE運営マニュアルに書かれているものです。セラーの管理画面では名前や入口が違うことがあるので、自社の画面で確かめてください。</p>
+<p>予告動画の作り方も、公式の実践マニュアルに「誘導型」の構成例があります。冒頭で「明日◯時から◯◯の限定LIVEやります！」と日時とテーマを言い、見どころ、LIVE限定の特典、今しか見られない理由を続け、最後に商品カードかLIVE通知をオンにするよう促す流れです。テロップには<strong>日時・限定特典・LIVEのテーマ</strong>を明記するよう書かれています。予告動画の内容はLIVEのテーマとそろえるよう、運営マニュアルも勧めています。</p>
+<div class="box box-warn"><div class="bt">⚠️ 告知した時刻に始める</div><p>LIVEイベントで伝えるのは「正確な配信開始時間」です。予約した人は通知を見てから入ってくるので、開始が遅れたり告知と違う時刻に始めたりすると、開始直後の入室がそのまま失われます。複数の配信を一度に告知するより、公式マニュアルが入門向けに勧めるとおり、まずは<strong>重点LIVEの1本</strong>に告知を集中させるほうが、何が効いたかを確かめやすくなります。</p></div>
+
+<h2 id="s4"><span class="no en">04</span>配信の頻度は売上の段階に合わせて決め、枠は毎週同じにする</h2>
+<p>告知を整えても、配信の曜日と時刻が毎回違えば、視聴者は「次にいつ来ればいいか」を覚えられません。どの時間帯を選ぶかは<a href="https://leam.co.jp/column/live-audience/">視聴者層と時間帯の記事</a>で扱っているので、ここでは<strong>頻度</strong>と<strong>固定のしかた</strong>だけを扱います。</p>
+<p>公式の運用資料は、売上の段階ごとに推奨される頻度を示しています。ライブの回数だけでなく、ショート動画の本数と配信予告をセットで書いているのが特徴です。</p>
+<div class="tw"><table><thead><tr><th>段階（公式資料の区分）</th><th>ショート動画</th><th>LIVE配信</th><th>配信予告</th></tr></thead><tbody><tr><td>初期（販売できる商品がある→初回注文）</td><td>商品リンク付きの動画を毎週2〜3本</td><td>毎週0〜1回（15〜30分）</td><td>任意</td></tr><tr><td>成長期（初回注文→月平均100万円）</td><td>週5本以上</td><td>1〜2回（30分以上）</td><td>あり</td></tr><tr><td>成熟期（月平均100万円→500万円）</td><td>週5本以上</td><td>週2〜3回</td><td>資料の頻度欄には記載なし</td></tr></tbody></table></div><p class="src">段階ごとの推奨頻度（公式の運用資料「ショート動画とLIVE配信の運用」の記載を整理）</p>
+<p>この表から読めるのは、<strong>初期の段階ではライブの回数よりショート動画の本数が先に置かれている</strong>ことです。人が来ない段階で配信の回数だけを増やしても、入口になる動画が足りなければ、毎回同じ少人数の配信が増えるだけになりがちです。回数を上げるのは、動画の本数と予告がそろってからで遅くありません。</p>
+<p>固定のしかたについても、同じ資料に記載があります。サイクルに基づく運営として、<strong>毎週のLIVE配信の時間帯と「盛り上がりポイント」を固定</strong>し、ショート動画とLIVE配信で誘導しあうことで、ユーザーの習慣を育てるとしています。キャンペーンに合わせる場合は、ポイントになる時期の7〜14日前から、LIVE配信とショート動画で相互に誘導を始めるよう書かれています（キャンペーンそのものの組み方は<a href="https://leam.co.jp/column/seasonal-campaign/">季節キャンペーンの記事</a>）。</p>
+<div class="box box-point"><div class="bt">💡 「毎週◯曜◯時」と言える状態にする</div><p>枠を固定すると、配信の最後と次回の予告動画で同じ時刻を言い続けられます。当社の運用実感では、枠が毎回変わるアカウントは、告知の文面も毎回作り直すことになり、予告が配信直前の1本だけになりやすい傾向があります。</p></div>
+
+<h2 id="s5"><span class="no en">05</span>ショート動画は配信前・配信中・配信後の3回使い、LIVEへの入口を増やす</h2>
+<p>公式の運用資料は、ショート動画には商品リンクから直接売る使い方のほかに、<strong>LIVE配信前のプロモーションや視聴者の誘導</strong>として使う方法があると説明しています。動画からLIVEへ送るシナリオでは、ショート動画の冒頭で商品のセールスポイントと特典を示し、LIVE配信ルームに行くCTA（行動の呼びかけ）を明確にするよう書かれています。</p>
+<p>動画で人を送れるのは、配信前だけではありません。公式のLIVE運営マニュアルにある<strong>自動ハイライト</strong>を使うと、配信中と配信後にも動画が入口になります。</p>
+<ol class="steps"><li><b>配信前：予告動画にLIVEイベントを付ける</b><p>日時・特典・テーマを入れた予告動画に、LIVEイベントを紐付けます（§03）。</p></li><li><b>配信中：自動ハイライトで切り出し動画を出す</b><p>LIVE設定の「LIVE」→「ハイライト」→「自動投稿モード」を有効にすると、配信中にもショート動画がリアルタイムで自動生成・投稿でき、LIVEルームへの流入を強化できると説明されています。</p></li><li><b>配信後：ハイライトに商品リンクを付けて投稿する</b><p>配信終了後、システムが反応の大きかった場面から動画を作って下書きに保存します。配信中に投稿された動画も、終了後に商品リンクを紐付けて販促に使えます。マニュアルは「LIVE終了→ハイライトの見直し→編集の調整→商品リンクの紐付け→予約投稿」という流れを決めておくよう勧めています。</p></li></ol>
+  <figure> <svg viewBox="0 0 720 252" role="img" aria-label="中央のLIVEに向かって、左の配信前の予告動画とLIVEイベント、下の配信中の自動ハイライト、右の配信後の商品リンク付きハイライト動画の3つから矢印が集まり、配信後の動画が次回の予告にもつながることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">動画は、配信の前・中・後の3回入口になる</text><rect x="20" y="58" width="190" height="96" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="115" y="84" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">配信前</text><text x="115" y="108" text-anchor="middle" font-size="11" fill="#787D8A">予告動画に</text><text x="115" y="126" text-anchor="middle" font-size="11" fill="#787D8A">LIVEイベントを付ける</text><rect x="270" y="58" width="180" height="96" rx="14" fill="#0B0C10"/><text x="360" y="100" text-anchor="middle" font-size="14" font-weight="800" fill="#ffffff">LIVE</text><text x="360" y="124" text-anchor="middle" font-size="11" fill="#C9CBD4">入室が増える</text><rect x="510" y="58" width="190" height="96" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="605" y="84" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">配信後</text><text x="605" y="108" text-anchor="middle" font-size="11" fill="#787D8A">ハイライトに</text><text x="605" y="126" text-anchor="middle" font-size="11" fill="#787D8A">商品リンクを付けて投稿</text><rect x="245" y="182" width="230" height="52" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="360" y="204" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">配信中</text><text x="360" y="222" text-anchor="middle" font-size="11" fill="#787D8A">自動ハイライトが動画を出す</text><path d="M212 106 L262 106" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M256 100 L268 106 L256 112 Z" fill="#787D8A"/><path d="M508 106 L458 106" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M464 100 L452 106 L464 112 Z" fill="#787D8A"/><path d="M360 180 L360 164" stroke="#C2203A" stroke-width="2.5" fill="none"/><path d="M354 168 L360 156 L366 168 Z" fill="#C2203A"/><path d="M605 156 C605 210 560 208 480 208" stroke="#A9ADB7" stroke-width="2" stroke-dasharray="5 5" fill="none"/><text x="600" y="236" text-anchor="middle" font-size="10.5" fill="#787D8A">次回の予告にも使う</text></svg> <figcaption>図3：予告・切り出し・ハイライトの3本で、ライブへの入口を増やす（LEAM作成）</figcaption> </figure>
+<p>自動ハイライトについて、運営マニュアルが関連指標に挙げているのは<strong>ショート動画の再生数</strong>と<strong>ショート動画経由の入室数</strong>です。§02のデータで「動画は見られているのにライブに来ない」と分かった場合は、動画の中でライブへの呼びかけが明確か、予告と配信のテーマがそろっているかを見直します。動画そのものの構成の作り方は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方の記事</a>で扱っています。</p>
+
+<h2 id="s6"><span class="no en">06</span>冒頭の離脱は、最初の1分で特典と買い方を見せて防ぐ</h2>
+<p>入室はあるのに平均視聴時間が短いなら、入った人が「この配信に残る理由」を見つけられずに出ていっています。公式の運用資料は、動画からLIVEへ送るシナリオの実施ポイントとして、<strong>LIVE配信冒頭の1分間でクーポンと購入手順を説明し、主力商品のSKUを画面上部に固定表示する</strong>と書いています。ライブで売る場合も、冒頭で「特典の一覧」を紹介し、中盤で1〜2回のタイムセールかギフト企画、終盤でCTAを繰り返す構成が示されています。</p>
+<p>ライブの視聴者は途中から入ってきます。冒頭の1分を作るのは、最初の数人のためだけではなく、<strong>いつ入ってきた人にも同じ情報が画面に残っている状態</strong>を作るためです。話す内容は台本の領域なので、ここでは画面に何を出しておくかだけを整理します。</p>
+<div class="tw"><table><thead><tr><th>冒頭で画面に出すもの</th><th>使う機能</th><th>公式資料の記載</th></tr></thead><tbody><tr><td>今日の特典と流れ</td><td>広告板</td><td>配信開始時に進行スケジュールを表示し、全体の構成を分かりやすく伝える。複数の広告板を事前に作り、進行に合わせて切り替えられる</td></tr><tr><td>いま紹介している商品</td><td>商品のピン留め</td><td>ピンした商品カードは15〜30秒表示された後に自動で非表示になるため、説明に合わせて繰り返し操作する</td></tr><tr><td>フォローなど1つの行動</td><td>ステッカー</td><td>「フォローはこちら」など単一の行動の訴求に向く。推奨される同時使用数は最大2個</td></tr><tr><td>参加のきっかけ</td><td>抽選・宝箱</td><td>配信開始直後に小規模な抽選か宝箱を1回行う、視聴人数が明らかに減ったときに即時抽選を行う、という使い方が示されている。抽選は事前にセラーの承認が必要な機能とされている</td></tr><tr><td>中断中の画面</td><td>広告板</td><td>1人配信で着替えや商品の受け取りが必要なときに、広告板を表示して画面をつなぎ、視聴者の離脱を防ぐ</td></tr></tbody></table></div><p class="src">冒頭の離脱を防ぐ画面の作り方（公式の運用資料とLIVE運営マニュアルの記載を整理）</p>
+  <figure> <svg viewBox="0 0 720 300" role="img" aria-label="ライブ画面の見本を中央に置き、上に今日の特典と流れを出す広告板、中央に話し手と商品、下にピン留めした商品カードを配置し、右側にそれぞれの役割と、ピン留めは数十秒で消えるため繰り返すことを添えた図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">途中から入った人にも、同じ情報が見えている状態</text><rect x="150" y="44" width="170" height="240" rx="20" fill="#ffffff" stroke="#454956" stroke-width="2"/><rect x="164" y="60" width="142" height="44" rx="8" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="235" y="78" text-anchor="middle" font-size="10.5" font-weight="800" fill="#C2203A">今日の特典</text><text x="235" y="95" text-anchor="middle" font-size="10" fill="#787D8A">流れ・時刻</text><circle cx="214" cy="146" r="20" fill="#DFE0E2"/><rect x="190" y="168" width="48" height="40" rx="10" fill="#DFE0E2"/><rect x="248" y="160" width="40" height="40" rx="6" fill="#E8324A"/><rect x="164" y="226" width="142" height="44" rx="8" fill="#F6F6F8" stroke="#454956" stroke-width="1.5"/><rect x="172" y="234" width="28" height="28" rx="4" fill="#E8324A"/><text x="256" y="252" text-anchor="middle" font-size="10.5" font-weight="800" fill="#454956">商品カード</text><path d="M326 82 L370 82" stroke="#E8324A" stroke-width="2" fill="none"/><path d="M296 180 L370 180" stroke="#A9ADB7" stroke-width="2" fill="none"/><path d="M326 248 L370 248" stroke="#454956" stroke-width="2" fill="none"/><text x="380" y="78" font-size="12" font-weight="800" fill="#C2203A">広告板</text><text x="380" y="96" font-size="11" fill="#787D8A">特典と流れを開始時から出しておく</text><text x="380" y="176" font-size="12" font-weight="800" fill="#454956">話し手と商品</text><text x="380" y="194" font-size="11" fill="#787D8A">見せている物と話している物を一致させる</text><text x="380" y="244" font-size="12" font-weight="800" fill="#454956">ピン留め</text><text x="380" y="262" font-size="11" fill="#787D8A">数十秒で消えるので、説明のたびに出し直す</text></svg> <figcaption>図4：冒頭で出した特典と商品を、画面に残し続ける（LEAM作成）</figcaption> </figure>
+<p>運営マニュアルは、初心者の配信者にまず勧めるツールとして、<strong>広告板・商品のピン留め・自動ハイライトの3つ</strong>を挙げています。機能を増やしすぎず、この3つから始めるよう書かれています。冒頭の離脱が多い段階では、抽選や宝箱を足す前に、広告板とピン留めが配信の最初から最後まで途切れていないかを確かめてください（冒頭の話し方と進行の型は<a href="https://leam.co.jp/column/tiktok-shop-live-script/">台本テンプレート</a>）。</p>
+
+<h2 id="s7"><span class="no en">07</span>見せ方は、おすすめで流れてきた数秒で「何を売る配信か」が伝わる画面にする</h2>
+<p>表示回数はあるのに入室が少ないなら、おすすめに流れてきた人が画面を見て、入らずに次へ進んでいます。このとき視聴者が判断に使えるのは、その瞬間の画面だけです。何を売っている配信か、自分に関係がありそうかが一目で分からなければ、入室は起きません。</p>
+<p>公式の実践マニュアルは、配信環境として<strong>カメラを目線の高さに置き、顔と商品が並ぶ構図</strong>にすること、リングライトと背景光で明るさを確保すること、ピンマイクで外の音を遮ること、背景は白やウッド基調にして装飾しすぎないことを挙げています。配信中のコツとしては、見せている物と話している内容を一致させる「言いながら出す」、商品を出すタイミングと商品カードが出るタイミングを合わせる、コメントが止まったら視聴者が参加できる問いかけをする、の3点です。企画の段階では、配信タイトル案を事前に複数用意するよう書かれています（例として「3分でわかる〇〇」）。</p>
+<p>当社の運用実感では、入室が少ない配信は、話し手の顔だけが大きく映って商品が画面の外にある時間が長い傾向があります。流れてきた人が見るのは数秒なので、<strong>どの瞬間を切り取っても商品が映っている</strong>状態を目指します。機材と画角の具体的な組み方は<a href="https://leam.co.jp/column/tiktok-shop-live-equipment/">LIVEの機材と配信環境の記事</a>で扱っています。</p>
+<h3>直すのは1週に1か所だけにして、前の週と比べる</h3>
+<p>ここまでの対策を一度に入れると、§01で書いたとおり、どれが効いたのか分からなくなります。当社が支援先で使っている順番は次のとおりです。公式の記載ではなく、当社の運用上の組み立てです。</p>
+<div class="tw"><table><thead><tr><th>週</th><th>直す場所</th><th>変えること</th><th>前の週と比べる数字</th></tr></thead><tbody><tr><td>1週目</td><td>基準を取る</td><td>何も変えずに配信し、視聴者数の動きを時刻と一緒に記録する</td><td>表示回数・入室・平均視聴時間</td></tr><tr><td>2週目</td><td>入口（告知）</td><td>LIVEイベントを作り、予告動画に紐付ける。告知した時刻ちょうどに始める</td><td>予約人数・開始直後の入室</td></tr><tr><td>3週目</td><td>冒頭</td><td>広告板で特典と流れを最初から出し、ピン留めを説明のたびに出し直す</td><td>平均視聴時間</td></tr><tr><td>4週目</td><td>見せ方</td><td>顔と商品が並ぶ画角にし、商品が映らない時間を減らす</td><td>表示回数に対する入室の割合</td></tr><tr><td>5週目以降</td><td>入口（動画）</td><td>自動ハイライトを有効にし、配信後のハイライトに商品リンクを付けて投稿する</td><td>動画経由の入室</td></tr></tbody></table></div><p class="src">直す順番のワークシート（LEAM作成。§02で止まっている段が分かっている場合は、その段から始める）</p>
+<p>逆に、次のどれかに当てはまるなら、配信の中身を直す前に入口を先に整えたほうが早く動きます。</p>
+<ul><li><strong>配信の告知を、当日に1回しかしていない</strong>（LIVEイベントの予約という入口がない）</li><li><strong>商品リンク付きのショート動画を、週に1本も出していない</strong>（公式資料の初期段階でも毎週2〜3本が置かれている）</li><li><strong>配信の曜日と時刻が毎週違う</strong>（次にいつ来ればいいかを視聴者が覚えられない）</li></ul>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>ライブに人が来ないときに最初にやるのは、配信を増やすことでも台本を書き直すことでもなく、<strong>どこで止まっているかを1つに決めること</strong>です。上から順に確かめてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. データで止まっている段を決める</b><br>データ分析の概要から［LIVE配信のパフォーマンス］へ進み、表示・入室・滞在のどこが前回より細いかを見る</div><div class="summary-item"><b>2. 開始直後に人がいないなら、告知を足す</b><br>LIVEイベントを作り、予告動画に紐付ける。見る数字は予約人数と開始後の入室率</div><div class="summary-item"><b>3. 来る人数がぶれるなら、枠を固定する</b><br>毎週同じ時刻にし、初期の段階ではライブの回数より動画の本数を先にそろえる</div><div class="summary-item"><b>4. 動画が見られているのに来ないなら、動画から送る</b><br>予告・配信中の切り出し・配信後のハイライトの3回、ライブへの呼びかけを入れる</div><div class="summary-item"><b>5. すぐ出ていくなら、冒頭の1分を作る</b><br>特典と買い方を最初に見せ、広告板とピン留めで途中から来た人にも残す</div><div class="summary-item"><b>6. 入室が少ないなら、画面を作り直す</b><br>顔と商品が並ぶ画角にし、どの瞬間を切り取っても商品が映っているようにする</div></div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopのライブに人が来ないとき、最初に何を確認すればよいですか？</summary><div class="a">まずLIVEのデータで、表示回数・入室・滞在（平均視聴時間）のどこが前回の配信より細くなっているかを確認します。表示が少なければ告知・頻度・ショート動画といった入口、表示はあるのに入室が少なければ画面の見せ方、入室はあるのに滞在が短ければ冒頭の1分を直します。複数を同時に変えると効果が切り分けられないため、直す場所は1回に1か所に絞ります。</div></details><details><summary>TikTok ShopのLIVEのデータはどこで見られますか？</summary><div class="a">公式ヘルプでは、セラーセンターの「データ分析の概要」からLIVE配信の詳細データに進めると案内されています。例として［LIVE］＞［分析結果を表示］＞［LIVE配信のパフォーマンス］の順に進み、リアルタイムのデータは「LIVE配信と動画」のページで確認します。ここに表示されるGMVは返品・返金・キャンセルを含む数字で、収入とは同じではありません。画面の名称は更新されることがあるため、最新は公式ヘルプで確認してください。</div></details><details><summary>TikTok ShopのLIVEイベント（配信予告）は作ったほうがよいですか？</summary><div class="a">開始直後に人が入ってこないなら、作ることを勧めます。公式のLIVE運営マニュアルは、LIVEイベントを公式の事前告知機能とし、配信開始時の初期流入を強化できると説明しています。関連する指標は予約人数とLIVE開始後の入室率です。予告動画への紐付けや、フォロワーグループ・DM・他のSNSでの告知と組み合わせるよう書かれています。</div></details><details><summary>TikTok Shopのライブは週に何回配信すればよいですか？</summary><div class="a">公式の運用資料は、売上の段階ごとに目安を示しています。初回注文までの初期は毎週0〜1回（15〜30分）で配信予告は任意、月平均100万円までの成長期は1〜2回（30分以上）と配信予告、その先の成熟期は週2〜3回です。どの段階でもショート動画の本数とセットで書かれており、初期は商品リンク付きの動画を毎週2〜3本が置かれています。回数より、毎週同じ枠に固定することを先に決めてください。</div></details><details><summary>ショート動画からTikTok Shopのライブに人を送るにはどうすればよいですか？</summary><div class="a">配信前・配信中・配信後の3回使います。配信前は日時・特典・テーマを入れた予告動画にLIVEイベントを紐付けます。配信中は自動ハイライトの自動投稿モードを有効にすると、ショート動画が自動で生成・投稿でき、LIVEルームへの流入強化に使えると公式マニュアルは説明しています。配信後はハイライト動画に商品リンクを紐付けて投稿します。</div></details><details><summary>TikTok Shopのライブで、入ってきた視聴者がすぐ出ていくのはなぜですか？</summary><div class="a">入った瞬間に「この配信に残る理由」が見えていない可能性があります。公式の運用資料は、配信冒頭の1分間でクーポンと購入手順を説明し、主力商品を画面上部に固定表示するよう書いています。広告板で今日の特典と流れを最初から出しておき、ピン留めは15〜30秒で非表示になるため説明のたびに出し直すと、途中から入った人にも同じ情報が見える状態になります。</div></details></div>
+
+<div class="ctabox"><div class="ct">人が来ないライブの立て直しを、データの見方からご相談いただけます</div><p>LEAMはTikTok Shopの運用支援と、TikTok Shop特化のMCNを運営しています。告知と動画の設計、配信の画面づくり、出演者の確保までを一つの流れとして整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=live-no-viewers">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2652995084699409&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：[基礎知識]ショート動画とLIVE配信の運用</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=309514077865745&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：LIVE配信ツールの活用マニュアル（LIVE Event・広告板・自動ハイライト・ピン留め）</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：動画・LIVE配信・クリエイター活用までの実践マニュアル</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年10月14日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、推奨される頻度は更新されることがあります。本記事は2026年10月14日時点で確認できた日本向け公式情報と、当社が作成した運用フレームを区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組みをセラー向けに解説</a></b><span>ライブが3つの売り場のどこにあるか</span></div><div class="relcard"><span class="rc">動画</span><b><a href="https://leam.co.jp/column/short-video-playbook/">TikTok Shopで売れるショート動画の作り方｜構成の型と改善の回し方</a></b><span>ライブへの入口になる動画を作る</span></div><div class="relcard"><span class="rc">運用</span><b><a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計｜週次で見る指標</a></b><span>配信の数字を週次の表に載せる</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">人が来ない原因は、入口・冒頭・見せ方の3か所に分けると直す場所が決まる</a></li><li><a href="#s2">LIVEのデータは「表示→入室→滞在→購入」の順に見て、最初に細くなる段を探す</a></li><li><a href="#s3">告知は、LIVEイベントの予約と予告動画をセットにして開始直後の入室を作る</a></li><li><a href="#s4">配信の頻度は売上の段階に合わせて決め、枠は毎週同じにする</a></li><li><a href="#s5">ショート動画は配信前・配信中・配信後の3回使い、LIVEへの入口を増やす</a></li><li><a href="#s6">冒頭の離脱は、最初の1分で特典と買い方を見せて防ぐ</a></li><li><a href="#s7">見せ方は、おすすめで流れてきた数秒で「何を売る配信か」が伝わる画面にする</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=live-no-viewers">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopのライブに人が来ないとき、最初に何を確認すればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "まずLIVEのデータで、表示回数・入室・滞在（平均視聴時間）のどこが前回の配信より細くなっているかを確認します。表示が少なければ告知・頻度・ショート動画といった入口、表示はあるのに入室が少なければ画面の見せ方、入室はあるのに滞在が短ければ冒頭の1分を直します。複数を同時に変えると効果が切り分けられないため、直す場所は1回に1か所に絞ります。"}}, {"@type": "Question", "name": "TikTok ShopのLIVEのデータはどこで見られますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプでは、セラーセンターの「データ分析の概要」からLIVE配信の詳細データに進めると案内されています。例として［LIVE］＞［分析結果を表示］＞［LIVE配信のパフォーマンス］の順に進み、リアルタイムのデータは「LIVE配信と動画」のページで確認します。ここに表示されるGMVは返品・返金・キャンセルを含む数字で、収入とは同じではありません。画面の名称は更新されることがあるため、最新は公式ヘルプで確認してください。"}}, {"@type": "Question", "name": "TikTok ShopのLIVEイベント（配信予告）は作ったほうがよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "開始直後に人が入ってこないなら、作ることを勧めます。公式のLIVE運営マニュアルは、LIVEイベントを公式の事前告知機能とし、配信開始時の初期流入を強化できると説明しています。関連する指標は予約人数とLIVE開始後の入室率です。予告動画への紐付けや、フォロワーグループ・DM・他のSNSでの告知と組み合わせるよう書かれています。"}}, {"@type": "Question", "name": "TikTok Shopのライブは週に何回配信すればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式の運用資料は、売上の段階ごとに目安を示しています。初回注文までの初期は毎週0〜1回（15〜30分）で配信予告は任意、月平均100万円までの成長期は1〜2回（30分以上）と配信予告、その先の成熟期は週2〜3回です。どの段階でもショート動画の本数とセットで書かれており、初期は商品リンク付きの動画を毎週2〜3本が置かれています。回数より、毎週同じ枠に固定することを先に決めてください。"}}, {"@type": "Question", "name": "ショート動画からTikTok Shopのライブに人を送るにはどうすればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "配信前・配信中・配信後の3回使います。配信前は日時・特典・テーマを入れた予告動画にLIVEイベントを紐付けます。配信中は自動ハイライトの自動投稿モードを有効にすると、ショート動画が自動で生成・投稿でき、LIVEルームへの流入強化に使えると公式マニュアルは説明しています。配信後はハイライト動画に商品リンクを紐付けて投稿します。"}}, {"@type": "Question", "name": "TikTok Shopのライブで、入ってきた視聴者がすぐ出ていくのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "入った瞬間に「この配信に残る理由」が見えていない可能性があります。公式の運用資料は、配信冒頭の1分間でクーポンと購入手順を説明し、主力商品を画面上部に固定表示するよう書いています。広告板で今日の特典と流れを最初から出しておき、ピン留めは15〜30秒で非表示になるため説明のたびに出し直すと、途中から入った人にも同じ情報が見える状態になります。"}}]}</script>
+</body>
+</html>

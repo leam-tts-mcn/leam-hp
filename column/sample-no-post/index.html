@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>サンプルを送っても投稿されない｜TikTok Shopのサンプル施策</title>
+<meta name="description" content="TikTok Shopでサンプルを送っても投稿されないときにセラー側で直せる点を整理。公式の対応期限・公開期間・LIVEのピン留め・申請制限を押さえ、承認・発送・催促・履行率の見方を設計します。">
+<link rel="canonical" href="https://leam.co.jp/column/sample-no-post/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="サンプルを送っても投稿されない｜TikTok Shopのサンプル施策">
+<meta property="og:description" content="TikTok Shopでサンプルを送っても投稿されないときにセラー側で直せる点を整理。公式の対応期限・公開期間・LIVEのピン留め・申請制限を押さえ、承認・発送・催促・履行率の見方を設計します。">
+<meta property="og:url" content="https://leam.co.jp/column/sample-no-post/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/sample-no-post.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="サンプルを送っても投稿されない｜TikTok Shopのサンプル施策">
+<meta name="twitter:description" content="TikTok Shopでサンプルを送っても投稿されないときにセラー側で直せる点を整理。公式の対応期限・公開期間・LIVEのピン留め・申請制限を押さえ、承認・発送・催促・履行率の見方を設計します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/sample-no-post.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "サンプルを送っても投稿されない｜TikTok Shopのサンプル施策", "description": "TikTok Shopでサンプルを送っても投稿されないときにセラー側で直せる点を整理。公式の対応期限・公開期間・LIVEのピン留め・申請制限を押さえ、承認・発送・催促・履行率の見方を設計します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/sample-no-post/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/sample-no-post.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&lang=ja-JP", "name": "TikTok Shop公式：クリエイター用の無料サンプル"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトコラボ"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2733826023753473&lang=ja-JP", "name": "TikTok Shop公式：クリエイターの禁止行為"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&lang=ja-JP", "name": "TikTok Shop公式：TIKTOK SHOP販売者利用規約"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&lang=ja-JP", "name": "TikTok Shop公式：決済レポートを読む"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&lang=ja-JP", "name": "TikTok Shop公式：ショップパフォーマンススコアガイド"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "サンプルを送っても投稿されない｜TikTok Shopのサンプル施策", "item": "https://leam.co.jp/column/sample-no-post/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=sample-no-post">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopでサンプルを送っても投稿されない｜セラー側の承認・発送・催促と履行率の見方</p>
+<span class="cat">アフィリエイト</span>
+<h1>TikTok Shopでサンプルを送っても投稿されない｜セラー側の承認・発送・催促と履行率の見方</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左の赤いサンプルの箱からシアンの矢印が14日分のカレンダーへ進み、右では商品リンク付きの動画カードにシアンのチェックが付く一方、もう1枚の点線のカードは空のまま残っていて、送ったサンプルが投稿になったものとならなかったものを対比したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v306c-104 34-200 34-304 12-110-24-202-48-314-40-112 8-196 48-306 56-104 8-196-6-276-34z" fill="#F6F7F9"/>
+  <ellipse cx="690" cy="250" rx="320" ry="200" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="samplenopostDots">
+      <circle cx="70" cy="62" r="5"/><circle cx="106" cy="62" r="5"/><circle cx="142" cy="62" r="5"/><circle cx="178" cy="62" r="5"/>
+      <circle cx="70" cy="98" r="5"/><circle cx="106" cy="98" r="5"/><circle cx="142" cy="98" r="5"/><circle cx="178" cy="98" r="5"/>
+      <circle cx="70" cy="134" r="5"/><circle cx="106" cy="134" r="5"/><circle cx="142" cy="134" r="5"/><circle cx="178" cy="134" r="5"/>
+    </g>
+    <use href="#samplenopostDots" transform="translate(520 446)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 516c156-28 282-12 414 10 130 22 248 28 368 8 118-20 230-42 418-24v120H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 左：サンプルの箱（主役・赤） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <path d="M100 300L168 256H460L392 300V512H100z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <path d="M392 300L460 256V468L392 512z" fill="#CE1730"/>
+    <path d="M100 300L168 256H460L392 300z" fill="#FE2C55"/>
+    <rect x="100" y="300" width="292" height="212" fill="#FE2C55"/>
+    <!-- テープ -->
+    <path d="M226 300L294 256H334L266 300z" fill="#25F4EE"/>
+    <rect x="226" y="300" width="40" height="70" fill="#25F4EE"/>
+    <!-- 送り状 -->
+    <rect x="282" y="402" width="88" height="80" rx="8" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="296" y="420" width="58" height="9" rx="4.5" fill="#DFE0E2"/>
+    <rect x="296" y="440" width="40" height="9" rx="4.5" fill="#DFE0E2"/>
+    <rect x="296" y="460" width="50" height="9" rx="4.5" fill="#C9CBD0"/>
+    <!-- 輪郭 -->
+    <path d="M100 300L168 256H460L392 300z M392 300V512 M392 512L460 468V256" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <rect x="100" y="300" width="292" height="212" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M226 300V370H266V300" fill="none" stroke="#0B0C10" stroke-width="5"/>
+  </g>
+
+  <!-- 箱 → カレンダー -->
+  <path d="M470 352h40v-16l30 26-30 26v-16h-40z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- ================= 中央：14日のカレンダー ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="560" y="182" width="290" height="262" rx="18" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="560" y="182" width="290" height="262" rx="18" fill="#FFFFFF"/>
+    <path d="M578 182h254a18 18 0 0 1 18 18v38H560v-38a18 18 0 0 1 18-18z" fill="#CE1730"/>
+    <rect x="560" y="182" width="290" height="262" rx="18" fill="none" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M560 238H850" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="612" y="166" width="14" height="34" rx="7" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="784" y="166" width="14" height="34" rx="7" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <!-- 14マス -->
+    <g fill="#25F4EE">
+      <rect x="580" y="258" width="30" height="30" rx="7"/><rect x="616" y="258" width="30" height="30" rx="7"/><rect x="652" y="258" width="30" height="30" rx="7"/><rect x="688" y="258" width="30" height="30" rx="7"/><rect x="724" y="258" width="30" height="30" rx="7"/><rect x="760" y="258" width="30" height="30" rx="7"/><rect x="796" y="258" width="30" height="30" rx="7"/>
+      <rect x="580" y="298" width="30" height="30" rx="7"/><rect x="616" y="298" width="30" height="30" rx="7"/>
+    </g>
+    <g fill="#DFE0E2">
+      <rect x="652" y="298" width="30" height="30" rx="7"/><rect x="688" y="298" width="30" height="30" rx="7"/><rect x="724" y="298" width="30" height="30" rx="7"/><rect x="760" y="298" width="30" height="30" rx="7"/>
+    </g>
+    <rect x="796" y="298" width="30" height="30" rx="7" fill="#FFFFFF" stroke="#CE1730" stroke-width="5"/>
+    <!-- 残り日数のバー -->
+    <rect x="580" y="358" width="246" height="16" rx="8" fill="#DFE0E2"/>
+    <rect x="580" y="358" width="160" height="16" rx="8" fill="#25F4EE"/>
+    <rect x="580" y="394" width="120" height="11" rx="5.5" fill="#DFE0E2"/>
+  </g>
+
+  <!-- カレンダー → 動画 -->
+  <path d="M866 300c30-6 44-40 46-82l-14 2 26-34 20 38-14-2c-2 54-24 92-64 100z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M866 360c34 8 52 40 58 86" fill="none" stroke="#C9CBD0" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 12"/>
+
+  <!-- ================= 右：投稿された動画（シアン）と、されなかった枠 ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="950" y="96" width="176" height="210" rx="18" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="950" y="96" width="176" height="210" rx="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <rect x="970" y="116" width="136" height="120" rx="10" fill="#DFE0E2"/>
+    <path d="M1026 152v48l38-24z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="970" y="252" width="96" height="12" rx="6" fill="#DFE0E2"/>
+    <rect x="970" y="276" width="64" height="12" rx="6" fill="#25F4EE"/>
+    <circle cx="1124" cy="102" r="30" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M1111 103l9 10 17-20" fill="none" stroke="#0B0C10" stroke-width="8"/>
+
+    <rect x="950" y="340" width="176" height="160" rx="18" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="6" stroke-dasharray="16 12"/>
+    <rect x="974" y="364" width="128" height="86" rx="10" fill="#ECEEF1"/>
+    <rect x="974" y="466" width="80" height="11" rx="5.5" fill="#ECEEF1"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="512" cy="124" r="14" fill="#25F4EE"/>
+  <circle cx="1160" cy="214" r="12" fill="#FE2C55"/>
+  <circle cx="470" cy="214" r="10" fill="#DFE0E2"/>
+</svg>
+    <figcaption>TikTok Shopでサンプルを送ってから投稿されるまでの全体像（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopでクリエイターに無料サンプルを送ったのに、期限を過ぎても動画もLIVEも出てこない。サンプル施策でセラーがいちばん多く抱える悩みです。公式ヘルプを読むと、サンプルには<strong>クリエイター側の対応期限、投稿を残す期間、LIVEでのピン留め時間</strong>が決まっていて、投稿しないクリエイターには新規申請の制限もかかります。ただし制限の線はかなり低く、その手前で起きる「投稿されない」は、セラー側の設計で減らすしかありません。公式の決まりを一次情報で押さえたうえで、承認・発送・指示・催促・履行率の見方をセラーの立場で整理します。</p>
+<div class="box box-point"><div class="bt">💡 この記事で扱わないこと</div><p>クリエイター側の申請手順は<a href="https://leam.co.jp/column/sample-request/">サンプル申請のやり方（クリエイター向け）</a>、指示書の書き方そのものは<a href="https://leam.co.jp/column/creator-brief-template/">クリエイターブリーフの作り方</a>で解説しています。ここでは同じ説明を繰り返さず、セラーが「送ったのに投稿されない」を減らす設計に絞ります。TikTok Shopの全体像は<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは</a>から読めます。</p></div>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>公式に決まっているサンプルの期限・投稿の条件・申請制限</li><li>投稿されない原因が生まれる5か所と、セラー側で直せる点</li><li>履行率を「期限が来た数」で割って見る理由と、状況別の打ち手</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">サンプル</span><b><a href="https://leam.co.jp/column/sample-request/">TikTok Shopのサンプル申請のやり方【クリエイター向け】</a></b><span>クリエイターから見た申請と投稿</span></div>
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-brief-template/">TikTok Shopのクリエイターブリーフ</a></b><span>サンプルに添える指示書の中身</span></div>
+    <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方</a></b><span>アフィリエイトの前提から確認する</span></div>
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-invite/">TikTok Shopのクリエイター招待とは？</a></b><span>招待経由でサンプルを付ける流れ</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">サンプルを送っても投稿されない原因を、無料で切り分けます</div><p>承認の基準、発送の段取り、指示と催促の流れ、履行率の数え方を伺い、どこで投稿が止まっているかを整理します。送る数を増やす前に直したほうがよい点があれば、そこからお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=sample-no-post">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">公式の決まりは「処理7日・対応14日・公開3日・ピン留め10分」と申請制限でできている</a></li><li><a href="#s2">投稿されない原因は、承認・発送・指示・催促・計測の5か所で生まれる</a></li><li><a href="#s3">承認は「同じカテゴリーで紹介しているか」と「受け取りに対する投稿」で決める</a></li><li><a href="#s4">発送は承認から間を空けず、通常の注文と同じ責任で扱う</a></li><li><a href="#s5">サンプルに付ける指示は、期限・形式・商品リンクの3点に絞る</a></li><li><a href="#s6">催促は承認時に予告し、到着・期限前・期限後の決まった時点で送る</a></li><li><a href="#s7">履行率は「送った数」ではなく「期限が来た数」で割って見る</a></li><li><a href="#s8">投稿されない状態が続くなら、無料で送る範囲そのものを変える</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>公式の決まりは「処理7日・対応14日・公開3日・ピン留め10分」と申請制限でできている</h2>
+<p>サンプルの決まりは、公式ヘルプの「クリエイター用の無料サンプル」と「アフィリエイトコラボ」の2本に分かれて書かれています。クリエイター向けの資料ですが、<strong>セラーが何日以内に何をすべきか</strong>も書かれています。セラーの段取りに関わるところを抜き出します。</p>
+<div class="tw"><table><thead><tr><th>項目</th><th>公式ヘルプの記載</th><th>セラーの段取りへの影響</th></tr></thead><tbody><tr><td>リクエストの処理</td><td>招待経由のリクエストは、セラーが7日以内に処理する必要がある。アフィリエイトコラボのヘルプには、7日間チェックされずに自動的に却下されたリクエストを絞り込む項目がある</td><td>週1回の確認では、来た申請が気づかないまま消える</td></tr><tr><td>クリエイターの対応期限</td><td>TikTok Shopまたはセラーから発送された無料サンプルは、リクエストの対応完了まで14日間</td><td>起算点は同じヘルプに書かれていない。自社の投稿日は到着日から別に決めておく</td></tr><tr><td>動画で紹介する場合</td><td>動画が公開されていて、少なくとも3日間オンラインであること。制限時間内に商品リンクを追加すること</td><td>投稿された日だけでなく、3日後にもう一度確認する</td></tr><tr><td>LIVEで紹介する場合</td><td>LIVE配信中に少なくとも10分間サンプルをピン留めする</td><td>LIVEで受けるクリエイターには、ピン留めの時間を指示に書く</td></tr><tr><td>新規申請の制限</td><td>過去30日間のサンプルフルフィルメント率が10%未満で、なおかつ10個以上のサンプルを受け取っていると、無料サンプルの新たな申請が制限される</td><td>制限の線は低い。10%以上の履行で申請は届き続ける</td></tr></tbody></table></div><p class="src">サンプルに関する公式の決まり（公式ヘルプ「クリエイター用の無料サンプル」「アフィリエイトコラボ」の記載を整理。2026年10月14日確認）</p>
+<p>新規申請の制限は「サンプルフルフィルメントのブラックリスト」ポリシーと呼ばれています。制限の対象は、セラー出資のオープンプランやターゲットプランを含むほぼすべての無料サンプルの入口です。一方で、<strong>すでに承認済みや配送中のサンプル注文には影響しない</strong>こと、制限中でもGROI（保証ROI）・ブランドとの契約・クリエイター出資の返金可能なサンプルでは取得できることも書かれています。権利は、次回の30日間の算出基準期間でフルフィルメントの実績が基準を満たせば自動的に戻ります。</p>
+<p>セラーにとって大事なのは、制限の手前の扱いです。公式ヘルプは、サンプルを受け取って投稿しないとフルフィルメントのスコアに響き、<strong>その実績はセラーがクリエイターを探すときに表示される</strong>と説明しています。履行率の高いクリエイターはクリエイターランキングで「トップコラボレーター」に分類され、セラーはサンプルを適切に扱う信頼性で絞り込んで探すこともできます。プラットフォームが自動で弾く線は低く、その上の見極めはセラーに任されている、と読めます。</p>
+  <figure> <svg viewBox="0 0 720 236" role="img" aria-label="サンプル1件の流れを、リクエストの処理、発送と到着、撮影と投稿、公開の継続の4つの箱に分けて左から右へ並べ、それぞれに公式の日数や時間を添え、14日の起算点は公式ヘルプに書かれていないことを下に注記した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">サンプル1件にかかる、公式の時間</text><rect x="10" y="44" width="160" height="112" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="90" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">① リクエスト</text><text x="90" y="98" text-anchor="middle" font-size="11" fill="#787D8A">セラーは7日以内に</text><text x="90" y="116" text-anchor="middle" font-size="11" fill="#787D8A">承認か却下を決める</text><text x="90" y="140" text-anchor="middle" font-size="11" fill="#C2203A">放置で自動却下</text><rect x="190" y="44" width="160" height="112" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="270" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">② 発送・到着</text><text x="270" y="98" text-anchor="middle" font-size="11" fill="#787D8A">承認したら送付が必要</text><text x="270" y="116" text-anchor="middle" font-size="11" fill="#787D8A">自社発送なら責任は</text><text x="270" y="134" text-anchor="middle" font-size="11" fill="#787D8A">販売者にある</text><rect x="370" y="44" width="160" height="112" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="450" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">③ 撮影・投稿</text><text x="450" y="98" text-anchor="middle" font-size="11" fill="#787D8A">対応完了まで14日間</text><text x="450" y="116" text-anchor="middle" font-size="11" fill="#787D8A">商品リンクを付ける</text><rect x="550" y="44" width="160" height="112" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="630" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">④ 公開を続ける</text><text x="630" y="98" text-anchor="middle" font-size="11" fill="#787D8A">動画は3日以上公開</text><text x="630" y="116" text-anchor="middle" font-size="11" fill="#787D8A">LIVEは10分以上</text><text x="630" y="134" text-anchor="middle" font-size="11" fill="#787D8A">ピン留め</text><path d="M172 100 L186 100" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M352 100 L366 100" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M532 100 L546 100" stroke="#787D8A" stroke-width="2.5" fill="none"/><rect x="10" y="176" width="700" height="40" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="201" text-anchor="middle" font-size="11.5" fill="#787D8A">14日の起算点は公式ヘルプに書かれていない。自社の投稿日は到着日から数えて決める</text></svg> <figcaption>図1：公式に決まっているのは、4つの時間と申請制限（LEAM作成）</figcaption> </figure>
+
+<h2 id="s2"><span class="no en">02</span>投稿されない原因は、承認・発送・指示・催促・計測の5か所で生まれる</h2>
+<p>「サンプルを送っても投稿されない」と相談を受けて流れを追うと、当社の運用実感では、クリエイターの怠慢だけで説明できる例は多くありません。合わない人に送っている、届いた日が分からない、期限が伝わっていない、期限が過ぎてから初めて連絡している、といった<strong>送る前後の段取り</strong>で止まっていることがほとんどです。原因を場所ごとに分けると、直す順番が決まります。</p>
+<div class="tw"><table><thead><tr><th>場所</th><th>よくある状態</th><th>関係する公式の決まり</th><th>セラー側で直す点</th></tr></thead><tbody><tr><td>承認</td><td>ジャンルの合わない人や、受け取りに対して投稿の少ない人にも送っている</td><td>カテゴリーや信頼性で申請を絞り込める</td><td>承認の基準を言葉にして、担当者が変わっても同じ判断にする（§03）</td></tr><tr><td>発送</td><td>承認から発送までに日が空く。到着日を把握していない</td><td>承認したら送付が必要。対応期限は14日間（起算点の記載なし）</td><td>承認日・発送日・到着日を1件ずつ記録する（§04）</td></tr><tr><td>指示</td><td>期限・形式・商品リンクの付け方が伝わっていない</td><td>セラーの指示どおりに使う必要がある場合がある</td><td>サンプルに付ける指示を3点に絞る（§05）</td></tr><tr><td>催促</td><td>期限を過ぎてから初めて連絡する</td><td>動画は3日以上公開、LIVEは10分以上ピン留め</td><td>連絡する時点を承認時に予告しておく（§06）</td></tr><tr><td>計測</td><td>送った数で割って「投稿率が低い」と判断している</td><td>投稿済みのクリエイター数が画面に出る</td><td>期限が来た分だけで割る（§07）</td></tr></tbody></table></div><p class="src">投稿されない原因の場所と、セラー側で直す点（公式の決まりは公式ヘルプの記載、直す点は当社の整理）</p>
+  <figure> <svg viewBox="0 0 720 222" role="img" aria-label="サンプルが投稿されるまでの5つの場所、承認、発送、指示、催促、計測を左から右へ箱で並べ、それぞれの箱の下によくある止まり方を書き、最後にどれも送る前後のセラー側の段取りで直せると添えた図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">止まる場所は、送る前後に集まっている</text><rect x="20" y="44" width="128" height="104" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="84" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">承認</text><text x="84" y="100" text-anchor="middle" font-size="11" fill="#787D8A">合わない人にも</text><text x="84" y="118" text-anchor="middle" font-size="11" fill="#787D8A">送っている</text><rect x="158" y="44" width="128" height="104" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="222" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">発送</text><text x="222" y="100" text-anchor="middle" font-size="11" fill="#787D8A">届いた日が</text><text x="222" y="118" text-anchor="middle" font-size="11" fill="#787D8A">分からない</text><rect x="296" y="44" width="128" height="104" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">指示</text><text x="360" y="100" text-anchor="middle" font-size="11" fill="#787D8A">期限と形式が</text><text x="360" y="118" text-anchor="middle" font-size="11" fill="#787D8A">伝わっていない</text><rect x="434" y="44" width="128" height="104" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="498" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">催促</text><text x="498" y="100" text-anchor="middle" font-size="11" fill="#787D8A">期限が過ぎて</text><text x="498" y="118" text-anchor="middle" font-size="11" fill="#787D8A">初めて連絡する</text><rect x="572" y="44" width="128" height="104" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="636" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">計測</text><text x="636" y="100" text-anchor="middle" font-size="11" fill="#787D8A">送った数で</text><text x="636" y="118" text-anchor="middle" font-size="11" fill="#787D8A">割っている</text><path d="M150 96 L156 96" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M288 96 L294 96" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M426 96 L432 96" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M564 96 L570 96" stroke="#787D8A" stroke-width="2.5" fill="none"/><text x="360" y="184" text-anchor="middle" font-size="11.5" fill="#787D8A">計測を直さないと、ほかの4か所の改善が数字に表れない</text></svg> <figcaption>図2：計測が狂っていると、どこを直したかが見えなくなる（LEAM作成）</figcaption> </figure>
+<p>5か所のうち、最初に直すのは計測です。数え方がずれたままだと、ほかを直しても効いたかどうかが判断できません。手を付けるなら§07の数え方から揃えてください。</p>
+
+<h2 id="s3"><span class="no en">03</span>承認は「同じカテゴリーで紹介しているか」と「受け取りに対する投稿」で決める</h2>
+<p>無料サンプルのリクエストには、<strong>自動で承認される場合と、セラーの承認が必要な場合</strong>の2パターンがあります。ターゲットコラボでは、招待を作るときに「無料サンプルのオファー」を有効にすると承認方法を選べ、手動確認を選んだ場合は対象のコラボから「無料サンプルのリクエストの表示」を開いて、保留中のリクエストをまとめて確認できます。オープンコラボでも無料サンプルの提供をオンにでき、届いたリクエストを条件で絞り込めます。この絞り込みの項目が、そのまま承認の基準の材料になります。</p>
+<div class="tw"><table><thead><tr><th>公式の絞り込み</th><th>公式ヘルプの説明</th><th>承認の判断での使い方</th></tr></thead><tbody><tr><td>商品カテゴリー</td><td>選んだカテゴリーで過去30日間に収益を上げたか、商品をプロモーションした実績のあるクリエイター。過去90日間にショーケースへ商品を追加した人にも絞れる</td><td>第一条件にする。直近に同じカテゴリーを紹介していない人は、届いても撮る理由が弱い</td></tr><tr><td>コンテンツタイプ</td><td>過去30日間に動画、LIVEのいずれか、または両方で商品をプロモーションした人</td><td>欲しい形式と一致しているかを見る。LIVEしかしない人に動画を期待しない</td></tr><tr><td>信頼できるクリエイターからのリクエスト</td><td>受け取った無料サンプルと投稿されたコンテンツの割合に基づくランキングの上位20%</td><td>迷う申請はここに入っているかで決める</td></tr><tr><td>パフォーマンス</td><td>過去30日間のGMV、動画ごとの平均視聴数、LIVEごとの平均視聴者数</td><td>売る力の目安。投稿してくれるかどうかの判断には使わない</td></tr><tr><td>過去のコラボ</td><td>過去にプロモーションを依頼したことがある人</td><td>前回期限内に投稿した人は優先し、前回投稿しなかった人は理由を確かめてから</td></tr><tr><td>無料サンプルリクエスト</td><td>有効期限日で絞り込める。7日間チェックされずに自動的に却下されたものも絞り込める</td><td>自動却下が出ているなら、確認の頻度が足りていない</td></tr></tbody></table></div><p class="src">リクエストの絞り込み条件と承認での使い方（公式ヘルプ「アフィリエイトコラボ」の記載を整理。使い方は当社の整理。2026年10月14日確認）</p>
+<p>ここで§01の申請制限を思い出してください。新規申請が止まるのは、過去30日間の履行率が10%未満で、かつ10個以上受け取っている場合です。<strong>申請が届いていることは、その人がよく投稿する人であることを意味しません。</strong>投稿してくれるかどうかの見極めは、プラットフォームの制限ではなくセラー側の基準で行う必要があります。</p>
+<p>自動承認の使いどころも決めておきます。当社の運用実感では、投稿されない悩みを抱えるショップほど、自動承認を広い範囲にかけています。自動承認は、自社で選んで招待した相手に限るほうが管理しやすくなります。誰でも申請できる入口では手動確認にし、上の表の上から3つを満たす人から承認していく形です（招待の作り方は<a href="https://leam.co.jp/column/creator-invite/">クリエイター招待の仕組み</a>）。</p>
+  <figure> <svg viewBox="0 0 720 300" role="img" aria-label="迷うサンプル申請を判断する流れ図。同じカテゴリーで直近に紹介しているか、欲しい形式で紹介しているか、受け取りに対して投稿しているかの3つの問いを上から順に並べ、いいえの場合はそれぞれ見送る、形式を相談する、無料以外の渡し方を検討する、に分かれ、すべてはいなら承認して期限を予告する、と示した図"><text x="360" y="24" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">迷う申請は、上から順に3つ聞く</text><rect x="20" y="40" width="430" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="235" y="71" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">Q1 同じカテゴリーで直近30日に紹介しているか</text><rect x="20" y="114" width="430" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="235" y="145" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">Q2 欲しい形式（動画かLIVE）で紹介しているか</text><rect x="20" y="188" width="430" height="52" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="235" y="219" text-anchor="middle" font-size="12" font-weight="700" fill="#454956">Q3 受け取ったサンプルに対して投稿しているか</text><path d="M235 92 L235 112" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M235 166 L235 186" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M235 240 L235 252" stroke="#787D8A" stroke-width="2.5" fill="none"/><text x="250" y="106" font-size="10.5" fill="#787D8A">はい</text><text x="250" y="180" font-size="10.5" fill="#787D8A">はい</text><path d="M452 66 L494 66" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M452 140 L494 140" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M452 214 L494 214" stroke="#787D8A" stroke-width="2.5" fill="none"/><text x="473" y="60" text-anchor="middle" font-size="10.5" fill="#787D8A">いいえ</text><text x="473" y="134" text-anchor="middle" font-size="10.5" fill="#787D8A">いいえ</text><text x="473" y="208" text-anchor="middle" font-size="10.5" fill="#787D8A">いいえ</text><rect x="496" y="40" width="204" height="52" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="598" y="71" text-anchor="middle" font-size="11.5" fill="#454956">見送る</text><rect x="496" y="114" width="204" height="52" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="598" y="145" text-anchor="middle" font-size="11.5" fill="#454956">形式を相談してから決める</text><rect x="496" y="188" width="204" height="52" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="598" y="219" text-anchor="middle" font-size="11.5" fill="#454956">無料以外の渡し方を検討</text><rect x="20" y="254" width="430" height="36" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="235" y="277" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">承認して、期限と連絡の時点を予告する</text></svg> <figcaption>図3：Q3の判断材料は、信頼できるクリエイターの絞り込みと過去のコラボ（LEAM作成）</figcaption> </figure>
+<p>Q3で引っかかった人を一律に断る必要はありません。公式ヘルプはクリエイター向けに、事前に支払ってサンプルを入手し、コンテンツを投稿して事前に合意済みの成果を達成するとセラーから代金が返金される<strong>「返金可能なサンプル」</strong>を案内しています。申請制限中でも使える入口として書かれているもので、投稿へのコミットメントを示す方法とされています。セラー側でどう設定するかはこのヘルプに書かれていないため、セラーセンターの画面と公式ヘルプで最新を確認してください（クリエイター側から見た仕組みは<a href="https://leam.co.jp/column/sample-request/">サンプル申請のやり方</a>）。</p>
+
+<h2 id="s4"><span class="no en">04</span>発送は承認から間を空けず、通常の注文と同じ責任で扱う</h2>
+<p>アフィリエイトコラボのヘルプは、<strong>クリエイターのリクエストを承認した場合は、無料サンプルを送付する必要がある</strong>と書いています。クリエイター向けのヘルプには、セラーが処理しない申請はクリエイター側でキャンセルできることも書かれています。承認したまま送らなければ、施策は相手の手元で消えていきます。</p>
+<p>サンプルだから扱いが軽くなるわけでもありません。販売者向けの利用規約やセラー向けのヘルプには、サンプルに触れた記載がいくつもあります。</p>
+<div class="tw"><table><thead><tr><th>論点</th><th>公式の記載</th><th>出典</th></tr></thead><tbody><tr><td>発送の責任</td><td>TikTok（またはその委託先・下請業者）の物流サービスを利用しない場合、クリエイターに提供される無料サンプルを含む本商品の発送は販売者の責任となる</td><td>販売者利用規約 14.2</td></tr><tr><td>商品のルール</td><td>クリエイターに提供される無料サンプルを含め、商品は禁止・制限商品のポリシーを常に遵守しなければならない</td><td>販売者利用規約 6.1</td></tr><tr><td>送料の記録</td><td>無料サンプルの発送のためにTikTok発送サービスを利用した販売者が支払った発送料は、決済レポートの調整理由「物流の控除」に入る</td><td>決済レポートのヘルプ</td></tr><tr><td>ショップの評価</td><td>ショップパフォーマンススコアは、直近60日間に30件以上の注文（不正注文やサンプル注文を除く）の配送完了で付与される。クリエイターに送付された返金可能な無料サンプルは算出の対象外</td><td>ショップパフォーマンススコアのヘルプ</td></tr></tbody></table></div><p class="src">サンプルの発送に関わる公式の記載（販売者利用規約と公式ヘルプを整理。2026年10月14日確認）</p>
+<p>実務で効くのは、<strong>承認日・発送日・到着日の3つを1件ずつ記録すること</strong>です。公式の対応期限は14日間ですが、起算点は書かれていません。到着日が分からないと、クリエイターに「いつまでに」と言えず、催促の時点も決まりません。当社では、追跡情報で到着を確認した日を起点に、自社としての投稿日を決めて伝えています。発送の段取りそのものは<a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷体制</a>と同じ考え方で組めます。</p>
+<p>サンプルの原価と送料は販促費です。1件あたりの費用を押さえておくと、§07で投稿1本あたりの費用を出すときに使えます（手残りの計算は<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料と利益計算</a>）。</p>
+
+<h2 id="s5"><span class="no en">05</span>サンプルに付ける指示は、期限・形式・商品リンクの3点に絞る</h2>
+<p>公式ヘルプは、セラーとの話し合いによっては<strong>セラーが指示したとおりに無料サンプルを使用する必要がある場合がある</strong>としています。指示を出すこと自体は想定されています。ターゲットコラボの招待にも、商品やブランドについての追加情報を全員に伝えるメッセージ欄があります。</p>
+<p>ただ、訴求や構成まで書き込んだ長い指示書は、ブリーフとして別に渡すほうが伝わります（中身の作り方は<a href="https://leam.co.jp/column/creator-brief-template/">クリエイターブリーフの作り方</a>）。サンプルに付ける指示は、投稿されるかどうかに直結する点だけに絞ります。</p>
+<div class="tw"><table><thead><tr><th>指示に入れる点</th><th>書く内容</th><th>公式の根拠</th></tr></thead><tbody><tr><td>期限</td><td>自社として決めた投稿日（到着日から何日以内か）と、公式の対応期限が14日間であること</td><td>リクエストの対応完了まで14日間</td></tr><tr><td>形式</td><td>動画かLIVEか。LIVEなら配信中に10分以上ピン留めすること</td><td>LIVEは少なくとも10分間ピン留め</td></tr><tr><td>商品リンク</td><td>動画は「リンクを追加」から「商品」を選んで付ける。LIVEは配信を始める前に「ショップから追加」で入れておく</td><td>制限時間内に商品リンクを追加する</td></tr><tr><td>公開期間</td><td>投稿した動画は少なくとも3日間は公開したままにすること</td><td>少なくとも3日間オンライン</td></tr><tr><td>困ったときの連絡</td><td>届かない、不良がある、使えないときの連絡方法</td><td>品質の問題はメッセージでセラーに連絡すると案内されている</td></tr></tbody></table></div><p class="src">サンプルに付ける最小限の指示（根拠は公式ヘルプ「クリエイター用の無料サンプル」の記載。2026年10月14日確認）</p>
+<div class="box box-warn"><div class="bt">⚠️ 指示を増やすほど、投稿は遅れやすい</div><p>当社の運用実感では、シーンや言い回しを細かく指定するほど確認のやり取りが増え、投稿日が後ろにずれます。まず上の5点を確実に伝えてください。PRである旨の表示は<a href="https://leam.co.jp/column/sample-request/">クリエイター向けの記事</a>で扱っています。</p></div>
+
+<h2 id="s6"><span class="no en">06</span>催促は承認時に予告し、到着・期限前・期限後の決まった時点で送る</h2>
+<p>催促が嫌がられるのは、予告なく、期限を過ぎてから届くからです。当社では承認の時点で「到着を確認したら連絡します」「期限の数日前に状況を伺います」と先に伝え、決まった時点でだけ連絡しています。以下は当社の運用で、公式の手順ではありません。</p>
+<div class="tw"><table><thead><tr><th>時点</th><th>送る内容</th><th>ねらい</th></tr></thead><tbody><tr><td>承認したとき</td><td>自社の投稿日、形式、商品リンクの付け方、連絡する時点の予告</td><td>期限と連絡の予定を最初に共有する</td></tr><tr><td>到着を確認したとき</td><td>届いたか、破損や不良がないか</td><td>不良や不足をその場で拾う。ここで起点の日付も確定する</td></tr><tr><td>自社の期限の数日前</td><td>撮影の予定、困っていることの有無</td><td>止まっている理由を早めに知る</td></tr><tr><td>投稿を確認したとき</td><td>お礼、商品リンクが付いているか、3日以上公開したままにしてほしいこと</td><td>公式の条件を満たした状態で終える</td></tr><tr><td>期限を過ぎたとき</td><td>1回だけ状況を確認し、返答がなければ記録して次回の承認基準に反映する</td><td>連絡を重ねず、判断を記録に移す</td></tr></tbody></table></div><p class="src">催促のタイミング（当社の運用で、公式ヘルプの記載ではありません）</p>
+<p>届いたサンプルに品質の問題があった場合の扱いは、公式ヘルプに書かれています。クリエイターはメッセージでセラーに連絡し、交換サンプルなどの解決策を話し合えます。合意したら、<strong>クリエイターはセラーにサンプルの注文を出荷済みとマークするよう依頼して、フルフィルメントの記録が影響を受けないようにできる</strong>とされています。不良が届いた人を「投稿しなかった人」と数えないためにも、到着時の確認が効きます。商品が突然使えなくなって作成できない場合は、ケースごとの別ガイドがあると案内されています。</p>
+<p>一方で、何度も受け取って投稿しない人への扱いも公式に書かれています。クリエイターの禁止行為をまとめたヘルプでは、他のユーザーに損害を与える「有害な行為」に、<strong>プロモーション義務を果たさずに無料サンプルを繰り返し要求すること</strong>が含まれる場合があるとしています。記録を残して承認の基準に反映し、続くなら次から送らない、で十分です。</p>
+
+<h2 id="s7"><span class="no en">07</span>履行率は「送った数」ではなく「期限が来た数」で割って見る</h2>
+<p>セラー側で投稿の状況を見る画面は、公式ヘルプに書かれています。オープンコラボの商品一覧には、商品をショーケースに追加したクリエイターの数（Creator added）と、商品リンクを伴う動画またはLIVEを投稿したクリエイターの数（Creator posted）の列があります。ターゲットコラボでは、招待を承諾したクリエイターの人数と、そのうち投稿を行った人数を確認でき、動画の詳細から商品ごとの動画も見られます。</p>
+<p>ただし、画面の数字をそのまま「投稿率」と呼ぶと判断を誤ります。<strong>まだ期限が来ていないサンプルまで分母に入る</strong>からです。仮の例で考えます。今月40件を送り、そのうち期限が来たのは25件、期限内に投稿されたのが15件だとします。</p>
+  <figure> <svg viewBox="0 0 720 244" role="img" aria-label="仮の例として、送った40件を投稿15件、期限後の未投稿10件、期限前15件に分けた横棒と、期限が来た25件を投稿15件と未投稿10件に分けた横棒を並べ、送った数で割ると投稿率は37.5パーセント、期限が来た数で割ると60パーセントになることを比べた図"><text x="360" y="24" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">同じ15本の投稿でも、分母で見え方が変わる（仮の例）</text><text x="20" y="56" font-size="11.5" font-weight="700" fill="#454956">送った40件で割る</text><rect x="20" y="66" width="560" height="28" rx="6" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><rect x="20" y="66" width="350" height="28" rx="6" fill="#DFE0E2"/><rect x="20" y="66" width="210" height="28" rx="6" fill="#787D8A"/><text x="600" y="86" font-size="13" font-weight="800" fill="#454956">37.5%</text><text x="125" y="114" text-anchor="middle" font-size="10.5" fill="#787D8A">投稿15件</text><text x="300" y="114" text-anchor="middle" font-size="10.5" fill="#787D8A">期限後・未投稿10件</text><text x="475" y="114" text-anchor="middle" font-size="10.5" fill="#787D8A">期限前15件</text><text x="20" y="146" font-size="11.5" font-weight="700" fill="#C2203A">期限が来た25件で割る</text><rect x="20" y="156" width="350" height="28" rx="6" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><rect x="20" y="156" width="210" height="28" rx="6" fill="#E8324A"/><text x="600" y="176" font-size="13" font-weight="800" fill="#C2203A">60%</text><text x="360" y="222" text-anchor="middle" font-size="11.5" fill="#787D8A">期限前の15件は、まだ投稿されていないだけ。分母から外して別に数える</text></svg> <figcaption>図4：送った数で割ると、発送を増やした月ほど投稿率が下がって見える（LEAM作成・数字は説明用の仮の例）</figcaption> </figure>
+<p>送った40件で割ると37.5%、期限が来た25件で割ると60%です。送った数を分母にすると、発送を増やした月ほど投稿率が下がって見え、承認の基準を締めるべきなのか、ただ時期がずれているだけなのかが区別できません。当社では、サンプルを発送した週ごとにまとめ、期限が来た分だけで次の指標を見ています。</p>
+<div class="tw"><table><thead><tr><th>指標</th><th>当社での定義</th><th>見る理由</th></tr></thead><tbody><tr><td>期限内投稿率</td><td>期限が来たサンプルのうち、期限内に商品リンク付きで投稿されたものの割合</td><td>承認の基準と指示がうまく働いているかを見る</td></tr><tr><td>期限後投稿</td><td>期限を過ぎてから投稿されたものの件数</td><td>期限の伝え方や、自社の投稿日の置き方を見直す材料</td></tr><tr><td>未投稿</td><td>期限が来て、まだ投稿がないものの件数と理由</td><td>不良・未着・連絡なしを分けて、承認の基準に戻す</td></tr><tr><td>公開の維持</td><td>投稿後3日の時点で公開されたままか</td><td>公式の条件を満たした状態で終わっているかを見る</td></tr><tr><td>投稿1本あたりの費用</td><td>サンプルの原価と送料の合計を、期限内の投稿数で割ったもの</td><td>無料で送る範囲を広げるか絞るかの判断に使う</td></tr><tr><td>クリエイター別の履行</td><td>人ごとの受け取り数と投稿数</td><td>次回の承認と招待の優先順位に使う</td></tr></tbody></table></div><p class="src">サンプル施策の見方（定義は当社の作り方で、公式の指標ではありません）</p>
+<p>公式の「サンプルフルフィルメント率」はクリエイター単位で過去30日間を見る数字です。自社の施策は<strong>発送の時期で区切り、期限が来たものだけを数える</strong>ほうが、打ち手の効果を読めます。指標を週次の見直しに組み込む方法は<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計</a>で扱っています。</p>
+
+<h2 id="s8"><span class="no en">08</span>投稿されない状態が続くなら、無料で送る範囲そのものを変える</h2>
+<p>§07の数え方で見ても期限内投稿率が上がらないなら、送る数を増やしても解決しません。どこで止まっているかで、打ち手を変えます。以下は当社の整理です。</p>
+<div class="tw"><table><thead><tr><th>状況</th><th>考えられる原因</th><th>打ち手</th></tr></thead><tbody><tr><td>申請は多いが、期限内の投稿が少ない</td><td>承認の範囲が広い</td><td>自動承認を招待した相手に限り、誰でも申請できる入口は手動確認に切り替える</td></tr><tr><td>特定のクリエイターだけ投稿しない</td><td>相手側の事情か、基準の外の人に送っている</td><td>記録を残して次回は承認しない。続けたい相手には無料以外の渡し方を相談する</td></tr><tr><td>投稿はされるが、期限を過ぎてから</td><td>到着が遅い、または期限が伝わっていない</td><td>承認から発送までを短くし、到着日を起点にした投稿日を承認時に伝える</td></tr><tr><td>未投稿の理由に不良・未着が多い</td><td>梱包・配送の問題</td><td>出荷前の検品と追跡の確認を通常の注文と同じ手順にする</td></tr><tr><td>投稿はされるが、売上につながらない</td><td>指示と動画の中身の問題</td><td>ブリーフを見直す。動画の型は<a href="https://leam.co.jp/column/short-video-playbook/">売れるショート動画の作り方</a></td></tr><tr><td>社内で記録と催促が回らない</td><td>担当と手順が決まっていない</td><td>承認・発送・連絡の担当を分け、§06の時点だけ連絡する</td></tr></tbody></table></div><p class="src">状況別の打ち手（当社の整理で、公式ヘルプの記載ではありません）</p>
+<p>サンプルは、投稿してくれる人に届いて初めて販促になります。送る数ではなく、期限内に商品リンク付きで投稿された本数を増やす設計に切り替えてください。そもそもサンプルの申請やショーケースへの追加が少ない場合は、送る前の段で止まっています。その切り分けは<a href="https://leam.co.jp/column/creators-not-coming/">クリエイターが集まらない原因と対策</a>で扱っています。</p>
+
+<h2 id="summary"><span class="no en">09</span>まとめ</h2>
+<p>サンプル施策の要は、<strong>公式の決まりはクリエイター側の最低線で、その上の見極めはセラーに任されている</strong>ことです。上から順に整えてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 公式の時間を押さえる</b><br>処理は7日以内、対応完了まで14日間、動画は3日以上公開、LIVEは10分以上ピン留め</div><div class="summary-item"><b>2. 数え方を揃える</b><br>送った数ではなく、期限が来た数で割る。発送した週ごとに区切る</div><div class="summary-item"><b>3. 承認の基準を言葉にする</b><br>同じカテゴリーでの直近の紹介、欲しい形式、受け取りに対する投稿の3つ</div><div class="summary-item"><b>4. 発送の日付を記録する</b><br>承認日・発送日・到着日。自社の投稿日は到着日から数える</div><div class="summary-item"><b>5. 指示は3点に絞る</b><br>期限・形式・商品リンク。公開期間と困ったときの連絡先を添える</div><div class="summary-item"><b>6. 催促は予告した時点だけ</b><br>到着・期限前・期限後。投稿しなかった理由は記録して承認の基準に戻す</div></div>
+
+<h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopのサンプルは、クリエイターがいつまでに投稿する決まりですか？</summary><div class="a">公式ヘルプでは、TikTok Shopまたはセラーから発送された無料サンプルは、リクエストの対応完了まで14日間とされています。動画は公開されたうえで少なくとも3日間オンラインであること、LIVEは配信中に少なくとも10分間サンプルをピン留めすることが条件です。14日の起算点は書かれていないため、セラーは到着日から数えた自社の投稿日を別に決めて伝えるのが確実です。</div></details><details><summary>セラーがTikTok Shopのサンプルリクエストを放置するとどうなりますか？</summary><div class="a">招待経由のリクエストは、セラーが7日以内に処理する必要があると案内されています。アフィリエイトコラボのヘルプには、7日間チェックされずに自動的に却下されたリクエストを絞り込む項目があります。また、セラーが処理しない場合はクリエイター側でリクエストをキャンセルできます。</div></details><details><summary>投稿されなかったサンプルの原価や送料は、TikTok Shopではどう扱いますか？</summary><div class="a">販売者利用規約では、TikTokの物流サービスを利用しない場合、クリエイターに提供される無料サンプルを含む商品の発送は販売者の責任とされています。TikTok発送サービスで無料サンプルを送った場合の送料は、決済レポートの調整理由「物流の控除」に入ります。当社の運用実感では、投稿の有無にかかわらず原価と送料を販促費として記録し、期限内の投稿数で割った「投稿1本あたりの費用」で、無料で送る範囲を広げるか絞るかを決めるのが管理しやすい形です。投稿へのコミットメントを先に示してもらいたい相手には、公式ヘルプがクリエイター向けに案内している「返金可能なサンプル」という入口もあります。セラー側の設定はセラーセンターの画面で最新を確認してください。</div></details><details><summary>投稿してくれるクリエイターを、TikTok Shopの画面で見分ける方法はありますか？</summary><div class="a">アフィリエイトコラボの無料サンプルリクエストの絞り込みに、受け取った無料サンプルと投稿されたコンテンツの割合に基づくランキングの上位20%を表示する「信頼できるクリエイターからのリクエスト」があります。商品カテゴリー（過去30日間の実績）やコンテンツタイプでも絞り込めるので、承認の基準に組み込んで使えます。</div></details><details><summary>届いたサンプルに不良があった場合、TikTok Shopではどう扱いますか？</summary><div class="a">公式ヘルプでは、クリエイターがメッセージでセラーに連絡し、交換サンプルなどの解決策を話し合うよう案内されています。合意した場合、クリエイターはセラーにサンプルの注文を出荷済みとマークするよう依頼して、フルフィルメントの記録が影響を受けないようにできます。</div></details><details><summary>サンプルの注文は、TikTok Shopのショップパフォーマンススコアに影響しますか？</summary><div class="a">公式ヘルプでは、スコアが付与される条件の「直近60日間に30件以上の注文」からサンプル注文が除かれており、クリエイターに送付された返金可能な無料サンプルはスコアの算出対象外とされています。ただし発送の責任は通常の注文と同じく販売者にあり、商品のポリシーも無料サンプルを含めて遵守が求められます。</div></details></div>
+
+<div class="ctabox"><div class="ct">サンプル施策の設計から、セラーの立場でご相談いただけます</div><p>LEAMはTikTok Shopの運用支援と、TikTok Shop特化のMCNを運営しています。承認の基準、発送と連絡の段取り、履行率の数え方までを一つの流れとして整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=sample-no-post">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">11</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイター用の無料サンプル</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトコラボ</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2733826023753473&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイターの禁止行為</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TIKTOK SHOP販売者利用規約</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：決済レポートを読む</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：ショップパフォーマンススコアガイド</a>（2026年10月14日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、申請制限の基準は更新されることがあります。本記事は2026年10月14日時点で確認できた日本向け公式情報と、当社が作成した運用フレームを区別して記載しています。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">サンプル</span><b><a href="https://leam.co.jp/column/sample-request/">TikTok Shopのサンプル申請のやり方【クリエイター向け】｜通りやすくなるコツ</a></b><span>クリエイターから見た申請と投稿</span></div><div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-brief-template/">TikTok Shopのクリエイターブリーフ｜動画制作依頼テンプレートと確認項目</a></b><span>サンプルに添える指示書を作る</span></div><div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</a></b><span>アフィリエイトの前提から確認する</span></div><div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creators-not-coming/">TikTok Shopでクリエイターが集まらない原因と対策</a></b><span>申請そのものが少ないときの切り分け</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">公式の決まりは「処理7日・対応14日・公開3日・ピン留め10分」と申請制限でできている</a></li><li><a href="#s2">投稿されない原因は、承認・発送・指示・催促・計測の5か所で生まれる</a></li><li><a href="#s3">承認は「同じカテゴリーで紹介しているか」と「受け取りに対する投稿」で決める</a></li><li><a href="#s4">発送は承認から間を空けず、通常の注文と同じ責任で扱う</a></li><li><a href="#s5">サンプルに付ける指示は、期限・形式・商品リンクの3点に絞る</a></li><li><a href="#s6">催促は承認時に予告し、到着・期限前・期限後の決まった時点で送る</a></li><li><a href="#s7">履行率は「送った数」ではなく「期限が来た数」で割って見る</a></li><li><a href="#s8">投稿されない状態が続くなら、無料で送る範囲そのものを変える</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=sample-no-post">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopのサンプルは、クリエイターがいつまでに投稿する決まりですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプでは、TikTok Shopまたはセラーから発送された無料サンプルは、リクエストの対応完了まで14日間とされています。動画は公開されたうえで少なくとも3日間オンラインであること、LIVEは配信中に少なくとも10分間サンプルをピン留めすることが条件です。14日の起算点は書かれていないため、セラーは到着日から数えた自社の投稿日を別に決めて伝えるのが確実です。"}}, {"@type": "Question", "name": "セラーがTikTok Shopのサンプルリクエストを放置するとどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "招待経由のリクエストは、セラーが7日以内に処理する必要があると案内されています。アフィリエイトコラボのヘルプには、7日間チェックされずに自動的に却下されたリクエストを絞り込む項目があります。また、セラーが処理しない場合はクリエイター側でリクエストをキャンセルできます。"}}, {"@type": "Question", "name": "投稿されなかったサンプルの原価や送料は、TikTok Shopではどう扱いますか？", "acceptedAnswer": {"@type": "Answer", "text": "販売者利用規約では、TikTokの物流サービスを利用しない場合、クリエイターに提供される無料サンプルを含む商品の発送は販売者の責任とされています。TikTok発送サービスで無料サンプルを送った場合の送料は、決済レポートの調整理由「物流の控除」に入ります。当社の運用実感では、投稿の有無にかかわらず原価と送料を販促費として記録し、期限内の投稿数で割った「投稿1本あたりの費用」で、無料で送る範囲を広げるか絞るかを決めるのが管理しやすい形です。投稿へのコミットメントを先に示してもらいたい相手には、公式ヘルプがクリエイター向けに案内している「返金可能なサンプル」という入口もあります。セラー側の設定はセラーセンターの画面で最新を確認してください。"}}, {"@type": "Question", "name": "投稿してくれるクリエイターを、TikTok Shopの画面で見分ける方法はありますか？", "acceptedAnswer": {"@type": "Answer", "text": "アフィリエイトコラボの無料サンプルリクエストの絞り込みに、受け取った無料サンプルと投稿されたコンテンツの割合に基づくランキングの上位20%を表示する「信頼できるクリエイターからのリクエスト」があります。商品カテゴリー（過去30日間の実績）やコンテンツタイプでも絞り込めるので、承認の基準に組み込んで使えます。"}}, {"@type": "Question", "name": "届いたサンプルに不良があった場合、TikTok Shopではどう扱いますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプでは、クリエイターがメッセージでセラーに連絡し、交換サンプルなどの解決策を話し合うよう案内されています。合意した場合、クリエイターはセラーにサンプルの注文を出荷済みとマークするよう依頼して、フルフィルメントの記録が影響を受けないようにできます。"}}, {"@type": "Question", "name": "サンプルの注文は、TikTok Shopのショップパフォーマンススコアに影響しますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプでは、スコアが付与される条件の「直近60日間に30件以上の注文」からサンプル注文が除かれており、クリエイターに送付された返金可能な無料サンプルはスコアの算出対象外とされています。ただし発送の責任は通常の注文と同じく販売者にあり、商品のポリシーも無料サンプルを含めて遵守が求められます。"}}]}</script>
+</body>
+</html>

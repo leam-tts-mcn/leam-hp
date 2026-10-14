@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopでクリエイターが集まらない原因と対策</title>
+<meta name="description" content="TikTok Shopでクリエイターが集まらないときは、止まっている段を画面の数字で特定してから直します。オープンコラボと招待に分け、原因7つと直す順番を整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/creators-not-coming/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopでクリエイターが集まらない原因と対策">
+<meta property="og:description" content="TikTok Shopでクリエイターが集まらないときは、止まっている段を画面の数字で特定してから直します。オープンコラボと招待に分け、原因7つと直す順番を整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/creators-not-coming/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/creators-not-coming.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopでクリエイターが集まらない原因と対策">
+<meta name="twitter:description" content="TikTok Shopでクリエイターが集まらないときは、止まっている段を画面の数字で特定してから直します。オープンコラボと招待に分け、原因7つと直す順番を整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/creators-not-coming.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopでクリエイターが集まらない原因と対策", "description": "TikTok Shopでクリエイターが集まらないときは、止まっている段を画面の数字で特定してから直します。オープンコラボと招待に分け、原因7つと直す順番を整理します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creators-not-coming/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/creators-not-coming.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトコラボ（オープンコラボとターゲットコラボ）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&lang=ja-JP", "name": "TikTok Shop公式：無料サンプルについて知っておくべきポイント"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786965264&lang=ja-JP", "name": "TikTok Shop公式：商品マーケットプレイスの使い方"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=5554058321364752&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトプログラムの仕組み（推定コミッションの計算方法）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&lang=ja-JP", "name": "TikTok Shop公式：ショップパフォーマンススコア（SPS）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&lang=ja-JP", "name": "TikTok Shop公式：セラー向け完全攻略Playbook（クリエイターの選定からコラボ実施まで）"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopでクリエイターが集まらない原因と対策", "item": "https://leam.co.jp/column/creators-not-coming/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=creators-not-coming">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopでクリエイターが集まらない原因と対策｜オープンコラボと招待で分けて直す順番</p>
+<span class="cat">クリエイター起用</span>
+<h1>TikTok Shopでクリエイターが集まらない原因と対策｜オープンコラボと招待で分けて直す順番</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左の赤い磁石が右のクリエイターのカードを引き寄せている場面。いちばん近いシアンのカードにはチェックが付いて磁石に届き、中ほどの白いカードはシアンの矢印で近づき、遠くの点線のカードはまだ来ていない。磁石の足元には無料サンプルの箱が置かれているイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="creatorsnotcomingDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#creatorsnotcomingDots" transform="translate(944 542)"/>
+  </g>
+
+  <!-- ================= 主役：磁石（赤） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <path d="M500 176H322A154 154 0 0 0 322 484H500V384H322A54 54 0 0 1 322 276H500Z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <path d="M500 176H322A154 154 0 0 0 322 484H500V384H322A54 54 0 0 1 322 276H500Z" fill="#FE2C55"/>
+    <path d="M206 404A154 154 0 0 0 322 484H500V452H322A122 122 0 0 1 226 404Z" fill="#CE1730"/>
+    <rect x="424" y="176" width="76" height="100" fill="#DFE0E2"/>
+    <rect x="424" y="384" width="76" height="100" fill="#DFE0E2"/>
+    <path d="M424 176V276M424 384V484" fill="none" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M500 176H322A154 154 0 0 0 322 484H500V384H322A54 54 0 0 1 322 276H500Z" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- 引き寄せる力（磁石の口から右へ） -->
+  <g fill="none" stroke="#C9CBD0" stroke-width="6" stroke-linecap="round">
+    <path d="M532 262c18 22 18 114 0 136"/>
+    <path d="M560 242c26 30 26 146 0 176"/>
+  </g>
+
+  <!-- ================= 届いたクリエイター（シアン） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="606" y="260" width="150" height="142" rx="22" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="606" y="260" width="150" height="142" rx="22" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="681" cy="314" r="34" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="681" cy="305" r="11" fill="#C9CBD0"/>
+    <path d="M661 336a20 17 0 0 1 40 0z" fill="#C9CBD0"/>
+    <rect x="646" y="364" width="70" height="11" rx="5.5" fill="#FFFFFF"/>
+    <circle cx="752" cy="266" r="24" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M741 266l8 9 15-17" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- ================= 近づいているクリエイター（白） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="846" y="128" width="138" height="128" rx="20" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="846" y="128" width="138" height="128" rx="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <circle cx="915" cy="176" r="28" fill="#DFE0E2"/>
+    <circle cx="915" cy="169" r="9" fill="#FFFFFF"/>
+    <path d="M899 194a16 14 0 0 1 32 0z" fill="#FFFFFF"/>
+    <rect x="878" y="218" width="74" height="10" rx="5" fill="#DFE0E2"/>
+    <rect x="878" y="234" width="44" height="10" rx="5" fill="#25F4EE"/>
+    <!-- 近づく矢印 -->
+    <path d="M900 268c0 40-40 66-104 68" fill="none" stroke="#0B0C10" stroke-width="16"/>
+    <path d="M900 268c0 40-40 66-104 68" fill="none" stroke="#25F4EE" stroke-width="8"/>
+    <path d="M796 320L768 336L796 352Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+  </g>
+
+  <!-- ================= まだ来ていないクリエイター（点線） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="958" y="318" width="128" height="120" rx="20" fill="#F6F7F9" stroke="#C9CBD0" stroke-width="5" stroke-dasharray="14 11"/>
+    <circle cx="1022" cy="362" r="25" fill="#ECEEF1"/>
+    <circle cx="1022" cy="356" r="8" fill="#DFE0E2"/>
+    <path d="M1008 377a14 12 0 0 1 28 0z" fill="#DFE0E2"/>
+    <rect x="988" y="402" width="68" height="10" rx="5" fill="#ECEEF1"/>
+  </g>
+
+  <!-- ================= 無料サンプルの箱 ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="552" y="452" width="104" height="70" rx="8" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="552" y="452" width="104" height="70" rx="8" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M552 474h104" fill="none" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="590" y="452" width="28" height="70" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1130" cy="96" r="15" fill="#25F4EE"/>
+  <circle cx="600" cy="150" r="12" fill="#DFE0E2"/>
+  <circle cx="1104" cy="250" r="11" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTok Shopでクリエイターが集まらないときの直し方の全体像（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">オープンコラボに商品を出した。招待も送った。それでもクリエイターが集まらないとき、コミッション率を上げる前に確かめることがあります。クリエイターの判断は<strong>「見つける→選ぶ→サンプル→投稿」</strong>の順に進み、どの段で止まっているかによって原因が違うからです。この記事では、セラーセンターの画面に出る数字で止まっている段を特定し、原因7つと直す順番を、オープンコラボとターゲットコラボ（招待）に分けて整理します。コラボの仕組みそのものは<a href="https://leam.co.jp/column/affiliate-guide/">セラー向けアフィリエイトの仕組み</a>、招待がクリエイターにどう届くかは<a href="https://leam.co.jp/column/creator-invite/">クリエイター招待の仕組み</a>、率の相場は<a href="https://leam.co.jp/column/creator-commission/">コミッションの相場</a>で解説しているので、ここでは繰り返しません。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>集まらない原因を「どの段で止まっているか」で切り分ける方法</li><li>オープンコラボと招待（ターゲットコラボ）それぞれの直す場所</li><li>公式ヘルプに書かれた招待の上限・サンプルの処理期限</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">基本</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方</a></b><span>コラボの前提になる全体像</span></div>
+    <div class="relcard"><span class="rc">仕組み</span><b><a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopアフィリエイトの仕組み</a></b><span>プランの種類と公開の手順</span></div>
+    <div class="relcard"><span class="rc">招待</span><b><a href="https://leam.co.jp/column/creator-invite/">TikTok Shopのクリエイター招待とは</a></b><span>招待を受け取る側の目線</span></div>
+    <div class="relcard"><span class="rc">報酬</span><b><a href="https://leam.co.jp/column/creator-commission/">TikTok Shopのコミッション相場</a></b><span>率を粗利から逆算する</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">クリエイターが集まらない原因を無料で切り分けます</div><p>オープンコラボと招待の設定、サンプルの運用、商品ページの状態を伺い、どの段で止まっているかと最初に直す場所をお伝えします。率を上げる前に直せる点があれば、そこから整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creators-not-coming">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">集まらないときは、まず「どの段で止まっているか」を画面の数字で確かめる</a></li><li><a href="#s2">原因は7つあり、症状から当たりを付けられる</a></li><li><a href="#s3">オープンコラボは「出ているか」「選ぶ理由があるか」の順に直す</a></li><li><a href="#s4">招待で承諾されないときは、相手と招待の中身を直す</a></li><li><a href="#s5">サンプルは「付けるか」より「7日以内に処理できるか」で差が出る</a></li><li><a href="#s6">ショップの評価と商品ページは、時間がかかるので並行して直す</a></li><li><a href="#s7">カテゴリーの競合が強いときは、率を上げる前に比べられ方を確かめる</a></li><li><a href="#s8">直す順番は「すぐ直せる設定」から始め、時間のかかるものを並行させる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>集まらないときは、まず「どの段で止まっているか」を画面の数字で確かめる</h2>
+<p>クリエイターが商品を紹介するまでには段があります。オープンコラボでは、クリエイターが商品マーケットプレイスや商品の詳細ページで商品を見つけ、ショーケースに追加し、必要なら無料サンプルを申請してから、動画やLIVEを投稿します。ターゲットコラボでは、招待がクリエイターの受信トレイに届き、承諾され、商品がショーケースに追加されてから投稿に進みます。</p>
+<p>「集まらない」は、このどこかで止まっているという意味です。止まる段が違えば、直す場所も違います。幸い、アフィリエイトセンターの画面には段ごとの人数が出ます。</p>
+<div class="tw"><table><thead><tr><th>段</th><th>オープンコラボで見る項目</th><th>ターゲットコラボで見る項目</th></tr></thead><tbody><tr><td>見つけてもらう</td><td>商品が「追加済み商品」タブにあるか（クリエイターがリクエストやショーケースへの追加をできるのは、このタブの商品）</td><td>招待を送った相手の数（1つのターゲットコラボに招待できるのは50人まで）</td></tr><tr><td>選ぶ</td><td>「追加済みのクリエイター」＝商品をショーケースに追加したクリエイターの数</td><td>招待を承諾したクリエイターの人数</td></tr><tr><td>サンプル</td><td>無料サンプルリクエストの件数と、7日間チェックされずに自動却下されたリクエスト</td><td>招待で無料サンプルを有効にしているか、リクエストの処理状況</td></tr><tr><td>投稿</td><td>「投稿済みのクリエイター」＝商品リンク付きの動画かLIVEを投稿したクリエイターの数</td><td>承諾したクリエイターのうち、投稿を行ったクリエイターの人数</td></tr></tbody></table></div><p class="src">段ごとに見る画面の項目（公式ヘルプ「アフィリエイトコラボ」の記載を整理）</p>
+<p>読み方は単純です。<strong>追加が少ないなら「見つかっていないか、選ぶ理由がない」</strong>。<strong>追加はあるのに投稿が少ないなら「サンプルか、紹介のしにくさ」</strong>。<strong>招待の承諾が少ないなら「相手の選び方か、招待の中身」</strong>です。この切り分けを飛ばしてコミッション率だけを上げると、原因が別の段にあった場合に利益だけが削れます。</p>
+  <figure> <svg viewBox="0 0 720 290" role="img" aria-label="オープンコラボとターゲットコラボの2段に、見つける・選ぶ・サンプル・投稿の4つの箱を並べ、それぞれの段で画面のどの数字を見るかを書き添えた図"><text x="20" y="28" font-size="12.5" font-weight="800" fill="#C2203A">オープンコラボ</text><rect x="20" y="40" width="152" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="96" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">見つける</text><text x="96" y="92" text-anchor="middle" font-size="11" fill="#787D8A">追加済み商品タブ</text><rect x="196" y="40" width="152" height="70" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="272" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">ショーケースに追加</text><text x="272" y="92" text-anchor="middle" font-size="11" fill="#787D8A">追加済みのクリエイター</text><rect x="372" y="40" width="152" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="448" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">サンプル申請</text><text x="448" y="92" text-anchor="middle" font-size="11" fill="#787D8A">サンプルリクエスト</text><rect x="548" y="40" width="152" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="624" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">投稿</text><text x="624" y="92" text-anchor="middle" font-size="11" fill="#787D8A">投稿済みのクリエイター</text><path d="M176 69 L190 75 L176 81 Z" fill="#787D8A"/><path d="M352 69 L366 75 L352 81 Z" fill="#787D8A"/><path d="M528 69 L542 75 L528 81 Z" fill="#787D8A"/><text x="20" y="150" font-size="12.5" font-weight="800" fill="#C2203A">ターゲットコラボ（招待）</text><rect x="20" y="162" width="152" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="96" y="190" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">招待が届く</text><text x="96" y="214" text-anchor="middle" font-size="11" fill="#787D8A">招待した相手の数</text><rect x="196" y="162" width="152" height="70" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="272" y="190" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">承諾する</text><text x="272" y="214" text-anchor="middle" font-size="11" fill="#787D8A">承諾した人数</text><rect x="372" y="162" width="152" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="448" y="190" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">サンプル申請</text><text x="448" y="214" text-anchor="middle" font-size="11" fill="#787D8A">招待の無料サンプル</text><rect x="548" y="162" width="152" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="624" y="190" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">投稿</text><text x="624" y="214" text-anchor="middle" font-size="11" fill="#787D8A">投稿を行った人数</text><path d="M176 191 L190 197 L176 203 Z" fill="#787D8A"/><path d="M352 191 L366 197 L352 203 Z" fill="#787D8A"/><path d="M528 191 L542 197 L528 203 Z" fill="#787D8A"/><text x="360" y="270" text-anchor="middle" font-size="11.5" fill="#787D8A">人数が急に減る段の手前に原因がある。率を変える前に段を特定する</text></svg> <figcaption>図1：段ごとに見る数字は画面に出ている（LEAM作成）</figcaption> </figure>
+
+<h2 id="s2"><span class="no en">02</span>原因は7つあり、症状から当たりを付けられる</h2>
+<p>クリエイター向けの公式ヘルプは、商品を選ぶときに<strong>最初に注意すべきことは商品の品質</strong>だとし、品質を知るには商品の評価や販売者（セラー）の評価に注目するよう案内しています。その他の重要な要因として挙げられているのが、コミッション率や商品の価格です。率は判断材料の一つであって、最初に見られる項目ではありません。</p>
+<p>この順番を踏まえて、集まらない原因を7つに分けます。症状から当たりを付け、最初に確かめる場所へ進んでください。</p>
+<div class="tw"><table><thead><tr><th>原因</th><th>出やすい症状</th><th>最初に確かめる場所</th></tr></thead><tbody><tr><td>① コミッション率（実額）</td><td>追加はされるが投稿が伸びない／招待の承諾が少ない</td><td>オープンコラボの一覧の「推定コミッション」列</td></tr><tr><td>② 商品の魅力と実績</td><td>追加そのものが少ない</td><td>商品の評価、販売実績、価格</td></tr><tr><td>③ サンプルの有無</td><td>追加はあるが投稿が少ない</td><td>無料サンプルの設定と、リクエストの処理状況</td></tr><tr><td>④ ショップの評価</td><td>どの商品も一様に反応が鈍い</td><td>アカウントの健全性＞ショップパフォーマンススコア</td></tr><tr><td>⑤ 商品ページ</td><td>投稿はあるが売れず、2本目が続かない</td><td>商品画像、説明文、レビュー</td></tr><tr><td>⑥ カテゴリーの競合条件</td><td>同じカテゴリーの別商品にクリエイターが流れる</td><td>推奨コミッション率の参考値、同じカテゴリーの商品の見え方</td></tr><tr><td>⑦ 招待の出し方</td><td>ターゲットコラボだけ承諾が少ない</td><td>招待の相手、率、有効期限、メッセージ</td></tr></tbody></table></div><p class="src">集まらない原因と症状の対応（LEAM作成。原因の分け方は当社の整理）</p>
+<p>当社の運用実感では、相談の時点で「率が低いから集まらない」と言われるケースでも、実際に止まっているのはサンプルの処理や商品ページの側であることが少なくありません。率は一度上げると下げにくいので、ほかの原因を潰してから最後に触るほうが安全です。</p>
+  <figure> <svg viewBox="0 0 720 246" role="img" aria-label="クリエイターが商品を選ぶときに見るものを、最初に見る商品の品質の大きな箱と、そのほかの要因であるコミッション率と価格の2つの箱に分け、それぞれセラーが直す場所を添えた図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">クリエイターが商品を選ぶときに見るもの（公式ヘルプの案内）</text><rect x="20" y="42" width="300" height="152" rx="12" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="170" y="74" text-anchor="middle" font-size="11.5" fill="#C2203A">最初に注意する</text><text x="170" y="102" text-anchor="middle" font-size="15" font-weight="800" fill="#454956">商品の品質</text><text x="170" y="132" text-anchor="middle" font-size="11.5" fill="#454956">商品の評価</text><text x="170" y="152" text-anchor="middle" font-size="11.5" fill="#454956">販売者（セラー）の評価</text><text x="170" y="180" text-anchor="middle" font-size="11" fill="#787D8A">直す場所：商品ページ・レビュー・発送</text><rect x="352" y="42" width="348" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="526" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">そのほかの要因：コミッション率</text><text x="526" y="92" text-anchor="middle" font-size="11" fill="#787D8A">見込み額は「割引後の価格×率」で決まる</text><rect x="352" y="124" width="348" height="70" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="526" y="150" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">そのほかの要因：商品の価格</text><text x="526" y="174" text-anchor="middle" font-size="11" fill="#787D8A">価格だけでなくコストパフォーマンスで比べられる</text><text x="360" y="228" text-anchor="middle" font-size="11.5" fill="#787D8A">率は判断材料の一つ。先に品質の見え方を整える</text></svg> <figcaption>図2：率より先に、品質の見え方が比べられている（LEAM作成）</figcaption> </figure>
+
+<h2 id="s3"><span class="no en">03</span>オープンコラボは「出ているか」「選ぶ理由があるか」の順に直す</h2>
+<h3>まず、商品がクリエイターに出ている状態かを確かめる</h3>
+<p>オープンコラボの画面には「追加済み商品」と「未追加」の2つのタブがあります。クリエイターがリクエストしたり、自分のショーケースに追加したりできるのは<strong>追加済み商品</strong>のほうです。商品は1点ずつ「コラボに追加」するか、「コラボへの一括追加」でショップの全商品を追加します。新商品を出すたびに追加を忘れるなら、<strong>「商品の自動追加」</strong>をオンにすると、新しくアップロードした商品が事前に決めたコミッション率でオープンコラボに入ります。一覧の「商品ステータス」列では、その商品がオープンコラボに使える状態かどうかも確かめられます。</p>
+<p>在庫も見ておきます。公式ヘルプは、クリエイターが紹介した商品の在庫がなくなり販売機会を逃すことがないよう注意を促しています。紹介が始まってから在庫切れになると、そのクリエイターは次の依頼を受けにくくなります。</p>
+<h3>次に、クリエイターから見た「1本あたりの実額」を確かめる</h3>
+<p>率は%で設定しますが、クリエイター向けの公式ヘルプによると、<strong>推定コミッションは商品の平均割引後価格にコミッション率を掛けて算出</strong>されます。実際のコミッションは（売上−返金額）×コミッション率で、クーポンや返金などで推定額と変わることがあります。</p>
+<p>ここから言えるのは、<strong>値引きを深くすると、率を据え置いてもクリエイターの見込み額が下がる</strong>ということです。たとえば3,000円の商品で率10%なら300円ですが、平均割引後価格が2,400円になれば240円です（当社の計算例で、公式の記載ではありません）。セールを強めた時期に追加が鈍ったら、率ではなく実額の変化を疑ってください。設定画面には推奨コミッション率が参考値として表示されますが、最終的な決定はセラーに委ねられています。率をいくらにするかは<a href="https://leam.co.jp/column/creator-commission/">コミッションの相場と決め方</a>に譲ります。</p>
+<div class="tw"><table><thead><tr><th>点検する項目</th><th>公式に書かれていること</th><th>集まらないときの直し方</th></tr></thead><tbody><tr><td>追加の状態</td><td>「追加済み商品」タブの商品が、リクエストとショーケースへの追加の対象になる</td><td>「未追加」タブに主力商品が残っていないかを見る</td></tr><tr><td>新商品</td><td>自動追加をオンにすると、新商品が既定のコミッション率で入る</td><td>新商品の追加漏れが続くなら自動追加を使う</td></tr><tr><td>コミッション率</td><td>推奨コミッション率が参考値として表示され、決定はセラーに委ねられる</td><td>推定コミッションの実額で、自社の他商品と比べる</td></tr><tr><td>無料サンプル</td><td>トグルをオンにすると、クリエイターが無料サンプルを申請できる</td><td>現物がないと撮れない商品はオンにし、処理する担当を決める</td></tr><tr><td>在庫</td><td>在庫切れで販売機会を逃さないよう注意する</td><td>在庫が薄い商品は、補充してから出すか一時的に外す</td></tr><tr><td>実績の確認</td><td>追加済み・投稿済みのクリエイターの数を商品ごとに確認できる</td><td>追加が多いのに投稿が少ない商品から手を付ける</td></tr></tbody></table></div><p class="src">オープンコラボの点検表（公式ヘルプ「アフィリエイトコラボ」の記載を整理。直し方は当社の整理）</p>
+<h3>最後に、マーケットプレイスでの見つかり方を知っておく</h3>
+<p>クリエイター側の商品マーケットプレイスの「おすすめ」は、過去の商品の好みに基づいてクリエイターごとにパーソナライズされます。初めてアクセスしたクリエイターには、多くのクリエイターが興味を持ちやすい商品が推奨される傾向がある、と公式ヘルプは説明しています。セラーが表示順を直接動かす設定は、公式ヘルプには書かれていません。オープンコラボは「見つけてもらうのを待つ」方式なので、立ち上げ期ほど、次のターゲットコラボで自分から当てにいく併用が要ります。</p>
+
+<h2 id="s4"><span class="no en">04</span>招待で承諾されないときは、相手と招待の中身を直す</h2>
+<p>ターゲットコラボは、セラーが選んだクリエイターに招待を送り、承諾されてから紹介が始まる仕組みです。クリエイターは招待をタップして特典・ショップ情報・商品を確かめたうえで、紹介したい商品を自由に選びます。<strong>招待を送っただけでは、どの商品も紹介される保証はありません。</strong>公式ヘルプが示す作成の手順は4つで、承諾が減る設定もこの4つのどこかに入っています。</p>
+  <figure> <svg viewBox="0 0 720 256" role="img" aria-label="ターゲットコラボの招待を作る4つのステップ、クリエイターの選択、商品と率、無料サンプル、招待の詳細を上段に並べ、それぞれの下に承諾が減りやすい設定を赤い箱で示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">招待1件は、4つのステップでできている</text><rect x="20" y="42" width="152" height="86" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="96" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">① クリエイター</text><text x="96" y="92" text-anchor="middle" font-size="11" fill="#787D8A">ユーザー名やIDで検索</text><text x="96" y="110" text-anchor="middle" font-size="11" fill="#787D8A">保存済みから追加</text><rect x="196" y="42" width="152" height="86" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="272" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">② 商品と率</text><text x="272" y="92" text-anchor="middle" font-size="11" fill="#787D8A">1件に100商品まで</text><text x="272" y="110" text-anchor="middle" font-size="11" fill="#787D8A">率は商品ごとに決める</text><rect x="372" y="42" width="152" height="86" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="448" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">③ 無料サンプル</text><text x="448" y="92" text-anchor="middle" font-size="11" fill="#787D8A">特典欄に表示される</text><text x="448" y="110" text-anchor="middle" font-size="11" fill="#787D8A">送信後も編集できる</text><rect x="548" y="42" width="152" height="86" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="624" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">④ 招待の詳細</text><text x="624" y="92" text-anchor="middle" font-size="11" fill="#787D8A">招待名・有効期限</text><text x="624" y="110" text-anchor="middle" font-size="11" fill="#787D8A">連絡先・メッセージ</text><path d="M96 132 L96 146" stroke="#787D8A" stroke-width="2" fill="none"/><path d="M272 132 L272 146" stroke="#787D8A" stroke-width="2" fill="none"/><path d="M448 132 L448 146" stroke="#787D8A" stroke-width="2" fill="none"/><path d="M624 132 L624 146" stroke="#787D8A" stroke-width="2" fill="none"/><rect x="20" y="150" width="152" height="54" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="96" y="182" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">ジャンル違いに送る</text><rect x="196" y="150" width="152" height="54" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="272" y="182" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">オープンより低い率</text><rect x="372" y="150" width="152" height="54" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="448" y="182" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">現物なしで頼む</text><rect x="548" y="150" width="152" height="54" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="624" y="182" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">短い期限・空の文面</text><text x="360" y="236" text-anchor="middle" font-size="11.5" fill="#787D8A">上段は公式の手順。下段は承諾が減りやすい設定（当社の整理）</text></svg> <figcaption>図3：承諾が減る設定は、4つのステップのどこかに入っている（LEAM作成）</figcaption> </figure>
+<div class="tw"><table><thead><tr><th>招待の項目</th><th>公式に書かれている仕様</th><th>承諾が減る設定</th><th>直し方</th></tr></thead><tbody><tr><td>相手</td><td>クリエイターカードでパフォーマンスデータを確認できる。保存は1,000人まで、1つのターゲットコラボに招待できるのは50人まで</td><td>フォロワー数だけで選び、自社のカテゴリーを紹介していない人に送る</td><td>カードで紹介の実績を見てから保存し、保存リストから一括で招待する</td></tr><tr><td>商品と率</td><td>商品ごとに率を決めると推定コミッションが自動で計算される。両方のコラボに登録した商品はターゲットコラボの率が適用される</td><td>オープンコラボと同じか、低い率</td><td>オープンより上の率にするか、サンプルなどの特典で差を付ける</td></tr><tr><td>無料サンプル</td><td>招待で有効にすると特典の欄に表示される。送信後も編集できる</td><td>現物がないと撮れない商品を、サンプルなしで頼む</td><td>招待に無料サンプルを付ける</td></tr><tr><td>有効期限</td><td>クリエイターはこの期間内に承諾やプロモーションができる</td><td>撮影と投稿に足りない短い期限</td><td>撮影から投稿までを含めた期間を取る</td></tr><tr><td>メッセージ</td><td>ブランドや商品に関する追加情報を入れる欄</td><td>空欄、または定型文だけ</td><td>訴求点・使う場面・言ってはいけない表現を短く書く</td></tr><tr><td>送信の上限</td><td>24時間に送信できるのは1,000件まで</td><td>—</td><td>数より相手の絞り込みに時間を使う</td></tr></tbody></table></div><p class="src">招待の項目と直し方（仕様は公式ヘルプ「アフィリエイトコラボ」の記載。「承諾が減る設定」「直し方」は当社の整理）</p>
+<p>見落としやすいのが「商品と率」の行です。公式ヘルプは、オープンコラボとターゲットコラボの両方に登録されている商品をクリエイターが紹介した場合、<strong>クリエイターはターゲットコラボのコミッションを受け取る</strong>と明記しています。ターゲットの率をオープンより低く設定すると、わざわざ指名した相手のほうが受け取りが少なくなり、招待を承諾する理由がなくなります。</p>
+<p>招待を作ったあとでも、クリエイターや商品の追加・削除、率や詳細の調整はできます。ただし、クリエイターがその商品を紹介中の場合、<strong>変更は翌日から適用</strong>されます。承諾の状況は「招待を承諾したクリエイターの人数」と「その中で投稿を行ったクリエイターの人数」で確認できるので、招待名を「相手の層×商品」の形で付けておくと、どの組み合わせが通ったかを後から比べられます（招待名の付け方は当社の運用で、公式の推奨ではありません）。</p>
+<p>メッセージに何を書くかは、公式のセラー向けPlaybookが参考になります。クリエイターと共有しておくと成果が出やすい資料として、<strong>過去の購入者レビュー、使用中の写真と商品詳細、商品リンクと在庫数、KPI目標</strong>を挙げています。招待がクリエイターの画面でどう見えるかは<a href="https://leam.co.jp/column/creator-invite/">クリエイター招待の仕組み</a>で、受け取る側の目線から解説しています。</p>
+
+<h2 id="s5"><span class="no en">05</span>サンプルは「付けるか」より「7日以内に処理できるか」で差が出る</h2>
+<p>現物がないと撮れない商品では、無料サンプルの有無が応募の数を左右します。ただ、付けただけでは足りません。公式ヘルプでは、サンプルがリクエストされると<strong>セラーは7日以内にリクエストを処理する必要がある</strong>とされ、セラー向けの公式ヘルプにも、7日間チェックされなかったために自動的に却下されたリクエストを絞り込む項目があります。集まらない原因として確かめるのは、<strong>誰が・いつ・どの基準で処理するか</strong>が決まっているかどうかです。</p>
+<div class="tw"><table><thead><tr><th>決めること</th><th>決め方</th></tr></thead><tbody><tr><td>処理する担当</td><td>保留中のリクエストを承認・却下する人を1人に決め、不在のときの代わりも決めておく</td></tr><tr><td>確認する間隔</td><td>7日の期限より短い間隔で、決まった曜日に保留中のリクエストを開く。自動的に却下されたリクエストが出ていれば、間隔が空きすぎている</td></tr><tr><td>承認の基準</td><td>商品カテゴリー（選んだカテゴリーで過去30日間に収益を上げたか紹介した実績）・コンテンツタイプ・「信頼できるクリエイター」（受け取った無料サンプルと投稿の割合で上位20％）の絞り込みを使い、承認する条件を文章にしておく</td></tr><tr><td>承認の方式</td><td>自動で承認するか、セラーが確認して承認するか。誰でも申請できる入口と、自社で選んで招待した相手とで分けて決める</td></tr></tbody></table></div><p class="src">サンプルのリクエストを処理するために決めること（機能は公式ヘルプ「無料サンプル」「アフィリエイトコラボ」の記載、決め方は当社の整理）</p>
+<p>担当と基準が決まっていれば、承認の判断で止まらずに済みます。承認したあとの発送・指示・催促と、投稿されたかどうかの数え方は<a href="https://leam.co.jp/column/sample-no-post/">サンプルを送っても投稿されないときの対策</a>で詳しく整理しています。</p>
+<div class="box box-point"><div class="bt">💡 承認の方式は、段階で切り替える</div><p>当社の運用実感では、立ち上げ期は手動承認で相手を見ながら進め、投稿してくれる層が見えてきた段階で、その層への招待を自動承認に寄せると、処理漏れと持ち出しの両方を抑えやすくなります。クリエイターがサンプルを申請する側の手順は<a href="https://leam.co.jp/column/sample-request/">サンプル申請のやり方</a>にまとめています。</p></div>
+
+<h2 id="s6"><span class="no en">06</span>ショップの評価と商品ページは、時間がかかるので並行して直す</h2>
+<p>クリエイターが最初に見るよう案内されているのは、商品の評価と販売者の評価でした。セラー側で自社の状態を確かめる場所が、<strong>ショップパフォーマンススコア（SPS）</strong>です。SPSは0から5までで変動する評価指標で、直近60日間に30件以上の注文（不正注文やサンプル注文を除く）の配送が完了すると自動的に付与されます。商品満足度・フルフィルメントと物流・カスタマーサービスの3項目を、同じカテゴリーの他のセラーと比べて算出し、目安として1点以下は低いパフォーマンス、4点以上は優れたパフォーマンスとされています。確認場所はセラーセンター＞アカウントの健全性＞ショップパフォーマンススコアです。</p>
+<p>なお、SPSは現時点ではセラーだけが確認でき、カスタマーには表示されていません（将来的には表示される予定とされています）。<strong>クリエイターの画面にSPSそのものが出るかどうかは、公式ヘルプには書かれていません。</strong>言えるのは、クリエイターが販売者の評価を見るよう案内されていることと、SPSを下げる要因（否定的なレビュー、発送遅延、セラー都合のキャンセル、返信の遅さ）が、そのままクリエイターが紹介した購入者の体験になるということです。</p>
+<p>立ち上げ直後のショップには保護措置があります。出店から180日未満、配達完了済みの注文が30件以下、指標に悪影響を与える注文が3件以下という条件をすべて満たすと、対象の指標スコアが3.5を下回った場合に3.5まで引き上げられます。注文が少ない時期に数件の低評価で評価が崩れることは、仕組みの上ではある程度避けられています。</p>
+<p>商品ページは、クリエイターが紹介したあとに購入者が着地する場所です。紹介しても売れなければ、そのクリエイターは2本目を作りません。画像と説明の整え方は<a href="https://leam.co.jp/column/product-page-cvr/">商品登録と売れる商品ページの作り方</a>、評価の集め方は<a href="https://leam.co.jp/column/review-management/">レビューの集め方と低評価への対応</a>にまとめています。どちらも数日で結果が変わるものではないので、§03と§04の設定を直す作業と同時に始めます。</p>
+
+<h2 id="s7"><span class="no en">07</span>カテゴリーの競合が強いときは、率を上げる前に比べられ方を確かめる</h2>
+<p>同じカテゴリーに似た商品が多いと、クリエイターは並べて比べます。商品マーケットプレイスにはカテゴリーの人気商品や人気上昇中のショップが並び、クリエイターは品質・率・価格・コストパフォーマンスを見て選ぶよう案内されています。競合が強いカテゴリーで起きやすいのは、率だけを競り上げて利益が残らなくなることです。</p>
+<p>比べられ方を確かめる方法は3つあります。1つ目は、オープンコラボの設定画面に出る<strong>推奨コミッション率の参考値</strong>と、自社の率の位置を見ること。2つ目は、商品マーケットプレイスで自社のカテゴリーを開き、同じ価格帯の商品に無料サンプルのタグが付いているかを見ること（サンプル付きの商品は商品名の下にタグが付く、と公式ヘルプにあります）。3つ目は、自社の商品ページを同じカテゴリーの商品ページと並べ、評価の件数と画像の情報量を比べることです。</p>
+<p>当社の運用実感では、競合が強いカテゴリーほど、オープンコラボの率を上げるより、そのカテゴリーで紹介実績のあるクリエイターに絞ったターゲットコラボで、サンプルとメッセージを厚くするほうが、同じ予算で投稿に結びつきやすい傾向があります。どのカテゴリーに出るかの判断そのものは<a href="https://leam.co.jp/column/best-categories/">売れる商品カテゴリーと参入ジャンルの選び方</a>で扱っています。</p>
+
+<h2 id="s8"><span class="no en">08</span>直す順番は「すぐ直せる設定」から始め、時間のかかるものを並行させる</h2>
+<p>原因が複数あるときの順番です。基準は、<strong>止まっている段の手前から直すこと</strong>と、<strong>すぐ直せるものを先に片付けること</strong>の2つです。以下は当社が支援で使っている順番で、公式ヘルプが示す手順ではありません。</p>
+<ol class="steps"><li><b>止まっている段を数字で特定する</b><p>§01の表で、追加・承諾・投稿のどこで人数が急に減るかを見ます。原因を決める前の作業です。</p></li><li><b>出ていない状態を直す</b><p>未追加のままの主力商品、在庫切れ、7日近く放置しているサンプルリクエスト。どれも当日に直せます。</p></li><li><b>実額とサンプルを揃える</b><p>割引後の推定コミッションを確かめ、現物がないと撮れない商品に無料サンプルを付けます。ターゲットコラボの率がオープンコラボを下回っていないかも見ます。</p></li><li><b>招待の相手と中身を直す</b><p>紹介実績のあるカテゴリーで相手を選び直し、有効期限とメッセージを書き直します。招待名で組み合わせを区別して、承諾の数を比べます。</p></li><li><b>評価と商品ページを並行して底上げする</b><p>SPSの低い項目、商品ページの画像と説明、レビュー。動くまでに時間がかかるので、1〜4と同時に始めます。</p></li></ol>
+  <figure> <svg viewBox="0 0 720 236" role="img" aria-label="直す作業を、すぐ直せるもの、数日で直せるもの、時間がかかるものの3列に分けて左から右へ並べ、時間がかかる評価と商品ページの改善は最初から並行して進めることを下の帯で示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">直す順番は、かかる時間で分ける</text><rect x="20" y="42" width="214" height="112" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="127" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">すぐ直せる</text><text x="127" y="94" text-anchor="middle" font-size="11" fill="#454956">未追加の主力商品</text><text x="127" y="114" text-anchor="middle" font-size="11" fill="#454956">在庫切れの商品</text><text x="127" y="134" text-anchor="middle" font-size="11" fill="#454956">放置したサンプル申請</text><rect x="253" y="42" width="214" height="112" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">数日で直せる</text><text x="360" y="94" text-anchor="middle" font-size="11" fill="#454956">割引後の見込み額</text><text x="360" y="114" text-anchor="middle" font-size="11" fill="#454956">サンプルの付け方</text><text x="360" y="134" text-anchor="middle" font-size="11" fill="#454956">招待の率・期限・文面</text><rect x="486" y="42" width="214" height="112" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="593" y="68" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">時間がかかる</text><text x="593" y="94" text-anchor="middle" font-size="11" fill="#454956">SPSの低い項目</text><text x="593" y="114" text-anchor="middle" font-size="11" fill="#454956">商品ページの画像と説明</text><text x="593" y="134" text-anchor="middle" font-size="11" fill="#454956">レビューの件数</text><path d="M238 92 L249 98 L238 104 Z" fill="#787D8A"/><path d="M471 92 L482 98 L471 104 Z" fill="#787D8A"/><rect x="20" y="170" width="680" height="34" rx="8" fill="#0B0C10"/><text x="360" y="192" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">右の列は最後ではなく、最初から並行して進める</text><text x="360" y="226" text-anchor="middle" font-size="11" fill="#787D8A">左から順に片付け、止まっていた段の人数が動いたかを週ごとに見る</text></svg> <figcaption>図4：すぐ直せるものから片付け、時間がかかるものは並行させる（LEAM作成）</figcaption> </figure>
+<div class="tw"><table><thead><tr><th>確認ポイント</th><th>できている状態</th><th>次のアクション</th></tr></thead><tbody><tr><td>段の特定</td><td>追加・承諾・投稿の人数を、商品ごとに把握している</td><td>週に1回、同じ曜日に数字を控える</td></tr><tr><td>オープンコラボの追加</td><td>主力商品が「追加済み商品」タブにある</td><td>新商品の自動追加を使うかどうかを決める</td></tr><tr><td>実額</td><td>割引後の推定コミッションを把握している</td><td>セールの前後で、見込み額がどう変わるかを見直す</td></tr><tr><td>サンプル</td><td>リクエストを7日以内に処理する担当がいる</td><td>承認する基準を文章にしておく</td></tr><tr><td>招待の率</td><td>ターゲットコラボの率がオープンコラボ以上になっている</td><td>両方に登録した商品の率を並べて確かめる</td></tr><tr><td>招待の中身</td><td>有効期限とメッセージが埋まっている</td><td>購入者レビュー・使用写真・在庫数を添える</td></tr><tr><td>ショップの評価</td><td>SPSのどの項目が低いかが分かっている</td><td>低い項目の改善を担当に割り振る</td></tr></tbody></table></div><p class="src">実務導入ワークシート（LEAM作成）</p>
+
+<h2 id="summary"><span class="no en">09</span>まとめ</h2>
+<p>クリエイターが集まらないときに最初にやるのは、率を上げることではなく、<strong>どの段で止まっているかを画面の数字で特定すること</strong>です。上から順に確かめてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 止まっている段を特定する</b><br>追加済み・投稿済みのクリエイター数、招待の承諾数と投稿数のどこで減っているか</div><div class="summary-item"><b>2. 出ていない状態を直す</b><br>未追加の主力商品、在庫切れ、7日以内に処理されていないサンプルリクエスト</div><div class="summary-item"><b>3. 実額で比べる</b><br>見込み額は割引後の価格×率。値引きを深くすると率が同じでも下がる</div><div class="summary-item"><b>4. 招待の率と中身を直す</b><br>両方に登録した商品はターゲットコラボの率になる。期限とメッセージを埋める</div><div class="summary-item"><b>5. 評価と商品ページを並行させる</b><br>クリエイターが最初に見るのは品質。SPSと商品ページは時間がかかるので最初から始める</div></div>
+
+<h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopでオープンコラボに出したのに、クリエイターが集まらないのはなぜですか？</summary><div class="a">主力商品が「未追加」タブに残っている、割引後の見込み額が低い、無料サンプルがない、商品やショップの評価が弱い、といった原因が考えられます。まずオープンコラボの一覧で「追加済みのクリエイター」と「投稿済みのクリエイター」の数を見て、追加の段で止まっているのか、投稿の段で止まっているのかを切り分けてください。</div></details><details><summary>TikTok Shopでコミッション率を上げれば、クリエイターは集まりますか？</summary><div class="a">率は判断材料の一つです。公式ヘルプは、クリエイターが商品を選ぶときに最初に注意すべきことは商品の品質で、商品の評価や販売者の評価に注目するよう案内しています。また推定コミッションは平均割引後価格に率を掛けて算出されるため、値引きを深くすると率が同じでも見込み額は下がります。率を上げる前に、止まっている段と実額を確かめてください。</div></details><details><summary>TikTok Shopのターゲットコラボの招待は、1日に何件まで送れますか？</summary><div class="a">公式ヘルプでは、24時間に送信できるコラボの上限は1,000件です。1つのターゲットコラボに招待できるクリエイターは50人まで、招待1件に追加できる商品は100件まで、保存済みクリエイターは1,000人までとされています。</div></details><details><summary>オープンコラボとターゲットコラボの両方に同じ商品を登録したら、TikTok Shopではどちらの率になりますか？</summary><div class="a">両方のコラボに登録されている商品をクリエイターが紹介した場合、クリエイターはターゲットコラボのコミッションを受け取ります。ターゲットコラボの率をオープンコラボより低くすると、招待した相手の受け取りが少なくなるので注意してください。</div></details><details><summary>TikTok Shopで無料サンプルを付けないと、クリエイターは集まりませんか？</summary><div class="a">商品によります。当社の運用実感では、現物がないと撮れない商品ほど、無料サンプルの有無が応募の数を左右します。一方で、付けてもリクエストを7日以内に処理できなければ自動的に却下されることがあるので、付けるなら処理する担当と承認の基準を先に決めてください。サンプルを絞る場合は、そのカテゴリーで紹介実績のあるクリエイターに絞ったターゲットコラボで、購入者レビューや使用中の写真などの判断材料をメッセージで厚くし、現物の代わりになる判断材料を補ってください。</div></details><details><summary>立ち上げたばかりでショップパフォーマンススコアが付いていません。TikTok Shopでクリエイターは集まりませんか？</summary><div class="a">ショップパフォーマンススコアは、直近60日間に30件以上の注文の配送が完了すると付与されます。出店から180日未満などの条件を満たすショップには、対象の指標スコアを3.5まで引き上げる保護措置もあります。評価が付く前の時期は、無料サンプルを付けたターゲットコラボで、カテゴリーの紹介実績があるクリエイターに直接頼む動きを並行させると、待つだけの状態を避けられます。</div></details></div>
+
+<div class="ctabox"><div class="ct">クリエイターの確保まで含めてご相談いただけます</div><p>LEAMはTikTok Shopの運用支援と、TikTok Shop特化のMCNを運営しています。コラボの設定、サンプルの運用、招待する相手の選び方までを一つの流れとして整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creators-not-coming">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">11</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトコラボ（オープンコラボとターゲットコラボ）</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：無料サンプルについて知っておくべきポイント</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786965264&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：商品マーケットプレイスの使い方</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5554058321364752&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトプログラムの仕組み（推定コミッションの計算方法）</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：ショップパフォーマンススコア（SPS）</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：セラー向け完全攻略Playbook（クリエイターの選定からコラボ実施まで）</a>（2026年10月14日確認）</li></ul>
+<p class="src">仕様、画面名称、上限値、期限は更新されることがあります。本記事は2026年10月14日時点で確認できた日本向け公式情報と、当社が作成した運用フレームを区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">基本</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド</a></b><span>コラボの前に全体像を押さえる</span></div><div class="relcard"><span class="rc">招待</span><b><a href="https://leam.co.jp/column/creator-invite/">TikTok Shopのクリエイター招待とは？コラボの仕組み・報酬の受け取り方</a></b><span>招待を受け取る側の目線を知る</span></div><div class="relcard"><span class="rc">報酬</span><b><a href="https://leam.co.jp/column/creator-commission/">TikTok Shopのコミッション相場は？クリエイターへの報酬の決め方</a></b><span>率を粗利から逆算して決める</span></div><div class="relcard"><span class="rc">サンプル</span><b><a href="https://leam.co.jp/column/sample-no-post/">サンプルを送っても投稿されない｜TikTok Shopのサンプル施策</a></b><span>承認したあとの発送・催促・履行率の見方</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">集まらないときは、まず「どの段で止まっているか」を画面の数字で確かめる</a></li><li><a href="#s2">原因は7つあり、症状から当たりを付けられる</a></li><li><a href="#s3">オープンコラボは「出ているか」「選ぶ理由があるか」の順に直す</a></li><li><a href="#s4">招待で承諾されないときは、相手と招待の中身を直す</a></li><li><a href="#s5">サンプルは「付けるか」より「7日以内に処理できるか」で差が出る</a></li><li><a href="#s6">ショップの評価と商品ページは、時間がかかるので並行して直す</a></li><li><a href="#s7">カテゴリーの競合が強いときは、率を上げる前に比べられ方を確かめる</a></li><li><a href="#s8">直す順番は「すぐ直せる設定」から始め、時間のかかるものを並行させる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creators-not-coming">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopでオープンコラボに出したのに、クリエイターが集まらないのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "主力商品が「未追加」タブに残っている、割引後の見込み額が低い、無料サンプルがない、商品やショップの評価が弱い、といった原因が考えられます。まずオープンコラボの一覧で「追加済みのクリエイター」と「投稿済みのクリエイター」の数を見て、追加の段で止まっているのか、投稿の段で止まっているのかを切り分けてください。"}}, {"@type": "Question", "name": "TikTok Shopでコミッション率を上げれば、クリエイターは集まりますか？", "acceptedAnswer": {"@type": "Answer", "text": "率は判断材料の一つです。公式ヘルプは、クリエイターが商品を選ぶときに最初に注意すべきことは商品の品質で、商品の評価や販売者の評価に注目するよう案内しています。また推定コミッションは平均割引後価格に率を掛けて算出されるため、値引きを深くすると率が同じでも見込み額は下がります。率を上げる前に、止まっている段と実額を確かめてください。"}}, {"@type": "Question", "name": "TikTok Shopのターゲットコラボの招待は、1日に何件まで送れますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプでは、24時間に送信できるコラボの上限は1,000件です。1つのターゲットコラボに招待できるクリエイターは50人まで、招待1件に追加できる商品は100件まで、保存済みクリエイターは1,000人までとされています。"}}, {"@type": "Question", "name": "オープンコラボとターゲットコラボの両方に同じ商品を登録したら、TikTok Shopではどちらの率になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "両方のコラボに登録されている商品をクリエイターが紹介した場合、クリエイターはターゲットコラボのコミッションを受け取ります。ターゲットコラボの率をオープンコラボより低くすると、招待した相手の受け取りが少なくなるので注意してください。"}}, {"@type": "Question", "name": "TikTok Shopで無料サンプルを付けないと、クリエイターは集まりませんか？", "acceptedAnswer": {"@type": "Answer", "text": "商品によります。当社の運用実感では、現物がないと撮れない商品ほど、無料サンプルの有無が応募の数を左右します。一方で、付けてもリクエストを7日以内に処理できなければ自動的に却下されることがあるので、付けるなら処理する担当と承認の基準を先に決めてください。サンプルを絞る場合は、そのカテゴリーで紹介実績のあるクリエイターに絞ったターゲットコラボで、購入者レビューや使用中の写真などの判断材料をメッセージで厚くし、現物の代わりになる判断材料を補ってください。"}}, {"@type": "Question", "name": "立ち上げたばかりでショップパフォーマンススコアが付いていません。TikTok Shopでクリエイターは集まりませんか？", "acceptedAnswer": {"@type": "Answer", "text": "ショップパフォーマンススコアは、直近60日間に30件以上の注文の配送が完了すると付与されます。出店から180日未満などの条件を満たすショップには、対象の指標スコアを3.5まで引き上げる保護措置もあります。評価が付く前の時期は、無料サンプルを付けたターゲットコラボで、カテゴリーの紹介実績があるクリエイターに直接頼む動きを並行させると、待つだけの状態を避けられます。"}}]}</script>
+</body>
+</html>

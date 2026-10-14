@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのショーケースとは？使える条件と収益の仕組み</title>
+<meta name="description" content="TikTok Shopのショーケースは、紹介する商品をプロフィールに並べる置き場です。使える条件（フォロワー1,000人以上など）、商品の入れ方、コミッションの計算式を公式ヘルプで整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/showcase-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのショーケースとは？使える条件と収益の仕組み">
+<meta property="og:description" content="TikTok Shopのショーケースは、紹介する商品をプロフィールに並べる置き場です。使える条件（フォロワー1,000人以上など）、商品の入れ方、コミッションの計算式を公式ヘルプで整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/showcase-guide/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/showcase-guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのショーケースとは？使える条件と収益の仕組み">
+<meta name="twitter:description" content="TikTok Shopのショーケースは、紹介する商品をプロフィールに並べる置き場です。使える条件（フォロワー1,000人以上など）、商品の入れ方、コミッションの計算式を公式ヘルプで整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/showcase-guide.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのショーケースとは？使える条件と収益の仕組み", "description": "TikTok Shopのショーケースは、紹介する商品をプロフィールに並べる置き場です。使える条件（フォロワー1,000人以上など）、商品の入れ方、コミッションの計算式を公式ヘルプで整理します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/showcase-guide/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/showcase-guide.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787227408&lang=ja-JP", "name": "TikTok Shop公式：TikTok Shopクリエイターになるための申請方法"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786965264&lang=ja-JP", "name": "TikTok Shop公式：商品マーケットプレイスの使い方"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787096336&lang=ja-JP", "name": "TikTok Shop公式：動画に商品を追加する方法"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=1280227327674128&lang=ja-JP", "name": "TikTok Shop公式：既存動画にショッピングカートを追加する方法"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787030800&lang=ja-JP", "name": "TikTok Shop公式：TikTok Shopクリエイターセンターとは？"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=111532143068929&lang=ja-JP", "name": "TikTok Shop公式：LIVE販売の準備と商品の選択方法"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=1341131783178001&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトリンクの作成とシェア"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=5554058321364752&lang=ja-JP", "name": "TikTok Shop公式：日本のクリエイター向けコミッションと支払い"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトプログラムのよくある質問"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2709643852121873&lang=ja-JP", "name": "TikTok Shop公式：クリエイター・パフォーマンス評価ポリシー"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2733826023753473&lang=ja-JP", "name": "TikTok Shop公式：クリエイターの禁止行為"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのショーケースとは？使える条件と収益の仕組み", "item": "https://leam.co.jp/column/showcase-guide/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=showcase-guide">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopのショーケースとは？使える条件・商品の入れ方・収益の仕組み【クリエイター向け】</p>
+<span class="cat">クリエイター</span>
+<h1>TikTok Shopのショーケースとは？使える条件・商品の入れ方・収益の仕組み【クリエイター向け】</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左に並んだ3枚の商品カードからシアンの矢印が中央の赤いプロフィールのショーケースへ向かい、ショーケースの6つの枠のうち2つがシアンで埋まり、右ではそこから伸びる矢印の先にシアンの硬貨が積み上がって、紹介した商品の売上がコミッションになる流れを表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="showcaseguideDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#showcaseguideDots" transform="translate(944 542)"/>
+  </g>
+
+  <!-- ================= 左：商品マーケットプレイスの商品（従） ================= -->
+  <g stroke-linejoin="round">
+    <rect x="78" y="150" width="160" height="96" rx="16" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="78" y="150" width="160" height="96" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="96" y="168" width="58" height="58" rx="10" fill="#DFE0E2"/>
+    <rect x="168" y="178" width="52" height="10" rx="5" fill="#DFE0E2"/>
+    <rect x="168" y="200" width="36" height="10" rx="5" fill="#C9CBD0"/>
+
+    <rect x="58" y="272" width="160" height="96" rx="16" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="58" y="272" width="160" height="96" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="76" y="290" width="58" height="58" rx="10" fill="#25F4EE"/>
+    <rect x="148" y="300" width="52" height="10" rx="5" fill="#DFE0E2"/>
+    <rect x="148" y="322" width="36" height="10" rx="5" fill="#C9CBD0"/>
+    <circle cx="214" cy="276" r="22" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M214 265v22M203 276h22" stroke="#0B0C10" stroke-width="5" stroke-linecap="round"/>
+
+    <rect x="88" y="394" width="160" height="96" rx="16" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="88" y="394" width="160" height="96" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="106" y="412" width="58" height="58" rx="10" fill="#DFE0E2"/>
+    <rect x="178" y="422" width="52" height="10" rx="5" fill="#DFE0E2"/>
+    <rect x="178" y="444" width="36" height="10" rx="5" fill="#C9CBD0"/>
+  </g>
+
+  <!-- 追加の矢印（商品 → ショーケース） -->
+  <path d="M266 306h36v-16l32 26-32 26v-16h-36z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- ================= 主役：プロフィールのショーケース（赤） ================= -->
+  <g stroke-linejoin="round">
+    <rect x="362" y="136" width="400" height="372" rx="30" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="362" y="136" width="400" height="372" rx="30" fill="#CE1730"/>
+    <rect x="362" y="136" width="382" height="372" rx="30" fill="#FE2C55"/>
+
+    <!-- プロフィールのアイコン -->
+    <circle cx="562" cy="136" r="46" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="562" cy="124" r="16" fill="#DFE0E2"/>
+    <path d="M534 160c4-16 16-22 28-22s24 6 28 22" fill="#DFE0E2"/>
+
+    <!-- 棚（3列×2段の枠） -->
+    <rect x="390" y="204" width="344" height="276" rx="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <g stroke="#0B0C10" stroke-width="5">
+      <rect x="406" y="220" width="96" height="114" rx="12" fill="#FFFFFF"/>
+      <rect x="514" y="220" width="96" height="114" rx="12" fill="#25F4EE"/>
+      <rect x="622" y="220" width="96" height="114" rx="12" fill="#FFFFFF"/>
+      <rect x="406" y="350" width="96" height="114" rx="12" fill="#25F4EE"/>
+      <rect x="514" y="350" width="96" height="114" rx="12" fill="#FFFFFF"/>
+      <rect x="622" y="350" width="96" height="114" rx="12" fill="#FFFFFF"/>
+    </g>
+    <g fill="#DFE0E2">
+      <rect x="424" y="238" width="60" height="50" rx="8"/><rect x="424" y="302" width="44" height="9" rx="4.5"/>
+      <rect x="640" y="238" width="60" height="50" rx="8"/><rect x="640" y="302" width="44" height="9" rx="4.5"/>
+      <rect x="532" y="368" width="60" height="50" rx="8"/><rect x="532" y="432" width="44" height="9" rx="4.5"/>
+      <rect x="640" y="368" width="60" height="50" rx="8"/><rect x="640" y="432" width="44" height="9" rx="4.5"/>
+    </g>
+    <g fill="#FFFFFF">
+      <rect x="532" y="238" width="60" height="50" rx="8"/><rect x="532" y="302" width="44" height="9" rx="4.5"/>
+      <rect x="424" y="368" width="60" height="50" rx="8"/><rect x="424" y="432" width="44" height="9" rx="4.5"/>
+    </g>
+
+    <rect x="362" y="136" width="400" height="372" rx="30" fill="none" stroke="#0B0C10" stroke-width="7"/>
+  </g>
+
+  <!-- 売上の矢印（ショーケース → 硬貨） -->
+  <path d="M790 306h36v-16l32 26-32 26v-16h-36z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- ================= 右：積み上がるコミッション ================= -->
+  <g stroke="#0B0C10" stroke-width="6" stroke-linejoin="round">
+    <ellipse cx="984" cy="470" rx="82" ry="26" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/>
+    <path d="M902 452v22c0 14 37 26 82 26s82-12 82-26v-22" fill="#25F4EE"/>
+    <ellipse cx="984" cy="452" rx="82" ry="26" fill="#25F4EE"/>
+    <path d="M902 418v22c0 14 37 26 82 26s82-12 82-26v-22" fill="#25F4EE"/>
+    <ellipse cx="984" cy="418" rx="82" ry="26" fill="#25F4EE"/>
+    <path d="M902 384v22c0 14 37 26 82 26s82-12 82-26v-22" fill="#25F4EE"/>
+    <ellipse cx="984" cy="384" rx="82" ry="26" fill="#FFFFFF"/>
+    <ellipse cx="984" cy="384" rx="50" ry="14" fill="none" stroke="#C9CBD0" stroke-width="5"/>
+  </g>
+
+  <!-- 立てた硬貨 -->
+  <circle cx="1022" cy="224" r="60" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+  <circle cx="1022" cy="224" r="60" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+  <circle cx="1022" cy="224" r="38" fill="none" stroke="#0B0C10" stroke-width="5"/>
+  <path d="M1004 224l12 13 24-26" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1130" cy="96" r="15" fill="#FE2C55"/>
+  <circle cx="300" cy="118" r="12" fill="#25F4EE"/>
+  <circle cx="860" cy="170" r="11" fill="#DFE0E2"/>
+  <circle cx="300" cy="560" r="13" fill="#DFE0E2"/>
+</svg>
+    <figcaption>TikTok Shopのショーケースに商品を入れ、紹介した売上がコミッションになるまで（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopのショーケースは、クリエイターが紹介する商品を入れておく置き場です。公式ヘルプは、商品マーケットプレイスで「追加」をタップした商品が<strong>ショーケースに追加され、TikTokプロフィールに表示される</strong>こと、そしてその商品を<strong>ショート動画やLIVE配信にリンクできる</strong>ことを説明しています。動画やLIVEに付けられる商品もショーケースにある物だけなので、TikTokの中で商品を紹介するときは必ずここを通ります。使える条件から受け取りまでを、日本向けの公式ヘルプで整理します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>ショーケースが動画・LIVE・プロフィールとどうつながっているか</li><li>使える条件（申請基準7つと本人確認）と、使えなくなる条件</li><li>コミッションの計算式と、ショーケースでつまずきやすい場面</li></ul></div>
+<p>収益化の全体像は<a href="https://leam.co.jp/column/creator-monetization/">TikTok Shopで稼ぐ方法</a>、案件の探し方は<a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターの使い方</a>で扱っています。ここではショーケースそのものに話を限ります。</p>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-monetization/">TikTok Shopで稼ぐ方法｜収益化の条件と始め方</a></b><span>収入源を3つに分けて全体を見る</span></div>
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/affiliate-center-howto/">TikTok Shopアフィリエイトセンターの使い方と案件の探し方</a></b><span>ショーケースに入れる商品の探し方</span></div>
+    <div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-affiliate-start/">TikTok Shopアフィリエイトの始め方【クリエイター向け】</a></b><span>申請から1本目の投稿まで</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">ショーケースに何を入れて、どう紹介するかを一緒に考えます</div><p>LEAMはTikTok Shop特化のMCN（クリエイター事務所）を運営しています。商品選びから案件の受け方までご相談に応じます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/mcn/">クリエイター募集を見る</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=showcase-guide">問い合わせる</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">ショーケースは、紹介する商品をプロフィールに並べる「置き場」</a></li><li><a href="#s2">使える条件は、申請基準7つと本人確認の2段階で決まる</a></li><li><a href="#s3">商品は商品マーケットプレイスの「追加」か、商品URLで入れる</a></li><li><a href="#s4">動画とLIVEに付けた商品の売上が、コミッションの対象になる</a></li><li><a href="#s5">ショーケースリンクを使うと、TikTokの外からの購入も対象にできる</a></li><li><a href="#s6">コミッションは（売上−返金額）×率で決まる</a></li><li><a href="#s7">健全性評価が150以下になると、ショーケースに商品を追加できなくなる</a></li><li><a href="#s8">つまずきやすいのは、名義・空のショーケース・自分での購入の3つ</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>ショーケースは、紹介する商品をプロフィールに並べる「置き場」</h2>
+<p>ショーケースは自分の商品を売る店ではなく、セラー（販売者）のアフィリエイト商品から紹介したい物を選んで並べる場所です。公式ヘルプは、ショーケースにアフィリエイト商品を追加すると対象の購入に対してコミッションを獲得できると説明しており、<strong>コミッション率は商品ごとに異なり、セラーが設定します</strong>。</p>
+<p>開くには、<strong>TikTokのアカウントページでショッピングバッグのアイコンをタップします</strong>。役割は公式ヘルプの記載から3つに分けられ、3つが同じ置き場を共有しています。</p>
+<div class="tw"><table><thead><tr><th>役割</th><th>公式に書かれている内容</th></tr></thead><tbody><tr><td>プロフィールの売り場</td><td>追加した商品はTikTokプロフィールに表示される</td></tr><tr><td>動画・LIVEに付ける商品の元</td><td>動画に追加できるのは、自分のアカウントのショーケースにある商品のみ。商品はショート動画またはLIVE配信のコンテンツにリンクできる</td></tr><tr><td>外に配れる商品リスト</td><td>ショーケースリンクは「クリエイターがまとめた商品リストへのリンク」で、SNSの自己紹介欄などに貼れる</td></tr></tbody></table></div><p class="src">ショーケースの3つの役割（公式ヘルプの記載を整理／2026年10月14日確認）</p>
+  <figure> <svg viewBox="0 0 720 300" role="img" aria-label="左の箱に商品マーケットプレイス・サンプル付きの商品・商品URLの3つの入口があり、中央の黒い箱のショーケースへ集まり、そこから右のショート動画・LIVE配信・プロフィールの3つの売り場へ分かれ、下の点線の帯でショーケースリンクがTikTokの外へつながることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">入口が3つ、売り場が3つ。間にショーケースが1つある</text><rect x="20" y="52" width="170" height="160" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="105" y="80" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">① 商品を入れる</text><text x="105" y="108" text-anchor="middle" font-size="11" fill="#787D8A">商品マーケットプレイス</text><text x="105" y="130" text-anchor="middle" font-size="11" fill="#787D8A">サンプル付きの商品</text><text x="105" y="152" text-anchor="middle" font-size="11" fill="#787D8A">商品URLから追加</text><text x="105" y="190" text-anchor="middle" font-size="11" fill="#C2203A">「追加」をタップ</text><path d="M192 132 L222 132" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M216 126 L228 132 L216 138 Z" fill="#787D8A"/><rect x="232" y="52" width="208" height="160" rx="10" fill="#0B0C10"/><text x="336" y="90" text-anchor="middle" font-size="13.5" font-weight="800" fill="#ffffff">② ショーケース</text><text x="336" y="118" text-anchor="middle" font-size="11" fill="#C9CBD4">プロフィールに表示される</text><text x="336" y="152" text-anchor="middle" font-size="11" fill="#C9CBD4">動画・LIVEに付けられるのは</text><text x="336" y="172" text-anchor="middle" font-size="11" fill="#ffffff">ここにある商品だけ</text><path d="M442 80 L462 72" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M442 132 L462 132" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M442 184 L462 192" stroke="#787D8A" stroke-width="2.5" fill="none"/><rect x="468" y="52" width="232" height="44" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="584" y="79" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">ショート動画（1本に最大10件）</text><rect x="468" y="110" width="232" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="584" y="137" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">LIVE配信で紹介する</text><rect x="468" y="168" width="232" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="584" y="195" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">プロフィールから買われる</text><rect x="20" y="232" width="680" height="48" rx="10" fill="#ffffff" stroke="#787D8A" stroke-width="1.2" stroke-dasharray="6 5"/><text x="360" y="261" text-anchor="middle" font-size="11.5" fill="#454956">③ ショーケースリンク：TikTokの外（SNSの自己紹介欄・ブログなど）からショーケースへ案内できる</text></svg> <figcaption>図1：動画とLIVEでの紹介は、すべてショーケースを通る（LEAM作成）</figcaption> </figure>
+<p>ショーケースが空なら、動画に商品を付ける画面で選べる物がありません。<strong>先に商品を入れ、それから動画やLIVEを作る</strong>のが基本の流れです。売り場全体の組み合わせ方は、柱の記事<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは</a>で図にしています。</p>
+
+<h2 id="s2"><span class="no en">02</span>使える条件は、申請基準7つと本人確認の2段階で決まる</h2>
+<p>ショーケースに商品を入れられるのは、TikTok Shopのクリエイター（アフィリエイトクリエイター）として申請が通った人です。公式ヘルプの申請資格は次の7つで、<strong>すべてを満たす必要があります</strong>。</p>
+<div class="tw"><table><thead><tr><th>申請資格（公式ヘルプの記載）</th><th>自分で確かめる場所・ポイント</th></tr></thead><tbody><tr><td>18歳以上</td><td>本人確認で生年月日を提出する</td></tr><tr><td>TikTokのフォロワーが1,000人以上</td><td>プロフィールのフォロワー数</td></tr><tr><td>「クリエイターの行動規範」に違反していない</td><td>過去の違反通知がないか</td></tr><tr><td>政府、政治家、または政党アカウント（GPPPA）との関係がない</td><td>アカウントの種類</td></tr><tr><td>コンテンツがTikTokコミュニティガイドラインに準拠している</td><td>削除・制限された投稿がないか</td></tr><tr><td>TikTok ShopでEコマース利用資格を取り消されたことがない</td><td>以前のアカウントでの履歴</td></tr><tr><td>リンクされたTikTok Shopアカウントに違反リスクがない</td><td>連携している販売者側の状態</td></tr></tbody></table></div><p class="src">クリエイターの申請資格（公式ヘルプの記載を整理／2026年10月14日確認。右列は当社の読み替え）</p>
+<p>申請は<strong>アカウントページ右上のメニュー → TikTok Studio → 収益化の「クリエイター用TikTok Shop」→「申し込む」</strong>の順に進みます（公式ヘルプの手順）。</p>
+<h3>本人確認を終えるまで、ショーケースに商品を追加できない</h3>
+<p>公式ヘルプは、<strong>ショッパブル動画の投稿、LIVE配信、ショーケースへの商品の追加、収益の出金などを始める前に、本人確認と年齢確認を完了するよう求められる</strong>と書いています。つまり申請が通っただけではショーケースは使えず、本人確認が2段目の関門です。身分証明書はマイナンバーカード、日本の運転免許証、パスポート、日本の在留カードの4種類から選びます。</p>
+<div class="box box-warn"><div class="bt">⚠️ 書類で差し戻されないために見る点</div><p>公式ヘルプは、書類が有効期限内であること、書類の情報と手入力した情報が一致していること、書類全体が写っていて編集されていないことを求めています。ファイルは5MB未満のPDF・JPEG（JPG）・PNGです。</p></div>
+<p>条件をすべて満たしているのにECセンターが表示されない場合は、「設定とプライバシー」からヘルプセンターへ問い合わせるよう案内されています。申請の流れ全体は<a href="https://leam.co.jp/column/creator-affiliate-start/">アフィリエイトの始め方</a>にまとめています。</p>
+
+<h2 id="s3"><span class="no en">03</span>商品は商品マーケットプレイスの「追加」か、商品URLで入れる</h2>
+<p>ショーケースへの入口として公式ヘルプが手順を示しているのは、商品マーケットプレイスです。公式は商品マーケットプレイスを「クリエイターがプロモーションしたい商品を探し、ショーケースに追加するための場所」と定義しています。</p>
+<ol class="steps"><li><b>クリエイターセンターに入る</b><p>アカウントページのショッピングバッグのアイコンからショーケースを開き、「TikTok Shop」をタップします。</p></li><li><b>商品マーケットプレイスを開く</b><p>クリエイターセンターを下にスクロールし、「TikTok Shopツールキット」の最初のボタンが商品マーケットプレイスです。</p></li><li><b>商品を選んで「追加」をタップする</b><p>商品詳細の「追加」をタップすると、その商品がショーケースに入り、プロフィールに表示されます。</p></li></ol>
+<div class="tw"><table><thead><tr><th>入れ方</th><th>操作（公式ヘルプの手順）</th><th>向いている場面</th></tr></thead><tbody><tr><td>商品マーケットプレイスで探す</td><td>商品詳細の「追加」をタップする</td><td>紹介する商品をこれから決める</td></tr><tr><td>サンプル付きの商品を入れる</td><td>商品名の下にタグが付いた商品で「追加する」をタップ。追加後にサンプルを申請するボタンが表示される</td><td>実物を使ってから紹介したい</td></tr><tr><td>商品URLから入れる</td><td>商品マーケットプレイス右上の「+」→「商品URL」を選び、TikTok Shopのリンクから追加する</td><td>紹介する商品がすでに決まっている</td></tr></tbody></table></div><p class="src">ショーケースへの商品の入れ方（公式ヘルプの記載を整理／2026年10月14日確認）</p>
+<p>何を入れるかについて、公式FAQは<strong>最初に注意すべきは商品の品質</strong>で、商品や販売者の評価を見たうえでコミッション率や価格を考えるよう勧めています。案件の探し方は<a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターの使い方</a>、サンプルを受け取ってからの対応は<a href="https://leam.co.jp/column/sample-request/">サンプル申請のやり方</a>で詳しく扱っています。</p>
+<div class="box box-point"><div class="bt">💡 入れる数より、紹介する予定があるかで選ぶ</div><p>当社の運用実感では、ショーケースは「紹介する予定の商品」に絞ったほうが、プロフィールから来た人が選びやすくなります。</p></div>
+
+<h2 id="s4"><span class="no en">04</span>動画とLIVEに付けた商品の売上が、コミッションの対象になる</h2>
+<p>ショーケースに入れただけでは、まだ紹介は始まっていません。公式ヘルプは「アフィリエイトクリエイターがコミッションを受け取るには、コンテンツまたはアカウントに商品リンクを設定する必要がある」とし、<strong>コミッションの対象となるのは、ショーケースとコンテンツに追加した商品の売上のみ</strong>と注記しています。</p>
+<p>ショート動画では、編集が終わったら「リンクを追加」をタップし、ショーケースから商品を選んで追加します。投稿後は、動画を見た人がショッピングカートのボタンから商品ページへ進んで購入できます。</p>
+<div class="tw"><table><thead><tr><th>確かめたいこと</th><th>公式ヘルプの回答</th></tr></thead><tbody><tr><td>1つの動画に付けられる商品リンクの数</td><td>最大10件</td></tr><tr><td>動画に付けられる商品</td><td>自分のアカウントのショーケースにある商品のみ</td></tr><tr><td>LIVE配信での扱い</td><td>ショーケースの商品はショート動画またはLIVE配信のコンテンツにリンクできる</td></tr><tr><td>視聴者が買う場所</td><td>動画のショッピングカートボタンから商品ページへ進む</td></tr></tbody></table></div><p class="src">動画・LIVEに商品を付けるときのルール（公式ヘルプの記載を整理／2026年10月14日確認）</p>
+<p>何件付けるべきかは公式に書かれていません。動画で実際に見せた商品とカートの商品が一致していることのほうが大切です。動画の組み立ては<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方</a>、LIVEでの紹介は<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>で扱っています。投稿済みの動画にあとから商品を付ける方法は、<a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターの記事</a>の§06にあります。</p>
+
+<h2 id="s5"><span class="no en">05</span>ショーケースリンクを使うと、TikTokの外からの購入も対象にできる</h2>
+<p>ショーケースは、TikTokの外にも持ち出せます。公式ヘルプはクリエイターがシェアできるリンクを3種類に分けており、そのうち<strong>ショーケースリンクは「クリエイターがまとめた商品リストへのリンク」</strong>です。ショーケースを開いて「シェア」→「リンクをコピー」と進むと、成果報酬を受け取るための追跡可能な固有リンクが作られます。貼り先はSNSの自己紹介欄、記事、DMなど、どこでも構わないとされています。</p>
+<div class="tw"><table><thead><tr><th>比べる点</th><th>商品リンク</th><th>ショーケースリンク</th></tr></thead><tbody><tr><td>リンク先</td><td>特定の商品</td><td>クリエイターがまとめた商品リスト</td></tr><tr><td>成果報酬が付く購入</td><td>リンク経由でその商品が購入されたとき</td><td>リンク経由でクリエイターのショーケースから商品が購入されたとき</td></tr><tr><td>閲覧数とクリック数</td><td>商品ページに直接進むため、カード閲覧数は数えない</td><td>先に商品カードが表示されるため、閲覧数とクリック数の両方を数える</td></tr><tr><td>有効期限</td><td colspan="2">作成から100日。切れたら「シェア」から作り直す</td></tr><tr><td>成果になる購入</td><td colspan="2">リンクをクリックしてから14日以内の購入のみ</td></tr><tr><td>成果報酬率</td><td colspan="2">カート付き動画やLIVEで販売する場合とまったく同じ</td></tr></tbody></table></div><p class="src">商品リンクとショーケースリンクの違い（公式ヘルプの記載を整理／2026年10月14日確認）</p>
+  <figure> <svg viewBox="0 0 720 236" role="img" aria-label="作成から100日間有効なリンクの帯の上で、クリックした日から14日間だけが赤く塗られ、その間の購入が成果報酬の対象で、15日目以降の購入は対象外であることを示し、下の2つの箱で商品リンクとショーケースリンクの数え方の違いを並べた図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">リンクの寿命は100日、成果になるのはクリックから14日</text><text x="40" y="58" font-size="11" fill="#787D8A">作成</text><text x="680" y="58" text-anchor="end" font-size="11" fill="#787D8A">100日で期限切れ</text><rect x="40" y="66" width="640" height="16" rx="8" fill="#DFE0E2"/><rect x="296" y="66" width="90" height="16" rx="4" fill="#E8324A"/><path d="M290 98 L296 86 L302 98 Z" fill="#0B0C10"/><text x="296" y="116" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">クリック</text><text x="341" y="136" text-anchor="middle" font-size="11" fill="#C2203A">14日以内の購入は対象</text><text x="540" y="116" text-anchor="middle" font-size="11" fill="#787D8A">15日目以降の購入は対象外</text><rect x="20" y="156" width="330" height="62" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="185" y="182" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">商品リンク</text><text x="185" y="204" text-anchor="middle" font-size="11" fill="#787D8A">商品ページへ直行。カード閲覧数は数えない</text><rect x="370" y="156" width="330" height="62" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="535" y="182" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">ショーケースリンク</text><text x="535" y="204" text-anchor="middle" font-size="11" fill="#787D8A">商品カードが先に出る。閲覧とクリックを両方数える</text></svg> <figcaption>図2：クリックから14日を過ぎた購入は成果にならない（LEAM作成）</figcaption> </figure>
+<p>押さえておきたいのは、<strong>リンクを作るだけならショーケースに追加する必要はない</strong>ことです。公式FAQは「任意の商品、キャンペーン、ショーケースへのリンクを直接作成してシェアできます」と答えています。ショーケースが必須なのは、TikTokの中で動画やLIVEに付けるときです（§04）。</p>
+<p>リンクから買った人が同じショップの別の商品も一緒に買った場合、公式FAQは<strong>リンク先と同じショップの商品であれば満額の成果報酬率が適用される</strong>としています。結果はアフィリエイトセンターの「パフォーマンスデータ」→「データ」→「リンクパフォーマンス」で確認できます。リンクの種類で閲覧数の数え方が違うので、種類をまたいでクリック率を比べるのは避けてください。</p>
+
+<h2 id="s6"><span class="no en">06</span>コミッションは（売上−返金額）×率で決まる</h2>
+<p>ショーケース経由で売れた商品のコミッションは、公式ヘルプで<strong>コミッション ＝（売上 − 返金額）× コミッション率</strong>と決まっています。受け取りの時期や出金の条件はショーケースではなくセラーの精算タイプと口座の登録で決まるため、<a href="https://leam.co.jp/column/creator-payout/">報酬の支払いと出金の記事</a>にまとめています。</p>
+
+<h2 id="s7"><span class="no en">07</span>健全性評価が150以下になると、ショーケースに商品を追加できなくなる</h2>
+<p>申請が通ったあとも、ショーケースをずっと使える保証はありません。クリエイター・パフォーマンス評価ポリシーには、クリエイターの健全性評価（CHR）が下がったときの措置が段階的に書かれており、<strong>150ポイント以下で「商品ショーケースへの商品追加」が止まります</strong>。CHRはスコアが0〜1,000で、新規クリエイターは200ポイントから始まり、クリエイターセンターの「クリエイター用TikTok Shop」で自分にだけ表示されます。</p>
+<div class="tw"><table><thead><tr><th>健全性評価（CHR）</th><th>公式ポリシーに書かれている措置</th></tr></thead><tbody><tr><td>199ポイント以下</td><td>警告が表示され、健全性評価の確認を促す通知が届く</td></tr><tr><td>150ポイント以下</td><td>ショッピング動画の作成、LIVE配信、商品ショーケースへの商品追加が3日間できなくなる</td></tr><tr><td>100ポイント以下</td><td>同じく7日間できなくなる</td></tr><tr><td>50ポイント以下</td><td>同じく14日間できなくなる</td></tr><tr><td>0ポイント</td><td>Eコマースのクリエイター利用資格が永久に取り消される</td></tr></tbody></table></div><p class="src">健全性評価の段階と措置（クリエイター・パフォーマンス評価ポリシーの記載を整理／2026年10月14日確認）</p>
+  <figure> <svg viewBox="0 0 720 246" role="img" aria-label="左の0から右の200以上までを1本の目盛りにし、1から150を赤、151から199を薄い赤、200以上を灰色で塗り分け、目盛りの下に0で資格の取り消し、50以下で14日、100以下で7日、150以下で3日、199以下で警告と、止まる期間が下がるほど長くなることを並べた図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">ポイントが下がるほど、止まる期間が長くなる</text><rect x="40" y="62" width="450" height="22" rx="4" fill="#E8324A"/><rect x="490" y="62" width="147" height="22" rx="4" fill="#FFECF0"/><rect x="637" y="62" width="53" height="22" rx="4" fill="#DFE0E2"/><text x="265" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#C2203A">1〜150：非アクティブ化のリスクあり</text><text x="563" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">151〜199：改善が必要</text><text x="664" y="54" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">200〜</text><path d="M40 84 L40 100 M190 84 L190 100 M340 84 L340 100 M490 84 L490 100 M637 84 L637 100" stroke="#0B0C10" stroke-width="2"/><text x="40" y="120" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">0</text><text x="190" y="120" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">50</text><text x="340" y="120" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">100</text><text x="490" y="120" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">150</text><text x="637" y="120" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">199</text><text x="58" y="144" text-anchor="middle" font-size="11" fill="#C2203A">資格の取消</text><text x="190" y="144" text-anchor="middle" font-size="11" fill="#C2203A">14日停止</text><text x="340" y="144" text-anchor="middle" font-size="11" fill="#C2203A">7日停止</text><text x="490" y="144" text-anchor="middle" font-size="11" fill="#C2203A">3日停止</text><text x="637" y="144" text-anchor="middle" font-size="11" fill="#787D8A">警告</text><rect x="20" y="166" width="680" height="62" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="192" text-anchor="middle" font-size="11.5" fill="#454956">止まるのは、ショッピング動画の作成・LIVE配信・ショーケースへの商品追加</text><text x="360" y="214" text-anchor="middle" font-size="11" fill="#787D8A">新規クリエイターは200から始まり、加点は毎週月曜日に反映される</text></svg> <figcaption>図3：150以下に入ると、ショーケースに商品を足せない期間が生まれる（LEAM作成）</figcaption> </figure>
+<p>ポイントは戻せます。ポリシーによると、違反記録がなく過去180日以内に対象注文が1件以上ある状態で投稿すると1本ごとに1ポイント、過去180日以内の完了注文50件ごとに1ポイント加算されます（どちらも週に最大5ポイント）。加点は毎週月曜日に反映されて90日間有効で、減点は違反日から90日後にリセットされます。</p>
+<p>ショーケースに関わる違反で特に気を付けたいのが、次の節の「偽の注文」です。健全性評価の見方は、<a href="https://leam.co.jp/column/creator-affiliate-start/">アフィリエイトの始め方</a>でも扱っています。</p>
+
+<h2 id="s8"><span class="no en">08</span>つまずきやすいのは、名義・空のショーケース・自分での購入の3つ</h2>
+<p>ショーケースまわりで止まりやすい場面を、公式ヘルプの記載をもとに並べます。</p>
+<div class="tw"><table><thead><tr><th>起きること</th><th>原因（公式ヘルプの記載）</th><th>対処</th></tr></thead><tbody><tr><td>コミッションが出金できない</td><td>登録した氏名と受取口座の名義が一致していない。氏名は本人確認情報の提出後に変更できない</td><td>申請前に、本人確認書類・氏名・口座の表記を揃えておく</td></tr><tr><td>動画に商品を付けられない</td><td>動画に追加できるのはショーケースにある商品のみ</td><td>先に商品マーケットプレイスで「追加」してから動画を編集する</td></tr><tr><td>ショーケースに商品を追加できない</td><td>本人確認が終わっていない、または健全性評価が150以下</td><td>確認センターの状態とCHRを確かめる（§02・§07）</td></tr><tr><td>売れたのにコミッションが¥0のまま</td><td>精算が終わるまで「未精算」ページでは¥0と表示される</td><td>配達完了日とセラーの精算タイプから支払日を数える</td></tr><tr><td>コミッションが消えた・減った</td><td>受け取り前のキャンセル、アフターサービス期間中の返金申請、一部返金</td><td>一部返金なら、返金後の金額にもとづく一部だけが支払われる</td></tr></tbody></table></div><p class="src">ショーケースでつまずきやすい場面（公式ヘルプの記載をもとに当社が整理／2026年10月14日確認）</p>
+<h3>自分のショーケースから自分で買うと、偽の注文になる</h3>
+<p>公式の禁止行為のガイドラインは、正規の購入者によって行われていない注文を「偽の注文」とし、例として<strong>偽の販売実績やトラフィックをつくる目的、プラットフォームの特典や奨励金を悪用する目的、キャンペーンの報酬を得る目的で、自分のショーケース・ショート動画・LIVE配信を介して注文すること</strong>を挙げています。クリエイターとつながっている人による注文や、アカウントを持っていない人の代わりの注文も含まれます。</p>
+<p>違反するとコンテンツやアカウントに強制措置が取られます。プロモーションをしないまま無料サンプルを繰り返し要求することも、有害な行為として挙げられています。ポリシーに違反すると健全性評価からポイントが減点されることがあるため、§07の段階的な措置にもつながりえます。</p>
+<div class="box box-warn"><div class="bt">⚠️ ショーケースの数字は、他人の購入でしか増やせない</div><p>自分や身内の購入で作った数字は、偽の注文として扱われる可能性があります。</p></div>
+
+<h2 id="summary"><span class="no en">09</span>まとめ</h2>
+<p>ショーケースは、動画とLIVEで商品を紹介するときに必ず通る置き場です。上から順に確かめてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 申請基準7つを満たす</b><br>18歳以上・フォロワー1,000人以上など、すべてを満たして「クリエイター用TikTok Shop」から申し込む</div><div class="summary-item"><b>2. 本人確認を終える</b><br>終えるまでショーケースに商品を追加できない。氏名と受取口座の名義を揃えておく</div><div class="summary-item"><b>3. 商品を入れる</b><br>商品マーケットプレイスの「追加」か商品URLで入れる。最初に見るのは品質</div><div class="summary-item"><b>4. 動画・LIVEに付ける</b><br>付けられるのはショーケースの商品だけで、動画1本に最大10件</div><div class="summary-item"><b>5. ショーケースリンクで外に出す</b><br>有効期限は100日、成果になるのはクリックから14日以内の購入</div><div class="summary-item"><b>6. コミッションの式を押さえる</b><br>（売上−返金額）×率。受け取りの時期はセラーの精算タイプで決まる</div></div>
+
+<h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopのショーケースとは何ですか？</summary><div class="a">クリエイターが紹介する商品を入れておく置き場です。追加した商品はプロフィールに表示され、ショート動画やLIVE配信にリンクできます。売れるとセラーが設定した率でコミッションを受け取れます。</div></details><details><summary>TikTok Shopのショーケースを使うには、フォロワーは何人必要ですか？</summary><div class="a">公式ヘルプの申請資格では1,000人以上です。18歳以上であることなど7つの基準をすべて満たし、本人確認と年齢確認を終えるとショーケースに商品を追加できます。</div></details><details><summary>TikTok Shopのショーケースが空のまま、動画に商品を付けようとするとどうなりますか？</summary><div class="a">公式FAQによると、ショーケースが空の状態で「商品マーケットプレイス」から動画に商品を追加しようとすると、新規動画の作成を求められます。投稿済みの動画に「商品をリンク」で付けたいときも、先にショーケースへ商品を追加しておく必要があります。</div></details><details><summary>TikTok Shopのショーケースに入れた商品は、どこで整理・並べ替えできますか？</summary><div class="a">公式ヘルプでは、登録した商品はクリエイターセンターの「その他機能」にある「ショーケースを管理」で管理でき、ショーケースの外観もここから管理できるとされています。LIVE向けには「LIVE商品セット」があり、ショーケースなどから商品を選んでテーマやプロモーション、視聴者の好みでグループ分けし、配信時に一括で追加できます。ショーケース内の並び順を変える細かな操作は、確認した日本向けの公式ヘルプには書かれていません。</div></details><details><summary>TikTok Shopの健全性評価が下がると、ショーケースはどうなりますか？</summary><div class="a">150ポイント以下で3日間、100以下で7日間、50以下で14日間、ショーケースへの商品追加などができなくなり、0ポイントで利用資格が永久に取り消されます。</div></details><details><summary>自分のTikTok Shopショーケースから、自分で商品を買ってもよいですか？</summary><div class="a">販売実績づくりや特典・報酬を得る目的で自分のショーケースなどを介して注文することは、公式のガイドラインで「偽の注文」とされ、違反すると強制措置の対象になります。</div></details></div>
+
+<div class="ctabox"><div class="ct">ショーケースを収益につなげる動き方を、一緒に設計します</div><p>LEAMはTikTok Shop特化のMCNを運営しています。商品の選び方、投稿とLIVEの組み立て、案件の受け方までご相談に応じます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/mcn/">クリエイター募集を見る</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=showcase-guide">問い合わせる</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">11</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787227408&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shopクリエイターになるための申請方法</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786965264&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：商品マーケットプレイスの使い方</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787096336&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：動画に商品を追加する方法</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=1280227327674128&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：既存動画にショッピングカートを追加する方法</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787030800&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shopクリエイターセンターとは？</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=111532143068929&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：LIVE販売の準備と商品の選択方法</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=1341131783178001&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトリンクの作成とシェア</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5554058321364752&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：日本のクリエイター向けコミッションと支払い</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトプログラムのよくある質問</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2709643852121873&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイター・パフォーマンス評価ポリシー</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2733826023753473&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイターの禁止行為</a>（2026年10月14日確認）</li></ul>
+<p class="src">仕様、画面名称、申請資格、精算の条件は更新されることがあります。本記事は2026年10月14日時点で確認できた日本向け公式情報と、当社が作成した整理を区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組みをセラー向けに解説</a></b><span>ショーケースを含む3つの売り場の全体像</span></div><div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/creator-payout/">TikTok Shopの報酬はいつ入る？支払いと出金</a></b><span>受け取りと出金をさらに詳しく</span></div><div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/sample-request/">TikTok Shopのサンプル申請のやり方【クリエイター向け】</a></b><span>サンプル付きの商品を入れたあと</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">ショーケースは、紹介する商品をプロフィールに並べる「置き場」</a></li><li><a href="#s2">使える条件は、申請基準7つと本人確認の2段階で決まる</a></li><li><a href="#s3">商品は商品マーケットプレイスの「追加」か、商品URLで入れる</a></li><li><a href="#s4">動画とLIVEに付けた商品の売上が、コミッションの対象になる</a></li><li><a href="#s5">ショーケースリンクを使うと、TikTokの外からの購入も対象にできる</a></li><li><a href="#s6">コミッションは（売上−返金額）×率で決まる</a></li><li><a href="#s7">健全性評価が150以下になると、ショーケースに商品を追加できなくなる</a></li><li><a href="#s8">つまずきやすいのは、名義・空のショーケース・自分での購入の3つ</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイターの方へ</b><p>ショーケースと案件の動かし方をご相談ください。</p><a class="btn btn-p" href="https://leam.co.jp/mcn/">クリエイター募集を見る</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopのショーケースとは何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "クリエイターが紹介する商品を入れておく置き場です。追加した商品はプロフィールに表示され、ショート動画やLIVE配信にリンクできます。売れるとセラーが設定した率でコミッションを受け取れます。"}}, {"@type": "Question", "name": "TikTok Shopのショーケースを使うには、フォロワーは何人必要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプの申請資格では1,000人以上です。18歳以上であることなど7つの基準をすべて満たし、本人確認と年齢確認を終えるとショーケースに商品を追加できます。"}}, {"@type": "Question", "name": "TikTok Shopのショーケースが空のまま、動画に商品を付けようとするとどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式FAQによると、ショーケースが空の状態で「商品マーケットプレイス」から動画に商品を追加しようとすると、新規動画の作成を求められます。投稿済みの動画に「商品をリンク」で付けたいときも、先にショーケースへ商品を追加しておく必要があります。"}}, {"@type": "Question", "name": "TikTok Shopのショーケースに入れた商品は、どこで整理・並べ替えできますか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプでは、登録した商品はクリエイターセンターの「その他機能」にある「ショーケースを管理」で管理でき、ショーケースの外観もここから管理できるとされています。LIVE向けには「LIVE商品セット」があり、ショーケースなどから商品を選んでテーマやプロモーション、視聴者の好みでグループ分けし、配信時に一括で追加できます。ショーケース内の並び順を変える細かな操作は、確認した日本向けの公式ヘルプには書かれていません。"}}, {"@type": "Question", "name": "TikTok Shopの健全性評価が下がると、ショーケースはどうなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "150ポイント以下で3日間、100以下で7日間、50以下で14日間、ショーケースへの商品追加などができなくなり、0ポイントで利用資格が永久に取り消されます。"}}, {"@type": "Question", "name": "自分のTikTok Shopショーケースから、自分で商品を買ってもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "販売実績づくりや特典・報酬を得る目的で自分のショーケースなどを介して注文することは、公式のガイドラインで「偽の注文」とされ、違反すると強制措置の対象になります。"}}]}</script>
+</body>
+</html>

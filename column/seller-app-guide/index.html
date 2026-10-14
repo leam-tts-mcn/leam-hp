@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopセラーアプリの使い方｜スマホでできること</title>
+<meta name="description" content="TikTok Shopのセラーアプリで毎日やる問い合わせ・セール・LIVE操作と、PCのセラーセンターに残す一括登録やSKU別の設定の分け方を、公式ヘルプで確かめた範囲で整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/seller-app-guide/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopセラーアプリの使い方｜スマホでできること">
+<meta property="og:description" content="TikTok Shopのセラーアプリで毎日やる問い合わせ・セール・LIVE操作と、PCのセラーセンターに残す一括登録やSKU別の設定の分け方を、公式ヘルプで確かめた範囲で整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/seller-app-guide/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/seller-app-guide.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopセラーアプリの使い方｜スマホでできること">
+<meta name="twitter:description" content="TikTok Shopのセラーアプリで毎日やる問い合わせ・セール・LIVE操作と、PCのセラーセンターに残す一括登録やSKU別の設定の分け方を、公式ヘルプで確かめた範囲で整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/seller-app-guide.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopセラーアプリの使い方｜スマホでできること", "description": "TikTok Shopのセラーアプリで毎日やる問い合わせ・セール・LIVE操作と、PCのセラーセンターに残す一括登録やSKU別の設定の分け方を、公式ヘルプで確かめた範囲で整理します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/seller-app-guide/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/seller-app-guide.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=91682772518672&lang=ja-JP", "name": "TikTok Shop公式：期間限定セール"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2484817200744193&lang=ja-JP", "name": "TikTok Shop公式：動画事前チェックツール ガイド"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=109353152759553&lang=ja-JP", "name": "TikTok Shop公式：LIVEマネージャー"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=4767517739714305&lang=ja-JP", "name": "TikTok Shop公式：LIVEオークション（カウントダウン入札）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171403024&lang=ja-JP", "name": "TikTok Shop公式：顧客とコミュニケーションをとる方法"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=418411084547857&lang=ja-JP", "name": "TikTok Shop公式：アカウントプロフィール（マイアカウント）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=69203995543313&lang=ja-JP", "name": "TikTok Shop公式：セラー登録"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopセラーアプリの使い方｜スマホでできること", "item": "https://leam.co.jp/column/seller-app-guide/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=seller-app-guide">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopセラーアプリの使い方｜スマホでできることとPCに残す作業の分け方</p>
+<span class="cat">運用の基本</span>
+<h1>TikTok Shopセラーアプリの使い方｜スマホでできることとPCに残す作業の分け方</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="セラーアプリとPCの分担：左の赤いスマホの画面では、チャットと荷物と通知の3枚のカードのうち2枚にシアンのチェックが付き、そこからシアンの矢印が右の白いパソコンへ伸びて、表の形をした一括作業の画面とアップロードの印が待っている様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v306c-104 34-200 36-304 14-112-24-204-50-316-44-112 6-198 50-310 60-100 9-190-4-270-34z" fill="#F6F7F9"/>
+  <ellipse cx="860" cy="250" rx="320" ry="200" fill="#EFF1F4"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="sellerappguideDots">
+      <circle cx="470" cy="60" r="5"/><circle cx="506" cy="60" r="5"/><circle cx="542" cy="60" r="5"/><circle cx="578" cy="60" r="5"/>
+      <circle cx="470" cy="96" r="5"/><circle cx="506" cy="96" r="5"/><circle cx="542" cy="96" r="5"/><circle cx="578" cy="96" r="5"/>
+      <circle cx="470" cy="132" r="5"/><circle cx="506" cy="132" r="5"/><circle cx="542" cy="132" r="5"/><circle cx="578" cy="132" r="5"/>
+    </g>
+    <use href="#sellerappguideDots" transform="translate(-420 430)"/>
+  </g>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 516c156-28 282-12 414 10 132 22 248 28 368 8 118-20 230-42 418-26v122H0z" fill="#ECEEF1"/>
+
+  <!-- ================= 右：PCのセラーセンター（一括の作業） ================= -->
+  <g>
+    <rect x="640" y="104" width="470" height="318" rx="22" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <path d="M832 422h86l14 64h-114z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="782" y="482" width="186" height="20" rx="10" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="640" y="104" width="470" height="318" rx="22" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="668" y="132" width="414" height="262" rx="10" fill="#F6F7F9" stroke="#C9CBD0" stroke-width="4"/>
+    <!-- 表の見出し行 -->
+    <rect x="688" y="152" width="374" height="30" rx="7" fill="#C9CBD0"/>
+    <!-- 表の行 -->
+    <g fill="#DFE0E2">
+      <rect x="688" y="198" width="104" height="22" rx="6"/><rect x="806" y="198" width="146" height="22" rx="6"/>
+      <rect x="688" y="234" width="104" height="22" rx="6"/><rect x="806" y="234" width="146" height="22" rx="6"/>
+      <rect x="688" y="270" width="104" height="22" rx="6"/><rect x="806" y="270" width="146" height="22" rx="6"/>
+      <rect x="688" y="306" width="104" height="22" rx="6"/><rect x="806" y="306" width="146" height="22" rx="6"/>
+      <rect x="688" y="342" width="104" height="22" rx="6"/><rect x="806" y="342" width="146" height="22" rx="6"/>
+    </g>
+    <g fill="#25F4EE">
+      <rect x="966" y="198" width="96" height="22" rx="6"/>
+      <rect x="966" y="234" width="96" height="22" rx="6"/>
+      <rect x="966" y="270" width="96" height="22" rx="6"/>
+      <rect x="966" y="306" width="96" height="22" rx="6"/>
+      <rect x="966" y="342" width="96" height="22" rx="6"/>
+    </g>
+    <!-- アップロードの印 -->
+    <circle cx="1100" cy="112" r="40" fill="#5E6064" opacity=".14" transform="translate(7 9)"/>
+    <circle cx="1100" cy="112" r="40" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M1100 134v-42M1082 108l18-18 18 18" fill="none" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= 左：セラーアプリ（主役・赤） ================= -->
+  <g transform="rotate(-6 290 330)">
+    <rect x="170" y="108" width="252" height="420" rx="36" fill="#5E6064" opacity=".15" transform="translate(11 13)"/>
+    <rect x="170" y="108" width="252" height="420" rx="36" fill="#CE1730"/>
+    <rect x="170" y="108" width="234" height="420" rx="36" fill="#FE2C55"/>
+    <rect x="262" y="118" width="58" height="8" rx="4" fill="#CE1730"/>
+    <rect x="192" y="140" width="194" height="356" rx="16" fill="#FFFFFF"/>
+
+    <!-- カード1：問い合わせ（済み） -->
+    <rect x="206" y="160" width="166" height="88" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M222 182h46a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8h-28l-12 10v-10h-6a8 8 0 0 1-8-8v-22a8 8 0 0 1 8-8z" fill="#DFE0E2"/>
+    <rect x="288" y="190" width="40" height="9" rx="4.5" fill="#DFE0E2"/>
+    <circle cx="350" cy="214" r="15" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M343 214l5 6 10-11" fill="none" stroke="#0B0C10" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- カード2：発送（済み） -->
+    <rect x="206" y="262" width="166" height="88" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="222" y="282" width="52" height="46" rx="6" fill="#DFE0E2"/>
+    <path d="M222 298h52M248 282v16" fill="none" stroke="#C9CBD0" stroke-width="4"/>
+    <rect x="288" y="292" width="40" height="9" rx="4.5" fill="#DFE0E2"/>
+    <circle cx="350" cy="316" r="15" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+    <path d="M343 316l5 6 10-11" fill="none" stroke="#0B0C10" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- カード3：新しい通知（これから） -->
+    <rect x="206" y="364" width="166" height="88" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M232 422c0-6 4-8 4-16a14 14 0 0 1 28 0c0 8 4 10 4 16z" fill="#DFE0E2"/>
+    <circle cx="250" cy="428" r="5" fill="#DFE0E2"/>
+    <circle cx="266" cy="390" r="7" fill="#FE2C55"/>
+    <rect x="288" y="394" width="40" height="9" rx="4.5" fill="#DFE0E2"/>
+    <rect x="335" y="403" width="30" height="30" rx="8" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="4"/>
+
+    <rect x="170" y="108" width="252" height="420" rx="36" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ================= スマホ → PC へ渡す矢印（シアン） ================= -->
+  <g>
+    <path d="M446 352C506 352 548 330 566 284L550 274 594 246 604 298 586 294C566 352 516 378 448 378Z" fill="#5E6064" opacity=".14" transform="translate(8 10)"/>
+    <path d="M446 352C506 352 548 330 566 284L550 274 594 246 604 298 586 294C566 352 516 378 448 378Z" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1148" cy="560" r="16" fill="#FE2C55"/>
+  <circle cx="618" cy="190" r="13" fill="#DFE0E2"/>
+  <circle cx="96" cy="250" r="14" fill="#25F4EE"/>
+</svg>
+    <figcaption>セラーアプリ（スマホ）とPCのセラーセンターの分担（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopのセラーアプリは、スマホからショップを運営するための管理アプリです。公式ヘルプを読むと、アプリで手順が案内されている操作は<strong>期間限定セールの作成、投稿前の動画チェック、LIVE中の商品操作</strong>などに限られ、バリエーション単位の設定や一括アップロードはPCのセラーセンターで行う前提になっています。この記事では、公式ヘルプで確かめられた範囲だけを使って、スマホで毎日やることとPCに残す作業の分け方を整理します。PCのセラーセンター全体の使い方は<a href="https://leam.co.jp/column/seller-center-guide/">セラーセンターの使い方</a>、問い合わせへの返信文の作り方は<a href="https://leam.co.jp/column/tiktok-shop-customer-support/">顧客対応の返信テンプレート</a>で扱っているので、ここでは繰り返しません。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>公式ヘルプで確認できる、セラーアプリでできる操作と制約</li><li>注文・問い合わせ・LIVE・データ確認を、スマホとPCのどちらで行うか</li><li>スマホ運用を始める前に整えておくログインと通知の設定</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？</a></b><span>売り方と仕組みの全体像</span></div>
+    <div class="relcard"><span class="rc">運用の基本</span><b><a href="https://leam.co.jp/column/seller-center-guide/">TikTok Shopセラーセンターの使い方</a></b><span>PCで行う初期設定と商品登録</span></div>
+    <div class="relcard"><span class="rc">顧客対応</span><b><a href="https://leam.co.jp/column/tiktok-shop-customer-support/">TikTok Shopの顧客対応</a></b><span>スマホから送る返信文の型</span></div>
+  </div>
+</div>
+<div class="ctabox"><div class="ct">スマホとPCの役割分担を、自社の体制に合わせて決めます</div><p>担当者の人数、LIVEの頻度、商品数を伺い、どの作業をスマホに寄せ、どこをPCに残すかを無料で整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=seller-app-guide">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">セラーアプリは「1件ずつ即対応」の道具で、まとめて作る作業はPCに残す</a></li><li><a href="#s2">公式ヘルプで手順まで確かめられるアプリの操作は、まだ多くない</a></li><li><a href="#s3">期間限定セールは、アプリだと商品単位・1回20商品まで</a></li><li><a href="#s4">問い合わせは、スマホで「20時間」の表示が出る前に返す</a></li><li><a href="#s5">LIVEは、PCで配信を始めてスマホで商品を動かす二台体制にする</a></li><li><a href="#s6">注文・発送とデータ確認は、スマホで気づきPCで締める</a></li><li><a href="#s7">スマホ運用の前に、ログインと通知の設定を整える</a></li><li><a href="#s8">1日の運用は、朝・日中・LIVE・週1回の4つの時間帯で分ける</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>セラーアプリは「1件ずつ即対応」の道具で、まとめて作る作業はPCに残す</h2>
+<p>最初に呼び方を揃えます。公式ヘルプの中でも、スマホ向けの管理アプリの呼び方は記事ごとに違います。動画の事前チェックの記事では<strong>「セラーアプリ」</strong>、期間限定セールの記事では<strong>「セラーセンターモバイルアプリ」「セラーセンターアプリ」</strong>、LIVEマネージャーやLIVEオークションの記事では<strong>「モバイルアプリ」「アプリ」</strong>と書かれています。LIVE関連の記事では、どのアプリを指すのかが明記されていない箇所もあります。この記事では、スマホで使うセラー向けの管理アプリを「セラーアプリ」と呼び、LIVE配信そのものを行うTikTokアプリとは分けて書きます。</p>
+<p>分け方の結論は単純です。公式ヘルプの記載を並べると、<strong>アプリでは「1件ずつ」の操作ができ、「まとめて」「細かい単位で」の操作はPCに寄せられている</strong>という線が見えてきます。期間限定セールがその典型で、アプリは商品レベルの設定だけ、一括アップロードは不可と明記されています（§03）。LIVEも、配信の開始やオークションの管理はPCのLIVEマネージャーが中心で、スマホは配信中の商品操作を受け持つ形で案内されています（§05）。</p>
+<div class="tw"><table><thead><tr><th>作業の性質</th><th>向いている場所</th><th>根拠</th></tr></thead><tbody><tr><td>1件の問い合わせに返す、1商品のセールを作る</td><td>セラーアプリ（スマホ）</td><td>期間限定セールはアプリで商品ごとに個別に設定できる（公式ヘルプ）</td></tr><tr><td>バリエーション（SKU）ごとに条件を変える</td><td>PCのセラーセンター</td><td>アプリは商品バリエーションレベルの設定をサポートしない（公式ヘルプ）</td></tr><tr><td>Excelやテンプレートで一括アップロードする</td><td>PCのセラーセンター</td><td>期間限定セールの一括アップロードはPCのプロモーションツールタブから（公式ヘルプ）</td></tr><tr><td>LIVE中に商品をピン留めする</td><td>スマホでもPCでもよい</td><td>デスクトップで配信を始めた後、モバイルアプリの「LIVEの管理」から商品の管理やピン留めができる（公式ヘルプ）</td></tr><tr><td>LIVEの配信開始・オークションの管理</td><td>PCのLIVEマネージャー</td><td>PCのLIVEマネージャー内のLIVE管理から、すべてのLIVEオークションの操作を行える（公式ヘルプ）</td></tr></tbody></table></div><p class="src">スマホとPCの分け方の原則（公式ヘルプの記載をもとにLEAMが整理）</p>
+  <figure> <svg viewBox="0 0 720 300" role="img" aria-label="スマホのセラーアプリとPCのセラーセンターの分担を左右2列で並べた図。左のスマホには問い合わせへの返信、商品単位の期間限定セール、LIVE中のピン留め、投稿前の動画チェックが入り、右のPCにはバリエーション別の設定、一括アップロード、LIVEの開始とオークション管理、週1回の分析が入る。中央に、迷ったら1件ずつかまとめてかで決めると添えている"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">迷ったら「1件ずつか、まとめてか」で決める</text><rect x="20" y="44" width="320" height="214" rx="14" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="180" y="72" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">セラーアプリ（スマホ）</text><text x="180" y="96" text-anchor="middle" font-size="11" fill="#787D8A">1件ずつ・その場で</text><rect x="44" y="110" width="272" height="30" rx="8" fill="#ffffff"/><text x="180" y="130" text-anchor="middle" font-size="12" fill="#454956">問い合わせへの一次返信</text><rect x="44" y="146" width="272" height="30" rx="8" fill="#ffffff"/><text x="180" y="166" text-anchor="middle" font-size="12" fill="#454956">商品単位の期間限定セール</text><rect x="44" y="182" width="272" height="30" rx="8" fill="#ffffff"/><text x="180" y="202" text-anchor="middle" font-size="12" fill="#454956">LIVE中の商品操作・ピン留め</text><rect x="44" y="218" width="272" height="30" rx="8" fill="#ffffff"/><text x="180" y="238" text-anchor="middle" font-size="12" fill="#454956">投稿前の動画チェック</text><rect x="380" y="44" width="320" height="214" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="540" y="72" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">PCのセラーセンター</text><text x="540" y="96" text-anchor="middle" font-size="11" fill="#787D8A">まとめて・細かい単位で</text><rect x="404" y="110" width="272" height="30" rx="8" fill="#ffffff"/><text x="540" y="130" text-anchor="middle" font-size="12" fill="#454956">バリエーション別の設定</text><rect x="404" y="146" width="272" height="30" rx="8" fill="#ffffff"/><text x="540" y="166" text-anchor="middle" font-size="12" fill="#454956">Excelでの一括アップロード</text><rect x="404" y="182" width="272" height="30" rx="8" fill="#ffffff"/><text x="540" y="202" text-anchor="middle" font-size="12" fill="#454956">LIVEの開始とオークション管理</text><rect x="404" y="218" width="272" height="30" rx="8" fill="#ffffff"/><text x="540" y="238" text-anchor="middle" font-size="12" fill="#454956">週1回の分析と振り返り</text><text x="360" y="284" text-anchor="middle" font-size="11.5" fill="#787D8A">左はその日のうちに終わらせる作業、右は時間を取ってまとめて行う作業</text></svg> <figcaption>図1：スマホとPCの分担の地図（公式ヘルプの記載をもとにLEAM作成）</figcaption> </figure>
+<p>PCにしかない操作を「後でスマホでやろう」と残すと作業が止まり、スマホでできる即対応をPCの前に座るまで待つと返信やLIVE中の操作が遅れます。置き場所を先に決めることが、スマホ運用の土台です。</p>
+
+<h2 id="s2"><span class="no en">02</span>公式ヘルプで手順まで確かめられるアプリの操作は、まだ多くない</h2>
+<p>セラーアプリの機能を一覧にした公式ページは、当社が2026年10月14日に日本向けのヘルプを検索した範囲では見当たりませんでした。そこで、各機能の記事の中でアプリに触れている箇所を集めました。<strong>下の表に載っていない操作は「アプリでできない」という意味ではなく、公式ヘルプで手順を確かめられなかった</strong>という意味です。アプリの画面や機能は更新されるので、使う前に手元のアプリで確認してください。</p>
+<div class="tw"><table><thead><tr><th>機能</th><th>公式ヘルプに書かれているアプリでの扱い</th><th>制約・注意</th></tr></thead><tbody><tr><td>期間限定セール</td><td>セラーセンターPCおよびセラーセンターモバイルアプリで設定できる</td><td>アプリは商品レベルのみ。一括アップロード不可。1回のプロモーションに入れられるのは最新の更新があった50商品のうち最大20商品</td></tr><tr><td>動画事前チェック</td><td>セラーセンターまたはセラーアプリの「LIVE &amp; 動画」タブ→「コンテンツ作成」→「品質チェック」</td><td>始めたばかりのセラーは1日最大6回。売上が上がるほど回数が増える</td></tr><tr><td>LIVEの管理</td><td>デスクトップでLIVEを開始した後、「LIVEの管理」を選択してモバイルアプリから配信を管理できる</td><td>スマホで「LIVE配信する」を選ぶと、デスクトップのLIVEを終了しないと配信を始められない旨が表示される</td></tr><tr><td>LIVEオークション（一時出品）</td><td>アプリにログインし、LIVE画面の商品アイコンから「一時オークションを設定する」を選ぶ</td><td>一時出品の商品名に「入札」「オークション」に関連する語句を使うと審査を通過しない</td></tr><tr><td>サプライズセット</td><td>編集および公開はPCとアプリのどちらでも行える</td><td>作成はPC版のLIVE Managerで行う必要がある。現在は一部の販売者のみ利用可能</td></tr><tr><td>ショップの登録</td><td>登録のプロセスはPCとモバイルで共通</td><td>身分証明書の認証はモバイルデバイスが推奨されている</td></tr></tbody></table></div><p class="src">公式ヘルプで確認できたアプリでの操作（2026年10月14日確認。各記事の記載を整理）</p>
+<p>表から読み取れるのは、<strong>アプリに任された操作の多くが「その場で素早く判断するもの」</strong>だという点です。投稿前の動画チェックは撮った直後にスマホから回せますし、期間限定セールは1商品なら数分で作れます。一方で、条件の細かい設定や大量の商品を扱う作業は、ほぼすべてPCの手順として書かれています。</p>
+<div class="box box-warn"><div class="bt">⚠️ 海外向けのヘルプの画面説明を、そのまま日本の手順として読まない</div><p>セラーアプリについて検索すると、日本以外の地域向けのヘルプや解説が多く出てきます。機能名や提供範囲は地域ごとに違うことがあるため、日本のショップでは日本向けのセラーセンター（seller-jp.tiktok.com）のヘルプを正としてください。登録の記事でも、URLが日本市場用のものであることを確認するよう案内されています。</p></div>
+
+<h2 id="s3"><span class="no en">03</span>期間限定セールは、アプリだと商品単位・1回20商品まで</h2>
+<p>アプリとPCの差が最もはっきり書かれているのが期間限定セールです。公式ヘルプは、設定場所を「セラーセンターPCおよびセラーセンターモバイルアプリ」とし、そのうえでアプリ側の制約を3つ挙げています。</p>
+<div class="tw"><table><thead><tr><th>項目</th><th>セラーセンターPC</th><th>セラーセンターアプリ</th></tr></thead><tbody><tr><td>設定の単位</td><td>商品レベルとバリエーションレベル（SKU）の両方</td><td>商品レベル（SPU）のみ。バリエーションレベルの設定はサポートしない</td></tr><tr><td>1回のプロモーションに入れられる商品数</td><td>無制限</td><td>最新の更新があった50商品のうち最大20商品</td></tr><tr><td>一括アップロード</td><td>プロモーションツールタブからExcelテンプレートでできる</td><td>できない。商品ごとに個別に設定する</td></tr><tr><td>共通のルール</td><td colspan="2">価格は過去30日間で最も安かった商品価格（セラーの商品割引を含む）より安いこと。期間は最短10分間・最長3日間。1つの商品を期間限定セールに含められるのは24時間で1回のみ</td></tr></tbody></table></div><p class="src">期間限定セールのPCとアプリの違い（公式ヘルプの記載を整理）</p>
+  <figure> <svg viewBox="0 0 720 250" role="img" aria-label="期間限定セールで、セラーセンターアプリとPCが扱える範囲を比べた図。アプリは最新の更新があった50商品のうち最大20商品を商品単位でだけ扱え、PCは商品数の上限がなくバリエーション単位と一括アップロードにも対応することを、2本の帯の長さで示している"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">アプリで作れるのは「直近に更新した商品」の一部まで</text><text x="40" y="70" font-size="12.5" font-weight="800" fill="#454956">アプリ</text><rect x="120" y="54" width="560" height="26" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><rect x="120" y="54" width="224" height="26" rx="8" fill="#E8324A"/><text x="232" y="72" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">最大20商品</text><text x="512" y="72" text-anchor="middle" font-size="11" fill="#787D8A">選べるのは最新の更新があった50商品から</text><text x="40" y="132" font-size="12.5" font-weight="800" fill="#454956">PC</text><rect x="120" y="116" width="560" height="26" rx="8" fill="#454956"/><text x="400" y="134" text-anchor="middle" font-size="11.5" font-weight="800" fill="#ffffff">商品数は無制限</text><rect x="120" y="164" width="268" height="44" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="254" y="184" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">アプリ：商品単位のみ</text><text x="254" y="200" text-anchor="middle" font-size="11" fill="#787D8A">一括アップロードはできない</text><rect x="412" y="164" width="268" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="546" y="184" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">PC：SKU単位にも対応</text><text x="546" y="200" text-anchor="middle" font-size="11" fill="#787D8A">Excelテンプレートで一括</text><text x="360" y="236" text-anchor="middle" font-size="11.5" fill="#787D8A">サイズ・色ごとに値引きを変えるならPCで作る</text></svg> <figcaption>図2：期間限定セールの「アプリでできる範囲」（公式ヘルプの記載をもとにLEAM作成）</figcaption> </figure>
+<p>運用に効くのは「最新の更新があった50商品のうち」という条件です。アプリで選べる候補は、ショップ全体ではなく直近に更新した商品に絞られます。動画やLIVEで急に反応が出た1商品に、その場でセールを付ける使い方には合っていますが、季節の販促のように多くの商品へ同じ条件を付けるならPCでまとめて作るほうが確実です。</p>
+<p>作成後の管理（編集・無効・複製）と、収益や注文数を見るプロモーション分析も、公式ヘルプではPCの手順として書かれています。実施予定のセールは期間や価格を編集できますが、進行中のセールで変えられるのは終了時間・商品の追加・既存商品の削除だけです。値引きの設計そのものは<a href="https://leam.co.jp/column/coupon-sale-tactics/">クーポンとセールの使い方</a>で扱っています。</p>
+
+<h2 id="s4"><span class="no en">04</span>問い合わせは、スマホで「20時間」の表示が出る前に返す</h2>
+<p>スマホ運用でいちばん効くのが問い合わせです。公式ヘルプは、チャットの入口をセラーセンターの右上の購入者メッセージ、注文管理、注文の詳細の3つとし、未読と未処理の状況を<strong>赤い点と数字</strong>で示すと説明しています。赤い点は返信待ちの購入者がいるとき、数字は未読メッセージの合計件数です。ここではスマホで追うべき「時間」に絞って整理します（返信文の型は<a href="https://leam.co.jp/column/tiktok-shop-customer-support/">顧客対応の返信テンプレート</a>）。</p>
+<div class="tw"><table><thead><tr><th>表示・指標</th><th>公式ヘルプでの意味</th><th>スマホで取る行動</th></tr></thead><tbody><tr><td>Unread（未読）</td><td>担当者がまだ確認していないチャット</td><td>通知を見たら開いて、内容だけでも先に確認する</td></tr><tr><td>Unreplied（未返信）</td><td>担当者がまだ返信していないチャット</td><td>調べる必要があるものは「確認して改めて連絡する」旨を先に送る</td></tr><tr><td>Due soon（期限切れ間近）</td><td>20時間以上返信していないチャット</td><td>この表示が出る前に一次返信を終える</td></tr><tr><td>24時間応答率</td><td>過去7日間で、問い合わせから24時間以内に返信したチャットの割合</td><td>夜間・休日にスマホで確認する担当を決める</td></tr><tr><td>セッションのタイムアウト</td><td>7日間を超えて返信しないと自動的に終了し、以降は返信できない</td><td>放置した会話は取り戻せない前提で運用する</td></tr></tbody></table></div><p class="src">チャットの状態と時間の目安（公式ヘルプの記載を整理。行動の列はLEAMの整理）</p>
+  <figure> <svg viewBox="0 0 720 220" role="img" aria-label="問い合わせを受けてからの時間の流れを1本の帯で示した図。受信の直後が未読、20時間を超えると期限切れ間近の表示、24時間が応答率の境目、7日を超えるとセッションがタイムアウトして返信できなくなることを、帯の上の4つの印で表している"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">問い合わせの時計は、受け取った瞬間から動く</text><rect x="40" y="96" width="640" height="16" rx="8" fill="#DFE0E2"/><rect x="40" y="96" width="250" height="16" rx="8" fill="#454956"/><rect x="290" y="96" width="40" height="16" fill="#E8324A"/><circle cx="40" cy="104" r="11" fill="#ffffff" stroke="#454956" stroke-width="3"/><text x="52" y="76" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">受信</text><text x="52" y="140" text-anchor="middle" font-size="11" fill="#787D8A">未読・未返信</text><circle cx="290" cy="104" r="11" fill="#ffffff" stroke="#E8324A" stroke-width="3"/><text x="290" y="76" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">20時間</text><text x="290" y="140" text-anchor="middle" font-size="11" fill="#787D8A">期限切れ間近</text><circle cx="330" cy="104" r="11" fill="#ffffff" stroke="#E8324A" stroke-width="3"/><text x="358" y="76" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">24時間</text><text x="370" y="160" text-anchor="middle" font-size="11" fill="#787D8A">応答率の境目</text><circle cx="680" cy="104" r="11" fill="#ffffff" stroke="#454956" stroke-width="3"/><text x="668" y="76" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">7日超</text><text x="640" y="140" text-anchor="middle" font-size="11" fill="#787D8A">自動終了・返信不可</text><text x="360" y="200" text-anchor="middle" font-size="11.5" fill="#787D8A">スマホの役目は、20時間の表示が出る前に一次返信を終えること</text></svg> <figcaption>図3：問い合わせを受けてからの時間（公式ヘルプの記載をもとにLEAM作成）</figcaption> </figure>
+<p>複数人で受け持つときに見落としやすい条件があります。公式ヘルプは、チャットの自動割り当てを受け取るには<strong>ブラウザでチャットツールのページを開いておく必要がある</strong>と書いています。ページを閉じるとオフライン扱いになり、新しいメッセージは割り当てられません。担当者がいないときのチャットは「未割り当て」のリストに入ります。スマホで確認する担当とPCで受ける担当を分けるなら、未割り当てのリストを誰が見るかまで決めておいてください。</p>
+<p>注文管理から購入者に連絡できるのは、注文が過去60日以内に作成されている場合か、購入者が注文のキャンセルを進めている場合です。迷惑メッセージに「No response needed（返信不要）」を付けると応答率の計算から除外され、中傷的なメッセージはプラットフォームに報告できます。</p>
+
+<h2 id="s5"><span class="no en">05</span>LIVEは、PCで配信を始めてスマホで商品を動かす二台体制にする</h2>
+<p>LIVEは、スマホとPCの役割が公式ヘルプにはっきり書かれている領域です。LIVEマネージャーの記事は、デスクトップで配信を始めた後、<strong>「LIVEの管理」を選択してモバイルアプリから配信を管理でき、スマートフォンで商品を管理し、ピン留めして、プロモーションを展開できる</strong>と案内しています。配信の画面はPC、手元の商品操作はスマホ、という分け方が公式の想定に沿っています。</p>
+<ol class="steps"><li><b>LIVEイベントを作る</b><p>デスクトップのLIVEマネージャーでイベントを予定します。配信時間は最低30分、最大13時間の間で指定します。重複する時間帯には作成できません。</p></li><li><b>スマホで告知の動画を作る</b><p>デスクトップに表示されるQRコードをスマホで読み取ると、予定したイベントがモバイルで開きます。そこからショート動画を作り、イベントリンクを付けると視聴者が参加登録できます。公式ヘルプはイベントの2〜3日前の宣伝を勧めています。</p></li><li><b>PCで配信を始める</b><p>LIVEコンソールで「LIVE配信する」を押します。予定したイベントの開始時刻より前には始められません。練習モードを使うと、視聴者に見られずに配信を試せます。</p></li><li><b>スマホで「LIVEの管理」を開く</b><p>配信中の商品の管理、ピン留め、プロモーションをスマホから操作します。デスクトップでピン留めしたコメントはモバイルでもピン留めされた状態で表示されます（固定は58秒）。</p></li><li><b>終わったらPCで振り返る</b><p>[データ解析]→[LIVE配信分析]から、振り返りたい配信の詳細を開きます。過去のセッションやその設定は編集できません。</p></li></ol>
+  <figure> <svg viewBox="0 0 720 250" role="img" aria-label="LIVEの二台体制を示した図。左のPCではLIVEマネージャーで配信を始め、映像とコメントとオークションを管理し、右のスマホではLIVEの管理から商品の操作とピン留めとプロモーションを行う。下に、スマホでLIVE配信するを押すとPCの配信を終えるまで始められないという注意を添えている"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">配信の画面はPC、手元の商品操作はスマホ</text><rect x="20" y="44" width="300" height="140" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="170" y="74" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">PC：LIVEマネージャー</text><text x="170" y="102" text-anchor="middle" font-size="11.5" fill="#787D8A">配信の開始と映像・音声の選択</text><text x="170" y="126" text-anchor="middle" font-size="11.5" fill="#787D8A">コメントとアクティビティの確認</text><text x="170" y="150" text-anchor="middle" font-size="11.5" fill="#787D8A">オークションの管理</text><path d="M334 114 L382 114" stroke="#C2203A" stroke-width="2.5" fill="none"/><path d="M376 108 L388 114 L376 120 Z" fill="#C2203A"/><path d="M386 126 L338 126" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M344 120 L332 126 L344 132 Z" fill="#787D8A"/><rect x="400" y="44" width="300" height="140" rx="14" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="550" y="74" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">スマホ：LIVEの管理</text><text x="550" y="102" text-anchor="middle" font-size="11.5" fill="#787D8A">商品の管理</text><text x="550" y="126" text-anchor="middle" font-size="11.5" fill="#787D8A">商品のピン留め</text><text x="550" y="150" text-anchor="middle" font-size="11.5" fill="#787D8A">プロモーションの展開</text><rect x="70" y="200" width="580" height="34" rx="10" fill="#ffffff" stroke="#E8324A" stroke-width="1.5"/><text x="360" y="222" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">スマホで「LIVE配信する」はPCの配信を終えるまで使えない</text></svg> <figcaption>図4：LIVEの二台体制（公式ヘルプの記載をもとにLEAM作成）</figcaption> </figure>
+<p>注意点は、<strong>スマホで「LIVE配信する」を押してしまうこと</strong>です。公式ヘルプによると、デスクトップで配信中にスマホで「LIVE配信する」を選ぶと、別のデバイスでストリーミング中であること、デスクトップのLIVEを終了しないとTikTokアプリ経由で配信を始められないことが表示されます。スマホ側の担当には「開くのはLIVEの管理だけ」と伝えておくと、配信の取り違えを防げます。</p>
+<p>LIVEオークションでも、アプリでできる操作が案内されています。アプリにログインしてLIVE画面の商品アイコンを押し、「一時オークションを設定する」から一時出品のフォームを入力する流れです。ただし公式ヘルプは、PCのLIVEマネージャー内のLIVE管理から<strong>すべてのLIVEオークションの操作を行える</strong>としており、オークションの細かな条件や当日の進め方は<a href="https://leam.co.jp/column/live-auction/">LIVEオークションの始め方と条件</a>にまとめています。配信全体の設計は<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>、機材は<a href="https://leam.co.jp/column/tiktok-shop-live-equipment/">LIVEの機材と配信環境</a>を参照してください。</p>
+
+<h2 id="s6"><span class="no en">06</span>注文・発送とデータ確認は、スマホで気づきPCで締める</h2>
+<p>注文と発送は毎日の作業ですが、セラーアプリでの発送手続きの画面を手順として説明した日本向けの公式ヘルプは、当社が2026年10月14日に検索した範囲では確認できませんでした。そのため、アプリの画面の細部はここでは書きません。公式ヘルプで確かめられるのは、<strong>注文の知らせをどのアカウントで受け取るかを設定できる</strong>ことです。セラーセンターの［マイアカウント］→［アカウント設定］→［コミュニケーション設定］では、メッセージの種類ごとに受け取るアカウントを選べます（§07）。</p>
+<p>当社の運用実感では、スマホは「新しい注文や返品の依頼に気づく」「出荷期限が近い注文がないかを見る」までを受け持ち、追跡番号の入力のように件数がまとまる作業はPCで締めるほうが入力の手戻りが少なくなります。出荷期限と遅延の考え方は<a href="https://leam.co.jp/column/shipping-rules/">発送期限と遅延ペナルティ</a>、返品の流れは<a href="https://leam.co.jp/column/returns-refunds/">返品・返金の対応期限</a>で扱っています。</p>
+<p>データ確認も同じ考え方で分けます。公式ヘルプが手順として示しているのは、LIVEの振り返りは［データ解析］→［LIVE配信分析］、セールの効果はプロモーション分析ページという、いずれもセラーセンターの画面です。スマホは毎日の数字の変化に気づくために使い、原因を探す分析は週1回PCで行うと、見るべき指標がぶれません。何を指標にするかは<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計</a>を参照してください。</p>
+<h3>投稿前の動画チェックは、撮った直後にスマホで回す</h3>
+<p>スマホで完結させたい作業の代表が、動画の事前チェックです。公式ヘルプは、セラーセンターまたはセラーアプリの「LIVE &amp; 動画」タブから「コンテンツ作成」→「品質チェック」に進むと案内しています。ショッパブル動画（商品リンク付き動画）をアップロードすると、ポリシー違反のリスクと改善のアドバイスが約10分で通知されます。始めたばかりのセラーは1日最大6回で、売上が上がるほど回数が増え、残りの回数はツールのページで確認できます。</p>
+<p>回数に上限があるので、当社の運用実感では、撮った動画をすべて流すより「言い回しに迷った動画」「効果の表現を含む動画」に回すほうが効率的です。公式ヘルプも、チェックを通っても違反が絶対に発生しないことが保証されるわけではないと明記しています。動画の作り方は<a href="https://leam.co.jp/column/short-video-playbook/">売れるショート動画の作り方</a>で扱っています。</p>
+
+<h2 id="s7"><span class="no en">07</span>スマホ運用の前に、ログインと通知の設定を整える</h2>
+<p>スマホで店舗を触る人が増えるほど、ログインと通知の設定が効いてきます。公式ヘルプの「マイアカウント」の記事は、セラープロフィールで<strong>2段階認証を有効にできる</strong>こと、<strong>すべての信頼できるデバイスを表示および管理できる</strong>ことを案内しています。2段階認証をオンにすると、ログインにパスワードと認証コードの両方が必要になります。スマホを機種変更したときや担当者が替わったときに、信頼できるデバイスの一覧を見直す習慣をつけてください。</p>
+<p>通知は［コミュニケーション設定］で、ショップのユーザーアカウントごとに、どの種類のメッセージを受け取るかを選べます。全員にすべての通知を送ると、スマホの通知が多すぎて大事なものが埋もれます。</p>
+<div class="tw"><table><thead><tr><th>分類</th><th>メッセージの種類（公式ヘルプ）</th><th>登録解除</th></tr></thead><tbody><tr><td>重要</td><td>審査結果、違反通知、異議申し立て</td><td>マーケティングメッセージではないため、メインアカウントでは解除できない</td></tr><tr><td>ショップ関連</td><td>ショップの更新（アカウントの有効化・決済・出金など）、注文、アフターセールス（返品や返金のリクエストなど）</td><td>マーケティングメッセージではないため、メインアカウントでは解除できない</td></tr><tr><td>お知らせ</td><td>キャンペーン、新機能、ルール、セラーの成長</td><td>マーケティングメッセージ。メインアカウントとサブアカウントのどちらでも解除できる</td></tr></tbody></table></div><p class="src">コミュニケーション設定のメッセージの種類（公式ヘルプの記載を整理）</p>
+<p>当社の運用実感では、スマホで即対応する担当には「注文」「アフターセールス」を、責任者には「重要」の3種類を確実に届け、「お知らせ」は週1回まとめて読む担当に寄せると、通知に追われずに済みます。違反通知を見落とすと対応が遅れるので、受け取る人を必ず1人以上決めておいてください（<a href="https://leam.co.jp/column/account-suspension/">アカウント停止・違反ポイントのガイド</a>）。</p>
+<p>これから開設する場合は、登録もスマホで進められます。公式ヘルプは、登録のプロセスはPCとモバイルで共通とし、身分証明書の認証はモバイルデバイスを推奨しています。カメラのないPCで登録している場合は「Continue on Mobile」（携帯電話で続行）を選ぶと、モバイルブラウザで手順を続けられます。同一の電話番号やメールアドレスでTikTok Shopアカウントを複数登録することはできません。登録の全体像は<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？</a>で扱っています。</p>
+
+<h2 id="s8"><span class="no en">08</span>1日の運用は、朝・日中・LIVE・週1回の4つの時間帯で分ける</h2>
+<p>ここまでの公式の記載を、1日の流れに並べ替えます。以下は当社が実務で使っている整理で、公式ヘルプの記載そのものではありません。狙いは、スマホに来る通知の役目と、PCの前で行う作業の役目を混ぜないことです。</p>
+<div class="tw"><table><thead><tr><th>時間帯</th><th>スマホでやること</th><th>PCでやること</th></tr></thead><tbody><tr><td>朝（始業時）</td><td>未読・未返信のチャットを確認し、一次返信を送る。夜のうちに入った注文と返品の依頼を確認する</td><td>出荷が必要な注文をまとめて処理する</td></tr><tr><td>日中</td><td>通知が来た問い合わせに返す。反応の出た商品に商品単位の期間限定セールを付ける。撮った動画を事前チェックに回す</td><td>SKU単位のセールや一括アップロードが必要な販促を作る</td></tr><tr><td>LIVE中</td><td>「LIVEの管理」で商品の操作・ピン留め・プロモーションを行う</td><td>LIVEマネージャーで配信、コメント、オークションを管理する</td></tr><tr><td>週1回</td><td>「お知らせ」の通知をまとめて読む</td><td>LIVE配信分析とプロモーション分析で振り返る。信頼できるデバイスと通知の受け取り先を見直す</td></tr></tbody></table></div><p class="src">スマホとPCの1日の分担表（LEAM作成）</p>
+<p>この分担を始める前に、次の点を担当者の間で決めておくと、スマホ運用が属人化しません。</p>
+<div class="tw"><table><thead><tr><th>確認ポイント</th><th>できている状態</th><th>次のアクション</th></tr></thead><tbody><tr><td>チャットの担当</td><td>平日夜と休日にスマホで確認する人が決まっている</td><td>「期限切れ間近」が出たら誰が返すかを書いておく</td></tr><tr><td>自動割り当て</td><td>PCで受ける担当がブラウザでチャットツールを開いている</td><td>未割り当てのリストを見る人を決める</td></tr><tr><td>セールの作り場所</td><td>商品単位はスマホ、SKU単位・多数の商品はPCと決めてある</td><td>季節の販促はPCで前の週に作る</td></tr><tr><td>LIVEの役割</td><td>配信はPC、商品操作はスマホと担当が分かれている</td><td>スマホ担当に「LIVE配信する」を押さないよう伝える</td></tr><tr><td>通知の受け取り先</td><td>「注文」「アフターセールス」「重要」を受け取る人が決まっている</td><td>コミュニケーション設定で受け取るアカウントを選ぶ</td></tr><tr><td>ログインの安全</td><td>2段階認証がオンで、信頼できるデバイスを把握している</td><td>機種変更・担当交代のたびに一覧を見直す</td></tr></tbody></table></div><p class="src">スマホ運用を始める前のワークシート（LEAM作成）</p>
+
+<h2 id="summary"><span class="no en">09</span>まとめ</h2>
+<p>セラーアプリは、PCのセラーセンターの代わりではなく、<strong>その日のうちに終わらせる1件ずつの対応を速くする道具</strong>です。上から順に決めてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 分け方の原則を決める</b><br>1件ずつ・その場の操作はスマホ、まとめて・細かい単位の操作はPC</div><div class="summary-item"><b>2. 問い合わせの時間を守る</b><br>「期限切れ間近」は20時間以上の未返信。24時間応答率と7日のタイムアウトを意識する</div><div class="summary-item"><b>3. セールの作り場所を分ける</b><br>アプリは商品単位・最大20商品・一括不可。SKU単位と一括はPC</div><div class="summary-item"><b>4. LIVEは二台体制にする</b><br>PCで配信を始め、スマホは「LIVEの管理」で商品操作に専念する</div><div class="summary-item"><b>5. 動画は撮った直後にチェックする</b><br>セラーアプリの「LIVE &amp; 動画」から品質チェック。回数に上限がある</div><div class="summary-item"><b>6. ログインと通知を整える</b><br>2段階認証と信頼できるデバイス、メッセージの受け取り先を決める</div></div>
+
+<h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopのセラーアプリだけでショップを運営できますか？</summary><div class="a">日々の確認や1件ずつの対応はスマホでも進められますが、公式ヘルプではバリエーション単位の設定や一括アップロード、LIVEオークションの管理などがPCの手順として案内されています。たとえば期間限定セールは、アプリでは商品レベルの設定のみで一括アップロードはできません。PCのセラーセンターと併用する前提で運用するのが現実的です。</div></details><details><summary>TikTok Shopの期間限定セールはスマホのアプリでも作れますか？</summary><div class="a">作れます。公式ヘルプは設定場所をセラーセンターPCおよびセラーセンターモバイルアプリとしています。ただしアプリは商品レベルの設定のみで、バリエーションレベルの設定と一括アップロードはできません。1回のプロモーションに入れられるのは、最新の更新があった50商品のうち最大20商品です。</div></details><details><summary>TikTok ShopのLIVEはスマホとPCのどちらで管理すればよいですか？</summary><div class="a">公式ヘルプは、デスクトップでLIVEを開始した後、「LIVEの管理」を選択してモバイルアプリから配信を管理し、商品の管理やピン留め、プロモーションを行えると案内しています。配信はPC、商品操作はスマホと分けるのが公式の想定に沿った形です。デスクトップで配信中にスマホで「LIVE配信する」を選ぶと、デスクトップのLIVEを終了しないと配信を始められない旨が表示されます。</div></details><details><summary>TikTok Shopのセラーアプリで「期限切れ間近」の表示が出たチャットは、どう対応すればよいですか？</summary><div class="a">公式ヘルプでは、20時間以上返信していないチャットに「期限切れ間近（Due soon）」の表示が付きます。表示を見たら、調べる必要がある内容でも「確認して改めて連絡する」旨の一次返信をスマホからその場で送ってください。迷惑メッセージであれば「No response needed（返信不要）」を付けると応答率の計算から除外されます。7日間を超えて返信しないとセッションは自動的に終了して返信できなくなるため、表示に気づいた担当者がその場で返すのか、PCの担当へ引き継ぐのかを先に決めておくと取りこぼしを防げます。</div></details><details><summary>TikTok Shopの動画事前チェックはセラーアプリから使えますか？</summary><div class="a">使えます。公式ヘルプは、セラーセンターまたはセラーアプリで「LIVE &amp; 動画」タブに移動し、「コンテンツ作成」から「品質チェック」に進むと案内しています。始めたばかりのセラーは1日最大6回まで利用でき、売上が上がるほど回数が増えます。結果は約10分で通知されます。</div></details><details><summary>TikTok Shopのセラーアプリを複数人で使うときに設定しておくことはありますか？</summary><div class="a">セラーセンターの［マイアカウント］で2段階認証を有効にし、信頼できるデバイスを管理しておくことと、［コミュニケーション設定］でメッセージの種類ごとに受け取るアカウントを選んでおくことです。審査結果や違反通知などの「重要」と、注文やアフターセールスなどの「ショップ関連」は、メインアカウントでは登録解除できません。</div></details></div>
+
+<div class="ctabox"><div class="ct">スマホ運用の体制づくりからご相談いただけます</div><p>LEAMはTikTok Shopの運用支援と、TikTok Shop特化のMCNを運営しています。問い合わせ対応、販促の作り方、LIVEの役割分担までを一つの流れとして整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=seller-app-guide">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">11</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=91682772518672&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：期間限定セール</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2484817200744193&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：動画事前チェックツール ガイド</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=109353152759553&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：LIVEマネージャー</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=4767517739714305&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：LIVEオークション（カウントダウン入札）</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171403024&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：顧客とコミュニケーションをとる方法</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=418411084547857&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アカウントプロフィール（マイアカウント）</a>（2026年10月14日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=69203995543313&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：セラー登録</a>（2026年10月14日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能はアプリの更新で変わることがあります。本記事は2026年10月14日時点で確認できた日本向け公式情報と、当社が作成した運用フレームを区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">運用の基本</span><b><a href="https://leam.co.jp/column/seller-center-guide/">TikTok Shopセラーセンターの使い方｜最初の設定</a></b><span>PCでの初期設定と商品登録から入る</span></div><div class="relcard"><span class="rc">顧客対応</span><b><a href="https://leam.co.jp/column/tiktok-shop-customer-support/">TikTok Shopの顧客対応｜返信テンプレート</a></b><span>スマホから送る返信文を揃える</span></div><div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組みをセラー向けに解説</a></b><span>全体像から確認する</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">セラーアプリは「1件ずつ即対応」の道具で、まとめて作る作業はPCに残す</a></li><li><a href="#s2">公式ヘルプで手順まで確かめられるアプリの操作は、まだ多くない</a></li><li><a href="#s3">期間限定セールは、アプリだと商品単位・1回20商品まで</a></li><li><a href="#s4">問い合わせは、スマホで「20時間」の表示が出る前に返す</a></li><li><a href="#s5">LIVEは、PCで配信を始めてスマホで商品を動かす二台体制にする</a></li><li><a href="#s6">注文・発送とデータ確認は、スマホで気づきPCで締める</a></li><li><a href="#s7">スマホ運用の前に、ログインと通知の設定を整える</a></li><li><a href="#s8">1日の運用は、朝・日中・LIVE・週1回の4つの時間帯で分ける</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=seller-app-guide">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopのセラーアプリだけでショップを運営できますか？", "acceptedAnswer": {"@type": "Answer", "text": "日々の確認や1件ずつの対応はスマホでも進められますが、公式ヘルプではバリエーション単位の設定や一括アップロード、LIVEオークションの管理などがPCの手順として案内されています。たとえば期間限定セールは、アプリでは商品レベルの設定のみで一括アップロードはできません。PCのセラーセンターと併用する前提で運用するのが現実的です。"}}, {"@type": "Question", "name": "TikTok Shopの期間限定セールはスマホのアプリでも作れますか？", "acceptedAnswer": {"@type": "Answer", "text": "作れます。公式ヘルプは設定場所をセラーセンターPCおよびセラーセンターモバイルアプリとしています。ただしアプリは商品レベルの設定のみで、バリエーションレベルの設定と一括アップロードはできません。1回のプロモーションに入れられるのは、最新の更新があった50商品のうち最大20商品です。"}}, {"@type": "Question", "name": "TikTok ShopのLIVEはスマホとPCのどちらで管理すればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプは、デスクトップでLIVEを開始した後、「LIVEの管理」を選択してモバイルアプリから配信を管理し、商品の管理やピン留め、プロモーションを行えると案内しています。配信はPC、商品操作はスマホと分けるのが公式の想定に沿った形です。デスクトップで配信中にスマホで「LIVE配信する」を選ぶと、デスクトップのLIVEを終了しないと配信を始められない旨が表示されます。"}}, {"@type": "Question", "name": "TikTok Shopのセラーアプリで「期限切れ間近」の表示が出たチャットは、どう対応すればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "公式ヘルプでは、20時間以上返信していないチャットに「期限切れ間近（Due soon）」の表示が付きます。表示を見たら、調べる必要がある内容でも「確認して改めて連絡する」旨の一次返信をスマホからその場で送ってください。迷惑メッセージであれば「No response needed（返信不要）」を付けると応答率の計算から除外されます。7日間を超えて返信しないとセッションは自動的に終了して返信できなくなるため、表示に気づいた担当者がその場で返すのか、PCの担当へ引き継ぐのかを先に決めておくと取りこぼしを防げます。"}}, {"@type": "Question", "name": "TikTok Shopの動画事前チェックはセラーアプリから使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "使えます。公式ヘルプは、セラーセンターまたはセラーアプリで「LIVE & 動画」タブに移動し、「コンテンツ作成」から「品質チェック」に進むと案内しています。始めたばかりのセラーは1日最大6回まで利用でき、売上が上がるほど回数が増えます。結果は約10分で通知されます。"}}, {"@type": "Question", "name": "TikTok Shopのセラーアプリを複数人で使うときに設定しておくことはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "セラーセンターの［マイアカウント］で2段階認証を有効にし、信頼できるデバイスを管理しておくことと、［コミュニケーション設定］でメッセージの種類ごとに受け取るアカウントを選んでおくことです。審査結果や違反通知などの「重要」と、注文やアフターセールスなどの「ショップ関連」は、メインアカウントでは登録解除できません。"}}]}</script>
+</body>
+</html>

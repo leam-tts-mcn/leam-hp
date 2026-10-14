@@ -17,11 +17,11 @@
 - クリエイターアサイン: 実売実績のあるTikTok Shopクリエイターの起用を、小さく試せる形から支援
 - MCN: クリエイターの発掘・育成・マネジメントを行う、TikTok Shop特化のクリエイター事務所
 
-## TikTok Shop 実践コラム（全52本）
+## TikTok Shop 実践コラム（全64本）
 
 > 出店の検討から日々の運用までを扱う実務記事。公式の一次情報と、当社の運用実感にもとづく判断を
-> 区別して書いています。数値は出典と時点を明記し、**52本すべてに一次情報（TikTok Shop公式ヘルプ・
-> 規約・官公庁の公表資料など）へのリンク**を置いています（2026年9月7日時点で181件）。
+> 区別して書いています。数値は出典と時点を明記し、**64本すべてに一次情報（TikTok Shop公式ヘルプ・
+> 規約・官公庁の公表資料など）へのリンク**を置いています。
 > 公開情報で裏が取れなかった論点は、断定せず「どこを見れば確かめられるか」を書いています。
 > 一覧: https://leam.co.jp/column/
 
@@ -32,6 +32,7 @@
 - [TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略](https://leam.co.jp/column/marketplace-comparison/): 乗り換えではなく役割分担です。Amazon・楽天は検索型、TikTok Shopは発見型で、売れ方もコスト構造もほぼ逆向き。
 - [TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか](https://leam.co.jp/column/market-outlook/): TikTok Shopの市場規模と今後の見通しを、公表されている一次情報にもとづいて整理します。日本市場がどこまで伸びるかを考えます。
 - [TikTok Shopは儲かる？利益が出る条件と出ない条件](https://leam.co.jp/column/is-tiktok-shop-profitable/): TikTok Shopは儲かるのか。手数料や送料を引いて粗利を出す型、損益分岐に必要な注文数、赤字になる6パターン、撤退ラインの決め方を解説します。
+- [TikTok Shopに今から参入して遅くない？判断材料と条件](https://leam.co.jp/column/late-to-enter/): TikTok Shopに今から参入して遅いかは、時期より始める条件で決まります。日本での開始からの経過、商材・体制・予算と期間・撤退の基準の判断材料と、申請前に決めることを整理します。
 
 ### 出店・審査
 - [TikTok Shopの開設・出店ガイド｜審査に落ちる理由と対処法](https://leam.co.jp/column/tiktok-shop-shinsa/): 開業届がなくても個人セラーとして出店できます。書類は本人確認・住所証明・国内銀行口座の3点が基本、審査の公式目安は1〜5日。
@@ -39,6 +40,7 @@
 - [TikTok Shopの禁止商品・制限商品ガイド](https://leam.co.jp/column/prohibited-items/): 食品もコスメも「禁止」ではなく、書類提出と事前承認で出品できます。禁止・対象外・制限付きの3分類で判定する手順を解説します。
 - [TikTok Shopのアカウント停止・違反ポイント完全ガイド](https://leam.co.jp/column/account-suspension/): 停止されても、異議申し立てで復旧できるケースがあります。期限と回数に上限があり1回目が勝負。原因は商品・表現・知財・物流・不正の5分類で、誤検知や見落としによる停止もあります。
 - [TikTok Shop立ち上げ90日ロードマップ](https://leam.co.jp/column/tiktok-shop-90day-roadmap/): TikTok Shop出店後の90日を、準備、初回販売、改善、拡大の四段階に整理。商品、動画、LIVE、クリエイター、在庫、顧客対応の実行順を解説します。
+- [TikTok Shopセラーアプリの使い方｜スマホでできること](https://leam.co.jp/column/seller-app-guide/): TikTok Shopのセラーアプリで毎日やる問い合わせ・セール・LIVE操作と、PCのセラーセンターに残す一括登録やSKU別の設定の分け方を、公式ヘルプで確かめた範囲で整理します。
 
 ### 商品・価格
 - [TikTok Shopで売れるものは？商品カテゴリーの選び方](https://leam.co.jp/column/best-categories/): 売れるのは「検索される商品」ではなく「動画で欲しくなる商品」。見抜く3条件と、手数料と報酬を引いても利益が残るかの確かめ方。
@@ -60,6 +62,7 @@
 - [TikTok Shop LIVEの機材と配信環境](https://leam.co.jp/column/tiktok-shop-live-equipment/): TikTok Shop LIVEに必要なスマホ・固定具・照明・音声・回線を解説します。まず揃える最小構成と、配信前のチェック表つきです。
 - [TikTok Shop LIVEの台本テンプレート](https://leam.co.jp/column/tiktok-shop-live-script/): TikTok Shop LIVEで使える台本を、入室対応、悩み提示、実演、比較、質問対応、購入案内、次の商品への接続に分けて解説。配信前後のチェック表つき。
 - [TikTok ShopのLIVEオークション｜始め方と条件](https://leam.co.jp/column/live-auction/): TikTok ShopのLIVEオークションは、LIVE中のカウントダウン入札で1点ずつ売る機能です。利用条件、出品の作り方、入札上げ幅、落札後15分の決済までを整理します。
+- [TikTok Shopのライブに人が来ない｜視聴者が増えない原因と対策](https://leam.co.jp/column/live-no-viewers/): TikTok Shopのライブに人が来ない原因を、入口（告知・頻度・ショート動画）・冒頭の離脱・見せ方に分けて対策を整理。LIVEのデータで見る数字も公式ヘルプに沿って解説します。
 
 ### クリエイター連携
 - [TikTok Shopアフィリエイトの仕組み【セラー向け】](https://leam.co.jp/column/affiliate-guide/): TikTok Shopのアフィリエイトは売れるまで費用0円。当社の実務では10〜15%前後が起点で、10%を切ると選ばれにくくなります。
@@ -67,14 +70,18 @@
 - [TikTok Shopのサンプル申請のやり方【クリエイター向け】](https://leam.co.jp/column/sample-request/): TikTok Shopのサンプル申請のやり方を、クリエイター向けに手順から解説します。セラーの承認が通りやすくなるコツもまとめました。
 - [TikTok Shopのクリエイター招待とは？コラボの仕組み](https://leam.co.jp/column/creator-invite/): TikTok Shopのクリエイター招待は、承諾も辞退も選べる依頼です。受ける前に見る5項目と、報酬が確定するタイミングを整理しました。
 - [TikTok Shopのクリエイターブリーフの作り方](https://leam.co.jp/column/creator-brief-template/): クリエイターへ動画制作を依頼するブリーフを、目的・商品・訴求・必須表現・禁止事項・納品の項目に分けて解説します。ひな形つきです。
+- [TikTok Shopでクリエイターが集まらない原因と対策](https://leam.co.jp/column/creators-not-coming/): TikTok Shopでクリエイターが集まらないときは、止まっている段を画面の数字で特定してから直します。オープンコラボと招待に分け、原因7つと直す順番を整理します。
+- [サンプルを送っても投稿されない｜TikTok Shopのサンプル施策](https://leam.co.jp/column/sample-no-post/): TikTok Shopでサンプルを送っても投稿されないときにセラー側で直せる点を整理。公式の対応期限・公開期間・LIVEのピン留め・申請制限を押さえ、承認・発送・催促・履行率の見方を設計します。
 
 ### クリエイター向け
-- [TikTok ShopのMCNとは？所属と個人の違い](https://leam.co.jp/column/mcn-merit/): TikTok ShopのMCNとは何かを公式ヘルプで確認し、所属した場合に変わることと個人で続ける場合にやること、契約前に見る12項目まで整理しました。
+- [TikTok ShopのMCNとは？所属と個人の違い](https://leam.co.jp/column/mcn-merit/): TikTok ShopのMCNとは何かを公式ヘルプで確認し、所属した場合に変わることと個人で続ける場合にやること、契約で一緒に読む三つの条項まで整理しました。
 - [TikTok Shopアフィリエイトの始め方【クリエイター向け】](https://leam.co.jp/column/creator-affiliate-start/): TikTok Shopアフィリエイトをクリエイター視点で解説。参加の資格要件、商品選びの5項目、動画の型、成果の見方、PR表記を公式出典つきで整理します。
 - [TikTok Shopアフィリエイトセンターの使い方と案件の探し方](https://leam.co.jp/column/affiliate-center-howto/): 「アフィリエイトセンター」はセラー側の画面名。TikTok Shopの案件の探し方、参加申請、商品リンクの貼り方、実績の見方を公式ヘルプで整理します。
 - [TikTok Shopで稼ぐ方法｜収益化の条件と始め方](https://leam.co.jp/column/creator-monetization/): TikTok Shopでクリエイターが収益を得る仕組みを、公式の参加条件・申請の手順・報酬が確定する順番・PR表記の基準まで整理しました。
 - [TikTok Shopの報酬はいつ入る？支払いと出金](https://leam.co.jp/column/creator-payout/): TikTok Shopの報酬は発生・確定・支払いの3段階で動きます。精算タイプ別の支払日、返品時の扱い、出金手順、入らない時の確認順を公式ヘルプで整理
 - [TikTokのギフトとコインの仕組み｜TikTok Shopとの違い](https://leam.co.jp/column/gift-coin-guide/): TikTokのコイン・ギフト・ダイヤモンドの関係と受取額の考え方を整理。誰が負担するのか、換金の流れ、TikTok Shopの収入との違いまで解説します。
+- [TikTok Shopのショーケースとは？使える条件と収益の仕組み](https://leam.co.jp/column/showcase-guide/): TikTok Shopのショーケースは、紹介する商品をプロフィールに並べる置き場です。使える条件（フォロワー1,000人以上など）、商品の入れ方、コミッションの計算式を公式ヘルプで整理します。
+- [TikTok ShopのMCN契約で確認すること｜期間・報酬・解除](https://leam.co.jp/column/mcn-contract/): TikTok ShopでMCN（クリエイター事務所）と契約する前に、期間と自動更新、専属の範囲、報酬と支払いの時期、権利、解除と違約金、競業の制限を条項ごとに確かめるチェック表をまとめました。
 
 ### 広告運用
 - [GMV Maxとは？TikTok Shop広告の仕組みと始め方](https://leam.co.jp/column/gmvmax/): 2025年7月以降、TikTok Shopの広告で新しく作れるのはGMV Maxだけです。費用は固定でなく予算×成果のため、先に限界CPAを決めます。
@@ -93,6 +100,9 @@
 - [TikTok Shop運用代行の費用相場と失敗しない選び方](https://leam.co.jp/column/unyodaiko-cost/): TikTok Shop運用代行の月額相場は5万〜150万円。幅の正体は会社の規模でなく依頼範囲の差です。規模別の目安、料金3類型、「売上への距離」で選ぶ比較軸5つまで。
 - [TikTok Shopは内製か運用代行か｜判断基準](https://leam.co.jp/column/inhouse-vs-agency/): TikTok Shopを内製するか運用代行に頼むかを、商品・動画・クリエイター・データ・物流・顧客対応の6領域で比較して判断基準を示します。
 - [TikTok ShopのKPI設計｜週次で見る指標](https://leam.co.jp/column/tiktok-shop-kpi/): TikTok Shop運用で見るKPIを、売上・トラフィック・動画・LIVE・商品・運用品質に分けて解説します。週次で見る指標と直す順番つきです。
+- [TikTok Shopのコンサルと運用代行の違い｜どちらに頼むべきか](https://leam.co.jp/column/consulting-vs-agency/): TikTok Shopのコンサルは判断を、運用代行は作業を外部に渡す支援で、運用支援（伴走）はその間です。社内の人・判断できる人・期限で選ぶ手順と、社内に残すものを整理します。
+- [TikTok Shop運用代行の契約で確認すること｜期間・成果報酬・解約](https://leam.co.jp/column/agency-contract-checklist/): TikTok Shop運用代行の契約書と見積もりで確かめる項目をチェック表にしました。業務範囲、KPI、成果報酬の基準、自動更新と解約、アカウントの持ち主、費用負担、再委託まで。
+- [TikTok Shopで初売上が出ない｜開設後30日の見直し順](https://leam.co.jp/column/no-first-sale/): TikTok Shopで初売上が出ないときは、売り方より先に「買える状態か」を確かめます。商品の承認・在庫・送料・商品リンク・動画・クリエイター・アフィリエイト設定の順と30日の見直し表。
 
 ### 既存ECからの参入
 - [Amazonセラー向けTikTok Shop入門｜何が変わるか](https://leam.co.jp/column/amazon-seller-tiktok-shop/): Amazonのレビュー・FBA・キーワード入札は持ち込めません。持ち込めるのは商品・在庫・原価表です。TikTok Shopは初期費用も月額固定費もなし。手残り表の直し方まで解説。
