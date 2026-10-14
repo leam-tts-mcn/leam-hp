@@ -26,7 +26,7 @@
 > 一覧: https://leam.co.jp/column/
 
 ### 基礎知識
-- [TikTok Shopとは？仕組み・始め方・売れる理由の完全ガイド](https://leam.co.jp/column/what-is-tiktok-shop/): TikTok Shopとは、動画・ライブ・ショーケースの3つの売り場で購入まで完結するEC機能。初期費用・月額の出店料は不要で、費用は売れたときの販売手数料が中心。
+- [TikTok Shopとは？売り方・始め方・仕組みをセラー向けに解説](https://leam.co.jp/column/what-is-tiktok-shop/): TikTok Shopとは、動画・ライブ・ショーケースで購入まで完結するEC機能。売り方の基本、出店の5ステップ、費用（初期・月額0円）までセラー向けに解説します。
 - [TikTok Shopの用語集｜実務で意味を取り違えやすい30語](https://leam.co.jp/column/glossary/): GMV・実質手数料・貢献利益・限界CPA・LDR・SKUなど、TikTok Shopの実務で意味を取り違えると判断を誤る30語を、記事のどこで扱っているかとセットで整理しました。
 - [TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方](https://leam.co.jp/column/is-tiktok-shop-safe/): TikTok Shop自体は怪しくありません。出店審査のある公式機能です。危ないのはアプリの外へ誘導する詐欺3つの型。偽ショップは8項目のチェックリストで見分けられます。
 - [TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略](https://leam.co.jp/column/marketplace-comparison/): 乗り換えではなく役割分担です。Amazon・楽天は検索型、TikTok Shopは発見型で、売れ方もコスト構造もほぼ逆向き。
@@ -34,7 +34,7 @@
 - [TikTok Shopは儲かる？利益が出る条件と出ない条件](https://leam.co.jp/column/is-tiktok-shop-profitable/): TikTok Shopは儲かるのか。手数料や送料を引いて粗利を出す型、損益分岐に必要な注文数、赤字になる6パターン、撤退ラインの決め方を解説します。
 
 ### 出店・審査
-- [TikTok Shopの出店条件と審査完全ガイド｜落ちる理由と対処法](https://leam.co.jp/column/tiktok-shop-shinsa/): 開業届がなくても個人セラーとして出店できます。書類は本人確認・住所証明・国内銀行口座の3点が基本、審査の公式目安は1〜5日。
+- [TikTok Shopの開設・出店ガイド｜審査に落ちる理由と対処法](https://leam.co.jp/column/tiktok-shop-shinsa/): 開業届がなくても個人セラーとして出店できます。書類は本人確認・住所証明・国内銀行口座の3点が基本、審査の公式目安は1〜5日。
 - [TikTok Shopセラーセンターの使い方｜最初の設定](https://leam.co.jp/column/seller-center-guide/): セラーセンターはメニューが10前後ありますが、毎日開くのは4画面だけです。最優先の設定は入金口座と発送・返品。初期設定10項目と、売上と入金額がズレる理由まで整理しました。
 - [TikTok Shopの禁止商品・制限商品ガイド](https://leam.co.jp/column/prohibited-items/): 食品もコスメも「禁止」ではなく、書類提出と事前承認で出品できます。禁止・対象外・制限付きの3分類で判定する手順を解説します。
 - [TikTok Shopのアカウント停止・違反ポイント完全ガイド](https://leam.co.jp/column/account-suspension/): 停止されても、異議申し立てで復旧できるケースがあります。期限と回数に上限があり1回目が勝負。原因は商品・表現・知財・物流・不正の5分類で、誤検知や見落としによる停止もあります。
@@ -81,8 +81,8 @@
 - [TikTok ShopのROAS基準｜損益分岐の出し方](https://leam.co.jp/column/tiktok-shop-roas/): ROAS3.0倍が黒字か赤字かは商品によって正反対です。損益分岐ROAS＝1÷貢献利益率で自社の基準が出ます。36通りの試算で必要ROASは1.72〜5.56倍になります。
 
 ### 配送・顧客対応
-- [TikTok Shopの発送ルールと出荷体制｜遅延ペナルティを防ぐ運用設計](https://leam.co.jp/column/shipping-rules/): 「集荷待ち」更新の期限は注文日の翌営業日から起算して2営業日目の23:59。注文日は数えず、週末をまたぐと1日の数え違いで期限が3日ずれます。
-- [TikTok Shopの返品・返金ルールと対応フロー](https://leam.co.jp/column/returns-refunds/): 返品リクエストは2営業日以内に承認か拒否を。無応答は自動承認となり、判断の余地が消えます。購入者の申請期限は配達後30日、破損・欠陥は別枠で90日（2026年9月時点）。
+- [TikTok Shopの発送期限と遅延ペナルティ｜集荷待ちの数え方](https://leam.co.jp/column/shipping-rules/): 「集荷待ち」更新の期限は注文日の翌営業日から数えて2営業日目の23:59。遅延は1件ではなく率で判定されます。週末をまたぐと期限が3日ずれる数え方の落とし穴も解説。
+- [TikTok Shopの返品・返金｜セラーの対応期限と自動承認](https://leam.co.jp/column/returns-refunds/): 返品リクエストは2営業日以内に承認か拒否を。無応答は自動承認になり、判断の余地が消えます。購入者の申請期限は配達後30日、破損・欠陥は90日。セラー向けの対応フロー付き。
 - [TikTok Shopのレビューの集め方と低評価への対応](https://leam.co.jp/column/review-management/): 低評価はセラー側で削除できません。24時間以内に3つ、その後に2つ回す対応5ステップと、原因を商品・説明・配送・期待値の4つに分けて直す場所を解説。
 - [TikTok Shopの在庫連携｜Shopify・BASEの繋ぎ方](https://leam.co.jp/column/inventory-sync/): TikTok Shopの在庫連携を解説。在庫の正の決め方、Shopify・BASEの連携アプリと手運用の選び分け、公式ヘルプで確認できたズレの原因をまとめます。
 - [TikTok Shopの顧客対応｜返信テンプレート](https://leam.co.jp/column/tiktok-shop-customer-support/): TikTok Shopの購入前質問・配送状況・不具合・返品・低評価への対応を整理しました。返信テンプレートと引き継ぎのルールつきです。
