@@ -220,40 +220,87 @@
 <article>
 <p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 用語集</p>
 <figure style="margin:0 0 26px">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="用語の取り違えを表したイラスト：左に「GMV 流通取引総額」と書かれた赤い大きなカードがあり、そこから右へ矢印が伸びて「入金額 手元に残る額」と書かれた白いカードにつながっている。矢印の上下には「返品・返金」「販売手数料」が引かれることが示されており、同じ売上という言葉でも二つの数字が一致しないことを表している">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左の高く積まれた赤い札束から右へ流れる帯が途中で分かれ、上の帯は返品で戻っていく札へ、下の帯は手数料の箱へ抜けていき、残った帯がシアンの財布に届くことで、売上と手元に残る額が違うことを示すイラスト">
   <rect width="1200" height="630" fill="#FFFFFF"/>
-  <path d="M0 0h1200v320c-104 28-200 28-308 8-112-20-204-52-320-46-114 6-202 50-314 60-98 8-192-2-258-30z" fill="#F6F7F9"/>
-  <ellipse cx="900" cy="250" rx="250" ry="190" fill="#EFF1F4"/>
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
   <g fill="#D8DADE">
-    <g id="gdots">
-      <circle cx="60" cy="66" r="5"/><circle cx="96" cy="66" r="5"/><circle cx="132" cy="66" r="5"/>
-      <circle cx="60" cy="102" r="5"/><circle cx="96" cy="102" r="5"/><circle cx="132" cy="102" r="5"/>
-      <circle cx="60" cy="138" r="5"/><circle cx="96" cy="138" r="5"/><circle cx="132" cy="138" r="5"/>
+    <g id="glossarydots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
     </g>
-    <use href="#gdots" transform="translate(950 -10)"/>
+    <use href="#glossarydots" transform="translate(944 542)"/>
   </g>
-  <path d="M0 520c150-28 270-12 398 10 128 22 248 28 374 8 124-20 240-40 428-22v114H0z" fill="#ECEEF1"/>
 
-  <rect x="96" y="212" width="300" height="216" rx="16" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
-  <rect x="96" y="212" width="300" height="216" rx="16" fill="#B01D36"/>
-  <text x="246" y="292" text-anchor="middle" font-size="30" font-weight="700" fill="#FFC9D3" letter-spacing="3">GMV</text>
-  <text x="246" y="352" text-anchor="middle" font-size="46" font-weight="900" fill="#FFFFFF">流通取引総額</text>
-  <text x="246" y="394" text-anchor="middle" font-size="20" font-weight="700" fill="#FFC9D3">返品・返金・キャンセルを含む</text>
+  <!-- 分かれる流れ（手元に残るシアンが太く、返品・手数料の灰色は細い） -->
+  <g stroke="#0B0C10" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M424 242C540 242 562 112 684 112L684 148C572 148 548 278 424 278z" fill="#DFE0E2"/>
+    <path d="M424 428C540 428 562 498 690 498L690 532C556 532 548 460 424 460z" fill="#DFE0E2"/>
+    <path d="M424 284H930V422H424z" fill="#25F4EE"/>
+  </g>
+  <g fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M556 334l20 19-20 19"/><path d="M676 334l20 19-20 19"/><path d="M796 334l20 19-20 19"/>
+  </g>
 
-  <path d="M424 322h176" stroke="#3A3F46" stroke-width="9" fill="none" stroke-linecap="round"/>
-  <path d="M588 302l34 20-34 20z" fill="#3A3F46"/>
-  <text x="522" y="286" text-anchor="middle" font-size="21" font-weight="700" fill="#6B7681">− 返品・返金</text>
-  <text x="522" y="372" text-anchor="middle" font-size="21" font-weight="700" fill="#6B7681">− 販売手数料</text>
+  <!-- 左：売上の山（帯封をした札束を同じ幅でずらして積む） -->
+  <g>
+    <path d="M44 474V274H82V158H322V274H368V474z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <g fill="#FE2C55" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round">
+      <rect x="48" y="434" width="304" height="40" rx="5"/><rect x="64" y="394" width="304" height="40" rx="5"/><rect x="44" y="354" width="304" height="40" rx="5"/><rect x="60" y="314" width="304" height="40" rx="5"/><rect x="50" y="274" width="304" height="40" rx="5"/>
+    </g>
+    <path d="M62 448H124M172 448H338M62 461H124M172 461H338M78 408H140M188 408H354M78 421H140M188 421H354M58 368H120M168 368H334M58 381H120M168 381H334M74 328H136M184 328H350M74 341H136M184 341H350M64 288H126M174 288H340M64 301H126M174 301H340" stroke="#CE1730" stroke-width="4" stroke-linecap="round"/>
+    <g fill="#CE1730" stroke="#0B0C10" stroke-width="4" stroke-linejoin="round">
+      <rect x="134" y="433" width="28" height="42"/><rect x="150" y="393" width="28" height="42"/><rect x="130" y="353" width="28" height="42"/><rect x="146" y="313" width="28" height="42"/><rect x="136" y="273" width="28" height="42"/>
+    </g>
+    <rect x="82" y="158" width="240" height="116" rx="8" fill="#FE2C55" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="96" y="172" width="212" height="88" rx="6" fill="none" stroke="#FFFFFF" stroke-width="4"/>
+    <rect x="126" y="156" width="34" height="120" fill="#CE1730" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="246" cy="216" r="28" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <circle cx="246" cy="216" r="12" fill="#CE1730"/>
+  </g>
 
-  <rect x="672" y="240" width="264" height="176" rx="16" fill="#5E6064" opacity=".13" transform="translate(8 10)"/>
-  <rect x="672" y="240" width="264" height="176" rx="16" fill="#FFFFFF" stroke="#3A3F46" stroke-width="4"/>
-  <text x="804" y="304" text-anchor="middle" font-size="26" font-weight="700" fill="#8A909C" letter-spacing="2">入金額</text>
-  <text x="804" y="360" text-anchor="middle" font-size="40" font-weight="900" fill="#14181D">手元に残る額</text>
+  <!-- 分岐の起点 -->
+  <rect x="398" y="236" width="32" height="228" rx="10" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
 
-  <text x="96" y="150" font-size="26" font-weight="800" fill="#B01D36" letter-spacing="5">GLOSSARY</text>
-  <text x="96" y="504" font-size="34" font-weight="900" fill="#14181D">同じ「売上」でも、指している数字が違う</text>
-  <text x="96" y="546" font-size="22" font-weight="700" fill="#6B7681">取り違えると判断を誤る30語</text>
-  <text x="96" y="592" font-size="19" font-weight="700" fill="#8A909C">LEAM ─ TikTok Shop 実践コラム</text>
+  <!-- 上：返品・返金で戻る札 -->
+  <g>
+    <rect x="684" y="92" width="124" height="80" rx="9" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="684" y="92" width="124" height="80" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="698" y="106" width="96" height="52" rx="6" fill="none" stroke="#C9CBD0" stroke-width="4"/>
+    <circle cx="746" cy="132" r="16" fill="#DFE0E2" stroke="#0B0C10" stroke-width="4"/>
+    <path d="M824 112C846 52 760 22 704 50" fill="none" stroke="#0B0C10" stroke-width="18" stroke-linecap="round"/>
+    <path d="M824 112C846 52 760 22 704 50" fill="none" stroke="#FE2C55" stroke-width="8" stroke-linecap="round"/>
+    <path d="M684 38 714 30 708 64z" fill="#FE2C55" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+
+  <!-- 下：手数料の箱 -->
+  <g>
+    <rect x="686" y="468" width="146" height="96" rx="10" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="686" y="468" width="146" height="96" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M686 494h146" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="730" y="476" width="58" height="10" rx="5" fill="#0B0C10"/>
+    <rect x="716" y="514" width="86" height="30" rx="6" fill="#C9CBD0" stroke="#0B0C10" stroke-width="4"/>
+    <g fill="#C9CBD0" stroke="#0B0C10" stroke-width="4">
+      <ellipse cx="878" cy="550" rx="30" ry="10"/><ellipse cx="878" cy="536" rx="30" ry="10"/>
+    </g>
+  </g>
+
+  <!-- 右：手元に残る分（財布） -->
+  <g>
+    <rect x="958" y="206" width="132" height="70" rx="6" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round" transform="rotate(-8 1024 241)"/>
+    <circle cx="1022" cy="232" r="12" fill="#DFE0E2" stroke="#0B0C10" stroke-width="4"/>
+    <rect x="918" y="248" width="242" height="212" rx="24" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="918" y="248" width="242" height="212" rx="24" fill="#25F4EE" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M918 292h242" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="1068" y="320" width="108" height="76" rx="16" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="1104" cy="358" r="12" fill="#CE1730" stroke="#0B0C10" stroke-width="4"/>
+  </g>
+
+  <circle cx="1150" cy="92" r="14" fill="#25F4EE"/>
+  <circle cx="560" cy="58" r="9" fill="#FE2C55"/>
+  <circle cx="32" cy="430" r="11" fill="#DFE0E2"/>
+  <circle cx="520" cy="560" r="12" fill="#DFE0E2"/>
 </svg>
 <figcaption>図：GMVと入金額は同じ「売上」ではない。返品・返金と販売手数料を引いた後が手元に残る額（LEAM作成）</figcaption>
 </figure>

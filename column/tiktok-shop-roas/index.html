@@ -231,32 +231,99 @@
   </div>
 
   <figure style="margin:0 0 26px">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="記事のアイキャッチ。損益分岐ROASの計算式と、貢献利益率から必要ROASを求める早見のイメージ">
-      <rect width="1200" height="630" fill="#FFFFFF"/>
-      <path d="M0 0h1200v300c-104 34-208 52-318 40-118-13-206-58-322-58-108 0-190 44-302 58-96 12-190 2-258-24z" fill="#F6F7F9"/>
-      <ellipse cx="942" cy="300" rx="286" ry="222" fill="#EFF1F4"/>
-      <path d="M0 520c168-30 302-14 432 10 130 24 242 28 358 10 112-17 220-38 410-22v112H0z" fill="#ECEEF1"/>
-      <g opacity="1" stroke="#C9CBD0" stroke-width="6" fill="none" stroke-linecap="round">
-        <path d="M742 508 C842 508 862 388 922 328 C982 268 1062 258 1132 208"/>
-        <path d="M742 548 C862 548 882 448 952 408 C1022 368 1082 358 1132 328"/>
-      </g>
-      <rect x="742" y="120" width="400" height="392" rx="26" fill="#FFFFFF" stroke="#0B0C10" stroke-width="8" stroke-linejoin="round"/>
-      <text x="786" y="176" font-size="21" font-weight="700" fill="#646C7A">CONTRIBUTION MARGIN</text>
-      <rect x="786" y="200" width="312" height="34" rx="8" fill="#E3E6EA"/>
-      <rect x="786" y="200" width="125" height="34" rx="8" fill="#FE2C55"/>
-      <text x="786" y="266" font-size="30" font-weight="800" fill="#0B0C10">貢献利益率 40%</text>
-      <line x1="786" y1="298" x2="1098" y2="298" stroke="#C9CBD0" stroke-width="3"/>
-      <text x="786" y="348" font-size="24" font-weight="700" fill="#646C7A">1 ÷ 0.40 ＝</text>
-      <text x="786" y="424" font-size="72" font-weight="900" fill="#B01D36">2.50 倍</text>
-      <text x="786" y="470" font-size="22" font-weight="700" fill="#3A3F46">これを下回ったら赤字</text>
-      <text x="80" y="150" font-size="25" font-weight="800" fill="#B01D36" letter-spacing="5">TIKTOK SHOP ─ ROAS</text>
-      <text x="76" y="262" font-size="86" font-weight="900" fill="#0B0C10">ROASの基準は</text>
-      <text x="76" y="366" font-size="86" font-weight="900" fill="#0B0C10">自分で計算する</text>
-      <text x="80" y="432" font-size="25" fill="#3A3F46">損益分岐ROASの出し方とGMV MaxのROI目標</text>
-      <rect x="80" y="472" width="404" height="58" rx="29" fill="#B01D36"/>
-      <text x="282" y="510" text-anchor="middle" font-size="24" font-weight="800" fill="#FFFFFF">計算表7点・図解7枚</text>
-      <text x="80" y="586" font-size="20" font-weight="700" fill="#646C7A">LEAM ─ TikTok Shop 実践コラム</text>
-    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="売価を分けた円グラフから貢献利益の赤い一切れを取り出し、その割合で決まる損益分岐の斜めの線を境に、上回る側がシアン、下回る側が赤に塗り分けられたグラフを示すイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="tiktokshoproasdots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#tiktokshoproasdots" transform="translate(944 542)"/>
+  </g>
+
+  <!-- 飾りの点 -->
+  <circle cx="1146" cy="70" r="13" fill="#25F4EE"/>
+  <circle cx="512" cy="96" r="8" fill="#FE2C55"/>
+  <circle cx="548" cy="560" r="11" fill="#D8DADE"/>
+
+  <!-- ================= 左：売価を分けた円グラフ ================= -->
+  <g transform="translate(-26 8)">
+    <circle cx="300" cy="290" r="180" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round">
+      <path d="M300 290L405.8 435.6A180 180 0 0 1 128.8 345.6Z" fill="#DFE0E2"/>
+      <path d="M300 290L128.8 345.6A180 180 0 0 1 194.2 144.4Z" fill="#C9CBD0"/>
+      <path d="M300 290L194.2 144.4A180 180 0 0 1 300 110Z" fill="#FFFFFF"/>
+    </g>
+    <!-- 中の目印（細部） -->
+    <g fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round">
+      <path d="M228 378h52M236 400h30"/>
+    </g>
+    <rect x="166" y="248" width="44" height="12" rx="6" fill="#DFE0E2"/>
+    <rect x="232" y="170" width="30" height="10" rx="5" fill="#DFE0E2"/>
+
+    <!-- 取り出した一切れ（貢献利益） -->
+    <g transform="translate(34 -11)">
+      <path d="M300 290L300 110A180 180 0 0 1 405.8 435.6Z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+      <path d="M300 290L300 110A180 180 0 0 1 405.8 435.6Z" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M328.5 280.7L328.5 160.7A120 120 0 0 1 399 377.8Z" fill="#CE1730"/>
+      <circle cx="366" cy="262" r="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+      <circle cx="366" cy="262" r="8" fill="#FE2C55"/>
+    </g>
+  </g>
+
+  <!-- 一切れから線へ向かう矢印 -->
+  <path d="M478 214c34-46 66-62 98-58" fill="none" stroke="#0B0C10" stroke-width="5" stroke-linecap="round" stroke-dasharray="2 14"/>
+  <path d="M566 140l26 16-24 20z" fill="#0B0C10" stroke="#0B0C10" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- ================= 右：損益分岐の線で塗り分けたグラフ ================= -->
+  <g>
+    <rect x="600" y="92" width="530" height="392" rx="24" fill="#5E6064" opacity=".14" transform="translate(9 11)"/>
+    <rect x="600" y="92" width="530" height="392" rx="24" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+    <!-- 上回る側（シアン）／下回る側（赤） -->
+    <path d="M652 424L1090 136V128H652Z" fill="#25F4EE"/>
+    <path d="M652 424L1090 136V424Z" fill="#FE2C55"/>
+
+    <!-- 軸 -->
+    <path d="M652 120V430H1098" fill="none" stroke="#0B0C10" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <g stroke="#C9CBD0" stroke-width="4" stroke-linecap="round">
+      <path d="M740 440v12M828 440v12M916 440v12M1004 440v12"/>
+    </g>
+
+    <!-- 損益分岐の線 -->
+    <path d="M652 424L1090 136" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-dasharray="20 16"/>
+
+    <!-- 上回る点（白） -->
+    <g fill="#FFFFFF" stroke="#0B0C10" stroke-width="5">
+      <circle cx="724" cy="300" r="12"/>
+      <circle cx="812" cy="236" r="12"/>
+      <circle cx="926" cy="176" r="12"/>
+    </g>
+    <!-- 下回る点（白・濃い赤の芯） -->
+    <g fill="#FFFFFF" stroke="#0B0C10" stroke-width="5">
+      <circle cx="808" cy="384" r="12"/>
+      <circle cx="930" cy="334" r="12"/>
+      <circle cx="1040" cy="380" r="12"/>
+    </g>
+    <g fill="#CE1730">
+      <circle cx="808" cy="384" r="5"/><circle cx="930" cy="334" r="5"/><circle cx="1040" cy="380" r="5"/>
+    </g>
+
+    <!-- 線の先の目印 -->
+    <circle cx="1090" cy="136" r="22" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+    <circle cx="1090" cy="136" r="9" fill="#0B0C10"/>
+  </g>
+</svg>
   </figure>
 
   <p class="lead">TikTok Shopの広告（GMV Max）は、<strong>ROI目標と日予算を設定する形式</strong>です。ここで最初に手が止まるのが「ROI目標をいくつに置くか」で、検索すると他社の目安値が並びます。ただし<strong>必要なROASは、業種・商品単価・原価率・カテゴリー別の販売手数料率・クリエイターへのコミッション率で変わります</strong>。同じ広告でも、必要ROASが1.7倍で足りる商品と、5.5倍ないと赤字になる商品が同時に存在します。この記事は、どの売り場で売るかを選ぶ段階の方ではなく、<strong>すでにTikTok Shopで広告を回している（これから回す）方が、自社の基準値を自分の数字で出すため</strong>のものです。売り場の選び方は<a href="https://leam.co.jp/column/marketplace-comparison/">TikTok ShopとAmazon・楽天の違い</a>で扱っています。</p>
