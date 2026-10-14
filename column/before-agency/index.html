@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方</title>
+<meta name="description" content="TikTok Shopの運用代行に相談する前に、社内で決めて依頼書1枚にまとめる7項目を順に解説。目的と期限、粗利、費目別の予算、決裁者、渡す権限、止める基準、報告の受け方とひな形まで。">
+<link rel="canonical" href="https://leam.co.jp/column/before-agency/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方">
+<meta property="og:description" content="TikTok Shopの運用代行に相談する前に、社内で決めて依頼書1枚にまとめる7項目を順に解説。目的と期限、粗利、費目別の予算、決裁者、渡す権限、止める基準、報告の受け方とひな形まで。">
+<meta property="og:url" content="https://leam.co.jp/column/before-agency/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/before-agency.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方">
+<meta name="twitter:description" content="TikTok Shopの運用代行に相談する前に、社内で決めて依頼書1枚にまとめる7項目を順に解説。目的と期限、粗利、費目別の予算、決裁者、渡す権限、止める基準、報告の受け方とひな形まで。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/before-agency.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方", "description": "TikTok Shopの運用代行に相談する前に、社内で決めて依頼書1枚にまとめる7項目を順に解説。目的と期限、粗利、費目別の予算、決裁者、渡す権限、止める基準、報告の受け方とひな形まで。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/before-agency/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/before-agency.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&lang=ja-JP", "name": "TikTok Shop公式：日本 TikTok Shop販売者利用規約（2026年5月7日最終更新）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342562049&lang=ja-JP", "name": "TikTok Shop公式：決済および支払いのガイド"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&lang=ja-JP", "name": "TikTok Shop公式：ショップの設定に必要な最初の手順"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&lang=ja-JP", "name": "TikTok Shop公式：データ分析の概要"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&lang=ja-JP", "name": "TikTok Shop公式：決済レポート"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方", "item": "https://leam.co.jp/column/before-agency/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=before-agency">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方とひな形</p>
+<span class="cat">外部支援</span>
+<h1>TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方とひな形</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="社内で決める七つの項目の記入欄が枠で並ぶ一枚の依頼書に大きな赤いゴム印が押され、そこから矢印の先に同じ記入欄の依頼書が三枚並び、その上にシアンの定規が横に渡されて三枚を同じ物差しで測っている様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v312c-110 36-206 34-306 14-112-22-204-46-314-38-112 8-196 50-304 56-110 6-196-14-276-46z" fill="#F6F7F9"/>
+  <ellipse cx="860" cy="240" rx="312" ry="188" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 512c150-28 280-14 414 6 134 20 250 28 372 10 124-18 236-42 414-24v126H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="beforeagencyDots">
+      <circle cx="560" cy="52" r="5"/><circle cx="596" cy="52" r="5"/><circle cx="632" cy="52" r="5"/><circle cx="668" cy="52" r="5"/>
+      <circle cx="560" cy="88" r="5"/><circle cx="596" cy="88" r="5"/><circle cx="632" cy="88" r="5"/><circle cx="668" cy="88" r="5"/>
+    </g>
+    <use href="#beforeagencyDots" transform="translate(-500 470)"/>
+  </g>
+
+  <!-- ================= 主役：七項目の記入欄がある依頼書 ================= -->
+  <g transform="rotate(-3 285 304)">
+    <rect x="120" y="104" width="330" height="400" rx="18" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="120" y="104" width="330" height="400" rx="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="150" y="134" width="176" height="18" rx="9" fill="#FE2C55"/>
+    <!-- 記入欄（項目の枠と空欄） -->
+    <g>
+      <rect x="150" y="170" width="50" height="30" fill="#25F4EE"/><rect x="200" y="170" width="220" height="30" fill="#FFFFFF"/>
+      <rect x="150" y="204" width="50" height="30" fill="#25F4EE"/><rect x="200" y="204" width="220" height="30" fill="#FFFFFF"/>
+      <rect x="150" y="238" width="50" height="30" fill="#25F4EE"/><rect x="200" y="238" width="220" height="30" fill="#FFFFFF"/>
+      <rect x="150" y="272" width="50" height="30" fill="#25F4EE"/><rect x="200" y="272" width="220" height="30" fill="#FFFFFF"/>
+      <rect x="150" y="306" width="50" height="30" fill="#25F4EE"/><rect x="200" y="306" width="220" height="30" fill="#FFFFFF"/>
+      <rect x="150" y="340" width="50" height="30" fill="#25F4EE"/><rect x="200" y="340" width="220" height="30" fill="#FFFFFF"/>
+      <rect x="150" y="374" width="50" height="30" fill="#25F4EE"/><rect x="200" y="374" width="220" height="30" fill="#FFFFFF"/>
+    </g>
+    <path d="M150 204H420M150 238H420M150 272H420M150 306H420M150 340H420M150 374H420M200 170V408" fill="none" stroke="#0B0C10" stroke-width="3"/>
+    <rect x="150" y="170" width="270" height="238" rx="4" fill="none" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+    <g fill="#0B0C10"><rect x="162" y="181" width="26" height="8" rx="4"/><rect x="162" y="215" width="26" height="8" rx="4"/><rect x="162" y="249" width="26" height="8" rx="4"/><rect x="162" y="283" width="26" height="8" rx="4"/><rect x="162" y="317" width="26" height="8" rx="4"/><rect x="162" y="351" width="26" height="8" rx="4"/><rect x="162" y="385" width="26" height="8" rx="4"/></g>
+    <path d="M214 194h46" fill="none" stroke="#DFE0E2" stroke-width="5" stroke-linecap="round"/>
+    <path d="M214 228h80" fill="none" stroke="#DFE0E2" stroke-width="5" stroke-linecap="round"/>
+    <!-- 押された印 -->
+    <circle cx="396" cy="458" r="26" fill="none" stroke="#FE2C55" stroke-width="6"/>
+    <circle cx="396" cy="458" r="12" fill="#FE2C55"/>
+  </g>
+
+  <!-- ゴム印（赤） -->
+  <g transform="rotate(14 452 330) translate(458 392) scale(1.4) translate(-458 -392)">
+    <rect x="410" y="350" width="96" height="40" rx="10" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="440" y="290" width="36" height="66" rx="8" fill="#CE1730" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <circle cx="458" cy="270" r="32" fill="#FE2C55" stroke="#0B0C10" stroke-width="7"/>
+    <path d="M444 258a18 18 0 0 1 16-8" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/>
+    <rect x="410" y="350" width="96" height="40" rx="10" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="416" y="384" width="84" height="12" rx="4" fill="#CE1730" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+  </g>
+  <path d="M370 424l-16-14M356 448h-20M420 412l6-18" fill="none" stroke="#25F4EE" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- 矢印（一枚 → 同じ物を各社へ） -->
+  <path d="M528 300h44v-16l30 26-30 26v-16h-44z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- ================= 右：同じ依頼書が三枚 ================= -->
+  <g>
+    <rect x="640" y="150" width="150" height="214" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="640" y="150" width="150" height="214" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="804" y="150" width="150" height="214" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="804" y="150" width="150" height="214" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="968" y="150" width="150" height="214" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="968" y="150" width="150" height="214" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <g id="beforeagencyRows">
+      <rect x="662" y="174" width="86" height="12" rx="6" fill="#0B0C10"/>
+      <rect x="662" y="200" width="22" height="24" fill="#25F4EE"/>
+      <rect x="662" y="228" width="22" height="24" fill="#25F4EE"/>
+      <rect x="662" y="256" width="22" height="24" fill="#25F4EE"/>
+      <path d="M662 228H768M662 256H768M684 200V284" fill="none" stroke="#0B0C10" stroke-width="3"/>
+      <rect x="662" y="200" width="106" height="84" rx="3" fill="none" stroke="#0B0C10" stroke-width="4" stroke-linejoin="round"/>
+    </g>
+    <use href="#beforeagencyRows" transform="translate(164 0)"/>
+    <use href="#beforeagencyRows" transform="translate(328 0)"/>
+  </g>
+
+  <!-- 定規（同じ物差しで測る） -->
+  <g transform="rotate(-2 880 340)">
+    <rect x="618" y="316" width="526" height="52" rx="8" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="618" y="316" width="526" height="52" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M646 316v22M672 316v12M698 316v12M724 316v22M750 316v12M776 316v12M802 316v22M828 316v12M854 316v12M880 316v22M906 316v12M932 316v12M958 316v22M984 316v12M1010 316v12M1036 316v22M1062 316v12M1088 316v12M1114 316v22" fill="none" stroke="#0B0C10" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1128" cy="96" r="15" fill="#FE2C55"/>
+  <circle cx="512" cy="168" r="12" fill="#25F4EE"/>
+  <circle cx="742" cy="452" r="13" fill="#DFE0E2"/>
+</svg>
+    <figcaption>社内で決めた7項目を1枚の依頼書にまとめ、各社に同じ物を渡して比べる（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopの運用代行やコンサルに相談する前に、社内で決めておくことは7つあります。<strong>目的と期限、商品と粗利、予算の上限、担当者と決裁者、渡す権限、続ける・止める基準、報告の受け方</strong>です。これを<strong>1枚の依頼書</strong>にまとめてから相談すると、各社の提案と見積もりを同じ物差しで比べられます。2026年10月15日に確認した日本向けの公式ヘルプと販売者利用規約をもとに、7項目の決め方と依頼書のひな形を示します。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>相談や見積もり依頼の前に、社内で決めておく7項目とその順番</li><li>権限・報告の数字について、公式ヘルプと規約で確かめられること</li><li>そのまま使える依頼書のひな形と、複数社に出して比べる使い方</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">外部支援</span><b><a href="https://leam.co.jp/column/unyodaiko-cost/">TikTok Shop運用代行の費用相場と失敗しない選び方</a></b><span>費用の幅と見積もりで聞く質問</span></div>
+    <div class="relcard"><span class="rc">外部支援</span><b><a href="https://leam.co.jp/column/agency-contract-checklist/">TikTok Shop運用代行の契約で確認すること</a></b><span>依頼書の次に読む契約書の見方</span></div>
+    <div class="relcard"><span class="rc">外部支援</span><b><a href="https://leam.co.jp/column/consulting-vs-agency/">TikTok Shopのコンサルと運用代行の違い</a></b><span>どの形の支援に頼むかを先に決める</span></div>
+    <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組み</a></b><span>依頼書の言葉の前提をそろえる</span></div>
+  </div>
+</div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">依頼の前に決めるのは7項目で、1枚の依頼書にまとめてから相談する</a></li><li><a href="#s2">目的と期限は「何を・いつまでに・どの数字で」の1文に書く</a></li><li><a href="#s3">商品と粗利は、引かれるものを引いた後の残りを商品ごとに渡す</a></li><li><a href="#s4">予算の上限は、代行費とは別に費目ごとに書く</a></li><li><a href="#s5">担当者と決裁者を分け、返事の期限を時間で決めておく</a></li><li><a href="#s6">渡す権限と渡さない権限は、相談の前に線を引いておく</a></li><li><a href="#s7">代行の更新日に合わせて判定日を置き、見る数字と分かれ目を決める</a></li><li><a href="#s8">報告は、頻度・形式・どの画面の数字かを依頼書で指定する</a></li><li><a href="#s9">依頼書は1枚のひな形に埋め、複数社に同じ物を出して比べる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>依頼の前に決めるのは7項目で、1枚の依頼書にまとめてから相談する</h2>
+<p>運用代行やコンサルの会社に相談すると、最初に聞かれるのは「何を、いつまでに、いくらの範囲で」です。社内の答えがないまま相談すると、提案は相手が置いた前提で組み立てられ、前提が会社ごとに違うので横に並べても比べられません。<strong>比べられないまま選ぶと、決め手は金額か担当者の印象だけになります</strong>。</p>
+<p>当社の運用実感では、初回の相談の時間の多くが、この前提のすり合わせに使われています。決める項目は次の7つで、上から順に決めると前の答えが後の答えの材料になります。</p>
+<div class="tw"><table><thead><tr><th>順番</th><th>決めること</th><th>決めないまま相談すると起きること</th></tr></thead><tbody><tr><td>①</td><td>目的と期限</td><td>提案の重心が会社ごとにずれ、何を比べているのか分からなくなる</td></tr><tr><td>②</td><td>商品と粗利</td><td>コミッション率や広告の判断の根拠が無く、提案が一般論になる</td></tr><tr><td>③</td><td>予算の上限（費目別）</td><td>代行費だけを比べて、別に出ていくお金を見落とす</td></tr><tr><td>④</td><td>担当者・決裁者・返事の期限</td><td>確認待ちで作業が止まり、止まった理由が後から追えない</td></tr><tr><td>⑤</td><td>渡す権限と渡さない権限</td><td>作業に必要な範囲より広い操作を、その場の判断で渡してしまう</td></tr><tr><td>⑥</td><td>続ける・止める基準と見る日</td><td>成果の判定が先送りになり、更新するかを惰性で決める</td></tr><tr><td>⑦</td><td>報告の受け方</td><td>会社ごとに報告の数字の取り方が違い、月ごとにも比べられない</td></tr></tbody></table></div><p class="src">依頼の前に社内で決める7項目（LEAM作成）</p>
+  <figure> <svg viewBox="0 0 720 262" role="img" aria-label="社内で決める7項目を上段に4つ、下段に3つの箱で並べ、そこから下向きの矢印で1枚の依頼書にまとめ、同じ依頼書を各社へ渡すことを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">7つを決めてから、紙1枚にまとめる</text><rect x="20" y="42" width="160" height="56" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="100" y="66" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">① 目的と期限</text><text x="100" y="86" text-anchor="middle" font-size="11" fill="#787D8A">何をいつまでに</text><rect x="190" y="42" width="160" height="56" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="270" y="66" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">② 商品と粗利</text><text x="270" y="86" text-anchor="middle" font-size="11" fill="#787D8A">引いた後の残り</text><rect x="360" y="42" width="160" height="56" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="440" y="66" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">③ 予算の上限</text><text x="440" y="86" text-anchor="middle" font-size="11" fill="#787D8A">費目ごとに分ける</text><rect x="530" y="42" width="170" height="56" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="615" y="66" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">④ 担当と決裁者</text><text x="615" y="86" text-anchor="middle" font-size="11" fill="#787D8A">返事の期限も</text><rect x="105" y="110" width="160" height="56" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="185" y="134" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">⑤ 渡す権限</text><text x="185" y="154" text-anchor="middle" font-size="11" fill="#787D8A">渡さない物も書く</text><rect x="275" y="110" width="170" height="56" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="134" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">⑥ 続ける・止める</text><text x="360" y="154" text-anchor="middle" font-size="11" fill="#787D8A">見る日を先に置く</text><rect x="455" y="110" width="160" height="56" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="535" y="134" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">⑦ 報告の受け方</text><text x="535" y="154" text-anchor="middle" font-size="11" fill="#787D8A">頻度・形式・画面</text><path d="M360 172 L360 192" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M354 186 L360 198 L366 186 Z" fill="#787D8A"/><rect x="170" y="202" width="380" height="46" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="360" y="224" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">依頼書1枚にまとめる</text><text x="360" y="240" text-anchor="middle" font-size="11" fill="#787D8A">同じ紙を、相談するすべての会社に渡す</text></svg> <figcaption>図1：前の項目の答えが、次の項目を決める材料になる（LEAM作成）</figcaption> </figure>
+<p>この記事は、出店すると決めた会社が、代行会社に相談する前の準備だけを扱います。出店するかどうかを決める段階の準備や、費用相場・契約書の読み方は次の記事に送ります。</p>
+<div class="tw"><table><thead><tr><th>知りたいこと</th><th>読む記事</th></tr></thead><tbody><tr><td>出店の申請前に、商材・体制・撤退の基準を決めること</td><td><a href="https://leam.co.jp/column/late-to-enter/">今から参入して遅くないかの判断材料</a></td></tr><tr><td>社内の1〜3人で回せるか、どの作業なら外に出せるか</td><td><a href="https://leam.co.jp/column/small-team/">少人数で回すときの分担と仕組み</a></td></tr><tr><td>運用代行の費用相場と、見積もりの場で聞く質問</td><td><a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場と選び方</a></td></tr><tr><td>契約書で業務範囲・成果報酬・解約をどう読むか</td><td><a href="https://leam.co.jp/column/agency-contract-checklist/">運用代行の契約で確認すること</a></td></tr><tr><td>コンサル・伴走・代行のどれに頼むか</td><td><a href="https://leam.co.jp/column/consulting-vs-agency/">コンサルと運用代行の違い</a></td></tr><tr><td>そもそも外に出すか、社内でやるか</td><td><a href="https://leam.co.jp/column/inhouse-vs-agency/">内製か運用代行かの判断基準</a></td></tr><tr><td>ライブ配信だけを外に出したい</td><td><a href="https://leam.co.jp/column/live-agency-guide/">ライブコマース代行の使い方</a></td></tr></tbody></table></div><p class="src">この記事で扱わないことと、その送り先（LEAM作成）</p>
+<div class="box box-point"><div class="bt">💡 埋まらない欄は「未定」と書いて出す</div><p>空欄は相手に前提を置かせますが、「未定。相談しながら決めたい」と書けば、その欄の決め方の提案を各社から同じ条件で引き出せます。</p></div>
+
+<h2 id="s2"><span class="no en">02</span>目的と期限は「何を・いつまでに・どの数字で」の1文に書く</h2>
+<p>最初に決めるのは目的です。「売上を伸ばしたい」では、どの会社も同じことを言うので比べられません。目的は、<strong>何を達成したいか、いつまでに、どの数字で確かめるか</strong>の3つが入った1文にします。たとえば「主力の3商品で、◯月末までに、動画経由の注文が毎週続く状態を作る」のような形です。指標の名前（注文数・動画経由のGMVなど）をここに書き、どの画面の数字かは§08で決めます。</p>
+<p>目的が違えば、頼む作業の重心が変わります。主目的を1つに絞り、ほかは「できれば」の欄に分けておくと、提案のどこに力が入っているかを読み取れます。</p>
+<div class="tw"><table><thead><tr><th>目的の種類</th><th>依頼で重くなりやすい作業</th><th>期限の欄に書くこと</th></tr></thead><tbody><tr><td>出店直後で、初めての注文を作る</td><td>商品ページの整備、最初の動画、クリエイターへの声かけ</td><td>出品を終えたい日と、初回注文を確かめる日</td></tr><tr><td>売れている商品をさらに伸ばす</td><td>動画やLIVEの本数を増やす、クリエイター連携を広げる、広告</td><td>伸ばしたい期間（季節・催事・在庫の入荷に合わせる）</td></tr><tr><td>社内で回せる体制を作る</td><td>手順書、社内担当への引き継ぎ、定例での指導</td><td>社内だけで回し始めたい日</td></tr><tr><td>止まっている運用を立て直す</td><td>現状の診断、商品と訴求の見直し、指標の改善</td><td>診断の結果を受け取る日と、方針を決める日</td></tr></tbody></table></div><p class="src">目的ごとに依頼の重心が変わる（LEAM作成）</p>
+<p>期限には「年末の催事に間に合わせたい」「次の入荷が◯月」のような理由も添えると、代行会社が逆算して段取りを組めます。立ち上げから拡大までの流れは<a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">90日ロードマップ</a>が参考になります。</p>
+
+<h2 id="s3"><span class="no en">03</span>商品と粗利は、引かれるものを引いた後の残りを商品ごとに渡す</h2>
+<p>代行会社がいちばん困るのは、商品ごとの「残り」が分からないことです。コミッション率をどこまで上げられるか、広告にいくら使えるか、値引きしてよいか。どれも<strong>販売価格から原価・送料・販売手数料・コミッションを引いた後に、1個あたりいくら残るか</strong>で決まり、これが無いと提案は一般論に寄ります。</p>
+<p>計算は社内で済ませ、依頼書には結果だけを書きます。料率と計算のしかたは、<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料とカテゴリー別料率</a>と<a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">利益が出る条件と出ない条件</a>にまとめています。</p>
+<div class="tw"><table><thead><tr><th>依頼書の欄</th><th>書く内容</th><th>渡し方の注意</th></tr></thead><tbody><tr><td>商品名とSKU</td><td>依頼したい商品を、優先順位の高い順に</td><td>全商品ではなく、まず任せたい商品に絞る</td></tr><tr><td>販売価格</td><td>通常の価格と、値引きしてよい下限</td><td>下限を書かないと、販促の提案が比べられない</td></tr><tr><td>1個あたりの残り</td><td>原価・送料・手数料・コミッションを引いた後の額か率</td><td>原価そのものを出したくなければ、残りだけでよい</td></tr><tr><td>在庫と補充</td><td>いまの在庫数、補充にかかる日数</td><td>売れたときに止まる商品を先に知らせる</td></tr><tr><td>言えないこと</td><td>効能の表現や比較など、社内で使わない言い回し</td><td>動画やLIVEの台本の確認で、ここが基準になる</td></tr></tbody></table></div><p class="src">商品ごとに渡す情報（LEAM作成）</p>
+<p>始まった後に「残り」を答え合わせする場所もあります。公式ヘルプによると、決済レポートは注文作成ベースではなく<strong>決済ベースの視点</strong>の資料です。Excel版の「Order details（注文の詳細）」シートにはSKUごとに手数料を含む内訳が載り、未決済の注文は「財務」＞「On hold（保留中）」に出ます。<strong>社内で計算した残りと、この資料で確かめる残りを同じ単位でそろえておく</strong>と、ずれにすぐ気づけます。</p>
+
+<h2 id="s4"><span class="no en">04</span>予算の上限は、代行費とは別に費目ごとに書く</h2>
+<p>見積もりの金額は、多くの場合、代行会社への支払いです。運用ではそれとは別に、広告費、無料サンプルの商品と送料、クリエイターへの報酬が出ていきます。<strong>依頼書には、代行費の上限とは別に、これらの上限を費目ごとに書きます</strong>。</p>
+<p>「月◯円まで」と1つの数字だけを書くと、広告費を含めて考える会社と代行費だけで考える会社が混ざり、提案が比べられなくなります。費用の相場は<a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場</a>に、どの費目が売上の決済から差し引かれ、契約で誰が負担を持つかは<a href="https://leam.co.jp/column/agency-contract-checklist/">契約で確認すること</a>に書いています。ここでは、依頼書に何をどの形で書くかだけを扱います。</p>
+<div class="tw"><table><thead><tr><th>費目</th><th>依頼書に書く上限の形</th><th>社内で承認する人</th></tr></thead><tbody><tr><td>代行費</td><td>月の上限。初期費用を払えるか、払えないか</td><td>決裁者</td></tr><tr><td>広告費</td><td>月の上限と、1日の上限。増やすときに承認が要る額</td><td>決裁者（増額のたびに）</td></tr><tr><td>サンプル代</td><td>月に送れる数の上限と、1個あたりの商品原価</td><td>担当者（上限の範囲内なら）</td></tr><tr><td>クリエイター報酬</td><td>成果報酬（コミッション）の率の上限と、固定報酬を払うかどうか</td><td>決裁者（率を上げるとき）</td></tr><tr><td>撮影・素材</td><td>撮影用の商品や備品を自社で用意するか、別に払うか</td><td>担当者</td></tr></tbody></table></div><p class="src">費目ごとの上限の書き方（LEAM作成）</p>
+  <figure> <svg viewBox="0 0 720 236" role="img" aria-label="左の箱に見積もりで返ってくる代行費を置き、右の箱に自社で上限を書く広告費・サンプル代・クリエイター報酬の3つを並べ、4つを合わせた額が月に出ていくお金の上限になることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">見積もりの外にも、出ていくお金がある</text><rect x="20" y="44" width="250" height="140" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="145" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">見積もりで返ってくる</text><rect x="48" y="92" width="194" height="56" rx="10" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="145" y="116" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">代行費</text><text x="145" y="136" text-anchor="middle" font-size="11" fill="#787D8A">作業の対価</text><text x="145" y="170" text-anchor="middle" font-size="11" fill="#787D8A">月の上限を書く</text><text x="296" y="122" text-anchor="middle" font-size="16" font-weight="800" fill="#787D8A">＋</text><rect x="322" y="44" width="378" height="140" rx="14" fill="#ffffff" stroke="#E8324A" stroke-width="1.5"/><text x="511" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">自社で上限を書く</text><rect x="336" y="92" width="104" height="56" rx="10" fill="#FFECF0"/><text x="388" y="116" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">広告費</text><text x="388" y="136" text-anchor="middle" font-size="11" fill="#787D8A">月と1日</text><rect x="448" y="92" width="104" height="56" rx="10" fill="#FFECF0"/><text x="500" y="116" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">サンプル代</text><text x="500" y="136" text-anchor="middle" font-size="11" fill="#787D8A">送る数と原価</text><rect x="560" y="92" width="128" height="56" rx="10" fill="#FFECF0"/><text x="624" y="116" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">クリエイター報酬</text><text x="624" y="136" text-anchor="middle" font-size="11" fill="#787D8A">率と固定報酬</text><text x="511" y="170" text-anchor="middle" font-size="11" fill="#787D8A">増やすときの承認者も書く</text><text x="360" y="216" text-anchor="middle" font-size="11.5" fill="#787D8A">4つを合わせた額が、月に出ていくお金の上限になる</text></svg> <figcaption>図2：代行費と、自社で上限を書く3つの費目（LEAM作成）</figcaption> </figure>
+<p>上限は「使い切ってほしい額」ではなく「超えるなら社内の承認が要る線」だと依頼書に書いておくと、予算の配分が各社の考え方として見えてきます。</p>
+
+<h2 id="s5"><span class="no en">05</span>担当者と決裁者を分け、返事の期限を時間で決めておく</h2>
+<p>任せても社内の判断はなくなりません。台本の確認、コミッション率や値段の変更など、自社しか決められないことが毎週出てきます。依頼書には、<strong>日々の窓口になる担当者と、お金と表現の最終判断をする決裁者を分けて</strong>書きます。</p>
+<p>あわせて書くのが返事の期限です。確認待ちのあいだ作業は止まり、その日数は成果の判定にも響きます。当社の運用実感では、運用が止まる原因は作業の遅れより社内の返事待ちのほうが多くあります。担当者が1人なら、休んだときの代わりも書きます。</p>
+<div class="tw"><table><thead><tr><th>判断の種類</th><th>決める人</th><th>返事の期限の書き方（例）</th></tr></thead><tbody><tr><td>動画・LIVEの台本や表現の確認</td><td>担当者（迷うものは決裁者）</td><td>届いた日の翌営業日まで</td></tr><tr><td>コミッション率・広告費の変更</td><td>決裁者</td><td>週1回の定例で決める。急ぎは2営業日以内</td></tr><tr><td>在庫切れ・値段・販促の変更</td><td>商品と物流の担当者</td><td>分かった時点で代行会社に知らせる</td></tr><tr><td>請求・支払い</td><td>経理の担当者</td><td>請求書が届いてから社内の締め日まで</td></tr><tr><td>契約の範囲を広げる・狭める</td><td>決裁者</td><td>月末の振り返りで決める</td></tr></tbody></table></div><p class="src">判断の種類ごとの担当と返事の期限（LEAM作成）</p>
+
+<h2 id="s6"><span class="no en">06</span>渡す権限と渡さない権限は、相談の前に線を引いておく</h2>
+<p>作業を任せるには、セラーセンターなどの操作を任せる必要があります。相談の場で求められるままに渡すのではなく、<strong>何を渡し、何を渡さないかを依頼の前に決めておきます</strong>。</p>
+<p>日本のTikTok Shop販売者利用規約（2026年5月7日最終更新）は、販売者がほかのユーザーにアカウントの全部または一部の管理を授権でき、その人を「認定ユーザー」と呼ぶと定めています。販売者は<strong>授権範囲を調整し、授権を終了できます</strong>。一方で<strong>認定ユーザーによる違反は販売者による違反とみなされ</strong>、販売者は認定ユーザーが満18歳以上であることなどを保証しなければなりません。代行会社の担当者の操作も、自社のショップの評価として残ります（<a href="https://leam.co.jp/column/account-suspension/">違反と停止の仕組み</a>）。</p>
+<p>渡さないものは公式ヘルプからも読み取れます。決済および支払いのガイドは、<strong>支払い用銀行口座の詳細を追加または更新できるのはショップ所有者だけ</strong>とし、所有者アカウントかどうかはセラーセンター右上隅の「プロフィール」アイコンで確認できると案内しています。ショップ設定の手順のヘルプには、リンクできる公式TikTokアカウントは1つだけで、<strong>変更できるのは3回まで</strong>とあります。どのアカウントをつなぐかは自社で決めておきます。</p>
+<div class="tw"><table><thead><tr><th>区分</th><th>例</th><th>依頼書に書くこと</th></tr></thead><tbody><tr><td>渡す（作業に要る範囲）</td><td>商品の登録と編集、動画やLIVEの作業、クリエイターへの連絡、分析画面の閲覧</td><td>どの作業のために渡すか。終わったら外す</td></tr><tr><td>相談して決める</td><td>広告の設定と予算の変更、コミッション率の変更、値段やクーポンの変更</td><td>変えてよい範囲と、事前の承認が要る範囲</td></tr><tr><td>渡さない</td><td>所有者アカウントのログイン、銀行口座の情報、公式アカウントの付け替え</td><td>自社が持ち続けることを最初に伝える</td></tr></tbody></table></div><p class="src">権限の線引き（販売者利用規約と公式ヘルプの記載をもとにLEAM作成）</p>
+<p>担当者ごとの操作範囲を分ける画面の名前と選べる項目は、設定するときに公式ヘルプで最新を確認してください。アカウントや素材を契約上だれが持つかは、<a href="https://leam.co.jp/column/agency-contract-checklist/">契約で確認すること</a>で扱っています。取り消せる作業と取り消せない作業で、外に出すか社内に残すかを分ける考え方は<a href="https://leam.co.jp/column/small-team/">少人数で回すときの分担</a>にあります。</p>
+
+<h2 id="s7"><span class="no en">07</span>代行の更新日に合わせて判定日を置き、見る数字と分かれ目を決める</h2>
+<p>代行の契約には、多くの場合、最低期間と更新の連絡期限があります。基準がないまま始めると、成果が出なくても「もう少し様子を見る」が続いて更新を惰性で決めるか、逆に成果が出る前に焦って止めることになります。依頼書には、<strong>更新を決める日から逆算した判定日と、その日に見る数字と、分かれ目</strong>を先に書きます。分かれ目は<strong>続ける</strong>・<strong>直して続ける</strong>・<strong>止める</strong>の3つに分けると決めやすくなります。ここで決めるのは代行会社との契約を続けるかで、ショップそのものを続けるかの基準とは分けて考えます。</p>
+<div class="tw"><table><thead><tr><th>見る日（例）</th><th>見る数字</th><th>続ける</th><th>直して続ける</th><th>止める</th></tr></thead><tbody><tr><td>開始から1か月</td><td>約束した作業の量（出品数・動画の本数・クリエイターへの連絡数）</td><td>予定どおり出ている</td><td>遅れているが理由が分かる</td><td>理由の説明がないまま出ていない</td></tr><tr><td>開始から2か月</td><td>入口別の注文数と、1個あたりの残り</td><td>残りが出ている商品がある</td><td>注文はあるが残りが薄い</td><td>商品や訴求を変えても注文が動かない</td></tr><tr><td>更新の連絡期限の前</td><td>①で書いた目的の数字</td><td>期限までに届く見込みがある</td><td>届かないが原因が特定できている</td><td>原因が分からず、次の打ち手も出ない</td></tr></tbody></table></div><p class="src">判定日ごとの分かれ目（見る日は当社の置き方の例。自社の期限に合わせて置き換える）</p>
+  <figure> <svg viewBox="0 0 720 240" role="img" aria-label="開始日から1回目の判定日、2回目の判定日、更新を決める日までを横の時間軸に並べ、各判定日に見る数字を添え、最後に続ける・直して続ける・止めるの3つの分かれ道に分かれることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">判定日ごとに、見る数字と分かれ道を先に書く</text><path d="M60 78 L520 78" stroke="#787D8A" stroke-width="2.5" fill="none"/><circle cx="60" cy="78" r="9" fill="#454956"/><circle cx="210" cy="78" r="9" fill="#ffffff" stroke="#454956" stroke-width="2.5"/><circle cx="360" cy="78" r="9" fill="#ffffff" stroke="#454956" stroke-width="2.5"/><circle cx="510" cy="78" r="11" fill="#E8324A"/><text x="60" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">開始日</text><text x="210" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">1回目の判定</text><text x="360" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">2回目の判定</text><text x="510" y="58" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">更新の判断</text><text x="60" y="108" text-anchor="middle" font-size="11" fill="#787D8A">依頼書を渡す</text><text x="210" y="108" text-anchor="middle" font-size="11" fill="#787D8A">作業の量</text><text x="360" y="108" text-anchor="middle" font-size="11" fill="#787D8A">注文と残り</text><text x="510" y="108" text-anchor="middle" font-size="11" fill="#787D8A">目的の数字</text><path d="M530 78 L580 78" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M580 78 L600 134" stroke="#787D8A" stroke-width="2" fill="none"/><path d="M580 78 L600 172" stroke="#787D8A" stroke-width="2" fill="none"/><path d="M580 78 L600 96" stroke="#787D8A" stroke-width="2" fill="none"/><rect x="600" y="80" width="104" height="32" rx="16" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="652" y="101" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">続ける</text><rect x="600" y="118" width="104" height="32" rx="16" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="652" y="139" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">直して続ける</text><rect x="600" y="156" width="104" height="32" rx="16" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="652" y="177" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">止める</text><text x="300" y="160" text-anchor="middle" font-size="11.5" fill="#454956">日付と分かれ目は、相談の前に社内で決める</text><text x="300" y="182" text-anchor="middle" font-size="11" fill="#787D8A">最低契約期間との関係は、契約書で確かめる</text><text x="360" y="222" text-anchor="middle" font-size="11.5" fill="#787D8A">決めておけば、更新するかを惰性で決めずに済む</text></svg> <figcaption>図3：判定日と分かれ道を、始める前に置いておく（LEAM作成）</figcaption> </figure>
+<p>最後の判定日は、更新の連絡期限より前に置きます。期限を過ぎてから判定すると、止めると決めても次の期間に入ってしまう契約があるからです。期間と解約の条件の読み方は<a href="https://leam.co.jp/column/agency-contract-checklist/">契約で確認すること</a>に、ショップ全体の撤退ラインの置き方は<a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">利益が出る条件と出ない条件</a>にあります。</p>
+
+<h2 id="s8"><span class="no en">08</span>報告は、頻度・形式・どの画面の数字かを依頼書で指定する</h2>
+<p>報告の形は任せると会社ごとにばらばらになります。<strong>頻度・形式・どの画面の数字か</strong>を指定しておけば、各社の提案を同じ形で比べられ、始まってからも月ごとに比べられます。</p>
+<p>画面の指定が要るのは、似た数字が別の場所にあるからです。公式ヘルプ「データ分析の概要」によると、「ビジネスデータ」タブにはGMV・商品の販売数・購入者数・返金額・SKU注文数・注文数と、ページ閲覧数・訪問者数・コンバージョン率が並びます。期間は過去7日間・過去28日間・日・週・月・カスタムから選べ、右上隅の「ダウンロード」ボタンでエクスポートできます。同じヘルプは、<strong>分析に表示されるGMVは返品・返金・キャンセルが含まれた数字で、収入とは同じではない</strong>とし、お金は「財務」ページで見るよう案内しています。入口別の数字は「セールスソース」タブ、アフィリエイトのGMVは「マーケティングソース」タブか「クリエイター」ページです。</p>
+<p>お金の数字は決済レポートで見ます。公式ヘルプでは、この資料は設定した決済期間に基づいて毎日作られ、5つのシートを持つExcelで、「ファイナンス」＞「明細」または「支払金」の「Export（エクスポート）」から取り出すと案内されています。</p>
+<div class="tw"><table><thead><tr><th>決めること</th><th>依頼書への書き方（例）</th></tr></thead><tbody><tr><td>頻度</td><td>週1回は数字だけ、月1回は振り返りと翌月の打ち手</td></tr><tr><td>形式</td><td>報告書に、画面からダウンロードした元のファイルを添える</td></tr><tr><td>売上の数字</td><td>データ分析の概要のGMVと注文数。期間は月の1日から末日</td></tr><tr><td>入口別の数字</td><td>セールスソース（LIVE・動画・商品カード）と、マーケティングソースのアフィリエイト</td></tr><tr><td>お金の数字</td><td>決済レポートの金額。分析画面のGMVとは分けて書く</td></tr><tr><td>作業の記録</td><td>出した動画、声をかけたクリエイター、変えた設定の一覧</td></tr><tr><td>次の打ち手</td><td>翌週・翌月にやることと、社内に判断を求めること</td></tr></tbody></table></div><p class="src">報告の指定のしかた（公式ヘルプ「データ分析の概要」「決済レポート」の記載をもとにLEAM作成）</p>
+<p>見る指標の選び方と週次の表の作り方は<a href="https://leam.co.jp/column/tiktok-shop-kpi/">KPI設計の記事</a>に、成果報酬の基準をどの数字に置くかは<a href="https://leam.co.jp/column/agency-contract-checklist/">契約で確認すること</a>にまとめています。</p>
+
+<h2 id="s9"><span class="no en">09</span>依頼書は1枚のひな形に埋め、複数社に同じ物を出して比べる</h2>
+<p>7項目を1枚にまとめます。冒頭にショップの状態と相談したい範囲を、最後に「各社に答えてほしいこと」を置きます。</p>
+<div class="tw"><table><thead><tr><th>欄</th><th>書く内容</th><th>記入例（架空）</th></tr></thead><tbody><tr><td>ショップの状態</td><td>開設の有無、出品数、売れている入口</td><td>開設済み。出品20点。注文はまだ月数件</td></tr><tr><td>相談したい範囲</td><td>任せたい作業と、社内に残す作業</td><td>動画とクリエイター連携を任せたい。商品と発送は社内</td></tr><tr><td>① 目的と期限</td><td>何を・いつまでに・どの数字で</td><td>主力3商品で、◯月末までに動画経由の注文を毎週出す</td></tr><tr><td>② 商品と粗利</td><td>優先する商品、値引きの下限、1個あたりの残り</td><td>商品A・B・C。値引きは◯%まで。残りは別紙</td></tr><tr><td>③ 予算の上限</td><td>代行費・広告費・サンプル代・クリエイター報酬を分けて</td><td>広告費は月◯円まで。サンプルは月◯個まで</td></tr><tr><td>④ 担当と決裁者</td><td>窓口、決裁者、返事の期限</td><td>窓口は販売部の担当。表現の確認は翌営業日まで</td></tr><tr><td>⑤ 権限</td><td>渡す・相談して決める・渡さない</td><td>商品編集とクリエイター連絡は渡す。所有者アカウントは渡さない</td></tr><tr><td>⑥ 判定の基準</td><td>判定日、見る数字、分かれ目</td><td>開始1か月で作業量、2か月で注文と残りを見る</td></tr><tr><td>⑦ 報告</td><td>頻度、形式、画面</td><td>週1で数字、月1で振り返り。元ファイルを添付</td></tr><tr><td>答えてほしいこと</td><td>各社に同じ形で答えてもらう問い</td><td>体制、最初の1か月の作業、報告の見本、費用の内訳</td></tr></tbody></table></div><p class="src">依頼書のひな形（LEAM作成。記入例は架空）</p>
+<p>この1枚を、相談するすべての会社に<strong>同じ内容で</strong>出します。説明を変えると、答えの違いが会社の違いか伝え方の違いか区別できなくなるからです。</p>
+  <figure> <svg viewBox="0 0 720 250" role="img" aria-label="左の1枚の依頼書から3本の矢印がA社・B社・C社の3つの箱へ向かい、右の比較表では体制・最初の作業・報告・費用の内訳の4行に各社の答えが同じ並びで入ることを示した図"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">同じ紙を出すと、答えを同じ行で比べられる</text><rect x="20" y="70" width="120" height="120" rx="12" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="80" y="122" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">依頼書</text><text x="80" y="142" text-anchor="middle" font-size="11" fill="#787D8A">1枚・同じ内容</text><path d="M144 112 L190 72" stroke="#787D8A" stroke-width="2" fill="none"/><path d="M144 130 L190 130" stroke="#787D8A" stroke-width="2" fill="none"/><path d="M144 148 L190 188" stroke="#787D8A" stroke-width="2" fill="none"/><rect x="194" y="54" width="96" height="36" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="242" y="77" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">A社</text><rect x="194" y="112" width="96" height="36" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="242" y="135" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">B社</text><rect x="194" y="170" width="96" height="36" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="242" y="193" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">C社</text><path d="M300 130 L330 130" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M324 124 L336 130 L324 136 Z" fill="#787D8A"/><rect x="344" y="48" width="356" height="164" rx="12" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="420" y="72" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">比べる行</text><text x="536" y="72" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">A社</text><text x="598" y="72" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">B社</text><text x="660" y="72" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">C社</text><path d="M356 82 L688 82" stroke="#E6E7EB" stroke-width="1" fill="none"/><text x="420" y="104" text-anchor="middle" font-size="11" fill="#454956">体制</text><text x="420" y="136" text-anchor="middle" font-size="11" fill="#454956">最初の1か月の作業</text><text x="420" y="168" text-anchor="middle" font-size="11" fill="#454956">報告の見本</text><text x="420" y="200" text-anchor="middle" font-size="11" fill="#454956">費用の内訳</text><g fill="#DFE0E2"><rect x="512" y="96" width="48" height="10" rx="5"/><rect x="574" y="96" width="48" height="10" rx="5"/><rect x="636" y="96" width="48" height="10" rx="5"/><rect x="512" y="128" width="48" height="10" rx="5"/><rect x="574" y="128" width="48" height="10" rx="5"/><rect x="636" y="128" width="48" height="10" rx="5"/><rect x="512" y="160" width="48" height="10" rx="5"/><rect x="574" y="160" width="48" height="10" rx="5"/><rect x="636" y="160" width="48" height="10" rx="5"/><rect x="512" y="192" width="48" height="10" rx="5"/><rect x="574" y="192" width="48" height="10" rx="5"/><rect x="636" y="192" width="48" height="10" rx="5"/></g><text x="360" y="236" text-anchor="middle" font-size="11.5" fill="#787D8A">前提を変える提案が来たら、その理由も1つの答えとして並べる</text></svg> <figcaption>図4：答えは会社ごとではなく、欄ごとに横に読む（LEAM作成）</figcaption> </figure>
+<p>比べるときは、金額より先に<strong>「どの欄に、どれだけ具体的に答えているか」</strong>を見ます。目的の欄に対して最初の1か月の作業が具体的か、報告の欄に見本が出てくるか。どの欄にも同じ一般論で答える会社との違いは、並べるとすぐ分かります。見積もりの場で確かめる質問は<a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場と選び方</a>にあります。</p>
+<div class="box box-warn"><div class="bt">⚠️ 原価や売上を書く前に、秘密保持の取り決めを</div><p>数字を書いた版を渡すのは秘密保持の取り決めを交わしてからにし、それまでは数字の欄を「別紙」にした版で相談を始める方法もあります。</p></div>
+
+<h2 id="summary"><span class="no en">10</span>まとめ</h2>
+<p>運用代行への相談は、相手を選ぶ前に、<strong>自社が何を頼むのかを決める作業</strong>から始まります。上から順に埋めて、1枚にまとめてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 目的と期限を1文にする</b><br>何を・いつまでに・どの数字で確かめるか。主目的は1つに絞る</div><div class="summary-item"><b>2. 商品ごとの残りを渡す</b><br>原価・送料・手数料・コミッションを引いた後の残り。計算は社内で済ませる</div><div class="summary-item"><b>3. 予算は費目ごとに上限を書く</b><br>代行費とは別に、広告費・サンプル代・クリエイター報酬を分ける</div><div class="summary-item"><b>4. 担当者と決裁者を分ける</b><br>判断の種類ごとに、誰がいつまでに返事をするか</div><div class="summary-item"><b>5. 権限の線を引く</b><br>作業に要る範囲だけを渡す。所有者アカウントと銀行口座は自社に残す</div><div class="summary-item"><b>6. 判定日と分かれ目を置く</b><br>続ける・直して続ける・止めるを、見る日と数字で決めておく</div><div class="summary-item"><b>7. 報告の画面を指定する</b><br>分析画面のGMVと決済レポートの金額を分けて報告してもらう</div></div>
+
+<h2 id="faq"><span class="no en">11</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopをまだ開設していなくても、運用代行への依頼書は作れますか？</summary><div class="a">作れます。ショップの状態の欄に「未開設」と書き、出店の準備から相談したいのか、開設後の運用から任せたいのかを書きます。目的・予算・担当者・権限は開設前でも決められます。</div></details><details><summary>TikTok Shop運用代行への依頼書は、どのくらいの分量にまとめればよいですか？</summary><div class="a">1枚に収まる分量が目安です。7項目を1〜2行ずつ書き、商品ごとの数字のように長くなるものは別紙に分けます。収まらないときは決め切れていない項目が混ざっていることが多いので、その欄は「未定」と書きます。</div></details><details><summary>TikTok Shopの商品の原価を、相談の段階で代行会社に伝えても大丈夫ですか？</summary><div class="a">原価そのものは必要ありません。依頼書に要るのは、原価・送料・手数料・コミッションを引いた後に1個あたりいくら残るかで、その額か率だけを書けば足ります。数字を書いた版は、秘密保持の取り決めを交わしてから渡してください。</div></details><details><summary>TikTok Shopのセラーセンターのログイン情報を、運用代行会社に共有してよいですか？</summary><div class="a">所有者アカウントのログイン情報の共有は避けてください。販売者利用規約では、授権した認定ユーザーの範囲を調整・終了できる一方、その違反は販売者の違反とみなされます。公式ヘルプでは、支払い用銀行口座の追加・更新はショップ所有者だけができます。作業に要る範囲だけを渡します。</div></details><details><summary>TikTok Shop運用代行の会社から、依頼書と違う前提の提案が返ってきたらどうしますか？</summary><div class="a">理由がついていれば、それも1つの答えとして読みます。目的や商品の順番を変える提案は、自社の見落としを示していることがあります。ただし他社は元の前提で答えているので、金額は同じ条件どうしで比べ、前提を変える案は別の行で検討します。</div></details><details><summary>TikTok Shop運用代行の報告で、売上はどの数字を出してもらえばよいですか？</summary><div class="a">注文の動きはデータ分析の概要のGMVや注文数で、お金の動きは決済レポートで見ます。公式ヘルプでは、分析のGMVは返品・返金・キャンセルが含まれた数字で、収入とは同じではないとされています。2つを分けて報告してもらい、期間も決めておきます。</div></details></div>
+
+<div class="ctabox"><div class="ct">依頼書の項目が埋まらないところから、ご相談いただけます</div><p>LEAMはTikTok Shopの運用支援を行っています。目的・商品・予算・体制を伺い、どこまでを社内に残し、どこからを外に出すかを一緒に整理します。依頼書が途中の状態でもかまいません。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=before-agency">セラーの相談をする</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">12</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：日本 TikTok Shop販売者利用規約（2026年5月7日最終更新）</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342562049&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：決済および支払いのガイド</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：ショップの設定に必要な最初の手順</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：決済レポート</a>（2026年10月15日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、規約の内容は更新されることがあります。本記事は2026年10月15日時点で確認できた日本向け公式情報と、当社が作成した依頼書の枠組みを区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">外部支援</span><b><a href="https://leam.co.jp/column/inhouse-vs-agency/">TikTok Shopは内製か運用代行か｜判断基準</a></b><span>外に出すかどうかを先に決める</span></div><div class="relcard"><span class="rc">ショップ運用</span><b><a href="https://leam.co.jp/column/common-mistakes/">TikTok Shopのよくある失敗｜出店前から拡大期までの12例</a></b><span>委託先に権限を渡したままにする失敗も</span></div><div class="relcard"><span class="rc">運用</span><b><a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPI設計｜週次で見る指標</a></b><span>報告で受け取る数字を選ぶ</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">依頼の前に決めるのは7項目で、1枚の依頼書にまとめてから相談する</a></li><li><a href="#s2">目的と期限は「何を・いつまでに・どの数字で」の1文に書く</a></li><li><a href="#s3">商品と粗利は、引かれるものを引いた後の残りを商品ごとに渡す</a></li><li><a href="#s4">予算の上限は、代行費とは別に費目ごとに書く</a></li><li><a href="#s5">担当者と決裁者を分け、返事の期限を時間で決めておく</a></li><li><a href="#s6">渡す権限と渡さない権限は、相談の前に線を引いておく</a></li><li><a href="#s7">代行の更新日に合わせて判定日を置き、見る数字と分かれ目を決める</a></li><li><a href="#s8">報告は、頻度・形式・どの画面の数字かを依頼書で指定する</a></li><li><a href="#s9">依頼書は1枚のひな形に埋め、複数社に同じ物を出して比べる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=before-agency">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopをまだ開設していなくても、運用代行への依頼書は作れますか？", "acceptedAnswer": {"@type": "Answer", "text": "作れます。ショップの状態の欄に「未開設」と書き、出店の準備から相談したいのか、開設後の運用から任せたいのかを書きます。目的・予算・担当者・権限は開設前でも決められます。"}}, {"@type": "Question", "name": "TikTok Shop運用代行への依頼書は、どのくらいの分量にまとめればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "1枚に収まる分量が目安です。7項目を1〜2行ずつ書き、商品ごとの数字のように長くなるものは別紙に分けます。収まらないときは決め切れていない項目が混ざっていることが多いので、その欄は「未定」と書きます。"}}, {"@type": "Question", "name": "TikTok Shopの商品の原価を、相談の段階で代行会社に伝えても大丈夫ですか？", "acceptedAnswer": {"@type": "Answer", "text": "原価そのものは必要ありません。依頼書に要るのは、原価・送料・手数料・コミッションを引いた後に1個あたりいくら残るかで、その額か率だけを書けば足ります。数字を書いた版は、秘密保持の取り決めを交わしてから渡してください。"}}, {"@type": "Question", "name": "TikTok Shopのセラーセンターのログイン情報を、運用代行会社に共有してよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "所有者アカウントのログイン情報の共有は避けてください。販売者利用規約では、授権した認定ユーザーの範囲を調整・終了できる一方、その違反は販売者の違反とみなされます。公式ヘルプでは、支払い用銀行口座の追加・更新はショップ所有者だけができます。作業に要る範囲だけを渡します。"}}, {"@type": "Question", "name": "TikTok Shop運用代行の会社から、依頼書と違う前提の提案が返ってきたらどうしますか？", "acceptedAnswer": {"@type": "Answer", "text": "理由がついていれば、それも1つの答えとして読みます。目的や商品の順番を変える提案は、自社の見落としを示していることがあります。ただし他社は元の前提で答えているので、金額は同じ条件どうしで比べ、前提を変える案は別の行で検討します。"}}, {"@type": "Question", "name": "TikTok Shop運用代行の報告で、売上はどの数字を出してもらえばよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "注文の動きはデータ分析の概要のGMVや注文数で、お金の動きは決済レポートで見ます。公式ヘルプでは、分析のGMVは返品・返金・キャンセルが含まれた数字で、収入とは同じではないとされています。2つを分けて報告してもらい、期間も決めておきます。"}}]}</script>
+</body>
+</html>

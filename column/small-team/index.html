@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopは少人数で回せる？1〜3人の分担と仕組み</title>
+<meta name="description" content="TikTok Shopは1〜3人でも運営できます。毎日・毎週・毎月の作業表、人数別の分担例、手を減らせる公式機能、外に出す作業の分け方、回らなくなったサインを整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/small-team/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopは少人数で回せる？1〜3人の分担と仕組み">
+<meta property="og:description" content="TikTok Shopは1〜3人でも運営できます。毎日・毎週・毎月の作業表、人数別の分担例、手を減らせる公式機能、外に出す作業の分け方、回らなくなったサインを整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/small-team/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/small-team.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopは少人数で回せる？1〜3人の分担と仕組み">
+<meta name="twitter:description" content="TikTok Shopは1〜3人でも運営できます。毎日・毎週・毎月の作業表、人数別の分担例、手を減らせる公式機能、外に出す作業の分け方、回らなくなったサインを整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/small-team.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopは少人数で回せる？1〜3人の分担と仕組み", "description": "TikTok Shopは1〜3人でも運営できます。毎日・毎週・毎月の作業表、人数別の分担例、手を減らせる公式機能、外に出す作業の分け方、回らなくなったサインを整理します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/small-team/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/small-team.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&lang=ja-JP", "name": "ショップパフォーマンススコア（SPS）の公式ガイド"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2709643852187409&lang=ja-JP", "name": "発送遅延率の公式ヘルプ"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171403024&lang=ja-JP", "name": "顧客とコミュニケーションをとる方法の公式ヘルプ"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=418411084547857&lang=ja-JP", "name": "マイアカウントの記事"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&lang=ja-JP", "name": "販売者利用規約"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&lang=ja-JP", "name": "無料サンプルの公式ヘルプ"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "アフィリエイトコラボの公式ヘルプ"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2721296228730641&lang=ja-JP&role=1", "name": "カスタマーコミュニケーションポリシー"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&lang=ja-JP", "name": "TikTok Shop公式：TikTok Shopの設定に必要な最初の手順"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopは少人数で回せる？1〜3人の分担と仕組み", "item": "https://leam.co.jp/column/small-team/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=small-team">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopは少人数で回せる？1〜3人の分担表と、手を減らす仕組み</p>
+<span class="cat">運用の基本</span>
+<h1>TikTok Shopは少人数で回せる？1〜3人の分担表と、手を減らす仕組み</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左に散らばった作業のカードの山からシアンの矢印が中央の大きな赤い歯車へ向かい、歯車は右上の小さなシアンの歯車とかみ合って回り、その右では毎日の段は7マスすべて、毎週の段は1マス、毎月の段は最後の1マスに印が付いたカレンダーが並ぶ、少人数で作業を周期に分けて仕組みに乗せる様子を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="610" cy="262" rx="330" ry="200" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="smallteamDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#smallteamDots" transform="translate(944 542)"/>
+  </g>
+
+  <defs>
+    <path id="smallteamGearL" d="M122 -22 149 -19 149 19 122 22 112 54 131 72 109 103 86 90 59 109 64 136 28 147 17 123 -17 123 -28 147 -64 136 -59 109 -86 90 -109 103 -131 72 -112 54 -122 22 -149 19 -149 -19 -122 -22 -112 -54 -131 -72 -109 -103 -86 -90 -59 -109 -64 -136 -28 -147 -17 -123 17 -123 28 -147 64 -136 59 -109 86 -90 109 -103 131 -72 112 -54z"/>
+    <path id="smallteamGearS" d="M58 -13 77 -12 77 12 58 13 51 32 63 46 46 63 32 51 13 58 12 77 -12 77 -13 58 -32 51 -46 63 -63 46 -51 32 -58 13 -77 12 -77 -12 -58 -13 -51 -32 -63 -46 -46 -63 -32 -51 -13 -58 -12 -77 12 -77 13 -58 32 -51 46 -63 63 -46 51 -32z"/>
+  </defs>
+
+  <!-- ================= 左：散らばった作業のカード（従） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <g transform="rotate(-5 150 226)">
+      <rect x="70" y="180" width="160" height="92" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+      <rect x="70" y="180" width="160" height="92" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+      <rect x="92" y="204" width="26" height="26" rx="6" fill="#FE2C55"/>
+      <rect x="130" y="206" width="78" height="9" rx="4.5" fill="#DFE0E2"/>
+      <rect x="130" y="224" width="52" height="9" rx="4.5" fill="#DFE0E2"/>
+      <rect x="92" y="246" width="116" height="9" rx="4.5" fill="#DFE0E2"/>
+    </g>
+    <g transform="rotate(7 196 304)">
+      <rect x="112" y="258" width="168" height="94" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+      <rect x="112" y="258" width="168" height="94" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+      <rect x="134" y="282" width="100" height="9" rx="4.5" fill="#DFE0E2"/>
+      <rect x="134" y="300" width="70" height="9" rx="4.5" fill="#C9CBD0"/>
+      <rect x="134" y="320" width="120" height="9" rx="4.5" fill="#DFE0E2"/>
+    </g>
+    <g transform="rotate(-9 168 404)">
+      <rect x="78" y="360" width="180" height="96" rx="14" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+      <rect x="78" y="360" width="180" height="96" rx="14" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+      <rect x="100" y="384" width="26" height="26" rx="6" fill="#DFE0E2"/>
+      <rect x="138" y="386" width="96" height="9" rx="4.5" fill="#DFE0E2"/>
+      <rect x="138" y="404" width="64" height="9" rx="4.5" fill="#DFE0E2"/>
+      <rect x="100" y="428" width="132" height="9" rx="4.5" fill="#C9CBD0"/>
+    </g>
+  </g>
+
+  <!-- 歯車へ向かう矢印 -->
+  <path d="M300 300h44v-15l34 27-34 27v-15h-44z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- ================= 主役：かみ合う歯車 ================= -->
+  <g transform="translate(560 318)">
+    <use href="#smallteamGearL" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <use href="#smallteamGearL" fill="#CE1730" transform="translate(9 0)"/>
+    <use href="#smallteamGearL" fill="#FE2C55" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <circle r="58" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <circle r="22" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/>
+  </g>
+  <g transform="translate(744 186) rotate(20)">
+    <use href="#smallteamGearS" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <use href="#smallteamGearS" fill="#25F4EE" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+    <circle r="26" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+  </g>
+
+  <!-- 歯車から担当のレーンへ -->
+  <path d="M724 372C770 372 784 380 812 380" fill="none" stroke="#CE1730" stroke-width="6" stroke-linecap="round" stroke-dasharray="12 11"/>
+
+  <!-- ================= 右：毎日・毎週・毎月のカレンダー（整理された作業） ================= -->
+  <g stroke-linejoin="round" stroke-linecap="round">
+    <rect x="828" y="240" width="300" height="250" rx="18" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="828" y="240" width="300" height="250" rx="18" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M834 296V258a12 12 0 0 1 12-12h264a12 12 0 0 1 12 12v38z" fill="#FE2C55"/>
+    <path d="M828 296h300" stroke="#0B0C10" stroke-width="6"/>
+    <rect x="874" y="222" width="18" height="42" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="1064" y="222" width="18" height="42" rx="9" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <!-- 毎日：7マスすべてに印 -->
+    <rect x="848" y="314" width="30" height="30" rx="7" fill="#25F4EE" stroke="#0B0C10" stroke-width="3.5"/><rect x="885" y="314" width="30" height="30" rx="7" fill="#25F4EE" stroke="#0B0C10" stroke-width="3.5"/><rect x="922" y="314" width="30" height="30" rx="7" fill="#25F4EE" stroke="#0B0C10" stroke-width="3.5"/><rect x="959" y="314" width="30" height="30" rx="7" fill="#25F4EE" stroke="#0B0C10" stroke-width="3.5"/><rect x="996" y="314" width="30" height="30" rx="7" fill="#25F4EE" stroke="#0B0C10" stroke-width="3.5"/><rect x="1033" y="314" width="30" height="30" rx="7" fill="#25F4EE" stroke="#0B0C10" stroke-width="3.5"/><rect x="1070" y="314" width="30" height="30" rx="7" fill="#25F4EE" stroke="#0B0C10" stroke-width="3.5"/>
+    <path d="M848 358h252" stroke="#DFE0E2" stroke-width="3"/>
+    <!-- 毎週：1マスだけに印 -->
+    <rect x="848" y="372" width="30" height="30" rx="7" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="3"/><rect x="885" y="372" width="30" height="30" rx="7" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="3"/><rect x="922" y="372" width="30" height="30" rx="7" fill="#FE2C55" stroke="#0B0C10" stroke-width="3.5"/><rect x="959" y="372" width="30" height="30" rx="7" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="3"/><rect x="996" y="372" width="30" height="30" rx="7" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="3"/><rect x="1033" y="372" width="30" height="30" rx="7" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="3"/><rect x="1070" y="372" width="30" height="30" rx="7" fill="#FFFFFF" stroke="#C9CBD0" stroke-width="3"/>
+    <path d="M848 416h252" stroke="#DFE0E2" stroke-width="3"/>
+    <!-- 毎月：最後の1マスに丸 -->
+    <rect x="848" y="430" width="30" height="30" rx="7" fill="#ECEEF1"/><rect x="885" y="430" width="30" height="30" rx="7" fill="#ECEEF1"/><rect x="922" y="430" width="30" height="30" rx="7" fill="#ECEEF1"/><rect x="959" y="430" width="30" height="30" rx="7" fill="#ECEEF1"/><rect x="996" y="430" width="30" height="30" rx="7" fill="#ECEEF1"/><rect x="1033" y="430" width="30" height="30" rx="7" fill="#ECEEF1"/>
+    <circle cx="1085" cy="445" r="17" fill="#FFFFFF" stroke="#FE2C55" stroke-width="5"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1128" cy="104" r="15" fill="#FE2C55"/>
+  <circle cx="352" cy="132" r="12" fill="#25F4EE"/>
+  <circle cx="702" cy="568" r="13" fill="#DFE0E2"/>
+</svg>
+    <figcaption>1〜3人のチームで、作業を仕組みに乗せて分担する（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopは1〜3人でも運営できます。ただ人数が少ないほど、<strong>毎日やらないと公式の評価に響く作業</strong>と週や月にまとめてよい作業が混ざり、撮影で1日空けただけで返信と発送が遅れます。作業表、人数別の分担例、手を減らせる公式の機能、外に出す作業の選び方、回らなくなったサインを順に整理します。公式の記載は2026年10月15日に確かめた物だけを使っています。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>毎日・毎週・毎月に分けた作業表</li><li>1〜3人の分担例と、手を減らせる公式の機能</li><li>外に出しやすい作業と、回らなくなったサインの基準</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組み</a></b><span>運営の全体像から確認する</span></div>
+    <div class="relcard"><span class="rc">運用の基本</span><b><a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">TikTok Shop立ち上げ90日ロードマップ</a></b><span>役割の四系統と90日の進め方</span></div>
+    <div class="relcard"><span class="rc">体制</span><b><a href="https://leam.co.jp/column/inhouse-vs-agency/">TikTok Shopは内製か運用代行か</a></b><span>領域ごとに社内と外部を分ける</span></div>
+    <div class="relcard"><span class="rc">運用の基本</span><b><a href="https://leam.co.jp/column/seller-app-guide/">TikTok Shopセラーアプリの使い方</a></b><span>スマホで回す一日の動き方</span></div>
+  </div>
+</div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">少人数で回るかは、人数より「毎日の作業が止まらない形」かで決まる</a></li><li><a href="#s2">作業は毎日・毎週・毎月に分けると、1人でも抜けている所が見える</a></li><li><a href="#s3">1〜3人の分担は、毎日の作業を誰が持つかを先に決めて組む</a></li><li><a href="#s4">手を減らせる公式の機能は、権限・チャット・一括操作・サンプル承認</a></li><li><a href="#s5">外に出しやすいのは取り消せる作業で、取り消せない作業は社内に残す</a></li><li><a href="#s6">回らなくなったサインは、応答・発送・サンプルの3か所に先に出る</a></li><li><a href="#s7">人を増やす前に、やめる・機能に任せる・外に出すの順で減らす</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>少人数で回るかは、人数より「毎日の作業が止まらない形」かで決まる</h2>
+<p>当社が2026年10月15日に日本向けの公式ヘルプを確認した範囲では、運営する人数の条件は見当たりませんでした。少人数で詰まる原因は人数より、<strong>毎日やらないと数字が動く作業を、撮影やLIVEと同じ人が同じ時間に抱えていること</strong>にあります。</p>
+<p>そのことは<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">ショップパフォーマンススコア（SPS）の公式ガイド</a>でわかります。SPSは0から5までの評価で、直近60日間に30件以上の注文の配送が完了すると自動で付きます。その指標のうち次の4つは、日々の作業の遅れがそのまま出ます。</p>
+<div class="tw"><table><thead><tr><th>指標</th><th>公式の定義（要約）</th><th>SPSで見る期間</th><th>遅れると響く作業</th></tr></thead><tbody><tr><td>発送遅延率（LDR）</td><td>規定の出荷期限内に追跡番号がアップロードされず、「集荷待ち」に更新されなかった注文の割合</td><td>直近30日間</td><td>毎日の発送</td></tr><tr><td>セラーの過失によるキャンセル率</td><td>在庫不足、配送遅延などセラー側の事情でセラーがキャンセルした注文の割合</td><td>直近30日間</td><td>毎日の在庫の更新</td></tr><tr><td>24時間応答率</td><td>購入者が始めたチャットのうち、24時間以内に応答したセッションの割合</td><td>直近30日間</td><td>毎日の問い合わせへの返信</td></tr><tr><td>アフターセールス対応時間</td><td>返金・返品・キャンセルの処理にかかった平均時間。システムが自動承認した依頼は除く</td><td>直近60日間</td><td>毎日の返品・返金の処理</td></tr></tbody></table></div><p class="src">SPSの指標のうち、日々の作業に直結するもの（公式ガイドの記載を整理・2026年10月15日確認）</p>
+<p>少人数のチームがまず守るのは、新しい施策より先に、この4つを動かさない日々の作業です。なお、役割の四系統は<a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">90日ロードマップ</a>の§06、内製か外注かは<a href="https://leam.co.jp/column/inhouse-vs-agency/">内製か運用代行か</a>、スマホでの一日は<a href="https://leam.co.jp/column/seller-app-guide/">セラーアプリの使い方</a>、週次の指標は<a href="https://leam.co.jp/column/tiktok-shop-kpi/">KPI設計</a>で扱っています。ここでは<strong>1〜3人で、どの作業を誰の手から外すか</strong>に絞ります。</p>
+
+<h2 id="s2"><span class="no en">02</span>作業は毎日・毎週・毎月に分けると、1人でも抜けている所が見える</h2>
+<p>少人数の運用で最初に作るのは、担当表より先に作業表です。頻度で分けるのは、遅れたときに困るまでの速さが違うからです。<strong>毎日の作業</strong>は1日止めると公式の指標に出始め、<strong>毎週の作業</strong>は止めると売り場が育たず、<strong>毎月の作業</strong>は止めても誰も困らないまま作業だけが増えていきます。</p>
+<div class="tw"><table><thead><tr><th>頻度</th><th>作業</th><th>止めたとき先に動くもの・目安</th></tr></thead><tbody><tr><td>毎日</td><td>注文を発送し「集荷待ち」に更新する</td><td>発送遅延率。セラーによる発送は注文日から2営業日以内の23:59まで（公式ヘルプ）</td></tr><tr><td>毎日</td><td>問い合わせに一次返信する</td><td>24時間応答率。20時間以上返信していないチャットは「期限切れ間近」になる（公式ヘルプ）</td></tr><tr><td>毎日</td><td>返品・返金・キャンセルを処理する</td><td>アフターセールス対応時間（公式ガイド）</td></tr><tr><td>毎日</td><td>在庫数を実際の在庫に合わせる</td><td>セラーの過失によるキャンセル率。在庫不足でのキャンセルが含まれる（公式ガイド）</td></tr><tr><td>毎日</td><td>手動で承認するサンプル申請を確認する</td><td>7日間確認されない申請は自動で却下（公式ヘルプ）</td></tr><tr><td>毎週</td><td>動画の企画・撮影・投稿、LIVE</td><td>売り場の量。曜日を決めてまとめる</td></tr><tr><td>毎週</td><td>クリエイターの招待、サンプル発送、投稿の確認</td><td>クリエイターの投稿数</td></tr><tr><td>毎週</td><td>数字の確認と、よく来る質問の商品ページへの反映</td><td>翌週の打ち手。指標は<a href="https://leam.co.jp/column/tiktok-shop-kpi/">KPI設計</a></td></tr><tr><td>毎月</td><td>主力にする商品と止める商品、セールの準備</td><td>在庫と制作の分散（商戦期は<a href="https://leam.co.jp/column/seasonal-campaign/">商戦期カレンダー</a>）</td></tr><tr><td>毎月</td><td>作業の棚卸しと、担当者・権限の見直し</td><td>作業量の増加。§07の順で減らす</td></tr></tbody></table></div><p class="src">少人数チームの作業表（公式ヘルプの記載とLEAMの整理を組み合わせて作成）</p>
+  <figure> <svg viewBox="0 0 720 300" role="img" aria-label="作業を毎日・毎週・毎月の3段に分けた図。毎日の段には注文・発送、問い合わせ、返品・返金、在庫の更新、毎週の段には動画とLIVE、クリエイター、数字の確認、商品ページ、毎月の段には主力の入れ替え、企画の準備、権限の見直し、作業の棚卸しが並び、上の段ほど遅れたときに公式の指標に早く出ることを添えている"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">作業は3つの周期に分けて持つ</text><rect x="20" y="44" width="130" height="64" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="85" y="72" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">毎日</text><text x="85" y="94" text-anchor="middle" font-size="10.5" fill="#787D8A">止めると数字が動く</text><rect x="166" y="54" width="126" height="44" rx="8" fill="#ffffff" stroke="#E8324A" stroke-width="1"/><text x="229" y="81" text-anchor="middle" font-size="12" fill="#454956">注文・発送</text><rect x="301" y="54" width="126" height="44" rx="8" fill="#ffffff" stroke="#E8324A" stroke-width="1"/><text x="364" y="81" text-anchor="middle" font-size="12" fill="#454956">問い合わせ</text><rect x="436" y="54" width="126" height="44" rx="8" fill="#ffffff" stroke="#E8324A" stroke-width="1"/><text x="499" y="81" text-anchor="middle" font-size="12" fill="#454956">返品・返金</text><rect x="571" y="54" width="126" height="44" rx="8" fill="#ffffff" stroke="#E8324A" stroke-width="1"/><text x="634" y="81" text-anchor="middle" font-size="12" fill="#454956">在庫の更新</text><rect x="20" y="124" width="130" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="85" y="152" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">毎週</text><text x="85" y="174" text-anchor="middle" font-size="10.5" fill="#787D8A">売り場をつくる</text><rect x="166" y="134" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="229" y="161" text-anchor="middle" font-size="12" fill="#454956">動画・LIVE</text><rect x="301" y="134" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="364" y="161" text-anchor="middle" font-size="12" fill="#454956">クリエイター</text><rect x="436" y="134" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="499" y="161" text-anchor="middle" font-size="12" fill="#454956">数字の確認</text><rect x="571" y="134" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="634" y="161" text-anchor="middle" font-size="12" fill="#454956">商品ページ</text><rect x="20" y="204" width="130" height="64" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="85" y="232" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">毎月</text><text x="85" y="254" text-anchor="middle" font-size="10.5" fill="#787D8A">減らす物を決める</text><rect x="166" y="214" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="229" y="241" text-anchor="middle" font-size="12" fill="#454956">主力の入れ替え</text><rect x="301" y="214" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="364" y="241" text-anchor="middle" font-size="12" fill="#454956">企画の準備</text><rect x="436" y="214" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="499" y="241" text-anchor="middle" font-size="12" fill="#454956">権限の見直し</text><rect x="571" y="214" width="126" height="44" rx="8" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="634" y="241" text-anchor="middle" font-size="12" fill="#454956">作業の棚卸し</text><text x="360" y="290" text-anchor="middle" font-size="11.5" fill="#787D8A">上の段ほど、遅れたときに公式の指標へ早く出る</text></svg> <figcaption>図1：作業を3つの周期に分けた作業表の骨組み（LEAM作成）</figcaption> </figure>
+<p>毎日の段には、営業日で数える作業と時間で数える作業が混ざっています。<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2709643852187409&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">発送遅延率の公式ヘルプ</a>は土曜日・日曜日・祝祭日を非営業日として計算に含めませんが、24時間応答率の定義に営業日の区切りは書かれていません。週末の問い合わせの扱いは別に決めておきます（FAQ参照）。</p>
+<p>当社の運用実感では、1〜3人のチームで抜けやすいのは毎月の段です。毎日の作業は遅れると通知や数字で気づけますが、棚卸しや権限の見直しは後回しにしても誰も困らず、「全員がすべての画面を触れる状態」が残ります。</p>
+
+<h2 id="s3"><span class="no en">03</span>1〜3人の分担は、毎日の作業を誰が持つかを先に決めて組む</h2>
+<p>分担で一番大事なのは、<strong>毎日の段の持ち主を1人に決める</strong>ことです。「気づいたほうがやる」にすると、2人とも撮影や商談に出た日に、誰も注文と問い合わせを見ていない時間ができます。</p>
+<div class="tw"><table><thead><tr><th>人数</th><th>毎日の段</th><th>毎週の段</th><th>毎月の段</th><th>先に入れておく仕組み</th></tr></thead><tbody><tr><td>1人</td><td>本人。朝と夕方の2回にまとめる</td><td>撮影とクリエイター連絡の曜日を固定</td><td>月末に棚卸し</td><td>撮影の日も夕方の1回は残す。サンプルの承認方法を招待ごとに決める</td></tr><tr><td>2人</td><td>Aが持つ（注文・発送・問い合わせ・返品・在庫）</td><td>Bが持つ（動画・LIVE・クリエイター）</td><td>2人で決める</td><td>Bにも問い合わせの権限を持たせ、普段は自動割り当てを受けない状態にする</td></tr><tr><td>3人</td><td>Aが持つ</td><td>B＝動画・LIVE、C＝クリエイター連携と数字</td><td>責任者が決める</td><td>Cの毎日の作業はサンプル申請の確認だけにする</td></tr></tbody></table></div><p class="src">1〜3人の分担の例（LEAM作成）</p>
+  <figure> <svg viewBox="0 0 720 300" role="img" aria-label="1人・2人・3人の3枚のパネルを並べ、それぞれ毎日・毎週・毎月の段を誰が持つかを示した図。1人は時間で区切ってすべてAが持ち、2人は毎日の段をAだけ、毎週をB、毎月をAとBで持ち、3人は毎日の段をAだけ、毎週をBとC、毎月を責任者が持つ。どの人数でも毎日の段は1人が持つことを強調している"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">毎日の段の持ち主は、何人でも1人</text><rect x="20" y="42" width="212" height="222" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="126" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">1人</text><circle cx="126" cy="98" r="14" fill="#DFE0E2"/><text x="126" y="102" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">A</text><rect x="36" y="126" width="180" height="34" rx="8" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="48" y="148" font-size="11" font-weight="800" fill="#C2203A">毎日</text><text x="204" y="148" text-anchor="end" font-size="11" fill="#454956">A（朝と夕方）</text><rect x="36" y="170" width="180" height="34" rx="8" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="48" y="192" font-size="11" font-weight="800" fill="#454956">毎週</text><text x="204" y="192" text-anchor="end" font-size="11" fill="#454956">A（曜日を固定）</text><rect x="36" y="214" width="180" height="34" rx="8" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="48" y="236" font-size="11" font-weight="800" fill="#454956">毎月</text><text x="204" y="236" text-anchor="end" font-size="11" fill="#454956">A（月末）</text><rect x="254" y="42" width="212" height="222" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">2人</text><circle cx="338" cy="98" r="14" fill="#DFE0E2"/><text x="338" y="102" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">A</text><circle cx="382" cy="98" r="14" fill="#DFE0E2"/><text x="382" y="102" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">B</text><rect x="270" y="126" width="180" height="34" rx="8" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="282" y="148" font-size="11" font-weight="800" fill="#C2203A">毎日</text><text x="438" y="148" text-anchor="end" font-size="11" fill="#454956">Aだけ</text><rect x="270" y="170" width="180" height="34" rx="8" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="282" y="192" font-size="11" font-weight="800" fill="#454956">毎週</text><text x="438" y="192" text-anchor="end" font-size="11" fill="#454956">B</text><rect x="270" y="214" width="180" height="34" rx="8" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="282" y="236" font-size="11" font-weight="800" fill="#454956">毎月</text><text x="438" y="236" text-anchor="end" font-size="11" fill="#454956">AとB</text><rect x="488" y="42" width="212" height="222" rx="14" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="594" y="70" text-anchor="middle" font-size="13.5" font-weight="800" fill="#454956">3人</text><circle cx="550" cy="98" r="14" fill="#DFE0E2"/><text x="550" y="102" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">A</text><circle cx="594" cy="98" r="14" fill="#DFE0E2"/><text x="594" y="102" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">B</text><circle cx="638" cy="98" r="14" fill="#DFE0E2"/><text x="638" y="102" text-anchor="middle" font-size="11" font-weight="800" fill="#454956">C</text><rect x="504" y="126" width="180" height="34" rx="8" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="516" y="148" font-size="11" font-weight="800" fill="#C2203A">毎日</text><text x="672" y="148" text-anchor="end" font-size="11" fill="#454956">Aだけ</text><rect x="504" y="170" width="180" height="34" rx="8" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="516" y="192" font-size="11" font-weight="800" fill="#454956">毎週</text><text x="672" y="192" text-anchor="end" font-size="11" fill="#454956">BとC</text><rect x="504" y="214" width="180" height="34" rx="8" fill="#ffffff" stroke="#E6E7EB" stroke-width="1"/><text x="516" y="236" font-size="11" font-weight="800" fill="#454956">毎月</text><text x="672" y="236" text-anchor="end" font-size="11" fill="#454956">責任者</text><text x="360" y="288" text-anchor="middle" font-size="11.5" fill="#787D8A">2人以上でも、毎日の段は分け合わずに代わりの人を決めておく</text></svg> <figcaption>図2：人数が増えても、毎日の段は1人が持つ（LEAM作成）</figcaption> </figure>
+<h3>1人のときは、時間で区切って毎日の段を守る</h3>
+<p>1人運用では時間で分けます。当社の運用実感では、問い合わせと発送を「気づいたらその場で」処理すると撮影や編集が細切れになり、どちらも進みません。朝と夕方の2回に寄せてください。目安は公式ヘルプのチャット画面にある「期限切れ間近」（20時間以上返信していないチャット）で、朝9時と夕方18時に見るなら間が最も長いのは夜の15時間なので、平日はこの表示が出る前に目を通せます。</p>
+<h3>2人のときは、毎日の段をAに集め、Bは代わりに入れる状態にしておく</h3>
+<p><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171403024&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">顧客とコミュニケーションをとる方法の公式ヘルプ</a>によると、顧客サービス権限があるアカウントが1つだけなら、メッセージはすべてそのアカウントに自動で割り当てられます。複数あれば担当者ごとに「チャットの自動割り当てを承認」と「承認しない」を切り替えられ、返信が主な業務ではないショップマネージャーには「承認しない」が勧められています。</p>
+<p>Bを普段「承認しない」にしておけばメッセージはAに集まり、Aが休む日だけBが切り替えられます。ただし自動で割り当てを受けるには、ブラウザでチャットツールのページを開いておく必要があります。担当者が誰も開いていない間の新しいチャットは「未割り当て」に入るので、Aの確認の時間にはまずこの一覧を見ます。交代のときは「セッションの転送」で、そのチャットだけ、または進行中のすべてのチャットを渡せます。画面の細部は<a href="https://leam.co.jp/column/seller-app-guide/">セラーアプリの使い方</a>にあります。</p>
+<h3>3人のときは、3人目を「クリエイター連携と数字」に置く</h3>
+<p>当社の運用実感では、3人目に「クリエイター連携と週次の数字」を持たせると、動画の担当者が招待や投稿の確認に時間を取られなくなり、毎週の段が回り始めます。主力商品や予算といった毎月の判断は、作業の都合で曲がらないよう責任者が持ちます。</p>
+
+<h2 id="s4"><span class="no en">04</span>手を減らせる公式の機能は、権限・チャット・一括操作・サンプル承認</h2>
+<p>人を増やす前に、公式の機能で減らせる手を確認します。2026年10月15日に日本向けの公式ヘルプと規約で記載を確かめられた物だけを挙げます。</p>
+<div class="tw"><table><thead><tr><th>機能</th><th>公式ヘルプ・規約の記載</th><th>少人数での使いどころ</th></tr></thead><tbody><tr><td>ユーザー管理（認定ユーザー）</td><td>入口は［アカウント設定］→［ユーザー管理］。1名または複数名にアカウントを全面的または部分的に管理させる授権ができ、範囲の調整や終了もできる</td><td>1つのログインを全員で使わない</td></tr><tr><td>チャットの割り当てと転送</td><td>自動割り当ての承認・不承認を担当者ごとに切り替え、未割り当てのチャットは手動で割り当てられる</td><td>主担当と代わりの人を決める</td></tr><tr><td>「返信不要」のマーク</td><td>迷惑メッセージに付けるとクローズに移り、応答率の計算から除外される</td><td>返信の要らない会話で応答率を下げない</td></tr><tr><td>一括アップロード・外部ECとの同期</td><td>単一の商品のアップロード、一括アップロード、既存の外部eコマースショップとの同期で商品を追加できる</td><td>二重入力をやめる</td></tr><tr><td>一括招待・コラボへの一括追加</td><td>複数のクリエイターを一括招待でき、オープンコラボにはすべての商品を一括で追加できる</td><td>招待の設定を週1回にまとめる</td></tr><tr><td>新商品の自動追加</td><td>新しくアップロードした商品が、決めておいたコミッション率でオープンコラボに自動で追加される</td><td>商品を足すたびの設定を減らす</td></tr><tr><td>無料サンプルの承認</td><td>招待の設定によって、自動で承認される場合とセラーの承認が必要な場合がある</td><td>承認待ちの山を作らない</td></tr></tbody></table></div><p class="src">少人数の手を減らせる公式の機能（公式ヘルプおよび販売者利用規約の記載を整理・2026年10月15日確認）</p>
+<h3>権限は「1つのログインを全員で使う」をやめるところから</h3>
+<p>入口は、公式の<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=418411084547857&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">マイアカウントの記事</a>にある［セラーセンター］→［アカウント設定］→［ユーザー管理］です。<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">販売者利用規約</a>（最終更新日2026年5月7日）は、1名または複数名に授権し、その範囲を調整したり授権を終えたりすることを認めています。</p>
+<p>少人数のチームが決めるのは、<strong>1つのログインを全員で使わない</strong>ことです。人ごとに分けておけば、担当者が抜けたときはその人の授権を終えるだけで済み、誰が何をしたかも追いやすくなります。公式の通知の説明も「メインアカウント」と「サブアカウント」を分けて書いています。どの画面を誰に見せるかといった権限の細かい選び方は、公式ヘルプで手順まで確かめられなかったため書きません。画面で確認してください。外部の人に授権するときの責任の考え方は§05で触れます。</p>
+<h3>チャットの自動化は、仕組みがあるところまで確かめられた</h3>
+<p>公式ヘルプによると、チャットページの機能メニューには「チャットボット」と「設定」があり、使い方は「他のドキュメントで詳しく説明」とされています。今回確かめた範囲では自動返信や定型文の設定手順までは確認できなかったので、使う前に公式ヘルプで最新の手順を確認してください。</p>
+<p>はっきりしているのは評価との関係です。SPSの24時間応答率は、<strong>FAQまたはチャットボットによって、セラーの対応なしで完全に解決されたチャット</strong>を算出の対象外にしています。よく来る質問ほど、答えを商品ページと自動の仕組みの側に寄せる価値があります（返信文の型は<a href="https://leam.co.jp/column/tiktok-shop-customer-support/">顧客対応の返信テンプレート</a>）。</p>
+<h3>サンプルの承認は、自動にすると手は減るが、送る相手を1件ずつ選べなくなる</h3>
+<p><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">無料サンプルの公式ヘルプ</a>によると、自動承認の招待では申請がそのまま承認され、すぐに配送の手続きへ進みます。手は減りますが、送る相手を1件ずつ選べません。手動にすると、<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">アフィリエイトコラボの公式ヘルプ</a>にあるとおり、7日間確認されなかった申請は自動的に却下されます。</p>
+<p>自動と手動は招待ごとに決め、手動にした招待は確認の日を作業表の毎日の段に入れてください。投稿されないときの考え方は<a href="https://leam.co.jp/column/sample-no-post/">サンプル施策の記事</a>、招待の仕組みは<a href="https://leam.co.jp/column/creator-invite/">クリエイター招待の記事</a>で扱っています。</p>
+
+<h2 id="s5"><span class="no en">05</span>外に出しやすいのは取り消せる作業で、取り消せない作業は社内に残す</h2>
+<p>どの領域を外に任せるかは<a href="https://leam.co.jp/column/inhouse-vs-agency/">内製か運用代行か</a>で整理しています。ここでは作業を1つずつ、<strong>①間違えたときに取り消せるか</strong>、<strong>②その場で判断が要るか</strong>の2つの問いで分けます。</p>
+  <figure> <svg viewBox="0 0 720 340" role="img" aria-label="横軸をやり直せるかどうか、縦軸を判断が少ないか要るかにした2行2列の図。やり直せて判断が少ない左上は外に出しやすい作業、やり直せないが判断が少ない右上は手順と期限を決めて渡す作業、やり直せるが判断が要る左下は案だけ外に出して決定は社内、やり直せず判断も要る右下は社内に残す作業で、右下だけを赤く強調している"><text x="248" y="40" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">やり直せる</text><text x="552" y="40" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">やり直せない</text><text x="52" y="104" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">判断が</text><text x="52" y="122" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">少ない</text><text x="52" y="228" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">判断が</text><text x="52" y="246" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">要る</text><rect x="100" y="52" width="296" height="116" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="248" y="84" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">外に出しやすい</text><text x="248" y="112" text-anchor="middle" font-size="11" fill="#787D8A">動画の編集・数字の集計</text><text x="248" y="134" text-anchor="middle" font-size="11" fill="#787D8A">クリエイター候補の洗い出し</text><rect x="404" y="52" width="296" height="116" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="552" y="84" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">手順と期限を決めて渡す</text><text x="552" y="112" text-anchor="middle" font-size="11" fill="#787D8A">梱包・出荷の作業</text><text x="552" y="134" text-anchor="middle" font-size="11" fill="#787D8A">型が決まった一次返信</text><rect x="100" y="176" width="296" height="116" rx="12" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="248" y="208" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">案は外、決定は社内</text><text x="248" y="236" text-anchor="middle" font-size="11" fill="#787D8A">動画の企画</text><text x="248" y="258" text-anchor="middle" font-size="11" fill="#787D8A">招待する相手と文面</text><rect x="404" y="176" width="296" height="116" rx="12" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="552" y="208" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">社内に残す</text><text x="552" y="236" text-anchor="middle" font-size="11" fill="#787D8A">返金・キャンセルの判断</text><text x="552" y="258" text-anchor="middle" font-size="11" fill="#787D8A">価格・在庫・権限の付与</text><text x="360" y="324" text-anchor="middle" font-size="11.5" fill="#787D8A">どの作業を外に出しても、権限の付与と終了は社内が持つ</text></svg> <figcaption>図3：取り消せるか、判断が要るかの2つの問いで置き場所を決める（LEAM作成）</figcaption> </figure>
+<div class="tw"><table><thead><tr><th>作業</th><th>取り消せるか</th><th>判断が要るか</th><th>置き場所の目安</th></tr></thead><tbody><tr><td>動画の編集・字幕入れ</td><td>公開前なら直せる</td><td>少ない</td><td>外に出しやすい</td></tr><tr><td>クリエイター候補の洗い出し</td><td>招待する前なら直せる</td><td>選ぶ基準は社内で決める</td><td>候補出しは外、招待の決定は社内</td></tr><tr><td>梱包・出荷の作業</td><td>出荷した後は取り消しにくい</td><td>手順が決まれば少ない</td><td>手順と期限を決めて渡す</td></tr><tr><td>問い合わせの一次返信</td><td>送ったら取り消せない</td><td>内容による</td><td>型が決まった返信だけ渡し、返金や例外の判断は社内に戻す</td></tr><tr><td>返品・返金の判断、価格・在庫の設定</td><td>取り消しにくい</td><td>要る</td><td>社内に残す</td></tr><tr><td>権限の付与と終了</td><td>授権は終えられるが、それまでの操作は戻せない</td><td>要る</td><td>社内に残す</td></tr></tbody></table></div><p class="src">作業ごとの置き場所の目安（LEAM作成）</p>
+<p>外に出すときは相手の道具と連絡の仕方も確かめます。<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2721296228730641&amp;lang=ja-JP&amp;role=1" target="_blank" rel="noopener noreferrer">カスタマーコミュニケーションポリシー</a>は、無許可のプラグインやサードパーティーツールでプラットフォームにアクセスすることや、購入者をTikTok Shopの外へ誘導することを禁じています。外部の担当者にチャットを任せるときは、セラーセンターのチャット機能の中で返信してもらうことを取り決めておきます。</p>
+<div class="box box-warn"><div class="bt">⚠️ 作業は外に出せても、責任は外に出せない</div><p>販売者利用規約は、授権した人（認定ユーザー）の違反を販売者の違反とみなすと定めています。責任の考え方と、契約で何を取り決めるかは<a href="https://leam.co.jp/column/agency-contract-checklist/">運用代行の契約で確認すること</a>で整理しています。</p></div>
+
+<h2 id="s6"><span class="no en">06</span>回らなくなったサインは、応答・発送・サンプルの3か所に先に出る</h2>
+<p>限界に近づくと、売上より先に運用の品質の数字と画面の表示が動きます。公式ヘルプで基準まで書かれている物を並べます。</p>
+<div class="tw"><table><thead><tr><th>サイン</th><th>どこで見えるか</th><th>公式の基準・起きること</th></tr></thead><tbody><tr><td>「期限切れ間近」のチャットが毎日残る</td><td>チャットページの自分のチャット</td><td>20時間以上返信していないチャット。7日間を超えて返信しないとセッションは自動で終了し、返信できなくなる</td></tr><tr><td>24時間応答率が下がる</td><td>担当者ごとのサービスデータ、SPS</td><td>サービスデータでは過去7日間、SPSでは直近30日間で計算される</td></tr><tr><td>発送遅延率が上がる</td><td>セラーセンターの「ショップの健全性」</td><td>4%未満の維持を推奨。10%以上30%未満で1日の平均注文数量の90％まで、30%以上50%未満で70％まで、50%以上で50％までに販売が制限される可能性がある</td></tr><tr><td>サンプル申請が自動で却下されている</td><td>無料サンプルリクエストの一覧</td><td>7日間確認されなかった申請は自動的に却下される</td></tr><tr><td>SPSが下がる</td><td>ショップパフォーマンススコアのページ</td><td>1点以下は低いパフォーマンスの目安とされている</td></tr></tbody></table></div><p class="src">少人数の運用が回らなくなったときのサイン（公式ヘルプの記載を整理・2026年10月15日確認）</p>
+<p>発送遅延率は画面によって期間が違います。専用の公式ヘルプは過去7暦日、SPSの中では直近30日間が基準です。</p>
+<p>問い合わせは、受信から自動で終了するまでの時間の流れを<a href="https://leam.co.jp/column/seller-app-guide/">セラーアプリの使い方</a>で図にしています。少人数のチームが見るのは時間の目盛りより、<strong>「期限切れ間近」が1日だけでなく毎日残るようになったか</strong>です。</p>
+  <figure> <svg viewBox="0 0 720 316" role="img" aria-label="発送とサンプル申請の2本の線に、時間や割合が進むにつれて現れるサインを並べ、下に問い合わせのサインを1つ置いた図。発送は2営業日の23時59分が集荷待ちの期限、発送遅延率は4パーセント未満が推奨、10パーセント以上で注文量の制限がかかりうる。サンプル申請は届いてから7日確認しないと自動で却下される。問い合わせは、期限切れ間近のチャットが毎日残るようになったら回らなくなった合図"><text x="360" y="24" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">右へ進むほど、取り返しにくくなる</text><rect x="20" y="52" width="120" height="50" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="80" y="82" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">発送</text><path d="M166 77 L694 77" stroke="#DFE0E2" stroke-width="6" stroke-linecap="round"/><circle cx="260" cy="77" r="8" fill="#454956"/><text x="260" y="60" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">2営業日</text><text x="260" y="103" text-anchor="middle" font-size="10.5" fill="#787D8A">集荷待ちの期限</text><circle cx="440" cy="77" r="8" fill="#454956"/><text x="440" y="60" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">LDR 4%</text><text x="440" y="103" text-anchor="middle" font-size="10.5" fill="#787D8A">未満を推奨</text><circle cx="640" cy="77" r="9" fill="#E8324A"/><text x="640" y="60" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">10%以上</text><text x="640" y="103" text-anchor="middle" font-size="10.5" fill="#C2203A">注文量の制限</text><rect x="20" y="132" width="120" height="50" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="80" y="162" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">サンプル申請</text><path d="M166 157 L694 157" stroke="#DFE0E2" stroke-width="6" stroke-linecap="round"/><circle cx="260" cy="157" r="8" fill="#454956"/><text x="260" y="140" text-anchor="middle" font-size="11.5" font-weight="800" fill="#454956">申請</text><text x="260" y="183" text-anchor="middle" font-size="10.5" fill="#787D8A">一覧に届く</text><circle cx="640" cy="157" r="9" fill="#E8324A"/><text x="640" y="140" text-anchor="middle" font-size="11.5" font-weight="800" fill="#C2203A">7日</text><text x="640" y="183" text-anchor="middle" font-size="10.5" fill="#C2203A">未確認で却下</text><rect x="20" y="212" width="680" height="62" rx="12" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="80" y="248" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">問い合わせ</text><path d="M140 226 L140 260" stroke="#E8324A" stroke-width="1"/><text x="164" y="240" font-size="12" font-weight="800" fill="#454956">「期限切れ間近」のチャットが、毎日の確認のあとも残る</text><text x="164" y="260" font-size="10.5" fill="#787D8A">1日だけなら遅れ、毎日なら毎日の段が回っていない合図</text><text x="360" y="304" text-anchor="middle" font-size="11.5" fill="#787D8A">右端に届く前に、作業を減らすか人を足す（間隔は実際の比率ではない）</text></svg> <figcaption>図4：発送とサンプル申請で見た、回らなくなったサインの出る順番（公式ヘルプの記載をもとにLEAM作成）</figcaption> </figure>
+<p>始めたばかりのショップには保護措置があり、SPSの公式ガイドは、出店から180日未満・配達完了済みの注文が30件以下などの条件を満たすと、発送遅延率などの指標スコアが3.5を下回っても3.5まで引き上げると説明しています。立ち上げ期は<strong>点数より先に、遅れた注文や返信を1件ずつ数える</strong>ほうが早く気づけます。</p>
+<p>当社の運用実感では、この表より前に出るのが「毎週の段が飛ぶ」ことです。動画の投稿日が2週続けてずれたら、毎日の段に時間を取られている合図です。</p>
+
+<h2 id="s7"><span class="no en">07</span>人を増やす前に、やめる・機能に任せる・外に出すの順で減らす</h2>
+<p>サインが出ると人を足したくなりますが、先に増やすと、やめてよい作業も機能で済む作業もそのまま新しい人に渡ります。減らす順番は次の4段です。</p>
+<ol class="steps"><li><b>やめる作業を決める</b><p>毎週・毎月の段から、売上にも公式の指標にも効いていない作業を外し、やめた理由を一行残します。</p></li><li><b>公式の機能に任せる</b><p>一括アップロード、一括招待、新商品の自動追加、サンプルの承認設定、チャットの割り当てを見直します（§04）。</p></li><li><b>外に出す</b><p>取り消せて判断の少ない作業から渡します（§05）。権限は人ごとに授権します。外に出すと決めたら、相談の前に<a href="https://leam.co.jp/column/before-agency/">運用代行に頼む前に社内で決めること</a>を見て依頼書を作っておくと、見積もりと分担の話が早く進みます。</p></li><li><b>人を増やす</b><p>それでも毎日の段が守れないときに、毎日の段の担当として増やします。</p></li></ol>
+<p>採用か外注かは、毎日の段か毎週の段かで分けると決めやすくなります。取り消せない作業が多い毎日の段は社内か手順を細かく決められる相手に、動画の編集や数字の集計は外に置きます。費用は<a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場</a>、利益が残るかは<a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">TikTok Shopは儲かるか</a>で確認できます。</p>
+<div class="box box-point"><div class="bt">💡 月末の棚卸しは、作業表の行を減らす会にする</div><p>行を足すときは、同じ数だけ減らす行を決めてから足すと、少人数でも作業量が膨らみにくくなります。</p></div>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>少人数で回すための要は、<strong>毎日の段を止めない形を先に作り、残りを週と月にまとめる</strong>ことです。上から順に埋めてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 作業表を作る</b><br>作業を毎日・毎週・毎月に分ける。毎日の段は、発送・問い合わせ・返品・在庫・手動のサンプル承認</div><div class="summary-item"><b>2. 毎日の段の持ち主を1人に決める</b><br>1人なら朝と夕方の2回、2人以上なら分け合わずに代わりの人を決める</div><div class="summary-item"><b>3. アカウントを人ごとに分ける</b><br>［ユーザー管理］から授権し、1つのログインを全員で使わない。抜けた人は授権を終える</div><div class="summary-item"><b>4. 公式の機能で手を減らす</b><br>チャットの割り当て、一括アップロード、一括招待、新商品の自動追加、サンプルの承認設定</div><div class="summary-item"><b>5. 外に出す作業を2つの問いで選ぶ</b><br>取り消せるか、判断が要るか。取り消せず判断の要る作業は社内に残す</div><div class="summary-item"><b>6. サインを決めて見る</b><br>期限切れ間近のチャット、発送遅延率（4%未満を推奨）、自動で却下されたサンプル申請</div></div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopは1人だけで運営を続けられますか？</summary><div class="a">運営できます。2026年10月15日に日本向けの公式ヘルプを確認した範囲では、人数の条件は見当たりませんでした。分かれ目は、発送・問い合わせ・返品・在庫という毎日の作業を、撮影やLIVEの日も止めないことです。朝と夕方の2回にまとめるなど、時間で区切って守ります。</div></details><details><summary>TikTok Shopのセラーセンターは、担当者ごとにアカウントを分けられますか？</summary><div class="a">販売者利用規約は、1名または複数名のユーザーにアカウントを全面的または部分的に管理させる授権（認定ユーザー）と、その範囲の調整や終了を認めています。入口は［アカウント設定］→［ユーザー管理］です。権限の細かい選び方は画面で確認してください。</div></details><details><summary>担当者が辞めるときや外注を終えるとき、TikTok Shopでは何から外せばよいですか？</summary><div class="a">漏れが出にくい順番の例です。①その人に割り当てられている進行中のチャットを、チャットページの「すべてのオープン」から自分か別の担当者に転送する（転送できる役割はチャット設定で決められるので、責任者が転送できる状態にしておきます）②その人が持っていた毎日の段（問い合わせ、手動で承認するサンプル申請の確認など）の持ち主を作業表で付け替える ③［アカウント設定］→［ユーザー管理］で授権を終える。サンプル申請は7日間確認されないと自動で却下されるので、②を先に済ませてください。</div></details><details><summary>TikTok Shopの問い合わせ対応は、自動化できますか？</summary><div class="a">チャットページの機能メニューにはチャットボットと設定があり、SPSの24時間応答率は、FAQまたはチャットボットでセラーの対応なしに完全に解決したチャットを対象外にしています。設定の手順は今回確認できなかったため、公式ヘルプで最新の手順を確認してください。</div></details><details><summary>TikTok Shopのサンプル申請は、毎回手で承認しないといけませんか？</summary><div class="a">いいえ。招待の設定によって、申請が自動で承認される場合と、セラーの承認が必要な場合があります。自動承認では申請がそのまま配送の手続きへ進みます。手動にした場合は、7日間確認されなかった申請が自動的に却下されるので、確認する日を決めておきます。</div></details><details><summary>少人数で休みを取るとき、TikTok Shopの評価への影響はどう考えればよいですか？</summary><div class="a">発送遅延率の計算では、土曜日・日曜日・祝祭日は非営業日として含まれません。SPSの24時間応答率は、ショップ休業モード中に始まったチャットを算出の対象外にしています。休業モードの設定方法と注文への影響は、公式ヘルプで最新の内容を確認してください。</div></details></div>
+
+<div class="ctabox"><div class="ct">少人数の体制づくりからご相談いただけます</div><p>LEAMはTikTok Shopの運用支援と、TikTok Shop特化のMCNを運営しています。人数と作業量を伺い、どの作業をやめ、どこを機能に任せ、どこを外に出すかを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=small-team">無料相談する</a><a class="btn btn-g" href="https://leam.co.jp/mcn/">クリエイターの方はこちら</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=102735668184848&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：ショップパフォーマンススコア（SPS）ガイド</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2709643852187409&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：発送遅延率（LDR）</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171403024&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：顧客とコミュニケーションをとる方法</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=418411084547857&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アカウントプロフィール（マイアカウント）</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TIKTOK SHOP販売者利用規約（最終更新日2026年5月7日）</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=116912735029008&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：TikTok Shopの設定に必要な最初の手順</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトコラボ</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイター用の無料サンプル</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2721296228730641&amp;lang=ja-JP&amp;role=1" target="_blank" rel="noopener noreferrer">TikTok Shop公式：カスタマーコミュニケーションポリシー</a>（2026年10月15日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、評価条件は更新されることがあります。本記事は2026年10月15日時点で確認できた日本向け公式情報と、当社が作成した運用フレームを区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">体制</span><b><a href="https://leam.co.jp/column/inhouse-vs-agency/">TikTok Shopは内製か運用代行か｜判断基準</a></b><span>どの領域を外に任せるかを決める</span></div><div class="relcard"><span class="rc">体制</span><b><a href="https://leam.co.jp/column/before-agency/">TikTok Shop運用代行に頼む前に社内で決めること</a></b><span>外に出すと決めたら依頼書を作る</span></div><div class="relcard"><span class="rc">顧客対応</span><b><a href="https://leam.co.jp/column/tiktok-shop-customer-support/">TikTok Shopの顧客対応｜返信テンプレート</a></b><span>毎日の一次返信の型を作る</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">少人数で回るかは、人数より「毎日の作業が止まらない形」かで決まる</a></li><li><a href="#s2">作業は毎日・毎週・毎月に分けると、1人でも抜けている所が見える</a></li><li><a href="#s3">1〜3人の分担は、毎日の作業を誰が持つかを先に決めて組む</a></li><li><a href="#s4">手を減らせる公式の機能は、権限・チャット・一括操作・サンプル承認</a></li><li><a href="#s5">外に出しやすいのは取り消せる作業で、取り消せない作業は社内に残す</a></li><li><a href="#s6">回らなくなったサインは、応答・発送・サンプルの3か所に先に出る</a></li><li><a href="#s7">人を増やす前に、やめる・機能に任せる・外に出すの順で減らす</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=small-team">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopは1人だけで運営を続けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "運営できます。2026年10月15日に日本向けの公式ヘルプを確認した範囲では、人数の条件は見当たりませんでした。分かれ目は、発送・問い合わせ・返品・在庫という毎日の作業を、撮影やLIVEの日も止めないことです。朝と夕方の2回にまとめるなど、時間で区切って守ります。"}}, {"@type": "Question", "name": "TikTok Shopのセラーセンターは、担当者ごとにアカウントを分けられますか？", "acceptedAnswer": {"@type": "Answer", "text": "販売者利用規約は、1名または複数名のユーザーにアカウントを全面的または部分的に管理させる授権（認定ユーザー）と、その範囲の調整や終了を認めています。入口は［アカウント設定］→［ユーザー管理］です。権限の細かい選び方は画面で確認してください。"}}, {"@type": "Question", "name": "担当者が辞めるときや外注を終えるとき、TikTok Shopでは何から外せばよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "漏れが出にくい順番の例です。①その人に割り当てられている進行中のチャットを、チャットページの「すべてのオープン」から自分か別の担当者に転送する（転送できる役割はチャット設定で決められるので、責任者が転送できる状態にしておきます）②その人が持っていた毎日の段（問い合わせ、手動で承認するサンプル申請の確認など）の持ち主を作業表で付け替える ③［アカウント設定］→［ユーザー管理］で授権を終える。サンプル申請は7日間確認されないと自動で却下されるので、②を先に済ませてください。"}}, {"@type": "Question", "name": "TikTok Shopの問い合わせ対応は、自動化できますか？", "acceptedAnswer": {"@type": "Answer", "text": "チャットページの機能メニューにはチャットボットと設定があり、SPSの24時間応答率は、FAQまたはチャットボットでセラーの対応なしに完全に解決したチャットを対象外にしています。設定の手順は今回確認できなかったため、公式ヘルプで最新の手順を確認してください。"}}, {"@type": "Question", "name": "TikTok Shopのサンプル申請は、毎回手で承認しないといけませんか？", "acceptedAnswer": {"@type": "Answer", "text": "いいえ。招待の設定によって、申請が自動で承認される場合と、セラーの承認が必要な場合があります。自動承認では申請がそのまま配送の手続きへ進みます。手動にした場合は、7日間確認されなかった申請が自動的に却下されるので、確認する日を決めておきます。"}}, {"@type": "Question", "name": "少人数で休みを取るとき、TikTok Shopの評価への影響はどう考えればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "発送遅延率の計算では、土曜日・日曜日・祝祭日は非営業日として含まれません。SPSの24時間応答率は、ショップ休業モード中に始まったチャットを算出の対象外にしています。休業モードの設定方法と注文への影響は、公式ヘルプで最新の内容を確認してください。"}}]}</script>
+</body>
+</html>

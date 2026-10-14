@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopの動画が再生されない・売れない原因と直し方</title>
+<meta name="description" content="TikTok Shopの商品リンク付き動画が再生されない・押されない・買われない原因を、症状から引けるように整理。公式ポリシーで確かめた原因、確かめる画面、直す順番を診断表にまとめました。">
+<link rel="canonical" href="https://leam.co.jp/column/video-no-views/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopの動画が再生されない・売れない原因と直し方">
+<meta property="og:description" content="TikTok Shopの商品リンク付き動画が再生されない・押されない・買われない原因を、症状から引けるように整理。公式ポリシーで確かめた原因、確かめる画面、直す順番を診断表にまとめました。">
+<meta property="og:url" content="https://leam.co.jp/column/video-no-views/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/video-no-views.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopの動画が再生されない・売れない原因と直し方">
+<meta name="twitter:description" content="TikTok Shopの商品リンク付き動画が再生されない・押されない・買われない原因を、症状から引けるように整理。公式ポリシーで確かめた原因、確かめる画面、直す順番を診断表にまとめました。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/video-no-views.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopの動画が再生されない・売れない原因と直し方", "description": "TikTok Shopの商品リンク付き動画が再生されない・押されない・買われない原因を、症状から引けるように整理。公式ポリシーで確かめた原因、確かめる画面、直す順番を診断表にまとめました。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/video-no-views/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/video-no-views.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2707587427927825&lang=ja-JP", "name": "TikTok Shop公式：コンテンツポリシー"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2715915867866881&lang=ja-JP", "name": "TikTok Shop公式：無関係なプロモーションコンテンツ"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2715915868047105&lang=ja-JP", "name": "TikTok Shop公式：トラフィックのリダイレクト"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2709643852121873&lang=ja-JP", "name": "TikTok Shop公式：クリエイター・パフォーマンス評価ポリシー"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=1280227327674128&lang=ja-JP", "name": "TikTok Shop公式：「商品をリンク」機能で投稿済みの動画に商品を追加する"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=5514075966703376&lang=ja-JP", "name": "TikTok Shop公式：セラー向け動画ガイドライン（高品質なコンテンツの作り方）"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&lang=ja-JP", "name": "TikTok Shop公式：動画・LIVE配信・クリエイター活用までの実践マニュアル"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786801424&lang=ja-JP", "name": "TikTok Shop公式：動画パフォーマンス分析"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopの動画が再生されない・売れない原因と直し方", "item": "https://leam.co.jp/column/video-no-views/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=video-no-views">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの動画が再生されない・売れない原因と直し方｜症状別の診断表</p>
+<span class="cat">ショート動画</span>
+<h1>TikTok Shopの動画が再生されない・売れない原因と直し方｜症状別の診断表</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="動画が止まっている段を見つける様子：左の赤いフィルムの動画からケーブルが右の白い計器盤へつながり、3つのメーターのうち左2つはシアンの針が高く振れ、右端の1つだけ針が低く赤い警告の印が付いていて、そこへシアンのスパナを当てて直そうとしている場面を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="840" cy="250" rx="330" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="videonoviewsDots">
+      <circle cx="96" cy="44" r="5"/><circle cx="132" cy="44" r="5"/><circle cx="168" cy="44" r="5"/><circle cx="204" cy="44" r="5"/>
+      <circle cx="96" cy="80" r="5"/><circle cx="132" cy="80" r="5"/><circle cx="168" cy="80" r="5"/><circle cx="204" cy="80" r="5"/>
+    </g>
+    <use href="#videonoviewsDots" transform="translate(944 520)"/>
+  </g>
+
+  <!-- 左：動画（フィルム） -->
+  <g transform="rotate(-5 290 335)">
+    <rect x="150" y="170" width="280" height="330" rx="24" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="150" y="170" width="280" height="330" rx="24" fill="#CE1730"/>
+    <rect x="150" y="170" width="262" height="330" rx="24" fill="#FE2C55"/>
+    <g fill="#FFFFFF" stroke="#0B0C10" stroke-width="4">
+      <rect x="164" y="196" width="18" height="24" rx="5"/><rect x="164" y="248" width="18" height="24" rx="5"/><rect x="164" y="300" width="18" height="24" rx="5"/><rect x="164" y="352" width="18" height="24" rx="5"/><rect x="164" y="404" width="18" height="24" rx="5"/><rect x="164" y="456" width="18" height="24" rx="5"/>
+      <rect x="398" y="196" width="18" height="24" rx="5"/><rect x="398" y="248" width="18" height="24" rx="5"/><rect x="398" y="300" width="18" height="24" rx="5"/><rect x="398" y="352" width="18" height="24" rx="5"/><rect x="398" y="404" width="18" height="24" rx="5"/><rect x="398" y="456" width="18" height="24" rx="5"/>
+    </g>
+    <rect x="198" y="196" width="184" height="134" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="252" y="222" width="76" height="82" rx="10" fill="#DFE0E2" stroke="#0B0C10" stroke-width="4"/>
+    <rect x="198" y="346" width="184" height="134" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+    <rect x="220" y="370" width="140" height="12" rx="6" fill="#DFE0E2"/>
+    <rect x="220" y="394" width="104" height="12" rx="6" fill="#C9CBD0"/>
+    <rect x="220" y="436" width="78" height="22" rx="11" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/>
+    <rect x="150" y="170" width="280" height="330" rx="24" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+
+  <!-- ケーブル -->
+  <path d="M432 334c56 0 70-40 118-40 34 0 38 20 66 20" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="512" cy="306" r="9" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/>
+
+  <!-- 右：計器盤 -->
+  <rect x="610" y="160" width="490" height="290" rx="26" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+  <rect x="610" y="160" width="490" height="290" rx="26" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+
+  <g fill="none" stroke-width="16" stroke-linecap="round">
+    <path d="M652 300a58 58 0 0 1 116 0" stroke="#DFE0E2"/>
+    <path d="M802 300a58 58 0 0 1 116 0" stroke="#DFE0E2"/>
+    <path d="M952 300a58 58 0 0 1 116 0" stroke="#DFE0E2"/>
+    <path d="M652 300a58 58 0 0 1 102.7-37" stroke="#25F4EE"/>
+    <path d="M802 300a58 58 0 0 1 92.1-46.9" stroke="#25F4EE"/>
+    <path d="M952 300a58 58 0 0 1 4.1-21.4" stroke="#FE2C55"/>
+  </g>
+  <g stroke="#0B0C10" stroke-width="7" stroke-linecap="round">
+    <path d="M710 300l34-28"/>
+    <path d="M860 300l26-36"/>
+    <path d="M1010 300l-41-16"/>
+  </g>
+  <g fill="#0B0C10">
+    <circle cx="710" cy="300" r="11"/><circle cx="860" cy="300" r="11"/><circle cx="1010" cy="300" r="11"/>
+  </g>
+
+  <!-- ランプ -->
+  <circle cx="710" cy="372" r="15" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+  <circle cx="860" cy="372" r="15" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/>
+  <circle cx="1010" cy="372" r="15" fill="#FE2C55" stroke="#0B0C10" stroke-width="5"/>
+  <rect x="676" y="404" width="68" height="10" rx="5" fill="#DFE0E2"/>
+  <rect x="826" y="404" width="68" height="10" rx="5" fill="#DFE0E2"/>
+  <rect x="976" y="404" width="68" height="10" rx="5" fill="#DFE0E2"/>
+
+  <!-- 警告の印 -->
+  <circle cx="1066" cy="206" r="24" fill="#5E6064" opacity=".13" transform="translate(6 8)"/>
+  <circle cx="1066" cy="206" r="24" fill="#FE2C55" stroke="#0B0C10" stroke-width="6"/>
+  <rect x="1062" y="190" width="8" height="20" rx="4" fill="#FFFFFF"/>
+  <circle cx="1066" cy="219" r="4.5" fill="#FFFFFF"/>
+
+  <!-- スパナ -->
+  <g transform="translate(1062 452) rotate(-45)">
+    <rect x="-16" y="0" width="32" height="150" rx="16" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+    <rect x="-16" y="0" width="32" height="150" rx="16" fill="#25F4EE" stroke="#0B0C10" stroke-width="6"/>
+    <path d="M-15 -60a40 40 0 1 0 30 0v30h-30z" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+    <rect x="-6" y="40" width="12" height="80" rx="6" fill="#FFFFFF" opacity=".7"/>
+  </g>
+
+  <!-- 小さな装飾 -->
+  <circle cx="560" cy="118" r="13" fill="#25F4EE"/>
+  <circle cx="1140" cy="110" r="11" fill="#DFE0E2"/>
+  <circle cx="520" cy="560" r="12" fill="#FE2C55"/>
+</svg>
+    <figcaption>TikTok Shopの動画が止まっている段を見つけて直すイメージ（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">TikTok Shopで商品リンクを付けた動画を出しているのに、再生がほとんど付かない。再生はあるのに商品が押されない。押されるのに買われない。同じ「売れない」でも、<strong>止まっている場所が違えば、直す場所も違います</strong>。本記事は、症状から原因を引くための診断の記事です。セラー向けの公式ヘルプとTikTok Shopのコンテンツポリシーで確かめた範囲で、原因・確かめる画面・直し方を表にし、直す順番まで示します。売れる動画の作り方は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方</a>、売れない時の全体点検は<a href="https://leam.co.jp/column/not-selling-checklist/">10のチェックリスト</a>、AIで作った動画の扱いは<a href="https://leam.co.jp/column/ai-video-policy/">AI動画の規約</a>にまとめています。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>症状を3つに分けて、止まっている段を見つける方法</li><li>再生がほぼ0のときに疑う、公式ポリシー上の原因</li><li>商品リンクの付け方の決まりと、直す順番</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">動画</span><b><a href="https://leam.co.jp/column/short-video-playbook/">TikTok Shopで売れるショート動画の作り方</a></b><span>構成の型と改善の回し方</span></div>
+    <div class="relcard"><span class="rc">運用改善</span><b><a href="https://leam.co.jp/column/not-selling-checklist/">TikTok Shopで売れない時に見る10のチェックリスト</a></b><span>動画の外も含めた全体点検</span></div>
+    <div class="relcard"><span class="rc">商品ページ</span><b><a href="https://leam.co.jp/column/product-page-cvr/">TikTok Shopの商品登録と売れる商品ページの作り方</a></b><span>押されたあとの受け皿</span></div>
+    <div class="relcard"><span class="rc">基本</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組み</a></b><span>動画が売り場になる仕組み</span></div>
+  </div>
+</div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">止まっている段は「再生・商品クリック・購入」の3つで見分ける</a></li><li><a href="#s2">再生がほぼ0なら、作り直す前にポリシー上の制限を疑う</a></li><li><a href="#s3">商品リンクの付け方が決まりから外れると、動画が売り場として働かない</a></li><li><a href="#s4">視聴はあるのに押されないなら、商品カードと映像のずれを直す</a></li><li><a href="#s5">押されるのに買われないなら、動画の外を見る</a></li><li><a href="#s6">直す順番は「通知→リンク→冒頭→ページ」で、1か所ずつ変えて比べる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>止まっている段は「再生・商品クリック・購入」の3つで見分ける</h2>
+<p>セラー向けの公式の実践マニュアルは、売上（GMV）を<strong>表示（Impression）×商品詳細クリック率（CTR）×購入率（CVR）×客単価</strong>の掛け算で示しています。CTRは表示された中で商品詳細ページに移った率、CVRは商品詳細を見た中で実際に購入した率と定義されています。動画の不調も、この掛け算のどこが小さいかで見分けると、直す場所を取り違えません。</p>
+<p>数字はセラーセンターの<strong>分析＞LIVEと動画＞動画パフォーマンス</strong>で見ます。公式ヘルプによると、初期表示の指標はGMV、SKU注文数、カスタマー数、CTR（クリック率）、商品クリック数、商品インプレッションの6つで、動画視聴数やGPMなどの別の指標も登録して組み合わせられます。動画ごとの詳細では、自社アカウントの動画とアフィリエイトの動画をタブで分けて並べ替えられます。指標の定義は画面の「？」に表示されるので、比べる前に一度読んでおいてください。</p>
+<div class="tw"><table><thead><tr><th>症状</th><th>止まっている段</th><th>まず見る数字</th><th>読む節</th></tr></thead><tbody><tr><td>どの動画も動画視聴数がほとんど増えない</td><td>表示（再生）</td><td>動画視聴数・違反の通知</td><td>§02・§03</td></tr><tr><td>特定の1本だけ急に止まった</td><td>表示（再生）</td><td>その動画の状態・通知</td><td>§02</td></tr><tr><td>視聴はあるが商品クリック数が少ない</td><td>商品クリック</td><td>CTR・商品クリック数</td><td>§04</td></tr><tr><td>商品クリック数はあるがSKU注文数が少ない</td><td>購入</td><td>SKU注文数・商品ページ</td><td>§05</td></tr></tbody></table></div><p class="src">症状から止まっている段を引く表（公式の指標をもとにLEAM作成）</p>
+<p>この3段の流れは<a href="https://leam.co.jp/column/short-video-playbook/#s7">ショート動画の作り方</a>で、投稿後の切り分けとして図にしています。本記事はそれぞれの段が「いいえ」になったときに、何が原因になりうるか、どこで確かめるかを一段深く扱います。</p>
+  <figure> <svg viewBox="0 0 720 286" role="img" aria-label="止まった段ごとに確かめる場所を並べた図。再生がほぼ0のときは措置の通知、健全性評価、外部誘導や転載の有無を見る。視聴はあるのに押されないときは、冒頭で商品が映るか、商品カードの場面で同じ商品を語っているか、リンクと映像が一致しているかを見る。押されるのに買われないときは、商品ページの画像と商品名、価格と割引、送料と在庫を見る"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">「いいえ」になった段で、確かめる場所が変わる</text><rect x="14" y="44" width="220" height="214" rx="12" fill="#FFFFFF" stroke="#E8324A" stroke-width="1.5"/><rect x="14" y="44" width="220" height="56" rx="12" fill="#FFECF0"/><rect x="14" y="88" width="220" height="12" fill="#FFECF0"/><text x="124" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">再生がほぼ0</text><text x="124" y="89" text-anchor="middle" font-size="11" fill="#787D8A">ルールと設定を見る</text><rect x="30" y="116" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M33 123 L36 126 L42 119" stroke="#C2203A" stroke-width="2" fill="none"/><text x="52" y="128" font-size="11.5" fill="#454956">措置の通知が来ていないか</text><rect x="30" y="148" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M33 155 L36 158 L42 151" stroke="#C2203A" stroke-width="2" fill="none"/><text x="52" y="160" font-size="11.5" fill="#454956">CHRが下がっていないか</text><rect x="30" y="180" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M33 187 L36 190 L42 183" stroke="#C2203A" stroke-width="2" fill="none"/><text x="52" y="192" font-size="11.5" fill="#454956">外部誘導や転載がないか</text><line x1="30" y1="214" x2="218" y2="214" stroke="#E6E7EB" stroke-width="1"/><text x="124" y="236" text-anchor="middle" font-size="10.5" font-weight="800" fill="#454956">見る場所：通知・CHR</text><rect x="250" y="44" width="220" height="214" rx="12" fill="#FFFFFF" stroke="#E8324A" stroke-width="1.5"/><rect x="250" y="44" width="220" height="56" rx="12" fill="#FFECF0"/><rect x="250" y="88" width="220" height="12" fill="#FFECF0"/><text x="360" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">視聴はあるのに押されない</text><text x="360" y="89" text-anchor="middle" font-size="11" fill="#787D8A">冒頭と商品カードを見る</text><rect x="266" y="116" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M269 123 L272 126 L278 119" stroke="#C2203A" stroke-width="2" fill="none"/><text x="288" y="128" font-size="11.5" fill="#454956">冒頭で商品が映るか</text><rect x="266" y="148" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M269 155 L272 158 L278 151" stroke="#C2203A" stroke-width="2" fill="none"/><text x="288" y="160" font-size="11.5" fill="#454956">カードの場面で同じ商品か</text><rect x="266" y="180" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M269 187 L272 190 L278 183" stroke="#C2203A" stroke-width="2" fill="none"/><text x="288" y="192" font-size="11.5" fill="#454956">リンクと映像が一致するか</text><line x1="266" y1="214" x2="454" y2="214" stroke="#E6E7EB" stroke-width="1"/><text x="360" y="236" text-anchor="middle" font-size="10.5" font-weight="800" fill="#454956">見る場所：CTR・商品クリック数</text><rect x="486" y="44" width="220" height="214" rx="12" fill="#FFFFFF" stroke="#E8324A" stroke-width="1.5"/><rect x="486" y="44" width="220" height="56" rx="12" fill="#FFECF0"/><rect x="486" y="88" width="220" height="12" fill="#FFECF0"/><text x="596" y="68" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">押されるのに買われない</text><text x="596" y="89" text-anchor="middle" font-size="11" fill="#787D8A">動画の外を見る</text><rect x="502" y="116" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M505 123 L508 126 L514 119" stroke="#C2203A" stroke-width="2" fill="none"/><text x="524" y="128" font-size="11.5" fill="#454956">ページの画像と商品名</text><rect x="502" y="148" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M505 155 L508 158 L514 151" stroke="#C2203A" stroke-width="2" fill="none"/><text x="524" y="160" font-size="11.5" fill="#454956">価格と割引のずれ</text><rect x="502" y="180" width="14" height="14" rx="3" fill="#FFFFFF" stroke="#454956" stroke-width="1.5"/><path d="M505 187 L508 190 L514 183" stroke="#C2203A" stroke-width="2" fill="none"/><text x="524" y="192" font-size="11.5" fill="#454956">送料と在庫</text><line x1="502" y1="214" x2="690" y2="214" stroke="#E6E7EB" stroke-width="1"/><text x="596" y="236" text-anchor="middle" font-size="10.5" font-weight="800" fill="#454956">見る場所：動画の詳細・商品ページ</text><text x="360" y="278" text-anchor="middle" font-size="11.5" fill="#787D8A">左の段が止まっていると、右の段を直しても数字に出ない</text></svg> <figcaption>図1：止まった段ごとに、確かめる場所（LEAM作成）</figcaption> </figure>
+
+<h2 id="s2"><span class="no en">02</span>再生がほぼ0なら、作り直す前にポリシー上の制限を疑う</h2>
+<p>再生がほとんど付かないと、まず冒頭の作りを疑いたくなります。ただ、商品リンク付きの動画には、通常の投稿とは別に<strong>TikTok Shopのコンテンツポリシー</strong>がかかります。ポリシーはTikTok Shop上のあらゆる種類のコンテンツに適用され、コンテンツに出る商品は適用法令とTikTokコミュニティガイドラインにも従う必要があると定めています（コミュニティガイドラインの細目は本記事では扱いません。TikTok公式サイトで最新版を確認してください）。</p>
+<p>公式の動画ガイドラインも、品質基準を満たさないコンテンツはパフォーマンスが下がり、リーチも限られたものになる可能性があると書いています。作りの問題とルールの問題は直し方がまったく違うので、再生ゼロが続くなら、次の表に当たっていないかを先に確かめてください。</p>
+<div class="tw"><table><thead><tr><th>原因の候補</th><th>公式の定め（要約）</th><th>直し方</th></tr></thead><tbody><tr><td>非オリジナル</td><td>取り込んだ・アップロードした素材に、新しい編集や創作が加わっていない。他のSNSやテレビ番組などで既に共有された素材も含む</td><td>自社で撮り直す。転載した素材を外す</td></tr><tr><td>低品質</td><td>他のユーザー・プラットフォーム・著作権のある素材に基づくもの</td><td>素材の出どころを確かめ、権利のない素材を外す</td></tr><tr><td>非インタラクティブ</td><td>画面上に意味のある動きがない（ほとんどが静止した画像や場面）</td><td>静止画を並べるだけの作りをやめ、実物を動かして見せる</td></tr><tr><td>ローカライズされていない</td><td>日本語で表現し、日本国内で撮影し、商品の価値がわかる構成にする必要がある</td><td>海外素材の流用をやめ、日本で撮った映像に替える</td></tr><tr><td>外部への誘導</td><td>リンク・電話番号・SNSのハンドル名・メールアドレス・QRコードなどで外へ誘導する</td><td>動画・カバー・説明文・コメントから外部の案内を消す</td></tr><tr><td>誤解を招く表現</td><td>誇張された宣伝文句、虚偽の宣伝文句、誤解を招く価格の宣伝など</td><td>根拠を示せない表現を外す</td></tr></tbody></table></div><p class="src">再生が止まる原因になりうるポリシー項目（コンテンツポリシーの記載を整理）</p>
+<p>見落としやすいのは、<strong>対象が動画の本編だけではない</strong>点です。外部誘導についての公式ヘルプは、カバーページ・タイトル・ハイパーリンク・アンカーリンク・説明に含まれる内容もガイドラインの対象だとしています。コメント欄で外部サイトの情報を出すことや、プロフィール文でSNSのユーザー名を共有することも、外部誘導の例に挙がっています。</p>
+  <figure> <svg viewBox="0 0 720 262" role="img" aria-label="ガイドラインの対象範囲を示した図。中央に動画の本編を置き、左にカバー、タイトル、説明文、右にアンカーリンク、コメント欄、プロフィール文の箱を並べて線でつなぎ、外部への誘導はどこに書いても対象になることを添えている"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">ガイドラインが見るのは、動画の周りも含む</text><rect x="280" y="54" width="160" height="160" rx="16" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="360" y="130" text-anchor="middle" font-size="13.5" font-weight="800" fill="#C2203A">動画の本編</text><text x="360" y="152" text-anchor="middle" font-size="11" fill="#787D8A">映像・音声・テロップ</text><rect x="30" y="50" width="170" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="115" y="77" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">カバー</text><rect x="30" y="112" width="170" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="115" y="139" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">タイトル</text><rect x="30" y="174" width="170" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="115" y="201" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">説明文</text><rect x="520" y="50" width="170" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="605" y="77" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">アンカーリンク</text><rect x="520" y="112" width="170" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="605" y="139" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">コメント欄</text><rect x="520" y="174" width="170" height="44" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="605" y="201" text-anchor="middle" font-size="12" font-weight="800" fill="#454956">プロフィール文</text><g stroke="#787D8A" stroke-width="2" fill="none"><path d="M200 72 L280 110"/><path d="M200 134 L280 134"/><path d="M200 196 L280 158"/><path d="M520 72 L440 110"/><path d="M520 134 L440 134"/><path d="M520 196 L440 158"/></g><text x="360" y="248" text-anchor="middle" font-size="11.5" fill="#787D8A">外への誘導は、どこに書いても対象になる</text></svg> <figcaption>図2：本編を直しても、周りに外部の案内が残っていれば止まる（LEAM作成）</figcaption> </figure>
+<h3>制限は「通知」と「健全性評価」から先に確かめる</h3>
+<p>違反と判断された場合の措置は、<strong>クリエイター・パフォーマンス評価ポリシー</strong>に一覧があります。商品リンクの削除、コンテンツの削除やブロック、正式な警告メッセージに加えて、コンテンツのトラフィックやおすすめ対象からの削除も挙げられています。動画を投稿したアカウントの健全性評価（CHR）が<strong>150ポイント以下になるとショッピング動画の作成・LIVE配信・ショーケースへの商品追加が3日間できなくなり</strong>、100ポイント以下で7日間、50ポイント以下で14日間に延びます。CHRは「クリエイターセンター＞クリエイター用TikTok Shop」で本人にだけ表示されます（ショップ側の違反の流れは<a href="https://leam.co.jp/column/account-suspension/">アカウント停止・違反ポイントのガイド</a>）。</p>
+<p>ショップ側の状態も、動画の止まり方に関わります。同じポリシーは、セラーのショップが停止された場合や注文数上限（OVL）が0に達した場合に、そのセラーに関連するクリエイターアカウントのEC権限を同時に停止することがあるとしています。自社の動画もクリエイターの動画も一斉に止まったときは、1本ずつの作りではなく、ショップの状態から確かめてください。</p>
+<div class="box box-warn"><div class="bt">⚠️ 措置が誤りだと思ったら、30日以内に申し立てる</div><p>同じポリシーでは、クリエイターは強制措置の通知にある不服申立て機能から申し立てでき、<strong>1件の措置につき1回、通知を受けた日から30日以内</strong>とされています。期限を過ぎると申し立てられません。作り直しに手を付ける前に、通知が来ていないかを確かめてください。</p></div>
+
+<h2 id="s3"><span class="no en">03</span>商品リンクの付け方が決まりから外れると、動画が売り場として働かない</h2>
+<p>TikTok Shopの動画は、商品に焦点を当てた内容である必要があります。公式ヘルプは、リンクした商品をはっきり紹介していない投稿を<strong>「無関係なプロモーションコンテンツ」</strong>と呼び、禁止しています。挙がっている例は次のとおりです。</p>
+<ul><li>1つの商品を紹介しながら、実際には別の商品にリンクする（例：ミキサーを紹介しながらフライパンにリンクする）</li><li>商品が背景にある、ピントが合っていない、または掲載リストにまったく表示されていない</li><li>リンク先の掲載商品とはっきり対応していない複数の商品を宣伝する</li><li>誤解を招くビジュアル、説明文、保証を使う</li></ul>
+<p>色違いやセット違いの商品を1本で紹介し、リンクは1つだけ、という組み方は実務でよく見ます。当社の運用実感では、この「映っている物とリンク先の食い違い」は作り手が気づきにくく、ここで止まっている動画が少なくありません。</p>
+<div class="tw"><table><thead><tr><th>決まり</th><th>公式の記載</th><th>つまずきやすい点</th></tr></thead><tbody><tr><td>後から付けるとき</td><td>「商品をリンク」機能で、過去30日以内のリンク未設定の動画に、ショーケース内の商品を付けられる。一度付けた商品は変更できない</td><td>選ぶ前に、映っている商品と同じかを確かめる（手順は<a href="https://leam.co.jp/column/affiliate-center-howto/#s6">アフィリエイトセンターの使い方</a>）</td></tr><tr><td>おすすめ商品</td><td>動画内容の関連性などをもとに自動で推薦される。初期設定でオン</td><td>推薦をそのまま選ばず、映っている商品と照らす</td></tr><tr><td>投稿の間隔</td><td>同じ商品を取り上げた複数の動画を、1時間未満の間隔で公開しない</td><td>まとめ撮りした動画を一度に出さない</td></tr></tbody></table></div><p class="src">商品リンクと投稿の決まり（公式ヘルプの記載を整理）</p>
+<p>後から付ける機能は、投稿時に付け忘れた場合や、一時的に制限がかかっていた場合にも使えると案内されています。ただし、ここで選ぶ商品が映像と食い違えば、上の「無関係なプロモーションコンテンツ」に当たります。付けられる商品をそろえる側の準備は<a href="https://leam.co.jp/column/showcase-guide/">ショーケースの使い方</a>にまとめています。</p>
+
+<h2 id="s4"><span class="no en">04</span>視聴はあるのに押されないなら、商品カードと映像のずれを直す</h2>
+<p>視聴は付いているのに商品クリック数が伸びない動画は、見られてはいるものの「この商品が欲しい」につながっていません。原因は大きく3つです。<strong>冒頭で何の商品か分からない</strong>、<strong>商品カードが出るときに映像が別の話をしている</strong>、<strong>買い方の案内がない</strong>。</p>
+<p>公式の動画ガイドラインは、商品をすぐに見せることを勧め、商品を早く目にするほど購入の意思決定が早く下される可能性があるとしています。公式の実践マニュアルも、商品カードと動画の内容を連動させること、つまり商品が映るタイミングで特長を語り、使う場面と価格の表示を同時に見せることをコツに挙げています。</p>
+<div class="tw"><table><thead><tr><th>症状</th><th>よくある原因</th><th>直し方</th></tr></thead><tbody><tr><td>冒頭が雰囲気の映像で、商品が出るのは後半</td><td>何の動画か分からないまま離れる</td><td>最初の場面に商品と使う場面を置く</td></tr><tr><td>商品カードが出るとき、映像は別の話をしている</td><td>映像とリンク先がつながらない</td><td>商品が映る場面に、特長の説明と価格の表示を重ねる</td></tr><tr><td>写真やスライドを並べているだけ</td><td>実物の動きや質感が伝わらない</td><td>実物を手に取り、複数の角度から見せる</td></tr><tr><td>最後に買い方の案内がない</td><td>見て満足したまま閉じる</td><td>商品カードを指差すなど、次の行動を一言で示す</td></tr><tr><td>複数の商品を紹介しているが、どれがどのリンクか分からない</td><td>映像とリンクの対応が取れていない</td><td>映す順番とリンクの並びをそろえ、商品名を口で言う</td></tr></tbody></table></div><p class="src">押されない動画の症状と直し方（公式の動画ガイドライン・実践マニュアルをもとにLEAM作成）</p>
+<p>最後の行は、公式の動画ガイドラインが「なるべく販売商品を3点以上紹介する動画」を勧めていることと関わります。複数の商品を扱うこと自体は問題ではありません。<strong>映っている商品とリンクの対応がはっきりしているか</strong>が分かれ目です。</p>
+  <figure> <svg viewBox="0 0 720 236" role="img" aria-label="商品カードの出る位置と映像の中身を比べた図。上の段の直す前は、雰囲気の映像が続いて商品が出るのは後半で、商品カードが出る場面では別の話をしている。下の段の直した後は、冒頭から商品と使う場面を見せ、商品カードが出る場面で同じ商品の特長と価格を語っている"><text x="360" y="24" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">商品カードが出る場面と、映像の中身をそろえる</text><text x="20" y="58" font-size="12" font-weight="800" fill="#454956">直す前</text><rect x="90" y="42" width="200" height="30" rx="6" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="190" y="62" text-anchor="middle" font-size="11" fill="#787D8A">雰囲気の映像</text><rect x="292" y="42" width="200" height="30" rx="6" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="392" y="62" text-anchor="middle" font-size="11" fill="#787D8A">別の話題</text><rect x="494" y="42" width="206" height="30" rx="6" fill="#DFE0E2" stroke="#E6E7EB" stroke-width="1"/><text x="597" y="62" text-anchor="middle" font-size="11" fill="#454956">やっと商品が出る</text><path d="M392 80 L392 96" stroke="#C2203A" stroke-width="2.5" fill="none"/><path d="M386 92 L392 80 L398 92 Z" fill="#C2203A"/><text x="392" y="112" text-anchor="middle" font-size="11" fill="#C2203A">ここで商品カードが出ても、映像と合わない</text><text x="20" y="160" font-size="12" font-weight="800" fill="#C2203A">直した後</text><rect x="90" y="144" width="200" height="30" rx="6" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="190" y="164" text-anchor="middle" font-size="11" fill="#C2203A">商品と使う場面</text><rect x="292" y="144" width="200" height="30" rx="6" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="392" y="164" text-anchor="middle" font-size="11" fill="#C2203A">特長と価格を語る</text><rect x="494" y="144" width="206" height="30" rx="6" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="597" y="164" text-anchor="middle" font-size="11" fill="#C2203A">商品カードを指差す</text><path d="M392 182 L392 198" stroke="#454956" stroke-width="2.5" fill="none"/><path d="M386 194 L392 182 L398 194 Z" fill="#454956"/><text x="392" y="214" text-anchor="middle" font-size="11" fill="#454956">商品カードが出る場面で、同じ商品を語っている</text></svg> <figcaption>図3：同じ素材でも、並べ方で押されやすさが変わる（LEAM作成）</figcaption> </figure>
+<h3>自社の動画とアフィリエイトの動画を分けて比べる</h3>
+<p>動画パフォーマンスの詳細では、自社アカウントとアフィリエイトの動画をタブで分けて見られます。自社の動画だけCTRが低く、クリエイターの動画では押されているなら、直すのは自社の動画の見せ方です。どちらも低いなら、動画より先に商品カードそのものを疑います。公式の実践マニュアルは、商品カードを良くする例として、商品画像の充実、商品の利用シーン、複数アングルからの商品写真を挙げています（この切り分けは当社の整理で、公式の判定基準ではありません）。</p>
+<p>クリエイターの動画のほうが押されているなら、その本数を増やすのも手です。クリエイターの動画を増やすなら、招待の送り方は<a href="https://leam.co.jp/column/invite-no-reply/">招待に返事が来ないときの送り方と追い方</a>にまとめています。</p>
+<p>構成の型（冒頭・使う場面・価格・行動の呼びかけ）の組み方は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方</a>で扱っています。ここでは「どこがずれているか」を見つけることに絞りました。</p>
+
+<h2 id="s5"><span class="no en">05</span>押されるのに買われないなら、動画の外を見る</h2>
+<p>商品クリック数はあるのにSKU注文数が少ないなら、動画は役目を果たしています。止まっているのは商品ページを開いた後です。公式の実践マニュアルは、購入率に関わる点としてプロフィール・レビュー・価格帯の一貫性を、打ち手としてタイムセール・送料無料・クーポンなどの明示を挙げています。次の4つを確かめてください。</p>
+<ul><li>動画で見せた物と、商品ページの1枚目の画像・商品名が同じか（<a href="https://leam.co.jp/column/product-page-cvr/">商品ページの作り方</a>）</li><li>動画で言った価格と、ページの価格や割引がずれていないか（<a href="https://leam.co.jp/column/pricing-strategy/">価格の決め方</a>）</li><li>送料と届く時期が、ページで先に分かるか（<a href="https://leam.co.jp/column/shipping-rules/">発送ルールと出荷期限</a>）</li><li>紹介した色やサイズの在庫が切れていないか（<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理の方法</a>）</li></ul>
+<p>動画で効果を盛るほど、ページを開いたときの落差は大きくなります。公式の動画ガイドラインも、商品のメリットや性能について誤った主張をして視聴者に誤解を与えないよう求めています。動画の詳細画面では動画内の商品ごとの数字を見られるので、どの商品で止まっているかまで絞ってから、ページを直してください。</p>
+
+<h2 id="s6"><span class="no en">06</span>直す順番は「通知→リンク→冒頭→ページ」で、1か所ずつ変えて比べる</h2>
+<p>原因の候補が複数見つかっても、直す順番は決まっています。左の段が止まっていると、右の段をいくら直しても数字に表れないからです。当社の運用実感では、再生がほぼ0という相談でも、動画の作りより先にルールや設定の問題が見つかることが少なくありません。</p>
+<ol class="steps"><li><b>通知と健全性評価を確かめる</b><p>違反の通知、商品リンクの削除、CHRの低下がないか。ここが原因なら、作りを直しても戻りません。</p></li><li><b>商品リンクを映像と合わせる</b><p>映っている商品とリンク先が同じか。後から付けるなら、30日以内の動画とショーケース内の商品だけです。</p></li><li><b>冒頭と商品カードの位置を直す</b><p>商品を早く見せ、商品カードが出る場面で同じ商品を語ります。</p></li><li><b>商品ページ・価格・送料・在庫を見直す</b><p>押されるのに買われないときだけ、動画の外を直します。</p></li></ol>
+<div class="tw"><table><thead><tr><th>症状</th><th>考えられる原因</th><th>確かめる画面</th><th>直し方</th></tr></thead><tbody><tr><td>どの動画も視聴数がほぼ0</td><td>違反による措置、健全性評価の低下</td><td>措置の通知、クリエイターセンター＞クリエイター用TikTok Shop</td><td>違反箇所を外す。誤りなら30日以内に不服申立て</td></tr><tr><td>特定の動画だけ視聴数がほぼ0</td><td>非オリジナル・非インタラクティブ・外部誘導など</td><td>動画の本編・カバー・説明文・コメント欄</td><td>該当部分を差し替えた動画を作る</td></tr><tr><td>商品リンクが付かない・消えた</td><td>ショーケースに商品がない、措置による削除</td><td>ショーケース、措置の通知</td><td>ショーケースに入れる。措置なら理由を直してから画面で確かめる</td></tr><tr><td>視聴はあるのにCTRが低い</td><td>冒頭で商品が出ない、商品カードと映像のずれ</td><td>分析＞LIVEと動画＞動画パフォーマンス</td><td>商品を早く見せ、カードの場面で同じ商品を語る</td></tr><tr><td>商品クリック数はあるが注文が少ない</td><td>商品ページ、価格、送料、在庫</td><td>動画の詳細（商品ごとの数字）、商品ページ</td><td>ページを動画の内容に合わせる</td></tr></tbody></table></div><p class="src">動画の診断表（公式ヘルプの記載とLEAMの運用整理をもとに作成）</p>
+<div class="box box-point"><div class="bt">💡 1本で変えるのは1か所にする</div><p>同じ週に冒頭もリンクも変えると、数字が動いても何が効いたか分かりません。1本で変えるのは1か所にし、動画パフォーマンスで前の動画と同じ期間をそろえて比べてください。自社アカウントの動画とアフィリエイトの動画は、タブを分けて見ます。</p></div>
+<p>直した動画を広告に乗せて伸ばす段階で赤字になるときは、<a href="https://leam.co.jp/column/gmvmax-loss/">GMV Maxで赤字になる原因と止め方</a>で、止める判断と見直す順番を扱っています。</p>
+
+<h2 id="summary"><span class="no en">07</span>まとめ</h2>
+<p>動画が売れないとき、最初にやるのは作り直しではなく、<strong>どの段で止まっているかを決めること</strong>です。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 段を決める</b><br>動画パフォーマンスで、視聴数・CTR・SKU注文数のどこが小さいかを見る</div><div class="summary-item"><b>2. 再生ゼロならルールから</b><br>通知とCHRを確かめ、非オリジナル・外部誘導などに当たっていないかを見る</div><div class="summary-item"><b>3. リンクを映像と合わせる</b><br>映っている商品とリンク先が同じか。後から付けるなら30日以内・ショーケース内の商品</div><div class="summary-item"><b>4. 押されないなら冒頭とカード</b><br>商品を早く見せ、商品カードが出る場面で同じ商品を語る</div><div class="summary-item"><b>5. 買われないなら動画の外</b><br>商品ページ・価格・送料・在庫を、動画の内容に合わせる</div></div>
+
+<h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopで、商品リンクを付けた動画だけ再生が伸びないのはなぜですか？</summary><div class="a">商品リンク付きの動画には、通常の投稿に加えてTikTok Shopのコンテンツポリシーがかかります。非オリジナル、非インタラクティブ、外部への誘導、無関係なプロモーションなどに当たると、措置の対象になりえます。措置にはおすすめ対象からの削除も含まれるので、作り直す前に措置の通知と健全性評価（CHR）を確かめてください。</div></details><details><summary>TikTok Shopで、クリエイターの動画が止まったとき、セラー側で原因を確かめられますか？</summary><div class="a">数字の変化は、セラーセンターの動画パフォーマンスの動画の詳細で、アフィリエイトのタブから確かめられます。一方、クリエイター・パフォーマンス評価ポリシーはクリエイターに適用されるもので、健全性評価（CHR）は「クリエイターセンター＞クリエイター用TikTok Shop」でクリエイター本人にだけ表示され、措置への不服申立ても本人が通知から行います。措置の有無はクリエイターに確かめてもらってください。自社の動画とクリエイターの動画が一斉に止まったときは、ショップの停止や注文数上限（OVL）が0に達したことで、関連するクリエイターのEC権限が止まることもあるため、ショップ側の状態から確かめます。</div></details><details><summary>他のSNSに投稿した動画を、TikTok Shopの動画に使い回してもよいですか？</summary><div class="a">そのままの転載は避けてください。コンテンツポリシーは、取り込んだ素材に新しい編集や創作が加わっていないものを非オリジナルとし、他のSNSなどで既に共有された素材もこれに含めています。また日本向けの動画は、日本語で表現し、日本国内で撮影されている必要があります。</div></details><details><summary>TikTok Shopの動画の中で、自社サイトやSNSのアカウントへ案内してもよいですか？</summary><div class="a">できません。リンク、電話番号、SNSのハンドル名、QRコードなどで外部へ誘導することは禁止されています。動画の本編だけでなく、カバー、タイトル、説明文、アンカーリンクの内容も対象で、コメント欄やプロフィール文での案内も例に挙がっています。</div></details><details><summary>画像のスライドだけで作った動画は、TikTok Shopで問題になりますか？</summary><div class="a">注意が必要です。コンテンツポリシーは、画面上に意味のある動きがない（ほとんどが静止した画像や場面）ものを非インタラクティブコンテンツとしています。公式の動画ガイドラインも、複数の写真やスライドより、商品をさまざまな角度から見せる実写の動画を勧めています。</div></details><details><summary>TikTok Shopの動画ごとの再生数やクリック率は、どこで見られますか？</summary><div class="a">セラーセンターの「分析＞LIVEと動画＞動画パフォーマンス」で見られます。初期表示はGMV、SKU注文数、カスタマー数、CTR、商品クリック数、商品インプレッションの6つで、動画視聴数やGPMなどの別の指標も登録して組み合わせられます。動画の詳細では、自社アカウントとアフィリエイトの動画をタブで分けて確認できます。</div></details></div>
+
+<div class="ctabox"><div class="ct">止まっている段の見立てから、ご相談いただけます</div><p>動画パフォーマンスの数字と、気になっている動画を伺い、どの段で止まっているか、何から直すかを整理してお伝えします。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=video-no-views">セラー相談をする</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">09</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2707587427927825&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：コンテンツポリシー</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2715915867866881&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：無関係なプロモーションコンテンツ</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2715915868047105&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：トラフィックのリダイレクト</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2709643852121873&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイター・パフォーマンス評価ポリシー</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=1280227327674128&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：「商品をリンク」機能で投稿済みの動画に商品を追加する</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5514075966703376&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：セラー向け動画ガイドライン（高品質なコンテンツの作り方）</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=5653863148177169&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：動画・LIVE配信・クリエイター活用までの実践マニュアル</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786801424&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：動画パフォーマンス分析</a>（2026年10月15日確認）</li></ul>
+<p class="src">仕様、画面名称、指標、措置の内容は更新されることがあります。本記事は2026年10月15日時点で確認できた日本向け公式情報と、当社が作成した診断の整理を区別して記載しています。本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">ルール</span><b><a href="https://leam.co.jp/column/ai-video-policy/">TikTok ShopでAI生成動画は使えるか｜規約と実務</a></b><span>AIで作った動画の開示と線引き</span></div><div class="relcard"><span class="rc">ルール</span><b><a href="https://leam.co.jp/column/account-suspension/">TikTok Shopのアカウント停止・違反ポイント完全ガイド</a></b><span>違反が重なったときの流れ</span></div><div class="relcard"><span class="rc">クリエイター</span><b><a href="https://leam.co.jp/column/showcase-guide/">TikTok Shopのショーケースとは？使える条件と収益の仕組み</a></b><span>商品リンクを付ける前の置き場</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">止まっている段は「再生・商品クリック・購入」の3つで見分ける</a></li><li><a href="#s2">再生がほぼ0なら、作り直す前にポリシー上の制限を疑う</a></li><li><a href="#s3">商品リンクの付け方が決まりから外れると、動画が売り場として働かない</a></li><li><a href="#s4">視聴はあるのに押されないなら、商品カードと映像のずれを直す</a></li><li><a href="#s5">押されるのに買われないなら、動画の外を見る</a></li><li><a href="#s6">直す順番は「通知→リンク→冒頭→ページ」で、1か所ずつ変えて比べる</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=video-no-views">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopで、商品リンクを付けた動画だけ再生が伸びないのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "商品リンク付きの動画には、通常の投稿に加えてTikTok Shopのコンテンツポリシーがかかります。非オリジナル、非インタラクティブ、外部への誘導、無関係なプロモーションなどに当たると、措置の対象になりえます。措置にはおすすめ対象からの削除も含まれるので、作り直す前に措置の通知と健全性評価（CHR）を確かめてください。"}}, {"@type": "Question", "name": "TikTok Shopで、クリエイターの動画が止まったとき、セラー側で原因を確かめられますか？", "acceptedAnswer": {"@type": "Answer", "text": "数字の変化は、セラーセンターの動画パフォーマンスの動画の詳細で、アフィリエイトのタブから確かめられます。一方、クリエイター・パフォーマンス評価ポリシーはクリエイターに適用されるもので、健全性評価（CHR）は「クリエイターセンター＞クリエイター用TikTok Shop」でクリエイター本人にだけ表示され、措置への不服申立ても本人が通知から行います。措置の有無はクリエイターに確かめてもらってください。自社の動画とクリエイターの動画が一斉に止まったときは、ショップの停止や注文数上限（OVL）が0に達したことで、関連するクリエイターのEC権限が止まることもあるため、ショップ側の状態から確かめます。"}}, {"@type": "Question", "name": "他のSNSに投稿した動画を、TikTok Shopの動画に使い回してもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "そのままの転載は避けてください。コンテンツポリシーは、取り込んだ素材に新しい編集や創作が加わっていないものを非オリジナルとし、他のSNSなどで既に共有された素材もこれに含めています。また日本向けの動画は、日本語で表現し、日本国内で撮影されている必要があります。"}}, {"@type": "Question", "name": "TikTok Shopの動画の中で、自社サイトやSNSのアカウントへ案内してもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "できません。リンク、電話番号、SNSのハンドル名、QRコードなどで外部へ誘導することは禁止されています。動画の本編だけでなく、カバー、タイトル、説明文、アンカーリンクの内容も対象で、コメント欄やプロフィール文での案内も例に挙がっています。"}}, {"@type": "Question", "name": "画像のスライドだけで作った動画は、TikTok Shopで問題になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "注意が必要です。コンテンツポリシーは、画面上に意味のある動きがない（ほとんどが静止した画像や場面）ものを非インタラクティブコンテンツとしています。公式の動画ガイドラインも、複数の写真やスライドより、商品をさまざまな角度から見せる実写の動画を勧めています。"}}, {"@type": "Question", "name": "TikTok Shopの動画ごとの再生数やクリック率は、どこで見られますか？", "acceptedAnswer": {"@type": "Answer", "text": "セラーセンターの「分析＞LIVEと動画＞動画パフォーマンス」で見られます。初期表示はGMV、SKU注文数、カスタマー数、CTR、商品クリック数、商品インプレッションの6つで、動画視聴数やGPMなどの別の指標も登録して組み合わせられます。動画の詳細では、自社アカウントとアフィリエイトの動画をタブで分けて確認できます。"}}]}</script>
+</body>
+</html>

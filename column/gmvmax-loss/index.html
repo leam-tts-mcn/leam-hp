@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>GMV Maxで赤字になる原因と止め方｜TikTok Shop広告</title>
+<meta name="description" content="GMV Maxの赤字は、ROI目標・判断の早さ・商品の混ぜ方・動画不足の4つに分けると直す場所が決まります。続ける・下げる・止めるの判定表と、ROI保護が外れる操作を整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/gmvmax-loss/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="GMV Maxで赤字になる原因と止め方｜TikTok Shop広告">
+<meta property="og:description" content="GMV Maxの赤字は、ROI目標・判断の早さ・商品の混ぜ方・動画不足の4つに分けると直す場所が決まります。続ける・下げる・止めるの判定表と、ROI保護が外れる操作を整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/gmvmax-loss/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/gmvmax-loss.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GMV Maxで赤字になる原因と止め方｜TikTok Shop広告">
+<meta name="twitter:description" content="GMV Maxの赤字は、ROI目標・判断の早さ・商品の混ぜ方・動画不足の4つに分けると直す場所が決まります。続ける・下げる・止めるの判定表と、ROI保護が外れる操作を整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/gmvmax-loss.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "GMV Maxで赤字になる原因と止め方｜TikTok Shop広告", "description": "GMV Maxの赤字は、ROI目標・判断の早さ・商品の混ぜ方・動画不足の4つに分けると直す場所が決まります。続ける・下げる・止めるの判定表と、ROI保護が外れる操作を整理します。", "inLanguage": "ja", "datePublished": "2026-10-15", "dateModified": "2026-10-15", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/gmvmax-loss/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/gmvmax-loss.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://ads.tiktok.com/help/article/best-practices-for-product-gmv-max?lang=ja", "name": "TikTok広告 公式ヘルプ：Product GMV Maxのベストプラクティス"}, {"@type": "WebPage", "url": "https://ads.tiktok.com/help/article/how-to-evaluate-the-performance-of-product-gmv-max?lang=ja", "name": "TikTok広告 公式ヘルプ：Product GMV Maxのパフォーマンスを評価する方法"}, {"@type": "WebPage", "url": "https://ads.tiktok.com/help/article/about-product-gmv-max?lang=ja", "name": "TikTok広告 公式ヘルプ：Product GMV Maxについて"}, {"@type": "WebPage", "url": "https://ads.tiktok.com/help/article/about-roi-protection-for-gmv-max-campaigns?lang=ja", "name": "TikTok広告 公式ヘルプ：GMV MaxキャンペーンのROI保護について"}, {"@type": "WebPage", "url": "https://ads.tiktok.com/help/article/about-roi-recommendation-for-gmv-max-campaigns?lang=ja", "name": "TikTok広告 公式ヘルプ：GMV MaxキャンペーンのROI推奨値について"}, {"@type": "WebPage", "url": "https://ads.tiktok.com/help/article/about-max-delivery-optimization-for-gmv-max?lang=ja", "name": "TikTok広告 公式ヘルプ：GMV最大値の最大配信の最適化について"}, {"@type": "WebPage", "url": "https://ads.tiktok.com/help/article/gmv-max-migration-tiktok-shop-ads?lang=ja", "name": "TikTok広告 公式ヘルプ：TikTok Shop広告向けGMV Max移行について"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=4252874242836241&lang=ja-JP", "name": "TikTok Shop公式：GMV Maxによる販売手数料割引"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "GMV Maxで赤字になる原因と止め方｜TikTok Shop広告", "item": "https://leam.co.jp/column/gmvmax-loss/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=gmvmax-loss">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › GMV Maxで赤字になる原因と止め方｜目標・判断・商品・素材の4つで切り分ける</p>
+<span class="cat">広告運用</span>
+<h1>GMV Maxで赤字になる原因と止め方｜目標・判断・商品・素材の4つで切り分ける</h1>
+<div class="meta"><time class="upd" datetime="2026-10-15">更新日：2026年10月15日</time><time datetime="2026-10-15">公開日：2026年10月15日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左上の白い配管にシアンの止水バルブが付き、配管から硬貨が赤いバケツへ落ちている。バケツの側面には穴が4つあり、3つから赤いしずくが漏れて床にたまり、右上の1つはシアンの栓でふさがれている。栓から伸びる配管には大きなシアンの止水バルブが付き、閉める向きの矢印が添えられ、その先の筒には損益分岐を示す太い目盛りの線があり、たまった水位がその線を上回っている。赤字の原因をふさぎ、止めるべきところで止めて損益分岐を超える場面を表したイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="560" cy="300" rx="330" ry="200" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="gmvmaxlossDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#gmvmaxlossDots" transform="translate(944 542)"/>
+  </g>
+
+  <!-- 配管（広告費の流れ） -->
+  <path d="M60 96H500a20 20 0 0 1 20 20V214H480V136H60z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+  <path d="M60 96H500a20 20 0 0 1 20 20V214H480V136H60z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="470" y="204" width="60" height="20" rx="7" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- 止水バルブ（シアン） -->
+  <rect x="290" y="80" width="20" height="18" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="300" cy="50" r="36" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+  <circle cx="300" cy="50" r="36" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/>
+  <circle cx="300" cy="50" r="19" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+  <path d="M300 31v38M281 50h38" stroke="#0B0C10" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="300" cy="50" r="7" fill="#0B0C10"/>
+
+  <!-- 落ちていく硬貨 -->
+  <circle cx="500" cy="248" r="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+  <circle cx="500" cy="248" r="6" fill="#DFE0E2"/>
+  <circle cx="514" cy="278" r="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/>
+
+  <!-- ================= 主役：赤いバケツ ================= -->
+  <path d="M352 318H648L612 512H388z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+  <path d="M352 318H648L612 512H388z" fill="#FE2C55"/>
+  <path d="M598 318H648L612 512H568z" fill="#CE1730"/>
+  <path d="M352 318H648L612 512H388z" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="340" y="292" width="320" height="28" rx="14" fill="#CE1730" stroke="#0B0C10" stroke-width="7" stroke-linejoin="round"/>
+  <rect x="428" y="372" width="128" height="80" rx="12" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+  <circle cx="492" cy="412" r="22" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/>
+  <path d="M492 400v24" stroke="#0B0C10" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- 側面の穴（3つは漏れ、1つはシアンの栓） -->
+  <circle cx="366" cy="380" r="9" fill="#0B0C10"/>
+  <circle cx="380" cy="458" r="9" fill="#0B0C10"/>
+  <circle cx="621" cy="458" r="9" fill="#0B0C10"/>
+  <rect x="624" y="366" width="44" height="28" rx="8" fill="#25F4EE" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+
+  <!-- 漏れ出るしずく（穴から噴き出して真下へ落ちる） -->
+  <g fill="none" stroke="#FE2C55" stroke-width="7" stroke-linecap="round">
+    <path d="M358 382q-16 2-22 16"/>
+    <path d="M372 460q-14 2-19 14"/>
+    <path d="M630 462q14 2 19 14"/>
+  </g>
+  <g fill="#FE2C55" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round">
+    <path d="M332 412c9 12 13 19 13 26a13 13 0 0 1-26 0c0-7 4-14 13-26z"/>
+    <path d="M328 470c7 10 11 16 11 21a11 11 0 0 1-22 0c0-5 4-11 11-21z"/>
+    <path d="M350 492c7 10 10 15 10 20a10 10 0 0 1-20 0c0-5 3-10 10-20z"/>
+    <path d="M652 490c8 11 12 18 12 24a12 12 0 0 1-24 0c0-6 4-13 12-24z"/>
+  </g>
+  <ellipse cx="330" cy="566" rx="64" ry="12" fill="#CE1730" stroke="#0B0C10" stroke-width="5"/>
+  <ellipse cx="664" cy="562" rx="46" ry="10" fill="#CE1730" stroke="#0B0C10" stroke-width="5"/>
+
+  <!-- 栓から右の目盛りの筒へつなぐ配管 -->
+  <path d="M668 380H736q16 0 16 16V454q0 16 16 16H930" fill="none" stroke="#0B0C10" stroke-width="26" stroke-linejoin="round"/>
+  <path d="M668 380H736q16 0 16 16V454q0 16 16 16H930" fill="none" stroke="#25F4EE" stroke-width="13" stroke-linejoin="round"/>
+
+  <!-- ================= 右の主役：大きな止水バルブ ================= -->
+  <rect x="818" y="450" width="44" height="40" rx="8" fill="#DFE0E2" stroke="#0B0C10" stroke-width="6" stroke-linejoin="round"/>
+  <rect x="833" y="404" width="14" height="48" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+  <circle cx="840" cy="362" r="52" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+  <circle cx="840" cy="362" r="52" fill="#25F4EE" stroke="#0B0C10" stroke-width="8"/>
+  <circle cx="840" cy="362" r="30" fill="#FFFFFF" stroke="#0B0C10" stroke-width="6"/>
+  <path d="M840 314v96M792 362h96M806 328l68 68M874 328l-68 68" stroke="#0B0C10" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="840" cy="362" r="11" fill="#0B0C10"/>
+  <!-- 閉める向きの矢印 -->
+  <path d="M770 318a82 82 0 0 1 108-42" fill="none" stroke="#0B0C10" stroke-width="7" stroke-linecap="round"/>
+  <path d="M872 262l22 18-28 10z" fill="#0B0C10" stroke="#0B0C10" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- ================= 右：損益分岐の目盛りが付いた筒 ================= -->
+  <rect x="930" y="150" width="96" height="372" rx="24" fill="#5E6064" opacity=".13" transform="translate(9 11)"/>
+  <rect x="930" y="150" width="96" height="372" rx="24" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/>
+  <rect x="940" y="262" width="76" height="250" rx="16" fill="#25F4EE"/>
+  <g stroke="#0B0C10" stroke-width="5" stroke-linecap="round">
+    <path d="M1026 190h22M1026 230h14M1026 270h14M1026 350h14M1026 390h22M1026 430h14M1026 470h14"/>
+  </g>
+  <!-- 損益分岐の線（太い目盛り） -->
+  <path d="M902 310H1086" stroke="#0B0C10" stroke-width="8" stroke-linecap="round" stroke-dasharray="20 12"/>
+  <path d="M1086 310V266l40 14-40 14" fill="#FE2C55" stroke="#0B0C10" stroke-width="5" stroke-linejoin="round"/>
+
+  <!-- 小さな装飾 -->
+  <circle cx="1120" cy="110" r="15" fill="#FE2C55"/>
+  <circle cx="720" cy="176" r="12" fill="#25F4EE"/>
+  <circle cx="860" cy="210" r="10" fill="#DFE0E2"/>
+</svg>
+    <figcaption>GMV Maxの赤字を、原因ごとにふさいで止める（LEAM作成）</figcaption>
+  </figure>
+<p class="lead">GMV Maxを回していて赤字が続く、あるいは赤字が怖くて予算を上げられない。当社の運用実感では、この状態の原因はほとんどが<strong>①ROI目標の置き方 ②判断のタイミング ③商品の選び方 ④素材（動画）の量</strong>の4つのどれかに収まります。この記事では4つを順に切り分け、<strong>続ける・下げる・止める</strong>を決めるところまでを扱います。設定項目やROI保護の条件は、全世界向けのTikTok広告の公式ヘルプ（日本語表示）を2026年10月15日に確認した範囲だけを書いています。日本のアカウントでの提供状況は、記事中で確かめ方を添えています。</p>
+<p>GMV Maxの仕組み・2種類の違い・設定の流れは<a href="https://leam.co.jp/column/gmvmax/">GMV Maxとは？仕組みと始め方</a>、損益分岐ROASの式と限界ROASは<a href="https://leam.co.jp/column/tiktok-shop-roas/">ROAS基準と損益分岐の出し方</a>、TikTok Shopそのもので利益が出る条件は<a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">儲かる条件と出ない条件</a>をご覧ください。ここでは同じ説明を繰り返しません。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>管理画面のROIが目標を超えていても赤字になる理由</li><li>ROI目標を動かしてよい間隔と、ROI保護が外れる操作</li><li>続ける・下げる・止めるを決める判定表</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">広告</span><b><a href="https://leam.co.jp/column/gmvmax/">GMV Maxとは？仕組みと始め方</a></b><span>2種類の違いと設定の流れ</span></div>
+    <div class="relcard"><span class="rc">採算</span><b><a href="https://leam.co.jp/column/tiktok-shop-roas/">ROAS基準と損益分岐の出し方</a></b><span>目標の下限を式で出す</span></div>
+    <div class="relcard"><span class="rc">採算</span><b><a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">TikTok Shopは儲かる？</a></b><span>広告の前に利益の構造を見る</span></div>
+    <div class="relcard"><span class="rc">基本</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？</a></b><span>売り場の全体像から押さえる</span></div>
+  </div>
+</div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">赤字かどうかは、管理画面のROIではなく商品ごとの手残りで決める</a></li><li><a href="#s2">原因は「目標・判断・商品・素材」の4つに分けると、直す場所が1つに決まる</a></li><li><a href="#s3">原因①ROI目標が、返品とクーポンを入れた損益分岐を下回っている</a></li><li><a href="#s4">原因②3日待たずに目標を動かすと、学習もROI保護も手放す</a></li><li><a href="#s5">原因③粗利の薄い商品と在庫の細い商品が、同じ予算を取り合っている</a></li><li><a href="#s6">原因④使える動画が足りないまま目標を下げると、赤字だけが広がる</a></li><li><a href="#s7">直すのは3日に1つ、止めるかどうかは週単位で決める</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>赤字かどうかは、管理画面のROIではなく商品ごとの手残りで決める</h2>
+<p>最初に確認したいのは、管理画面のROIが何を数えているかです。Product GMV Maxの公式ヘルプは、<strong>宣伝した商品から発生した注文を、オーガニックコンテンツやアフィリエイト経由の注文も含めて集計する</strong>と説明しています。評価方法のヘルプも、Product GMV MaxのROIは非LIVE GMVと広告費の比で、有料とオーガニックの両方の効率を反映するものだとしています。</p>
+<div class="tw"><table><thead><tr><th>項目</th><th>公式ヘルプに書かれている内容</th></tr></thead><tbody><tr><td>集計される注文</td><td>宣伝した商品から発生したすべての注文。オーガニックコンテンツやアフィリエイト注文からの注文も含む</td></tr><tr><td>集計されない注文</td><td>GMV Maxで宣伝していない商品の注文</td></tr><tr><td>計測の範囲</td><td>1日のアトリビューションウィンドウで、同日注文のGMVを計算する</td></tr><tr><td>ROIの意味</td><td>非LIVE GMVと広告費の比。有料とオーガニックの両方の効率を反映する</td></tr><tr><td>旧形式の広告との比較</td><td>計測の仕組みが違うため、旧形式のショッピング広告のROASと直接比べない</td></tr><tr><td>GMVの確かめ方</td><td>セラーセンターのData Compass（データコンパス）の商品タブで、GMVからLIVE GMVを引いて非LIVE GMVを出す。広告ダッシュボードのGMVより低く出ることがある</td></tr></tbody></table></div><p class="src">Product GMV MaxのROIが数えている範囲（TikTok広告の公式ヘルプの記載を整理・2026年10月15日確認）</p>
+<p>ここから言えることは2つあります。1つ目は、<strong>ROIが目標を超えていても黒字とは限らない</strong>ことです。アフィリエイト経由の注文にはコミッションが別に出ていき、返品やクーポンの自社負担もこの比率の外で発生します。2つ目は、<strong>この数字だけでは「広告を止めたら売上がどれだけ消えるか」が読めない</strong>ことです。広告ROAS・全体ROAS・増分ROASの切り分けは<a href="https://leam.co.jp/column/tiktok-shop-roas/">ROAS基準の記事の後半</a>にまとめています。</p>
+<p>赤字の判定は、管理画面ではなく<strong>商品ごとの手残り</strong>で行います。以下は損益分岐がもう出ている前提で、なぜそれを割るのかを分解します。</p>
+<div class="box box-warn"><div class="bt">⚠️ セールの週の数字で判断しない</div><p>評価方法の公式ヘルプは、大型プロモーションの後はオーガニックの変化でGMVが動くことがあり、正確に評価するにはプロモーション期間の外で見るよう案内しています。セール週のROIで続ける・止めるを決めると、平常週に入ってから判断が裏返ります。</p></div>
+
+<h2 id="s2"><span class="no en">02</span>原因は「目標・判断・商品・素材」の4つに分けると、直す場所が1つに決まる</h2>
+<p>赤字のときに設定を片端から触ると、どの変更が効いたのか後から読めなくなります。先に症状から原因を1つに絞ってから手を動かします。</p>
+  <figure><svg viewBox="0 0 720 300" role="img" aria-label="赤字の原因を4つの箱に分けた図。左上が目標の置き方、右上が判断のタイミング、左下が商品の選び方、右下が素材の量で、それぞれに典型的な症状を2行ずつ添え、上の2つは設定で直し下の2つは配信の外で直すと注記している"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">赤字の原因は4つ。上から順に疑う</text><rect x="20" y="44" width="330" height="96" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="185" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">① 目標の置き方</text><text x="185" y="98" text-anchor="middle" font-size="11.5" fill="#454956">ROI目標が損益分岐より低い</text><text x="185" y="120" text-anchor="middle" font-size="11.5" fill="#454956">返品とクーポンを入れていない</text><rect x="370" y="44" width="330" height="96" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="535" y="72" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">② 判断のタイミング</text><text x="535" y="98" text-anchor="middle" font-size="11.5" fill="#787D8A">3日待たずに目標を動かす</text><text x="535" y="120" text-anchor="middle" font-size="11.5" fill="#787D8A">変えた日はROI保護が外れる</text><rect x="20" y="156" width="330" height="96" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="185" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">③ 商品の選び方</text><text x="185" y="210" text-anchor="middle" font-size="11.5" fill="#787D8A">粗利の薄い商品が混ざっている</text><text x="185" y="232" text-anchor="middle" font-size="11.5" fill="#787D8A">売れ筋の在庫が切れる</text><rect x="370" y="156" width="330" height="96" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="535" y="184" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">④ 素材の量</text><text x="535" y="210" text-anchor="middle" font-size="11.5" fill="#787D8A">使える動画が足りない</text><text x="535" y="232" text-anchor="middle" font-size="11.5" fill="#787D8A">目標を下げても配る先が無い</text><text x="360" y="282" text-anchor="middle" font-size="11.5" fill="#787D8A">①②は広告の設定で直す。③④は商品と動画の側で直す</text></svg> <figcaption>図1：赤字の原因を4つに分けると、直す場所が決まる（LEAM作成）</figcaption> </figure>
+<div class="tw"><table><thead><tr><th>見えている症状</th><th>まず疑う原因</th><th>最初に見る場所</th></tr></thead><tbody><tr><td>ROIは目標を超えているのに、月末の手残りが赤字</td><td>①目標（損益分岐の入れ忘れ）</td><td>返品・クーポン負担・コミッションを入れた損益分岐</td></tr><tr><td>ROIが日によって大きく上下し、方向が読めない</td><td>②判断（変更が多すぎる）</td><td>直近1週間でROI目標と予算を何回変えたか</td></tr><tr><td>注文は多い商品があるのに、利益がほとんど残らない</td><td>③商品（粗利の薄い商品）</td><td>商品ごとの損益分岐と、キャンペーンに入っている商品の一覧</td></tr><tr><td>売れていた週の翌週にROIが崩れた</td><td>③商品（在庫切れ・商品の編集）</td><td>在庫数と、商品を編集した日</td></tr><tr><td>予算が消化されず、配信が広がらない</td><td>④素材、または①目標が高すぎる</td><td>使える動画の本数と、ROI目標と推奨値の差</td></tr></tbody></table></div><p class="src">症状から原因を絞る早見表（当社の運用実感にもとづく整理で、公式の診断表ではありません）</p>
+
+<h2 id="s3"><span class="no en">03</span>原因①ROI目標が、返品とクーポンを入れた損益分岐を下回っている</h2>
+<p>いちばん多いのは、<strong>ROI目標そのものが損益分岐より下に置かれている</strong>ケースです。よくある入り方は2つあります。1つは、システムの推奨値をそのまま入れている場合です。公式ヘルプは推奨値の出し方を、類似商品やLIVE配信ルームのリアルタイム市場データ、過去のキャンペーン設定にもとづくと説明しており、ベストプラクティスの記事では過去の非LIVE GMVを過去の広告コストで割った値を推奨ROIとしています。<strong>どちらの説明にも、自社の原価率や返品率は材料として挙がっていません</strong>。</p>
+<p>公式ヘルプも、推奨値は必須ではなく、事業状況・利益率・GMV目標にもとづいて最終判断するためのガイダンスだとしています。推奨値は「GMVを伸ばしやすい目標」で、「赤字にならない目標」ではありません。推奨値が損益分岐を下回るなら目標は損益分岐の側に置き、絞られた配信は③と④で取り返します。</p>
+<p>もう1つは、旧形式のショッピング広告から移行したキャンペーンです。移行の公式ヘルプは、<strong>移行したキャンペーンでは過去のROI実績が目標ROIとして設定される</strong>と書いています。旧広告の実績が損益分岐を割っていたなら、赤字の目標がそのまま引き継がれています。移行したキャンペーンは、一度目標の数字を確かめてください。</p>
+<div class="tw"><table><thead><tr><th>損益分岐に入れ忘れやすい項目</th><th>入れ忘れたときに起きること</th><th>確かめる場所</th></tr></thead><tbody><tr><td>返品・返金</td><td>売れた日のROIは良く見えるが、後から手残りが削られる</td><td>商品ごとの返品率（<a href="https://leam.co.jp/column/returns-refunds/">返品・返金の対応フロー</a>）</td></tr><tr><td>クーポンの自社負担</td><td>セール期間だけ損益分岐が上がり、同じ目標のままだと赤字になる</td><td>クーポンの負担割合（<a href="https://leam.co.jp/column/coupon-sale-tactics/">クーポンとセールの使い方</a>）</td></tr><tr><td>アフィリエイトのコミッション</td><td>アフィリエイト経由の注文はROIに入るが、コミッションは別に出ていく</td><td>商品ごとのコミッション率</td></tr><tr><td>販売手数料の割引の期限</td><td>割引が切れた後は手数料が戻り、損益分岐が上がる</td><td>割引の適用期間（下の注意を参照）</td></tr><tr><td>送料と梱包</td><td>単価の低い商品ほど損益分岐を大きく押し上げる</td><td>1件あたりの実費（<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料と利益計算</a>）</td></tr></tbody></table></div><p class="src">損益分岐に入れ忘れやすい5項目（LEAM作成。計算式は<a href="https://leam.co.jp/column/tiktok-shop-roas/">ROAS基準の記事</a>を参照）</p>
+<div class="box box-warn"><div class="bt">⚠️ 手数料の割引を取りに行くと、目標が下がる</div><p>セラーセンターの公式ヘルプによると、GMV Maxによる販売手数料割引の適用条件は「ROI目標がROI推奨値以下であること」と「予算が推奨値以上、またはオートバジェットを使用していること」です。有効期間は適用開始から14日間で、既存のキャンペーンには自動では適用されず、作成ページでオファー内容を確認して再公開する必要があります。割引のために目標を推奨値まで下げるなら、割引後の手数料で引いた損益分岐と、割引が切れた後の損益分岐の両方を手元に置いてください（割引そのものの説明は<a href="https://leam.co.jp/column/gmvmax/">GMV Maxの記事</a>）。</p></div>
+
+<h2 id="s4"><span class="no en">04</span>原因②3日待たずに目標を動かすと、学習もROI保護も手放す</h2>
+<p>赤字の日が続くと、ROI目標を毎日のように上げ下げしたくなります。Product GMV Maxのベストプラクティスは、<strong>GMV Maxは毎日ROIを最適化しており、変更の頻度が多すぎると学習の妨げになる</strong>とし、<strong>各ROI設定は少なくとも3日間は調整せずに維持する</strong>よう案内しています。なお、今回確認したヘルプの中に「学習期間は何日」という決まった日数の記載はありません。日数で示されているのは、この「少なくとも3日間」です。</p>
+<p>動かしすぎの損はもう1つあります。<strong>ROI保護</strong>です。公式ヘルプによると、ROI保護はガイドラインとベストプラクティスに従っているのにキャンペーンのROIが所定のしきい値を下回った場合に、広告クレジットを自動で付与する機能です。対象になりうるのは、キャンペーンのROIが1日あたりの目標ROIの90％を下回り、かつ1日あたりの注文数が20件を超えているキャンペーンです。そして次の日は対象外になります。</p>
+<div class="box box-warn"><div class="bt">⚠️ ROI保護が日本のアカウントで使えるかは、画面で確かめる</div><p>ここで紹介するROI保護の条件は、全世界向けの広告ヘルプの記載です。日本のセラー向けヘルプでは、2026年10月15日時点でROI保護の説明を確認できていません。日本のアカウントで提供されているかは、キャンペーンリストに「ROI保護」列が出るかで確かめてください。列が出ない場合、以下の「保護が外れる日」の話は、変更の回数を絞る理由の1つとして読んでください。</p></div>
+<div class="tw"><table><thead><tr><th>ROI保護が適用されない日・場合</th><th>公式ヘルプの記載</th></tr></thead><tbody><tr><td>Product GMV Maxで目標ROIを変えた日</td><td>目標ROIを手動で変更した日は適用されない</td></tr><tr><td>LIVE GMV Maxで目標ROIを変えた日</td><td>目標ROIを2回以上手動で変更した日は適用されない</td></tr><tr><td>止めた日</td><td>キャンペーンを一時停止または削除した日は適用されない</td></tr><tr><td>商品を編集した日</td><td>キャンペーンの商品が編集された日は対象外</td></tr><tr><td>最大配信を使っている</td><td>最大配信を使う商品・LIVE配信ルームを含むキャンペーン、クリエイティブ単位の最大配信は対象外</td></tr><tr><td>停止・却下</td><td>残高不足、広告や商品の却下、ポリシー違反などでショップ・広告アカウント・広告が停止された場合は対象外</td></tr></tbody></table></div><p class="src">ROI保護の対象外になる主な日・場合（全世界向けのTikTok広告の公式ヘルプの記載を整理・2026年10月15日確認。日本のアカウントで提供されているかは、キャンペーンリストに「ROI保護」列が出るかで確かめてください。日本での提供は確認できていません）</p>
+<p>公式ヘルプは、ROI保護の効果を最大化するには<strong>少なくとも丸一日（24時間）連続で配信する</strong>よう勧めています。自社のキャンペーンが対象かどうかは、キャンペーンリストの「ROI保護」列で確かめられ、「履歴を表示」から日別のステータスやクレジット額を見られます（履歴は直近60日分）。メガLIVEやプロモーションデーの開始でシステムが目標を自動で変えた場合は、手動の変更とはみなされないとも書かれています。</p>
+  <figure><svg viewBox="0 0 720 236" role="img" aria-label="6日間のタイムラインの図。1日目から3日目は目標を動かさずに維持し、4日目にまとめて判定して変更は1回だけにし、5日目と6日目は再び維持する。4日目の下には、目標を変えた日はProduct GMV MaxのROI保護が付かないという注記がある"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">ROI目標は3日動かさず、4日目にまとめて判定する</text><rect x="24" y="48" width="100" height="62" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="74" y="74" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">1日目</text><text x="74" y="96" text-anchor="middle" font-size="11" fill="#787D8A">動かさない</text><rect x="136" y="48" width="100" height="62" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="186" y="74" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">2日目</text><text x="186" y="96" text-anchor="middle" font-size="11" fill="#787D8A">動かさない</text><rect x="248" y="48" width="100" height="62" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="298" y="74" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">3日目</text><text x="298" y="96" text-anchor="middle" font-size="11" fill="#787D8A">動かさない</text><rect x="360" y="48" width="100" height="62" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="410" y="74" text-anchor="middle" font-size="12.5" font-weight="800" fill="#C2203A">4日目</text><text x="410" y="96" text-anchor="middle" font-size="11" fill="#C2203A">判定・変更は1回</text><rect x="472" y="48" width="100" height="62" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="522" y="74" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">5日目</text><text x="522" y="96" text-anchor="middle" font-size="11" fill="#787D8A">動かさない</text><rect x="584" y="48" width="100" height="62" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="634" y="74" text-anchor="middle" font-size="12.5" font-weight="800" fill="#454956">6日目</text><text x="634" y="96" text-anchor="middle" font-size="11" fill="#787D8A">動かさない</text><path d="M410 112 L410 136" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M404 130 L410 142 L416 130 Z" fill="#787D8A"/><rect x="230" y="146" width="360" height="44" rx="10" fill="#ffffff" stroke="#E8324A" stroke-width="1.5"/><text x="410" y="174" text-anchor="middle" font-size="11.5" fill="#C2203A">目標を変えた日は、ROI保護が付かない</text><text x="360" y="218" text-anchor="middle" font-size="11" fill="#787D8A">3日は公式ヘルプの「少なくとも3日間は維持」による。4日目に判定する置き方は当社の運用</text></svg> <figcaption>図2：変更は3日に1回、まとめて1つだけ（LEAM作成）</figcaption> </figure>
+<p>予算について、ベストプラクティスの記事は<strong>消化率が80％未満に収まる予算を置き、成果が上がったら増やす</strong>よう案内していますが、変える間隔の日数は示していません。当社の運用実感では、予算も3日の区切りでまとめて動かし、1回に変えるのは1つだけにしたほうが、どの変更が効いたかを後から読めます。</p>
+
+<h2 id="s5"><span class="no en">05</span>原因③粗利の薄い商品と在庫の細い商品が、同じ予算を取り合っている</h2>
+<p>Product GMV Maxのベストプラクティスは、利用できるすべての商品を使うこと、よく売れている商品を優先することを勧めています。これは<strong>GMVを最大にする</strong>ための助言です。一方で、ROI目標はキャンペーンに対して置く設定です。損益分岐が2倍台の商品と5倍台の商品を同じキャンペーンに入れると、1つの目標でどちらかが必ずずれます。粗利の薄い商品に注文が集まった週は、ROIが目標どおりでも手残りが赤字になります。</p>
+<p>当社の運用実感では、商品を損益分岐の近いもの同士でまとめ、キャンペーンを2〜3本に分けると、目標を商品の実態に合わせやすくなります。分けた後は、それぞれのキャンペーンで§04の「3日は動かさない」を守ります。</p>
+<div class="tw"><table><thead><tr><th>商品の状態</th><th>GMV Maxでの扱い</th><th>理由</th></tr></thead><tbody><tr><td>粗利が厚く、在庫も十分</td><td>主力のキャンペーンに入れ、予算を寄せる</td><td>目標を推奨値に近づけても損益分岐を割りにくい</td></tr><tr><td>粗利が薄い（損益分岐が高い）</td><td>別のキャンペーンに分け、高めの目標を置く。単価やセット構成を先に見直す</td><td>主力と同じ目標では、売れるほど赤字が増える</td></tr><tr><td>在庫が細い・入荷待ち</td><td>在庫が戻るまで宣伝の対象に入れない</td><td>売れ筋が切れると、配信が他の商品へ寄ってROIが崩れやすい（当社の運用実感）</td></tr></tbody></table></div><p class="src">商品を3つの状態に分けて扱いを決める（LEAM作成）</p>
+<p>在庫については、在庫切れの間に配信がどう扱われるかは、今回確認したヘルプには書かれていません。公式に書かれているのは、<strong>キャンペーンの商品が編集された日はROI保護の対象外</strong>になること、販売手数料割引のオファーを承諾した後に商品を編集すると再計算が行われる可能性があることです。在庫の補充や商品情報の修正は、判定日（§04の4日目）にまとめると、保護が外れる日を1日に寄せられます。在庫の持ち方は<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理の記事</a>、単価とセット構成は<a href="https://leam.co.jp/column/pricing-strategy/">価格設定の記事</a>で扱っています。</p>
+
+<h2 id="s6"><span class="no en">06</span>原因④使える動画が足りないまま目標を下げると、赤字だけが広がる</h2>
+<p>配信が伸びないとき、ROI目標を下げれば配信は広がります。公式ヘルプも、目標を低くすると配信とGMVを促進でき、高くすると支出が制限される可能性があると書いています。ただし、<strong>配る動画が少ないまま目標を下げると、同じ数本の動画に広告費が積み上がるだけ</strong>になりやすい、というのが当社の運用実感です。目標を下げる前に、配る材料が足りているかを見ます。</p>
+<p>ベストプラクティスの記事が素材について挙げているのは、次の3つです。</p>
+<ol class="steps"><li><b>動画は自動選択にする</b><p>自動探索の対象は既存と今後のすべての動画で、上限はありません。手動で選ぶより効率とリーチの面で勧められています。</p></li><li><b>アフィリエイト動画を含める</b><p>アフィリエイト動画は通常高いパフォーマンスを発揮し、増分GMVを押し上げるとされています。特定の動画が表示されない場合は、クリエイターに承認を求めるか、動画コードで使う方法が案内されています。</p></li><li><b>商品アンカー付きの動画を増やす</b><p>商品アンカーを含む動画が多いほどGMVの余地は上がるとされ、追加のTikTokアカウントを連携してSpark Adsの投稿をクリエイティブライブラリに加える方法も案内されています。</p></li></ol>
+<p>素材不足を見分ける目安として、当社では「ROI目標が推奨値付近なのに予算が消化されない」「週に新しく増える動画が0〜1本」の2つがそろったら④を疑います。この状態で目標を下げるのではなく、動画を増やす側に手を打ちます。動画の作り方は<a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の勝ちパターン</a>、出した動画が再生されない・売れないときの直し方は<a href="https://leam.co.jp/column/video-no-views/">動画が再生されない・売れない原因と直し方</a>、クリエイターへの依頼は<a href="https://leam.co.jp/column/invite-no-reply/">招待に返事が来ないときの送り方と追い方</a>にまとめています。</p>
+
+<h2 id="s7"><span class="no en">07</span>直すのは3日に1つ、止めるかどうかは週単位で決める</h2>
+<p>先に区切りの意味をそろえます。<strong>3日は、ROI目標や予算を1つ変える間隔の区切り</strong>です。続けるか止めるかの最終判断は、週単位で見て、当社では約1.2〜1.5か月を1サイクルとして評価しています（<a href="https://leam.co.jp/column/gmvmax/">GMV Maxの記事</a>のよくある質問も参照）。3日分の数字で決めるのは「次にどこを1つ直すか」までです。</p>
+<p>4つの原因を踏まえて、判断を表にします。見るのは管理画面のROIではなく、<strong>商品ごとの手残り</strong>です。表は当社の運用実感にもとづく判定の置き方で、公式の基準ではありません。3日という区切りだけは、公式ヘルプの「少なくとも3日間は維持」に合わせています。</p>
+<div class="tw"><table><thead><tr><th>3日分の状態</th><th>判定</th><th>次の操作（1回に1つ）</th></tr></thead><tbody><tr><td>手残りが損益分岐を上回り、予算の消化率に余裕がある</td><td class="y">続ける</td><td>目標も予算も動かさない</td></tr><tr><td>手残りが損益分岐を上回り、予算をほぼ使い切っている</td><td class="y">続ける（増やす）</td><td>予算を上げる。目標は動かさない</td></tr><tr><td>手残りが損益分岐を下回り、目標が損益分岐より低い</td><td>下げる</td><td>目標を損益分岐まで上げる（原因①）</td></tr><tr><td>目標は損益分岐以上なのに、手残りが下回る</td><td>下げる</td><td>粗利の薄い商品を別のキャンペーンへ分ける（原因③）</td></tr><tr><td>予算が消化されず、新しい動画も増えていない</td><td>下げる</td><td>予算を下げ、動画を増やす側に手を打つ（原因④）</td></tr><tr><td>上の打ち手を1つずつ試したうえで、週単位で見ても損益分岐を割り続けている</td><td class="n">止める</td><td>商品か動画がそろうまで一時停止する</td></tr></tbody></table></div><p class="src">続ける・下げる・止めるの判定表（「続ける」「下げる」は3日ごとの見直し、「止める」は週単位で判断。当社の運用実感にもとづくLEAMの整理）</p>
+  <figure><svg viewBox="0 0 720 264" role="img" aria-label="判定の流れを示した図。上の箱で手残りが損益分岐を上回るかを問い、下に3つの結果を並べる。続けるは手残りが損益分岐を上回る場合、下げるは3日の見直しで割っていたときに目標を上げるか商品を分ける場合、止めるは打ち手を試しても週単位で割れ続ける場合を表している"><text x="360" y="26" text-anchor="middle" font-size="12" font-weight="800" fill="#C2203A">直すのは3日ごと、止めるかどうかは週単位で決める</text><rect x="190" y="42" width="340" height="50" rx="10" fill="#0B0C10"/><text x="360" y="72" text-anchor="middle" font-size="12.5" font-weight="800" fill="#ffffff">手残りは損益分岐を上回ったか</text><path d="M300 92 L130 128" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M360 92 L360 128" stroke="#787D8A" stroke-width="2.5" fill="none"/><path d="M420 92 L590 128" stroke="#787D8A" stroke-width="2.5" fill="none"/><rect x="24" y="132" width="212" height="92" rx="10" fill="#F6F6F8" stroke="#E6E7EB" stroke-width="1"/><text x="130" y="160" text-anchor="middle" font-size="13" font-weight="800" fill="#454956">続ける</text><text x="130" y="184" text-anchor="middle" font-size="11" fill="#787D8A">損益分岐を上回った</text><text x="130" y="204" text-anchor="middle" font-size="11" fill="#787D8A">目標は動かさず予算を見る</text><rect x="254" y="132" width="212" height="92" rx="10" fill="#ffffff" stroke="#E8324A" stroke-width="1.5"/><text x="360" y="160" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">下げる</text><text x="360" y="184" text-anchor="middle" font-size="11" fill="#787D8A">3日の見直しで割った</text><text x="360" y="204" text-anchor="middle" font-size="11" fill="#787D8A">目標を上げるか商品を分ける</text><rect x="484" y="132" width="212" height="92" rx="10" fill="#FFECF0" stroke="#E8324A" stroke-width="1.5"/><text x="590" y="160" text-anchor="middle" font-size="13" font-weight="800" fill="#C2203A">止める</text><text x="590" y="184" text-anchor="middle" font-size="11" fill="#787D8A">週単位でも割れ続けた</text><text x="590" y="204" text-anchor="middle" font-size="11" fill="#787D8A">動画がそろうまで止める</text><text x="360" y="250" text-anchor="middle" font-size="11" fill="#787D8A">止めた日はROI保護が付かない。止めるのは判定日にまとめる</text></svg> <figcaption>図3：直すのは3日に1回・1つだけ。止めるかは週単位で見る（LEAM作成）</figcaption> </figure>
+<p>止めると決めたときに知っておきたいのは、<strong>一時停止した日もROI保護の対象外</strong>になることです。止めたり再開したりを細かく繰り返すと、保護の付かない日が増えます。止めるなら判定日にまとめて止め、再開するのは商品か動画の条件がそろってからにします。</p>
+<div class="box box-point"><div class="bt">💡 最大配信は、赤字の立て直しには使わない</div><p>公式ヘルプは、最大配信は予算を使い切って総収益を最大化するモードで、ROI関連の指標が変動しうるとし、安定したROIには目標ROIを常時の戦略にするよう勧めています。ROI目標が決まっていない新しい広告主には一定の日予算で5〜7日間配信する使い方も示されていますが、最大配信を使うキャンペーンはROI保護の対象外です。使うなら、持ち出してよい金額を先に決めてからにしてください（学習期の持ち出しの決め方は<a href="https://leam.co.jp/column/tiktok-shop-roas/">ROAS基準の記事</a>）。</p></div>
+
+<h2 id="summary"><span class="no en">08</span>まとめ</h2>
+<p>GMV Maxの赤字は、管理画面の数字をいじる前に、どの原因かを1つに決めると止められます。上から順に確かめてください。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 手残りで判定する</b><br>ROIにはオーガニックとアフィリエイトの注文も入る。赤字かどうかは商品ごとの手残りで見る</div><div class="summary-item"><b>2. 目標を損益分岐の上に置く</b><br>推奨値も移行時の目標も、自社の損益分岐は知らない。返品・クーポン・手数料の割引期限を入れて確かめる</div><div class="summary-item"><b>3. 3日は動かさない</b><br>公式は各ROI設定を少なくとも3日間維持するよう案内。変えた日・止めた日・商品を編集した日はROI保護（提供されている場合）が付かない</div><div class="summary-item"><b>4. 商品を分ける</b><br>損益分岐の違う商品を同じ目標で回さない。在庫の細い商品は戻るまで外す</div><div class="summary-item"><b>5. 動画を先に増やす</b><br>配る動画が少ないまま目標を下げない。自動選択・アフィリエイト動画・アンカー付き動画を増やす</div><div class="summary-item"><b>6. 直すのは1回に1つ</b><br>3日分の数字で直す場所を1つ決め、止めるかどうかは週単位で判断する</div></div>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq"><details><summary>GMV MaxのROI目標をシステムの推奨値どおりにすると、赤字になりますか？</summary><div class="a">なる場合があります。公式ヘルプは、推奨値を類似商品やLIVE配信ルームの市場データと過去の設定にもとづいて出すと説明しており、自社の原価率や返品率は材料に挙がっていません。また推奨値は必須ではなく、事業状況や利益率にもとづいて最終判断するためのガイダンスだとしています。推奨値が自社の損益分岐を下回るなら、目標は損益分岐の側に置いてください。</div></details><details><summary>管理画面のROIが目標を超えているのに、手元の利益が赤字なのはなぜですか？</summary><div class="a">Product GMV MaxのROIは、宣伝した商品の注文をオーガニックやアフィリエイト経由の分も含めて集計しているためです。アフィリエイトのコミッション、返品、クーポンの自社負担はこの比率の外で発生します。ROIが目標を超えていても、損益分岐を入れた商品ごとの手残りで確かめる必要があります。</div></details><details><summary>GMV MaxのROI保護は、どんな日に対象外になりますか？</summary><div class="a">前提として、ROI保護の条件は全世界向けの広告ヘルプの記載で、日本のアカウントで提供されているかは確認できていません。キャンペーンリストに「ROI保護」列が出るかで確かめてください。そのうえで、全世界向けの公式ヘルプでは、Product GMV Maxで目標ROIを手動で変更した日、LIVE GMV Maxで2回以上変更した日、キャンペーンを一時停止・削除した日、商品を編集した日が対象外です。最大配信を使うキャンペーンや、残高不足・却下・ポリシー違反で停止した場合も対象外になります。</div></details><details><summary>GMV Maxが赤字の日は、すぐに一時停止したほうがよいですか？</summary><div class="a">1日の赤字だけで止めるのはおすすめしません。公式ヘルプは各ROI設定を少なくとも3日間維持するよう案内しており、一時停止した日はROI保護も付きません。当社では、3日分の手残りを見て目標・商品・動画のどれか1つを直し、止めるかどうかは週単位で判断しています。打ち手を試しても損益分岐を割り続けるときに、判定日にまとめて止めます。</div></details><details><summary>GMV Maxの最大配信モードは、赤字の立て直しに使えますか？</summary><div class="a">立て直しには向きません。公式ヘルプは、最大配信は予算を使い切って総収益を最大化するモードで、ROI関連の指標が変動しうるとし、安定したROIには目標ROIのモードを勧めています。最大配信を使うキャンペーンはROI保護の対象外でもあります。</div></details><details><summary>在庫が少ない商品は、GMV Maxの対象から外すべきですか？</summary><div class="a">当社の運用実感では、売れ筋の在庫が切れると配信が他の商品へ寄ってROIが崩れやすいため、在庫が戻るまで外すほうが安全です。ただし公式ヘルプでは、キャンペーンの商品を編集した日はROI保護の対象外とされているので、外す・戻すの操作は判定日にまとめて行ってください。</div></details></div>
+
+<div class="ctabox"><div class="ct">GMV Maxの赤字を、どこから止めるか一緒に決めます</div><p>商品ごとの損益分岐、ROI目標と推奨値の差、キャンペーンに入っている商品、使える動画の本数を伺い、4つの原因のどれから手を付けるかを整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=gmvmax-loss">セラー相談をする</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">10</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://ads.tiktok.com/help/article/best-practices-for-product-gmv-max?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告 公式ヘルプ：Product GMV Maxのベストプラクティス</a>（2026年10月15日確認）</li><li><a href="https://ads.tiktok.com/help/article/how-to-evaluate-the-performance-of-product-gmv-max?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告 公式ヘルプ：Product GMV Maxのパフォーマンスを評価する方法</a>（2026年10月15日確認）</li><li><a href="https://ads.tiktok.com/help/article/about-product-gmv-max?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告 公式ヘルプ：Product GMV Maxについて</a>（2026年10月15日確認）</li><li><a href="https://ads.tiktok.com/help/article/about-roi-protection-for-gmv-max-campaigns?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告 公式ヘルプ：GMV MaxキャンペーンのROI保護について</a>（2026年10月15日確認）</li><li><a href="https://ads.tiktok.com/help/article/about-roi-recommendation-for-gmv-max-campaigns?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告 公式ヘルプ：GMV MaxキャンペーンのROI推奨値について</a>（2026年10月15日確認）</li><li><a href="https://ads.tiktok.com/help/article/about-max-delivery-optimization-for-gmv-max?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告 公式ヘルプ：GMV最大値の最大配信の最適化について</a>（2026年10月15日確認）</li><li><a href="https://ads.tiktok.com/help/article/gmv-max-migration-tiktok-shop-ads?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告 公式ヘルプ：TikTok Shop広告向けGMV Max移行について</a>（2026年10月15日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=4252874242836241&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：GMV Maxによる販売手数料割引</a>（2026年10月15日確認）</li></ul>
+<p class="src">仕様、画面名称、提供機能、適用条件は更新されることがあります。本記事は2026年10月15日時点で確認できた公式ヘルプの日本語版と、当社が作成した判定の枠組みを区別して記載しています。最新は公式ヘルプで確認してください。本文中で「当社の運用実感」「当社では」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">広告</span><b><a href="https://leam.co.jp/column/gmvmax/">GMV Maxとは？2種類の違い・費用・設定・改善までTikTok Shop広告の完全ガイド</a></b><span>仕組みと設定の流れはこちら</span></div><div class="relcard"><span class="rc">採算</span><b><a href="https://leam.co.jp/column/tiktok-shop-roas/">TikTok ShopのROAS基準は自分で計算する｜損益分岐ROASの出し方</a></b><span>ROI目標の下限を式で出す</span></div><div class="relcard"><span class="rc">動画</span><b><a href="https://leam.co.jp/column/video-no-views/">TikTok Shopの動画が再生されない・売れない原因と直し方</a></b><span>広告に乗せる前の素材を直す</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">赤字かどうかは、管理画面のROIではなく商品ごとの手残りで決める</a></li><li><a href="#s2">原因は「目標・判断・商品・素材」の4つに分けると、直す場所が1つに決まる</a></li><li><a href="#s3">原因①ROI目標が、返品とクーポンを入れた損益分岐を下回っている</a></li><li><a href="#s4">原因②3日待たずに目標を動かすと、学習もROI保護も手放す</a></li><li><a href="#s5">原因③粗利の薄い商品と在庫の細い商品が、同じ予算を取り合っている</a></li><li><a href="#s6">原因④使える動画が足りないまま目標を下げると、赤字だけが広がる</a></li><li><a href="#s7">直すのは3日に1つ、止めるかどうかは週単位で決める</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの運用相談</b><p>現状を伺い、次の打ち手を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=gmvmax-loss">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "GMV MaxのROI目標をシステムの推奨値どおりにすると、赤字になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "なる場合があります。公式ヘルプは、推奨値を類似商品やLIVE配信ルームの市場データと過去の設定にもとづいて出すと説明しており、自社の原価率や返品率は材料に挙がっていません。また推奨値は必須ではなく、事業状況や利益率にもとづいて最終判断するためのガイダンスだとしています。推奨値が自社の損益分岐を下回るなら、目標は損益分岐の側に置いてください。"}}, {"@type": "Question", "name": "管理画面のROIが目標を超えているのに、手元の利益が赤字なのはなぜですか？", "acceptedAnswer": {"@type": "Answer", "text": "Product GMV MaxのROIは、宣伝した商品の注文をオーガニックやアフィリエイト経由の分も含めて集計しているためです。アフィリエイトのコミッション、返品、クーポンの自社負担はこの比率の外で発生します。ROIが目標を超えていても、損益分岐を入れた商品ごとの手残りで確かめる必要があります。"}}, {"@type": "Question", "name": "GMV MaxのROI保護は、どんな日に対象外になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "前提として、ROI保護の条件は全世界向けの広告ヘルプの記載で、日本のアカウントで提供されているかは確認できていません。キャンペーンリストに「ROI保護」列が出るかで確かめてください。そのうえで、全世界向けの公式ヘルプでは、Product GMV Maxで目標ROIを手動で変更した日、LIVE GMV Maxで2回以上変更した日、キャンペーンを一時停止・削除した日、商品を編集した日が対象外です。最大配信を使うキャンペーンや、残高不足・却下・ポリシー違反で停止した場合も対象外になります。"}}, {"@type": "Question", "name": "GMV Maxが赤字の日は、すぐに一時停止したほうがよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "1日の赤字だけで止めるのはおすすめしません。公式ヘルプは各ROI設定を少なくとも3日間維持するよう案内しており、一時停止した日はROI保護も付きません。当社では、3日分の手残りを見て目標・商品・動画のどれか1つを直し、止めるかどうかは週単位で判断しています。打ち手を試しても損益分岐を割り続けるときに、判定日にまとめて止めます。"}}, {"@type": "Question", "name": "GMV Maxの最大配信モードは、赤字の立て直しに使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "立て直しには向きません。公式ヘルプは、最大配信は予算を使い切って総収益を最大化するモードで、ROI関連の指標が変動しうるとし、安定したROIには目標ROIのモードを勧めています。最大配信を使うキャンペーンはROI保護の対象外でもあります。"}}, {"@type": "Question", "name": "在庫が少ない商品は、GMV Maxの対象から外すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "当社の運用実感では、売れ筋の在庫が切れると配信が他の商品へ寄ってROIが崩れやすいため、在庫が戻るまで外すほうが安全です。ただし公式ヘルプでは、キャンペーンの商品を編集した日はROI保護の対象外とされているので、外す・戻すの操作は判定日にまとめて行ってください。"}}]}</script>
+</body>
+</html>
