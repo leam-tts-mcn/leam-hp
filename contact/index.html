@@ -4097,8 +4097,17 @@
     /* 2026-10-25：コラムの「資料を受け取る」（?intent=doc）から来たときは、LP と同じ文を相談内容に入れておく
        （資料を希望しただけの人が、何を書けばよいか分からずに離れないように） */
     try {
-      if (new URLSearchParams(location.search).get('intent') === 'doc' && !msgI.value.trim()) {
+      var q0 = new URLSearchParams(location.search);
+      if (q0.get('intent') === 'doc' && !msgI.value.trim()) {
         msgI.value = 'サービス資料の送付を希望します。';
+      }
+      /* 2026-10-25：コラムのボタンから問い合わせページに来た数を測る（送らずに離れた人も数えるため）。
+         記事は英数字とハイフンだけに絞る。資料のボタンか相談のボタンかも分ける */
+      if (/^\/contact\/?$/.test(location.pathname) && q0.get('src') === 'column' && typeof gtag === 'function') {
+        gtag('event', 'contact_view_from_column', {
+          article: (q0.get('a') || '').replace(/[^a-z0-9-]/gi, '').slice(0, 64),
+          intent: q0.get('intent') === 'doc' ? 'doc' : 'consult'
+        });
       }
     } catch (e) {}
     [[nameF, nameI], [msgF, msgI], [mailF, mailI]].forEach(function (p) {
@@ -4172,13 +4181,13 @@ try {
       fetch(HS, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) })
         .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
         .then(function () {
-          if (typeof gtag === 'function') gtag('event', 'contact_submit', { method: 'hubspot', topic: topic, article: ref || '(none)' });
+          if (typeof gtag === 'function') gtag('event', 'contact_submit', { method: 'hubspot', topic: topic, article: ref || '(none)', intent: /[?&]intent=doc(&|$)/.test(location.search) ? 'doc' : 'consult' });
           label.innerHTML = labelHtml;
           btn.classList.add('sent');
           if (note) note.textContent = '送信しました。2営業日以内にご返信いたします。';
         })
         .catch(function () {
-          if (typeof gtag === 'function') gtag('event', 'contact_submit', { method: 'mailto', topic: topic, article: ref || '(none)' });
+          if (typeof gtag === 'function') gtag('event', 'contact_submit', { method: 'mailto', topic: topic, article: ref || '(none)', intent: /[?&]intent=doc(&|$)/.test(location.search) ? 'doc' : 'consult' });
           busy = false; btn.disabled = false; label.innerHTML = labelHtml;
           if (note) note.textContent = 'うまく送信できなかったため、メールソフトを起動しました。そのまま送信してください。';
           window.location.href = mailto;
