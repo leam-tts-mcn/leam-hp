@@ -4094,6 +4094,13 @@
     });
     var nameF = document.getElementById('fName'), msgF = document.getElementById('fMsg'), mailF = document.getElementById('fMail');
     var nameI = document.getElementById('ctName'), msgI = document.getElementById('ctMsg'), mailI = document.getElementById('ctMail');
+    /* 2026-10-25：コラムの「資料を受け取る」（?intent=doc）から来たときは、LP と同じ文を相談内容に入れておく
+       （資料を希望しただけの人が、何を書けばよいか分からずに離れないように） */
+    try {
+      if (new URLSearchParams(location.search).get('intent') === 'doc' && !msgI.value.trim()) {
+        msgI.value = 'サービス資料の送付を希望します。';
+      }
+    } catch (e) {}
     [[nameF, nameI], [msgF, msgI], [mailF, mailI]].forEach(function (p) {
       p[1].addEventListener('input', function () {
         if (p[1].value.trim()) p[0].classList.remove('err');
