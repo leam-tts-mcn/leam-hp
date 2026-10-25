@@ -41,8 +41,8 @@ HERO_H1_RE = r'<h1 class="hi hi-2">(.*?)</h1>'
 
 ROUTES = {
     '/service': {
-        't': 'SERVICE｜TikTok Shopコンサルティング・MCN｜株式会社LEAM',
-        'd': 'TikTok Shopコンサルティング、TikTok Shop特化MCN、SNSサービスの3領域で、出店から売上づくり・クリエイター連携までを一気通貫で支援します。',
+        't': 'SERVICE｜TikTok Shopコンサル・運用代行・MCN｜株式会社LEAM',
+        'd': 'TikTok Shopのコンサルティング・運用代行（動画・広告・ライブ配信）とTikTok Shop特化MCNで、出店から売上づくりまで支援します。',
     },
     '/member': {
         't': 'MEMBER｜メンバー紹介｜株式会社LEAM',
@@ -111,6 +111,10 @@ def main():
         print('generated %s/index.html' % d)
 
     today = datetime.date.today().isoformat()
+    OLD_LASTMOD = {}
+    if os.path.exists('sitemap.xml'):
+        OLD_LASTMOD = dict(re.findall(r'<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>',
+                                      open('sitemap.xml', encoding='utf-8').read()))
 
     def lastmod(url):
         """🔴 lastmod はそのページが実際に最後に変わった日にする。
@@ -122,10 +126,21 @@ def main():
         git のコミット日（そのファイルが最後に変わった日）から取る。
         """
         rel = url[len(BASE):].strip('/')
+        # 🔴 2026-10-25：コラム（/column/<slug>/）の更新日はコラムのビルドが決めて sitemap に書いている
+        #    （関連記事カード・ヒーロー・相談枠の差し替えでは進めない決まり）。ここで git の日付に
+        #    書き換えると、記事に表示している更新日と食い違う。既に書かれている値をそのまま残す。
+        if (rel == 'column' or rel.startswith('column/')) and url in OLD_LASTMOD:
+            return OLD_LASTMOD[url]
         path = (rel + '/index.html') if rel else 'index.html'
         if not os.path.exists(path):
             return today
         try:
+            # 🔴 2026-10-25：コミット前に回すと、いま直したページが前回のコミット日になる。
+            #    まだコミットしていない変更があるページは今日にする。
+            dirty = subprocess.run(['git', 'status', '--porcelain', '--', path],
+                                   capture_output=True, text=True, timeout=20).stdout.strip()
+            if dirty:
+                return today
             d = subprocess.run(['git', 'log', '-1', '--format=%cs', '--', path],
                                capture_output=True, text=True, timeout=20).stdout.strip()
             return d or today
