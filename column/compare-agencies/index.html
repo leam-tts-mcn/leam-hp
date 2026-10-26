@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shop支援会社の比較表｜提案書を同じ物差しで</title>
+<meta name="description" content="TikTok Shopの支援会社から提案を受けた担当者向けに、比較表のひな形と埋め方を解説。担当範囲・体制・報告・契約・費用・実績を整理し、空欄やあいまいな回答、最終版の照合まで示します。">
+<link rel="canonical" href="https://leam.co.jp/column/compare-agencies/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shop支援会社の比較表｜提案書を同じ物差しで">
+<meta property="og:description" content="TikTok Shopの支援会社から提案を受けた担当者向けに、比較表のひな形と埋め方を解説。担当範囲・体制・報告・契約・費用・実績を整理し、空欄やあいまいな回答、最終版の照合まで示します。">
+<meta property="og:url" content="https://leam.co.jp/column/compare-agencies/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/compare-agencies.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shop支援会社の比較表｜提案書を同じ物差しで">
+<meta name="twitter:description" content="TikTok Shopの支援会社から提案を受けた担当者向けに、比較表のひな形と埋め方を解説。担当範囲・体制・報告・契約・費用・実績を整理し、空欄やあいまいな回答、最終版の照合まで示します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/compare-agencies.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shop支援会社の比較表｜提案書を同じ物差しで", "description": "TikTok Shopの支援会社から提案を受けた担当者向けに、比較表のひな形と埋め方を解説。担当範囲・体制・報告・契約・費用・実績を整理し、空欄やあいまいな回答、最終版の照合まで示します。", "inLanguage": "ja", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/compare-agencies/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/compare-agencies.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&lang=ja-JP", "name": "日本向け公式の説明"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shop支援会社の比較表｜提案書を同じ物差しで", "item": "https://leam.co.jp/column/compare-agencies/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=compare-agencies">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopの支援会社を比べる表の作り方｜提案書を同じ物差しで</p>
+<span class="cat">外部支援・提案比較</span>
+<h1>TikTok Shopの支援会社を比べる表の作り方｜提案書を同じ物差しで</h1>
+<div class="meta"><time class="upd" datetime="2026-10-26">更新日：2026年10月26日</time><time datetime="2026-10-26">公開日：2026年10月26日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+<figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左に様式の違う提案書が並び、矢印の右に同じ項目で答えをそろえた比較表と定規が置かれ、未回答のセルをシアンの枠で示したイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="compareagenciesDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#compareagenciesDots" transform="translate(944 542)"/></g>
+<g stroke="#0B0C10" stroke-linejoin="round" stroke-linecap="round">
+<rect x="48" y="145" width="160" height="295" rx="13" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/><rect x="48" y="145" width="160" height="295" rx="13" fill="#FFFFFF" stroke-width="6"/><rect x="67" y="168" width="99" height="12" rx="6" fill="#FE2C55" stroke="none"/><rect x="66" y="208" width="124" height="28" rx="5" fill="#EFF1F4" stroke-width="4"/><path d="M79 222h76" stroke="#C9CBD0" stroke-width="6"/><rect x="66" y="257" width="124" height="28" rx="5" fill="#EFF1F4" stroke-width="4"/><path d="M79 271h76" stroke="#C9CBD0" stroke-width="6"/><rect x="66" y="306" width="124" height="28" rx="5" fill="#EFF1F4" stroke-width="4"/><path d="M79 320h76" stroke="#C9CBD0" stroke-width="6"/><rect x="66" y="355" width="124" height="28" rx="5" fill="#EFF1F4" stroke-width="4"/><path d="M79 369h76" stroke="#C9CBD0" stroke-width="6"/><circle cx="177" cy="411" r="9" fill="#25F4EE" stroke-width="4"/><rect x="232" y="190" width="160" height="295" rx="13" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/><rect x="232" y="190" width="160" height="295" rx="13" fill="#FFFFFF" stroke-width="6"/><rect x="251" y="213" width="99" height="12" rx="6" fill="#25F4EE" stroke="none"/><circle cx="261" cy="263" r="7" fill="#FE2C55" stroke="none"/><path d="M281 263h82M250 283h111" stroke="#DFE0E2" stroke-width="7"/><circle cx="261" cy="312" r="7" fill="#FE2C55" stroke="none"/><path d="M281 312h82M250 332h111" stroke="#DFE0E2" stroke-width="7"/><circle cx="261" cy="361" r="7" fill="#FE2C55" stroke="none"/><path d="M281 361h82M250 381h111" stroke="#DFE0E2" stroke-width="7"/><circle cx="261" cy="410" r="7" fill="#FE2C55" stroke="none"/><path d="M281 410h82M250 430h111" stroke="#DFE0E2" stroke-width="7"/><circle cx="361" cy="456" r="9" fill="#25F4EE" stroke-width="4"/><rect x="416" y="122" width="160" height="295" rx="13" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/><rect x="416" y="122" width="160" height="295" rx="13" fill="#FFFFFF" stroke-width="6"/><rect x="435" y="145" width="99" height="12" rx="6" fill="#FE2C55" stroke="none"/><path d="M436 189h119M436 209h82" stroke="#DFE0E2" stroke-width="8"/><path d="M436 238h119M436 258h103" stroke="#DFE0E2" stroke-width="8"/><path d="M436 287h119M436 307h66" stroke="#DFE0E2" stroke-width="8"/><path d="M436 336h119M436 356h95" stroke="#DFE0E2" stroke-width="8"/><circle cx="545" cy="388" r="9" fill="#25F4EE" stroke-width="4"/><path d="M603 285h43v-20l35 32-35 32v-20h-43z" fill="#25F4EE" stroke-width="5"/>
+<rect x="720" y="169" width="414" height="330" rx="13" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="720" y="169" width="414" height="330" rx="13" fill="#FFFFFF" stroke-width="7"/>
+<path d="M720 169h414v56H720z" fill="#0B0C10" stroke-width="6"/>
+<path d="M720 225h94v274h-94z" fill="#EFF1F4" stroke="none"/>
+<path d="M814 225v274M920 225v274M1027 225v274M720 280h414M720 335h414M720 390h414M720 445h414" fill="none" stroke-width="4"/>
+<rect x="749" y="190" width="48" height="12" rx="6" fill="#FFFFFF" stroke="none"/><rect x="839" y="190" width="48" height="12" rx="6" fill="#FFFFFF" stroke="none"/><rect x="946" y="190" width="48" height="12" rx="6" fill="#FFFFFF" stroke="none"/><rect x="1052" y="190" width="48" height="12" rx="6" fill="#FFFFFF" stroke="none"/><path d="M741 247h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M837 247h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M945 247h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M1052 247h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M741 302h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M837 302h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M945 302h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M1052 302h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M741 357h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M837 357h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M1052 357h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M741 412h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M837 412h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M945 412h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M1052 412h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M741 467h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M837 467h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M945 467h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><path d="M1052 467h45" fill="none" stroke="#C9CBD0" stroke-width="8"/><rect x="931" y="346" width="83" height="30" rx="7" fill="#FFFFFF" stroke="#25F4EE" stroke-width="8"/>
+<path d="M731 112h389v35H731z" fill="#FE2C55" stroke-width="6"/>
+<path d="M748 113v19" fill="none" stroke-width="4"/><path d="M769 113v11" fill="none" stroke-width="4"/><path d="M790 113v11" fill="none" stroke-width="4"/><path d="M811 113v19" fill="none" stroke-width="4"/><path d="M832 113v11" fill="none" stroke-width="4"/><path d="M853 113v11" fill="none" stroke-width="4"/><path d="M874 113v19" fill="none" stroke-width="4"/><path d="M895 113v11" fill="none" stroke-width="4"/><path d="M916 113v11" fill="none" stroke-width="4"/><path d="M937 113v19" fill="none" stroke-width="4"/><path d="M958 113v11" fill="none" stroke-width="4"/><path d="M979 113v11" fill="none" stroke-width="4"/><path d="M1000 113v19" fill="none" stroke-width="4"/><path d="M1021 113v11" fill="none" stroke-width="4"/><path d="M1042 113v11" fill="none" stroke-width="4"/><path d="M1063 113v19" fill="none" stroke-width="4"/><path d="M1084 113v11" fill="none" stroke-width="4"/><path d="M1105 113v11" fill="none" stroke-width="4"/><path d="M771 538h291" fill="none" stroke="#D8DADE" stroke-width="10"/>
+<circle cx="613" cy="462" r="17" fill="#25F4EE" stroke-width="5"/>
+<path d="M605 462l6 6 11-15" fill="none" stroke-width="4"/>
+</g></svg><figcaption>様式の違う提案書から、同じ条件への答えを取り出す（LEAM作成）</figcaption></figure>
+<p class="lead"><strong>TikTok Shopの支援会社を比べる表は、提案書の見栄えを採点する表ではなく、同じ条件に対する各社の答えを並べる表です。</strong>担当範囲・体制・報告・契約・費用の内訳・実績の示し方を行に置きます。書かれていない条件は空欄のまま評価せず、確認する項目として残します。</p>
+<p>提案を受けた担当者が迷うのは、資料ごとに項目の名前や詳しさが違うときです。一方は動画の本数を示し、もう一方は企画から改善までをまとめて示している。金額だけを隣に置いても、その差の理由は読み取れません。この記事では、手元の提案書を同じ列へ移し、答えがそろった状態で社内の判断に回す方法を説明します。</p>
+<p>料金の幅や会社を選ぶ軸は<a href="https://leam.co.jp/column/unyodaiko-cost/">運用代行の費用相場と選び方</a>、契約条件の個別の確認は<a href="https://leam.co.jp/column/agency-contract-checklist/">契約で確認すること</a>にまとめています。ここでは会社名を挙げたおすすめ一覧ではなく、<strong>自社が受けた提案を比べるための表</strong>を作ります。</p>
+<div class="learn"><div class="lt">この記事で分かること</div><ul><li>提案書を同じ行で読める比較表のひな形</li><li>記載のある条件を抜き出す方法と、空欄の扱い方</li><li>あいまいな回答を確かめ、最終提案をそろえる手順</li></ul></div>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">費用と選び方</span><b><a href="https://leam.co.jp/column/unyodaiko-cost/">TikTok Shop運用代行の費用相場と失敗しない選び方</a></b><span>会社選びの軸は先に確認</span></div><div class="relcard"><span class="rc">契約</span><b><a href="https://leam.co.jp/column/agency-contract-checklist/">TikTok Shop運用代行の契約で確認すること｜期間・成果報酬・解約</a></b><span>条項の個別確認は別に行う</span></div></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">比較表の上段に、自社が頼む条件を固定する</a></li><li><a href="#s2">比較表は、答え・根拠・確認事項が読める列にする</a></li><li><a href="#s3">提案書の表現は、作業と受け取るものへ言い換える</a></li><li><a href="#s4">記入例では、条件の差をそろえてから比べる</a></li><li><a href="#s5">空欄は、未回答・条件付き・対象外に分けて追う</a></li><li><a href="#s6">報告と実績の数字は、定義と条件を添えて読む</a></li><li><a href="#s7">あいまいな回答は、具体例を返して確認する</a></li><li><a href="#s8">決定前に最終版をそろえ、選ぶ理由と残る条件を書く</a></li><li><a href="#faq">提案の比較表を作るときによくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>比較表の上段に、自社が頼む条件を固定する</h2>
+<p><strong>会社の列を作る前に、比較する条件を表の上段に置きます。</strong>対象商品、開始時の状態、試す期間、相談する作業、自社が用意するものを書きます。各社が違う条件で提案していると、回答が具体的でもそのまま比較できません。</p>
+<p>たとえば、一方の提案は撮影済みの素材を受け取って編集するもの、もう一方は撮影の企画と実施も含むものかもしれません。同じ「動画制作」と書かれていても、自社の準備と受け取るものが違います。比較表には、同じ条件で答えてもらう欄と、各社独自の提案を残す欄を分けます。</p>
+<div class="tw"><table><thead><tr><th>上段に置く前提</th><th>自社で書く内容</th><th>提案ごとの違いが出たとき</th></tr></thead><tbody><tr><td>開始時の状態</td><td>未開設か、販売中か。準備が終わっているもの</td><td>準備作業を含むかを別に確認</td></tr><tr><td>対象と目的</td><td>どの商品を、どの売り方で試すか</td><td>対象を変えた提案は追加案の欄へ</td></tr><tr><td>比較する期間</td><td>準備から開始まで、継続支援を頼む期間</td><td>開始月と通常月を分けて回答をそろえる</td></tr><tr><td>自社の支給物</td><td>商品情報、写真、撮影場所、素材など</td><td>支給がない場合の作業を確認</td></tr><tr><td>社内の分担</td><td>承認、在庫連絡、発送、購入者への対応</td><td>支援会社が担う範囲との差を記録</td></tr></tbody></table></div>
+<p>未定の前提は、担当者の判断で埋めずに「確認中」と書きます。どの部署が決めるかと回答の予定日も置きます。前提を決める作業から始めたい場合は、<a href="https://leam.co.jp/column/before-agency/">依頼前に社内で決めること</a>を使ってください。各社が前提を変える案を出した場合は、変える理由と、自社の負担がどう動くかも残します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="compareagenciesCommon" viewBox="0 0 720 310" role="img" aria-label="共通の前提を上段に置き、その下で同条件の回答と各社独自の追加案を分ける図"><rect x="31" y="23" width="658" height="65" rx="12" fill="#0B0C10"/><text x="360" y="51" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">全社に同じ前提を伝える</text><text x="360" y="76" text-anchor="middle" font-size="16" font-weight="500" fill="#FFFFFF">対象・期間・支給物・社内の分担</text><path d="M360 89v21M130 110h460M130 110v14M360 110v14M590 110v14" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="26" y="129" width="205" height="113" rx="12" fill="#EFF1F4"/><text x="128" y="160" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">案A</text><text x="128" y="193" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">共通範囲への答え</text><text x="128" y="224" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">独自の追加案</text><rect x="256" y="129" width="205" height="113" rx="12" fill="#EFF1F4"/><text x="358" y="160" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">案B</text><text x="358" y="193" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">共通範囲への答え</text><text x="358" y="224" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">独自の追加案</text><rect x="486" y="129" width="205" height="113" rx="12" fill="#EFF1F4"/><text x="588" y="160" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">案C</text><text x="588" y="193" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">共通範囲への答え</text><text x="588" y="224" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">独自の追加案</text><rect x="128" y="261" width="464" height="32" rx="8" fill="#25F4EE"/><text x="360" y="283" text-anchor="middle" font-size="16" font-weight="700" fill="#0B0C10">追加案は別の欄に残す</text></svg><figcaption>図1：共通の前提と独自の提案を分ける（LEAM作成）</figcaption></figure>
+<p>共通の前提は、提案を受けた後に変わることもあります。その場合は変更日を書き、全社へ同じ内容を伝えます。過去の条件に答えた資料と、新しい条件に答えた資料を隣に並べたまま、金額や作業量を評価しないようにします。</p>
+<h2 id="s2"><span class="no en">02</span>比較表は、答え・根拠・確認事項が読める列にする</h2>
+<p><strong>行は同じまま、各社の回答を同じ書き方で入れます。</strong>ひな形の「案の回答」欄を、受け取った提案の数だけ増やしてください。各回答には提案書のページや見積書の項目を添え、分からない部分は確認事項に分けます。</p>
+<div class="tw"><table><thead><tr><th>比べる行</th><th>案の回答欄</th><th>根拠の残し方</th><th>確認事項の欄</th></tr></thead><tbody><tr><td>担当範囲</td><td>実行する作業、納品物、自社の支給物</td><td>業務範囲のページと納品一覧</td><td>含まれない作業、修正、承認待ちの扱い</td></tr><tr><td>体制</td><td>実行担当、連絡窓口、確認する人</td><td>今回の担当体制と連絡方法の記載</td><td>担当交代や休みのときの連絡先</td></tr><tr><td>報告</td><td>報告の形式、元になる数字、次の行動</td><td>報告書の見本と集計の説明</td><td>数字の定義、対象期間、元資料の有無</td></tr><tr><td>契約</td><td>提案時点で示されている条件</td><td>条件が載る文書名、版、該当箇所</td><td>提案書と契約案の違い、未決定の条件</td></tr><tr><td>費用の内訳</td><td>初期、継続、追加、別に支払う費目</td><td>見積書の項目と前提条件</td><td>含むもの、含まないもの、条件変更の影響</td></tr><tr><td>実績の示し方</td><td>今回と比べられる条件と担当した範囲</td><td>期間、商品条件、実施内容、数字の意味</td><td>今回へそのまま移せない条件、追加資料</td></tr></tbody></table></div>
+<p>契約の行に条項をすべて写す必要はありません。比較表では、どの文書のどこを見たか、差があるか、未回答かが分かれば十分です。具体的な契約の確認は、冒頭で案内した記事と契約案を使って別に行います。比較表で分かりやすく要約しても、元の契約文を置き換える扱いにはしません。</p>
+<p>表を社内へ回すときは、読んだ人が元の資料へ戻れるようにします。「詳しくは提案書」とだけ書かず、文書名とページ、見出しを残します。メールや打ち合わせで補足された回答なら、回答日と誰の回答かも添えます。口頭で出た補足は、担当者が整理した文を先方に確認してもらってから、確定した回答として使います。</p>
+<p>社内だけの見立ては別の欄です。「任せやすそう」「柔軟に対応してくれそう」という印象と、資料に書かれている条件を混ぜないようにします。回答の欄は事実の転記、確認事項は不足している情報、見立ては自社の判断と分ければ、別の担当者でも表を読み直せます。</p>
+<h2 id="s3"><span class="no en">03</span>提案書の表現は、作業と受け取るものへ言い換える</h2>
+<p><strong>抽象的な見出しを、そのまま比較表へ写さないようにします。</strong>「一気通貫」「運用改善」「伴走」などの言葉だけでは、実際に動く人と受け取るものが分かりません。まず原文を保存し、その横で作業・成果物・自社の準備・対象外を短く整理します。</p>
+<div class="tw"><table><thead><tr><th>架空の提案の記載</th><th>表へ移す前に分けること</th><th>回答欄に残す形</th></tr></thead><tbody><tr><td>企画から運用まで一括支援</td><td>企画、撮影、編集、投稿、結果の振り返り</td><td>含む作業を個別に列挙。未記載の作業は未回答</td></tr><tr><td>クリエイターとの連携を支援</td><td>候補探し、連絡、条件調整、サンプル手配、状況整理</td><td>相手が実行する作業と、自社が判断する事項を分ける</td></tr><tr><td>データに基づいて改善</td><td>使う数字、報告、改善案、案を実行する担当</td><td>元資料、改善案の提出、自社承認後の実行を区別</td></tr><tr><td>担当者が丁寧にサポート</td><td>連絡窓口、対応する時間、相談の範囲、実行担当</td><td>今回の窓口と作業体制。確認中の部分も表示</td></tr></tbody></table></div>
+<p>この言い換えは、提案書にない仕事を含ませるためではありません。「運用改善」とあるから広告の設定も含むはずだ、と読み足さないようにします。資料で確認できる内容だけを回答欄へ入れ、足りない部分を質問にします。短い表現に直した結果、条件や除外事項が消えていないかを元の文章と照合します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="compareagenciesTrace" viewBox="0 0 720 320" role="img" aria-label="原文、短い要約、根拠の場所、確認事項を順につなぎ、条件を元の資料へ戻って確認できる図"><rect x="20" y="31" width="205" height="170" rx="12" fill="#EFF1F4"/><text x="122" y="70" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">原文を保存</text><text x="122" y="120" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">提案書・回答</text><text x="122" y="164" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">ページと日付</text><rect x="257" y="31" width="205" height="170" rx="12" fill="#EFF1F4"/><text x="359" y="70" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">条件を分ける</text><text x="359" y="120" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">作業・納品物</text><text x="359" y="164" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">支給物・対象外</text><rect x="494" y="31" width="205" height="170" rx="12" fill="#25F4EE"/><text x="596" y="70" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">表に転記</text><text x="596" y="120" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">短い答えと根拠</text><text x="596" y="164" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">未回答は質問へ</text><path d="M231 115h20m-7-7 7 7-7 7M468 115h20m-7-7 7 7-7 7M594 214v35H123v-36m-7 8 7-8 7 8" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="360" y="286" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">短くしても条件が落ちていないか、原文と照合</text></svg><figcaption>図2：回答を短くしながら、根拠へ戻れる形を保つ（LEAM作成）</figcaption></figure>
+<p>逆に、細かく書かれた提案ほど優れていると決める必要もありません。資料が簡潔でも、自社の質問に対して担当と受け取るものが明確になるなら比較できます。資料の分量ではなく、今回頼む条件が答えとしてそろうかを見ます。コンサルと代行など、仕事の頼み方自体が違っていた場合は、<a href="https://leam.co.jp/column/consulting-vs-agency/">コンサルと運用代行の違い</a>へ戻って必要な支援の形を決めます。</p>
+<p>表へ移すときは、肯定だけでなく条件も同じセルに入れます。「撮影を含む。ただし場所と出演者は自社で用意」の後半を落とすと、撮影場所まで用意する別の提案と同じに見えます。短く書く場合も、負担の分かれ目を残すことが必要です。</p>
+<h2 id="s4"><span class="no en">04</span>記入例では、条件の差をそろえてから比べる</h2>
+<p><strong>同じ作業名の提案も、支給物と納品物を並べて差を確かめます。</strong>以下は説明用に作った架空の案です。実在する会社の提案や、標準的な支援内容を示すものではありません。自社が商品情報と素材を持ち、制作と改善を頼む場面として読んでください。</p>
+<div class="tw"><table><thead><tr><th>照合する行</th><th>案Aの回答例</th><th>案Bの回答例</th><th>同じ条件にするための確認</th></tr></thead><tbody><tr><td>素材と撮影</td><td>自社支給の映像を編集。新たな撮影は対象外</td><td>撮影と編集を実施。場所と商品は自社で用意</td><td>同じ素材を支給した場合の範囲と、撮影を足す場合を分ける</td></tr><tr><td>修正</td><td>初稿への修正を含む。企画変更は追加相談</td><td>修正は相談に応じて対応。詳しい条件は未回答</td><td>依頼側の変更と制作側の修正をどう区別するか</td></tr><tr><td>報告</td><td>数値と改善案を提出。実行は自社</td><td>数値の報告と、自社承認後の改善作業を実施</td><td>改善を実行する人をそろえるか、自社に残すか</td></tr><tr><td>体制</td><td>窓口と編集担当を示している</td><td>窓口を示している。作業の担当は確認中</td><td>今回の作業体制を回答してもらう</td></tr><tr><td>費用の範囲</td><td>編集と報告を含む。広告配信費は別</td><td>撮影、編集、改善作業を含む。広告配信費は別</td><td>同じ作業範囲の案を求め、追加案は別に残す</td></tr></tbody></table></div>
+<p>この表だけで案Aと案Bの優劣は決まりません。自社で撮影でき、改善も実行できるなら、それらの仕事を追加する必要は薄くなります。反対に、社内で実行する人がいなければ、案Aを選んだ後に別の作業費や時間が必要です。<strong>自社に残る仕事を加えて判断する</strong>ことが大切です。</p>
+<p>担当範囲をそろえて再提案を求める場合は、どの前提を固定するかを文で伝えます。「素材はこちらで用意し、編集と報告を依頼する条件で回答してください」とします。同時に、撮影から頼む案が必要なら、その追加案も分けて残してもらいます。条件をそろえる作業と、各社の提案の良さを消すことを混同しないようにします。</p>
+<p>比較対象の期間も合わせます。準備が多い開始時の支出だけを、継続して運営する期間の支出と比べると、金額差を読み違えます。初期と継続、任意の追加作業を別の行へ移し、それぞれの対象期間を添えます。税の表示や自社が別に払う費目も、同じ状態にそろえてから金額を読みます。</p>
+<p>追加の条件を出した後は、提案の版を更新します。前の資料の方が都合のよい条件だったとしても、その行だけを切り出して新しい案へ足さないようにします。採用したい条件があるなら、最終案にも含まれるかを先方へ確認します。</p>
+<h2 id="s5"><span class="no en">05</span>空欄は、未回答・条件付き・対象外に分けて追う</h2>
+<p><strong>空欄を一律の減点にしないようにします。</strong>提案書に記載がないだけなのか、条件を決めれば頼めるのか、依頼の範囲に入らないのかで意味が違います。表には回答の状態を書き、次に確認する人と日を置きます。</p>
+<div class="tw"><table><thead><tr><th>回答の状態</th><th>どういう意味か</th><th>表に残すこと</th></tr></thead><tbody><tr><td>記載あり</td><td>資料や確認済みの回答で、条件を読める</td><td>答えと根拠の場所、確認日</td></tr><tr><td>未回答</td><td>まだ情報がなく、対応できるかも分からない</td><td>質問、回答を待つ相手、返答の予定</td></tr><tr><td>条件付き</td><td>商品や作業量など、条件を満たす場合に対応</td><td>その条件と、自社が満たせるか</td></tr><tr><td>対象外</td><td>今回は支援範囲に含めない</td><td>社内で持つか、別に依頼するか</td></tr></tbody></table></div>
+<p>必要な行が未回答のままなら、会社への評価より先に、その条件が決まらないと何が選べないのかを社内で整理します。発送を自社で担う前提が未定なら、支援会社だけに答えを求めても埋まりません。確認が自社側に残っているものと、先方の返答を待つものを分けます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="compareagenciesStatus" viewBox="0 0 720 340" role="img" aria-label="回答の状態を記載あり、未回答、条件付き、対象外に分け、それぞれの次の確認を示す図"><rect x="24" y="22" width="324" height="124" rx="13" fill="#25F4EE" stroke="#D8DADE"/><text x="186" y="66" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">記載あり</text><text x="186" y="111" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">答えと根拠を残す</text><rect x="372" y="22" width="324" height="124" rx="13" fill="#EFF1F4" stroke="#D8DADE"/><text x="534" y="66" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">未回答</text><text x="534" y="111" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">相手と返答予定を置く</text><rect x="24" y="172" width="324" height="124" rx="13" fill="#EFF1F4" stroke="#D8DADE"/><text x="186" y="216" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">条件付き</text><text x="186" y="261" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">条件を満たせるか判断</text><rect x="372" y="172" width="324" height="124" rx="13" fill="#EFF1F4" stroke="#D8DADE"/><text x="534" y="216" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">対象外</text><text x="534" y="261" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">自社か別の依頼へ</text><text x="360" y="325" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">空欄を、そのまま評価や減点にしない</text></svg><figcaption>図3：回答の状態と次に確認することを分ける（LEAM作成）</figcaption></figure>
+<p>対応できないとの回答が来ても、それだけで候補から外す必要はありません。今回求める仕事に必要か、自社で担当できるかで判断します。反対に、頼みたい仕事が条件付きで、条件を自社が満たせないなら、「対応あり」と読んで進めないようにします。</p>
+<p>回答が遅いときは、同じ内容を別の言い方で何度も尋ねる前に、質問が広すぎないかを見直します。「どこまでできますか」ではなく、「素材を支給した場合、完成した動画の納品と投稿の実行は、それぞれ今回の範囲に含みますか」と、表の行に対応する形へ狭めます。回答を待てる期限は、社内の選定日から逆算して共有します。</p>
+<h2 id="s6"><span class="no en">06</span>報告と実績の数字は、定義と条件を添えて読む</h2>
+<p><strong>実績の金額や報告の見本は、数字の意味がそろってから比較します。</strong>金額が大きく書かれていても、対象期間、商品、広告費、どの仕事を担ったかが異なれば、今回の成果を直接示す材料にはなりません。実績の行には、示された結果と、その結果が出た条件を分けて記録します。</p>
+<p>報告書の見本では、数字の出どころ、期間、返金などの扱い、費用、自社が次に判断することを読めるか確かめます。見た目が整っているかだけでなく、元の数字へ戻れるか、改善案を誰が実行するかが比較の材料になります。支援会社が作った見本と、今回提出する報告の範囲が同じかも確認します。</p>
+<p>公式ヘルプ「データ分析の概要」は、分析に表示するGMVには返品・返金・キャンセルが含まれ、収入と同じではないと説明しています。GMVは販売の規模を示す金額です。<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">日本向け公式の説明</a>を踏まえ、比較表で「売上」とだけ書かず、提案の数字が何を指すかを残します。</p>
+<div class="tw"><table><thead><tr><th>資料にある表現</th><th>比較表に添える条件</th><th>分からないままにしない点</th></tr></thead><tbody><tr><td>売上が増えた実績</td><td>対象期間、比較する期間、商品条件、販促と費用、担当範囲</td><td>支援だけが増加の理由と扱っていないか</td></tr><tr><td>クリエイターとのネットワーク</td><td>今回の商品で行う作業、候補の探し方、条件の調整</td><td>連絡できることと、紹介が決まることを分けているか</td></tr><tr><td>改善が分かる報告</td><td>集計元、対象期間、課題、次の行動と担当</td><td>見本の項目が今回の支援にも含まれるか</td></tr><tr><td>似たジャンルの経験</td><td>扱った売り方、制作、物流や社内承認への関わり</td><td>商品名や見た目の近さだけで判断していないか</td></tr></tbody></table></div>
+<p>実績を公開できない場合は、店名や商品名を出さずに説明できる範囲を確認します。数字の原本を求める代わりに、支援前の課題、実施した仕事、途中の判断、残った課題を聞く方法もあります。出せない資料を無理に求めるより、今回の提案でどう仕事を進めるかを具体化します。</p>
+<p>社内に示す結論も、材料の範囲に合わせます。「売上が最も伸びる会社」とはせず、「今回の条件で任せる作業と担当が明確」「報告の数字は追加確認が必要」のように記します。実績は条件の近さを読む材料で、今回の結果を約束する欄ではありません。</p>
+<h2 id="s7"><span class="no en">07</span>あいまいな回答は、具体例を返して確認する</h2>
+<p><strong>抽象的な回答が続いたら、自社の場面を短く示します。</strong>答えを誘導するためではなく、前提が伝わっているか、実行する仕事が分かれる箇所を確かめるためです。質問の数を増やすより、表で埋まらない行に集中します。</p>
+<div class="tw"><table><thead><tr><th>あいまいな回答の例</th><th>具体例で返す聞き方</th><th>表に残したい答え</th></tr></thead><tbody><tr><td>状況に合わせて柔軟に対応します</td><td>自社が素材を出せない週は、何を実行し、何を保留しますか</td><td>対応する仕事、自社の準備、追加になる条件</td></tr><tr><td>経験のある担当者が支援します</td><td>今回の窓口と、制作・運営をする担当の役割を示してください</td><td>役割の分担と、変更時の連絡方法</td></tr><tr><td>費用内でできる限り対応します</td><td>企画を変える修正が出たら、今の範囲と追加の相談をどう分けますか</td><td>費用内の作業、追加の条件、承認の流れ</td></tr><tr><td>数字を見て改善します</td><td>注文が動かない場合、何を報告し、変更する作業は誰が持ちますか</td><td>元の数字、改善案、実行する担当</td></tr></tbody></table></div>
+<p>回答の言葉遣いだけを不合格の理由にしないようにします。営業窓口では作業の詳細を答えられず、実行担当が確認する場合もあります。その場合は、確認の担当と返答の予定を示してもらいます。必要な行の答えが最後まで決まらないなら、その不確かな範囲を残して、発注を進めるかを社内で判断します。</p>
+<p>自社の質問も、相手が選べる形にします。「丁寧に報告してくれますか」より、「この見本の集計元と対象期間を、今回も報告に添えられますか」の方が、表へ移せる答えになります。条件が合わないときは、要望に合わせる案と、支援会社が勧める案を分けて示してもらいます。</p>
+<p>やり取りが増えたら、回答を同じ表へ戻します。メールには書かれているが表には未回答のまま、という状態を残さないようにします。回答を受け取る担当者が複数いる場合も、最終的に表を更新する人を決めておけば、社内で違う版を見て判断する事故を減らせます。</p>
+<h2 id="s8"><span class="no en">08</span>決定前に最終版をそろえ、選ぶ理由と残る条件を書く</h2>
+<p><strong>最後は比較表、提案書、見積書、契約案を同じ条件でそろえます。</strong>作業や金額を変更した提案が来たら、どの文書が最終かを確認し、その版と日付を表へ書きます。契約案に反映する予定の補足も、反映済みの条件とは分けて管理します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="compareagenciesFinal" viewBox="0 0 720 315" role="img" aria-label="更新した提案書、見積書、契約案を同じ条件でそろえて比較表へ照合し、選ぶ理由と残る条件を決める図"><rect x="25" y="20" width="200" height="62" rx="10" fill="#EFF1F4"/><text x="125" y="58" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">提案書</text><rect x="260" y="20" width="200" height="62" rx="10" fill="#EFF1F4"/><text x="360" y="58" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">見積書</text><rect x="495" y="20" width="200" height="62" rx="10" fill="#EFF1F4"/><text x="595" y="58" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">契約案</text><path d="M125 84v27h470V84M360 111v23" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="120" y="139" width="480" height="66" rx="12" fill="#25F4EE"/><text x="360" y="167" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">最終版の比較表</text><text x="360" y="192" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">文書の版・日付・回答の根拠をそろえる</text><path d="M360 207v22M187 230h346M187 230v11M533 230v11" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="30" y="247" width="300" height="47" rx="10" fill="#0B0C10"/><text x="180" y="277" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">選ぶ理由を記す</text><rect x="390" y="247" width="300" height="47" rx="10" fill="#0B0C10"/><text x="540" y="277" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">残る条件と担当を記す</text></svg><figcaption>図4：最終資料をそろえてから、社内の判断へ回す（LEAM作成）</figcaption></figure>
+<p>表を社内へ出す前に、必須の行が回答済みか、自社の担当が決まっているか、追加の支出が見えるか、最終資料との食い違いがないかを読みます。未回答が残るなら、「決定前に解くもの」と「開始までに解くもの」に分け、後者には担当と期限を置きます。頼む範囲や支出を変える条件は、決まらないまま確定した扱いにしないようにします。</p>
+<p>比較表には、すべてを点数へ変換するよりも、必要な条件を満たすかと、自社が受け入れる違いを記す方法があります。担当範囲が合わない点を、実績の大きな数字で相殺しないためです。重みを付けて採点する場合は、何を重視するかを回答を見る前に社内で決め、合計点だけでなく元の条件も一緒に読めるようにします。</p>
+<p>選ぶ理由は短い文にまとめます。「素材を自社で出す条件に合い、制作と報告の担当が具体的。改善の実行は社内に残す。未回答の項目は開始前に担当者が確認する」という形です。候補を見送る理由も、「会社として劣る」ではなく、今回の条件との違いとして書きます。</p>
+<p>まだ決められない場合は、表で止まっている行を絞って再確認します。どの支援の形が必要か未定なのか、頼む作業が決まらないのか、文書の答えがそろっていないのかを分ければ、次の行動が決まります。比較表の役割は、無理に順位を付けることではなく、<strong>自社が納得して発注できる条件を明らかにすること</strong>です。</p>
+<h2 id="faq"><span class="no en">09</span>提案の比較表を作るときによくある質問</h2>
+<div class="faq">
+<details><summary>TikTok Shop支援の比較表で、提案書に記載がない仕事は対象外にしてよいですか？</summary><div class="a">未回答として確認します。資料にないだけで、条件を決めれば対応できる場合もあります。対象外という回答を受けてから、自社で持つか別に頼むかを判断します。</div></details>
+<details><summary>各社が違う作業範囲で提案してきたら、比較表をどう埋めますか？</summary><div class="a">自社が必要な共通範囲と、各社独自の追加案を分けます。素材の支給や実行担当も同じ条件で回答してもらい、追加案の良さは別の行に残します。</div></details>
+<details><summary>TikTok Shop支援会社との打ち合わせで聞いた説明も、比較表に使えますか？</summary><div class="a">使えますが、担当者が整理した内容を先方にも確認してもらいます。回答日と相手、関係する資料を残し、口頭の理解だけで確定した条件として扱わないようにします。</div></details>
+<details><summary>実績資料を公開できない支援会社の提案は、どう比較しますか？</summary><div class="a">店名などを伏せて説明できる作業範囲や課題、実施内容を聞きます。今回の体制や報告の見本も材料です。資料を出せないことだけで決めず、必要な条件を具体化できるかを見ます。</div></details>
+<details><summary>比較表の合計点が高い会社に、TikTok Shopの支援を頼めばよいですか？</summary><div class="a">合計点の前に、必須の条件を満たすかを見ます。大切な作業が対象外でも、別の高い評価で合計が上がる場合があります。点数と一緒に、元の条件と自社が担う作業を残します。</div></details>
+<details><summary>比較の途中で見積もりが変わったとき、古い提案も表に残しますか？</summary><div class="a">経緯として保存し、決定に使う列は最終版へそろえます。古い案の条件を一部だけ新しい案へ足さず、採用したい条件が最終資料にも含まれるかを確認します。</div></details>
+</div>
+<div class="ctabox"><div class="ct">提案の違いを、判断できる条件へ整理します</div><p>LEAMはTikTok Shopの運用支援を行っています。目的、社内に残す仕事、相談したい範囲を伺い、比較する際の論点を整理します。依頼範囲をそろえるところから、ご相談いただけます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=compare-agencies">支援の比較を相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+<h2 id="sources"><span class="no en">10</span>参考にした公式情報と表の前提</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年10月26日確認）</li></ul>
+<p class="src">公式の条件や機能は更新されるため、最新は日本向け公式ヘルプやセラーセンターで確認してください。比較表、質問、架空の案は、提案の条件を整理するためにLEAMが作成したものです。特定会社の採点やランキングは行っていません。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">外部支援</span><b><a href="https://leam.co.jp/column/consulting-vs-agency/">TikTok Shopのコンサルと運用代行の違い｜どちらに頼むべきか</a></b><span>必要な支援の形を整理</span></div><div class="relcard"><span class="rc">準備</span><b><a href="https://leam.co.jp/column/before-agency/">TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方</a></b><span>各社へ渡す条件をそろえる</span></div><div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組み</a></b><span>社内の前提をそろえる</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">比較表の上段に、自社が頼む条件を固定する</a></li><li><a href="#s2">比較表は、答え・根拠・確認事項が読める列にする</a></li><li><a href="#s3">提案書の表現は、作業と受け取るものへ言い換える</a></li><li><a href="#s4">記入例では、条件の差をそろえてから比べる</a></li><li><a href="#s5">空欄は、未回答・条件付き・対象外に分けて追う</a></li><li><a href="#s6">報告と実績の数字は、定義と条件を添えて読む</a></li><li><a href="#s7">あいまいな回答は、具体例を返して確認する</a></li><li><a href="#s8">決定前に最終版をそろえ、選ぶ理由と残る条件を書く</a></li><li><a href="#faq">提案の比較表を作るときによくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの支援相談</b><p>目的と社内の分担から、比較する条件を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=compare-agencies">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shop支援の比較表で、提案書に記載がない仕事は対象外にしてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "未回答として確認します。資料にないだけで、条件を決めれば対応できる場合もあります。対象外という回答を受けてから、自社で持つか別に頼むかを判断します。"}}, {"@type": "Question", "name": "各社が違う作業範囲で提案してきたら、比較表をどう埋めますか？", "acceptedAnswer": {"@type": "Answer", "text": "自社が必要な共通範囲と、各社独自の追加案を分けます。素材の支給や実行担当も同じ条件で回答してもらい、追加案の良さは別の行に残します。"}}, {"@type": "Question", "name": "TikTok Shop支援会社との打ち合わせで聞いた説明も、比較表に使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "使えますが、担当者が整理した内容を先方にも確認してもらいます。回答日と相手、関係する資料を残し、口頭の理解だけで確定した条件として扱わないようにします。"}}, {"@type": "Question", "name": "実績資料を公開できない支援会社の提案は、どう比較しますか？", "acceptedAnswer": {"@type": "Answer", "text": "店名などを伏せて説明できる作業範囲や課題、実施内容を聞きます。今回の体制や報告の見本も材料です。資料を出せないことだけで決めず、必要な条件を具体化できるかを見ます。"}}, {"@type": "Question", "name": "比較表の合計点が高い会社に、TikTok Shopの支援を頼めばよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "合計点の前に、必須の条件を満たすかを見ます。大切な作業が対象外でも、別の高い評価で合計が上がる場合があります。点数と一緒に、元の条件と自社が担う作業を残します。"}}, {"@type": "Question", "name": "比較の途中で見積もりが変わったとき、古い提案も表に残しますか？", "acceptedAnswer": {"@type": "Answer", "text": "経緯として保存し、決定に使う列は最終版へそろえます。古い案の条件を一部だけ新しい案へ足さず、採用したい条件が最終資料にも含まれるかを確認します。"}}]}</script>
+</body>
+</html>

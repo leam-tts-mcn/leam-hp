@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shop参入の社内稟議｜投資・回収・撤退基準</title>
+<meta name="description" content="TikTok Shop参入を提案する担当者向けに、稟議の目的・投資額・回収・体制・撤退条件を整理。架空の試算で必要注文数を示し、3か月の判定と社内稟議書のひな形を紹介します。">
+<link rel="canonical" href="https://leam.co.jp/column/internal-approval/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shop参入の社内稟議｜投資・回収・撤退基準">
+<meta property="og:description" content="TikTok Shop参入を提案する担当者向けに、稟議の目的・投資額・回収・体制・撤退条件を整理。架空の試算で必要注文数を示し、3か月の判定と社内稟議書のひな形を紹介します。">
+<meta property="og:url" content="https://leam.co.jp/column/internal-approval/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/internal-approval.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shop参入の社内稟議｜投資・回収・撤退基準">
+<meta name="twitter:description" content="TikTok Shop参入を提案する担当者向けに、稟議の目的・投資額・回収・体制・撤退条件を整理。架空の試算で必要注文数を示し、3か月の判定と社内稟議書のひな形を紹介します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/internal-approval.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shop参入の社内稟議｜投資・回収・撤退基準", "description": "TikTok Shop参入を提案する担当者向けに、稟議の目的・投資額・回収・体制・撤退条件を整理。架空の試算で必要注文数を示し、3か月の判定と社内稟議書のひな形を紹介します。", "inLanguage": "ja", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/internal-approval/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/internal-approval.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&lang=ja-JP", "name": "日本向け公式の説明"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&lang=ja-JP", "name": "公式：決済レポート"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shop参入の社内稟議｜投資・回収・撤退基準", "item": "https://leam.co.jp/column/internal-approval/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=internal-approval">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shop参入の社内稟議の書き方｜投資額・回収・撤退の基準</p>
+<span class="cat">参入判断・社内稟議</span>
+<h1>TikTok Shop参入の社内稟議の書き方｜投資額・回収・撤退の基準</h1>
+<div class="meta"><time class="upd" datetime="2026-10-26">更新日：2026年10月26日</time><time datetime="2026-10-26">公開日：2026年10月26日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+<figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左の費用を分けた稟議書と硬貨から、中央の承認の印を経て、右の継続と縮小と終了を選ぶ分岐へ進むイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="internalapprovalDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#internalapprovalDots" transform="translate(944 542)"/></g>
+<g stroke="#0B0C10" stroke-linejoin="round" stroke-linecap="round">
+<rect x="95" y="105" width="330" height="408" rx="18" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="95" y="105" width="330" height="408" rx="18" fill="#FFFFFF" stroke-width="7"/>
+<rect x="170" y="87" width="180" height="43" rx="12" fill="#FE2C55" stroke-width="6"/>
+<path d="M133 166h150M133 192h230" fill="none" stroke="#DFE0E2" stroke-width="10"/>
+<rect x="132" y="223" width="256" height="189" rx="5" fill="#FFFFFF" stroke-width="5"/>
+<path d="M132 263h256M132 300h256M132 337h256M132 374h256M205 223v189" fill="none" stroke-width="4"/>
+<path d="M135 226h67v34h-67zM135 266h67v31h-67zM135 303h67v31h-67zM135 340h67v31h-67zM135 377h67v32h-67z" fill="#25F4EE" stroke="none"/>
+<g fill="#C9CBD0" stroke="none"><rect x="223" y="238" width="123" height="9" rx="4"/><rect x="223" y="277" width="97" height="9" rx="4"/><rect x="223" y="314" width="136" height="9" rx="4"/><rect x="223" y="351" width="111" height="9" rx="4"/><rect x="223" y="388" width="148" height="9" rx="4"/></g>
+<circle cx="354" cy="457" r="27" fill="none" stroke="#FE2C55" stroke-width="6"/>
+<path d="M341 456l10 10 18-23" fill="none" stroke="#FE2C55" stroke-width="5"/>
+<ellipse cx="124" cy="515" rx="55" ry="18" fill="#DFE0E2" stroke-width="5"/>
+<path d="M69 490v25c0 25 110 25 110 0v-25" fill="#DFE0E2" stroke-width="5"/>
+<ellipse cx="124" cy="490" rx="55" ry="18" fill="#25F4EE" stroke-width="5"/>
+<path d="M82 503v19M102 507v19M124 509v19M146 507v19M166 501v19" stroke-width="4"/>
+<ellipse cx="176" cy="470" rx="48" ry="16" fill="#DFE0E2" stroke-width="5"/>
+<path d="M128 448v22c0 22 96 22 96 0v-22" fill="#C9CBD0" stroke-width="5"/>
+<ellipse cx="176" cy="448" rx="48" ry="16" fill="#FFFFFF" stroke-width="5"/>
+<path d="M476 302h44v-18l33 30-33 30v-18h-44z" fill="#25F4EE" stroke-width="5"/>
+<g transform="rotate(12 615 273)">
+<rect x="565" y="333" width="114" height="48" rx="10" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="601" y="238" width="42" height="100" rx="12" fill="#CE1730" stroke-width="6"/>
+<circle cx="622" cy="215" r="42" fill="#FE2C55" stroke-width="7"/>
+<path d="M602 205a24 24 0 0 1 22-14" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+<rect x="565" y="333" width="114" height="48" rx="10" fill="#FE2C55" stroke-width="7"/>
+<rect x="571" y="377" width="102" height="15" rx="5" fill="#CE1730" stroke-width="5"/>
+</g>
+<circle cx="631" cy="450" r="43" fill="none" stroke="#FE2C55" stroke-width="7"/>
+<path d="M608 448l18 17 29-38" fill="none" stroke="#FE2C55" stroke-width="7"/>
+<path d="M720 315h55M775 168v291M775 168h64M775 315h64M775 459h64" fill="none" stroke-width="6"/>
+<circle cx="775" cy="315" r="11" fill="#25F4EE" stroke-width="5"/>
+<rect x="843" y="106" width="268" height="115" rx="16" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="843" y="106" width="268" height="115" rx="16" fill="#25F4EE" stroke-width="7"/>
+<path d="M901 170l29 28 67-65" fill="none" stroke-width="8"/>
+<path d="M1032 143h44M1032 169h31M1032 195h44" fill="none" stroke-width="5"/>
+<rect x="843" y="258" width="268" height="114" rx="16" fill="#FFFFFF" stroke-width="7"/>
+<path d="M891 295h65M924 295v39M891 334h65M1009 295h62M1009 315h45M1009 335h62" fill="none" stroke="#5E6064" stroke-width="6"/>
+<rect x="843" y="405" width="268" height="114" rx="16" fill="#FFFFFF" stroke-width="7"/>
+<path d="M896 437l48 48M944 437l-48 48" fill="none" stroke="#FE2C55" stroke-width="8"/>
+<path d="M1009 442h62M1009 465h45M1009 488h62" fill="none" stroke="#DFE0E2" stroke-width="6"/>
+</g></svg><figcaption>負担する上限と、続ける条件を決めてから承認する（LEAM作成）</figcaption></figure>
+<p class="lead"><strong>TikTok Shop参入の稟議は、「何に、いくら使い、どの条件なら続けるか」を決裁してもらう文書です。</strong>市場の説明を長く書くより、目的・投資額・回収の見込み・体制・撤退の基準を同じ前提でつなぎます。最初の申請では、期間と予算を区切った検証案にすると、承認する範囲が明確になります。</p>
+<p>担当者が作りたいのは売上の約束ではなく、会社が投資判断をできる材料です。この記事では、社内で埋める表と架空の試算を使い、初期費用の回収まで説明できる稟議の形を示します。開設手続きや運用会社への依頼書は別にして、上司や役員が承認する内容に絞って整理します。</p>
+<div class="learn"><div class="lt">この記事で分かること</div><ul><li>参入稟議に必要な項目と、支出の上限の書き方</li><li>注文から残る金額で、運営費と初期投資を分けて説明する方法</li><li>開始から3か月の判定と、そのまま使える記入欄</li></ul></div>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">採算</span><b><a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">TikTok Shopは儲かる？利益が出る条件と出ない条件</a></b><span>稟議の計算を準備する</span></div><div class="relcard"><span class="rc">基礎</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopとは？売り方・始め方・仕組み</a></b><span>社内説明の前提をそろえる</span></div></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">稟議は、目的から撤退条件までをつながる形で書く</a></li><li><a href="#s2">投資額は、費目と支払時期を分けて上限を示す</a></li><li><a href="#s3">回収の見込みは、注文から残る額と必要件数で説明する</a></li><li><a href="#s4">前提を悪くした場合も並べ、追加投資を決める</a></li><li><a href="#s5">体制とリスクは、止める人と対応する人まで決める</a></li><li><a href="#s6">3か月の判定は、継続・縮小・終了の条件を先に置く</a></li><li><a href="#s7">稟議書のひな形は、承認する枠と別紙の根拠を分ける</a></li><li><a href="#s8">承認後の報告は、注文の動きとお金の動きを分ける</a></li><li><a href="#faq">稟議を作るときによくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>稟議は、目的から撤退条件までをつながる形で書く</h2>
+<p><strong>承認してほしい内容を冒頭の短い段落で伝えます。</strong>「TikTok Shopへの出店をお願いします」だけでは、開設の作業だけなのか、広告や運営の契約も含むのかが分かりません。対象商品、試す期間、使うお金の上限と、期間の終わりに何を決めるかまで書きます。</p>
+<p>目的は売上以外にも置けます。自社の商品が動画の説明で選ばれるか、商品を継続して紹介する人と組めるか、新しい販売経路として採算が合うか。ただし、学びを目的にする場合も、どんな記録が残れば判断できるかが必要です。「認知を広げる」だけで終えず、商品ページへ来た人の反応や、注文に結び付いた内容をどう残すかを書き添えます。</p>
+<div class="tw"><table><thead><tr><th>稟議の項目</th><th>決裁者が知りたいこと</th><th>担当者が用意する材料</th></tr></thead><tbody><tr><td>目的</td><td>既存の販売経路に加える理由は何か</td><td>対象商品、試したい売り方、得たい判断材料</td></tr><tr><td>投資額</td><td>いつ、どこまで支出を認めるか</td><td>初期と継続の費目、支払予定、追加承認の線</td></tr><tr><td>回収の見込み</td><td>どの前提なら費用を賄えるか</td><td>注文から残る金額、必要な注文数、前提が崩れる場合</td></tr><tr><td>体制</td><td>販売後の仕事を誰が担うか</td><td>社内の責任者、実行する人、確認する人、作業時間</td></tr><tr><td>撤退の基準</td><td>どの時点で追加投資を止めるか</td><td>判定日、費用の上限、継続・縮小・終了の分かれ目</td></tr></tbody></table></div>
+<p>この表の欄は別々に埋めるものではありません。少数の商品を試す目的なのに、多くの商品の撮影と在庫をまとめて申請していないか。社内の確認担当がいないのに、毎週新しい動画を出す計画になっていないか。<strong>目的と支出と体制が同じ規模になっているか</strong>を読み直します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="internalapprovalDecision" viewBox="0 0 720 300" role="img" aria-label="目的、支出、回収、体制、終了条件を承認する枠の中でつなぐ稟議の構成図"><rect x="18" y="18" width="684" height="264" rx="16" fill="#F6F7F9" stroke="#D8DADE"/><text x="360" y="54" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">今回、承認してもらう範囲</text><rect x="33" y="94" width="118" height="100" rx="10" fill="#FFFFFF" stroke="#D8DADE"/><text x="92" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">目的</text><text x="92" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">何を試すか</text><rect x="167" y="94" width="118" height="100" rx="10" fill="#FFFFFF" stroke="#D8DADE"/><text x="226" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">投資額</text><text x="226" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">負担の上限</text><rect x="301" y="94" width="118" height="100" rx="10" fill="#FFFFFF" stroke="#D8DADE"/><text x="360" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">回収</text><text x="360" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">成立する条件</text><rect x="435" y="94" width="118" height="100" rx="10" fill="#FFFFFF" stroke="#D8DADE"/><text x="494" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">体制</text><text x="494" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">誰が担うか</text><rect x="569" y="94" width="118" height="100" rx="10" fill="#25F4EE" stroke="#D8DADE"/><text x="628" y="132" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">終了条件</text><text x="628" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">次を決める日</text><text x="360" y="244" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">対象商品・期間・予算を、同じ前提でそろえる</text></svg><figcaption>図1：稟議の項目を、承認する枠の中でつなぐ（LEAM作成）</figcaption></figure>
+<p>検証の開始日も定義します。社内で承認された日、出店の申請日、商品を販売できる日では、実際に販売を試せる期間が変わります。稟議には準備期間と販売を試す期間を分け、販売開始が遅れた場合に判定日を誰が変更するかも書きます。日付を動かしても、予算が自動で増える扱いにはしません。</p>
+<h2 id="s2"><span class="no en">02</span>投資額は、費目と支払時期を分けて上限を示す</h2>
+<p><strong>「代行費一式」ではなく、支出の役割ごとに分けます。</strong>初期の制作や登録、毎月の運営、広告、サンプル、クリエイターへの報酬を並べます。クリエイターとは、動画や配信で商品を紹介する人です。紹介に応じて支払う報酬と、運営を頼む会社への費用は、見積もりで重なっていないかを照合します。</p>
+<div class="tw"><table><thead><tr><th>費目</th><th>稟議に入れる中身</th><th>上限を決めるときの問い</th></tr></thead><tbody><tr><td>初期の準備</td><td>開設の準備、商品情報の整備、画像や動画の制作</td><td>一度の納品で終わる作業は何か。修正はどこまでか</td></tr><tr><td>毎月の運営</td><td>運営の委託、定期制作、報告など</td><td>固定部分と追加作業を分けられるか</td></tr><tr><td>広告</td><td>配信に使う予算と、管理を頼む費用</td><td>配信費を増やす承認は誰が出すか</td></tr><tr><td>サンプル</td><td>提供する商品の原価、梱包、発送</td><td>何個まで出すか。送った記録は誰が持つか</td></tr><tr><td>クリエイター報酬</td><td>投稿や配信への固定報酬、注文に応じた報酬</td><td>何に対して支払うか。注文ごとの費用に入れるか</td></tr><tr><td>在庫・発送・対応</td><td>仕入れ、保管、出荷、購入者への対応</td><td>売れる前に支払う金額と、注文後にかかる金額は何か</td></tr><tr><td>社内の作業</td><td>商品確認、素材の準備、承認、在庫の連絡、経理</td><td>誰がどの時間を使うか。既存業務に何が増えるか</td></tr></tbody></table></div>
+<p>上限には、使う前に承認が要る金額も添えます。枠の中なら担当者が動かしてよい費目と、枠内でも決裁者へ相談する費目を分けると、運用中の迷いを減らせます。商品価格や報酬条件の変更は、広告予算を変える判断とまとめず、それぞれの承認者を置きます。</p>
+<p>サンプルは販売用の価格で計上せず、自社が負担する原価と送料などで見積もります。在庫をサンプルへ回した場合は、販売できる数量も減らします。同じ商品を、販売在庫とサンプル費の両方で余分に数えないように、物流担当に使い方を伝えます。</p>
+<p>支払予定は月ごとに別紙で並べます。広告や制作への支払いが先に出て、注文のお金が後から入るなら、損益の試算だけでは不足します。まだ売れていない在庫の仕入れも含め、<strong>最も多くお金を立て替える時期に、会社が用意する額</strong>を経理担当と整理します。予備費を置く場合は、使える用途と承認者を明記します。</p>
+<div class="box box-point"><div class="bt">支出の表と、費用を引く表をそろえる</div><p>広告費を月の運営費に入れたなら、注文ごとの費用でも同じ広告費を引かないようにします。売れた商品の原価を注文ごとに引いても、在庫代の支払いが先に必要になる点は、別の資金計画に残します。</p></div>
+<h2 id="s3"><span class="no en">03</span>回収の見込みは、注文から残る額と必要件数で説明する</h2>
+<p><strong>売上目標の横に、費用を支える注文数を置きます。</strong>まず、値引き後の商品売上から、売れた商品の原価、会社負担の発送・梱包、販売手数料、注文に応じた紹介報酬などを引きます。残った金額は、ここでは月の運営費を払う前の残りです。会社全体の最終利益とは分けて読みます。</p>
+<p class="src">以下は計算方法を示す架空の例です。金額はすべて税抜きにそろえた仮定で、TikTok Shopの実際の料率、LEAMの料金、相場、販売予測を表すものではありません。税や会計上の扱いは社内の経理基準に合わせます。</p>
+<div class="tw"><table><thead><tr><th>仮の注文条件</th><th>1件あたりの金額</th><th>この例での置き方</th></tr></thead><tbody><tr><td>値引き後の商品売上</td><td>5,000円</td><td>1注文で1個購入、購入者が払う送料はなし</td></tr><tr><td>商品の原価</td><td>2,000円</td><td>売れた分の商品の原価</td></tr><tr><td>発送と梱包</td><td>500円</td><td>会社が負担する額</td></tr><tr><td>販売手数料・注文に応じた報酬等</td><td>1,000円</td><td>仮の費用合計。特定の公式料率から計算していない</td></tr><tr><td>月の運営費を払う前の残り</td><td>1,500円</td><td>5,000円から上の費用合計3,500円を引いた額</td></tr></tbody></table></div>
+<p>返品などで残りが減る場合は、その負担も反映します。仮定の段階で一定の負担を見込むなら、何を含めた額かを書き、販売後は実際の返金や費用の記録で直します。返品の費用を別に引きながら、返金後の売上から同じ金額を再度引くような重複にも気を付けます。</p>
+<h3>月の運営費を賄う件数と、初期投資を戻す件数を分ける</h3>
+<p>この例で、広告・固定報酬・運営の委託など、注文に直接ひも付けず月に使う費用を30万円と仮定します。1件から1,500円残るなら、<strong>月200件でその月の30万円を賄う</strong>計算です。この200件に、初期準備の費用は入っていません。</p>
+<p>さらに初期準備に30万円を使い、販売開始後の3か月でその分も回収したいなら、各月に10万円ずつ残す必要があります。月の30万円と回収分10万円を合わせた40万円を賄うには、<strong>同じ条件で月267件</strong>が必要です。端数の注文は受けられないため、割った結果を切り上げています。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="internalapprovalRecovery" viewBox="0 0 720 330" role="img" aria-label="架空の試算で、月の運営費を賄う200件と、初期費用も3か月で回収する267件を区別する図"><text x="360" y="33" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">架空の試算：1件の残りは1,500円</text><rect x="24" y="67" width="320" height="175" rx="13" fill="#EFF1F4"/><text x="184" y="104" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">月の運営費だけ</text><text x="184" y="148" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">30万円を賄う</text><text x="184" y="205" text-anchor="middle" font-size="28" font-weight="700" fill="#0B0C10">月200件</text><rect x="376" y="67" width="320" height="175" rx="13" fill="#25F4EE"/><text x="536" y="104" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">初期費用の回収も含む</text><text x="536" y="148" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">30万円と回収分10万円</text><text x="536" y="205" text-anchor="middle" font-size="28" font-weight="700" fill="#0B0C10">月267件</text><text x="360" y="281" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">初期30万円は、3か月に分けて回収する仮定</text><text x="360" y="310" text-anchor="middle" font-size="16" font-weight="700" fill="#0B0C10">必要件数の計算と、販売できる見通しは別に説明</text></svg><figcaption>図2：運営費の負担と初期費用の回収を分ける（LEAM作成）</figcaption></figure>
+<p>月267件なら、1,500円ずつの残りは40万500円です。月の運営費30万円を引くと10万500円になり、同じ条件を3か月続けた合計は30万1,500円です。初期準備の30万円を上回ります。ただし、この計算だけで月267件売れる根拠ができるわけではありません。稟議では、<strong>必要な件数と、その件数を目指すために行う検証</strong>を別の欄にします。</p>
+<p>初期費用の回収より、まず販売経路の適性を調べる承認を求めるなら、3か月での回収を条件にする必要はありません。その場合は、検証のために会社が負担する上限と、得たい判断材料を明示します。「回収する計画」と「負担を認めて調べる計画」を曖昧に混ぜないことが、稟議の要点です。</p>
+<p>実際の販売手数料は、自社の商品と適用条件を公式情報で確認して置き換えます。手数料の確認先は<a href="https://leam.co.jp/column/tiktok-shop-fees/">カテゴリー別の販売手数料の記事</a>にあります。計算の土台を詳しく見たい場合は、<a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">利益が出る条件と出ない条件</a>も参照してください。</p>
+<h2 id="s4"><span class="no en">04</span>前提を悪くした場合も並べ、追加投資を決める</h2>
+<p><strong>稟議の数字は、一番よく売れる場合だけで作らないようにします。</strong>売れる数量と、1件から残る金額の両方が計画を左右します。値引きが増える、発送の負担が重くなる、固定報酬が追加になるなど、変わる前提を別々に置きます。</p>
+<div class="tw"><table><thead><tr><th>架空の比較条件</th><th>1件の残り</th><th>月の運営費30万円を賄う件数</th><th>初期30万円も3か月で回収する件数</th></tr></thead><tbody><tr><td>前節の条件</td><td>1,500円</td><td>月200件</td><td>月267件</td></tr><tr><td>残りだけが500円減る場合</td><td>1,000円</td><td>月300件</td><td>月400件</td></tr></tbody></table></div>
+<p>この比較は、残り以外の条件を同じにしたものです。運営費や初期準備も増えるなら、その変更を加えて計算し直します。必要件数が増えたときに、在庫・出荷・購入者への対応も増やせるかを点検します。注文を増やすためにさらに費用が要るなら、元の予算のまま達成できる計画にはなりません。</p>
+<p>月の運営費30万円を払う条件で、実際には月100件、1件の残り1,500円なら、運営費を払う前の残りは15万円です。月の不足は15万円になります。その状態を変えずに3か月続け、初期準備30万円も含めると、簡易試算で75万円の負担です。この額と、在庫の支払いなどを含む資金の立て替え額は分けて書きます。</p>
+<p>既存の通販から注文が移ってきた場合にも注意します。TikTok Shopで残った額を、そのまま会社全体の増益とするのは早計です。既存の販売経路で減った注文と、その経路なら残っていた金額も比べます。区別できない場合は「会社全体で新しく増えた利益」とせず、今回の販売経路だけの収支として報告します。</p>
+<div class="box box-warn"><div class="bt">前提が変わったら、件数の目標も見直す</div><p>稟議で承認された条件と、実際の値引き・送料・報酬が違うと、同じ件数でも残る金額が変わります。売上目標を据え置いて支出だけ増やす場合は、回収の説明を更新してから追加承認を求めます。</p></div>
+<h2 id="s5"><span class="no en">05</span>体制とリスクは、止める人と対応する人まで決める</h2>
+<p><strong>「運営を外注する」で社内の担当欄を空けないようにします。</strong>商品情報を出す人、表現を承認する人、発送を担う人、予算を決める人は社内にも必要です。担当者の空き時間ではなく、どの仕事を担当し、既存業務の何を調整するかを部門の責任者と決めます。</p>
+<p>アカウントが使えない、在庫が偏る、発信内容への批判が広がるといった場合には、販売を増やす仕事と別の対応が要ります。以下は社内の備えを整理する案です。規約の違反判定や復旧の手順は、<a href="https://leam.co.jp/column/account-suspension/">アカウント停止と違反の解説</a>から公式情報へ進みます。</p>
+<div class="tw"><table><thead><tr><th>想定する事態</th><th>稟議に添える備え</th><th>判断と実行の担当</th></tr></thead><tbody><tr><td>アカウントの制限・停止</td><td>新しい販促の保留、通知の保存、受注済み案件の状況整理、契約費用の確認</td><td>販売の責任者が判断し、運営担当が公式通知と注文状況を確認</td></tr><tr><td>在庫不足・在庫の偏り</td><td>販売可能数、追加発注の上限、他の販売経路と分ける数量</td><td>商品・物流の担当が数量を更新し、追加仕入れは決裁者へ</td></tr><tr><td>表現や対応への批判</td><td>発信内容と経緯の保存、事実確認、訂正と購入者への対応の窓口</td><td>発信を止める権限を持つ人と、社外へ答える人を指定</td></tr><tr><td>確認待ちで制作が止まる</td><td>確認の期限、代わりの確認者、間に合わない場合の公開保留</td><td>担当部門が承認し、依頼先が判断待ちの一覧を報告</td></tr><tr><td>予算を超える支出</td><td>費目別の使用額、これから払う契約分、追加承認の方法</td><td>経理が集計し、決裁者が追加か縮小かを決める</td></tr></tbody></table></div>
+<p>想定ごとに、どの作業をすぐ止め、何を続けるかを分けます。新しい広告を止める判断と、届いた注文や問い合わせへの対応をやめる判断は同じではありません。契約上残る支払い、既に依頼した制作、発送前の注文、返品対応を一覧にして、終了を決めた後の担当も残します。</p>
+<p>外注先への連絡窓口が休んだときの代わりも必要です。最終判断をする役員がすべての原稿を読む体制にするのではなく、通常の承認と例外の相談を分けます。必要な時間が確保できない場合は、扱う商品や制作の量を減らした案を用意します。負担の少ない案と比べることで、追加の人員が必要かを決裁者が判断できます。</p>
+<h2 id="s6"><span class="no en">06</span>3か月の判定は、継続・縮小・終了の条件を先に置く</h2>
+<p><strong>開始から3か月をひと区切りにするなら、最後の日まで判断を先送りしないようにします。</strong>ここでの3か月は社内検証の置き方で、公式の成果期限ではありません。売れるために必要な期間を一律に決めるものでもなく、自社が認めた予算と日付で次の投資を判断する枠です。</p>
+<p>最初の月には準備の遅れと費用、次の月には注文と残り、最後の月には累計の負担と次に必要なお金を見ます。毎月、承認時の前提と実績を同じ行で比較します。未達という結果だけでなく、商品・内容・販売数量のどこを直すのか、直した結果をいつ見られるのかまで担当者が説明します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="internalapprovalReview" viewBox="0 0 720 330" role="img" aria-label="3か月の確認を経て継続、縮小、追加投資の終了を選び、延長は再承認へ戻す図"><rect x="20" y="31" width="165" height="95" rx="12" fill="#EFF1F4"/><text x="102" y="67" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">1か月目</text><text x="102" y="102" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">準備・費用</text><path d="M189 78h15m-5-5 5 5-5 5" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="210" y="31" width="165" height="95" rx="12" fill="#EFF1F4"/><text x="292" y="67" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">2か月目</text><text x="292" y="102" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">注文・残り</text><path d="M379 78h15m-5-5 5 5-5 5" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="400" y="31" width="165" height="95" rx="12" fill="#EFF1F4"/><text x="482" y="67" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">3か月目</text><text x="482" y="102" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">累計・次の予算</text><path d="M565 78h42v139H86M86 217v20M325 217v20M565 217v20" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="19" y="239" width="205" height="47" rx="10" fill="#25F4EE"/><text x="121" y="269" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">継続</text><rect x="258" y="239" width="205" height="47" rx="10" fill="#EFF1F4"/><text x="360" y="269" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">対象を絞る</text><rect x="497" y="239" width="205" height="47" rx="10" fill="#FFECF0"/><text x="599" y="269" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">追加投資を終了</text><text x="301" y="168" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">条件・予算・体制を同じ行で比較</text><text x="360" y="315" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">延長するときは、問い・追加額・終了日を再承認</text></svg><figcaption>図3：日付と判断の条件を、開始前に決める（LEAM作成）</figcaption></figure>
+<div class="tw"><table><thead><tr><th>判定の時点の例</th><th>稟議に置く確認項目</th><th>次の判断</th></tr></thead><tbody><tr><td>1か月目</td><td>販売できた日数、準備の完了、使用額、社内の作業時間</td><td>販売の検証を進められるか。遅れを直す期限はいつか</td></tr><tr><td>2か月目</td><td>注文数、返品等を反映した残り、商品別の差、費用の進み</td><td>商品や費用の配分を変えるか。上限内で試せるか</td></tr><tr><td>3か月目の決裁日</td><td>累計の収支、初期費用の未回収額、今後の支払予定、対応の負担</td><td>継続・対象を絞って継続・追加投資を終了のどれにするか</td></tr></tbody></table></div>
+<p>継続は、会社が定めた採算と負担の条件を満たし、次の期間の予算も説明できる場合です。縮小は、残る商品や売り方はあるが、すべてを続ける予算や体制には合わない場合です。追加投資の終了は、負担上限に達した場合や、直す方法と必要な費用を説明できない場合など、自社の条件で決めます。</p>
+<p>停止条件は金額以外にも置きます。商品説明を確認する人がいない、在庫の数を共有できない、購入者への対応が追い付かない状態では、売上があっても拡大の前提が崩れます。いったん販促を止め、体制を直してから再開を判断する形も、承認案に含められます。</p>
+<p>延長する場合は、検証する問い、追加額、終了日を改めて決裁します。初期費用を既に払ったことだけを、続ける理由にしないようにします。今後使う額に対して何を確かめられるかを判断します。契約の更新期限や解約の連絡期限が先に来る場合は、その前に判定を置きます。実行の週ごとの段取りは<a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">立ち上げのロードマップ</a>で整理できます。</p>
+<h2 id="s7"><span class="no en">07</span>稟議書のひな形は、承認する枠と別紙の根拠を分ける</h2>
+<p><strong>本文には決裁してほしいことを置き、細かい根拠は別紙へまとめます。</strong>次の表の金額欄は自社の値に置き換えます。空欄を楽観的な数字で埋めず、見積もり待ちなら、何を取り寄せれば決められるかと担当者を記します。</p>
+<div class="tw"><table><thead><tr><th>申請欄</th><th>記入する内容</th><th>添える根拠</th></tr></thead><tbody><tr><td>件名・決裁依頼</td><td>TikTok Shopで対象商品を検証するための期間と支出上限の承認</td><td>試す商品と、今回承認に含める作業</td></tr><tr><td>目的</td><td>既存経路に加える理由、検証の終わりに判断したいこと</td><td>商品を選んだ理由、社内で把握している購入者の質問</td></tr><tr><td>期間</td><td>準備開始、販売の検証開始、途中の判定、最終決裁の日</td><td>準備の工程、契約の更新・連絡期限</td></tr><tr><td>申請する金額</td><td>初期・毎月・注文連動の区分、累計の上限、追加承認の条件</td><td>見積書、内訳、月別の支払予定</td></tr><tr><td>回収と検証の条件</td><td>注文から残る額、運営費を賄う件数、初期費用回収の件数</td><td>前提一覧、条件が悪くなった場合の試算</td></tr><tr><td>社内外の体制</td><td>実行する人、承認する人、購入者への対応、必要な時間</td><td>部門ごとの合意、外注先の作業範囲</td></tr><tr><td>リスクへの備え</td><td>制限・停止、在庫、発信内容への批判、予算超過への対応</td><td>保留する作業、連絡先、判断する人</td></tr><tr><td>終了と引き継ぎ</td><td>継続・縮小・終了の条件と、終了後も残る対応</td><td>未回収額、残在庫、受注済み案件、契約上の支払い</td></tr></tbody></table></div>
+<p>別紙には、仮定の値と確認済みの値が分かるように記します。見積書の金額なら有効期限、商品の原価なら社内の確認日、公式の条件なら出典と確認日を添えます。数値を差し替えたときは、残りと必要注文数にも同じ変更を反映し、本文に古い結果が残っていないかを点検します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="internalapprovalProposal" viewBox="0 0 720 300" role="img" aria-label="稟議の本文に決裁事項、別紙に試算と支払予定と役割を置き、承認後の報告へ引き継ぐ図"><rect x="24" y="25" width="253" height="238" rx="13" fill="#0B0C10"/><text x="150" y="65" text-anchor="middle" font-size="22" font-weight="700" fill="#FFFFFF">稟議の本文</text><text x="150" y="113" text-anchor="middle" font-size="18" font-weight="500" fill="#FFFFFF">何を承認するか</text><text x="150" y="155" text-anchor="middle" font-size="18" font-weight="500" fill="#FFFFFF">期間と負担上限</text><text x="150" y="197" text-anchor="middle" font-size="18" font-weight="500" fill="#FFFFFF">判定日と終了条件</text><rect x="343" y="25" width="351" height="65" rx="10" fill="#25F4EE"/><text x="518" y="51" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">別紙：試算</text><text x="518" y="76" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">前提・残り・必要件数</text><rect x="343" y="107" width="351" height="65" rx="10" fill="#EFF1F4"/><text x="518" y="133" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">別紙：支払予定</text><text x="518" y="158" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">在庫代・費用・入金</text><rect x="343" y="189" width="351" height="65" rx="10" fill="#EFF1F4"/><text x="518" y="215" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">別紙：担当表</text><text x="518" y="240" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">実行・承認・対応</text><path d="M287 145h44m-9-9 9 9-9 9" fill="none" stroke="#FE2C55" stroke-width="3"/><text x="360" y="286" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">同じ項目を、承認後の報告にも使う</text></svg><figcaption>図4：決裁する本文と、前提を確かめる別紙を分ける（LEAM作成）</figcaption></figure>
+<p>説明の順番は、何を承認してほしいか、会社が負う上限はいくらか、その枠で何を検証するか、判断日はいつかとします。市場が伸びているという一般論だけでは、自社がこの支出を認める理由は埋まりません。新しい販売経路の仕組みを補足するなら、<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopの基礎</a>を別紙の参考情報にします。</p>
+<h2 id="s8"><span class="no en">08</span>承認後の報告は、注文の動きとお金の動きを分ける</h2>
+<p><strong>稟議で置いた数字を、そのまま月次の報告欄に引き継ぎます。</strong>毎回違う数字で成果を説明すると、承認時の条件との比較ができません。販売した期間、注文の集計、返金、費用、資金の出入りを、同じ期間で読めるように整理します。まだ決済されていない注文は、入金済みの額に混ぜません。</p>
+<p>公式ヘルプ「データ分析の概要」は、分析に表示するGMVには返品・返金・キャンセルが含まれ、収入と同じではないと説明しています。GMVは販売の規模を見るための金額です。<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">日本向け公式の説明</a>を踏まえ、稟議の回収実績にはGMVだけを使わず、費用や返金を照合します。</p>
+<p>公式の決済レポートは、注文が作成された時点ではなく、決済を基準にした資料です。決済の条件を満たした注文を対象とし、入出金の内訳を示します（<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">公式：決済レポート</a>）。その金額に、自社の原価や外部への支払いも合わせて照合することで、費用を賄えているかを読みます。</p>
+<p>注文が入った月と決済される月が違えば、期間をそろえても金額はそのまま一致しません。報告には、どの注文を対象にしたか、未決済分が残っているかを添えます。資金の報告は実際の支払予定と入金を見て、運営の採算を見る報告と分けます。報告の締め後に返金が出た場合も、次の報告で修正した箇所が分かるようにします。</p>
+<p>決裁者へ出すときは、実績だけでなく次の判断を添えます。「広告の増額を申請する」「対象商品を絞って予算を据え置く」「新しい支出を止めて受注済みの対応に移る」など、何を決めてほしいかを明確にします。最初に承認した前提との差を示せば、追加の稟議にもつながります。</p>
+<h2 id="faq"><span class="no en">09</span>稟議を作るときによくある質問</h2>
+<div class="faq">
+<details><summary>TikTok Shop参入の稟議で、売上予測をまだ出せないときはどう書きますか？</summary><div class="a">必要な注文数と、実際に売れる見通しを分けます。予算と商品の原価から必要件数を計算し、達成の見通しが立たない部分は検証する問いにします。検証の期間と負担上限を承認してもらう案にできます。</div></details>
+<details><summary>TikTok Shopの稟議に、社内担当者の作業時間も載せますか？</summary><div class="a">載せます。外部への支払額とは分け、商品確認、原稿の承認、在庫連絡、経理など、誰が何に時間を使うかを記します。社内の管理基準で費用にも換算する場合は、試算に含めたかを明示します。</div></details>
+<details><summary>月の運営費を賄えたら、参入費用を回収したと書いてよいですか？</summary><div class="a">初期費用が残っているなら、分けて書きます。月の運営費を賄う状態と、初期準備への支出まで回収した状態は異なります。初期費用の未回収額を別の欄に残すと、次の承認で説明できます。</div></details>
+<details><summary>3か月の試行を延ばす稟議では、何を追加しますか？</summary><div class="a">前回までの実績と、解けていない問い、追加額、終了日を記します。延長して何を変えるかと、その結果を判断する材料も添えます。前に費用を払ったことだけを理由に延長する形は避けます。</div></details>
+<details><summary>TikTok Shopの広告費は、稟議の月額費用と注文ごとの費用のどちらへ入れますか？</summary><div class="a">試算の集計方法に合わせます。月の予算として費用に入れるか、注文へ配分して残りを計算するかを決め、同じ支出を両方で引かないようにします。配分した場合も、支払予定の表には総額を残します。</div></details>
+<details><summary>撤退を決める稟議には、残った在庫だけを書けば足りますか？</summary><div class="a">在庫のほかに、受注済みの対応、返品や問い合わせ、契約上の支払い、制作物の受領と管理を記します。新しい販促を止めた後も、誰がどこまで対応するかを決めてから終了の手順へ移ります。</div></details>
+</div>
+<div class="ctabox"><div class="ct">参入の判断材料を、社内で説明できる形に整理します</div><p>LEAMはTikTok Shopの運用支援を行っています。商品、予算、社内の体制と、検証したいことを伺い、参入判断に向けた論点を整理します。稟議のどの欄から埋めるか迷う段階でも、ご相談いただけます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=internal-approval">参入判断を相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+<h2 id="sources"><span class="no en">10</span>参考にした公式情報と試算の前提</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年10月26日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861256465&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：決済レポート</a>（2026年10月26日確認）</li></ul>
+<p class="src">公式の条件は更新されるため、最新は日本向け公式ヘルプやセラーセンターで確認してください。稟議の項目、3か月の判定と試算はLEAMが作成した説明用の案で、公式の推奨予算や期限とは区別しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">立ち上げ</span><b><a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">TikTok Shop立ち上げ90日ロードマップ</a></b><span>承認後の実行を組み立てる</span></div><div class="relcard"><span class="rc">費用</span><b><a href="https://leam.co.jp/column/tiktok-shop-fees/">TikTok Shopの手数料はいくら？カテゴリー別の料率</a></b><span>自社の試算の条件を確認</span></div><div class="relcard"><span class="rc">リスク</span><b><a href="https://leam.co.jp/column/account-suspension/">TikTok Shopのアカウント停止・違反ポイント完全ガイド</a></b><span>リスクへの備えを調べる</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">稟議は、目的から撤退条件までをつながる形で書く</a></li><li><a href="#s2">投資額は、費目と支払時期を分けて上限を示す</a></li><li><a href="#s3">回収の見込みは、注文から残る額と必要件数で説明する</a></li><li><a href="#s4">前提を悪くした場合も並べ、追加投資を決める</a></li><li><a href="#s5">体制とリスクは、止める人と対応する人まで決める</a></li><li><a href="#s6">3か月の判定は、継続・縮小・終了の条件を先に置く</a></li><li><a href="#s7">稟議書のひな形は、承認する枠と別紙の根拠を分ける</a></li><li><a href="#s8">承認後の報告は、注文の動きとお金の動きを分ける</a></li><li><a href="#faq">稟議を作るときによくある質問</a></li></ol></nav><div class="railcta"><b>TikTok Shopの参入相談</b><p>商品・予算・体制から、参入判断の材料を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=internal-approval">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shop参入の稟議で、売上予測をまだ出せないときはどう書きますか？", "acceptedAnswer": {"@type": "Answer", "text": "必要な注文数と、実際に売れる見通しを分けます。予算と商品の原価から必要件数を計算し、達成の見通しが立たない部分は検証する問いにします。検証の期間と負担上限を承認してもらう案にできます。"}}, {"@type": "Question", "name": "TikTok Shopの稟議に、社内担当者の作業時間も載せますか？", "acceptedAnswer": {"@type": "Answer", "text": "載せます。外部への支払額とは分け、商品確認、原稿の承認、在庫連絡、経理など、誰が何に時間を使うかを記します。社内の管理基準で費用にも換算する場合は、試算に含めたかを明示します。"}}, {"@type": "Question", "name": "月の運営費を賄えたら、参入費用を回収したと書いてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "初期費用が残っているなら、分けて書きます。月の運営費を賄う状態と、初期準備への支出まで回収した状態は異なります。初期費用の未回収額を別の欄に残すと、次の承認で説明できます。"}}, {"@type": "Question", "name": "3か月の試行を延ばす稟議では、何を追加しますか？", "acceptedAnswer": {"@type": "Answer", "text": "前回までの実績と、解けていない問い、追加額、終了日を記します。延長して何を変えるかと、その結果を判断する材料も添えます。前に費用を払ったことだけを理由に延長する形は避けます。"}}, {"@type": "Question", "name": "TikTok Shopの広告費は、稟議の月額費用と注文ごとの費用のどちらへ入れますか？", "acceptedAnswer": {"@type": "Answer", "text": "試算の集計方法に合わせます。月の予算として費用に入れるか、注文へ配分して残りを計算するかを決め、同じ支出を両方で引かないようにします。配分した場合も、支払予定の表には総額を残します。"}}, {"@type": "Question", "name": "撤退を決める稟議には、残った在庫だけを書けば足りますか？", "acceptedAnswer": {"@type": "Answer", "text": "在庫のほかに、受注済みの対応、返品や問い合わせ、契約上の支払い、制作物の受領と管理を記します。新しい販促を止めた後も、誰がどこまで対応するかを決めてから終了の手順へ移ります。"}}]}</script>
+</body>
+</html>

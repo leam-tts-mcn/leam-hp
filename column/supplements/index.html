@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>健康食品のTikTok Shop｜表現と動画企画の準備</title>
+<meta name="description" content="健康食品・サプリのTikTok Shop参入を考える担当者へ。出品可否、成分・効果の表現、体験談の扱いを公的資料で整理。購入前の疑問に答える動画企画と、紹介者へ渡す資料を解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/supplements/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="健康食品のTikTok Shop｜表現と動画企画の準備">
+<meta property="og:description" content="健康食品・サプリのTikTok Shop参入を考える担当者へ。出品可否、成分・効果の表現、体験談の扱いを公的資料で整理。購入前の疑問に答える動画企画と、紹介者へ渡す資料を解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/supplements/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/supplements.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="健康食品のTikTok Shop｜表現と動画企画の準備">
+<meta name="twitter:description" content="健康食品・サプリのTikTok Shop参入を考える担当者へ。出品可否、成分・効果の表現、体験談の扱いを公的資料で整理。購入前の疑問に答える動画企画と、紹介者へ渡す資料を解説します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/supplements.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "健康食品のTikTok Shop｜表現と動画企画の準備", "description": "健康食品・サプリのTikTok Shop参入を考える担当者へ。出品可否、成分・効果の表現、体験談の扱いを公的資料で整理。購入前の疑問に答える動画企画と、紹介者へ渡す資料を解説します。", "inLanguage": "ja", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/supplements/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/supplements.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00ta6938&dataType=1&pageNo=1", "name": "厚生労働省：無承認無許可医薬品の指導取締りについて・医薬品の範囲に関する基準"}, {"@type": "WebPage", "url": "https://www.caa.go.jp/policies/policy/representation/extravagant_advertisement/assets/representation_cms213_240722_01.pdf", "name": "消費者庁：健康増進法第65条第1項の適用に関するQ&amp;A"}, {"@type": "WebPage", "url": "https://www.caa.go.jp/policies/policy/representation/extravagant_advertisement/assets/representation_cms213_230131_01.pdf", "name": "消費者庁：健康食品に関する景品表示法及び健康増進法上の留意事項について"}, {"@type": "WebPage", "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing", "name": "消費者庁：ステルスマーケティングに関するQ&amp;A"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2721296229418769&lang=ja-JP", "name": "TikTok Shop公式：禁止・対象外商品の案内"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "健康食品のTikTok Shop｜表現と動画企画の準備", "item": "https://leam.co.jp/column/supplements/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=supplements">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 健康食品・サプリのTikTok Shop｜書けない表現と売れる型</p>
+<span class="cat">業種別・健康食品</span>
+<h1>健康食品・サプリのTikTok Shop｜書けない表現と売れる型</h1>
+<div class="meta"><time class="upd" datetime="2026-10-26">更新日：2026年10月26日</time><time datetime="2026-10-26">公開日：2026年10月26日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+<figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左にサプリメントの容器と粒、中央に個包装と粉末を準備するグラス、右に虫眼鏡で表示資料を確かめる手を描き、実物の説明と表現の確認を示すイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="supplementsDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#supplementsDots" transform="translate(944 542)"/></g>
+<g stroke="#0B0C10" stroke-linejoin="round" stroke-linecap="round">
+<rect x="74" y="230" width="206" height="271" rx="34" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="74" y="230" width="206" height="271" rx="34" fill="#FFFFFF" stroke-width="7"/>
+<rect x="89" y="184" width="176" height="64" rx="14" fill="#25F4EE" stroke-width="7"/>
+<path d="M113 200v31M140 200v31M167 200v31M194 200v31M221 200v31M245 200v31" fill="none" stroke-width="4"/>
+<rect x="95" y="296" width="164" height="130" rx="12" fill="#EFF1F4" stroke-width="4"/>
+<circle cx="177" cy="333" r="19" fill="#25F4EE" stroke="none"/>
+<path d="M119 376h116M119 400h89" stroke="#C9CBD0" fill="none" stroke-width="7"/>
+<path d="M109 462h139" stroke="#DFE0E2" fill="none" stroke-width="7"/>
+<rect x="294" y="445" width="75" height="27" rx="13" fill="#FE2C55" stroke-width="5" transform="rotate(-24 331 458)"/>
+<path d="M331 446v25" stroke-width="4" transform="rotate(-24 331 458)"/>
+<ellipse cx="313" cy="499" rx="27" ry="14" fill="#FFFFFF" stroke-width="5"/>
+<path d="M299 499h28" stroke="#C9CBD0" fill="none" stroke-width="4"/>
+<rect x="399" y="165" width="110" height="269" rx="9" fill="#FFFFFF" stroke-width="6" transform="rotate(-8 454 300)"/>
+<path d="M414 187h80M414 410h80" fill="none" stroke-width="4" transform="rotate(-8 454 300)"/>
+<rect x="424" y="237" width="61" height="94" rx="10" fill="#25F4EE" stroke="none" transform="rotate(-8 454 300)"/>
+<path d="M432 355h45M432 376h34" fill="none" stroke="#C9CBD0" stroke-width="5" transform="rotate(-8 454 300)"/>
+<path d="M541 328h128l-17 160q-47 21-94 0z" fill="#FFFFFF" stroke-width="7"/>
+<path d="M553 403q52 16 104 0l-9 70q-42 17-84 0z" fill="#25F4EE" stroke="none"/>
+<path d="M564 427h78M574 451h56" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+<path d="M589 338l37-102" fill="none" stroke-width="6"/>
+<ellipse cx="631" cy="224" rx="34" ry="14" fill="#DFE0E2" stroke-width="5" transform="rotate(-17 631 224)"/>
+<circle cx="617" cy="254" r="4" fill="#C9CBD0" stroke="none"/><circle cx="610" cy="273" r="4" fill="#C9CBD0" stroke="none"/>
+<rect x="760" y="140" width="254" height="356" rx="14" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="760" y="140" width="254" height="356" rx="14" fill="#FFFFFF" stroke-width="7"/>
+<rect x="821" y="120" width="132" height="41" rx="12" fill="#FE2C55" stroke-width="6"/>
+<rect x="786" y="194" width="202" height="54" rx="10" fill="#EFF1F4" stroke="none"/>
+<path d="M802 214h162M802 231h113M791 285h178M791 322h178M791 359h178M791 396h178M791 433h113" fill="none" stroke="#C9CBD0" stroke-width="6"/>
+<circle cx="1005" cy="329" r="74" fill="#FFFFFF" stroke-width="8"/>
+<circle cx="1005" cy="329" r="58" fill="#25F4EE" stroke-width="5"/>
+<path d="M975 324h59M975 346h43" fill="none" stroke="#FFFFFF" stroke-width="8"/>
+<path d="M1057 383l60 68" fill="none" stroke-width="21"/>
+<path d="M1058 385l56 63" fill="none" stroke="#FE2C55" stroke-width="10"/>
+<path d="M1090 461q-2-27 14-28 14-2 29 15l15 17q19 24 1 44l-43 31-47-58q-13-17 0-25 12-7 31 4z" fill="#DFE0E2" stroke-width="6"/>
+<path d="M1088 467l24 25M1104 451l24 24" fill="none" stroke-width="4"/>
+<path d="M67 531h305M402 531h283M759 531h273" fill="none" stroke="#D8DADE" stroke-width="9"/>
+</g></svg><figcaption>現物の説明材料と、表現を確認する資料をそろえる（LEAM作成）</figcaption></figure>
+<p class="lead"><strong>健康食品・サプリのTikTok Shopは、商品を出せるか、どこまで表現できるか、誰が発信を確認するかを決めてから始めます。</strong>体調の変化を大きく語る企画に頼るより、成分表示の読み方、粒や粉末の状態、味、保管や持ち運びなど、購入前の疑問に答える企画を組みます。ここで扱う「型」は、購入前の疑問に答える企画と、それを支える確認の進め方です。</p>
+<p>本記事は、ブランドの担当者が動画制作やクリエイター起用を外部に頼む前に、社内で用意する資料と判断を整理するためのものです。カテゴリーを横並びで選ぶ段階では<a href="https://leam.co.jp/column/best-categories/">商品カテゴリーの選び方</a>、社内の体制との相性は<a href="https://leam.co.jp/column/good-fit/">業種別の向き不向き</a>からご覧ください。</p>
+<div class="box"><div class="bt">この記事で分かること</div><ul><li>商品ごとに、成分の事実と効果の表現を分ける方法</li><li>動画・LIVE・レビューの引用を同じ基準で見る進め方</li><li>クリエイターに渡す材料と、自社で残す最終判断</li></ul></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">販売実績のあるカテゴリーでも、自社商品の出品可否から始める</a></li><li><a href="#s2">成分の事実と、身体への効果を語る表現を分ける</a></li><li><a href="#s3">体験談は実在していても、広告全体で伝わる効果を見る</a></li><li><a href="#s4">見せる企画は、身体の変化より購入前の疑問から組み立てる</a></li><li><a href="#s5">紹介者へは商品資料と、回答を持ち帰る線を渡す</a></li><li><a href="#s6">レビューを広告へ使うときは、引用後の意味を見直す</a></li><li><a href="#s7">開始の準備は、商品資料から公開後の質問まで一続きにする</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">商品選び</span><b><a href="https://leam.co.jp/column/best-categories/">TikTok Shopで売れるものは？商品カテゴリーの選び方</a></b><span>ほかの業種との比較を読む</span></div><div class="relcard"><span class="rc">参入判断</span><b><a href="https://leam.co.jp/column/good-fit/">TikTok Shopに向いている会社・向いていない会社｜業種別</a></b><span>社内の準備と相性を確かめる</span></div></div></div>
+<h2 id="s1"><span class="no en">01</span>販売実績のあるカテゴリーでも、自社商品の出品可否から始める</h2>
+<p><strong>集計に売上があることと、自社の商品を出品できることは別です。</strong>TikTok Shop公式の禁止・対象外商品の案内には、医薬品やサプリメントに関する区分が掲載されています。健康食品という呼び方だけで一括して扱わず、実際の商品と最新のカテゴリー条件を照合してから、紹介者や制作会社へ依頼します。</p>
+<p>出品可否の分類や書類をここで繰り返すことはせず、<a href="https://leam.co.jp/column/prohibited-items/">禁止商品・制限商品の記事</a>につなぎます。自社で販売している食品でも、別の売り場で扱えることだけを根拠に、TikTok Shopの販売計画へ載せないでください。商品ごとに確認した条件を、開始前の資料へ残します。</p>
+<p>当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年10月21日時点・直近30日）では、健康は月約3億円規模で、上位10店のシェアは約58%です。栄養・ウェルネスは月約3億円規模で、上位10店のシェアは約62%です。当社集計では、どちらもアフィリエイト、つまりクリエイターの紹介を経由する売上の割合が高いカテゴリーです。</p>
+<div class="tw"><table><thead><tr><th>当社集計の分類</th><th>直近30日の規模</th><th>上位10店の売上シェア</th><th>参入案で考えること</th></tr></thead><tbody><tr><td>健康</td><td>月約3億円規模</td><td>約58%</td><td>既存店と違う説明材料を何に置くか</td></tr><tr><td>栄養・ウェルネス</td><td>月約3億円規模</td><td>約62%</td><td>紹介者へ渡す商品情報を用意できるか</td></tr></tbody></table></div>
+<p class="src">当社集計の参考値です。国内市場全体や、新しく始めた店の成果を示す数字ではありません。分類の階層が異なるため、金額は合算していません。</p>
+<p>上位店に売上が集まっていることから、どの表現や動画が売上を生んだかまでは分かりません。ブランドの規模、商品構成、価格、販売期間も違います。そこで最初の企画では、人気店の言い回しを写すのではなく、<strong>自社が根拠を示せる情報と、購入前に残りそうな疑問を結び付けます。</strong></p>
+<h2 id="s2"><span class="no en">02</span>成分の事実と、身体への効果を語る表現を分ける</h2>
+<p><strong>「何が入っているか」と「飲むと何が起きるか」は、同じ説明ではありません。</strong>原材料名や含有量の資料があるからといって、そこから自由に身体への効果を語ることはできません。制作前に、自社商品の表示、根拠資料、撮影で扱う説明を並べます。</p>
+<p>厚生労働省の「医薬品の範囲に関する基準」は、原材料だけでなく、形状、表示した使用目的や効能、用法用量、販売時の説明などを合わせて判断する考え方を示しています。疾病の治療や予防を目的とする説明、身体の機能を高める趣旨の説明、名称や体験談などでそうした効果をほのめかす説明も挙げています。</p>
+<p>一方で、この基準には、届け出た内容を表示する機能性表示食品などの扱いがあり、基準に沿う栄養機能食品の表示も区別されています。<strong>すべての食品について機能の説明が一律にできない、という整理にはしません。</strong>商品の制度上の区分と、その商品に認められた、又は届け出た表示内容から確認します。</p>
+<p>消費者庁の健康増進法に関するQ&amp;Aは、食品の健康に関する効果などについて、事実から著しく離れたり、大きな誤解を招いたりする表示を禁止する趣旨を説明しています。対象には錠剤やカプセルだけでなく、一般の食品も含まれます。個別の商品の該当性や表現は、所管の窓口・専門家へ確認してください。</p>
+<div class="tw"><table><thead><tr><th>制作で分ける欄</th><th>先にそろえるもの</th><th>混ぜない判断</th></tr></thead><tbody><tr><td>商品そのものの事実</td><td>現物の表示、原材料、内容量、保存条件</td><td>原材料の説明を、そのまま完成品の効能へ広げない</td></tr><tr><td>制度に関わる表示</td><td>商品区分と、許可・届出等に対応する表示内容</td><td>一部の語だけを抜いて、条件のない効果へ変えない</td></tr><tr><td>撮影で見えること</td><td>粒、粉末、容器、味の表現などの撮影案</td><td>実演から身体の変化まで証明したように見せない</td></tr><tr><td>紹介者の感想</td><td>実際に話した内容と使う場面</td><td>本人の感想を、誰にでも起きる結果へ変えない</td></tr></tbody></table></div>
+<p class="src">商品情報を分ける確認用の表（LEAM作成）。区分・資料・撮影案を商品ごとに並べて使います。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="supplementsEvidence" viewBox="0 0 720 300" role="img" aria-label="商品の事実、制度上の表示、撮影で見せる説明をそれぞれ資料に対応させ、全体の意味を確認する図"><rect x="18" y="25" width="212" height="148" rx="12" fill="#EFF1F4"/><text x="124" y="65" text-anchor="middle" font-size="20" font-weight="700" fill="#0B0C10">商品の事実</text><text x="124" y="112" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">成分・内容量・保存</text><text x="124" y="149" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">現物と資料を照合</text><rect x="254" y="25" width="212" height="148" rx="12" fill="#EFF1F4"/><text x="360" y="65" text-anchor="middle" font-size="20" font-weight="700" fill="#0B0C10">制度上の表示</text><text x="360" y="112" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">区分と表示内容</text><text x="360" y="149" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">条件を落とさない</text><rect x="490" y="25" width="212" height="148" rx="12" fill="#EFF1F4"/><text x="596" y="65" text-anchor="middle" font-size="20" font-weight="700" fill="#0B0C10">動画の説明</text><text x="596" y="112" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">言葉・音声・映像</text><text x="596" y="149" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">全体の意味を見る</text><path d="M124 179v28h472v-28M360 207v21" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="91" y="236" width="538" height="45" rx="11" fill="#25F4EE"/><text x="360" y="265" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">成分資料だけで、商品の効果を言い切らない</text></svg><figcaption>図1：資料と表現を別々に対応させる（LEAM作成の確認・企画の案）</figcaption></figure>
+<p>表現の確認を制作会社へ丸ごと任せると、商品区分や最新の表示が共有されないまま、短いコピーだけが先に完成することがあります。依頼時には根拠資料の名前と版を付け、迷った箇所を担当者へ戻す流れを決めます。一般的な出品・表現の確認は<a href="https://leam.co.jp/column/prohibited-items/">禁止商品・制限商品</a>、生成映像を使う企画は<a href="https://leam.co.jp/column/ai-video-policy/">AI動画と表現の決まり</a>で扱っています。</p>
+<h2 id="s3"><span class="no en">03</span>体験談は実在していても、広告全体で伝わる効果を見る</h2>
+<p><strong>本当に寄せられた感想であることだけでは、広告への使い方を決められません。</strong>消費者庁の留意事項は、実際の摂取者の体験談を使うこと自体を直ちに問題とはしない一方、好都合な部分だけを示したり、別の要因を伏せたりして、誤解を招く使い方を問題にしています。</p>
+<p>同庁のQ&amp;Aでも、都合のよい体験談やコメントだけを取り上げ、誰でも同じような効果を期待できるように見せる例が挙げられています。機能性表示食品について、届け出た表示の一部を省いて、成分の機能の報告を商品そのものの効果のように伝える例も示されています。</p>
+<p>たとえば「飲み始めてから調子がよい」という言葉を、その人の運動や食事の話から切り離して、商品の映像へ重ねる企画です。話した人の意図と、広告を見る人が受け取る意味が変わっていないかを見ます。これは特定の言い回しだけを禁止語にする作業ではなく、編集した場面のつながりを確認する作業です。</p>
+<p>消費者庁の留意事項は、「個人の感想」といった打消しを付けても、表示全体から受ける印象によっては問題が残ると説明しています。小さな字幕を最後へ足して済ませず、冒頭の言葉、身体の映像、音声、見出しが一緒に何を伝えるかを確認します。</p>
+<div class="box box-warn"><div class="bt">体調の不調を、商品のよさに読み替えない</div><p>紹介者から体調に関する相談が来た場合は、投稿の材料を集める作業から分け、自社の相談対応へ戻します。症状を効果の表れとして肯定する演出や、続けて摂るよう促す返事を企画に入れません。</p></div>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="supplementsTestimonial" viewBox="0 0 720 310" role="img" aria-label="元の発言、抜き出した場面、広告で伝わる意味の順に見て、意味が変われば編集へ戻す図"><rect x="20" y="28" width="209" height="151" rx="13" fill="#EFF1F4"/><text x="124" y="68" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">元の発言</text><text x="124" y="115" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">前後の文脈</text><text x="124" y="153" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">ほかの条件</text><rect x="255" y="28" width="209" height="151" rx="13" fill="#EFF1F4"/><text x="359" y="68" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">編集した場面</text><text x="359" y="115" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">切り出す範囲</text><text x="359" y="153" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">加えた映像</text><rect x="490" y="28" width="209" height="151" rx="13" fill="#25F4EE"/><text x="594" y="68" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">受け取る意味</text><text x="594" y="115" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">誰のどんな経験か</text><text x="594" y="153" text-anchor="middle" font-size="15" font-weight="500" fill="#0B0C10">効果の保証にしない</text><path d="M235 102h14m-5-6 6 6-6 6M470 102h14m-5-6 6 6-6 6M594 188v35H360v-35m-7 9 7-9 7 9" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="360" y="270" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">小さな注記だけに頼らず、編集後の全体を確認</text></svg><figcaption>図2：実在する感想でも、広告へ移すときに見直す（LEAM作成の確認・企画の案）</figcaption></figure>
+<p>撮影素材には、商品の味や容器の使い勝手についての感想と、身体の状態に関する話が混ざることがあります。採用する場面を選ぶときは、元の発言を残し、切り出した後の意味も見るようにします。健康上の効果を示す部分を削った後でも、前後の映像や商品名で同じ期待を残していないかが確認点です。</p>
+<h2 id="s4"><span class="no en">04</span>見せる企画は、身体の変化より購入前の疑問から組み立てる</h2>
+<p><strong>健康食品の動画でも、説明する材料は効能以外にあります。</strong>粒の大きさが分からない、味を想像できない、持ち運ぶ容器か知りたい、といった疑問を商品情報から拾います。成分や容器を見せる映像も、その後の言葉によって効果をほのめかす場合があるため、実物を撮っただけで確認が終わるわけではありません。</p>
+<p>「飲みやすい」と言う場合も、誰にでも簡単に飲めるとまとめず、粒や容器を映し、紹介者が感じた味やにおいを具体的な言葉で伝える企画にします。実物と違う大きさに加工したり、必要な注意を映像から外したりしないことが土台です。</p>
+<div class="tw"><table><thead><tr><th>購入前の疑問</th><th>撮影する材料</th><th>制作時に戻って確かめること</th></tr></thead><tbody><tr><td>粒の大きさや形はどうか</td><td>実物と大きさが伝わる資料</td><td>遠近や加工で小さく見せていないか</td></tr><tr><td>粉末の状態や味はどうか</td><td>表示に沿って準備した実物、溶かす場面</td><td>勝手な量や方法を勧めていないか</td></tr><tr><td>何が含まれているか</td><td>商品の表示と、それに対応する資料</td><td>成分名から身体への効果へ話が飛んでいないか</td></tr><tr><td>保管や持ち運びはどうするか</td><td>容器、個包装、表示された保存条件</td><td>便利さのために必要な保存条件を省いていないか</td></tr><tr><td>続けるうえでどんな準備が要るか</td><td>開封、計量、片付けなど実際の手順</td><td>量を増やす、医薬品の代わりにする話になっていないか</td></tr></tbody></table></div>
+<p class="src">撮影テーマの案はLEAM作成。商品の資料に合わせて採否を決めます。</p>
+<p>短い動画には一つの疑問だけを置きます。原材料の説明、粉末を用意する場面、保管方法を全部詰め込むと、どの疑問に答えたのかがぼやけます。商品の現物、使用する量の根拠、言葉の確認をそろえてから、見せる順を決めます。</p>
+<p>「続けやすさ」は、摂ることで将来どうなるかを約束することではなく、用意や保管にどんな手間があるかを伝える企画として扱います。通勤や旅行などの場面を撮る場合も、その場所で表示どおりに管理できるかを先に見ます。見栄えのよさを優先して、保存の前提を変えないでください。</p>
+<p>商品に関わる質問を集めたら、撮影で答えられること、商品ページで読んでもらうこと、担当者へ戻すことへ分けます。価格や内容量の違いを聞かれたら事実の比較へ、体質や病気との関係を聞かれたら商品担当の確認へ、と返し先を置きます。販売担当や出演者だけで、その場の答えを作る形を避けます。</p>
+<h2 id="s5"><span class="no en">05</span>紹介者へは商品資料と、回答を持ち帰る線を渡す</h2>
+<p><strong>クリエイター起用で外へ出すのは制作や紹介の作業であり、自社商品の事実を決める責任ではありません。</strong>依頼文には、使う資料、紹介してほしい場面、撮影前に質問を戻す先をまとめます。依頼書の全項目は<a href="https://leam.co.jp/column/creator-brief-template/">クリエイターブリーフの作り方</a>を使い、この節では健康食品で抜けやすい材料だけを整理します。</p>
+<p>消費者庁のQ&amp;Aは、健康増進法上の広告等に、インターネットだけでなく口頭の説明も含めています。自社の商品ページが整っていても、紹介動画やLIVEで伝わる説明を別扱いにはできません。LIVEは台本にない質問が来るため、分からないことを持ち帰る運用も企画の一部です。</p>
+<div class="tw"><table><thead><tr><th>自社から渡す材料</th><th>紹介者へお願いすること</th><th>その場で判断しないこと</th></tr></thead><tbody><tr><td>商品区分、表示、確認済みの説明</td><td>指定した資料の版で撮影する</td><td>別商品の効果や体験を、この商品へ当てはめる</td></tr><tr><td>撮影する現物と準備方法</td><td>実物の状態が分かる映像を残す</td><td>見せやすさのために量や扱い方を変える</td></tr><tr><td>体験談の採用前に戻す窓口</td><td>元の発言と編集案を渡す</td><td>効果に関する話を、感想だからと採用する</td></tr><tr><td>質問への返し先</td><td>確認が要る質問を控えて持ち帰る</td><td>体質、疾病、服薬などへの答えを作る</td></tr><tr><td>事業者の広告と分かる表示の方針</td><td>関係と表示方法を撮影前に共有する</td><td>説明の条件を広告の明示で置き換える</td></tr></tbody></table></div>
+<p>消費者庁のステルスマーケティングQ&amp;Aでは、規制対象となるのは広告主とされ、特定の紹介者へ無償で商品を渡す場合も、投稿内容への関与など個別の事情から判断すると説明されています。広告と分かるようにする確認と、内容が正しいかの確認を分けて持ちます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="supplementsRoles" viewBox="0 0 720 320" role="img" aria-label="商品資料を作る担当、制作する担当、表現を確認する担当、公開を決める担当を分ける図"><rect x="22" y="22" width="325" height="103" rx="12" fill="#EFF1F4"/><text x="184" y="62" text-anchor="middle" font-size="22" font-weight="700" fill="#0B0C10">商品担当</text><text x="184" y="102" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">区分・表示・根拠</text><rect x="372" y="22" width="325" height="103" rx="12" fill="#EFF1F4"/><text x="534" y="62" text-anchor="middle" font-size="22" font-weight="700" fill="#0B0C10">制作担当</text><text x="534" y="102" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">撮影・編集・素材</text><rect x="22" y="157" width="325" height="103" rx="12" fill="#EFF1F4"/><text x="184" y="197" text-anchor="middle" font-size="22" font-weight="700" fill="#0B0C10">表現の確認</text><text x="184" y="237" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">音声・字幕・映像</text><rect x="372" y="157" width="325" height="103" rx="12" fill="#25F4EE"/><text x="534" y="197" text-anchor="middle" font-size="22" font-weight="700" fill="#0B0C10">公開の判断</text><text x="534" y="237" text-anchor="middle" font-size="17" font-weight="500" fill="#0B0C10">修正を反映した版</text><path d="M349 74h19M535 130v20M369 210h-19M184 151v-21" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="360" y="298" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">質問を持ち帰る窓口を、撮影前に決めて共有</text></svg><figcaption>図3：紹介者と自社の判断を、資料と窓口でつなぐ（LEAM作成の確認・企画の案）</figcaption></figure>
+<p>公開前の確認には、字幕だけの原稿ではなく、音声や映像がそろった版を使います。話した言葉が短くなっていても、画面に出す体験談や身体の映像が別の意味を足すことがあるためです。修正を頼むときは「もっと控えめに」ではなく、「この場面は商品の効果と受け取られるので、容器の扱いの説明へ戻す」のように箇所と理由を渡します。</p>
+<p>外注先との分担は、商品の資料を整える担当、動画を作る担当、表現を確認する担当、公開を決める担当に分けます。同じ人が複数を兼ねる場合も、返事を待つ箇所が分かるようにします。完成後に確認者を探すより、制作の開始時に提出する版と返事の期限を決めておく方が、作り直す範囲を小さくできます。</p>
+<h2 id="s6"><span class="no en">06</span>レビューを広告へ使うときは、引用後の意味を見直す</h2>
+<p><strong>購入者の投稿を読み取る作業と、自社の広告へ載せる判断を分けます。</strong>レビューには、味、容器、配送、身体の感想などが混在します。都合のよい一文だけを販売動画へ持ち出すと、元の文章と伝わる意味が変わるためです。</p>
+<p>たとえば、容器の使い勝手に関する声は、次の説明を直す手がかりになります。一方、体調が変わったという話を集めて強調する企画は、効果の根拠として扱わず、表示の確認へ戻します。公開されている投稿だから自由に使えると考えず、利用できる範囲も確認します。</p>
+<p>レビューの依頼や低評価への対応は<a href="https://leam.co.jp/column/review-management/">レビュー管理の記事</a>へまとめ、この稿では広告へ移す手前の判断を扱います。自社で返信するときも、購入者の効果の感想を公式に保証するような返事を足さない方針を、担当者間でそろえます。</p>
+<p>記録には、元の文章、採用した部分、どの媒体で使うか、誰が確認したかを残します。引用前後が分かる状態にすると、別の担当者が短い動画へ編集し直すときも、確認済みの範囲を追えます。再編集で新しい見出しや画像を加えた場合は、以前の採用判断だけで公開しません。</p>
+<h2 id="s7"><span class="no en">07</span>開始の準備は、商品資料から公開後の質問まで一続きにする</h2>
+<p><strong>最初に作るものは、動画の本数計画より商品ごとの確認表です。</strong>何を扱えるか、何を説明するか、誰が確認するかが決まれば、制作や起用の相談も具体的になります。最初の商品について資料と確認の流れを通し、その後で企画を広げます。</p>
+<div class="tw"><table><thead><tr><th>準備の段階</th><th>残すもの</th><th>次へ進むときの状態</th></tr></thead><tbody><tr><td>商品と売り場を確認</td><td>商品の区分、出品条件の確認記録</td><td>扱う商品と保留する商品を区別できる</td></tr><tr><td>説明する範囲を決める</td><td>表示、根拠資料、確認済みの文</td><td>成分の事実と効果の表現を分けて読める</td></tr><tr><td>企画と紹介者を決める</td><td>購入前の疑問、撮影案、返事を戻す窓口</td><td>何を撮り、何を持ち帰るかを共有できる</td></tr><tr><td>編集後の版を見る</td><td>音声・字幕・映像がそろった確認用の版</td><td>全体で伝わる意味を確認し、修正箇所を閉じられる</td></tr><tr><td>公開後の質問を戻す</td><td>質問、返答、説明を直した記録</td><td>商品ページと次の企画へ変更を反映できる</td></tr></tbody></table></div>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="supplementsWorkflow" viewBox="0 0 720 310" role="img" aria-label="出品確認、資料、企画、完成版、公開後の疑問を一続きにして、次の説明へ戻す図"><rect x="14" y="45" width="128" height="121" rx="12" fill="#EFF1F4"/><text x="78" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">出品確認</text><text x="78" y="131" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">商品と条件</text><rect x="155" y="45" width="128" height="121" rx="12" fill="#EFF1F4"/><text x="219" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">資料</text><text x="219" y="131" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">表示と根拠</text><rect x="296" y="45" width="128" height="121" rx="12" fill="#EFF1F4"/><text x="360" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">企画</text><text x="360" y="131" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">購入前の疑問</text><rect x="437" y="45" width="128" height="121" rx="12" fill="#EFF1F4"/><text x="501" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">完成版</text><text x="501" y="131" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">全体の意味</text><rect x="578" y="45" width="128" height="121" rx="12" fill="#25F4EE"/><text x="642" y="88" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">公開後</text><text x="642" y="131" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">質問と返答</text><path d="M643 176v42H218v-42m-7 10 7-10 7 10" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="360" y="266" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">販売後に残った疑問を、資料と次の企画へ戻す</text></svg><figcaption>図4：健康食品の企画を資料から改善まで通す（LEAM作成の確認・企画の案）</figcaption></figure>
+<p>販売後は、投稿数や再生数だけでなく、どの疑問が残ったかを読みます。味の説明に質問が多いなら撮り方を、内容量の誤解があるならページと字幕を直します。成果と表現確認を対立させず、購入前の誤解を減らす作業として同じ改善計画へ載せます。</p>
+<p>外部へ相談するときは、商品資料、想定する購入者、まず説明したい疑問、確認を担当する人が分かる状態を用意します。制作本数だけを先に依頼するより、どの段階を手伝ってほしいかが伝わります。商品を知る自社と、映像や起用を担当する相手の判断をつなぐことが、健康食品の運営体制の出発点です。</p>
+<h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+<div class="faq">
+<details><summary>健康食品の動画で、成分名を出すだけなら確認は不要ですか？</summary><div class="a">不要にはなりません。成分名と一緒に使う言葉や映像によって、身体への効果をほのめかす場合があります。商品の表示や資料に対応しているかと、動画全体で何が伝わるかを分けて確認します。</div></details>
+<details><summary>健康食品の紹介者へ、体調の変化を話してもらう企画はどう扱いますか？</summary><div class="a">本人が話したという理由だけで採用せず、効果を伝える広告として確認へ戻します。元の発言、編集した範囲、前後の映像を残し、誰にでも同じ結果が出るような意味へ変わっていないかを見ます。</div></details>
+<details><summary>サプリの紹介動画に粒の大きさや容器を映す企画は使えますか？</summary><div class="a">購入前の疑問に答える企画候補になります。実物と表示をそろえ、遠近や加工で状態を変えず、保存条件など必要な前提も残します。実物を撮ったことだけで、その後に加えた効果の説明まで確認済みにはしません。</div></details>
+<details><summary>健康食品のLIVEで、出演者が答えられない質問を受けたらどうしますか？</summary><div class="a">商品担当へ持ち帰る窓口を用意します。特に体質、疾病、服薬などに関わる質問は、その場で答えを作らず記録へ回します。返事が必要な質問を控える人も、出演者とは別に決めておきます。</div></details>
+<details><summary>健康食品のレビューから、動画の題材はどう選びますか？</summary><div class="a">まず味、容器、表示の読み方など、購入前の疑問を拾います。効果に関する感想は、そのまま宣伝の根拠へ移しません。引用する場合は元の文と使う場面を残し、利用範囲と編集後の意味を確認します。</div></details>
+<details><summary>健康食品ブランドが制作会社へ最初に渡す資料は何ですか？</summary><div class="a">商品の区分と表示、確認済みの説明、根拠資料の版、現物の扱い方、質問を戻す窓口です。あわせて、最初に答えたい購入前の疑問を決めます。動画の本数や紹介者の人数を決める前に、説明できる範囲を共有します。</div></details>
+</div>
+<div class="ctabox"><div class="ct">商品情報をそろえる段階から、健康食品の企画をご相談いただけます</div><p>LEAMはTikTok Shopの運用支援を行っています。商品資料と社内の確認体制を伺い、動画の企画、クリエイター起用、公開前の確認をどのように分担するかを一緒に整理します。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=supplements">健康食品の出店を相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+<h2 id="sources"><span class="no en">09</span>参考にした公式情報と集計の時点</h2>
+<ul class="source-list">
+<li><a href="https://www.mhlw.go.jp/web/t_doc?dataId=00ta6938&amp;dataType=1&amp;pageNo=1" target="_blank" rel="noopener noreferrer">厚生労働省：無承認無許可医薬品の指導取締りについて・医薬品の範囲に関する基準</a></li>
+<li><a href="https://www.caa.go.jp/policies/policy/representation/extravagant_advertisement/assets/representation_cms213_240722_01.pdf" target="_blank" rel="noopener noreferrer">消費者庁：健康増進法第65条第1項の適用に関するQ&amp;A</a></li>
+<li><a href="https://www.caa.go.jp/policies/policy/representation/extravagant_advertisement/assets/representation_cms213_230131_01.pdf" target="_blank" rel="noopener noreferrer">消費者庁：健康食品に関する景品表示法及び健康増進法上の留意事項について</a></li>
+<li><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing" target="_blank" rel="noopener noreferrer">消費者庁：ステルスマーケティングに関するQ&amp;A</a></li>
+<li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2721296229418769&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：禁止・対象外商品の案内</a></li>
+</ul>
+<p class="src">公式資料は2026年10月26日確認。出品条件やポリシーの最新は日本向け公式情報で確認してください。企画と分担の表はLEAM作成の案です。市場の数値は2026年10月21日時点・直近30日の当社集計から、健康と栄養・ウェルネスの数値を記載しています。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">出品と表現</span><b><a href="https://leam.co.jp/column/prohibited-items/">TikTok Shopの禁止商品・制限商品ガイド</a></b><span>商品の出品条件へ進む</span></div><div class="relcard"><span class="rc">依頼</span><b><a href="https://leam.co.jp/column/creator-brief-template/">TikTok Shopのクリエイターブリーフの作り方</a></b><span>紹介者へ渡す依頼書を作る</span></div><div class="relcard"><span class="rc">販売後</span><b><a href="https://leam.co.jp/column/review-management/">TikTok Shopのレビューの集め方と低評価への対応</a></b><span>レビューの運用を確認する</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">販売実績のあるカテゴリーでも、自社商品の出品可否から始める</a></li><li><a href="#s2">成分の事実と、身体への効果を語る表現を分ける</a></li><li><a href="#s3">体験談は実在していても、広告全体で伝わる効果を見る</a></li><li><a href="#s4">見せる企画は、身体の変化より購入前の疑問から組み立てる</a></li><li><a href="#s5">紹介者へは商品資料と、回答を持ち帰る線を渡す</a></li><li><a href="#s6">レビューを広告へ使うときは、引用後の意味を見直す</a></li><li><a href="#s7">開始の準備は、商品資料から公開後の質問まで一続きにする</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>健康食品の出店相談</b><p>商品資料と確認体制から、企画と起用の準備を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=supplements">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "健康食品の動画で、成分名を出すだけなら確認は不要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "不要にはなりません。成分名と一緒に使う言葉や映像によって、身体への効果をほのめかす場合があります。商品の表示や資料に対応しているかと、動画全体で何が伝わるかを分けて確認します。"}}, {"@type": "Question", "name": "健康食品の紹介者へ、体調の変化を話してもらう企画はどう扱いますか？", "acceptedAnswer": {"@type": "Answer", "text": "本人が話したという理由だけで採用せず、効果を伝える広告として確認へ戻します。元の発言、編集した範囲、前後の映像を残し、誰にでも同じ結果が出るような意味へ変わっていないかを見ます。"}}, {"@type": "Question", "name": "サプリの紹介動画に粒の大きさや容器を映す企画は使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "購入前の疑問に答える企画候補になります。実物と表示をそろえ、遠近や加工で状態を変えず、保存条件など必要な前提も残します。実物を撮ったことだけで、その後に加えた効果の説明まで確認済みにはしません。"}}, {"@type": "Question", "name": "健康食品のLIVEで、出演者が答えられない質問を受けたらどうしますか？", "acceptedAnswer": {"@type": "Answer", "text": "商品担当へ持ち帰る窓口を用意します。特に体質、疾病、服薬などに関わる質問は、その場で答えを作らず記録へ回します。返事が必要な質問を控える人も、出演者とは別に決めておきます。"}}, {"@type": "Question", "name": "健康食品のレビューから、動画の題材はどう選びますか？", "acceptedAnswer": {"@type": "Answer", "text": "まず味、容器、表示の読み方など、購入前の疑問を拾います。効果に関する感想は、そのまま宣伝の根拠へ移しません。引用する場合は元の文と使う場面を残し、利用範囲と編集後の意味を確認します。"}}, {"@type": "Question", "name": "健康食品ブランドが制作会社へ最初に渡す資料は何ですか？", "acceptedAnswer": {"@type": "Answer", "text": "商品の区分と表示、確認済みの説明、根拠資料の版、現物の扱い方、質問を戻す窓口です。あわせて、最初に答えたい購入前の疑問を決めます。動画の本数や紹介者の人数を決める前に、説明できる範囲を共有します。"}}]}</script>
+</body>
+</html>

@@ -17,10 +17,10 @@
 - クリエイターアサイン: 実売実績のあるTikTok Shopクリエイターの起用を、小さく試せる形から支援
 - MCN: クリエイターの発掘・育成・マネジメントを行う、TikTok Shop特化のクリエイター事務所
 
-## TikTok Shop 実践コラム（全71本）
+## TikTok Shop 実践コラム（全83本）
 
 > 出店の検討から日々の運用までを扱う実務記事。公式の一次情報と、当社の運用実感にもとづく判断を
-> 区別して書いています。数値は出典と時点を明記し、**71本すべてに一次情報（TikTok Shop公式ヘルプ・
+> 区別して書いています。数値は出典と時点を明記し、**83本すべてに一次情報（TikTok Shop公式ヘルプ・
 > 規約・官公庁の公表資料など）へのリンク**を置いています。
 > 公開情報で裏が取れなかった論点は、断定せず「どこを見れば確かめられるか」を書いています。
 > 一覧: https://leam.co.jp/column/
@@ -43,6 +43,7 @@
 - [TikTok Shopのアカウント停止・違反ポイント完全ガイド](https://leam.co.jp/column/account-suspension/): 停止されても、異議申し立てで復旧できるケースがあります。期限と回数に上限があり1回目が勝負。原因は商品・表現・知財・物流・不正の5分類で、誤検知や見落としによる停止もあります。
 - [TikTok Shop立ち上げ90日ロードマップ](https://leam.co.jp/column/tiktok-shop-90day-roadmap/): TikTok Shop出店後の90日を、準備、初回販売、改善、拡大の四段階に整理。商品、動画、LIVE、クリエイター、在庫、顧客対応の実行順を解説します。
 - [TikTok Shopセラーアプリの使い方｜スマホでできること](https://leam.co.jp/column/seller-app-guide/): TikTok Shopのセラーアプリで毎日やる問い合わせ・セール・LIVE操作と、PCのセラーセンターに残す一括登録やSKU別の設定の分け方を、公式ヘルプで確かめた範囲で整理します。
+- [TikTok Shopの出店・開設代行｜任せる範囲と引き継ぎ](https://leam.co.jp/column/shop-setup-agency/): TikTok Shopの出店・開設代行を検討する企業向けに、自社が持つ本人確認・口座・同意と、任せる商品登録・制作を整理。審査との関係、管理権限、初期費用と引き継ぎの確認項目を解説します。
 
 ### 商品・価格
 - [TikTok Shopで売れるものは？商品カテゴリーの選び方](https://leam.co.jp/column/best-categories/): 売れるのは「検索される商品」ではなく「動画で欲しくなる商品」。見抜く3条件と、手数料と報酬を引いても利益が残るかの確かめ方。
@@ -66,6 +67,7 @@
 - [TikTok ShopのLIVEオークション｜始め方と条件](https://leam.co.jp/column/live-auction/): TikTok ShopのLIVEオークションは、LIVE中のカウントダウン入札で1点ずつ売る機能です。利用条件、出品の作り方、入札上げ幅、落札後15分の決済までを整理します。
 - [TikTok Shopのライブに人が来ない｜視聴者が増えない原因と対策](https://leam.co.jp/column/live-no-viewers/): TikTok Shopのライブに人が来ない原因を、入口（告知・頻度・ショート動画）・冒頭の離脱・見せ方に分けて対策を整理。LIVEのデータで見る数字も公式ヘルプに沿って解説します。
 - [TikTok Shopの動画が再生されない・売れない原因と直し方](https://leam.co.jp/column/video-no-views/): TikTok Shopの商品リンク付き動画が再生されない・押されない・買われない原因を、症状から引けるように整理。公式ポリシーで確かめた原因、確かめる画面、直す順番を診断表にまとめました。
+- [TikTok Shopライブの出演者を外注｜探し方と条件](https://leam.co.jp/column/live-host-outsourcing/): TikTokライブの話し手がいない企業向けに、外部出演者の探し方と依頼条件を解説。配信するアカウントの違い、時間・報酬・商品説明・映像の利用、初回のリハーサルと継続時の記録を整理します。
 
 ### クリエイター連携
 - [TikTok Shopアフィリエイトの仕組み【セラー向け】](https://leam.co.jp/column/affiliate-guide/): TikTok Shopのアフィリエイトは売れるまで費用0円。当社の実務では10〜15%前後が起点で、10%を切ると選ばれにくくなります。
@@ -76,6 +78,7 @@
 - [TikTok Shopでクリエイターが集まらない原因と対策](https://leam.co.jp/column/creators-not-coming/): TikTok Shopでクリエイターが集まらないときは、止まっている段を画面の数字で特定してから直します。オープンコラボと招待に分け、原因7つと直す順番を整理します。
 - [サンプルを送っても投稿されない｜TikTok Shopのサンプル施策](https://leam.co.jp/column/sample-no-post/): TikTok Shopでサンプルを送っても投稿されないときにセラー側で直せる点を整理。公式の対応期限・公開期間・LIVEのピン留め・申請制限を押さえ、承認・発送・催促・履行率の見方を設計します。
 - [TikTok Shopの招待に返事が来ない｜承諾される送り方と追い方](https://leam.co.jp/column/invite-no-reply/): TikTok Shopの招待に返事が来ないときは、届いたか・期限内か・中身で見送られたかを先に分けます。送る相手の選び方、メッセージの悪い例と良い例、送った後の追い方を整理します。
+- [TikTok Shopのクリエイター起用を外注する｜依頼先と費用の型](https://leam.co.jp/column/creator-casting-agency/): TikTok Shopのクリエイター起用を外注する企業向けに、依頼先の違いと費用の型を整理。任せる作業、自社に残す承認、本人報酬との区別、成果報告と見積もりの質問を解説します。
 
 ### クリエイター向け
 - [TikTok ShopのMCNとは？所属と個人の違い](https://leam.co.jp/column/mcn-merit/): TikTok ShopのMCNとは何かを公式ヘルプで確認し、所属した場合に変わることと個人で続ける場合にやること、契約で一緒に読む三つの条項まで整理しました。
@@ -91,6 +94,7 @@
 - [GMV Maxとは？TikTok Shop広告の仕組みと始め方](https://leam.co.jp/column/gmvmax/): 2025年7月以降、TikTok Shopの広告で新しく作れるのはGMV Maxだけです。費用は固定でなく予算×成果のため、先に限界CPAを決めます。
 - [TikTok ShopのROAS基準｜損益分岐の出し方](https://leam.co.jp/column/tiktok-shop-roas/): ROAS3.0倍が黒字か赤字かは商品によって正反対です。損益分岐ROAS＝1÷貢献利益率で自社の基準が出ます。36通りの試算で必要ROASは1.72〜5.56倍になります。
 - [GMV Maxで赤字になる原因と止め方｜TikTok Shop広告](https://leam.co.jp/column/gmvmax-loss/): GMV Maxの赤字は、ROI目標・判断の早さ・商品の混ぜ方・動画不足の4つに分けると直す場所が決まります。続ける・下げる・止めるの判定表と、ROI保護が外れる操作を整理します。
+- [TikTok ShopのGMV Maxを外注する｜依頼範囲と判断基準](https://leam.co.jp/column/gmvmax-agency/): TikTok ShopのGMV Maxを外注する企業向けに、任せる作業と社内の判断を整理。動画の供給、依頼先の違い、広告費と外注費、毎週の報告で見る数字を解説します。
 
 ### 配送・顧客対応
 - [TikTok Shopの発送期限と遅延ペナルティ｜集荷待ちの数え方](https://leam.co.jp/column/shipping-rules/): 「集荷待ち」更新の期限は注文日の翌営業日から数えて2営業日目の23:59。遅延は1件ではなく率で判定されます。週末をまたぐと期限が3日ずれる数え方の落とし穴も解説。
@@ -110,6 +114,7 @@
 - [TikTok Shopで初売上が出ない｜開設後30日の見直し順](https://leam.co.jp/column/no-first-sale/): TikTok Shopで初売上が出ないときは、売り方より先に「買える状態か」を確かめます。商品の承認・在庫・送料・商品リンク・動画・クリエイター・アフィリエイト設定の順と30日の見直し表。
 - [TikTok Shop運用代行に頼む前に社内で決めること｜依頼書の作り方](https://leam.co.jp/column/before-agency/): TikTok Shopの運用代行に相談する前に、社内で決めて依頼書1枚にまとめる7項目を順に解説。目的と期限、粗利、費目別の予算、決裁者、渡す権限、止める基準、報告の受け方とひな形まで。
 - [TikTok Shopは少人数で回せる？1〜3人の分担と仕組み](https://leam.co.jp/column/small-team/): TikTok Shopは1〜3人でも運営できます。毎日・毎週・毎月の作業表、人数別の分担例、手を減らせる公式機能、外に出す作業の分け方、回らなくなったサインを整理します。
+- [TikTok Shop支援会社の比較表｜提案書を同じ物差しで](https://leam.co.jp/column/compare-agencies/): TikTok Shopの支援会社から提案を受けた担当者向けに、比較表のひな形と埋め方を解説。担当範囲・体制・報告・契約・費用・実績を整理し、空欄やあいまいな回答、最終版の照合まで示します。
 
 ### 既存ECからの参入
 - [Amazonセラー向けTikTok Shop入門｜何が変わるか](https://leam.co.jp/column/amazon-seller-tiktok-shop/): Amazonのレビュー・FBA・キーワード入札は持ち込めません。持ち込めるのは商品・在庫・原価表です。TikTok Shopは初期費用も月額固定費もなし。手残り表の直し方まで解説。
@@ -117,6 +122,15 @@
 - [Yahoo!ショッピングのセラー向けTikTok Shop入門](https://leam.co.jp/column/yahoo-seller-tiktok-shop/): 月額1万円が乗った今、TikTok Shopは安いのか。Yahoo!の必須6.5〜8.0%＋月額1万円と、カテゴリー別7〜12%が逆転する分岐点は月商18.2万〜200万円。
 - [D2Cブランド向けTikTok Shop入門｜自社ECとの分担](https://leam.co.jp/column/d2c-tiktok-shop/): 自社ECを持つD2Cブランド向けに、TikTok Shopを新規獲得チャネルとして設計する方法と、自社ECとの役割分担を解説します。
 - [TikTok Shopの越境販売｜海外セラーとの競合](https://leam.co.jp/column/cross-border-selling/): TikTok Shopで海外セラーと並ぶとき見る差を、公式の配送期限・返品期限・表示義務から整理します。越境で売る側が決める六つと、見送る基準つき。
+- [TikTok Shop参入の社内稟議｜投資・回収・撤退基準](https://leam.co.jp/column/internal-approval/): TikTok Shop参入を提案する担当者向けに、稟議の目的・投資額・回収・体制・撤退条件を整理。架空の試算で必要注文数を示し、3か月の判定と社内稟議書のひな形を紹介します。
+
+### 業種別
+- [化粧品のTikTok Shop｜見せ方と表現の確認](https://leam.co.jp/column/cosmetics/): 化粧品・スキンケアブランド向けに、TikTok Shopで質感や使い方を見せる準備を解説。美容の売上構成、クリエイターへの依頼、効能と使用前後の表現を確認する工程を整理します。
+- [食品・飲料のTikTok Shop｜試食・期限・温度帯の準備](https://leam.co.jp/column/food/): 食品・飲料のTikTok Shop参入を考える担当者向けに、試食や調理の見せ方、常温・冷蔵・冷凍の配送、期限と食品表示、健康に関する表現、セットとサンプルの準備を整理します。
+- [アパレルのTikTok Shop｜試着・サイズ・返品の準備](https://leam.co.jp/column/apparel/): アパレルブランドのTikTok Shop参入を考える担当者向けに、試着や着回しの見せ方、サイズ表、色とサイズの在庫、LIVEの分担、返品の案内を整理。商品情報をそろえる準備を解説します。
+- [健康食品のTikTok Shop｜表現と動画企画の準備](https://leam.co.jp/column/supplements/): 健康食品・サプリのTikTok Shop参入を考える担当者へ。出品可否、成分・効果の表現、体験談の扱いを公的資料で整理。購入前の疑問に答える動画企画と、紹介者へ渡す資料を解説します。
+- [日用雑貨のTikTok Shop｜実演と販売準備](https://leam.co.jp/column/household-goods/): 日用雑貨のTikTok Shop参入を考える担当者へ。掃除・収納・キッチン用品の実演、商品ページとの照合、セット内容、紹介者への資料、販売後の質問を次の企画へ戻す準備を解説します。
+- [美容家電のTikTok Shop｜比較・実演・保証の準備](https://leam.co.jp/column/beauty-gadgets/): 美容家電・ガジェットのTikTok Shop参入を考える担当者へ。仕様の比較と実演、LIVEの質問対応、保証・返品の案内、電気用品などの対象確認を、商品資料とつなぐ準備を解説します。
 
 ## お問い合わせ
 

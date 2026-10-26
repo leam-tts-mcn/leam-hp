@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>アパレルのTikTok Shop｜試着・サイズ・返品の準備</title>
+<meta name="description" content="アパレルブランドのTikTok Shop参入を考える担当者向けに、試着や着回しの見せ方、サイズ表、色とサイズの在庫、LIVEの分担、返品の案内を整理。商品情報をそろえる準備を解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/apparel/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="アパレルのTikTok Shop｜試着・サイズ・返品の準備">
+<meta property="og:description" content="アパレルブランドのTikTok Shop参入を考える担当者向けに、試着や着回しの見せ方、サイズ表、色とサイズの在庫、LIVEの分担、返品の案内を整理。商品情報をそろえる準備を解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/apparel/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/apparel.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="アパレルのTikTok Shop｜試着・サイズ・返品の準備">
+<meta name="twitter:description" content="アパレルブランドのTikTok Shop参入を考える担当者向けに、試着や着回しの見せ方、サイズ表、色とサイズの在庫、LIVEの分担、返品の案内を整理。商品情報をそろえる準備を解説します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/apparel.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "アパレルのTikTok Shop｜試着・サイズ・返品の準備", "description": "アパレルブランドのTikTok Shop参入を考える担当者向けに、試着や着回しの見せ方、サイズ表、色とサイズの在庫、LIVEの分担、返品の案内を整理。商品情報をそろえる準備を解説します。", "inLanguage": "ja", "datePublished": "2026-10-26", "dateModified": "2026-10-26", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/apparel/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/apparel.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2735097048762128&lang=ja-JP", "name": "日本向け公式ポリシー"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&lang=ja-JP", "name": "TikTok Shop公式：データ分析の概要"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "アパレルのTikTok Shop｜試着・サイズ・返品の準備", "item": "https://leam.co.jp/column/apparel/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=apparel">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › アパレルブランドのTikTok Shop｜試着の見せ方とサイズ・返品</p>
+<span class="cat">業種別・アパレル</span>
+<h1>アパレルブランドのTikTok Shop｜試着の見せ方とサイズ・返品</h1>
+<div class="meta"><time class="upd" datetime="2026-10-26">更新日：2026年10月26日</time><time datetime="2026-10-26">公開日：2026年10月26日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+<figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左に丈を測る服と試着用の全身鏡、中央に寸法を確認する資料、右に色とサイズ別の服と在庫の箱を置き、試着と商品情報をそろえるイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="apparelDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#apparelDots" transform="translate(944 542)"/></g>
+<g stroke="#0B0C10" stroke-linejoin="round" stroke-linecap="round">
+<rect x="64" y="121" width="229" height="373" rx="26" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="64" y="121" width="229" height="373" rx="26" fill="#FFFFFF" stroke-width="7"/>
+<rect x="83" y="141" width="191" height="328" rx="17" fill="#EFF1F4" stroke-width="5"/>
+<path d="M91 208l57-59M235 390l28-29" fill="none" stroke="#FFFFFF" stroke-width="9"/>
+<path d="M87 496l-15 37M271 496l14 37" fill="none" stroke-width="7"/>
+<path d="M173 181h31v23l56 24 34 63-47 23-20-38v142H149V276l-20 38-47-23 34-63 57-24z" fill="#25F4EE" stroke-width="6"/>
+<path d="M173 204q15 20 31 0M152 385h73M127 240l-28 49M247 240l28 49" fill="none" stroke-width="4"/>
+<path d="M317 203v213M305 203h25M305 416h25" fill="none" stroke="#FE2C55" stroke-width="5"/>
+<path d="M317 222h15" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 244h9" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 266h15" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 288h9" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 310h15" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 332h9" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 354h15" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 376h9" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M317 398h15" fill="none" stroke="#FE2C55" stroke-width="4"/><path d="M349 319h30v-17l29 27-29 27v-17h-30z" fill="#25F4EE" stroke-width="5"/>
+<rect x="440" y="160" width="237" height="339" rx="14" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="440" y="160" width="237" height="339" rx="14" fill="#FFFFFF" stroke-width="7"/>
+<rect x="496" y="141" width="125" height="38" rx="10" fill="#FE2C55" stroke-width="6"/>
+<path d="M510 216l-36 23 15 39 26-13v59h90v-59l26 13 15-39-37-23-26 10h-46z" fill="#EFF1F4" stroke-width="5"/>
+<path d="M523 232v80M517 232h13M517 312h13M535 291h53M535 284v14M588 284v14" fill="none" stroke="#FE2C55" stroke-width="4"/>
+<path d="M465 352h188M465 397h188M465 442h188M510 352v128M580 352v128" fill="none" stroke="#C9CBD0" stroke-width="4"/>
+<path d="M529 375h32M529 419h25M600 375h31M600 419h25M529 463h32M600 463h31" fill="none" stroke="#DFE0E2" stroke-width="7"/>
+<path d="M706 319h28v-17l29 27-29 27v-17h-28z" fill="#25F4EE" stroke-width="5"/>
+<path d="M801 176h336M813 176v335M1126 176v335" fill="none" stroke-width="7"/>
+<path d="M841 199q0-13 14-13 14 0 14 13 0 8-14 14v9l-33 24h66l-33-24" fill="none" stroke-width="4"/><path d="M832 245l-28 16 14 32 18-8v78h56v-78l18 8 14-32-29-16q-31 19-63 0z" fill="#FE2C55" stroke-width="5"/><path d="M946 199q0-13 14-13 14 0 14 13 0 8-14 14v9l-33 24h66l-33-24" fill="none" stroke-width="4"/><path d="M937 245l-28 16 14 32 18-8v78h56v-78l18 8 14-32-29-16q-31 19-63 0z" fill="#FFFFFF" stroke-width="5"/><path d="M1051 199q0-13 14-13 14 0 14 13 0 8-14 14v9l-33 24h66l-33-24" fill="none" stroke-width="4"/><path d="M1042 245l-28 16 14 32 18-8v78h56v-78l18 8 14-32-29-16q-31 19-63 0z" fill="#25F4EE" stroke-width="5"/><rect x="797" y="412" width="340" height="97" rx="11" fill="#FFFFFF" stroke-width="6"/>
+<path d="M797 447h340M910 412v97M1024 412v97" fill="none" stroke-width="4"/>
+<rect x="812" y="424" width="82" height="12" rx="5" fill="#FE2C55" stroke="none"/>
+<rect x="927" y="424" width="81" height="12" rx="5" fill="#DFE0E2" stroke="none"/>
+<rect x="1040" y="424" width="81" height="12" rx="5" fill="#25F4EE" stroke="none"/>
+<path d="M828 474h50M941 474h50M1057 474h49" fill="none" stroke="#C9CBD0" stroke-width="7"/>
+<path d="M814 529h313M438 529h235" fill="none" stroke="#D8DADE" stroke-width="10"/>
+</g></svg><figcaption>試着の見え方と、サイズ・色・販売する在庫をそろえる（LEAM作成）</figcaption></figure>
+<p class="lead"><strong>アパレルブランドがTikTok Shopを始めるなら、試着の映像と、サイズ表・色・在庫・返品の案内を同じ商品情報でそろえます。</strong>着た姿や動いたときの見え方は映像で伝えられますが、画面の印象だけで購入者の体に合うかは決まりません。着用条件と商品の寸法を合わせて読める形にすることが、準備の中心です。</p>
+<p>カテゴリー全体の選び方は<a href="https://leam.co.jp/column/best-categories/">売れる商品のカテゴリー選び</a>、社内の体制との相性は<a href="https://leam.co.jp/column/good-fit/">向いている会社・向いていない会社</a>にまとめています。この記事では、服を扱う担当者が、試着の企画から販売後の対応まで何をそろえるかを整理します。</p>
+<div class="learn"><div class="lt">この記事で分かること</div><ul><li>試着・着回しで見せる情報と、サイズ選びを支える資料</li><li>LIVEで商品情報と色・サイズの在庫を合わせる分担</li><li>返品の案内と販売後の気付きを、次の説明へ戻す方法</li></ul></div>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">商品選び</span><b><a href="https://leam.co.jp/column/best-categories/">TikTok Shopで売れるものは？商品カテゴリーの選び方</a></b><span>ほかの業種と比較する</span></div><div class="relcard"><span class="rc">参入判断</span><b><a href="https://leam.co.jp/column/good-fit/">TikTok Shopに向いている会社・向いていない会社｜業種別</a></b><span>社内の準備との相性を見る</span></div></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">売上の構成を見て、自社の発信と紹介の両方を計画する</a></li><li><a href="#s2">試着は、前後左右と動きと組み合わせを見せる</a></li><li><a href="#s3">サイズ表は、服の寸法と着用例を分けて読める形にする</a></li><li><a href="#s4">自社のLIVEは、話し手と商品確認の担当を分ける</a></li><li><a href="#s5">色とサイズは、撮影用と販売用を同じ組み合わせで照合する</a></li><li><a href="#s6">返品の案内は、対象と条件と窓口が分かる形にする</a></li><li><a href="#s7">立ち上げは、着用例とサイズと在庫をそろえられる商品から始める</a></li><li><a href="#faq">アパレルの担当者からよくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>売上の構成を見て、自社の発信と紹介の両方を計画する</h2>
+<p>当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年10月21日時点・直近30日）では、<strong>レディースファッション・インナーは月約12億円規模</strong>で、そのうちトップスが月約7億円でした。大分類の上位10店の売上シェアは約29%。アフィリエイト、つまりクリエイターの紹介経由は月約5億円で、約4割です。</p>
+<div class="tw"><table><thead><tr><th>当社集計の区分</th><th>直近30日の売上規模</th><th>検討するときの読み方</th></tr></thead><tbody><tr><td>レディースファッション・インナー</td><td>月約12億円</td><td>大分類の構成。自社の商品の需要とは分ける</td></tr><tr><td>レディーストップス</td><td>月約7億円</td><td>内訳の分類。大分類と足して合計しない</td></tr><tr><td>メンズファッション・インナー</td><td>月約4億円</td><td>商品、季節、価格の条件を別に確認</td></tr><tr><td>ファッション小物</td><td>月約3億円</td><td>服との組み合わせと、単体の商品説明を分けて考える</td></tr></tbody></table></div>
+<p>メンズファッション・インナーは、当社集計では前の30日より約15%増でした。ただし、この期間の変化を、そのまま次の期間や個別商品の販売予測には使いません。季節や商品構成、単価などをそろえた比較ではないためです。</p>
+<p class="src">当社集計の参考値です。国内市場全体や、新しく始めた店の成果を示す数字ではありません。異なる階層の分類は合算しません。</p>
+<p>紹介経由の比率から、残りをすべて自社LIVEや自社動画の売上とみなすこともできません。一方、自社が試着の内容を整え、質問へ答える準備は、紹介者へ渡す資料にも役立ちます。自社の発信を持つか、誰に出演を頼むか、社内で何を判断するかを最初の計画に入れます。</p>
+<p>日本向け公式の分析ガイドは、LIVE、動画、商品カードに関する販売データを確認できると説明しています。販売後は入口ごとの情報も見て、どこで商品を知り、どの説明が使われたかを振り返ります。紹介経由という分類と、映像や商品カードという入口を、同じ区分として足し合わせないようにします。</p>
+<h2 id="s2"><span class="no en">02</span>試着は、前後左右と動きと組み合わせを見せる</h2>
+<p><strong>撮影する服を決めたら、購入前に迷う箇所から見せ方を組みます。</strong>正面だけでなく、横や後ろ、腕を動かす、座る、裾を出すといった動作を使います。実際の商品を着て、どのサイズと色かが分かる状態で撮ります。</p>
+<div class="tw"><table><thead><tr><th>見せる場面</th><th>映像で伝える情報</th><th>一緒に残す着用条件</th></tr></thead><tbody><tr><td>正面・横・後ろ</td><td>全体の形、丈、袖や裾の見え方</td><td>商品、色、着用サイズ、着用者の身長</td></tr><tr><td>腕を上げる・座る</td><td>動いたときの丈や、生地の動き</td><td>動作の前後が分かる映像と、着用の状態</td></tr><tr><td>生地を近くで見せる</td><td>厚さの見え方、表面、織りや編み、裏側</td><td>照明と撮影条件、商品資料で確かめた素材</td></tr><tr><td>別の服と合わせる</td><td>着回し、重ね方、シルエットの違い</td><td>販売する商品と、撮影で合わせただけのもの</td></tr><tr><td>サイズを替える</td><td>同じ商品での丈やゆとりの違い</td><td>色、着用者、撮影条件をそろえる</td></tr></tbody></table></div>
+<p>着回しでは、セットで売るものと、別に用意した服や小物を分けます。画面全体の雰囲気だけを見せると、購入するものの範囲が曖昧になります。商品ページへ進んだときにも、どの服を買うのかが同じ説明になっているかを確かめます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="apparelTryon" viewBox="0 0 720 295" role="img" aria-label="試着の企画で全体の形、動作、生地、着回しを分け、商品と色とサイズを共通で記録する図"><rect x="22" y="21" width="326" height="97" rx="12" fill="#EFF1F4"/><text x="185" y="57" text-anchor="middle" font-size="20" font-weight="700" fill="#0B0C10">全体の形</text><text x="185" y="96" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">正面・横・後ろ</text><rect x="372" y="21" width="326" height="97" rx="12" fill="#EFF1F4"/><text x="535" y="57" text-anchor="middle" font-size="20" font-weight="700" fill="#0B0C10">動いた見え方</text><text x="535" y="96" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">腕を動かす・座る</text><rect x="22" y="138" width="326" height="97" rx="12" fill="#EFF1F4"/><text x="185" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#0B0C10">生地と細部</text><text x="185" y="213" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">表面・裏側・質感</text><rect x="372" y="138" width="326" height="97" rx="12" fill="#EFF1F4"/><text x="535" y="174" text-anchor="middle" font-size="20" font-weight="700" fill="#0B0C10">着回し</text><text x="535" y="213" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">別の服との組み合わせ</text><rect x="94" y="252" width="532" height="28" rx="8" fill="#25F4EE"/><text x="360" y="273" text-anchor="middle" font-size="16" font-weight="700" fill="#0B0C10">商品・色・着用サイズを、映像の記録に残す</text></svg><figcaption>図1：試着の見どころと、共通の着用条件をそろえる（LEAM作成）</figcaption></figure>
+<p>色は、実物と画面の見え方を商品担当が確認します。明るさや加工を変えて撮った素材を並べる場合は、単純な色違いの比較として使わないようにします。生地の伸びや透け方を示す場合も、強く引っ張るなど、普段の使い方と違う動作で印象を作らず、撮影した条件を共有します。</p>
+<p>動画を短くするときは、商品名だけでなく、サイズと着用条件が分かる情報も残します。違うサイズを着た映像を混ぜたなら、切り替わったことが読めるようにします。長いLIVEからの切り抜きでも、元の配信を見ていない人に必要な条件が伝わるかを見直します。</p>
+<h2 id="s3"><span class="no en">03</span>サイズ表は、服の寸法と着用例を分けて読める形にする</h2>
+<p><strong>身長別の着用だけに頼らず、商品の寸法と測った位置を用意します。</strong>同じ身長でも、体形、着たいゆとり、合わせる服は異なります。「この身長ならこのサイズ」と言い切るより、着用例と商品の数値を並べ、本人が比較できる材料にします。</p>
+<p>サイズ表を作る担当は、着丈、身幅、袖丈、ウエスト、股下など、その商品で必要な箇所を決めます。単位と測り方をそろえ、服を平らに置いて測った寸法なのか、身体の寸法を示すものなのかを明記します。伸びる素材や調整できる部分は、測った条件と商品資料に沿って説明します。</p>
+<div class="tw"><table><thead><tr><th>購入者が見る情報</th><th>ブランドが用意する内容</th><th>混ぜないようにするもの</th></tr></thead><tbody><tr><td>商品の寸法</td><td>測る箇所、単位、測り方、必要な商品の説明</td><td>服の寸法と身体の寸法</td></tr><tr><td>着用する人の情報</td><td>身長、着用サイズ、普段の着方、合わせる服</td><td>本人の着用例と、全員に合うという判断</td></tr><tr><td>ゆとりの見え方</td><td>前後左右、動作、サイズを替えた映像</td><td>映像の印象と、商品の寸法</td></tr><tr><td>商品を選ぶ欄</td><td>色とサイズの表記、商品画像、選択肢の対応</td><td>試着に使ったものと、別の選択肢</td></tr></tbody></table></div>
+<p>サイズ名は、商品が違えば同じ着用感とは限りません。同じブランドの似た服でも、形や素材が違うなら、前の商品で使った説明をそのまま移さないようにします。購入者が持っている服と比較する案内をする場合も、同じ位置で測れる図を用意します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="apparelSize" viewBox="0 0 720 310" role="img" aria-label="商品の寸法と着用者の情報を別々に用意し、選ぶ人が希望する着方と比較できる形にする図"><rect x="25" y="26" width="320" height="155" rx="12" fill="#EFF1F4"/><text x="185" y="66" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">商品の寸法</text><text x="185" y="112" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">測る位置・単位・条件</text><text x="185" y="151" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">サイズ表と測り方</text><rect x="375" y="26" width="320" height="155" rx="12" fill="#EFF1F4"/><text x="535" y="66" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">着用者の情報</text><text x="535" y="112" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">身長・着用サイズ・着方</text><text x="535" y="151" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">前後左右と動いた映像</text><path d="M185 185v28h350v-28M360 213v16" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="102" y="238" width="516" height="50" rx="11" fill="#25F4EE"/><text x="360" y="270" text-anchor="middle" font-size="18" font-weight="700" fill="#0B0C10">本人の着用例を、全員に合う判断へ広げない</text></svg><figcaption>図2：サイズ表と着用例を分けて判断材料にする（LEAM作成）</figcaption></figure>
+<p>身長別の映像を用意するなら、どの人がどのサイズを着たかを記録します。撮影した後にサイズ表を更新した場合は、古い映像の説明と食い違わないかを確認します。商品を入れ替えたときは、同じ見た目でも、前の型のサイズ表を使っていないかを点検します。</p>
+<p>問い合わせでは、購入者の希望する着方も聞きます。ぴったり着たいか、重ね着したいかで選ぶ条件が変わります。担当者が断定するより、商品の寸法と確認できる着用例を案内し、分からない箇所は測り方や商品資料へ戻します。</p>
+<h2 id="s4"><span class="no en">04</span>自社のLIVEは、話し手と商品確認の担当を分ける</h2>
+<p><strong>LIVEを行う場合は、着る人だけでなく、質問と商品情報を支える人を決めます。</strong>身長やサイズを聞かれたとき、販売中の色を聞かれたとき、画面の服から別のサイズへ切り替えるときに、誰が確認して返すかを用意します。</p>
+<p>最初に、映す服と紹介する商品を照合します。話し手の手元へ、商品、色、サイズ、特徴、案内する条件を渡します。運営担当は、選択肢と販売できる在庫を確認します。話しながらすべての色とサイズの状況を覚えておく形にせず、最新の情報を見られるようにします。</p>
+<div class="tw"><table><thead><tr><th>LIVEの役割</th><th>持つ仕事</th><th>事前に合わせること</th></tr></thead><tbody><tr><td>試着して話す人</td><td>着た状態、動き、本人の着用感を伝える</td><td>着用する商品とサイズ、案内する条件</td></tr><tr><td>商品を確認する人</td><td>寸法、素材、使い方や手入れの説明を確認する</td><td>最新版の資料、保留する質問、返答の合図</td></tr><tr><td>運営を進める人</td><td>商品の切り替え、質問の整理、販売状況の連絡</td><td>色・サイズの表記と、在庫を確認する担当</td></tr><tr><td>購入者対応の人</td><td>注文後の問い合わせや返品の案内を受ける</td><td>注文と商品を確認する方法、社内の窓口</td></tr></tbody></table></div>
+<p>人数を増やせない場合も、仕事の区切りを決めます。着替えの間に誰が質問を整理するか、回答を確認できないときは何を保留するかを合わせます。担当が休む場合の代わりと、配信を終えた後の問い合わせも含めます。機材や配信開始までの段取りは<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>で確認できます。</p>
+<p>紹介者へ商品を渡すときにも、同じ資料を使います。本人の着回しの提案と、商品の寸法や素材の説明を分け、サンプルで渡すサイズと販売する選択肢を知らせます。撮影に使ったものが売り切れた場合は、別のサイズが同じ着用感になるとは案内せず、何が購入できるかを正確に伝えます。</p>
+<h2 id="s5"><span class="no en">05</span>色とサイズは、撮影用と販売用を同じ組み合わせで照合する</h2>
+<p><strong>在庫は商品全体の数だけでなく、色とサイズの組み合わせで見ます。</strong>色とサイズなどで分けた販売単位をSKUと呼びます。映像で見せるもの、商品ページの選択肢、倉庫から取り出すものが同じSKUを指すかを確認します。</p>
+<div class="tw"><table><thead><tr><th>照合する場所</th><th>そろえる情報</th><th>起こさないようにするずれ</th></tr></thead><tbody><tr><td>撮影用の服</td><td>商品、色、サイズ、撮影する時点の状態</td><td>サンプルと販売品の違いを知らせない</td></tr><tr><td>商品ページ</td><td>色名、サイズ名、画像、サイズ表</td><td>写真と購入する選択肢の対応が違う</td></tr><tr><td>販売できる在庫</td><td>色・サイズ別の数量、取り置き、他の売り場の分</td><td>全体には在庫があっても、紹介した組み合わせは欠品</td></tr><tr><td>出荷する商品</td><td>注文の選択肢と、現物のラベル</td><td>似た色や別サイズを発送する</td></tr></tbody></table></div>
+<p>品切れのときに、近い色やサイズへ自動で置き換えるような運営にはしません。注文した内容と異なるものを送る前提ではなく、注文と販売状況を確認し、公式の案内に沿って対応します。在庫管理の具体的な操作や点検は<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫管理の記事</a>へ進んでください。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="apparelStock" viewBox="0 0 720 320" role="img" aria-label="商品、色、サイズでそろえた情報を、撮影、商品ページ、販売在庫、出荷で同じように照合する図"><rect x="181" y="20" width="358" height="58" rx="12" fill="#0B0C10"/><text x="360" y="56" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">商品・色・サイズの対応をそろえる</text><rect x="16" y="117" width="158" height="128" rx="11" fill="#EFF1F4"/><text x="95" y="153" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">撮影</text><text x="95" y="195" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">実際に着たもの</text><text x="95" y="227" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">サンプルの記録</text><rect x="193" y="117" width="158" height="128" rx="11" fill="#EFF1F4"/><text x="272" y="153" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">商品ページ</text><text x="272" y="195" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">画像と選択肢</text><text x="272" y="227" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">サイズ表の対応</text><rect x="370" y="117" width="158" height="128" rx="11" fill="#EFF1F4"/><text x="449" y="153" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">販売在庫</text><text x="449" y="195" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">買える組み合わせ</text><text x="449" y="227" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">他の売り場も確認</text><rect x="547" y="117" width="158" height="128" rx="11" fill="#25F4EE"/><text x="626" y="153" text-anchor="middle" font-size="19" font-weight="700" fill="#0B0C10">出荷</text><text x="626" y="195" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">注文と現物</text><text x="626" y="227" text-anchor="middle" font-size="14" font-weight="500" fill="#0B0C10">ラベルを照合</text><text x="360" y="289" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">売り切れた選択肢を、別の色やサイズへ置き換えない</text></svg><figcaption>図3：色とサイズの対応を制作から出荷まで保つ（LEAM作成）</figcaption></figure>
+<p>撮影用の服を販売在庫から出す場合は、その扱いも記録します。試着や撮影に使ったものが、未使用の販売品として混ざらないように、倉庫と制作担当で管理します。紹介者へ渡したサンプルも、販売できる数量とは分けます。</p>
+<p>公開後に商品や仕様が変わった場合は、前に撮った動画を使い続けてよいかを確認します。色や素材、寸法が変わったのに同じ映像とサイズ表を使えば、購入者の判断材料がずれます。変更点をまとめ、商品ページ、動画、LIVEの資料へ同じ更新を届けます。</p>
+<h2 id="s6"><span class="no en">06</span>返品の案内は、対象と条件と窓口が分かる形にする</h2>
+<p><strong>試着の説明を整える仕事と、返品の申し出へ対応する仕事は両方必要です。</strong>サイズ表があれば返品は起きない、という計画にしません。購入前に読める案内と、申し出が来た後の社内の受け渡しを用意します。</p>
+<p>日本向け公式の返品・返金ポリシーは、「不要になった」という理由で返品できる商品がある一方、対象外のカテゴリーや、追加条件がある商品を示しています。販売者が正当な理由なく返品・返金を拒否しないことも定めています。すべての服を一律に返品できるとも、一律に返品できないとも案内せず、商品の条件を確認します。</p>
+<p>商品に説明と違う点がある、別の色やサイズを送った、欠陥があるといった申し出と、購入者が考えていた着用感と違うという相談は、内容を分けて記録します。担当者だけで先に結論を出さず、注文、商品ページ、実際に出荷したものを照合します。</p>
+<div class="tw"><table><thead><tr><th>案内と対応の項目</th><th>自社が確認しておくこと</th><th>記録に残す材料</th></tr></thead><tbody><tr><td>返品を受ける条件</td><td>対象の商品と理由、状態などの条件、公式の最新ルール</td><td>案内した条件と確認日</td></tr><tr><td>申し出の窓口</td><td>購入者が使う公式の手続きと、自社の担当</td><td>注文と連絡の内容、社内の引き継ぎ</td></tr><tr><td>商品の確認</td><td>色とサイズ、説明と現物、状態の違い</td><td>商品資料、出荷の記録、返ってきた商品の確認</td></tr><tr><td>ページへの反映</td><td>どの説明で迷われたか、寸法や写真にずれがないか</td><td>直す箇所、更新日、制作担当への連絡</td></tr></tbody></table></div>
+<p>対応の期限や返金の進み方は、<a href="https://leam.co.jp/column/returns-refunds/">返品・返金の対応手順</a>へ進んで確認してください。公式ルールは更新されるため、最新は<a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2735097048762128&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">日本向け公式ポリシー</a>で確認します。自社のページへ書いた一文だけで、プラットフォームの条件を置き換える扱いにはしません。</p>
+<p>販売後の記録は、返品の件数だけでなく、どの色やサイズで、何を見て選び、どこが違ったと感じたかを整理します。サイズの説明不足なら資料と着用例を見直し、誤配送なら選択肢と現物の照合を直します。異なる原因を、すべて話し手や購入者の問題へまとめないようにします。</p>
+<h2 id="s7"><span class="no en">07</span>立ち上げは、着用例とサイズと在庫をそろえられる商品から始める</h2>
+<p><strong>最初の対象は、撮影できる服だけでなく、説明と販売の条件がそろう服から選びます。</strong>着用例、寸法、色の写真、販売するサイズ、在庫、購入者への案内があるかを点検します。売りたい色やサイズと、撮影に使えるサンプルが違う場合は、どこを補うかを決めます。</p>
+<p>撮影前に、どの商品を何色・何サイズで見せるかを一覧にします。撮る人へ商品資料を渡し、公開前に完成した映像を商品担当が見ます。着回し用の服や小物を別に使うなら、購入する商品に含まれないことも確認します。切り抜きや広告に使うときは、その形になった後で着用条件が残っているかを点検します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="apparelUpdate" viewBox="0 0 720 310" role="img" aria-label="商品情報、試着、販売後の質問をつなぎ、サイズ表と映像と在庫案内を同じ情報へ更新する図"><rect x="20" y="29" width="208" height="151" rx="12" fill="#EFF1F4"/><text x="124" y="69" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">商品情報</text><text x="124" y="116" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">寸法・色・仕様</text><text x="124" y="156" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">販売できる在庫</text><rect x="255" y="29" width="208" height="151" rx="12" fill="#EFF1F4"/><text x="359" y="69" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">試着と発信</text><text x="359" y="116" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">動作・着回し</text><text x="359" y="156" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">着用条件を記録</text><rect x="490" y="29" width="208" height="151" rx="12" fill="#25F4EE"/><text x="594" y="69" text-anchor="middle" font-size="21" font-weight="700" fill="#0B0C10">販売後</text><text x="594" y="116" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">質問・返品の理由</text><text x="594" y="156" text-anchor="middle" font-size="16" font-weight="500" fill="#0B0C10">出荷と説明を照合</text><path d="M232 103h20m-6-6 6 6-6 6M467 103h20m-6-6 6 6-6 6M595 185v43H124v-43m-7 9 7-9 7 9" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="360" y="277" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">資料・商品ページ・動画を、同じ変更で更新する</text></svg><figcaption>図4：販売後の疑問を、次の説明へ戻す（LEAM作成）</figcaption></figure>
+<p>販売が始まったら、質問をサイズ表と着用例へ戻します。毎回同じ箇所を聞かれるなら、説明する場所や測り方の図を直します。動画の反応を追うだけでなく、届いた商品との違いが起きていないかも見ます。自社の発信、紹介者への資料、商品ページを別々に更新しないようにします。</p>
+<p>外部へ頼む場合は、試着する人の手配、撮影と編集、商品情報の整備、配信運営を分けて相談します。社内には、商品の寸法と仕様を判断する担当、色・サイズ別の販売状況を把握する担当、購入者対応の窓口を残します。販売の仕組みから社内の認識をそろえるなら、<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopの仕組みと始め方</a>を参照してください。</p>
+<h2 id="faq"><span class="no en">08</span>アパレルの担当者からよくある質問</h2>
+<div class="faq">
+<details><summary>TikTok Shopの試着動画は、身長だけ載せればサイズ選びに十分ですか？</summary><div class="a">身長に加え、着用サイズ、商品の寸法、測った位置、着方を示します。同じ身長でも体形や希望するゆとりは違うため、着用例だけで合うサイズを言い切らず、比較する材料を用意します。</div></details>
+<details><summary>撮影用の服と販売する服で、色や仕様が違う場合はどうしますか？</summary><div class="a">違いを商品担当が確認し、映像と商品ページで伝えます。購入するものと対応しない素材をそのまま使わず、色、素材、寸法など、変更した点をそろえてから公開します。</div></details>
+<details><summary>着回し動画に合わせた小物は、TikTok Shopの商品セットに含めますか？</summary><div class="a">含まないものがあるなら、販売する内容と撮影上の組み合わせを分けて案内します。商品ページでも、何が届くのかが同じ説明になっているかを確かめます。</div></details>
+<details><summary>LIVEで紹介した服が、特定のサイズだけ売り切れたらどう案内しますか？</summary><div class="a">買える色とサイズを確認して伝えます。別のサイズを同じ着用感として勧めたり、注文と違うものへ置き換えたりせず、販売状況と注文を分けて対応します。</div></details>
+<details><summary>アパレルの返品相談を、次の試着動画へどう生かしますか？</summary><div class="a">相談の理由を色・サイズ別に整理し、寸法の説明、着用例、写真、出荷の照合のどこを直すかを分けます。商品の変更ではなく説明の不足だった場合も、商品資料と完成した映像を更新します。</div></details>
+<details><summary>アフィリエイト経由でないアパレルの売上は、自社LIVEの成果ですか？</summary><div class="a">その集計だけでは決まりません。LIVE、動画、商品カードなどの情報を公式の分析で見て、入口と紹介経由の区分を分けて確認します。残りをすべて自社LIVEの成果とする計算はしません。</div></details>
+</div>
+<div class="ctabox"><div class="ct">試着の見せ方と、販売を支える情報から整理します</div><p>LEAMはTikTok Shopの運用支援を行っています。商品、サイズ情報、色・サイズ別の在庫と、撮影やLIVEで相談したい範囲を伺い、立ち上げの論点を整理します。参入を検討している段階から、ご相談いただけます。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=apparel">アパレルの出店を相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+<h2 id="sources"><span class="no en">09</span>参考にした公式情報と集計の時点</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2735097048762128&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：顧客注文のキャンセル、返品及び返金に関するポリシー</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a></li></ul>
+<p class="src">公式資料は2026年10月26日確認。数値は2026年10月21日時点・直近30日の当社集計です。前の30日との増減はメンズファッション・インナーだけを記載しています。撮影とサイズ情報、運営の確認表はLEAMが作成した案です。</p>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">返品</span><b><a href="https://leam.co.jp/column/returns-refunds/">TikTok Shopの返品・返金｜セラーの対応期限と自動承認</a></b><span>販売後の対応を確認</span></div><div class="relcard"><span class="rc">配信</span><b><a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門｜やり方と準備</a></b><span>LIVEの段取りを組む</span></div><div class="relcard"><span class="rc">在庫</span><b><a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">TikTok Shopの在庫管理｜欠品と売り越しを防ぐ</a></b><span>色・サイズの管理へ進む</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">売上の構成を見て、自社の発信と紹介の両方を計画する</a></li><li><a href="#s2">試着は、前後左右と動きと組み合わせを見せる</a></li><li><a href="#s3">サイズ表は、服の寸法と着用例を分けて読める形にする</a></li><li><a href="#s4">自社のLIVEは、話し手と商品確認の担当を分ける</a></li><li><a href="#s5">色とサイズは、撮影用と販売用を同じ組み合わせで照合する</a></li><li><a href="#s6">返品の案内は、対象と条件と窓口が分かる形にする</a></li><li><a href="#s7">立ち上げは、着用例とサイズと在庫をそろえられる商品から始める</a></li><li><a href="#faq">アパレルの担当者からよくある質問</a></li></ol></nav><div class="railcta"><b>アパレルの出店相談</b><p>商品とサイズ情報から、撮影と運営の準備を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=apparel">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopの試着動画は、身長だけ載せればサイズ選びに十分ですか？", "acceptedAnswer": {"@type": "Answer", "text": "身長に加え、着用サイズ、商品の寸法、測った位置、着方を示します。同じ身長でも体形や希望するゆとりは違うため、着用例だけで合うサイズを言い切らず、比較する材料を用意します。"}}, {"@type": "Question", "name": "撮影用の服と販売する服で、色や仕様が違う場合はどうしますか？", "acceptedAnswer": {"@type": "Answer", "text": "違いを商品担当が確認し、映像と商品ページで伝えます。購入するものと対応しない素材をそのまま使わず、色、素材、寸法など、変更した点をそろえてから公開します。"}}, {"@type": "Question", "name": "着回し動画に合わせた小物は、TikTok Shopの商品セットに含めますか？", "acceptedAnswer": {"@type": "Answer", "text": "含まないものがあるなら、販売する内容と撮影上の組み合わせを分けて案内します。商品ページでも、何が届くのかが同じ説明になっているかを確かめます。"}}, {"@type": "Question", "name": "LIVEで紹介した服が、特定のサイズだけ売り切れたらどう案内しますか？", "acceptedAnswer": {"@type": "Answer", "text": "買える色とサイズを確認して伝えます。別のサイズを同じ着用感として勧めたり、注文と違うものへ置き換えたりせず、販売状況と注文を分けて対応します。"}}, {"@type": "Question", "name": "アパレルの返品相談を、次の試着動画へどう生かしますか？", "acceptedAnswer": {"@type": "Answer", "text": "相談の理由を色・サイズ別に整理し、寸法の説明、着用例、写真、出荷の照合のどこを直すかを分けます。商品の変更ではなく説明の不足だった場合も、商品資料と完成した映像を更新します。"}}, {"@type": "Question", "name": "アフィリエイト経由でないアパレルの売上は、自社LIVEの成果ですか？", "acceptedAnswer": {"@type": "Answer", "text": "その集計だけでは決まりません。LIVE、動画、商品カードなどの情報を公式の分析で見て、入口と紹介経由の区分を分けて確認します。残りをすべて自社LIVEの成果とする計算はしません。"}}]}</script>
+</body>
+</html>
