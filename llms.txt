@@ -51,7 +51,7 @@
 - [TikTok Shopの価格設定戦略｜衝動買いされる値付けとセット設計](https://leam.co.jp/column/pricing-strategy/): TikTok Shopは比較されない売り場のため、安さは伝わりにくい。効くのは総額の分かりやすさです。価格が効く動画・商品カード・カートの3地点と、送料込み表示の考え方まで。
 
 ### 手数料・販促
-- [TikTok Shopの手数料はいくら？カテゴリー別の料率](https://leam.co.jp/column/tiktok-shop-fees/): 初期費用・月額0円、売れたときだけ販売手数料7〜12%（決済手数料込み）。2026年5月に一律7%から4段階へ改定。アフィリエイト報酬を足すと実質25%になる例も試算表で出します。
+- [TikTok Shopの手数料はいくら？カテゴリー別の料率](https://leam.co.jp/column/tiktok-shop-fees/): 出店の初期費用・月額固定費の定めはなく、売れたときにカテゴリー別の販売手数料7〜12%。2026年5月11日から4段階に。アフィリエイト報酬を足すと実質25%になる例も試算表で出します。
 - [TikTok Shopのクーポン・セール活用術](https://leam.co.jp/column/coupon-sale-tactics/): 割引率に一律の正解はありません。原価・手数料・報酬・送料を引いた「販促原資」から逆算します。クーポン6タイプの使い分けつき。
 - [TikTok Shopの商戦期カレンダー｜大型セールの準備と当日運用](https://leam.co.jp/column/seasonal-campaign/): TikTok Shopの年間最大の山は11〜12月の年末商戦。準備は8週間前＝9月が目安で、クリエイター起用は4週間前、広告の配信開始は2週間前が締め切り。
 - [TikTok Shop手数料の改定履歴と見直し方](https://leam.co.jp/column/fees-revision-history/): TikTok Shopの手数料改定で変わる四つの層と、公式ヘルプで確認できる痕跡、値上げ時に価格・原価・報酬・広告を見直す順番を出典つきで解説します。
