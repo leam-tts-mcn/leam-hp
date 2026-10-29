@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>インフルエンサーの探し方｜TikTok Shopの検索と保存</title>
+<meta name="description" content="TikTok Shopの公式検索を入口に、販売実績と紹介履歴で候補を探します。検索・募集・動画・外部の使い分け、クリエイターコネクトへの保存、候補一覧に残す項目を解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/find-creators/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="インフルエンサーの探し方｜TikTok Shopの検索と保存">
+<meta property="og:description" content="TikTok Shopの公式検索を入口に、販売実績と紹介履歴で候補を探します。検索・募集・動画・外部の使い分け、クリエイターコネクトへの保存、候補一覧に残す項目を解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/find-creators/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/find-creators.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="インフルエンサーの探し方｜TikTok Shopの検索と保存">
+<meta name="twitter:description" content="TikTok Shopの公式検索を入口に、販売実績と紹介履歴で候補を探します。検索・募集・動画・外部の使い分け、クリエイターコネクトへの保存、候補一覧に残す項目を解説します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/find-creators.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "インフルエンサーの探し方｜TikTok Shopの検索と保存", "description": "TikTok Shopの公式検索を入口に、販売実績と紹介履歴で候補を探します。検索・募集・動画・外部の使い分け、クリエイターコネクトへの保存、候補一覧に残す項目を解説します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/find-creators/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/find-creators.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトのコラボ機能の案内"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787227408&lang=ja-JP", "name": "TikTok Shop公式：クリエイターの参加案内"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "インフルエンサーの探し方｜TikTok Shopの検索と保存", "item": "https://leam.co.jp/column/find-creators/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=find-creators">無料相談</a></div>
+<div class="shell"><article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › インフルエンサーの探し方｜TikTok Shopで売れている人を見つける場所</p><span class="cat">クリエイター起用の進め方</span><h1>インフルエンサーの探し方｜TikTok Shopで売れている人を見つける場所</h1><div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="虫眼鏡で人物一覧を調べ、ハートで選んだ候補の紹介動画と記録を一つのフォルダーへまとめるイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="findcreatorsDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#findcreatorsDots" transform="translate(944 542)"/>
+  </g><g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><rect x="96" y="119" width="409" height="381" rx="20" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><rect x="96" y="119" width="409" height="381" rx="20" fill="#FFFFFF"/><path d="M96 179h409" fill="none"/><rect x="123" y="141" width="254" height="18" rx="9" fill="#DFE0E2" stroke="none"/><circle cx="462" cy="150" r="13" fill="#25F4EE" stroke-width="4"/><rect x="119" y="207" width="361" height="74" rx="10" fill="#EFF1F4" stroke="none"/><circle cx="158" cy="231" r="14" fill="#C9CBD0" stroke-width="4"/><path d="M135 269v-4a23 23 0 0 1 46 0v4" fill="#FFFFFF" stroke-width="4"/><path d="M212 231h129m-129 23h86" stroke="#C9CBD0" stroke-width="5"/><path d="M441 236c-9-17-32-5-17 11l17 16 17-16c15-16-8-28-17-11z" fill="#FFFFFF" stroke-width="4"/><rect x="119" y="300" width="361" height="74" rx="10" fill="#25F4EE" stroke="none"/><circle cx="158" cy="324" r="14" fill="#C9CBD0" stroke-width="4"/><path d="M135 362v-4a23 23 0 0 1 46 0v4" fill="#FFFFFF" stroke-width="4"/><path d="M212 324h129m-129 23h86" stroke="#C9CBD0" stroke-width="5"/><path d="M441 329c-9-17-32-5-17 11l17 16 17-16c15-16-8-28-17-11z" fill="#FE2C55" stroke-width="4"/><rect x="119" y="393" width="361" height="74" rx="10" fill="#EFF1F4" stroke="none"/><circle cx="158" cy="417" r="14" fill="#C9CBD0" stroke-width="4"/><path d="M135 455v-4a23 23 0 0 1 46 0v4" fill="#FFFFFF" stroke-width="4"/><path d="M212 417h129m-129 23h86" stroke="#C9CBD0" stroke-width="5"/><path d="M441 422c-9-17-32-5-17 11l17 16 17-16c15-16-8-28-17-11z" fill="#FFFFFF" stroke-width="4"/><circle cx="341" cy="387" r="96" fill="#FFFFFF" fill-opacity=".55" stroke-width="8"/><path d="m408 455 81 81" stroke="#CE1730" stroke-width="25"/><path d="M279 356a70 70 0 0 1 65-39" fill="none" stroke="#FFFFFF" stroke-width="9"/><path d="M536 292h88m-25-24 25 24-25 24" fill="none" stroke="#CE1730" stroke-width="7"/><path d="M682 255v-83q0-16 16-16h132l31 34h215q16 0 16 16v278H682z" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><path d="M682 255v-83q0-16 16-16h132l31 34h215q16 0 16 16v278H682z" fill="#DFE0E2"/><rect x="718" y="210" width="152" height="211" rx="12" fill="#FFFFFF"/><circle cx="768" cy="251" r="21" fill="#C9CBD0"/><path d="M736 308v-17a32 32 0 0 1 64 0v17" fill="#EFF1F4" stroke-width="5"/><path d="M736 337h104m-104 24h75m-75 24h92" fill="none" stroke="#C9CBD0" stroke-width="5"/><rect x="891" y="226" width="162" height="147" rx="12" fill="#FFFFFF"/><path d="M891 262h162m-138-36 22 36m19-36 22 36m19-36 22 36" fill="none" stroke-width="4"/><path d="m951 286 40 24-40 24z" fill="#FE2C55" stroke-width="4"/><path d="M681 361h171l27-34h220q13 0 10 16l-28 153H681z" fill="#25F4EE"/><path d="M736 414h116m-116 28h77" fill="none" stroke-width="5"/><path d="m1024 418 14 14 30-38" fill="none" stroke="#CE1730" stroke-width="8"/><circle cx="582" cy="464" r="18" fill="#FE2C55" stroke-width="4"/><path d="M572 464h20m-10-10v20" stroke="#FFFFFF" stroke-width="4"/></g></svg>
+<figcaption>候補を検索し、紹介の履歴と選んだ理由をまとめて保存する（編集部作成）</figcaption></figure><p class="lead"><strong>TikTok Shopで紹介を頼む人を探すなら、公式のクリエイター検索を入口にし、同じカテゴリーの販売実績と紹介の履歴を確認して候補を保存します。</strong>公式の募集、自社に近い商品の動画、外部の窓口も組み合わせられます。どこで見つけた人でも、依頼前には同じ項目で記録して比べることが大切です。</p>
+<p>「インフルエンサーを探す」と考えると、目立つ投稿やフォロワー数から候補を集めがちです。TikTok Shopで商品の紹介を頼む場合は、知名度だけでなく、何を、どの形式で紹介し、販売につながったかを確認します。探す場所を増やすことと、候補を判断できる情報を集めることを一緒に進めます。</p>
+<p>この記事では、公式で確認できる検索・保存・サンプル申請の絞り込みを整理し、候補の履歴を控える一覧の型を紹介します。見つけた人へすぐに声をかける前に、なぜその人を候補に残したかを説明できる状態まで整えます。</p>
+<div class="learn"><div class="lt">この記事で分かること</div><ul><li>公式の検索・募集、TikTok上の動画、外部の窓口の使い分け</li><li>公式で確認できる候補の保存と、サンプル申請の絞り込み項目</li><li>発見した場所、販売の記録、紹介の履歴を残す候補一覧の記入欄</li></ul></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">探す場所は、公式の検索・募集・動画・外部に分ける</a></li><li><a href="#s2">公式の検索で見つけた候補は、カテゴリーと実績で絞る</a></li><li><a href="#s3">気になった人はクリエイターコネクトに保存する</a></li><li><a href="#s4">オープンコラボのサンプル申請は、条件で絞って確認する</a></li><li><a href="#s5">自社に近い商品の動画から、紹介した人をたどる</a></li><li><a href="#s6">名前の似た窓口は、日本向け公式ヘルプで役割を確かめる</a></li><li><a href="#s7">候補を見つけたら、その場で売上と紹介の履歴を控える</a></li><li><a href="#summary">探す場所を使い分け、選んだ理由が残る一覧へまとめる</a></li><li><a href="#faq">クリエイターを探して控えるときのよくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>探す場所は、公式の検索・募集・動画・外部に分ける</h2>
+<p>探す場所には、アフィリエイトセンターの検索、公式の募集、TikTok上の商品紹介動画、外部の窓口があります。検索は自社から候補を探す入口です。募集は商品に関心を持った人を確認する入口、動画は実際の紹介内容を知る入口、外部は候補探しを相談する入口として使い分けます。</p>
+<p>どの場所が最もよいかを一律に決める必要はありません。自社に候補がいないなら検索から始め、商品に関心を示した人がいるならその申請を確認します。気になる動画が見つかったら、投稿者を候補として控え、販売の実績を別に確認します。</p>
+<div class="tw"><table><thead><tr><th>探す場所</th><th>見つけるきっかけ</th><th>候補に残す前の確認</th></tr></thead><tbody>
+<tr><td>公式のクリエイター検索</td><td>自社の商品を紹介できそうな人を探す</td><td>同じカテゴリーの実績と、紹介した内容</td></tr>
+<tr><td>公式の募集・サンプル申請</td><td>商品に関心を示した人から候補を見る</td><td>申請者の紹介実績と、今回頼みたい形式の一致</td></tr>
+<tr><td>TikTok上の商品紹介動画</td><td>自社に近い商品や使い方の動画から投稿者を見る</td><td>再生の多さと販売の実績を分けて確認</td></tr>
+<tr><td>外部の窓口</td><td>起用を支援する会社などへ候補探しを相談する</td><td>選んだ理由と、実績の期間・対象を受け取る</td></tr>
+</tbody></table></div>
+<p class="src">表1：候補を見つける入口の比較（編集部作成）。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="findcreatorsSources" viewBox="0 0 780 540" role="img" aria-label="検索、募集、動画、外部の入口から見つけた人を同じ候補一覧へまとめる図"><rect x="0" y="0" width="780" height="540" rx="12" fill="#FFFFFF"/><text x="32" y="43" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10" text-anchor="start">入口が違っても、同じ候補一覧へまとめる</text><rect x="32" y="84" width="414" height="78" rx="12" fill="#FFECF0"/><text x="52" y="115" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="start">公式の検索</text><text x="52" y="145" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="start">自社から候補を探す</text><path d="M460 123h48" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="183" width="414" height="78" rx="12" fill="#EDF6F5"/><text x="52" y="214" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="start">公式の募集</text><text x="52" y="244" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="start">商品に関心を示した人を見る</text><path d="M460 222h48" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="282" width="414" height="78" rx="12" fill="#EFF1F4"/><text x="52" y="313" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="start">商品紹介動画</text><text x="52" y="343" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="start">紹介の中身から投稿者を知る</text><path d="M460 321h48" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="381" width="414" height="78" rx="12" fill="#EFF1F4"/><text x="52" y="412" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="start">外部の窓口</text><text x="52" y="442" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="start">条件を渡し、候補探しを相談する</text><path d="M460 420h48" fill="none" stroke="#0B0C10" stroke-width="3"/><path d="M508 123v297m0-148h36m-10-10 10 10-10 10" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="554" y="211" width="180" height="125" rx="12" fill="#25F4EE"/><text x="644" y="249" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10" text-anchor="middle">候補一覧</text><text x="644" y="282" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">発見した場所</text><text x="644" y="311" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">実績と残す理由</text><text x="32" y="505" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10" text-anchor="start">同じ人が見つかったら、紹介の履歴を同じ行へ足す。</text></svg>
+<figcaption>図1：入口が違う候補を同じ一覧へまとめる（編集部作成）</figcaption></figure>
+<p>候補一覧は入口ごとに別々に完成させるより、発見した場所を列に残して同じ一覧へまとめます。同じ人が検索と動画の両方で見つかった場合も、別の候補として数えず、確認できた紹介の履歴を同じ行へ足せます。</p>
+<p>当社の運用実感では、候補の人数だけを増やした一覧は、社内で見直すときに「何を見て選んだか」が分からなくなりがちです。候補の表示名に加えて、同じカテゴリーで紹介した商品と、残した理由をその場で記録すると、後から判断しやすくなります。</p>
+<p>外部へ候補探しを任せる場合は、一覧の提出だけでなく、どの実績を確認して候補にしたかを受け取ります。依頼する作業の範囲は<a href="https://leam.co.jp/column/creator-casting-agency/">クリエイター起用を外部へ依頼する方法</a>に整理しています。外部で見つかった人にも、自社で探した人と同じ確認欄を使います。</p>
+
+<h2 id="s2"><span class="no en">02</span>公式の検索で見つけた候補は、カテゴリーと実績で絞る</h2>
+<p>2026年10月29日時点の日本向け公式ヘルプでは、アフィリエイトセンターの「Discover Creators（クリエイターを見つける）」から「Find Creators（クリエイターの検索）」へ進み、候補を探す流れが案内されています。候補のパフォーマンスデータを確認する説明もあります。</p>
+<p>検索の入口を開くことと、その人を選ぶことは別の作業です。候補が見つかったら、自社と同じカテゴリーで何を紹介したかを見ます。総売上が大きくても、別の種類の商品で作った実績なら、今回の商品との近さは改めて確かめます。</p>
+<p>次に、販売の記録がどの期間のものか、動画とライブのどちらで紹介したかを合わせます。期間の違う値をそのまま並べたり、ライブで作った売上を動画の実績として扱ったりすると、候補の比較がずれます。詳しい読み方は<a href="https://leam.co.jp/column/creator-gmv-ranking/">クリエイターのGMVと紹介履歴の見方</a>を参照してください。</p>
+<p>フォロワー数は、候補を探すときの情報の一つです。ただし、知名度の大きさだけで候補の範囲を狭めず、実際の商品紹介の記録へ進みます。参加資格の条件と、自社が選びたい候補の条件も分けて考えます。</p>
+<p>同日に確認した日本向けの参加案内には、クリエイターの条件として18歳以上・フォロワー1,000人以上が示されています。これだけで参加できるという意味ではなく、行動規範などの条件や本人確認もあります。条件を満たすことと、自社の商品に合うことは別の判断です。</p>
+<p>当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年9月25日〜10月29日・17カテゴリーの売上上位100位のクリエイターのうち、TikTok Shop のアフィリエイトの参加条件に合うフォロワー1,000人以上で、ブランドやショップの公式アカウントらしい人を除いた1,271人）では、フォロワー1,000〜1万人の人が67%でした。</p>
+<p>売上で上位に選ばれた人の中での割合なので、フォロワーが少ない人へ頼めば売れるという意味ではありません。候補を探す入口で大きなアカウントだけに限定しない理由として読み、詳しい集計は<a href="https://leam.co.jp/column/micro-nano-influencer/">売上上位のクリエイターのフォロワー数</a>へ分けています。</p>
+<p>公式の画面の役割と、クリエイター側の参加の流れを混同しやすい場合は、<a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターと参加の入口の違い</a>を確認してください。候補を探す売り手側の作業と、本人が参加する手続きを分けておくと、必要な確認を相手へ伝えやすくなります。</p>
+
+<h2 id="s3"><span class="no en">03</span>気になった人はクリエイターコネクトに保存する</h2>
+<p>公式ヘルプでは、クリエイターコネクトの各行にあるハートでクリエイターを保存し、保存した人の一覧を確認できると案内されています。また、保存済みのクリエイターを、後のターゲットコラボで選ぶ流れも示されています。気になる候補を探し直さなくてよいよう、検索と保存を一緒に進めます。</p>
+<p>保存は、依頼することを決定する操作ではありません。候補として残した後に、今回の商品との相性、実績の期間、紹介する形式を確認して選びます。「保存済み」と「依頼を決めた人」を一覧で同じ状態にしないことが大切です。</p>
+<p>同じ公式ヘルプのFAQでは、保存できるクリエイターの上限は1,000人とされています。この数は保存機能の上限であり、起用すべき人数や、一度に依頼できる人数を表すものではありません。利用時は最新の公式画面とヘルプで上限を確認してください。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="findcreatorsSavedAndSelected" viewBox="0 0 790 450" role="img" aria-label="保存、実績の確認、社内判断を別の段階として並べる図"><rect x="0" y="0" width="790" height="450" rx="12" fill="#FFFFFF"/><text x="32" y="43" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10" text-anchor="start">保存した人と、依頼する人を分けて管理する</text><rect x="32" y="112" width="218" height="205" rx="12" fill="#EFF1F4"/><text x="141" y="157" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="middle">候補として保存</text><text x="141" y="215" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">紹介の参照先</text><text x="141" y="254" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">気になった理由</text><rect x="286" y="112" width="218" height="205" rx="12" fill="#EDF6F5"/><text x="395" y="157" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="middle">実績を確認</text><text x="395" y="215" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">カテゴリーと形式</text><text x="395" y="254" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">売上の期間と対象</text><rect x="540" y="112" width="218" height="205" rx="12" fill="#FFECF0"/><text x="649" y="157" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="middle">社内で判断</text><text x="649" y="215" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">依頼する理由</text><text x="649" y="254" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">追加で確かめる点</text><path d="M257 215h18m-7-8 8 8-8 8" fill="none" stroke="#0B0C10" stroke-width="3"/><path d="M511 215h18m-7-8 8 8-8 8" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="395" y="374" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10" text-anchor="middle">ハートによる保存は、候補を残すための機能</text><text x="395" y="413" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10" text-anchor="middle">依頼内容と相手を決める判断は、その後に行う</text></svg>
+<figcaption>図2：保存と、依頼する判断を分ける（編集部作成）</figcaption></figure>
+<p>保存先の一覧とは別に、自社の候補表には保存した理由を残します。「同じカテゴリーを紹介している」「今回頼む形式で販売の記録がある」「紹介の仕方を確認したい」といった形で、追加確認する点まで書いておきます。画面に保存しただけでは、社内で候補を見直す理由は共有できないからです。</p>
+<p>候補を見つけて保存する段階では、招待文や依頼の条件までその場で決める必要はありません。先に選ぶ理由をそろえ、判断した後に依頼へ進みます。選ぶ基準の作り方は<a href="https://leam.co.jp/column/creator-selection-criteria/">候補を全員見送りにしないための選定基準</a>に整理しています。</p>
+<p>一覧を見直すときは、保存数が増えたことより、追加確認が終わった人が増えたかを見ます。残す理由が説明できない候補は、人数を埋めるために依頼へ進めず、紹介の履歴を確認するところへ戻します。</p>
+
+<h2 id="s4"><span class="no en">04</span>オープンコラボのサンプル申請は、条件で絞って確認する</h2>
+<p>オープンコラボは、商品を紹介したいクリエイターに見つけてもらう入口であり、初めて募集を用意する流れは<a href="https://leam.co.jp/column/no-first-sale/">初売上の前に整えるアフィリエイト設定</a>で確認できます。</p>
+<p>商品へ関心を持った人が現れたら、申請があるという理由だけで承認せず、今回頼みたい紹介の条件と合わせます。2026年10月29日時点の日本向け公式ヘルプには、オープンコラボで無料サンプルを受け取るクリエイターを、条件で絞り込む項目が示されています。</p>
+<div class="tw"><table><thead><tr><th>公式に示された絞り込み項目</th><th>確認する内容</th><th>自社の候補表へ残すこと</th></tr></thead><tbody>
+<tr><td>商品カテゴリー</td><td>選んだカテゴリーで紹介・販売した実績</td><td>どのカテゴリーの、どんな商品か</td></tr>
+<tr><td>フォロワー数</td><td>フォロワー規模に応じた絞り込み</td><td>規模だけで選ばず、実績と合わせた理由</td></tr>
+<tr><td>コンテンツタイプ</td><td>動画、LIVE、または両方での紹介</td><td>今回依頼したい形式と一致するか</td></tr>
+<tr><td>クリエイターエージェンシー</td><td>エージェンシー管理か、個人での活動か</td><td>依頼の際に確認する窓口</td></tr>
+<tr><td>過去のコラボ</td><td>過去に紹介を依頼したことがあるか</td><td>自社で確認できる過去の依頼</td></tr>
+<tr><td>GMV</td><td>過去30日間のクリエイターの売上</td><td>対象期間と、確認した画面</td></tr>
+<tr><td>動画ごとの平均視聴数</td><td>動画の視聴の実績</td><td>販売の実績とは別の欄に記録</td></tr>
+</tbody></table></div>
+<p class="src">表2：無料サンプル申請の絞り込み項目と、自社で残す記録（公式資料に基づき編集部作成）。</p>
+<p>商品カテゴリーの説明では、過去30日間にそのカテゴリーで収益を上げたか、商品を紹介した実績のある人へ絞るとされています。コンテンツタイプも、過去30日間に動画・LIVE・両方で紹介したかを確認する項目です。いずれも、申請者の実績を今回の紹介内容に近づけるために使います。</p>
+<p>ここで示した項目は、無料サンプル申請の絞り込みの説明です。検索や保存などのすべての画面に同じ項目があるとは限りません。名称だけを覚えて別の一覧を探すより、何を判断したいかを決めて、その画面で確認できる情報を使います。</p>
+<p>視聴の実績で絞った場合も、売れている人と同じ意味ではありません。売上の期間と紹介した商品を確認し、今回の商品に近いかを見ます。さらに、承認した後に紹介の進行を確認できる状態かも自社で確認してから、サンプルを用意します。</p>
+<p>募集を用意しても申請や紹介につながらない場合の原因整理は、<a href="https://leam.co.jp/column/creators-not-coming/">クリエイターが集まらないときの見直し方</a>へ分けています。この記事では、候補が現れた後に、その人をどんな情報で確認して記録するかを扱います。</p>
+
+<h2 id="s5"><span class="no en">05</span>自社に近い商品の動画から、紹介した人をたどる</h2>
+<p>公式の検索とは別に、自社と同じカテゴリーの商品を紹介する動画も候補の入口になります。商品をどう見せ、どんな場面で使い、どのような理由で選ぶと説明しているかを確認します。投稿者の知名度を見るだけでは分からない、紹介の具体的な中身を見られる場所です。</p>
+<p>売れている動画から候補を探したい場合も、再生数やコメントの多さだけで販売があったと決めません。動画で見つけた人について、公式で確認できるパフォーマンスや商品紹介の履歴へ戻って確かめます。販売の記録が確認できないものは、候補表で未確認の欄を残します。</p>
+<p>同じカテゴリーの中でも、単価や使う人、説明に必要な情報が違います。今回の商品と近い点を先に書き、その人がどんな紹介をしているから候補にしたかを残します。「雰囲気がよい」という感想だけより、今回の依頼に結びつく理由になります。</p>
+<p>当社の運用実感では、動画の印象だけで候補を渡すと、後から販売の記録を確認する担当者が探し直すことがあります。投稿の参照先、紹介していた商品の種類、確認した時点を同じ行へ入れると、次に見る人が同じ投稿を確認できます。</p>
+<p>似た動画をたくさん保存することを目的にせず、紹介内容と実績を対応させることを目的にします。候補として控えるのは本人のアカウントと紹介の参照先です。依頼へ進むときには、公式の機能や合意した窓口を使う流れを、別に整えます。</p>
+
+<h2 id="s6"><span class="no en">06</span>名前の似た窓口は、日本向け公式ヘルプで役割を確かめる</h2>
+<p>検索、保存、募集、参加申請は、それぞれ別の役割です。解説で見かけた名前が似ていても、同じ入口とは限りません。日本向けの公式ヘルプで、誰が使う機能か、何を探す場所か、確認できる実績は何かを見てから使います。</p>
+<p>特に、売り手がクリエイターを探す画面と、クリエイター本人が参加する画面を混ぜないことが必要です。日本語で書かれた資料でも、対象となる地域や利用者が違えば、自社の画面で使える機能の説明にはなりません。画面名だけで判断せず、説明の対象を確認します。</p>
+<div class="tw"><table><thead><tr><th>確かめる欄</th><th>読むときの問い</th><th>候補探しへ使う判断</th></tr></thead><tbody>
+<tr><td>対象の地域</td><td>日本向けの案内か</td><td>別の地域の入口や条件をそのまま採用しない</td></tr>
+<tr><td>使う人</td><td>売り手向けか、クリエイター向けか</td><td>候補を探す作業と、本人の参加を分ける</td></tr>
+<tr><td>機能の役割</td><td>検索、保存、募集、申請のどれか</td><td>探す段階と、依頼を確定する段階を混ぜない</td></tr>
+<tr><td>示される実績</td><td>売上、視聴、紹介内容のどれを示すか</td><td>確認できた項目だけを候補表へ記録する</td></tr>
+<tr><td>実績の期間</td><td>いつからいつまでの記録か</td><td>別の期間の値を同じ数字として比べない</td></tr>
+</tbody></table></div>
+<p class="src">表3：機能の名前と役割を確かめる確認表（編集部作成）。</p>
+<p>分からない名前が出た場合に、似ている機能へ読み替えて使い方を決める必要はありません。確認できた公式の入口から進め、足りない情報は候補表の確認欄へ残します。探す作業が止まりそうなら、表示名を推測するより、同じ目的で確認できる公式の場所へ戻ります。</p>
+<p>この記事で示した名称と条件は、2026年10月29日に日本向け公式資料を確認したものです。機能名や使える範囲は変わることがあるため、実施時には最新の公式ヘルプと利用する画面で確認してください。</p>
+
+<h2 id="s7"><span class="no en">07</span>候補を見つけたら、その場で売上と紹介の履歴を控える</h2>
+<p>候補を見つけた場所が違っても、残す項目はそろえます。本人を確認できる参照先、見つけた入口、実績の期間、紹介した商品と形式、候補にした理由を記録します。あとで調べ直す前提にせず、候補として残す時点で埋められる欄を埋めます。</p>
+<p>売上の値だけを控えるのではなく、その値が何の売上かも一緒に残してください。期間や対象が分からない数字は、比較できる数字として使いません。値を確認できない欄は空欄の理由を書き、想像で埋めずに追加確認へ回します。</p>
+<div class="tw"><table><thead><tr><th>候補一覧の列</th><th>記入欄の見本</th><th>確認の目的</th></tr></thead><tbody>
+<tr><td>本人の参照先</td><td>表示名＿＿／アカウント参照先＿＿</td><td>同じ人を重複して数えず、確認し直せるようにする</td></tr>
+<tr><td>発見した入口</td><td>公式検索・申請・動画・外部のいずれか＿＿</td><td>どの情報から候補にしたかを残す</td></tr>
+<tr><td>確認した時点と期間</td><td>確認日＿＿／実績の対象期間＿＿</td><td>時点が違う数字を混ぜない</td></tr>
+<tr><td>確認できた売上</td><td>値＿＿／対象商品・範囲＿＿／参照先＿＿</td><td>総売上と今回の商品に近い実績を分ける</td></tr>
+<tr><td>紹介の履歴</td><td>カテゴリー＿＿／商品の種類＿＿／動画かLIVEか＿＿</td><td>今回の依頼と近い紹介かを判断する</td></tr>
+<tr><td>見た投稿の参照先</td><td>投稿の参照先＿＿／確認した紹介内容＿＿</td><td>担当者が同じ内容を見直せるようにする</td></tr>
+<tr><td>候補にした理由</td><td>今回の商品と近い点＿＿／追加確認＿＿</td><td>保存しただけの人と、判断できる人を分ける</td></tr>
+<tr><td>社内の判断</td><td>確認中・依頼候補・見送り＿＿／判断理由＿＿</td><td>次に何をするかを決める</td></tr>
+</tbody></table></div>
+<p class="src">表4：候補一覧の列と記入欄の見本（編集部作成）。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="findcreatorsEvidenceRow" viewBox="0 0 780 492" role="img" aria-label="本人と入口、実績と紹介履歴、判断の理由を候補一覧の同じ行へ残す図"><rect x="0" y="0" width="780" height="492" rx="12" fill="#FFFFFF"/><text x="32" y="43" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10" text-anchor="start">見つけたときに残す情報を、横へつなげる</text><rect x="32" y="87" width="716" height="78" rx="12" fill="#EFF1F4"/><text x="54" y="118" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="start">本人と入口</text><text x="54" y="148" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="start">アカウント参照先 ／ 発見した場所</text><rect x="32" y="189" width="716" height="78" rx="12" fill="#EDF6F5"/><text x="54" y="220" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="start">実績と履歴</text><text x="54" y="250" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="start">対象期間 ／ 売上の範囲 ／ 商品と紹介形式</text><rect x="32" y="291" width="716" height="78" rx="12" fill="#FFECF0"/><text x="54" y="322" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10" text-anchor="start">判断と次の確認</text><text x="54" y="352" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="start">候補にした理由 ／ 未確認の欄 ／ 社内判断</text><path d="M390 168v17m-7-7 7 7 7-7" fill="none" stroke="#0B0C10" stroke-width="3"/><path d="M390 270v17m-7-7 7 7 7-7" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="390" y="421" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10" text-anchor="middle">売上は値だけでなく、期間・対象・参照先も一緒に残す</text><text x="390" y="458" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10" text-anchor="middle">空欄の理由を書き、確認できていない値は埋めない</text></svg>
+<figcaption>図3：見つけた時点で候補の理由と履歴を残す（編集部作成）</figcaption></figure>
+<p>一覧を社内へ出すときは、まず選んだ理由が説明できる人から確認します。参照先だけが並んだ状態で承認を求めるより、商品の近さと実績の確認状況が分かる方が、追加で調べる点を決めやすくなります。判断した人と、その理由も同じ行へ残します。</p>
+<p>候補の保存と社内判断が終わったら、<a href="https://leam.co.jp/column/creator-request-flow/">クリエイターへ依頼するまでの流れ</a>へ進みます。実際に送る招待の内容と返事の確認は、<a href="https://leam.co.jp/column/invite-no-reply/">招待に返事が来ないときの確認</a>に分けています。探した人数と、依頼を決めた人数を同じものとして報告しないようにします。</p>
+
+<h2 id="summary"><span class="no en">08</span>探す場所を使い分け、選んだ理由が残る一覧へまとめる</h2>
+<p>公式の検索で候補を探し、申請や動画から見つかった人も、同じ確認欄へまとめます。検索、保存、募集を区別し、販売の実績と紹介の履歴が今回の商品に近いかを見ます。フォロワー数や視聴の多さだけで、販売する力を決めません。</p>
+<p>見つけた時点で参照先と理由を残し、分からない欄を追加確認へ回してください。候補一覧が、名前の集まりから「この人へ頼む理由を説明できる表」に変わると、社内の判断から依頼へ進めやすくなります。</p>
+
+<h2 id="faq"><span class="no en">09</span>クリエイターを探して控えるときのよくある質問</h2>
+<p>候補を増やす前に、検索と保存、販売の実績と視聴の実績を分けて考えます。探す段階で混ざりやすい点を次の問いで確認してください。</p>
+<p>機能を使える範囲が分からない場合も、未確認の条件を作って進めるのではなく、公式で確認できた入口と、自社の候補表を使って情報をそろえます。</p>
+<div class="faq">
+<details><summary>ハートで保存したら、相手への依頼が決まったことになりますか？</summary><div class="a">保存と依頼の決定は別です。公式ヘルプは、保存した候補を後のターゲットコラボで選ぶ流れを示しています。候補として保存した後に、今回の商品との近さと紹介の実績を確認し、依頼する人を決めます。</div></details>
+<details><summary>保存の上限は、起用する人数の目安にもなりますか？</summary><div class="a">なりません。保存機能で持てる候補の数と、費用や進行を考えて起用する人数は別です。保存の上限を目標に埋めるより、候補にした理由を説明できる人を残します。</div></details>
+<details><summary>別の入口でも同じ人が見つかったら、候補表は行を分けますか？</summary><div class="a">本人のアカウントを確認し、同じ人なら同じ行へ発見した入口と紹介の履歴を足します。入口ごとに別の候補として数えず、社内で判断する単位を本人にそろえます。</div></details>
+<details><summary>再生数の多い商品動画を見つけたら、販売実績ありと記録してよいですか？</summary><div class="a">再生数だけでは販売実績ありとしません。投稿の参照先と紹介内容を控え、公式で確認できる売上や紹介の履歴を確かめます。確認できない売上は未確認として残します。</div></details>
+<details><summary>サンプル申請の絞り込み項目は、どの検索画面にもありますか？</summary><div class="a">この記事で示した項目は、公式ヘルプの無料サンプル申請の絞り込みに関する説明です。ほかの画面にも同じ項目があるとは扱いません。利用する画面で確認できる項目に合わせ、候補表へ記録します。</div></details>
+<details><summary>販売の対象期間が分からない候補は、一覧から外すべきですか？</summary><div class="a">まず対象期間が未確認であることを残し、追加で確かめる候補にします。期間不明の値を、ほかの候補と同じ期間の売上として比べないことが大切です。確認した後に、残す理由を更新します。</div></details>
+</div>
+<div class="ctabox"><div class="ct">候補探しと最初の連絡を、まとめて任せたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=find-creators">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=find-creators&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2 id="sources"><span class="no en">10</span>参考にした情報</h2><p>公式の機能名と条件は、日本向けの資料を2026年10月29日に確認しました。使える範囲が変わることがあるため、利用時は最新の公式ヘルプと画面で確かめてください。</p><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトのコラボ機能の案内</a>（Find Creators、保存、無料サンプル申請の絞り込み）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378787227408&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイターの参加案内</a>（参加条件と本人確認）</li></ul><p class="src">本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。探す場所の比較表と、候補の控え方は編集部が実務のために整理したものです。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトの入口を確認する</a></b><span>売り手の画面と参加を分ける</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creators-not-coming/">候補が集まらないときに</a></b><span>募集と紹介の状態を見直す</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/invite-no-reply/">依頼した後の返事を確認</a></b><span>招待と候補探しを分ける</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creator-casting-agency/">候補探しを外へ相談する</a></b><span>選定理由を受け取る</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">探す場所は、公式の検索・募集・動画・外部に分ける</a></li><li><a href="#s2">公式の検索で見つけた候補は、カテゴリーと実績で絞る</a></li><li><a href="#s3">気になった人はクリエイターコネクトに保存する</a></li><li><a href="#s4">オープンコラボのサンプル申請は、条件で絞って確認する</a></li><li><a href="#s5">自社に近い商品の動画から、紹介した人をたどる</a></li><li><a href="#s6">名前の似た窓口は、日本向け公式ヘルプで役割を確かめる</a></li><li><a href="#s7">候補を見つけたら、その場で売上と紹介の履歴を控える</a></li><li><a href="#summary">探す場所を使い分け、選んだ理由が残る一覧へまとめる</a></li><li><a href="#faq">クリエイターを探して控えるときのよくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=find-creators">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "ハートで保存したら、相手への依頼が決まったことになりますか？", "acceptedAnswer": {"@type": "Answer", "text": "保存と依頼の決定は別です。公式ヘルプは、保存した候補を後のターゲットコラボで選ぶ流れを示しています。候補として保存した後に、今回の商品との近さと紹介の実績を確認し、依頼する人を決めます。"}}, {"@type": "Question", "name": "保存の上限は、起用する人数の目安にもなりますか？", "acceptedAnswer": {"@type": "Answer", "text": "なりません。保存機能で持てる候補の数と、費用や進行を考えて起用する人数は別です。保存の上限を目標に埋めるより、候補にした理由を説明できる人を残します。"}}, {"@type": "Question", "name": "別の入口でも同じ人が見つかったら、候補表は行を分けますか？", "acceptedAnswer": {"@type": "Answer", "text": "本人のアカウントを確認し、同じ人なら同じ行へ発見した入口と紹介の履歴を足します。入口ごとに別の候補として数えず、社内で判断する単位を本人にそろえます。"}}, {"@type": "Question", "name": "再生数の多い商品動画を見つけたら、販売実績ありと記録してよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "再生数だけでは販売実績ありとしません。投稿の参照先と紹介内容を控え、公式で確認できる売上や紹介の履歴を確かめます。確認できない売上は未確認として残します。"}}, {"@type": "Question", "name": "サンプル申請の絞り込み項目は、どの検索画面にもありますか？", "acceptedAnswer": {"@type": "Answer", "text": "この記事で示した項目は、公式ヘルプの無料サンプル申請の絞り込みに関する説明です。ほかの画面にも同じ項目があるとは扱いません。利用する画面で確認できる項目に合わせ、候補表へ記録します。"}}, {"@type": "Question", "name": "販売の対象期間が分からない候補は、一覧から外すべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "まず対象期間が未確認であることを残し、追加で確かめる候補にします。期間不明の値を、ほかの候補と同じ期間の売上として比べないことが大切です。確認した後に、残す理由を更新します。"}}]}</script>
+</body>
+</html>

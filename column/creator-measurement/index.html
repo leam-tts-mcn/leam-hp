@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>施策の効果測定｜TikTok Shopの前後比較と報告</title>
+<meta name="description" content="投稿した人と売上が立った人を分け、確認した範囲を報告します。TikTok Shopの施策を本人別に切り分け、同じ商品の前後比較を読む方法と、社内報告の1枚の型を紹介します。">
+<link rel="canonical" href="https://leam.co.jp/column/creator-measurement/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="施策の効果測定｜TikTok Shopの前後比較と報告">
+<meta property="og:description" content="投稿した人と売上が立った人を分け、確認した範囲を報告します。TikTok Shopの施策を本人別に切り分け、同じ商品の前後比較を読む方法と、社内報告の1枚の型を紹介します。">
+<meta property="og:url" content="https://leam.co.jp/column/creator-measurement/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/creator-measurement.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="施策の効果測定｜TikTok Shopの前後比較と報告">
+<meta name="twitter:description" content="投稿した人と売上が立った人を分け、確認した範囲を報告します。TikTok Shopの施策を本人別に切り分け、同じ商品の前後比較を読む方法と、社内報告の1枚の型を紹介します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/creator-measurement.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "施策の効果測定｜TikTok Shopの前後比較と報告", "description": "投稿した人と売上が立った人を分け、確認した範囲を報告します。TikTok Shopの施策を本人別に切り分け、同じ商品の前後比較を読む方法と、社内報告の1枚の型を紹介します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creator-measurement/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/creator-measurement.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトのコラボ機能"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "施策の効果測定｜TikTok Shopの前後比較と報告", "item": "https://leam.co.jp/column/creator-measurement/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=creator-measurement">無料相談</a></div>
+<div class="shell"><article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › インフルエンサー施策の効果測定｜TikTok Shopの前後比較と報告</p><span class="cat">クリエイター起用の進め方</span><h1>インフルエンサー施策の効果測定｜TikTok Shopの前後比較と報告</h1><div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="同じ商品の前後の記録を並べ、本人と動画の記録を照合して社内報告へまとめるイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="creatormeasurementDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#creatormeasurementDots" transform="translate(944 542)"/>
+  </g><g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="M103 121h278l54 55v335H103z" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><path d="M103 121h278l54 55v335H103z" fill="#FFFFFF"/><path d="M381 121v55h54" fill="#DFE0E2" stroke-width="5"/><path d="M132 162h149m-149 28h112" stroke="#C9CBD0" stroke-width="5"/><rect x="129" y="220" width="280" height="217" rx="10" fill="#EFF1F4" stroke-width="4"/><path d="M129 272h280" stroke="#C9CBD0" stroke-width="3"/><path d="M129 326h280" stroke="#C9CBD0" stroke-width="3"/><path d="M129 380h280" stroke="#C9CBD0" stroke-width="3"/><path d="M210 220v217m99-217v217" stroke="#C9CBD0" stroke-width="3"/><circle cx="166" cy="246" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M229 246h55" stroke="#C9CBD0" stroke-width="4"/><rect x="328" y="234" width="49" height="24" rx="5" fill="#25F4EE" stroke-width="3"/><circle cx="166" cy="299" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M229 299h55" stroke="#C9CBD0" stroke-width="4"/><rect x="328" y="287" width="49" height="24" rx="5" fill="#FFFFFF" stroke-width="3"/><circle cx="166" cy="353" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M229 353h55" stroke="#C9CBD0" stroke-width="4"/><rect x="328" y="341" width="49" height="24" rx="5" fill="#25F4EE" stroke-width="3"/><circle cx="166" cy="406" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M229 406h55" stroke="#C9CBD0" stroke-width="4"/><rect x="328" y="394" width="49" height="24" rx="5" fill="#FFFFFF" stroke-width="3"/><path d="M133 470h190" stroke="#C9CBD0" stroke-width="5"/><path d="M704 121h278l54 55v335H704z" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><path d="M704 121h278l54 55v335H704z" fill="#FFFFFF"/><path d="M982 121v55h54" fill="#DFE0E2" stroke-width="5"/><path d="M733 162h149m-149 28h112" stroke="#C9CBD0" stroke-width="5"/><rect x="730" y="220" width="280" height="217" rx="10" fill="#EFF1F4" stroke-width="4"/><path d="M730 272h280" stroke="#C9CBD0" stroke-width="3"/><path d="M730 326h280" stroke="#C9CBD0" stroke-width="3"/><path d="M730 380h280" stroke="#C9CBD0" stroke-width="3"/><path d="M811 220v217m99-217v217" stroke="#C9CBD0" stroke-width="3"/><circle cx="767" cy="246" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M830 246h55" stroke="#C9CBD0" stroke-width="4"/><rect x="929" y="234" width="49" height="24" rx="5" fill="#25F4EE" stroke-width="3"/><circle cx="767" cy="299" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M830 299h55" stroke="#C9CBD0" stroke-width="4"/><rect x="929" y="287" width="49" height="24" rx="5" fill="#FFFFFF" stroke-width="3"/><circle cx="767" cy="353" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M830 353h55" stroke="#C9CBD0" stroke-width="4"/><rect x="929" y="341" width="49" height="24" rx="5" fill="#25F4EE" stroke-width="3"/><circle cx="767" cy="406" r="11" fill="#DFE0E2" stroke-width="3"/><path d="M830 406h55" stroke="#C9CBD0" stroke-width="4"/><rect x="929" y="394" width="49" height="24" rx="5" fill="#FFFFFF" stroke-width="3"/><path d="M734 470h190" stroke="#C9CBD0" stroke-width="5"/><path d="m504 253 87-42 84 42v98l-84 44-87-44z" fill="#FFFFFF"/><path d="m504 253 87 43 84-43m-84 43v99" fill="none" stroke-width="5"/><path d="m546 232 86 43m-86 0v27" fill="none" stroke="#25F4EE" stroke-width="10"/><path d="M451 294h40m197 0h-40" stroke="#0B0C10" stroke-width="5"/><path d="M451 320h24m213 0h-24" stroke="#C9CBD0" stroke-width="4"/><rect x="461" y="421" width="270" height="133" rx="14" fill="#FFFFFF" stroke-width="5"/><circle cx="493" cy="453" r="14" fill="#DFE0E2" stroke-width="4"/><path d="M475 490q18-25 36 0" fill="#DFE0E2" stroke-width="4"/><path d="M531 451h63m-63 24h49" stroke="#C9CBD0" stroke-width="4"/><rect x="622" y="441" width="87" height="65" rx="8" fill="#EFF1F4" stroke-width="4"/><path d="m652 454 27 20-27 20z" fill="#CE1730" stroke-width="4"/><path d="M482 526h207" stroke="#C9CBD0" stroke-width="4"/><circle cx="635" cy="171" r="47" fill="#FFFFFF"/><circle cx="635" cy="171" r="33" fill="none" stroke="#25F4EE" stroke-width="8"/><path d="m668 205 30 31" stroke="#CE1730" stroke-width="15"/><path d="m353 532 73-46 13 21-73 46-26 5z" fill="#CE1730" stroke-width="5"/><path d="m353 532 13 21-26 5z" fill="#FFFFFF" stroke-width="4"/><path d="M537 184c22-38 54-43 74-32m-3-17 3 17-17 5" fill="none" stroke="#CE1730" stroke-width="5"/><path d="m1038 532 28 13 15-34" fill="none" stroke="#25F4EE" stroke-width="9"/></g></svg>
+<figcaption>同じ商品の前後の記録を、本人と動画の記録に照らして報告へまとめる（編集部作成）</figcaption></figure><p class="lead">インフルエンサー施策の報告は、依頼した人数だけで終わらせず、投稿した人、売上が立った人、次に続ける人を分けます。TikTok Shopでは本人と商品、公開された動画を対応させ、確認した期間と画面を残します。施策の前後で売上が変わっても、その変化をすべて起用の効果と決めず、分かった事実と次の判断を報告します。</p>
+<p>外注先から報告を受け取る時の確認は<a href="https://leam.co.jp/column/creator-casting-agency/">クリエイター起用の依頼先に求める情報</a>で扱い、この記事では自社で作る報告をまとめます。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">起用した人数に加え、投稿した人数と売上が立った人数を数えます</a></li><li><a href="#s2">個人別・動画別の売上は、対象をそろえて公式画面の記録へ結び付けます</a></li><li><a href="#s3">1人ずつ並べ、最初に確認できなくなった段を見つけます</a></li><li><a href="#s4">前後比較は同じ商品でそろえ、残った商品だけの比較だと明記します</a></li><li><a href="#s5">人数と売上の同時の動きを、翌月の伸びや因果へ置き換えません</a></li><li><a href="#s6">社内報告は、払った額と結果と次の一手を1枚へまとめます</a></li><li><a href="#summary">まとめ：確認できた結果と、次の判断を分けて報告します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>起用した人数に加え、投稿した人数と売上が立った人数を数えます</h2>
+<p>紹介を頼む施策は、候補を集めた時点と、投稿が公開された時点で進み方が違います。依頼の承諾を得ても、まだ実物が届いていない人や、内容の確認を待っている人がいます。報告の冒頭では、何人へ頼んだかと、何人が公開まで進んだかを分けます。</p>
+<p>2026年10月30日時点の日本向け公式ヘルプは、ターゲットコラボのパフォーマンスで、招待を承諾した人数と、その中で投稿した人数を確認できると説明しています。自社の報告でも、この区別を残します。承諾した人数だけを、紹介が公開された人数として伝えないようにします。</p>
+<p>売上が立った人数も別に数えます。その際は、今回の依頼に対応する商品と期間を決め、同じ条件で確認します。まだ調べていない人は未確認として残します。売上の記録を確認できなかったことと、確認した範囲で売上がなかったことを混ぜないことが大切です。</p>
+<div class="tw"><table><thead><tr><th>報告する区分</th><th>確認する事実</th><th>同じ意味にしないもの</th></tr></thead><tbody>
+<tr><td>依頼を承諾した人</td><td>本人が引き受けた記録</td><td>候補へ入れた人、連絡を送った人</td></tr>
+<tr><td>商品と紐づいた人</td><td>対象商品の追加を確認した記録</td><td>紹介を公開した人</td></tr>
+<tr><td>投稿した人</td><td>対象商品を紹介する公開先の確認</td><td>動画を制作しただけの人</td></tr>
+<tr><td>売上が立った人</td><td>対象と期間を決めて確認した売上の有無</td><td>投稿した人全員、まだ未確認の人</td></tr>
+<tr><td>続けて頼む人</td><td>確認した結果と次の依頼の目的</td><td>今回公開した人全員</td></tr>
+</tbody></table></div>
+<p class="src">人数を報告する時に分ける区分（公式資料に基づき編集部作成）。</p>
+<p>同じ人が複数の動画を出していても、投稿した人数と公開した本数は別です。人の数は本人ごと、本数は公開先ごとに数え、公開URLで重複を確かめます。期間外の投稿を含める時も、今回の施策として数える範囲を先に決めます。数字を大きく見せるために、途中で対象を広げないようにします。</p>
+<h2 id="s2"><span class="no en">02</span>個人別・動画別の売上は、対象をそろえて公式画面の記録へ結び付けます</h2>
+<p>セラーセンターからアフィリエイトセンターへ進み、今回のコラボ、商品、クリエイターを特定します。公式ヘルプは、ターゲットコラボの名前から詳細へ進み、コラボ、クリエイター、商品の情報を確認する流れを説明しています。報告に使う記録も、どの対象を見たものか分かるように残します。</p>
+<p>同じヘルプの「Video Details（動画の詳細）」では、商品に関連付けられた動画コンテンツを確認できるとされています。まず本人と商品と動画を対応させます。そのうえで、売上は対象に対応する値と期間を確認できた資料を控えます。ショップ全体の売上を、その人やその動画だけの売上として転記しないようにします。</p>
+<p>記録には、本人、商品、動画の公開URL、対象期間、確認日、見た画面を残します。売上を確認した画面では、期間や集計の範囲が今回の報告と一致するかを見ます。対象へ対応させられない値は、個人別や動画別の売上として埋めません。確認できた項目と、追加の確認が必要な項目を分けます。</p>
+<p>ショップの売上とクリエイターの紹介の記録は、同じ表へ混ぜる前に範囲を確認します。ショップ自身の投稿などを含む売上を、クリエイターだけの実績へ置き換えないためです。全体の指標の整理は、<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPIの作り方</a>で扱います。今回の報告は、起用した本人と紹介を追える範囲にそろえます。</p>
+<p>数字を取得できなかった時には、空欄をゼロに変えず、確認できない理由と次に確かめることを記録します。本人が投稿を消したのか、売上がまだないのかといった結論も、記録がなければ推測で埋めません。報告の時点で何が分かっていたかを残すことが、後からの説明にも役立ちます。</p>
+<p>報告用に値を写す時は、取得した記録の控えを先に残します。報告を読む人が、本人や動画の名前だけで同じ値へたどれるとは限りません。元の対象と期間が分かる控えを対応させ、転記した値に食い違いがあった時に確認できるようにします。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatormeasurementRecordScope" viewBox="0 0 780 478" role="img" aria-label="本人と商品と公開動画を対応させ、期間と画面と確認日の分かる記録だけを本人の実績へ使う図"><rect x="0" y="0" width="780" height="478" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">本人・商品・動画・期間を、売上の記録へ対応させる</text><rect x="32" y="91" width="206" height="76" rx="12" fill="#EFF1F4"/><text x="72" y="138" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">本人</text><rect x="287" y="91" width="206" height="76" rx="12" fill="#EFF1F4"/><text x="327" y="138" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">対象商品</text><rect x="542" y="91" width="206" height="76" rx="12" fill="#EFF1F4"/><text x="582" y="138" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">公開動画</text><path d="M136 177v23h508v-23m-254 23v28m-9-9 9 9 9-9" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="118" y="245" width="544" height="88" rx="12" fill="#25F4EE"/><text x="143" y="282" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">対象期間・確認した画面・確認日</text><text x="143" y="315" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">同じ範囲の記録を控える</text><rect x="32" y="366" width="716" height="78" rx="12" fill="#FFECF0"/><text x="54" y="398" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">対応させられない値は、個人の実績へ埋めない</text><text x="54" y="429" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">未確認をゼロにせず、次に確かめることを残す</text></svg>
+<figcaption>図1：本人・商品・動画・期間を、確認した記録へ対応させる（編集部作成）</figcaption></figure>
+<h2 id="s3"><span class="no en">03</span>1人ずつ並べ、最初に確認できなくなった段を見つけます</h2>
+<p>全体の売上が伸びなかった時も、全員に同じ問題が起きているとは限りません。未投稿の人と、公開した動画が見られていない人、見られても購入につながらなかった人を分けます。本人ごとの記録を横に並べ、最初に確認できなくなった段から見ます。</p>
+<p>投稿・再生・クリック・購入の指標そのものの読み方は、<a href="https://leam.co.jp/column/short-video-playbook/#s7">ショート動画の指標を確かめる考え方</a>で扱います。ここでは、同じ対象と期間で確認できた値を本人へ対応させ、どの仕事を次にするかを切り分けます。どの段も、記録の未確認と実際の結果の不足を先に区別します。</p>
+<div class="tw"><table><thead><tr><th>最初に見る段</th><th>確認する記録</th><th>切り分けた後の次の対応</th></tr></thead><tbody>
+<tr><td>投稿の公開</td><td>公開URL、予定、承諾と制作の記録</td><td>公開していなければ、本人と自社のどちらの確認が残るか調べる</td></tr>
+<tr><td>再生</td><td>公開後の期間と、確認できた視聴の記録</td><td>観測する期間をそろえ、動画が届いているかを確かめる</td></tr>
+<tr><td>商品へのクリック</td><td>対象商品と動画を対応させたクリックの記録</td><td>商品リンクと、商品へ関心をつなぐ説明を点検する</td></tr>
+<tr><td>購入</td><td>同じ商品・期間で確認した注文や売上</td><td>販売条件、商品ページ、在庫の状態を確認する</td></tr>
+<tr><td>記録の不足</td><td>どの対象・期間・項目が未確認か</td><td>原因を決める前に、確認先と担当を決める</td></tr>
+</tbody></table></div>
+<p class="src">本人ごとの記録から次の対応を決める切り分け表（編集部作成）。</p>
+<p>たとえば、公開URLがまだ確認できない人へ、商品ページの改善だけを進めても、未投稿の理由は解決しません。公開している人であれば、公開した直後の記録と、しばらく見られた後の記録を同じ条件として比べないようにします。まず結果を観測できる状態かを確かめます。</p>
+<p>再生の段で止まっている場合も、本人を選び直す前に、動画を見た期間や公開状態を確認します。再生数の詳しい点検は、<a href="https://leam.co.jp/column/video-no-views/">動画が見られない時の確認</a>で進めます。その結果を本人ごとの行へ戻し、次に何を確かめるかを短く残します。</p>
+<p>クリックまで確認できているのに購入の記録がなければ、商品を買える状態だったかも確認します。商品リンクの取り違えや在庫の変化を確かめず、紹介が弱かったと結論を出さないようにします。逆に、売上が立っていても、どの紹介へ対応する値か分からなければ、その人の成果として断定しません。</p>
+<p>当社の運用実感では、全体の合計から対策を決めるより、本人ごとに残る確認を分けた方が、社内が次にする仕事を決めやすくなります。進行の事実は、<a href="https://leam.co.jp/column/creator-progress-sheet/">1人1行の進行管理表</a>からつなげます。商品の紐付け、公開、売上を別に残した記録を、報告の土台にします。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatormeasurementDiagnosticRows" viewBox="0 0 780 525" role="img" aria-label="公開、再生、クリック、購入の記録を本人ごとに見て、各段で次にする確認を切り分ける図"><rect x="0" y="0" width="780" height="525" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">確認できた段から、次にする仕事を分ける</text><rect x="32" y="91" width="211" height="64" rx="12" fill="#EFF1F4"/><text x="55" y="133" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">公開</text><rect x="320" y="91" width="428" height="64" rx="12" fill="#25F4EE"/><text x="342" y="132" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">本人と自社に残る確認</text><path d="M254 123h54m-8-8 8 8-8 8" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="182" width="211" height="64" rx="12" fill="#EFF1F4"/><text x="55" y="224" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">再生</text><rect x="320" y="182" width="428" height="64" rx="12" fill="#25F4EE"/><text x="342" y="223" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">期間と公開状態の確認</text><path d="M254 214h54m-8-8 8 8-8 8" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="273" width="211" height="64" rx="12" fill="#EFF1F4"/><text x="55" y="315" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">クリック</text><rect x="320" y="273" width="428" height="64" rx="12" fill="#25F4EE"/><text x="342" y="314" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">リンクと商品の説明</text><path d="M254 305h54m-8-8 8 8-8 8" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="364" width="211" height="64" rx="12" fill="#EFF1F4"/><text x="55" y="406" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">購入</text><rect x="320" y="364" width="428" height="64" rx="12" fill="#25F4EE"/><text x="342" y="405" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">販売条件と在庫の確認</text><path d="M254 396h54m-8-8 8 8-8 8" fill="none" stroke="#0B0C10" stroke-width="3"/><text x="47" y="491" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">未確認の値がある時は、原因を決める前に記録を確かめる</text></svg>
+<figcaption>図2：最初に確認できなくなった段から、次の仕事を分ける（編集部作成）</figcaption></figure>
+<h2 id="s4"><span class="no en">04</span>前後比較は同じ商品でそろえ、残った商品だけの比較だと明記します</h2>
+<p>施策の前後を比べる時は、違う商品の売上を混ぜず、同じ商品の人数と売上を対応させます。商品の入れ替えによる変化と、同じ商品の状態の変化を分けるためです。自社の報告でも、前の期間と後の期間、対象商品、人数と売上の定義を先に書きます。</p>
+<p>当社が毎営業日蓄積している TikTok Shop の販売データの集計（同じ商品を、2026年8月27日〜9月3日と10月14日〜29日の2つの期間で比べた。前の期間に売上上位100位だった商品のうち、後の期間にも観測できた769点）では、次のようになりました。</p>
+<div class="tw"><table><thead><tr><th>紐づく人数の変化</th><th>売上が伸びた商品の割合</th></tr></thead><tbody>
+<tr><td>1.5倍以上に増えた</td><td>62%</td></tr>
+<tr><td>1.1〜1.5倍になった</td><td>46%</td></tr>
+<tr><td>ほぼ横ばい</td><td>37%</td></tr>
+<tr><td>1割以上減った</td><td>19%</td></tr>
+</tbody></table></div>
+<p class="src">対象は同じ商品を追えた769点。人数が1.5倍以上の区分は165点、1割以上減った区分は352点（当社集計）。</p>
+<p>前の売上の帯と前の人数の帯をそろえても、人数が増えた商品ほど売上が伸びている向きは同じでした。この同時の動きは、条件をそろえた場合にも確認できた結果です。ただし、人数が先に増えて売上が伸びたのか、売上が伸びた商品へ人が集まったのかは、この比較では判定できません。</p>
+<p>比較できた商品にも偏りがあります。前の期間の上位商品のうち、後の期間にも観測できたのは38%でした。紐づく人数が多かった商品ほど後の期間にも残っており、残った商品だけを比べています。後の期間に見えなくなった商品を、売上がゼロになった商品として補ってはいません。</p>
+<p>したがって、この表を、施策を始める前のすべての商品が同じ結果になる見込みとして使うものではありません。自社で前後を並べる時も、両方の期間で確認できた商品と、後の記録がない商品を分けます。見えなかった商品を除いたなら、そのことが報告を読む人に分かる形にします。</p>
+<p>前後の値を並べる表には、商品、期間、人数、売上、確認元の欄を用意します。定義をそろえられない値があれば、その比較は保留します。売上が変わったという事実と、その変化を起用の効果と解釈できるかは別の判断です。数字がそろうことだけで、原因まで分かったと書かないようにします。</p>
+<h2 id="s5"><span class="no en">05</span>人数と売上の同時の動きを、翌月の伸びや因果へ置き換えません</h2>
+<p>報告では、確認した事実、考えられる理由、次にする判断を分けます。人数と売上が一緒に増えていたなら、その動きを記録します。一方、人を増やしたことだけで売上が増えた、という説明にはしません。売れている商品を紹介したい人が増える向きも、この比較だけでは排除できないためです。</p>
+<p>当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年7月末・8月末・9月末・10月末の月末の記録のうち、続けて3回登場した商品619点）でも、翌月の動きを確かめています。</p>
+<p>同じ期間の中では、紐づく人数と売上は一緒に動きます。ただし、人が集まった月の勢いは、次の月の売上の伸びには持ち越されませんでした（当社集計）。</p>
+<p>同じ期間の比較と、翌月へ伸びが続くかの確認は、別の問いです。この区別を残すと、今回の人数の増加だけを次の月の売上予測へ使わずに済みます。次の起用を続ける判断は、<a href="https://leam.co.jp/column/creator-second-round/">クリエイター施策の次の回の組み方</a>で扱います。</p>
+<p>自社の報告でも、同じ商品で何が変わったかを先に書きます。価格や在庫、公開の時期などに変更があった場合は、その変更を隠さず添えます。これらを記録しても原因が特定できないなら、判定できないと残します。分かったふりをするより、次に確かめる条件をそろえる方が、次の施策へつながります。</p>
+<p>人数が増えたのに売上が伸びなかった場合も、人数を数えるだけで原因を決めません。投稿した人数と売上が立った人数を分け、どこが未確認かを見直します。詳しい読み方は、<a href="https://leam.co.jp/column/more-creators-no-growth/">クリエイターが増えても売上が伸びない時の見方</a>へつなげます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatormeasurementFactAndCause" viewBox="0 0 780 491" role="img" aria-label="同時に人数と売上が動いた事実、因果が判定できないこと、次にする確認を分離する図"><rect x="0" y="0" width="780" height="491" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">事実と、原因の判断と、次の行動を混ぜない</text><rect x="32" y="88" width="716" height="89" rx="12" fill="#25F4EE"/><text x="55" y="125" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">確認した事実</text><text x="55" y="158" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">同じ期間に、紐づく人数と売上が一緒に動いた</text><rect x="32" y="202" width="716" height="89" rx="12" fill="#FFECF0"/><text x="55" y="239" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">原因の判断</text><text x="55" y="272" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">人が先か、売上が先かは、この比較では判定できない</text><rect x="32" y="316" width="716" height="89" rx="12" fill="#EFF1F4"/><text x="55" y="353" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">次の行動</text><text x="55" y="386" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">本人ごとの記録と、他に変わった条件を確かめる</text><text x="50" y="456" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">同時の変化を、そのまま翌月の売上の予測へ使わない</text></svg>
+<figcaption>図3：同時の動きと因果の判断を分ける（当社集計に基づき編集部作成）</figcaption></figure>
+<h2 id="s6"><span class="no en">06</span>社内報告は、払った額と結果と次の一手を1枚へまとめます</h2>
+<p>社内へ渡す報告は、数字の一覧と長い解説を別々にするより、何に払い、何が公開され、何が売れ、次に何をするかを同じ面で読める形にします。下の表は、自社の支出と今回確認した結果を埋めるための型です。相場の金額やサービスの料金を示すものではありません。</p>
+<p>払った額は、確定している支出と、まだ支払っていない合意分を区別します。公開した本数には確認したURL、売れた投稿には対象期間と確認元を添えます。集計した担当者の説明がなくても、別の人がどの数字か確かめられることを目指します。</p>
+<div class="tw"><table><thead><tr><th>社内報告の欄</th><th>記入する内容</th><th>添える根拠</th></tr></thead><tbody>
+<tr><td>目的と確認範囲</td><td>今回の依頼の目的、商品、対象期間</td><td>施策の計画と、集計した範囲</td></tr>
+<tr><td>払った額</td><td>実際の支出と未払いの合意分を分ける</td><td>支払いの記録と、合意した費目</td></tr>
+<tr><td>公開した人数・本数</td><td>人と公開先を別に数える</td><td>承諾の記録と公開URLの一覧</td></tr>
+<tr><td>売上が立った人・売れた投稿</td><td>対象商品と期間をそろえた結果</td><td>対応する値、画面、期間、確認日</td></tr>
+<tr><td>確認できなかったこと</td><td>記録が足りない対象や項目</td><td>不足の理由と次の確認先</td></tr>
+<tr><td>前後の変化</td><td>同じ商品の人数と売上を並べる</td><td>対象の選び方と、見えなくなった商品の扱い</td></tr>
+<tr><td>続ける人</td><td>追加で頼む候補と、その理由</td><td>結果と進行の記録、次の目的</td></tr>
+<tr><td>次の一手</td><td>何を変え、誰が次を決めるか</td><td>判断の条件、担当、次の確認予定</td></tr>
+</tbody></table></div>
+<p class="src">自社で作る社内報告の型（編集部作成）。</p>
+<p>売れた投稿だけを抜き出す時も、公開した投稿全体の範囲を残します。結果のよかった投稿だけを見せると、今回の施策全体で何が起きたかが分からなくなります。未投稿や未確認の人を消さず、どの対象を今回の報告へ含めたかを先に示します。</p>
+<p>報告を確定する前に、本文の結論と添えた表を読み合わせます。「公開まで進んだ」と書いた対象にURLの未確認が残っていないか、売れたと書いた投稿に対応する記録があるかを見ます。担当者が説明したい結論に合わせて、未確認の値や対象の範囲を変えないことが大切です。</p>
+<p>続ける人の欄には、結果のよかった人の名前だけでなく、次に頼む目的を書きます。同じ紹介を続けるのか、別の使い方を試すのかを分けます。売上をまだ十分に確認できていない場合も、今回の記録から何を判断できるかを整理します。分からない点を、その人の能力の評価に置き換えないことが大切です。</p>
+<p>当社の運用実感では、報告を作る時に次の担当と確認予定まで入れると、説明だけで終わる状態を避けやすくなります。追加の予算を判断する材料は、<a href="https://leam.co.jp/column/internal-approval/">社内稟議でそろえる目的と判断条件</a>へつなげます。ここで作った報告は、確認できた事実を次の判断へ渡すために使います。</p>
+<h2 id="summary"><span class="no en">07</span>まとめ：確認できた結果と、次の判断を分けて報告します</h2>
+<p>TikTok Shopのクリエイター施策は、承諾、商品の追加、公開、売上の記録を分けて確認します。本人と商品、動画、期間を対応させ、確認できない値は未確認として残します。全体の合計を見る前に、本人ごとにどの段で止まったかを切り分けてください。</p>
+<p>前後比較は同じ商品でそろえ、後の期間にも見えた商品だけを比べる偏りも書きます。人数と売上が一緒に動いていても、原因や翌月の伸びまでは言い切りません。払った額、公開した本数、売れた投稿、続ける人、次の一手をまとめることで、次の施策の判断に使う報告になります。</p>
+<h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+<p>結果を社内へ説明する時に迷いやすい点をまとめました。対象と期間、確認した画面をそろえ、分かっていないことを先に区別します。</p>
+<p>報告は、実績をよく見せるために対象を入れ替えるものではありません。誰が見ても確認範囲をたどれ、次の仕事を決められる形にしてください。</p>
+<div class="faq">
+<details><summary>同じ人の動画が複数あれば、人数も増やして数えますか？</summary><div class="a">人数と本数を分けます。同じ本人が出した投稿は、人数では重複させず、本数では公開先ごとに記録します。今回の施策へ含める期間と投稿の範囲も、先に決めておきます。</div></details>
+<details><summary>本人別の売上を確認できない時は、全体売上を割りますか？</summary><div class="a">全体の売上を人数で割って本人の実績にしません。対象へ対応させられない値は未確認として残します。本人、商品、動画、期間のどこまでを確認できたかを書き、次に確かめる先を決めます。</div></details>
+<details><summary>未投稿の人も、施策の報告へ残す必要がありますか？</summary><div class="a">今回の対象へ含めた人なら、未投稿の状態も残します。承諾の記録と公開の有無を分け、どの確認が残っているかを書きます。公開した人だけに対象を入れ替えると、施策全体の進み方が分からなくなります。</div></details>
+<details><summary>人数と売上が増えたら、起用の効果と断定できますか？</summary><div class="a">同時に増えた事実と、原因の判断を分けます。売れた商品へ人が集まった可能性もあり、前後の変化だけでは向きを決められません。期間や商品をそろえ、他に変わった条件も添えて報告します。</div></details>
+<details><summary>後の期間に見えない商品は、売上ゼロとして比べますか？</summary><div class="a">観測できないことを売上ゼロに置き換えません。両方の期間で見えた商品と、後の記録がない商品を分けます。残った商品だけを比べた場合は、その範囲と偏りを報告へ残します。</div></details>
+<details><summary>売れた投稿の一覧だけで、社内報告は足りますか？</summary><div class="a">全体の確認範囲、支出、公開した人数と本数、未確認事項も添えます。そのうえで売れた投稿と続ける候補を示し、次に何を変えるか、誰が判断するかまでまとめます。</div></details>
+</div>
+<div class="ctabox"><div class="ct">効果を測る前の準備から、クリエイター起用を相談したい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creator-measurement">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=creator-measurement&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2 id="sources"><span class="no en">09</span>参考にした情報</h2><p>コラボ機能の日本向け公式ヘルプは、2026年10月30日に取得して確認しました。機能や表示項目は、利用時に最新の日本向け公式ヘルプを確認してください。本文では、画面で確認した事実と、自社で作る報告の項目を分けています。</p><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトのコラボ機能</a>（承諾した人数、投稿した人数、商品の追加、動画の詳細）</li></ul><p class="src">本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。当社集計は本文に記した期間と対象での観測です。社内報告の表は、今回の確認範囲と次の判断をそろえるために編集部が作成したものです。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/tiktok-shop-kpi/">全体の指標を整理する</a></b><span>取得元と定義をそろえる</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/short-video-playbook/">動画の指標を確認する</a></b><span>公開から購入までの記録を読む</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/internal-approval/">社内の判断条件を整える</a></b><span>次の予算と確認する結果を結び付ける</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/video-no-views/">再生の状態を点検する</a></b><span>確認する期間と公開状態を分ける</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">起用した人数に加え、投稿した人数と売上が立った人数を数えます</a></li><li><a href="#s2">個人別・動画別の売上は、対象をそろえて公式画面の記録へ結び付けます</a></li><li><a href="#s3">1人ずつ並べ、最初に確認できなくなった段を見つけます</a></li><li><a href="#s4">前後比較は同じ商品でそろえ、残った商品だけの比較だと明記します</a></li><li><a href="#s5">人数と売上の同時の動きを、翌月の伸びや因果へ置き換えません</a></li><li><a href="#s6">社内報告は、払った額と結果と次の一手を1枚へまとめます</a></li><li><a href="#summary">まとめ：確認できた結果と、次の判断を分けて報告します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creator-measurement">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "同じ人の動画が複数あれば、人数も増やして数えますか？", "acceptedAnswer": {"@type": "Answer", "text": "人数と本数を分けます。同じ本人が出した投稿は、人数では重複させず、本数では公開先ごとに記録します。今回の施策へ含める期間と投稿の範囲も、先に決めておきます。"}}, {"@type": "Question", "name": "本人別の売上を確認できない時は、全体売上を割りますか？", "acceptedAnswer": {"@type": "Answer", "text": "全体の売上を人数で割って本人の実績にしません。対象へ対応させられない値は未確認として残します。本人、商品、動画、期間のどこまでを確認できたかを書き、次に確かめる先を決めます。"}}, {"@type": "Question", "name": "未投稿の人も、施策の報告へ残す必要がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "今回の対象へ含めた人なら、未投稿の状態も残します。承諾の記録と公開の有無を分け、どの確認が残っているかを書きます。公開した人だけに対象を入れ替えると、施策全体の進み方が分からなくなります。"}}, {"@type": "Question", "name": "人数と売上が増えたら、起用の効果と断定できますか？", "acceptedAnswer": {"@type": "Answer", "text": "同時に増えた事実と、原因の判断を分けます。売れた商品へ人が集まった可能性もあり、前後の変化だけでは向きを決められません。期間や商品をそろえ、他に変わった条件も添えて報告します。"}}, {"@type": "Question", "name": "後の期間に見えない商品は、売上ゼロとして比べますか？", "acceptedAnswer": {"@type": "Answer", "text": "観測できないことを売上ゼロに置き換えません。両方の期間で見えた商品と、後の記録がない商品を分けます。残った商品だけを比べた場合は、その範囲と偏りを報告へ残します。"}}, {"@type": "Question", "name": "売れた投稿の一覧だけで、社内報告は足りますか？", "acceptedAnswer": {"@type": "Answer", "text": "全体の確認範囲、支出、公開した人数と本数、未確認事項も添えます。そのうえで売れた投稿と続ける候補を示し、次に何を変えるか、誰が判断するかまでまとめます。"}}]}</script>
+</body>
+</html>

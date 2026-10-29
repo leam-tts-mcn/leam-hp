@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>ステマ規制の企業側点検｜TikTok Shopの表示漏れ対応</title>
+<meta name="description" content="公開後は表示と開示設定を点検し、修正後の公開画面で完了を判断します。TikTok Shopの企業担当者向けに、点検台帳と修正依頼文、再投稿や依頼していない紹介への対応を整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/stealth-marketing/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="ステマ規制の企業側点検｜TikTok Shopの表示漏れ対応">
+<meta property="og:description" content="公開後は表示と開示設定を点検し、修正後の公開画面で完了を判断します。TikTok Shopの企業担当者向けに、点検台帳と修正依頼文、再投稿や依頼していない紹介への対応を整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/stealth-marketing/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/stealth-marketing.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ステマ規制の企業側点検｜TikTok Shopの表示漏れ対応">
+<meta name="twitter:description" content="公開後は表示と開示設定を点検し、修正後の公開画面で完了を判断します。TikTok Shopの企業担当者向けに、点検台帳と修正依頼文、再投稿や依頼していない紹介への対応を整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/stealth-marketing.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ステマ規制の企業側点検｜TikTok Shopの表示漏れ対応", "description": "公開後は表示と開示設定を点検し、修正後の公開画面で完了を判断します。TikTok Shopの企業担当者向けに、点検台帳と修正依頼文、再投稿や依頼していない紹介への対応を整理します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/stealth-marketing/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/stealth-marketing.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/", "name": "消費者庁：ステルスマーケティングに関するQ&amp;A"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&lang=ja-JP", "name": "TikTok Shop公式：販売者利用規約"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164714256&lang=ja-JP", "name": "TikTok Shop公式：クリエイター利用規約"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "ステマ規制の企業側点検｜TikTok Shopの表示漏れ対応", "item": "https://leam.co.jp/column/stealth-marketing/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=stealth-marketing">無料相談</a></div>
+<div class="shell"><article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › ステマ規制の企業側の点検｜TikTok Shopで表示漏れを見つけたら</p><span class="cat">クリエイター起用の進め方</span><h1>ステマ規制の企業側の点検｜TikTok Shopで表示漏れを見つけたら</h1><div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="公開動画の表示の不足を虫眼鏡で見つけ、修正前後を点検台帳に記録するイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="stealthmarketingDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#stealthmarketingDots" transform="translate(944 542)"/>
+  </g><g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><rect x="94" y="126" width="335" height="360" rx="18" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><rect x="94" y="126" width="335" height="360" rx="18" fill="#FFFFFF"/><rect x="119" y="154" width="285" height="212" rx="12" fill="#EFF1F4" stroke-width="4"/><path d="m236 213 61 46-61 46z" fill="#CE1730" stroke-width="5"/><path d="M121 397h169m-169 26h222m-222 26h141" stroke="#C9CBD0" stroke-width="5"/><rect x="325" y="386" width="74" height="37" rx="7" fill="#FE2C55" stroke-width="4"/><path d="M344 404h36" stroke="#FFFFFF" stroke-width="5"/><circle cx="402" cy="362" r="73" fill="#FFFFFF" fill-opacity=".75"/><circle cx="402" cy="362" r="57" fill="none" stroke="#25F4EE" stroke-width="10"/><path d="m453 413 71 71" stroke-width="26"/><path d="m456 416 66 66" stroke="#CE1730" stroke-width="14"/><path d="M490 176c70-53 116-33 132 22m-28-10 28 10 10-30" fill="none" stroke="#CE1730" stroke-width="6"/><rect x="664" y="102" width="421" height="431" rx="18" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><rect x="664" y="102" width="421" height="431" rx="18" fill="#FFFFFF"/><rect x="781" y="81" width="184" height="48" rx="12" fill="#DFE0E2" stroke-width="5"/><path d="M701 167h340m-340 29h340m-340 74h340m-340 74h340m-340 74h340m-340 74h340M750 167v325m133-325v325" stroke="#C9CBD0" stroke-width="4"/><rect x="709" y="219" width="26" height="26" rx="4" fill="#25F4EE" stroke-width="3"/><path d="m715 231 6 7 10-14" fill="none" stroke-width="3"/><path d="M771 226h86m-86 14h66" stroke="#C9CBD0" stroke-width="4"/><path d="M902 226h104m-104 14h84" stroke="#C9CBD0" stroke-width="4"/><rect x="709" y="293" width="26" height="26" rx="4" fill="#25F4EE" stroke-width="3"/><path d="m715 305 6 7 10-14" fill="none" stroke-width="3"/><path d="M771 300h86m-86 14h66" stroke="#C9CBD0" stroke-width="4"/><path d="M902 300h104m-104 14h84" stroke="#C9CBD0" stroke-width="4"/><rect x="709" y="367" width="26" height="26" rx="4" fill="#25F4EE" stroke-width="3"/><path d="m715 379 6 7 10-14" fill="none" stroke-width="3"/><path d="M771 374h86m-86 14h66" stroke="#C9CBD0" stroke-width="4"/><path d="M902 374h104m-104 14h84" stroke="#C9CBD0" stroke-width="4"/><rect x="709" y="441" width="26" height="26" rx="4" fill="#25F4EE" stroke-width="3"/><path d="m715 453 6 7 10-14" fill="none" stroke-width="3"/><path d="M771 448h86m-86 14h66" stroke="#C9CBD0" stroke-width="4"/><path d="M902 448h104m-104 14h84" stroke="#C9CBD0" stroke-width="4"/><rect x="902" y="365" width="130" height="31" rx="7" fill="#25F4EE" stroke-width="4"/><path d="m946 380 12 10 25-23" fill="none" stroke-width="4"/><path d="m1051 469 48-15 28 88-48 15z" fill="#FE2C55" stroke-width="4"/><path d="m1071 481 17-5m-11 25 17-5m-11 25 17-5" stroke="#FFFFFF" stroke-width="4"/><path d="m558 547 72-88 18 15-72 88-28 14z" fill="#CE1730" stroke-width="5"/><path d="m558 547 18 15-28 14z" fill="#FFFFFF" stroke-width="4"/><path d="m630 459 18 15 12-14q4-6-2-11l-8-7q-5-4-9 2z" fill="#DFE0E2" stroke-width="4"/><path d="M191 520c105 67 264 64 353 0m-1 26 1-26-27 2" fill="none" stroke="#25F4EE" stroke-width="7"/><circle cx="117" cy="524" r="16" fill="#25F4EE" stroke-width="4"/><path d="m109 524 6 6 11-13" fill="none" stroke-width="4"/></g></svg>
+<figcaption>公開動画の表示を点検し、修正と再点検を台帳に記録する（編集部作成）</figcaption></figure><p class="lead">TikTok Shopの紹介投稿は、公開された後も売り手が表示を確かめる必要があります。クリエイターに任せたつもりでも、広告であることが伝わらない投稿を見つけたら対応が必要です。公開URLごとに、本文の表示とコンテンツ開示設定を点検し、修正を頼んだ記録と直ったことを確かめた記録を分けて残します。</p>
+<p>この記事は、紹介を依頼する企業の担当者が、公開後に使う点検台帳と修正依頼文をまとめたものです。個別に依頼していないオープンコラボの投稿も扱います。法律上の判断と日々の運用を分け、表示の不足を見つけてから対応を終えるまでを整理します。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">規制で問われるのは広告主で、クリエイター任せにできません</a></li><li><a href="#s2">成果報酬の関係がある紹介は、個別に頼んでいなくても点検します</a></li><li><a href="#s3">コンテンツ開示設定と、消費者に見える本文の表示を確かめます</a></li><li><a href="#s4">公開URLごとの台帳に、依頼と確認の記録を残します</a></li><li><a href="#s5">修正は箇所を示して頼み、公開画面を再点検して終えます</a></li><li><a href="#s6">再投稿・切り抜き・ライブは、見られる場面ごとに点検します</a></li><li><a href="#s7">オープンコラボの投稿も、関係を確かめてから対応します</a></li><li><a href="#s8">まとめ：依頼した記録より、公開された表示で完了を判断します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>規制で問われるのは広告主で、クリエイター任せにできません</h2>
+<p>消費者庁の「ステルスマーケティングに関するQ&amp;A」では、規制対象は、自ら供給する商品やサービスの表示内容の決定に関与した事業者、いわゆる広告主です。宣伝を依頼されたインフルエンサーやアフィリエイターは原則として対象外です。ただし、広告主と共同して商品などを供給する例外的な場合は、本人も対象になります。</p>
+<p>ステマの規制に違反すると、誤認の排除や再発防止などを求める措置命令の対象になります。ステマの表示だけでは課徴金納付命令の対象にはなりません。ただし、優良誤認表示や有利誤認表示を含む場合、その行為は課徴金納付命令の対象となることがあります。違反のおそれのある行為には、行政指導が行われることもあります。</p>
+<p>企業の運用では、誰が投稿したかに加え、自社がどんな関係で紹介してもらったかを確かめます。報酬を支払う依頼、商品を提供した依頼、成果に応じて報酬が発生する紹介では、やり取りを確認できるようにします。本人が表示の方法を知っているかどうかだけで、企業の確認を終わらせません。</p>
+<p>広告であることを消費者が明瞭に理解できるかが大切です。「PR」という文字がどこかにあればよい、という読み方は避けます。レビュー施策との関係は、<a href="https://leam.co.jp/column/review-management/#s6">レビュー運用で避ける施策と表示の考え方</a>で整理しています。ここからは、公開済みの紹介投稿を点検する手順に絞ります。</p>
+<h2 id="s2"><span class="no en">02</span>成果報酬の関係がある紹介は、個別に頼んでいなくても点検します</h2>
+<p>消費者庁Q&amp;Aは、表示内容を明示的に依頼・指示していなくても、事業者と投稿者の関係から「事業者の表示」に当たる場合があると説明しています。具体的なやり取り、対価の内容や理由、過去や今後の取引関係などを踏まえて判断されます。投稿の台本を渡していないことだけでは、確認を省けません。</p>
+<p>TikTok Shopで売上に応じた報酬を払う関係なら、実務上は表示が必要な紹介として点検します。個別の招待を送ったかどうかだけで、点検対象を分けないためです。これは企業が点検する範囲の決め方です。個別の投稿への法令の該当は、専門家・所管の窓口に確認してください。</p>
+<p>自社の商品が映っている動画をすべて同じ扱いにする必要はありません。まず商品リンク、紹介者、報酬が発生する関係、商品の提供や過去の依頼を確認します。無関係な購入者による自主的な感想と、売上連動で紹介している投稿を、商品名だけでひとまとめにしないことが大切です。</p>
+<p>商品を贈った紹介についても、「投稿は任意だった」という言葉だけで表示の確認を外しません。無償提供の目的や本人とのやり取りを残し、<a href="https://leam.co.jp/column/gifting-vs-free-sample/">ギフティングと無料サンプルの違い</a>と併せて整理します。台帳には、判断の結論だけでなく、結論を出す時に見た事実を短く書きます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="stealthmarketingRelations" viewBox="0 0 780 454" role="img" aria-label="自社商品の紹介から関係を確認し、成果報酬の関係がある投稿を点検対象へ、分からない投稿を確認待ちへ分ける図"><rect x="0" y="0" width="780" height="454" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">個別の招待の有無だけで、点検対象を分けない</text><rect x="32" y="82" width="716" height="83" rx="12" fill="#EFF1F4"/><text x="56" y="116" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">自社商品の紹介を見つけたら</text><text x="56" y="145" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">商品リンク・対価・提供や依頼の関係を確かめる</text><path d="M390 176v34m-9-9 9 9 9-9" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="232" width="340" height="144" rx="12" fill="#25F4EE"/><text x="50" y="269" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">成果報酬の関係がある</text><text x="50" y="310" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">表示を点検する対象へ</text><text x="50" y="346" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">依頼一覧にない投稿も含む</text><rect x="408" y="232" width="340" height="144" rx="12" fill="#EFF1F4"/><text x="426" y="269" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">関係がまだ分からない</text><text x="426" y="310" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">事実を調べて確認待ちへ</text><text x="426" y="346" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">自主的な感想と一括にしない</text><text x="54" y="420" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">事業者の表示かは、対価ややり取りなどの実態で判断する</text></svg>
+<figcaption>図1：個別の依頼の有無より、紹介の関係を確かめる（消費者庁Q&Aに基づき編集部作成）</figcaption></figure>
+<h2 id="s3"><span class="no en">03</span>コンテンツ開示設定と、消費者に見える本文の表示を確かめます</h2>
+<p>2026年10月29日時点の日本向け販売者利用規約は、マーケティングである旨の適切なラベル付けと、提供されるラベリング機能の使用を求めています。日本向けクリエイター利用規約にも、「コンテンツ開示設定等」のラベリング機能を使う規定があります。企業側の点検でも、この設定を確認する欄を設けます。</p>
+<p>設定の確認と、消費者に広告であることが伝わるかの確認は分けます。本文や動画を見て表示を確かめ、設定については本人に確認します。企業から設定の状態を確かめられない場合は「確認待ち」と記録します。ラベルが見えないことだけで、設定がオフだと決めつけないようにします。</p>
+<p>消費者庁Q&amp;Aは、「広告」「宣伝」「プロモーション」「PR」以外の言葉も認めています。表示全体から事業者の表示であることが明瞭なら、商品の提供を受けたことを文章で説明する方法もあります。自社の点検では、表記の有無に加え、文字の大きさや色、置かれた場所も見ます。</p>
+<div class="tw"><table><thead><tr><th>確かめる面</th><th>見ること・聞くこと</th><th>台帳へ残す内容</th></tr></thead><tbody>
+<tr><td>コンテンツ開示設定</td><td>本人に設定の確認を依頼する</td><td>回答、確認資料の場所、未確認なら確認待ち</td></tr>
+<tr><td>投稿本文</td><td>広告や提供の関係が読めるか</td><td>実際の表記と、それがある位置</td></tr>
+<tr><td>動画の中</td><td>途中から見ても関係が伝わるか</td><td>表示の位置と、表示を確認した場面</td></tr>
+<tr><td>本文以外の説明</td><td>コメントへの追記だけになっていないか</td><td>本文とコメントを区別した確認結果</td></tr>
+</tbody></table></div>
+<p class="src">点検項目は、日本向け利用規約と消費者庁Q&amp;Aに基づき編集部作成。</p>
+<p>Q&amp;Aは、投稿本文ではなくリプライだけに広告表示がある場合、消費者が気づかず明瞭といえないことが多いと説明しています。動画も冒頭だけの表示では見逃される場合があり、動画全体を通して分かる表示が望ましいとしています。点検する人は、説明を全部知っている社内の目線から離れて確認します。</p>
+<p>AIの開示と、広告であることの開示も同じ意味ではありません。素材の作り方を含めた確認は<a href="https://leam.co.jp/column/ai-video-policy/">AI動画の利用ルール</a>で扱います。機能名や設定の操作は変更されることがあるため、利用時には最新の日本向け公式ヘルプと規約を確かめてください。</p>
+<h2 id="s4"><span class="no en">04</span>公開URLごとの台帳に、依頼と確認の記録を残します</h2>
+<p>当社の運用実感では、「本人には伝えた」と「公開された表示が直った」が混ざると、対応を終えたつもりで未修正の投稿が残ります。公開URLを起点に、発見、修正依頼、修正の連絡、再点検を別々に記録すると、担当者が替わっても状況を追えます。返事を受け取っただけで完了にしない形です。</p>
+<p>台帳は次の項目をそのまま列にできます。投稿者ごとにまとめる場合も、別の動画や再投稿には別の行を設けます。プロフィールのURLだけでは、どの表示を点検したのか分からなくなります。非公開になった場合も行は消さず、確認できなくなった状態として残します。</p>
+<div class="tw"><table><thead><tr><th>台帳の列</th><th>記入する内容</th><th>記録を分ける理由</th></tr></thead><tbody>
+<tr><td>公開URL・投稿者</td><td>点検した投稿と本人を特定する</td><td>同じ人の別投稿と混ぜない</td></tr>
+<tr><td>紹介の関係</td><td>直接依頼、売上連動、商品提供など</td><td>招待の有無だけで対象を外さない</td></tr>
+<tr><td>点検日時・担当</td><td>誰がいつ公開状態を見たか</td><td>公開後の変更と区別する</td></tr>
+<tr><td>本文・動画の表示</td><td>実際の文言、位置、見え方</td><td>「表示あり」の根拠を残す</td></tr>
+<tr><td>開示設定の確認</td><td>本人の回答と確認資料の場所</td><td>公開画面だけで分からない点を残す</td></tr>
+<tr><td>対応の状態</td><td>確認待ち、修正依頼中、再点検済み</td><td>返事と対応完了を混ぜない</td></tr>
+<tr><td>依頼日時・連絡先</td><td>修正依頼の送付日時と窓口</td><td>誰に何を伝えたか引き継ぐ</td></tr>
+<tr><td>直してもらった日</td><td>本人から修正済みの連絡が来た日</td><td>企業が再点検した日と分ける</td></tr>
+<tr><td>再点検日・結果</td><td>同じURLを開いて確かめた表示</td><td>連絡だけで完了にしない</td></tr>
+<tr><td>控え・次の対応</td><td>変更前後の控えと、未解決の点</td><td>別の担当者が続きを進められる</td></tr>
+</tbody></table></div>
+<p class="src">公開後の点検台帳の項目例（編集部作成）。</p>
+<p>「確認待ち」は、表示が適切という意味ではありません。本文が見つからない、動画を開けない、設定の回答が来ないなど、分からないことをそのまま書きます。判断できない理由を残すと、担当者が変わっても同じ調査を繰り返さずに済みます。次に確かめる人と内容も併記してください。</p>
+<p>変更前の控えは、修正後に古い状態を責めるためではなく、何を直したかを確かめるために保存します。修正後の控えは別に残します。保存先だけでなく、点検対象と撮った場面が分かる名前にします。管理の範囲を広げる場合は、<a href="https://leam.co.jp/column/creator-progress-sheet/">クリエイターの進行管理表</a>と公開URLで結び付けます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="stealthmarketingLedger" viewBox="0 0 780 520" role="img" aria-label="発見、修正依頼、本人からの連絡、企業の再点検を台帳の別の記録にする図"><rect x="0" y="0" width="780" height="520" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">修正の連絡と、企業の再点検を分けて記録する</text><rect x="32" y="90" width="716" height="74" rx="12" fill="#EFF1F4"/><text x="50" y="121" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">発見</text><text x="238" y="134" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公開URL・表示の不足・変更前の控え</text><path d="M390 168v11" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="183" width="716" height="74" rx="12" fill="#FFECF0"/><text x="50" y="214" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">依頼</text><text x="238" y="227" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">修正してほしい箇所・窓口・送った日時</text><path d="M390 261v11" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="276" width="716" height="74" rx="12" fill="#EFF1F4"/><text x="50" y="307" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">本人の連絡</text><text x="238" y="320" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">修正した内容・変更後のURL</text><path d="M390 354v11" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="369" width="716" height="74" rx="12" fill="#25F4EE"/><text x="50" y="400" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">企業の再点検</text><text x="238" y="413" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公開画面・設定の確認結果・確認した日</text><text x="50" y="485" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">返事だけで完了にせず、未解決の点が残っていないか確かめる</text></svg>
+<figcaption>図2：修正の依頼・本人の報告・企業の再点検を分ける（編集部作成）</figcaption></figure>
+<h2 id="s5"><span class="no en">05</span>修正は箇所を示して頼み、公開画面を再点検して終えます</h2>
+<p>修正依頼は、「ステマになっています」と結論だけを送るより、確認したURLと不足している表示を具体的に示します。本文に関係の説明が見当たらないのか、コメントにしかないのか、設定を確認できていないのかを分けます。本人の感想や話し方を変える依頼と混ぜず、まず広告であることが伝わる状態をそろえます。</p>
+<p>次の文面は、実際の投稿を見て空欄を埋めて使うための型です。確認していない内容を「未設定」と断定したり、利用できるか不明な編集機能を指定したりしません。画面上で変更できない場合には、どこまで直せるかを聞き、公開の継続を含めた対応を社内で決めます。</p>
+<div class="callout"><b>表示を確認・修正してもらう依頼文の型</b><p>商品のご紹介ありがとうございます。公開された投稿［URL］について、広告・紹介の関係が視聴者に伝わるかを確認しています。［確認した箇所］では、［見つからなかった表記／見え方が気になった点］がありました。</p><p>投稿本文と動画の表示を確かめ、当社商品の紹介に伴う広告・提供の関係が分かる形へ修正をお願いします。あわせて、コンテンツ開示設定の状態をご確認ください。変更できない箇所がある場合は、その内容をお知らせください。</p><p>修正後は、対応した内容と確認できるURLをご返信ください。こちらで公開画面を再点検します。対応予定は［相談する期日］までにお知らせいただけると助かります。商品への感想を好意的な内容へ変更していただくお願いではありません。</p></div>
+<p>文面を送る窓口は決めておきます。企業の担当者と事務所の担当者が別々に頼むと、本人がどの依頼に答えればよいか分からなくなります。社内の確認者を決め、本人へ送る内容をまとめてから連絡します。契約上の連絡先や公開後の対応は、<a href="https://leam.co.jp/column/creator-contract/">投稿依頼の契約で決める項目</a>とも対応させます。</p>
+<div class="tw"><table><thead><tr><th>対応の段階</th><th>企業がすること</th><th>次へ進めるための記録</th></tr></thead><tbody>
+<tr><td>不足を発見</td><td>公開URLと見た範囲を残す</td><td>変更前の表示と、不明な点</td></tr>
+<tr><td>修正を依頼</td><td>箇所と必要な確認を本人へ伝える</td><td>送った文面、窓口、送付日時</td></tr>
+<tr><td>修正の連絡を受領</td><td>どこを変えたか、残る点は何か聞く</td><td>本人の回答と、変更後のURL</td></tr>
+<tr><td>公開画面を再点検</td><td>本文・動画・設定の確認結果をそろえる</td><td>確認日、変更後の控え、確認者</td></tr>
+<tr><td>未解決の点を引継ぎ</td><td>継続・修正・公開の見直しを判断する</td><td>判断者、次の対応、確認予定</td></tr>
+</tbody></table></div>
+<p class="src">修正依頼から再点検までの進め方（編集部作成）。</p>
+<p>本人から「直しました」と返事が来たら、同じURLを開き直します。変更された本文と動画の表示を見て、未確認の設定があれば回答も確認します。URLが変わった場合は、古い投稿が残っていないかも確認します。台帳の完了は、企業の再点検が終わり、未解決の点がないことを確認してからにします。</p>
+<p>修正できない、連絡がつかない場合は、その状態を記録したまま社内の判断者へ渡します。修正を待ってよいか、公開の見直しを求めるかを担当者だけで抱え込みません。過去の投稿にも確認が必要になり得るため、古いという理由で対象から外さず、公開が続いている投稿として扱います。</p>
+<h2 id="s6"><span class="no en">06</span>再投稿・切り抜き・ライブは、見られる場面ごとに点検します</h2>
+<p>元の動画を確認していても、再投稿された動画に同じ表示が残っているとは限りません。本文が書き換わる、冒頭の説明が切れる、動画の表示が画面の外へ出るなど、見られる状態は変わります。別の公開URLになったら、新しい点検対象として台帳に行を作ります。</p>
+<p>消費者庁Q&amp;Aは、動画を途中から見る消費者も想定しています。この考え方に沿い、ライブも冒頭の口頭説明を聞いていない人の目線で点検します。どの場面を見たかを控え、配信の最初だけ確認して全体を点検済みにしないことが大切です。</p>
+<div class="tw"><table><thead><tr><th>公開のされ方</th><th>見落としやすいこと</th><th>点検と記録の仕方</th></tr></thead><tbody>
+<tr><td>同じ動画の再投稿</td><td>本文の表示を引き継いでいない</td><td>新しいURLの本文と設定を確かめる</td></tr>
+<tr><td>短くした切り抜き</td><td>関係を説明する部分が切れている</td><td>切り抜きだけを見て伝わるか確認する</td></tr>
+<tr><td>ライブ配信</td><td>途中から来た人に説明が届かない</td><td>視聴した場面と表示を控える</td></tr>
+<tr><td>ライブ後の動画化</td><td>配信時の説明や表示が残っていない</td><td>公開された動画を別に点検する</td></tr>
+<tr><td>別の投稿への引用</td><td>紹介の関係を外して感想だけ見せる</td><td>引用した表示全体で関係が伝わるか見る</td></tr>
+</tbody></table></div>
+<p class="src">公開の形が変わる時の点検例（消費者庁Q&amp;Aに基づき編集部作成）。</p>
+<p>表示の点検と、内容そのものの確認も分けます。広告であることを示しても、商品の説明に誤りがあれば別の対応が必要です。商品や表現の確認範囲は<a href="https://leam.co.jp/column/prohibited-items/">出品と紹介で確かめる商品ルール</a>で扱います。点検台帳には、表示の修正と商品説明の修正を別の対応として残します。</p>
+<p>当社の運用実感では、二次的に作った投稿を元動画の行だけで管理すると、点検対象から抜けやすくなります。元URLと再投稿先URLを関連付けても、確認結果は別に残します。公開前にそろえる情報は<a href="https://leam.co.jp/column/creator-brief-template/#s7">依頼資料と投稿前レビューの項目</a>で確認し、公開後は実際の表示に照らして点検します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="stealthmarketingSeparatePosts" viewBox="0 0 780 503" role="img" aria-label="再投稿、切り抜き、ライブ後の動画を、元の投稿と関連づけつつ別の公開状態として点検する図"><rect x="0" y="0" width="780" height="503" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">元の投稿の点検結果を、別の公開先へ引き継がない</text><rect x="246" y="82" width="288" height="75" rx="12" fill="#25F4EE"/><text x="290" y="126" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">元の公開URL</text><path d="M390 167v29H143v33m247-33v33m0-33h247v33" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="246" width="222" height="174" rx="12" fill="#EFF1F4"/><text x="48" y="287" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">再投稿</text><text x="48" y="333" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">本文の表示</text><text x="48" y="379" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">新しいURLを点検</text><rect x="279" y="246" width="222" height="174" rx="12" fill="#EFF1F4"/><text x="295" y="287" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">切り抜き</text><text x="295" y="333" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">切った後の動画</text><text x="295" y="379" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">説明が残るか点検</text><rect x="526" y="246" width="222" height="174" rx="12" fill="#EFF1F4"/><text x="542" y="287" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">ライブ後の動画</text><text x="542" y="333" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公開された内容</text><text x="542" y="379" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">配信とは別に点検</text><text x="58" y="468" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">途中から見ても、広告・紹介の関係が伝わる状態を確かめる</text></svg>
+<figcaption>図3：公開の形が変わったら、別の表示として点検する（編集部作成）</figcaption></figure>
+<h2 id="s7"><span class="no en">07</span>オープンコラボの投稿も、関係を確かめてから対応します</h2>
+<p>オープンコラボでは、企業が個別に依頼した一覧にない紹介投稿も点検の対象に入れます。成果報酬で自社商品を紹介しているなら、「こちらから連絡していない」で確認を終えません。見つけた投稿を台帳へ追加し、紹介されている商品と売り手、商品リンク、報酬の関係を順に確かめます。</p>
+<p>一方、自社商品に触れた自主的な感想を見つけただけで、本人へ一律に修正を求めるものではありません。消費者庁Q&amp;Aは、自主的な意思による表示は事業者の表示に当たらないとしています。関係が分からない場合は、分からない事実を残し、調べた結果と分けて管理します。</p>
+<div class="tw"><table><thead><tr><th>見つけた後の順番</th><th>確かめること</th><th>台帳の残し方</th></tr></thead><tbody>
+<tr><td>投稿を特定する</td><td>URL、本人、紹介商品を対応させる</td><td>同名の商品や別の売り手と区別</td></tr>
+<tr><td>紹介の関係を見る</td><td>売上連動や提供・依頼の記録を確認</td><td>確認できた関係と未確認事項</td></tr>
+<tr><td>公開表示を見る</td><td>本文、動画、開示設定を確認</td><td>確認できた面と確認待ちの面</td></tr>
+<tr><td>対応する相手を決める</td><td>本人または合意した窓口を確かめる</td><td>連絡先と、伝えた確認事項</td></tr>
+<tr><td>修正後を確かめる</td><td>公開画面と本人の回答を再点検</td><td>変更前後、再点検日、残る対応</td></tr>
+</tbody></table></div>
+<p class="src">個別依頼の一覧にない投稿を見つけた時の対応例（編集部作成）。</p>
+<p>担当者が見つけた投稿を、売上の担当者だけへ渡して終わらせないようにします。表示の確認をする人と、本人へ連絡する人を決め、対応の状態を同じ台帳へ戻します。投稿の成果を評価することと、表示の不足を直すことは別に進めます。売れた投稿だから修正を後回しにする、という判断は避けます。</p>
+<p>オープンコラボの紹介であると確認できた場合も、表示の修正を頼む文面の基本は変わりません。URLと気づいた箇所を伝え、設定を確かめてもらい、修正後の公開画面を点検します。個別依頼と異なるのは、最初に関係と窓口を確かめる工程が加わることです。</p>
+<h2 id="s8"><span class="no en">08</span>まとめ：依頼した記録より、公開された表示で完了を判断します</h2>
+<p>TikTok Shopの表示点検では、広告主としての確認をクリエイターに任せきりにしません。コンテンツ開示設定と消費者に見える表示を分け、公開URL単位で記録します。修正を頼んだ時点では対応中です。直したという返事を受けてから、企業側が公開画面を再点検して完了を判断します。</p>
+<p>最初に整えるのは、点検台帳、修正依頼文、社内の判断者です。再投稿や切り抜き、ライブ、依頼一覧にない紹介も、同じ台帳へ追加できる形にします。記録に未確認の点が残っていれば、次に調べることと担当を決めます。判断と対応を引き継げることが、公開後の点検を続ける土台になります。</p>
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<p>公開後に担当者が迷いやすい点をまとめました。台帳では、本人から聞いたことと、自社が公開画面で確かめたことを分けて記録してください。</p>
+<p>関係性や表示の見え方を確認できていない投稿は、確認待ちの状態を残します。確認した範囲を越えて、全体を点検済みと扱わないようにします。</p>
+<div class="faq">
+<details><summary>修正済みの返事だけで点検を終えてよいですか？</summary><div class="a">公開画面を再点検してから終えます。返事は本人の対応報告であり、消費者に見える表示を企業が確認した記録とは別です。同じURLを開き、本文・動画の表示と設定の確認結果を台帳へ残します。</div></details>
+<details><summary>開示設定を企業から確認できない時はどう残しますか？</summary><div class="a">設定は確認待ちとし、本人へ確認を頼みます。公開ラベルや本文を見た結果は別の欄に書きます。画面から確かめられない設定を、推測でオンやオフと記録しないことが大切です。</div></details>
+<details><summary>コメントに広告と追記されていたら対応完了ですか？</summary><div class="a">コメントだけで完了にしません。消費者庁Q&amp;Aは、本文ではなくリプライに広告表示を置くと、消費者が気づかず明瞭といえない場合が多いとしています。本文と動画の見え方を確かめて対応を相談します。</div></details>
+<details><summary>点検した動画を再投稿した時も記録が要りますか？</summary><div class="a">新しい公開URLを別に記録します。元の投稿で確認した表示が、本文や切り抜き後の動画に残っているとは限りません。元URLとの関係を残しながら、新しい投稿の状態を点検します。</div></details>
+<details><summary>招待した記録がない紹介は台帳から外せますか？</summary><div class="a">招待の有無だけでは外しません。自社商品へのリンクや売上連動の報酬などの関係を確認します。成果報酬の関係がある紹介は点検対象とし、自主的な購入者の感想とは分けて扱います。</div></details>
+<details><summary>投稿が見られなくなった時は行を消しますか？</summary><div class="a">行を残し、確認できなくなった状態と確認した日時を書きます。削除、非公開、URLの変更などを推測で決めず、分かる範囲を控えます。本人の回答と別の公開先があるかを確認し、次の対応へつなぎます。</div></details>
+</div>
+<div class="ctabox"><div class="ct">紹介の依頼から投稿の確認まで、手順をそろえて任せたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=stealth-marketing">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=stealth-marketing&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2 id="sources"><span class="no en">10</span>参考にした情報</h2><p>消費者庁Q&amp;Aと日本向けの販売者・クリエイター利用規約は、2026年10月29日に取得して確認しました。本文では、法律上の判断に関する説明と、企業が点検を続けるための手順を分けています。</p><ul class="source-list"><li><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/" target="_blank" rel="noopener noreferrer">消費者庁：ステルスマーケティングに関するQ&amp;A</a>（規制対象、措置、関係性、明瞭な表示、動画やリプライの扱い）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：販売者利用規約</a>（適切な開示のラベルとラベリング機能の使用）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164714256&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：クリエイター利用規約</a>（コンテンツ開示設定等のラベリング機能）</li></ul><p class="src">本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。点検台帳と修正依頼文は、公開後の対応を整理するために編集部が作成した例です。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/review-management/">レビューと表示の考え方</a></b><span>見返りを伴う施策を確認する</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creator-brief-template/">依頼資料を作る</a></b><span>公開前に確認する内容をそろえる</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/ai-video-policy/">AI動画の開示を確認する</a></b><span>素材の作り方と広告の表示を分ける</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/prohibited-items/">商品ルールを確認する</a></b><span>表示と商品説明を別々に点検する</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">規制で問われるのは広告主で、クリエイター任せにできません</a></li><li><a href="#s2">成果報酬の関係がある紹介は、個別に頼んでいなくても点検します</a></li><li><a href="#s3">コンテンツ開示設定と、消費者に見える本文の表示を確かめます</a></li><li><a href="#s4">公開URLごとの台帳に、依頼と確認の記録を残します</a></li><li><a href="#s5">修正は箇所を示して頼み、公開画面を再点検して終えます</a></li><li><a href="#s6">再投稿・切り抜き・ライブは、見られる場面ごとに点検します</a></li><li><a href="#s7">オープンコラボの投稿も、関係を確かめてから対応します</a></li><li><a href="#s8">まとめ：依頼した記録より、公開された表示で完了を判断します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=stealth-marketing">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "修正済みの返事だけで点検を終えてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "公開画面を再点検してから終えます。返事は本人の対応報告であり、消費者に見える表示を企業が確認した記録とは別です。同じURLを開き、本文・動画の表示と設定の確認結果を台帳へ残します。"}}, {"@type": "Question", "name": "開示設定を企業から確認できない時はどう残しますか？", "acceptedAnswer": {"@type": "Answer", "text": "設定は確認待ちとし、本人へ確認を頼みます。公開ラベルや本文を見た結果は別の欄に書きます。画面から確かめられない設定を、推測でオンやオフと記録しないことが大切です。"}}, {"@type": "Question", "name": "コメントに広告と追記されていたら対応完了ですか？", "acceptedAnswer": {"@type": "Answer", "text": "コメントだけで完了にしません。消費者庁Q&Aは、本文ではなくリプライに広告表示を置くと、消費者が気づかず明瞭といえない場合が多いとしています。本文と動画の見え方を確かめて対応を相談します。"}}, {"@type": "Question", "name": "点検した動画を再投稿した時も記録が要りますか？", "acceptedAnswer": {"@type": "Answer", "text": "新しい公開URLを別に記録します。元の投稿で確認した表示が、本文や切り抜き後の動画に残っているとは限りません。元URLとの関係を残しながら、新しい投稿の状態を点検します。"}}, {"@type": "Question", "name": "招待した記録がない紹介は台帳から外せますか？", "acceptedAnswer": {"@type": "Answer", "text": "招待の有無だけでは外しません。自社商品へのリンクや売上連動の報酬などの関係を確認します。成果報酬の関係がある紹介は点検対象とし、自主的な購入者の感想とは分けて扱います。"}}, {"@type": "Question", "name": "投稿が見られなくなった時は行を消しますか？", "acceptedAnswer": {"@type": "Answer", "text": "行を残し、確認できなくなった状態と確認した日時を書きます。削除、非公開、URLの変更などを推測で決めず、分かる範囲を控えます。本人の回答と別の公開先があるかを確認し、次の対応へつなぎます。"}}]}</script>
+</body>
+</html>

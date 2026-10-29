@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>クリエイター進行管理表｜TikTok Shopの1人1行の型</title>
+<meta name="description" content="複数名の進行は、8工程の日付と次の担当を1人1行で管理します。TikTok Shop向けの表の見本、列と状態の定義、期日超過の確認、紐付け・公開・売上を分ける記録方法を紹介します。">
+<link rel="canonical" href="https://leam.co.jp/column/creator-progress-sheet/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="クリエイター進行管理表｜TikTok Shopの1人1行の型">
+<meta property="og:description" content="複数名の進行は、8工程の日付と次の担当を1人1行で管理します。TikTok Shop向けの表の見本、列と状態の定義、期日超過の確認、紐付け・公開・売上を分ける記録方法を紹介します。">
+<meta property="og:url" content="https://leam.co.jp/column/creator-progress-sheet/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/creator-progress-sheet.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="クリエイター進行管理表｜TikTok Shopの1人1行の型">
+<meta name="twitter:description" content="複数名の進行は、8工程の日付と次の担当を1人1行で管理します。TikTok Shop向けの表の見本、列と状態の定義、期日超過の確認、紐付け・公開・売上を分ける記録方法を紹介します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/creator-progress-sheet.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "クリエイター進行管理表｜TikTok Shopの1人1行の型", "description": "複数名の進行は、8工程の日付と次の担当を1人1行で管理します。TikTok Shop向けの表の見本、列と状態の定義、期日超過の確認、紐付け・公開・売上を分ける記録方法を紹介します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creator-progress-sheet/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/creator-progress-sheet.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトのコラボ機能"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&lang=ja-JP", "name": "TikTok Shop公式：無料サンプルの案内"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "クリエイター進行管理表｜TikTok Shopの1人1行の型", "item": "https://leam.co.jp/column/creator-progress-sheet/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=creator-progress-sheet">無料相談</a></div>
+<div class="shell"><article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 複数のクリエイターに頼む進行管理表｜TikTok Shopの1人1行の型</p><span class="cat">クリエイター起用の進め方</span><h1>複数のクリエイターに頼む進行管理表｜TikTok Shopの1人1行の型</h1><div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="複数の人の工程を横に並べた管理表から、次に確認する行を選び、依頼と発送と公開の記録をつなげるイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="creatorprogresssheetDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#creatorprogresssheetDots" transform="translate(944 542)"/>
+  </g><g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><rect x="88" y="137" width="740" height="360" rx="18" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><rect x="88" y="137" width="740" height="360" rx="18" fill="#FFFFFF"/><path d="M88 202h740" stroke-width="5"/><path d="M122 170h165m44 0h109m50 0h110m49 0h139" stroke="#C9CBD0" stroke-width="5"/><rect x="102" y="297" width="712" height="83" rx="10" fill="#25F4EE" stroke="none"/><path d="M239 203v275m-134-9h706m-706-90h706m-706-88h706" stroke="#C9CBD0" stroke-width="3"/><circle cx="154" cy="239" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M128 273q26-37 52 0" fill="#DFE0E2" stroke-width="4"/><circle cx="274" cy="251" r="17" fill="#CE1730" stroke-width="3"/><path d="m266 251 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M296 251h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="341" cy="251" r="17" fill="#CE1730" stroke-width="3"/><path d="m333 251 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M363 251h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="408" cy="251" r="17" fill="#CE1730" stroke-width="3"/><path d="m400 251 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M430 251h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="475" cy="251" r="17" fill="#CE1730" stroke-width="3"/><path d="m467 251 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M497 251h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="542" cy="251" r="17" fill="#CE1730" stroke-width="3"/><path d="m534 251 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M564 251h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="609" cy="251" r="17" fill="#CE1730" stroke-width="3"/><path d="m601 251 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M631 251h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="676" cy="251" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M698 251h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="743" cy="251" r="17" fill="#FFFFFF" stroke-width="3"/><circle cx="154" cy="328" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M128 362q26-37 52 0" fill="#DFE0E2" stroke-width="4"/><circle cx="274" cy="340" r="17" fill="#CE1730" stroke-width="3"/><path d="m266 340 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M296 340h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="341" cy="340" r="17" fill="#CE1730" stroke-width="3"/><path d="m333 340 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M363 340h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="408" cy="340" r="17" fill="#CE1730" stroke-width="3"/><path d="m400 340 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M430 340h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="475" cy="340" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M497 340h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="542" cy="340" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M564 340h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="609" cy="340" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M631 340h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="676" cy="340" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M698 340h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="743" cy="340" r="17" fill="#FFFFFF" stroke-width="3"/><circle cx="154" cy="417" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M128 451q26-37 52 0" fill="#DFE0E2" stroke-width="4"/><circle cx="274" cy="429" r="17" fill="#CE1730" stroke-width="3"/><path d="m266 429 6 7 11-15" fill="none" stroke="#FFFFFF" stroke-width="3"/><path d="M296 429h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="341" cy="429" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M363 429h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="408" cy="429" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M430 429h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="475" cy="429" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M497 429h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="542" cy="429" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M564 429h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="609" cy="429" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M631 429h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="676" cy="429" r="17" fill="#FFFFFF" stroke-width="3"/><path d="M698 429h22" stroke="#C9CBD0" stroke-width="3"/><circle cx="743" cy="429" r="17" fill="#FFFFFF" stroke-width="3"/><path d="m70 339-31-18v36z" fill="#CE1730" stroke-width="4"/><rect x="909" y="98" width="202" height="135" rx="11" fill="#FFFFFF"/><path d="m913 106 97 66 97-66m-195 121 68-62m124 62-65-62" fill="none" stroke-width="5"/><circle cx="1090" cy="222" r="23" fill="#25F4EE" stroke-width="4"/><path d="m1080 222 8 9 14-18" fill="none" stroke-width="4"/><path d="m929 321 69-37 71 37v87l-71 37-69-37z" fill="#FFFFFF"/><path d="m929 321 69 36 71-36m-71 36v88" fill="none" stroke-width="5"/><path d="m963 303 71 36m-71 0v26" fill="none" stroke="#25F4EE" stroke-width="10"/><rect x="900" y="476" width="208" height="98" rx="12" fill="#FFFFFF" stroke-width="5"/><rect x="914" y="490" width="95" height="70" rx="6" fill="#EFF1F4" stroke="none"/><path d="m946 504 28 21-28 21z" fill="#CE1730" stroke-width="4"/><path d="M1029 504h57m-57 22h57m-57 22h38" stroke="#C9CBD0" stroke-width="4"/><path d="M843 241h34v-67h22m-8-7 8 7-8 7M843 340h75m-8-7 8 7-8 7M843 427h23v98h24m-8-7 8 7-8 7" fill="none" stroke="#0B0C10" stroke-width="4"/><path d="m507 550 120-51 10 24-120 51-30-1z" fill="#CE1730" stroke-width="5"/><path d="m507 550 10 24-30-1z" fill="#FFFFFF" stroke-width="4"/><path d="m627 499 10 24 20-9q6-4 3-11l-4-10q-3-7-10-4z" fill="#DFE0E2" stroke-width="4"/><path d="m735 100 63-14 15 58-63 14z" fill="#FE2C55" stroke-width="4"/><path d="m756 111 28-6m-23 25 28-6" stroke="#FFFFFF" stroke-width="4"/></g></svg>
+<figcaption>本人ごとの工程の進み方と、依頼・発送・公開の記録を結び付ける（編集部作成）</figcaption></figure><p class="lead">TikTok Shopで複数のクリエイターに紹介を頼む時は、1人1行の進行管理表を作ります。声かけから報告までの8工程を横に並べ、日付と状態、次に動く人を同じ行へ残す形です。公開URLや表示の確認もつなげると、「連絡した」「公開された」「売上が立った」を取り違えずに追えます。</p>
+<p>この記事では、写して使える表の見本と列の定義を示します。目的は、報告用に行を埋めることより、止まっている行を見つけて次の対応へ渡すことです。本人の返事を待っているのか、社内の確認が止まっているのかが分かるようにします。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">声かけから報告までの8工程を、人数分の行で追います</a></li><li><a href="#s2">1人1行に、工程の日付と次の対応を横に並べます</a></li><li><a href="#s3">状態の言葉をそろえ、誰の返事待ちかを区別します</a></li><li><a href="#s4">期日を過ぎた行を取り出し、次に動く人を決めます</a></li><li><a href="#s5">紐付け・公開・売上を分け、次に頼む時の記録へつなげます</a></li><li><a href="#s6">返事待ち・発送・催促・公開前の確認を、止まる理由で見分けます</a></li><li><a href="#summary">まとめ：完了したことと、次に動く人を同じ行へ残します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>声かけから報告までの8工程を、人数分の行で追います</h2>
+<p>進行は、声かけ、承諾、条件、依頼の資料、サンプルの発送、公開前の確認、公開、報告の8工程でそろえます。依頼する人が増えると、この流れが並行して進みます。連絡の履歴だけを読んでも、誰のどの確認が残っているかを探す作業が増えるため、進行の一覧を別に持ちます。</p>
+<p>各工程には、何をもって完了とするかを決めます。声かけは依頼を伝えた記録、承諾は本人が引き受けた記録です。候補へ入れたことや、招待を送ったことを承諾として扱いません。条件と資料も別にし、仕事の内容に合意したことと、制作に使う情報を本人へ渡したことを区別します。</p>
+<p>2026年10月30日時点の日本向け公式ヘルプでは、ターゲットコラボの成果として、招待を承諾した人数と、その中で投稿した人数を確認できると説明しています。表でも、承諾した人と公開した人を分けて残します。公式の画面の集計と、個人の進行記録を照合できる形にします。</p>
+<p>発送は、荷物を出したことを示す工程です。届いたことまで同じ意味にしないよう、受け取りの確認は発送の補足へ記録します。公開前の確認は、提出された内容を自社が確かめる工程です。本人が制作を終えていても、自社の回答が残っていれば、そこで進行が止まっていると分かるようにします。</p>
+<p>仕事を外へ任せる場合も、工程の言葉は同じにします。自社に残す判断と外へ渡す作業の切り分けは、<a href="https://leam.co.jp/column/small-team/#s5">少人数運用で外に出す作業の決め方</a>で整理します。進行表では、その区分に沿って、次に誰が動くかを各行へ記入します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatorprogresssheetEightStages" viewBox="0 0 780 470" role="img" aria-label="声かけ、承諾、条件、依頼の資料、サンプルの発送、公開前の確認、公開、報告の8工程を並べる図"><rect x="0" y="0" width="780" height="470" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">同じ8工程を、本人ごとの行に並べる</text><rect x="32" y="85" width="157" height="87" rx="12" fill="#25F4EE"/><text x="46" y="113" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">01</text><text x="46" y="147" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">声かけ</text><path d="M195 129h18m-6-6 6 6-6 6" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="219" y="85" width="157" height="87" rx="12" fill="#25F4EE"/><text x="233" y="113" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">02</text><text x="233" y="147" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">承諾</text><path d="M382 129h18m-6-6 6 6-6 6" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="406" y="85" width="157" height="87" rx="12" fill="#25F4EE"/><text x="420" y="113" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">03</text><text x="420" y="147" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">条件</text><path d="M569 129h18m-6-6 6 6-6 6" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="593" y="85" width="157" height="87" rx="12" fill="#25F4EE"/><text x="607" y="113" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">04</text><text x="607" y="147" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">依頼の資料</text><rect x="32" y="212" width="157" height="87" rx="12" fill="#EFF1F4"/><text x="46" y="240" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">05</text><text x="46" y="274" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">サンプルの発送</text><path d="M195 256h18m-6-6 6 6-6 6" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="219" y="212" width="157" height="87" rx="12" fill="#EFF1F4"/><text x="233" y="240" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">06</text><text x="233" y="274" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公開前の確認</text><path d="M382 256h18m-6-6 6 6-6 6" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="406" y="212" width="157" height="87" rx="12" fill="#EFF1F4"/><text x="420" y="240" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">07</text><text x="420" y="274" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公開</text><path d="M569 256h18m-6-6 6 6-6 6" fill="none" stroke="#0B0C10" stroke-width="2"/><rect x="593" y="212" width="157" height="87" rx="12" fill="#EFF1F4"/><text x="607" y="240" font-family="Noto Sans JP,sans-serif" font-size="17" fill="#0B0C10">08</text><text x="607" y="274" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">報告</text><path d="M671 180v20H100v7" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="348" width="716" height="85" rx="12" fill="#FFECF0"/><text x="53" y="382" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">各工程へ、予定と完了を区別して記録する</text><text x="53" y="415" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">発送と受け取り、公開と表示確認も同じ意味にしない</text></svg>
+<figcaption>図1：声かけから報告まで8工程をそろえる（編集部作成）</figcaption></figure>
+<h2 id="s2"><span class="no en">02</span>1人1行に、工程の日付と次の対応を横に並べます</h2>
+<p>まず、次の列を持つ表を作ります。工程の日付と、進行の状態、次の期日、次に動く人、次の対応を横に並べます。右側には商品との紐付け、公開、売上の有無を別の列で置きます。確認した日や公開URLを残すと、進行の完了と結果の確認を同じ行へつなげられます。</p>
+<p>下の見本は、名前・日付・進行状況をすべて架空にした例です。確認する日を11月9日と仮定しています。日付の後の「済」は完了、「予定」は予定を表します。実際の表には年も含めた日付を入れ、予定と完了を別の入力欄に分けても構いません。横に長い表なので、右へスクロールして結果の欄まで確認してください。</p>
+<div class="tw"><table><thead><tr><th>本人</th><th>声かけ</th><th>承諾</th><th>条件</th><th>依頼の資料</th><th>サンプルの発送</th><th>公開前の確認</th><th>公開</th><th>報告</th><th>状態</th><th>次の期日</th><th>次に動く人</th><th>次の対応</th><th>紐づいた</th><th>公開した</th><th>売上が立った</th><th>公開URL</th><th>表示の確認</th><th>売上の確認範囲</th></tr></thead><tbody>
+<tr><td>架空の方A</td><td>11/1済</td><td>11/2済</td><td>11/3済</td><td>11/4済</td><td>11/5済</td><td>11/7済</td><td>11/8済</td><td>11/10予定</td><td>投稿済み</td><td>11/10</td><td>社内の集計担当</td><td>確認範囲をそろえ報告</td><td>確認済み</td><td>確認済み</td><td>あり</td><td>［公開先を記入］</td><td>11/8確認済み</td><td>11/8〜9を11/9確認</td></tr>
+<tr><td>架空の方B</td><td>11/1済</td><td>11/2済</td><td>11/3済</td><td>11/4済</td><td>11/5済</td><td>未完了</td><td>未完了</td><td>未完了</td><td>発送済み</td><td>11/8</td><td>社内の進行担当</td><td>受け取りと提出予定を確認</td><td>確認済み</td><td>未確認</td><td>未確認</td><td>未取得</td><td>未確認</td><td>未確認</td></tr>
+<tr><td>架空の方C</td><td>11/3済</td><td>未完了</td><td>未完了</td><td>未完了</td><td>未完了</td><td>未完了</td><td>未完了</td><td>未完了</td><td>返答待ち</td><td>11/8</td><td>社内の依頼担当</td><td>連絡の履歴と次の確認を整理</td><td>未確認</td><td>未確認</td><td>未確認</td><td>未取得</td><td>未確認</td><td>未確認</td></tr>
+</tbody></table></div>
+<p class="src">1人1行の進行管理表の見本。人物・日付・結果はすべて架空（編集部作成）。</p>
+<p>名前だけでは、同じ人の別の依頼と混ざることがあります。実際に使う時は、今回の依頼を特定できる管理番号と、本人のアカウントを確認できる情報も付けます。同じ人へ追加の依頼をした時は、前の依頼を上書きせず、依頼を分けて追えるようにします。</p>
+<p>見本の「未確認」は、起きていないと分かった状態ではありません。確認できていないことを示します。「なし」は、決めた範囲を調べて該当する結果がなかった時に使います。空欄をすべて同じ意味にすると、未着手と記入漏れ、確認していない結果が混ざるため、記入する言葉をそろえます。</p>
+<div class="tw"><table><thead><tr><th>列</th><th>書く内容</th><th>完了や更新を判断する根拠</th></tr></thead><tbody>
+<tr><td>声かけ</td><td>依頼を伝えた日と窓口</td><td>送った依頼の控え</td></tr>
+<tr><td>承諾</td><td>本人が引き受けた日</td><td>本人の返答や公式画面の確認</td></tr>
+<tr><td>条件</td><td>仕事の範囲や公開予定に合意した日</td><td>合意した内容の保存先</td></tr>
+<tr><td>依頼の資料</td><td>制作に使う資料を渡した日</td><td>渡した資料と版を確認できる控え</td></tr>
+<tr><td>サンプルの発送</td><td>発送日と、受け取り確認の補足</td><td>発送の記録と本人の受け取りの連絡</td></tr>
+<tr><td>公開前の確認</td><td>提出内容へ回答した日</td><td>確認済みの内容と残る修正の記録</td></tr>
+<tr><td>公開</td><td>実際に公開を確認した日</td><td>開いて確認した公開URL</td></tr>
+<tr><td>報告</td><td>記録と結果を整理して渡した日</td><td>確認範囲と未確認事項を含む報告</td></tr>
+<tr><td>状態</td><td>次の対応に関わる進行の位置</td><td>完了した工程と、残っている仕事</td></tr>
+<tr><td>次の期日・人・対応</td><td>いつまでに誰が何をするか</td><td>相手任せにせず決めた次の動き</td></tr>
+<tr><td>紐づいた</td><td>本人による対象商品の追加を確認したか</td><td>商品との対応が分かる公式画面の記録</td></tr>
+<tr><td>公開した・公開URL</td><td>対象の紹介が公開されているか</td><td>本人と商品が一致する公開先の確認</td></tr>
+<tr><td>売上が立った・確認範囲</td><td>確認した期間と、その範囲での売上の有無</td><td>見た画面と確認日を含む控え</td></tr>
+<tr><td>表示の確認</td><td>確認した日と、修正が残っているか</td><td>公開画面を点検した記録</td></tr>
+</tbody></table></div>
+<p class="src">進行管理表の列の定義と、記録に使う根拠の例（編集部作成）。</p>
+<p>表を細かくするだけでは、確認は進みません。各列は、見て判断できる資料へつなげます。依頼文や資料を表の中へ全文貼り付けるより、保存先と最終確認日を残す形にすると、一覧を読みやすく保てます。公開URLのように直接確認する情報は、同じ行から開けるようにします。</p>
+<h2 id="s3"><span class="no en">03</span>状態の言葉をそろえ、誰の返事待ちかを区別します</h2>
+<p>状態の基本は、打診前、返答待ち、条件調整中、承諾済み、投稿済みです。候補一覧と依頼後の状態の受け取り方は、<a href="https://leam.co.jp/column/creator-casting-agency/#s5">クリエイター起用の依頼先へ求める進行情報</a>とそろえます。ここに、発送済みと確認待ちを補い、制作に入った後も次の対応を判断できるようにします。</p>
+<p>状態は、人物全体への評価ではなく、今回の依頼の進み方です。「対応が遅い人」といった印象で書かず、どの事実を確かめたかを残します。本人の返答がない場合と、自社が内容へ返事をしていない場合を、同じ「待ち」でまとめないことが大切です。</p>
+<div class="tw"><table><thead><tr><th>状態</th><th>この言葉を使う時</th><th>一緒に残すこと</th></tr></thead><tbody>
+<tr><td>打診前</td><td>候補に入れたが依頼を伝えていない</td><td>声をかける担当と確認する条件</td></tr>
+<tr><td>返答待ち</td><td>依頼を伝え、本人の返事を待っている</td><td>連絡した日、窓口、次の確認予定</td></tr>
+<tr><td>条件調整中</td><td>仕事の内容や公開の条件が未合意</td><td>決まっていない項目と判断する人</td></tr>
+<tr><td>承諾済み</td><td>本人が引き受け、次の準備へ進む</td><td>資料やサンプルなど次の対応</td></tr>
+<tr><td>発送済み</td><td>サンプルを発送した</td><td>受け取りの確認と制作の予定</td></tr>
+<tr><td>確認待ち</td><td>提出内容や修正について回答が残る</td><td>本人・社内のどちらが次に動くか</td></tr>
+<tr><td>投稿済み</td><td>公開URLで紹介を確認した</td><td>表示の確認、売上の確認、報告の残り</td></tr>
+</tbody></table></div>
+<p class="src">基本の状態は既存の起用依頼の記事にそろえ、発送済み・確認待ちを追加（編集部作成）。</p>
+<p>複数の確認が同時に走る時は、状態を増やし続けるより、次に進むために必要な確認を「次の対応」へ書きます。たとえば商品担当の回答を待っているなら、状態は確認待ちにし、次に動く人を社内の商品担当にします。本人を待たせている事実が、一覧から分かるようになります。</p>
+<p>当社の運用実感では、状態と次の対応を同じ文章で書くと、未完了の理由が長くなり、一覧で拾いにくくなります。状態は決めた言葉から選び、理由は短い補足へ残す形が扱いやすくなります。「投稿済み」でも表示の修正や報告が残っていれば、その仕事は次の対応へ置きます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatorprogresssheetNextActor" viewBox="0 0 780 500" role="img" aria-label="確認待ちを本人への質問と社内の未回答に分け、次の期日と次に動く人と次の対応を記録する図"><rect x="0" y="0" width="780" height="500" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">確認待ちの行は、次に動く人を特定する</text><rect x="246" y="86" width="288" height="75" rx="12" fill="#25F4EE"/><text x="276" y="130" font-family="Noto Sans JP,sans-serif" font-size="24" fill="#0B0C10">状態：確認待ち</text><path d="M390 170v31H206v32m184-32h184v32" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="250" width="342" height="108" rx="12" fill="#EFF1F4"/><text x="51" y="290" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">本人へ聞くことがある</text><text x="51" y="332" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">社内の窓口が確認を進める</text><rect x="405" y="250" width="342" height="108" rx="12" fill="#FFECF0"/><text x="424" y="290" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">社内の回答が残っている</text><text x="424" y="332" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">判断する担当を同じ行へ</text><text x="65" y="412" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">次の期日</text><text x="284" y="412" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">次に動く人</text><text x="536" y="412" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">次の対応</text><path d="M32 433h716" stroke="#C9CBD0" stroke-width="3"/><text x="64" y="466" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">状態だけでなく、いつ・誰が・何をするかを残す</text></svg>
+<figcaption>図2：確認待ちでも、次に動く人を特定する（編集部作成）</figcaption></figure>
+<h2 id="s4"><span class="no en">04</span>期日を過ぎた行を取り出し、次に動く人を決めます</h2>
+<p>表を確認する時は、全員の連絡履歴を最初から読み直すのではなく、次の期日を過ぎた行から見ます。次の対応が終わっていない行を取り出し、誰が何を止めているかを確かめます。期日が入っていない行も、次の確認が予定されていない行として拾います。</p>
+<p>見本では、確認日を過ぎているのは架空の方BとCの行です。Bは受け取りと提出予定の確認、Cは依頼後の連絡履歴の整理が次の仕事です。同じ期日超過でも、すぐに同じ催促文を送るものではありません。表の「次の対応」を見て、担当者が必要な確認を進めます。</p>
+<div class="tw"><table><thead><tr><th>取り出した行の状態</th><th>最初に確かめること</th><th>行へ戻す内容</th></tr></thead><tbody>
+<tr><td>返答待ちで期日超過</td><td>送った依頼と、本人からの返答の有無</td><td>次の連絡をする担当と確認予定</td></tr>
+<tr><td>発送済みで期日超過</td><td>配送と受け取り、提出の見通し</td><td>分かった状態と、次に本人へ聞くこと</td></tr>
+<tr><td>確認待ちで期日超過</td><td>本人への回答が社内で止まっていないか</td><td>判断する担当と返事をする予定</td></tr>
+<tr><td>期日の記入がない</td><td>次の対応が決まっているか</td><td>誰がいつまでに何を確かめるか</td></tr>
+</tbody></table></div>
+<p class="src">期日を過ぎた行と、次の予定がない行の見方（編集部作成）。</p>
+<p>担当者を決める時は、「社内」「本人」とだけ書かず、連絡や判断を担当する人が分かる形にします。本人の返事が必要な場合も、企業側で次に確認する担当を残します。相手の対応だけに期日を置くと、返事がなかった時に誰も行を更新しない状態になるからです。</p>
+<p>期日を動かしたら、元の期日と変更した理由を控えます。古い日付を消して新しい予定だけを書くと、何度も予定を動かしていることが分からなくなります。完了した仕事と、予定を改めた仕事を分け、変更後の期日と次の担当を更新してください。</p>
+<p>複数の人を同じ発売に合わせる時は、<a href="https://leam.co.jp/column/launch-creator-schedule/">新商品の発売と紹介を合わせる段取り</a>と対応させます。進行管理表の期日は、本人ごとに次へ進める条件を確かめるためのものです。全体の公開希望日と、個々の行の確認期日を同じ意味で扱わないようにします。</p>
+<h2 id="s5"><span class="no en">05</span>紐付け・公開・売上を分け、次に頼む時の記録へつなげます</h2>
+<p>「紐づいた」は、本人と対象商品が対応していることを確認した記録です。この表では、本人による商品の追加を確認した状態として使います。公式ヘルプも、商品をショーケースに追加した人数と、商品リンクを伴う動画やライブを投稿した人数を区別しています。追加されたことだけを、公開が済んだことにしません。</p>
+<p>「公開した」は、対象の紹介が実際に公開されているかを確認する列です。URLを控え、本人と紹介商品が一致しているか確かめます。「売上が立った」は、決めた期間と画面で確認した結果を残す列です。公開されていても、まだ売上を確認していないなら、未確認のまま残します。</p>
+<p>売上がないと記入する場合も、何を調べたのかを残します。確認した期間が違えば、同じ「なし」でも意味が変わります。見た画面、対象期間、確認した日をそろえ、まだ確認していない値を結果として埋めないようにします。詳しい測り方は、<a href="https://leam.co.jp/column/creator-measurement/">クリエイター起用の結果を測る方法</a>へつなげます。</p>
+<p>公開後は、表示を確かめた日も同じ行へ残します。本人から公開の連絡が来たことと、自社が表示を点検したことは別です。修正が残る時は、投稿済みの状態でも次の対応を空欄にしません。点検の記録と修正後の確認は、<a href="https://leam.co.jp/column/stealth-marketing/">企業側で行う公開後の表示点検</a>で扱います。</p>
+<p>次の依頼を考える時には、売上の有無だけで人を選び直さず、進行の記録も見ます。資料の質問へ社内が回答できたか、実物が使える状態で届いたか、紹介先の商品に変更がなかったかを確認します。結果の原因をすべて本人の対応へ置かず、自社側で改善できることを残します。</p>
+<p>当社の運用実感では、進行と結果を別々の資料にすると、公開が遅れた理由や追加の確認事項が、次の依頼へ引き継がれにくくなります。同じ行から記録へたどれる形にすると、前の依頼でどこが止まったかを見直せます。売上の評価と、進行上の課題は分けて読み、次の頼み方を整えます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatorprogresssheetIndependentResults" viewBox="0 0 780 486" role="img" aria-label="商品の追加、公開、売上を独立した列とし、未確認をなしにせず確認範囲を残す図"><rect x="0" y="0" width="780" height="486" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">同じ行でも、進行と結果は別の列にする</text><rect x="32" y="90" width="220" height="132" rx="12" fill="#EFF1F4"/><text x="49" y="134" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">紐づいた</text><text x="49" y="186" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">対象商品の追加</text><rect x="280" y="90" width="220" height="132" rx="12" fill="#EFF1F4"/><text x="297" y="134" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">公開した</text><text x="297" y="186" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公開URLで確認</text><rect x="528" y="90" width="220" height="132" rx="12" fill="#EFF1F4"/><text x="545" y="134" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">売上が立った</text><text x="545" y="186" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">期間と画面で確認</text><rect x="32" y="249" width="716" height="85" rx="12" fill="#25F4EE"/><text x="55" y="284" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">未確認を「なし」に置き換えない</text><text x="55" y="318" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">確認日と確認した範囲を、結果と一緒に残す</text><path d="M140 234v9m248-9v9m248-9v9" stroke="#0B0C10" stroke-width="3"/><rect x="32" y="365" width="716" height="89" rx="12" fill="#FFECF0"/><text x="55" y="402" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">公開済みでも、表示や報告の仕事は残り得る</text><text x="55" y="436" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">次の対応が終わったかを、別に確かめる</text></svg>
+<figcaption>図3：進行と結果を別の列に残す（編集部作成）</figcaption></figure>
+<h2 id="s6"><span class="no en">06</span>返事待ち・発送・催促・公開前の確認を、止まる理由で見分けます</h2>
+<p>進行が止まると、表へ「連絡中」とだけ書きたくなります。しかし、招待への返事がないのか、受け取りを確かめたいのか、社内が内容へ回答していないのかで、次の対応は違います。本人へ連絡する前に、その行のどの記録が更新されていないかを見ます。</p>
+<p>返事待ちでは、依頼した条件と連絡の履歴を確かめます。招待の詳しい追い方は、<a href="https://leam.co.jp/column/invite-no-reply/">招待に返事が来ない時の確認</a>で扱います。進行表には、いつ誰が何を伝えたかと、次に確認する担当を戻します。別の担当が同じ依頼を重ねて送ることを防ぐためです。</p>
+<div class="tw"><table><thead><tr><th>止まりやすい場面</th><th>本人へ連絡する前に見る記録</th><th>次の対応の書き方</th></tr></thead><tbody>
+<tr><td>返事待ち</td><td>声かけ、窓口、伝えた条件</td><td>依頼担当が連絡の履歴を確かめる</td></tr>
+<tr><td>発送</td><td>発送の記録、受け取り、制作に使える状態</td><td>進行担当が配送と受け取りを確認する</td></tr>
+<tr><td>催促</td><td>合意した予定と、前に送った確認</td><td>窓口をそろえ、何を聞くか決める</td></tr>
+<tr><td>公開前の確認</td><td>提出した内容、回答待ちの項目、社内の判断者</td><td>社内の確認担当が回答をまとめる</td></tr>
+</tbody></table></div>
+<p class="src">行の更新が止まった時に確認する記録（編集部作成）。</p>
+<p>サンプルについて、2026年10月30日時点の日本向け公式ヘルプは、セラーの処理は7日以内、クリエイターの対応完了の期間は14日間、動画の公開継続は少なくとも3日間と案内しています。公式の管理期限は、本人と合意した公開の予定と区別して控えます。起算点を自社の都合で置き換えず、対象のリクエストと公式の案内を確かめてください。</p>
+<p>サンプルの未投稿を追う詳しい運用は、<a href="https://leam.co.jp/column/sample-no-post/">サンプルを送った後に投稿されない時の対応</a>で確認します。進行表は、個別の対応を進めた結果を戻す場所です。本人への連絡だけでなく、社内が資料を直した、発送の状況を確認したといった動きも、同じ行へ残します。</p>
+<p>連絡を増やす前に、依頼の資料と合意した内容の食い違いも確かめます。修正した資料を渡していない、商品の種類が変わった、社内の判断者が不在といった事情なら、自社が先に動く必要があります。本人へ催促することだけを、進行を進める方法にしないようにします。</p>
+<h2 id="summary"><span class="no en">07</span>まとめ：完了したことと、次に動く人を同じ行へ残します</h2>
+<p>複数名の進行は、声かけから報告までの8工程をそろえ、1人1行で追います。予定日と完了日を区別し、状態は決めた言葉から選びます。期日を過ぎた行と、次の予定がない行を取り出すと、どの確認が止まっているかを見つけやすくなります。</p>
+<p>表には、次の期日、次に動く人、次の対応を残します。商品との紐付け、公開、売上の有無は別の列にし、公開URLと表示の確認も結び付けます。連絡した記録だけで進行を終わらせず、確認した事実と残る仕事を次の担当へ渡せる形にしてください。</p>
+<h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+<p>進行表を使い始める時に迷いやすい点をまとめました。表の項目より先に、完了の基準と言葉の意味を担当者でそろえておくと、同じ行を見て判断できます。</p>
+<p>未確認の結果を埋めて一覧を完成させる必要はありません。分かっていないことと、それを次に確かめる人が残っていることを優先してください。</p>
+<div class="faq">
+<details><summary>同じ人に追加で頼む時は、前の行を上書きしますか？</summary><div class="a">前の依頼を消さず、今回の依頼を分けて追える形にします。本人と依頼を特定する情報を残し、工程の日付や合意した条件を混ぜないようにします。前の結果は、次の依頼を考える材料として結び付けます。</div></details>
+<details><summary>予定日を入れたら、その工程は完了としてよいですか？</summary><div class="a">予定と完了は分けます。日付だけで区別できない場合は、予定と済を明記するか、別の入力欄にします。完了した時は、本人の返答や公開URLなど、確かめた記録を残します。</div></details>
+<details><summary>商品を追加した人は、投稿済みへ進めてよいですか？</summary><div class="a">商品の追加と公開は別です。対象の商品との対応は紐付けの列に残し、公開URLで紹介を確認してから公開した列を更新します。売上を確認したかどうかも別に記録します。</div></details>
+<details><summary>表の空欄と、売上なしは同じ意味ですか？</summary><div class="a">同じではありません。確認していない結果は未確認として残します。売上なしは、決めた期間と画面で調べた結果として記録し、確認日も残します。空欄を確認済みと読み替えないようにします。</div></details>
+<details><summary>本人の返事待ちなら、次に動く人も本人と書きますか？</summary><div class="a">本人の返事が必要なことを記したうえで、企業側で次に確認する担当を残します。相手から返事がなかった時にも、誰が確認するかを決めておくためです。次の期日と聞く内容も併記します。</div></details>
+<details><summary>投稿済みになったら、次の対応欄を空にできますか？</summary><div class="a">表示の確認、修正、結果の整理、報告が残っていれば空欄にしません。投稿済みは公開を確認した状態です。残る仕事が終わったかを確かめ、次に動く担当と予定を更新します。</div></details>
+</div>
+<div class="ctabox"><div class="ct">複数のクリエイターの進行を、まとめて任せたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creator-progress-sheet">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=creator-progress-sheet&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2 id="sources"><span class="no en">09</span>参考にした情報</h2><p>コラボ機能と無料サンプルの日本向け公式ヘルプは、2026年10月30日に取得して確認しました。機能と期限は、利用時に最新の日本向け公式ヘルプを確認してください。本文の状態や列は、社内で判断をそろえるために編集部が整理した例です。</p><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトのコラボ機能</a>（承諾と投稿の人数、商品の追加と公開の区別）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：無料サンプルの案内</a>（リクエスト処理、対応完了、動画の公開継続）</li></ul><p class="src">本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。表の人物・日付・結果は説明用の架空の例で、実際の案件やサービスの報告内容を示すものではありません。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creator-casting-agency/">起用の進行を依頼する</a></b><span>候補一覧と状態を受け取る</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/small-team/">少人数で作業を分担する</a></b><span>自社の判断と外へ出す仕事を決める</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/sample-no-post/">サンプル後の投稿を追う</a></b><span>個別の対応を進行表へ戻す</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/invite-no-reply/">招待の返答を確認する</a></b><span>連絡の履歴と次の予定をそろえる</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">声かけから報告までの8工程を、人数分の行で追います</a></li><li><a href="#s2">1人1行に、工程の日付と次の対応を横に並べます</a></li><li><a href="#s3">状態の言葉をそろえ、誰の返事待ちかを区別します</a></li><li><a href="#s4">期日を過ぎた行を取り出し、次に動く人を決めます</a></li><li><a href="#s5">紐付け・公開・売上を分け、次に頼む時の記録へつなげます</a></li><li><a href="#s6">返事待ち・発送・催促・公開前の確認を、止まる理由で見分けます</a></li><li><a href="#summary">まとめ：完了したことと、次に動く人を同じ行へ残します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creator-progress-sheet">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "同じ人に追加で頼む時は、前の行を上書きしますか？", "acceptedAnswer": {"@type": "Answer", "text": "前の依頼を消さず、今回の依頼を分けて追える形にします。本人と依頼を特定する情報を残し、工程の日付や合意した条件を混ぜないようにします。前の結果は、次の依頼を考える材料として結び付けます。"}}, {"@type": "Question", "name": "予定日を入れたら、その工程は完了としてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "予定と完了は分けます。日付だけで区別できない場合は、予定と済を明記するか、別の入力欄にします。完了した時は、本人の返答や公開URLなど、確かめた記録を残します。"}}, {"@type": "Question", "name": "商品を追加した人は、投稿済みへ進めてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "商品の追加と公開は別です。対象の商品との対応は紐付けの列に残し、公開URLで紹介を確認してから公開した列を更新します。売上を確認したかどうかも別に記録します。"}}, {"@type": "Question", "name": "表の空欄と、売上なしは同じ意味ですか？", "acceptedAnswer": {"@type": "Answer", "text": "同じではありません。確認していない結果は未確認として残します。売上なしは、決めた期間と画面で調べた結果として記録し、確認日も残します。空欄を確認済みと読み替えないようにします。"}}, {"@type": "Question", "name": "本人の返事待ちなら、次に動く人も本人と書きますか？", "acceptedAnswer": {"@type": "Answer", "text": "本人の返事が必要なことを記したうえで、企業側で次に確認する担当を残します。相手から返事がなかった時にも、誰が確認するかを決めておくためです。次の期日と聞く内容も併記します。"}}, {"@type": "Question", "name": "投稿済みになったら、次の対応欄を空にできますか？", "acceptedAnswer": {"@type": "Answer", "text": "表示の確認、修正、結果の整理、報告が残っていれば空欄にしません。投稿済みは公開を確認した状態です。残る仕事が終わったかを確かめ、次に動く担当と予定を更新します。"}}]}</script>
+</body>
+</html>

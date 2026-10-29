@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのクリエイター売上｜上位は翌月も売れるか</title>
+<meta name="description" content="TikTok Shopのクリエイターは、直近の売上順位だけで選びません。上位が翌月も残る割合を当社集計で示し、期間・対象範囲・前月の順位・紹介履歴をそろえて候補を判断する表を紹介します。">
+<link rel="canonical" href="https://leam.co.jp/column/creator-gmv-ranking/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのクリエイター売上｜上位は翌月も売れるか">
+<meta property="og:description" content="TikTok Shopのクリエイターは、直近の売上順位だけで選びません。上位が翌月も残る割合を当社集計で示し、期間・対象範囲・前月の順位・紹介履歴をそろえて候補を判断する表を紹介します。">
+<meta property="og:url" content="https://leam.co.jp/column/creator-gmv-ranking/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/creator-gmv-ranking.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのクリエイター売上｜上位は翌月も売れるか">
+<meta name="twitter:description" content="TikTok Shopのクリエイターは、直近の売上順位だけで選びません。上位が翌月も残る割合を当社集計で示し、期間・対象範囲・前月の順位・紹介履歴をそろえて候補を判断する表を紹介します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/creator-gmv-ranking.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのクリエイター売上｜上位は翌月も売れるか", "description": "TikTok Shopのクリエイターは、直近の売上順位だけで選びません。上位が翌月も残る割合を当社集計で示し、期間・対象範囲・前月の順位・紹介履歴をそろえて候補を判断する表を紹介します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/creator-gmv-ranking/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/creator-gmv-ranking.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトのコラボ機能の案内"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのクリエイター売上｜上位は翌月も売れるか", "item": "https://leam.co.jp/column/creator-gmv-ranking/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=creator-gmv-ranking">無料相談</a></div>
+<div class="shell"><article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › クリエイターの売上（GMV）の見方｜TikTok Shopの上位は翌月も売れるか</p><span class="cat">クリエイター起用の進め方</span><h1>クリエイターの売上（GMV）の見方｜TikTok Shopの上位は翌月も売れるか</h1><div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="前後の月を表すカレンダーの順位棚で人物カードの位置が入れ替わり、拡大鏡が同じ人物の過去と直近の記録を照らすイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/><path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/><ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/><path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="creatorgmvrankingHeroDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#creatorgmvrankingHeroDots" transform="translate(944 480)"/></g>
+<g fill="#5E6064" opacity=".13" transform="translate(9 11)"><rect x="65" y="145" width="440" height="360" rx="20"/><rect x="695" y="145" width="440" height="360" rx="20"/></g>
+<g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+<rect x="65" y="145" width="440" height="360" rx="20" fill="#FFFFFF"/><rect x="695" y="145" width="440" height="360" rx="20" fill="#FFFFFF"/>
+<path d="M65 210h440m190 0h440" fill="none" stroke-width="5"/><path d="M145 124v42m280-42v42m350-42v42m280-42v42" fill="none" stroke-width="8"/>
+<circle cx="105" cy="180" r="8" fill="#FE2C55" stroke-width="4"/><path d="M128 180h91m801 0h81" stroke="#C9CBD0" stroke-width="5"/>
+<circle cx="735" cy="180" r="8" fill="#25F4EE" stroke-width="4"/>
+<path d="M93 453h386v30H93z" fill="#EFF1F4" stroke-width="4"/><path d="M723 453h386v30H723z" fill="#EFF1F4" stroke-width="4"/>
+<path d="M110 389h103v64H110z" fill="#DFE0E2"/><path d="M229 354h110v99H229z" fill="#25F4EE"/><path d="M355 414h105v39H355z" fill="#C9CBD0"/>
+<path d="M740 414h103v39H740z" fill="#C9CBD0"/><path d="M859 354h110v99H859z" fill="#25F4EE"/><path d="M985 389h105v64H985z" fill="#DFE0E2"/>
+<rect x="119" y="281" width="87" height="108" rx="9" fill="#FFFFFF" stroke-width="5"/><circle cx="162" cy="312" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M136 364v-18q26-21 52 0v18z" fill="#FE2C55" stroke-width="4"/>
+<rect x="239" y="246" width="90" height="108" rx="9" fill="#FFFFFF" stroke-width="5"/><circle cx="284" cy="278" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M258 330v-18q26-21 52 0v18z" fill="#25F4EE" stroke-width="4"/>
+<rect x="364" y="306" width="88" height="108" rx="9" fill="#FFFFFF" stroke-width="5"/><circle cx="408" cy="338" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M382 390v-18q26-21 52 0v18z" fill="#C9CBD0" stroke-width="4"/>
+<rect x="748" y="306" width="88" height="108" rx="9" fill="#FFFFFF" stroke-width="5"/><circle cx="792" cy="338" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M766 390v-18q26-21 52 0v18z" fill="#FE2C55" stroke-width="4"/>
+<rect x="869" y="246" width="90" height="108" rx="9" fill="#FFFFFF" stroke-width="5"/><circle cx="914" cy="278" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M888 330v-18q26-21 52 0v18z" fill="#25F4EE" stroke-width="4"/>
+<rect x="994" y="281" width="88" height="108" rx="9" fill="#FFFFFF" stroke-width="5"/><circle cx="1038" cy="312" r="17" fill="#DFE0E2" stroke-width="4"/><path d="M1012 364v-18q26-21 52 0v18z" fill="#C9CBD0" stroke-width="4"/>
+<path d="M525 269h137m-18-18 18 18-18 18" fill="none" stroke="#25F4EE" stroke-width="8"/>
+<circle cx="577" cy="411" r="74" fill="#FFFFFF"/><circle cx="577" cy="411" r="56" fill="#25F4EE" stroke-width="5"/><path d="m628 467 47 52q12 13 26 1 12-12-1-25l-49-52" fill="#FE2C55"/>
+<path d="M549 394h56m-56 22h56m-56 22h33" fill="none" stroke-width="5"/><path d="M538 567h121" stroke="#C9CBD0" stroke-width="5"/>
+</g><path d="M251 110c175-58 447-58 623 0" fill="none" stroke="#D8DADE" stroke-width="5" stroke-dasharray="9 13"/><circle cx="599" cy="150" r="12" fill="#FE2C55"/>
+</svg>
+<figcaption>直近の順位と、前の月の記録を照らして候補を選ぶ（編集部作成）</figcaption></figure><p class="lead">TikTok Shopのクリエイターランキングは、声をかける候補を集める入口です。上から順に依頼を決める前に、<strong>数字の対象期間、カテゴリー、前の月の順位と紹介の履歴</strong>を確かめます。本記事は売り手の人選に向け、上位の人が翌月も残ったかを当社集計で示し、直近の順位と過去の記録を合わせて読む方法を整理します。名簿の順位を、今回の商品を紹介してもらう理由へ直していきましょう。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">クリエイターのGMVは紹介した商品の売上の合計で、本人の収入ではない</a></li><li><a href="#s2">公式では、過去30日間に各クリエイターが達成したGMVで絞り込める</a></li><li><a href="#s3">外部の一覧と公式画面は、期間と集計範囲をそろえてから比較する</a></li><li><a href="#s4">売上上位10位だった人の51%が、翌月の記録でも上位10位に残った</a></li><li><a href="#s5">前の月も上位だった人と、圏外から上がった人では、その後に残る割合が違った</a></li><li><a href="#s6">単発の大きな販売か、紹介が続いているかを、投稿の履歴で分ける</a></li><li><a href="#s7">ランキングで候補を集め、依頼先は直近と前月の記録を合わせて決める</a></li><li><a href="#summary">まとめ：直近の上位を入口にし、過去の記録と紹介を確かめる</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>クリエイターのGMVは紹介した商品の売上の合計で、本人の収入ではない</h2>
+<p>クリエイターのGMVは、その人の動画やライブなどの紹介を通じて売れた商品の金額の合計です。本人が受け取る報酬（コミッション）とは別の数字です。</p>
+<p>人選で確かめるのは、その合計がどの期間の、どの分野の商品のものかです。同じ「売上上位」でも、期間や分野が違えば、今回の商品を頼む根拠にはなりません。次の節から、期間と分野をそろえて読む手順を示します。言葉の詳しい意味は<a href="https://leam.co.jp/column/glossary/">TikTok Shopの実務用語集</a>で確認できます。</p>
+
+<h2 id="s2"><span class="no en">02</span>公式では、過去30日間に各クリエイターが達成したGMVで絞り込める</h2>
+<p>2026年10月29日時点の日本向け公式のコラボ案内では、無料サンプルのリクエストを絞り込むパフォーマンスの条件に、過去30日間に各クリエイターが達成したGMVが挙げられています。売上の順に見える数字でも、まずどの期間を指すかを確かめることが、人選の前提になります。</p>
+<p>同じ公式案内は、クリエイターコネクトで相手を選ぶと、クリエイターカードでパフォーマンスデータを確認できると説明しています。候補を見つけたら、一覧の順位だけを転記せず、どの人の、どの期間の記録を読んだかも残します。</p>
+<p>「過去30日間」は、暦の月と自動的に同じになるわけではありません。月末に記録した値と、別の日に画面を開いて見た値を並べるときは、対象期間がずれていないかを確認します。値の差が見つかっても、期間をそろえる前に、その人の販売力が変わったと判断しないようにします。</p>
+<p>画面名と、そこで確認した情報を候補表へ添えてください。担当者が変わった後も、同じ説明の数字へ戻れるようにするためです。アフィリエイトセンターという名称や、クリエイター側の実績確認との違いは、<a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターの使い方と画面の区別</a>へ分けます。</p>
+<p>この段階では、売上額の大きさだけで通過させる条件を作らず、今回の商品分野の候補を集めます。数字の範囲が分かった人を、前の月の記録や紹介内容を確かめる対象に残します。どの画面の情報か説明できない場合は、比較の前にその情報を確認する作業へ戻ります。</p>
+
+<h2 id="s3"><span class="no en">03</span>外部の一覧と公式画面は、期間と集計範囲をそろえてから比較する</h2>
+<p>外部の一覧で見つけた人を公式画面でも調べるとき、数字が違うという理由だけで、どちらかを誤りと決めないでください。一覧に書かれた対象期間や範囲と、公式画面で見ている条件を先に照らします。名称が同じでも、同じ対象を数えていると確認できるまでは、差額の意味も決まりません。</p>
+<div class="tw"><table><thead><tr><th>比較する前の確認</th><th>一覧や画面で記録するもの</th><th>そろわない場合の扱い</th></tr></thead><tbody>
+<tr><td>期間</td><td>開始と終了、記録を確認した時点</td><td>対象期間の違う値を、同じ月の増減として説明しない</td></tr>
+<tr><td>カテゴリー</td><td>どの分野の売上や順位か</td><td>別の分野の順位を、そのまま今回の商材へ当てない</td></tr>
+<tr><td>集計対象</td><td>掲載対象と、含む販売の範囲の説明</td><td>説明が分からなければ比較の根拠を追加で確認する</td></tr>
+<tr><td>本人の照合</td><td>同じアカウントの記録か</td><td>表示名の似た別の人や、別のアカウントを混ぜない</td></tr>
+<tr><td>確認した情報の場所</td><td>一覧、詳細、記録の出所</td><td>後から同じ数字を確認できるように情報を残す</td></tr>
+</tbody></table></div>
+<p class="src">表1：ランキングや画面の数字を比較する前の確認表（編集部作成。特定の外部サービスの仕様を説明する表ではない）</p>
+<p>例えば、一方が特定のカテゴリーの順位で、もう一方の対象分野が分からない場合、順位の高低だけで優先する相手を決めません。今回の商品の分野でどんな紹介をしているかを読み、分からない欄を追加確認へ回します。異なる数字を無理に同じ説明へまとめるより、条件を残したまま比較を進めます。</p>
+<p>外部の一覧は、調べる相手を見つける材料として使います。公式の画面で確認した内容と、一覧から読んだ内容を別の欄にすれば、どの根拠で候補に残したかを説明できます。出所が増えても、最も大きい値だけを選んで候補の実績として伝えないことが大切です。</p>
+<p>資料を受け取って調べる場合は、「この数字の対象期間、カテゴリー、集計対象、確認した情報の場所を教えてください」と尋ねます。見出しがGMVであることだけを確認して終えず、比較表の欄を埋めるための質問にしてください。説明がない欄は、分からないまま残しておきます。</p>
+
+<h2 id="s4"><span class="no en">04</span>売上上位10位だった人の51%が、翌月の記録でも上位10位に残った</h2>
+<p class="src">集計範囲：当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年9月末と10月末の月末の記録。17カテゴリーの売上上位100位のクリエイターから、ブランドやショップの公式アカウントらしい人を除いた1,058人。同じ人が複数のカテゴリーにいるときは売上が一番大きいカテゴリーだけ残した）</p>
+<p class="src">この集計でいう「10月末」は、2026年10月29日時点の記録です。割合は小数点以下を四捨五入して示します。</p>
+<p>当社集計では、9月末にカテゴリーの上位10位だった112人のうち、51%が10月末の記録でも上位10位に残りました。上位100位に残った割合は91%でした。直近の上位にいた人を候補の入口として調べる理由はありますが、翌月も同じ順位にいる人だけではありません。</p>
+<div class="tw"><table><thead><tr><th>追った対象</th><th>対象者数</th><th>翌月の記録で確認したこと</th><th>割合</th></tr></thead><tbody>
+<tr><td>9月末にカテゴリーの売上上位10位</td><td>112人</td><td>10月末も上位10位</td><td>51%</td></tr>
+<tr><td>同じ112人</td><td>112人</td><td>10月末も上位100位</td><td>91%</td></tr>
+</tbody></table></div>
+<p class="src">表2：同じ対象者を翌月の順位で追った結果（当社集計。10月末の記録は10月29日時点）</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatorgmvrankingTopRetention" viewBox="0 0 720 260" role="img" aria-label="9月末に上位10位だった112人のうち、10月末の記録でも上位10位に残った51パーセントと、上位100位に残った91パーセントを、同じ対象の別の指標として示す横棒図">
+<rect width="720" height="260" fill="#FFFFFF"/><g font-family="Noto Sans JP, sans-serif" fill="#0B0C10">
+<text x="25" y="32" font-size="18" font-weight="700">9月末に上位10位だった112人を追う</text>
+<g fill="#EFF1F4"><rect x="260" y="64" width="400" height="34" rx="4"/><rect x="260" y="132" width="400" height="34" rx="4"/></g>
+<rect x="260" y="64" width="204" height="34" rx="4" fill="#FE2C55"/><rect x="260" y="132" width="364" height="34" rx="4" fill="#25F4EE"/>
+<text x="25" y="88" font-size="17">10月末も上位10位</text><text x="25" y="156" font-size="17">10月末も上位100位</text><g text-anchor="end" font-size="19" font-weight="700"><text x="704" y="88">51%</text><text x="704" y="156">91%</text></g>
+<text x="25" y="207" font-size="15">同じ112人が対象。上位10位は上位100位に含まれる</text><text x="25" y="234" font-size="14">当社集計／10月末の記録は2026年10月29日時点</text></g></svg>
+<figcaption>図1：同じ112人を、残った順位の範囲を変えて読む（当社集計）</figcaption></figure>
+<p>上位10位に残った人は、上位100位に残った人にも含まれます。この表は、別々の人へ分けた内訳ではありません。割合を足し合わせず、「上位の範囲をどこまでにしたか」が違う結果として読みます。社内に写す際も、列の名前を省かないようにしてください。</p>
+<p>また、上位100位の中に残らなかったことを、販売がなくなったことと同じに扱いません。この集計は上位100位までの記録を追ったもので、その外側の売上を示す結果ではありません。人選では、順位の記録で分かったことと、追加で確かめる紹介の履歴を分けます。</p>
+<p>集計では、同じ人が複数のカテゴリーに現れた場合、売上が一番大きいカテゴリーだけを残しています。同じ人を別の分野でも重ねて数えた人数ではありません。この対象の整理があるため、各カテゴリーに並ぶ順位の枠をそのまま足した数と、表に記載した対象者数は同じになりません。</p>
+<p>ランキングに並ぶ名前を上から埋めていく作業から、候補の直近の記録を読む作業へ変えることが要点です。上位であることを選定理由の全部にせず、その人が前の月にも同じ分野で紹介を続けていたかへ進みます。</p>
+
+<h2 id="s5"><span class="no en">05</span>前の月も上位だった人と、圏外から上がった人では、その後に残る割合が違った</h2>
+<p>次に、9月末に上位30位以内だった人について、さらに前の8月末の記録を照らします。同じ9月の上位でも、前の月から上位にいた人と、前の月は上位100位の圏外だった人を分けました。直近の順位だけを見た場合には残らない、過去の違いを読む比較です。</p>
+<div class="tw"><table><thead><tr><th>9月末は上位30位以内という共通条件</th><th>対象者数</th><th>10月末に上位10位</th><th>10月末も上位100位</th></tr></thead><tbody>
+<tr><td>8月末も上位30位以内だった人</td><td>153人</td><td>43%</td><td>94%</td></tr>
+<tr><td>8月末は上位100位の圏外だった人</td><td>99人</td><td>7%</td><td>55%</td></tr>
+</tbody></table></div>
+<p class="src">表3：直近の上位を、前の月の順位で分けて追った結果（当社集計。比較する両群の条件を記載。10月末の記録は10月29日時点）</p>
+<p>8月末も上位30位以内だった153人は、10月末に上位10位だった割合が43%、上位100位に残った割合が94%でした。一方、8月末は上位100位の圏外から上がってきた99人では、それぞれ7%と55%でした。表はこの条件に当たる群どうしを比べており、9月の上位の全員を分類した内訳ではありません。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatorgmvrankingPriorRecord" viewBox="0 0 720 350" role="img" aria-label="9月末は上位30位以内という共通条件で、8月末も上位30位の153人と8月末は圏外の99人を比較。10月末の上位10位は43と7パーセント、上位100位は94と55パーセント">
+<rect width="720" height="350" fill="#FFFFFF"/><g font-family="Noto Sans JP, sans-serif" fill="#0B0C10">
+<text x="24" y="28" font-size="17" font-weight="700">10月末に上位10位だった割合</text>
+<g fill="#EFF1F4"><rect x="250" y="50" width="400" height="28" rx="4"/><rect x="250" y="96" width="400" height="28" rx="4"/><rect x="250" y="214" width="400" height="28" rx="4"/><rect x="250" y="260" width="400" height="28" rx="4"/></g>
+<rect x="250" y="50" width="172" height="28" rx="4" fill="#25F4EE"/><rect x="250" y="96" width="28" height="28" rx="4" fill="#FE2C55"/><rect x="250" y="214" width="376" height="28" rx="4" fill="#25F4EE"/><rect x="250" y="260" width="220" height="28" rx="4" fill="#FE2C55"/>
+<g font-size="15"><text x="24" y="70">前月も上位30位（153人）</text><text x="24" y="116">前月は圏外（99人）</text><text x="24" y="234">前月も上位30位（153人）</text><text x="24" y="280">前月は圏外（99人）</text></g>
+<text x="24" y="190" font-size="17" font-weight="700">10月末も上位100位に残った割合</text>
+<g font-size="19" font-weight="700" text-anchor="end"><text x="704" y="70">43%</text><text x="704" y="116">7%</text><text x="704" y="234">94%</text><text x="704" y="280">55%</text></g>
+<text x="24" y="328" font-size="14">当社集計／両群とも9月末は上位30位以内。前月は8月末</text></g></svg>
+<figcaption>図2：9月末の上位30位以内の人を、8月末の記録で分けて追う（当社集計。10月末の記録は10月29日時点）</figcaption></figure>
+<p>集計では、直近の順位帯やカテゴリーをそろえる比較でも、過去にも上位だった人が残るという向きは同じでした。さらに7月末から8月末、9月末を追った別の組でも、5カテゴリーで同じ向きを確認しています。どの人が今回も売れるかを言い当てる話ではなく、過去の記録を確認する理由になる結果です。</p>
+<p>この結果は、売上上位の記録に現れた人の中での比較です。「過去の記録を見て選ぶ」という行動そのものが売上を増やすと検証したものではなく、今回の商品でも同じ結果になるという意味でもありません。単発で上がった人を一律に外す根拠にせず、次に確認する履歴を決める材料にしてください。</p>
+<p>候補へ声をかける段階では、前の月から売れているという説明だけで完了にしません。どの商品分野で、何を紹介していたかを読みます。急に上がった人についても、上がった理由が説明できる投稿や商品との適合を確かめてから、今回の候補として判断します。</p>
+
+<h2 id="s6"><span class="no en">06</span>単発の大きな販売か、紹介が続いているかを、投稿の履歴で分ける</h2>
+<p>順位が上がっただけでは、単独の投稿に販売が集中したのか、紹介を継続した結果なのかは分かりません。月の売上を読むことと、売れ方の中身を読むことを分けます。候補の過去の記録を確かめた後は、その期間にどんな紹介をしていたかを見てください。</p>
+<p>確認するのは、紹介した商品分野、公開した投稿と時期、商品の説明です。今回紹介してほしい商品に近い分野で、どの疑問へ答え、どんな場面で使って見せていたかを記録します。大きな結果があったという話を、そのまま自社の商品へ置き換えないための作業です。</p>
+<p>総売上にはライブによる販売も含まれるため、今回どの形式で紹介を頼むかを確認し、形式による違いは<a href="https://leam.co.jp/column/live-or-video-creators/">ライブと動画のクリエイターの選び分け</a>へ進んでください。</p>
+<p>売上の変化が見える期間と、紹介の履歴を対応させます。前の月の記録に合う投稿が確認できないなら、その部分を不明として残します。別の時期の投稿や、別の商品分野の実績を使って、売れ方を説明したことにしません。</p>
+<p>また、継続して上位にいたことと、同じ商品を毎月紹介していたことも同じではありません。何を紹介していたかは、順位の履歴だけでは埋まりません。記録に現れている事実と、自社商品との相性の判断を別々に書いておくと、候補を残す理由を社内で説明できます。</p>
+<p>この段階で相手の紹介内容を読む際は、表現が上手いという印象だけに戻らないようにします。今回の商品で伝える必要のある内容を整理し、その人の過去の紹介と照らします。順位と紹介内容の両方が根拠として残れば、候補の並び順だけではない説明になります。</p>
+<div class="tw"><table><thead><tr><th>順位の記録で分かった状態</th><th>紹介の履歴で確かめること</th><th>候補表へ残す判断</th></tr></thead><tbody>
+<tr><td>前月にも上位の記録がある</td><td>どの分野の商品を、どんな説明で紹介していたか</td><td>過去の順位と今回の商品への相性を分けて書く</td></tr>
+<tr><td>直近で順位が上がっている</td><td>結果が出た時期の投稿や、紹介商品の変化</td><td>急上昇だけで決めず、今回頼む理由を確認する</td></tr>
+<tr><td>前月の記録を確認できない</td><td>比較できる記録があるか、確認した範囲はどこか</td><td>新規の実績と決めず、追加確認の状態で残す</td></tr>
+</tbody></table></div>
+<p class="src">表4：順位から紹介の履歴へ進む確認の型（編集部作成。特定の候補や売上の原因を示す表ではない）</p>
+<p>履歴を確かめる担当と、人選を判断する担当が分かれる場合は、確認した投稿も渡します。「前月も上位です」という報告だけでは、商品への相性を判断できません。紹介の記録を読む作業を省かず、どの情報を根拠にしたかを候補の行へ付けてください。</p>
+
+<h2 id="s7"><span class="no en">07</span>ランキングで候補を集め、依頼先は直近と前月の記録を合わせて決める</h2>
+<p>候補を集めるときは直近の順位を使い、依頼先を決める前に前の月へ戻ります。期間がそろった記録を用意し、同じ人・同じ分野の情報を並べます。下のひな形は、直近と前月の記録を、選定の理由へまとめるための欄です。</p>
+<div class="tw"><table><thead><tr><th>候補ごとに残す欄</th><th>直近の月の記録</th><th>前の月の記録</th><th>判断へ渡すこと</th></tr></thead><tbody>
+<tr><td>比較する期間と出所</td><td>期間［記入］／確認した情報［記入］</td><td>期間［記入］／確認した情報［記入］</td><td>同じ条件で比べられるか</td></tr>
+<tr><td>カテゴリーと順位</td><td>分野［記入］／順位［記入］</td><td>分野［記入］／順位［記入］</td><td>前の月にも同じ分野の記録があるか</td></tr>
+<tr><td>紹介した商品と投稿</td><td>商品分野［記入］／投稿［記入］</td><td>商品分野［記入］／投稿［記入］</td><td>今回の商品を頼む理由へつながるか</td></tr>
+<tr><td>分かったことと不明なこと</td><td>確認済み［記入］／不明［記入］</td><td>確認済み［記入］／不明［記入］</td><td>追加で確かめる情報と担当</td></tr>
+<tr><td>候補を残す理由</td><td colspan="2">［期間と分野］の記録を確認し、［紹介内容］が今回の商品に合うため候補に残す</td><td>数字の順位と、商品の相性の根拠を分ける</td></tr>
+</tbody></table></div>
+<p class="src">表5：候補の直近と前月の記録を並べるひな形（編集部作成。実在の候補や予測値を埋めた表ではない）</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="creatorgmvrankingRecordPair" viewBox="0 0 720 330" role="img" aria-label="直近と前月の記録を同じ本人、カテゴリー、期間の条件で並べ、投稿の履歴を照合して候補を残す理由を書く図">
+<rect width="720" height="330" fill="#FFFFFF"/><g font-family="Noto Sans JP, sans-serif" text-anchor="middle" fill="#0B0C10">
+<rect x="34" y="22" width="282" height="145" rx="12" fill="#E5FBFA" stroke="#0B0C10"/><rect x="404" y="22" width="282" height="145" rx="12" fill="#EFF1F4" stroke="#0B0C10"/>
+<text x="175" y="58" font-size="20" font-weight="700">直近の記録</text><text x="545" y="58" font-size="20" font-weight="700">前月の記録</text>
+<g font-size="16"><text x="175" y="94">分野・順位・確認した時点</text><text x="175" y="126">紹介した商品と投稿</text><text x="545" y="94">分野・順位・確認した時点</text><text x="545" y="126">紹介した商品と投稿</text></g>
+<path d="M175 171v31h370v-31m-185 31v26" fill="none" stroke="#5E6064" stroke-width="2"/>
+<rect x="101" y="229" width="518" height="77" rx="12" fill="#FFFFFF" stroke="#0B0C10"/><text x="360" y="258" font-size="18" font-weight="700">今回の商品で候補を残す理由</text><text x="360" y="286" font-size="15">記録で確認した事実と、紹介内容の相性を分ける</text></g></svg>
+<figcaption>図3：直近と前月の記録から、今回の商品で候補を残す理由へ進む（編集部作成）</figcaption></figure>
+<p>前の月の記録が見つからない場合は、紹介の実績がないと決め付けず、記録を確認できていないと書きます。確認できた上位の履歴と、表示範囲の外で分からない履歴を同じ確かさで説明しないようにしてください。候補へ追加で何を確かめるかが分かる欄にします。</p>
+<p>社内へ渡す説明は、次の文型にすると整理できます。「［候補］は［直近の期間］に［カテゴリー］の上位として確認した。［前の期間］の記録は［確認した内容］で、［投稿や紹介商品］を照合した。今回の商品を頼む理由は［説明の相性］で、未確認なのは［追加で調べる項目］である」。実際の根拠がない欄は空け、候補を良く見せる言葉で補いません。</p>
+<p>この文は、順位を紹介する文章と、依頼を承認するための説明の違いを明確にします。直近のランキングに入っていることは、最初の文の根拠です。それだけでは埋まらない前の期間と商品の相性を確認することで、初めて今回の依頼の説明へ進めます。</p>
+<p>合意した人選の基準へこの表を渡し、候補に残すかを判断します。基準と最終判断者の決め方は<a href="https://leam.co.jp/column/creator-selection-criteria/">クリエイターの選定基準の作り方</a>へ、相手を選んだ後に伝える情報は<a href="https://leam.co.jp/column/invite-no-reply/">クリエイターへの招待を整える方法</a>へ分けます。</p>
+<p>依頼後の数字は、選ぶ前に見た記録と別に残します。今回どの商品をどんな条件で紹介してもらい、何を確認したかを対応させます。報告で見る指標は<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPIを分けて見る方法</a>を使い、次の依頼をどう判断するかは<a href="https://leam.co.jp/column/creator-second-round/">クリエイターへ次の紹介を頼む際の振り返り</a>へ進んでください。</p>
+<p>記録がそろった後も、順位の高い順へ判断を戻さないようにします。直近の売上、過去の順位、実際の紹介、今回の商品との相性を合わせた理由が書けるかを確認します。候補を見つけた数字と、依頼する理由を分けることが、ランキングを実務で使う最後の作業です。</p>
+<p>次に候補を見直すときは、前回どの期間と条件で選んだかも残しておきます。新しい期間の順位を確認しただけで、前回の理由をそのまま使い回さず、紹介した商品や記録の範囲を読み直します。実績の確認と、今回の依頼の判断を繰り返し対応させるための記録です。</p>
+
+<h2 id="summary"><span class="no en">08</span>まとめ：直近の上位を入口にし、過去の記録と紹介を確かめる</h2>
+<p>ランキングは調べる相手を集めるために使います。期間と対象範囲をそろえ、上位にいた人が次の記録にも現れているか、前の月はどうだったかを読みます。最後に紹介の履歴を見て、自社の商品にどんな説明を頼めそうかを理由へ残してください。</p>
+<p>社内の候補表には、順位だけでなく、その順位を確認した時点と根拠を添えます。記録のない部分を推測で埋めず、追加確認する欄に置きます。直近と前月の記録を比べる準備が、上から順に声をかける進め方を変える出発点です。</p>
+
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<div class="faq">
+<details><summary>上位10位に残った51%と上位100位に残った91%は、足してよい割合ですか？</summary><div class="a">足しません。同じ112人について、次の記録でどの範囲に残ったかを見た結果です。上位10位に残った人は、上位100位に残った人にも含まれます。対象者を別々に分けた内訳として扱わないでください。</div></details>
+<details><summary>一覧から上位100位の外へ出た人は、売上がなくなったと判断しますか？</summary><div class="a">この順位の記録だけでは判断しません。上位100位までを追った集計であり、その外の売上を示す数字ではありません。確認できた順位の履歴と、追加で調べる紹介の履歴を分けて残します。</div></details>
+<details><summary>前月から上位だった人と、圏外から上がった人を比べるとき、何を共通にしていますか？</summary><div class="a">本文の比較表では、どちらも9月末に上位30位以内だった人に絞り、8月末の順位で分けています。そのうえで10月末の記録を追います。異なる月の上位を、そのまま別の集団として比べた表ではありません。</div></details>
+<details><summary>外部の一覧と公式画面でGMVが違うとき、大きいほうを候補の実績として使いますか？</summary><div class="a">大きさで選ばず、期間、カテゴリー、集計対象、同じ本人の記録かを確かめます。条件をそろえられない値は、出所を分けて残し、同じ条件の売上の差として説明しません。</div></details>
+<details><summary>前月の順位が見つからない候補を、新しく売れ始めた人と呼んでよいですか？</summary><div class="a">記録が見つからないだけなら、過去の売れ方まで決めません。どの期間と範囲を確認できたかを残し、分からないところを追加確認へ回します。急に上がった人という分類にも、比較できる前の記録が必要です。</div></details>
+<details><summary>月ごとの上位が続いていれば、同じ商品を紹介し続けたと説明できますか？</summary><div class="a">順位の履歴だけでは、紹介した商品まで分かりません。各期間の商品分野と投稿を確認し、同じ商品だったかを別に照合します。月ごとの数字を読んだことと、紹介内容を確かめたことを分けてください。</div></details>
+</div>
+<div class="ctabox"><div class="ct">直近の売上の記録を確かめて、頼む相手を選びたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creator-gmv-ranking">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=creator-gmv-ranking&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2 id="sources"><span class="no en">10</span>参考にした情報</h2><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトのコラボ機能の案内</a>（2026年10月29日確認。クリエイターカードとGMVの絞り込み）</li></ul><p class="src">公式の画面名と機能は、上記の日本向け資料を2026年10月29日に確認しました。当社集計の範囲と記録の時点は、本文の表2の前に記載しています。比較する情報の確認表と候補の記録欄は、編集部が作成した実務のための整理です。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/glossary/">TikTok Shopの用語集</a></b><span>GMVの言葉の意味を確認</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターの区別</a></b><span>画面で見る情報をそろえる</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/tiktok-shop-kpi/">KPIを分けて見る</a></b><span>依頼後の報告の指標を整理</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/invite-no-reply/">招待を整える方法</a></b><span>相手を選んだ後の確認</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">クリエイターのGMVは紹介した商品の売上の合計で、本人の収入ではない</a></li><li><a href="#s2">公式では、過去30日間に各クリエイターが達成したGMVで絞り込める</a></li><li><a href="#s3">外部の一覧と公式画面は、期間と集計範囲をそろえてから比較する</a></li><li><a href="#s4">売上上位10位だった人の51%が、翌月の記録でも上位10位に残った</a></li><li><a href="#s5">前の月も上位だった人と、圏外から上がった人では、その後に残る割合が違った</a></li><li><a href="#s6">単発の大きな販売か、紹介が続いているかを、投稿の履歴で分ける</a></li><li><a href="#s7">ランキングで候補を集め、依頼先は直近と前月の記録を合わせて決める</a></li><li><a href="#summary">まとめ：直近の上位を入口にし、過去の記録と紹介を確かめる</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=creator-gmv-ranking">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "上位10位に残った51%と上位100位に残った91%は、足してよい割合ですか？", "acceptedAnswer": {"@type": "Answer", "text": "足しません。同じ112人について、次の記録でどの範囲に残ったかを見た結果です。上位10位に残った人は、上位100位に残った人にも含まれます。対象者を別々に分けた内訳として扱わないでください。"}}, {"@type": "Question", "name": "一覧から上位100位の外へ出た人は、売上がなくなったと判断しますか？", "acceptedAnswer": {"@type": "Answer", "text": "この順位の記録だけでは判断しません。上位100位までを追った集計であり、その外の売上を示す数字ではありません。確認できた順位の履歴と、追加で調べる紹介の履歴を分けて残します。"}}, {"@type": "Question", "name": "前月から上位だった人と、圏外から上がった人を比べるとき、何を共通にしていますか？", "acceptedAnswer": {"@type": "Answer", "text": "本文の比較表では、どちらも9月末に上位30位以内だった人に絞り、8月末の順位で分けています。そのうえで10月末の記録を追います。異なる月の上位を、そのまま別の集団として比べた表ではありません。"}}, {"@type": "Question", "name": "外部の一覧と公式画面でGMVが違うとき、大きいほうを候補の実績として使いますか？", "acceptedAnswer": {"@type": "Answer", "text": "大きさで選ばず、期間、カテゴリー、集計対象、同じ本人の記録かを確かめます。条件をそろえられない値は、出所を分けて残し、同じ条件の売上の差として説明しません。"}}, {"@type": "Question", "name": "前月の順位が見つからない候補を、新しく売れ始めた人と呼んでよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "記録が見つからないだけなら、過去の売れ方まで決めません。どの期間と範囲を確認できたかを残し、分からないところを追加確認へ回します。急に上がった人という分類にも、比較できる前の記録が必要です。"}}, {"@type": "Question", "name": "月ごとの上位が続いていれば、同じ商品を紹介し続けたと説明できますか？", "acceptedAnswer": {"@type": "Answer", "text": "順位の履歴だけでは、紹介した商品まで分かりません。各期間の商品分野と投稿を確認し、同じ商品だったかを別に照合します。月ごとの数字を読んだことと、紹介内容を確かめたことを分けてください。"}}]}</script>
+</body>
+</html>

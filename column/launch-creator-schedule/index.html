@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>新商品の発売に合わせる｜TikTok Shopのクリエイター起用</title>
+<meta name="description" content="サンプルが本人に届く日から、発売の紹介を逆算します。TikTok Shopの公式期限を入れた確認表と、発売前後の投稿の分け方、在庫と発送、次の紹介までの段取りを解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/launch-creator-schedule/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="新商品の発売に合わせる｜TikTok Shopのクリエイター起用">
+<meta property="og:description" content="サンプルが本人に届く日から、発売の紹介を逆算します。TikTok Shopの公式期限を入れた確認表と、発売前後の投稿の分け方、在庫と発送、次の紹介までの段取りを解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/launch-creator-schedule/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/launch-creator-schedule.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="新商品の発売に合わせる｜TikTok Shopのクリエイター起用">
+<meta name="twitter:description" content="サンプルが本人に届く日から、発売の紹介を逆算します。TikTok Shopの公式期限を入れた確認表と、発売前後の投稿の分け方、在庫と発送、次の紹介までの段取りを解説します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/launch-creator-schedule.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "新商品の発売に合わせる｜TikTok Shopのクリエイター起用", "description": "サンプルが本人に届く日から、発売の紹介を逆算します。TikTok Shopの公式期限を入れた確認表と、発売前後の投稿の分け方、在庫と発送、次の紹介までの段取りを解説します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/launch-creator-schedule/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/launch-creator-schedule.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&lang=ja-JP", "name": "TikTok Shop公式：無料サンプルの案内"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトのコラボ機能"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "新商品の発売に合わせる｜TikTok Shopのクリエイター起用", "item": "https://leam.co.jp/column/launch-creator-schedule/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=launch-creator-schedule">無料相談</a></div>
+<div class="shell"><article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › 新商品の発売にクリエイターの紹介を合わせる｜TikTok Shopの段取り</p><span class="cat">クリエイター起用の進め方</span><h1>新商品の発売にクリエイターの紹介を合わせる｜TikTok Shopの段取り</h1><div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="届いたサンプルと発売のカレンダー、紹介動画と発送用の箱を対応させて公開を準備するイラスト">
+  <!-- 紙 -->
+  <rect width="1200" height="630" fill="#FFFFFF"/>
+
+  <!-- 背景の面（全幅・縦の切れ目を作らない） -->
+  <path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+  <ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+
+  <!-- 地面（左右に抜ける帯） -->
+  <path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+
+  <!-- 点のグリッド -->
+  <g fill="#D8DADE">
+    <g id="launchcreatorscheduleDots">
+      <circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/>
+      <circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/>
+    </g>
+    <use href="#launchcreatorscheduleDots" transform="translate(944 542)"/>
+  </g><g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"><path d="m81 324 124-65 127 65v157l-127 62-124-62z" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><path d="m81 324 124-65 127 65-127 62z" fill="#EFF1F4"/><path d="M81 324v157l124 62V386z" fill="#DFE0E2"/><path d="m205 386 127-62v157l-127 62z" fill="#FFFFFF"/><path d="m81 324-37-64 121-62 40 61zm124-65 46-62 125 65-44 62" fill="#FFFFFF" stroke-width="5"/><path d="m142 290 63-32 63 32v63l-63 33-63-33z" fill="#25F4EE" stroke-width="5"/><path d="m142 290 63 33 63-33m-63 33v63" fill="none" stroke-width="4"/><rect x="99" y="425" width="59" height="34" rx="5" fill="#FFFFFF" stroke-width="4"/><path d="m110 441 9 9 22-24" fill="none" stroke="#CE1730" stroke-width="5"/><rect x="402" y="137" width="354" height="341" rx="18" fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"/><rect x="402" y="137" width="354" height="341" rx="18" fill="#FFFFFF"/><path d="M402 207h354" fill="none"/><path d="M460 112v52m238-52v52" fill="none" stroke-width="12"/><path d="M430 175h92m59 0h116" stroke="#C9CBD0" stroke-width="5"/><rect x="430" y="235" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="501" y="235" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="572" y="235" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="643" y="235" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="430" y="306" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="501" y="306" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="572" y="306" width="54" height="46" rx="7" fill="#25F4EE" stroke="#C9CBD0" stroke-width="3"/><rect x="643" y="306" width="54" height="46" rx="7" fill="#25F4EE" stroke="#C9CBD0" stroke-width="3"/><rect x="430" y="377" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="501" y="377" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="572" y="377" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><rect x="643" y="377" width="54" height="46" rx="7" fill="#EFF1F4" stroke="#C9CBD0" stroke-width="3"/><circle cx="599" cy="329" r="33" fill="none" stroke="#CE1730" stroke-width="5"/><path d="m585 329 11 12 23-27" fill="none" stroke-width="5"/><path d="M316 225c40-37 63-32 87-14m-1-22 1 22-25 3" fill="none" stroke="#CE1730" stroke-width="6"/><rect x="839" y="92" width="260" height="214" rx="16" fill="#FFFFFF"/><path d="M839 139h260" stroke-width="5"/><circle cx="860" cy="116" r="5" fill="#FE2C55" stroke="none"/><path d="M879 116h95" stroke="#C9CBD0" stroke-width="4"/><rect x="859" y="157" width="220" height="110" rx="9" fill="#EFF1F4" stroke="none"/><path d="m949 179 45 33-45 33z" fill="#CE1730" stroke-width="4"/><path d="M864 286h142" stroke="#C9CBD0" stroke-width="4"/><path d="M756 233h64m-16-12 16 12-16 12" fill="none" stroke-width="5"/><path d="m831 402 88-44 88 44v105l-88 44-88-44z" fill="#FFFFFF"/><path d="m831 402 88 44 88-44m-88 44v105" fill="none" stroke-width="5"/><path d="m875 380 88 44m-88 0v30" fill="none" stroke="#25F4EE" stroke-width="9"/><path d="m1007 437 58-29 65 32v81l-65 32-58-29z" fill="#DFE0E2" stroke-width="5"/><path d="m1007 437 58 32 65-29m-65 29v84" fill="none" stroke-width="4"/><path d="M745 514c28 37 68 37 97 15m-19-5 19 5-4 20" fill="none" stroke="#25F4EE" stroke-width="7"/><circle cx="367" cy="477" r="18" fill="#FE2C55" stroke-width="4"/><path d="M367 468v18m-9-9h18" stroke="#FFFFFF" stroke-width="4"/></g></svg>
+<figcaption>サンプルの到着と発売予定を、紹介動画・在庫・発送へ対応させる（編集部作成）</figcaption></figure><p class="lead">新商品の発売にTikTok Shopの紹介投稿を合わせるなら、サンプルが本人に届く日から計画を組みます。公開希望日だけを決めても、実物の到着、使って確かめる時間、紹介内容の確認がそろわなければ投稿は進みません。発売前の告知と、商品リンクを付けて購入につなぐ発売後の紹介を分けて準備します。</p>
+<p>この記事は、発売や新規出品に合わせて複数のクリエイターへ紹介を頼む企業の担当者向けです。サンプルの公式期限を入れる逆算表、発売前に渡す情報、投稿が集まる週の在庫と発送の確認をまとめます。決めるのは日付だけではなく、その日に進める条件と、間に合わない時の扱いです。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">逆算は公開日だけでなく、サンプルが本人に届く日から組みます</a></li><li><a href="#s2">出品と審査を終えてから商品リンクを確かめる余白を取ります</a></li><li><a href="#s3">発売前の告知と、発売後の購入につなぐ紹介を分けます</a></li><li><a href="#s4">レビューがない時期は、紹介に使う事実と根拠を先に渡します</a></li><li><a href="#s5">公開をそろえるか、ずらすかは、発売時に確かめたいことから決めます</a></li><li><a href="#s6">在庫と発送は、紹介が集まる週の予定に合わせて確認します</a></li><li><a href="#s7">発売月で終わらせず、次の紹介を計画に入れます</a></li><li><a href="#summary">まとめ：届く日と売れる状態をそろえて、発売の紹介を進めます</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>逆算は公開日だけでなく、サンプルが本人に届く日から組みます</h2>
+<p>発売日に紹介してもらいたい時は、本人が実物を受け取れる日を先に確認します。発送予定と到着予定は同じではありません。到着してから、使い方や特徴を確かめ、撮影し、依頼した内容と照らし合わせる時間が必要です。発売日の予定表に名前を置く前に、受け取りと制作の見通しを本人とそろえます。</p>
+<p>当社の運用実感では、発売日だけを先に伝えると、商品が届いた時点で予定に余白がなくなることがあります。候補を選ぶ担当、発送担当、内容を確認する担当が、同じ到着予定日を見て動く形にします。商品が届いたことを確認できたら、制作と公開の予定を改めて照合します。</p>
+<p>2026年10月29日時点の日本向け公式ヘルプでは、無料サンプルについて、次の期間が示されています。公式の管理期限と、本人に相談する公開希望日を別の欄に置きます。到着予定に変更があれば、本人の制作と社内の確認の予定を合わせて見直します。</p>
+<div class="tw"><table><thead><tr><th>確認する場面</th><th>公式の条件・自社で決めること</th><th>逆算表への入れ方</th></tr></thead><tbody>
+<tr><td>無料サンプルの申請</td><td>セラーはリクエストを7日以内に処理</td><td>処理の期限を控え、発売予定とは別に管理する</td></tr>
+<tr><td>サンプルの到着</td><td>発送予定と受け取りの見通しを確認する</td><td>到着予定を起点に、実物を使う時間を本人と相談する</td></tr>
+<tr><td>リクエストの対応</td><td>クリエイターの対応完了の期間は14日間</td><td>対象の期限と、希望する公開日を照合する</td></tr>
+<tr><td>動画の公開継続</td><td>動画は少なくとも3日間公開を続ける</td><td>公開する日だけでなく、継続を確かめる予定も置く</td></tr>
+<tr><td>発売に合わせる合意</td><td>本人の受け取り・制作・確認の予定を相談する</td><td>公式の期限の足し算で公開日を約束しない</td></tr>
+</tbody></table></div>
+<p class="src">無料サンプルの期間は日本向け公式ヘルプ、逆算表への入れ方は編集部作成。</p>
+<p>期限の起算点を、自社の発売日や発送日に置き換えないようにします。リクエストごとの期限と公式の案内を確認し、本人との公開の合意に対応させます。公式の期間を守ることと、発売日に紹介してもらえることは別です。無料サンプルの対応を追う詳しい運用は、<a href="https://leam.co.jp/column/sample-no-post/">サンプルを送っても投稿されない時の確認</a>で扱います。</p>
+<p>全体の工程は、声かけから報告まで8つで整理する<a href="https://leam.co.jp/column/creator-progress-sheet/">クリエイターの進行管理表</a>にそろえます。一般的な販促日からの逆算は、<a href="https://leam.co.jp/column/seasonal-campaign/#s7">商戦期に紹介投稿を仕込む段取り</a>も参考にしてください。ここでは、新商品の到着と発売の条件がそろうかを確認します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="launchcreatorscheduleArrivalAnchor" viewBox="0 0 780 478" role="img" aria-label="サンプルの到着を中心に、発送と本人の予定を前へ、使用と撮影と確認を後へ対応させ、発売の公開希望と合意する図"><rect x="0" y="0" width="780" height="478" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">本人が受け取る予定を、発売の予定へ結び付ける</text><rect x="265" y="189" width="250" height="119" rx="12" fill="#25F4EE"/><text x="294" y="231" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">サンプルの到着</text><text x="294" y="275" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">発送予定と分けて確認</text><rect x="32" y="81" width="270" height="77" rx="12" fill="#EFF1F4"/><text x="49" y="114" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">到着より前にそろえる</text><text x="49" y="143" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">本人の受取予定・発送の手配</text><rect x="478" y="81" width="270" height="77" rx="12" fill="#FFECF0"/><text x="495" y="114" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">到着から先を相談する</text><text x="495" y="143" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">使用・撮影・社内確認</text><path d="M166 166v82h88m-8-8 8 8-8 8M526 248h88v-82m-8 8 8-8 8 8" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="122" y="355" width="536" height="89" rx="12" fill="#EFF1F4"/><text x="148" y="389" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">発売に合わせる公開希望日と条件を合意</text><text x="148" y="423" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公式の管理期限とは別の欄に残す</text><path d="M390 315v29m-8-8 8 8 8-8" fill="none" stroke="#0B0C10" stroke-width="3"/></svg>
+<figcaption>図1：サンプル到着を、発送・制作・発売の予定に結び付ける（編集部作成）</figcaption></figure>
+<h2 id="s2"><span class="no en">02</span>出品と審査を終えてから商品リンクを確かめる余白を取ります</h2>
+<p>購入につなぐ紹介は、出品と審査が済んだ商品で、商品リンクを確かめてから公開する計画にします。発売日が決まっていても、紹介先として使う商品の準備は別に確認します。商品ページが整い、紹介する実物と販売する商品が一致し、本人が扱うリンクを確かめられることを、公開に進む条件へ入れます。</p>
+<p>公式ヘルプは、ターゲットコラボで招待を承諾し、商品をショーケースに追加してコンテンツを作成する流れを説明しています。企業の予定表では、候補への連絡が済んだ状態と、本人が対象商品を紹介できる状態を分けます。連絡した日だけで、準備が終わったと扱わないことが大切です。</p>
+<p>日程に余白を設ける時は、日数を一律に決めるより、確認が戻っていない項目を見ます。商品情報の修正、紹介する種類の取り違え、リンク先の確認待ちが残っていれば、そのまま公開日へ進めない形にします。本人の制作予定と、社内の確認担当が応答できる日も合わせて確認してください。</p>
+<p>予定表には「商品リンクの確認を終えたら公開」といった条件を明記します。確認できなかった時は、紹介の公開を動かすのか、購入を促さない告知へ内容を変えるのかを相談します。告知へ変える場合も、自動で差し替えず、本人と使える内容を合意します。</p>
+<p>商品ページへ渡す情報の整え方は、<a href="https://leam.co.jp/column/product-page-cvr/">動画から来た人に伝わる商品ページの作り方</a>で扱います。出店全体の準備を見直す時は、<a href="https://leam.co.jp/column/tiktok-shop-90day-roadmap/">開始後の運用計画</a>へつなげます。発売の紹介では、その準備のうち何が終わっているかを短く控え、公開判断に使います。</p>
+<h2 id="s3"><span class="no en">03</span>発売前の告知と、発売後の購入につなぐ紹介を分けます</h2>
+<p>発売前に知ってもらう投稿と、商品リンクから購入してもらう投稿では、完成の条件が違います。発売前は、公表してよい商品情報と時期を確認します。発売後は、実際に販売している商品、リンク先、在庫、商品ページの説明まで対応させます。どちらの投稿を頼んでいるかを、依頼の時に明記します。</p>
+<p>告知用の資料に発売後の価格や特典の予定が混ざっていると、未確定の条件まで公開されるおそれがあります。社内で確定した内容、まだ使わない内容、確認が必要な内容を分けます。資料を更新したら、どこを変更したかを本人へ伝えます。古い資料を参照したまま制作が進まないようにします。</p>
+<div class="tw"><table><thead><tr><th>投稿の目的</th><th>紹介に使う内容</th><th>公開に進む前に確かめること</th></tr></thead><tbody>
+<tr><td>発売前の告知</td><td>公表が決まった特徴と発売に関する案内</td><td>公表してよい範囲と、情報を出す時点が合意済みか</td></tr>
+<tr><td>発売後の紹介</td><td>本人が確かめた使用感と、販売する商品の説明</td><td>出品・審査・商品リンク・在庫の確認を終えたか</td></tr>
+<tr><td>発売後の追加紹介</td><td>初回の反応で分かった疑問への説明</td><td>実際の販売条件と、追加する根拠がそろったか</td></tr>
+</tbody></table></div>
+<p class="src">発売前後で分ける投稿の内容と確認例（編集部作成）。</p>
+<p>発売前の投稿で実物を使ってもらう場合も、何を確かめてもらうかを決めます。外観だけの案内なのか、使い方の実演まで見せるのかで、必要な準備は変わります。本人が使っていないことを、使った感想として紹介してもらう頼み方は避けます。公開する情報は、本人が確認できたことと対応させます。</p>
+<p>発売前の告知を頼んだからといって、発売後も同じ人が追加で紹介する前提にはしません。別の投稿を頼むなら、目的と公開の予定を改めて相談します。依頼の資料と、いつ何を公開するかの合意を分けて残すと、告知の対応が終わった人と、発売後の紹介を進める人を取り違えずに済みます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="launchcreatorscheduleBeforeAfter" viewBox="0 0 780 475" role="img" aria-label="発売前の告知は公表できる情報と時点、発売後の紹介は実物と商品リンクと販売体制を確かめる図"><rect x="0" y="0" width="780" height="475" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">発売前と発売後で、紹介に使う内容を分ける</text><path d="M389 81v341" stroke="#0B0C10" stroke-width="3" stroke-dasharray="8 8"/><rect x="32" y="82" width="316" height="302" rx="12" fill="#EFF1F4"/><text x="51" y="124" font-family="Noto Sans JP,sans-serif" font-size="25" fill="#0B0C10">発売前：告知</text><text x="51" y="182" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">公表が決まった特徴</text><text x="51" y="222" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">情報を出してよい時点</text><text x="51" y="262" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">本人が確認できた内容</text><text x="51" y="343" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">まだ使わない情報は分ける</text><rect x="431" y="82" width="316" height="302" rx="12" fill="#25F4EE"/><text x="450" y="124" font-family="Noto Sans JP,sans-serif" font-size="25" fill="#0B0C10">発売後：紹介</text><text x="450" y="182" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">実物を使った説明</text><text x="450" y="222" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">出品・審査後の商品リンク</text><text x="450" y="262" font-family="Noto Sans JP,sans-serif" font-size="20" fill="#0B0C10">販売できる在庫と発送</text><text x="450" y="343" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">購入できる状態まで確認</text><text x="67" y="440" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">同じ人へ追加で頼む場合も、目的と公開の合意を分けて残す</text></svg>
+<figcaption>図2：告知と購入につなぐ紹介は、使う情報と条件を分ける（編集部作成）</figcaption></figure>
+<h2 id="s4"><span class="no en">04</span>レビューがない時期は、紹介に使う事実と根拠を先に渡します</h2>
+<p>新商品には、発売したばかりの時点で購入者レビューがないことがあります。その空白を、まだ存在しない評価や人気の表現で埋めないようにします。本人に渡すのは、商品仕様、使い方、確認できる特徴、その説明を支える資料です。紹介の前に確かめられる情報を整えます。</p>
+<p>実物を手にして分かることと、資料を読まなければ分からないことを分けて渡すと、紹介に使う言葉を選びやすくなります。サイズや手順などの事実は確認できる資料へ結び付けます。使った感想は本人の感想として扱い、企業の説明と混ぜません。撮影で見せる場面も、商品で確かめられることに絞ります。</p>
+<div class="tw"><table><thead><tr><th>渡す情報</th><th>本人が確認すること</th><th>発売前に整えるもの</th></tr></thead><tbody>
+<tr><td>商品の仕様</td><td>紹介する実物と販売する商品の違い</td><td>種類や仕様を照合できる説明</td></tr>
+<tr><td>使い方</td><td>正しい手順と、紹介できる場面</td><td>使い方の資料と注意点</td></tr>
+<tr><td>紹介したい特徴</td><td>実物で確かめられる点と資料が必要な点</td><td>説明と根拠を対応させた一覧</td></tr>
+<tr><td>本人の使用感</td><td>実際に使って分かったこと</td><td>感想を企業が先回りして決めない依頼</td></tr>
+<tr><td>公表してよい範囲</td><td>発売前に出せる情報と、まだ出さない情報</td><td>更新した箇所が分かる資料</td></tr>
+<tr><td>質問が出た時の窓口</td><td>判断に迷った説明を誰へ聞くか</td><td>社内の回答担当と連絡方法</td></tr>
+</tbody></table></div>
+<p class="src">レビューがない時期に渡す情報の例（編集部作成）。</p>
+<p>当社の運用実感では、紹介してほしい特徴だけを並べると、本人が使ってみて疑問に思ったことの回答待ちが起きやすくなります。商品担当へ確認する内容を制作の前に集め、返事が必要な項目を残すと、発売直前に説明が変わる場面を減らせます。決まっていないことを、その場で言い切って埋めないことが大切です。</p>
+<p>資料の中には、使わない言い方も残します。まだ集まっていない購入者の評価、確認していない効果、発売後に決まる条件などです。本人に知らされていない制約を、公開直前の確認で初めて伝えないようにします。公開に間に合わせるために、根拠の確認を省かない形にしてください。</p>
+<h2 id="s5"><span class="no en">05</span>公開をそろえるか、ずらすかは、発売時に確かめたいことから決めます</h2>
+<p>同じ時期に紹介を集めると、発売に合わせて接触をまとめる計画になります。少しずつ公開をずらすと、先に出た紹介への質問や反応を、後の説明に反映する計画にできます。どちらにするかは、発売の告知を集中させたいのか、紹介の仕方を確かめながら進めたいのかで決めます。</p>
+<p>ただし、予定をそろえることと、全員が同じ日に公開できることは別です。本人の受け取りや制作が遅れる場合に、全体を待つのか、進められる投稿から公開するのかを決めます。発売日と同じ日だけを成功とすると、実物を確かめる時間や表示の確認が削られやすくなります。</p>
+<div class="tw"><table><thead><tr><th>公開の組み方</th><th>向いている狙い</th><th>先に決めること</th></tr></thead><tbody>
+<tr><td>同じ時期に集める</td><td>発売の案内をまとめて届ける</td><td>投稿が集まる時の在庫、発送、確認担当</td></tr>
+<tr><td>少しずつずらす</td><td>反応や疑問を見ながら説明を整える</td><td>先に出た反応の見方と、次の紹介へ渡す内容</td></tr>
+<tr><td>告知と紹介を分ける</td><td>発売前の認知と発売後の購入導線を分ける</td><td>それぞれの投稿の目的と、本人との合意</td></tr>
+</tbody></table></div>
+<p class="src">公開の組み方と発売計画での確認例（編集部作成）。</p>
+<p>公開をずらす場合も、後の投稿者へ先の動画をそのまま写してもらう必要はありません。購入前に分かりにくかった点や、実物で見せると伝わった点を整理して渡します。本人の得意な紹介方法は残し、事実の不足を補うために使います。前の投稿の結果だけで、本人の表現をすべて統一しないようにします。</p>
+<p>頼む人数と、公開をまとめる時期は別々に検討します。人数を決める時は、予算とサンプル、確認できる体制を<a href="https://leam.co.jp/column/how-many-creators/">最初に頼むクリエイターの人数の決め方</a>で整理します。そのうえで、本人が進められる条件と、企業側が対応できる範囲を見て、発売に合わせる公開の幅を相談します。</p>
+<h2 id="s6"><span class="no en">06</span>在庫と発送は、紹介が集まる週の予定に合わせて確認します</h2>
+<p>紹介の予定が決まったら、投稿する人の一覧を在庫と発送の担当へ渡します。商品名だけでなく、紹介する種類やリンク先を対応させます。サンプルとして使う分と販売できる分も分けます。紹介する実物は用意できても、購入された商品を出荷できない状態では、発売後の対応が詰まります。</p>
+<p>公式のコラボ機能のヘルプも、商品を追加する際に在庫を把握する重要性を説明しています。発売計画では、投稿が集まる時期の販売できる在庫と、追加分を出荷できる見通しを確かめます。動画が公開された後も見られることを考え、公開日だけで確認を終えないようにします。</p>
+<div class="tw"><table><thead><tr><th>発売の予定と合わせる項目</th><th>社内で確かめる内容</th><th>予定に変更が出た時の扱い</th></tr></thead><tbody>
+<tr><td>紹介する商品</td><td>実物、販売する種類、リンク先の一致</td><td>別の種類へ変える時は本人と再確認</td></tr>
+<tr><td>サンプルと販売分</td><td>それぞれに使える数と保管場所</td><td>販売分を使う前に担当へ相談</td></tr>
+<tr><td>投稿が集まる週</td><td>販売できる在庫と発送担当の対応予定</td><td>公開の順番や集中の仕方を見直す</td></tr>
+<tr><td>公開後も続く注文</td><td>追加で用意できる商品と出荷の見通し</td><td>補充待ちの状態を担当者で共有</td></tr>
+<tr><td>欠品や発送の遅れ</td><td>判断する人と本人へ連絡する人</td><td>購入を促す紹介を続けるか相談</td></tr>
+</tbody></table></div>
+<p class="src">紹介の予定と在庫・発送を結び付ける確認例（編集部作成）。</p>
+<p>この表は、紹介が集まる週に向けた確認です。通常の在庫管理や補充の運用は、<a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">TikTok Shopの在庫管理</a>で整えます。発売の紹介へ戻る時は、どの商品をいつ紹介するかと、誰が在庫を確認したかが対応していることを確かめてください。</p>
+<p>欠品の見通しが出たら、未公開の投稿をどう扱うか相談します。本人が予定どおり制作していても、購入を促す紹介をそのまま公開してよいかは別に判断します。連絡が遅れると、本人は変更を知らずに進めてしまいます。予定を変える判断者と、本人へ伝える担当を先に決めておきます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="launchcreatorscheduleNextPlan" viewBox="0 0 780 502" role="img" aria-label="発売後の質問や在庫と発送の状態を残す予定と次の判断予定を、初回の紹介と同時に計画する図"><rect x="0" y="0" width="780" height="502" rx="12" fill="#FFFFFF"/><text x="32" y="44" font-family="Noto Sans JP,sans-serif" font-size="23" fill="#0B0C10">初回の紹介と、次を決める予定を同時に持つ</text><rect x="32" y="85" width="716" height="85" rx="12" fill="#25F4EE"/><text x="52" y="119" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">発売に合わせる紹介</text><text x="52" y="151" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">公開が集まる週を、在庫と発送の担当へ共有</text><rect x="32" y="193" width="343" height="105" rx="12" fill="#EFF1F4"/><text x="51" y="231" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">発売後に残す情報</text><text x="51" y="270" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">質問・説明の不足・販売の状態</text><rect x="405" y="193" width="343" height="105" rx="12" fill="#FFECF0"/><text x="424" y="231" font-family="Noto Sans JP,sans-serif" font-size="21" fill="#0B0C10">次を決める予定</text><text x="424" y="270" font-family="Noto Sans JP,sans-serif" font-size="18" fill="#0B0C10">確認する日・判断する担当</text><path d="M202 310v28h374v-28m-187 28v25m-8-8 8 8 8-8" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="102" y="380" width="576" height="88" rx="12" fill="#EFF1F4"/><text x="123" y="414" font-family="Noto Sans JP,sans-serif" font-size="22" fill="#0B0C10">初回と同じ説明か、別の使い方かを決める</text><text x="123" y="448" font-family="Noto Sans JP,sans-serif" font-size="19" fill="#0B0C10">人数を足すこと自体を目的にしない</text></svg>
+<figcaption>図3：初回の公開と同時に、次を決める予定を持つ（編集部作成）</figcaption></figure>
+<h2 id="s7"><span class="no en">07</span>発売月で終わらせず、次の紹介を計画に入れます</h2>
+<p>発売に合わせた紹介が終わってから、次の投稿を考え始めると、商品や資料を渡す準備がもう一度必要になります。初回の公開を進める間に、次に確認する日と、紹介を続けるか判断する人を決めます。次の依頼先まで先に確定する必要はありません。何を見て決めるかを用意しておきます。</p>
+<p>当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年7月末・8月末・9月末・10月末の月末の記録のうち、続けて3回登場した商品619点）では、人数の増え方と次の月の売上の伸びを確認しています。</p>
+<p>同じ期間の中では、紐づく人数と売上は一緒に動きます。ただし、人が集まった月の勢いは、次の月の売上の伸びには持ち越されませんでした（当社集計）。</p>
+<p>前の月の売上の伸び方やカテゴリーをそろえても、人数の増え方は次の月の伸びを予測しませんでした。これは人数が売上を動かす向きを判定したものではありません。発売月に紹介を集めたことだけを、翌月も伸びる根拠にはしないという読み方です。詳しい確かめ方は、<a href="https://leam.co.jp/column/creator-second-round/">クリエイター起用の次の回を組む考え方</a>で扱います。</p>
+<p>次の紹介の材料には、発売後に聞かれた質問、説明が伝わりにくかった点、販売できる在庫、本人が実物を確かめた内容を使います。初回と同じ説明を繰り返すのか、別の使い方を見せるのかを決めます。投稿が出たという記録だけでなく、次に何を確かめたいかを残しておくと、追加の依頼へつなげられます。</p>
+<p>当社の運用実感では、発売時の予定と次の確認予定を同じ表へ置くと、初回の完了後に担当がいなくなる状態を避けやすくなります。初回の紹介が集中する時期と、振り返って次を決める時期を、社内の仕事として残します。人数を追加すること自体を目的にせず、紹介と販売の状態を見て組み直します。</p>
+<h2 id="summary"><span class="no en">08</span>まとめ：届く日と売れる状態をそろえて、発売の紹介を進めます</h2>
+<p>新商品の紹介は、発売日だけから逆算せず、実物が届く日、出品と審査、商品リンク、根拠資料を対応させて組みます。発売前の告知と発売後の紹介は、使う情報と完成の条件を分けます。本人が制作を進められる状態と、企業が購入に対応できる状態の両方を確かめてください。</p>
+<p>投稿を同じ時期に集める場合も、ずらす場合も、在庫と発送の担当へ予定を渡します。無料サンプルの管理期限は別に確認し、発売日に合わせられるかは本人と合意します。初回の予定と一緒に次の確認予定も残しておくと、発売月だけで紹介を終わらせず、反応を見て次を決められます。</p>
+<h2 id="faq"><span class="no en">09</span>よくある質問</h2>
+<p>発売に合わせる計画で迷いやすい点をまとめました。公開希望日と、進めるために必要な確認を同じ予定表へ書いてください。</p>
+<p>本人へ伝えた日付だけで進行を判断せず、商品の到着や出品、資料の確認が済んだ状態を見ます。予定が変わった時の判断者と連絡担当も、あらかじめ決めておきます。</p>
+<div class="faq">
+<details><summary>発売日が決まっていれば、先に投稿予定を確定できますか？</summary><div class="a">公開希望として相談できますが、受け取り、制作、内容の確認、紹介先の商品の準備を照合して合意します。発売日だけで確定せず、進められる条件と変更時の扱いを残してください。</div></details>
+<details><summary>発送した日を、本人が制作を始める日としてよいですか？</summary><div class="a">発送と到着を分けます。本人が実物を受け取り、使い方を確かめられる見通しを確認してから、制作と公開の予定をそろえます。発送の連絡だけで、受け取りも完了したと扱わないようにします。</div></details>
+<details><summary>発売前の告知と、商品紹介は同じ依頼で管理できますか？</summary><div class="a">関連づけて管理できますが、投稿の目的と完成の条件は分けます。告知は公表してよい範囲、購入につなぐ紹介は商品リンクや販売の準備まで確かめます。追加の投稿まで合意したつもりにならないことも大切です。</div></details>
+<details><summary>レビューが集まるまで、紹介資料を渡すのを待ちますか？</summary><div class="a">確認できる商品仕様や使い方、特徴を支える資料は先に渡せます。購入者レビューがあるように書かず、商品の事実と本人が実際に使った感想を分けます。説明の根拠を確かめられることを優先してください。</div></details>
+<details><summary>在庫の見通しが変わったら、未公開の紹介はどうしますか？</summary><div class="a">販売できる状態と公開予定を照合し、購入を促す紹介を続けてよいか社内で判断します。本人の制作が進んでいても、そのまま公開する前提にせず、予定や内容の変更を本人へ伝えて相談します。</div></details>
+<details><summary>発売後の追加依頼は、初回の紹介が終わってから考えますか？</summary><div class="a">初回を進める間に、振り返る予定と次を決める担当を置きます。依頼先まで先に確定する必要はありません。質問や説明の不足、在庫など、追加の紹介を判断するために残す情報を決めておきます。</div></details>
+</div>
+<div class="ctabox"><div class="ct">新商品の発売に合わせて、クリエイターに紹介を頼みたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=launch-creator-schedule">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=launch-creator-schedule&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2 id="sources"><span class="no en">10</span>参考にした情報</h2><p>無料サンプルとコラボ機能の日本向け公式ヘルプは、2026年10月29日に取得して確認しました。機能と期限は、利用時に最新の日本向け公式ヘルプを確認してください。記事中の逆算表は、公式の期限と本人に相談する公開希望を分けて作成しています。</p><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861453073&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：無料サンプルの案内</a>（リクエスト処理、対応完了、動画の公開継続）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトのコラボ機能</a>（招待の承諾、商品の追加、在庫の確認）</li></ul><p class="src">本文中で「当社の運用実感」と記した内容は、市場統計ではなく当社の支援案件での実務経験にもとづく見解です。当社集計は本文に示した継続観測の商品を対象とし、すべての新商品の発売後を示すものではありません。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/seasonal-campaign/">商戦期の起用を計画する</a></b><span>販促の予定から準備を逆算する</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/sample-no-post/">サンプル後の投稿を追う</a></b><span>対応が止まる所を確認する</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/tiktok-shop-inventory-management/">在庫を管理する</a></b><span>販売できる分と公開予定をそろえる</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/product-page-cvr/">商品ページを整える</a></b><span>動画の説明と購入先を対応させる</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">逆算は公開日だけでなく、サンプルが本人に届く日から組みます</a></li><li><a href="#s2">出品と審査を終えてから商品リンクを確かめる余白を取ります</a></li><li><a href="#s3">発売前の告知と、発売後の購入につなぐ紹介を分けます</a></li><li><a href="#s4">レビューがない時期は、紹介に使う事実と根拠を先に渡します</a></li><li><a href="#s5">公開をそろえるか、ずらすかは、発売時に確かめたいことから決めます</a></li><li><a href="#s6">在庫と発送は、紹介が集まる週の予定に合わせて確認します</a></li><li><a href="#s7">発売月で終わらせず、次の紹介を計画に入れます</a></li><li><a href="#summary">まとめ：届く日と売れる状態をそろえて、発売の紹介を進めます</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=launch-creator-schedule">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "発売日が決まっていれば、先に投稿予定を確定できますか？", "acceptedAnswer": {"@type": "Answer", "text": "公開希望として相談できますが、受け取り、制作、内容の確認、紹介先の商品の準備を照合して合意します。発売日だけで確定せず、進められる条件と変更時の扱いを残してください。"}}, {"@type": "Question", "name": "発送した日を、本人が制作を始める日としてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "発送と到着を分けます。本人が実物を受け取り、使い方を確かめられる見通しを確認してから、制作と公開の予定をそろえます。発送の連絡だけで、受け取りも完了したと扱わないようにします。"}}, {"@type": "Question", "name": "発売前の告知と、商品紹介は同じ依頼で管理できますか？", "acceptedAnswer": {"@type": "Answer", "text": "関連づけて管理できますが、投稿の目的と完成の条件は分けます。告知は公表してよい範囲、購入につなぐ紹介は商品リンクや販売の準備まで確かめます。追加の投稿まで合意したつもりにならないことも大切です。"}}, {"@type": "Question", "name": "レビューが集まるまで、紹介資料を渡すのを待ちますか？", "acceptedAnswer": {"@type": "Answer", "text": "確認できる商品仕様や使い方、特徴を支える資料は先に渡せます。購入者レビューがあるように書かず、商品の事実と本人が実際に使った感想を分けます。説明の根拠を確かめられることを優先してください。"}}, {"@type": "Question", "name": "在庫の見通しが変わったら、未公開の紹介はどうしますか？", "acceptedAnswer": {"@type": "Answer", "text": "販売できる状態と公開予定を照合し、購入を促す紹介を続けてよいか社内で判断します。本人の制作が進んでいても、そのまま公開する前提にせず、予定や内容の変更を本人へ伝えて相談します。"}}, {"@type": "Question", "name": "発売後の追加依頼は、初回の紹介が終わってから考えますか？", "acceptedAnswer": {"@type": "Answer", "text": "初回を進める間に、振り返る予定と次を決める担当を置きます。依頼先まで先に確定する必要はありません。質問や説明の不足、在庫など、追加の紹介を判断するために残す情報を決めておきます。"}}]}</script>
+</body>
+</html>

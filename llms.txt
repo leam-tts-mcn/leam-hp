@@ -17,10 +17,10 @@
 - クリエイターアサイン: 実売実績のあるTikTok Shopクリエイターの起用を、小さく試せる形から支援
 - MCN: クリエイターの発掘・育成・マネジメントを行う、TikTok Shop特化のクリエイター事務所
 
-## TikTok Shop 実践コラム（全83本）
+## TikTok Shop 実践コラム（全103本）
 
 > 出店の検討から日々の運用までを扱う実務記事。公式の一次情報と、当社の運用実感にもとづく判断を
-> 区別して書いています。数値は出典と時点を明記し、**83本すべてに一次情報（TikTok Shop公式ヘルプ・
+> 区別して書いています。数値は出典と時点を明記し、**103本すべてに一次情報（TikTok Shop公式ヘルプ・
 > 規約・官公庁の公表資料など）へのリンク**を置いています。
 > 公開情報で裏が取れなかった論点は、断定せず「どこを見れば確かめられるか」を書いています。
 > 一覧: https://leam.co.jp/column/
@@ -131,6 +131,28 @@
 - [健康食品のTikTok Shop｜表現と動画企画の準備](https://leam.co.jp/column/supplements/): 健康食品・サプリのTikTok Shop参入を考える担当者へ。出品可否、成分・効果の表現、体験談の扱いを公的資料で整理。購入前の疑問に答える動画企画と、紹介者へ渡す資料を解説します。
 - [日用雑貨のTikTok Shop｜実演と販売準備](https://leam.co.jp/column/household-goods/): 日用雑貨のTikTok Shop参入を考える担当者へ。掃除・収納・キッチン用品の実演、商品ページとの照合、セット内容、紹介者への資料、販売後の質問を次の企画へ戻す準備を解説します。
 - [美容家電のTikTok Shop｜比較・実演・保証の準備](https://leam.co.jp/column/beauty-gadgets/): 美容家電・ガジェットのTikTok Shop参入を考える担当者へ。仕様の比較と実演、LIVEの質問対応、保証・返品の案内、電気用品などの対象確認を、商品資料とつなぐ準備を解説します。
+
+### クリエイター起用の進め方
+- [TikTokのインフルエンサー施策｜TikTok ShopとPRの違い](https://leam.co.jp/column/tiktok-influencer-marketing/): TikTok Shopのクリエイター施策は、PR投稿・売上連動の紹介・広告への転用を分けて設計します。払う根拠、選ぶ基準、見る指標、表示を比較し、社内説明に使えるひな形を示します。
+- [マイクロインフルエンサーとは？TikTok Shopで売る人の規模](https://leam.co.jp/column/micro-nano-influencer/): TikTok Shopの人選は、フォロワー規模だけで決めません。売上上位の人の構成と順位の結びつきを当社集計で示し、参加条件、数字の読み方、同じカテゴリーの販売記録を見る順番を解説します。
+- [UGC動画とは？TikTok Shopの本人紹介と素材の違い](https://leam.co.jp/column/ugc-video/): UGC動画は、本人の紹介と企業が使うUGC風素材を分けて依頼します。TikTok Shopでの届き方、売上の記録、表示、権利、費用を比較し、選び方と紹介から制作・広告へ広げる順番を解説します。
+- [インフルエンサー起用の失敗例｜TikTok Shopの防ぎ方](https://leam.co.jp/column/influencer-failures/): インフルエンサー起用の失敗は、人選・社内判断・投稿の約束を分けて見直します。TikTok Shopで商談に出る悩みを匿名の型で整理し、気づけた時点と防ぐ手、依頼前の確認表を示します。
+- [クリエイターの選定基準｜TikTok Shopで全員見送りを防ぐ](https://leam.co.jp/column/creator-selection-criteria/): クリエイターの選定は、必須・あれば良い・外すの基準を社内で合意してから始めます。TikTok Shopで使える基準表、最終判断者と返答期限、理由の記録欄、全員見送りの直し方を示します。
+- [TikTok Shopのクリエイター売上｜上位は翌月も売れるか](https://leam.co.jp/column/creator-gmv-ranking/): TikTok Shopのクリエイターは、直近の売上順位だけで選びません。上位が翌月も残る割合を当社集計で示し、期間・対象範囲・前月の順位・紹介履歴をそろえて候補を判断する表を紹介します。
+- [TikTok Shopで最初に頼む人数｜クリエイターの決め方](https://leam.co.jp/column/how-many-creators/): 初回の人数は、回収に必要な注文数と予算・サンプル・確認の手間から決めます。TikTok Shopの売上上位の人数を当社集計で示し、仮の数字による回収計算と人数の上限表を紹介します。
+- [TikTok Shopはライブと動画どちら？単価で変わる売れ方](https://leam.co.jp/column/live-or-video-creators/): ライブか動画かは、単価・カテゴリー別の売れ方と依頼先の実績で決めます。TikTok Shopの当社集計を表で示し、売上の内訳の読み方と高い商品を動画で紹介する準備を解説します。
+- [インフルエンサーの探し方｜TikTok Shopの検索と保存](https://leam.co.jp/column/find-creators/): TikTok Shopの公式検索を入口に、販売実績と紹介履歴で候補を探します。検索・募集・動画・外部の使い分け、クリエイターコネクトへの保存、候補一覧に残す項目を解説します。
+- [インフルエンサーへの依頼方法｜TikTok Shopの招待と窓口](https://leam.co.jp/column/creator-request-flow/): 依頼は公式の招待を基本に、本人や事務所との調整を加えます。TikTok Shopの連絡経路を比較し、条件を決める相手・報酬の受け取り先・売上の記録をそろえる確認表を紹介します。
+- [ギフティングとは？TikTok Shopの無料サンプルとの違い](https://leam.co.jp/column/gifting-vs-free-sample/): 商品を贈るだけでは投稿の約束になりません。ギフティング・TikTok Shopの無料サンプル・報酬付きの依頼を比較し、投稿・期日・商品リンク・表示を確認する表と依頼文の型を紹介します。
+- [インフルエンサーとの契約｜TikTok Shop投稿依頼の確認表](https://leam.co.jp/column/creator-contract/): 固定報酬の投稿依頼は、制作・公開・支払いの条件を分けて合意します。TikTok Shopの規約とフリーランス法の対象を整理し、公開の継続・削除・未投稿時の扱いまで確認する表を紹介します。
+- [ステマ規制の企業側点検｜TikTok Shopの表示漏れ対応](https://leam.co.jp/column/stealth-marketing/): 公開後は表示と開示設定を点検し、修正後の公開画面で完了を判断します。TikTok Shopの企業担当者向けに、点検台帳と修正依頼文、再投稿や依頼していない紹介への対応を整理します。
+- [新商品の発売に合わせる｜TikTok Shopのクリエイター起用](https://leam.co.jp/column/launch-creator-schedule/): サンプルが本人に届く日から、発売の紹介を逆算します。TikTok Shopの公式期限を入れた確認表と、発売前後の投稿の分け方、在庫と発送、次の紹介までの段取りを解説します。
+- [クリエイター進行管理表｜TikTok Shopの1人1行の型](https://leam.co.jp/column/creator-progress-sheet/): 複数名の進行は、8工程の日付と次の担当を1人1行で管理します。TikTok Shop向けの表の見本、列と状態の定義、期日超過の確認、紐付け・公開・売上を分ける記録方法を紹介します。
+- [施策の効果測定｜TikTok Shopの前後比較と報告](https://leam.co.jp/column/creator-measurement/): 投稿した人と売上が立った人を分け、確認した範囲を報告します。TikTok Shopの施策を本人別に切り分け、同じ商品の前後比較を読む方法と、社内報告の1枚の型を紹介します。
+- [TikTok Shop起用の2回目｜誰に頼むかと初回の読み方](https://leam.co.jp/column/creator-second-round/): 2回目は、初回に売れた人と継続した実績を軸に選びます。TikTok Shopの当社集計から翌月の伸びの限界を読み、次の投稿の準備、人・訴求・商品の比べ方、判断条件をまとめます。
+- [増やしても売れない｜TikTok Shopのクリエイターの絞り方](https://leam.co.jp/column/more-creators-no-growth/): 紐づく人数が増えた後は、売った記録に合わせて次の依頼を絞ります。TikTok Shopの当社集計を読み、未投稿と売上なしを分け、申請の条件や個別の依頼、紹介の型を見直す方法を解説します。
+- [Spark Adsとは｜TikTok Shopの動画広告利用](https://leam.co.jp/column/spark-ads/): Spark Adsは通常の投稿を広告へ活用する形式です。TikTok Shopの一括承認と動画コード、GMV Maxとの関係、広告経由の成果報酬、次の予算を広告と起用へ振り分ける判断を解説します。
+- [インフルエンサーの二次利用｜TikTok Shop動画の使い方](https://leam.co.jp/column/creator-secondary-use/): 紹介動画の二次利用は、使う場所・期間・編集を別に合意します。TikTok Shopの広告承認との違い、名前の表示や対価を決める確認表、追加利用を頼む時の進め方を解説します。
 
 ## お問い合わせ
 

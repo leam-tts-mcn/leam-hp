@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTokのインフルエンサー施策｜TikTok ShopとPRの違い</title>
+<meta name="description" content="TikTok Shopのクリエイター施策は、PR投稿・売上連動の紹介・広告への転用を分けて設計します。払う根拠、選ぶ基準、見る指標、表示を比較し、社内説明に使えるひな形を示します。">
+<link rel="canonical" href="https://leam.co.jp/column/tiktok-influencer-marketing/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTokのインフルエンサー施策｜TikTok ShopとPRの違い">
+<meta property="og:description" content="TikTok Shopのクリエイター施策は、PR投稿・売上連動の紹介・広告への転用を分けて設計します。払う根拠、選ぶ基準、見る指標、表示を比較し、社内説明に使えるひな形を示します。">
+<meta property="og:url" content="https://leam.co.jp/column/tiktok-influencer-marketing/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/tiktok-influencer-marketing.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTokのインフルエンサー施策｜TikTok ShopとPRの違い">
+<meta name="twitter:description" content="TikTok Shopのクリエイター施策は、PR投稿・売上連動の紹介・広告への転用を分けて設計します。払う根拠、選ぶ基準、見る指標、表示を比較し、社内説明に使えるひな形を示します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/tiktok-influencer-marketing.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTokのインフルエンサー施策｜TikTok ShopとPRの違い", "description": "TikTok Shopのクリエイター施策は、PR投稿・売上連動の紹介・広告への転用を分けて設計します。払う根拠、選ぶ基準、見る指標、表示を比較し、社内説明に使えるひな形を示します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-influencer-marketing/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/tiktok-influencer-marketing.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトのコラボ機能の案内"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&lang=ja-JP", "name": "TikTok Shop公式：日本の販売者利用規約"}, {"@type": "WebPage", "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/", "name": "消費者庁：ステルスマーケティングに関するQ&amp;A"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTokのインフルエンサー施策｜TikTok ShopとPRの違い", "item": "https://leam.co.jp/column/tiktok-influencer-marketing/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-influencer-marketing">無料相談</a></div>
+<div class="shell"><article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTokのインフルエンサー施策｜TikTok ShopとPR投稿の違い</p><span class="cat">クリエイター起用の進め方</span><h1>TikTokのインフルエンサー施策｜TikTok ShopとPR投稿の違い</h1><div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure style="margin:0 0 26px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="撮影カメラと投稿カード、商品袋と報酬のコイン、同じ投稿カードと広告のメガホンが横に並び、クリエイターに頼む仕事の違いを示すイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="tiktokinfluencermarketingHeroDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#tiktokinfluencermarketingHeroDots" transform="translate(944 480)"/></g>
+<g fill="#5E6064" opacity=".13" transform="translate(9 11)"><rect x="60" y="135" width="320" height="365" rx="22"/><rect x="440" y="135" width="320" height="365" rx="22"/><rect x="820" y="135" width="320" height="365" rx="22"/></g>
+<g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+<rect x="60" y="135" width="320" height="365" rx="22" fill="#FFFFFF"/><rect x="440" y="135" width="320" height="365" rx="22" fill="#FFFFFF"/><rect x="820" y="135" width="320" height="365" rx="22" fill="#FFFFFF"/>
+<path d="M80 164h90" stroke="#FE2C55" stroke-width="12"/><path d="M460 164h90" stroke="#25F4EE" stroke-width="12"/><path d="M840 164h90" stroke="#FE2C55" stroke-width="12"/>
+<rect x="88" y="235" width="110" height="78" rx="12" fill="#FE2C55"/><circle cx="143" cy="274" r="24" fill="#FFFFFF"/><circle cx="143" cy="274" r="10" fill="#0B0C10" stroke-width="4"/><path d="M198 252l27-12v68l-27-12z" fill="#CE1730"/><path d="M110 235v-19h44l12 19" fill="#DFE0E2"/><path d="M143 313v108m0-50-35 70m35-70 35 70" fill="none"/>
+<circle cx="288" cy="234" r="29" fill="#DFE0E2"/><path d="M254 340v-55q34-28 68 0v55" fill="#25F4EE"/><path d="M263 301l-23 28m71-28 21 17" fill="none"/><rect x="238" y="340" width="109" height="16" rx="4" fill="#C9CBD0"/><path d="M249 357v70m88-70v70" fill="none"/><rect x="270" y="306" width="32" height="34" rx="4" fill="#FFFFFF"/><path d="M107 465h219" stroke="#DFE0E2" stroke-width="9"/>
+<path d="M500 257h148l17 150H483z" fill="#25F4EE"/><path d="M528 257v-23a46 46 0 0 1 92 0v23" fill="none"/><path d="M528 315h93m-93 29h65" stroke="#0B0C10" stroke-width="5"/>
+<circle cx="662" cy="386" r="39" fill="#FE2C55"/><circle cx="662" cy="386" r="24" fill="#FFFFFF" stroke-width="4"/><path d="M652 381l10 10 13-18" fill="none" stroke-width="5"/>
+<path d="M489 448h91l17-20 17 20h91" fill="none" stroke-width="5"/><rect x="512" y="445" width="32" height="29" rx="4" fill="#DFE0E2"/><rect x="628" y="445" width="32" height="29" rx="4" fill="#DFE0E2"/><path d="M689 278v-48h-36m36 0-16-16m16 16-16 16" fill="none" stroke="#CE1730" stroke-width="5"/>
+<rect x="849" y="209" width="112" height="146" rx="12" fill="#FFFFFF"/><circle cx="881" cy="237" r="12" fill="#DFE0E2" stroke-width="4"/><path d="M907 237h31" stroke="#C9CBD0" stroke-width="5"/><rect x="865" y="264" width="80" height="67" rx="5" fill="#25F4EE" stroke-width="4"/><path d="m895 280 24 17-24 17z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M962 316h30m-12-12 12 12-12 12" fill="none" stroke-width="5"/>
+<path d="m1003 300 83-43v117l-83-33z" fill="#FE2C55"/><rect x="988" y="298" width="29" height="47" rx="6" fill="#DFE0E2"/><path d="m1021 345 13 48h24l-12-40" fill="#CE1730"/><path d="M1104 284l17-14m-17 45h24m-24 25 17 14" fill="none" stroke="#25F4EE" stroke-width="6"/>
+<rect x="866" y="420" width="219" height="34" rx="6" fill="#EFF1F4" stroke-width="4"/><path d="M886 437h73m18 0h42m18 0h25" stroke="#5E6064" stroke-width="5"/>
+</g><g fill="#25F4EE"><circle cx="410" cy="290" r="8"/><circle cx="790" cy="290" r="8"/></g><circle cx="1140" cy="98" r="13" fill="#FE2C55"/>
+</svg>
+<figcaption>投稿、商品紹介、広告で使う仕事を分けて比べる（編集部作成）</figcaption></figure><p class="lead">TikTokのインフルエンサーマーケティングは、<strong>投稿を依頼するPR、売上に連動して報酬を払う商品の紹介、投稿を広告に使う取り決め</strong>を分けて設計します。TikTok Shopで販売したいなら、再生や反応だけでなく、紹介する商品と売上まで確認する形を選びます。Instagramで使ってきた依頼書をそのまま流用する前に、払う根拠・選ぶ基準・見る数字・表示の扱いを、同じ比較表に並べましょう。</p>
+<div class="learn"><div class="lt">▼ この記事でわかること</div><ul><li>PR投稿・売上連動の紹介・広告への転用を、同じ項目で比べる方法</li><li>InstagramのPRやタレント起用から、TikTok Shopで変える判断基準</li><li>目的・依頼する形・人数・見る数字・費用を社内へ説明する記入欄</li></ul></div>
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み</a></b><span>コラボと条件の基本</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creator-commission/">クリエイター報酬の決め方</a></b><span>費用を検討する前提</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopの仕組み</a></b><span>社内で前提をそろえる</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creator-casting-agency/">クリエイター起用の外注</a></b><span>担当する作業と依頼先</span></div></div></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">クリエイター施策は、PR投稿・売上連動の紹介・広告への転用に分ける</a></li><li><a href="#s2">依頼する形は、払う根拠・選ぶ基準・測る指標・表示で比べる</a></li><li><a href="#s3">PRは投稿への対価、商品紹介は売上連動を基本に固定報酬も分けて考える</a></li><li><a href="#s4">InstagramのPRやタレント起用から変えるのは、選ぶ基準・測る指標・商品リンク</a></li><li><a href="#s5">最初の依頼は、販売を目指すなら商品紹介、認知を目指すならPR投稿から決める</a></li><li><a href="#s6">社内説明は、目的・形・人数・見る数字・費用を同じ紙にまとめる</a></li><li><a href="#summary">まとめ：人選の前に、払う仕事と確かめる結果をそろえる</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>クリエイター施策は、PR投稿・売上連動の紹介・広告への転用に分ける</h2>
+<p>「TikTokでクリエイターに頼みたい」という言葉だけでは、依頼の中身は決まりません。新商品を知ってもらう投稿を作ってほしいのか、TikTok Shopの商品を紹介して買ってもらいたいのか、作られた投稿を広告でも使いたいのか。社内で最初にそろえるのは、誰に頼むかより、何を依頼するかです。</p>
+<p>PR投稿は、決めたテーマでの制作や投稿を仕事として依頼する形です。紹介した商品が売れたかとは別に、合意した投稿を行うことに対価を置きます。商品の印象や使い方を伝えることを目的にするなら、どんな内容を公開してもらうかを先に決めます。</p>
+<p>売上連動の紹介は、商品を紹介したクリエイターへ、販売に応じたコミッションを支払う形です。コミッションとは、商品販売に連動する報酬のことです。TikTok Shopの公式のコラボ案内は、商品ごとに率を設定する仕組みを説明しています。投稿を作るだけで依頼を終えず、紹介する商品と販売の結果をつなげて考えます。</p>
+<p>広告への転用は、作った投稿を広告として使うための取り決めです。PR投稿や売上連動の紹介と別々の人に頼むとは限らず、同じクリエイターへの依頼に組み合わせる場合もあります。したがって、ここでいう分類は、クリエイターの肩書きではなく、依頼する仕事の分け方です。</p>
+<p>同じ動画でも、制作・投稿への支払い、商品の販売に連動する支払い、広告に使うための支払いは、確認する内容が違います。依頼書ではそれぞれを別の欄にし、どこまでを今回頼むかに印を付けます。広告への転用を頼む予定がなければ、最初から広告素材の納品まで依頼に含める必要はありません。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="tiktokinfluencermarketingWork" viewBox="0 0 720 280" role="img" aria-label="依頼内容を投稿、販売への紹介、広告での利用に分け、それぞれの確認対象を横に並べた図">
+<rect width="720" height="280" fill="#FFFFFF"/>
+<g font-family="Noto Sans JP, sans-serif" font-size="15" fill="#0B0C10">
+<rect x="22" y="22" width="170" height="60" rx="10" fill="#FFECF0" stroke="#B01D36"/><text x="107" y="48" text-anchor="middle">PR投稿</text><text x="107" y="69" text-anchor="middle" font-size="13">制作して公開する</text>
+<path d="M207 52h40m-9-7 9 7-9 7" stroke="#0B0C10" fill="none" stroke-width="2"/>
+<rect x="264" y="22" width="430" height="60" rx="10" fill="#F4F6F8"/><text x="285" y="48">確認する対象</text><text x="285" y="69" font-size="13">合意した内容の投稿・再生や反応</text>
+<rect x="22" y="108" width="170" height="60" rx="10" fill="#EDF6F5" stroke="#0A6E68"/><text x="107" y="134" text-anchor="middle">売上連動の紹介</text><text x="107" y="155" text-anchor="middle" font-size="13">商品を紹介する</text>
+<path d="M207 138h40m-9-7 9 7-9 7" stroke="#0B0C10" fill="none" stroke-width="2"/>
+<rect x="264" y="108" width="430" height="60" rx="10" fill="#F4F6F8"/><text x="285" y="134">確認する対象</text><text x="285" y="155" font-size="13">紹介された商品・注文や売上</text>
+<rect x="22" y="194" width="170" height="60" rx="10" fill="#F4F6F8" stroke="#646C7A"/><text x="107" y="220" text-anchor="middle">広告への転用</text><text x="107" y="241" text-anchor="middle" font-size="13">投稿を広告で使う</text>
+<path d="M207 224h40m-9-7 9 7-9 7" stroke="#0B0C10" fill="none" stroke-width="2"/>
+<rect x="264" y="194" width="430" height="60" rx="10" fill="#F4F6F8"/><text x="285" y="220">確認する対象</text><text x="285" y="241" font-size="13">使う範囲の合意・広告としての配信結果</text></g></svg>
+<figcaption>図1：依頼する仕事と確認する対象を対応させる（編集部作成）</figcaption></figure>
+<p>例えば、商品を使った感想を投稿してもらう依頼と、商品を実演してTikTok Shopでの購入につなげる依頼では、企画の着地点が変わります。前者はどんな理解や印象を残すか、後者は購入前の疑問にどう答えるかを考えます。この違いを示してから候補を探せば、提案してほしい内容も伝わります。</p>
+<p>TikTok Shop自体の仕組みを社内で共有する必要がある場合は、<a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopの売り方と始め方</a>を前提資料にし、今回の説明ではクリエイターに頼む形の違いへ絞ります。</p>
+
+<h2 id="s2"><span class="no en">02</span>依頼する形は、払う根拠・選ぶ基準・測る指標・表示で比べる</h2>
+<p>社内の比較では、再生数と売上を同じ成果として横に並べないことが大切です。PR投稿の候補と、商品紹介を頼む候補を同じ名簿で検討する場合も、何の仕事への候補かを添えます。次の表を使い、依頼の形と確認する内容をそろえてください。</p>
+<div class="tw"><table><thead><tr><th scope="col">比べる項目</th><th scope="col">PR投稿</th><th scope="col">TikTok Shopの売上連動の紹介</th><th scope="col">広告への転用</th></tr></thead><tbody>
+<tr><td>主に頼むこと</td><td>合意した企画で制作し、投稿する</td><td>指定した商品を紹介し、購入につなげる</td><td>合意した範囲で、投稿を広告に使う</td></tr>
+<tr><td>払う根拠</td><td>制作・投稿など、合意した仕事の実施</td><td>商品の販売に連動する報酬。制作・投稿への固定報酬を加える依頼もある</td><td>広告で使う範囲への対価と、配信する広告費を分ける</td></tr>
+<tr><td>候補を選ぶ基準</td><td>伝えたいテーマとの相性、表現の仕方、想定する視聴者</td><td>扱う商材の販売記録、商品の説明の仕方、依頼内容との適合</td><td>使いたい投稿の内容と、許諾する範囲の一致</td></tr>
+<tr><td>見る数字</td><td>公開した投稿、再生や反応など、事前に決めた指標</td><td>紹介した投稿や商品に結び付く注文・売上と、その対象期間</td><td>広告としての配信結果。元の投稿の結果とは分ける</td></tr>
+<tr><td>商品リンクの確認</td><td>今回の依頼に商品紹介を含めるかを決める</td><td>紹介する商品を特定し、公開内容と商品を照合する</td><td>広告で扱う商品と、許諾された投稿を照合する</td></tr>
+<tr><td>表示の扱い</td><td>依頼や関与の内容に応じて広告表示を確認する</td><td>固定報酬の有無だけで判断せず、開示と表示を確認する</td><td>元の投稿と広告での利用について、表示と許諾を確認する</td></tr>
+<tr><td>依頼前に残すもの</td><td>投稿の内容、公開する場所、完了の条件</td><td>対象商品、報酬の条件、紹介内容、成果の確認方法</td><td>対象の投稿、利用する範囲、費用の内訳</td></tr>
+</tbody></table></div>
+<p class="src">表1：依頼する仕事を比べるための整理（日本向けの公式コラボ案内・販売者利用規約を踏まえ、編集部作成。一般的な依頼の項目を含む）</p>
+<p>表の読み方は、上から下へです。先に「今回頼む仕事」を決め、その仕事に払う根拠を確認します。その後で、候補の選び方と成果の見方を合わせます。制作物を受け取る依頼なのに販売だけで合否を決める、販売を目的にした依頼なのに再生だけで終了する、といったずれを防ぐための順番です。</p>
+<p>PR投稿と商品紹介を組み合わせたい場合は、表の列を無理にどちらかへ寄せず、制作・投稿の条件と販売報酬の条件を両方残します。広告にも使いたい場合は、さらに広告の列を追加します。仕事が増えるなら、確認する内容も増えると説明できます。</p>
+<p>表示の扱いは、どの頼み方にも共通する確認事項です。販売者利用規約は開示ラベルとラベリング機能の使用を求めています。消費者庁のQ&amp;Aと合わせた確認方法は<a href="https://leam.co.jp/column/stealth-marketing/">TikTok Shopの紹介とステマ表示</a>にまとめます。</p>
+<p>広告に使う権利は投稿の依頼と分けて確認し、動画の広告利用の承認などの詳細は<a href="https://leam.co.jp/column/spark-ads/">Spark Adsでクリエイターの投稿を使う場合</a>へ進んでください。</p>
+<p>担当者が社内へ説明するときは、「PRの代わりに別の媒体で同じことをする」と言うより、「今回はどの仕事に支払い、何で完了と成果を確認するかを変える」と説明すると、予算の理由が具体的になります。表の空いた欄は、候補への打診や見積もりの前に決める事項として残します。</p>
+
+<h2 id="s3"><span class="no en">03</span>PRは投稿への対価、商品紹介は売上連動を基本に固定報酬も分けて考える</h2>
+<p>PR投稿の予算は、何を制作して、どこへ投稿する仕事かを基に考えます。動画の企画と制作、本人のアカウントからの投稿、確認への対応など、合意する仕事の範囲を記します。販売の結果と切り離して支払いが生じる部分を、社内で見えるようにしておきます。</p>
+<p>TikTok Shopの紹介では、販売に応じたコミッションが基本です。2026年10月29日時点の公式のコラボ案内では、セラーが商品を選んでコミッション率を定め、商品ごとの推定コミッションを確認する流れが示されています。報酬率の設定手順を覚える前に、社内では「どの商品を紹介する依頼か」をそろえます。</p>
+<p>さらに、制作や投稿を依頼するための固定報酬を組み合わせる頼み方もあります。固定報酬を付けるかどうかは、相手へ求める仕事と合意する条件で決めます。「売上連動だから、売れるまで何の支出もない」という前提で予算を組まないことが重要です。</p>
+<p>サンプルとして渡す商品や発送の負担も、クリエイターへの報酬とは別に整理します。商品を送る予定があるなら、何を誰が用意するかを書きます。固定報酬の見積もりだけを受け取った場合は、商品や発送の負担、販売報酬を含むのかを、金額を承認する前に確認します。</p>
+<div class="tw"><table><thead><tr><th scope="col">費用の欄</th><th scope="col">何への支払いか</th><th scope="col">依頼前に記すこと</th></tr></thead><tbody>
+<tr><td>制作・投稿の固定報酬</td><td>合意した内容の制作や投稿など</td><td>頼む仕事、完了の条件、報酬に含む範囲</td></tr>
+<tr><td>売上連動の報酬</td><td>紹介した商品の販売に連動する対価</td><td>対象の商品と、合意する報酬の条件</td></tr>
+<tr><td>サンプルの商品・発送</td><td>紹介に使う商品と届けるための負担</td><td>用意する側、送る商品、負担する範囲</td></tr>
+<tr><td>広告での利用</td><td>合意した利用範囲への対価と広告配信</td><td>投稿への支払いとの区別、広告費を含むか</td></tr>
+</tbody></table></div>
+<p class="src">表2：支払いの根拠を分ける記入欄（編集部作成）</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="tiktokinfluencermarketingPayment" viewBox="0 0 720 270" role="img" aria-label="同じ依頼の中でも固定報酬と販売に連動する報酬を別々の欄で確認し、サンプルと広告費も分けて記録する図">
+<rect width="720" height="270" fill="#FFFFFF"/><g font-family="Noto Sans JP, sans-serif" fill="#0B0C10" text-anchor="middle">
+<rect x="24" y="38" width="180" height="154" rx="12" fill="#F4F6F8" stroke="#0B0C10"/><text x="114" y="100" font-size="17">同じクリエイター</text><text x="114" y="129" font-size="14">への依頼</text>
+<path d="M204 115h42V67h50m-50 48v48h50" fill="none" stroke="#646C7A" stroke-width="2"/>
+<rect x="300" y="28" width="382" height="78" rx="10" fill="#FFECF0" stroke="#B01D36"/><text x="491" y="58" font-size="16">制作・投稿への固定報酬</text><text x="491" y="84" font-size="14">合意した仕事を実施したか確認</text>
+<rect x="300" y="124" width="382" height="78" rx="10" fill="#EDF6F5" stroke="#0A6E68"/><text x="491" y="154" font-size="16">販売に連動する報酬</text><text x="491" y="180" font-size="14">対象商品と販売の結果を確認</text>
+<rect x="24" y="220" width="658" height="32" rx="8" fill="#F4F6F8"/><text x="353" y="241" font-size="14">サンプルの商品・発送、広告での利用は別の欄に</text></g></svg>
+<figcaption>図2：固定報酬と販売報酬を分けて説明する（編集部作成）</figcaption></figure>
+<p>同じ「クリエイター費」という名目でも、上の欄のどこまで含むかで見積もりの意味は変わります。固定報酬だけの候補と、販売報酬を組み合わせた候補を比べるときも、費目をそろえます。後で販売が出たときに、何の対価として支払ったかを説明できる状態にします。</p>
+<p>この段階では、率を高くするか低くするかよりも、対象の商品と仕事を決めます。コミッションの考え方を詳しく確認する場合は<a href="https://leam.co.jp/column/creator-commission/">クリエイターへの報酬の決め方</a>、コラボの組み方は<a href="https://leam.co.jp/column/affiliate-guide/">セラー向けアフィリエイトの仕組み</a>を参照してください。</p>
+<p>固定報酬を付けた依頼でも、投稿した事実と、その後に販売が出た事実を別の欄で報告します。投稿が完了しているのに販売が出なかった場合と、投稿へ進んでいない場合では、次に確認することが違います。支払いの根拠を分けておくと、同じ「成果が出ていない」という言葉にまとめずに振り返れます。</p>
+
+<h2 id="s4"><span class="no en">04</span>InstagramのPRやタレント起用から変えるのは、選ぶ基準・測る指標・商品リンク</h2>
+<p>InstagramのPRやタレント起用で作ってきた、ブランドが伝えたいことを整理する力は、そのまま使えます。商品の事実、使ってほしい場面、誤解を避けたい表現を明確にする作業です。変えるのは、その後に誰を選び、何を成果とし、どの商品への紹介として扱うかという判断です。</p>
+<p>これまで名前や世界観との相性を中心に選んでいたなら、商品販売を目的にする依頼では、商材の販売記録や商品の説明内容も候補表へ加えます。既存のPRで起用した人を外す必要はありません。その人に販売の紹介を頼む理由を、過去のPRの評判とは別に説明できるかを見ます。</p>
+<div class="tw"><table><thead><tr><th scope="col">社内でそろえること</th><th scope="col">これまでのPR・タレント起用で使う視点</th><th scope="col">TikTok Shopの販売目的で加える視点</th></tr></thead><tbody>
+<tr><td>選ぶ基準</td><td>ブランドの世界観、伝えたいテーマ、視聴者との相性</td><td>商材の販売記録と、購入前の疑問に答える説明</td></tr>
+<tr><td>測る指標</td><td>投稿や露出、再生、反応など、依頼の目的に合う数字</td><td>紹介した投稿と商品に結び付く注文・売上</td></tr>
+<tr><td>商品との結び付け</td><td>何を知ってもらい、どんな印象を残したいか</td><td>どの商品を紹介し、公開内容と一致しているか</td></tr>
+<tr><td>振り返りの問い</td><td>依頼した内容は伝わったか</td><td>紹介は行われたか、販売の結果はどうだったか</td></tr>
+</tbody></table></div>
+<p class="src">表3：従来のPR経験を販売目的の依頼へつなぐ整理（編集部作成）</p>
+<p>表の左側を古いやり方、右側を新しい正解と考える必要はありません。知ってもらう目的には、PRとしての表現や視聴者との相性が重要です。販売したい目的には、それに商品との適合と販売の確認を足します。媒体の名前を変えただけで、目的まで自動的に変わるわけではありません。</p>
+<p>当社集計では、売上上位に入った人のうちフォロワー1,000〜1万人の人が67%でした。これは売上で上位に選ばれた人の中での割合で、フォロワーが少ない人に頼めば売れるという意味ではありません。候補の読み方は<a href="https://leam.co.jp/column/micro-nano-influencer/">マイクロ・ナノインフルエンサーの見方</a>で確認できます。</p>
+<p class="src">集計範囲：当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年9月25日〜10月29日・17カテゴリーの売上上位100位のクリエイターのうち、TikTok Shop のアフィリエイトの参加条件に合うフォロワー1,000人以上で、ブランドやショップの公式アカウントらしい人を除いた1,271人）</p>
+<p>社内の報告では、投稿への評価と商品の販売を分けて読みます。商品の見せ方が企画どおりだったか、紹介する商品は合っていたか、販売の結果を同じ期間で確認できたか。これまでのPRの報告書に売上の欄だけを足すより、先にどの依頼を実施したかを記すと、説明の筋が通ります。</p>
+<p>ライブか動画かの選択は、今回どちらの形で紹介を頼むかに合わせ、詳しい違いは<a href="https://leam.co.jp/column/live-or-video-creators/">ライブと動画のクリエイターの選び分け</a>へ進んでください。</p>
+
+<h2 id="s5"><span class="no en">05</span>最初の依頼は、販売を目指すなら商品紹介、認知を目指すならPR投稿から決める</h2>
+<p>最初の依頼に、認知、販売、広告素材の確保をすべて同じ重さで載せると、何を優先して候補を選ぶかが曖昧になります。社内で主目的を決め、その目的を確かめられる形から始めます。売上を作るための検証なら商品の紹介、まず知ってもらうための検証ならPR投稿を軸にします。</p>
+<p>販売を目的にする場合は、紹介してほしい商品と、購入前に伝える内容を絞ります。クリエイターがどの疑問へ答えるかを明確にし、その紹介と販売の結果を確認する計画にします。見てほしい商品が曖昧なまま、候補の知名度だけで依頼を決めないようにします。</p>
+<p>認知を目的にする場合は、見てもらいたい人と、覚えてほしい内容を決めます。投稿の実施や反応を、事前に決めた指標で確認します。その依頼を、販売だけで評価する設計へ後から変えないように、社内説明にも今回の評価の対象を書きます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="tiktokinfluencermarketingPurpose" viewBox="0 0 720 310" role="img" aria-label="主目的から、知ってもらうためのPR投稿と販売を目指す商品紹介へ枝分かれし、それぞれの見る数字を決めて社内説明の紙へまとめる図">
+<rect width="720" height="310" fill="#FFFFFF"/><g font-family="Noto Sans JP, sans-serif" text-anchor="middle" fill="#0B0C10">
+<path d="m360 18 104 36-104 36-104-36z" fill="#F4F6F8" stroke="#0B0C10"/><text x="360" y="60" font-size="16">今回の主目的</text>
+<path d="M256 54H168v58m296-58h88v58" fill="none" stroke="#646C7A" stroke-width="2"/>
+<rect x="32" y="115" width="272" height="95" rx="12" fill="#FFECF0" stroke="#B01D36"/><text x="168" y="143" font-size="16">知ってもらいたい</text><text x="168" y="170" font-size="15">PR投稿を軸にする</text><text x="168" y="194" font-size="13">投稿の実施・決めた反応の指標</text>
+<rect x="416" y="115" width="272" height="95" rx="12" fill="#EDF6F5" stroke="#0A6E68"/><text x="552" y="143" font-size="16">販売を目指したい</text><text x="552" y="170" font-size="15">商品の紹介を軸にする</text><text x="552" y="194" font-size="13">紹介した商品・注文や売上</text>
+<path d="M168 210v27h384v-27m-192 27v20" stroke="#646C7A" fill="none" stroke-width="2"/>
+<rect x="132" y="259" width="456" height="34" rx="8" fill="#F4F6F8" stroke="#0B0C10"/><text x="360" y="282" font-size="14">目的・依頼・人数・指標・費用を同じ紙へ</text></g></svg>
+<figcaption>図3：主目的から依頼の形を選び、説明の紙へまとめる（編集部作成）</figcaption></figure>
+<p>認知も販売も必要なら、主目的と補助目的を分けます。PR投稿として頼む仕事と、商品紹介として頼む仕事が両方ある場合は、表1の列を組み合わせ、何を確認する依頼かを明示します。広告への転用は、その上で必要かを判断する追加の取り決めとして扱います。</p>
+<p>依頼前には、決めた条件を社内で確認し、相手から返ってきた提案がどの目的への回答かを読みます。販売目的の相談に投稿本数だけの提案が返ってきたなら、対象商品と販売結果をどう確認するかを尋ねます。認知目的の相談なら、伝えたい内容と投稿の企画が合っているかを見ます。</p>
+<p>目的と依頼を対応させるのは、うまくいったかどうかを後で判断できるようにするためです。結果が期待と違ったときも、認知の確認か、商品の紹介か、広告の使い方か、見直す場所を選べます。期待した結果と、実際に依頼した仕事の両方へ戻って考えます。</p>
+
+<h2 id="s6"><span class="no en">06</span>社内説明は、目的・形・人数・見る数字・費用を同じ紙にまとめる</h2>
+<p>稟議や社内打ち合わせでは、候補のプロフィールを並べる前に、今回の施策を説明する紙を用意します。下のひな形は、そのままコピーして記入できる欄です。自社の目的と条件を書き込んで、決めることをそろえてください。</p>
+<div class="tw"><table><thead><tr><th scope="col">説明する欄</th><th scope="col">記入すること</th><th scope="col">記入用の文型</th></tr></thead><tbody>
+<tr><td>目的</td><td>知ってもらうか、販売を目指すか。主目的を明示</td><td>今回の主目的は［記入］。補助目的は［記入］</td></tr>
+<tr><td>依頼する形</td><td>PR投稿、売上連動の紹介、広告への転用のどれか</td><td>［依頼する形］を軸にし、［組み合わせる仕事］を追加する</td></tr>
+<tr><td>対象の商品・内容</td><td>紹介する商品と、伝える事実や使用場面</td><td>対象は［商品］。伝えたいことは［内容］</td></tr>
+<tr><td>人数と選定理由</td><td>候補と依頼する人数を区別し、理由を添える</td><td>候補は［記入］、依頼予定は［記入］。選ぶ理由は［記入］</td></tr>
+<tr><td>見る数字</td><td>主目的に対応する指標と、対象期間</td><td>［指標］を［対象期間］で確認する</td></tr>
+<tr><td>費用の欄</td><td>固定報酬、販売報酬、商品・発送、広告を分ける</td><td>固定分［記入］、売上連動分［条件］、その他［内訳］</td></tr>
+<tr><td>完了と振り返り</td><td>頼んだ仕事の実施と、目的への結果を分ける</td><td>実施は［記録］で、結果は［指標］で確認する</td></tr>
+<tr><td>承認する事項</td><td>社内で決める商品・表現・費用など</td><td>［担当］が［承認する内容］を確認する</td></tr>
+</tbody></table></div>
+<p class="src">表4：社内説明のひな形（編集部作成。角括弧の中は自社の予定を記入する欄）</p>
+<p>人数の欄は、候補として調べる人と、実際に依頼する人を分け、必要な人数の考え方は<a href="https://leam.co.jp/column/how-many-creators/">クリエイターへ何人依頼するか</a>で確認してください。</p>
+<p>費用の欄には、先に表2で分けた費目を移します。売上に連動する支払いは条件を、固定の支払いは頼む仕事を添えます。ひとつの合計額だけでは、制作への支払いと販売への支払いを区別できません。決裁者が、どの仕事に対する予算を承認するのか分かる形にします。</p>
+<p>見る数字の欄には、目的に合う指標名と対象期間を記します。認知が目的なら投稿の実施や反応、販売が目的なら紹介した商品と販売結果を中心に置きます。複数の指標を置く場合も、どれを主目的の判断に使うかを決めておきます。結果を見てから有利な数字へ差し替えないための準備です。</p>
+<p>紙を作ると、社内に残る決め事も見えてきます。商品や表現を確認する人が決まっていないなら、打診の前に担当を置きます。候補の選定理由が書けないなら、名簿を増やす前に目的を見直します。固定報酬と売上連動分が混ざっているなら、見積もりの内訳を確認します。</p>
+<p>この説明の紙は、依頼した後の振り返りにも使います。予定した仕事と実際に行われた仕事、予定した指標と確認した結果を対応させます。未実施の仕事と、実施したが結果を確かめられていない仕事を分けると、次に社内で決めることも具体的になります。</p>
+<p>選定や依頼の段取りを外へ任せる場合は、この紙を渡して担当する仕事をすり合わせます。候補選びから投稿確認までの分担の考え方は、<a href="https://leam.co.jp/column/creator-casting-agency/">クリエイター起用を外注するときの依頼先と費用の型</a>を参照してください。</p>
+
+<h2 id="summary"><span class="no en">07</span>まとめ：人選の前に、払う仕事と確かめる結果をそろえる</h2>
+<p>社内説明では、比較表の「今回の依頼」に印を付け、ひな形へ移してください。販売に向けた紹介を頼むのか、認知に向けた投稿を頼むのかが決まれば、候補の選定理由と費用の内訳を確認できます。広告でも使う場合は、その取り決めを別に足します。</p>
+<p>次に進める状態は、候補の名前がそろった状態ではありません。目的に対して何を依頼し、何の対価を払い、どの結果を見るかを、社内と依頼先に同じ言葉で説明できる状態です。</p>
+
+<h2 id="faq"><span class="no en">08</span>よくある質問</h2>
+<div class="faq">
+<details><summary>PRの社内稟議と、TikTok Shopの商品紹介の稟議は分けて作るべきですか？</summary><div class="a">別々の書類にするかより、依頼する仕事と費用を区別できることが重要です。同じ紙でも、PR投稿への対価と商品の販売に連動する報酬を分けて書きます。主目的と、それに対応する指標も明示してください。</div></details>
+<details><summary>知名度を上げたい依頼でも、TikTok Shopの売上だけで評価してよいですか？</summary><div class="a">依頼した目的に合わせて評価します。認知を主目的にしたPRなら、投稿の実施と事前に決めた再生や反応などを確認します。販売も目的に加えるなら、対象商品と見る指標を依頼前に決め、別の欄で確認します。</div></details>
+<details><summary>制作費を払う商品紹介では、販売に連動する報酬の説明を省いてよいですか？</summary><div class="a">省かずに、制作・投稿の対価と、販売に連動する報酬を分けて説明します。固定報酬を加えた依頼でも、対象の商品と合意する条件を残すことで、何に支払うかを社内と依頼先でそろえられます。</div></details>
+<details><summary>Instagramで起用した人を、TikTok Shopでも候補に残せますか？</summary><div class="a">候補に残し、今回の目的に合う理由を確認します。過去のPRの評判だけで決めず、販売目的なら商材の販売記録や商品の説明内容も見ます。知ってもらう目的なら、伝えたいテーマや視聴者との相性を確認します。</div></details>
+<details><summary>紹介の投稿を受け取ったら、広告で使う仕事も完了したと扱えますか？</summary><div class="a">投稿の依頼と広告に使うための取り決めを分けます。紹介が行われた事実だけで広告利用まで完了とせず、対象の投稿、利用する範囲、費用の内訳を確認してください。</div></details>
+<details><summary>候補者の名簿がまだなくても、クリエイター施策を社内へ提案できますか？</summary><div class="a">目的、依頼する形、対象商品、見る指標、費目を先にまとめて提案できます。候補と人数の欄は決める事項として残し、どんな理由で選ぶかを書きます。先に依頼の中身をそろえると、その後の候補探しの条件になります。</div></details>
+</div>
+<div class="ctabox"><div class="ct">売上の記録で選んだクリエイターに、紹介を頼みたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-influencer-marketing">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-influencer-marketing&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2 id="sources"><span class="no en">09</span>参考にした公式情報</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトのコラボ機能の案内</a>（2026年10月29日確認）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164255504&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：日本の販売者利用規約</a>（2026年10月29日確認。開示ラベルとコンテンツの許諾範囲）</li><li><a href="https://www.caa.go.jp/policies/policy/representation/fair_labeling/faq/stealth_marketing/" target="_blank" rel="noopener noreferrer">消費者庁：ステルスマーケティングに関するQ&amp;A</a>（2026年10月29日確認）</li></ul>
+<p class="src">公式の画面名や条件は、上記の日本向け資料で確認したものです。比較表と社内説明のひな形は編集部の整理です。個別の取引が法令の規制に該当するかは、専門家・所管の窓口に確認してください。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み</a></b><span>コラボと条件の基本</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creator-commission/">クリエイター報酬の決め方</a></b><span>費用を検討する前提</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/what-is-tiktok-shop/">TikTok Shopの仕組み</a></b><span>社内で前提をそろえる</span></div><div class="relcard"><span class="rc">クリエイター起用</span><b><a href="https://leam.co.jp/column/creator-casting-agency/">クリエイター起用の外注</a></b><span>担当する作業と依頼先</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">クリエイター施策は、PR投稿・売上連動の紹介・広告への転用に分ける</a></li><li><a href="#s2">依頼する形は、払う根拠・選ぶ基準・測る指標・表示で比べる</a></li><li><a href="#s3">PRは投稿への対価、商品紹介は売上連動を基本に固定報酬も分けて考える</a></li><li><a href="#s4">InstagramのPRやタレント起用から変えるのは、選ぶ基準・測る指標・商品リンク</a></li><li><a href="#s5">最初の依頼は、販売を目指すなら商品紹介、認知を目指すならPR投稿から決める</a></li><li><a href="#s6">社内説明は、目的・形・人数・見る数字・費用を同じ紙にまとめる</a></li><li><a href="#summary">まとめ：人選の前に、払う仕事と確かめる結果をそろえる</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-influencer-marketing">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "PRの社内稟議と、TikTok Shopの商品紹介の稟議は分けて作るべきですか？", "acceptedAnswer": {"@type": "Answer", "text": "別々の書類にするかより、依頼する仕事と費用を区別できることが重要です。同じ紙でも、PR投稿への対価と商品の販売に連動する報酬を分けて書きます。主目的と、それに対応する指標も明示してください。"}}, {"@type": "Question", "name": "知名度を上げたい依頼でも、TikTok Shopの売上だけで評価してよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "依頼した目的に合わせて評価します。認知を主目的にしたPRなら、投稿の実施と事前に決めた再生や反応などを確認します。販売も目的に加えるなら、対象商品と見る指標を依頼前に決め、別の欄で確認します。"}}, {"@type": "Question", "name": "制作費を払う商品紹介では、販売に連動する報酬の説明を省いてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "省かずに、制作・投稿の対価と、販売に連動する報酬を分けて説明します。固定報酬を加えた依頼でも、対象の商品と合意する条件を残すことで、何に支払うかを社内と依頼先でそろえられます。"}}, {"@type": "Question", "name": "Instagramで起用した人を、TikTok Shopでも候補に残せますか？", "acceptedAnswer": {"@type": "Answer", "text": "候補に残し、今回の目的に合う理由を確認します。過去のPRの評判だけで決めず、販売目的なら商材の販売記録や商品の説明内容も見ます。知ってもらう目的なら、伝えたいテーマや視聴者との相性を確認します。"}}, {"@type": "Question", "name": "紹介の投稿を受け取ったら、広告で使う仕事も完了したと扱えますか？", "acceptedAnswer": {"@type": "Answer", "text": "投稿の依頼と広告に使うための取り決めを分けます。紹介が行われた事実だけで広告利用まで完了とせず、対象の投稿、利用する範囲、費用の内訳を確認してください。"}}, {"@type": "Question", "name": "候補者の名簿がまだなくても、クリエイター施策を社内へ提案できますか？", "acceptedAnswer": {"@type": "Answer", "text": "目的、依頼する形、対象商品、見る指標、費目を先にまとめて提案できます。候補と人数の欄は決める事項として残し、どんな理由で選ぶかを書きます。先に依頼の中身をそろえると、その後の候補探しの条件になります。"}}]}</script>
+</body>
+</html>
