@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTok Shopのカテゴリー別市場データ｜規模と売れ方（2026年10月）</title>
+<meta name="description" content="TikTok Shopのカテゴリー別の売上規模（2026年10月29日時点・直近30日の当社集計）。上位20分類の規模、ライブと動画の比重、クリエイター経由の売上、上位店への集中度を表で示します。">
+<link rel="canonical" href="https://leam.co.jp/column/category-market-data/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTok Shopのカテゴリー別市場データ｜規模と売れ方（2026年10月）">
+<meta property="og:description" content="TikTok Shopのカテゴリー別の売上規模（2026年10月29日時点・直近30日の当社集計）。上位20分類の規模、ライブと動画の比重、クリエイター経由の売上、上位店への集中度を表で示します。">
+<meta property="og:url" content="https://leam.co.jp/column/category-market-data/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/category-market-data.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTok Shopのカテゴリー別市場データ｜規模と売れ方（2026年10月）">
+<meta name="twitter:description" content="TikTok Shopのカテゴリー別の売上規模（2026年10月29日時点・直近30日の当社集計）。上位20分類の規模、ライブと動画の比重、クリエイター経由の売上、上位店への集中度を表で示します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/category-market-data.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTok Shopのカテゴリー別市場データ｜規模と売れ方（2026年10月）", "description": "TikTok Shopのカテゴリー別の売上規模（2026年10月29日時点・直近30日の当社集計）。上位20分類の規模、ライブと動画の比重、クリエイター経由の売上、上位店への集中度を表で示します。", "inLanguage": "ja", "datePublished": "2026-10-30", "dateModified": "2026-10-30", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/category-market-data/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/category-market-data.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&lang=ja-JP", "name": "TikTok Shop公式：データ分析の概要"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTok Shopのカテゴリー別市場データ｜規模と売れ方（2026年10月）", "item": "https://leam.co.jp/column/category-market-data/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=category-market-data">無料相談</a></div>
+<div class="shell">
+<article>
+<p class="crumb"><a href="https://leam.co.jp/">TOP</a> › <a href="https://leam.co.jp/column/">コラム</a> › TikTok Shopのカテゴリー別市場データ｜売上規模と売れ方（2026年10月）</p>
+<span class="cat">市場データ</span>
+<h1>TikTok Shopのカテゴリー別市場データ｜売上規模と売れ方（2026年10月）</h1>
+<div class="meta"><time class="upd" datetime="2026-10-30">更新日：2026年10月30日</time><time datetime="2026-10-30">公開日：2026年10月30日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div>
+
+  <figure style="margin:0 0 26px">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="高さの違う5本の柱の上に口紅、食品の瓶、おもちゃの積み木、Tシャツ、バッグが載ってカテゴリーごとの売上規模の違いを表し、右に一つの色が大きく占めるドーナツ形のグラフと、毎月めくるカレンダーが並ぶイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="868" cy="246" rx="316" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="categorymarketdataDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#categorymarketdataDots" transform="translate(944 542)"/></g>
+<g stroke="#0B0C10" stroke-linejoin="round" stroke-linecap="round">
+<g fill="#5E6064" opacity=".13" stroke="none" transform="translate(9 11)"><rect x="110" y="210" width="86" height="290" rx="10"/><rect x="226" y="290" width="86" height="210" rx="10"/><rect x="342" y="310" width="86" height="190" rx="10"/><rect x="458" y="360" width="86" height="140" rx="10"/><rect x="574" y="392" width="86" height="108" rx="10"/></g>
+<rect x="110" y="210" width="86" height="290" rx="10" fill="#CE1730" stroke-width="7"/>
+<path d="M131 232v250" fill="none" stroke="#FE2C55" stroke-width="12"/>
+<rect x="226" y="290" width="86" height="210" rx="10" fill="#FFFFFF" stroke-width="7"/>
+<rect x="342" y="310" width="86" height="190" rx="10" fill="#FFFFFF" stroke-width="7"/>
+<rect x="458" y="360" width="86" height="140" rx="10" fill="#FFFFFF" stroke-width="7"/>
+<rect x="574" y="392" width="86" height="108" rx="10" fill="#FFFFFF" stroke-width="7"/>
+<path d="M247 312v170M363 332v150M479 382v100M595 414v68" fill="none" stroke="#DFE0E2" stroke-width="12"/>
+<path d="M141 164V128l24-14v50z" fill="#FE2C55" stroke-width="5"/>
+<rect x="135" y="164" width="36" height="46" rx="5" fill="#FFFFFF" stroke-width="6"/>
+<path d="M135 178h36" fill="none" stroke-width="4"/>
+<rect x="241" y="220" width="56" height="16" rx="5" fill="#FE2C55" stroke-width="5"/>
+<rect x="245" y="236" width="48" height="54" rx="9" fill="#FFFFFF" stroke-width="6"/>
+<rect x="245" y="252" width="48" height="20" fill="#25F4EE" stroke-width="4"/>
+<rect x="349" y="272" width="38" height="38" rx="5" fill="#25F4EE" stroke-width="5"/>
+<rect x="387" y="272" width="38" height="38" rx="5" fill="#FFFFFF" stroke-width="5"/>
+<rect x="368" y="234" width="38" height="38" rx="5" fill="#FE2C55" stroke-width="5"/>
+<circle cx="406" cy="291" r="7" fill="#DFE0E2" stroke-width="4"/>
+<g transform="translate(501 325) scale(1.22) translate(-501 -329)"><path d="M471 314l16-12h28l16 12 12 14-12 9-6-5v24h-48v-24l-6 5-12-9z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M492 302q9 10 18 0" fill="none" stroke-width="4"/>
+<path d="M480 342h42" fill="none" stroke="#25F4EE" stroke-width="7"/></g>
+<path d="M603 350v-8q0-16 14-16t14 16v8" fill="none" stroke-width="6"/>
+<rect x="589" y="350" width="56" height="42" rx="8" fill="#FE2C55" stroke-width="6"/>
+<rect x="611" y="362" width="12" height="9" rx="2" fill="#FFFFFF" stroke-width="4"/>
+<path d="M92 503H682" fill="none" stroke-width="7"/>
+<path d="M694 285h30v-17l30 27-30 27v-17h-30z" fill="#25F4EE" stroke-width="5"/>
+<circle cx="914" cy="273" r="128" fill="#5E6064" stroke="none" opacity=".13"/>
+<circle cx="905" cy="262" r="60" fill="#FFFFFF" stroke-width="5"/>
+<path d="M905.0 134.0A128 128 0 1 1 783.3 301.6L847.9 280.5A60 60 0 1 0 905.0 202.0Z" fill="#FE2C55" stroke-width="6"/>
+<path d="M783.3 301.6A128 128 0 0 1 794.1 198.0L853.0 232.0A60 60 0 0 0 847.9 280.5Z" fill="#25F4EE" stroke-width="6"/>
+<path d="M794.1 198.0A128 128 0 0 1 841.0 151.1L875.0 210.0A60 60 0 0 0 853.0 232.0Z" fill="#DFE0E2" stroke-width="6"/>
+<path d="M841.0 151.1A128 128 0 0 1 905.0 134.0L905.0 202.0A60 60 0 0 0 875.0 210.0Z" fill="#C9CBD0" stroke-width="6"/>
+<path d="M968 172a92 92 0 0 1 22 40" fill="none" stroke="#FFFFFF" stroke-width="7"/>
+<rect x="1010" y="372" width="150" height="122" rx="12" fill="#5E6064" stroke="none" opacity=".13" transform="translate(9 11)"/>
+<rect x="1010" y="372" width="150" height="122" rx="12" fill="#FFFFFF" stroke-width="6"/>
+<path d="M1010 404v-20q0-12 12-12h126q12 0 12 12v20z" fill="#FE2C55" stroke-width="6"/>
+<rect x="1040" y="358" width="11" height="26" rx="5" fill="#0B0C10" stroke="none"/>
+<rect x="1119" y="358" width="11" height="26" rx="5" fill="#0B0C10" stroke="none"/>
+<g fill="#DFE0E2" stroke="none"><rect x="1028" y="420" width="22" height="18" rx="4"/><rect x="1058" y="420" width="22" height="18" rx="4"/><rect x="1088" y="420" width="22" height="18" rx="4"/><rect x="1118" y="420" width="22" height="18" rx="4"/><rect x="1028" y="450" width="22" height="18" rx="4"/><rect x="1058" y="450" width="22" height="18" rx="4"/><rect x="1118" y="450" width="22" height="18" rx="4"/></g>
+<rect x="1088" y="450" width="22" height="18" rx="4" fill="#25F4EE" stroke-width="4"/>
+</g>
+<circle cx="1128" cy="96" r="15" fill="#FE2C55"/>
+<circle cx="560" cy="150" r="12" fill="#25F4EE"/>
+<circle cx="742" cy="452" r="13" fill="#DFE0E2"/>
+</svg>
+    <figcaption>カテゴリーごとの売上の規模と上位の店への集まり方を、毎月同じ形で追う（LEAM作成）</figcaption>
+  </figure>
+<p class="lead"><strong>TikTok Shopで売上規模が最も大きいカテゴリーは美容・パーソナルケアで、直近30日の売上は月約21億円でした。</strong>レディースファッション・インナーが月約13億円、食品・ドリンクが月約12億円で続きます。数字は、当社が毎営業日蓄積している TikTok Shop の販売データの集計（2026年10月29日時点・直近30日）です。上位20の分類の規模、売り方、誰の発信から売れたか、上位の店への集中度を表にまとめ、毎月差し替えます。</p>
+<div class="learn"><div class="lt">▼ 要点3つ（2026年10月29日時点・直近30日）</div><ul><li><strong>規模</strong>：美容・パーソナルケアが月約21億円で最も大きく、レディースファッション・インナー（約13億円）と食品・ドリンク（約12億円）が続く</li><li><strong>売り方と発信</strong>：食品とおもちゃはライブ、スマホ・メンズ・車・バッグ・美容家電は動画が中心。美容と食品はクリエイター経由の売上が大きい</li><li><strong>集中度</strong>：上位10店の売上シェアは美顔器94%・美容家電70%と高く、ファッション小物23%・スマホ・デジタル機器25%は低い</li></ul></div>
+
+<div class="rel">
+  <div class="rt">RELATED ─ あわせて読みたい</div>
+  <div class="relgrid">
+    <div class="relcard"><span class="rc">商品選び</span><b><a href="https://leam.co.jp/column/best-categories/">TikTok Shopで売れるものは？商品カテゴリーの選び方</a></b><span>参入するカテゴリーの決め方</span></div>
+    <div class="relcard"><span class="rc">市場</span><b><a href="https://leam.co.jp/column/market-outlook/">TikTok Shopの市場規模と今後｜日本市場はどこまで伸びるか</a></b><span>日本と世界の市場規模の公表値</span></div>
+    <div class="relcard"><span class="rc">ライブ</span><b><a href="https://leam.co.jp/column/live-commerce-guide/">TikTok Shopライブコマース入門｜やり方と準備</a></b><span>ライブが大きい分類の配信</span></div>
+  </div>
+</div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">売上規模が最も大きいのは美容・パーソナルケアで、直近30日で月約21億円</a></li><li><a href="#s2">売り方は、食品とおもちゃがライブ、スマホ・メンズ・車・バッグ・美容家電は動画が中心</a></li><li><a href="#s3">発信では、美容・食品はクリエイター経由、おもちゃは自社アカウントが大きい</a></li><li><a href="#s4">上位10店への集中度は、美顔器94%からファッション小物23%まで分類で違う</a></li><li><a href="#s5">金額は丸めた30日の合計なので、大分類と小分類を足さずに読む</a></li><li><a href="#s6">自社と比べるときは、セラーセンターで期間と切り口をそろえる</a></li><li><a href="#s7">売り方と発信を重ねて、先に用意するものと次に読む記事を選ぶ</a></li><li><a href="#s8">数字は毎月、同じ集計の形で差し替える</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>売上規模が最も大きいのは美容・パーソナルケアで、直近30日で月約21億円</h2>
+<p>表1は、当社集計で直近30日の売上規模が大きかった上位20の分類です。大分類はいちばん大きな分け方で、小分類はその一段下、細分類はさらに下です。表には、どの大分類の中にあるかも書きました。</p>
+<p>大分類だけで見ると、<strong>美容・パーソナルケアが月約21億円で最も大きく</strong>、レディースファッション・インナーが約13億円、食品・ドリンクが約12億円で続きます。おもちゃ・ホビーと日用雑貨は約7億円、スマホ・デジタル機器は約6億円です。</p>
+<div class="tw"><table><thead><tr><th>分類</th><th>段階（含まれる大分類）</th><th>直近30日の売上規模</th></tr></thead><tbody><tr><td>美容・パーソナルケア</td><td>大分類</td><td class="num">約21億円</td></tr><tr><td>レディースファッション・インナー</td><td>大分類</td><td class="num">約13億円</td></tr><tr><td>食品・ドリンク</td><td>大分類</td><td class="num">約12億円</td></tr><tr><td>レディーストップス</td><td>小分類（レディースファッション・インナー）</td><td class="num">約8億円</td></tr><tr><td>おもちゃ・ホビー</td><td>大分類</td><td class="num">約7億円</td></tr><tr><td>日用雑貨</td><td>大分類</td><td class="num">約7億円</td></tr><tr><td>美容家電</td><td>小分類（美容・パーソナルケア）</td><td class="num">約6億円</td></tr><tr><td>クラシック玩具・ノベルティ玩具</td><td>小分類（おもちゃ・ホビー）</td><td class="num">約6億円</td></tr><tr><td>スマホ・デジタル機器</td><td>大分類</td><td class="num">約6億円</td></tr><tr><td>ストレス解消グッズ</td><td>細分類（おもちゃ・ホビー）</td><td class="num">約5億円</td></tr><tr><td>メンズファッション・インナー</td><td>大分類</td><td class="num">約5億円</td></tr><tr><td>スキンケア</td><td>小分類（美容・パーソナルケア）</td><td class="num">約5億円</td></tr><tr><td>生鮮・冷凍食品</td><td>小分類（食品・ドリンク）</td><td class="num">約5億円</td></tr><tr><td>メイクアップ</td><td>小分類（美容・パーソナルケア）</td><td class="num">約4億円</td></tr><tr><td>車・バイク</td><td>大分類</td><td class="num">約4億円</td></tr><tr><td>健康</td><td>大分類</td><td class="num">約4億円</td></tr><tr><td>栄養・ウェルネス</td><td>小分類（健康）</td><td class="num">約4億円</td></tr><tr><td>ファッション小物</td><td>大分類</td><td class="num">約3億円</td></tr><tr><td>バッグ・スーツケース</td><td>大分類</td><td class="num">約3億円</td></tr><tr><td>美顔器</td><td>細分類（美容・パーソナルケア）</td><td class="num">約3億円</td></tr></tbody></table></div><p class="src">表1：上位20の分類の売上規模（当社集計・2026年10月29日時点・直近30日。小分類と細分類は大分類の内数）</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="categorymarketdataScale" viewBox="0 0 720 486" role="img" aria-label="当社集計の大分類11の直近30日の売上規模を横棒で並べ、美容・パーソナルケアの約21億円が最も長く、レディースファッション・インナーと食品・ドリンクが続き、ファッション小物とバッグ・スーツケースが約3億円で最も短いことを示した図"><text x="360" y="34" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">大分類の売上規模（直近30日・当社集計）</text><text x="240" y="82" text-anchor="end" font-size="14" fill="#0B0C10">美容・パーソナルケア</text><rect x="252" y="67" width="378.0" height="20" rx="4" fill="#FE2C55"/><text x="638" y="82" font-size="14" font-weight="700" fill="#0B0C10">約21億円</text><text x="240" y="116" text-anchor="end" font-size="14" fill="#0B0C10">レディースファッション・インナー</text><rect x="252" y="101" width="234.0" height="20" rx="4" fill="#25F4EE"/><text x="494" y="116" font-size="14" font-weight="700" fill="#0B0C10">約13億円</text><text x="240" y="150" text-anchor="end" font-size="14" fill="#0B0C10">食品・ドリンク</text><rect x="252" y="135" width="216.0" height="20" rx="4" fill="#25F4EE"/><text x="476" y="150" font-size="14" font-weight="700" fill="#0B0C10">約12億円</text><text x="240" y="184" text-anchor="end" font-size="14" fill="#0B0C10">おもちゃ・ホビー</text><rect x="252" y="169" width="126.0" height="20" rx="4" fill="#25F4EE"/><text x="386" y="184" font-size="14" font-weight="700" fill="#0B0C10">約7億円</text><text x="240" y="218" text-anchor="end" font-size="14" fill="#0B0C10">日用雑貨</text><rect x="252" y="203" width="126.0" height="20" rx="4" fill="#25F4EE"/><text x="386" y="218" font-size="14" font-weight="700" fill="#0B0C10">約7億円</text><text x="240" y="252" text-anchor="end" font-size="14" fill="#0B0C10">スマホ・デジタル機器</text><rect x="252" y="237" width="108.0" height="20" rx="4" fill="#25F4EE"/><text x="368" y="252" font-size="14" font-weight="700" fill="#0B0C10">約6億円</text><text x="240" y="286" text-anchor="end" font-size="14" fill="#0B0C10">メンズファッション・インナー</text><rect x="252" y="271" width="90.0" height="20" rx="4" fill="#25F4EE"/><text x="350" y="286" font-size="14" font-weight="700" fill="#0B0C10">約5億円</text><text x="240" y="320" text-anchor="end" font-size="14" fill="#0B0C10">車・バイク</text><rect x="252" y="305" width="72.0" height="20" rx="4" fill="#25F4EE"/><text x="332" y="320" font-size="14" font-weight="700" fill="#0B0C10">約4億円</text><text x="240" y="354" text-anchor="end" font-size="14" fill="#0B0C10">健康</text><rect x="252" y="339" width="72.0" height="20" rx="4" fill="#25F4EE"/><text x="332" y="354" font-size="14" font-weight="700" fill="#0B0C10">約4億円</text><text x="240" y="388" text-anchor="end" font-size="14" fill="#0B0C10">ファッション小物</text><rect x="252" y="373" width="54.0" height="20" rx="4" fill="#25F4EE"/><text x="314" y="388" font-size="14" font-weight="700" fill="#0B0C10">約3億円</text><text x="240" y="422" text-anchor="end" font-size="14" fill="#0B0C10">バッグ・スーツケース</text><rect x="252" y="407" width="54.0" height="20" rx="4" fill="#25F4EE"/><text x="314" y="422" font-size="14" font-weight="700" fill="#0B0C10">約3億円</text><text x="360" y="464" text-anchor="middle" font-size="12.5" fill="#5E6064">小分類（美容家電・スキンケアなど）は大分類に含まれるので、この図には入れていない</text></svg><figcaption>図1：大分類の売上規模。小分類は大分類に含まれるので入れていない（当社集計をもとにLEAM作成）</figcaption></figure>
+<p>小分類にも、大分類と並ぶ規模のものがあります。美容・パーソナルケアの中の美容家電は約6億円で、大分類のスマホ・デジタル機器（約6億円）と同じくらいです。おもちゃ・ホビーの約7億円のうち、約6億円はクラシック玩具・ノベルティ玩具の売上です。</p>
+<p>店の数は、日用雑貨（5,076店）と美容・パーソナルケア（4,826店）が多く、生鮮・冷凍食品（401店）と美顔器（250店）は少なめです。店の数と上位の店への集まり方は、§04の表4で見ます。</p>
+
+<h2 id="s2"><span class="no en">02</span>売り方は、食品とおもちゃがライブ、スマホ・メンズ・車・バッグ・美容家電は動画が中心</h2>
+<p>売り方は、ライブ、動画、ショーケース、商品棚の4つに分けています。ショーケースは、アカウントのプロフィールに並ぶ商品の一覧のことです（<a href="https://leam.co.jp/column/showcase-guide/">ショーケースの仕組み</a>）。商品棚は、ショップの商品ページや検索など、動画やライブを経由しない売上を指します。</p>
+<p>ライブが最も大きいのは、<strong>食品・ドリンク（ライブ約6億円・動画約5億円）と、おもちゃ・ホビー（ライブ約4億円・動画約1億円）</strong>です。小分類のクラシック玩具・ノベルティ玩具、生鮮・冷凍食品、スキンケアなどと、大分類の健康も同じ形です。</p>
+<div class="tw"><table><thead><tr><th>分類</th><th>ライブ</th><th>動画</th><th>ショーケース</th><th>商品棚</th></tr></thead><tbody><tr><td>美容・パーソナルケア</td><td class="num">約7億円</td><td class="num">約10億円</td><td class="num">約3億円</td><td class="num">約2億円</td></tr><tr><td>レディースファッション・インナー</td><td class="num">約4億円</td><td class="num">約5億円</td><td class="num">約4億円</td><td class="num">約3億円</td></tr><tr><td>食品・ドリンク</td><td class="num">約6億円</td><td class="num">約5億円</td><td class="num">約1億円</td><td class="num">約8,453万円</td></tr><tr><td>レディーストップス</td><td class="num">約2億円</td><td class="num">約3億円</td><td class="num">約3億円</td><td class="num">約2億円</td></tr><tr><td>おもちゃ・ホビー</td><td class="num">約4億円</td><td class="num">約1億円</td><td class="num">約1億円</td><td class="num">約8,634万円</td></tr><tr><td>日用雑貨</td><td class="num">約2億円</td><td class="num">約4億円</td><td class="num">約2億円</td><td class="num">約1億円</td></tr><tr><td>美容家電</td><td class="num">約2億円</td><td class="num">約4億円</td><td class="num">約5,929万円</td><td class="num">約3,878万円</td></tr><tr><td>クラシック玩具・ノベルティ玩具</td><td class="num">約4億円</td><td class="num">約1億円</td><td class="num">約9,192万円</td><td class="num">約6,668万円</td></tr><tr><td>スマホ・デジタル機器</td><td class="num">約8,952万円</td><td class="num">約4億円</td><td class="num">約1億円</td><td class="num">約6,842万円</td></tr><tr><td>ストレス解消グッズ</td><td class="num">約3億円</td><td class="num">約1億円</td><td class="num">約7,813万円</td><td class="num">約5,632万円</td></tr><tr><td>メンズファッション・インナー</td><td class="num">約4,996万円</td><td class="num">約3億円</td><td class="num">約1億円</td><td class="num">約8,609万円</td></tr><tr><td>スキンケア</td><td class="num">約2億円</td><td class="num">約1億円</td><td class="num">約1億円</td><td class="num">約1億円</td></tr><tr><td>生鮮・冷凍食品</td><td class="num">約3億円</td><td class="num">約2億円</td><td class="num">約3,725万円</td><td class="num">約2,656万円</td></tr><tr><td>メイクアップ</td><td class="num">約2億円</td><td class="num">約2億円</td><td class="num">約5,405万円</td><td class="num">約3,425万円</td></tr><tr><td>車・バイク</td><td class="num">約6,120万円</td><td class="num">約3億円</td><td class="num">約4,882万円</td><td class="num">約3,133万円</td></tr><tr><td>健康</td><td class="num">約2億円</td><td class="num">約1億円</td><td class="num">約8,978万円</td><td class="num">約7,557万円</td></tr><tr><td>栄養・ウェルネス</td><td class="num">約2億円</td><td class="num">約1億円</td><td class="num">約8,809万円</td><td class="num">約7,475万円</td></tr><tr><td>ファッション小物</td><td class="num">約9,439万円</td><td class="num">約1億円</td><td class="num">約1億円</td><td class="num">約8,610万円</td></tr><tr><td>バッグ・スーツケース</td><td class="num">約8,507万円</td><td class="num">約2億円</td><td class="num">約8,741万円</td><td class="num">約5,999万円</td></tr><tr><td>美顔器</td><td class="num">約8,033万円</td><td class="num">約2億円</td><td class="num">約2,230万円</td><td class="num">約1,630万円</td></tr></tbody></table></div><p class="src">表2：売り方ごとの売上（当社集計・同じ時点）</p>
+<p>動画が最も大きいのは、スマホ・デジタル機器（動画約4億円・ライブ約8,952万円）と、メンズファッション・インナー（動画約3億円・ライブ約4,996万円）です。車・バイク、バッグ・スーツケース、美容家電、日用雑貨も動画が中心です。美容・パーソナルケアも、動画約10億円がライブ約7億円を上回ります。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="categorymarketdataLiveVideo" viewBox="0 0 720 588" role="img" aria-label="ライブが最も大きい4分類と動画が最も大きい6分類について、ライブの売上を赤、動画の売上をシアンの横棒で上下に並べ、食品・ドリンクやおもちゃ・ホビーでは赤が長く、スマホ・デジタル機器やメンズファッション・インナーではシアンが長いことを示した図"><text x="360" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">ライブと動画、どちらの売上が大きいか（当社集計）</text><rect x="262" y="47" width="16" height="12" rx="2" fill="#FE2C55"/><text x="284" y="58" font-size="13" fill="#0B0C10">ライブ</text><rect x="352" y="47" width="16" height="12" rx="2" fill="#25F4EE"/><text x="374" y="58" font-size="13" fill="#0B0C10">動画</text><text x="20" y="88" font-size="13.5" font-weight="700" fill="#0B0C10">ライブが最も大きい分類</text><text x="220" y="118" text-anchor="end" font-size="13" fill="#0B0C10">食品・ドリンク</text><rect x="232" y="100" width="228.0" height="13" rx="3" fill="#FE2C55"/><text x="466" y="111" font-size="12" fill="#0B0C10">約6億円</text><rect x="232" y="116" width="190.0" height="13" rx="3" fill="#25F4EE"/><text x="428" y="127" font-size="12" fill="#0B0C10">約5億円</text><text x="220" y="160" text-anchor="end" font-size="13" fill="#0B0C10">おもちゃ・ホビー</text><rect x="232" y="142" width="152.0" height="13" rx="3" fill="#FE2C55"/><text x="390" y="153" font-size="12" fill="#0B0C10">約4億円</text><rect x="232" y="158" width="38.0" height="13" rx="3" fill="#25F4EE"/><text x="276" y="169" font-size="12" fill="#0B0C10">約1億円</text><text x="220" y="202" text-anchor="end" font-size="13" fill="#0B0C10">クラシック玩具・ノベルティ玩具</text><rect x="232" y="184" width="152.0" height="13" rx="3" fill="#FE2C55"/><text x="390" y="195" font-size="12" fill="#0B0C10">約4億円</text><rect x="232" y="200" width="38.0" height="13" rx="3" fill="#25F4EE"/><text x="276" y="211" font-size="12" fill="#0B0C10">約1億円</text><text x="220" y="244" text-anchor="end" font-size="13" fill="#0B0C10">生鮮・冷凍食品</text><rect x="232" y="226" width="114.0" height="13" rx="3" fill="#FE2C55"/><text x="352" y="237" font-size="12" fill="#0B0C10">約3億円</text><rect x="232" y="242" width="76.0" height="13" rx="3" fill="#25F4EE"/><text x="314" y="253" font-size="12" fill="#0B0C10">約2億円</text><text x="20" y="288" font-size="13.5" font-weight="700" fill="#0B0C10">動画が最も大きい分類</text><text x="220" y="318" text-anchor="end" font-size="13" fill="#0B0C10">美容・パーソナルケア</text><rect x="232" y="300" width="266.0" height="13" rx="3" fill="#FE2C55"/><text x="504" y="311" font-size="12" fill="#0B0C10">約7億円</text><rect x="232" y="316" width="380.0" height="13" rx="3" fill="#25F4EE"/><text x="618" y="327" font-size="12" fill="#0B0C10">約10億円</text><text x="220" y="360" text-anchor="end" font-size="13" fill="#0B0C10">美容家電</text><rect x="232" y="342" width="76.0" height="13" rx="3" fill="#FE2C55"/><text x="314" y="353" font-size="12" fill="#0B0C10">約2億円</text><rect x="232" y="358" width="152.0" height="13" rx="3" fill="#25F4EE"/><text x="390" y="369" font-size="12" fill="#0B0C10">約4億円</text><text x="220" y="402" text-anchor="end" font-size="13" fill="#0B0C10">スマホ・デジタル機器</text><rect x="232" y="384" width="34.0" height="13" rx="3" fill="#FE2C55"/><text x="272.018" y="395" font-size="12" fill="#0B0C10">約8,952万円</text><rect x="232" y="400" width="152.0" height="13" rx="3" fill="#25F4EE"/><text x="390" y="411" font-size="12" fill="#0B0C10">約4億円</text><text x="220" y="444" text-anchor="end" font-size="13" fill="#0B0C10">メンズファッション</text><rect x="232" y="426" width="19.0" height="13" rx="3" fill="#FE2C55"/><text x="256.985" y="437" font-size="12" fill="#0B0C10">約4,996万円</text><rect x="232" y="442" width="114.0" height="13" rx="3" fill="#25F4EE"/><text x="352" y="453" font-size="12" fill="#0B0C10">約3億円</text><text x="220" y="486" text-anchor="end" font-size="13" fill="#0B0C10">車・バイク</text><rect x="232" y="468" width="23.3" height="13" rx="3" fill="#FE2C55"/><text x="261.256" y="479" font-size="12" fill="#0B0C10">約6,120万円</text><rect x="232" y="484" width="114.0" height="13" rx="3" fill="#25F4EE"/><text x="352" y="495" font-size="12" fill="#0B0C10">約3億円</text><text x="220" y="528" text-anchor="end" font-size="13" fill="#0B0C10">バッグ・スーツケース</text><rect x="232" y="510" width="32.3" height="13" rx="3" fill="#FE2C55"/><text x="270.327" y="521" font-size="12" fill="#0B0C10">約8,507万円</text><rect x="232" y="526" width="76.0" height="13" rx="3" fill="#25F4EE"/><text x="314" y="537" font-size="12" fill="#0B0C10">約2億円</text><text x="360" y="570" text-anchor="middle" font-size="12.5" fill="#5E6064">ショーケースと商品棚の金額は表2に載せている</text></svg><figcaption>図2：ライブと動画の売上の大きさ（当社集計をもとにLEAM作成）</figcaption></figure>
+<p>レディースファッション・インナーとファッション小物は、4つの売り方の差が小さい分類です。ファッション小物は、ライブ約9,439万円、動画とショーケースが約1億円ずつ、商品棚が約8,610万円でした。どの売り方から始めるかを、自社の体制で選びやすい形です。ライブの始め方は<a href="https://leam.co.jp/column/live-commerce-guide/">ライブコマース入門</a>にあります。</p>
+
+<h2 id="s3"><span class="no en">03</span>発信では、美容・食品はクリエイター経由、おもちゃは自社アカウントが大きい</h2>
+<p>もう1つの切り口は、誰の発信から売れたかです。クリエイター経由は、クリエイターが商品を紹介し、売れた分に応じて報酬を受け取る仕組み（アフィリエイト）を通った売上です。自社アカウントは、販売する店が自分のアカウントで出した動画やライブなどからの売上です。</p>
+<p>クリエイター経由が大きいのは、<strong>美容・パーソナルケア（約16億円）と食品・ドリンク（約10億円）</strong>です。美容家電は、クリエイター経由が約6億円、自社アカウントが約3,547万円で、差が大きい分類です。美顔器（約3億円と約422万円）と車・バイク（約3億円と約8,021万円）も同じ形です。仕組みは<a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの解説</a>にあります。</p>
+<div class="tw"><table><thead><tr><th>分類</th><th>クリエイター経由</th><th>自社アカウント</th></tr></thead><tbody><tr><td>美容・パーソナルケア</td><td class="num">約16億円</td><td class="num">約2億円</td></tr><tr><td>レディースファッション・インナー</td><td class="num">約5億円</td><td class="num">約5億円</td></tr><tr><td>食品・ドリンク</td><td class="num">約10億円</td><td class="num">約1億円</td></tr><tr><td>レディーストップス</td><td class="num">約3億円</td><td class="num">約3億円</td></tr><tr><td>おもちゃ・ホビー</td><td class="num">約2億円</td><td class="num">約4億円</td></tr><tr><td>日用雑貨</td><td class="num">約4億円</td><td class="num">約2億円</td></tr><tr><td>美容家電</td><td class="num">約6億円</td><td class="num">約3,547万円</td></tr><tr><td>クラシック玩具・ノベルティ玩具</td><td class="num">約2億円</td><td class="num">約3億円</td></tr><tr><td>スマホ・デジタル機器</td><td class="num">約4億円</td><td class="num">約1億円</td></tr><tr><td>ストレス解消グッズ</td><td class="num">約2億円</td><td class="num">約3億円</td></tr><tr><td>メンズファッション・インナー</td><td class="num">約2億円</td><td class="num">約2億円</td></tr><tr><td>スキンケア</td><td class="num">約3億円</td><td class="num">約5,412万円</td></tr><tr><td>生鮮・冷凍食品</td><td class="num">約4億円</td><td class="num">約5,958万円</td></tr><tr><td>メイクアップ</td><td class="num">約3億円</td><td class="num">約5,595万円</td></tr><tr><td>車・バイク</td><td class="num">約3億円</td><td class="num">約8,021万円</td></tr><tr><td>健康</td><td class="num">約3億円</td><td class="num">約4,119万円</td></tr><tr><td>栄養・ウェルネス</td><td class="num">約2億円</td><td class="num">約3,571万円</td></tr><tr><td>ファッション小物</td><td class="num">約1億円</td><td class="num">約1億円</td></tr><tr><td>バッグ・スーツケース</td><td class="num">約2億円</td><td class="num">約8,844万円</td></tr><tr><td>美顔器</td><td class="num">約3億円</td><td class="num">約422万円</td></tr></tbody></table></div><p class="src">表3：誰の発信から売れたか（当社集計・同じ時点）</p>
+<p>自社アカウントの売上が大きいのは、レディースファッション・インナー（約5億円）とおもちゃ・ホビー（約4億円）です。この表の大分類で、自社アカウントがクリエイター経由を上回るのは、おもちゃ・ホビーだけです。レディースファッション・インナーは、クリエイター経由も約5億円で並んでいます。</p>
+<p>売り方と発信は、同じ売上を別の物差しで分けたものです。ライブの売上にはクリエイターのライブも自社のライブも入るので、表2と表3の数字は足し合わせません。2つを重ねた読み方は§07で扱います。</p>
+
+<h2 id="s4"><span class="no en">04</span>上位10店への集中度は、美顔器94%からファッション小物23%まで分類で違う</h2>
+<p>集中度は、その分類の売上のうち、売上の大きい上位10店と上位3店が占める割合です。高いほど、売上が少数の店に集まっています。シェアは丸める前の値から出し、整数に丸めて示しました。</p>
+<p>集中度が高いのは、<strong>美顔器（上位10店94%・上位3店81%）、美容家電（70%・46%）、生鮮・冷凍食品（65%・37%）</strong>です。低いのは、ファッション小物（23%・12%）、スマホ・デジタル機器（25%・9%）、メンズファッション・インナー（27%・15%）です。</p>
+<div class="tw"><table><thead><tr><th>分類</th><th>上位10店のシェア</th><th>上位3店のシェア</th><th>店の数</th><th>店平均の売上</th></tr></thead><tbody><tr><td>美顔器</td><td class="num">94%</td><td class="num">81%</td><td class="num">250</td><td class="num">約110万円</td></tr><tr><td>美容家電</td><td class="num">70%</td><td class="num">46%</td><td class="num">1,389</td><td class="num">約46万円</td></tr><tr><td>生鮮・冷凍食品</td><td class="num">65%</td><td class="num">37%</td><td class="num">401</td><td class="num">約124万円</td></tr><tr><td>栄養・ウェルネス</td><td class="num">64%</td><td class="num">30%</td><td class="num">504</td><td class="num">約71万円</td></tr><tr><td>健康</td><td class="num">60%</td><td class="num">28%</td><td class="num">687</td><td class="num">約56万円</td></tr><tr><td>車・バイク</td><td class="num">53%</td><td class="num">33%</td><td class="num">2,550</td><td class="num">約15万円</td></tr><tr><td>スキンケア</td><td class="num">50%</td><td class="num">29%</td><td class="num">1,137</td><td class="num">約42万円</td></tr><tr><td>ストレス解消グッズ</td><td class="num">49%</td><td class="num">25%</td><td class="num">911</td><td class="num">約56万円</td></tr><tr><td>クラシック玩具・ノベルティ玩具</td><td class="num">46%</td><td class="num">22%</td><td class="num">1,291</td><td class="num">約45万円</td></tr><tr><td>メイクアップ</td><td class="num">41%</td><td class="num">20%</td><td class="num">1,447</td><td class="num">約29万円</td></tr><tr><td>おもちゃ・ホビー</td><td class="num">39%</td><td class="num">19%</td><td class="num">2,405</td><td class="num">約29万円</td></tr><tr><td>食品・ドリンク</td><td class="num">38%</td><td class="num">21%</td><td class="num">1,732</td><td class="num">約69万円</td></tr><tr><td>バッグ・スーツケース</td><td class="num">35%</td><td class="num">21%</td><td class="num">2,506</td><td class="num">約14万円</td></tr><tr><td>日用雑貨</td><td class="num">34%</td><td class="num">21%</td><td class="num">5,076</td><td class="num">約14万円</td></tr><tr><td>レディーストップス</td><td class="num">32%</td><td class="num">13%</td><td class="num">2,219</td><td class="num">約35万円</td></tr><tr><td>美容・パーソナルケア</td><td class="num">31%</td><td class="num">19%</td><td class="num">4,826</td><td class="num">約43万円</td></tr><tr><td>レディースファッション・インナー</td><td class="num">28%</td><td class="num">12%</td><td class="num">4,064</td><td class="num">約32万円</td></tr><tr><td>メンズファッション・インナー</td><td class="num">27%</td><td class="num">15%</td><td class="num">2,697</td><td class="num">約17万円</td></tr><tr><td>スマホ・デジタル機器</td><td class="num">25%</td><td class="num">9%</td><td class="num">3,702</td><td class="num">約16万円</td></tr><tr><td>ファッション小物</td><td class="num">23%</td><td class="num">12%</td><td class="num">3,832</td><td class="num">約8万円</td></tr></tbody></table></div><p class="src">表4：上位の店への集中度と店平均（当社集計・同じ時点。上位10店のシェアが高い順）</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="categorymarketdataShare" viewBox="0 0 720 602" role="img" aria-label="当社集計の20分類を上位10店の売上シェアが高い順に並べ、シアンの横棒で上位10店、その中の黒い細い棒で上位3店のシェアを示し、美顔器の94%と81%が最も長く、ファッション小物の23%と12%が最も短いことを示した図"><text x="360" y="32" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">上位10店・上位3店の売上シェア（当社集計）</text><rect x="226" y="47" width="28" height="13" rx="3" fill="#25F4EE"/><text x="260" y="58" font-size="13" fill="#0B0C10">上位10店</text><rect x="350" y="51" width="28" height="5" rx="2" fill="#0B0C10"/><text x="384" y="58" font-size="13" fill="#0B0C10">上位3店</text><text x="700" y="58" text-anchor="end" font-size="12" font-weight="700" fill="#5E6064">10店・3店</text><path d="M436 72V572" fill="none" stroke="#C9CBD0" stroke-width="1.5" stroke-dasharray="4 4"/><text x="214" y="89" text-anchor="end" font-size="12.5" fill="#0B0C10">美顔器</text><rect x="226" y="77" width="395.8" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="82" width="339.6" height="5" rx="2" fill="#0B0C10"/><text x="700" y="89" text-anchor="end" font-size="12" fill="#0B0C10">94%・81%</text><text x="214" y="114" text-anchor="end" font-size="12.5" fill="#0B0C10">美容家電</text><rect x="226" y="102" width="293.8" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="107" width="195.0" height="5" rx="2" fill="#0B0C10"/><text x="700" y="114" text-anchor="end" font-size="12" fill="#0B0C10">70%・46%</text><text x="214" y="139" text-anchor="end" font-size="12.5" fill="#0B0C10">生鮮・冷凍食品</text><rect x="226" y="127" width="272.8" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="132" width="153.6" height="5" rx="2" fill="#0B0C10"/><text x="700" y="139" text-anchor="end" font-size="12" fill="#0B0C10">65%・37%</text><text x="214" y="164" text-anchor="end" font-size="12.5" fill="#0B0C10">栄養・ウェルネス</text><rect x="226" y="152" width="266.7" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="157" width="125.0" height="5" rx="2" fill="#0B0C10"/><text x="700" y="164" text-anchor="end" font-size="12" fill="#0B0C10">64%・30%</text><text x="214" y="189" text-anchor="end" font-size="12.5" fill="#0B0C10">健康</text><rect x="226" y="177" width="251.2" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="182" width="118.2" height="5" rx="2" fill="#0B0C10"/><text x="700" y="189" text-anchor="end" font-size="12" fill="#0B0C10">60%・28%</text><text x="214" y="214" text-anchor="end" font-size="12.5" fill="#0B0C10">車・バイク</text><rect x="226" y="202" width="223.8" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="207" width="138.0" height="5" rx="2" fill="#0B0C10"/><text x="700" y="214" text-anchor="end" font-size="12" fill="#0B0C10">53%・33%</text><text x="214" y="239" text-anchor="end" font-size="12.5" fill="#0B0C10">スキンケア</text><rect x="226" y="227" width="208.6" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="232" width="122.1" height="5" rx="2" fill="#0B0C10"/><text x="700" y="239" text-anchor="end" font-size="12" fill="#0B0C10">50%・29%</text><text x="214" y="264" text-anchor="end" font-size="12.5" fill="#0B0C10">ストレス解消グッズ</text><rect x="226" y="252" width="206.7" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="257" width="103.4" height="5" rx="2" fill="#0B0C10"/><text x="700" y="264" text-anchor="end" font-size="12" fill="#0B0C10">49%・25%</text><text x="214" y="289" text-anchor="end" font-size="12.5" fill="#0B0C10">クラシック玩具・ノベルティ玩具</text><rect x="226" y="277" width="192.6" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="282" width="92.2" height="5" rx="2" fill="#0B0C10"/><text x="700" y="289" text-anchor="end" font-size="12" fill="#0B0C10">46%・22%</text><text x="214" y="314" text-anchor="end" font-size="12.5" fill="#0B0C10">メイクアップ</text><rect x="226" y="302" width="174.0" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="307" width="82.9" height="5" rx="2" fill="#0B0C10"/><text x="700" y="314" text-anchor="end" font-size="12" fill="#0B0C10">41%・20%</text><text x="214" y="339" text-anchor="end" font-size="12.5" fill="#0B0C10">おもちゃ・ホビー</text><rect x="226" y="327" width="163.1" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="332" width="78.1" height="5" rx="2" fill="#0B0C10"/><text x="700" y="339" text-anchor="end" font-size="12" fill="#0B0C10">39%・19%</text><text x="214" y="364" text-anchor="end" font-size="12.5" fill="#0B0C10">食品・ドリンク</text><rect x="226" y="352" width="158.9" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="357" width="86.9" height="5" rx="2" fill="#0B0C10"/><text x="700" y="364" text-anchor="end" font-size="12" fill="#0B0C10">38%・21%</text><text x="214" y="389" text-anchor="end" font-size="12.5" fill="#0B0C10">バッグ・スーツケース</text><rect x="226" y="377" width="145.2" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="382" width="87.9" height="5" rx="2" fill="#0B0C10"/><text x="700" y="389" text-anchor="end" font-size="12" fill="#0B0C10">35%・21%</text><text x="214" y="414" text-anchor="end" font-size="12.5" fill="#0B0C10">日用雑貨</text><rect x="226" y="402" width="143.8" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="407" width="86.6" height="5" rx="2" fill="#0B0C10"/><text x="700" y="414" text-anchor="end" font-size="12" fill="#0B0C10">34%・21%</text><text x="214" y="439" text-anchor="end" font-size="12.5" fill="#0B0C10">レディーストップス</text><rect x="226" y="427" width="136.2" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="432" width="53.4" height="5" rx="2" fill="#0B0C10"/><text x="700" y="439" text-anchor="end" font-size="12" fill="#0B0C10">32%・13%</text><text x="214" y="464" text-anchor="end" font-size="12.5" fill="#0B0C10">美容・パーソナルケア</text><rect x="226" y="452" width="131.8" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="457" width="81.3" height="5" rx="2" fill="#0B0C10"/><text x="700" y="464" text-anchor="end" font-size="12" fill="#0B0C10">31%・19%</text><text x="214" y="489" text-anchor="end" font-size="12.5" fill="#0B0C10">レディースファッション・インナー</text><rect x="226" y="477" width="119.5" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="482" width="48.5" height="5" rx="2" fill="#0B0C10"/><text x="700" y="489" text-anchor="end" font-size="12" fill="#0B0C10">28%・12%</text><text x="214" y="514" text-anchor="end" font-size="12.5" fill="#0B0C10">メンズファッション・インナー</text><rect x="226" y="502" width="113.1" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="507" width="64.9" height="5" rx="2" fill="#0B0C10"/><text x="700" y="514" text-anchor="end" font-size="12" fill="#0B0C10">27%・15%</text><text x="214" y="539" text-anchor="end" font-size="12.5" fill="#0B0C10">スマホ・デジタル機器</text><rect x="226" y="527" width="104.8" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="532" width="39.5" height="5" rx="2" fill="#0B0C10"/><text x="700" y="539" text-anchor="end" font-size="12" fill="#0B0C10">25%・9%</text><text x="214" y="564" text-anchor="end" font-size="12.5" fill="#0B0C10">ファッション小物</text><rect x="226" y="552" width="98.0" height="15" rx="3" fill="#25F4EE"/><rect x="226" y="557" width="50.6" height="5" rx="2" fill="#0B0C10"/><text x="700" y="564" text-anchor="end" font-size="12" fill="#0B0C10">23%・12%</text><text x="436" y="590" text-anchor="middle" font-size="12" fill="#5E6064">50%</text></svg><figcaption>図3：上位10店と上位3店の売上シェア。点線は50%（当社集計をもとにLEAM作成）</figcaption></figure>
+<p>店平均は、直近30日の売上を店の数で割った額です。上位の店の売上も含めて割るので、集中度が高い分類では、多くの店の実際の売上より大きく出ます。美顔器の店平均は約110万円ですが、上位10店で94%を占める分類です。11位以下の店の多くは、店平均よりずっと小さい売上だと読みます。</p>
+<p>集中度が高いからといって、新しい店が売れないとは限りません。ただし、上位の店と同じ商品を同じ見せ方で出すと、比べられやすくなります。集中度が低い3つの分類は店の数が多く、店平均は約8万円から約17万円です。</p>
+
+<h2 id="s5"><span class="no en">05</span>金額は丸めた30日の合計なので、大分類と小分類を足さずに読む</h2>
+<p>この記事の金額は、直近30日の売上の合計を丸めた値です。1億円以上は億円の単位、1億円未満は万円の単位で示しています。そのため「約1億円」と「約9,439万円」の差は、見た目ほど大きくないことがあります。</p>
+<p>丸めた金額どうしを割って割合を出すと、元の値から大きくずれます。割合を見たいときは、丸める前の値から出した上位の店のシェアの列を使ってください。そのほかの読み方を表5にまとめました。</p>
+<div class="tw"><table><thead><tr><th>読むときの点</th><th>この記事での扱い</th></tr></thead><tbody><tr><td>期間</td><td>2026年10月29日時点の直近30日の合計。「月約◯億円」はこの30日の合計</td></tr><tr><td>金額の丸め</td><td>1億円以上は億円の単位、1億円未満は万円の単位に丸めた値</td></tr><tr><td>大分類と小分類</td><td>小分類・細分類は大分類の中に含まれる。行を足して合計を出さない</td></tr><tr><td>店の数</td><td>大分類と小分類の両方に数えられる店がある。店の数も足さない</td></tr><tr><td>経路ごとの金額の合計</td><td>売り方の4つ、発信の2つを足しても、全体の規模と一致しない分類がある（丸めの差と、経路の区分の重なりによる）</td></tr><tr><td>2つの切り口</td><td>売り方と発信は別の物差し。互いの数字を足さない</td></tr></tbody></table></div><p class="src">表5：数字の読み方（LEAM作成）</p>
+<p>当社集計は、当社が蓄積しているデータの範囲で出した数字です。TikTok Shopの公式発表ではなく、当社の支援先の成績を示すものでもありません。日本と世界の市場規模の公表値は、<a href="https://leam.co.jp/column/market-outlook/">市場規模と今後の見通し</a>にまとめています。</p>
+
+<h2 id="s6"><span class="no en">06</span>自社と比べるときは、セラーセンターで期間と切り口をそろえる</h2>
+<p>市場の数字を自社の数字と並べるときは、期間と切り口をそろえます。公式ヘルプ「データ分析の概要」によると、セラーセンター（出店者の管理画面）の分析の「ビジネスデータ」では、期間をカスタムでも選べます。当社集計と比べるなら、同じ30日を選びます。</p>
+<p>同じヘルプは、概要の「LIVE」と「動画」のGMV（注文された金額の合計）を、自社アカウントからの数字と説明しています。クリエイター経由は「マーケティングソース」タブか「クリエイター」ページで見ます。当社集計のライブと動画は自社とクリエイターの両方を含むので、2か所を見てから比べます。</p>
+<div class="tw"><table><thead><tr><th>比べたいこと</th><th>セラーセンターで見る場所（公式ヘルプの記載）</th><th>当社集計で対応する表</th></tr></thead><tbody><tr><td>期間</td><td>「ビジネスデータ」の期間（過去7日間・過去28日間・日・週・月・カスタム）</td><td>表1（規模）。カスタムで30日を選ぶ</td></tr><tr><td>自社のライブと動画</td><td>概要の「LIVE」「動画」（自社アカウントからのGMV。期間は昨日か過去7日間）。詳しくは「セールスソース」タブ</td><td>表2（売り方）</td></tr><tr><td>クリエイター経由</td><td>「マーケティングソース」タブ、または「クリエイター」ページ</td><td>表3（誰の発信か）</td></tr><tr><td>「商品カード」のGMV</td><td>概要の「商品カード」（自社アカウントやアフィリエイトアカウントを含むトラフィックチャンネルからのGMV）</td><td>ショーケース・商品棚と同じ区分とは限らないので、直接は比べない</td></tr></tbody></table></div><p class="src">表6：自社の数字を見る場所（公式ヘルプ「データ分析の概要」の記載をもとにLEAM作成・2026年10月30日確認）</p>
+<p>同じヘルプは、分析に表示されるGMVは返品・返金・キャンセルが含まれた数字で、収入とは同じではないとしています。お金は「財務」ページで見るよう案内されており、市場の数字と比べるのは売れ方の傾向までにします。手元に残る額は、<a href="https://leam.co.jp/column/tiktok-shop-fees/">手数料とカテゴリー別料率</a>の記事と、<a href="https://leam.co.jp/column/is-tiktok-shop-profitable/">利益が出る条件</a>の記事で確かめます。</p>
+
+<h2 id="s7"><span class="no en">07</span>売り方と発信を重ねて、先に用意するものと次に読む記事を選ぶ</h2>
+<p>2つの切り口を重ねると、分類ごとに先に用意するものの見当がつきます。おもちゃ・ホビーは、ライブが大きく、自社アカウントの売上も大きい分類です。自社で配信する人と時間の確保が先に来ます。食品・ドリンクはライブが大きい一方で、クリエイター経由が約10億円あります。ライブで紹介してくれるクリエイターへの依頼が中心になります。</p>
+<p>美容家電、車・バイク、スマホ・デジタル機器は、動画が中心でクリエイター経由が大きい分類です。紹介動画を作ってもらうための商品資料とサンプルを、先にそろえます。どのカテゴリーに参入するかの決め方は、<a href="https://leam.co.jp/column/best-categories/">売れる商品カテゴリーの選び方</a>で扱っています。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" id="categorymarketdataMatrix" viewBox="0 0 720 470" role="img" aria-label="分類を、ライブと動画のどちらが大きいか、クリエイター経由と自社アカウントのどちらが大きいかで4つの枠に分け、ライブと自社アカウントが大きいおもちゃ・ホビーの枠では自社で配信する人と時間の確保、動画とクリエイター経由が大きい美容家電などの枠では紹介動画のための資料とサンプルが先に要ることを示した図"><text x="360" y="36" text-anchor="middle" font-size="17" font-weight="700" fill="#0B0C10">売り方と発信の組み合わせ（当社集計の大小関係）</text><rect x="25" y="70" width="330" height="170" rx="12" fill="#EFF1F4" stroke="#DFE0E2" stroke-width="1.5"/><text x="41" y="96" font-size="12.5" fill="#5E6064">ライブ × クリエイター経由</text><text x="41" y="122" font-size="15" font-weight="700" fill="#0B0C10">ライブで紹介するクリエイターへの依頼</text><text x="41" y="154" font-size="13" fill="#0B0C10">食品・ドリンク</text><text x="41" y="176" font-size="13" fill="#0B0C10">生鮮・冷凍食品</text><text x="41" y="198" font-size="13" fill="#0B0C10">スキンケア</text><text x="201" y="154" font-size="13" fill="#0B0C10">健康</text><text x="201" y="176" font-size="13" fill="#0B0C10">栄養・ウェルネス</text><rect x="365" y="70" width="330" height="170" rx="12" fill="#EFF1F4" stroke="#DFE0E2" stroke-width="1.5"/><text x="381" y="96" font-size="12.5" fill="#5E6064">動画 × クリエイター経由</text><text x="381" y="122" font-size="15" font-weight="700" fill="#0B0C10">紹介動画のための資料とサンプル</text><text x="381" y="154" font-size="13" fill="#0B0C10">美容・パーソナルケア</text><text x="381" y="176" font-size="13" fill="#0B0C10">美容家電</text><text x="381" y="198" font-size="13" fill="#0B0C10">美顔器</text><text x="381" y="220" font-size="13" fill="#0B0C10">日用雑貨</text><text x="541" y="154" font-size="13" fill="#0B0C10">スマホ・デジタル機器</text><text x="541" y="176" font-size="13" fill="#0B0C10">車・バイク</text><text x="541" y="198" font-size="13" fill="#0B0C10">バッグ・スーツケース</text><rect x="25" y="255" width="330" height="170" rx="12" fill="#25F4EE" stroke="#DFE0E2" stroke-width="1.5"/><text x="41" y="281" font-size="12.5" fill="#0B0C10">ライブ × 自社アカウント</text><text x="41" y="307" font-size="15" font-weight="700" fill="#0B0C10">自社で配信する人と時間の確保</text><text x="41" y="339" font-size="13" fill="#0B0C10">おもちゃ・ホビー</text><text x="41" y="361" font-size="13" fill="#0B0C10">クラシック・ノベルティ玩具</text><text x="41" y="383" font-size="13" fill="#0B0C10">ストレス解消グッズ</text><rect x="365" y="255" width="330" height="170" rx="12" fill="#EFF1F4" stroke="#DFE0E2" stroke-width="1.5"/><text x="381" y="281" font-size="12.5" fill="#5E6064">動画 × 自社とクリエイターが並ぶ</text><text x="381" y="307" font-size="15" font-weight="700" fill="#0B0C10">自社の動画とクリエイターの紹介の両方</text><text x="381" y="339" font-size="13" fill="#0B0C10">メンズファッション</text><text x="381" y="361" font-size="13" fill="#0B0C10">レディースファッション</text><text x="381" y="383" font-size="13" fill="#0B0C10">レディーストップス</text><text x="360" y="452" text-anchor="middle" font-size="12.5" fill="#5E6064">ライブと動画の差が小さい分類（メイクアップ・ファッション小物）は入れていない</text></svg><figcaption>図4：売り方と発信の大小関係で分けた分類と、先に用意するもの（当社集計をもとにLEAM作成）</figcaption></figure>
+<p>分類ごとの商品の見せ方や、売る前に確認することは、業種別の記事で扱っています。この記事の数字は毎月差し替えますが、業種別の記事の数字はそれぞれの集計日のものです。</p>
+<div class="tw"><table><thead><tr><th>分類</th><th>業種別の記事</th></tr></thead><tbody><tr><td>美容・パーソナルケア（スキンケア・メイクアップ）</td><td><a href="https://leam.co.jp/column/cosmetics/">化粧品・スキンケア</a></td></tr><tr><td>美容家電・美顔器</td><td><a href="https://leam.co.jp/column/beauty-gadgets/">美容家電・ガジェット</a></td></tr><tr><td>食品・ドリンク（生鮮・冷凍食品）</td><td><a href="https://leam.co.jp/column/food/">食品・飲料</a></td></tr><tr><td>健康（栄養・ウェルネス）</td><td><a href="https://leam.co.jp/column/supplements/">健康食品・サプリ</a></td></tr><tr><td>レディースファッション・インナー</td><td><a href="https://leam.co.jp/column/apparel/">アパレル</a></td></tr><tr><td>メンズファッション・インナー</td><td><a href="https://leam.co.jp/column/mens-fashion/">メンズファッション</a></td></tr><tr><td>ファッション小物</td><td><a href="https://leam.co.jp/column/fashion-accessories/">アクセサリー・ファッション小物</a></td></tr><tr><td>バッグ・スーツケース</td><td><a href="https://leam.co.jp/column/bags-luggage/">バッグ・スーツケース</a></td></tr><tr><td>おもちゃ・ホビー（クラシック玩具・ストレス解消グッズ）</td><td><a href="https://leam.co.jp/column/toys-hobby/">おもちゃ・ホビー</a></td></tr><tr><td>スマホ・デジタル機器</td><td><a href="https://leam.co.jp/column/digital-gadgets/">スマホ・デジタル機器</a></td></tr><tr><td>車・バイク</td><td><a href="https://leam.co.jp/column/car-bike-goods/">車・バイク用品</a></td></tr><tr><td>日用雑貨</td><td><a href="https://leam.co.jp/column/household-goods/">日用雑貨</a></td></tr></tbody></table></div><p class="src">表7：分類ごとの業種別の記事（LEAM作成）</p>
+
+<h2 id="s8"><span class="no en">08</span>数字は毎月、同じ集計の形で差し替える</h2>
+<p>この記事は毎月、同じ形で数字を差し替えます。集計日の時点から直近30日を数える方法と、表の列の定義は変えません。年月と数値を新しくし、上位20の分類が入れ替われば表の行も入れ替えます。</p>
+<p>伸び率を載せないのは、集計日が少しずれるだけで大きく振れるからです。一方で、8日前の2026年10月21日時点の集計と比べても、上位20の顔ぶれは同じでした。店の数と、集中度が高い分類・低い分類の並びも、大きくは変わっていません。分類ごとの形をつかむには、月1回の差し替えで足ります。</p>
+
+<h2 id="summary"><span class="no en">09</span>まとめ</h2>
+<p>TikTok Shopのカテゴリーは、規模・売り方・発信・集中度で形が違います。2026年10月29日時点・直近30日の当社集計の要点は、次の4つです。</p>
+<div class="summary-grid"><div class="summary-item"><b>1. 規模は美容・パーソナルケアが最大</b><br>月約21億円。小分類は大分類の内数なので足さない</div><div class="summary-item"><b>2. 売り方は分類で分かれる</b><br>食品・おもちゃはライブ、スマホ・メンズ・車・バッグ・美容家電は動画が中心</div><div class="summary-item"><b>3. 発信も分類で分かれる</b><br>美容・食品・美容家電はクリエイター経由、おもちゃは自社アカウントが大きい</div><div class="summary-item"><b>4. 集中度の差が大きい</b><br>上位10店のシェアは美顔器94%・美容家電70%、ファッション小物23%・スマホ25%</div></div>
+<p>数字は、参入する分類を絞るための材料です。売れるかどうかは、商品ごとの見せ方と費用の計算で確かめます。</p>
+
+<h2 id="faq"><span class="no en">10</span>よくある質問</h2>
+<div class="faq"><details><summary>TikTok Shopで売上規模が最も大きいカテゴリーはどこですか？</summary><div class="a">当社集計（2026年10月29日時点・直近30日）では、美容・パーソナルケアが月約21億円で最も大きい分類でした。レディースファッション・インナーが約13億円、食品・ドリンクが約12億円で続きます。</div></details><details><summary>TikTok Shopで、動画よりライブ配信の売上が大きいのはどんなカテゴリーですか？</summary><div class="a">当社集計では、食品・ドリンク（ライブ約6億円・動画約5億円）とおもちゃ・ホビー（ライブ約4億円・動画約1億円）で、ライブが最も大きい売り方でした。大分類の健康と、小分類のクラシック玩具・ノベルティ玩具や生鮮・冷凍食品も同じ形です。</div></details><details><summary>TikTok Shopで、クリエイター経由より自社アカウントの売上が大きいカテゴリーはありますか？</summary><div class="a">当社集計の上位20の分類では、おもちゃ・ホビー（自社アカウント約4億円・クリエイター経由約2億円）と、その中のクラシック玩具・ノベルティ玩具、ストレス解消グッズです。レディースファッション・インナーは、どちらも約5億円で並んでいます。</div></details><details><summary>TikTok Shopのカテゴリー別の数字で、大分類と小分類の売上を足して合計してもよいですか？</summary><div class="a">足さないでください。スキンケアやメイクアップは美容・パーソナルケアの中の小分類で、その売上は大分類の数字にすでに入っています。店の数も同じように足しません。</div></details><details><summary>TikTok Shopのカテゴリーの店平均の売上は、新しく出店した店の売上の目安になりますか？</summary><div class="a">目安にはしにくい数字です。店平均は、上位の店も含めた売上を店の数で割った額です。上位10店のシェアが高い分類では、多くの店の実際の売上より大きく出ます。自社の見込みは、商品ごとの販売計画と費用から立てます。</div></details><details><summary>TikTok Shopのカテゴリー別の市場データと、自社のショップの売上はどう比べればよいですか？</summary><div class="a">セラーセンターの分析の「ビジネスデータ」で期間を30日にそろえ、売り方と発信は分けて見ます。公式ヘルプでは、概要の「LIVE」「動画」は自社アカウントからのGMVで、アフィリエイトのGMVは「マーケティングソース」タブなどで見ると案内されています。</div></details></div>
+
+<div class="ctabox"><div class="ct">参入するカテゴリーの数字の読み方から、ご相談いただけます</div><p>LEAMはTikTok Shopの運用支援を行っています。検討しているカテゴリーと商品、社内の体制を伺い、売り方と準備の論点を整理します。参入するカテゴリーを決める前の段階からでもかまいません。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=category-market-data">参入するカテゴリーを相談する</a><a class="btn btn-g" href="https://leam.co.jp/service/">支援内容を見る</a></div></div>
+<div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div>
+
+<h2><span class="no en">11</span>参考にした公式情報と集計の時点</h2>
+<ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=100037342299905&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：データ分析の概要</a>（2026年10月30日確認）</li></ul>
+<p class="src">市場の数値は、2026年10月29日時点・直近30日の当社集計です。表の区分の説明、読み方、図はLEAMが作成しました。画面の名前や表示される項目は更新されることがあります。本記事は2026年10月30日時点で確認できた日本向けの公式情報をもとにしています。</p>
+
+<div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">業種別・化粧品</span><b><a href="https://leam.co.jp/column/cosmetics/">化粧品・スキンケアブランドのTikTok Shop｜売れる見せ方と表現の決まり</a></b><span>規模が最も大きい美容の準備</span></div><div class="relcard"><span class="rc">業種別・食品</span><b><a href="https://leam.co.jp/column/food/">食品・飲料のTikTok Shop｜試食の見せ方と賞味期限・温度帯</a></b><span>ライブが大きい食品の準備</span></div><div class="relcard"><span class="rc">業種別・おもちゃ</span><b><a href="https://leam.co.jp/column/toys-hobby/">おもちゃ・ホビーのTikTok Shop｜ライブで売れる理由と準備</a></b><span>自社の配信が大きい分類の準備</span></div></div></div>
+</article>
+<aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">売上規模が最も大きいのは美容・パーソナルケアで、直近30日で月約21億円</a></li><li><a href="#s2">売り方は、食品とおもちゃがライブ、スマホ・メンズ・車・バッグ・美容家電は動画が中心</a></li><li><a href="#s3">発信では、美容・食品はクリエイター経由、おもちゃは自社アカウントが大きい</a></li><li><a href="#s4">上位10店への集中度は、美顔器94%からファッション小物23%まで分類で違う</a></li><li><a href="#s5">金額は丸めた30日の合計なので、大分類と小分類を足さずに読む</a></li><li><a href="#s6">自社と比べるときは、セラーセンターで期間と切り口をそろえる</a></li><li><a href="#s7">売り方と発信を重ねて、先に用意するものと次に読む記事を選ぶ</a></li><li><a href="#s8">数字は毎月、同じ集計の形で差し替える</a></li><li><a href="#summary">まとめ</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>参入カテゴリーの相談</b><p>検討中のカテゴリーと商品から、売り方の準備を整理します。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=category-market-data">無料相談する</a></div></div></aside>
+</div>
+<footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "TikTok Shopで売上規模が最も大きいカテゴリーはどこですか？", "acceptedAnswer": {"@type": "Answer", "text": "当社集計（2026年10月29日時点・直近30日）では、美容・パーソナルケアが月約21億円で最も大きい分類でした。レディースファッション・インナーが約13億円、食品・ドリンクが約12億円で続きます。"}}, {"@type": "Question", "name": "TikTok Shopで、動画よりライブ配信の売上が大きいのはどんなカテゴリーですか？", "acceptedAnswer": {"@type": "Answer", "text": "当社集計では、食品・ドリンク（ライブ約6億円・動画約5億円）とおもちゃ・ホビー（ライブ約4億円・動画約1億円）で、ライブが最も大きい売り方でした。大分類の健康と、小分類のクラシック玩具・ノベルティ玩具や生鮮・冷凍食品も同じ形です。"}}, {"@type": "Question", "name": "TikTok Shopで、クリエイター経由より自社アカウントの売上が大きいカテゴリーはありますか？", "acceptedAnswer": {"@type": "Answer", "text": "当社集計の上位20の分類では、おもちゃ・ホビー（自社アカウント約4億円・クリエイター経由約2億円）と、その中のクラシック玩具・ノベルティ玩具、ストレス解消グッズです。レディースファッション・インナーは、どちらも約5億円で並んでいます。"}}, {"@type": "Question", "name": "TikTok Shopのカテゴリー別の数字で、大分類と小分類の売上を足して合計してもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "足さないでください。スキンケアやメイクアップは美容・パーソナルケアの中の小分類で、その売上は大分類の数字にすでに入っています。店の数も同じように足しません。"}}, {"@type": "Question", "name": "TikTok Shopのカテゴリーの店平均の売上は、新しく出店した店の売上の目安になりますか？", "acceptedAnswer": {"@type": "Answer", "text": "目安にはしにくい数字です。店平均は、上位の店も含めた売上を店の数で割った額です。上位10店のシェアが高い分類では、多くの店の実際の売上より大きく出ます。自社の見込みは、商品ごとの販売計画と費用から立てます。"}}, {"@type": "Question", "name": "TikTok Shopのカテゴリー別の市場データと、自社のショップの売上はどう比べればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "セラーセンターの分析の「ビジネスデータ」で期間を30日にそろえ、売り方と発信は分けて見ます。公式ヘルプでは、概要の「LIVE」「動画」は自社アカウントからのGMVで、アフィリエイトのGMVは「マーケティングソース」タブなどで見ると案内されています。"}}]}</script>
+</body>
+</html>

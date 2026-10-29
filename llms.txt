@@ -17,16 +17,16 @@
 - クリエイターアサイン: 実売実績のあるTikTok Shopクリエイターの起用を、小さく試せる形から支援
 - MCN: クリエイターの発掘・育成・マネジメントを行う、TikTok Shop特化のクリエイター事務所
 
-## TikTok Shop 実践コラム（全103本）
+## TikTok Shop 実践コラム（全110本）
 
 > 出店の検討から日々の運用までを扱う実務記事。公式の一次情報と、当社の運用実感にもとづく判断を
-> 区別して書いています。数値は出典と時点を明記し、**103本すべてに一次情報（TikTok Shop公式ヘルプ・
+> 区別して書いています。数値は出典と時点を明記し、**110本すべてに一次情報（TikTok Shop公式ヘルプ・
 > 規約・官公庁の公表資料など）へのリンク**を置いています。
 > 公開情報で裏が取れなかった論点は、断定せず「どこを見れば確かめられるか」を書いています。
 > 一覧: https://leam.co.jp/column/
 
 ### 基礎知識
-- [TikTok Shopとは？売り方・始め方・仕組みをセラー向けに解説](https://leam.co.jp/column/what-is-tiktok-shop/): TikTok Shopとは、動画・ライブ・ショーケースで購入まで完結するEC機能。売り方の基本、出店の5ステップ、費用（初期・月額0円）までセラー向けに解説します。
+- [TikTok Shop（ティックトックショップ）とは？仕組みと出店の始め方](https://leam.co.jp/column/what-is-tiktok-shop/): TikTok Shop（ティックトックショップ）とは、TikTokの動画やライブから商品を買えるEC機能です。仕組み、日本で売れているカテゴリー、出店の5ステップ、費用（初期・月額0円）を解説。
 - [TikTok Shopの用語集｜実務で意味を取り違えやすい30語](https://leam.co.jp/column/glossary/): GMV・実質手数料・貢献利益・限界CPA・LDR・SKUなど、TikTok Shopの実務で意味を取り違えると判断を誤る30語を、記事のどこで扱っているかとセットで整理しました。
 - [TikTok Shopは怪しい？安全性と偽ショップ・詐欺の見分け方](https://leam.co.jp/column/is-tiktok-shop-safe/): TikTok Shop自体は怪しくありません。出店審査のある公式機能です。危ないのはアプリの外へ誘導する詐欺3つの型。偽ショップは8項目のチェックリストで見分けられます。
 - [TikTok ShopとAmazon・楽天の違い｜使い分けと併売戦略](https://leam.co.jp/column/marketplace-comparison/): 乗り換えではなく役割分担です。Amazon・楽天は検索型、TikTok Shopは発見型で、売れ方もコスト構造もほぼ逆向き。
@@ -87,7 +87,7 @@
 - [TikTok Shopで稼ぐ方法｜収益化の条件と始め方](https://leam.co.jp/column/creator-monetization/): TikTok Shopでクリエイターが収益を得る仕組みを、公式の参加条件・申請の手順・報酬が確定する順番・PR表記の基準まで整理しました。
 - [TikTok Shopの報酬はいつ入る？支払いと出金](https://leam.co.jp/column/creator-payout/): TikTok Shopの報酬は発生・確定・支払いの3段階で動きます。精算タイプ別の支払日、返品時の扱い、出金手順、入らない時の確認順を公式ヘルプで整理
 - [TikTokのギフトとコインの仕組み｜TikTok Shopとの違い](https://leam.co.jp/column/gift-coin-guide/): TikTokのコイン・ギフト・ダイヤモンドの関係と受取額の考え方を整理。誰が負担するのか、換金の流れ、TikTok Shopの収入との違いまで解説します。
-- [TikTok Shopのショーケースとは？使える条件と収益の仕組み](https://leam.co.jp/column/showcase-guide/): TikTok Shopのショーケースは、紹介する商品をプロフィールに並べる置き場です。使える条件（フォロワー1,000人以上など）、商品の入れ方、コミッションの計算式を公式ヘルプで整理します。
+- [TikTokショーケースとは？使える条件・やり方・収益【TikTok Shop】](https://leam.co.jp/column/showcase-guide/): TikTokショーケースとは、紹介する商品をプロフィールに並べる置き場です。使える条件（フォロワー1,000人以上など）、やり方の手順、収益の計算を、公式ヘルプと仮の数字の例で解説します。
 - [TikTok ShopのMCN契約で確認すること｜期間・報酬・解除](https://leam.co.jp/column/mcn-contract/): TikTok ShopでMCN（クリエイター事務所）と契約する前に、期間と自動更新、専属の範囲、報酬と支払いの時期、権利、解除と違約金、競業の制限を条項ごとに確かめるチェック表をまとめました。
 
 ### 広告運用
@@ -131,6 +131,13 @@
 - [健康食品のTikTok Shop｜表現と動画企画の準備](https://leam.co.jp/column/supplements/): 健康食品・サプリのTikTok Shop参入を考える担当者へ。出品可否、成分・効果の表現、体験談の扱いを公的資料で整理。購入前の疑問に答える動画企画と、紹介者へ渡す資料を解説します。
 - [日用雑貨のTikTok Shop｜実演と販売準備](https://leam.co.jp/column/household-goods/): 日用雑貨のTikTok Shop参入を考える担当者へ。掃除・収納・キッチン用品の実演、商品ページとの照合、セット内容、紹介者への資料、販売後の質問を次の企画へ戻す準備を解説します。
 - [美容家電のTikTok Shop｜比較・実演・保証の準備](https://leam.co.jp/column/beauty-gadgets/): 美容家電・ガジェットのTikTok Shop参入を考える担当者へ。仕様の比較と実演、LIVEの質問対応、保証・返品の案内、電気用品などの対象確認を、商品資料とつなぐ準備を解説します。
+- [TikTok Shopのカテゴリー別市場データ｜規模と売れ方（2026年10月）](https://leam.co.jp/column/category-market-data/): TikTok Shopのカテゴリー別の売上規模（2026年10月29日時点・直近30日の当社集計）。上位20分類の規模、ライブと動画の比重、クリエイター経由の売上、上位店への集中度を表で示します。
+- [おもちゃ・ホビーのTikTok Shop｜ライブで売れる理由と準備](https://leam.co.jp/column/toys-hobby/): おもちゃ・ホビーのTikTok Shopは月約7億円規模で、売り方ではライブが最大（当社集計）。自社配信の分担、遊び方の実演、子供PSCマークと対象年齢、中身が選べない売り方の規定まで解説。
+- [スマホ・デジタル機器のTikTok Shop｜動画で売る準備とPSE・技適](https://leam.co.jp/column/digital-gadgets/): スマホ周辺機器・デジタル雑貨をTikTok Shopで売る担当者へ。動画とクリエイター経由が中心の売上構成、対応機種の見せ方、PSE・技適の確認、初期不良と返品の備えを解説します。
+- [メンズファッションのTikTok Shop｜動画で伝えるサイズと着こなし](https://leam.co.jp/column/mens-fashion/): メンズファッションのTikTok Shopは動画中心で、ライブは小さい売り場です。サイズ感・着こなし・素材を伝える動画、自社とクリエイターの分担、品質表示と始め方を当社集計とともに解説。
+- [車・バイク用品のTikTok Shop｜取り付け動画と保安基準の確認](https://leam.co.jp/column/car-bike-goods/): カー用品・バイク用品のメーカーや販売店向けに、TikTok Shopの売上構成、取り付け動画と対応車種の示し方、保安基準と「車検対応」表示の根拠、適合違いの返品への備えを解説します。
+- [アクセサリー・ファッション小物のTikTok Shop｜小さく始める売り方](https://leam.co.jp/column/fashion-accessories/): アクセサリー・帽子・ベルトなどファッション小物のTikTok Shop。当社集計で店は3,832、上位10店のシェアは23%と分散。売り方、大きさと素材の見せ方、素材表示、送料の組み方を解説。
+- [バッグ・スーツケースのTikTok Shop｜容量と使い方を動画で伝える](https://leam.co.jp/column/bags-luggage/): バッグ・財布・スーツケースの担当者向けに、TikTok Shopで容量や持った様子を動画で伝える準備を解説。売上構成、かばんの品質表示、偽物と知的財産、返品と大きさの想定違いまで整理。
 
 ### クリエイター起用の進め方
 - [TikTokのインフルエンサー施策｜TikTok ShopとPRの違い](https://leam.co.jp/column/tiktok-influencer-marketing/): TikTok Shopのクリエイター施策は、PR投稿・売上連動の紹介・広告への転用を分けて設計します。払う根拠、選ぶ基準、見る指標、表示を比較し、社内説明に使えるひな形を示します。
