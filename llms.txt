@@ -17,10 +17,10 @@
 - クリエイターアサイン: 実売実績のあるTikTok Shopクリエイターの起用を、小さく試せる形から支援
 - MCN: クリエイターの発掘・育成・マネジメントを行う、TikTok Shop特化のクリエイター事務所
 
-## TikTok Shop 実践コラム（全135本）
+## TikTok Shop 実践コラム（全141本）
 
 > 出店の検討から日々の運用までを扱う実務記事。公式の一次情報と、当社の運用実感にもとづく判断を
-> 区別して書いています。数値は出典と時点を明記し、**135本すべてに一次情報（TikTok Shop公式ヘルプ・
+> 区別して書いています。数値は出典と時点を明記し、**141本すべてに一次情報（TikTok Shop公式ヘルプ・
 > 規約・官公庁の公表資料など）へのリンク**を置いています。
 > 公開情報で裏が取れなかった論点は、断定せず「どこを見れば確かめられるか」を書いています。
 > 一覧: https://leam.co.jp/column/
@@ -191,6 +191,12 @@
 - [インフルエンサーの炎上対策｜TikTok Shopの企業側](https://leam.co.jp/column/influencer-backlash/): インフルエンサーの炎上対応は、紹介内容への指摘と本人の別件を分けて進めます。TikTok Shopの企業向けに、型ごとの予防と対応、初動24時間、契約で決める事項を整理します。
 - [商品レビューの依頼は違法？TikTok Shopの線引き](https://leam.co.jp/column/review-request-rules/): レビュー依頼は、購入者の評価と紹介動画を分けて考えます。TikTok Shopの高評価依頼の禁止とステマ規制の違いを、頼み方の確認表と動画の依頼文面で整理します。
 - [開封動画とは？TikTok Shopで頼む撮り方の指示](https://leam.co.jp/column/unboxing-video/): 開封動画は、届いた箱や袋を開け、中身と付属品を見せる動画です。TikTok Shopで頼む際の商品の向き不向き、撮影指示、梱包、商品ページや広告への利用確認を表で整理します。
+- [ライブのコラボ・ゲスト出演｜TikTok Shop](https://leam.co.jp/column/live-collab-guest/): TikTok Shopのコラボ・ゲスト出演は、誰のライブで何を担当するかを決めて準備します。売り手側とクリエイター側の比較、商品リンク・報酬・表示、当日の受け渡しを表にまとめます。
+- [TikTokの台本の作り方｜TikTok Shopの商品紹介の型](https://leam.co.jp/column/tiktok-script/): TikTok Shopの台本は、時間・映像・セリフ・画面の説明・確認事項を並べて作ります。秒ごとのテンプレートと架空の商品例、文字数の考え方、自社用とクリエイター用の書き分けを解説します。
+- [TikTokの台本をAIで作る｜TikTok Shopの確認点](https://leam.co.jp/column/tiktok-script-ai/): AIでTikTok Shopの台本を作るときは、確認済みの商品情報を先に渡します。写して使えるプロンプトの型と、出力の誤り、事実・表現・表示・素材の権利を点検する表をまとめます。
+- [コスメの紹介を頼む｜TikTok Shopの選び方と依頼](https://leam.co.jp/column/cosmetics-creators/): コスメ紹介は、商品の何を見せたいかで頼む形を選びます。TikTok Shopの売上の記録と視聴者との相性、渡す資料、公開後の確認を表で整理します。
+- [アパレルの紹介を頼む｜TikTok Shopの着用動画](https://leam.co.jp/column/apparel-creators/): アパレルの紹介は、着用・着回し・サイズ比較など目的に合わせて依頼します。TikTok Shopでの候補確認、渡す資料、色とサイズの送付前照合を表で整理します。
+- [食品の紹介を頼む｜TikTok Shopの試食動画と送り方](https://leam.co.jp/column/food-creators/): 食品の紹介は、試食・作り方・食べ比べなど目的に合わせて依頼します。TikTok Shopの候補選び、冷凍・冷蔵サンプルの受取りと撮影、伝える主張の確認を表で整理します。
 
 ## お問い合わせ
 

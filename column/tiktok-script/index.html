@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTokの台本の作り方｜TikTok Shopの商品紹介の型</title>
+<meta name="description" content="TikTok Shopの台本は、時間・映像・セリフ・画面の説明・確認事項を並べて作ります。秒ごとのテンプレートと架空の商品例、文字数の考え方、自社用とクリエイター用の書き分けを解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/tiktok-script/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTokの台本の作り方｜TikTok Shopの商品紹介の型">
+<meta property="og:description" content="TikTok Shopの台本は、時間・映像・セリフ・画面の説明・確認事項を並べて作ります。秒ごとのテンプレートと架空の商品例、文字数の考え方、自社用とクリエイター用の書き分けを解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/tiktok-script/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/tiktok-script.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTokの台本の作り方｜TikTok Shopの商品紹介の型">
+<meta name="twitter:description" content="TikTok Shopの台本は、時間・映像・セリフ・画面の説明・確認事項を並べて作ります。秒ごとのテンプレートと架空の商品例、文字数の考え方、自社用とクリエイター用の書き分けを解説します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/tiktok-script.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTokの台本の作り方｜TikTok Shopの商品紹介の型", "description": "TikTok Shopの台本は、時間・映像・セリフ・画面の説明・確認事項を並べて作ります。秒ごとのテンプレートと架空の商品例、文字数の考え方、自社用とクリエイター用の書き分けを解説します。", "inLanguage": "ja", "datePublished": "2026-11-06", "dateModified": "2026-11-06", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-script/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/tiktok-script.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2652995084699409&lang=ja-JP", "name": "TikTok Shop：ショート動画とLIVE配信の運用"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2707587427927825&lang=ja-JP", "name": "TikTok Shop：コンテンツポリシー"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTokの台本の作り方｜TikTok Shopの商品紹介の型", "item": "https://leam.co.jp/column/tiktok-script/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script">無料相談</a></div>
+<div class="shell">
+<article><p class="crumb"><a href="https://leam.co.jp/">ホーム</a> ／ <a href="https://leam.co.jp/column/">コラム</a> ／ TikTokの商品紹介の台本</p><span class="cat">紹介動画と表示の確認</span><h1>TikTokの台本の作り方｜TikTok Shopの商品紹介の型</h1><div class="meta"><time class="upd" datetime="2026-11-06">更新日：2026年11月6日</time><time datetime="2026-11-06">公開日：2026年11月6日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="映像とセリフを並べた台本の表を、撮影する商品とカメラ、話す時間と動作の時間へ対応させるイラスト" stroke-linejoin="round" stroke-linecap="round"><rect width="1200" height="630" fill="#FFFFFF"/><path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/><ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/><path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/><g fill="#D8DADE" id="tiktokscriptDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#tiktokscriptDots" transform="translate(944 542)"/><rect x="92" y="128" width="486" height="391" rx="15" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="92" y="128" width="486" height="391" rx="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><path d="M121 156h428v47H121z" fill="#25F4EE"/><path d="M121 203h75v280h-75z" fill="#EFF1F4"/><path d="M196 203h166v280H196z" fill="#FFFFFF"/><path d="M362 203h187v280H362z" fill="#F6F7F9"/><path d="M121 203h428M121 273h428m-428 70h428m-428 70h428M196 156v327m166-327v327" stroke="#0B0C10" stroke-width="4" fill="none"/><path d="M136 177h44m34 0h130m36 0h151" stroke="#0B0C10" stroke-width="5"/><path d="M136 225h44m-44 17h30M382 225h145m-145 18h111m-111 18h130" stroke="#C9CBD0" stroke-width="4"/><path d="M136 295h44m-44 17h30M382 295h145m-145 18h111m-111 18h130" stroke="#C9CBD0" stroke-width="4"/><path d="M136 365h44m-44 17h30M382 365h145m-145 18h111m-111 18h130" stroke="#C9CBD0" stroke-width="4"/><path d="M136 435h44m-44 17h30M382 435h145m-145 18h111m-111 18h130" stroke="#C9CBD0" stroke-width="4"/><rect x="224" y="218" width="110" height="39" rx="6" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/><path d="m264 227 24 12-24 12z" fill="#FFFFFF"/><path d="M240 289h79v45h-79z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="4"/><path d="m240 289 40-16 39 16m-39 0v45" fill="none" stroke="#0B0C10" stroke-width="4"/><path d="M235 362h88v41h-88z" fill="#EFF1F4" stroke="#0B0C10" stroke-width="4"/><path d="M250 376h59m-59 13h43" stroke="#C9CBD0" stroke-width="4"/><path d="M256 435h47v44h-47z" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/><path d="M601 285h54m-16-13 16 13-16 13" fill="none" stroke="#0B0C10" stroke-width="5"/><path d="M704 317h245v173H704z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="704" y="317" width="245" height="173" rx="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><path d="M720 333h213v140H720z" fill="#EFF1F4"/><path d="M778 382h99v73h-99z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/><path d="M778 382v-20h99v20m-89-13h79" fill="none" stroke="#0B0C10" stroke-width="4"/><circle cx="862" cy="369" r="6" fill="#FE2C55"/><path d="M826 493v51m-55 0h110" stroke="#0B0C10" stroke-width="6"/><rect x="936" y="228" width="151" height="90" rx="13" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><path d="m1087 248 31-18v85l-31-18z" fill="#FE2C55" stroke="#0B0C10" stroke-width="5"/><circle cx="1008" cy="273" r="28" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/><circle cx="1008" cy="273" r="12" fill="#FFFFFF"/><path d="M954 215v13h48v-13z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="4"/><path d="m1009 319-36 50m36-50 36 50m-36-50v60" stroke="#0B0C10" stroke-width="5"/><circle cx="735" cy="172" r="60" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><circle cx="735" cy="172" r="43" fill="#EFF1F4"/><path d="M735 135v37l27 19" fill="none" stroke="#0B0C10" stroke-width="5"/><path d="M724 99V84h23v15m36 19 14-13" stroke="#0B0C10" stroke-width="5" fill="none"/><circle cx="735" cy="172" r="5" fill="#FE2C55"/><path d="M650 259h176" stroke="#25F4EE" stroke-width="15"/><path d="M826 259h72" stroke="#DFE0E2" stroke-width="15"/><path d="M651 284v10m82-10v10m92-10v10m72-10v10" stroke="#0B0C10" stroke-width="4"/><path d="M927 420h160v117H927z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/><path d="M943 440h123m-123 23h86m-86 23h111m-111 23h73" stroke="#C9CBD0" stroke-width="4"/><path d="M610 405v95l35-13v-95z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/><path d="m610 500 12 27 23-40m-35-82 35-13 9-23-35 13z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="4"/><path d="M255 553h304m-414-4h48" stroke="#C9CBD0" stroke-width="5"/><circle cx="1134" cy="142" r="11" fill="#FE2C55"/><path d="M619 127h26m-13-13v26" stroke="#25F4EE" stroke-width="5"/></svg><figcaption>映像とセリフを並べ、話す時間と商品を見せる時間をそろえる（編集部作成）</figcaption></figure><p class="lead">TikTok Shopの商品紹介の台本は、時間、映す物、話す内容、画面に出す説明、確認する事実を横に並べて作ります。自社で撮るならセリフまで書き、クリエイターへ渡すなら、変えてはいけない商品情報と言わないことを残します。誰が使う台本かで、書く量を分けてください。</p>
+<p>この記事では、写して使う台本の書式と、架空の商品での記入例を示します。文字数を先に固定せず、話す時間と商品を見せる時間を分け、読み上げて収まる量へ調整する形です。動画の効果を予測する数字ではなく、撮影を進めるための計画として使います。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">台本は、自社の撮影用とクリエイターへ渡す用で書く量を変えます</a></li><li><a href="#s2">秒ごとの欄に、映像・セリフ・画面の説明・確認事項を並べます</a></li><li><a href="#s3">文字数は、読み上げる時間と動作の時間を分けて決めます</a></li><li><a href="#s4">クリエイターへは、必須の事実と言わないことを抜き出して渡します</a></li><li><a href="#s5">台本は、事実・表示・商品リンクを別々に確認します</a></li><li><a href="#summary">時間の欄へ事実と映像を置き、使う人に合わせて書き分けます</a></li><li><a href="#faq">台本の欄を埋めるときによくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>台本は、自社の撮影用とクリエイターへ渡す用で書く量を変えます</h2>
+<p>自社で撮る台本は、撮影する人と話す人が同じ準備を持つために使います。どの場面で商品を持ち、何を見せ、どの言葉を話すかを書きます。セリフを省略し過ぎると、撮影の場で説明を足し続け、予定の長さへ収まらなくなります。</p>
+<p>一方、クリエイターに渡す台本は、企業側のセリフをそのまま読んでもらうための物にしません。守るべき商品情報、必要な場面、確認が要る表現をそろえ、本人の話し方へ置き換えられる形にします。完成した言い方より、紹介の中で残す事実を明確にしてください。</p>
+<p>そのため、同じ表から使う欄を変える方法があります。自社用にはセリフを記入し、本人へ渡す版では、その欄を「必ず伝える事実」と「本人に任せる言い方」へ分けます。映す物や確認する商品情報は共通にすると、企業側が何を確認するかも変わりません。</p>
+<p>台本の冒頭には、撮る商品と販売する種類を記入します。同じ見た目の商品でも、セットや付属品が違えば、話す内容も変わります。商品を入れ替えたときは、セリフだけでなく、映像と購入先の確認欄まで同じ商品へ直します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="共通の商品情報と映像の欄から、自社用はセリフ、本人へ渡す用は必須の事実と言わないことへ書き分ける図"><rect width="900" height="400" fill="#FFFFFF"/><path d="M40 40h820v88H40z" fill="#EFF1F4"/><path d="M450 128v36H235v29m215-29h215v29" fill="none" stroke="#0B0C10" stroke-width="3"/><rect x="45" y="197" width="380" height="140" rx="9" fill="#EFF1F4"/><rect x="475" y="197" width="380" height="140" rx="9" fill="#25F4EE"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="23"><text x="450" y="77">共通でそろえる欄</text><text x="450" y="112" font-size="21">時間・映像・商品情報・表示・案内先</text><text x="235" y="238">自社で撮る版</text><text x="235" y="280" font-size="21">読むセリフまで書く</text><text x="235" y="317" font-size="19">動作と合わせて通す</text><text x="665" y="238">本人へ渡す版</text><text x="665" y="280" font-size="21">必須の事実と言わないこと</text><text x="665" y="317" font-size="19">本人の話し方へ置き換える</text><text x="450" y="384" font-size="21">使う人に合わせて、セリフの欄の書き方を変える</text></g></svg><figcaption>同じ書式から、撮影する人に合わせた版を作る（編集部作成）</figcaption></figure>
+<p>台本には、話さずに商品を見せる場面も書きます。手を動かす間や、細部へ寄る映像を、空欄のまま残さないようにします。無言で見せたいところが分かれば、撮影時に説明を詰め込み過ぎず、商品を確認する時間を確保できます。</p>
+<p>表の外には、使う商品資料と、台本を確定した日付を添えます。撮影を頼む人が読む版と、企業が確認する版を対応させるためです。セリフを直した後に古い表を渡さないよう、使う版をそろえてから撮影の準備へ進みます。</p>
+<p>動画全般の構成や、公開後の改善の進め方は、<a href="https://leam.co.jp/column/short-video-playbook/">TikTok Shopのショート動画の作り方</a>に任せます。本記事では、その企画を撮影の表へ落とす書き方に絞ります。台本を使う人が、何を撮り、何を話し、どこへ確認を戻すかを読める形にします。</p>
+
+<h2 id="s2"><span class="no en">02</span>秒ごとの欄に、映像・セリフ・画面の説明・確認事項を並べます</h2>
+<p>台本は文章だけを続けず、映像と話す内容を横に並べます。声では付属品を説明しているのに、画面では別の商品が映っている、といった食い違いを見つけるためです。時間の欄は、映像と音声が同じ順序で進むかを確認する目印にします。</p>
+<p>次は、30秒の動画を想定した空欄のテンプレートです。秒数は書式を示す仮の割り当てで、最適な長さや公式の基準ではありません。撮る商品の動作や読み上げに合わせて、区切りを動かして使ってください。</p>
+<div class="tw"><table><thead><tr><th>仮の時間</th><th>映す物・動作</th><th>話すセリフ</th><th>画面の説明</th><th>確認する事実・案内先</th></tr></thead><tbody>
+<tr><td>0〜4秒</td><td>見せる商品と最初の場面を記入</td><td>何を紹介するかを短く記入</td><td>必要な説明と表示する場所を記入</td><td>対象の商品と種類を記入</td></tr>
+<tr><td>4〜10秒</td><td>全体の形や使う準備を記入</td><td>商品の確認済みの特徴を記入</td><td>声を補う言葉を記入</td><td>根拠にする商品資料を記入</td></tr>
+<tr><td>10〜18秒</td><td>特徴を確かめる動作を記入</td><td>映像に対応する説明を記入</td><td>必要な条件や補足を記入</td><td>動作と説明が合うかを記入</td></tr>
+<tr><td>18〜25秒</td><td>付属品や細部の場面を記入</td><td>購入前に伝える条件を記入</td><td>誤解を防ぐ説明を記入</td><td>含まれる物・含まれない物を記入</td></tr>
+<tr><td>25〜30秒</td><td>最後に見せる商品を記入</td><td>商品を確かめる先の案内を記入</td><td>案内と重ならない説明を記入</td><td>商品リンクの対象を記入</td></tr>
+</tbody></table></div><p class="src">仮の秒数を置いた台本のテンプレート（編集部作成）</p>
+<p>記入例には、架空の収納ポーチを使います。「ファスナーで口を閉じる」「セットに含まれるのは本体のみ」という設定です。以下の商品情報とセリフは説明用に作ったもので、実在の商品の仕様ではありません。実際の依頼では、販売する商品の確認済みの内容へ置き換えます。</p>
+<div class="tw"><table><thead><tr><th>仮の時間</th><th>映す物・動作</th><th>セリフの例</th><th>画面の説明の例</th><th>確認するところ</th></tr></thead><tbody>
+<tr><td>0〜4秒</td><td>机の小物とポーチを同じ画面に置く</td><td class="speech">机の上の小物をまとめたいときに。</td><td>収納ポーチの紹介</td><td>小物は撮影用で、セットに含めない</td></tr>
+<tr><td>4〜10秒</td><td>ポーチの全体と開閉する部分を映す</td><td class="speech">これは、ファスナーで口を閉じる収納ポーチです。</td><td>口を閉じる様子</td><td>実物の動作と話す内容を合わせる</td></tr>
+<tr><td>10〜18秒</td><td>開いた状態と、小物を取り出す動作を映す</td><td class="speech">開けると中を見渡せます。使いたい物を取り出します。</td><td>手元で隠れない位置へ</td><td>映っていない使い方を付け加えない</td></tr>
+<tr><td>18〜25秒</td><td>ポーチの本体を置き、撮影用小物と分ける</td><td class="speech">この例でセットに含まれるのは、本体だけです。</td><td>小物は付属しません</td><td>架空の設定を、実商品の同梱内容へ直す</td></tr>
+<tr><td>25〜30秒</td><td>本体の全体をもう一度見せる</td><td class="speech">形や付属品は、商品ページでも確認してください。</td><td>紹介している商品を確認</td><td>案内先と撮影した商品を照合する</td></tr>
+</tbody></table></div><p class="src">架空の収納ポーチでの記入例。秒数と仕様は仮の設定（編集部作成）</p>
+<p>画面の説明欄には、何を文字として出すかだけでなく、撮影する人への指示も混ざりがちです。公開する字幕と、制作担当だけが読む指示を区別してください。「手元で隠れない位置へ」は制作の指示なので、そのまま視聴者へ出す文ではありません。</p>
+<p>表を実際に使う版では、公開する字幕の前に「字幕」、撮影の指示の前に「制作メモ」と付ける方法があります。欄を増やせるなら、それぞれを別にしてもかまいません。書式を渡した相手が、視聴者へ見せる言葉と、自分への指示を取り違えない形を選びます。</p>
+<p>確認できていない商品情報は、セリフの例へ埋めず、確認事項の欄へ残します。たとえば付属品が未確定なら、その点を調べる担当へ戻します。「小物は付属しません」という架空の設定を、確認前の商品へそのまま使わないでください。表の完成と、商品情報の確認済みという状態を分けます。</p>
+<p>撮影する物が開封を伴うなら、包みを開ける前の状態を残す必要があるかも記入します。先に商品を出してしまうと、撮影の順番を戻せない場合があります。開封で見せる場面の指定は、<a href="https://leam.co.jp/column/unboxing-video/">開封動画の撮り方の指示</a>へつなげられます。</p>
+<p>表を使うときは、秒数の欄だけで撮影を急がせないようにします。説明に必要な動作が収まらないなら、セリフを短くする、別の場面へ分ける、全体の長さを調整する、といった直しを行います。まずは映す内容が分かる形で書き、その後で時間を合わせます。</p>
+
+<h2 id="s3"><span class="no en">03</span>文字数は、読み上げる時間と動作の時間を分けて決めます</h2>
+<p>動画の長さだけから、セリフの文字数を決めないでください。商品を開く、取り出す、並べるといった動作を見せる間も、動画の時間に含まれます。すべての時間を話す前提で書くと、実物を見せる余裕がなくなります。</p>
+<p>目安は、台本を使う本人が声に出して確かめます。句読点や、商品の名前を言う間、動作を待つ時間まで含めて読んでください。文章の文字数は同じでも、読み上げる人と見せる動作で収まり方が変わります。</p>
+<p>仮の例として、上の表のセリフ合計109字を、自然な速さで読んだ時間が20秒だったとします。これは実測値ではなく、考え方を示すための仮定です。30秒の計画で、残る10秒を商品を見せる無言の場面に使うなら、まずはその109字を入れて通します。</p>
+<div class="tw"><table><thead><tr><th>仮の動画の長さ</th><th>話すために使う時間</th><th>無言の動作などへ使う時間</th><th>同じ仮の速さで考える文字数</th></tr></thead><tbody>
+<tr><td>30秒</td><td>20秒</td><td>10秒</td><td>109字を出発点に、実際に通して確認する</td></tr>
+<tr><td>25秒</td><td>20秒</td><td>5秒</td><td>話す時間は同じなので109字。動作が収まるかを見る</td></tr>
+<tr><td>20秒</td><td>15秒</td><td>5秒</td><td>計算上は約82字。区切りの良い文へ書き直す</td></tr>
+</tbody></table></div><p class="src">文字数と時間の関係を示す仮の計画例。読み上げ時間は仮定で、一般的な話速の基準ではありません（編集部作成）</p>
+<p>短くしたいときは、同じ内容を早口で読むより、なくせる説明を探します。映像で分かる動作を声でも重ねていないか、伝える事実を増やし過ぎていないかを見ます。条件や付属品など、購入前に必要な情報まで削らないようにしてください。</p>
+<p>文字を数えるときは、読み上げるセリフだけを対象にします。字幕に出す説明、商品を動かす指示、資料を確認するメモまで一緒に数えると、話す量の目安になりません。表の欄を分ける理由は、撮影だけでなく、この数え分けにもあります。</p>
+<p>数字や略語がある文章は、画面に書いた文字の短さと、口で話す長さが一致しないこともあります。商品名をどう読むかまで決めてから、声に出して確かめてください。字数が少ないという理由だけで、説明する時間も短いと判断しないようにします。</p>
+<p>撮影する人が変わった場合も、前の人の読み上げ時間をそのまま当てはめません。新しく話す本人が、使う文章と実物で通します。間を取った方が商品を見せやすい場面もあるので、台本へ戻す際は、長かったセリフと必要だった動作を分けて記録します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="仮の30秒の動画で109字を20秒で読んだと仮定し、動作などの10秒を別に取る例の図"><rect width="900" height="400" fill="#FFFFFF"/><path d="M70 105h510v100H70z" fill="#25F4EE"/><path d="M580 105h250v100H580z" fill="#DFE0E2"/><path d="M70 218v21m510-21v21m250-21v21" stroke="#0B0C10" stroke-width="3"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="24"><text x="450" y="59">30秒の計画を考える仮の例</text><text x="325" y="146">話す20秒</text><text x="325" y="184" font-size="21">109字を読めたと仮定</text><text x="705" y="146">動作など10秒</text><text x="705" y="184" font-size="21">無言で見せる場面</text><text x="450" y="292" font-size="22">声だけでなく、実物を動かしながら通す</text><text x="450" y="345" font-size="21">一般的な話す速さや、最適な長さの基準ではない</text><text x="450" y="383" font-size="20">本人が読んだ時間で、文章と動作を調整する</text></g></svg><figcaption>話す時間と商品を見せる時間を、仮の計画で分ける（編集部作成）</figcaption></figure>
+<p>読み上げた時間を確かめたら、今度は商品を動かしながら通します。声だけでは収まっても、手元で商品を見せると待つ時間が必要になることがあります。無理に速く動かすのではなく、映像が伝わる長さを見て、文章と場面の区切りを調整します。</p>
+<p>台本を変更した場合は、以前に数えた文字数や読み上げ時間をそのまま残さないようにします。使用する版のセリフを数え直し、本人が読む内容と撮影する動作で通します。完成した文章の字数より、撮影で何を伝えられるかを基準にしてください。</p>
+
+<h2 id="s4"><span class="no en">04</span>クリエイターへは、必須の事実と言わないことを抜き出して渡します</h2>
+<p>自社用のセリフが完成したら、そのまま全行を本人へ送る前に、内容を分けます。商品について変えない事実と、本人が選べる言い方を区別してください。本人の実体験ではない感想を、自社のセリフから読み上げてもらう依頼にしないことも大切です。</p>
+<p>渡す版では、必須の事実、言わないこと、確認する資料を対応させます。「自由に紹介してください」とだけ伝えるのでも、すべての語尾を固定するのでもなく、内容が変わると困る点を具体化します。本人の感想を話す場面は、実際に確かめた内容から作ってもらいます。</p>
+<div class="tw"><table><thead><tr><th>自社用の記入</th><th>本人へ残す事実や条件</th><th>言わないこと・確認へ戻すこと</th></tr></thead><tbody>
+<tr><td>収納ポーチの商品名を読み上げる</td><td>どの商品と種類を紹介するか</td><td>別の種類の仕様を混ぜない</td></tr>
+<tr><td>ファスナーを開閉するセリフを書く</td><td>実物で確かめられる開閉の特徴</td><td>確認していない耐久性や性能を足さない</td></tr>
+<tr><td>セットに含まれるのは本体だけと説明する</td><td>商品に含まれる物と、撮影用の小物の区別</td><td>小物も付属するように見せない</td></tr>
+<tr><td>使用する場面に感想を書く</td><td>本人が実際に試した内容で話す</td><td>企業の作った感想を、本人の体験として言わせない</td></tr>
+<tr><td>画面へ出す説明を記入する</td><td>依頼の関係や、伝える条件を確認する箇所</td><td>表示の確認を、話し方の調整だけで済ませない</td></tr>
+<tr><td>商品ページへの案内を読む</td><td>紹介した商品と、案内する対象をそろえる</td><td>違う商品へのリンクを、そのまま使わない</td></tr>
+</tbody></table></div><p class="src">架空の商品例から、クリエイターへ渡す条件を抜き出す表（編集部作成）</p>
+<p>企業側の文章にある「私は使いやすいと感じました」といった言葉も、そのまま本人の感想として渡しません。使って何を感じたかは、本人が確かめた内容で話してもらいます。商品情報を守る指定と、望む評価を言わせる指定を分けて確認してください。</p>
+<p>一方、本人の言い方に合わせた結果、意味が変わっていないかは企業が確認します。含まれる物が変わる、使う条件が抜ける、確認していない性能が増える、といった変更がないかを見ます。自社の文章と同じ語順かどうかより、事実が保たれているかを確かめます。</p>
+<p>渡す表には、言い換えてよい部分も明確にします。「商品名と同梱内容は残し、導入の言い方は本人に任せる」といった区別です。全部が固定に見える版と、全部が自由に見える版の間を曖昧にせず、本人が何を判断してよいかを読める形にします。</p>
+<p>本人から確認が戻ってきたら、回答を台本の同じ行へ反映します。別のやり取りだけで答えると、撮影する表に古い条件が残ることがあります。企業側の資料を更新した場合も、本人へ渡す事実の欄を直し、どこが変わったかを合わせて伝えます。</p>
+<p>依頼の目的、納品条件、修正の窓口などの全体は、<a href="https://leam.co.jp/column/creator-brief-template/">クリエイターブリーフの作り方</a>でまとめます。台本の表は、その中で撮影と話す内容を伝える部分です。本人へ渡す資料と、企業側が検品する資料を同じ商品と版で対応させてください。</p>
+
+<h2 id="s5"><span class="no en">05</span>台本は、事実・表示・商品リンクを別々に確認します</h2>
+<p>台本が時間内に収まったら、内容の確認へ進みます。商品情報と合っているか、依頼の関係や条件が伝わるか、購入先が同じ商品かを分けて見ます。セリフだけを読み直しても、字幕や映像で変わった意味までは確かめられません。</p>
+<p>2026年11月6日に取得した日本向けのTikTok Shopコンテンツポリシーは、誤解を招く情報や宣伝を含むコンテンツを禁じています。リンク先の商品が動画で明確に紹介されていない場合も、無関係なプロモーションとして説明されています。台本の段階から、話す内容と映す商品を合わせます。</p>
+<div class="tw"><table><thead><tr><th>確認する対象</th><th>台本で見る欄</th><th>撮影後に合わせる内容</th><th>直すときの戻し先</th></tr></thead><tbody>
+<tr><td>事実</td><td>セリフ、映す物、根拠の資料</td><td>販売する商品と種類、付属品、説明した特徴</td><td>商品の確認済みの資料へ戻す</td></tr>
+<tr><td>表示</td><td>画面の説明、必要な条件、依頼の関係</td><td>実際の映像と字幕で、必要な情報が伝わるか</td><td>表示を確認する担当へ戻す</td></tr>
+<tr><td>商品リンク</td><td>最後の案内と、対象の商品</td><td>動画で紹介した物と、案内先で販売する物</td><td>商品と案内先を対応させ直す</td></tr>
+</tbody></table></div><p class="src">台本と完成動画を対応させる確認（公式資料に基づき編集部作成）</p>
+<p>字幕を短くする際も、条件が消えていないかを確認します。セリフにない強い説明を字幕へ足した場合は、その説明の事実も確認する対象です。話す文章、画面に出す文章、映る商品を同じ紹介として読み合わせてください。</p>
+<p>商品リンクの確認では、台本の最後のセリフだけでなく、映像で見せた種類を見ます。セット商品を撮ったのに別の販売内容へ案内していないか、撮影用の小物を含むセットだと誤解されないかを確かめます。紹介した物が購入先で見つけられるかという視点で照合します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="事実は実物とセリフと資料、表示は字幕と条件と依頼の関係、商品リンクは紹介した物と案内先を照合する図"><rect width="900" height="400" fill="#FFFFFF"/><path d="M45 45h810v240H45z" fill="#EFF1F4"/><path d="M45 45h220v240H45z" fill="#25F4EE"/><path d="M45 125h810M45 205h810" stroke="#FFFFFF" stroke-width="5"/><path d="M290 85h35m-11-10 11 10-11 10m-24 70h35m-11-10 11 10-11 10m-24 70h35m-11-10 11 10-11 10" fill="none" stroke="#0B0C10" stroke-width="3"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="23"><text x="155" y="94">事実</text><text x="155" y="174">表示</text><text x="155" y="254">商品リンク</text><text x="585" y="94">実物・セリフ・根拠の資料</text><text x="585" y="174">字幕・条件・依頼の関係</text><text x="585" y="254">紹介した物と購入先の商品</text><text x="450" y="350" font-size="22">台本の行と、完成動画の場面を対応させる</text><text x="450" y="387" font-size="20">語順の違いだけでなく、意味の違いを見る</text></g></svg><figcaption>台本と動画を、別々の確認先へ戻せる形にする（編集部作成）</figcaption></figure>
+<p>完成した動画に違いがあったら、台本の該当する行を示して確認を戻します。「何となく直してほしい」ではなく、どの商品情報が違うか、どの場面で条件が抜けたかを伝えます。修正した版は、セリフだけでなく、字幕と映像、案内先まで見直します。</p>
+<p>台本を作る補助にAIを使う場合も、確認済みの事実が増えるわけではありません。文章の候補と、商品について確かめた情報を分けて扱います。その使い方は、<a href="https://leam.co.jp/column/tiktok-script-ai/">AIでTikTokの台本を作るときの確認</a>へつなげられます。</p>
+<p>ライブ用の台本は、撮って編集する動画とは進め方が異なります。コメントを受けながら話す配信の書き方は、<a href="https://leam.co.jp/column/tiktok-shop-live-script/">TikTok Shop LIVE台本の作り方</a>を参照してください。ここでは、撮影する場面ごとに記入し、完成した動画へ照合する書式に絞ります。</p>
+
+<h2 id="summary"><span class="no en">06</span>時間の欄へ事実と映像を置き、使う人に合わせて書き分けます</h2>
+<p>商品紹介の台本は、時間、映像、セリフ、画面の説明、確認する事実を横に並べます。自社用には読み上げる内容まで書き、クリエイターへは変えない商品情報と言わないことを残します。同じ表でも、使う人が必要とする情報へ直して渡してください。</p>
+<p>文字数は、話す時間と商品を見せる時間から考えます。仮の例を自社の基準として固定せず、本人が商品を動かしながら通して調整します。最後に事実、表示、商品リンクを別々に確認し、台本と完成した映像の違いを確かめます。</p>
+
+<h2 id="faq"><span class="no en">07</span>台本の欄を埋めるときによくある質問</h2>
+<p>台本は、文字数の上限だけを決める表ではありません。話す文章と商品を動かす場面を並べ、どこに確認が必要かを見える形にします。</p>
+<p>以下では、読み上げる文章の数え方や、編集する版の扱いを整理します。動画全体の最適な長さや、依頼全般の条件とは分けて使ってください。</p>
+<div class="faq">
+<details><summary>セリフの文字数に、字幕や撮影指示も含めますか？</summary><div class="a">読み上げる量を確認するなら、セリフだけを数えます。字幕、動作の指示、資料の確認メモは別の欄へ残します。全部を足した字数では、本人が話す時間の目安になりません。</div></details>
+<details><summary>秒の区切りとセリフが合わないとき、早口にすればよいですか？</summary><div class="a">まず、重複する説明や、映像で伝えられる内容を見直します。商品を動かす時間も残し、文章と場面の区切りを調整してください。購入前に必要な条件まで削らないようにします。</div></details>
+<details><summary>無言で商品を見せる場面は、台本を空欄にしてよいですか？</summary><div class="a">映す物と動作を記入し、セリフを入れない場面だと分かる形にします。何も書かないと、撮影時に説明を足す場所に見えることがあります。全体の時間へ動作の長さも含めてください。</div></details>
+<details><summary>本人の言い方で商品情報の意味が変わった場合、どの欄へ戻しますか？</summary><div class="a">変わってはいけない事実と、根拠の資料へ戻します。付属品や使用条件、性能の説明が変わっていないかを確かめます。語尾や語順の違いと、商品情報そのものの違いを分けて伝えてください。</div></details>
+<details><summary>商品を入れ替えた台本は、セリフだけ直せば使えますか？</summary><div class="a">映す実物、字幕、付属品、案内先も合わせて直します。同じ見た目でも、種類やセットが変わることがあります。以前に数えた文字数と読み上げ時間も、そのまま新しい版へ引き継がないようにします。</div></details>
+<details><summary>撮影した動画が台本から変わっていたら、どの順で確認しますか？</summary><div class="a">事実、表示、商品リンクの確認欄へ分けて照合します。台本と同じ言い方かだけでなく、映像と字幕で意味が変わっていないかを見ます。直す内容は、該当する行と商品資料を示して戻します。</div></details>
+</div>
+<div class="ctabox"><div class="ct">台本の用意から、紹介の依頼までまとめて任せたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2>参考情報</h2><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2652995084699409&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop：ショート動画とLIVE配信の運用</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2707587427927825&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop：コンテンツポリシー</a></li></ul><p class="src">2026年11月6日に日本向け公式資料を取得しました。商品紹介の案内と、誤解を招く内容や、リンクされた商品が明確に紹介されない内容についての説明を参照しています。台本の書式、架空の商品、秒数、読み上げ時間は編集部作成の仮の例です。特定の文字数・話す速さ・動画の長さを公式の基準として示すものではありません。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方</a></b><span>構成と改善の考え方を確認する</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/creator-brief-template/">クリエイターブリーフの作り方</a></b><span>依頼全体の条件をまとめる</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/tiktok-shop-live-script/">LIVE台本の作り方</a></b><span>配信で使う書き方を確認する</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">台本は、自社の撮影用とクリエイターへ渡す用で書く量を変えます</a></li><li><a href="#s2">秒ごとの欄に、映像・セリフ・画面の説明・確認事項を並べます</a></li><li><a href="#s3">文字数は、読み上げる時間と動作の時間を分けて決めます</a></li><li><a href="#s4">クリエイターへは、必須の事実と言わないことを抜き出して渡します</a></li><li><a href="#s5">台本は、事実・表示・商品リンクを別々に確認します</a></li><li><a href="#summary">時間の欄へ事実と映像を置き、使う人に合わせて書き分けます</a></li><li><a href="#faq">台本の欄を埋めるときによくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "セリフの文字数に、字幕や撮影指示も含めますか？", "acceptedAnswer": {"@type": "Answer", "text": "読み上げる量を確認するなら、セリフだけを数えます。字幕、動作の指示、資料の確認メモは別の欄へ残します。全部を足した字数では、本人が話す時間の目安になりません。"}}, {"@type": "Question", "name": "秒の区切りとセリフが合わないとき、早口にすればよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "まず、重複する説明や、映像で伝えられる内容を見直します。商品を動かす時間も残し、文章と場面の区切りを調整してください。購入前に必要な条件まで削らないようにします。"}}, {"@type": "Question", "name": "無言で商品を見せる場面は、台本を空欄にしてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "映す物と動作を記入し、セリフを入れない場面だと分かる形にします。何も書かないと、撮影時に説明を足す場所に見えることがあります。全体の時間へ動作の長さも含めてください。"}}, {"@type": "Question", "name": "本人の言い方で商品情報の意味が変わった場合、どの欄へ戻しますか？", "acceptedAnswer": {"@type": "Answer", "text": "変わってはいけない事実と、根拠の資料へ戻します。付属品や使用条件、性能の説明が変わっていないかを確かめます。語尾や語順の違いと、商品情報そのものの違いを分けて伝えてください。"}}, {"@type": "Question", "name": "商品を入れ替えた台本は、セリフだけ直せば使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "映す実物、字幕、付属品、案内先も合わせて直します。同じ見た目でも、種類やセットが変わることがあります。以前に数えた文字数と読み上げ時間も、そのまま新しい版へ引き継がないようにします。"}}, {"@type": "Question", "name": "撮影した動画が台本から変わっていたら、どの順で確認しますか？", "acceptedAnswer": {"@type": "Answer", "text": "事実、表示、商品リンクの確認欄へ分けて照合します。台本と同じ言い方かだけでなく、映像と字幕で意味が変わっていないかを見ます。直す内容は、該当する行と商品資料を示して戻します。"}}]}</script>
+</body>
+</html>

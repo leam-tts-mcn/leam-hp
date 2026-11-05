@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>TikTokの台本をAIで作る｜TikTok Shopの確認点</title>
+<meta name="description" content="AIでTikTok Shopの台本を作るときは、確認済みの商品情報を先に渡します。写して使えるプロンプトの型と、出力の誤り、事実・表現・表示・素材の権利を点検する表をまとめます。">
+<link rel="canonical" href="https://leam.co.jp/column/tiktok-script-ai/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="TikTokの台本をAIで作る｜TikTok Shopの確認点">
+<meta property="og:description" content="AIでTikTok Shopの台本を作るときは、確認済みの商品情報を先に渡します。写して使えるプロンプトの型と、出力の誤り、事実・表現・表示・素材の権利を点検する表をまとめます。">
+<meta property="og:url" content="https://leam.co.jp/column/tiktok-script-ai/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/tiktok-script-ai.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TikTokの台本をAIで作る｜TikTok Shopの確認点">
+<meta name="twitter:description" content="AIでTikTok Shopの台本を作るときは、確認済みの商品情報を先に渡します。写して使えるプロンプトの型と、出力の誤り、事実・表現・表示・素材の権利を点検する表をまとめます。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/tiktok-script-ai.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "TikTokの台本をAIで作る｜TikTok Shopの確認点", "description": "AIでTikTok Shopの台本を作るときは、確認済みの商品情報を先に渡します。写して使えるプロンプトの型と、出力の誤り、事実・表現・表示・素材の権利を点検する表をまとめます。", "inLanguage": "ja", "datePublished": "2026-11-06", "dateModified": "2026-11-06", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/tiktok-script-ai/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/tiktok-script-ai.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=7981558599599888&lang=ja-JP", "name": "TikTok Shop：AI生成コンテンツ（AIGC）の解説"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "TikTokの台本をAIで作る｜TikTok Shopの確認点", "item": "https://leam.co.jp/column/tiktok-script-ai/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script-ai">無料相談</a></div>
+<div class="shell">
+<article><p class="crumb"><a href="https://leam.co.jp/">ホーム</a> ／ <a href="https://leam.co.jp/column/">コラム</a> ／ AIで商品紹介の台本を作る確認</p><span class="cat">紹介動画と表示の確認</span><h1>TikTokの台本をAIで作る｜TikTok Shopの確認点</h1><div class="meta"><time class="upd" datetime="2026-11-06">更新日：2026年11月6日</time><time datetime="2026-11-06">公開日：2026年11月6日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="確認した商品の情報を載せた書類からAIへ文章を依頼し、出てきた台本を虫眼鏡で元の事実と照合するイラスト" stroke-linejoin="round" stroke-linecap="round"><rect width="1200" height="630" fill="#FFFFFF"/><path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/><ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/><path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/><g fill="#D8DADE" id="tiktokscriptaiDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#tiktokscriptaiDots" transform="translate(944 542)"/><rect x="82" y="139" width="284" height="335" rx="15" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="82" y="139" width="284" height="335" rx="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><path d="M108 166h231v41H108z" fill="#25F4EE"/><path d="M124 186h192" stroke="#0B0C10" stroke-width="5"/><path d="M109 231h24v24h-24zm0 65h24v24h-24zm0 65h24v24h-24z" fill="#EFF1F4" stroke="#0B0C10" stroke-width="4"/><path d="m114 242 7 7 16-19m-23 77 7 7 16-19m-23 77 7 7 16-19" fill="none" stroke="#0B0C10" stroke-width="4"/><path d="M153 237h184m-184 18h143m-143 47h184m-184 18h151m-151 47h184m-184 18h139" stroke="#C9CBD0" stroke-width="4"/><path d="M108 418h229m-229 21h169" stroke="#C9CBD0" stroke-width="5"/><path d="m115 508 97-28 131 46-96 29z" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/><path d="m145 500 129 47m-96-57 128 47m-191-29 132 47m-66-67-30 52m64-40-31 52m64-40-31 52" fill="none" stroke="#0B0C10" stroke-width="4"/><path d="M399 281h56m-16-12 16 12-16 12" fill="none" stroke="#0B0C10" stroke-width="5"/><path d="M510 217h188v172H510z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="510" y="217" width="188" height="172" rx="23" fill="#25F4EE" stroke="#0B0C10" stroke-width="7"/><path d="M604 217v-35" stroke="#0B0C10" stroke-width="5"/><circle cx="604" cy="173" r="12" fill="#FE2C55" stroke="#0B0C10" stroke-width="4"/><path d="M493 257h17v68h-17zm205 0h17v68h-17z" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/><circle cx="554" cy="279" r="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/><circle cx="652" cy="279" r="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/><circle cx="554" cy="279" r="6" fill="#0B0C10"/><circle cx="652" cy="279" r="6" fill="#0B0C10"/><path d="M550 330h108v26H550z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/><path d="M576 330v26m27-26v26m27-26v26" stroke="#C9CBD0" stroke-width="4"/><path d="M535 401h137v70H535z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/><path d="M551 418h103m-103 18h79m-79 18h92" stroke="#C9CBD0" stroke-width="4"/><path d="M736 281h52m-15-12 15 12-15 12" fill="none" stroke="#0B0C10" stroke-width="5"/><rect x="820" y="143" width="284" height="336" rx="15" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="820" y="143" width="284" height="336" rx="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><path d="M846 171h231v39H846z" fill="#EFF1F4"/><path d="M858 190h195" stroke="#0B0C10" stroke-width="5"/><path d="M847 237h228m-228 24h189m-189 24h213m-213 41h228m-228 24h176m-176 24h206m-206 41h206m-206 24h170" stroke="#C9CBD0" stroke-width="5"/><circle cx="1073" cy="439" r="60" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><circle cx="1073" cy="439" r="42" fill="#25F4EE"/><path d="M1044 424h59m-59 16h43m-43 16h53" stroke="#0B0C10" stroke-width="4"/><path d="m1116 483 48 48" stroke="#0B0C10" stroke-width="17"/><path d="m1155 522 10 10" stroke="#5E6064" stroke-width="17"/><path d="M797 510H435v-91m-12 16 12-16 12 16" stroke="#C9CBD0" stroke-width="5" fill="none"/><path d="M917 100h25m-12-12v24" stroke="#25F4EE" stroke-width="5"/><path d="M467 133h43m-43 15h29" stroke="#D8DADE" stroke-width="4"/><circle cx="1138" cy="254" r="10" fill="#FE2C55"/><path d="M469 554h454" stroke="#C9CBD0" stroke-width="5"/></svg><figcaption>確認した商品情報から台本の候補を作り、出力を元の事実と照合する（編集部作成）</figcaption></figure><p class="lead">AIでTikTok Shopの商品紹介の台本を作るときは、商品の事実を先に渡し、その範囲で文章を考えてもらいます。用途、素材、付属品、使う条件などを確認し、分からない性能や効果をAIに補わせないことが出発点です。読みやすい文章ができたことと、紹介できる内容が確かめられたことを分けてください。</p>
+<p>この記事では、AIへ渡す依頼文であるプロンプトの型と、出力した台本の確認表を示します。特定のサービスは選ばず、何を入力し、どの形で返してもらい、どこを人が確認するかを整理します。AIで映像や音声も作る場合の決まりは、台本の点検とは別に確かめます。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">AIへは、文章を書く前に確認済みの商品情報を渡します</a></li><li><a href="#s2">プロンプトは、渡す情報・出力の形式・禁止事項で組みます</a></li><li><a href="#s3">AIの出力は、言い過ぎ・ない機能・他者の名前を点検します</a></li><li><a href="#s4">公開前には、事実・表現・表示・素材の権利を人が確認します</a></li><li><a href="#s5">AIで映像や音声も作る場合は、台本とは別に利用条件を確かめます</a></li><li><a href="#summary">AIには表現の候補を頼み、事実と公開の確認は人が持ちます</a></li><li><a href="#faq">AIへ台本を頼むときのよくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>AIへは、文章を書く前に確認済みの商品情報を渡します</h2>
+<p>最初に渡すのは、売れる言い方の希望ではなく、紹介する商品の情報です。どの商品と種類を扱うか、何が含まれるか、どのように使うかを整理します。商品の資料に書いてあることと、担当者がそうだろうと考えていることを混ぜないようにします。</p>
+<p>AIに「魅力的な台本を作って」とだけ頼むと、どの事実を使ってよいかが決まりません。表現の候補を作ってもらう前に、確認済みの欄と、確認していない欄を分けます。不明な点は、そのまま質問として残すように頼んでください。</p>
+<div class="tw"><table><thead><tr><th>渡す情報</th><th>記入する内容</th><th>補わせないこと</th></tr></thead><tbody>
+<tr><td>対象の商品</td><td>紹介する物と、販売する種類やセット</td><td>似た別商品の仕様を混ぜない</td></tr>
+<tr><td>確認済みの特徴</td><td>実物や商品資料で確かめた特徴</td><td>特徴から効果や性能を推測して足さない</td></tr>
+<tr><td>使う場面</td><td>どの用途を見せる紹介か</td><td>想定していない使い方を実証済みとして書かない</td></tr>
+<tr><td>付属品や同梱物</td><td>含まれる物と、撮影用に置く物の区別</td><td>画面の小物もセットに含まれると説明しない</td></tr>
+<tr><td>条件と注意点</td><td>紹介と一緒に伝える必要のある条件</td><td>短くするために条件を消さない</td></tr>
+<tr><td>本人が試したこと</td><td>確認した人と、実際に試して分かった内容</td><td>企業が渡していない体験談を作らない</td></tr>
+<tr><td>確認していないこと</td><td>性能、寸法、使用感などで不明な点</td><td>一般的な商品なら持つ特徴として埋めない</td></tr>
+<tr><td>映す素材</td><td>撮影する実物と、使用を確認した資料や素材</td><td>存在しない場面や、未確認の第三者の素材を前提にしない</td></tr>
+<tr><td>案内する先</td><td>台本で紹介する商品と、販売する内容の対応</td><td>別の種類やセットを同じ物として案内しない</td></tr>
+</tbody></table></div><p class="src">台本を依頼する前にそろえる入力情報（編集部作成）</p>
+<p>たとえば、素材が分かっていても、洗った後の状態や、汚れの落ちやすさまで確認できているとは限りません。素材の事実から、洗濯や防汚の性能を広げる依頼にしないようにします。使う条件は、商品について確かめた内容として別に渡します。</p>
+<p>価格や販売するセットの情報を入れるなら、どの時点の資料かもそろえます。以前の台本を使い回す場合は、古い価格や付属品の説明を引き継いでいないかを見ます。AIへ渡した入力と、完成した台本で使った資料を対応させて残してください。</p>
+<p>2026年11月6日に取得した日本向け公式ヘルプ「AI生成コンテンツ（AIGC）の解説」は、実際の商品情報を使用する考え方を示しています。価格、機能、サイズ、同梱物などを実物や提供する素材と合わせる説明です。台本でも、確認済みの事実から文章を作る順序を守ります。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="確認済みの事実から依頼文を作り、AIの台本の各説明を元の入力へ戻して照合する図"><rect width="900" height="400" fill="#FFFFFF"/><path d="M40 55h239v176H40z" fill="#EFF1F4"/><path d="M330 55h239v176H330z" fill="#25F4EE"/><path d="M620 55h239v176H620z" fill="#EFF1F4"/><path d="M281 141h47m-12-9 12 9-12 9m255-9h45m-12-9 12 9-12 9" fill="none" stroke="#0B0C10" stroke-width="3"/><path d="M740 247v63H160v-63m-10 14 10-14 10 14" stroke="#C9CBD0" stroke-width="3" fill="none"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="23"><text x="160" y="104">確認済みの事実</text><text x="160" y="155" font-size="21">実物と商品資料</text><text x="160" y="198" font-size="20">不明点は別に残す</text><text x="450" y="104">依頼する型</text><text x="450" y="155" font-size="21">形式と禁止事項</text><text x="450" y="198" font-size="20">事実を作らせない</text><text x="740" y="104">出てきた台本</text><text x="740" y="155" font-size="21">文章の候補</text><text x="740" y="198" font-size="20">確認済みとは分ける</text><text x="450" y="373" font-size="22">各説明を入力へ戻して、根拠があるかを照合する</text></g></svg><figcaption>事実から依頼し、文章の候補を事実へ戻して確かめる（編集部作成）</figcaption></figure>
+<p>AIへ渡す資料には、文章の参考にする部分と、事実の根拠にする部分を区別します。他の動画の言い回しを見たことがあっても、その商品の特徴や体験を自社商品の根拠にはできません。担当者が確かめた商品情報を、入力の中心へ置きます。</p>
+<p>社内で入力を用意する人と、台本を確認する人が別なら、未確認の欄も一緒に渡します。文章の形になっただけで、その欄まで確認済みに変えないようにします。回答を待つ内容が残っていれば、どの担当へ戻すかを明確にしておきます。</p>
+
+<h2 id="s2"><span class="no en">02</span>プロンプトは、渡す情報・出力の形式・禁止事項で組みます</h2>
+<p>依頼文は、何を書いてもらうかと、何を作ってはいけないかを分けて書きます。商品情報を渡した後に、欲しい出力の欄を指定します。表の形で返してもらえば、セリフだけでなく、映像や確認が必要な点を横に並べて見られます。</p>
+<p>以下は、担当者が商品情報を入れて使うプロンプトの型です。文章の候補を作るための依頼であり、入力した内容の正しさや、公開できる表現をAIへ判定させるものではありません。確認済みの事実と不明点を、まず人が分けて記入します。</p>
+<div class="box box-point"><div class="bt">写して使うプロンプトの型（編集部作成）</div>
+<p>【目的】TikTok Shopで紹介する商品の、撮影用の台本の下書きを作ってください。読み手は［想定する視聴者］、紹介する場面は［使う場面］です。</p>
+<p>【確認済みの商品情報】対象は［商品と種類］です。特徴は［確認した事実］、同梱物は［含まれる物］です。条件と注意点は［伝える条件］です。根拠にする資料は［確認した資料］です。</p>
+<p>【確認していない情報】［不明な性能、使い方、効果など］は未確認です。事実として書かず、確認が必要な点の欄へ残してください。</p>
+<p>【出力する形式】場面の順序、映す物と動作、セリフ、画面へ出す説明、使った商品情報、確認が必要な点の欄を持つ表にしてください。［予定する長さ］をもとに、話す部分と動作を見せる部分を分けてください。</p>
+<p>【禁止事項】入力にない機能、効果、性能、付属品、価格、実績、体験談を足さないでください。特定の企業や商品を比較対象として作らず、第三者の名前やロゴを加えないでください。条件や注意点を省いて、実際より強い意味にしないでください。</p>
+<p>【感想の扱い】本人が試した内容として渡した情報以外は、本人の体験談にしないでください。未確認の感想は、撮影する人へ確かめる質問として残してください。</p>
+<p>【表示と素材の確認】依頼の関係やAIの利用について確認する箇所と、素材の使用を確認する箇所を示してください。表示が不要、素材を自由に使えるといった結論は出さず、担当者への確認事項にしてください。</p>
+<p>【最後の確認】各セリフが、どの入力事実から作られたかを対応させてください。対応する入力がない説明は台本へ入れず、別の質問としてまとめてください。</p>
+</div>
+<p>入力の例として、架空の布製ランチョンマットを考えます。「布製で、折りたたんで収納する」「同梱物は本体だけ」を、説明用の確認済み設定とします。「水をはじく性能」「洗濯した後の状態」は未確認の設定です。実在の商品や、その性能を示す例ではありません。</p>
+<p>この設定で頼むなら、「広げて机に置く様子と、折りたたんで片付ける様子を撮る台本」と指定できます。一方で、洗いやすさや水への強さを魅力として加える依頼にはしません。未確認の欄へ書いた特徴を、出力の都合で勝手に確認済みに変えないことが大切です。</p>
+<p>出力を受け取ったら、使った入力事実の欄を見ます。セリフの根拠に「一般的な商品の特徴」と書かれていたら、それは自社で確認した商品資料ではありません。対応する事実がない説明をいったん外し、必要なら商品担当へ確認を戻します。</p>
+<div class="tw"><table><thead><tr><th>AIに返してもらう欄</th><th>読み取ること</th><th>人が照合する先</th></tr></thead><tbody>
+<tr><td>場面と映す物</td><td>どの商品を、どう動かす計画か</td><td>撮影する実物と、可能な使い方</td></tr>
+<tr><td>セリフ</td><td>どの事実を視聴者へ伝えるか</td><td>確認済みの商品資料と、本人が試した内容</td></tr>
+<tr><td>画面へ出す説明</td><td>声にない強い意味を加えていないか</td><td>セリフと、伝える条件や注意点</td></tr>
+<tr><td>使った入力事実</td><td>各説明が入力のどこから作られたか</td><td>企業が確認した資料とその版</td></tr>
+<tr><td>確認が必要な点</td><td>事実として使わず、誰へ戻すか</td><td>商品、表示、素材などを確認する担当</td></tr>
+</tbody></table></div><p class="src">プロンプトで指定する出力と照合先（編集部作成）</p>
+<p>出力の長さが合わないときは、内容を短くする前に、映像と声で重複する説明を探します。短い言葉に言い換えても、同梱物や使う条件まで消さないようにします。人が読んだ時間と、商品を動かす時間を合わせて、使う長さへ直します。</p>
+<p>台本そのものの欄や、セリフの量の調整方法は、<a href="https://leam.co.jp/column/tiktok-script/">TikTokの商品紹介の台本の作り方</a>へつなげられます。AIへ依頼する文面では、その欄を返してもらう形式として指定します。文章が出たら、そのまま撮影へ渡すのではなく、次の確認を通します。</p>
+
+<h2 id="s3"><span class="no en">03</span>AIの出力は、言い過ぎ・ない機能・他者の名前を点検します</h2>
+<p>台本の点検では、文章が自然かどうかと、商品について正しいかを別々に見ます。読みやすいセリフでも、入力にはない性能や、企業が確認していない体験が含まれる場合があります。出力の候補を、商品情報の追加資料として使わないようにします。</p>
+<p>次の表は、台本を照合するときの誤りの型です。発生する割合や頻度を調べた結果ではなく、企業が確認する対象を整理したものです。例にある言葉だけを消して終えず、どの事実や条件から離れたかを入力へ戻して確かめます。</p>
+<div class="tw"><table><thead><tr><th>点検する型</th><th>架空の出力の例</th><th>確認するところ</th><th>直す方向</th></tr></thead><tbody>
+<tr><td>効果の言い過ぎ</td><td>使うだけで悩みが解消すると説明する</td><td>入力に、その結果を裏付ける確認があるか</td><td>結果を作らず、実物で確かめた特徴へ戻す</td></tr>
+<tr><td>存在しない機能</td><td>未確認の撥水性能を、商品の機能として加える</td><td>商品資料に書かれ、確認されている内容か</td><td>機能の説明から外し、必要なら商品担当へ質問する</td></tr>
+<tr><td>付属品の追加</td><td>撮影用の食器もセットに含まれると書く</td><td>実際の同梱物と合うか</td><td>本体と撮影用の物を分けて書く</td></tr>
+<tr><td>作られた使用感</td><td>本人が使っていないのに、愛用していると話す</td><td>誰が何を試したかの情報があるか</td><td>実体験としての文章を外し、本人への確認にする</td></tr>
+<tr><td>他者の名前の混入</td><td>指定していない企業や商品を比較へ加える</td><td>なぜその名前が入ったか、使用を確認しているか</td><td>比較の前提を外し、自社商品の確認済みの説明へ戻す</td></tr>
+<tr><td>根拠のない数字</td><td>実績や割合、効果が出る期間を作る</td><td>入力した一次資料に対応しているか</td><td>根拠のない数値を採用しない</td></tr>
+<tr><td>条件の脱落</td><td>使える場面の制限を消し、どこでも使えるようにする</td><td>入力した条件や注意点が残っているか</td><td>条件と説明が一緒に伝わる文章へ直す</td></tr>
+<tr><td>確認の結論の代行</td><td>表示は不要、素材も使えると断定する</td><td>担当者が確認すべき点をAIの答えで埋めていないか</td><td>判断を外し、人が確認する欄へ戻す</td></tr>
+</tbody></table></div><p class="src">AIの台本を確認するための誤りの型。出力例はすべて架空（編集部作成）</p>
+<p>公式ヘルプも、AIを使って商品の機能や効果を作り出したり、実際以上に見せたりすることを禁じています。台本の文章であっても、存在しない特徴を撮影の指示へ入れないようにします。映像を作る人へ渡す前に、説明の根拠がどこにあるかを確かめてください。</p>
+<p>出力へ修正を頼むときは、「もっと安全に」や「正しくして」だけで済ませません。「撥水性能は未確認なので、その説明を削除し、折りたたむ動作だけを使ってください」といった形で、問題の箇所と使う事実を示します。別の性能への言い換えで、同じ意味が残らないかも見ます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="架空の布製ランチョンマットについて、入力事実と文章の候補を分け、未確認の撥水性能を採用しない例の図"><rect width="900" height="400" fill="#FFFFFF"/><path d="M50 47h800v68H50z" fill="#EFF1F4"/><path d="M50 154h800v68H50z" fill="#25F4EE"/><path d="M50 261h800v68H50z" fill="#EFF1F4"/><circle cx="101" cy="81" r="20" fill="#FFFFFF" stroke="#0B0C10" stroke-width="3"/><path d="m90 80 8 9 16-20" fill="none" stroke="#0B0C10" stroke-width="3"/><path d="M83 172h36v32H83z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="3"/><path d="M89 181h24m-24 13h17" stroke="#C9CBD0" stroke-width="3"/><circle cx="101" cy="295" r="20" fill="#FFFFFF" stroke="#CE1730" stroke-width="3"/><path d="m87 309 28-28" stroke="#CE1730" stroke-width="4"/><g font-family="sans-serif" fill="#0B0C10" font-size="23"><text x="149" y="89">入力で確かめたこと：布製、折りたたんで収納</text><text x="149" y="196">文章の候補：使う場面と、広げる動作を説明</text><text x="149" y="303">採用しない追加：未確認の撥水性能や体験談</text><text x="450" y="381" text-anchor="middle" font-size="21">架空の商品例。表現の候補と、新しい機能を混ぜない</text></g></svg><figcaption>文章を増やしても、商品の事実を増やさない（編集部作成）</figcaption></figure>
+<p>言い過ぎを直した後も、字幕や映す場面の指示に同じ内容が残っていないかを確認します。セリフだけから性能を削っても、実物では確認できない使い方を映す指示が残っていれば、制作へ渡す内容は変わりません。セリフ、字幕、映像の欄を同じ行で見直します。</p>
+<p>他者の名前が入った場合は、その名前だけを別の言葉へ変えるより、比較を必要とする台本かを考えます。比較の根拠を渡していないなら、自社商品の特徴へ戻します。実在する名前を出さずに書かれていても、根拠のない優劣を説明する内容は別に確認してください。</p>
+<p>化粧品などを紹介する台本では、一般的な紹介文の言い換えだけで進めないようにします。商品の区分と、確認した表現へ戻します。商品をどう見せるかは、<a href="https://leam.co.jp/column/cosmetics/">TikTok Shopの化粧品の見せ方</a>を参照できます。企業が表現を確認する段取りは、<a href="https://leam.co.jp/column/influencer-yakkiho/">インフルエンサーと薬機法の確認</a>へつなげます。</p>
+
+<h2 id="s4"><span class="no en">04</span>公開前には、事実・表現・表示・素材の権利を人が確認します</h2>
+<p>台本の修正が終わったら、商品を確認する担当、表現や表示を確認する担当、素材の利用を確認する担当へ渡します。AIの出力に「確認済み」と書かれていても、それを社内の確認の記録にはしません。誰が何を見たかを、出力とは別に残します。</p>
+<p>点検では、入力した資料と台本だけでなく、撮影して完成した内容も合わせます。本人の言い換え、編集で加えた字幕、映像の切り方によって、説明する意味が変わることがあります。台本が通ったことを、完成した動画まで確認した扱いにしないようにします。</p>
+<div class="tw"><table><thead><tr><th>確認する対象</th><th>照合するもの</th><th>公開前に残すこと</th><th>不明点があった場合</th></tr></thead><tbody>
+<tr><td>商品の事実</td><td>商品資料、実物、台本の説明</td><td>どの商品と種類の、どの情報を確認したか</td><td>説明を使わず、商品担当へ戻す</td></tr>
+<tr><td>効果や性能の表現</td><td>セリフ、字幕、映す場面と根拠</td><td>入力より強い意味を足していないか</td><td>言い換えだけで済ませず、根拠へ戻す</td></tr>
+<tr><td>使う条件</td><td>商品資料の注意点と、台本・動画の説明</td><td>条件を省略して意味を広げていないか</td><td>条件と一緒に伝わる形へ直す</td></tr>
+<tr><td>依頼の関係の表示</td><td>誰が何を依頼し、どの形で公開するか</td><td>表示を確認する担当と、確認した内容</td><td>AIの判断を採用せず、担当へ戻す</td></tr>
+<tr><td>AIを使った箇所</td><td>文章、音声、画像、映像などの使用状況</td><td>どの工程と内容にAIを使ったか</td><td>公開する内容に応じて公式の条件を確認する</td></tr>
+<tr><td>素材と著作権などの権利</td><td>使う文章、画像、音声、ロゴなどの出所</td><td>何を、どの用途に使えると確認したか</td><td>生成されたことだけで使えると判断しない</td></tr>
+<tr><td>商品への案内</td><td>映像で紹介した物と、リンク先の商品</td><td>種類やセットが同じか</td><td>台本と案内先を対応させ直す</td></tr>
+</tbody></table></div><p class="src">台本と完成した紹介を照合する確認表（編集部作成）</p>
+<p>素材の権利を確認する際は、AIが出した文章に、特定の名前や第三者の表現を使う前提が混ざっていないかも見ます。公式ヘルプには、許可のないブランド名、ロゴ、コンテンツの使用を避ける説明があります。出所や利用する条件が分からない物を、生成されたという理由だけで確認済みにしないでください。</p>
+<p>参考にした台本や動画がある場合も、構成の参考と、実際に使用する文章や素材を分けます。他者の文章を長く渡し、そのまま似た文面へ作り直すことを出発点にしません。商品の確認済み情報から組み立て、必要な素材は使用する範囲を確かめます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="事実、表現、表示、素材の権利を人が台本と完成した紹介で確認する図"><rect width="900" height="400" fill="#FFFFFF"/><rect x="45" y="40" width="380" height="133" rx="10" fill="#EFF1F4"/><rect x="475" y="40" width="380" height="133" rx="10" fill="#25F4EE"/><rect x="45" y="205" width="380" height="133" rx="10" fill="#25F4EE"/><rect x="475" y="205" width="380" height="133" rx="10" fill="#EFF1F4"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="24"><text x="235" y="86">事実</text><text x="235" y="133" font-size="21">実物と資料へ戻す</text><text x="665" y="86">表現</text><text x="665" y="133" font-size="21">効果と条件を照合する</text><text x="235" y="251">表示</text><text x="235" y="298" font-size="21">依頼とAI利用を確かめる</text><text x="665" y="251">素材の権利</text><text x="665" y="298" font-size="21">出所と使う範囲を確認する</text><text x="450" y="384" font-size="22">人が、台本と完成した紹介を見て記録を残す</text></g></svg><figcaption>文章の出力と、公開前の人の確認を分ける（編集部作成）</figcaption></figure>
+<p>表示の確認では、依頼された紹介であることと、AIを使った内容であることを混ぜません。どちらかの確認が済んだだけで、もう一方も済んだ扱いにはしないようにします。AIへ「この台本の表示は不要ですか」と聞いて結論をもらうのではなく、使用状況と公開する形を担当者へ渡します。</p>
+<p>社内の確認が終わったら、修正した版を撮影や編集の担当へ返します。別の言葉を追加した場合や、素材を差し替えた場合は、どの確認に影響するかを見直します。以前の版への確認の記録を、新しく作り直した部分へ自動で引き継がないようにします。</p>
+<p>動画全般の構成と改善の考え方は、<a href="https://leam.co.jp/column/short-video-playbook/">TikTok Shopのショート動画の作り方</a>へ進んでください。本記事のプロンプトは、その企画を文章の候補へするための型です。候補の出力、商品の確認、完成した紹介の確認を分けて進めます。</p>
+
+<h2 id="s5"><span class="no en">05</span>AIで映像や音声も作る場合は、台本とは別に利用条件を確かめます</h2>
+<p>台本を文章で作る作業と、AIで映像や音声を作って公開する作業は、工程として分けて記録します。どこにAIを使ったかが分かれば、完成した内容に対して何を確認するかを整理できます。文章の確認だけで、映像や音声の点検まで終えないようにします。</p>
+<p>今回取得した公式ヘルプは、AI生成コンテンツの説明にスクリプトも挙げています。また、AIを使用した内容を明確に表示する考え方を示しています。「台本の下書きに使っただけなら、表示の確認は不要」と一律に決めるのではなく、使った内容と公開する形を合わせて確認してください。</p>
+<p>AIで作った動画の具体的な表示方法、使える内容と使えない内容の確認は、<a href="https://leam.co.jp/column/ai-video-policy/">TikTok ShopのAI生成動画の決まり</a>にまとめています。台本を整えるための入力や出力の確認と、公開する映像などに適用する条件を分けて使います。実施前の最新の条件は公式ヘルプで確認してください。</p>
+<p>人が撮る紹介へ台本を渡す場合も、本人が試していない体験談を読ませないことが大切です。商品の事実を本人の言葉へ置き換える仕事と、架空の使用経験を作ることを分けます。文章の出来栄えだけでなく、本人が説明できる内容かを確認してから渡します。</p>
+
+<h2 id="summary"><span class="no en">06</span>AIには表現の候補を頼み、事実と公開の確認は人が持ちます</h2>
+<p>AIに台本を頼む前に、商品と種類、確認済みの特徴、同梱物、条件、不明点をそろえます。プロンプトには、出力する欄と、事実や体験を作らない禁止事項を入れます。出力の各説明が入力のどこに対応するかを見て、根拠のない内容を採用しないようにします。</p>
+<p>公開前には、事実、表現、表示、素材の権利を、人が台本と完成した動画で確かめます。AIを使った箇所を記録し、映像や音声も作るなら別の利用条件へつなげます。文章の下書きが完成したことと、商品の紹介を公開できることを区別してください。</p>
+
+<h2 id="faq"><span class="no en">07</span>AIへ台本を頼むときのよくある質問</h2>
+<p>ここでは、入力した事実と出力の文章を対応させるための疑問を整理します。AIサービスの選び方や、生成した動画の表示操作ではなく、台本を作る工程に絞っています。</p>
+<p>不明な情報をAIの出力で埋めず、担当者へ確認する欄へ残します。修正が入ったときも、入力と完成した台本、公開する内容の版が対応しているかを確かめてください。</p>
+<div class="faq">
+<details><summary>未確認の性能をプロンプトへ書くときは、どう区別しますか？</summary><div class="a">確認済みの情報とは別の欄へ置き、セリフの事実として使わないように指定します。出力では確認が必要な点として残してもらい、商品担当へ戻します。一般的な商品の特徴として補った説明は採用しません。</div></details>
+<details><summary>AIが追加した説明に、根拠らしい文章が付いていたら使えますか？</summary><div class="a">自社で確認した商品資料に対応するかを見ます。「一般的には」などの説明があっても、その商品の確認にはなりません。対応する入力事実がなければ、説明を外すか、商品担当へ確認する質問に戻します。</div></details>
+<details><summary>効果の言い過ぎを直すとき、禁止する単語だけを伝えれば足りますか？</summary><div class="a">どの説明が未確認で、どの事実を使えるかまで伝えます。単語を変えただけで同じ効果を示す文章が残らないかを確認してください。セリフを直した後に、字幕と映す場面の指示も合わせて見ます。</div></details>
+<details><summary>AIの台本に、本人が使ったような感想が入っていたらどうしますか？</summary><div class="a">実際に誰が何を試したかという入力へ戻します。本人の体験として確認した内容でなければ、そのまま読んでもらう依頼にはしません。本人へ確かめる質問と、商品の事実の説明を分けます。</div></details>
+<details><summary>同じプロンプトを別の商品へ使うとき、何を入れ替えますか？</summary><div class="a">商品と種類、特徴、同梱物、使う条件、確認済みの資料を入れ替えます。前の商品の性能や感想が残っていないかも見ます。文章の型を使い回すことと、前の商品情報を引き継ぐことは分けてください。</div></details>
+<details><summary>担当者が確認した後にAIへ書き直させた台本は、そのまま撮影へ渡せますか？</summary><div class="a">変わった部分を、確認した事実と照合してから渡します。表現を短くしただけでも、条件の脱落や新しい性能の追加がないかを見ます。以前の確認の記録だけで、新しく生成した部分まで済んだ扱いにしないようにします。</div></details>
+</div>
+<div class="ctabox"><div class="ct">台本の確認から紹介の依頼まで任せたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script-ai">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script-ai&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2>参考情報</h2><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=7981558599599888&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop：AI生成コンテンツ（AIGC）の解説</a></li></ul><p class="src">2026年11月6日に日本向け公式ヘルプを取得しました。実際の商品情報の使用、存在しない機能や効果の表現、AI使用の明示、許可のない名前や素材の使用に関する説明を参照しています。プロンプト、架空の商品設定、誤りの例、確認表は編集部が作成したものです。サービスごとの性能や、特定の入力での実際の出力を検証した結果ではありません。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/ai-video-policy/">AI生成動画の決まり</a></b><span>動画を使う条件と表示を確認する</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/short-video-playbook/">ショート動画の作り方</a></b><span>構成と改善の考え方を整理する</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/cosmetics/">化粧品の見せ方</a></b><span>商品に合う表現へ戻す</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">AIへは、文章を書く前に確認済みの商品情報を渡します</a></li><li><a href="#s2">プロンプトは、渡す情報・出力の形式・禁止事項で組みます</a></li><li><a href="#s3">AIの出力は、言い過ぎ・ない機能・他者の名前を点検します</a></li><li><a href="#s4">公開前には、事実・表現・表示・素材の権利を人が確認します</a></li><li><a href="#s5">AIで映像や音声も作る場合は、台本とは別に利用条件を確かめます</a></li><li><a href="#summary">AIには表現の候補を頼み、事実と公開の確認は人が持ちます</a></li><li><a href="#faq">AIへ台本を頼むときのよくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=tiktok-script-ai">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "未確認の性能をプロンプトへ書くときは、どう区別しますか？", "acceptedAnswer": {"@type": "Answer", "text": "確認済みの情報とは別の欄へ置き、セリフの事実として使わないように指定します。出力では確認が必要な点として残してもらい、商品担当へ戻します。一般的な商品の特徴として補った説明は採用しません。"}}, {"@type": "Question", "name": "AIが追加した説明に、根拠らしい文章が付いていたら使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "自社で確認した商品資料に対応するかを見ます。「一般的には」などの説明があっても、その商品の確認にはなりません。対応する入力事実がなければ、説明を外すか、商品担当へ確認する質問に戻します。"}}, {"@type": "Question", "name": "効果の言い過ぎを直すとき、禁止する単語だけを伝えれば足りますか？", "acceptedAnswer": {"@type": "Answer", "text": "どの説明が未確認で、どの事実を使えるかまで伝えます。単語を変えただけで同じ効果を示す文章が残らないかを確認してください。セリフを直した後に、字幕と映す場面の指示も合わせて見ます。"}}, {"@type": "Question", "name": "AIの台本に、本人が使ったような感想が入っていたらどうしますか？", "acceptedAnswer": {"@type": "Answer", "text": "実際に誰が何を試したかという入力へ戻します。本人の体験として確認した内容でなければ、そのまま読んでもらう依頼にはしません。本人へ確かめる質問と、商品の事実の説明を分けます。"}}, {"@type": "Question", "name": "同じプロンプトを別の商品へ使うとき、何を入れ替えますか？", "acceptedAnswer": {"@type": "Answer", "text": "商品と種類、特徴、同梱物、使う条件、確認済みの資料を入れ替えます。前の商品の性能や感想が残っていないかも見ます。文章の型を使い回すことと、前の商品情報を引き継ぐことは分けてください。"}}, {"@type": "Question", "name": "担当者が確認した後にAIへ書き直させた台本は、そのまま撮影へ渡せますか？", "acceptedAnswer": {"@type": "Answer", "text": "変わった部分を、確認した事実と照合してから渡します。表現を短くしただけでも、条件の脱落や新しい性能の追加がないかを見ます。以前の確認の記録だけで、新しく生成した部分まで済んだ扱いにしないようにします。"}}]}</script>
+</body>
+</html>
