@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>アフィリエイトの計測の仕組み｜TikTok Shopの紹介経由</title>
+<meta name="description" content="TikTok Shopのアフィリエイト計測は、接触と購入を紹介元へ結び付ける仕組みです。直接・間接GMVの条件表、売り手が見る画面、社内で混ざりやすい用語を日本向け公式資料で整理します。">
+<link rel="canonical" href="https://leam.co.jp/column/affiliate-attribution/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="アフィリエイトの計測の仕組み｜TikTok Shopの紹介経由">
+<meta property="og:description" content="TikTok Shopのアフィリエイト計測は、接触と購入を紹介元へ結び付ける仕組みです。直接・間接GMVの条件表、売り手が見る画面、社内で混ざりやすい用語を日本向け公式資料で整理します。">
+<meta property="og:url" content="https://leam.co.jp/column/affiliate-attribution/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/affiliate-attribution.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="アフィリエイトの計測の仕組み｜TikTok Shopの紹介経由">
+<meta name="twitter:description" content="TikTok Shopのアフィリエイト計測は、接触と購入を紹介元へ結び付ける仕組みです。直接・間接GMVの条件表、売り手が見る画面、社内で混ざりやすい用語を日本向け公式資料で整理します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/affiliate-attribution.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "アフィリエイトの計測の仕組み｜TikTok Shopの紹介経由", "description": "TikTok Shopのアフィリエイト計測は、接触と購入を紹介元へ結び付ける仕組みです。直接・間接GMVの条件表、売り手が見る画面、社内で混ざりやすい用語を日本向け公式資料で整理します。", "inLanguage": "ja", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/affiliate-attribution/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/affiliate-attribution.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=599182676379408&lang=ja-JP", "name": "TikTok Shop公式：売上指標の内訳方式のアップグレード"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=3859123650234129&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトセンター分析の使い方"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトコラボ"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&lang=ja-JP", "name": "TikTok Shop公式：報酬の仕組みについて"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=1341131783178001&lang=ja-JP", "name": "TikTok Shop公式：アフィリエイトリンク - クリエイター向け機能ガイド"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "アフィリエイトの計測の仕組み｜TikTok Shopの紹介経由", "item": "https://leam.co.jp/column/affiliate-attribution/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=affiliate-attribution">無料相談</a></div>
+<div class="shell">
+<article><p class="crumb"><a href="https://leam.co.jp/">ホーム</a> ／ <a href="https://leam.co.jp/column/">コラム</a> ／ アフィリエイトの計測</p><span class="cat">依頼・契約・支払いの実務</span><h1>アフィリエイトの計測の仕組み｜TikTok Shopの紹介経由</h1><div class="meta"><time class="upd" datetime="2026-11-05">更新日：2026年11月5日</time><time datetime="2026-11-05">公開日：2026年11月5日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="動画とライブと商品棚から伸びた線が注文伝票へ結び付き、異なる経路の購入を記録するイラスト" stroke-linejoin="round" stroke-linecap="round"><rect width="1200" height="630" fill="#FFFFFF"/><path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/><ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/><path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/><g fill="#D8DADE" id="affiliateattributionDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#affiliateattributionDots" transform="translate(944 542)"/><path d="M379 146h106v168h147m-253 0h253m-253 172h106V314" stroke="#0B0C10" stroke-width="7" fill="none"/><path d="m608 296 25 18-25 18" stroke="#0B0C10" stroke-width="7" fill="none"/><rect x="115" y="88" width="264" height="116" rx="15" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="115" y="88" width="264" height="116" rx="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><rect x="115" y="256" width="264" height="116" rx="15" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="115" y="256" width="264" height="116" rx="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><rect x="115" y="424" width="264" height="116" rx="15" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><rect x="115" y="424" width="264" height="116" rx="15" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><rect x="134" y="108" width="144" height="76" rx="8" fill="#25F4EE"/><path d="m190 123 34 23-34 23z" fill="#0B0C10"/><path d="M300 123h56m-56 22h42m-42 22h29" stroke="#C9CBD0" stroke-width="5"/><circle cx="197" cy="305" r="26" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/><path d="M154 351c2-33 84-33 86 0" fill="#25F4EE" stroke="#0B0C10" stroke-width="5"/><path d="m253 289 18 25-18 25m34-62 26 37-26 37" stroke="#FE2C55" stroke-width="5" fill="none"/><circle cx="345" cy="278" r="7" fill="#FE2C55"/><path d="M135 464h224v55H135m0-31h224" stroke="#0B0C10" stroke-width="5" fill="none"/><rect x="146" y="443" width="30" height="36" rx="4" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/><path d="M151 451h20m-20 10h13" stroke="#C9CBD0" stroke-width="4"/><rect x="203" y="443" width="30" height="36" rx="4" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/><path d="M208 451h20m-20 10h13" stroke="#C9CBD0" stroke-width="4"/><rect x="260" y="443" width="30" height="36" rx="4" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/><path d="M265 451h20m-20 10h13" stroke="#C9CBD0" stroke-width="4"/><rect x="317" y="443" width="30" height="36" rx="4" fill="#25F4EE" stroke="#0B0C10" stroke-width="4"/><path d="M322 451h20m-20 10h13" stroke="#C9CBD0" stroke-width="4"/><path d="M703 88h286l41 43v388H703z" fill="#5E6064" opacity=".13" transform="translate(9 11)"/><path d="M703 88h286l41 43v388H703z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="7"/><path d="M989 88v43h41" fill="#DFE0E2" stroke="#0B0C10" stroke-width="5"/><path d="M731 153h192m-192 23h119" stroke="#0B0C10" stroke-width="5"/><path d="M731 197h268" stroke="#C9CBD0" stroke-width="4"/><rect x="733" y="230" width="39" height="40" rx="6" fill="#25F4EE"/><path d="M788 237h115m-115 16h79m-79 17h139" stroke="#C9CBD0" stroke-width="5"/><circle cx="974" cy="250" r="17" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/><path d="m964 250 7 7 13-15" fill="none" stroke="#0B0C10" stroke-width="4"/><rect x="733" y="300" width="39" height="40" rx="6" fill="#DFE0E2"/><path d="M788 307h115m-115 16h79m-79 17h139" stroke="#C9CBD0" stroke-width="5"/><circle cx="974" cy="320" r="17" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/><path d="m964 320 7 7 13-15" fill="none" stroke="#0B0C10" stroke-width="4"/><rect x="733" y="370" width="39" height="40" rx="6" fill="#25F4EE"/><path d="M788 377h115m-115 16h79m-79 17h139" stroke="#C9CBD0" stroke-width="5"/><circle cx="974" cy="390" r="17" fill="#FFFFFF" stroke="#0B0C10" stroke-width="4"/><path d="m964 390 7 7 13-15" fill="none" stroke="#0B0C10" stroke-width="4"/><path d="M731 439h268" stroke="#0B0C10" stroke-width="4"/><rect x="870" y="460" width="128" height="31" rx="6" fill="#FE2C55"/><path d="M745 469h87m-87 17h57" stroke="#C9CBD0" stroke-width="5"/><circle cx="579" cy="186" r="31" fill="#FFFFFF" stroke="#0B0C10" stroke-width="5"/><path d="M579 167v20l13 10" stroke="#0B0C10" stroke-width="5" fill="none"/><path d="M548 429h66m-18-13 18 13-18 13" stroke="#25F4EE" stroke-width="7" fill="none"/><path d="M95 355h28m-14-14v28m956-118h28m-14-14v28" stroke="#25F4EE" stroke-width="5"/><circle cx="563" cy="510" r="12" fill="#CE1730"/><path d="M691 547h353m-353 16h210" stroke="#C9CBD0" stroke-width="5"/></svg><figcaption>紹介への接触と購入を結び付け、売上の記録へ整理する（編集部作成）</figcaption></figure><p class="lead">TikTok Shopの紹介経由の売上は、投稿を見た人の買い物をすべて数えたものではありません。商品リンクとの接触や購入を、公式のルールで紹介元へ結び付けた記録です。アフィリエイトの計測の仕組みを読むときは、リンクを押したこと、購入したこと、成果報酬が確定したことを分けます。</p>
+<p>この記事では、紹介経由に数えられる条件、売り手が見る画面、社内で混ざりやすい用語を整理します。条件の表を先に作り、数字と一緒に保存すれば、同じ「売上」という言葉で違う記録を渡す行き違いを減らせます。</p>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">紹介経由の売上には、商品リンクからの直接購入と接触後の購入があります</a></li><li><a href="#s2">計測の条件は、接触・購入・集計・成果報酬を分けて確かめます</a></li><li><a href="#s3">売り手はパフォーマンスから紹介元を絞り、コラボの動画と照合します</a></li><li><a href="#s4">紹介への売上の割り当てと、ショップ全体の売上増加を分けて読みます</a></li><li><a href="#s5">用語と取得条件を添えると、紹介経由という言葉のずれを防げます</a></li><li><a href="#summary">紹介経由の数字は、条件と画面をそろえてから使います</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>紹介経由の売上には、商品リンクからの直接購入と接触後の購入があります</h2>
+<p>アフィリエイトは、クリエイターの紹介を通じた対象の購入に、成果報酬が付く仕組みです。動画やLIVE、ショーケースは、商品へ進む入口になります。紹介の記録を売上へ結び付ける処理を「アトリビューション」と呼び、日本語では「帰属」と言います。ここでの帰属は、どの紹介元の売上として集計するかという意味です。</p>
+<p>2026年11月5日に確認した日本向け公式ヘルプ「売上指標の内訳方式のアップグレード」では、売上を直接と間接に分けています。コンテンツとのやり取りの間に購入を終えた分が直接GMVです。接触した後、一定の期間内に購入を終えた分は、間接GMVとして扱われる場合があります。<strong>紹介経由という言葉を、その場で購入した分だけの意味に狭めない</strong>ことが大切です。</p>
+<p>たとえば、商品リンク付き動画を見てリンクを押し、そのまま購入を終える流れがあります。公式はこれを直接の動画GMVの例に挙げています。一方、リンクを押した時点では購入せず、後でTikTok Shop内で同じ商品を検索して購入する流れも説明しています。後から検索したという理由だけで、動画との結び付きが消えるとは限りません。</p>
+<p>ただし、動画を見た人の購入がすべて紹介経由になるわけではありません。同じ公式ヘルプのFAQでは、動画またはLIVEの視聴に加えて、商品リンクのクリックが必要とされています。視聴のみの接触は帰属対象外という説明です。再生数が多いことと、その紹介元に購入が記録されることは、別の段階として読みます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" role="img" aria-label="視聴と商品リンクへの接触のあと、その場の購入と後の購入へ枝分かれして直接と間接に分けて記録する図"><rect width="900" height="390" fill="#FFFFFF"/><path d="M50 60h350v70H50z" fill="#EFF1F4"/><path d="M434 94h46v177h-46m46-177h70m-70 177h70" stroke="#0B0C10" fill="none" stroke-width="4"/><rect x="550" y="45" width="300" height="115" rx="12" fill="#25F4EE"/><rect x="550" y="218" width="300" height="115" rx="12" fill="#EFF1F4"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="24"><text x="225" y="102">視聴 ＋ 商品リンクへの接触</text><text x="700" y="87">その場で購入を完了</text><text x="700" y="129">直接GMV</text><text x="700" y="260">接触後に対象の購入</text><text x="700" y="302">間接GMV</text><text x="225" y="220" font-size="21">視聴だけの接触は</text><text x="225" y="252" font-size="21">公式FAQでは帰属対象外</text><text x="450" y="374" font-size="21">購入と接触の条件に沿って記録。クリック数を売上へ置き換えない</text></g></svg><figcaption>直接と間接は、購入へ至る流れを分ける区分（編集部作成）</figcaption></figure>
+<p>ショーケースは、クリエイターが商品を並べる場所です。公式のコラボ機能の説明では、コンテンツまたはショーケースで購入が発生すると、承認済みの率に基づくコミッションを受け取ると案内されています。動画、LIVE、ショーケースのどこを入口にしたかを、紹介元の記録と合わせて確認します。商品を追加しただけの状態を、購入が起きた状態とは呼びません。</p>
+<p>制度の始め方やコラボの種類まで整理したい場合は、<a href="https://leam.co.jp/column/affiliate-guide/">TikTok Shopのアフィリエイトの仕組み</a>を参照してください。ここでは、誰に依頼するかよりも、依頼した後に何が紹介経由として数えられるかに絞って見ていきます。</p>
+
+<h2 id="s2"><span class="no en">02</span>計測の条件は、接触・購入・集計・成果報酬を分けて確かめます</h2>
+<p>「リンクが押されたのに売上がない」という相談では、どの記録を見たかを先にそろえます。リンクのクリックは接触の記録であり、購入の完了を意味しません。また、売上の内訳に表示された金額と、クリエイターが受け取る報酬の確定額も別の数字です。違う段階を同じ列へ書くと、未購入なのか未確定なのか区別できなくなります。</p>
+<p>次の表は、日本向けの売上指標と報酬の公式説明で確認した範囲です。「数えられない」とする対象を明示しています。視聴のみで帰属対象外になる説明と、報酬額が未確定である説明を、同じ意味の除外条件として扱わないでください。</p>
+<div class="tw"><table><thead><tr><th>確認する場面</th><th>公式で確認できる扱い</th><th>取り違えないこと</th></tr></thead><tbody>
+<tr><td>動画やLIVEを視聴しただけ</td><td>売上指標のFAQでは、リンクをクリックしていない接触は帰属対象外</td><td>視聴者の購入をまとめて、その投稿の売上にしない</td></tr>
+<tr><td>商品リンクをクリックした</td><td>動画・LIVEの帰属対象となる接触には、視聴とクリックが必要</td><td>クリックだけで購入が完了したとは数えない</td></tr>
+<tr><td>コンテンツとのやり取り中に購入を完了</td><td>直接GMVとして説明されている</td><td>直接の売上を、紹介経由全体の意味に広げない</td></tr>
+<tr><td>接触の後に購入を完了</td><td>公式の条件に沿う購入は間接GMVに分類される場合がある</td><td>後から検索した購入を、すべて紹介と無関係にしない</td></tr>
+<tr><td>複数の動画・LIVEへ接触</td><td>公式FAQの例では、対象セラーの最後の接触に基づいて帰属する</td><td>触れた紹介元のすべてへ同じ注文を手で配分しない</td></tr>
+<tr><td>ショーケースで購入が発生</td><td>コラボの説明では、承認済みの率に基づくコミッションの対象</td><td>ショーケースへの商品追加を、購入と数えない</td></tr>
+<tr><td>注文に推定成果報酬額が表示</td><td>公式「報酬の仕組みについて」では、推定額は確定額ではない</td><td>推定表示を、そのまま支払い完了の記録にしない</td></tr>
+<tr><td>返金などにより収益が変動</td><td>最終的な成果報酬額は実際の収益に基づいて計算</td><td>報酬の調整と、分析上の帰属先の変更を同一視しない</td></tr>
+<tr><td>注文の決済が完了していない</td><td>報酬の受け取りは注文の決済完了が前提</td><td>報酬が未受領だから購入も未記録、と決め付けない</td></tr>
+<tr><td>アプリ外へ共有するアフィリエイトリンク</td><td>専用ガイドでリンク作成・クリック追跡・対象の購入を説明</td><td>共有リンク用の条件を、動画やLIVE全体へ移さない</td></tr>
+</tbody></table></div><p class="src">計測と成果報酬の区別（日本向け公式資料に基づき編集部作成）</p>
+<p>複数の紹介へ接触した場合も、閲覧の回数だけでは帰属先を決められません。公式FAQには、アフィリエイト動画、セラーのLIVE、アフィリエイトLIVEに接触した後、Shopタブから買う例があります。その例は、当該セラーの最後のコンテンツへの接触に基づき、アフィリエイトの間接GMVに分類されます。視聴とリンククリックを伴うことが前提の説明です。</p>
+<p>この例から使えるのは、<strong>最後に購入した場所と、売上が帰属する紹介元は同じとは限らない</strong>という読み方です。あらゆる商品、広告、接触の組み合わせにまで、例の結果を広げることはできません。個別注文の帰属を調べる際は、対象の商品、接触したコンテンツ、表示される指標の説明をそろえます。</p>
+<p>また、共有できるアフィリエイトリンクには、専用のガイドがあります。固有リンクを作成し、リンクのクリックを追跡して、そのリンクに起因する売上へ結び付ける仕組みです。アプリ内の動画やLIVEの説明と、同じ「リンク」という語が出てきますが、機能の対象は分けて読みます。共有リンクの期限を、すべての紹介の期限として社内表へ書き写さないようにします。</p>
+<p>計測期間や複数経路の優先順位は、利用する機能の日本向け公式ヘルプと、該当指標の説明で確認してください。本記事では、共通の計測日数や、すべての接触に適用できる優先順位を置いていません。問い合わせるときも「紹介の売上が違う」だけでなく、どの機能の、どの指標についての質問かを添えます。</p>
+
+<h2 id="s3"><span class="no en">03</span>売り手はパフォーマンスから紹介元を絞り、コラボの動画と照合します</h2>
+<p>売り手が紹介の記録を見る入口は、アフィリエイトセンターの「パフォーマンス」です。公式「アフィリエイトセンター分析の使い方」では、コラボ、商品、クリエイター、コンテンツに関するGMVや注文、購入された品目、トラフィック指標をまとめていると説明しています。全体の数字から、誰が紹介したか、どのコンテンツかへと対象を狭めて確認します。</p>
+<p>日付範囲を選ぶと、商品、クリエイター、動画、LIVEの分析へ同じ範囲を適用できるという案内があります。別々の画面を見比べる前に、選んだ期間を記録してください。クリエイターの行で確認した金額と、動画の一覧で確認した金額は、対象範囲をそろえて初めて対応を読みやすくなります。</p>
+<div class="tw"><table><thead><tr><th>見る入口・画面</th><th>公式で説明されている内容</th><th>確認するときに残すもの</th></tr></thead><tbody>
+<tr><td>アフィリエイトセンターのパフォーマンス</td><td>コラボ・商品・クリエイター・コンテンツのパフォーマンスをまとめて表示</td><td>日付範囲と集計全体の対象</td></tr>
+<tr><td>パフォーマンス内の商品・クリエイターの分析</td><td>商品、クリエイターの分析へ移動できる</td><td>選んだ商品と、対象クリエイターを特定する情報</td></tr>
+<tr><td>パフォーマンス内の動画・LIVEの分析</td><td>動画とLIVEの分析へ移動できる</td><td>コンテンツの識別情報と、読んだ指標名</td></tr>
+<tr><td>指標名の隣の疑問符</td><td>指標の説明と定義方法を表示</td><td>直接・間接の範囲を含めた定義</td></tr>
+<tr><td>ターゲットコラボの詳細</td><td>コラボ、クリエイター、商品の詳細と、承諾・投稿の人数を確認</td><td>依頼したコラボと実際の紹介元の対応</td></tr>
+<tr><td>コラボ内のVideo Details（動画の詳細）</td><td>対象商品に関連付けられた動画コンテンツを確認</td><td>対象商品と動画の組み合わせ</td></tr>
+<tr><td>クリエイター向けリンクパフォーマンス</td><td>共有リンクのGMV・販売数・トラフィックソースなどを確認</td><td>本人側の画面であることと、共有リンクの対象</td></tr>
+</tbody></table></div><p class="src">画面と確認対象の対応（日本向け公式資料に基づき編集部作成）</p>
+<p>誰の売上かを残すときは、表示名だけでなく、画面で本人を特定できる情報も控えます。どの動画かを残すときも、題名を手入力するだけでなく、対象のコンテンツへ戻れる情報を付けておきます。これは公式の必須入力項目を増やす話ではありません。売り手の控えを、公式画面の記録へ戻れる形にするための整理です。</p>
+<p>コラボ機能のVideo Detailsは、商品に関連する動画を確認する入口です。そこに動画があることだけを理由に、売上が発生したとは扱いません。<strong>商品と動画の対応を確認する記録と、GMVを確認する記録をつなげる</strong>と、投稿済みだが購入は未確認という状態も、そのまま残せます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" role="img" aria-label="クリエイターとコンテンツの識別情報を商品で結び、パフォーマンスの数字とコラボの動画の対応を照合する図"><rect width="900" height="370" fill="#FFFFFF"/><path d="M40 55h365v215H40z" fill="#25F4EE"/><path d="M495 55h365v215H495z" fill="#EFF1F4"/><path d="M415 151h70m-14-12 14 12-14 12m-42 52h-14m14-12-14 12 14 12h56" stroke="#0B0C10" fill="none" stroke-width="4"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="24"><text x="222" y="98">パフォーマンス</text><text x="222" y="151">対象のクリエイター</text><text x="222" y="196">対象のコンテンツ</text><text x="222" y="241">指標名と対象期間</text><text x="678" y="98">コラボの動画の詳細</text><text x="678" y="151">誰が投稿したか</text><text x="678" y="196">どの動画か</text><text x="678" y="241">どの商品か</text><text x="450" y="321" font-size="22">識別情報でつなぎ、動画があることと売上があることを分ける</text><text x="450" y="355" font-size="20">本人側の共有リンクの画面も、取得元を別に記録する</text></g></svg><figcaption>商品の紹介がある記録を、売上の記録と照合する（編集部作成）</figcaption></figure>
+<p>クリエイター本人が開く画面と、売り手が開く画面の違いにも注意します。共有リンクの「リンクパフォーマンス」は、クリエイター向けガイドに登場する画面です。売り手のメニューに同じ入口があると決め付けず、本人から記録を受け取る場合には、どちらの立場で見た数字かを添えてもらいます。画面の役割の整理は、<a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターとクリエイター向け画面の記事</a>で確認できます。</p>
+<p>指標名が似ているのに数字が合わないときは、差を埋めるために手で加算しません。期間、対象商品、対象クリエイター、コンテンツの種類、指標の定義を順に読みます。確認できた元の値を残し、違う条件を注記すると、後で画面の説明を読み直しても経緯をたどれます。空欄には理由を添え、未確認を売上ゼロへ置き換えないようにします。</p>
+
+<h2 id="s4"><span class="no en">04</span>紹介への売上の割り当てと、ショップ全体の売上増加を分けて読みます</h2>
+<p>紹介経由の売上は、公式のルールで紹介元へ割り当てられた購入の記録です。ショップ全体の売上がどれだけ増えたかという質問とは、答える対象が違います。帰属の数字だけで、紹介がなければ発生しなかった売上の額まで計算できるわけではありません。</p>
+<p>公式の売上指標のアップデートも、この違いを理解する助けになります。ヘルプでは、変更されるのはGMVを各区分へ割り当てる方式であり、合計GMVには影響しないと説明しています。内訳の読み方が変わることと、買い物そのものが増えることは別です。数字が大きくなったときは、まず指標の対象と定義を確認します。</p>
+<div class="tw"><table><thead><tr><th>社内からの質問</th><th>数字が答える範囲</th><th>加えて言い切らないこと</th></tr></thead><tbody>
+<tr><td>紹介経由はいくらあったか</td><td>選んだ期間・条件で紹介元へ帰属したGMV</td><td>同額がすべて新たに増えたとはしない</td></tr>
+<tr><td>どのコンテンツに割り当てられたか</td><td>選んだコンテンツの種類と帰属の内訳</td><td>購入が必ずその場で完了したとはしない</td></tr>
+<tr><td>ショップ全体でいくら売れたか</td><td>ショップ全体を対象にした同じ期間の売上</td><td>全額を紹介者の成果として付け替えない</td></tr>
+<tr><td>紹介によってどれだけ増えたか</td><td>帰属の記録とは別に、効果を検討する必要がある</td><td>帰属金額だけから増加の原因を決めない</td></tr>
+<tr><td>クリエイターへいくら払うか</td><td>報酬の対象と、推定・確定の状態に関する記録</td><td>分析のGMVをそのまま支払額にしない</td></tr>
+</tbody></table></div><p class="src">質問と数字が答える範囲（編集部作成）</p>
+<p>注文ソースとコンテンツタイプも、異なる切り口です。公式では注文ソースをアフィリエイトとセラーに分け、コンテンツタイプをLIVE、ショート動画、商品カードに分けています。「誰の紹介側か」と「どの形式か」を同じ階層の内訳として足すと、同じ購入を重ねて数える原因になります。表の見出しに、どちらの切り口なのかを付けます。</p>
+<p>たとえば、アフィリエイトの動画という表示は、注文ソースとコンテンツタイプを組み合わせた見方です。アフィリエイトの全体値に、その中の動画の値を加えるものではありません。親の合計と子の内訳を区別しておくと、紹介元の一覧を並べ替えても、ショップ全体の金額を水増しせずに読み進められます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-label="ショップ全体の売上を注文ソースとコンテンツタイプの交差で読む表で、別の切り口の合計を足さないことを示す図"><rect width="900" height="380" fill="#FFFFFF"/><rect x="205" y="82" width="650" height="177" fill="#EFF1F4"/><rect x="205" y="82" width="650" height="85" fill="#25F4EE"/><path d="M205 82h650v177H205zM205 167h650m-430-85v177m215-177v177" stroke="#0B0C10" fill="none" stroke-width="3"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="24"><text x="315" y="57">ショート動画</text><text x="532" y="57">LIVE</text><text x="747" y="57">商品カード</text><text x="107" y="132" font-size="21">アフィリエイト</text><text x="107" y="222" font-size="21">セラー</text><text x="315" y="132">紹介元を読む</text><text x="532" y="132">紹介元を読む</text><text x="747" y="132">紹介元を読む</text><text x="315" y="222">形式を読む</text><text x="532" y="222">形式を読む</text><text x="747" y="222">形式を読む</text><text x="450" y="313" font-size="22">行は注文ソース。列はコンテンツタイプ。</text><text x="450" y="356" font-size="22">同じ売上の別の切り口を、別々の売上として足さない</text></g></svg><figcaption>注文ソースとコンテンツタイプは、同じ売上を読む別の切り口（編集部作成）</figcaption></figure>
+<p>成果報酬の検討も、帰属の読み取りから切り離さずに、費用の別表へつなぎます。どの購入を根拠にした記録なのかが分かれば、予算側も推定額と確定額を混ぜずに残せます。費用の項目は、<a href="https://leam.co.jp/column/influencer-budget/">インフルエンサー施策の予算の組み方</a>で整理しています。紹介の仕組み自体を比べる場合は、<a href="https://leam.co.jp/column/tiktok-one/">TikTok OneとTikTok Shopの起用の違い</a>も参考になります。</p>
+<p>前後の期間を比べた報告や、次の起用を決める振り返りは、<a href="https://leam.co.jp/column/creator-measurement/">クリエイター起用の成果の測り方</a>へ進んでください。ここで準備するのは、その検討に使う数字の意味です。記録された紹介経由の金額と、その数字から自社が何を判断するかを分けて渡せば、会議で違う結論が出ても、根拠の記録は共通にできます。</p>
+
+<h2 id="s5"><span class="no en">05</span>用語と取得条件を添えると、紹介経由という言葉のずれを防げます</h2>
+<p>社内表には「売上」「成果」だけでなく、公式画面の指標名を残します。言い換えた見出しを使う場合も、元の名称を隣に置いてください。直接の購入だけを集めた表なのか、間接も含む帰属の表なのかが、タイトルを読むだけで分かる形にします。</p>
+<p>次の用語表は、公式の分類と、売り手が控えを作るための言い換えを対応させたものです。クリエイターへ渡す用語、経理へ渡す用語を無理に同じにする必要はありません。ただし、名称を変えても集計の対象まで変わらないよう、元の画面と条件へ戻れる情報を付けます。</p>
+<div class="tw"><table><thead><tr><th>用語</th><th>この記事での意味</th><th>社内表へ添えること</th></tr></thead><tbody>
+<tr><td>アトリビューション・帰属</td><td>購入をどの紹介元などの売上に割り当てるか</td><td>使った公式指標と、その対象</td></tr>
+<tr><td>注文ソース</td><td>アフィリエイトかセラーかという売上の切り口</td><td>コンテンツの種類とは別の列にする</td></tr>
+<tr><td>コンテンツタイプ</td><td>LIVE・ショート動画・商品カードという分類</td><td>集めた形式を明記する</td></tr>
+<tr><td>直接GMV</td><td>コンテンツとのやり取り中に購入を完了した売上</td><td>間接を含む合計とは区別する</td></tr>
+<tr><td>間接GMV</td><td>接触後、公式の条件の範囲で購入された売上</td><td>単なる後日の全購入としない</td></tr>
+<tr><td>商品リンクのクリック</td><td>商品へ進む接触の記録</td><td>購入の記録と別に置く</td></tr>
+<tr><td>商品追加・投稿済み</td><td>商品をショーケースへ追加した状態、または紹介を投稿した状態</td><td>どちらも売上発生とは分ける</td></tr>
+<tr><td>推定成果報酬</td><td>公式の報酬説明にある確定前の金額</td><td>確定額と混ぜない</td></tr>
+<tr><td>最終的な成果報酬額</td><td>実際の収益に基づいて計算される額</td><td>根拠の記録と確認した状態を添える</td></tr>
+<tr><td>アフィリエイトリンク</td><td>専用機能で作成し、共有できる固有リンク</td><td>動画やLIVEの商品リンクと機能を区別する</td></tr>
+</tbody></table></div><p class="src">公式の用語を社内表へ対応させる例（公式資料に基づき編集部作成）</p>
+<p>もうひとつ残したいのが、数字を取得した条件です。期間だけでなく、どの立場の画面で、どの商品やクリエイターを選んだかが分かると、似た報告が届いたときに照合できます。毎回長い説明を書く代わりに、控えの欄を固定すると引き継ぎやすくなります。</p>
+<div class="tw"><table><thead><tr><th>控えの欄</th><th>書き方</th><th>書き残す理由</th></tr></thead><tbody>
+<tr><td>取得元</td><td>売り手のアフィリエイトセンター／本人側の画面など</td><td>同じ名前に見える別の画面を混ぜない</td></tr>
+<tr><td>対象期間と取得日</td><td>画面で選んだ期間と、その記録を取り出した日</td><td>再取得した記録を別の時点として残せる</td></tr>
+<tr><td>対象</td><td>商品・クリエイター・動画・LIVEの識別情報</td><td>別の対象の数値を誤って比較しない</td></tr>
+<tr><td>指標の名称と定義</td><td>画面の名称を写し、直接・間接などの範囲を添える</td><td>社内の略称に変えても意味を保つ</td></tr>
+<tr><td>確認状態</td><td>公式画面で確認済み／本人の控えのみ／未確認</td><td>取得できなかった項目をゼロにしない</td></tr>
+<tr><td>元の記録の保存先</td><td>取り出したデータと、定義を控えた場所</td><td>集計の根拠へ戻れるようにする</td></tr>
+</tbody></table></div><p class="src">数字と一緒に残す控えのひな形（編集部作成）</p>
+<p>会議用の見出しは、たとえば「紹介経由GMV・対象商品・選択期間」とします。その下に注文ソースとコンテンツタイプ、直接と間接の対象範囲を添えます。この書き方なら、誰かが短く「売上」と呼んでも、表そのものには意味が残ります。推定成果報酬は別の列に置き、売上へ足し戻しません。</p>
+<p>不明な注文を調べるときには、元の記録を消して推測の値へ差し替えないでください。確認した事実と、問い合わせたい条件を別々に書きます。対象の購入がどの紹介へ結び付いたかを確かめる作業と、紹介施策をどう改善するかを考える作業が、同じ表の中でも混ざらずに進みます。</p>
+
+<h2 id="summary"><span class="no en">06</span>紹介経由の数字は、条件と画面をそろえてから使います</h2>
+<p>TikTok Shopの紹介経由の売上を読む出発点は、商品リンクへの接触と、購入の記録を分けることです。動画やLIVEでは直接だけでなく間接の帰属も扱われます。ショーケースや共有リンクを含め、同じ呼び名の数字でも、対象の機能と指標をそろえて確認してください。</p>
+<p>条件の表で対象を確認し、パフォーマンスから紹介元を絞り、コラボの動画と対応させます。社内へ渡すときは取得元、期間、対象、指標名、確認状態を添えます。公式が割り当てた売上、ショップ全体の増加、報酬の確定を分けておくことが、紹介を続ける判断の土台になります。</p>
+
+<h2 id="faq"><span class="no en">07</span>よくある質問</h2>
+<p>計測の説明で迷いやすいのは、同じ注文を違う切り口から見ている場面です。紹介経由の記録へ戻れるよう、対象の指標と画面をそろえて読みます。</p>
+<p>以下は、商品リンクとの接触、直接と間接、取得条件についての確認です。個別注文の扱いは、対象の機能の公式説明へ結び付けて確かめてください。</p>
+<div class="faq">
+<details><summary>商品リンクが押された回数を、紹介経由の注文数として使えますか？</summary><div class="a">使えません。クリックは商品へ進む接触であり、購入を完了した記録ではありません。社内表もクリックと注文を別の列にします。購入に結び付いた分は、公式画面の対象指標で確認し、クリック数から推測して埋めないようにします。</div></details>
+<details><summary>後から商品を検索して買ったら、動画の紹介経由には数えられませんか？</summary><div class="a">検索して買ったという理由だけでは決まりません。日本向け公式ヘルプには、動画の商品リンクをクリックした後、条件の範囲内で検索して購入した注文を、動画の間接GMVに分類する例があります。購入時の入口だけで紹介との関係を判断しないでください。</div></details>
+<details><summary>直接GMVだけを集めた表は、紹介経由の売上の合計と言えますか？</summary><div class="a">直接だけを集めたことが分かる名称にします。公式の説明には間接GMVもあるため、直接の数字を紹介経由全体と呼ぶと対象がずれます。表の見出しに直接と書き、間接を含む値と比べるときは範囲をそろえます。</div></details>
+<details><summary>共有するアフィリエイトリンクの期限を、動画の計測期間に使ってよいですか？</summary><div class="a">別の機能の条件として扱ってください。共有する固有リンクのガイドと、動画やLIVEの売上帰属の説明は対象が違います。リンク自体の有効期限と、接触から購入までの条件も分け、対象機能の指標説明を確認します。</div></details>
+<details><summary>コラボの動画一覧に載っていれば、その動画で売れたことになりますか？</summary><div class="a">動画と商品の関連を確認できることと、売上が発生したことは別です。Video Detailsでは関連するコンテンツを確認し、GMVは対象の期間と指標をそろえたパフォーマンスの記録で読みます。動画が存在するだけの状態から売上を推定しません。</div></details>
+<details><summary>以前保存した帰属の内訳と、取り直した数字を比べるときは何を残しますか？</summary><div class="a">取得日、選んだ期間、対象、指標名と定義を残します。公式の更新説明では、アクセス可能な過去データにも新しい帰属方式を用いるとしています。保存時点の記録を残し、数字の違いをそのまま購入の増減だと読まないことが大切です。</div></details>
+</div>
+<div class="ctabox"><div class="ct">紹介経由の売上を見ながら起用を続けたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=affiliate-attribution">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=affiliate-attribution&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2>参考情報</h2><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=599182676379408&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：売上指標の内訳方式のアップグレード</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=3859123650234129&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトセンター分析の使い方</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトコラボ</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：報酬の仕組みについて</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=1341131783178001&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：アフィリエイトリンク - クリエイター向け機能ガイド</a></li></ul><p class="src">日本向け公式資料を2026年11月5日に取得しました。売上指標の直接・間接の分類、コラボと分析画面、報酬の推定と確定の区別を参照しています。機能や指標の定義は変更されることがあるため、利用時は該当する日本向け公式ヘルプと画面の説明で最新の条件を確認してください。共有リンクの条件を動画やLIVE全体へ適用する説明はしていません。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/creator-measurement/">クリエイター起用の成果の測り方</a></b><span>記録から振り返りと報告へ進む</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/affiliate-guide/">アフィリエイトの仕組み</a></b><span>コラボの始め方を確認する</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/affiliate-center-howto/">アフィリエイトセンターの見方</a></b><span>売り手と本人側の画面を整理する</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">紹介経由の売上には、商品リンクからの直接購入と接触後の購入があります</a></li><li><a href="#s2">計測の条件は、接触・購入・集計・成果報酬を分けて確かめます</a></li><li><a href="#s3">売り手はパフォーマンスから紹介元を絞り、コラボの動画と照合します</a></li><li><a href="#s4">紹介への売上の割り当てと、ショップ全体の売上増加を分けて読みます</a></li><li><a href="#s5">用語と取得条件を添えると、紹介経由という言葉のずれを防げます</a></li><li><a href="#summary">紹介経由の数字は、条件と画面をそろえてから使います</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=affiliate-attribution">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "商品リンクが押された回数を、紹介経由の注文数として使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "使えません。クリックは商品へ進む接触であり、購入を完了した記録ではありません。社内表もクリックと注文を別の列にします。購入に結び付いた分は、公式画面の対象指標で確認し、クリック数から推測して埋めないようにします。"}}, {"@type": "Question", "name": "後から商品を検索して買ったら、動画の紹介経由には数えられませんか？", "acceptedAnswer": {"@type": "Answer", "text": "検索して買ったという理由だけでは決まりません。日本向け公式ヘルプには、動画の商品リンクをクリックした後、条件の範囲内で検索して購入した注文を、動画の間接GMVに分類する例があります。購入時の入口だけで紹介との関係を判断しないでください。"}}, {"@type": "Question", "name": "直接GMVだけを集めた表は、紹介経由の売上の合計と言えますか？", "acceptedAnswer": {"@type": "Answer", "text": "直接だけを集めたことが分かる名称にします。公式の説明には間接GMVもあるため、直接の数字を紹介経由全体と呼ぶと対象がずれます。表の見出しに直接と書き、間接を含む値と比べるときは範囲をそろえます。"}}, {"@type": "Question", "name": "共有するアフィリエイトリンクの期限を、動画の計測期間に使ってよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "別の機能の条件として扱ってください。共有する固有リンクのガイドと、動画やLIVEの売上帰属の説明は対象が違います。リンク自体の有効期限と、接触から購入までの条件も分け、対象機能の指標説明を確認します。"}}, {"@type": "Question", "name": "コラボの動画一覧に載っていれば、その動画で売れたことになりますか？", "acceptedAnswer": {"@type": "Answer", "text": "動画と商品の関連を確認できることと、売上が発生したことは別です。Video Detailsでは関連するコンテンツを確認し、GMVは対象の期間と指標をそろえたパフォーマンスの記録で読みます。動画が存在するだけの状態から売上を推定しません。"}}, {"@type": "Question", "name": "以前保存した帰属の内訳と、取り直した数字を比べるときは何を残しますか？", "acceptedAnswer": {"@type": "Answer", "text": "取得日、選んだ期間、対象、指標名と定義を残します。公式の更新説明では、アクセス可能な過去データにも新しい帰属方式を用いるとしています。保存時点の記録を残し、数字の違いをそのまま購入の増減だと読まないことが大切です。"}}]}</script>
+</body>
+</html>
