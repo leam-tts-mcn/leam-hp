@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>インフルエンサーのリストアップ｜TikTok Shop候補表</title>
+<meta name="description" content="インフルエンサーの候補表は、集める・絞る・連絡するを分けて作ります。TikTok Shopで使う15列と仮の記入例を示し、販売の記録での絞り込みから進行管理への引き継ぎまで解説します。">
+<link rel="canonical" href="https://leam.co.jp/column/influencer-list-building/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="インフルエンサーのリストアップ｜TikTok Shop候補表">
+<meta property="og:description" content="インフルエンサーの候補表は、集める・絞る・連絡するを分けて作ります。TikTok Shopで使う15列と仮の記入例を示し、販売の記録での絞り込みから進行管理への引き継ぎまで解説します。">
+<meta property="og:url" content="https://leam.co.jp/column/influencer-list-building/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/influencer-list-building.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="インフルエンサーのリストアップ｜TikTok Shop候補表">
+<meta name="twitter:description" content="インフルエンサーの候補表は、集める・絞る・連絡するを分けて作ります。TikTok Shopで使う15列と仮の記入例を示し、販売の記録での絞り込みから進行管理への引き継ぎまで解説します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/influencer-list-building.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "インフルエンサーのリストアップ｜TikTok Shop候補表", "description": "インフルエンサーの候補表は、集める・絞る・連絡するを分けて作ります。TikTok Shopで使う15列と仮の記入例を示し、販売の記録での絞り込みから進行管理への引き継ぎまで解説します。", "inLanguage": "ja", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/influencer-list-building/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/influencer-list-building.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shopアフィリエイトのコラボ機能の説明"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "インフルエンサーのリストアップ｜TikTok Shop候補表", "item": "https://leam.co.jp/column/influencer-list-building/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-list-building">無料相談</a></div>
+<div class="shell">
+<article><p class="crumb"><a href="https://leam.co.jp/">ホーム</a> ／ <a href="https://leam.co.jp/column/">コラム</a> ／ 候補表のリストアップ</p><span class="cat">クリエイターの選び方と見極め</span><h1>インフルエンサーのリストアップ｜TikTok Shopの候補表</h1><div class="meta"><time class="upd" datetime="2026-11-05">更新日：2026年11月5日</time><time datetime="2026-11-05">公開日：2026年11月5日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左の人物の候補一覧から、中央の漏斗で確認した行を絞り、右の依頼用ファイルと封筒へ受け渡す、候補表の役割を示したイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="influencerlistbuildingDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#influencerlistbuildingDots" transform="translate(944 542)"/></g>
+<g fill="#5E6064" opacity=".13" transform="translate(9 11)"><rect x="104" y="140" width="320" height="370" rx="20"/><path d="M503 194h206l-75 128v102l-48 29V322z"/><path d="M801 185h148l29 29h115v296H801z"/><path d="M850 393h235v131H850z"/></g>
+<g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+<rect x="104" y="140" width="320" height="370" rx="20" fill="#FFFFFF"/>
+<rect x="184" y="122" width="158" height="40" rx="9" fill="#DFE0E2"/>
+<path d="M124 205h278m-278 93h278m-278 93h278" fill="none" stroke="#D8DADE" stroke-width="5"/>
+<g id="influencerlistbuildingPerson"><circle cx="161" cy="242" r="18" fill="#DFE0E2" stroke-width="4"/><path d="M136 282v-12c0-13 11-21 25-21s25 8 25 21v12z" fill="#EFF1F4" stroke-width="4"/></g>
+<use href="#influencerlistbuildingPerson" transform="translate(0 94)"/><use href="#influencerlistbuildingPerson" transform="translate(0 188)"/>
+<path d="M213 229h91m-91 24h153m-153 24h123m-123 47h91m-91 24h153m-153 24h123m-123 47h91m-91 24h153m-153 24h123" stroke="#C9CBD0" stroke-width="5"/>
+<path d="M119 304h289v81H119z" fill="none" stroke="#CE1730" stroke-width="5"/>
+<path d="M502 195h208l-76 127v100l-48 30V322z" fill="#FE2C55"/>
+<ellipse cx="606" cy="194" rx="104" ry="26" fill="#FFFFFF"/>
+<path d="M531 193h150m-118 21h86" stroke="#DFE0E2" stroke-width="4"/>
+<path d="M589 335h27v70" fill="none" stroke="#CE1730" stroke-width="5"/>
+<path d="M450 296h33m-12-10 12 10-12 10M735 296h34m-12-10 12 10-12 10" fill="none" stroke-width="5"/>
+<path d="M801 185h148l29 29h115v296H801z" fill="#DFE0E2"/>
+<path d="M830 165h210l30 30v253H830z" fill="#FFFFFF"/>
+<path d="M1040 165v31h30" fill="#EFF1F4" stroke-width="5"/>
+<circle cx="875" cy="241" r="20" fill="#25F4EE" stroke-width="5"/>
+<path d="M849 285v-14c0-18 52-18 52 0v14z" fill="#25F4EE" stroke-width="5"/>
+<path d="M921 231h98m-98 24h113m-113 24h72" stroke="#C9CBD0" stroke-width="5"/>
+<path d="M849 318h185m-185 27h185" stroke="#D8DADE" stroke-width="5"/>
+<path d="M804 362h99l20 23h170v125H804z" fill="#25F4EE"/>
+<path d="M850 403h235v121H850z" fill="#FFFFFF"/>
+<path d="M850 403l118 77 117-77M850 524l86-67m149 67-86-67" fill="none" stroke-width="5"/>
+<circle cx="1058" cy="397" r="34" fill="#CE1730"/>
+<path d="M1042 397l11 11 23-26" fill="none" stroke="#FFFFFF" stroke-width="5"/>
+<path d="M509 488h195v43H509z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M530 510h72m22 0h57" stroke="#D8DADE" stroke-width="5"/>
+<circle cx="555" cy="130" r="11" fill="#DFE0E2" stroke-width="4"/><circle cx="604" cy="112" r="11" fill="#25F4EE" stroke-width="4"/><circle cx="653" cy="130" r="11" fill="#DFE0E2" stroke-width="4"/>
+<rect x="129" y="170" width="70" height="20" rx="5" fill="#EFF1F4" stroke-width="4"/>
+<rect x="214" y="170" width="70" height="20" rx="5" fill="#FFFFFF" stroke-width="4"/>
+<path d="M365 172h25l-9 11v9h-7v-9z" fill="#25F4EE" stroke-width="4"/>
+<path d="M105 540h296m403 0h286" stroke="#D8DADE" stroke-width="5"/>
+</g></svg><figcaption>候補を集め、根拠で絞り、連絡後の管理へ渡す（編集部作成）</figcaption></figure><p class="lead">インフルエンサーのリストアップは、名前やフォロワー数を集めて終わる仕事ではありません。TikTok Shopの候補表は、<strong>「集める・絞る・連絡する」の段階を分け、紹介と販売の記録、選んだ理由を残す一覧</strong>にします。この記事では、写して使える15列と、架空の候補による記入例を示します。探し方を詳しく調べる段階と、連絡後の進行管理の間をつなぐ表です。</p>
+<div class="learn"><b>この記事でわかること</b><ul><li>リストアップの段階ごとに埋める情報</li><li>候補表に必要な列と、仮の1行の書き方</li><li>販売の記録で候補を絞り、連絡後の表へ引き継ぐ方法</li></ul></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">リストは集める・絞る・連絡するに分け、段階に合わせて列を埋めます</a></li><li><a href="#s2">集める入口を分け、どこで見つけた候補かを残します</a></li><li><a href="#s3">候補表は15列に分け、元の記録と判断を同じ行へ残します</a></li><li><a href="#s4">絞るときは、同じカテゴリーの販売と直近の商品紹介を先に確かめます</a></li><li><a href="#s5">連絡後は進行管理へ渡し、候補表には選定・見送りの理由を残します</a></li><li><a href="#summary">まとめ：候補表は、集めた情報を選定理由と次の確認につなぐ一覧です</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>リストは集める・絞る・連絡するに分け、段階に合わせて列を埋めます</h2>
+<p>「候補を一覧にしてください」と頼まれたら、どこまで進める一覧なのかを先にそろえます。見つけた候補を集める段階と、依頼する相手を絞る段階では、必要な情報が異なります。さらに、連絡する段階では、窓口の確認や、次に動く担当者の整理が必要になります。</p>
+<p>集め始めた時点で、すべての候補の販売資料や窓口が分かっている必要はありません。一方で、名前だけを並べた表を、そのまま連絡先の一覧として渡すのも避けます。何が確認できていて、何がまだ分からないかが、表を開いた人に伝わるようにします。</p>
+<div class="tw"><table><thead><tr><th>リストの段階</th><th>この段階でそろえる情報</th><th>次の段階へ渡すもの</th></tr></thead><tbody><tr><td>集める</td><td>候補の識別情報、見つけた入口、カテゴリー、紹介した投稿</td><td>どこを見て候補へ加えたかが分かる記録</td></tr><tr><td>絞る</td><td>同じカテゴリーの販売の記録、直近の紹介、商品との適合</td><td>選んだ理由と、追加で確認したいこと</td></tr><tr><td>連絡する</td><td>確認した連絡窓口、連絡の対象、引き継ぐ担当者</td><td>候補の管理IDと、進行管理の表へ渡す情報</td></tr></tbody></table></div>
+<p class="src">候補一覧の段階と情報の持ち方（編集部作成）。段階を進める判断と、情報を集めた状態を分けています。</p>
+<p>たとえば、商品に近い紹介動画を見つけた時点では、集める段階の候補として記録できます。その後、同じカテゴリーで売った記録を確かめ、商品との相性を読んでから、連絡する候補として検討します。動画を見つけたことと、依頼先として選んだことを、状態の欄で分けてください。</p>
+<p>表を作る担当者が候補を選ぶ人と別なら、段階の意味を表の説明に添えます。「収集中」は入口の情報を集めている状態、「追加確認」は不足の情報を確認する状態といったように、言葉の意味を決めます。まだ見ていない候補と、見た結果を踏まえて保留にした候補を、同じ空欄に置かないためです。</p>
+<p>候補の選定基準そのものを決める方法は、<a href="https://leam.co.jp/column/creator-selection-criteria/">クリエイターの選定基準を作る方法</a>で扱います。この記事の候補表は、その基準を使うために、必要な記録を同じ形で持つものです。表の列を埋めることと、基準を満たしたと判断することを分けましょう。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" role="img" aria-label="集める、絞る、連絡へ渡すという段階ごとに、入口の情報、選定の根拠、担当への引き継ぎを加える図"><rect width="900" height="320" fill="#FFFFFF"/><path d="M20 35h240l40 65-40 65H20l40-65z" fill="#EFF1F4"/><path d="M300 35h240l40 65-40 65H300l40-65z" fill="#FDECEF"/><path d="M580 35h240l40 65-40 65H580l40-65z" fill="#D8FAF7"/><g font-family="sans-serif" fill="#0B0C10" text-anchor="middle"><g font-size="29" font-weight="bold"><text x="168" y="110">集める</text><text x="448" y="110">絞る</text><text x="728" y="110">連絡へ渡す</text></g><g font-size="23"><text x="160" y="215">入口・候補・投稿</text><text x="440" y="215">実績・適合・理由</text><text x="720" y="215">窓口・担当・参照先</text></g><text x="450" y="281" font-size="24">集めた状態と、依頼先に選んだ状態を分ける</text></g></svg><figcaption>段階に合わせて情報を足し、状態を区別する（編集部作成）</figcaption></figure>
+
+<h2 id="s2"><span class="no en">02</span>集める入口を分け、どこで見つけた候補かを残します</h2>
+<p>候補を集める入口は、公式の検索、自社に近い商品の紹介動画、応募してきた人に分けて記録します。入口によって最初に手に入る情報が違うためです。検索で見つけた候補の情報と、本人から受け取った紹介資料を、どちらも確認済みの実績として並べないようにします。</p>
+<p>2026年11月5日に取得したTikTok Shopの日本語公式資料には、クリエイターを検索するFind Creatorsと、クリエイターコネクトでの保存が説明されています。クリエイターコネクトでは、ハートボタンを使って候補を保存し、保存した人の一覧を確認できます。社内の候補表には、見つけた入口に加えて、選定に使う記録を残します。</p>
+<p>公式で保存した候補を社内で検討するときは、保存先に戻れる情報と、社内の判断を対応させます。保存された一覧にあることを、すでに自社の基準で選定したという意味へ置き換えないようにします。候補表の状態を付ける担当者は、何を確認してその状態にしたかを残してください。</p>
+<div class="tw"><table><thead><tr><th>集める入口</th><th>最初に控えること</th><th>後から確認すること</th></tr></thead><tbody><tr><td>公式の検索</td><td>対象のアカウントと、候補へ加えた理由</td><td>商品の紹介と販売の記録が、自社の依頼に対応するか</td></tr><tr><td>自社に近い商品の紹介動画</td><td>紹介した人、動画のURL、扱っているカテゴリー</td><td>直近の紹介と、同じカテゴリーの販売実績</td></tr><tr><td>応募してきた人</td><td>応募の入口、受け取ったアカウントや資料</td><td>本人の説明と、参照できる記録の対応</td></tr></tbody></table></div>
+<p class="src">入口ごとに候補表へ残す情報（公式資料に基づき編集部作成）。集めた入口は、候補の適性を確定する情報とは分けます。</p>
+<p>入口の列には、検索や動画、応募といった区分だけでなく、見つけた情報へ戻れる参照先を残します。候補を絞る担当者が、投稿を改めて開けるようにするためです。アカウントのURLと、紹介した動画のURLは別に持つと、誰のどの説明を見ているかを確認できます。</p>
+<p>応募の資料は、本人が示した情報として受け取ります。販売に関する記載がある場合は、何の商品について、どの期間の数字を示しているかを確認します。自己紹介として受け取った内容と、参照元を確かめた内容を、実績の欄で見分けられるようにしてください。</p>
+<p>入口の詳しい探し方や、公式画面の使い分けは、<a href="https://leam.co.jp/column/find-creators/">TikTok Shopでクリエイターを探す方法</a>を参照してください。この記事では、見つけた後に情報が散らばらないよう、候補の識別情報と根拠を同じ表へまとめるところを扱います。</p>
+<p>公式資料には、オープンコラボのサンプル申請を条件で絞る説明もあります。候補を集める際には、どの画面で確認した条件かを控えましょう。サンプル申請の条件を、すべての検索画面に共通する仕様として候補表へ書き込まないようにします。表には実際に確認できた項目と、取得元を残してください。</p>
+<p>候補を集めた日と、販売資料を確認した日が違う場合は、確認日だけを全体の作成日にそろえないようにします。どの情報をいつ確かめたかが分かるよう、該当する欄にも確認時点を添えます。新しい資料を受け取った際は、前の判断がどの記録に基づいていたかも読める形で残してください。</p>
+
+<h2 id="s3"><span class="no en">03</span>候補表は15列に分け、元の記録と判断を同じ行へ残します</h2>
+<p>候補表の列は、連絡先だけの名簿にせず、なぜ候補に加えたかを読み返せる形にします。次の15列は、集める情報、絞るための記録、判断と次の確認を分けた例です。社内で使う表へ写す際も、アカウントの情報と販売の記録、判断の欄を分けて残してください。</p>
+<p>識別情報は、候補に対応する記録を取り違えないために使います。候補IDは社内で管理する番号や記号で、TikTokの公式の識別番号とは分けて扱います。アカウントのURLも合わせて持ち、候補表と連絡後の進行表で、同じ人を対応させられるようにします。</p>
+<div class="tw"><table><thead><tr><th>候補表の列</th><th>入れる内容</th><th>主に埋める段階</th></tr></thead><tbody><tr><td>候補ID</td><td>候補を社内で対応させる管理用の番号・記号</td><td>集める</td></tr><tr><td>アカウントURL</td><td>本人のアカウントへ戻れる参照先</td><td>集める</td></tr><tr><td>見つけた入口</td><td>公式の検索、紹介動画、応募など</td><td>集める</td></tr><tr><td>主なカテゴリー</td><td>候補が紹介している商品の分野</td><td>集める</td></tr><tr><td>紹介投稿URL</td><td>選定のために確認した商品の紹介投稿</td><td>集める</td></tr><tr><td>直近の紹介日</td><td>確認した商品紹介の公開日</td><td>絞る</td></tr><tr><td>販売の対象期間</td><td>販売資料の開始日・終了日などの範囲</td><td>絞る</td></tr><tr><td>販売実績の確認内容</td><td>同じカテゴリーの販売について確認したこと</td><td>絞る</td></tr><tr><td>実績の参照元</td><td>確認した画面や、受け取った資料の所在</td><td>絞る</td></tr><tr><td>確認日</td><td>その情報を確認した日</td><td>各段階で更新</td></tr><tr><td>商品との適合メモ</td><td>自社の商品と、紹介内容が合うと考えた根拠</td><td>絞る</td></tr><tr><td>連絡先の確認状況</td><td>業務の連絡窓口を確認できたか</td><td>連絡へ渡す前</td></tr><tr><td>判断の状態</td><td>収集中、追加確認、連絡候補、見送りなど</td><td>絞る</td></tr><tr><td>選定・見送り理由</td><td>判断を、確認した事実と結び付けた短い文</td><td>絞る</td></tr><tr><td>次に確認すること</td><td>不足している情報、確認する担当と内容</td><td>各段階で更新</td></tr></tbody></table></div>
+<p class="src">写して使える候補表の列（編集部作成）。公式画面の項目をそのまま再現したものではなく、選定の根拠を残す社内用の構成です。</p>
+<p>次は、架空の候補を使った記入例です。実在のアカウントや販売実績ではありません。商品の紹介動画を入口に集め、販売資料や連絡窓口はまだ確認していない状態を示しています。表は横にスクロールして、同じ行の情報を確認できます。</p>
+<div class="tw"><table style="min-width:2400px"><thead><tr><th>候補ID</th><th>アカウントURL</th><th>見つけた入口</th><th>主なカテゴリー</th><th>紹介投稿URL</th><th>直近の紹介日</th><th>販売の対象期間</th><th>販売実績の確認内容</th><th>実績の参照元</th><th>確認日</th><th>商品との適合メモ</th><th>連絡先の確認状況</th><th>判断の状態</th><th>選定・見送り理由</th><th>次に確認すること</th></tr></thead><tbody><tr><td>例用ID</td><td>実際の候補URLを入れる欄</td><td>商品紹介動画</td><td>日用品</td><td>確認した動画URLを入れる欄</td><td>動画の公開日を確認する</td><td>未確認</td><td>同じカテゴリーの販売は未確認</td><td>販売資料は未受領</td><td>2026年11月5日（仮）</td><td>使い方の説明内容を確認したい</td><td>窓口未確認</td><td>追加確認</td><td>紹介内容と販売の記録の照合が必要</td><td>確認担当が、期間の分かる販売資料を確かめる</td></tr></tbody></table></div>
+<p class="src">架空の候補による記入例1行（編集部作成）。URLを示す文は記入位置の説明で、実在しないリンクは設定していません。</p>
+<p>この例では、動画を入口に候補へ加えていますが、連絡候補と確定してはいません。販売の対象期間や参照元がそろう前の状態を「追加確認」として残しています。すべての欄が埋まっているかだけを見て判断せず、何を確認した結果なのかを読み取れるようにします。</p>
+<p>商品との適合メモには、見た事実と自社の期待を区別して書きます。「このカテゴリーの紹介を確認した」という事実に、「使い方の説明を依頼したい」という期待を添える形です。依頼側の希望だけを、候補がすでに対応できると確認した内容として残さないようにします。</p>
+<p>確認したことは、単なる印だけで済ませないようにします。実績の欄が「確認済み」だけでは、別の担当者が見たときに、同じカテゴリーの販売を確認したのか、資料を受け取っただけなのかが分かりません。対象の商品や期間と、参照元へ戻れる記録を残してください。</p>
+<p>表が横に長くなる場合は、列を削る前に表示を整理します。候補一覧では判断と次の確認を見せ、投稿や資料の明細は候補IDで対応する別の記録へ分ける方法もあります。情報を見せる場所を分けても、どの根拠で選んだかへ戻れる関係は残します。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="候補表の一行に、誰の記録か、根拠、判断、次の確認をつなげて残す構造"><rect width="900" height="360" fill="#FFFFFF"/><g font-family="sans-serif" fill="#0B0C10"><text x="30" y="39" font-size="25" font-weight="bold">同じ行の中で、記録と判断を対応させる</text><path d="M30 79h840v103H30z" fill="#FFFFFF" stroke="#D8DADE" stroke-width="3"/><path d="M30 79h185v103H30z" fill="#EFF1F4"/><path d="M215 79h275v103H215z" fill="#FDECEF"/><path d="M490 79h180v103H490z" fill="#D8FAF7"/><g text-anchor="middle" font-size="25"><text x="122" y="122">誰の記録か</text><text x="352" y="122">根拠</text><text x="580" y="122">判断</text><text x="770" y="122">次の確認</text></g><g text-anchor="middle" font-size="20"><text x="122" y="160">ID・URL</text><text x="352" y="160">紹介・販売・参照元</text><text x="580" y="160">状態と理由</text><text x="770" y="160">担当と不足</text></g><path d="M352 183v45H122v35m230-35h229v35" fill="none" stroke="#CE1730" stroke-width="3"/><text x="39" y="296" font-size="23">確認した投稿</text><text x="488" y="296" font-size="23">対象期間の分かる販売資料</text><text x="30" y="340" font-size="21">根拠へ戻れる参照先を残し、判断だけを切り離さない</text></g></svg><figcaption>候補表の一行から、紹介と販売の資料へ戻れるようにする（編集部作成）</figcaption></figure>
+
+<h2 id="s4"><span class="no en">04</span>絞るときは、同じカテゴリーの販売と直近の商品紹介を先に確かめます</h2>
+<p>候補を集めた後は、同じカテゴリーで紹介して売った記録と、直近にも商品を紹介しているかを先に見ます。人数や知名度の印象から選ぶ前に、自社の依頼に近い記録を読むためです。販売の資料と、商品をどう説明しているかを一緒に確認します。</p>
+<p>日本語の公式資料では、クリエイターコネクトで対象のクリエイターを選び、パフォーマンスデータを確認する説明があります。コラボの詳細にも、クリエイターや商品、関連する動画の情報が示されています。候補表では、そのような確認先を、販売の内容と参照元の列へ結び付けます。</p>
+<p>直近の紹介日には、確認した商品紹介の公開日を残します。アカウントで別の話題を発信した日と、商品を紹介した日を混同しないようにします。候補の投稿を開き、どんなカテゴリーを扱い、何を説明しているかを読んでから記録してください。</p>
+<p>カテゴリー名は、自社が検討する商品と照合できる言い方にそろえます。資料ごとに呼び方が違う場合は、元の記載を残して、自社で整理した分類を添えます。別の分野の販売を、名称が似ているだけで同じカテゴリーの記録へ変えないためです。</p>
+<div class="tw"><table><thead><tr><th>候補を絞るための確認</th><th>対応させる列</th><th>理由欄へ残す内容</th></tr></thead><tbody><tr><td>同じカテゴリーを紹介しているか</td><td>主なカテゴリー、紹介投稿URL</td><td>依頼する商品に近い紹介のどこを確認したか</td></tr><tr><td>そのカテゴリーで売った記録があるか</td><td>販売の対象期間、販売実績の確認内容、参照元</td><td>確認した対象と、まだ確かめたいこと</td></tr><tr><td>直近にも商品を紹介しているか</td><td>直近の紹介日、確認日</td><td>確認した商品紹介の時点と内容</td></tr><tr><td>商品の説明が依頼に合うか</td><td>紹介投稿URL、商品との適合メモ</td><td>伝えてほしい内容に対応する説明</td></tr><tr><td>連絡に渡せる状態か</td><td>連絡先の確認状況、判断の状態、次の確認</td><td>確認が済んだことと、引き継ぐ不足項目</td></tr></tbody></table></div>
+<p class="src">絞り込みの確認と候補表の列の対応（公式資料に基づき編集部作成）。公式の検索フィルター一覧や、自動判定の基準ではありません。</p>
+<p>選定理由は、確認した材料から書きます。「良さそう」だけを残すより、「自社に近いカテゴリーの商品を説明した投稿を確認した」と書く方が、次の人が根拠へ戻れます。販売の記録が必要なら、何を追加で確かめるかも同じ行へ残してください。</p>
+<p>次の確認は、「実績を調べる」という作業名だけでなく、何が分かれば判断できるかまで書きます。対象の商品や期間が分かる資料を確かめるなど、確認したい情報を示してください。引き継いだ担当者が、同じ調査を最初から繰り返さずに済みます。</p>
+<p>見送りの理由も、候補の人格や能力全体への評価にしないようにします。今回頼む商品とのカテゴリーの違いや、依頼したい内容との対応など、判断に使った範囲を書きます。別の商品を検討するときに、以前の「見送り」だけを理由に候補を消さず、何が条件に合わなかったかを読み返せます。</p>
+<p>公開情報で反応が気になった場合は、観察した内容と、まだ判断できないことを分けます。確認の進め方は、フォロワー購入を疑う前の確認表で扱います。反応の率を候補表へ入れる場合も、<a href="https://leam.co.jp/column/engagement-rate/">エンゲージメント率の計算方法</a>で分子と分母をそろえてください。今回は販売と紹介の記録を先に置きます。</p>
+
+<h2 id="s5"><span class="no en">05</span>連絡後は進行管理へ渡し、候補表には選定・見送りの理由を残します</h2>
+<p>候補へ連絡した後は、連絡や依頼の進み具合を管理する表へ渡します。候補表は、誰をどんな根拠で集め、なぜ選んだか、見送ったかを残す場所として維持します。返事やその後の作業を候補表へ次々に追加すると、選定の根拠を見つけにくくなるためです。</p>
+<p>渡すときには、候補IDとアカウントURLを合わせます。選定の理由、確認した紹介と販売の記録、残る確認事項も引き継ぎます。連絡する担当者が、候補の名前だけを受け取り、根拠を探し直す状態を避けるためです。候補表から進行管理の記録へ戻れる対応も残してください。</p>
+<div class="tw"><table><thead><tr><th>候補表に残す情報</th><th>進行管理へ渡す情報</th><th>役割の分け方</th></tr></thead><tbody><tr><td>見つけた入口と紹介の根拠</td><td>候補IDとアカウントURL</td><td>誰についての記録かを対応させる</td></tr><tr><td>選んだ理由と確認した販売資料</td><td>依頼する商品や内容を検討する材料</td><td>連絡する担当者が根拠を読み直せるようにする</td></tr><tr><td>見送り・保留の理由</td><td>必要な場合だけ、追加確認の内容</td><td>選定の状態と連絡後の状態を混ぜない</td></tr><tr><td>未確認の項目と参照元</td><td>誰が何を確認するか</td><td>引き継いだことで確認済みへ変えない</td></tr><tr><td>進行管理へ渡したことの記録</td><td>連絡後の進み具合を管理する記録</td><td>候補表を消さず、別の表と対応させる</td></tr></tbody></table></div>
+<p class="src">候補表と進行管理の引き継ぎ（編集部作成）。連絡後の工程や日付の管理は、別の進行管理表で扱います。</p>
+<p>連絡後の状態や、誰が次に動くかを記録する方法は、<a href="https://leam.co.jp/column/creator-progress-sheet/">クリエイター起用の進行管理表</a>を参照してください。ここでは、その表に移す前に、候補を選んだ理由と根拠が残っているかを確認します。候補表の役割を明確にすると、集める作業と依頼を進める作業がつながります。</p>
+<p>候補表へ結果を戻す場合も、選定時点の理由は残します。連絡後に新しく分かった事実は、その確認日とともに追記します。最初に選んだ根拠と、連絡後に追加された情報を分けて読めれば、次に候補を集める際にも判断の材料として使えます。</p>
+<p>候補表の作成から連絡まで間が空いた場合は、アカウントや紹介投稿の参照先、直近の紹介、窓口を読み直します。表が完成していたという理由だけで、以前の状態のまま連絡へ渡さないようにします。更新した内容を記録し、変えていない根拠と、追加した情報が見分けられるようにしてください。</p>
+<p>見送った行も、理由と参照元を残します。今回のカテゴリーに合わなかったのか、商品紹介の記録の確認が足りなかったのかで、次に確認する内容は変わります。候補表を、連絡する人だけの一覧へ変えてしまわず、どこまで確かめたかが残る記録として使ってください。</p>
+
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="候補表と進行管理表を管理IDで対応させ、選定理由と連絡後の仕事を別の記録で追う構造"><rect width="900" height="360" fill="#F6F7F9"/><g font-family="sans-serif" fill="#0B0C10"><path d="M37 81h147l23 24h174v218H37z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="3"/><path d="M519 81h147l23 24h174v218H519z" fill="#FFFFFF" stroke="#0B0C10" stroke-width="3"/><rect x="65" y="47" width="205" height="67" rx="10" fill="#EFF1F4"/><rect x="547" y="47" width="205" height="67" rx="10" fill="#25F4EE"/><g font-size="25" font-weight="bold"><text x="91" y="89">候補表</text><text x="573" y="89">進行管理表</text></g><g font-size="24"><text x="63" y="175">集めた入口</text><text x="63" y="223">選定・見送り理由</text><text x="63" y="271">紹介と販売の根拠</text><text x="545" y="175">連絡後の作業</text><text x="545" y="223">確認する担当者</text><text x="545" y="271">進み具合</text></g><path d="M384 203h130m-15-11 15 11-15 11m-100-22-15 11 15 11" fill="none" stroke="#0B0C10" stroke-width="4"/><text x="449" y="167" text-anchor="middle" font-size="23">候補ID</text><text x="449" y="250" text-anchor="middle" font-size="19">対応させる</text></g></svg><figcaption>引き継いだ後も、候補を選んだ理由を残す（編集部作成）</figcaption></figure>
+
+<h2 id="summary"><span class="no en">06</span>まとめ：候補表は、集めた情報を選定理由と次の確認につなぐ一覧です</h2>
+<p>インフルエンサーのリストアップでは、集める・絞る・連絡するの段階を分けます。入口の情報から始め、同じカテゴリーの販売の記録と、直近の商品紹介を確かめます。候補表には、元の記録へ戻れる参照先と、判断の理由を一緒に残しましょう。</p>
+<p>15列の一覧と架空の記入例を使い、不足している情報を推測で埋めない形にします。連絡後は進行管理の表へ渡し、候補表には選んだ理由や見送った理由を残します。次に読む人が根拠と不足を確認できることが、使える候補表の条件です。</p>
+
+<h2 id="faq"><span class="no en">07</span>よくある質問</h2>
+<div class="faq">
+<details><summary>リストアップを頼まれたら、候補への連絡まで済ませる必要がありますか？</summary><div class="a">集めるところまでか、選定や連絡へ渡すところまでかを、依頼の範囲として確認します。段階によって埋める列が異なります。情報を集めただけの行を連絡候補と確定せず、判断の状態と次に確認することが分かる形で渡してください。</div></details>
+<details><summary>調べる担当者と候補を選ぶ担当者が別なら、どの情報を優先して渡しますか？</summary><div class="a">候補の識別情報、確認した紹介投稿、販売の対象期間と参照元をそろえます。確認できていない項目も示してください。判断を先に付けて渡すより、選定する人がどの根拠を読めばよいかと、追加で何を確かめるかが分かる記録にします。</div></details>
+<details><summary>候補表が横に長くなった場合、根拠の列は削ってよいですか？</summary><div class="a">根拠へ戻れる関係は残し、表示する場所を整理します。候補の一覧と投稿・販売資料の明細を分ける場合も、候補IDで対応させてください。率や判断だけの一覧にすると、別の担当者が選定の内容を確認し直せなくなります。</div></details>
+<details><summary>連絡窓口をまだ確認していない人も、集める段階の候補表に入れられますか？</summary><div class="a">集める段階の情報として記録し、窓口が未確認だと分かるようにします。商品との適合や販売の確認と、連絡できる状態かの確認を分けてください。連絡へ渡す前には、連絡先の確認状況と、次に動く担当者を整理します。</div></details>
+<details><summary>応募してきた人の自己申告は、そのまま実績確認済みと書きますか？</summary><div class="a">資料を受け取ったことと、実績の対象や参照元を確かめたことを分けます。どの商品について、どの期間の販売を示すかを確認し、候補表へ内容を残してください。確認できた範囲が分かる書き方にし、受領だけで確認済みに変えないようにします。</div></details>
+<details><summary>進行管理の表へ引き継いだ候補は、候補表から削除しますか？</summary><div class="a">候補表には、集めた入口や選んだ理由を残します。進行管理の記録とは候補IDで対応させ、連絡後の作業は別の表で追います。表を分けた後も、なぜその相手を選んだかと、何を引き継いだかが読み返せる状態にしてください。</div></details>
+</div>
+<div class="ctabox"><div class="ct">候補の一覧づくりから任せたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-list-building">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-list-building&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2>参考情報</h2><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shopアフィリエイトのコラボ機能の説明</a>（2026年11月5日取得。公開・更新日は取得平文で確認できず）</li></ul><p class="src">分類表、15列の構成、判断と引き継ぎの手順は編集部作成です。記入例は架空の候補を使ったもので、実際のアカウント、販売実績、連絡先を収集したものではありません。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">候補から依頼へ</span><b><a href="https://leam.co.jp/column/find-creators/">TikTok Shopでクリエイターを探す方法</a></b><span>候補を集める入口を確認する</span></div><div class="relcard"><span class="rc">候補から依頼へ</span><b><a href="https://leam.co.jp/column/creator-selection-criteria/">クリエイターの選定基準</a></b><span>集めた候補を判断する基準を整理する</span></div><div class="relcard"><span class="rc">候補から依頼へ</span><b><a href="https://leam.co.jp/column/creator-progress-sheet/">クリエイター起用の進行管理表</a></b><span>連絡後の作業を引き継ぐ</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">リストは集める・絞る・連絡するに分け、段階に合わせて列を埋めます</a></li><li><a href="#s2">集める入口を分け、どこで見つけた候補かを残します</a></li><li><a href="#s3">候補表は15列に分け、元の記録と判断を同じ行へ残します</a></li><li><a href="#s4">絞るときは、同じカテゴリーの販売と直近の商品紹介を先に確かめます</a></li><li><a href="#s5">連絡後は進行管理へ渡し、候補表には選定・見送りの理由を残します</a></li><li><a href="#summary">まとめ：候補表は、集めた情報を選定理由と次の確認につなぐ一覧です</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-list-building">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "リストアップを頼まれたら、候補への連絡まで済ませる必要がありますか？", "acceptedAnswer": {"@type": "Answer", "text": "集めるところまでか、選定や連絡へ渡すところまでかを、依頼の範囲として確認します。段階によって埋める列が異なります。情報を集めただけの行を連絡候補と確定せず、判断の状態と次に確認することが分かる形で渡してください。"}}, {"@type": "Question", "name": "調べる担当者と候補を選ぶ担当者が別なら、どの情報を優先して渡しますか？", "acceptedAnswer": {"@type": "Answer", "text": "候補の識別情報、確認した紹介投稿、販売の対象期間と参照元をそろえます。確認できていない項目も示してください。判断を先に付けて渡すより、選定する人がどの根拠を読めばよいかと、追加で何を確かめるかが分かる記録にします。"}}, {"@type": "Question", "name": "候補表が横に長くなった場合、根拠の列は削ってよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "根拠へ戻れる関係は残し、表示する場所を整理します。候補の一覧と投稿・販売資料の明細を分ける場合も、候補IDで対応させてください。率や判断だけの一覧にすると、別の担当者が選定の内容を確認し直せなくなります。"}}, {"@type": "Question", "name": "連絡窓口をまだ確認していない人も、集める段階の候補表に入れられますか？", "acceptedAnswer": {"@type": "Answer", "text": "集める段階の情報として記録し、窓口が未確認だと分かるようにします。商品との適合や販売の確認と、連絡できる状態かの確認を分けてください。連絡へ渡す前には、連絡先の確認状況と、次に動く担当者を整理します。"}}, {"@type": "Question", "name": "応募してきた人の自己申告は、そのまま実績確認済みと書きますか？", "acceptedAnswer": {"@type": "Answer", "text": "資料を受け取ったことと、実績の対象や参照元を確かめたことを分けます。どの商品について、どの期間の販売を示すかを確認し、候補表へ内容を残してください。確認できた範囲が分かる書き方にし、受領だけで確認済みに変えないようにします。"}}, {"@type": "Question", "name": "進行管理の表へ引き継いだ候補は、候補表から削除しますか？", "acceptedAnswer": {"@type": "Answer", "text": "候補表には、集めた入口や選んだ理由を残します。進行管理の記録とは候補IDで対応させ、連絡後の作業は別の表で追います。表を分けた後も、なぜその相手を選んだかと、何を引き継いだかが読み返せる状態にしてください。"}}]}</script>
+</body>
+</html>

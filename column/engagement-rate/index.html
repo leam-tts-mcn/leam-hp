@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>エンゲージメント率の計算方法｜TikTok Shop候補選び</title>
+<meta name="description" content="エンゲージメント率は分母と足す反応で変わります。同じ仮の投稿を3通りで計算。TikTok Shopの候補比較に使う式・期間・投稿の種類をそろえ、商品クリックと販売の記録も確認します。">
+<link rel="canonical" href="https://leam.co.jp/column/engagement-rate/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="エンゲージメント率の計算方法｜TikTok Shop候補選び">
+<meta property="og:description" content="エンゲージメント率は分母と足す反応で変わります。同じ仮の投稿を3通りで計算。TikTok Shopの候補比較に使う式・期間・投稿の種類をそろえ、商品クリックと販売の記録も確認します。">
+<meta property="og:url" content="https://leam.co.jp/column/engagement-rate/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/engagement-rate.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="エンゲージメント率の計算方法｜TikTok Shop候補選び">
+<meta name="twitter:description" content="エンゲージメント率は分母と足す反応で変わります。同じ仮の投稿を3通りで計算。TikTok Shopの候補比較に使う式・期間・投稿の種類をそろえ、商品クリックと販売の記録も確認します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/engagement-rate.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "エンゲージメント率の計算方法｜TikTok Shop候補選び", "description": "エンゲージメント率は分母と足す反応で変わります。同じ仮の投稿を3通りで計算。TikTok Shopの候補比較に使う式・期間・投稿の種類をそろえ、商品クリックと販売の記録も確認します。", "inLanguage": "ja", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/engagement-rate/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/engagement-rate.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://ads.tiktok.com/resources/help/article/about-tiktok-one-campaign-reporting?lang=ja", "name": "TikTok Oneプロジェクトのレポートについて"}, {"@type": "WebPage", "url": "https://ads.tiktok.com/resources/help/article/basic-data?lang=ja", "name": "TikTok広告マネージャー内の基本データ指標と定義について"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786801424&lang=ja-JP", "name": "動画パフォーマンス"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "エンゲージメント率の計算方法｜TikTok Shop候補選び", "item": "https://leam.co.jp/column/engagement-rate/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=engagement-rate">無料相談</a></div>
+<div class="shell">
+<article><p class="crumb"><a href="https://leam.co.jp/">ホーム</a> ／ <a href="https://leam.co.jp/column/">コラム</a> ／ エンゲージメント率</p><span class="cat">クリエイターの選び方と見極め</span><h1>エンゲージメント率の計算方法｜TikTok Shopの候補選び</h1><div class="meta"><time class="upd" datetime="2026-11-05">更新日：2026年11月5日</time><time datetime="2026-11-05">公開日：2026年11月5日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="反応を表すハートや吹き出しと、フォロワーを表す人物、再生を表すフィルムを天秤と計算機で対比し、計算の分母の違いを表すイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="engagementrateDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#engagementrateDots" transform="translate(944 542)"/></g>
+<g fill="#5E6064" opacity=".13" transform="translate(9 11)"><path d="M238 486h500v35H238z"/><path d="M488 169h33v320h-33z"/><rect x="838" y="224" width="241" height="299" rx="22"/><path d="M144 327h257v55H144zM590 327h257v55H590z"/></g>
+<g stroke="#0B0C10" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+<path d="M488 168h33v324h-33z" fill="#C9CBD0"/>
+<path d="M270 175h469" fill="none"/>
+<circle cx="505" cy="175" r="24" fill="#CE1730"/>
+<path d="M269 178l-91 157m91-157l91 157m379-157l-91 157m91-157l91 157" fill="none" stroke-width="5"/>
+<path d="M144 335h257l-36 49H181z" fill="#DFE0E2"/>
+<path d="M590 335h257l-36 49H627z" fill="#25F4EE"/>
+<path d="M258 486h493v35H258z" fill="#0B0C10"/>
+<path d="M438 486l67-59 67 59z" fill="#CE1730"/>
+<g id="engagementratePerson"><circle cx="238" cy="264" r="21" fill="#FFFFFF" stroke-width="5"/><path d="M207 328v-25c0-16 13-26 31-26s31 10 31 26v25z" fill="#CE1730" stroke-width="5"/></g>
+<use href="#engagementratePerson" transform="translate(67 0)"/>
+<path d="M209 304l28 17 29-17" fill="none" stroke-width="4"/>
+<path d="M649 249h144v80H649z" fill="#FFFFFF"/>
+<path d="M663 250v78m116-78v78M649 266h14m116 0h14M649 310h14m116 0h14" fill="none" stroke-width="4"/>
+<path d="M700 267l37 22-37 23z" fill="#25F4EE" stroke-width="5"/>
+<rect x="838" y="224" width="241" height="299" rx="22" fill="#FFFFFF"/>
+<rect x="861" y="248" width="195" height="70" rx="9" fill="#DFE0E2" stroke-width="5"/>
+<path d="M945 282h85" stroke="#5E6064" stroke-width="5"/>
+<rect x="864" y="344" width="40" height="38" rx="7" fill="#EFF1F4" stroke-width="4"/>
+<rect x="937" y="344" width="40" height="38" rx="7" fill="#EFF1F4" stroke-width="4"/>
+<rect x="1010" y="344" width="40" height="38" rx="7" fill="#25F4EE" stroke-width="4"/>
+<rect x="864" y="400" width="40" height="38" rx="7" fill="#EFF1F4" stroke-width="4"/>
+<rect x="937" y="400" width="40" height="38" rx="7" fill="#EFF1F4" stroke-width="4"/>
+<rect x="1010" y="400" width="40" height="94" rx="7" fill="#CE1730" stroke-width="4"/>
+<rect x="864" y="456" width="113" height="38" rx="7" fill="#DFE0E2" stroke-width="4"/>
+<path d="M874 362h20m-10-10v20m63-10h20m53-5h20m-20 11h20" fill="none" stroke-width="4"/>
+<path d="M873 411l20 17m0-17-20 17m74-7h20m52 21h22m-22 13h22" fill="none" stroke-width="4"/>
+<path d="M283 107c-37-40-78 9-49 35l49 42 49-42c29-26-12-75-49-35z" fill="#FE2C55" stroke-width="5"/>
+<path d="M435 62h120v63h-48l-24 22v-22h-48z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M451 83h87m-87 22h58" stroke="#C9CBD0" stroke-width="4"/>
+<path d="M673 91h61v-22l53 42-53 42v-23h-61z" fill="#25F4EE" stroke-width="5"/>
+<path d="M837 162l-20 30m14-5-14 5-5-15" fill="none" stroke="#5E6064" stroke-width="5"/>
+<path d="M144 411h145" stroke="#C9CBD0" stroke-width="4"/>
+<circle cx="164" cy="411" r="10" fill="#FE2C55" stroke-width="4"/><circle cx="211" cy="411" r="10" fill="#FFFFFF" stroke-width="4"/><circle cx="258" cy="411" r="10" fill="#25F4EE" stroke-width="4"/>
+<path d="M133 438h123m-98 22h98m386-22h124" stroke="#D8DADE" stroke-width="5"/>
+</g></svg><figcaption>反応の件数だけでなく、何で割るかをそろえて比較する（編集部作成）</figcaption></figure><p class="lead">エンゲージメント率は、いいね・コメント・シェアなどの反応を、フォロワー数や再生数などで割って求める指標です。割合で示すときは、割った値に100を掛けます。<strong>分子に何を足すか、分母に何を使うかが違えば、同じ投稿でも結果は変わります。</strong>この記事では、同じ仮の投稿を使って計算方法を比較し、TikTok Shopの候補を比べるための記録欄を示します。</p>
+<div class="learn"><b>この記事でわかること</b><ul><li>フォロワー数で割る式と再生数で割る式の違い</li><li>同じ仮の投稿を異なる方法で計算した結果</li><li>相場の平均値に頼らず、販売の記録と合わせて候補を見る方法</li></ul></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">反応を何で割るかが違えば、エンゲージメント率の意味も変わります</a></li><li><a href="#s2">同じ仮の投稿でも、分母と足す反応を変えると計算結果が変わります</a></li><li><a href="#s3">母数と時点が分からない平均値を目安にせず、条件をそろえた候補どうしで比べます</a></li><li><a href="#s4">商品の販売力は、反応の率に加えて商品クリックと売上の記録で見ます</a></li><li><a href="#s5">候補比較の表には、式・期間・投稿の種類と元の件数を残します</a></li><li><a href="#summary">まとめ：率の名前より、何を足して何で割ったかをそろえます</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>反応を何で割るかが違えば、エンゲージメント率の意味も変わります</h2>
+<p>エンゲージメントとは、投稿へのいいね、コメント、シェアなどの反応です。計算するときに足し合わせる反応が分子で、その合計を割る相手が分母です。候補の紹介資料に「エンゲージメント率」とだけ書かれていたら、割合を見る前に、この分子と分母を確かめましょう。</p>
+<p>フォロワー数で割る場合は、フォロワーの規模に対して、その投稿にどれくらいの反応があったかを整理します。再生数で割る場合は、投稿が再生された回数に対して反応がどれくらいあったかを整理します。分母が指している対象が異なるため、同じ名前の率として並べるだけでは比較の条件がそろいません。</p>
+<p>2026年11月5日に取得した日本語公式ヘルプ「TikTok Oneプロジェクトのレポートについて」には、エンゲージメント率の定義があります。そこでは、いいね・コメント・シェアなどのアクションの数を、合計動画視聴数で割ると説明されています。これは、TikTok Oneのプロジェクトや動画のレポートにおける定義として読むものです。</p>
+<p>同じ公式ヘルプは、オーガニックと有料のエンゲージメント率も分けています。オーガニックとは、広告を経由しない配信のことです。それぞれの反応を、それぞれに対応する動画視聴数で割る説明になっています。公開画面から独自に計算した率を、こうしたレポートの数値と同じものとして扱わないようにします。</p>
+<div class="tw"><table><thead><tr><th>分母に使うもの</th><th>比較している対象</th><th>候補表で確認すること</th></tr></thead><tbody><tr><td>フォロワー数</td><td>フォロワーの規模に対する投稿の反応件数</td><td>どの時点のフォロワー数を使うか</td></tr><tr><td>再生数・動画視聴数</td><td>投稿の再生に対する反応件数</td><td>同じ投稿・同じ範囲の再生と反応を使うか</td></tr><tr><td>オーガニック動画視聴数</td><td>広告を経由しない配信での反応</td><td>分子にも同じ配信範囲の反応を使うか</td></tr><tr><td>有料動画視聴数</td><td>広告による配信での反応</td><td>有料配信の反応と視聴を対応させているか</td></tr></tbody></table></div>
+<p class="src">分母の意味と確認項目（公式資料に基づき編集部作成）。TikTok Oneのレポート定義と、候補比較用の独自計算を分けています。</p>
+<p>分子も確認が必要です。いいねとコメントだけなのか、シェアも足しているのかが違えば、同じ分母でも率は変わります。記録する欄には「反応数」という短い見出しだけを置かず、何を足した件数かを書いてください。取得できない項目があった場合は、足していないことも分かる形にします。</p>
+<p>また、反応の件数と、反応した人の人数を混同しないことも大切です。以下の計算例では、反応の件数を足します。何人が反応したかを求める例ではありません。割合の見た目だけから「この人数が商品に興味を持った」と読み替えず、何を割った結果なのかを説明できる状態にします。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-label="反応の合計を上に置き、フォロワー数か再生数を分母にする違いを表す計算の構造"><rect width="900" height="330" fill="#FFFFFF"/><g font-family="sans-serif" fill="#0B0C10" text-anchor="middle"><rect x="90" y="35" width="560" height="73" rx="12" fill="#FDECEF"/><text x="370" y="81" font-size="24">足す反応：いいね・コメント・シェアなど</text><path d="M90 134h560" stroke="#0B0C10" stroke-width="4"/><rect x="90" y="162" width="270" height="76" rx="12" fill="#EFF1F4"/><text x="225" y="208" font-size="24">フォロワー数</text><rect x="380" y="162" width="270" height="76" rx="12" fill="#D8FAF7"/><text x="515" y="208" font-size="24">再生数</text><text x="370" y="286" font-size="21">どちらを分母にするかで、比較の意味が変わる</text><text x="764" y="146" font-size="32">×100</text><text x="764" y="181" font-size="19">割合で表示</text></g></svg><figcaption>計算を始める前に、分子と分母を明記する（編集部作成）</figcaption></figure>
+
+<h2 id="s2"><span class="no en">02</span>同じ仮の投稿でも、分母と足す反応を変えると計算結果が変わります</h2>
+<p>ここからは、仕組みを説明するための仮の数字を使います。フォロワー数は10,000人、対象の動画の再生数は20,000回とします。同じ時点で確認した反応は、いいね450件、コメント50件、シェア100件です。実在の投稿や候補の実績でも、平均的な数値でもありません。</p>
+<p>この仮の投稿について、計算条件を変えた結果を並べます。最初と次の計算では、足す反応を同じにして、分母だけを変えています。最後の計算では、再生数を分母にしたまま、分子からシェアを外しています。式の違いを理解するための比較で、すべてを同じ公式指標として示すものではありません。</p>
+<div class="tw"><table><thead><tr><th>仮の投稿で使う項目</th><th>仮の値</th><th>この例での扱い</th></tr></thead><tbody><tr><td>フォロワー数</td><td>10,000人</td><td>確認した時点の人数として固定</td></tr><tr><td>動画の再生数</td><td>20,000回</td><td>同じ投稿の再生として固定</td></tr><tr><td>いいね</td><td>450件</td><td>分子に足す反応</td></tr><tr><td>コメント</td><td>50件</td><td>分子に足す反応</td></tr><tr><td>シェア</td><td>100件</td><td>含める計算と含めない計算を並べる</td></tr></tbody></table></div>
+<p class="src">計算に使う値はすべて仮の数字（編集部作成）。計算方法の違いだけを見るため、投稿と確認時点を固定しています。</p>
+<div class="tw"><table><thead><tr><th>同じ仮の投稿での計算</th><th>足す反応と分母</th><th>計算の過程</th><th>結果</th></tr></thead><tbody><tr><td>フォロワー数に対する反応</td><td>いいね＋コメント＋シェアを、フォロワー数で割る</td><td>（450＋50＋100）÷10,000×100</td><td>6%</td></tr><tr><td>再生数に対する反応</td><td>いいね＋コメント＋シェアを、再生数で割る</td><td>（450＋50＋100）÷20,000×100</td><td>3%</td></tr><tr><td>シェアを含めない再生数に対する反応</td><td>いいね＋コメントを、再生数で割る</td><td>（450＋50）÷20,000×100</td><td>2.5%</td></tr></tbody></table></div>
+<p class="src">同じ仮の投稿を異なる式で計算した例（編集部作成）。最後の行は分子を変えた例で、TikTok Oneの公式定義として提案するものではありません。</p>
+<p>最初の計算では、反応の合計600件をフォロワー10,000人で割っています。次の計算では、同じ600件を再生20,000回で割っています。分子を増やしたり、投稿が変わったりしたわけではありません。分母を変えただけで6%と3%に分かれるため、数字の大きさだけでどちらが優れているとは言えません。</p>
+<p>最後の計算は、シェア100件を足さず、いいねとコメントの合計500件を使っています。同じ再生20,000回で割っても、結果は2.5%です。候補の資料で3%と2.5%が並んだときも、反応の強さの差を考える前に、同じ項目を数えているかを確かめる必要があります。</p>
+<p>実務で使う方法は、見たい対象と取得できる項目を整理して決めます。投稿の再生に対する反応を見るのか、フォロワーの規模に対する反応を整理したいのかを先に書きます。公式レポートの率を使うなら、そのレポートの定義を残します。独自計算を使うなら、公式表示の数値と区別できる見出しを付けてください。</p>
+<p>計算結果を候補表へ転記する際も、率だけを写さないようにします。元の件数と分母を残せば、後から式をそろえて計算し直せます。別の資料で異なる結果を見つけたときも、計算が間違っているのか、定義が異なるのかを分けて確認できます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="同じ仮の投稿でも、反応600件をフォロワー10000人で割ると6パーセント、再生20000回で割ると3パーセント、シェアを除く500件なら2.5パーセントになる例"><rect width="900" height="360" fill="#FFFFFF"/><g font-family="sans-serif" fill="#0B0C10"><text x="34" y="38" font-size="21" font-weight="bold">すべて仮の数字・同じ投稿で計算</text><rect x="30" y="65" width="840" height="74" rx="12" fill="#EFF1F4"/><rect x="30" y="161" width="840" height="74" rx="12" fill="#D8FAF7"/><rect x="30" y="257" width="840" height="74" rx="12" fill="#FDECEF"/><g font-size="23"><text x="52" y="111">反応600件 ÷ フォロワー10,000人 ×100</text><text x="52" y="207">反応600件 ÷ 再生20,000回 ×100</text><text x="52" y="303">シェアを除く500件 ÷ 再生20,000回 ×100</text></g><g text-anchor="end" font-size="33" font-weight="bold"><text x="842" y="114">6%</text><text x="842" y="210">3%</text><text x="842" y="306">2.5%</text></g></g></svg><figcaption>仮の計算例：値が違っても、投稿の反応が変わったわけではない（編集部作成）</figcaption></figure>
+
+<h2 id="s3"><span class="no en">03</span>母数と時点が分からない平均値を目安にせず、条件をそろえた候補どうしで比べます</h2>
+<p>「インフルエンサーのエンゲージメント率は平均でどれくらいか」と考える前に、その平均が何を集めた数字かを確認します。対象が投稿なのか、アカウントなのか、どの期間のどんな投稿を集めているかで、比較の前提は変わります。分母や足した反応の定義も分からないままでは、自社の候補と並べる基準にできません。</p>
+<p>この記事では、対象や時点を確かめられない相場の平均値は置きません。その代わり、候補から受け取った資料を、同じ方法で読み直すことを提案します。条件をそろえて候補を比べることと、業界全体の平均と比較して優劣を付けることは別の作業です。</p>
+<div class="tw"><table><thead><tr><th>平均や比較値を見る前の質問</th><th>確認する内容</th><th>不明な場合の扱い</th></tr></thead><tbody><tr><td>何を集めた数字か</td><td>対象の投稿・アカウントと件数</td><td>同じ対象の比較か判断できないと残す</td></tr><tr><td>どの期間の数字か</td><td>対象期間と情報を取得した日</td><td>自社の候補の時点とそろえられないと残す</td></tr><tr><td>どんな計算式か</td><td>分子に足した反応と、使った分母</td><td>同じ名前でも計算条件は未確認とする</td></tr><tr><td>どんな投稿を比べているか</td><td>投稿の形式、内容、配信の範囲</td><td>自社の商品紹介と同じ条件とは扱わない</td></tr><tr><td>どの画面の値か</td><td>公式レポートの表示か、独自計算か</td><td>取得元と定義を先に確かめる</td></tr></tbody></table></div>
+<p class="src">比較値を使う前の確認表（編集部作成）。率の高低を判断する前に、同じ意味の数字かを確認します。</p>
+<p>候補どうしを比べる際は、まず式を統一します。片方はシェアを含む合計、もう片方はいいねだけなら、同じ列に並べないようにします。計算に必要な元の項目がそろっていれば計算し直し、足りない場合は確認を依頼します。取得できなかった反応を、なかった反応としてゼロに置き換えないことも大切です。</p>
+<p>対象期間と投稿の種類も合わせます。商品の紹介をしている動画を見たいのに、一方は商品紹介、もう一方は別の話題の投稿だけを選ぶと、同じ目的の比較になりません。どんな投稿を対象にしたかが一覧から読めるようにします。取得しやすかった投稿だけを、その候補のすべてとして説明しないようにしてください。</p>
+<p>複数の投稿をまとめた率を渡された場合は、合計の反応を合計の再生で割った値なのか、投稿ごとの率を別の方法でまとめた値なのかを聞きます。同じ「全体の率」という見出しでも、作り方が異なればそのまま比べられません。まとめ方が不明な場合は、元の投稿別の件数へ戻って確認します。</p>
+<p>反応が低い候補を見つけても、その値だけで不正やフォロワー購入を判断しないようにします。公開情報から何を確かめるかは、フォロワー購入を疑う前の確認表で扱います。率は確認する情報の一つであり、相手についての結論を自動的に出すための点数ではありません。</p>
+
+<h2 id="s4"><span class="no en">04</span>商品の販売力は、反応の率に加えて商品クリックと売上の記録で見ます</h2>
+<p>TikTok Shopで商品の紹介を頼む目的なら、反応の率だけで候補を決めないようにします。いいねやコメントが付いたことと、商品リンクがクリックされたこと、商品が売れたことは、それぞれ違う行動です。率を計算した後は、紹介した商品と、その商品の販売につながる記録を確認します。</p>
+<p>2026年11月5日に取得した日本語の「動画パフォーマンス」の公式説明には、GMV、注文数、クリック率、商品クリック数などの指標が示されています。GMVは商品が売れた金額を表す指標です。公式資料には、動画の詳細や、動画内の各商品のパフォーマンスを確認する説明もあります。</p>
+<p>候補の資料を読むときは、どの商品を紹介した記録か、対象の投稿はどれか、どの期間の数字かを確かめます。商品リンクへの反応を見たい場合は、商品のクリックを示す指標かどうかも確認してください。TikTok広告マネージャーの日本語公式ヘルプでも、クリック数には「すべて」と「誘導先」の区別があります。異なるクリックの数字を同じ意味で扱わないための確認です。</p>
+<p>商品クリック数とGMVが載っていても、対象期間や商品が違えば、そのまま一つの流れとして説明できません。資料の参照元を確認し、同じ対象の記録を対応させます。候補からは販売の記録を受け取り、公開投稿は紹介内容を見るために使うというように、資料の役割を分けてください。</p>
+<div class="tw"><table><thead><tr><th>確かめたいこと</th><th>見る記録</th><th>次に合わせる情報</th></tr></thead><tbody><tr><td>投稿が反応を得たか</td><td>分子と分母を明記した反応の率</td><td>投稿の内容と配信の範囲</td></tr><tr><td>商品へ関心が進んだか</td><td>商品リンクに対応するクリックの記録</td><td>どの商品への、どの期間のクリックか</td></tr><tr><td>販売につながったか</td><td>商品と投稿に対応する売上の記録</td><td>対象の商品、投稿、期間、参照画面</td></tr><tr><td>自社の依頼で何を確認するか</td><td>反応・クリック・販売を分けた確認欄</td><td>確認済みの材料と、追加で尋ねる内容</td></tr></tbody></table></div>
+<p class="src">反応から販売までを分ける確認表（公式資料に基づき編集部作成）。指標が一緒に動いたことを、特定の施策の効果と断定するための表ではありません。</p>
+<p>起用先を決める段階では、反応の率を候補の全体評価に置き換えるより、商品の紹介に近い販売の記録を先に整理します。選定の全体の基準は、<a href="https://leam.co.jp/column/creator-selection-criteria/">クリエイターの選定基準を決める方法</a>へ進んでください。この記事の計算表は、候補の資料を同じ条件で読むための準備です。</p>
+<p>実際に依頼した後の成果をまとめる方法は、<a href="https://leam.co.jp/column/creator-measurement/">クリエイター起用の成果を測定する方法</a>で扱います。運営全体で見る指標を整理したい場合は、<a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPIを組み立てる方法</a>も参照してください。候補選びの計算と、施策全体の振り返りを分けて進められます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" role="img" aria-label="候補比較の記録に、計算の条件、対象の条件、販売の記録という見出しを付けて分ける整理図"><rect width="900" height="340" fill="#F6F7F9"/><g font-family="sans-serif" fill="#0B0C10"><path d="M38 39h238l26 29v240H38z" fill="#FFFFFF" stroke="#D8DADE" stroke-width="2"/><path d="M318 39h238l26 29v240H318z" fill="#FFFFFF" stroke="#D8DADE" stroke-width="2"/><path d="M598 39h238l26 29v240H598z" fill="#FFFFFF" stroke="#D8DADE" stroke-width="2"/><rect x="38" y="39" width="193" height="48" rx="7" fill="#FDECEF"/><rect x="318" y="39" width="193" height="48" rx="7" fill="#EFF1F4"/><rect x="598" y="39" width="193" height="48" rx="7" fill="#25F4EE"/><g font-size="22" font-weight="bold"><text x="57" y="72">計算の条件</text><text x="337" y="72">対象の条件</text><text x="617" y="72">販売の記録</text></g><g font-size="21"><text x="59" y="133">足した反応</text><text x="59" y="177">分母と元の値</text><text x="59" y="221">使用した式</text><text x="59" y="265">取得元</text><text x="339" y="133">期間と確認日</text><text x="339" y="177">対象の投稿</text><text x="339" y="221">動画の種類</text><text x="339" y="265">配信の範囲</text><text x="619" y="133">商品のクリック</text><text x="619" y="177">売上の記録</text><text x="619" y="221">商品との対応</text><text x="619" y="265">未確認の項目</text></g></g></svg><figcaption>計算をそろえる情報と、商品の販売を確認する情報を分けて残す（編集部作成）</figcaption></figure>
+
+<h2 id="s5"><span class="no en">05</span>候補比較の表には、式・期間・投稿の種類と元の件数を残します</h2>
+<p>候補を比較する表には、計算結果だけでなく、計算を再現できる列を用意します。反応の内訳と分母の値が残っていれば、資料ごとの式を統一できます。対象期間や投稿の種類が残っていれば、どの条件で比べた結果かも説明できます。</p>
+<p>次の表は、候補一覧に追加する列の例です。最初から一枚に詰め込む必要はありません。候補の一覧と、投稿ごとの計算の明細を分けてもかまいませんが、どの候補のどの投稿かを対応させてください。説明が必要な項目は、率の列に注記を詰めるより、確認事項の欄に残すと読み返しやすくなります。</p>
+<div class="tw"><table><thead><tr><th>候補表に入れる列</th><th>記入する内容</th><th>そろえる理由</th></tr></thead><tbody><tr><td>候補と投稿</td><td>アカウントの識別情報、対象投稿のURL</td><td>別の投稿や候補の値を混ぜない</td></tr><tr><td>対象期間と確認日</td><td>集計の範囲、数値を確認した日</td><td>同じ時点・期間の比較にする</td></tr><tr><td>投稿の種類</td><td>商品紹介の動画など、比較する内容と形式</td><td>依頼したい仕事に近い投稿を比べる</td></tr><tr><td>配信の範囲</td><td>オーガニック、有料、合計などの区分</td><td>分子と分母の範囲を対応させる</td></tr><tr><td>反応の内訳</td><td>いいね、コメント、シェアを個別に記録</td><td>足す項目をそろえて計算し直せる</td></tr><tr><td>分母の種類と値</td><td>再生数またはフォロワー数と、その値</td><td>何に対する割合かを明確にする</td></tr><tr><td>使用した式</td><td>足す反応と割る対象を言葉で書く</td><td>同じ名前の率を誤って比べない</td></tr><tr><td>計算結果</td><td>割合の表示と、採用した小数点以下の桁</td><td>表示をそろえて読み比べる</td></tr><tr><td>取得元</td><td>公式レポートの名称や、独自計算に使った記録</td><td>後から定義を確認できる</td></tr><tr><td>商品クリックと販売</td><td>参照する商品の記録、対象期間、参照画面</td><td>反応の率とは別に販売を確かめる</td></tr><tr><td>未確認の項目</td><td>足りない元データと、追加で尋ねる内容</td><td>欠けた情報をゼロや推測で埋めない</td></tr></tbody></table></div>
+<p class="src">候補比較の表に追加する列（編集部作成）。空欄のまま使う場合も、確認できていない理由を残してください。</p>
+<p>資料を受け取る際は、「率の元となる反応の内訳と、分母に使った数値、対象期間を確認できますか」と尋ねます。式だけ分かっても、確認した時点が違えば同じ計算を再現できません。数値と定義をセットで受け取り、計算に必要な情報がそろっているかを確かめます。</p>
+<p>計算する前には、分母の値も点検します。再生数やフォロワー数が未確認なら、率の欄を無理に埋めません。分母がゼロの場合も割り算はできないため、計算できない理由を残します。値がない状態を低い率に置き換えると、計算できた候補と同じ条件で比較したように見えてしまいます。</p>
+<p>同じ候補の数値を後から更新するときは、元の記録を消さずに確認日を分けます。反応が増えたのか、分母を変えたのか、式を直したのかが分かれば、結果が動いた理由を説明できます。数値だけを上書きするより、計算条件の変更も一緒に残してください。</p>
+<p>小数点以下の表示は、候補表の中で統一します。途中の計算で丸めるより、元の件数を残したうえで表示する段階をそろえます。僅かな表示差だけを、商品の紹介がうまくいくかどうかの決め手にしないようにしてください。率の列は資料を理解するために使い、販売の記録を読む仕事と合わせます。</p>
+<p>元の反応や分母が確認できない候補は、無理に同じ率へ変換しません。取得元の定義が確認できるまで、その数値を参考の記録として分けて残します。候補の一覧全体を整えたい場合は、<a href="https://leam.co.jp/column/influencer-list-building/">インフルエンサーのリストを作る際の項目</a>も合わせて確認してください。列の意味を共有すれば、別の担当者へ引き継ぐときにも計算条件が残ります。</p>
+
+<h2 id="summary"><span class="no en">06</span>まとめ：率の名前より、何を足して何で割ったかをそろえます</h2>
+<p>エンゲージメント率を比べる前に、分子と分母を確認します。同じ仮の投稿でも、フォロワー数で割るか再生数で割るか、シェアを含めるかで結果が変わりました。公式レポートの率を使う場合も、その画面の定義と、独自計算の方法を分けて記録しましょう。</p>
+<p>候補選びでは、式・期間・投稿の種類をそろえてから比較します。対象や時点が分からない平均値より、自社の候補について確認した元の件数を残します。TikTok Shopでの販売を目的にするなら、商品クリックと売上の記録も確認し、率だけで起用を決めないことが大切です。</p>
+
+<h2 id="faq"><span class="no en">07</span>よくある質問</h2>
+<div class="faq">
+<details><summary>フォロワー数で割る式と再生数で割る式は、どちらが正しいのですか？</summary><div class="a">何に対する反応を見たいかで区別します。公式レポートの数値なら、そのレポートの定義に従います。独自に候補を比べる場合は、分母と足す反応を明記し、候補どうしで統一してください。異なる式の結果を、同じ意味の数字として並べないようにします。</div></details>
+<details><summary>シェア数を取得できないときは、ゼロを入れて計算しますか？</summary><div class="a">取得できないことと、反応がなかったことを分けます。シェアを含める計算に必要な値がなければ未確認と記録し、資料を確認してください。いいねとコメントだけで独自に計算する場合は、シェアを含めていないと分かる見出しを付け、別の式と混ぜません。</div></details>
+<details><summary>過去の投稿を、確認した時点のフォロワー数で割ってもよいですか？</summary><div class="a">その方法で計算した場合は、どの時点の人数を使ったかを残します。投稿時点の人数で計算した率と同じ条件にはなりません。候補表では分母の確認日をそろえ、投稿時点の人数が分からない場合に推測で埋めないようにします。</div></details>
+<details><summary>候補の資料に「平均より高い」とだけ書かれていたら、何を聞きますか？</summary><div class="a">比べている平均の対象、件数、時点、投稿の種類、計算式を確認します。それらが分からなければ、自社の候補と比較する基準には使いません。候補自身の元の反応と分母を確認し、他の候補と同じ方法で読めるかを確かめてください。</div></details>
+<details><summary>複数投稿をまとめた率を、そのまま候補比較に使えますか？</summary><div class="a">先にまとめ方を確認します。合計の反応を合計の再生で割った値か、投稿ごとの率を別の方法でまとめた値かで、計算の意味が変わります。対象の投稿と集計方法を確認し、別のまとめ方の数値を同じ列で比較しないようにします。</div></details>
+<details><summary>公式画面の率と、自分で計算した率が違ったらどこを確認しますか？</summary><div class="a">まず分子の項目、分母、対象期間、配信の範囲を照合します。そのうえで、元の数値を確認した時点と、表示の桁を確認してください。公開画面の合計から独自に計算した率を、特定の公式レポートと同じ条件で算出したものと決めつけないことが大切です。</div></details>
+</div>
+<div class="ctabox"><div class="ct">反応の率より、売った記録で候補を選びたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=engagement-rate">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=engagement-rate&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2>参考情報</h2><ul class="source-list"><li><a href="https://ads.tiktok.com/resources/help/article/about-tiktok-one-campaign-reporting?lang=ja" target="_blank" rel="noopener noreferrer">TikTok Oneプロジェクトのレポートについて</a>（日本語ヘルプ、2025年10月更新）</li><li><a href="https://ads.tiktok.com/resources/help/article/basic-data?lang=ja" target="_blank" rel="noopener noreferrer">TikTok広告マネージャー内の基本データ指標と定義について</a>（日本語ヘルプ、2025年10月更新）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=94378786801424&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">動画パフォーマンス</a>（日本語公式説明。公開・更新日は取得平文で確認できず）</li></ul><p class="src">公式資料は2026年11月5日に取得しました。計算例の値と結果は、実在の投稿や市場統計を示さない編集部作成の仮の数字です。比較表の列と確認手順も編集部の提案です。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">候補と成果の確認</span><b><a href="https://leam.co.jp/column/creator-selection-criteria/">クリエイターの選定基準を決める方法</a></b><span>候補を比べる基準を整理する</span></div><div class="relcard"><span class="rc">候補と成果の確認</span><b><a href="https://leam.co.jp/column/creator-measurement/">クリエイター起用の成果測定</a></b><span>起用後の記録と判断を分ける</span></div><div class="relcard"><span class="rc">候補と成果の確認</span><b><a href="https://leam.co.jp/column/tiktok-shop-kpi/">TikTok ShopのKPIの組み立て方</a></b><span>運営全体で確認する指標を整理する</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">反応を何で割るかが違えば、エンゲージメント率の意味も変わります</a></li><li><a href="#s2">同じ仮の投稿でも、分母と足す反応を変えると計算結果が変わります</a></li><li><a href="#s3">母数と時点が分からない平均値を目安にせず、条件をそろえた候補どうしで比べます</a></li><li><a href="#s4">商品の販売力は、反応の率に加えて商品クリックと売上の記録で見ます</a></li><li><a href="#s5">候補比較の表には、式・期間・投稿の種類と元の件数を残します</a></li><li><a href="#summary">まとめ：率の名前より、何を足して何で割ったかをそろえます</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=engagement-rate">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "フォロワー数で割る式と再生数で割る式は、どちらが正しいのですか？", "acceptedAnswer": {"@type": "Answer", "text": "何に対する反応を見たいかで区別します。公式レポートの数値なら、そのレポートの定義に従います。独自に候補を比べる場合は、分母と足す反応を明記し、候補どうしで統一してください。異なる式の結果を、同じ意味の数字として並べないようにします。"}}, {"@type": "Question", "name": "シェア数を取得できないときは、ゼロを入れて計算しますか？", "acceptedAnswer": {"@type": "Answer", "text": "取得できないことと、反応がなかったことを分けます。シェアを含める計算に必要な値がなければ未確認と記録し、資料を確認してください。いいねとコメントだけで独自に計算する場合は、シェアを含めていないと分かる見出しを付け、別の式と混ぜません。"}}, {"@type": "Question", "name": "過去の投稿を、確認した時点のフォロワー数で割ってもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "その方法で計算した場合は、どの時点の人数を使ったかを残します。投稿時点の人数で計算した率と同じ条件にはなりません。候補表では分母の確認日をそろえ、投稿時点の人数が分からない場合に推測で埋めないようにします。"}}, {"@type": "Question", "name": "候補の資料に「平均より高い」とだけ書かれていたら、何を聞きますか？", "acceptedAnswer": {"@type": "Answer", "text": "比べている平均の対象、件数、時点、投稿の種類、計算式を確認します。それらが分からなければ、自社の候補と比較する基準には使いません。候補自身の元の反応と分母を確認し、他の候補と同じ方法で読めるかを確かめてください。"}}, {"@type": "Question", "name": "複数投稿をまとめた率を、そのまま候補比較に使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "先にまとめ方を確認します。合計の反応を合計の再生で割った値か、投稿ごとの率を別の方法でまとめた値かで、計算の意味が変わります。対象の投稿と集計方法を確認し、別のまとめ方の数値を同じ列で比較しないようにします。"}}, {"@type": "Question", "name": "公式画面の率と、自分で計算した率が違ったらどこを確認しますか？", "acceptedAnswer": {"@type": "Answer", "text": "まず分子の項目、分母、対象期間、配信の範囲を照合します。そのうえで、元の数値を確認した時点と、表示の桁を確認してください。公開画面の合計から独自に計算した率を、特定の公式レポートと同じ条件で算出したものと決めつけないことが大切です。"}}]}</script>
+</body>
+</html>

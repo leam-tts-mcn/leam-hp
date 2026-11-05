@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>KOL・KOCとは｜TikTok Shopの発信者の種類</title>
+<meta name="description" content="KOL・KOCは発信者の立場を説明する呼び方です。TikTok Shopの候補を規模・立場・頼む形で整理し、紹介と販売の記録を確認する方法を、分類表と社内の用語対応表で示します。">
+<link rel="canonical" href="https://leam.co.jp/column/kol-koc/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="KOL・KOCとは｜TikTok Shopの発信者の種類">
+<meta property="og:description" content="KOL・KOCは発信者の立場を説明する呼び方です。TikTok Shopの候補を規模・立場・頼む形で整理し、紹介と販売の記録を確認する方法を、分類表と社内の用語対応表で示します。">
+<meta property="og:url" content="https://leam.co.jp/column/kol-koc/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/kol-koc.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="KOL・KOCとは｜TikTok Shopの発信者の種類">
+<meta name="twitter:description" content="KOL・KOCは発信者の立場を説明する呼び方です。TikTok Shopの候補を規模・立場・頼む形で整理し、紹介と販売の記録を確認する方法を、分類表と社内の用語対応表で示します。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/kol-koc.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "KOL・KOCとは｜TikTok Shopの発信者の種類", "description": "KOL・KOCは発信者の立場を説明する呼び方です。TikTok Shopの候補を規模・立場・頼む形で整理し、紹介と販売の記録を確認する方法を、分類表と社内の用語対応表で示します。", "inLanguage": "ja", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/kol-koc/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/kol-koc.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&lang=ja-JP", "name": "TikTok Shopアフィリエイトのコラボ機能の説明"}, {"@type": "WebPage", "url": "https://www.jetro.go.jp/biznews/2020/01/1aa8d3aab8c429a1.html", "name": "ジェトロが大連市で内販研究会、営業強化と中国企業の理解がカギ"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "KOL・KOCとは｜TikTok Shopの発信者の種類", "item": "https://leam.co.jp/column/kol-koc/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=kol-koc">無料相談</a></div>
+<div class="shell">
+<article><p class="crumb"><a href="https://leam.co.jp/">ホーム</a> ／ <a href="https://leam.co.jp/column/">コラム</a> ／ KOL・KOC</p><span class="cat">クリエイターの選び方と見極め</span><h1>KOL・KOCとは？TikTok Shopの発信者の種類</h1><div class="meta"><time class="upd" datetime="2026-11-05">更新日：2026年11月5日</time><time datetime="2026-11-05">公開日：2026年11月5日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="左に説明する発信者、右に商品を使う消費者を並べ、下の人物・吹き出し・制作物の仕分け欄で、規模と立場と頼む仕事を分けるイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="kolkocDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#kolkocDots" transform="translate(944 542)"/></g>
+<g fill="#5E6064" opacity=".13" transform="translate(9 11)"><rect x="118" y="348" width="345" height="38" rx="9"/><path d="M231 242h93v108h-93z"/><path d="M842 242h93v120h-93z"/><rect x="326" y="442" width="188" height="110" rx="12"/><rect x="526" y="442" width="188" height="110" rx="12"/><rect x="726" y="442" width="188" height="110" rx="12"/></g>
+<g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+<rect x="118" y="348" width="345" height="38" rx="9" fill="#DFE0E2"/>
+<path d="M144 386v24h293v-24" fill="#C9CBD0"/>
+<circle cx="276" cy="183" r="45" fill="#FFFFFF"/>
+<path d="M232 178c-7-55 82-67 89-7-24 4-46-3-60-20-7 13-16 23-29 27" fill="#0B0C10"/>
+<path d="M227 348v-74c0-32 22-51 49-51s49 19 49 51v74z" fill="#CE1730"/>
+<path d="M257 226l19 31 19-31m-19 31v87" fill="none" stroke-width="5"/>
+<path d="M227 275l-39 14-22-34m159 20 43-21 18-46" fill="none" stroke-width="14"/>
+<path d="M127 222l73-28v55l-73-14z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M199 190l39-13v87l-39-17z" fill="#FE2C55" stroke-width="5"/>
+<path d="M145 238l8 28h21l-9-25" fill="#DFE0E2" stroke-width="5"/>
+<path d="M257 187l18-12m-15 37h16m-15-63h15" fill="none" stroke-width="4"/>
+<path d="M346 121h152v69h-43l-29 25v-25h-80z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M365 144h110m-110 24h71" stroke="#D8DADE" stroke-width="5"/>
+<circle cx="883" cy="179" r="45" fill="#FFFFFF"/>
+<path d="M841 173c-9-48 74-67 86-8-18 0-39-7-54-23-7 14-17 25-32 31" fill="#0B0C10"/>
+<path d="M833 360v-85c0-31 23-52 50-52s51 21 51 52v85z" fill="#25F4EE"/>
+<path d="M883 239v110m-51-68-38 31m140-32 41 23" fill="none" stroke-width="5"/>
+<path d="M785 302h111v82H785z" fill="#FFFFFF"/>
+<path d="M785 302l56-22 55 22-55 24z" fill="#DFE0E2"/>
+<path d="M841 326v58" fill="none" stroke-width="5"/>
+<path d="M972 252h78v115l-13-8-13 8-13-8-13 8-13-8-13 8z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M987 275h47m-47 22h47m-47 22h31" stroke="#C9CBD0" stroke-width="4"/>
+<path d="M830 384h108m-94 18h80" stroke="#D8DADE" stroke-width="5"/>
+<path d="M551 164v112h114V164m-114 56h114" fill="none" stroke="#C9CBD0" stroke-width="5"/>
+<path d="M608 277v93m-15-15 15 15 15-15" fill="none" stroke-width="5"/>
+<path d="M347 438v-24h144v24m56 0v-24h144v24m56 0v-24h144v24" fill="#FFFFFF" stroke-width="5"/>
+<rect x="326" y="438" width="188" height="114" rx="12" fill="#FFFFFF"/>
+<rect x="526" y="438" width="188" height="114" rx="12" fill="#DFE0E2"/>
+<rect x="726" y="438" width="188" height="114" rx="12" fill="#FFFFFF"/>
+<circle cx="407" cy="475" r="14" fill="#25F4EE" stroke-width="4"/><path d="M384 521v-13c0-17 46-17 46 0v13z" fill="#25F4EE" stroke-width="4"/>
+<circle cx="447" cy="479" r="11" fill="#DFE0E2" stroke-width="4"/><path d="M434 519v-12c0-12 32-12 32 0v12" fill="#DFE0E2" stroke-width="4"/>
+<path d="M583 469h79v43h-31l-16 17v-17h-32z" fill="#FFFFFF" stroke-width="4"/>
+<path d="M597 484h50m-50 14h30" stroke="#C9CBD0" stroke-width="4"/>
+<rect x="767" y="468" width="103" height="61" rx="6" fill="#FE2C55" stroke-width="4"/>
+<path d="M804 483l27 15-27 16z" fill="#FFFFFF" stroke-width="4"/>
+</g></svg><figcaption>発信者の立場と、依頼する仕事を分けて整理する（編集部作成）</figcaption></figure><p class="lead">KOL・KOCは、発信者の影響力や、商品を買って使う立場を説明する呼び方です。「マイクロ」は規模を表す言葉なので、同じ種類の区分として並べると混乱します。<strong>規模・立場・頼む形を別々の欄に分ける</strong>と、誰にどんな仕事を頼みたいかを整理できます。TikTok Shopでは、その呼び方から販売力や参加資格を判断せず、同じカテゴリーで紹介して売った記録を確かめましょう。</p>
+<div class="learn"><b>この記事でわかること</b><ul><li>KOL・KOCと、規模を表す言葉の違い</li><li>発信者の種類を混ぜずに整理する分類表</li><li>PR投稿・売上連動の紹介・LIVE出演へ言葉をつなぐ方法</li></ul></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">KOL・KOCは発信者の立場を説明する呼び方で、公式の資格区分ではありません</a></li><li><a href="#s2">発信者の種類は、規模・立場・頼む形に分けると混ざりません</a></li><li><a href="#s3">TikTok Shopでは、肩書きより同じカテゴリーで紹介して売った記録を確かめます</a></li><li><a href="#s4">呼び方から依頼を決めず、PR投稿・商品紹介・LIVE出演の仕事へ置き換えます</a></li><li><a href="#s5">社内の用語対応表は、短い呼び名と実際に確認する情報を対にします</a></li><li><a href="#summary">まとめ：呼び方を分けたうえで、頼む仕事と販売の記録を確かめます</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+
+<h2 id="s1"><span class="no en">01</span>KOL・KOCは発信者の立場を説明する呼び方で、公式の資格区分ではありません</h2>
+<p>KOLはKey Opinion Leaderの略で、影響力のある発信者を指す呼び方です。この記事では、知識や説明の説得力、発信を受け取る人との関係などから、他の人の考えや選択に影響を与える立場として整理します。呼び方の中に、TikTok Shopでの販売実績まで含まれているとは考えません。</p>
+<p>KOCはKey Opinion Consumerの略です。この記事では、実際に商品を買って使う消費者の立場を重視して、その体験から発信する人を指します。使った感想や生活の中での取り入れ方を、消費者の目線で伝えてもらいたいときに、どの経験を確認したいかを整理する言葉です。</p>
+<p>公的機関の資料にも、KOLをインフルエンサー、KOCを発信力のある友人・知り合いとして紹介した例があります。使われる場面によって、言葉が強調する部分は異なります。そのため、社内では単にKOL・KOCと書くだけでなく、どの意味で使うかを短い説明と一緒に残すと整理できます。</p>
+<p>自社で期待する立場と、本人の自己紹介も区別します。依頼する側が「使用者の視点で説明してほしい」と希望している段階と、本人が具体的な使用体験を持っていると確認できた段階は異なります。候補を紹介する資料では、希望を確認済みの経歴のように書かず、追加で確かめる内容として残してください。</p>
+<div class="tw"><table><thead><tr><th>呼び方</th><th>この記事で整理する立場</th><th>候補に確認すること</th><th>呼び方だけで決めないこと</th></tr></thead><tbody><tr><td>KOL</td><td>知識や発信を通じて、人の考えや選択に影響を与える発信者</td><td>どの分野で、何を説明してきたか</td><td>商品の紹介で売れるか、どの仕事を引き受けられるか</td></tr><tr><td>KOC</td><td>商品を買って使う消費者の立場から、体験を伝える発信者</td><td>どの商品を使い、どんな体験を説明できるか</td><td>自費購入か、提供された商品か、販売の記録があるか</td></tr></tbody></table></div>
+<p class="src">KOL・KOCを使う際の整理（編集部作成）。英語の名称は公的機関の用例を参照し、起用前に確かめる点を加えています。</p>
+<p>特にKOCという呼び方を使う場合は、商品体験の内容を確認しましょう。「消費者の立場」という説明と、その商品をいつ、どのように使ったかは別の情報です。自社の商品をすでに使っているのか、これから体験してもらう予定なのかを分けます。呼び方から、購入や使用の事実を補わないようにします。</p>
+<p>KOL・KOCは、ここでは依頼相手を理解するための呼び方として扱います。TikTok Shopへの参加を認定する資格名や、公式の権限区分として使うものではありません。呼び方の整理と、利用する機能の条件の確認を分けてください。社内でKOLと呼ばれているから、特定の機能を使えるという判断にはつなげません。</p>
+<p>また、KOLとKOCを互いに交わらない集団として分ける必要もありません。影響力のある人が、商品を使う消費者として感想を語ることも考えられます。名簿の中でどちらか一方へ無理に分類するより、依頼したい内容に関係する立場や経験を言葉で残しましょう。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="規模と立場と頼む形という異なる分類軸を、それぞれ別の方向の矢印で示す概念図"><rect width="900" height="360" fill="#FFFFFF"/><g stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="6"><path d="M324 239h352m-17-12 17 12-17 12" stroke="#CE1730"/><path d="M324 239V55m-12 17 12-17 12 17" stroke="#0B0C10"/><path d="M324 239l-142 72m10-18-10 18 23 2" stroke="#25F4EE"/></g><circle cx="324" cy="239" r="12" fill="#0B0C10"/><g font-family="sans-serif" fill="#0B0C10" font-size="25"><text x="695" y="246">規模</text><text x="352" y="76">立場</text><text x="45" y="326">頼む形</text><text x="435" y="286" font-size="22">マイクロ・ナノなど</text><text x="354" y="118" font-size="22">KOL・KOCなど</text><text x="28" y="275" font-size="21">PR投稿・商品紹介など</text><text x="435" y="170" font-size="23" font-weight="bold">同じ人を別々の軸で説明する</text></g></svg><figcaption>発信者を一つの種類へ押し込めず、別の軸として整理する（編集部作成）</figcaption></figure>
+
+<h2 id="s2"><span class="no en">02</span>発信者の種類は、規模・立場・頼む形に分けると混ざりません</h2>
+<p>社内資料で「KOL、KOC、マイクロ、アフィリエイト」が横一列に並ぶと、それぞれ別の種類の人を探すように見えます。しかし、規模を表す言葉と、発信するときの立場、依頼する仕事の形が混ざっています。候補を探す前に、どの軸を説明しているかを分けてみてください。</p>
+<p>規模は、フォロワーなどの広がりをどう整理するかという軸です。立場は、どんな知識や経験、関係から語る人なのかという軸です。頼む形は、投稿を頼むのか、商品の紹介を頼むのか、LIVEへ出演してもらうのかという仕事の軸です。次の分類表は、同じ人に別々の情報を付けるために使います。</p>
+<div class="tw"><table><thead><tr><th>分類する軸</th><th>その軸で答える問い</th><th>この軸へ置く言葉の例</th><th>別に確認する情報</th></tr></thead><tbody><tr><td>規模</td><td>発信の広がりを、どの情報で整理するか</td><td>マイクロ、ナノなどの規模の呼び方</td><td>人数の確認日と、自社が使う区分の意味</td></tr><tr><td>立場</td><td>どんな知識・体験・所属から語る人か</td><td>KOL、KOC、専門的な知識を持つ人、社員の発信者</td><td>その知識、使用体験、所属を確かめた内容</td></tr><tr><td>頼む形</td><td>何をしてもらい、何を確認する仕事か</td><td>PR投稿、売上連動の商品紹介、LIVE出演</td><td>商品の説明内容、依頼する作業、確認する記録</td></tr></tbody></table></div>
+<p class="src">発信者を整理する分類表（編集部作成）。人を排他的に振り分ける分類ではなく、同じ候補について埋める別々の欄です。</p>
+<p>たとえば「マイクロのKOCに、商品の紹介を頼みたい」という説明なら、規模の呼び方、消費者としての立場、頼む仕事が含まれています。それぞれを別の欄に書けば、誰を候補にするかを考える前に、どの情報が必要かが分かります。商品の体験が未確認なら、立場の欄に確認事項として残せます。</p>
+<p>「KOLにLIVEをお願いしたい」という説明も、同じように分けます。KOLという呼び方だけでLIVEの経験が分かるわけではありません。どの分野の説明を頼みたいかと、LIVEで何をしてもらいたいかを書き足します。影響力への期待と、実際に依頼する仕事を別々に検討するためです。</p>
+<p>マイクロやナノの人数による区分は、ここでは追加しません。規模と販売の実績をどう分けて考えるかは、<a href="https://leam.co.jp/column/micro-nano-influencer/">マイクロ・ナノインフルエンサーの見方</a>で説明しています。この記事では、規模の軸と立場の軸を混ぜないための位置づけだけを押さえましょう。</p>
+<p>候補一覧を作る担当者と、依頼内容を決める担当者が違う場合にも、分類表を共有しておくと便利です。資料を受け取った人は、どの欄が確認済みで、どの欄が依頼側の希望なのかを見分けられます。「KOC希望」という要望だけを渡すより、体験から何を語ってほしいかまで具体的にできます。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="一人の候補に規模の情報、消費者としての体験、頼む仕事を別のタグとして付ける例"><rect width="900" height="360" fill="#F6F7F9"/><g stroke="#D8DADE" stroke-width="4"><path d="M444 158L257 75m206 84 193-84M450 209v80"/></g><circle cx="450" cy="157" r="77" fill="#FFFFFF" stroke="#0B0C10" stroke-width="3"/><circle cx="450" cy="134" r="22" fill="#DFE0E2"/><path d="M411 200v-20c0-32 78-32 78 0v20" fill="#25F4EE"/><g font-family="sans-serif" fill="#0B0C10" text-anchor="middle"><rect x="30" y="28" width="280" height="94" rx="14" fill="#EFF1F4"/><text x="170" y="65" font-size="21">規模の欄</text><text x="170" y="99" font-size="26">マイクロなど</text><rect x="590" y="28" width="280" height="94" rx="14" fill="#FDECEF"/><text x="730" y="65" font-size="21">立場の欄</text><text x="730" y="99" font-size="26">消費者としての体験</text><rect x="290" y="267" width="320" height="74" rx="14" fill="#D8FAF7"/><text x="450" y="298" font-size="21">頼む形の欄</text><text x="450" y="328" font-size="25">商品を紹介する仕事</text><text x="450" y="250" font-size="20">別の人に分けるための区分ではない</text></g></svg><figcaption>同じ候補に、規模・立場・仕事の情報を付ける（編集部作成）</figcaption></figure>
+
+<h2 id="s3"><span class="no en">03</span>TikTok Shopでは、肩書きより同じカテゴリーで紹介して売った記録を確かめます</h2>
+<p>TikTok Shopで商品を紹介してもらいたい場合は、KOL・KOCという肩書きから販売力を判断しないようにします。候補について確かめるのは、自社の商品に近いカテゴリーで、どのように紹介し、どんな販売の記録があるかです。呼び方は候補を説明する情報、販売の記録は依頼を検討するための情報として分けます。</p>
+<p>2026年11月5日に取得した日本語公式のコラボ機能の説明には、オープンコラボとターゲットコラボがあります。クリエイターが商品を紹介し、その販売に応じてコミッションを受け取る仕組みです。コミッションとは、商品販売に応じた報酬のことです。呼び方から、この紹介の実績や取引条件を推測して埋めないようにします。</p>
+<p>同資料は、クリエイターコネクトで対象のクリエイターを選び、パフォーマンスデータを確認する方法を説明しています。コラボの詳細には、クリエイターや商品、関連する動画の情報もあります。候補の肩書きだけを見るのではなく、商品の紹介と記録を対応させて読むための確認先です。</p>
+<div class="tw"><table><thead><tr><th>確認する情報</th><th>見る対象</th><th>呼び方から補わないこと</th></tr></thead><tbody><tr><td>紹介したカテゴリー</td><td>どんな商品を扱ってきたか</td><td>KOLだから、どのカテゴリーでも説明できるという推測</td></tr><tr><td>商品の使用体験</td><td>使った商品と、説明できる体験の内容</td><td>KOCと書いてあるから、自社の商品も使用済みという推測</td></tr><tr><td>販売の記録</td><td>対象の商品・期間・参照元</td><td>規模や知名度から売上を見積もること</td></tr><tr><td>紹介した投稿</td><td>商品をどう説明しているか</td><td>販売額だけで、説明内容まで自社に合うと判断すること</td></tr><tr><td>依頼する仕事への対応</td><td>投稿、商品の紹介、LIVE出演のどこを頼むか</td><td>肩書きが同じなら、できる仕事も同じという推測</td></tr></tbody></table></div>
+<p class="src">呼び方と分けて残す確認項目（公式資料に基づき編集部作成）。候補の属性から販売の実績を推計する表ではありません。</p>
+<p>販売の資料を受け取る際は、対象のカテゴリーと商品、期間を合わせて確認します。数字が示されていても、何を紹介した結果か分からなければ、自社の商品を頼む判断へそのまま移せません。商品の紹介内容を読む作業と、販売の記録を読む作業をセットにしてください。</p>
+<p>KOCという説明で候補を受け取った場合も、体験の確認と販売の確認は分けます。使用感を分かりやすく語れることと、販売の記録が確認できることは、同じ内容ではありません。どちらを求めているかを依頼書に残し、候補の資料がどこまで答えているかを見ます。</p>
+<p>過去の記録は、依頼の検討材料です。肩書きを販売の保証へ置き換えることも、過去の売上を次の成果の約束へ置き換えることもしません。候補を選んだ説明には、呼び名よりも「どの紹介と記録を確認したか」を残すと、社内の判断を読み返しやすくなります。</p>
+
+<h2 id="s4"><span class="no en">04</span>呼び方から依頼を決めず、PR投稿・商品紹介・LIVE出演の仕事へ置き換えます</h2>
+<p>KOLにはPR、KOCには商品紹介というように、呼び方と依頼の形を固定してしまうと、相手が実際にできる仕事を確認しにくくなります。呼び方は、頼みたい説明の仕方を考えるきっかけとして使います。そこから具体的な仕事へ置き換え、経験と内容を確かめましょう。</p>
+<p>PR投稿は、商品やその特徴を伝える投稿を依頼する仕事として整理します。売上連動の紹介は、商品販売に応じた報酬の条件を含む紹介の仕事です。LIVE出演は、配信の中でどの役割を担ってもらうかを決める仕事です。頼む形の詳しい違いは、<a href="https://leam.co.jp/column/tiktok-influencer-marketing/">TikTokのインフルエンサー施策の整理</a>で確認できます。</p>
+<div class="tw"><table><thead><tr><th>呼び方で期待していること</th><th>PR投稿で考える頼み方</th><th>売上連動の紹介で確かめる点</th><th>LIVE出演で確かめる点</th></tr></thead><tbody><tr><td>KOL：知識や説明の説得力</td><td>商品の特徴を、得意な分野の言葉で説明してもらう</td><td>同じカテゴリーの紹介と販売の記録</td><td>配信で担当する説明と、その経験</td></tr><tr><td>KOC：買って使う立場の体験</td><td>実際に確認した使用体験を、生活の場面とともに語ってもらう</td><td>商品を使う立場と、紹介して売った実績を別に確認</td><td>使った感想を、配信の中でどう伝えるか</td></tr><tr><td>マイクロ・ナノ：規模についての希望</td><td>規模の希望とは別に、投稿の内容を決める</td><td>規模だけで販売力を判断しない</td><td>規模とは別に、LIVEで頼む役割を決める</td></tr><tr><td>社員の発信：商品知識や社内での経験</td><td>担当する商品説明と、発信する立場を整理する</td><td>社員としての役割と、紹介の仕組みを分けて確認</td><td>説明担当などの役割と、配信の進め方を確認</td></tr></tbody></table></div>
+<p class="src">呼び方を依頼する仕事へ置き換える例（編集部作成）。呼び方ごとの適性や成果を保証する表ではなく、内容を具体化するための表です。</p>
+<p>たとえば、使い方の説明を任せたい場合には、「KOLに頼みたい」という希望だけでなく、どんな疑問へ答えてほしいかを書きます。生活の中での使用感を知ってもらいたいなら、候補がどんな体験を語れるかを確認します。名前の分類を細かく増やすより、視聴者に伝える内容を具体的にする方が依頼の整理に役立ちます。</p>
+<p>LIVEへの出演を考えている場合も、商品を紹介する役なのか、使った経験を話す役なのかを分けます。配信に出てもらうという依頼だけでは、相手が何を準備するかが分かりません。得意な発信の形を確認し、依頼する場面を具体的に伝えます。呼び名に、経験や担当範囲まで含めないようにしてください。</p>
+<p>認知や商品の理解を広げることと、販売を確認することのどちらを期待するかも整理します。起用のメリットを目的から考えたい場合は、<a href="https://leam.co.jp/column/influencer-merits/">インフルエンサー起用のメリットと向いている目的</a>へ進めます。目的を決めてから、仕事と候補の経験を対応させましょう。</p>
+<p>社員の発信者を含める場合は、会社との関係を立場の欄に残します。商品をよく知ることと、外部の消費者として語ることを同じ説明にしないためです。社員に頼む役割を考える方法は、社員がクリエイターとして発信するときの整理で扱います。ここでは、立場の欄を省かずに残すことを押さえてください。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="KOCを探してほしいという短い希望を、使用体験と紹介する仕事と確認する記録を明記した依頼へ直す例"><rect width="900" height="360" fill="#FFFFFF"/><path d="M45 24h810v310H45z" fill="#FFFFFF" stroke="#D8DADE" stroke-width="3"/><g font-family="sans-serif" fill="#0B0C10"><rect x="70" y="47" width="760" height="71" rx="10" fill="#EFF1F4"/><text x="94" y="77" font-size="21">短い希望</text><text x="94" y="106" font-size="25">KOCを探してほしい</text><path d="M450 127v28m-10-10 10 10 10-10" fill="none" stroke="#0B0C10" stroke-width="4"/><rect x="70" y="169" width="760" height="141" rx="10" fill="#D8FAF7"/><text x="94" y="204" font-size="22" font-weight="bold">依頼する内容へ言い換える</text><text x="94" y="244" font-size="25">商品の使用体験を語れる候補を探したい</text><text x="94" y="283" font-size="23">使った内容と、紹介・販売の記録を確認する</text></g></svg><figcaption>用語の対応表を、具体的な依頼の文章にも反映する（編集部作成）</figcaption></figure>
+
+<h2 id="s5"><span class="no en">05</span>社内の用語対応表は、短い呼び名と実際に確認する情報を対にします</h2>
+<p>用語の対応表は、言葉を一つの正解へ統一するためだけのものではありません。資料を作った人と依頼を進める人が、何を意味する言葉として使っているかを合わせるために作ります。短い呼び名、社内での意味、確認する情報を一緒に並べると、解釈の違いが見つけやすくなります。</p>
+<p>次の表を社内資料の末尾や候補一覧の説明へ添えて使えます。KOL・KOCなどの言葉を残す場合も、それだけで依頼や販売力を表していないことが分かるようにします。TikTok Shopの仕組みに関する用語を広く確認したいときは、<a href="https://leam.co.jp/column/glossary/">TikTok Shopの用語集</a>を参照してください。</p>
+<div class="tw"><table><thead><tr><th>資料で使う言葉</th><th>社内で対応させる意味</th><th>別の欄へ残す情報</th></tr></thead><tbody><tr><td>KOL</td><td>知識や発信による影響力を期待する立場</td><td>得意なカテゴリー、紹介内容、販売の記録</td></tr><tr><td>KOC</td><td>商品を買って使う消費者の立場から語ること</td><td>購入や使用の確認、商品提供の有無、語れる体験</td></tr><tr><td>マイクロ・ナノ</td><td>発信の規模を整理する呼び方</td><td>人数の確認日、社内で使う規模の意味</td></tr><tr><td>インフルエンサー</td><td>人の選択に影響する発信者を説明する広い呼び方</td><td>どの立場と経験を期待しているか</td></tr><tr><td>クリエイター</td><td>動画やLIVEなどのコンテンツを発信する人</td><td>制作・投稿・出演のうち依頼する仕事</td></tr><tr><td>アフィリエイト</td><td>商品の紹介と、販売に応じた報酬を扱う仕組み</td><td>対象の商品、利用するコラボ、紹介の条件</td></tr><tr><td>社員の発信者</td><td>所属する会社の商品知識や経験から語る立場</td><td>会社との関係、担当範囲、発信する内容</td></tr></tbody></table></div>
+<p class="src">社内で使う用語の対応表（編集部作成）。依頼の整理に使う意味を示したもので、TikTok Shopの公式資格や人数の区分ではありません。</p>
+<p>候補を依頼する文章にも、対応表の意味を反映します。「KOCを探してください」だけなら、購入した人を探すのか、生活者の目線で説明できる人を探すのかが曖昧です。「商品の使用体験を語れる候補を探し、使用した内容を確認したい」と書けば、集めたい情報がはっきりします。</p>
+<p>「影響力のあるKOLがよい」という希望も、何の分野について、どんな説明を任せたいのかを加えます。販売を目的にするなら、同じカテゴリーで紹介して売った記録も確認すると書きます。呼び方を使うこと自体を避ける必要はありませんが、頼む仕事と確認する根拠が伝わる一文へ直しましょう。</p>
+<p>候補表を受け取った後も、肩書きの欄だけが埋まっていないかを点検します。使用体験や販売の記録が未確認なら、その欄を未確認として残します。KOL、KOCという文字が入っているために確認済みへ見えてしまうことを防げます。補足が必要な候補には、資料と対応した質問を戻してください。</p>
+<p>社内で使う意味を変えたときは、過去の候補表にもその変更が分かるようにします。同じ言葉が資料ごとに別の意味で使われている場合、以前の記録を新しい分類へ自動的に置き換えないようにします。確認した事実は残し、呼び方の整理だけを見直すと、過去の判断も読み返せます。</p>
+<p>用語の説明を依頼先へ渡すときは、分類表のすべてを説明するより、今回必要な立場と仕事を抜き出します。生活での使用感を頼みたいのか、商品の仕組みの説明を頼みたいのかが伝われば、相手も自分の経験に沿って回答できます。回答を受け取った後は、確認した内容を候補の記録へ戻しましょう。</p>
+
+<h2 id="summary"><span class="no en">06</span>まとめ：呼び方を分けたうえで、頼む仕事と販売の記録を確かめます</h2>
+<p>KOL・KOCは発信者の立場を理解する呼び方で、マイクロ・ナノは規模を整理する言葉です。依頼する形を加えた別々の軸として記録すると、同じ候補について何を期待しているかを説明できます。呼び名を公式の参加資格や販売力の証明として使わないことが大切です。</p>
+<p>TikTok Shopで商品を紹介してもらう場合は、同じカテゴリーの紹介と販売の記録を確認します。用語の対応表に、使用体験、投稿の内容、依頼する仕事の確認を加えてください。短い呼び方を、具体的な依頼と根拠が残る説明へつなげられます。</p>
+
+<h2 id="faq"><span class="no en">07</span>よくある質問</h2>
+<div class="faq">
+<details><summary>同じ候補にKOLとKOCの両方を付けてもよいですか？</summary><div class="a">依頼の整理に役立つなら、どちらかへ無理に限定する必要はありません。影響力のある発信者が、商品を使う消費者として語る場合も考えられます。どの知識や使用体験を確認したかを残し、呼び方だけで適性を決めないようにします。</div></details>
+<details><summary>「マイクロのKOC」という表現は矛盾していますか？</summary><div class="a">規模と立場という別の軸を説明するため、同時に使えます。ただし、候補表では規模の欄と体験・立場の欄を分けると読みやすくなります。人数についての説明と、商品をどのように使ったかの確認が、同じ意味に見えないようにしてください。</div></details>
+<details><summary>KOCと記された候補は、自社の商品を購入済みと考えてよいですか？</summary><div class="a">呼び方から購入や使用の事実を補わず、対象の商品を確認します。すでに使った商品なのか、これから体験してもらうのかを分けてください。資料には、購入や使用を確認した内容と、まだ確認していない内容を別に残します。</div></details>
+<details><summary>社内でKOLと呼ばれている人なら、TikTok Shopの機能を使えますか？</summary><div class="a">呼び方と、機能を利用する条件は分けて確認します。KOLという肩書きを、参加資格や権限の確認に置き換えないようにしてください。実際に頼む商品紹介や出演の形を決め、その仕事に対応する条件を公式の案内で確認します。</div></details>
+<details><summary>KOCへLIVE出演を頼みたいときは、何を付け加えて伝えますか？</summary><div class="a">商品を使った感想を話してほしいのか、使い方を見せてほしいのかなど、配信で担当する内容を伝えます。商品体験の内容と、LIVEで話す経験も分けて確認します。KOCという呼び名だけで、準備や担当範囲まで決まったとは扱いません。</div></details>
+<details><summary>候補表に肩書きしか書かれていない場合、どの欄を追加しますか？</summary><div class="a">規模、立場・体験、頼む仕事を分けて追加します。販売を目的にするなら、同じカテゴリーの紹介と販売の記録を確認する欄も用意してください。肩書きを消すことより、その言葉が意味する期待と、確認した事実を区別できる表へ直すことを優先します。</div></details>
+</div>
+<div class="ctabox"><div class="ct">呼び方より、売れた記録でクリエイターを選びたい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=kol-koc">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=kol-koc&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2>参考情報</h2><ul class="source-list"><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=96782861534993&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shopアフィリエイトのコラボ機能の説明</a>（日本語公式資料。公開・更新日は取得平文で確認できず）</li><li><a href="https://www.jetro.go.jp/biznews/2020/01/1aa8d3aab8c429a1.html" target="_blank" rel="noopener noreferrer">ジェトロが大連市で内販研究会、営業強化と中国企業の理解がカギ</a>（2020年1月29日公開。KOL・KOCの英語名称と用語の用例だけを参照）</li></ul><p class="src">資料は2026年11月5日に取得しました。分類表、依頼の例、社内の用語対応表は編集部作成です。過去の海外資料を、日本のTikTok Shopの参加条件や市場実績の根拠には使っていません。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">呼び方と依頼の整理</span><b><a href="https://leam.co.jp/column/micro-nano-influencer/">マイクロ・ナノインフルエンサーの見方</a></b><span>規模と販売の記録を分けて考える</span></div><div class="relcard"><span class="rc">呼び方と依頼の整理</span><b><a href="https://leam.co.jp/column/tiktok-influencer-marketing/">TikTokのインフルエンサー施策</a></b><span>依頼する形を具体的に整理する</span></div><div class="relcard"><span class="rc">呼び方と依頼の整理</span><b><a href="https://leam.co.jp/column/glossary/">TikTok Shopの用語集</a></b><span>仕組みと指標の言葉を確認する</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">KOL・KOCは発信者の立場を説明する呼び方で、公式の資格区分ではありません</a></li><li><a href="#s2">発信者の種類は、規模・立場・頼む形に分けると混ざりません</a></li><li><a href="#s3">TikTok Shopでは、肩書きより同じカテゴリーで紹介して売った記録を確かめます</a></li><li><a href="#s4">呼び方から依頼を決めず、PR投稿・商品紹介・LIVE出演の仕事へ置き換えます</a></li><li><a href="#s5">社内の用語対応表は、短い呼び名と実際に確認する情報を対にします</a></li><li><a href="#summary">まとめ：呼び方を分けたうえで、頼む仕事と販売の記録を確かめます</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=kol-koc">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "同じ候補にKOLとKOCの両方を付けてもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "依頼の整理に役立つなら、どちらかへ無理に限定する必要はありません。影響力のある発信者が、商品を使う消費者として語る場合も考えられます。どの知識や使用体験を確認したかを残し、呼び方だけで適性を決めないようにします。"}}, {"@type": "Question", "name": "「マイクロのKOC」という表現は矛盾していますか？", "acceptedAnswer": {"@type": "Answer", "text": "規模と立場という別の軸を説明するため、同時に使えます。ただし、候補表では規模の欄と体験・立場の欄を分けると読みやすくなります。人数についての説明と、商品をどのように使ったかの確認が、同じ意味に見えないようにしてください。"}}, {"@type": "Question", "name": "KOCと記された候補は、自社の商品を購入済みと考えてよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "呼び方から購入や使用の事実を補わず、対象の商品を確認します。すでに使った商品なのか、これから体験してもらうのかを分けてください。資料には、購入や使用を確認した内容と、まだ確認していない内容を別に残します。"}}, {"@type": "Question", "name": "社内でKOLと呼ばれている人なら、TikTok Shopの機能を使えますか？", "acceptedAnswer": {"@type": "Answer", "text": "呼び方と、機能を利用する条件は分けて確認します。KOLという肩書きを、参加資格や権限の確認に置き換えないようにしてください。実際に頼む商品紹介や出演の形を決め、その仕事に対応する条件を公式の案内で確認します。"}}, {"@type": "Question", "name": "KOCへLIVE出演を頼みたいときは、何を付け加えて伝えますか？", "acceptedAnswer": {"@type": "Answer", "text": "商品を使った感想を話してほしいのか、使い方を見せてほしいのかなど、配信で担当する内容を伝えます。商品体験の内容と、LIVEで話す経験も分けて確認します。KOCという呼び名だけで、準備や担当範囲まで決まったとは扱いません。"}}, {"@type": "Question", "name": "候補表に肩書きしか書かれていない場合、どの欄を追加しますか？", "acceptedAnswer": {"@type": "Answer", "text": "規模、立場・体験、頼む仕事を分けて追加します。販売を目的にするなら、同じカテゴリーの紹介と販売の記録を確認する欄も用意してください。肩書きを消すことより、その言葉が意味する期待と、確認した事実を区別できる表へ直すことを優先します。"}}]}</script>
+</body>
+</html>

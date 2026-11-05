@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CTLWMWXHQQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-CTLWMWXHQQ');
+</script>
+<title>インフルエンサー報酬の源泉徴収｜TikTok Shopの企業側</title>
+<meta name="description" content="インフルエンサーへの源泉徴収は報酬の中身と相手を整理して確認します。国税庁の区分、固定報酬とコミッションの精算の違い、企業の支払い前確認表を解説。PR投稿を一律に分類しません。">
+<link rel="canonical" href="https://leam.co.jp/column/influencer-withholding-tax/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="株式会社LEAM">
+<meta property="og:title" content="インフルエンサー報酬の源泉徴収｜TikTok Shopの企業側">
+<meta property="og:description" content="インフルエンサーへの源泉徴収は報酬の中身と相手を整理して確認します。国税庁の区分、固定報酬とコミッションの精算の違い、企業の支払い前確認表を解説。PR投稿を一律に分類しません。">
+<meta property="og:url" content="https://leam.co.jp/column/influencer-withholding-tax/">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://leam.co.jp/ogp/column/influencer-withholding-tax.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="インフルエンサー報酬の源泉徴収｜TikTok Shopの企業側">
+<meta name="twitter:description" content="インフルエンサーへの源泉徴収は報酬の中身と相手を整理して確認します。国税庁の区分、固定報酬とコミッションの精算の違い、企業の支払い前確認表を解説。PR投稿を一律に分類しません。">
+<meta name="twitter:image" content="https://leam.co.jp/ogp/column/influencer-withholding-tax.png">
+<link rel="icon" href="https://leam.co.jp/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="https://leam.co.jp/apple-touch-icon.png">
+
+<style>
+  :root{
+    /* 配色D（TikTok 標準・赤主／シアンは補助）2026-08-30 決定 */
+    --paper:#ffffff; --wash:#F4F6F8; --ink:#0B0C10; --ink2:#3A3F46; --ink3:#646C7A;
+    --line:#E3E6EA; --accent:#FE2C55; --accent-d:#B01D36; --accent-wash:#FFECF0;
+    --ok:#0A6E68; --ok-wash:#EDF6F5; --warn:#8A5A00; --warn-wash:#FBF3E2;
+    /* 赤は「塗り・罫線」用。文字とボタンには --accent-d を使う */
+    --btn:#B01D36; --link:#0B0C10; --mark:#FFE3A6;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Noto Sans JP",-apple-system,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size:16.5px;line-height:2.0;-webkit-font-smoothing:antialiased}
+  .en{font-family:Inter,"Noto Sans JP",sans-serif;font-variant-numeric:tabular-nums}
+  a{color:var(--link)}
+    /* 下線は本文の散文リンクだけ。目次・ボタン・ロゴ・パンくずには付けない */
+    article p:not(.crumb):not(.lead) > a:not([class]),
+    article li > a:not([class]),
+    article td > a:not([class]){border-bottom:1px solid rgba(11,12,16,.26)}
+    article a:not([class]):hover{color:var(--accent-d);border-bottom-color:var(--accent-d)}
+    nav.toc-inline ol li > a,nav.toc-side ol li > a,.toc-side ol li > a,
+    p.crumb > a{border-bottom:none}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hbar{display:flex;align-items:center;gap:16px;max-width:1120px;margin:0 auto;padding:12px 20px}
+  .logo{display:inline-flex;align-items:center;gap:9px;color:var(--ink);text-decoration:none}
+    .logo .lmk{width:21px;height:auto;display:block;flex:none}
+    .logo .lnm{font-family:Inter,sans-serif;font-weight:700;font-size:16.5px;letter-spacing:.065em;padding-left:.065em}
+    .meta .lmk{width:16px;height:auto;display:inline-block;vertical-align:-3.5px;margin-right:5px}
+  .hcat{font-size:12.5px;color:var(--ink3);white-space:nowrap}
+  @media(max-width:430px){.hcat{display:none}}
+  .hbtn{margin-left:auto;white-space:nowrap;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;
+    font-size:13.5px;border-radius:8px;padding:9px 18px}
+
+  .shell{max-width:1120px;margin:0 auto;padding:0 20px;display:grid;gap:44px}
+  @media(min-width:1000px){.shell{grid-template-columns:minmax(0,1fr) 300px}}
+  article{max-width:720px;min-width:0}
+
+  .crumb{font-size:12px;color:var(--ink3);margin:22px 0 10px}
+  .crumb a{color:var(--ink3);text-decoration:none}
+  .cat{display:inline-block;font-size:11.5px;font-weight:700;color:var(--accent-d);background:var(--accent-wash);
+    border-radius:999px;padding:3px 12px;letter-spacing:.04em}
+  h1{font-size:clamp(24px,4.4vw,33px);font-weight:900;line-height:1.55;margin:12px 0 10px;text-wrap:balance;letter-spacing:.01em}
+  .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--ink3);align-items:center;margin-bottom:26px}
+  .meta .upd{font-weight:700;color:var(--ink2)}
+
+  .lead{font-size:16px;color:var(--ink2)}
+  .lead strong{color:var(--ink)}
+
+  .learn{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:22px 0}
+  .learn .lt{font-weight:900;font-size:14px;letter-spacing:.06em;margin-bottom:6px}
+  .learn ul{margin:0;padding-left:1.3em;font-size:14.5px;color:var(--ink2)}
+  .learn li{margin:4px 0}
+
+  .ctabox{border:1.5px solid var(--accent);border-radius:14px;padding:22px;margin:26px 0;background:linear-gradient(180deg,#fff,var(--accent-wash))}
+  .ctabox .ct{font-weight:900;font-size:16.5px;margin-bottom:4px}
+  .ctabox p{margin:0 0 14px;font-size:13.5px;color:var(--ink2)}
+  .ctabox .row{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:12px 22px;font-size:14.5px;text-align:center}
+  .btn-p{background:var(--btn);color:#fff;box-shadow:0 4px 12px rgba(176,29,54,.24)}
+  .btn-g{border:1.5px solid var(--ink);color:var(--ink);background:#fff}
+
+  .toc-inline{border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:26px 0}
+  .toc-inline .tt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:8px}
+  .toc-inline ol{margin:0;padding-left:1.4em;font-size:14.5px}
+  .toc-inline li{margin:5px 0}
+  .toc-inline ol ol{font-size:13px;color:var(--ink3);margin-top:4px}
+  .toc-inline a{color:var(--ink2);text-decoration:none}
+  .toc-inline a:hover{color:var(--accent-d)}
+  @media(min-width:1000px){.toc-inline{display:none}}
+
+  h2{font-size:clamp(20px,3.2vw,25px);font-weight:900;line-height:1.6;margin:60px 0 18px;padding-top:14px;
+    border-top:3px solid var(--ink);text-wrap:balance;scroll-margin-top:80px}
+  h2 .no{color:var(--accent-d);font-family:Inter,sans-serif;margin-right:10px}
+  h3{font-size:17.5px;font-weight:700;margin:34px 0 12px;padding-left:12px;border-left:4px solid var(--line);line-height:1.6;scroll-margin-top:80px}
+  p{margin:0 0 18px}
+  strong{font-weight:700}
+    .hl{background:linear-gradient(transparent 70%,var(--mark) 70%)}
+
+  .tw{overflow-x:auto;margin:20px 0}
+  table{border-collapse:collapse;width:100%;font-size:14px;line-height:1.7;min-width:520px}
+  th{background:var(--ink);color:#fff;font-weight:700;padding:10px 14px;text-align:left;font-size:13px}
+  td{border:1px solid var(--line);padding:10px 14px;vertical-align:top}
+  tr:nth-child(even) td{background:var(--wash)}
+  td.y{color:var(--ok);font-weight:700}
+  td.n{color:var(--ink3)}
+  td.num{text-align:right;font-family:Inter,"Noto Sans JP",sans-serif}
+
+  .box{border-radius:12px;padding:16px 20px;margin:20px 0;font-size:14.5px}
+  .box .bt{font-weight:900;font-size:13.5px;display:flex;gap:8px;align-items:center;margin-bottom:6px}
+  .box p{margin:0;color:var(--ink2)}
+  .box-point{background:var(--ok-wash);border:1px solid #BFE3D4}
+  .box-point .bt{color:var(--ok)}
+  .box-warn{background:var(--warn-wash);border:1px solid #EAD9A8}
+  .box-warn .bt{color:var(--warn)}
+
+  .steps{counter-reset:st;margin:22px 0;padding:0;list-style:none}
+  .steps li{position:relative;padding:0 0 22px 52px}
+  .steps li::before{counter-increment:st;content:counter(st);position:absolute;left:0;top:2px;width:34px;height:34px;
+    border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Inter,sans-serif;font-weight:800;font-size:14px}
+  .steps li:not(:last-child)::after{content:"";position:absolute;left:16.5px;top:42px;bottom:2px;width:2px;background:var(--line)}
+  .steps b{display:block;font-size:15.5px;margin-bottom:2px}
+  .steps p{font-size:14px;color:var(--ink2);margin:0}
+
+  figure{margin:26px 0}
+  figure svg{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:12px;background:#fff}
+  figcaption{font-size:12.5px;color:var(--ink3);margin-top:8px;text-align:center}
+
+  .faq{margin:20px 0}
+  .faq details{background:#fff;border:1px solid var(--line);border-radius:10px;padding:0 18px;margin-bottom:10px}
+  .faq summary{cursor:pointer;font-weight:700;font-size:15px;padding:15px 30px 15px 0;list-style:none;position:relative;line-height:1.7}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"＋";position:absolute;right:2px;top:13px;color:var(--ink3);font-weight:900;font-size:18px}
+  .faq details[open] summary::after{content:"−"}
+  .faq .a{font-size:14px;color:var(--ink2);border-top:1px dashed var(--line);padding:12px 0 16px}
+
+  .author{display:flex;gap:16px;border:1px solid var(--line);border-radius:14px;padding:20px;margin:40px 0;background:var(--wash)}
+  .av{flex:none;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;
+    font-family:Inter,sans-serif;font-weight:700;letter-spacing:.055em;font-size:12.5px}
+  .author b{font-size:15px}
+  .author p{margin:4px 0 0;font-size:13px;color:var(--ink2);line-height:1.8}
+
+  .rel{margin:36px 0}
+  .rel .rt{font-family:Inter,sans-serif;font-weight:800;font-size:12px;letter-spacing:.16em;color:var(--ink3);margin-bottom:12px}
+  .relgrid{display:grid;gap:12px}
+  @media(min-width:640px){.relgrid{grid-template-columns:repeat(3,1fr)}}
+  .relcard{border:1px solid var(--line);border-radius:12px;padding:16px;font-size:13.5px;line-height:1.7;background:#fff}
+  .relcard .rc{display:inline-block;font-size:10.5px;font-weight:700;color:var(--ink3);background:var(--wash);border-radius:99px;padding:2px 10px;margin-bottom:8px}
+  .relcard b{display:block}
+  .relcard span{color:var(--ink3);font-size:12px}
+
+  .src{font-size:12.5px;color:var(--ink3);border-top:1px solid var(--line);padding-top:14px;margin-top:36px}
+
+  aside.rail{display:none}
+  @media(min-width:1000px){
+    aside.rail{display:block}
+    .railbox{position:sticky;top:76px}
+    .toc-side{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff}
+    .toc-side .tt{font-family:Inter,sans-serif;font-weight:800;font-size:11px;letter-spacing:.16em;color:var(--ink3);margin-bottom:10px}
+    .toc-side ol{margin:0;padding-left:1.3em;font-size:13px;line-height:1.8}
+    .toc-side li{margin:6px 0}
+    .toc-side a{color:var(--ink2);text-decoration:none}.toc-side ol a{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+    .toc-side a:hover{color:var(--accent-d)}
+    .railcta{margin-top:12px;background:var(--ink);border-radius:12px;padding:18px 20px;color:#fff}
+    .railcta b{font-size:14px;display:block;margin-bottom:4px}
+    .railcta p{font-size:12px;color:#C9CBD4;margin:0 0 12px}
+    .railcta .btn{width:100%;padding:11px}
+  }
+
+  footer.site{border-top:1px solid var(--line);margin-top:60px;padding:28px 20px 40px;font-size:12.5px;color:var(--ink3);text-align:center}
+
+.summary-grid{display:grid;gap:10px;margin:22px 0}.summary-item{background:#FDEEF1;border-left:4px solid #E8324A;border-radius:8px;padding:12px 16px;font-size:14px}.source-list li{margin:8px 0}.hero-art text{font-family:'Noto Sans JP',sans-serif}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "インフルエンサー報酬の源泉徴収｜TikTok Shopの企業側", "description": "インフルエンサーへの源泉徴収は報酬の中身と相手を整理して確認します。国税庁の区分、固定報酬とコミッションの精算の違い、企業の支払い前確認表を解説。PR投稿を一律に分類しません。", "inLanguage": "ja", "datePublished": "2026-11-05", "dateModified": "2026-11-05", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://leam.co.jp/column/influencer-withholding-tax/"}, "author": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/"}, "publisher": {"@type": "Organization", "name": "株式会社LEAM", "url": "https://leam.co.jp/", "logo": {"@type": "ImageObject", "url": "https://leam.co.jp/icon-512.png"}}, "image": {"@type": "ImageObject", "url": "https://leam.co.jp/ogp/column/influencer-withholding-tax.png", "width": 1200, "height": 630}, "citation": [{"@type": "WebPage", "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2792.htm", "name": "国税庁 No.2792 源泉徴収が必要な報酬・料金等とは"}, {"@type": "WebPage", "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2795.htm", "name": "国税庁 No.2795 原稿料や講演料等を支払ったとき"}, {"@type": "WebPage", "url": "https://www.nta.go.jp/publication/pamph/gensen/aramashi2026/pdf/07.pdf", "name": "国税庁 令和8年版 源泉徴収のあらまし 第5 報酬・料金等の源泉徴収事務"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164714256&lang=ja-JP", "name": "TikTok Shop 日本クリエイター利用規約"}, {"@type": "WebPage", "url": "https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&lang=ja-JP", "name": "TikTok Shop公式：報酬の仕組みについて"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "TOP", "item": "https://leam.co.jp/"}, {"@type": "ListItem", "position": 2, "name": "TikTok Shop 実践コラム", "item": "https://leam.co.jp/column/"}, {"@type": "ListItem", "position": 3, "name": "インフルエンサー報酬の源泉徴収｜TikTok Shopの企業側", "item": "https://leam.co.jp/column/influencer-withholding-tax/"}]}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><g id="leamBadge"><circle cx="50" cy="50" r="50" fill="#0B0C10"/><text x="50" y="50" dy=".35em" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="28" letter-spacing="1.5">LEAM</text></g>
+<clipPath id="leamHex"><polygon points="50,0 100,29 100,87 50,116 0,87 0,29"/></clipPath>
+<g id="leamMark"><g clip-path="url(#leamHex)">
+<rect width="100" height="116" fill="#dfe0e2"/>
+<polygon points="0,34 50,63 100,34 100,116 0,116" fill="#c2c3c6"/>
+<polygon points="0,46 50,75 100,46 100,116 0,116" fill="#96989c"/>
+<polygon points="0,58 50,87 100,58 100,116 0,116" fill="#5e6064"/>
+<polygon points="0,70 50,99 100,70 100,116 0,116" fill="#111215"/>
+</g></g></defs></svg>
+
+<div class="hbar"><a class="logo" href="https://leam.co.jp/" aria-label="株式会社LEAM ホームへ"><svg class="lmk" viewBox="0 0 100 116" aria-hidden="true"><use href="#leamMark"/></svg><span class="lnm">LEAM</span></a><span class="hcat">TikTok Shop 実践コラム</span><a class="hbtn" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-withholding-tax">無料相談</a></div>
+<div class="shell">
+<article><p class="crumb"><a href="https://leam.co.jp/">ホーム</a> ／ <a href="https://leam.co.jp/column/">コラム</a> ／ 報酬と源泉徴収</p><span class="cat">依頼・契約・支払いの実務</span><h1>インフルエンサー報酬の源泉徴収｜TikTok Shopの企業側</h1><div class="meta"><time class="upd" datetime="2026-11-05">更新日：2026年11月5日</time><time datetime="2026-11-05">公開日：2026年11月5日</time>
+  <span>執筆：<svg class="lmk" viewBox="0 0 100 100" aria-hidden="true"><use href="#leamBadge"/></svg>株式会社LEAM 編集部</span>
+</div><figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" style="width:100%;height:auto;display:block;border-radius:14px" role="img" aria-label="原稿用紙、撮影用具、出演者の札を仕事の内訳として左に並べ、右の支払台帳と確認印に対応させ、報酬の中身を確認してから支払う様子を表すイラスト">
+<rect width="1200" height="630" fill="#FFFFFF"/>
+<path d="M0 0h1200v318c-104 34-198 40-292 26-108-16-198-52-308-52-118 0-208 44-322 58-124 16-204 2-278-28z" fill="#F6F7F9"/>
+<ellipse cx="828" cy="246" rx="336" ry="196" fill="#EFF1F4"/>
+<path d="M0 500c158-32 286-16 418 8 130 24 244 30 358 12 114-18 224-44 424-28v190H0z" fill="#ECEEF1"/>
+<g fill="#D8DADE"><g id="influencerwithholdingtaxDots"><circle cx="96" cy="36" r="5"/><circle cx="132" cy="36" r="5"/><circle cx="168" cy="36" r="5"/><circle cx="204" cy="36" r="5"/><circle cx="96" cy="72" r="5"/><circle cx="132" cy="72" r="5"/><circle cx="168" cy="72" r="5"/><circle cx="204" cy="72" r="5"/></g><use href="#influencerwithholdingtaxDots" transform="translate(944 542)"/></g>
+<g fill="#5E6064" opacity=".13" transform="translate(9 11)"><path d="M101 147h162v195H101z"/><rect x="318" y="166" width="199" height="135" rx="17"/><path d="M650 159q103-28 206 0 102-28 205 0v293q-103-28-205 0-103-28-206 0z"/><rect x="319" y="450" width="248" height="108" rx="16"/></g>
+<g stroke="#0B0C10" stroke-width="7" stroke-linejoin="round" stroke-linecap="round">
+<path d="M101 147h125l37 35v160H101z" fill="#FFFFFF"/>
+<path d="M226 147v37h37" fill="#DFE0E2" stroke-width="5"/>
+<path d="M124 205h112m-112 27h112m-112 27h79m-79 27h111m-111 27h87" stroke="#C9CBD0" stroke-width="5"/>
+<rect x="318" y="166" width="199" height="135" rx="17" fill="#FFFFFF"/>
+<path d="M354 167l18-24h79l17 24" fill="#DFE0E2" stroke-width="5"/>
+<circle cx="417" cy="234" r="44" fill="#25F4EE" stroke-width="5"/>
+<circle cx="417" cy="234" r="28" fill="#FFFFFF" stroke-width="4"/>
+<path d="M407 224l23 10-23 11z" fill="#CE1730" stroke-width="3"/>
+<path d="M334 184h20" stroke="#C9CBD0" stroke-width="4"/>
+<rect x="148" y="377" width="149" height="153" rx="12" fill="#FFFFFF"/>
+<circle cx="221" cy="419" r="24" fill="#DFE0E2" stroke-width="5"/>
+<path d="M196 411c3-28 46-31 50-1-16-1-29-7-36-19-2 10-6 16-14 20" fill="#0B0C10" stroke-width="4"/>
+<path d="M180 494v-22c0-31 82-31 82 0v22" fill="#FE2C55" stroke-width="5"/>
+<path d="M173 511h98" stroke="#C9CBD0" stroke-width="4"/>
+<path d="M282 245h20m231 0h69v88h33m-16-12 16 12-16 12m-316 96h31v-99h265" fill="none" stroke-width="5"/>
+<path d="M650 159q103-28 206 0 102-28 205 0v293q-103-28-205 0-103-28-206 0z" fill="#FFFFFF"/>
+<path d="M856 159v293m-178-242q74-17 150 0m55 0q74-17 151 0" fill="none" stroke-width="5"/>
+<path d="M678 237q74-17 150 0m55 0q74-17 151 0m-356 37q74-17 150 0m55 0q74-17 151 0m-356 37q74-17 150 0m55 0q74-17 151 0m-356 37q74-17 150 0m55 0q74-17 151 0m-356 37q74-17 150 0m55 0q74-17 151 0" fill="none" stroke="#C9CBD0" stroke-width="4"/>
+<path d="M743 192v216m209-216v216" fill="none" stroke="#D8DADE" stroke-width="4"/>
+<rect x="319" y="450" width="248" height="108" rx="16" fill="#25F4EE"/>
+<path d="M319 474h248" fill="none" stroke-width="5"/>
+<rect x="498" y="482" width="86" height="46" rx="9" fill="#FFFFFF" stroke-width="5"/>
+<circle cx="522" cy="505" r="5" fill="#CE1730" stroke-width="2"/>
+<path d="M345 495h83m-83 23h57m-57 22h83" stroke="#FFFFFF" stroke-width="4"/>
+<path d="M1010 428h45v70h-45z" fill="#DFE0E2" stroke-width="5"/>
+<path d="M1000 499h65l15 39h-95z" fill="#CE1730" stroke-width="5"/>
+<path d="M977 538h109v18H977z" fill="#FFFFFF" stroke-width="5"/>
+<circle cx="896" cy="511" r="39" fill="#FFFFFF" stroke-width="5"/>
+<path d="M878 510l13 14 25-33" fill="none" stroke="#CE1730" stroke-width="5"/>
+<path d="M615 513h96m-15-11 15 11-15 11" fill="none" stroke="#C9CBD0" stroke-width="5"/>
+<path d="M112 397h131v125H112z" fill="#FFFFFF" stroke-width="5"/>
+<path d="M132 421h89m-89 23h89m-89 23h51m-51 23h89" stroke="#C9CBD0" stroke-width="4"/>
+<circle cx="271" cy="486" r="25" fill="#FFFFFF" stroke-width="5"/>
+<path d="M260 486l8 9 16-22" fill="none" stroke="#CE1730" stroke-width="4"/>
+</g></svg>
+<figcaption>仕事の内容と支払先を資料へ対応させてから、支払いの確認を進める（編集部作成）</figcaption></figure><p class="lead">個人のインフルエンサーへ固定報酬を払うときは、「PR代」という名前だけで源泉徴収の要否を決めません。<strong>誰に、どの仕事の対価を、誰が支払うかを整理し、国税庁の報酬・料金等の区分と照合します</strong>。TikTok Shopのコミッションも、プラットフォーム経由で精算されることと、税務上の責任を分けて確認します。この記事では、企業の経理・マーケ担当が、支払いを決める前にそろえる情報を表にまとめます。</p>
+<div class="box"><b>この記事でわかること</b><ul><li>報酬の名称ではなく、仕事の内容と相手から確認する手順</li><li>国税庁が示す報酬区分と、PR投稿について照合する情報</li><li>固定報酬とコミッションを分けた、支払い前の確認表</li></ul></div>
+<nav class="toc-inline" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">源泉徴収は、報酬の名目ではなく仕事の中身と支払先を整理して確認します</a></li><li><a href="#s2">国税庁の区分に照合し、PR投稿を一律の区分へ当てはめません</a></li><li><a href="#s3">コミッションの精算経路と、固定報酬の支払い・税務上の確認を分けます</a></li><li><a href="#s4">固定報酬を払う前に、仕事内容・相手・確認先を同じ表にそろえます</a></li><li><a href="#s5">判断に迷う報酬は、仕事内容と当事者の資料をまとめて確認します</a></li><li><a href="#summary">まとめ：報酬の中身・相手・経路をそろえて、支払い前に確認します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav>
+<h2 id="s1"><span class="no en">01</span>源泉徴収は、報酬の名目ではなく仕事の中身と支払先を整理して確認します</h2>
+<p>源泉徴収は、対象となる報酬などを支払う側が、税金を差し引いて納付する仕組みです。インフルエンサーへの支払いを考える際も、仕事の呼び名だけを見ず、何を依頼して、その対価を誰が受け取るかを確認します。投稿の依頼を決める人と、支払いを行う人が、同じ仕事内容を読めるようにすることが出発点です。</p>
+<p>2026年11月5日に取得した国税庁タックスアンサーNo.2792は、源泉徴収が必要な報酬・料金等の範囲を説明しています。税務上の相手の区分である居住者か内国法人かによって、対象となる範囲が異なるとしています。本人が個人として受け取るのか、法人との取引なのかを、まず整理しましょう。</p>
+<p>同じページには、謝礼や取材費などの名目であっても、実態が報酬・料金等と同じであれば対象になるという説明があります。「PR費」「協力費」と書けば対象外になる、という考え方では確認できません。発注書や合意内容に戻り、その支払いが何の対価なのかを読める形にします。</p>
+<table><thead><tr><th>先に整理すること</th><th>担当者が確認する情報</th><th>名目だけで決めないための記録</th></tr></thead><tbody>
+<tr><td>何を頼むか</td><td>原稿、撮影、出演、投稿など、実際の仕事の内容</td><td>相手へ渡した依頼内容と、受け取る成果物</td></tr>
+<tr><td>誰へ支払うか</td><td>契約の相手と報酬を受け取る相手</td><td>個人・法人の確認と、窓口との関係</td></tr>
+<tr><td>誰が支払うか</td><td>自社の支払いか、別の当事者による支払いか</td><td>契約と支払経路の対応</td></tr>
+<tr><td>何を報酬に含めるか</td><td>合意した仕事と、支払いに含む内容</td><td>総称だけでなく、内訳が分かる資料</td></tr>
+<tr><td>何を確認済みにするか</td><td>区分、対象金額、必要な処理の確認状況</td><td>判断した根拠と、残っている質問</td></tr>
+</tbody></table><p class="src">支払いの事実を整理する表（国税庁資料に基づき編集部作成）。</p>
+<p>たとえば「投稿一式」という依頼には、複数の仕事が含まれることがあります。文章を作るのか、本人が出演するのか、撮影や編集も行うのかを、実際の約束から確認します。仕事内容を分けて書くことと、税務上の区分を確定することは別です。区分の確認に必要な資料として内容を整理してください。</p>
+<p>また、連絡している窓口が法人であっても、誰の仕事の対価を誰が受け取るかは別に確認します。窓口名だけで、個人への支払いではないと決めないようにします。契約の相手、請求する相手、実際の支払先が対応しているかを読み、違いがあれば理由を残します。</p>
+<p>源泉徴収の確認は、報酬を払った後の経理処理だけにしないことが大切です。仕事内容と支払先が分かる段階で、経理担当へ情報を渡します。支払い直前に依頼内容を探し直す状態を避け、条件を決める時点から確認事項を共有しましょう。</p>
+<p>打ち合わせで使った呼び名と、支払いの資料に書く名称が違う場合は、その対応も残します。協力費と呼んでいても、実際には何をしてもらう約束だったのかを説明できるようにします。経理へ渡す段階で初めて仕事内容を考えるのではなく、依頼した内容が分かる記録を引き継いでください。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="報酬の名目だけを見るのではなく仕事内容、受け取る相手、支払う当事者の資料を並べて公式区分へ照合する図"><rect width="900" height="360" fill="#FFFFFF"/><path d="M35 34h360v80H35zM35 140h360v80H35zM35 246h360v80H35z" fill="#F6F7F9"/><path d="M421 75h61v211h-61m61-106h67m-13-12 13 12-13 12" fill="none" stroke="#0B0C10" stroke-width="4"/><rect x="573" y="90" width="289" height="175" rx="19" fill="#D8FAF7"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="25"><text x="215" y="84">仕事内容・成果物</text><text x="215" y="190">報酬を受け取る相手</text><text x="215" y="296">支払う当事者と条件</text><text x="718" y="146" font-weight="bold">国税庁の区分と</text><text x="718" y="189" font-weight="bold">照合する資料をそろえる</text><text x="718" y="234" font-size="22">名称だけで結論を決めない</text></g></svg><figcaption>報酬の中身と当事者をそろえて確認する（編集部作成）</figcaption></figure>
+<h2 id="s2"><span class="no en">02</span>国税庁の区分に照合し、PR投稿を一律の区分へ当てはめません</h2>
+<p>国税庁No.2792には、居住者に支払う報酬・料金等の代表例として、原稿料や講演料、モデルに支払う報酬、芸能や放送の出演等の報酬が挙げられています。「インフルエンサーへの支払い」という名称だけで、どれか一つに決まるという説明ではありません。依頼した仕事を、公式の区分や例と照合する入口として使います。</p>
+<p>詳しい範囲は、「令和8年版 源泉徴収のあらまし」の「第5 報酬・料金等の源泉徴収事務」で確認できます。報酬・料金の表には、区分ごとに該当するものや類似するものの説明があります。似た言葉があるだけで判断せず、頼んだ仕事と、その区分が扱う内容を対応させます。</p>
+<table><thead><tr><th>国税庁資料にある区分・例</th><th>PR投稿の依頼で整理する仕事の情報</th><th>照合する資料</th></tr></thead><tbody>
+<tr><td>原稿料や講演料など</td><td>文章の作成など、何を制作する対価か</td><td>No.2792、No.2795、源泉徴収のあらましの原稿の報酬等</td></tr>
+<tr><td>モデルの業務に関する報酬・料金</td><td>本人の容姿などを用いる仕事として、何を依頼するか</td><td>源泉徴収のあらましのモデルの業務に関する報酬・料金</td></tr>
+<tr><td>映画、演劇その他芸能、テレビジョン放送等の出演等の報酬・料金</td><td>出演として約束している内容と、制作・公開の方法</td><td>No.2792、源泉徴収のあらましの該当する報酬・料金の表</td></tr>
+<tr><td>複数の仕事を含む依頼</td><td>原稿、撮影、出演、編集、投稿などの実際の内訳</td><td>契約・依頼内容を用意したうえで、対応する公式区分を確認</td></tr>
+</tbody></table><p class="src">公式区分と、確認のために整理する情報（国税庁資料に基づき編集部作成）。PR投稿の該当区分を、この表で確定するものではありません。</p>
+<p>たとえば、文章の作成を依頼する場合は、どのような文章を何のために作ってもらうのかを明確にします。動画に登場する人へ払う場合も、単に動画に映るという情報だけでなく、依頼した仕事を説明できるようにします。仕事内容の資料をそろえてから、公式資料の例へ照合しましょう。</p>
+<p>No.2795は、原稿料や講演料等について、謝金や取材費などの名目でも、実態が同じであれば対象になると説明しています。名目を付け替えて判断を変えるのではなく、報酬の中身を読むという点が共通します。国税庁の例が扱う仕事と、自社の依頼を区別して確認してください。</p>
+<p>確認するときは、発注時の依頼文と、実際に受け取った内容の両方を用意します。途中で仕事内容が変わった場合は、変更後の仕事も確認の対象になります。最初に決めた名称だけを使い続けず、何の対価を払うのかを、支払い前の状態に合わせて整理します。</p>
+<p>表に挙げた区分は、すべてのPR投稿を網羅した一覧として扱うのではなく、仕事内容を調べる際の参照先にします。依頼した仕事が、公式の例のどの部分と対応しそうか、どの部分は分からないかを分けます。例に似た言葉があるという理由だけで処理を確定せず、質問を具体化するために使いましょう。</p>
+<p>報酬を受ける相手の条件も、区分の確認と切り離せません。No.2792の居住者への説明と内国法人への説明を混ぜず、どの相手への支払いとして調べているかを示します。海外の相手など、確認している資料の対象と異なる場合は、同じ結論をそのまま移さないようにします。</p>
+<h2 id="s3"><span class="no en">03</span>コミッションの精算経路と、固定報酬の支払い・税務上の確認を分けます</h2>
+<p>TikTok Shopの売上連動のコミッションは、商品の販売に対応する報酬です。公式の報酬ヘルプには、クリエイターの出金可能な成果報酬が収益の画面に表示され、受取用の銀行口座を登録して出金する説明があります。こうしたプラットフォーム上の精算と、自社が別途払う固定報酬は、記録を分けて読みます。</p>
+<p>ただし、プラットフォーム経由の支払いだから、売り手の源泉徴収の確認が不要になるとは説明できません。日本クリエイター利用規約は、コミッションとその金額を販売者などとの合意条件に基づくものとし、収納代行の仕組みを定めています。送金の経路だけで、税務上の扱いを決めないことが重要です。</p>
+<p>同規約には、クリエイターサービスに関連する税金の徴収・源泉徴収・申告について、TikTokが責任を負わない旨があります。税金が発生する場合の責任について、クリエイターや販売者側を定める説明もあります。これは、すべてのコミッションに源泉徴収が必要だという税務判断とも異なります。自社が負う確認を、契約と報酬の実態から整理します。</p>
+<table><thead><tr><th>分けて記録するもの</th><th>確認する資料</th><th>税務の確認で残す情報</th></tr></thead><tbody>
+<tr><td>自社が別途支払う固定報酬</td><td>依頼内容、契約、請求や支払いに関する資料</td><td>何の対価を、誰へ支払うか</td></tr>
+<tr><td>Shop上の売上連動コミッション</td><td>販売者との合意、公式の規約、精算の記録</td><td>報酬の内容と当事者、実際の精算方法</td></tr>
+<tr><td>両方を同じ人へ払う場合</td><td>それぞれの報酬の条件と記録</td><td>固定分と売上連動分を分けた仕事内容</td></tr>
+<tr><td>送金を仲介する仕組み</td><td>適用される収納代行の条件</td><td>送金経路と、税務上確認する支払いの関係</td></tr>
+</tbody></table><p class="src">報酬と精算経路の整理（日本向け公式規約・ヘルプに基づき編集部作成）。</p>
+<p>固定報酬とコミッションを併用する場合は、「この人への支払い」という一つの総額だけにまとめないようにします。どの仕事について固定分を払うのか、売上連動分はどの合意に基づくのかを残します。報酬の形の考え方は、<a href="https://leam.co.jp/column/creator-commission/">クリエイターへのコミッションの整理</a>も参照してください。</p>
+<p>また、成果報酬の出金手続や支払時期についての確認は、税務上の区分とは別です。画面上の出金や精算については、<a href="https://leam.co.jp/column/creator-payout/">成果報酬の支払いと出金の解説</a>で扱っています。出金できる状態かという確認を、源泉徴収の要否が確認済みという状態へ置き換えないでください。</p>
+<p>担当者間で共有するときも、報酬の発生条件と、精算の経路、税務の判断を別の欄へ残します。プラットフォームの画面で処理されているからという理由だけで、契約の当事者を読み替えないようにします。固定分と売上連動分にそれぞれどの資料があるかをそろえ、確認が足りない部分を明記します。</p>
+<p>売上連動という名前についても、それだけで税務上の区分を決めるのではなく、何の役務の対価かを確認します。報酬の計算が販売に連動することと、国税庁の区分に該当するかは別の確認です。固定額か変動額かという金額の決まり方と、仕事内容を分けて記録してください。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 370" role="img" aria-label="上の段に精算経路を確認する記録、下の段に税務の区分と責任を確認する記録を置き、経路だけから源泉徴収不要という結論へ進まない図"><rect width="900" height="370" fill="#FFFFFF"/><path d="M35 44h830v111H35z" fill="#EFF1F4"/><path d="M35 210h830v111H35z" fill="#FDECEF"/><g font-family="sans-serif" fill="#0B0C10"><g font-size="25" font-weight="bold"><text x="60" y="89">精算の記録</text><text x="60" y="255">税務の確認</text></g><g font-size="24"><text x="293" y="89">合意した報酬と、実際の送金経路を読む</text><text x="293" y="130">公式の規約と精算の資料を用意する</text><text x="293" y="255">対価の内容、相手、支払いの責任を読む</text><text x="293" y="296">国税庁の区分と条件に照合する</text></g><text x="450" y="189" text-anchor="middle" font-size="23">経路の確認を、税務の確認が済んだ状態に置き換えない</text><text x="450" y="355" text-anchor="middle" font-size="22">固定報酬と売上連動コミッションも、別の記録として残す</text></g></svg><figcaption>送金経路と税務上の確認を別の段に分ける（編集部作成）</figcaption></figure>
+<h2 id="s4"><span class="no en">04</span>固定報酬を払う前に、仕事内容・相手・確認先を同じ表にそろえます</h2>
+<p>支払い前の確認表は、マーケ担当が持つ仕事の情報を、経理担当が読むためにも使います。報酬の名称だけを渡さず、何を頼み、誰がどのように受け取るかをまとめます。金額の処理だけを先に進めず、要否の確認に必要な情報がそろっているかを見てください。</p>
+<p>次の表の「確認先」は、最初に事実関係を集める社内の担当や資料を示します。税務判断をマーケ担当だけで行うという表ではありません。回答できない項目は推測で埋めず、不足している資料と次に確認する担当を残します。</p>
+<table><thead><tr><th>支払い前の確認項目</th><th>そろえる情報</th><th>最初の確認先・資料</th></tr></thead><tbody>
+<tr><td>報酬の中身</td><td>何を制作・提供する対価なのか</td><td>依頼した担当者、発注書、合意内容</td></tr>
+<tr><td>成果物・仕事内容</td><td>原稿、出演、撮影、投稿などの実際の内容</td><td>契約、依頼文、受け取る内容の説明</td></tr>
+<tr><td>報酬を受ける相手</td><td>本人・法人・窓口の関係</td><td>契約先の情報、請求に関する資料</td></tr>
+<tr><td>相手の区分</td><td>居住者・内国法人など、適用を確認する前提</td><td>支払先の情報と経理担当</td></tr>
+<tr><td>自社の支払い</td><td>自社が何の報酬を支払うのか</td><td>支払条件、取引先との合意</td></tr>
+<tr><td>固定分とコミッション</td><td>異なる報酬が混ざっていないか</td><td>依頼の内訳、Shopの精算記録</td></tr>
+<tr><td>対象となる金額</td><td>報酬に含まれる内容と、請求上の区分</td><td>請求書、報酬の明細、経理担当</td></tr>
+<tr><td>源泉徴収の要否</td><td>どの区分を、どの事実から確認したか</td><td>国税庁の該当資料と確認結果</td></tr>
+<tr><td>未確認の事項</td><td>仕事内容や相手について不足する情報</td><td>資料を持つ担当者と追加確認先</td></tr>
+<tr><td>確認の記録</td><td>確認日、判断の根拠、支払いへ進める条件</td><td>経理の確認記録と引き継ぎの資料</td></tr>
+</tbody></table><p class="src">固定報酬の支払い前確認表（編集部作成）。</p>
+<p>国税庁No.2792には、金銭ではなく物品その他の経済的利益で支払う場合も、報酬・料金等に含まれるという説明があります。現金を払わないことだけで、確認が不要とはしません。商品提供だけの企画については、商品提供によるPR依頼の整理と分け、何の対価として渡すのかを記録します。</p>
+<p>また、No.2792は、報酬の中に消費税等の額が含まれる場合の対象金額の扱いも説明しています。請求書等で報酬額と消費税等の額が明確に区分されている場合の取扱いがあるため、区分の確認と金額の確認を分けます。請求書の情報をそろえる際は、インフルエンサーへの請求書の確認も参照してください。</p>
+<p>仕事の内容を決める段階では、<a href="https://leam.co.jp/column/creator-contract/">クリエイターへの依頼で契約前に決めること</a>を使って、何をもって完了とするかを整理できます。源泉徴収の確認表には、その仕事の対価として支払う内容を引き継ぎます。契約と経理の資料を別々に作る場合も、同じ仕事内容へ戻れる形にしましょう。</p>
+<p>確認表の欄が埋まっていても、回答が未確定なら確認済みへ変えません。「要否を調べている」「相手の情報を確認している」といった状態を残します。判断に必要な情報が集まった時点で、根拠と確認日をそろえて更新してください。</p>
+<p>支払先の資料と依頼内容が対応していない場合は、どちらかを推測で補わないようにします。誰からの請求が、どの仕事に関するものかを確認します。同じ人とのやり取りでも、別の依頼の明細が混ざっていれば、今回の確認に使う資料を分けてから読みましょう。</p>
+<p>マーケ側で仕事内容が確認できた段階と、経理側で税務の扱いを確認した段階も分けます。依頼内容の欄が完成したことだけで、源泉徴収の要否まで済んだと扱わないためです。資料を渡した日、質問が残っている項目、確認を終えた内容を記録すると、支払い前の状態を読み返せます。</p>
+<h2 id="s5"><span class="no en">05</span>判断に迷う報酬は、仕事内容と当事者の資料をまとめて確認します</h2>
+<p>PR投稿の依頼には、制作や出演など、複数の内容が含まれることがあります。資料の区分と仕事内容が対応するか迷う場合は、支払前に確認する質問を整理します。インフルエンサーという肩書きだけで尋ねるより、何の対価を誰へ払うかが分かる資料を用意することが大切です。</p>
+<p>個別の支払いが源泉徴収の対象となるか、どの区分・金額で扱うかは、税務署か税理士に確認してください。依頼内容、契約先、報酬の内訳、精算の経路、参照した国税庁資料をまとめます。固定報酬とコミッションの両方がある場合は、それぞれの条件を説明できる形にします。</p>
+<table><thead><tr><th>確認したい質問</th><th>一緒に用意する資料</th><th>社内へ戻して残すこと</th></tr></thead><tbody>
+<tr><td>この仕事内容は、どの報酬区分と照合するか</td><td>依頼文、制作・出演・投稿などの具体的な内容</td><td>参照する区分と、判断の前提</td></tr>
+<tr><td>誰への支払いとして扱うか</td><td>契約先と報酬を受け取る相手の情報</td><td>当事者と支払先の関係</td></tr>
+<tr><td>対象となる金額をどう確認するか</td><td>合意した報酬と、請求・精算の明細</td><td>対象金額の根拠と未確認部分</td></tr>
+<tr><td>プラットフォーム経由の精算をどう扱うか</td><td>適用規約と実際の精算記録</td><td>経路と税務上の確認を分けた記録</td></tr>
+</tbody></table><p class="src">相談のために事実関係をそろえる表（編集部作成）。</p>
+<p>確認の結果は、今回の報酬の前提と一緒に残します。同じ相手でも、次の依頼の仕事内容や契約の当事者が変われば、前の結論をそのまま使えるとは限りません。誰への、どの仕事の支払いについて確認したかが読めるようにしてください。</p>
+<p>税率や計算を確認する段階でも、先に区分と対象金額をそろえます。国税庁資料に計算方法があることと、自社の報酬がその区分に当たることは別の確認です。数字だけを先に請求額へ当てはめず、要否・区分・金額の確認が終わってから、必要な処理へ進めます。</p>
+<p>マーケ担当と経理担当で判断の前提が違う場合は、依頼の資料へ戻ります。片方が原稿作成の対価と考え、もう片方が出演の対価として読んでいるなら、実際に何を頼んだかをそろえます。呼び名の違いで結論を急がず、確認に使う仕事内容を一致させましょう。</p>
+<p>確認結果を社内の一覧に戻すときは、結論だけでなく、根拠にした資料と仕事内容を添えます。後から報酬の内訳が変わった際に、どこを確認し直すかが分かるためです。未確認の内容を消して完了に見せるのではなく、今回の支払いについて何が確認できたかを残してください。</p>
+<figure><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" role="img" aria-label="仕事内容と支払先の資料を用意し、区分と要否を確認した後に記録を残す。情報不足の場合は資料の確認へ戻すという支払前の循環を示す図"><rect width="900" height="380" fill="#FFFFFF"/><path d="M30 46h240v146H30z" fill="#EFF1F4"/><path d="M330 46h240v146H330z" fill="#D8FAF7"/><path d="M630 46h240v146H630z" fill="#FDECEF"/><path d="M280 118h39m-12-10 12 10-12 10m273-10h27m-12-10 12 10-12 10M450 203v92H150v-81m-12 14 12-14 12 14" fill="none" stroke="#0B0C10" stroke-width="4"/><g font-family="sans-serif" text-anchor="middle" fill="#0B0C10" font-size="24"><text x="150" y="99">仕事内容と</text><text x="150" y="141">相手の資料を用意</text><text x="450" y="99">区分と要否を</text><text x="450" y="141">確認する</text><text x="750" y="99">確認の根拠と</text><text x="750" y="141">前提を残す</text><text x="467" y="280" text-anchor="start" font-size="22">不足があれば、事実関係の確認へ戻る</text><text x="450" y="355" font-size="23">前回の結論だけを流用せず、今回の仕事内容と対応させる</text></g></svg><figcaption>今回の支払いの前提と確認結果を残す（編集部作成）</figcaption></figure>
+<h2 id="summary"><span class="no en">06</span>まとめ：報酬の中身・相手・経路をそろえて、支払い前に確認します</h2>
+<p>インフルエンサーへの源泉徴収を考えるときは、PR代という名目だけで要否を決めず、依頼した仕事と報酬を受ける相手を整理します。国税庁の区分と例は、実際の仕事内容を照合するために使います。固定報酬を払う前に、確認の根拠と不足する情報を同じ表へ残してください。</p>
+<p>TikTok Shopのコミッションについても、精算の経路と税務上の確認を分けます。固定分と売上連動分を同じ条件と考えず、それぞれ何の対価で、どの当事者の合意に基づくかを示します。仕事内容・相手・支払いの資料をそろえることが、企業側の確認の出発点です。</p>
+<h2 id="faq"><span class="no en">07</span>よくある質問</h2><div class="faq">
+<details><summary>請求書に「PR代」とあれば、報酬の区分まで決められますか？</summary><div class="a">名称だけでは決めません。依頼した仕事の内容と、報酬を受け取る相手を確認し、国税庁の区分と照合します。文章の作成や出演など、何の対価かを資料へ残してください。</div></details>
+<details><summary>動画へ出てもらう仕事は、すべてモデルの報酬として扱いますか？</summary><div class="a">動画に出るという情報だけで一律に分類しません。何を依頼し、どのような仕事内容に対して支払うかを整理します。公式区分の例を参照し、確認した結果と前提を記録してください。</div></details>
+<details><summary>窓口が法人なら、個人への支払いではないと判断できますか？</summary><div class="a">窓口だけでなく、契約の相手と報酬を受け取る相手を確認します。請求に関する資料と契約の対応を読み、誰への対価なのかを整理してください。担当者が連絡する相手と支払先を混同しないようにします。</div></details>
+<details><summary>Shopの画面を通じて精算されれば、自社の源泉徴収の確認は不要ですか？</summary><div class="a">経路だけでは不要と決められません。日本の規約には、コミッションの合意や収納代行と、税金に関する責任の説明があります。適用される合意と報酬の中身、実際の精算記録を分けて確認してください。</div></details>
+<details><summary>固定報酬と売上連動コミッションを、一つの確認欄にまとめてもよいですか？</summary><div class="a">一覧に載せる場合も、それぞれの対価と条件を読める形にします。同じ人へ払うことだけで、同じ仕事内容や税務の扱いと考えないようにします。固定分の依頼内容と、コミッションの合意・精算の資料を対応させてください。</div></details>
+<details><summary>前回確認した相手なら、次のPR依頼も同じ扱いにできますか？</summary><div class="a">前回の確認がどの仕事と支払条件を前提にしているかを読み返します。仕事内容、当事者、報酬の内訳が変わった場合は、その違いを確認します。相手の名前だけで結論を引き継がず、今回の支払いの根拠を残してください。</div></details>
+</div>
+<div class="ctabox"><div class="ct">報酬の形の整理から、起用の段取りまで相談したい方へ</div><p>LEAMの「クリエイターアサインパック」は、直近の売上の記録を確かめて選んだクリエイター複数名に、商品の紹介をまとめて依頼できるプランです。候補選び・依頼・進行の管理・投稿の確認まで当社が行います。商材やご予算に合うかどうかから、ご相談ください。</p><div class="row"><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-withholding-tax">クリエイター起用を相談する</a><a class="btn btn-g" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-withholding-tax&amp;intent=doc">サービス資料を受け取る</a></div></div><div class="author"><div class="av">LEAM</div><div><b>株式会社LEAM 編集部</b><p>TikTok Shopコンサルティングと、TikTok Shop特化MCN（クリエイター事務所）を運営。市場データを毎営業日自動で蓄積し、商品選定・クリエイター起用・広告運用を一次データに基づいて支援しています。中国・Douyinのライブコマース市場の知見をもとに、日本での立ち上げを逆算して設計します。</p></div></div><h2>参考情報</h2><ul class="source-list"><li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2792.htm" target="_blank" rel="noopener noreferrer">国税庁 No.2792 源泉徴収が必要な報酬・料金等とは</a>（2026年4月1日法令等）</li><li><a href="https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2795.htm" target="_blank" rel="noopener noreferrer">国税庁 No.2795 原稿料や講演料等を支払ったとき</a>（2026年4月1日法令等）</li><li><a href="https://www.nta.go.jp/publication/pamph/gensen/aramashi2026/pdf/07.pdf" target="_blank" rel="noopener noreferrer">国税庁 令和8年版 源泉徴収のあらまし 第5 報酬・料金等の源泉徴収事務</a></li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=2987512164714256&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop 日本クリエイター利用規約</a>（コミッション、収納代行、税金の各項）</li><li><a href="https://seller-jp.tiktok.com/university/essay?knowledge_id=106896171484944&amp;lang=ja-JP" target="_blank" rel="noopener noreferrer">TikTok Shop公式：報酬の仕組みについて</a></li></ul><p class="src">資料は2026年11月5日に取得しました。国税庁の区分と公式の精算条件を区別し、支払い前の確認表は編集部の提案として作成しています。</p><div class="rel"><div class="rt">RELATED ─ あわせて読みたい</div><div class="relgrid"><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/creator-contract/">クリエイターへの契約確認</a></b><span>仕事内容と対価を整理する</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/creator-commission/">コミッションの仕組み</a></b><span>報酬の条件を確認する</span></div><div class="relcard"><span class="rc">起用前の検討</span><b><a href="https://leam.co.jp/column/creator-payout/">成果報酬の支払いと出金</a></b><span>精算の仕組みを確認する</span></div></div></div></article><aside class="rail"><div class="railbox"><nav class="toc-side" aria-label="目次"><div class="tt">CONTENTS</div><ol><li><a href="#s1">源泉徴収は、報酬の名目ではなく仕事の中身と支払先を整理して確認します</a></li><li><a href="#s2">国税庁の区分に照合し、PR投稿を一律の区分へ当てはめません</a></li><li><a href="#s3">コミッションの精算経路と、固定報酬の支払い・税務上の確認を分けます</a></li><li><a href="#s4">固定報酬を払う前に、仕事内容・相手・確認先を同じ表にそろえます</a></li><li><a href="#s5">判断に迷う報酬は、仕事内容と当事者の資料をまとめて確認します</a></li><li><a href="#summary">まとめ：報酬の中身・相手・経路をそろえて、支払い前に確認します</a></li><li><a href="#faq">よくある質問</a></li></ol></nav><div class="railcta"><b>クリエイター起用の相談</b><p>売上の記録で選んだクリエイターに、まとめて紹介を依頼できます。</p><a class="btn btn-p" href="https://leam.co.jp/contact/?src=column&amp;a=influencer-withholding-tax">無料相談する</a></div></div></aside></div><footer class="site">株式会社LEAM ─ TikTok Shop 実践コラム　<a href="https://leam.co.jp/">会社サイト</a>　<a href="https://leam.co.jp/mcn/">クリエイター募集</a></footer>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "請求書に「PR代」とあれば、報酬の区分まで決められますか？", "acceptedAnswer": {"@type": "Answer", "text": "名称だけでは決めません。依頼した仕事の内容と、報酬を受け取る相手を確認し、国税庁の区分と照合します。文章の作成や出演など、何の対価かを資料へ残してください。"}}, {"@type": "Question", "name": "動画へ出てもらう仕事は、すべてモデルの報酬として扱いますか？", "acceptedAnswer": {"@type": "Answer", "text": "動画に出るという情報だけで一律に分類しません。何を依頼し、どのような仕事内容に対して支払うかを整理します。公式区分の例を参照し、確認した結果と前提を記録してください。"}}, {"@type": "Question", "name": "窓口が法人なら、個人への支払いではないと判断できますか？", "acceptedAnswer": {"@type": "Answer", "text": "窓口だけでなく、契約の相手と報酬を受け取る相手を確認します。請求に関する資料と契約の対応を読み、誰への対価なのかを整理してください。担当者が連絡する相手と支払先を混同しないようにします。"}}, {"@type": "Question", "name": "Shopの画面を通じて精算されれば、自社の源泉徴収の確認は不要ですか？", "acceptedAnswer": {"@type": "Answer", "text": "経路だけでは不要と決められません。日本の規約には、コミッションの合意や収納代行と、税金に関する責任の説明があります。適用される合意と報酬の中身、実際の精算記録を分けて確認してください。"}}, {"@type": "Question", "name": "固定報酬と売上連動コミッションを、一つの確認欄にまとめてもよいですか？", "acceptedAnswer": {"@type": "Answer", "text": "一覧に載せる場合も、それぞれの対価と条件を読める形にします。同じ人へ払うことだけで、同じ仕事内容や税務の扱いと考えないようにします。固定分の依頼内容と、コミッションの合意・精算の資料を対応させてください。"}}, {"@type": "Question", "name": "前回確認した相手なら、次のPR依頼も同じ扱いにできますか？", "acceptedAnswer": {"@type": "Answer", "text": "前回の確認がどの仕事と支払条件を前提にしているかを読み返します。仕事内容、当事者、報酬の内訳が変わった場合は、その違いを確認します。相手の名前だけで結論を引き継がず、今回の支払いの根拠を残してください。"}}]}</script>
+</body>
+</html>

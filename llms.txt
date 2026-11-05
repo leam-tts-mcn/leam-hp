@@ -17,10 +17,10 @@
 - クリエイターアサイン: 実売実績のあるTikTok Shopクリエイターの起用を、小さく試せる形から支援
 - MCN: クリエイターの発掘・育成・マネジメントを行う、TikTok Shop特化のクリエイター事務所
 
-## TikTok Shop 実践コラム（全113本）
+## TikTok Shop 実践コラム（全121本）
 
 > 出店の検討から日々の運用までを扱う実務記事。公式の一次情報と、当社の運用実感にもとづく判断を
-> 区別して書いています。数値は出典と時点を明記し、**113本すべてに一次情報（TikTok Shop公式ヘルプ・
+> 区別して書いています。数値は出典と時点を明記し、**121本すべてに一次情報（TikTok Shop公式ヘルプ・
 > 規約・官公庁の公表資料など）へのリンク**を置いています。
 > 公開情報で裏が取れなかった論点は、断定せず「どこを見れば確かめられるか」を書いています。
 > 一覧: https://leam.co.jp/column/
@@ -165,6 +165,16 @@
 ### クリエイターの選び方と見極め
 - [TikTok Oneとは｜TikTok Shopとの違い](https://leam.co.jp/column/tiktok-one/): TikTok Oneはクリエイターとの協業、TikTok Shopアフィリエイトは商品販売に応じた報酬を扱います。画面・成果の記録・表示設定を比較し、選び方と利用前の確認表を示します。
 - [フォロワー購入の見分け方｜TikTok Shop起用前確認](https://leam.co.jp/column/fake-followers-check/): フォロワー購入は人数や反応だけでは断定できません。TikTok Shopの起用前に見る場所・気になるサイン・それだけでは決めない理由を確認表で整理し、販売の記録と照合する方法を解説します。
+- [エンゲージメント率の計算方法｜TikTok Shop候補選び](https://leam.co.jp/column/engagement-rate/): エンゲージメント率は分母と足す反応で変わります。同じ仮の投稿を3通りで計算。TikTok Shopの候補比較に使う式・期間・投稿の種類をそろえ、商品クリックと販売の記録も確認します。
+- [KOL・KOCとは｜TikTok Shopの発信者の種類](https://leam.co.jp/column/kol-koc/): KOL・KOCは発信者の立場を説明する呼び方です。TikTok Shopの候補を規模・立場・頼む形で整理し、紹介と販売の記録を確認する方法を、分類表と社内の用語対応表で示します。
+- [インフルエンサーのリストアップ｜TikTok Shop候補表](https://leam.co.jp/column/influencer-list-building/): インフルエンサーの候補表は、集める・絞る・連絡するを分けて作ります。TikTok Shopで使う15列と仮の記入例を示し、販売の記録での絞り込みから進行管理への引き継ぎまで解説します。
+- [インフルエンサー起用のメリット・注意点｜TikTok Shop](https://leam.co.jp/column/influencer-merits/): TikTok Shopの起用では、商品リンク付きで紹介する機会を作れます。結果の個人差や確認の手間も含め、メリット・注意点・対策を並べた社内説明表と、依頼前に決める項目を示します。
+- [TikTokの利用者の年齢層｜TikTok Shopの売り手向け](https://leam.co.jp/column/tiktok-user-age/): 日本のTikTokの年代別利用率を、総務省の令和7年度調査の対象・母数付きで紹介。利用率と購入率を分けて読み、商品の買い手と候補のフォロワー・視聴者の年代を照合する方法を解説します。
+- [TikTokで買う人の行動｜TikTok Shopの紹介の役割](https://leam.co.jp/column/tiktok-purchase-behavior/): TikTok Shopの紹介は、商品を知る入口と詳しく確かめる場所をつなぎます。検索から始まる買い物との比較表、公的調査の読み方、商品ページ・サンプル・紹介する人の準備を解説します。
+- [18歳未満のクリエイターに頼める？TikTok Shopの条件](https://leam.co.jp/column/minor-creators/): TikTok Shopのアフィリエイトは18歳以上が参加条件です。一般のPR投稿と契約の確認を分け、年齢が未確認の候補を保留する依頼前の確認表と、公的資料による同意の基本を解説します。
+
+### 依頼・契約・支払いの実務
+- [インフルエンサー報酬の源泉徴収｜TikTok Shopの企業側](https://leam.co.jp/column/influencer-withholding-tax/): インフルエンサーへの源泉徴収は報酬の中身と相手を整理して確認します。国税庁の区分、固定報酬とコミッションの精算の違い、企業の支払い前確認表を解説。PR投稿を一律に分類しません。
 
 ## お問い合わせ
 
