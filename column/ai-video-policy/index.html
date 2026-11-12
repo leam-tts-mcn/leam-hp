@@ -13,6 +13,41 @@
   gtag('js', new Date());
   gtag('config', 'G-CTLWMWXHQQ');
 </script>
+<script>
+/* 2026-11-13 戦略2（江﨑さん承認 11/12）：記事から「問い合わせ」「クリエイター募集」「LINE」へ進んだ数を記事ごとに数える。
+   ・GA4 の event＝column_cta_click（cta＝contact/mcn/line、article＝記事の slug、link_url＝行き先）
+   ・最初に来たページ（lp）と最後に読んだ記事（leam_col）をセッション中だけ覚える
+     → 問い合わせフォームの流入元の行と、募集ページの LINE ボタンの event に記事名が載る */
+(function () {
+  var m = location.pathname.match(/^\/column\/([^\/]+)\/?$/), art = m ? m[1] : 'column_index';
+  try {
+    if (!sessionStorage.getItem('leam_src')) {
+      var q = new URLSearchParams(location.search), k = {};
+      ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term',
+       'fbclid', 'gclid', 'ttclid', 'msclkid', 'yclid'].forEach(function (n) {
+        var v = q.get(n); if (v) k[n] = v.slice(0, 120); });
+      if (document.referrer) { try { k.ref = new URL(document.referrer).hostname; } catch (e) {} }
+      k.lp = location.pathname;
+      sessionStorage.setItem('leam_src', JSON.stringify(k));
+    }
+    if (m) sessionStorage.setItem('leam_col', art);
+  } catch (e) {}
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || typeof gtag !== 'function') return;
+    var own = a.hostname === location.hostname || /(^|\.)leam\.co\.jp$/.test(a.hostname), c = '';
+    if (own && /^\/contact\/?$/.test(a.pathname)) c = 'contact';
+    else if (own && /^\/mcn\/?$/.test(a.pathname)) c = 'mcn';
+    else if (/^(line\.me|lin\.ee)$/.test(a.hostname) || (own && /^\/line\/?$/.test(a.pathname))) c = 'line';
+    if (!c) return;
+    gtag('event', 'column_cta_click', {
+      cta: c, article: art, link_url: a.href.slice(0, 200),
+      link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 80),
+      transport_type: 'beacon'
+    });
+  }, true);
+})();
+</script>
 <title>TikTok ShopでAI生成動画は使えるか｜規約と実務</title>
 <meta name="description" content="TikTok ShopでAI生成動画をどこまで使えるかを、日本向け公式ヘルプの記述と国内法令から整理。開示方法・禁止行為・公開前チェック表つき。">
 <link rel="canonical" href="https://leam.co.jp/column/ai-video-policy/">
