@@ -4186,6 +4186,8 @@ try {
         .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
         .then(function () {
           if (typeof gtag === 'function') gtag('event', 'contact_submit', { method: 'hubspot', topic: topic, article: ref || '(none)', intent: /[?&]intent=doc(&|$)/.test(location.search) ? 'doc' : 'consult' });
+          /* 2026-11-13 成果（キーイベント）＝HubSpot が受け付けた分だけ。英中のページも同じ名前で送る（江﨑さん「任せる」） */
+          if (typeof gtag === 'function') gtag('event', 'contact_submit_ok', { method: 'hubspot', topic: topic, article: ref || '(none)', intent: /[?&]intent=doc(&|$)/.test(location.search) ? 'doc' : 'consult' });
           label.innerHTML = labelHtml;
           btn.classList.add('sent');
           if (note) note.textContent = '送信しました。2営業日以内にご返信いたします。';
